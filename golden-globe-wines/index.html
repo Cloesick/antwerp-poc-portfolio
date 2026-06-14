@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golden Globe Wines — Onafhankelijke wijnhandel · Berchem</title>
+  <meta name="description" content="Onafhankelijke wijnhandel in Berchem. Persoonlijk advies, een zorgvuldig gekozen selectie, afhalen & reserveren. Kom online, word gevonden op Google en reserveer je wijn vooraf." />
+  <link rel="canonical" href="https://goldenglobewines.be/" />
+  <meta name="theme-color" content="#4a0e1c" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Golden Globe Wines" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Golden Globe Wines — Onafhankelijke wijnhandel · Berchem" />
+  <meta property="og:description" content="Persoonlijk advies, gekozen selectie, afhalen & reserveren — een onafhankelijke wijnhandel in Berchem." />
+  <meta property="og:url" content="https://goldenglobewines.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234a0e1c'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' fill='%23c9a14a' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LiquorStore",
+    "name": "Golden Globe Wines",
+    "description": "Onafhankelijke wijnhandel in Berchem met persoonlijk advies en een zorgvuldig gekozen selectie.",
+    "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://goldenglobewines.be/",
+    "telephone": "+3236850645",
+    "priceRange": "€€",
+    "address": { "@type": "PostalAddress", "streetAddress": "Lodewijk Gerritslaan 48", "postalCode": "2600", "addressLocality": "Berchem", "addressRegion": "Antwerpen", "addressCountry": "BE" }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { serif: ['Cormorant Garamond','serif'], sans: ['Inter','sans-serif'] },
+      colors: { wine: '#4a0e1c', bordeaux: '#6b1224', merlot: '#7c1d2e', gold: '#c9a14a', cream: '#f7f1e6', sand: '#ece2cf', clay: '#8a7355', ink: '#2a1419' },
+    } } };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(42,20,25,.15) 0%, rgba(42,20,25,.5) 55%, rgba(42,20,25,.9) 100%); }
+    .tile-grad { background: linear-gradient(160deg, #6b1224, #2a1419); }
+    .fade-up { opacity: 0; transform: translateY(18px); transition: all .8s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor,currentColor); background-size: 0% 1px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 1px; }
+  </style>
+</head>
+<body class="bg-cream text-ink font-sans antialiased selection:bg-gold/30">
+  <a href="#contact" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-wine focus:text-cream focus:rounded-full">Naar contact</a>
+
+  <div class="bg-wine text-cream text-center text-[13px] tracking-[0.15em] py-2 px-4 uppercase">
+    Nieuw online — vind ons en reserveer je wijn
+  </div>
+
+  <header class="sticky top-0 z-50 bg-cream/85 backdrop-blur border-b border-wine/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[70px] flex items-center justify-between">
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-[28px] font-600 tracking-tight italic text-wine">Golden Globe Wines</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-[14px] font-400 tracking-wide">
+        <a href="#aanbod" class="ug">Wat we doen</a>
+        <a href="#assortiment" class="ug">Assortiment</a>
+        <a href="#website" class="ug">Online komen</a>
+        <a href="#contact" class="ug">Contact</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="#contact" class="inline-flex items-center gap-2 bg-wine text-cream text-sm font-500 px-4 sm:px-5 py-2.5 rounded-full hover:bg-merlot transition">Reserveer wijn
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-wine/15 hover:bg-wine/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" hidden class="md:hidden border-t border-wine/10 bg-cream/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-400">
+        <a href="#aanbod" class="py-3 border-b border-wine/5">Wat we doen</a>
+        <a href="#assortiment" class="py-3 border-b border-wine/5">Assortiment</a>
+        <a href="#website" class="py-3 border-b border-wine/5">Online komen</a>
+        <a href="#contact" class="py-3">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="top" class="relative min-h-[86vh] flex items-end overflow-hidden">
+    <div class="absolute inset-0 tile-grad"></div>
+    <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=2000&q=80" alt="Wijnflessen in een wijnhandel" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-gold font-500 tracking-[0.35em] uppercase text-xs mb-5">Onafhankelijke wijnhandel · Berchem</p>
+      <h1 class="font-serif text-cream text-[46px] leading-[1.03] sm:text-8xl font-500 max-w-3xl italic">Wijnhandel<br />in Berchem.</h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed font-300">Persoonlijk advies en een zorgvuldig gekozen selectie. Vind ons voortaan ook online — en reserveer je wijn vooraf zonder te bellen.</p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#contact" class="bg-cream text-wine font-500 px-7 py-3.5 rounded-full hover:bg-gold hover:text-ink transition">Reserveer of vraag advies</a>
+        <a href="#assortiment" class="border border-cream/40 text-cream font-500 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">Ons assortiment</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-wine text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-7 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-gold">Persoonlijk</p><p class="mt-1 text-cream/60">advies op maat</p></div>
+      <div><p class="font-serif text-2xl text-gold">Gekozen</p><p class="mt-1 text-cream/60">een selectie met zorg</p></div>
+      <div><p class="font-serif text-2xl text-gold">Afhalen</p><p class="mt-1 text-cream/60">reserveren &amp; ophalen</p></div>
+      <div><p class="font-serif text-2xl text-gold">Lokaal</p><p class="mt-1 text-cream/60">in hartje Berchem</p></div>
+    </div>
+  </section>
+
+  <section id="aanbod" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-gold font-500 tracking-[0.2em] uppercase text-xs mb-4">Wat we doen</p>
+        <h2 class="font-serif text-4xl sm:text-6xl font-500 leading-tight text-wine">Wijn met<br />persoonlijk advies.</h2>
+        <p class="text-clay text-lg mt-5 leading-relaxed max-w-md font-300">Als onafhankelijke wijnhandel helpen we je graag de juiste fles kiezen — voor bij het eten, als geschenk of voor een speciale gelegenheid.</p>
+        <ul class="mt-7 space-y-3 text-clay">
+          <li class="flex items-center gap-3"><span class="text-gold">—</span> Advies op maat, afgestemd op je smaak en gelegenheid</li>
+          <li class="flex items-center gap-3"><span class="text-gold">—</span> Degustaties om rustig te ontdekken en te kiezen</li>
+          <li class="flex items-center gap-3"><span class="text-gold">—</span> Geschenkmanden, samengesteld naar wens</li>
+          <li class="flex items-center gap-3"><span class="text-gold">—</span> Reserveren en afhalen — informeer naar levering</li>
+        </ul>
+        <a href="#assortiment" class="inline-flex items-center gap-2 mt-9 bg-wine text-cream font-500 px-7 py-3.5 rounded-full hover:bg-merlot transition">Bekijk het assortiment
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-merlot"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Wijn en gerecht" class="w-full h-full object-cover" /></div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-merlot mt-8"><img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" alt="Glas wijn" class="w-full h-full object-cover" /></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="assortiment" class="bg-sand/60 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
+        <div><p class="text-gold font-500 tracking-[0.2em] uppercase text-xs mb-3">Assortiment</p><h2 class="font-serif text-4xl sm:text-5xl font-500 text-wine">Voor elke gelegenheid</h2></div>
+        <p class="text-clay max-w-sm font-300">Een greep uit wat je bij ons vindt. Wil je iets specifieks? Vraag het ons gerust — we denken graag mee.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80" alt="Rode wijn" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-500">Rode wijn</h3><p class="text-cream/75 text-sm mt-1 font-300">Van licht en fruitig tot vol en krachtig.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80" alt="Witte wijn" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-500">Witte wijn</h3><p class="text-cream/75 text-sm mt-1 font-300">Fris, soepel of net wat ronder.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80" alt="Bubbels en champagne" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-500">Bubbels &amp; Champagne</h3><p class="text-cream/75 text-sm mt-1 font-300">Om te vieren of zomaar te genieten.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Geschenkmanden" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-500">Geschenkmanden</h3><p class="text-cream/75 text-sm mt-1 font-300">Samengesteld naar budget en smaak.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Degustaties" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-500">Degustaties</h3><p class="text-cream/75 text-sm mt-1 font-300">Proeven en ontdekken in de winkel.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden tile-grad text-cream relative aspect-[4/5] flex items-center justify-center text-center p-6">
+          <div><p class="font-serif text-2xl font-500">Advies</p><p class="text-cream/75 text-sm mt-2 font-300">Niet zeker welke fles? We helpen je graag kiezen.</p><a href="#contact" class="inline-block mt-5 text-gold font-500 ug">Vraag advies →</a></div>
+        </article>
+      </div>
+      <p class="text-xs text-clay/70 mt-8 text-center">Onze selectie wisselt regelmatig. Beschikbaarheid en advies altijd in overleg in de winkel.</p>
+    </div>
+  </section>
+
+  <section id="website" class="bg-wine text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-3xl fade-up">
+        <p class="text-gold font-500 tracking-[0.2em] uppercase text-xs mb-4">Waarom een website</p>
+        <h2 class="font-serif text-4xl sm:text-6xl font-500 leading-tight italic">Word gevonden,<br />niet alleen gebeld.</h2>
+        <p class="text-cream/80 text-lg mt-6 leading-relaxed font-300">Vandaag staat de wijnhandel enkel met een telefoonnummer in de gids. Met een eigen website komen klanten je tegen op Google — en kunnen ze vooraf reserveren of contact opnemen, ook buiten de openingsuren.</p>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-5 mt-12">
+        <div class="fade-up rounded-2xl bg-merlot/40 border border-cream/10 p-7">
+          <p class="font-serif text-3xl text-gold">①</p>
+          <h3 class="font-serif text-2xl font-500 mt-3">Gevonden op Google</h3>
+          <p class="text-cream/70 text-sm mt-2 font-300">Mensen die "wijnhandel Berchem" zoeken, vinden jou — met adres, uren en route.</p>
+        </div>
+        <div class="fade-up rounded-2xl bg-merlot/40 border border-cream/10 p-7">
+          <p class="font-serif text-3xl text-gold">②</p>
+          <h3 class="font-serif text-2xl font-500 mt-3">Reserveren zonder bellen</h3>
+          <p class="text-cream/70 text-sm mt-2 font-300">Klanten reserveren een fles of vragen advies via een formulier, op hun moment.</p>
+        </div>
+        <div class="fade-up rounded-2xl bg-merlot/40 border border-cream/10 p-7">
+          <p class="font-serif text-3xl text-gold">③</p>
+          <h3 class="font-serif text-2xl font-500 mt-3">Vaste klanten</h3>
+          <p class="text-cream/70 text-sm mt-2 font-300">Een nieuwsbrief houdt vaste klanten op de hoogte van nieuwe wijnen en degustaties.</p>
+        </div>
+      </div>
+      <p class="text-cream/55 text-sm mt-10 max-w-2xl font-300">Deze pagina is een starter — een eerste online thuis voor Golden Globe Wines. Geen webshop met betaling, wel zichtbaarheid, reserveren en contact.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-12">
+    <div class="fade-up">
+      <p class="text-gold font-500 tracking-[0.2em] uppercase text-xs mb-4">Contact &amp; reservatie</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-500 text-wine">Reserveer of vraag advies</h2>
+      <p class="text-clay text-lg mt-5 max-w-md font-300">Laat je gegevens achter — we nemen contact op om je reservatie of vraag te bevestigen. Of kom gewoon langs in Berchem.</p>
+      <dl class="mt-9 space-y-5 text-clay">
+        <div class="flex gap-4"><span class="text-gold mt-1">◦</span><div><dt class="font-500 text-ink">Adres</dt><dd>Lodewijk Gerritslaan 48, 2600 Berchem</dd></div></div>
+        <div class="flex gap-4"><span class="text-gold mt-1">◦</span><div><dt class="font-500 text-ink">Telefoon</dt><dd>03 685 06 45</dd></div></div>
+      </dl>
+      <form class="mt-9 space-y-3 max-w-md" onsubmit="return false">
+        <div class="grid sm:grid-cols-2 gap-3">
+          <input type="text" placeholder="Naam" class="px-5 py-3 rounded-xl border border-clay/20 bg-cream focus:outline-none focus:ring-2 focus:ring-gold" />
+          <input type="tel" placeholder="Telefoon" class="px-5 py-3 rounded-xl border border-clay/20 bg-cream focus:outline-none focus:ring-2 focus:ring-gold" />
+        </div>
+        <input type="email" placeholder="E-mail" class="w-full px-5 py-3 rounded-xl border border-clay/20 bg-cream focus:outline-none focus:ring-2 focus:ring-gold" />
+        <textarea rows="4" placeholder="Wat zoek je? (bv. een fles voor bij rood vlees, een geschenkmand, advies…)" class="w-full px-5 py-3 rounded-xl border border-clay/20 bg-cream focus:outline-none focus:ring-2 focus:ring-gold"></textarea>
+        <button class="w-full bg-wine text-cream font-500 px-7 py-3.5 rounded-full hover:bg-merlot transition">Verstuur reservatie / vraag</button>
+        <p class="text-xs text-clay/60">Demo-formulier. In de live versie komt dit rechtstreeks bij Golden Globe Wines terecht.</p>
+      </form>
+    </div>
+    <div class="rounded-3xl overflow-hidden min-h-[340px] bg-sand">
+      <iframe title="Kaart Golden Globe Wines Berchem" class="w-full h-full min-h-[340px] border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=4.4070%2C51.1980%2C4.4270%2C51.2080&layer=mapnik&marker=51.2030%2C4.4170"></iframe>
+    </div>
+  </section>
+
+  <section class="bg-gold/20">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-4xl sm:text-5xl font-500 text-wine">Blijf op de hoogte</h2>
+      <p class="text-clay mt-3 font-300">Nieuwe wijnen, degustaties en tips — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <input type="email" placeholder="jouw@email.be" class="flex-1 px-5 py-3 rounded-full border border-clay/20 bg-cream focus:outline-none focus:ring-2 focus:ring-gold" />
+        <button class="bg-wine text-cream font-500 px-7 py-3 rounded-full hover:bg-merlot transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-clay/60 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <footer class="bg-ink text-cream/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div><p class="font-serif text-[26px] text-cream font-600 italic">Golden Globe Wines</p><p class="text-cream/60 text-sm mt-3 max-w-xs font-300">Onafhankelijke wijnhandel in Berchem — persoonlijk advies en een gekozen selectie.</p></div>
+      <div><p class="font-500 text-cream mb-3">Aanbod</p><ul class="space-y-2 text-sm text-cream/60 font-300"><li><a href="#assortiment" class="hover:text-gold">Assortiment</a></li><li><a href="#aanbod" class="hover:text-gold">Advies &amp; degustaties</a></li><li><a href="#assortiment" class="hover:text-gold">Geschenkmanden</a></li></ul></div>
+      <div><p class="font-500 text-cream mb-3">Info</p><ul class="space-y-2 text-sm text-cream/60 font-300"><li><a href="#website" class="hover:text-gold">Online komen</a></li><li><a href="#contact" class="hover:text-gold">Reserveren</a></li><li><a href="#contact" class="hover:text-gold">Contact</a></li></ul></div>
+      <div><p class="font-500 text-cream mb-3">Contact</p><ul class="space-y-2 text-sm text-cream/60 font-300"><li>Lodewijk Gerritslaan 48, 2600 Berchem</li><li>03 685 06 45</li></ul></div>
+    </div>
+    <div class="border-t border-cream/10"><div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/45"><p>© 2026 Golden Globe Wines. Concept — starter site.</p><p>Proof of concept — gebouwd voor een gesprek over online komen &amp; gevonden worden.</p></div></div>
+  </footer>
+
+  <script>
+    const mb = document.getElementById('menu-btn'), mm = document.getElementById('mobile-menu');
+    mb && mb.addEventListener('click', () => { const open = mm.hasAttribute('hidden'); if (open) mm.removeAttribute('hidden'); else mm.setAttribute('hidden',''); mb.setAttribute('aria-expanded', String(open)); });
+    mm && mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.setAttribute('hidden',''); mb.setAttribute('aria-expanded','false'); }));
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const fades = document.querySelectorAll('.fade-up');
+    if (reduce) { fades.forEach(el => el.classList.add('in')); }
+    else {
+      const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12 });
+      fades.forEach(el => io.observe(el));
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach(el => el.classList.add('in')), 1600);
+    }
+  </script>
+</body>
+</html>
