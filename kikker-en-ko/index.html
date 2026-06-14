@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kikker & Ko — Speelgoedwinkel in Berchem-Antwerpen</title>
+  <meta name="description" content="Je bent nooit te groot om te spelen! Speelgoed, hobby & creatief in Berchem. Online bestellen met verzending in heel België of afhalen in de winkel." />
+  <link rel="canonical" href="https://kikkerenko.be/" />
+  <meta name="theme-color" content="#1E2D4E" />
+
+  <!-- Open Graph / social link preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Kikker & Ko" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Kikker & Ko — Speelgoedwinkel in Berchem" />
+  <meta property="og:description" content="Je bent nooit te groot om te spelen! Speelgoed & hobby — online bestellen of afhalen in Berchem." />
+  <meta property="og:url" content="https://kikkerenko.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Inline SVG favicon — monogram KK -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231E2D4E'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='13' font-weight='700' fill='%23FFD84D' text-anchor='middle'%3EKK%3C/text%3E%3C/svg%3E" />
+
+  <!-- Local-SEO structured data — ToyStore -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store", "ToyStore"],
+    "name": "Kikker & Ko",
+    "description": "Speelgoedwinkel en hobbyshop in Berchem. Je bent nooit te groot om te spelen!",
+    "image": "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://kikkerenko.be/",
+    "telephone": "+3233835956",
+    "priceRange": "€€",
+    "areaServed": "BE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Gitschotellei 139",
+      "postalCode": "2600",
+      "addressLocality": "Berchem",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.1985, "longitude": 4.4277 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "10:00", "closes": "18:00" }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/KikkerenKo",
+      "https://www.instagram.com/KikkerenKo"
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Sora', 'sans-serif'],
+            sans: ['Nunito', 'sans-serif'],
+          },
+          colors: {
+            navy:      '#1E2D4E',
+            navydark:  '#162240',
+            navylight: '#2a3f6e',
+            sun:       '#FFD84D',
+            sunlight:  '#FFE680',
+            sundark:   '#F0C520',
+            mint:      '#E8F6F2',
+            mintdark:  '#C4EAE0',
+            cloud:     '#F8FAFC',
+            slate:     '#4A5568',
+            rose:      '#FF6B8A',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad {
+      background: linear-gradient(160deg, rgba(30,45,78,.18) 0%, rgba(30,45,78,.52) 50%, rgba(30,45,78,.90) 100%);
+    }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: all .65s cubic-bezier(.2,.8,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 2px; }
+    .cat-card:hover img { transform: scale(1.07); }
+    .cat-card img { transition: transform .6s cubic-bezier(.2,.8,.2,1); }
+    /* Age badge pill */
+    .age-pill { display: inline-flex; align-items: center; gap: 4px; border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 700; letter-spacing: .04em; }
+  </style>
+</head>
+<body class="bg-cloud text-navy font-sans antialiased selection:bg-sun/40">
+
+  <!-- Skip link for accessibility -->
+  <a href="#shop" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-navy focus:text-sun focus:rounded-full">Naar de webshop</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-sun text-navy text-center text-[13px] font-700 tracking-wide py-2 px-4">
+    <span aria-hidden="true">🎁</span> Gratis cadeauverpakking bij elke bestelling · Afhalen in Berchem of verzending in heel België
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-cloud/90 backdrop-blur border-b border-navy/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-2xl font-800 tracking-tight text-navy">Kikker<span class="text-sun" style="text-shadow:0 0 0 transparent">&amp;</span><span class="text-navy">Ko</span></span>
+        <span class="text-[11px] uppercase tracking-[0.22em] text-navy/45 font-700 hidden sm:inline">Speelgoed · Berchem</span>
+      </a>
+      <div class="hidden md:flex items-center gap-7 text-[15px] font-600">
+        <a href="#shop" class="ug">Webshop</a>
+        <a href="#assortiment" class="ug">Assortiment</a>
+        <a href="#leeftijd" class="ug">Op leeftijd</a>
+        <a href="#bezoek" class="ug">Bezoek ons</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="#shop" class="inline-flex items-center gap-2 bg-sun text-navy text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-sunlight transition shadow-sm">
+          Online bestellen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-navy/15 text-navy hover:bg-navy/6 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-navy/10 bg-cloud/97 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-600">
+        <a href="#shop" class="py-3 border-b border-navy/6">Webshop</a>
+        <a href="#assortiment" class="py-3 border-b border-navy/6">Assortiment</a>
+        <a href="#leeftijd" class="py-3 border-b border-navy/6">Op leeftijd</a>
+        <a href="#bezoek" class="py-3">Bezoek ons</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-navy">
+    <img
+      src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=2000&q=80"
+      alt="Kleurrijke speelgoedwinkel vol avontuur"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-sun font-700 tracking-[0.3em] uppercase text-xs mb-5">Speelgoedwinkel · Berchem-Antwerpen</p>
+      <h1 class="font-serif text-cloud text-[40px] leading-[1.08] sm:text-6xl lg:text-7xl font-800 max-w-3xl">
+        Je bent nooit<br />te groot om<br /><span class="text-sun">te spelen.</span>
+      </h1>
+      <p class="text-cloud/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Speelgoed, hobby &amp; creatief voor alle leeftijden — in Berchem en nu ook online, met verzending in heel België.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#shop" class="bg-sun text-navy font-700 px-7 py-3.5 rounded-full hover:bg-sunlight transition shadow-md">Ontdek de webshop</a>
+        <a href="#leeftijd" class="border border-cloud/45 text-cloud font-700 px-7 py-3.5 rounded-full hover:bg-cloud/12 transition">Zoek op leeftijd</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP strip -->
+  <section class="bg-navy text-cloud/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-5 text-center text-sm">
+      <div>
+        <p class="font-serif text-2xl text-sun font-700">Gratis</p>
+        <p class="mt-1 text-cloud/65">cadeauverpakking</p>
+      </div>
+      <div>
+        <p class="font-serif text-2xl text-sun font-700">Ophalen</p>
+        <p class="mt-1 text-cloud/65">gratis afhaling Berchem</p>
+      </div>
+      <div>
+        <p class="font-serif text-2xl text-sun font-700">Belgie</p>
+        <p class="mt-1 text-cloud/65">verzending heel België</p>
+      </div>
+      <div>
+        <p class="font-serif text-2xl text-sun font-700">Advies</p>
+        <p class="mt-1 text-cloud/65">persoonlijk cadeautip</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Webshop highlight / upsell -->
+  <section id="shop" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div class="fade-up">
+        <p class="text-rose font-700 tracking-[0.2em] uppercase text-xs mb-4">Nieuw online</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-800 leading-tight">
+          Het perfecte cadeau,<br />bezorgd aan huis.
+        </h2>
+        <p class="text-slate text-lg mt-5 leading-relaxed max-w-md">
+          Geen tijd om langs te komen? Bestel online en kies voor verzending in heel België of gratis afhaling in onze winkel op de Gitschotellei. Met gratis cadeauverpakking bij elke bestelling.
+        </p>
+        <ul class="mt-7 space-y-3 text-slate">
+          <li class="flex items-start gap-3">
+            <span class="text-sun mt-0.5 font-800 text-lg" aria-hidden="true">✓</span>
+            <span>Verzending in heel België &amp; gratis afhaling in Berchem</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-sun mt-0.5 font-800 text-lg" aria-hidden="true">✓</span>
+            <span>Gratis cadeauverpakking — inclusief persoonlijk kaartje</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-sun mt-0.5 font-800 text-lg" aria-hidden="true">✓</span>
+            <span>Realtime stock — wat je ziet, is ook beschikbaar</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-sun mt-0.5 font-800 text-lg" aria-hidden="true">✓</span>
+            <span>Veilig betalen via Bancontact, Visa &amp; PayPal</span>
+          </li>
+        </ul>
+        <a href="#assortiment" class="inline-flex items-center gap-2 mt-9 bg-navy text-cloud font-700 px-7 py-3.5 rounded-full hover:bg-navylight transition">
+          Bekijk het assortiment
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-mint">
+          <img src="https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?auto=format&fit=crop&w=800&q=80" alt="Kleurrijk speelgoed" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-mint mt-8">
+          <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80" alt="Cadeauverpakking speelgoed" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assortiment grid — 8 real categories -->
+  <section id="assortiment" class="bg-mint/60 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-rose font-700 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-800">Voor elk kind, elke leeftijd</h2>
+        </div>
+        <p class="text-slate/80 max-w-xs">Van babyspeciaal tot creatief voor tieners — alles in één winkel.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <!-- Speelgoed -->
+        <article class="cat-card fade-up rounded-2xl overflow-hidden bg-navy text-cloud relative aspect-[3/4] cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1555448248-2571daf6344b?auto=format&fit=crop&w=700&q=80" alt="Speelgoed" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+          <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/25 to-transparent"></div>
+          <div class="absolute bottom-0 p-5">
+            <h3 class="font-serif text-xl font-700">Speelgoed</h3>
+            <p class="text-cloud/70 text-xs mt-1">Buiten, bouwen, poppen, pluche &amp; bad</p>
+          </div>
+        </article>
+
+        <!-- Creatief -->
+        <article class="cat-card fade-up rounded-2xl overflow-hidden bg-navy text-cloud relative aspect-[3/4] cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80" alt="Creatief & knutselen" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+          <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/25 to-transparent"></div>
+          <div class="absolute bottom-0 p-5">
+            <h3 class="font-serif text-xl font-700">Creatief</h3>
+            <p class="text-cloud/70 text-xs mt-1">Kleurboeken, knutselpakketten, stickers</p>
+          </div>
+        </article>
+
+        <!-- Muziek -->
+        <article class="cat-card fade-up rounded-2xl overflow-hidden bg-navy text-cloud relative aspect-[3/4] cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1485579149621-3123dd979885?auto=format&fit=crop&w=700&q=80" alt="Muziek & instrumenten" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+          <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/25 to-transparent"></div>
+          <div class="absolute bottom-0 p-5">
+            <h3 class="font-serif text-xl font-700">Muziek</h3>
+            <p class="text-cloud/70 text-xs mt-1">Instrumenten, muziekdozen, pluchefiguren</p>
+          </div>
+        </article>
+
+        <!-- Baby -->
+        <article class="cat-card fade-up rounded-2xl overflow-hidden bg-navy text-cloud relative aspect-[3/4] cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=700&q=80" alt="Baby & peuter" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+          <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/25 to-transparent"></div>
+          <div class="absolute bottom-0 p-5">
+            <h3 class="font-serif text-xl font-700">Baby &amp; peuter</h3>
+            <p class="text-cloud/70 text-xs mt-1">Bijtspeelgoed, troostdoekjes, voedingsaccessoires</p>
+          </div>
+        </article>
+
+        <!-- Puzzels -->
+        <article class="cat-card fade-up rounded-2xl overflow-hidden bg-navy text-cloud relative aspect-[3/4] cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1611996575749-79a3a250f948?auto=format&fit=crop&w=700&q=80" alt="Puzzels" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+          <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/25 to-transparent"></div>
+          <div class="absolute bottom-0 p-5">
+            <h3 class="font-serif text-xl font-700">Puzzels</h3>
+            <p class="text-cloud/70 text-xs mt-1">Van 12 tot 1000 stukjes, voor elk niveau</p>
+          </div>
+        </article>
+
+        <!-- School -->
+        <article class="cat-card fade-up rounded-2xl overflow-hidden bg-navy text-cloud relative aspect-[3/4] cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=700&q=80" alt="Schoolbenodigdheden" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+          <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/25 to-transparent"></div>
+          <div class="absolute bottom-0 p-5">
+            <h3 class="font-serif text-xl font-700">School</h3>
+            <p class="text-cloud/70 text-xs mt-1">Boekentas, brooddoos, drinkfles, gymtas</p>
+          </div>
+        </article>
+
+        <!-- Boeken -->
+        <article class="cat-card fade-up rounded-2xl overflow-hidden bg-navy text-cloud relative aspect-[3/4] cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=700&q=80" alt="Boeken voor kinderen" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+          <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/25 to-transparent"></div>
+          <div class="absolute bottom-0 p-5">
+            <h3 class="font-serif text-xl font-700">Boeken</h3>
+            <p class="text-cloud/70 text-xs mt-1">Prentenboeken, strips, activiteitenboeken</p>
+          </div>
+        </article>
+
+        <!-- Geschenken CTA -->
+        <article class="cat-card fade-up rounded-2xl bg-sun text-navy relative aspect-[3/4] flex flex-col items-center justify-center text-center p-6 cursor-pointer hover:bg-sunlight transition">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="mb-4 opacity-70" aria-hidden="true">
+            <path d="M20 12v10H4V12M22 7H2v5h20V7zM12 22V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/>
+          </svg>
+          <p class="font-serif text-xl font-800">Cadeaus</p>
+          <p class="text-navy/75 text-sm mt-2">Geschenkideeën, cadeauverpakking &amp; verjaardagslijstjes</p>
+          <a href="#shop" class="inline-block mt-5 text-navy font-700 ug">Ontdek →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products (illustrative) -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="flex items-end justify-between mb-10">
+      <h2 class="font-serif text-3xl sm:text-4xl font-800">Uitgelichte producten</h2>
+      <a href="#shop" class="hidden sm:inline text-rose font-700 ug">Alles bekijken →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Product 1 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-mint">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80" alt="Houten bouwset" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-4">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="age-pill bg-sun/25 text-navy">3–8 j.</span>
+            <span class="text-xs text-rose font-700 uppercase tracking-wider">Bestseller</span>
+          </div>
+          <h3 class="font-serif text-xl font-700 mt-1">Houten bouwset Deluxe</h3>
+          <p class="text-slate/65 text-sm mt-1">100+ houten blokken — bouw wat je verbeelding je zegt.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="font-700 text-lg">€ 29,95</span>
+            <button class="bg-navy text-cloud text-sm font-700 px-4 py-2 rounded-full hover:bg-navylight transition">In mandje</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-mint">
+          <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=700&q=80" alt="Groot knutselpakket" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-4">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="age-pill bg-rose/15 text-rose">5–12 j.</span>
+            <span class="text-xs text-slate/50 font-700 uppercase tracking-wider">Nieuw</span>
+          </div>
+          <h3 class="font-serif text-xl font-700 mt-1">Groot knutselpakket</h3>
+          <p class="text-slate/65 text-sm mt-1">Alles voor een creatieve middag: verf, klei, stickers &amp; meer.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="font-700 text-lg">€ 22,50</span>
+            <button class="bg-navy text-cloud text-sm font-700 px-4 py-2 rounded-full hover:bg-navylight transition">In mandje</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 — gift set -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-sun/20">
+          <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=700&q=80" alt="Cadeau-set baby" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-4">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="age-pill bg-mintdark/50 text-navy">0–2 j.</span>
+            <span class="text-xs text-rose font-700 uppercase tracking-wider">Cadeau</span>
+          </div>
+          <h3 class="font-serif text-xl font-700 mt-1">Baby-welkomsset</h3>
+          <p class="text-slate/65 text-sm mt-1">Troostdoekje, bijtring &amp; rammelaar — klaar om te verpakken.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="font-700 text-lg">€ 34,95</span>
+            <button class="bg-navy text-cloud text-sm font-700 px-4 py-2 rounded-full hover:bg-navylight transition">In mandje</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs text-slate/35 mt-6">Voorbeeldproducten &amp; prijzen ter illustratie van de webshop.</p>
+  </section>
+
+  <!-- Differentiator: Age filters + Birthday wishlist -->
+  <section id="leeftijd" class="bg-navy text-cloud py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-center">
+      <div class="fade-up">
+        <p class="text-sun font-700 tracking-[0.2em] uppercase text-xs mb-4">Slim winkelen</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-800 leading-tight">
+          Zoek op leeftijd.<br />Vind het perfecte cadeau.
+        </h2>
+        <p class="text-cloud/75 text-lg mt-6 leading-relaxed max-w-md">
+          Geen idee wat je moet geven? Filter op leeftijd en interesse — en we tonen alleen wat écht past. Sla je favorieten op in een verjaardagslijstje en deel het met familie.
+        </p>
+        <!-- Age filter pills (illustrative) -->
+        <div class="mt-8 flex flex-wrap gap-3">
+          <button class="age-pill bg-sun text-navy text-sm py-2.5 px-5 hover:bg-sunlight transition">0–2 jaar</button>
+          <button class="age-pill border border-cloud/30 text-cloud text-sm py-2.5 px-5 hover:bg-cloud/10 transition">3–6 jaar</button>
+          <button class="age-pill border border-cloud/30 text-cloud text-sm py-2.5 px-5 hover:bg-cloud/10 transition">7–12 jaar</button>
+          <button class="age-pill border border-cloud/30 text-cloud text-sm py-2.5 px-5 hover:bg-cloud/10 transition">Tiener</button>
+          <button class="age-pill border border-cloud/30 text-cloud text-sm py-2.5 px-5 hover:bg-cloud/10 transition">Volwassene</button>
+        </div>
+        <div class="mt-8 p-5 rounded-2xl bg-cloud/10 border border-cloud/15 max-w-md">
+          <p class="font-700 text-sun text-sm mb-2">
+            <svg class="inline mr-1 mb-0.5" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+            Verjaardagslijstje
+          </p>
+          <p class="text-cloud/70 text-sm leading-relaxed">Laat je kind zijn wensenlijstje samenstellen en deel het met oma, opa &amp; vriendjes — rechtstreeks via WhatsApp of e-mail.</p>
+        </div>
+        <a href="#shop" class="inline-flex items-center gap-2 mt-8 bg-sun text-navy font-700 px-7 py-3.5 rounded-full hover:bg-sunlight transition">
+          Start je zoekopdracht
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-first lg:order-last">
+        <img src="https://images.unsplash.com/photo-1565775517775-56e2db65fc1a?auto=format&fit=crop&w=1000&q=80" alt="Kinderen spelen met kleurrijk speelgoed" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Story / USP section -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3]">
+        <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1000&q=80" alt="Warme speelgoedwinkel sfeer" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+      </div>
+      <div class="fade-up">
+        <p class="text-rose font-700 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-800 leading-tight">Een winkel waar spelen centraal staat.</h2>
+        <p class="text-slate text-lg mt-5 leading-relaxed">
+          In de Gitschotellei van Berchem vind je Kikker &amp; Ko: een speelgoedwinkel waar elk kind welkom is, van de allerkleinsten tot grote mensen. We geloven dat spelen geen leeftijdsgrens kent — en ons assortiment weerspiegelt dat.
+        </p>
+        <p class="text-slate text-lg mt-4 leading-relaxed">
+          Van doordacht babyspeelgoed tot creatieve knutselpakketten voor tieners: we helpen je persoonlijk het ideale cadeau vinden — online of in de winkel.
+        </p>
+        <div class="grid grid-cols-3 gap-5 mt-9">
+          <div class="text-center">
+            <p class="font-serif text-3xl font-800 text-navy">8+</p>
+            <p class="text-slate/65 text-xs mt-1">categorieën</p>
+          </div>
+          <div class="text-center border-x border-navy/10">
+            <p class="font-serif text-3xl font-800 text-navy">BE</p>
+            <p class="text-slate/65 text-xs mt-1">heel België</p>
+          </div>
+          <div class="text-center">
+            <p class="font-serif text-3xl font-800 text-navy">0–99</p>
+            <p class="text-slate/65 text-xs mt-1">jaar welkom</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit + OpenStreetMap -->
+  <section id="bezoek" class="bg-mint/50 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+      <div class="fade-up">
+        <p class="text-rose font-700 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-800">Welkom in Berchem</h2>
+        <p class="text-slate text-lg mt-5 max-w-md">Loop binnen op de Gitschotellei — of stuur ons een WhatsApp'je voor een snelle vraag.</p>
+        <dl class="mt-9 space-y-5 text-slate">
+          <div class="flex gap-4">
+            <span class="text-rose mt-1 text-xl" aria-hidden="true">📍</span>
+            <div>
+              <dt class="font-700">Adres</dt>
+              <dd class="text-slate/70">Gitschotellei 139, 2600 Berchem (Antwerpen)</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-rose mt-1 text-xl" aria-hidden="true">🕑</span>
+            <div>
+              <dt class="font-700">Openingsuren</dt>
+              <dd class="text-slate/70">
+                Di–Vr: 10:00–12:30 &amp; 13:30–18:00<br />
+                Za: 10:00–18:00<br />
+                Ma &amp; Zo: gesloten
+              </dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-rose mt-1 text-xl" aria-hidden="true">📞</span>
+            <div>
+              <dt class="font-700">Telefoon</dt>
+              <dd class="text-slate/70">03/383.59.56</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-rose mt-1 text-xl" aria-hidden="true">💬</span>
+            <div>
+              <dt class="font-700">WhatsApp</dt>
+              <dd class="text-slate/70">0486/23.22.44 — snel antwoord gegarandeerd</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-rose mt-1 text-xl" aria-hidden="true">✉️</span>
+            <div>
+              <dt class="font-700">E-mail</dt>
+              <dd class="text-slate/70">info@kikkerenko.be <span class="text-slate/40">(voorstel — professioneel domeinadres)</span></dd>
+            </div>
+          </div>
+        </dl>
+        <div class="flex flex-wrap gap-3 mt-9">
+          <a href="#shop" class="bg-navy text-cloud font-700 px-7 py-3.5 rounded-full hover:bg-navylight transition">Of bestel online →</a>
+          <a href="https://wa.me/32486232244" class="border border-navy/20 text-navy font-700 px-7 py-3.5 rounded-full hover:bg-navy/6 transition">
+            WhatsApp ons
+          </a>
+        </div>
+      </div>
+      <div class="rounded-3xl overflow-hidden min-h-[380px] bg-mintdark shadow-sm">
+        <iframe
+          title="Kaart Kikker &amp; Ko, Gitschotellei 139 Berchem"
+          class="w-full h-full min-h-[380px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.4197%2C51.1945%2C4.4357%2C51.2025&layer=mapnik&marker=51.1985%2C4.4277">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- GDPR Newsletter -->
+  <section class="bg-sun/20">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-800">Mis geen enkele aanbieding</h2>
+      <p class="text-slate/70 mt-3">Nieuwe collecties, Sinterklaastips &amp; exclusieve acties — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input
+          id="nl-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          placeholder="jouw@email.be"
+          class="flex-1 px-5 py-3 rounded-full border border-navy/20 bg-white focus:outline-none focus:ring-2 focus:ring-sun"
+        />
+        <button class="bg-navy text-cloud font-700 px-7 py-3 rounded-full hover:bg-navylight transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-slate/45 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-navy text-cloud/75">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-cloud font-800">Kikker<span class="text-sun">&amp;</span>Ko</p>
+        <p class="text-cloud/50 text-sm mt-3 max-w-xs">Speelgoed &amp; hobby voor alle leeftijden, in Berchem-Antwerpen.</p>
+        <p class="text-cloud/40 text-xs mt-3 italic">"Je bent nooit te groot om te spelen!"</p>
+      </div>
+      <div>
+        <p class="font-700 text-cloud mb-3">Winkel</p>
+        <ul class="space-y-2 text-sm text-cloud/55">
+          <li><a href="#assortiment" class="hover:text-sun transition">Assortiment</a></li>
+          <li><a href="#shop" class="hover:text-sun transition">Webshop</a></li>
+          <li><a href="#leeftijd" class="hover:text-sun transition">Zoeken op leeftijd</a></li>
+          <li><a href="#shop" class="hover:text-sun transition">Cadeauverpakking</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-700 text-cloud mb-3">Info</p>
+        <ul class="space-y-2 text-sm text-cloud/55">
+          <li><a href="#bezoek" class="hover:text-sun transition">Openingsuren</a></li>
+          <li><a href="#bezoek" class="hover:text-sun transition">Contact &amp; routebeschrijving</a></li>
+          <li><a href="#shop" class="hover:text-sun transition">Verzending &amp; afhaling</a></li>
+          <li><a href="#" class="hover:text-sun transition">Privacybeleid</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-700 text-cloud mb-3">Contact</p>
+        <ul class="space-y-2 text-sm text-cloud/55">
+          <li>Gitschotellei 139</li>
+          <li>2600 Berchem (Antwerpen)</li>
+          <li>03/383.59.56</li>
+          <li>WhatsApp: 0486/23.22.44</li>
+          <li>info@kikkerenko.be</li>
+        </ul>
+        <div class="flex gap-3 mt-5">
+          <a href="https://www.facebook.com/KikkerenKo" aria-label="Facebook" class="w-9 h-9 rounded-full border border-cloud/20 flex items-center justify-center hover:bg-cloud/10 transition">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/KikkerenKo" aria-label="Instagram" class="w-9 h-9 rounded-full border border-cloud/20 flex items-center justify-center hover:bg-cloud/10 transition">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-cloud/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cloud/35">
+        <p>© 2026 Kikker &amp; Ko, Berchem. Concept-redesign.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; webshop.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: fade-up observer + mobile menu toggle -->
+  <script>
+    // Fade-up on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1600);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>

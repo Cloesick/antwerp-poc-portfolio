@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wit Zwart Deli — Italiaanse delicatessen, traiteur & buffet in Antwerpen</title>
+  <meta name="description" content="Italiaanse delicatessen, meeneemgerechten en buffet in hartje Antwerpen. Vers en zorgvuldig geselecteerd — nu ook online te bestellen met verzending in heel België." />
+  <link rel="canonical" href="https://witzwartdeli.be/" />
+  <meta name="theme-color" content="#141414" />
+  <!-- Social link preview (so the outreach link looks right in WhatsApp/e-mail) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Wit Zwart Deli" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Wit Zwart Deli — Italiaanse delicatessen, traiteur & buffet" />
+  <meta property="og:description" content="Vers, Italiaans en zorgvuldig geselecteerd — nu ook online, met verzending in heel België." />
+  <meta property="og:url" content="https://witzwartdeli.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23141414'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='15' fill='%23f6f3ee' text-anchor='middle'%3EWZ%3C/text%3E%3C/svg%3E" />
+  <!-- Local-SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store", "FoodEstablishment"],
+    "name": "Wit Zwart Deli",
+    "description": "Italiaanse delicatessen, meeneemgerechten, buffet & traiteur in Antwerpen.",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://witzwartdeli.be/",
+    "telephone": "+3232940654",
+    "servesCuisine": "Italian",
+    "priceRange": "€€",
+    "areaServed": "BE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Blauwtorenplein 10",
+      "postalCode": "2000",
+      "addressLocality": "Antwerpen",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.2205, "longitude": 4.3985 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "10:00", "closes": "17:00" }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Fraunces', 'serif'], sans: ['Inter', 'sans-serif'] },
+          colors: {
+            ink: '#141414',
+            charcoal: '#2a2724',
+            cream: '#f6f3ee',
+            sand: '#e9e2d6',
+            terra: '#b8472d',
+            terralight: '#d2613f',
+            olive: '#5f6b3a',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(20,20,20,.25) 0%, rgba(20,20,20,.55) 55%, rgba(20,20,20,.92) 100%); }
+    .fade-up { opacity: 0; transform: translateY(18px); transition: all .7s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 2px; }
+  </style>
+</head>
+<body class="bg-cream text-ink font-sans antialiased selection:bg-terra/25">
+
+  <a href="#shop" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-ink focus:text-cream focus:rounded-full">Naar de webshop</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-ink text-cream text-center text-[13px] tracking-wide py-2 px-4">
+    🇮🇹 <span class="font-semibold">Nieuw:</span> bestel online — verzending in heel België · of haal af in de winkel.
+  </div>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 bg-cream/85 backdrop-blur border-b border-ink/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-2xl font-700 tracking-tight">Wit<span class="text-terra">Zwart</span></span>
+        <span class="text-[11px] uppercase tracking-[0.25em] text-ink/50 font-600">Deli · Antwerpen</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
+        <a href="#shop" class="ug">Webshop</a>
+        <a href="#assortiment" class="ug">Assortiment</a>
+        <a href="#traiteur" class="ug">Traiteur &amp; buffet</a>
+        <a href="#bezoek" class="ug">Bezoek ons</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="#shop" class="inline-flex items-center gap-2 bg-terra text-cream text-sm font-600 px-4 sm:px-5 py-2.5 rounded-full hover:bg-terralight transition">
+          Bestel online
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-ink/15 text-ink hover:bg-ink/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" hidden class="md:hidden border-t border-ink/10 bg-cream/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#shop" class="py-3 border-b border-ink/5">Webshop</a>
+        <a href="#assortiment" class="py-3 border-b border-ink/5">Assortiment</a>
+        <a href="#traiteur" class="py-3 border-b border-ink/5">Traiteur &amp; buffet</a>
+        <a href="#bezoek" class="py-3">Bezoek ons</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[86vh] flex items-end overflow-hidden bg-charcoal">
+    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=2000&q=80" alt="Italiaanse antipasti en charcuterie" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-terralight font-600 tracking-[0.3em] uppercase text-xs mb-5">Italiaanse delicatessen · Antwerpen</p>
+      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
+        Italië op je bord,<br />nu ook online.
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Antipasti, verse pasta, sauzen, wijn en buffet — vers en zorgvuldig geselecteerd. Lekker én gezond, uit hartje Antwerpen.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#shop" class="bg-terra text-cream font-600 px-7 py-3.5 rounded-full hover:bg-terralight transition">Ontdek de webshop</a>
+        <a href="#traiteur" class="border border-cream/40 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">Buffet &amp; traiteur</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP strip -->
+  <section class="bg-ink text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-terralight">Vers</p><p class="mt-1 text-cream/70">zorgvuldig geselecteerd</p></div>
+      <div><p class="font-serif text-2xl text-terralight">Buffet</p><p class="mt-1 text-cream/70">Italiaans buffet &amp; traiteur</p></div>
+      <div><p class="font-serif text-2xl text-terralight">Cadeau</p><p class="mt-1 text-cream/70">geschenkpakketten op maat</p></div>
+      <div><p class="font-serif text-2xl text-terralight">BE</p><p class="mt-1 text-cream/70">afhaal &amp; verzending</p></div>
+    </div>
+  </section>
+
+  <!-- Webshop highlight (the upsell) -->
+  <section id="shop" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-terra font-600 tracking-[0.2em] uppercase text-xs mb-4">Nieuw online</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">Je Italiaanse favorieten,<br />tot aan je deur.</h2>
+        <p class="text-charcoal/80 text-lg mt-5 leading-relaxed max-w-md">
+          Geen tijd om langs te komen? Bestel antipasti, sauzen, pasta, wijn en geschenkpakketten online. Wij stellen samen en versturen vers — in heel België.
+        </p>
+        <ul class="mt-7 space-y-3 text-charcoal">
+          <li class="flex items-center gap-3"><span class="text-terra">✓</span> Verzending in heel België &amp; afhaling in de winkel</li>
+          <li class="flex items-center gap-3"><span class="text-terra">✓</span> Geschenkpakketten — stel zelf samen</li>
+          <li class="flex items-center gap-3"><span class="text-terra">✓</span> Veilig betalen met Bancontact, Visa &amp; PayPal</li>
+        </ul>
+        <a href="#assortiment" class="inline-flex items-center gap-2 mt-9 bg-ink text-cream font-600 px-7 py-3.5 rounded-full hover:bg-charcoal transition">
+          Start je bestelling
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand">
+          <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80" alt="Verse pasta" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand mt-8">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80" alt="Italiaanse wijn" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assortiment -->
+  <section id="assortiment" class="bg-sand/60 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-terra font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-600">Alles voor de Italiaanse tafel</h2>
+        </div>
+        <p class="text-charcoal/70 max-w-sm">Van antipasti tot wijn — zorgvuldig geselecteerd, lekker én gezond.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=800&q=80" alt="Antipasti" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-95 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Antipasti</h3><p class="text-cream/75 text-sm mt-1">Olijven, tapenades, gedroogde ham &amp; kazen.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80" alt="Verse pasta" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-95 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Verse pasta</h3><p class="text-cream/75 text-sm mt-1">Dagvers, ambachtelijk — tagliatelle tot ravioli.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1472476443507-c7a5948772fc?auto=format&fit=crop&w=800&q=80" alt="Sauzen en soepen" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-95 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Sauzen &amp; soepen</h3><p class="text-cream/75 text-sm mt-1">Huisbereide sugo, pesto &amp; verse soepen.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1474722883778-792e7990302f?auto=format&fit=crop&w=800&q=80" alt="Wijn en spirits" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-95 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Wijn &amp; spirits</h3><p class="text-cream/75 text-sm mt-1">Italiaanse wijnen &amp; aperitievo-klassiekers.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1498579150354-977475b7ea0b?auto=format&fit=crop&w=800&q=80" alt="Meeneemgerechten" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-95 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Meeneemgerechten</h3><p class="text-cream/75 text-sm mt-1">Dagverse afhaalgerechten, klaar om te genieten.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-terra text-cream relative aspect-[4/5] flex items-center justify-center text-center p-6">
+          <div>
+            <p class="font-serif text-2xl font-600">Geschenk&shy;pakketten</p>
+            <p class="text-cream/85 text-sm mt-2">Stel zelf je Italiaanse pakket samen — perfect om te schenken.</p>
+            <a href="#shop" class="inline-block mt-5 text-cream font-600 ug">Stel samen →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="flex items-end justify-between mb-10">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600">Klassiekers van het huis</h2>
+      <a href="#shop" class="hidden sm:inline text-terra font-600 ug">Alles bekijken →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-sand"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80" alt="Antipasti-plank" loading="lazy" decoding="async" class="w-full h-full object-cover" /></div>
+        <div class="p-4">
+          <p class="text-xs text-terra font-600 uppercase tracking-wider">Bestseller</p>
+          <h3 class="font-serif text-xl font-600 mt-1">Antipasti-plank</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Gedroogde ham, kazen, olijven &amp; tapenade.</p>
+          <div class="flex items-center justify-between mt-4"><span class="font-600 text-lg">€ 18,50 <span class="text-sm text-charcoal/50 font-400">/ 2 pers.</span></span><button class="bg-ink text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-charcoal transition">In mandje</button></div>
+        </div>
+      </div>
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-sand"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=700&q=80" alt="Verse tagliatelle" loading="lazy" decoding="async" class="w-full h-full object-cover" /></div>
+        <div class="p-4">
+          <p class="text-xs text-terra font-600 uppercase tracking-wider">Dagvers</p>
+          <h3 class="font-serif text-xl font-600 mt-1">Verse tagliatelle</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Ambachtelijk gemaakt, per 250g.</p>
+          <div class="flex items-center justify-between mt-4"><span class="font-600 text-lg">€ 5,90 <span class="text-sm text-charcoal/50 font-400">/ 250g</span></span><button class="bg-ink text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-charcoal transition">In mandje</button></div>
+        </div>
+      </div>
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-sand"><img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=700&q=80" alt="Geschenkpakket Italia" loading="lazy" decoding="async" class="w-full h-full object-cover" /></div>
+        <div class="p-4">
+          <p class="text-xs text-terra font-600 uppercase tracking-wider">Geschenk</p>
+          <h3 class="font-serif text-xl font-600 mt-1">Geschenkpakket "Italia"</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Wijn, pasta, sugo &amp; tapenade in één doos.</p>
+          <div class="flex items-center justify-between mt-4"><span class="font-600 text-lg">€ 34,90 <span class="text-sm text-charcoal/50 font-400">/ pakket</span></span><button class="bg-ink text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-charcoal transition">In mandje</button></div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs text-charcoal/40 mt-6">Voorbeeldproducten &amp; prijzen ter illustratie van de webshop.</p>
+  </section>
+
+  <!-- Traiteur / buffet (the differentiator) -->
+  <section id="traiteur" class="bg-ink text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1000&q=80" alt="Italiaans buffet" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+      </div>
+      <div class="order-1 lg:order-2 fade-up">
+        <p class="text-terralight font-600 tracking-[0.2em] uppercase text-xs mb-4">Traiteur &amp; buffet</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">Een Italiaans buffet voor je feest.</h2>
+        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
+          Verjaardag, receptie of bedrijfsevent? Wij verzorgen een vers Italiaans buffet op maat — van antipasti tot dessert. Vraag vrijblijvend een offerte.
+        </p>
+        <a href="#bezoek" class="inline-flex items-center gap-2 mt-8 bg-terra text-cream font-600 px-7 py-3.5 rounded-full hover:bg-terralight transition">
+          Vraag een offerte
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bezoek -->
+  <section id="bezoek" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-12">
+    <div class="fade-up">
+      <p class="text-terra font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-600">Welkom in de winkel</h2>
+      <p class="text-charcoal/70 text-lg mt-5 max-w-md">Kom proeven en kiezen op het Blauwtorenplein, in hartje Antwerpen.</p>
+      <dl class="mt-9 space-y-5 text-charcoal">
+        <div class="flex gap-4"><span class="text-terra mt-1" aria-hidden="true">📍</span><div><dt class="font-600">Adres</dt><dd class="text-charcoal/70">Blauwtorenplein 10, 2000 Antwerpen</dd></div></div>
+        <div class="flex gap-4"><span class="text-terra mt-1" aria-hidden="true">🕑</span><div><dt class="font-600">Openingsuren</dt><dd class="text-charcoal/70">Wo–Vr: 10:00–18:00 · Za: 10:00–17:00 · Zo–Di: gesloten</dd></div></div>
+        <div class="flex gap-4"><span class="text-terra mt-1" aria-hidden="true">📞</span><div><dt class="font-600">Telefoon</dt><dd class="text-charcoal/70">03 294 06 54</dd></div></div>
+        <div class="flex gap-4"><span class="text-terra mt-1" aria-hidden="true">✉️</span><div><dt class="font-600">E-mail</dt><dd class="text-charcoal/70">info@witzwartdeli.be <span class="text-charcoal/40">(voorstel — professioneel domeinadres)</span></dd></div></div>
+      </dl>
+      <a href="#shop" class="inline-block mt-9 bg-ink text-cream font-600 px-7 py-3.5 rounded-full hover:bg-charcoal transition">Of bestel online →</a>
+    </div>
+    <div class="rounded-3xl overflow-hidden min-h-[340px] bg-sand">
+      <iframe title="Kaart Wit Zwart Deli, Blauwtorenplein 10 Antwerpen" class="w-full h-full min-h-[340px] border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=4.391%2C51.217%2C4.406%2C51.224&layer=mapnik&marker=51.2205%2C4.3985"></iframe>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="bg-terra/15">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600">Blijf op de hoogte</h2>
+      <p class="text-charcoal/70 mt-3">Nieuwe producten, seizoensbuffetten en acties — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input id="nl-email" name="email" type="email" autocomplete="email" required placeholder="jouw@email.be" class="flex-1 px-5 py-3 rounded-full border border-charcoal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-terra" />
+        <button class="bg-ink text-cream font-600 px-7 py-3 rounded-full hover:bg-charcoal transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-charcoal/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ink text-cream/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-cream font-700">Wit<span class="text-terra">Zwart</span> <span class="text-cream/50 text-sm align-top">Deli</span></p>
+        <p class="text-cream/60 text-sm mt-3 max-w-xs">Italiaanse delicatessen, traiteur &amp; buffet in hartje Antwerpen.</p>
+      </div>
+      <div><p class="font-600 text-cream mb-3">Winkel</p><ul class="space-y-2 text-sm text-cream/60"><li><a href="#assortiment" class="hover:text-terralight">Assortiment</a></li><li><a href="#shop" class="hover:text-terralight">Webshop</a></li><li><a href="#shop" class="hover:text-terralight">Geschenkpakketten</a></li></ul></div>
+      <div><p class="font-600 text-cream mb-3">Info</p><ul class="space-y-2 text-sm text-cream/60"><li><a href="#traiteur" class="hover:text-terralight">Traiteur &amp; buffet</a></li><li><a href="#bezoek" class="hover:text-terralight">Openingsuren</a></li><li><a href="#bezoek" class="hover:text-terralight">Contact</a></li></ul></div>
+      <div><p class="font-600 text-cream mb-3">Contact</p><ul class="space-y-2 text-sm text-cream/60"><li>Blauwtorenplein 10, 2000 Antwerpen</li><li>03 294 06 54</li><li>info@witzwartdeli.be</li></ul></div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/45">
+        <p>© 2026 Wit Zwart Deli. Concept-redesign.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; webshop.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1600);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>

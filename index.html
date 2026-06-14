@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Concept-redesigns — Saspire · web & webshop voor Antwerpse handelaars</title>
+  <meta name="description" content="Vrijblijvende concept-redesigns voor lokale Antwerpse handelaars — moderne website + webshop. Door Nicolas, Saspire." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f1c2e'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' fill='%237db0d8' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E" />
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { serif: ['Fraunces','serif'], sans: ['Inter','sans-serif'] },
+      colors: { navy: '#0f1c2e', slate: '#33465c', sky: '#3f7cac', cream: '#f6f2ea', sand: '#e7ddcd' },
+    } } };
+  </script>
+</head>
+<body class="bg-cream text-navy font-sans antialiased">
+  <header class="max-w-5xl mx-auto px-6 pt-16 pb-10">
+    <p class="text-sky font-600 tracking-[0.25em] uppercase text-xs">Saspire · web &amp; webshop</p>
+    <h1 class="font-serif text-4xl sm:text-6xl font-600 mt-4 leading-tight">Concept-redesigns voor Antwerpse handelaars</h1>
+    <p class="text-slate text-lg mt-5 max-w-2xl">Twaalf vrijblijvende concepten — telkens de échte zaak, in een modern, mobielvriendelijk jasje, met een webshop die online verkoopt. Klik om elk concept live te bekijken.</p>
+    <p class="text-slate/70 text-sm mt-3">Dit zijn niet-officiële conceptvoorstellen, gemaakt als gespreksstarter. Niet geïndexeerd.</p>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 pb-20">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5" id="grid"></div>
+    <footer class="mt-16 pt-8 border-t border-navy/10 text-sm text-slate/70 flex flex-col sm:flex-row justify-between gap-2">
+      <p>© 2026 Saspire — Nicolas · nicolas@saspire.org</p>
+      <p>Concept-redesigns · geen officiële sites van de vermelde zaken.</p>
+    </footer>
+  </main>
+
+  <script>
+    const pocs = [
+      { slug: 'helios',          name: 'Helios Berchem',     cat: 'Koffiebranderij · Berchem',  c: '#2b1a12' },
+      { slug: 'wit-zwart-deli',  name: 'Wit Zwart Deli',     cat: 'Italiaanse deli · Antwerpen', c: '#14130f' },
+      { slug: 'la-praline',      name: 'La Praline',         cat: 'Chocolatier · Ekeren',        c: '#1c100a' },
+      { slug: 'amaral',          name: 'Amaral Beenhouwerij',cat: 'Slagerij · Antwerpen',        c: '#1f3a24' },
+      { slug: 'pasta-rigoletto', name: 'Pasta Rigoletto',    cat: 'Italiaanse traiteur · Antwerpen', c: '#3a1010' },
+      { slug: 'kikker-en-ko',    name: 'Kikker & Ko',        cat: 'Speelgoed · Berchem',         c: '#1d3b6e' },
+      { slug: 'bloem-bloem',     name: 'Bloem?bloem!',       cat: 'Bloemist · Berchem',          c: '#1f3326' },
+      { slug: 'floriplant',      name: 'Floriplant',         cat: 'Tuincentrum · Schoten',       c: '#24402a' },
+      { slug: 'geve-verlichting',name: 'GeVe Verlichting',   cat: 'Verlichting · Wilrijk',       c: '#241c10' },
+      { slug: 'harlekijn',       name: 'Harlekijn',          cat: 'Damesmode · Mechelen',        c: '#2c2230' },
+      { slug: 'larose',          name: 'Larose',             cat: 'Damesmode · Brasschaat',      c: '#2c2622' },
+      { slug: 'boetiek-cami',    name: 'Boetiek Cami',       cat: 'Damesmode · Borgerhout',      c: '#2a1622' },
+    ];
+    document.getElementById('grid').innerHTML = pocs.map(p => `
+      <a href="${p.slug}/" class="group rounded-2xl overflow-hidden border border-navy/10 bg-white hover:shadow-lg transition block">
+        <div class="aspect-[16/10] flex items-end p-5" style="background:linear-gradient(150deg, ${p.c}, ${p.c}cc)">
+          <span class="font-serif text-2xl font-600 text-white">${p.name}</span>
+        </div>
+        <div class="p-5 flex items-center justify-between">
+          <span class="text-slate text-sm">${p.cat}</span>
+          <span class="text-sky font-600 text-sm group-hover:translate-x-0.5 transition">Bekijk →</span>
+        </div>
+      </a>`).join('');
+  </script>
+</body>
+</html>

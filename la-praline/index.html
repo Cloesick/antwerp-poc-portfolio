@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Praline — Ambachtelijke Chocolatier in Ekeren | Pralines & Geschenkdozen</title>
+  <meta name="description" content="Ambachtelijke pralines en chocolade op maat — vers, zonder minimumaantal. Bestel online voor levering in heel België of bezoek ons in Ekeren. Geschenkdozen, seizoenscollecties en B2B." />
+  <link rel="canonical" href="https://la-praline.be/" />
+  <meta name="theme-color" content="#3b1f0a" />
+
+  <!-- Open Graph / Social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="La Praline" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="La Praline — Ambachtelijke Chocolatier in Ekeren" />
+  <meta property="og:description" content="Vers, op maat, ambachtelijk — nu ook online bestellen. Pralines & geschenkdozen bezorgd in heel België." />
+  <meta property="og:url" content="https://la-praline.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Inline SVG favicon — monogram "LP" -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233b1f0a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='14' fill='%23f5d78e' text-anchor='middle'%3ELP%3C/text%3E%3C/svg%3E" />
+
+  <!-- Local-SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store", "FoodEstablishment"],
+    "name": "La Praline",
+    "description": "Ambachtelijke chocolatier in Ekeren — pralines en chocolade op maat, vers geproduceerd zonder minimumbestelling. Cadeaudozen en seizoenscollecties.",
+    "image": "https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://la-praline.be/",
+    "telephone": "+3236654188",
+    "email": "johan.mertens10@telenet.be",
+    "servesCuisine": "Chocolate",
+    "priceRange": "€€",
+    "areaServed": "BE",
+    "foundingDate": "1985",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Isabellalei 87",
+      "postalCode": "2180",
+      "addressLocality": "Ekeren",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.2882, "longitude": 4.4165 },
+    "vatID": "BE0631349145"
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans:  ['Inter', 'sans-serif'],
+          },
+          colors: {
+            cacao:     '#3b1f0a',
+            mocha:     '#5c3317',
+            praline:   '#8b5e3c',
+            gold:      '#c8922a',
+            goldlight: '#e2b044',
+            champagne: '#f5d78e',
+            cream:     '#fdf8f0',
+            sand:      '#f0e6d3',
+            petal:     '#f9ece4',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(59,31,10,.18) 0%, rgba(59,31,10,.52) 50%, rgba(59,31,10,.93) 100%); }
+    .fade-up { opacity: 0; transform: translateY(18px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 1.5px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 1.5px; }
+    .box-hover { transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s; }
+    .box-hover:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(59,31,10,.14); }
+  </style>
+</head>
+<body class="bg-cream text-cacao font-sans antialiased selection:bg-gold/25">
+
+  <!-- Skip link -->
+  <a href="#shop" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-cacao focus:text-cream focus:rounded-full">Naar de webshop</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-cacao text-champagne text-center text-[13px] tracking-wide py-2 px-4">
+    <span class="font-semibold">Nieuw:</span> bestel online — pralines &amp; geschenkdozen bezorgd in heel België.
+  </div>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-cacao/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-2xl font-700 tracking-tight text-cacao">La<span class="text-gold">Praline</span></span>
+        <span class="text-[11px] uppercase tracking-[0.25em] text-cacao/45 font-600">Ekeren · since 1985</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
+        <a href="#shop"        class="ug">Webshop</a>
+        <a href="#assortiment" class="ug">Assortiment</a>
+        <a href="#configurator" class="ug">Doe-het-zelf doos</a>
+        <a href="#bezoek"      class="ug">Bezoek ons</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="#shop" class="inline-flex items-center gap-2 bg-gold text-cacao text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-goldlight transition">
+          Bestel online
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-cacao/15 text-cacao hover:bg-cacao/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" hidden class="md:hidden border-t border-cacao/10 bg-cream/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#shop"         class="py-3 border-b border-cacao/5">Webshop</a>
+        <a href="#assortiment"  class="py-3 border-b border-cacao/5">Assortiment</a>
+        <a href="#configurator" class="py-3 border-b border-cacao/5">Doe-het-zelf doos</a>
+        <a href="#bezoek"       class="py-3">Bezoek ons</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-cacao">
+    <img
+      src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=2000&q=80"
+      alt="Ambachtelijke pralines en chocolade"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-champagne font-600 tracking-[0.32em] uppercase text-xs mb-5">Ambachtelijke Chocolatier · Ekeren · since 1985</p>
+      <h1 class="font-serif text-cream text-[42px] leading-[1.06] sm:text-[72px] font-600 max-w-3xl italic">
+        Chocolade die je<br />nooit vergeet.
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed font-sans">
+        Verse, ambachtelijke pralines — op maat gemaakt door Johan Mertens. Geen minimum, geen compromis. Nu ook besteld aan huis.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#shop"         class="bg-gold text-cacao font-700 px-7 py-3.5 rounded-full hover:bg-goldlight transition">Ontdek de webshop</a>
+        <a href="#configurator" class="border border-cream/50 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">Stel je eigen doos samen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP strip -->
+  <section class="bg-cacao text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-champagne italic">Vers</p><p class="mt-1 text-cream/65">Geproduceerd op bestelling</p></div>
+      <div><p class="font-serif text-2xl text-champagne italic">Op maat</p><p class="mt-1 text-cream/65">Geen minimumbestelling</p></div>
+      <div><p class="font-serif text-2xl text-champagne italic">Cadeau</p><p class="mt-1 text-cream/65">Geschenkdozen op maat</p></div>
+      <div><p class="font-serif text-2xl text-champagne italic">BE</p><p class="mt-1 text-cream/65">Afhaal &amp; verzending</p></div>
+    </div>
+  </section>
+
+  <!-- Webshop highlight -->
+  <section id="shop" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-gold font-600 tracking-[0.22em] uppercase text-xs mb-4">Nieuw online</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight italic">Jouw pralines,<br />tot aan de deur.</h2>
+        <p class="text-mocha/80 text-lg mt-5 leading-relaxed max-w-md">
+          Bestel geschenkdozen, seizoenscollecties en pralines op maat — wij produceren vers en versturen zorgvuldig ingepakt naar elk adres in België.
+        </p>
+        <ul class="mt-7 space-y-3 text-mocha">
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Verzending in heel België &amp; afhaling in Ekeren</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Geschenkdozen — gepersonaliseerd op maat</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Veilig betalen met Bancontact, Visa &amp; PayPal</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Seizoenscollecties: Valentijn, Pasen, Moederdag, Kerst</li>
+        </ul>
+        <a href="#assortiment" class="inline-flex items-center gap-2 mt-9 bg-cacao text-cream font-700 px-7 py-3.5 rounded-full hover:bg-mocha transition">
+          Start je bestelling
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand">
+          <img src="https://images.unsplash.com/photo-1582201942988-13e60e4556ee?auto=format&fit=crop&w=800&q=80" alt="Ambachtelijke pralines" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand mt-8">
+          <img src="https://images.unsplash.com/photo-1606312619070-d48b0c7ce341?auto=format&fit=crop&w=800&q=80" alt="Chocolade geschenkdoos" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assortiment grid -->
+  <section id="assortiment" class="bg-sand/50 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-gold font-600 tracking-[0.22em] uppercase text-xs mb-3">Ons assortiment</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-600 italic">Ambacht in elke hap</h2>
+        </div>
+        <p class="text-mocha/70 max-w-sm">Van klassieke pralines tot seizoensgebonden creaties — altijd vers, altijd op maat.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <article class="fade-up group rounded-2xl overflow-hidden bg-cacao text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=800&q=80" alt="Pralines" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-cacao via-cacao/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600 italic">Pralines</h3>
+            <p class="text-cream/75 text-sm mt-1">Melk, puur &amp; wit — koffie, framboos, sinaasappel en meer.</p>
+          </div>
+        </article>
+
+        <article class="fade-up group rounded-2xl overflow-hidden bg-cacao text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1606312619070-d48b0c7ce341?auto=format&fit=crop&w=800&q=80" alt="Geschenkdozen" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-cacao via-cacao/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600 italic">Geschenkdozen</h3>
+            <p class="text-cream/75 text-sm mt-1">Elegant verpakt — perfect voor elk cadeau-moment.</p>
+          </div>
+        </article>
+
+        <article class="fade-up group rounded-2xl overflow-hidden bg-cacao text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=800&q=80" alt="Seizoenscollecties" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-cacao via-cacao/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600 italic">Seizoenscollecties</h3>
+            <p class="text-cream/75 text-sm mt-1">Valentijn, Pasen, Moederdag &amp; Kerstmis — telkens nieuw.</p>
+          </div>
+        </article>
+
+        <article class="fade-up group rounded-2xl overflow-hidden bg-cacao text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=800&q=80" alt="Truffels en ganaches" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-cacao via-cacao/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600 italic">Truffels &amp; ganaches</h3>
+            <p class="text-cream/75 text-sm mt-1">Romige binnenkanten, dun chocoladeschelletje.</p>
+          </div>
+        </article>
+
+        <article class="fade-up group rounded-2xl overflow-hidden bg-cacao text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1575377427642-087cf684ad8c?auto=format&fit=crop&w=800&q=80" alt="B2B en horeca" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-cacao via-cacao/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600 italic">B2B &amp; horeca</h3>
+            <p class="text-cream/75 text-sm mt-1">Voor speciaalzaken, restaurants &amp; bakkerijen — op maat.</p>
+          </div>
+        </article>
+
+        <article class="fade-up group rounded-2xl overflow-hidden bg-gold text-cacao relative aspect-[4/5] flex items-center justify-center text-center p-6">
+          <div>
+            <p class="font-serif text-3xl font-600 italic leading-tight">Stel je eigen<br />doos samen</p>
+            <p class="text-cacao/80 text-sm mt-3">Kies je pralines, formaat en verpakking — wij maken het vers voor jou.</p>
+            <a href="#configurator" class="inline-block mt-5 text-cacao font-700 ug">Probeer de configurator →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="flex items-end justify-between mb-10">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 italic">Klassiekers van het atelier</h2>
+      <a href="#shop" class="hidden sm:inline text-gold font-600 ug">Alles bekijken →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="fade-up box-hover rounded-2xl bg-white p-3 shadow-sm">
+        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
+          <img src="https://images.unsplash.com/photo-1582201942988-13e60e4556ee?auto=format&fit=crop&w=700&q=80" alt="Gemengde pralinedoos 12 stuks" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-700 uppercase tracking-wider">Bestseller</p>
+          <h3 class="font-serif text-xl font-600 italic mt-1">Gemengde pralinedoos — 12 stuks</h3>
+          <p class="text-mocha/60 text-sm mt-1">Een selectie klassiekers: koffie, framboos, sinaasappel, advocaat.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="font-700 text-lg">€ 14,50 <span class="text-sm text-mocha/45 font-400">/ doos</span></span>
+            <button class="bg-cacao text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-mocha transition">In mandje</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-up box-hover rounded-2xl bg-white p-3 shadow-sm">
+        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
+          <img src="https://images.unsplash.com/photo-1606312619070-d48b0c7ce341?auto=format&fit=crop&w=700&q=80" alt="Luxe geschenkdoos 24 stuks" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-700 uppercase tracking-wider">Cadeau-favoriet</p>
+          <h3 class="font-serif text-xl font-600 italic mt-1">Luxe geschenkdoos — 24 stuks</h3>
+          <p class="text-mocha/60 text-sm mt-1">Stijlvol verpakt, met lint en gepersonaliseerde kaart.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="font-700 text-lg">€ 27,50 <span class="text-sm text-mocha/45 font-400">/ doos</span></span>
+            <button class="bg-cacao text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-mocha transition">In mandje</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-up box-hover rounded-2xl bg-white p-3 shadow-sm">
+        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
+          <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=700&q=80" alt="Paasei chocolade collectie" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-700 uppercase tracking-wider">Seizoen</p>
+          <h3 class="font-serif text-xl font-600 italic mt-1">Paasei — gevuld met pralines</h3>
+          <p class="text-mocha/60 text-sm mt-1">Handgeschilderd chocolade-ei, gevuld naar keuze.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="font-700 text-lg">€ 22,00 <span class="text-sm text-mocha/45 font-400">/ stuk</span></span>
+            <button class="bg-cacao text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-mocha transition">In mandje</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <p class="text-center text-xs text-mocha/40 mt-6">Voorbeeldproducten &amp; prijzen ter illustratie van de webshop.</p>
+  </section>
+
+  <!-- Configurator teaser -->
+  <section id="configurator" class="bg-cacao text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=1000&q=80" alt="Praline-assortiment voor configurator" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+      </div>
+      <div class="order-1 lg:order-2 fade-up">
+        <p class="text-champagne font-600 tracking-[0.22em] uppercase text-xs mb-4">Doe-het-zelf doos</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight italic">Stel je eigen<br />pralinedoos samen.</h2>
+        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
+          Kies formaat (12, 24 of 48 stuks), selecteer per smaak, voeg een gepersonaliseerde kaart toe — wij produceren vers en sturen op naar jouw gekozen datum.
+        </p>
+        <ul class="mt-6 space-y-2 text-cream/75 text-sm">
+          <li class="flex items-center gap-2"><span class="text-champagne">✦</span> Meer dan 15 smaken naar keuze</li>
+          <li class="flex items-center gap-2"><span class="text-champagne">✦</span> Gepersonaliseerde kaart bij elke doos</li>
+          <li class="flex items-center gap-2"><span class="text-champagne">✦</span> Levering op uw gekozen datum</li>
+        </ul>
+        <a href="#shop" class="inline-flex items-center gap-2 mt-9 bg-gold text-cacao font-700 px-7 py-3.5 rounded-full hover:bg-goldlight transition">
+          Configurator starten
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story / vakmanschap -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-14 items-center">
+    <div class="fade-up">
+      <p class="text-gold font-600 tracking-[0.22em] uppercase text-xs mb-4">Ons verhaal</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-600 italic leading-tight">Échte kwaliteit<br />vraagt twee dingen.</h2>
+      <p class="text-mocha/75 text-lg mt-6 leading-relaxed">
+        Verse grondstoffen en onversneden vakmanschap — dat is wat Johan Mertens al meer dan 40 jaar in zijn atelier in Ekeren combineert. Geen fabriekslijnen, geen confectie. Elk pralineetje wordt op bestelling gemaakt, voor de perfecte smaak en versheid.
+      </p>
+      <p class="text-mocha/75 text-lg mt-4 leading-relaxed">
+        La Praline levert ook aan speciaalzaken, restaurants en bakkerijen — altijd op maat, altijd zonder minimum. Want kwaliteit is niet onderhandelbaar.
+      </p>
+      <div class="mt-9 flex gap-8">
+        <div><p class="font-serif text-4xl text-gold italic font-600">40+</p><p class="text-mocha/60 text-sm mt-1">jaar vakmanschap</p></div>
+        <div><p class="font-serif text-4xl text-gold italic font-600">15+</p><p class="text-mocha/60 text-sm mt-1">pralinesmaken</p></div>
+        <div><p class="font-serif text-4xl text-gold italic font-600">0</p><p class="text-mocha/60 text-sm mt-1">minimumbestelling</p></div>
+      </div>
+    </div>
+    <div class="rounded-3xl overflow-hidden aspect-[4/3] bg-sand">
+      <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=1000&q=80" alt="Chocolatier aan het werk" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+    </div>
+  </section>
+
+  <!-- Visit / map -->
+  <section id="bezoek" class="bg-petal/60 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+      <div class="fade-up">
+        <p class="text-gold font-600 tracking-[0.22em] uppercase text-xs mb-4">Bezoek ons</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 italic">Welkom in het atelier</h2>
+        <p class="text-mocha/70 text-lg mt-5 max-w-md">Kom proeven op onze locatie in Ekeren, of bestel online — wij bezorgen in heel België.</p>
+        <dl class="mt-9 space-y-5 text-mocha">
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            </span>
+            <div><dt class="font-600">Adres</dt><dd class="text-mocha/70">Isabellalei 87, 2180 Ekeren</dd></div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </span>
+            <div><dt class="font-600">Openingsuren</dt><dd class="text-mocha/70">Op afspraak &amp; afhaling op aanvraag</dd></div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <div><dt class="font-600">Telefoon</dt><dd class="text-mocha/70">03 665 41 88</dd></div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            <div><dt class="font-600">E-mail</dt><dd class="text-mocha/70">info@la-praline.be <span class="text-mocha/40 text-xs">(voorstel — professioneel domeinadres)</span></dd></div>
+          </div>
+        </dl>
+        <a href="#shop" class="inline-block mt-9 bg-cacao text-cream font-700 px-7 py-3.5 rounded-full hover:bg-mocha transition">Of bestel online →</a>
+      </div>
+      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-sand shadow-sm">
+        <iframe
+          title="Kaart La Praline, Isabellalei 87, 2180 Ekeren"
+          class="w-full h-full min-h-[360px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.408%2C51.280%2C4.425%2C51.297&layer=mapnik&marker=51.2882%2C4.4165">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter / GDPR -->
+  <section class="bg-gold/15">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 italic">Blijf op de hoogte</h2>
+      <p class="text-mocha/70 mt-3">Seizoenscollecties, nieuwe smaken en exclusieve acties — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input id="nl-email" name="email" type="email" autocomplete="email" required placeholder="jouw@email.be"
+          class="flex-1 px-5 py-3 rounded-full border border-mocha/20 bg-cream focus:outline-none focus:ring-2 focus:ring-gold" />
+        <button class="bg-cacao text-cream font-700 px-7 py-3 rounded-full hover:bg-mocha transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-mocha/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-conform.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-cacao text-cream/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-cream font-700 italic">La<span class="text-champagne">Praline</span></p>
+        <p class="text-cream/55 text-sm mt-3 max-w-xs">Ambachtelijke chocolatier in Ekeren — vers, op maat, since 1985.</p>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Winkel</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#assortiment" class="hover:text-champagne transition">Assortiment</a></li>
+          <li><a href="#shop"        class="hover:text-champagne transition">Webshop</a></li>
+          <li><a href="#configurator" class="hover:text-champagne transition">Doe-het-zelf doos</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Info</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#bezoek" class="hover:text-champagne transition">Openingsuren</a></li>
+          <li><a href="#bezoek" class="hover:text-champagne transition">Contact</a></li>
+          <li><a href="#shop"   class="hover:text-champagne transition">B2B &amp; horeca</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Contact</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li>Isabellalei 87, 2180 Ekeren</li>
+          <li>03 665 41 88</li>
+          <li>info@la-praline.be</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40">
+        <p>© 2026 La Praline — Johan Mertens. Concept-redesign.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe site &amp; webshop.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Fade-up IntersectionObserver
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1600);
+    }
+
+    // Mobile menu toggle
+    const menuBtn    = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else      mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>

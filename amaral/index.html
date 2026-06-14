@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amaral Beenhouwerij — Ambachtelijke slagerij &amp; Portugese delicatessen in Antwerpen</title>
+  <meta name="description" content="Ambachtelijke slagerij met Portugese specialiteiten in Borgerhout, Antwerpen. Vers vlees, presunto, chouriço, vinho verde en giftable Portugese hampers. Nu ook click-and-collect." />
+  <link rel="canonical" href="https://amaralbeenhouwerij.be/" />
+  <meta name="theme-color" content="#1a3a2a" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Amaral Beenhouwerij" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Amaral Beenhouwerij — Ambachtelijke slagerij &amp; Portugese delicatessen" />
+  <meta property="og:description" content="Vers ambachtelijk vlees én Portugese specialiteiten — presunto, chouriço, vinho verde en giftable hampers. Click-and-collect in Antwerpen." />
+  <meta property="og:url" content="https://amaralbeenhouwerij.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Inline SVG favicon — monogram "AB" -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231a3a2a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='13' fill='%23c9973a' text-anchor='middle'%3EAB%3C/text%3E%3C/svg%3E" />
+  <!-- Local-SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store", "FoodEstablishment"],
+    "name": "Amaral Beenhouwerij",
+    "description": "Ambachtelijke slagerij en Portugese delicatessenwinkel in Antwerpen. Vers vlees, charcuterie, Portugese specialiteiten en giftable hampers.",
+    "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://amaralbeenhouwerij.be/",
+    "telephone": "+3232943254",
+    "email": "beenhouwerijamaralbvba@gmail.com",
+    "servesCuisine": ["Portuguese", "Belgian"],
+    "priceRange": "€€",
+    "areaServed": "BE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Van Maertantstraat 47",
+      "postalCode": "2060",
+      "addressLocality": "Antwerpen",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.2235, "longitude": 4.4280 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "09:00", "closes": "17:00" }
+    ],
+    "vatID": "BE0697933707",
+    "foundingDate": "2018"
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
+          colors: {
+            forest:   '#1a3a2a',
+            forestlt: '#255038',
+            gold:     '#c9973a',
+            goldlt:   '#dba94e',
+            ivory:    '#f5f0e8',
+            parchment:'#ede4d0',
+            bark:     '#3b2e1a',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(26,58,42,.18) 0%, rgba(26,58,42,.52) 50%, rgba(26,58,42,.91) 100%); }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 2px; }
+  </style>
+</head>
+<body class="bg-ivory text-forest font-sans antialiased selection:bg-gold/25">
+
+  <!-- Skip link -->
+  <a href="#bestellen" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-forest focus:text-ivory focus:rounded-full">Naar click-and-collect</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-forest text-ivory text-center text-[13px] tracking-wide py-2 px-4">
+    <span aria-hidden="true">🇵🇹</span> <span class="font-semibold">Nieuw:</span> click-and-collect — bestel online &amp; haal af in de winkel · Van Maertantstraat 47, Antwerpen.
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-ivory/88 backdrop-blur border-b border-forest/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-forest">Amaral<span class="text-gold">·</span></span>
+        <span class="text-[11px] uppercase tracking-[0.22em] text-forest/50 font-600">Beenhouwerij · Antwerpen</span>
+      </a>
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
+        <a href="#bestellen" class="ug">Click &amp; Collect</a>
+        <a href="#assortiment" class="ug">Assortiment</a>
+        <a href="#hampers" class="ug">Cadeaupakketten</a>
+        <a href="#bezoek" class="ug">Bezoek ons</a>
+      </div>
+      <!-- CTA + hamburger -->
+      <div class="flex items-center gap-2">
+        <a href="#bestellen" class="inline-flex items-center gap-2 bg-gold text-forest text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-goldlt transition">
+          Bestel &amp; afhalen
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-forest/15 text-forest hover:bg-forest/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-forest/10 bg-ivory/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#bestellen" class="py-3 border-b border-forest/8">Click &amp; Collect</a>
+        <a href="#assortiment" class="py-3 border-b border-forest/8">Assortiment</a>
+        <a href="#hampers" class="py-3 border-b border-forest/8">Cadeaupakketten</a>
+        <a href="#bezoek" class="py-3">Bezoek ons</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-forest">
+    <img
+      src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=2000&q=80"
+      alt="Ambachtelijk vlees en Portugese charcuterie bij Amaral Beenhouwerij Antwerpen"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-goldlt font-600 tracking-[0.3em] uppercase text-xs mb-5">
+        <span aria-hidden="true">🇵🇹</span> Ambachtelijke slagerij · Portugese specialiteiten · Antwerpen
+      </p>
+      <h1 class="font-serif text-ivory text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
+        Het beste van Portugal,<br />in het hart van Antwerpen.
+      </h1>
+      <p class="text-ivory/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Vers ambachtelijk vlees, presunto, chouriço, pastéis de nata en vinho verde —
+        al sinds 2018 het beste adres voor Portugese kwaliteit in Borgerhout.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#bestellen" class="bg-gold text-forest font-700 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
+          Bestel en haal af
+        </a>
+        <a href="#hampers" class="border border-ivory/45 text-ivory font-600 px-7 py-3.5 rounded-full hover:bg-ivory/10 transition">
+          Cadeaupakketten
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP strip -->
+  <section class="bg-forest text-ivory/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-goldlt">Ambacht</p><p class="mt-1 text-ivory/65">Dagvers gesneden in de winkel</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Portugal</p><p class="mt-1 text-ivory/65">Echte Portugese specialiteiten</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Cadeau</p><p class="mt-1 text-ivory/65">Giftable hampers op bestelling</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Afhaal</p><p class="mt-1 text-ivory/65">Click-and-collect, 7 dagen open</p></div>
+    </div>
+  </section>
+
+  <!-- Click-and-collect / Webshop upsell -->
+  <section id="bestellen" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Nieuw: click &amp; collect</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-forest">
+          Bestel online,<br />haal af in de winkel.
+        </h2>
+        <p class="text-bark/75 text-lg mt-5 leading-relaxed max-w-md">
+          Geen wachtrij, geen stress. Stel uw bestelling samen — vers vlees, charcuterie, Portugese producten of
+          een geschenkpakket — en haal op een tijdstip dat u past af op Van Maertantstraat 47.
+        </p>
+        <ul class="mt-7 space-y-3 text-bark">
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Verse bestellingen klaar bij afhaling</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Portugese hampers — ook per post in heel België</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Betalen in de winkel of online (Bancontact, Visa)</li>
+        </ul>
+        <a href="#hampers" class="inline-flex items-center gap-2 mt-9 bg-forest text-ivory font-600 px-7 py-3.5 rounded-full hover:bg-forestlt transition">
+          Bekijk de cadeaupakketten
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=800&q=80"
+            alt="Verse charcuterie plank"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment mt-8">
+          <img
+            src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80"
+            alt="Portugese wijn vinho verde"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assortiment grid -->
+  <section id="assortiment" class="bg-parchment/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-forest">Van slagerij tot delicatessen</h2>
+        </div>
+        <p class="text-bark/65 max-w-sm">Ambachtelijk vlees naast echte Portugese smaken — alles dagvers in de winkel.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Vers vlees -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-forest text-ivory relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1551135049-8a33b5883817?auto=format&fit=crop&w=800&q=80"
+            alt="Vers ambachtelijk vlees"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-forest via-forest/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Vers vlees</h3>
+            <p class="text-ivory/75 text-sm mt-1">Varken, rund &amp; lam — dagvers gesneden op maat.</p>
+          </div>
+        </article>
+        <!-- Charcuterie -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-forest text-ivory relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=800&q=80"
+            alt="Portugese charcuterie presunto chouriço"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-forest via-forest/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Charcuterie</h3>
+            <p class="text-ivory/75 text-sm mt-1">Presunto, chouriço, linguiça &amp; paio.</p>
+          </div>
+        </article>
+        <!-- Portugese delicatessen -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-forest text-ivory relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80"
+            alt="Portugese delicatessen pasteis de nata"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-forest via-forest/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Portugese delicatessen</h3>
+            <p class="text-ivory/75 text-sm mt-1">Pastéis de nata, bacalhau, sardines &amp; pasta.</p>
+          </div>
+        </article>
+        <!-- Wijnen -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-forest text-ivory relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80"
+            alt="Portugese wijn vinho verde"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-forest via-forest/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Portugese wijnen</h3>
+            <p class="text-ivory/75 text-sm mt-1">Vinho verde, Douro-rode, port &amp; aguardente.</p>
+          </div>
+        </article>
+        <!-- Braziliaans -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-forest text-ivory relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?auto=format&fit=crop&w=800&q=80"
+            alt="Braziliaanse specialiteiten"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-forest via-forest/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Braziliaanse hoek</h3>
+            <p class="text-ivory/75 text-sm mt-1">Carne seca, farofa, chimichurri &amp; meer.</p>
+          </div>
+        </article>
+        <!-- Cadeaupakketten CTA card -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-gold text-forest relative aspect-[4/5] flex items-center justify-center text-center p-6">
+          <div>
+            <p class="font-serif text-2xl font-600">Cadeau&shy;pakketten</p>
+            <p class="text-forest/80 text-sm mt-2">Stel een Portugese hamper samen — ideaal voor een verjaardags- of bedrijfscadeau.</p>
+            <a href="#hampers" class="inline-block mt-5 text-forest font-700 ug">Bekijk de hampers →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products (illustratief) -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="flex items-end justify-between mb-10">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-forest">Onze meest gevraagde producten</h2>
+      <a href="#bestellen" class="hidden sm:inline text-gold font-600 ug">Alles bestellen →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Product 1 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=700&q=80"
+            alt="Presunto Ibérico (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Bestseller</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-forest">Presunto Ibérico</h3>
+          <p class="text-bark/60 text-sm mt-1">Gedroogde Iberische ham, per 200g vakkundig gesneden.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="font-600 text-lg text-forest">€ 12,50 <span class="text-sm text-bark/45 font-400">/ 200g</span></span>
+            <button class="bg-forest text-ivory text-sm font-600 px-4 py-2 rounded-full hover:bg-forestlt transition">Toevoegen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80"
+            alt="Pastéis de nata (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Huisbereiding</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-forest">Pastéis de nata</h3>
+          <p class="text-bark/60 text-sm mt-1">Authentieke Portugese custardtaartjes, per 6.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="font-600 text-lg text-forest">€ 7,90 <span class="text-sm text-bark/45 font-400">/ 6 stuks</span></span>
+            <button class="bg-forest text-ivory text-sm font-600 px-4 py-2 rounded-full hover:bg-forestlt transition">Toevoegen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=700&q=80"
+            alt="Vinho verde (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Wijn</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-forest">Vinho Verde</h3>
+          <p class="text-bark/60 text-sm mt-1">Fris en licht, rechtstreeks uit Noord-Portugal.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="font-600 text-lg text-forest">€ 9,90 <span class="text-sm text-bark/45 font-400">/ fles</span></span>
+            <button class="bg-forest text-ivory text-sm font-600 px-4 py-2 rounded-full hover:bg-forestlt transition">Toevoegen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs text-bark/40 mt-6">Voorbeeldproducten &amp; prijzen ter illustratie van de click-and-collect webshop.</p>
+  </section>
+
+  <!-- Cadeaupakketten / Hampers (the differentiator) -->
+  <section id="hampers" class="bg-forest text-ivory py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img
+          src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=1000&q=80"
+          alt="Portugese hamper cadeaupakket"
+          loading="lazy" decoding="async"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="order-1 lg:order-2 fade-up">
+        <p class="text-goldlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Giftable hampers</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
+          Een stukje Portugal<br />als cadeau.
+        </h2>
+        <p class="text-ivory/80 text-lg mt-6 leading-relaxed max-w-md">
+          Verjaardagsfeest, bedrijfsevent of sinterklaasactie? Wij stellen een giftable Portugese hamper samen:
+          presunto, chouriço, pastéis de nata, vinho verde en meer —
+          mooi verpakt en klaar om te geven.
+        </p>
+        <ul class="mt-6 space-y-3 text-ivory/85">
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Samenstelling op maat (allergieën, budget, thema)</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Afhalen in de winkel of verzending in België</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Bedrijfs- en groepsbestellingen welkom</li>
+        </ul>
+        <a href="#bezoek" class="inline-flex items-center gap-2 mt-8 bg-gold text-forest font-700 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
+          Vraag een hamper aan
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story / Sobre nós -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="fade-up">
+      <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-forest">Ambacht en Portugal,<br />samen in Antwerpen.</h2>
+      <p class="text-bark/70 text-lg mt-6 leading-relaxed">
+        Amaral Beenhouwerij opende in 2018 zijn deuren op Van Maertantstraat 47 in het hart van Borgerhout.
+        Wat ons onderscheidt? We combineren het dagelijkse vakmanschap van een echte ambachtelijke slagerij
+        met een uniek Portugees delicatessenassortiment.
+      </p>
+      <p class="text-bark/70 text-lg mt-4 leading-relaxed">
+        Of u nu komt voor een vers stuk côte à l'os, een plank presunto voor het feest,
+        een doos pastéis de nata of een fles vinho verde — bij Amaral vindt u kwaliteit
+        die u nergens anders in de buurt vindt.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-6">
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">2018</p>
+          <p class="text-bark/65 text-sm mt-1">Opgericht</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">7</p>
+          <p class="text-bark/65 text-sm mt-1">Dagen per week open</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">100%</p>
+          <p class="text-bark/65 text-sm mt-1">Ambachtelijk vlees</p>
+        </div>
+      </div>
+    </div>
+    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
+      <img
+        src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?auto=format&fit=crop&w=1000&q=80"
+        alt="Ambachtelijke slager aan het werk"
+        loading="lazy" decoding="async"
+        class="w-full h-full object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Bezoek + kaart -->
+  <section id="bezoek" class="bg-parchment/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+      <div class="fade-up">
+        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-forest">Welkom in de winkel</h2>
+        <p class="text-bark/70 text-lg mt-5 max-w-md">
+          Kom proeven en kiezen op Van Maertantstraat 47 in Borgerhout, vlakbij de Turnhoutsebaan.
+        </p>
+        <dl class="mt-9 space-y-5 text-bark">
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📍</span>
+            <div>
+              <dt class="font-600 text-forest">Adres</dt>
+              <dd class="text-bark/70">Van Maertantstraat 47, 2060 Antwerpen (Borgerhout)</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🕑</span>
+            <div>
+              <dt class="font-600 text-forest">Openingsuren</dt>
+              <dd class="text-bark/70">Di–Za: 09:00–19:00 · Zo: 09:00–17:00 · Ma: gesloten</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📞</span>
+            <div>
+              <dt class="font-600 text-forest">Telefoon</dt>
+              <dd class="text-bark/70"><a href="tel:+3232943254" class="ug">03 294 32 54</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">✉️</span>
+            <div>
+              <dt class="font-600 text-forest">E-mail</dt>
+              <dd class="text-bark/70">
+                beenhouwerijamaralbvba@gmail.com
+                <span class="text-bark/40 text-sm ml-1">(voorstel: info@amaralbeenhouwerij.be)</span>
+              </dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">💳</span>
+            <div>
+              <dt class="font-600 text-forest">Betaalmogelijkheden</dt>
+              <dd class="text-bark/70">Cash · Bancontact · Maaltijdcheques · Visa</dd>
+            </div>
+          </div>
+        </dl>
+        <a href="#bestellen" class="inline-block mt-9 bg-forest text-ivory font-600 px-7 py-3.5 rounded-full hover:bg-forestlt transition">
+          Of bestel online →
+        </a>
+      </div>
+      <!-- OpenStreetMap embed — Van Maertantstraat 47, 2060 Antwerpen (~51.2235, 4.4280) -->
+      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-parchment shadow-sm">
+        <iframe
+          title="Kaart Amaral Beenhouwerij — Van Maertantstraat 47, 2060 Antwerpen"
+          class="w-full h-full min-h-[360px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.420%2C51.219%2C4.436%2C51.228&layer=mapnik&marker=51.2235%2C4.4280"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- GDPR Newsletter -->
+  <section class="bg-gold/15">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-forest">Blijf op de hoogte</h2>
+      <p class="text-bark/70 mt-3">Nieuwe Portugese seizoensproducten, feestdagsaanbiedingen en hampers — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input
+          id="nl-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          placeholder="jouw@email.be"
+          class="flex-1 px-5 py-3 rounded-full border border-forest/20 bg-ivory focus:outline-none focus:ring-2 focus:ring-gold"
+        />
+        <button class="bg-forest text-ivory font-600 px-7 py-3 rounded-full hover:bg-forestlt transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-bark/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-forest text-ivory/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-ivory font-700">Amaral<span class="text-gold">·</span></p>
+        <p class="text-ivory/55 text-sm mt-1">Beenhouwerij</p>
+        <p class="text-ivory/55 text-sm mt-3 max-w-xs">Ambachtelijke slagerij &amp; Portugese delicatessen in Borgerhout, Antwerpen. Opgericht 2018.</p>
+      </div>
+      <div>
+        <p class="font-600 text-ivory mb-3">Winkel</p>
+        <ul class="space-y-2 text-sm text-ivory/60">
+          <li><a href="#assortiment" class="hover:text-goldlt">Assortiment</a></li>
+          <li><a href="#bestellen" class="hover:text-goldlt">Click &amp; Collect</a></li>
+          <li><a href="#hampers" class="hover:text-goldlt">Cadeaupakketten</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-ivory mb-3">Info</p>
+        <ul class="space-y-2 text-sm text-ivory/60">
+          <li><a href="#bezoek" class="hover:text-goldlt">Openingsuren</a></li>
+          <li><a href="#bezoek" class="hover:text-goldlt">Contact</a></li>
+          <li><a href="#top" class="hover:text-goldlt">Ons verhaal</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-ivory mb-3">Contact</p>
+        <ul class="space-y-2 text-sm text-ivory/60">
+          <li>Van Maertantstraat 47</li>
+          <li>2060 Antwerpen (Borgerhout)</li>
+          <li><a href="tel:+3232943254" class="hover:text-goldlt">03 294 32 54</a></li>
+          <li>beenhouwerijamaralbvba@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-ivory/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-ivory/40">
+        <p>© 2026 Amaral Beenhouwerij. Concept-redesign.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; webshop.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Fade-up IntersectionObserver
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1600);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>
