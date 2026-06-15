@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Gourmand — Épicerie fine in Mechelen · koffie, olijfolie, chocolade &amp; cadeaupakketten</title>
+  <meta name="description" content="Fijne kruidenierswaren in hartje Mechelen: vers gebrande koffie, thee, olijfolie, chocolade, wijn en specerijen. Nu met online webshop, checkout en samengestelde cadeaupakketten." />
+  <link rel="canonical" href="https://cafe-gourmand.eu/" />
+  <meta name="theme-color" content="#3b2a20" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Café Gourmand" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Café Gourmand — Épicerie fine in Mechelen" />
+  <meta property="og:description" content="Vers gebrande koffie, olijfolie, chocolade, wijn &amp; specerijen — nu met echte webshop, Bancontact-checkout en giftable cadeaupakketten." />
+  <meta property="og:url" content="https://cafe-gourmand.eu/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Inline SVG favicon — monogram "CG" -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233b2a20'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%237d8a5b' text-anchor='middle'%3ECG%3C/text%3E%3C/svg%3E" />
+  <!-- Local-SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store", "FoodEstablishment"],
+    "name": "Café Gourmand",
+    "description": "Épicerie fine en fijne kruidenierswaren in Mechelen. Vers gebrande koffie, thee, olijfolie, chocolade, wijn, specerijen en samengestelde cadeaupakketten.",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://cafe-gourmand.eu/",
+    "telephone": "+32488206224",
+    "email": "contact@cafe-gourmand.eu",
+    "servesCuisine": ["Gourmet", "European"],
+    "priceRange": "€€",
+    "areaServed": "BE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Keizerstraat 21",
+      "postalCode": "2800",
+      "addressLocality": "Mechelen",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.0281, "longitude": 4.4806 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "10:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "10:00", "closes": "13:00" }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
+          colors: {
+            espresso:   '#3b2a20',
+            espressolt: '#4f3a2c',
+            olive:      '#7d8a5b',
+            olivelt:    '#94a070',
+            cream:      '#f6f1e7',
+            sand:       '#ece2cf',
+            cocoa:      '#2c1f17',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(59,42,32,.18) 0%, rgba(59,42,32,.52) 50%, rgba(59,42,32,.91) 100%); }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 2px; }
+  </style>
+</head>
+<body class="bg-cream text-espresso font-sans antialiased selection:bg-olive/25">
+
+  <!-- Skip link -->
+  <a href="#webshop" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-espresso focus:text-cream focus:rounded-full">Naar de webshop</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-espresso text-cream text-center text-[13px] tracking-wide py-2 px-4">
+    <span aria-hidden="true">☕</span> <span class="font-semibold">Nieuw:</span> online bestellen mét checkout — betaal veilig met Bancontact &amp; ontvang thuis · Keizerstraat 21, Mechelen.
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-espresso/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-espresso">Café Gourmand<span class="text-olive">·</span></span>
+        <span class="hidden sm:inline text-[11px] uppercase tracking-[0.22em] text-espresso/50 font-600">Épicerie fine · Mechelen</span>
+      </a>
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
+        <a href="#webshop" class="ug">Webshop</a>
+        <a href="#assortiment" class="ug">Assortiment</a>
+        <a href="#cadeaupakketten" class="ug">Cadeaupakketten</a>
+        <a href="#bezoek" class="ug">Bezoek ons</a>
+      </div>
+      <!-- CTA + hamburger -->
+      <div class="flex items-center gap-2">
+        <a href="#webshop" class="inline-flex items-center gap-2 bg-olive text-espresso text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-olivelt transition">
+          Online bestellen
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-espresso/15 text-espresso hover:bg-espresso/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-espresso/10 bg-cream/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#webshop" class="py-3 border-b border-espresso/8">Webshop</a>
+        <a href="#assortiment" class="py-3 border-b border-espresso/8">Assortiment</a>
+        <a href="#cadeaupakketten" class="py-3 border-b border-espresso/8">Cadeaupakketten</a>
+        <a href="#bezoek" class="py-3">Bezoek ons</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-espresso">
+    <img
+      src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=2000&q=80"
+      alt="Vers gebrande koffie en fijne delicatessen bij Café Gourmand in Mechelen"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-olivelt font-600 tracking-[0.3em] uppercase text-xs mb-5">
+        <span aria-hidden="true">☕</span> Épicerie fine · koffie · olijfolie · chocolade · Mechelen
+      </p>
+      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
+        Fijne smaken uit Mechelen,<br />nu ook met één klik besteld.
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Vers gebrande koffie, eerste-persing olijfolie, ambachtelijke chocolade, wijn en specerijen —
+        zorgvuldig geselecteerd in onze winkel op de Keizerstraat. Eindelijk te koop in een échte webshop.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#webshop" class="bg-olive text-espresso font-700 px-7 py-3.5 rounded-full hover:bg-olivelt transition">
+          Bestel online
+        </a>
+        <a href="#cadeaupakketten" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
+          Cadeaupakketten
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP strip -->
+  <section class="bg-espresso text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-olivelt">Vers gebrand</p><p class="mt-1 text-cream/65">Koffie, op bestelling gebrand</p></div>
+      <div><p class="font-serif text-2xl text-olivelt">Geselecteerd</p><p class="mt-1 text-cream/65">Olijfolie, chocolade &amp; wijn met zorg gekozen</p></div>
+      <div><p class="font-serif text-2xl text-olivelt">Cadeauklaar</p><p class="mt-1 text-cream/65">Samengestelde pakketten om te geven</p></div>
+      <div><p class="font-serif text-2xl text-olivelt">Checkout</p><p class="mt-1 text-cream/65">Veilig betalen met Bancontact</p></div>
+    </div>
+  </section>
+
+  <!-- Webshop / online bestellen -->
+  <section id="webshop" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-olive font-600 tracking-[0.2em] uppercase text-xs mb-4">Nieuw: webshop met checkout</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-espresso">
+          Eindelijk een catalogus<br />waar u óók kunt bestellen.
+        </h2>
+        <p class="text-cocoa/75 text-lg mt-5 leading-relaxed max-w-md">
+          Vandaag kan men onze producten online bekijken — maar niet kopen. Geen winkelmandje, geen kassa.
+          Dit concept toont hoe Café Gourmand mét een echte webshop werkt: kies, leg in het mandje en reken af.
+        </p>
+        <ul class="mt-7 space-y-3 text-cocoa">
+          <li class="flex items-center gap-3"><span class="text-olive font-700">✓</span> Winkelmandje &amp; veilige checkout (Bancontact, Mollie)</li>
+          <li class="flex items-center gap-3"><span class="text-olive font-700">✓</span> Afhalen in de winkel óf verzending in heel België</li>
+          <li class="flex items-center gap-3"><span class="text-olive font-700">✓</span> Abonnement op vers gebrande koffie — automatisch geleverd</li>
+        </ul>
+        <a href="#cadeaupakketten" class="inline-flex items-center gap-2 mt-9 bg-espresso text-cream font-600 px-7 py-3.5 rounded-full hover:bg-espressolt transition">
+          Bekijk de cadeaupakketten
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand">
+          <img
+            src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=800&q=80"
+            alt="Vers gebrande koffiebonen"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand mt-8">
+          <img
+            src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80"
+            alt="Olijfolie en fijne delicatessen"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assortiment grid -->
+  <section id="assortiment" class="bg-sand/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-olive font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-espresso">Een huis vol fijne smaken</h2>
+        </div>
+        <p class="text-cocoa/65 max-w-sm">Zes categorieën, zorgvuldig geselecteerd — straks allemaal te bestellen via de webshop.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Koffie -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80"
+            alt="Vers gebrande koffie"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Koffie</h3>
+            <p class="text-cream/75 text-sm mt-1">Single origin &amp; blends, vers gebrand op bestelling.</p>
+          </div>
+        </article>
+        <!-- Thee -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&w=800&q=80"
+            alt="Losse thee en kruidenthee"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Thee</h3>
+            <p class="text-cream/75 text-sm mt-1">Losse zwarte, groene &amp; kruidenthee per gewicht.</p>
+          </div>
+        </article>
+        <!-- Olijfolie -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80"
+            alt="Eerste-persing olijfolie"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Olijfolie</h3>
+            <p class="text-cream/75 text-sm mt-1">Extra vergine, eerste persing — mediterrane domeinen.</p>
+          </div>
+        </article>
+        <!-- Chocolade -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=800&q=80"
+            alt="Ambachtelijke chocolade"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Chocolade</h3>
+            <p class="text-cream/75 text-sm mt-1">Pure tabletten, pralines &amp; bean-to-bar selecties.</p>
+          </div>
+        </article>
+        <!-- Wijn -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80"
+            alt="Geselecteerde wijnen"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Wijn</h3>
+            <p class="text-cream/75 text-sm mt-1">Een kleine, persoonlijke selectie van huiswijnen.</p>
+          </div>
+        </article>
+        <!-- Specerijen -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80"
+            alt="Specerijen en kruiden"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Specerijen</h3>
+            <p class="text-cream/75 text-sm mt-1">Verse kruiden, peper, zout &amp; mengelingen per zakje.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products (illustratief) -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="flex items-end justify-between mb-10">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-espresso">Een greep uit het assortiment</h2>
+      <a href="#webshop" class="hidden sm:inline text-olive font-600 ug">Alles bestellen →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Product 1 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
+          <img
+            src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=700&q=80"
+            alt="Vers gebrande koffie (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-olive font-600 uppercase tracking-wider">Vers gebrand</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-espresso">Huisblend espresso</h3>
+          <p class="text-cocoa/60 text-sm mt-1">Volle, ronde blend — hele bonen of gemalen op maat.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-cocoa/50 text-sm font-500">Prijs in de webshop</span>
+            <button class="bg-espresso text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-espressolt transition">In mandje</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
+          <img
+            src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=700&q=80"
+            alt="Olijfolie extra vergine (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-olive font-600 uppercase tracking-wider">Eerste persing</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-espresso">Olijfolie extra vergine</h3>
+          <p class="text-cocoa/60 text-sm mt-1">Fruitig en peperig, van één mediterraan domein.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-cocoa/50 text-sm font-500">Prijs in de webshop</span>
+            <button class="bg-espresso text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-espressolt transition">In mandje</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
+          <img
+            src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=700&q=80"
+            alt="Ambachtelijke chocolade (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-olive font-600 uppercase tracking-wider">Bean-to-bar</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-espresso">Pure chocoladetablet</h3>
+          <p class="text-cocoa/60 text-sm mt-1">Intense, ambachtelijke chocolade van één oorsprong.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-cocoa/50 text-sm font-500">Prijs in de webshop</span>
+            <button class="bg-espresso text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-espressolt transition">In mandje</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs text-cocoa/40 mt-6">Voorbeeldproducten ter illustratie van de webshop met winkelmandje &amp; checkout. Prijzen worden samen met u bepaald.</p>
+  </section>
+
+  <!-- Cadeaupakketten / Gift hampers (the differentiator) -->
+  <section id="cadeaupakketten" class="bg-espresso text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img
+          src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=1000&q=80"
+          alt="Samengesteld cadeaupakket met koffie, olijfolie en chocolade"
+          loading="lazy" decoding="async"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="order-1 lg:order-2 fade-up">
+        <p class="text-olivelt font-600 tracking-[0.2em] uppercase text-xs mb-4">Giftable cadeaupakketten</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
+          Fijne smaken,<br />mooi verpakt om te geven.
+        </h2>
+        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
+          Een verjaardag, een bedankje of een eindejaarsgeschenk voor het bedrijf? Wij stellen een cadeaupakket
+          samen: vers gebrande koffie met olijfolie en chocolade, of uw eigen combinatie — verzorgd ingepakt
+          en klaar om weg te geven.
+        </p>
+        <ul class="mt-6 space-y-3 text-cream/85">
+          <li class="flex items-center gap-3"><span class="text-olive font-700">✓</span> Combineer koffie + olijfolie + chocolade naar wens</li>
+          <li class="flex items-center gap-3"><span class="text-olive font-700">✓</span> Afhalen in de winkel of verzending in heel België</li>
+          <li class="flex items-center gap-3"><span class="text-olive font-700">✓</span> Bedrijfs- en groepsbestellingen welkom</li>
+        </ul>
+        <a href="#bezoek" class="inline-flex items-center gap-2 mt-8 bg-olive text-espresso font-700 px-7 py-3.5 rounded-full hover:bg-olivelt transition">
+          Stel een pakket samen
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story / Ons verhaal -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="fade-up">
+      <p class="text-olive font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-espresso">Een épicerie fine<br />in hartje Mechelen.</h2>
+      <p class="text-cocoa/70 text-lg mt-6 leading-relaxed">
+        Café Gourmand is een fijne kruidenierszaak op de Keizerstraat 21, op wandelafstand van de Grote Markt.
+        Bij ons draait alles om smaak: vers gebrande koffie, losse thee, eerste-persing olijfolie,
+        ambachtelijke chocolade, een persoonlijke wijnselectie en geurige specerijen.
+      </p>
+      <p class="text-cocoa/70 text-lg mt-4 leading-relaxed">
+        Onze klanten kennen ons al voor het bladeren door de catalogus — alleen kon men online nog niets bestellen.
+        Met een echte webshop, een veilige checkout en samengestelde cadeaupakketten brengen we Café Gourmand
+        nu ook tot bij u thuis.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-6">
+        <div class="text-center">
+          <p class="font-serif text-4xl text-olive font-700">6</p>
+          <p class="text-cocoa/65 text-sm mt-1">Categorieën fijne waren</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-olive font-700">100%</p>
+          <p class="text-cocoa/65 text-sm mt-1">Geselecteerd op smaak</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-olive font-700">Mechelen</p>
+          <p class="text-cocoa/65 text-sm mt-1">Keizerstraat 21</p>
+        </div>
+      </div>
+    </div>
+    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
+      <img
+        src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=80"
+        alt="Interieur van een fijne kruidenierszaak met koffie en delicatessen"
+        loading="lazy" decoding="async"
+        class="w-full h-full object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Bezoek + kaart -->
+  <section id="bezoek" class="bg-sand/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+      <div class="fade-up">
+        <p class="text-olive font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-espresso">Welkom in de winkel</h2>
+        <p class="text-cocoa/70 text-lg mt-5 max-w-md">
+          Kom proeven en kiezen op Keizerstraat 21 in Mechelen, op wandelafstand van de Grote Markt.
+        </p>
+        <dl class="mt-9 space-y-5 text-cocoa">
+          <div class="flex gap-4">
+            <span class="text-olive mt-0.5 text-xl" aria-hidden="true">📍</span>
+            <div>
+              <dt class="font-600 text-espresso">Adres</dt>
+              <dd class="text-cocoa/70">Keizerstraat 21, 2800 Mechelen</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-olive mt-0.5 text-xl" aria-hidden="true">🕑</span>
+            <div>
+              <dt class="font-600 text-espresso">Openingsuren</dt>
+              <dd class="text-cocoa/70">Di–Za: 10:00–18:00 · Zo: 10:00–13:00 · Ma: gesloten</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-olive mt-0.5 text-xl" aria-hidden="true">📞</span>
+            <div>
+              <dt class="font-600 text-espresso">Telefoon</dt>
+              <dd class="text-cocoa/70"><a href="tel:+32488206224" class="ug">0488 20 62 24</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-olive mt-0.5 text-xl" aria-hidden="true">✉️</span>
+            <div>
+              <dt class="font-600 text-espresso">E-mail</dt>
+              <dd class="text-cocoa/70"><a href="mailto:contact@cafe-gourmand.eu" class="ug">contact@cafe-gourmand.eu</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-olive mt-0.5 text-xl" aria-hidden="true">💳</span>
+            <div>
+              <dt class="font-600 text-espresso">Betaalmogelijkheden</dt>
+              <dd class="text-cocoa/70">Cash · Bancontact · in de winkel én online (Mollie)</dd>
+            </div>
+          </div>
+        </dl>
+        <a href="#webshop" class="inline-block mt-9 bg-espresso text-cream font-600 px-7 py-3.5 rounded-full hover:bg-espressolt transition">
+          Of bestel online →
+        </a>
+      </div>
+      <!-- OpenStreetMap embed — Keizerstraat 21, 2800 Mechelen (~51.0281, 4.4806) -->
+      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-sand shadow-sm">
+        <iframe
+          title="Kaart Café Gourmand — Keizerstraat 21, 2800 Mechelen"
+          class="w-full h-full min-h-[360px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.472%2C51.023%2C4.489%2C51.033&layer=mapnik&marker=51.0281%2C4.4806"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- GDPR Newsletter -->
+  <section class="bg-olive/15">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-espresso">Blijf op de hoogte</h2>
+      <p class="text-cocoa/70 mt-3">Nieuwe koffiebranding, seizoensproducten en cadeaupakketten — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input
+          id="nl-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          placeholder="jouw@email.be"
+          class="flex-1 px-5 py-3 rounded-full border border-espresso/20 bg-cream focus:outline-none focus:ring-2 focus:ring-olive"
+        />
+        <button class="bg-espresso text-cream font-600 px-7 py-3 rounded-full hover:bg-espressolt transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-cocoa/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-espresso text-cream/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-cream font-700">Café Gourmand<span class="text-olive">·</span></p>
+        <p class="text-cream/55 text-sm mt-1">Épicerie fine</p>
+        <p class="text-cream/55 text-sm mt-3 max-w-xs">Fijne kruidenierswaren in hartje Mechelen — koffie, thee, olijfolie, chocolade, wijn &amp; specerijen.</p>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Winkel</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#assortiment" class="hover:text-olivelt">Assortiment</a></li>
+          <li><a href="#webshop" class="hover:text-olivelt">Webshop</a></li>
+          <li><a href="#cadeaupakketten" class="hover:text-olivelt">Cadeaupakketten</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Info</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#bezoek" class="hover:text-olivelt">Openingsuren</a></li>
+          <li><a href="#bezoek" class="hover:text-olivelt">Contact</a></li>
+          <li><a href="#top" class="hover:text-olivelt">Ons verhaal</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Contact</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li>Keizerstraat 21</li>
+          <li>2800 Mechelen</li>
+          <li><a href="tel:+32488206224" class="hover:text-olivelt">0488 20 62 24</a></li>
+          <li><a href="mailto:contact@cafe-gourmand.eu" class="hover:text-olivelt">contact@cafe-gourmand.eu</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40">
+        <p>© 2026 Café Gourmand. Concept-redesign.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; webshop.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Fade-up IntersectionObserver
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>
