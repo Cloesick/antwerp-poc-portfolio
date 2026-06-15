@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wagemaker Kaashandel — Kaaswinkel &amp; kaasschotels in Lier</title>
+  <meta name="description" content="Ambachtelijke kaashandel in Lier: harde &amp; zachte kazen, kaasschotels voor feesten, cadeaumanden en streekproducten. Binnenkort online bestellen met click-and-collect — nu nog enkel op de markt." />
+  <link rel="canonical" href="https://wagemakerkaas.be/" />
+  <meta name="theme-color" content="#4a3410" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Wagemaker Kaashandel" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Wagemaker Kaashandel — Kaaswinkel &amp; kaasschotels in Lier" />
+  <meta property="og:description" content="Harde &amp; zachte kazen, kaasschotels voor feesten, cadeaumanden en streekproducten uit Lier. Binnenkort online bestellen &amp; click-and-collect." />
+  <meta property="og:url" content="https://wagemakerkaas.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Inline SVG favicon — monogram "WK" -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234a3410'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='11' fill='%23c8a45a' text-anchor='middle'%3EWK%3C/text%3E%3C/svg%3E" />
+  <!-- Local-SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store", "FoodEstablishment"],
+    "name": "W en M Wagemaker Kaashandel",
+    "description": "Ambachtelijke kaashandel in Lier. Harde en zachte kazen, kaasschotels voor feesten, cadeaumanden en streekproducten.",
+    "image": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://wagemakerkaas.be/",
+    "email": "wagemakersven@hotmail.com",
+    "servesCuisine": ["Belgian", "Cheese", "Delicatessen"],
+    "priceRange": "€€",
+    "areaServed": "BE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Aarschotsesteenweg 165/2",
+      "postalCode": "2500",
+      "addressLocality": "Lier",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.1419, "longitude": 4.5836 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "08:00", "closes": "17:00" }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
+          colors: {
+            ochre:    '#4a3410',
+            ochrelt:  '#5e431a',
+            ochredk:  '#34240a',
+            gold:     '#c8a45a',
+            goldlt:   '#e0c489',
+            cream:    '#f7f1e3',
+            parchment:'#ece0c8',
+            charcoal: '#2a241c',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(52,36,10,.18) 0%, rgba(52,36,10,.52) 50%, rgba(52,36,10,.92) 100%); }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 2px; }
+  </style>
+</head>
+<body class="bg-cream text-ochre font-sans antialiased selection:bg-gold/25">
+
+  <!-- Skip link -->
+  <a href="#bestellen" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-ochre focus:text-cream focus:rounded-full">Naar online bestellen</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-ochre text-cream text-center text-[13px] tracking-wide py-2 px-4">
+    <span aria-hidden="true">🧀</span> <span class="font-semibold">Binnenkort:</span> online kaaswebshop &amp; click-and-collect — kaasschotels &amp; cadeaumanden bestellen · Aarschotsesteenweg 165, Lier.
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-ochre/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-ochre">Wagemaker<span class="text-gold">·</span></span>
+        <span class="text-[11px] uppercase tracking-[0.22em] text-ochre/50 font-600">Kaashandel · Lier</span>
+      </a>
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
+        <a href="#bestellen" class="ug">Online bestellen</a>
+        <a href="#assortiment" class="ug">Assortiment</a>
+        <a href="#schotels" class="ug">Schotels &amp; cadeau</a>
+        <a href="#bezoek" class="ug">Bezoek ons</a>
+      </div>
+      <!-- CTA + hamburger -->
+      <div class="flex items-center gap-2">
+        <a href="#bestellen" class="inline-flex items-center gap-2 bg-gold text-ochredk text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-goldlt transition">
+          Bestel &amp; afhalen
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-ochre/15 text-ochre hover:bg-ochre/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-ochre/10 bg-cream/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#bestellen" class="py-3 border-b border-ochre/8">Online bestellen</a>
+        <a href="#assortiment" class="py-3 border-b border-ochre/8">Assortiment</a>
+        <a href="#schotels" class="py-3 border-b border-ochre/8">Schotels &amp; cadeau</a>
+        <a href="#bezoek" class="py-3">Bezoek ons</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-ochre">
+    <img
+      src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=2000&q=80"
+      alt="Ambachtelijke kazen bij Wagemaker Kaashandel Lier"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-goldlt font-600 tracking-[0.3em] uppercase text-xs mb-5">
+        <span aria-hidden="true">🧀</span> Kaaswinkel · Kaasschotels · Cadeaumanden · Lier
+      </p>
+      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
+        Ambachtelijke kaas,<br />binnenkort online.
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Harde en zachte kazen, kaasschotels voor elk feest, cadeaumanden en streekproducten —
+        een vertrouwd marktadres in Lier. Straks ook online: bestel je kaas, stel een schotel samen
+        of geef een cadeaumand.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#bestellen" class="bg-gold text-ochredk font-700 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
+          Bestel en haal af
+        </a>
+        <a href="#schotels" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
+          Kaasschotel &amp; cadeaumand
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP strip -->
+  <section class="bg-ochre text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-goldlt">Ambacht</p><p class="mt-1 text-cream/65">Vers gesneden op maat</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Schotels</p><p class="mt-1 text-cream/65">Kaasschotels voor je feest</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Cadeau</p><p class="mt-1 text-cream/65">Cadeaumanden vol smaak</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Afhaal</p><p class="mt-1 text-cream/65">Online bestellen &amp; click-and-collect</p></div>
+    </div>
+  </section>
+
+  <!-- Online bestellen / click-and-collect -->
+  <section id="bestellen" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Binnenkort: online kaaswebshop</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-ochre">
+          Bestel je kaas online,<br />haal af in Lier.
+        </h2>
+        <p class="text-charcoal/75 text-lg mt-5 leading-relaxed max-w-md">
+          Vandaag vind je ons enkel op de markt — straks kan je ook van thuis uit bestellen.
+          Stel je bestelling samen — harde of zachte kazen, een kaasschotel of een cadeaumand —
+          en haal af op een tijdstip dat je past op Aarschotsesteenweg 165.
+        </p>
+        <ul class="mt-7 space-y-3 text-charcoal">
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Bestelling vers gesneden bij afhaling</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Kaasschotels &amp; cadeaumanden op voorbestelling</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Betalen bij afhaling (cash · Bancontact)</li>
+        </ul>
+        <a href="#schotels" class="inline-flex items-center gap-2 mt-9 bg-ochre text-cream font-600 px-7 py-3.5 rounded-full hover:bg-ochrelt transition">
+          Of stel een kaasschotel samen
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80"
+            alt="Assortiment harde en zachte kazen"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment mt-8">
+          <img
+            src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=800&q=80"
+            alt="Kaasschotel klaargemaakt"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assortiment grid -->
+  <section id="assortiment" class="bg-parchment/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-ochre">Kaas &amp; streekproducten</h2>
+        </div>
+        <p class="text-charcoal/65 max-w-sm">Een rijk aanbod harde en zachte kazen, feestelijke schotels, cadeaumanden en lekkers van bij ons — alles vers gesneden op maat.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Harde kazen -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ochre text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=800&q=80"
+            alt="Harde kazen, oude kaas en belegen kaas"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-ochre via-ochre/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Harde kazen</h3>
+            <p class="text-cream/75 text-sm mt-1">Jong tot oud belegen, Goudse, Comté &amp; meer — vers gesneden op maat.</p>
+          </div>
+        </article>
+        <!-- Zachte kazen -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ochre text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80"
+            alt="Zachte kazen, brie en camembert"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-ochre via-ochre/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Zachte kazen</h3>
+            <p class="text-cream/75 text-sm mt-1">Brie, camembert, geitenkaas &amp; blauwe kazen — romig en vol smaak.</p>
+          </div>
+        </article>
+        <!-- Kaasschotels -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ochre text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1631379578550-7038263db699?auto=format&fit=crop&w=800&q=80"
+            alt="Kaasschotel voor feest en events"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-ochre via-ochre/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Kaasschotels</h3>
+            <p class="text-cream/75 text-sm mt-1">Feestelijk samengesteld met garnituur — op voorbestelling voor elk event.</p>
+          </div>
+        </article>
+        <!-- Cadeaumanden -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ochre text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?auto=format&fit=crop&w=800&q=80"
+            alt="Cadeaumand met kaas en streekproducten"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-ochre via-ochre/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Cadeaumanden</h3>
+            <p class="text-cream/75 text-sm mt-1">Een mand vol kaas &amp; lekkers — ideaal als verjaardags- of bedrijfscadeau.</p>
+          </div>
+        </article>
+        <!-- Streekproducten -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ochre text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80"
+            alt="Streekproducten, confituur en kaaskoekjes"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-ochre via-ochre/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Streekproducten</h3>
+            <p class="text-cream/75 text-sm mt-1">Confituur, kaaskoekjes, noten &amp; lokaal lekkers om je schotel af te werken.</p>
+          </div>
+        </article>
+        <!-- Online bestellen CTA card -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-gold text-ochredk relative aspect-[4/5] flex items-center justify-center text-center p-6">
+          <div>
+            <p class="font-serif text-2xl font-600">Online&shy;bestellen</p>
+            <p class="text-ochredk/80 text-sm mt-2">Straks stel je je kaas, schotel of cadeaumand samen en haal je af in Lier.</p>
+            <a href="#bestellen" class="inline-block mt-5 text-ochredk font-700 ug">Naar online bestellen →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products (illustratief) -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="flex items-end justify-between mb-10">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-ochre">Veelgevraagd uit de toonbank</h2>
+      <a href="#bestellen" class="hidden sm:inline text-gold font-600 ug">Alles bestellen →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Product 1 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1631379578550-7038263db699?auto=format&fit=crop&w=700&q=80"
+            alt="Kaasschotel (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Op voorbestelling</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-ochre">Feestelijke kaasschotel</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Een ruime selectie kazen met garnituur, mooi geschikt.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-ochre text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-ochrelt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=700&q=80"
+            alt="Oude kaas (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Klassieker</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-ochre">Oude kaas op maat</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Belegen tot extra oud — vers van het stuk gesneden.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-ochre text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-ochrelt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?auto=format&fit=crop&w=700&q=80"
+            alt="Cadeaumand (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Cadeau</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-ochre">Cadeaumand kaas &amp; lekkers</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Kaas, streekproducten en garnituur in een feestelijke mand.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-ochre text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-ochrelt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs text-charcoal/40 mt-6">Voorbeeldproducten ter illustratie van de toekomstige online bestelmodule — geen actuele prijzen.</p>
+  </section>
+
+  <!-- Kaasschotel- / cadeaumand-aanvraag (the differentiator) -->
+  <section id="schotels" class="bg-ochre text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img
+          src="https://images.unsplash.com/photo-1631379578550-7038263db699?auto=format&fit=crop&w=1000&q=80"
+          alt="Kaasschotel en cadeaumand voor feest"
+          loading="lazy" decoding="async"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="order-1 lg:order-2 fade-up">
+        <p class="text-goldlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Kaasschotel &amp; cadeaumand</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
+          Een feest?<br />Wij stellen de schotel samen.
+        </h2>
+        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
+          Verjaardag, communie, bedrijfsevent of een gezellige avond? Stel hieronder je aanvraag samen —
+          datum, aantal personen en wensen — en wij sturen je een voorstel op maat.
+          Geen prijsverplichtingen, gewoon een vrijblijvende aanvraag.
+        </p>
+
+        <!-- Concept-formulier: kaasschotel-/cadeaumand-aanvraag -->
+        <form class="mt-8 bg-cream/5 border border-cream/15 rounded-2xl p-5 sm:p-6 space-y-4" onsubmit="return false">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="t-naam" class="block text-sm font-600 text-cream/90 mb-1">Naam</label>
+              <input id="t-naam" name="naam" type="text" autocomplete="name" placeholder="Je naam"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
+            </div>
+            <div>
+              <label for="t-tel" class="block text-sm font-600 text-cream/90 mb-1">Telefoon</label>
+              <input id="t-tel" name="telefoon" type="tel" autocomplete="tel" placeholder="03 ..."
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="t-datum" class="block text-sm font-600 text-cream/90 mb-1">Gewenste datum</label>
+              <input id="t-datum" name="datum" type="date"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
+            </div>
+            <div>
+              <label for="t-personen" class="block text-sm font-600 text-cream/90 mb-1">Aantal personen</label>
+              <input id="t-personen" name="personen" type="number" min="1" placeholder="bv. 12"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
+            </div>
+          </div>
+          <div>
+            <label for="t-type" class="block text-sm font-600 text-cream/90 mb-1">Type</label>
+            <select id="t-type" name="type"
+              class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold">
+              <option>Kaasschotel</option>
+              <option>Aperitief- &amp; hapjesschotel</option>
+              <option>Cadeaumand</option>
+              <option>Kaas op maat (per kg)</option>
+              <option>Streekproducten</option>
+              <option>Iets anders</option>
+            </select>
+          </div>
+          <div>
+            <label for="t-wensen" class="block text-sm font-600 text-cream/90 mb-1">Wensen / opmerkingen</label>
+            <textarea id="t-wensen" name="wensen" rows="3" placeholder="Allergieën, budget, voorkeuren (hard/zacht), afhalen of bezorgen ..."
+              class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold"></textarea>
+          </div>
+          <label class="flex items-start gap-3 text-xs text-cream/70">
+            <input type="checkbox" required class="mt-0.5 accent-gold" />
+            <span>Ik ga akkoord dat mijn gegevens enkel worden gebruikt om mijn aanvraag te beantwoorden (GDPR).</span>
+          </label>
+          <button class="w-full bg-gold text-ochredk font-700 px-7 py-3 rounded-full hover:bg-goldlt transition">
+            Verstuur mijn aanvraag
+          </button>
+          <p class="text-[11px] text-cream/50 text-center">Concept-formulier — in de live versie komt je aanvraag rechtstreeks per e-mail bij Wagemaker terecht.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ons verhaal -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="fade-up">
+      <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-ochre">Kaasvakmanschap<br />uit Lier.</h2>
+      <p class="text-charcoal/70 text-lg mt-6 leading-relaxed">
+        W en M Wagemaker Kaashandel is een vertrouwd kaasadres in Lier — vandaag vooral gekend
+        van de markt. Wat ons onderscheidt? Een zorgvuldig samengesteld assortiment harde en zachte
+        kazen, feestelijke kaasschotels en cadeaumanden, allemaal vers gesneden op maat met
+        persoonlijk advies.
+      </p>
+      <p class="text-charcoal/70 text-lg mt-4 leading-relaxed">
+        Of je nu langskomt voor een stuk oude kaas, een romige brie, een kaasschotel voor je feest
+        of een cadeaumand vol streekproducten — bij Wagemaker vind je kwaliteit en smaak. En binnenkort
+        kan dat ook online: bestellen, afhalen en schotels aanvragen vanuit je zetel.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-6">
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">100%</p>
+          <p class="text-charcoal/65 text-sm mt-1">Vers gesneden</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">Hard &amp; zacht</p>
+          <p class="text-charcoal/65 text-sm mt-1">Ruim kaasaanbod</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">Lier</p>
+          <p class="text-charcoal/65 text-sm mt-1">Aarschotsesteenweg 165</p>
+        </div>
+      </div>
+    </div>
+    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
+      <img
+        src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=1000&q=80"
+        alt="Ambachtelijke kazen en kaasassortiment"
+        loading="lazy" decoding="async"
+        class="w-full h-full object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Bezoek + kaart -->
+  <section id="bezoek" class="bg-parchment/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+      <div class="fade-up">
+        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-ochre">Welkom bij de kaashandel</h2>
+        <p class="text-charcoal/70 text-lg mt-5 max-w-md">
+          Kom proeven en kiezen op Aarschotsesteenweg 165 in Lier.
+        </p>
+        <dl class="mt-9 space-y-5 text-charcoal">
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📍</span>
+            <div>
+              <dt class="font-600 text-ochre">Adres</dt>
+              <dd class="text-charcoal/70">Aarschotsesteenweg 165/2, 2500 Lier</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🕑</span>
+            <div>
+              <dt class="font-600 text-ochre">Openingsuren</dt>
+              <dd class="text-charcoal/70">Wo–Vr: 09:00–18:00 · Za: 08:00–17:00 · ook op de markt</dd>
+              <dd class="text-charcoal/40 text-sm mt-1">(indicatief — graag te bevestigen)</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">✉️</span>
+            <div>
+              <dt class="font-600 text-ochre">E-mail</dt>
+              <dd class="text-charcoal/70">
+                <a href="mailto:wagemakersven@hotmail.com" class="ug">wagemakersven@hotmail.com</a>
+                <span class="text-charcoal/40 text-sm ml-1">(voorstel: info@wagemakerkaas.be)</span>
+              </dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🧀</span>
+            <div>
+              <dt class="font-600 text-ochre">Ook op de markt</dt>
+              <dd class="text-charcoal/70">Vast marktadres in de regio Lier</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">💳</span>
+            <div>
+              <dt class="font-600 text-ochre">Betaalmogelijkheden</dt>
+              <dd class="text-charcoal/70">Cash · Bancontact</dd>
+            </div>
+          </div>
+        </dl>
+        <a href="#bestellen" class="inline-block mt-9 bg-ochre text-cream font-600 px-7 py-3.5 rounded-full hover:bg-ochrelt transition">
+          Of bestel online →
+        </a>
+      </div>
+      <!-- OpenStreetMap embed — Aarschotsesteenweg 165, 2500 Lier (~51.1419, 4.5836) -->
+      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-parchment shadow-sm">
+        <iframe
+          title="Kaart Wagemaker Kaashandel — Aarschotsesteenweg 165, 2500 Lier"
+          class="w-full h-full min-h-[360px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.575%2C51.137%2C4.592%2C51.147&layer=mapnik&marker=51.1419%2C4.5836"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- GDPR Newsletter -->
+  <section class="bg-gold/15">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-ochre">Blijf op de hoogte</h2>
+      <p class="text-charcoal/70 mt-3">Nieuwe seizoenskazen, feestschotels en cadeaumanden — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input
+          id="nl-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          placeholder="jouw@email.be"
+          class="flex-1 px-5 py-3 rounded-full border border-ochre/20 bg-cream focus:outline-none focus:ring-2 focus:ring-gold"
+        />
+        <button class="bg-ochre text-cream font-600 px-7 py-3 rounded-full hover:bg-ochrelt transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-charcoal/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ochre text-cream/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-cream font-700">Wagemaker<span class="text-gold">·</span></p>
+        <p class="text-cream/55 text-sm mt-1">Kaashandel</p>
+        <p class="text-cream/55 text-sm mt-3 max-w-xs">Ambachtelijke kaas, kaasschotels &amp; cadeaumanden in Lier. Binnenkort online bestellen &amp; click-and-collect.</p>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Winkel</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#assortiment" class="hover:text-goldlt">Assortiment</a></li>
+          <li><a href="#bestellen" class="hover:text-goldlt">Online bestellen</a></li>
+          <li><a href="#schotels" class="hover:text-goldlt">Schotels &amp; cadeau</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Info</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#bezoek" class="hover:text-goldlt">Openingsuren</a></li>
+          <li><a href="#bezoek" class="hover:text-goldlt">Contact</a></li>
+          <li><a href="#top" class="hover:text-goldlt">Ons verhaal</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Contact</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li>Aarschotsesteenweg 165/2</li>
+          <li>2500 Lier</li>
+          <li><a href="mailto:wagemakersven@hotmail.com" class="hover:text-goldlt">wagemakersven@hotmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40">
+        <p>© 2026 W en M Wagemaker Kaashandel. Concept-redesign.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; kaaswebshop.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Fade-up IntersectionObserver
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>

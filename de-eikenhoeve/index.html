@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>De Eikenhoeve — Hoevewinkel: yoghurt &amp; verse zuivel in Kontich</title>
+  <meta name="description" content="Ambachtelijke hoevezuivel uit Kontich: dagverse yoghurt, melk, kaas en hoeve-ijs rechtstreeks van de boerderij. Nu ook online bestellen, click-and-collect buiten de winkeluren, een zuivelabonnement en lokale levering." />
+  <link rel="canonical" href="https://de-eikenhoeve.be/" />
+  <meta name="theme-color" content="#2f6b3c" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="De Eikenhoeve" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="De Eikenhoeve — Hoevewinkel: yoghurt &amp; verse zuivel in Kontich" />
+  <meta property="og:description" content="Dagverse hoeveyoghurt, melk, kaas en hoeve-ijs rechtstreeks van de boerderij in Kontich. Online bestellen, click-and-collect, zuivelabonnement &amp; lokale levering." />
+  <meta property="og:url" content="https://de-eikenhoeve.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Inline SVG favicon — monogram "EH" -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232f6b3c'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='11' fill='%23eef4e6' text-anchor='middle'%3EEH%3C/text%3E%3C/svg%3E" />
+  <!-- Local-SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store", "FoodEstablishment"],
+    "name": "De Eikenhoeve",
+    "description": "Ambachtelijke hoevewinkel in Kontich met dagverse yoghurt, melk, kaas en hoeve-ijs rechtstreeks van de boerderij. Online bestellen, click-and-collect, zuivelabonnement en lokale levering.",
+    "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://de-eikenhoeve.be/",
+    "telephone": "+32473451357",
+    "email": "info@de-eikenhoeve.be",
+    "servesCuisine": ["Belgian", "Dairy"],
+    "priceRange": "€€",
+    "areaServed": "BE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Kontichhof 11",
+      "postalCode": "2550",
+      "addressLocality": "Kontich",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.1308, "longitude": 4.4470 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Thursday","Friday","Saturday"], "opens": "10:00", "closes": "12:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Thursday","Friday","Saturday"], "opens": "16:00", "closes": "18:00" }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
+          colors: {
+            farm:     '#2f6b3c',
+            farmlt:   '#3a7d49',
+            farmdk:   '#235030',
+            fresh:    '#8bbf5a',
+            freshlt:  '#a7d178',
+            cream:    '#f6f3e7',
+            oat:      '#e8e3d0',
+            charcoal: '#2a2e26',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(35,80,48,.16) 0%, rgba(35,80,48,.50) 50%, rgba(35,80,48,.92) 100%); }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 2px; }
+  </style>
+</head>
+<body class="bg-cream text-farm font-sans antialiased selection:bg-fresh/25">
+
+  <!-- Skip link -->
+  <a href="#bestellen" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-farm focus:text-cream focus:rounded-full">Naar online bestellen</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-farm text-cream text-center text-[13px] tracking-wide py-2 px-4">
+    <span aria-hidden="true">🥛</span> <span class="font-semibold">Nieuw:</span> online bestellen, click-and-collect buiten de winkeluren &amp; een zuivelabonnement — Kontichhof 11, Kontich.
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-farm/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-[1.55rem] font-700 tracking-tight text-farm">De Eikenhoeve<span class="text-fresh">·</span></span>
+        <span class="hidden sm:inline text-[11px] uppercase tracking-[0.22em] text-farm/50 font-600">Hoevewinkel · Kontich</span>
+      </a>
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
+        <a href="#bestellen" class="ug">Online bestellen</a>
+        <a href="#assortiment" class="ug">Assortiment</a>
+        <a href="#abonnement" class="ug">Abonnement</a>
+        <a href="#bezoek" class="ug">Bezoek ons</a>
+      </div>
+      <!-- CTA + hamburger -->
+      <div class="flex items-center gap-2">
+        <a href="#bestellen" class="inline-flex items-center gap-2 bg-fresh text-farmdk text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-freshlt transition">
+          Bestel &amp; afhalen
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-farm/15 text-farm hover:bg-farm/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-farm/10 bg-cream/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#bestellen" class="py-3 border-b border-farm/8">Online bestellen</a>
+        <a href="#assortiment" class="py-3 border-b border-farm/8">Assortiment</a>
+        <a href="#abonnement" class="py-3 border-b border-farm/8">Abonnement</a>
+        <a href="#bezoek" class="py-3">Bezoek ons</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-farm">
+    <img
+      src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=2000&q=80"
+      alt="Groene weiden en koeien bij hoevewinkel De Eikenhoeve in Kontich"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-freshlt font-600 tracking-[0.3em] uppercase text-xs mb-5">
+        <span aria-hidden="true">🐄</span> Hoeveyoghurt · Melk · Kaas · Hoeve-ijs · Kontich
+      </p>
+      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
+        Dagverse hoevezuivel,<br />nu ook online.
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Ambachtelijke yoghurt, melk en kaas rechtstreeks van onze boerderij in Kontich.
+        Bestel vooraf online, haal af buiten de beperkte winkeluren of kies een zuivelabonnement —
+        zo heb je altijd verse hoevezuivel in huis.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#bestellen" class="bg-fresh text-farmdk font-700 px-7 py-3.5 rounded-full hover:bg-freshlt transition">
+          Bestel en haal af
+        </a>
+        <a href="#abonnement" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
+          Zuivelabonnement bekijken
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP strip -->
+  <section class="bg-farm text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-freshlt">Ambachtelijk</p><p class="mt-1 text-cream/65">Zelf gemaakt op de hoeve</p></div>
+      <div><p class="font-serif text-2xl text-freshlt">Hoeve-eigen</p><p class="mt-1 text-cream/65">Melk van onze eigen koeien</p></div>
+      <div><p class="font-serif text-2xl text-freshlt">Dagvers</p><p class="mt-1 text-cream/65">Vandaag gemaakt, vandaag bij jou</p></div>
+      <div><p class="font-serif text-2xl text-freshlt">Afhaal &amp; levering</p><p class="mt-1 text-cream/65">Click-and-collect &amp; lokaal bezorgd</p></div>
+    </div>
+  </section>
+
+  <!-- Online bestellen / click-and-collect -->
+  <section id="bestellen" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-fresh font-600 tracking-[0.2em] uppercase text-xs mb-4">Nieuw: online bestellen</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-farm">
+          Bestel vooraf,<br />haal af wanneer het jou past.
+        </h2>
+        <p class="text-charcoal/75 text-lg mt-5 leading-relaxed max-w-md">
+          Onze hoevewinkel is maar beperkt open — tweemaal per dag. Met de nieuwe webshop
+          stel je je bestelling thuis samen en kies je een afhaalmoment dat jou uitkomt.
+          Geen misgelopen openingsuur meer: jouw verse zuivel staat klaar op Kontichhof 11.
+        </p>
+        <ul class="mt-7 space-y-3 text-charcoal">
+          <li class="flex items-center gap-3"><span class="text-fresh font-700">✓</span> Vooraf bestellen — staat vers klaar bij afhaling</li>
+          <li class="flex items-center gap-3"><span class="text-fresh font-700">✓</span> Click-and-collect ook buiten de winkeluren</li>
+          <li class="flex items-center gap-3"><span class="text-fresh font-700">✓</span> Lokale levering in de buurt van Kontich</li>
+        </ul>
+        <a href="#abonnement" class="inline-flex items-center gap-2 mt-9 bg-farm text-cream font-600 px-7 py-3.5 rounded-full hover:bg-farmlt transition">
+          Of neem een zuivelabonnement
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-oat">
+          <img
+            src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80"
+            alt="Verse hoeveyoghurt in glazen potjes"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-oat mt-8">
+          <img
+            src="https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=800&q=80"
+            alt="Verse melk en zuivel van de hoeve"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assortiment grid -->
+  <section id="assortiment" class="bg-oat/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-fresh font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-farm">Yoghurt, melk, kaas &amp; hoeve-ijs</h2>
+        </div>
+        <p class="text-charcoal/65 max-w-sm">Alles dagvers gemaakt op de hoeve, met melk van onze eigen koeien — puur en ambachtelijk.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Yoghurt -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-farm text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80"
+            alt="Ambachtelijke hoeveyoghurt"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-farm via-farm/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Hoeveyoghurt</h3>
+            <p class="text-cream/75 text-sm mt-1">Volle &amp; magere yoghurt, natuur of met fruit — dagvers gemaakt.</p>
+          </div>
+        </article>
+        <!-- Melk & zuivel -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-farm text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=800&q=80"
+            alt="Verse hoevemelk en room"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-farm via-farm/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Melk &amp; zuivel</h3>
+            <p class="text-cream/75 text-sm mt-1">Verse hoevemelk, room, karnemelk &amp; pudding — recht van de koe.</p>
+          </div>
+        </article>
+        <!-- Kaas -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-farm text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80"
+            alt="Hoevekaas assortiment"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-farm via-farm/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Hoevekaas</h3>
+            <p class="text-cream/75 text-sm mt-1">Jong tot belegen hoevekaas &amp; verse kaas — ook kaasschotels.</p>
+          </div>
+        </article>
+        <!-- Hoeve-ijs -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-farm text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=800&q=80"
+            alt="Ambachtelijk hoeve-ijs"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-farm via-farm/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Hoeve-ijs</h3>
+            <p class="text-cream/75 text-sm mt-1">Ambachtelijk roomijs van eigen melk — diverse smaken &amp; bakken.</p>
+          </div>
+        </article>
+        <!-- Boter & kwark -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-farm text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?auto=format&fit=crop&w=800&q=80"
+            alt="Hoeveboter en platte kaas"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-farm via-farm/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Boter &amp; platte kaas</h3>
+            <p class="text-cream/75 text-sm mt-1">Romige hoeveboter, platte kaas &amp; kwark — pure ambacht.</p>
+          </div>
+        </article>
+        <!-- Pakketten CTA card -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-fresh text-farmdk relative aspect-[4/5] flex items-center justify-center text-center p-6">
+          <div>
+            <p class="font-serif text-2xl font-600">Hoeve&shy;pakketten</p>
+            <p class="text-farmdk/80 text-sm mt-2">Stel een zuivelpakket samen — yoghurt, melk, kaas &amp; ijs. Ideaal als proefpakket of cadeau.</p>
+            <a href="#abonnement" class="inline-block mt-5 text-farmdk font-700 ug">Bekijk pakketten →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products (illustratief) -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="flex items-end justify-between mb-10">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-farm">Veelgevraagd uit de hoevewinkel</h2>
+      <a href="#bestellen" class="hidden sm:inline text-fresh font-600 ug">Alles bestellen →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Product 1 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-oat">
+          <img
+            src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80"
+            alt="Volle hoeveyoghurt (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-fresh font-600 uppercase tracking-wider">Dagvers</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-farm">Volle hoeveyoghurt</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Romige yoghurt in glazen pot, natuur — pure hoevesmaak.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-farm text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-farmlt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-oat">
+          <img
+            src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=700&q=80"
+            alt="Verse hoevemelk (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-fresh font-600 uppercase tracking-wider">Klassieker</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-farm">Verse hoevemelk</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Volle melk van onze eigen koeien, dagvers getapt.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-farm text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-farmlt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-oat">
+          <img
+            src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=700&q=80"
+            alt="Hoeve-ijs (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-fresh font-600 uppercase tracking-wider">Seizoen</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-farm">Ambachtelijk hoeve-ijs</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Roomijs van eigen melk — wisselende smaken per bak.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-farm text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-farmlt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs text-charcoal/40 mt-6">Voorbeeldproducten ter illustratie van de toekomstige hoeve-webshop — geen actuele prijzen.</p>
+  </section>
+
+  <!-- Zuivelabonnement + afhaal concept (the differentiator) -->
+  <section id="abonnement" class="bg-farm text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img
+          src="https://images.unsplash.com/photo-1563636619-e9143da7973b?auto=format&fit=crop&w=1000&q=80"
+          alt="Zuivelpakket met yoghurt, melk en kaas van de hoeve"
+          loading="lazy" decoding="async"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="order-1 lg:order-2 fade-up">
+        <p class="text-freshlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Zuivelabonnement &amp; afhaal</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
+          Altijd verse zuivel,<br />zonder erover na te denken.
+        </h2>
+        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
+          Met een zuivelabonnement staat je vaste pakket — yoghurt, melk, kaas — wekelijks of
+          tweewekelijks klaar om af te halen of lokaal te laten bezorgen. Geen gemiste winkeluren meer,
+          en wij weten precies hoeveel we voor jou maken. Stel hieronder vrijblijvend je voorkeur samen.
+        </p>
+
+        <!-- Voordelen-strip -->
+        <div class="grid grid-cols-3 gap-3 mt-7 text-center">
+          <div class="bg-cream/5 border border-cream/15 rounded-xl py-4">
+            <p class="font-serif text-xl text-freshlt">Wekelijks</p>
+            <p class="text-cream/60 text-xs mt-1">of tweewekelijks</p>
+          </div>
+          <div class="bg-cream/5 border border-cream/15 rounded-xl py-4">
+            <p class="font-serif text-xl text-freshlt">Afhaal</p>
+            <p class="text-cream/60 text-xs mt-1">of lokaal bezorgd</p>
+          </div>
+          <div class="bg-cream/5 border border-cream/15 rounded-xl py-4">
+            <p class="font-serif text-xl text-freshlt">Flexibel</p>
+            <p class="text-cream/60 text-xs mt-1">pauzeer wanneer je wil</p>
+          </div>
+        </div>
+
+        <!-- Concept-formulier: abonnement-/afhaalaanvraag -->
+        <form class="mt-8 bg-cream/5 border border-cream/15 rounded-2xl p-5 sm:p-6 space-y-4" onsubmit="return false">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="a-naam" class="block text-sm font-600 text-cream/90 mb-1">Naam</label>
+              <input id="a-naam" name="naam" type="text" autocomplete="name" placeholder="Jouw naam"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-fresh" />
+            </div>
+            <div>
+              <label for="a-tel" class="block text-sm font-600 text-cream/90 mb-1">Telefoon</label>
+              <input id="a-tel" name="telefoon" type="tel" autocomplete="tel" placeholder="0473 ..."
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-fresh" />
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="a-frequentie" class="block text-sm font-600 text-cream/90 mb-1">Frequentie</label>
+              <select id="a-frequentie" name="frequentie"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-fresh">
+                <option>Wekelijks</option>
+                <option>Tweewekelijks</option>
+                <option>Maandelijks</option>
+                <option>Eenmalig proefpakket</option>
+              </select>
+            </div>
+            <div>
+              <label for="a-wijze" class="block text-sm font-600 text-cream/90 mb-1">Afhalen of bezorgen</label>
+              <select id="a-wijze" name="wijze"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-fresh">
+                <option>Click-and-collect (afhalen)</option>
+                <option>Lokale levering rond Kontich</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="a-pakket" class="block text-sm font-600 text-cream/90 mb-1">Voorkeur pakket</label>
+            <select id="a-pakket" name="pakket"
+              class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-fresh">
+              <option>Yoghurtpakket</option>
+              <option>Melk &amp; zuivel</option>
+              <option>Volledig hoevepakket (yoghurt, melk, kaas)</option>
+              <option>Kaaspakket</option>
+              <option>Iets anders</option>
+            </select>
+          </div>
+          <div>
+            <label for="a-wensen" class="block text-sm font-600 text-cream/90 mb-1">Wensen / opmerkingen</label>
+            <textarea id="a-wensen" name="wensen" rows="3" placeholder="Aantal personen, smaakvoorkeuren, leveradres ..."
+              class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-fresh"></textarea>
+          </div>
+          <label class="flex items-start gap-3 text-xs text-cream/70">
+            <input type="checkbox" required class="mt-0.5 accent-fresh" />
+            <span>Ik ga akkoord dat mijn gegevens enkel worden gebruikt om mijn aanvraag te beantwoorden (GDPR).</span>
+          </label>
+          <button class="w-full bg-fresh text-farmdk font-700 px-7 py-3 rounded-full hover:bg-freshlt transition">
+            Verstuur mijn aanvraag
+          </button>
+          <p class="text-[11px] text-cream/50 text-center">Concept-formulier — in de live versie komt je aanvraag rechtstreeks per e-mail bij De Eikenhoeve terecht.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ons verhaal -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="fade-up">
+      <p class="text-fresh font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-farm">Ambacht op<br />de hoeve.</h2>
+      <p class="text-charcoal/70 text-lg mt-6 leading-relaxed">
+        De Eikenhoeve is een echte hoevewinkel in Kontich. Onze yoghurt, melk, kaas en ijs maken we zelf,
+        met melk van onze eigen koeien. Geen tussenstappen, geen toevoegingen die er niet thuishoren —
+        gewoon eerlijke, dagverse hoevezuivel zoals het hoort.
+      </p>
+      <p class="text-charcoal/70 text-lg mt-4 leading-relaxed">
+        Onze winkel is bewust klein en maar beperkt open. Daarom maken we het je voortaan makkelijker:
+        bestel online, haal af buiten de winkeluren of laat je vaste pakket lokaal bezorgen.
+        Zo geniet je van hoevekwaliteit, ook als je niet tijdens onze openingsuren langs kunt komen.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-6">
+        <div class="text-center">
+          <p class="font-serif text-4xl text-fresh font-700">100%</p>
+          <p class="text-charcoal/65 text-sm mt-1">Hoeve-eigen melk</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-fresh font-700">Dagvers</p>
+          <p class="text-charcoal/65 text-sm mt-1">Zelf gemaakt</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-fresh font-700">Kontich</p>
+          <p class="text-charcoal/65 text-sm mt-1">Kontichhof 11</p>
+        </div>
+      </div>
+    </div>
+    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
+      <img
+        src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=1000&q=80"
+        alt="Boerderij en groene weiden van De Eikenhoeve"
+        loading="lazy" decoding="async"
+        class="w-full h-full object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Bezoek + kaart -->
+  <section id="bezoek" class="bg-oat/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+      <div class="fade-up">
+        <p class="text-fresh font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-farm">Welkom op de hoeve</h2>
+        <p class="text-charcoal/70 text-lg mt-5 max-w-md">
+          Kom proeven en kiezen op Kontichhof 11 in Kontich. Onze winkel is beperkt open —
+          bestel daarom gerust vooraf online voor afhaling buiten de uren.
+        </p>
+        <dl class="mt-9 space-y-5 text-charcoal">
+          <div class="flex gap-4">
+            <span class="text-fresh mt-0.5 text-xl" aria-hidden="true">📍</span>
+            <div>
+              <dt class="font-600 text-farm">Adres</dt>
+              <dd class="text-charcoal/70">Kontichhof 11, 2550 Kontich</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-fresh mt-0.5 text-xl" aria-hidden="true">🕑</span>
+            <div>
+              <dt class="font-600 text-farm">Winkeluren (beperkt)</dt>
+              <dd class="text-charcoal/70">Wo–Za: 10:00–12:00 &amp; 16:00–18:00</dd>
+              <dd class="text-charcoal/40 text-sm mt-1">(indicatief — graag te bevestigen) · Buiten deze uren: online bestellen &amp; afhalen op afspraak</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-fresh mt-0.5 text-xl" aria-hidden="true">📞</span>
+            <div>
+              <dt class="font-600 text-farm">Telefoon</dt>
+              <dd class="text-charcoal/70"><a href="tel:+32473451357" class="ug">0473 45 13 57</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-fresh mt-0.5 text-xl" aria-hidden="true">✉️</span>
+            <div>
+              <dt class="font-600 text-farm">E-mail</dt>
+              <dd class="text-charcoal/70"><a href="mailto:info@de-eikenhoeve.be" class="ug">info@de-eikenhoeve.be</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-fresh mt-0.5 text-xl" aria-hidden="true">💳</span>
+            <div>
+              <dt class="font-600 text-farm">Betaalmogelijkheden</dt>
+              <dd class="text-charcoal/70">Cash · Bancontact</dd>
+            </div>
+          </div>
+        </dl>
+        <a href="#bestellen" class="inline-block mt-9 bg-farm text-cream font-600 px-7 py-3.5 rounded-full hover:bg-farmlt transition">
+          Of bestel online →
+        </a>
+      </div>
+      <!-- OpenStreetMap embed — Kontichhof 11, 2550 Kontich (~51.1308, 4.4470) -->
+      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-oat shadow-sm">
+        <iframe
+          title="Kaart De Eikenhoeve — Kontichhof 11, 2550 Kontich"
+          class="w-full h-full min-h-[360px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.438%2C51.125%2C4.456%2C51.137&layer=mapnik&marker=51.1308%2C4.4470"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- GDPR Newsletter -->
+  <section class="bg-fresh/15">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-farm">Blijf op de hoogte</h2>
+      <p class="text-charcoal/70 mt-3">Nieuwe smaken hoeve-ijs, seizoensproducten en afhaalmomenten — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input
+          id="nl-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          placeholder="jouw@email.be"
+          class="flex-1 px-5 py-3 rounded-full border border-farm/20 bg-cream focus:outline-none focus:ring-2 focus:ring-fresh"
+        />
+        <button class="bg-farm text-cream font-600 px-7 py-3 rounded-full hover:bg-farmlt transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-charcoal/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-farm text-cream/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-cream font-700">De Eikenhoeve<span class="text-fresh">·</span></p>
+        <p class="text-cream/55 text-sm mt-1">Hoevewinkel · Zuivel</p>
+        <p class="text-cream/55 text-sm mt-3 max-w-xs">Dagverse hoeveyoghurt, melk, kaas &amp; hoeve-ijs uit Kontich. Online bestellen, click-and-collect, zuivelabonnement &amp; lokale levering.</p>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Hoevewinkel</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#assortiment" class="hover:text-freshlt">Assortiment</a></li>
+          <li><a href="#bestellen" class="hover:text-freshlt">Online bestellen</a></li>
+          <li><a href="#abonnement" class="hover:text-freshlt">Zuivelabonnement</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Info</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#bezoek" class="hover:text-freshlt">Openingsuren</a></li>
+          <li><a href="#bezoek" class="hover:text-freshlt">Contact</a></li>
+          <li><a href="#top" class="hover:text-freshlt">Ons verhaal</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Contact</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li>Kontichhof 11</li>
+          <li>2550 Kontich</li>
+          <li><a href="tel:+32473451357" class="hover:text-freshlt">0473 45 13 57</a></li>
+          <li><a href="mailto:info@de-eikenhoeve.be" class="hover:text-freshlt">info@de-eikenhoeve.be</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40">
+        <p>© 2026 De Eikenhoeve. Concept-redesign.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; hoeve-webshop.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Fade-up IntersectionObserver
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>

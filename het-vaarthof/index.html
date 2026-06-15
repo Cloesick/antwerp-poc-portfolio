@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Het Vaarthof — Bio hoevewinkel &amp; webshop in Schoten</title>
+  <meta name="description" content="Biologische hoevewinkel in Schoten: dagverse bio groenten, zuivel en seizoensasperges van eigen hoeve. Binnenkort online bestellen met productcatalogus, oogstpakketten op abonnement en afhaal of lokale levering — in plaats van enkel via WhatsApp." />
+  <link rel="canonical" href="https://hetvaarthof.be/" />
+  <meta name="theme-color" content="#3a5a2a" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Het Vaarthof" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Het Vaarthof — Bio hoevewinkel &amp; webshop in Schoten" />
+  <meta property="og:description" content="Bio groenten, zuivel &amp; seizoensasperges van eigen hoeve in Schoten. Binnenkort online bestellen, oogstpakketten op abonnement en afhaal of lokale levering." />
+  <meta property="og:url" content="https://hetvaarthof.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Inline SVG favicon — monogram "HV" -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233a5a2a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%23dff0c8' text-anchor='middle'%3EHV%3C/text%3E%3C/svg%3E" />
+  <!-- Local-SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store", "FoodEstablishment"],
+    "name": "Het Vaarthof",
+    "description": "Biologische hoevewinkel in Schoten met dagverse bio groenten, zuivel en seizoensasperges van eigen hoeve. Binnenkort online bestellen, oogstpakketten op abonnement en afhaal of lokale levering.",
+    "image": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://hetvaarthof.be/",
+    "telephone": "+3236581086",
+    "email": "vaarthof@gmail.com",
+    "servesCuisine": ["Organic", "Farm"],
+    "priceRange": "€€",
+    "areaServed": "BE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Wijnegembaan 41",
+      "postalCode": "2900",
+      "addressLocality": "Schoten",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.2415, "longitude": 4.5260 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "09:00", "closes": "16:00" }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
+          colors: {
+            garden:   '#3a5a2a',
+            gardenlt: '#456b32',
+            gardendk: '#2c4420',
+            fresh:    '#8bbf5a',
+            freshlt:  '#a7d178',
+            cream:    '#f7f4ea',
+            wheat:    '#ece3cd',
+            charcoal: '#26291f',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(44,68,32,.18) 0%, rgba(44,68,32,.52) 50%, rgba(44,68,32,.92) 100%); }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 2px; }
+  </style>
+</head>
+<body class="bg-cream text-garden font-sans antialiased selection:bg-fresh/25">
+
+  <!-- Skip link -->
+  <a href="#bestellen" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-garden focus:text-cream focus:rounded-full">Naar online bestellen</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-garden text-cream text-center text-[13px] tracking-wide py-2 px-4">
+    <span aria-hidden="true">🌱</span> <span class="font-semibold">Binnenkort:</span> online bestellen met productcatalogus &amp; oogstpakketten — geen losse WhatsApp-berichten meer · Wijnegembaan 41, Schoten.
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-garden/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-garden">Het Vaarthof<span class="text-fresh">·</span></span>
+        <span class="text-[11px] uppercase tracking-[0.22em] text-garden/50 font-600">Bio hoevewinkel · Schoten</span>
+      </a>
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
+        <a href="#bestellen" class="ug">Online bestellen</a>
+        <a href="#assortiment" class="ug">Assortiment</a>
+        <a href="#pakketten" class="ug">Oogstpakketten</a>
+        <a href="#bezoek" class="ug">Bezoek de hoeve</a>
+      </div>
+      <!-- CTA + hamburger -->
+      <div class="flex items-center gap-2">
+        <a href="#bestellen" class="inline-flex items-center gap-2 bg-fresh text-gardendk text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-freshlt transition">
+          Bestel &amp; afhalen
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-garden/15 text-garden hover:bg-garden/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-garden/10 bg-cream/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#bestellen" class="py-3 border-b border-garden/8">Online bestellen</a>
+        <a href="#assortiment" class="py-3 border-b border-garden/8">Assortiment</a>
+        <a href="#pakketten" class="py-3 border-b border-garden/8">Oogstpakketten</a>
+        <a href="#bezoek" class="py-3">Bezoek de hoeve</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-garden">
+    <img
+      src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=2000&q=80"
+      alt="Dagverse bio groenten van de hoeve bij Het Vaarthof Schoten"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-freshlt font-600 tracking-[0.3em] uppercase text-xs mb-5">
+        <span aria-hidden="true">🌱</span> Bio groenten · Zuivel · Asperges · Schoten
+      </p>
+      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
+        Verse bio van de hoeve,<br />nu ook online.
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Biologische groenten, zuivel en seizoensasperges — recht van eigen hoeve aan de
+        Wijnegembaan in Schoten. Bestel straks online uit de catalogus, kies een oogstpakket
+        en haal af of laat lokaal leveren.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#bestellen" class="bg-fresh text-gardendk font-700 px-7 py-3.5 rounded-full hover:bg-freshlt transition">
+          Bestel en haal af
+        </a>
+        <a href="#pakketten" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
+          Oogstpakket ontdekken
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP strip -->
+  <section class="bg-garden text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-freshlt">100% Bio</p><p class="mt-1 text-cream/65">Biologisch geteeld</p></div>
+      <div><p class="font-serif text-2xl text-freshlt">Eigen hoeve</p><p class="mt-1 text-cream/65">Van veld tot toonbank</p></div>
+      <div><p class="font-serif text-2xl text-freshlt">Seizoen</p><p class="mt-1 text-cream/65">Dagvers geoogst</p></div>
+      <div><p class="font-serif text-2xl text-freshlt">Lokaal</p><p class="mt-1 text-cream/65">Afhaal &amp; levering in de buurt</p></div>
+    </div>
+  </section>
+
+  <!-- Online bestellen / catalogus -->
+  <section id="bestellen" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-gardenlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Nieuw: online bestellen</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-garden">
+          Bestel uit de catalogus,<br />niet meer via WhatsApp.
+        </h2>
+        <p class="text-charcoal/75 text-lg mt-5 leading-relaxed max-w-md">
+          Vandaag verloopt elke bestelling handmatig via WhatsApp of Gmail. Met een echte
+          hoevewebshop kies je rustig uit het volledige bio-assortiment, zet je alles in je mandje
+          en haal je af op een moment dat jou past aan de Wijnegembaan 41.
+        </p>
+        <ul class="mt-7 space-y-3 text-charcoal">
+          <li class="flex items-center gap-3"><span class="text-gardenlt font-700">✓</span> Volledige productcatalogus i.p.v. losse berichten</li>
+          <li class="flex items-center gap-3"><span class="text-gardenlt font-700">✓</span> Vers geoogst en klaargezet bij afhaling</li>
+          <li class="flex items-center gap-3"><span class="text-gardenlt font-700">✓</span> Afhaal aan de hoeve of lokale levering in de buurt</li>
+        </ul>
+        <a href="#pakketten" class="inline-flex items-center gap-2 mt-9 bg-garden text-cream font-600 px-7 py-3.5 rounded-full hover:bg-gardenlt transition">
+          Of kies een oogstpakket op abonnement
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-wheat">
+          <img
+            src="https://images.unsplash.com/photo-1518843875459-f738682238a6?auto=format&fit=crop&w=800&q=80"
+            alt="Mand met dagverse bio groenten"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-wheat mt-8">
+          <img
+            src="https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=800&q=80"
+            alt="Vers geoogste groenten op de hoeve"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assortiment grid -->
+  <section id="assortiment" class="bg-wheat/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-gardenlt font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-garden">Bio van de hoeve</h2>
+        </div>
+        <p class="text-charcoal/65 max-w-sm">Groenten, zuivel, seizoensasperges en streekproducten — biologisch geteeld en dagvers van eigen veld.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Groenten & fruit -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-garden text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80"
+            alt="Bio groenten en fruit"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-garden via-garden/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Groenten &amp; fruit</h3>
+            <p class="text-cream/75 text-sm mt-1">Dagvers geoogste bio groenten en seizoensfruit van eigen veld.</p>
+          </div>
+        </article>
+        <!-- Zuivel -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-garden text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?auto=format&fit=crop&w=800&q=80"
+            alt="Bio zuivel en hoeveproducten"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-garden via-garden/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Zuivel</h3>
+            <p class="text-cream/75 text-sm mt-1">Verse hoevezuivel — melk, yoghurt en kaas, eerlijk en lokaal.</p>
+          </div>
+        </article>
+        <!-- Asperges (seizoen) -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-garden text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1515471209610-8c5d4012b89c?auto=format&fit=crop&w=800&q=80"
+            alt="Verse seizoensasperges"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-garden via-garden/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <span class="inline-block mb-2 text-[11px] uppercase tracking-wider bg-fresh text-gardendk font-700 px-2 py-0.5 rounded-full">Seizoen</span>
+            <h3 class="font-serif text-2xl font-600">Asperges</h3>
+            <p class="text-cream/75 text-sm mt-1">Onze seizoenstroef — dagvers gestoken asperges, wit en groen.</p>
+          </div>
+        </article>
+        <!-- Pakketten -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-garden text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=800&q=80"
+            alt="Groente- en oogstpakket"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-garden via-garden/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Groente&shy;pakketten</h3>
+            <p class="text-cream/75 text-sm mt-1">Samengestelde oogstpakketten — wekelijks vers, ook op abonnement.</p>
+          </div>
+        </article>
+        <!-- Streekproducten -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-garden text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?auto=format&fit=crop&w=800&q=80"
+            alt="Streekproducten van de hoeve"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-garden via-garden/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Streekproducten</h3>
+            <p class="text-cream/75 text-sm mt-1">Confituur, honing, eieren &amp; ambachtelijke lekkers uit de buurt.</p>
+          </div>
+        </article>
+        <!-- Oogstpakket CTA card -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-fresh text-gardendk relative aspect-[4/5] flex items-center justify-center text-center p-6">
+          <div>
+            <p class="font-serif text-2xl font-600">Oogst&shy;abonnement</p>
+            <p class="text-gardendk/80 text-sm mt-2">Elke week een vers oogstpakket aan huis of af te halen — geen gedoe, gewoon seizoensvers.</p>
+            <a href="#pakketten" class="inline-block mt-5 text-gardendk font-700 ug">Ontdek het abonnement →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products (illustratief) -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="flex items-end justify-between mb-10">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-garden">Vers uit de hoevewinkel</h2>
+      <a href="#bestellen" class="hidden sm:inline text-gardenlt font-600 ug">Alles bestellen →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Product 1 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-wheat">
+          <img
+            src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=700&q=80"
+            alt="Bio groentepakket (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gardenlt font-600 uppercase tracking-wider">Wekelijks vers</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-garden">Bio groentepakket</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Een wisselende selectie seizoensgroenten van het veld.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-garden text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-gardenlt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-wheat">
+          <img
+            src="https://images.unsplash.com/photo-1515471209610-8c5d4012b89c?auto=format&fit=crop&w=700&q=80"
+            alt="Seizoensasperges (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gardenlt font-600 uppercase tracking-wider">Seizoen</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-garden">Verse asperges</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Dagvers gestoken, wit of groen — zolang het seizoen duurt.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-garden text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-gardenlt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-wheat">
+          <img
+            src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?auto=format&fit=crop&w=700&q=80"
+            alt="Hoevezuivel (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gardenlt font-600 uppercase tracking-wider">Hoeve</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-garden">Verse hoevezuivel</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Melk, yoghurt en kaas — eerlijk en lokaal van de hoeve.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-garden text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-gardenlt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs text-charcoal/40 mt-6">Voorbeeldproducten ter illustratie van de toekomstige online bestelmodule — geen actuele prijzen.</p>
+  </section>
+
+  <!-- Oogstpakket-abonnement + afhaal (the differentiator) -->
+  <section id="pakketten" class="bg-garden text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img
+          src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=1000&q=80"
+          alt="Oogstpakket met verse bio groenten"
+          loading="lazy" decoding="async"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="order-1 lg:order-2 fade-up">
+        <p class="text-freshlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Oogstpakket &amp; afhaal</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
+          Elke week vers,<br />op abonnement.
+        </h2>
+        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
+          Kies een vast oogstpakket en ontvang wekelijks of tweewekelijks een mand seizoensgroenten —
+          af te halen aan de hoeve of lokaal geleverd. Stel hieronder vrijblijvend je voorkeuren samen
+          en wij bezorgen je een voorstel op maat. Geen verplichting, gewoon een aanvraag.
+        </p>
+
+        <!-- Concept-formulier: oogstpakket-aanvraag -->
+        <form class="mt-8 bg-cream/5 border border-cream/15 rounded-2xl p-5 sm:p-6 space-y-4" onsubmit="return false">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="t-naam" class="block text-sm font-600 text-cream/90 mb-1">Naam</label>
+              <input id="t-naam" name="naam" type="text" autocomplete="name" placeholder="Uw naam"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-fresh" />
+            </div>
+            <div>
+              <label for="t-tel" class="block text-sm font-600 text-cream/90 mb-1">Telefoon</label>
+              <input id="t-tel" name="telefoon" type="tel" autocomplete="tel" placeholder="03 ..."
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-fresh" />
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="t-frequentie" class="block text-sm font-600 text-cream/90 mb-1">Frequentie</label>
+              <select id="t-frequentie" name="frequentie"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-fresh">
+                <option>Wekelijks</option>
+                <option>Tweewekelijks</option>
+                <option>Maandelijks</option>
+                <option>Eenmalig proberen</option>
+              </select>
+            </div>
+            <div>
+              <label for="t-personen" class="block text-sm font-600 text-cream/90 mb-1">Aantal personen</label>
+              <input id="t-personen" name="personen" type="number" min="1" placeholder="bv. 4"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-fresh" />
+            </div>
+          </div>
+          <div>
+            <label for="t-type" class="block text-sm font-600 text-cream/90 mb-1">Pakket &amp; afhaal</label>
+            <select id="t-type" name="type"
+              class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-fresh">
+              <option>Groentepakket — afhalen aan de hoeve</option>
+              <option>Groentepakket — lokale levering</option>
+              <option>Groenten + zuivel — afhalen</option>
+              <option>Groenten + zuivel — lokale levering</option>
+              <option>Asperges (seizoen)</option>
+              <option>Iets anders</option>
+            </select>
+          </div>
+          <div>
+            <label for="t-wensen" class="block text-sm font-600 text-cream/90 mb-1">Voorkeuren / opmerkingen</label>
+            <textarea id="t-wensen" name="wensen" rows="3" placeholder="Groenten die je liever niet hebt, startdatum, afhaal- of leveringsdag ..."
+              class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-fresh"></textarea>
+          </div>
+          <label class="flex items-start gap-3 text-xs text-cream/70">
+            <input type="checkbox" required class="mt-0.5 accent-fresh" />
+            <span>Ik ga akkoord dat mijn gegevens enkel worden gebruikt om mijn aanvraag te beantwoorden (GDPR).</span>
+          </label>
+          <button class="w-full bg-fresh text-gardendk font-700 px-7 py-3 rounded-full hover:bg-freshlt transition">
+            Verstuur mijn aanvraag
+          </button>
+          <p class="text-[11px] text-cream/50 text-center">Concept-formulier — in de live versie komt uw aanvraag rechtstreeks per e-mail bij Het Vaarthof terecht, in plaats van via WhatsApp.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ons verhaal -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="fade-up">
+      <p class="text-gardenlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-garden">Bio van veld tot<br />toonbank.</h2>
+      <p class="text-charcoal/70 text-lg mt-6 leading-relaxed">
+        Het Vaarthof is een biologische hoevewinkel aan de Wijnegembaan in Schoten.
+        Wat ons onderscheidt? We telen onze bio groenten en asperges zelf en brengen ze samen
+        met verse hoevezuivel rechtstreeks naar de toonbank — met het korte verhaal van veld tot bord.
+      </p>
+      <p class="text-charcoal/70 text-lg mt-4 leading-relaxed">
+        Of je nu langskomt voor een mand seizoensgroenten, een stuk hoevekaas of de eerste asperges
+        van het jaar — bij Het Vaarthof vind je eerlijke, lokale kwaliteit. Voortaan kan dat ook
+        digitaal: bestellen uit de catalogus, een oogstpakket op abonnement en afhalen of lokaal
+        laten leveren — in plaats van alles handmatig via WhatsApp te regelen.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-6">
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gardenlt font-700">100%</p>
+          <p class="text-charcoal/65 text-sm mt-1">Biologisch</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gardenlt font-700">Dagvers</p>
+          <p class="text-charcoal/65 text-sm mt-1">Van eigen veld</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gardenlt font-700">Schoten</p>
+          <p class="text-charcoal/65 text-sm mt-1">Wijnegembaan 41</p>
+        </div>
+      </div>
+    </div>
+    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
+      <img
+        src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1000&q=80"
+        alt="De hoeve en velden van Het Vaarthof"
+        loading="lazy" decoding="async"
+        class="w-full h-full object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Bezoek + kaart -->
+  <section id="bezoek" class="bg-wheat/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+      <div class="fade-up">
+        <p class="text-gardenlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek de hoeve</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-garden">Welkom in de hoevewinkel</h2>
+        <p class="text-charcoal/70 text-lg mt-5 max-w-md">
+          Kom proeven en kiezen aan de Wijnegembaan 41 in Schoten, midden in het groen.
+        </p>
+        <dl class="mt-9 space-y-5 text-charcoal">
+          <div class="flex gap-4">
+            <span class="text-gardenlt mt-0.5 text-xl" aria-hidden="true">📍</span>
+            <div>
+              <dt class="font-600 text-garden">Adres</dt>
+              <dd class="text-charcoal/70">Wijnegembaan 41, 2900 Schoten</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gardenlt mt-0.5 text-xl" aria-hidden="true">🕑</span>
+            <div>
+              <dt class="font-600 text-garden">Openingsuren</dt>
+              <dd class="text-charcoal/70">Wo–Vr: 09:00–18:00 · Za: 09:00–16:00 · Zo–Di: gesloten</dd>
+              <dd class="text-charcoal/40 text-sm mt-1">(indicatief — graag te bevestigen)</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gardenlt mt-0.5 text-xl" aria-hidden="true">📞</span>
+            <div>
+              <dt class="font-600 text-garden">Telefoon</dt>
+              <dd class="text-charcoal/70"><a href="tel:+3236581086" class="ug">03 658 10 86</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gardenlt mt-0.5 text-xl" aria-hidden="true">✉️</span>
+            <div>
+              <dt class="font-600 text-garden">E-mail</dt>
+              <dd class="text-charcoal/70">
+                vaarthof@gmail.com
+                <span class="text-charcoal/40 text-sm ml-1">(voorstel: info@hetvaarthof.be)</span>
+              </dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gardenlt mt-0.5 text-xl" aria-hidden="true">🛒</span>
+            <div>
+              <dt class="font-600 text-garden">Bestellen vandaag</dt>
+              <dd class="text-charcoal/70">Nu enkel via WhatsApp of Gmail — straks online uit de catalogus</dd>
+            </div>
+          </div>
+        </dl>
+        <a href="#bestellen" class="inline-block mt-9 bg-garden text-cream font-600 px-7 py-3.5 rounded-full hover:bg-gardenlt transition">
+          Of bestel online →
+        </a>
+      </div>
+      <!-- OpenStreetMap embed — Wijnegembaan 41, 2900 Schoten (~51.2415, 4.5260) -->
+      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-wheat shadow-sm">
+        <iframe
+          title="Kaart Het Vaarthof — Wijnegembaan 41, 2900 Schoten"
+          class="w-full h-full min-h-[360px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.517%2C51.236%2C4.535%2C51.247&layer=mapnik&marker=51.2415%2C4.5260"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- GDPR Newsletter -->
+  <section class="bg-fresh/15">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-garden">Blijf op de hoogte</h2>
+      <p class="text-charcoal/70 mt-3">Wat er deze week vers van het veld komt, het aspergeseizoen en nieuwe oogstpakketten — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input
+          id="nl-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          placeholder="jouw@email.be"
+          class="flex-1 px-5 py-3 rounded-full border border-garden/20 bg-cream focus:outline-none focus:ring-2 focus:ring-fresh"
+        />
+        <button class="bg-garden text-cream font-600 px-7 py-3 rounded-full hover:bg-gardenlt transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-charcoal/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-garden text-cream/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-cream font-700">Het Vaarthof<span class="text-fresh">·</span></p>
+        <p class="text-cream/55 text-sm mt-1">Bio hoevewinkel</p>
+        <p class="text-cream/55 text-sm mt-3 max-w-xs">Biologische groenten, zuivel &amp; seizoensasperges van eigen hoeve in Schoten. Binnenkort online bestellen, oogstpakketten &amp; lokale levering.</p>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Hoevewinkel</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#assortiment" class="hover:text-freshlt">Assortiment</a></li>
+          <li><a href="#bestellen" class="hover:text-freshlt">Online bestellen</a></li>
+          <li><a href="#pakketten" class="hover:text-freshlt">Oogstpakketten</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Info</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#bezoek" class="hover:text-freshlt">Openingsuren</a></li>
+          <li><a href="#bezoek" class="hover:text-freshlt">Contact</a></li>
+          <li><a href="#top" class="hover:text-freshlt">Ons verhaal</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Contact</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li>Wijnegembaan 41</li>
+          <li>2900 Schoten</li>
+          <li><a href="tel:+3236581086" class="hover:text-freshlt">03 658 10 86</a></li>
+          <li>vaarthof@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40">
+        <p>© 2026 Het Vaarthof. Concept-redesign.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; bio-hoevewebshop.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Fade-up IntersectionObserver
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>
