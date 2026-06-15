@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bakkerij Boulot — ambachtelijke zuurdesembakkerij in Borgerhout</title>
+  <meta name="description" content="Ambachtelijke zuurdesembakkerij in Borgerhout. Dagvers brood, viennoiserie & gebak — nu ook vooraf te bestellen met click & collect en een wekelijks brood-abonnement." />
+  <link rel="canonical" href="https://bakkerijboulot.be/" />
+  <meta name="theme-color" content="#3b2a1a" />
+  <!-- Social link preview (so the outreach link looks right in WhatsApp/e-mail) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Bakkerij Boulot" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Bakkerij Boulot — ambachtelijke zuurdesembakkerij in Borgerhout" />
+  <meta property="og:description" content="Dagvers zuurdesem, viennoiserie & gebak — nu ook vooraf bestellen, click & collect en een wekelijks brood-abonnement." />
+  <meta property="og:url" content="https://bakkerijboulot.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233b2a1a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='15' fill='%23faf4e8' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E" />
+  <!-- Local-SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Bakery", "FoodEstablishment"],
+    "name": "Bakkerij Boulot",
+    "description": "Ambachtelijke zuurdesembakkerij in Borgerhout — dagvers brood, viennoiserie & gebak.",
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://bakkerijboulot.be/",
+    "telephone": "+3232194881",
+    "servesCuisine": "Bakery",
+    "priceRange": "€€",
+    "areaServed": "Borgerhout",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Sint-Marcusstraat 27",
+      "postalCode": "2140",
+      "addressLocality": "Borgerhout",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.2140, "longitude": 4.4380 }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Fraunces', 'serif'], sans: ['Inter', 'sans-serif'] },
+          colors: {
+            crust: '#3b2a1a',
+            bark: '#52382020',
+            cocoa: '#5a4226',
+            cream: '#faf4e8',
+            wheat: '#e9d8b8',
+            golden: '#c98a2e',
+            goldenlight: '#e0a445',
+            sage: '#7c7a4f',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(59,42,26,.20) 0%, rgba(59,42,26,.50) 55%, rgba(59,42,26,.92) 100%); }
+    .fade-up { opacity: 0; transform: translateY(18px); transition: all .7s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 2px; }
+  </style>
+</head>
+<body class="bg-cream text-crust font-sans antialiased selection:bg-golden/25">
+
+  <a href="#shop" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-crust focus:text-cream focus:rounded-full">Naar de webshop</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-crust text-cream text-center text-[13px] tracking-wide py-2 px-4">
+    🍞 <span class="font-semibold">Nieuw:</span> bestel je brood vooraf — click &amp; collect · of neem een wekelijks brood-abonnement.
+  </div>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 bg-cream/85 backdrop-blur border-b border-crust/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-2xl font-700 tracking-tight">Bakkerij<span class="text-golden"> Boulot</span></span>
+        <span class="text-[11px] uppercase tracking-[0.25em] text-crust/50 font-600">Borgerhout</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
+        <a href="#shop" class="ug">Bestel vooraf</a>
+        <a href="#assortiment" class="ug">Assortiment</a>
+        <a href="#abonnement" class="ug">Brood-abonnement</a>
+        <a href="#bezoek" class="ug">Bezoek ons</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="#shop" class="inline-flex items-center gap-2 bg-golden text-crust text-sm font-600 px-4 sm:px-5 py-2.5 rounded-full hover:bg-goldenlight transition">
+          Bestel vooraf
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-crust/15 text-crust hover:bg-crust/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" hidden class="md:hidden border-t border-crust/10 bg-cream/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#shop" class="py-3 border-b border-crust/5">Bestel vooraf</a>
+        <a href="#assortiment" class="py-3 border-b border-crust/5">Assortiment</a>
+        <a href="#abonnement" class="py-3 border-b border-crust/5">Brood-abonnement</a>
+        <a href="#bezoek" class="py-3">Bezoek ons</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[86vh] flex items-end overflow-hidden bg-cocoa">
+    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=2000&q=80" alt="Versgebakken ambachtelijk brood" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-goldenlight font-600 tracking-[0.3em] uppercase text-xs mb-5">Ambachtelijke zuurdesembakkerij · Borgerhout</p>
+      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
+        Echt zuurdesem,<br />nu ook vooraf besteld.
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Brood met geduld gebakken — trage rijzing, knapperige korst, eerlijk graan. Bestel vooraf, haal vers af, of laat je brood wekelijks klaarstaan.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#shop" class="bg-golden text-crust font-600 px-7 py-3.5 rounded-full hover:bg-goldenlight transition">Bestel vooraf</a>
+        <a href="#abonnement" class="border border-cream/40 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">Brood-abonnement</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <section class="bg-crust text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-goldenlight">Zuurdesem</p><p class="mt-1 text-cream/70">trage, natuurlijke rijzing</p></div>
+      <div><p class="font-serif text-2xl text-goldenlight">Dagvers</p><p class="mt-1 text-cream/70">elke ochtend gebakken</p></div>
+      <div><p class="font-serif text-2xl text-goldenlight">Ambachtelijk</p><p class="mt-1 text-cream/70">met de hand gemaakt</p></div>
+      <div><p class="font-serif text-2xl text-goldenlight">Lokaal</p><p class="mt-1 text-cream/70">hart van Borgerhout</p></div>
+    </div>
+  </section>
+
+  <!-- Webshop highlight (the upsell) -->
+  <section id="shop" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-golden font-600 tracking-[0.2em] uppercase text-xs mb-4">Nieuw — bestel vooraf</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">Je brood staat klaar,<br />zonder wachtrij.</h2>
+        <p class="text-cocoa/80 text-lg mt-5 leading-relaxed max-w-md">
+          Geen tijd om in de rij te staan of bang voor een uitverkocht rek? Reserveer je zuurdesem, croissants of taart vooraf en haal ze vers af op het uur dat jou past.
+        </p>
+        <ul class="mt-7 space-y-3 text-cocoa">
+          <li class="flex items-center gap-3"><span class="text-golden">✓</span> Click &amp; collect — kies je afhaalmoment</li>
+          <li class="flex items-center gap-3"><span class="text-golden">✓</span> Nooit meer voor een leeg rek staan</li>
+          <li class="flex items-center gap-3"><span class="text-golden">✓</span> Vooraf betalen met Bancontact, Visa &amp; Payconiq</li>
+        </ul>
+        <a href="#assortiment" class="inline-flex items-center gap-2 mt-9 bg-crust text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cocoa transition">
+          Start je bestelling
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-wheat">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" alt="Verse croissants" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-wheat mt-8">
+          <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=800&q=80" alt="Ambachtelijk gebak" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assortiment -->
+  <section id="assortiment" class="bg-wheat/50 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-golden font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-600">Vers uit de oven</h2>
+        </div>
+        <p class="text-cocoa/70 max-w-sm">Van knapperig zuurdesem tot fijne viennoiserie — alles ambachtelijk en met geduld gemaakt.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <article class="fade-up group rounded-2xl overflow-hidden bg-crust text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Zuurdesembrood" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-95 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-crust via-crust/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Zuurdesembrood</h3><p class="text-cream/75 text-sm mt-1">Trage rijzing, knapperige korst, vol van smaak.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-crust text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=820&q=80" alt="Viennoiserie en croissants" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-95 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-crust via-crust/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Viennoiserie &amp; croissants</h3><p class="text-cream/75 text-sm mt-1">Botercroissants, pain au chocolat &amp; meer.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-crust text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=840&q=80" alt="Gebak en taart" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-95 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-crust via-crust/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Gebak &amp; taart</h3><p class="text-cream/75 text-sm mt-1">Fijne patisserie &amp; taart op bestelling.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-crust text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=80" alt="Koffie" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-95 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-crust via-crust/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Koffie</h3><p class="text-cream/75 text-sm mt-1">Een verse koffie bij je versgebakken brood.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-crust text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=800&q=80" alt="Brood-abonnement" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-95 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-crust via-crust/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Brood-abonnement</h3><p class="text-cream/75 text-sm mt-1">Wekelijks vers — jouw brood staat altijd klaar.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-golden text-crust relative aspect-[4/5] flex items-center justify-center text-center p-6">
+          <div>
+            <p class="font-serif text-2xl font-600">Cadeaubon</p>
+            <p class="text-crust/80 text-sm mt-2">Schenk een bon van Bakkerij Boulot — altijd een lekker idee.</p>
+            <a href="#shop" class="inline-block mt-5 text-crust font-600 ug">Bestel een bon →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pre-order / click & collect + abonnement upsell -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-6">
+      <div class="fade-up rounded-3xl bg-crust text-cream p-8 sm:p-10 flex flex-col">
+        <p class="text-goldenlight font-600 tracking-[0.2em] uppercase text-xs mb-4">Bestel vooraf · click &amp; collect</p>
+        <h3 class="font-serif text-3xl sm:text-4xl font-600 leading-tight">Reserveer vandaag,<br />haal morgen vers af.</h3>
+        <p class="text-cream/80 mt-5 leading-relaxed max-w-md">
+          Kies je brood, gebak of viennoiserie, betaal online en pik het op wanneer het jou uitkomt. Geen wachtrij, geen teleurstelling aan een leeg rek.
+        </p>
+        <a href="#shop" class="inline-flex items-center gap-2 mt-8 self-start bg-golden text-crust font-600 px-7 py-3.5 rounded-full hover:bg-goldenlight transition">
+          Bestel vooraf
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div id="abonnement" class="fade-up rounded-3xl bg-wheat/60 border border-golden/30 p-8 sm:p-10 flex flex-col">
+        <p class="text-golden font-600 tracking-[0.2em] uppercase text-xs mb-4">Brood-abonnement</p>
+        <h3 class="font-serif text-3xl sm:text-4xl font-600 leading-tight text-crust">Wekelijks vers,<br />volledig automatisch.</h3>
+        <p class="text-cocoa/80 mt-5 leading-relaxed max-w-md">
+          Kies je vaste brood(en) en afhaaldag. Wij bakken, jij haalt op — week na week, zonder telkens te bestellen. Pauzeren of aanpassen kan altijd.
+        </p>
+        <ul class="mt-6 space-y-3 text-cocoa">
+          <li class="flex items-center gap-3"><span class="text-golden">✓</span> Jouw brood ligt elke week klaar</li>
+          <li class="flex items-center gap-3"><span class="text-golden">✓</span> Pauzeer of wijzig wanneer je wil</li>
+          <li class="flex items-center gap-3"><span class="text-golden">✓</span> Steun je lokale ambachtsbakker</li>
+        </ul>
+        <a href="#bezoek" class="inline-flex items-center gap-2 mt-8 self-start bg-crust text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cocoa transition">
+          Start een abonnement
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+    <p class="text-center text-xs text-cocoa/40 mt-6">Voorbeeld van de bestel- &amp; abonnementsflow ter illustratie van de webshop.</p>
+  </section>
+
+  <!-- Story / ambacht -->
+  <section class="bg-crust text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=1000&q=80" alt="Ambachtelijk bakken in de bakkerij" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+      </div>
+      <div class="order-1 lg:order-2 fade-up">
+        <p class="text-goldenlight font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons ambacht</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">Tijd is het<br />belangrijkste ingrediënt.</h2>
+        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
+          Bij Boulot geloven we in trage rijzing en eerlijk graan. Onze zuurdesem krijgt de tijd die ze verdient — dat proef je in elke knapperige korst en luchtige kruim. Gewoon brood zoals het hoort, midden in Borgerhout.
+        </p>
+        <a href="#assortiment" class="inline-flex items-center gap-2 mt-8 bg-golden text-crust font-600 px-7 py-3.5 rounded-full hover:bg-goldenlight transition">
+          Ontdek het assortiment
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bezoek + pre-order form -->
+  <section id="bezoek" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-12">
+    <div class="fade-up">
+      <p class="text-golden font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-600">Welkom in de bakkerij</h2>
+      <p class="text-cocoa/70 text-lg mt-5 max-w-md">Kom de geur opsnuiven in de Sint-Marcusstraat, in het hart van Borgerhout.</p>
+      <dl class="mt-9 space-y-5 text-cocoa">
+        <div class="flex gap-4"><span class="text-golden mt-1" aria-hidden="true">📍</span><div><dt class="font-600">Adres</dt><dd class="text-cocoa/70">Sint-Marcusstraat 27, 2140 Borgerhout</dd></div></div>
+        <div class="flex gap-4"><span class="text-golden mt-1" aria-hidden="true">📞</span><div><dt class="font-600">Telefoon</dt><dd class="text-cocoa/70">03 219 48 81</dd></div></div>
+        <div class="flex gap-4"><span class="text-golden mt-1" aria-hidden="true">✉️</span><div><dt class="font-600">E-mail</dt><dd class="text-cocoa/70">hallo@bakkerijboulot.be <span class="text-cocoa/40">(voorstel — professioneel domeinadres)</span></dd></div></div>
+      </dl>
+      <div class="rounded-3xl overflow-hidden min-h-[300px] bg-wheat mt-9">
+        <iframe title="Kaart Bakkerij Boulot, Sint-Marcusstraat 27 Borgerhout" class="w-full h-full min-h-[300px] border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.428%2C51.205%2C4.448%2C51.222&layer=mapnik&marker=51.2140%2C4.4380"></iframe>
+      </div>
+    </div>
+    <div class="fade-up">
+      <div class="rounded-3xl bg-wheat/60 border border-golden/30 p-7 sm:p-9">
+        <p class="text-golden font-600 tracking-[0.2em] uppercase text-xs mb-3">Bestel vooraf</p>
+        <h3 class="font-serif text-3xl font-600 text-crust">Reserveer je brood</h3>
+        <p class="text-cocoa/70 mt-3">Laat ons weten wat je nodig hebt en wanneer je het komt afhalen. Wij zorgen dat het vers klaarstaat.</p>
+        <form class="mt-7 space-y-4" onsubmit="return false">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="po-name" class="block text-sm font-600 text-crust mb-1">Naam</label>
+              <input id="po-name" name="name" type="text" autocomplete="name" required placeholder="Jouw naam" class="w-full px-4 py-3 rounded-xl border border-cocoa/20 bg-cream focus:outline-none focus:ring-2 focus:ring-golden" />
+            </div>
+            <div>
+              <label for="po-phone" class="block text-sm font-600 text-crust mb-1">Telefoon</label>
+              <input id="po-phone" name="phone" type="tel" autocomplete="tel" placeholder="03 ..." class="w-full px-4 py-3 rounded-xl border border-cocoa/20 bg-cream focus:outline-none focus:ring-2 focus:ring-golden" />
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="po-product" class="block text-sm font-600 text-crust mb-1">Wat wil je bestellen?</label>
+              <select id="po-product" name="product" class="w-full px-4 py-3 rounded-xl border border-cocoa/20 bg-cream focus:outline-none focus:ring-2 focus:ring-golden">
+                <option>Zuurdesembrood</option>
+                <option>Viennoiserie &amp; croissants</option>
+                <option>Gebak &amp; taart</option>
+                <option>Brood-abonnement</option>
+                <option>Cadeaubon</option>
+              </select>
+            </div>
+            <div>
+              <label for="po-date" class="block text-sm font-600 text-crust mb-1">Afhaaldatum</label>
+              <input id="po-date" name="date" type="date" class="w-full px-4 py-3 rounded-xl border border-cocoa/20 bg-cream focus:outline-none focus:ring-2 focus:ring-golden" />
+            </div>
+          </div>
+          <div>
+            <label for="po-note" class="block text-sm font-600 text-crust mb-1">Opmerking</label>
+            <textarea id="po-note" name="note" rows="3" placeholder="Aantal, voorkeuren, afhaaluur ..." class="w-full px-4 py-3 rounded-xl border border-cocoa/20 bg-cream focus:outline-none focus:ring-2 focus:ring-golden"></textarea>
+          </div>
+          <button class="w-full bg-crust text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cocoa transition">Bestelling doorgeven</button>
+          <p class="text-xs text-cocoa/50 text-center">Demo-formulier — in de live webshop volgt online betaling &amp; bevestiging.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="bg-golden/15">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600">Blijf op de hoogte</h2>
+      <p class="text-cocoa/70 mt-3">Nieuwe broden, seizoensgebak en acties — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input id="nl-email" name="email" type="email" autocomplete="email" required placeholder="jouw@email.be" class="flex-1 px-5 py-3 rounded-full border border-cocoa/20 bg-cream focus:outline-none focus:ring-2 focus:ring-golden" />
+        <button class="bg-crust text-cream font-600 px-7 py-3 rounded-full hover:bg-cocoa transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-cocoa/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-crust text-cream/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-cream font-700">Bakkerij<span class="text-golden"> Boulot</span></p>
+        <p class="text-cream/60 text-sm mt-3 max-w-xs">Ambachtelijke zuurdesembakkerij in het hart van Borgerhout.</p>
+      </div>
+      <div><p class="font-600 text-cream mb-3">Bakkerij</p><ul class="space-y-2 text-sm text-cream/60"><li><a href="#assortiment" class="hover:text-goldenlight">Assortiment</a></li><li><a href="#shop" class="hover:text-goldenlight">Bestel vooraf</a></li><li><a href="#abonnement" class="hover:text-goldenlight">Brood-abonnement</a></li></ul></div>
+      <div><p class="font-600 text-cream mb-3">Info</p><ul class="space-y-2 text-sm text-cream/60"><li><a href="#bezoek" class="hover:text-goldenlight">Click &amp; collect</a></li><li><a href="#bezoek" class="hover:text-goldenlight">Cadeaubon</a></li><li><a href="#bezoek" class="hover:text-goldenlight">Contact</a></li></ul></div>
+      <div><p class="font-600 text-cream mb-3">Contact</p><ul class="space-y-2 text-sm text-cream/60"><li>Sint-Marcusstraat 27, 2140 Borgerhout</li><li>03 219 48 81</li><li>hallo@bakkerijboulot.be</li></ul></div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/45">
+        <p>© 2026 Bakkerij Boulot. Concept-redesign.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; webshop.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1600);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>

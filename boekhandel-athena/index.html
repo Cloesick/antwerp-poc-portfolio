@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boekhandel Athena — Onafhankelijke boekhandel in Kontich</title>
+  <meta name="description" content="Jouw boekhandel in Kontich. Reserveer je boek online en haal het af in de winkel — fictie, non-fictie, kinder- & jeugdboeken, strips en cadeaubonnen. Persoonlijk advies in Kontich." />
+  <link rel="canonical" href="https://boekhandelathena.be/" />
+  <meta name="theme-color" content="#3A4A3F" />
+
+  <!-- Open Graph / social link preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Boekhandel Athena" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Boekhandel Athena — Onafhankelijke boekhandel in Kontich" />
+  <meta property="og:description" content="Reserveer je boek online en haal het af in de winkel. Persoonlijk advies in hartje Kontich." />
+  <meta property="og:url" content="https://boekhandelathena.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Inline SVG favicon — monogram A -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%237A2E2E'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='18' font-weight='700' fill='%23F4ECD8' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+
+  <!-- Local-SEO structured data — BookStore -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store", "BookStore"],
+    "name": "Boekhandel Athena",
+    "description": "Onafhankelijke boekhandel in Kontich. Reserveer online, haal af in de winkel — met persoonlijk advies.",
+    "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://boekhandelathena.be/",
+    "telephone": "+3234598169",
+    "email": "boekhandel.athena3@telenet.be",
+    "priceRange": "€€",
+    "areaServed": "BE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Mechelsesteenweg 21",
+      "postalCode": "2550",
+      "addressLocality": "Kontich",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.1360, "longitude": 4.4480 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "09:30", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "09:30", "closes": "17:00" }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/"
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Fraunces', 'Georgia', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            forest:    '#3A4A3F',
+            forestdk:  '#2C382F',
+            forestlt:  '#4E6155',
+            oxblood:   '#7A2E2E',
+            oxblooddk: '#5E2222',
+            oxbloodlt: '#9A4040',
+            cream:     '#F4ECD8',
+            creamdk:   '#EADFC4',
+            paper:     '#FBF7EE',
+            gold:      '#C39A4E',
+            goldlt:    '#D8B873',
+            ink:       '#2A2622',
+            stone:     '#6B6358',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad {
+      background: linear-gradient(160deg, rgba(44,56,47,.20) 0%, rgba(44,56,47,.55) 50%, rgba(44,56,47,.92) 100%);
+    }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: all .65s cubic-bezier(.2,.8,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 2px; }
+    .cat-card:hover img { transform: scale(1.07); }
+    .cat-card img { transition: transform .6s cubic-bezier(.2,.8,.2,1); }
+  </style>
+</head>
+<body class="bg-paper text-ink font-sans antialiased selection:bg-gold/40">
+
+  <!-- Skip link for accessibility -->
+  <a href="#reserveren" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-forest focus:text-cream focus:rounded-full">Naar reserveren</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-oxblood text-cream text-center text-[13px] font-bold tracking-wide py-2 px-4">
+    <span aria-hidden="true">📚</span> Nieuw: reserveer je boek online &amp; haal af in de winkel — Mechelsesteenweg 21, Kontich
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-paper/90 backdrop-blur border-b border-forest/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-2xl font-extrabold tracking-tight text-forest">Boekhandel <span class="text-oxblood">Athena</span></span>
+        <span class="text-[11px] uppercase tracking-[0.22em] text-forest/45 font-bold hidden sm:inline">Kontich</span>
+      </a>
+      <div class="hidden md:flex items-center gap-7 text-[15px] font-semibold">
+        <a href="#assortiment" class="ug">Assortiment</a>
+        <a href="#waarom" class="ug">Online reserveren</a>
+        <a href="#over" class="ug">Over ons</a>
+        <a href="#contact" class="ug">Contact</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="#reserveren" class="inline-flex items-center gap-2 bg-oxblood text-cream text-sm font-bold px-4 sm:px-5 py-2.5 rounded-full hover:bg-oxbloodlt transition shadow-sm">
+          Boek reserveren
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-forest/15 text-forest hover:bg-forest/6 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-forest/10 bg-paper/97 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-semibold">
+        <a href="#assortiment" class="py-3 border-b border-forest/6">Assortiment</a>
+        <a href="#waarom" class="py-3 border-b border-forest/6">Online reserveren</a>
+        <a href="#over" class="py-3 border-b border-forest/6">Over ons</a>
+        <a href="#contact" class="py-3">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[86vh] flex items-end overflow-hidden bg-forest">
+    <img
+      src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=2000&q=80"
+      alt="Warme boekhandel vol boeken"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-gold font-bold tracking-[0.3em] uppercase text-xs mb-5">Onafhankelijke boekhandel · Kontich</p>
+      <h1 class="font-serif text-cream text-[40px] leading-[1.08] sm:text-6xl lg:text-7xl font-extrabold max-w-3xl">
+        Jouw boekhandel<br />in <span class="text-gold">Kontich.</span>
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Persoonlijk advies, een zorgvuldig samengesteld aanbod én — nieuw — je titel online reserveren en gewoon afhalen in de winkel.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#reserveren" class="bg-oxblood text-cream font-bold px-7 py-3.5 rounded-full hover:bg-oxbloodlt transition shadow-md">Reserveer een titel</a>
+        <a href="#assortiment" class="border border-cream/45 text-cream font-bold px-7 py-3.5 rounded-full hover:bg-cream/12 transition">Bekijk het aanbod</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <section class="bg-forest text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-5 text-center text-sm">
+      <div>
+        <p class="font-serif text-2xl text-gold font-bold">Advies</p>
+        <p class="mt-1 text-cream/65">persoonlijk &amp; deskundig</p>
+      </div>
+      <div>
+        <p class="font-serif text-2xl text-gold font-bold">Snel</p>
+        <p class="mt-1 text-cream/65">vlot bestellen</p>
+      </div>
+      <div>
+        <p class="font-serif text-2xl text-gold font-bold">Afhalen</p>
+        <p class="mt-1 text-cream/65">reserveren &amp; ophalen</p>
+      </div>
+      <div>
+        <p class="font-serif text-2xl text-gold font-bold">Lokaal</p>
+        <p class="mt-1 text-cream/65">hartje Kontich</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Intro / today situation -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div class="fade-up">
+        <p class="text-oxblood font-bold tracking-[0.2em] uppercase text-xs mb-4">Een boek bestellen?</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-extrabold leading-tight">
+          Reserveren wordt<br />een fluitje van een cent.
+        </h2>
+        <p class="text-stone text-lg mt-5 leading-relaxed max-w-md">
+          Vandaag verloopt elke bestelling via e-mail of Facebook. Dat blijft natuurlijk kunnen — maar met een eenvoudig click&amp;collect-formulier reserveer je voortaan je titel online en haal je hem op een moment dat jou past.
+        </p>
+        <ul class="mt-7 space-y-3 text-stone">
+          <li class="flex items-start gap-3">
+            <span class="text-oxblood mt-0.5 font-extrabold text-lg" aria-hidden="true">✓</span>
+            <span>Titel-reservatie: bestel online, haal af in de winkel</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-oxblood mt-0.5 font-extrabold text-lg" aria-hidden="true">✓</span>
+            <span>Geen webshop-gedoe — gewoon afrekenen aan de toonbank</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-oxblood mt-0.5 font-extrabold text-lg" aria-hidden="true">✓</span>
+            <span>Het persoonlijke advies van je boekhandel blijft</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-oxblood mt-0.5 font-extrabold text-lg" aria-hidden="true">✓</span>
+            <span>Eindelijk goed vindbaar op Google</span>
+          </li>
+        </ul>
+        <a href="#reserveren" class="inline-flex items-center gap-2 mt-9 bg-forest text-cream font-bold px-7 py-3.5 rounded-full hover:bg-forestlt transition">
+          Reserveer een boek
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-creamdk">
+          <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=800&q=80" alt="Boekenrekken in de winkel" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-creamdk mt-8">
+          <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80" alt="Lezen bij een open boek" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assortiment / categories grid -->
+  <section id="assortiment" class="bg-cream/60 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-oxblood font-bold tracking-[0.2em] uppercase text-xs mb-3">Ons aanbod</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-extrabold">Voor elke lezer iets</h2>
+        </div>
+        <p class="text-stone/80 max-w-xs">Van de nieuwste roman tot het cadeau voor een kleine boekenwurm — vraag gerust naar een tip.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Fictie -->
+        <article class="cat-card fade-up rounded-2xl overflow-hidden bg-forest text-cream relative aspect-[3/4] cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=700&q=80" alt="Fictie & literatuur" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+          <div class="absolute inset-0 bg-gradient-to-t from-forestdk via-forestdk/25 to-transparent"></div>
+          <div class="absolute bottom-0 p-5">
+            <h3 class="font-serif text-xl font-bold">Fictie &amp; literatuur</h3>
+            <p class="text-cream/70 text-xs mt-1">Romans, verhalen, poëzie &amp; klassiekers</p>
+          </div>
+        </article>
+
+        <!-- Non-fictie -->
+        <article class="cat-card fade-up rounded-2xl overflow-hidden bg-forest text-cream relative aspect-[3/4] cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=700&q=80" alt="Non-fictie" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+          <div class="absolute inset-0 bg-gradient-to-t from-forestdk via-forestdk/25 to-transparent"></div>
+          <div class="absolute bottom-0 p-5">
+            <h3 class="font-serif text-xl font-bold">Non-fictie</h3>
+            <p class="text-cream/70 text-xs mt-1">Geschiedenis, mens &amp; maatschappij, koken, reizen</p>
+          </div>
+        </article>
+
+        <!-- Kinder- & jeugd -->
+        <article class="cat-card fade-up rounded-2xl overflow-hidden bg-forest text-cream relative aspect-[3/4] cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1526243741027-444d633d7365?auto=format&fit=crop&w=700&q=80" alt="Kinder- & jeugdboeken" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+          <div class="absolute inset-0 bg-gradient-to-t from-forestdk via-forestdk/25 to-transparent"></div>
+          <div class="absolute bottom-0 p-5">
+            <h3 class="font-serif text-xl font-bold">Kinder- &amp; jeugdboeken</h3>
+            <p class="text-cream/70 text-xs mt-1">Prentenboeken, voorlezen &amp; eerste leesboeken</p>
+          </div>
+        </article>
+
+        <!-- Strips -->
+        <article class="cat-card fade-up rounded-2xl overflow-hidden bg-forest text-cream relative aspect-[3/4] cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=700&q=80" alt="Strips" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+          <div class="absolute inset-0 bg-gradient-to-t from-forestdk via-forestdk/25 to-transparent"></div>
+          <div class="absolute bottom-0 p-5">
+            <h3 class="font-serif text-xl font-bold">Strips</h3>
+            <p class="text-cream/70 text-xs mt-1">Stripverhalen, graphic novels &amp; manga</p>
+          </div>
+        </article>
+
+        <!-- Cadeaubon -->
+        <article class="cat-card fade-up rounded-2xl overflow-hidden bg-oxblood text-cream relative aspect-[3/4] flex flex-col items-center justify-center text-center p-6 cursor-pointer hover:bg-oxbloodlt transition">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="mb-4 opacity-80" aria-hidden="true">
+            <path d="M20 12v10H4V12M22 7H2v5h20V7zM12 22V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/>
+          </svg>
+          <p class="font-serif text-xl font-extrabold">Cadeaubon</p>
+          <p class="text-cream/80 text-sm mt-2">Altijd een geslaagd geschenk — te besteden in de winkel</p>
+        </article>
+
+        <!-- Boek reserveren CTA -->
+        <article class="cat-card fade-up rounded-2xl bg-gold text-forestdk relative aspect-[3/4] flex flex-col items-center justify-center text-center p-6 cursor-pointer hover:bg-goldlt transition">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="mb-4 opacity-80" aria-hidden="true">
+            <path d="M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5A2.5 2.5 0 006.5 22H20V2H6.5A2.5 2.5 0 004 4.5v15z"/>
+          </svg>
+          <p class="font-serif text-xl font-extrabold">Boek reserveren</p>
+          <p class="text-forestdk/75 text-sm mt-2">Vind je titel niet meteen? Reserveer hem online.</p>
+          <a href="#reserveren" class="inline-block mt-5 text-forestdk font-bold ug">Reserveer →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why a webshop / upsell -->
+  <section id="waarom" class="bg-forest text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-2xl mb-14 fade-up">
+        <p class="text-gold font-bold tracking-[0.2em] uppercase text-xs mb-4">Waarom een eigen site</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-extrabold leading-tight">Meer lezers, minder mailen.</h2>
+        <p class="text-cream/75 text-lg mt-6 leading-relaxed">
+          Een eenvoudige site met titel-reservatie helpt je klanten — en jou — vooruit. Geen webshop met voorraadbeheer en verzending, gewoon: reserveren en afhalen.
+        </p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="fade-up p-7 rounded-2xl bg-cream/10 border border-cream/15">
+          <div class="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center mb-5 text-gold">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5A2.5 2.5 0 006.5 22H20V2H6.5A2.5 2.5 0 004 4.5v15z"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-bold">Titel-reservatie zonder mailen</h3>
+          <p class="text-cream/70 text-sm mt-2 leading-relaxed">Klanten vullen één formulier in en jij krijgt de bestelling netjes binnen — geen heen-en-weer in de inbox of in Facebook-berichten.</p>
+        </div>
+        <div class="fade-up p-7 rounded-2xl bg-cream/10 border border-cream/15">
+          <div class="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center mb-5 text-gold">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-bold">Mee met de shop-local trend</h3>
+          <p class="text-cream/70 text-sm mt-2 leading-relaxed">Lezers kiezen steeds bewuster voor de lokale boekhandel. Een eigen site maakt het hen makkelijk om bij jou te kopen in plaats van online elders.</p>
+        </div>
+        <div class="fade-up p-7 rounded-2xl bg-cream/10 border border-cream/15">
+          <div class="w-12 h-12 rounded-full bg-gold/20 flex items-center justify-center mb-5 text-gold">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-bold">Gevonden op Google</h3>
+          <p class="text-cream/70 text-sm mt-2 leading-relaxed">"Boekhandel Kontich" intypen en bovenaan verschijnen — met openingsuren, adres en route. Zo vinden nieuwe klanten de weg naar je winkel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Over ons -->
+  <section id="over" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3]">
+        <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1000&q=80" alt="Sfeer in de boekhandel" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+      </div>
+      <div class="fade-up">
+        <p class="text-oxblood font-bold tracking-[0.2em] uppercase text-xs mb-4">Over Athena</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-extrabold leading-tight">Een onafhankelijke boekhandel met karakter.</h2>
+        <p class="text-stone text-lg mt-5 leading-relaxed">
+          Aan de Mechelsesteenweg in Kontich vind je Boekhandel Athena: een onafhankelijke boekhandel waar boeken nog met zorg worden gekozen en waar je altijd terechtkan voor een goede leestip.
+        </p>
+        <p class="text-stone text-lg mt-4 leading-relaxed">
+          Van de nieuwste roman tot het cadeau voor een jonge lezer — we helpen je persoonlijk verder. En wat we niet op voorraad hebben, bestellen we graag voor je.
+        </p>
+        <div class="grid grid-cols-3 gap-5 mt-9">
+          <div class="text-center">
+            <p class="font-serif text-3xl font-extrabold text-forest">5</p>
+            <p class="text-stone/65 text-xs mt-1">categorieën &amp; meer</p>
+          </div>
+          <div class="text-center border-x border-forest/10">
+            <p class="font-serif text-3xl font-extrabold text-forest">Lokaal</p>
+            <p class="text-stone/65 text-xs mt-1">in Kontich</p>
+          </div>
+          <div class="text-center">
+            <p class="font-serif text-3xl font-extrabold text-forest">Advies</p>
+            <p class="text-stone/65 text-xs mt-1">op maat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact + reserve form + map -->
+  <section id="contact" class="bg-cream/50 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+      <div class="fade-up">
+        <p class="text-oxblood font-bold tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-extrabold">Welkom in Kontich</h2>
+        <p class="text-stone text-lg mt-5 max-w-md">Loop binnen op de Mechelsesteenweg, bel ons even of mail je vraag. We helpen je graag verder.</p>
+        <dl class="mt-9 space-y-5 text-stone">
+          <div class="flex gap-4">
+            <span class="text-oxblood mt-1 text-xl" aria-hidden="true">📍</span>
+            <div>
+              <dt class="font-bold">Adres</dt>
+              <dd class="text-stone/70">Mechelsesteenweg 21, 2550 Kontich</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-oxblood mt-1 text-xl" aria-hidden="true">📞</span>
+            <div>
+              <dt class="font-bold">Telefoon</dt>
+              <dd class="text-stone/70"><a href="tel:+3234598169" class="ug">03 459 81 69</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-oxblood mt-1 text-xl" aria-hidden="true">✉️</span>
+            <div>
+              <dt class="font-bold">E-mail</dt>
+              <dd class="text-stone/70"><a href="mailto:boekhandel.athena3@telenet.be" class="ug">boekhandel.athena3@telenet.be</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-oxblood mt-1 text-xl" aria-hidden="true">📘</span>
+            <div>
+              <dt class="font-bold">Facebook</dt>
+              <dd class="text-stone/70">Volg ons voor nieuwe titels &amp; tips</dd>
+            </div>
+          </div>
+        </dl>
+
+        <div class="rounded-3xl overflow-hidden min-h-[300px] bg-creamdk shadow-sm mt-9">
+          <iframe
+            title="Kaart Boekhandel Athena, Mechelsesteenweg 21 Kontich"
+            class="w-full h-full min-h-[300px] border-0"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=4.438%2C51.128%2C4.458%2C51.144&layer=mapnik&marker=51.1360%2C4.4480">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Reserve form -->
+      <div id="reserveren" class="fade-up">
+        <div class="rounded-3xl bg-paper border border-forest/10 shadow-sm p-7 sm:p-9">
+          <p class="text-oxblood font-bold tracking-[0.2em] uppercase text-xs mb-3">Click &amp; collect</p>
+          <h3 class="font-serif text-3xl font-extrabold">Reserveer je boek</h3>
+          <p class="text-stone/75 mt-3 text-sm leading-relaxed">Vul de titel in en kies wanneer je het komt afhalen. We brengen je op de hoogte zodra je bestelling klaarligt in de winkel.</p>
+          <form class="mt-7 space-y-4" onsubmit="return false">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="r-name" class="block text-sm font-semibold mb-1.5">Naam</label>
+                <input id="r-name" name="name" type="text" autocomplete="name" required placeholder="Voornaam Naam"
+                  class="w-full px-4 py-3 rounded-xl border border-forest/20 bg-white focus:outline-none focus:ring-2 focus:ring-gold" />
+              </div>
+              <div>
+                <label for="r-email" class="block text-sm font-semibold mb-1.5">E-mail</label>
+                <input id="r-email" name="email" type="email" autocomplete="email" required placeholder="jouw@email.be"
+                  class="w-full px-4 py-3 rounded-xl border border-forest/20 bg-white focus:outline-none focus:ring-2 focus:ring-gold" />
+              </div>
+            </div>
+            <div>
+              <label for="r-title" class="block text-sm font-semibold mb-1.5">Titel &amp; auteur</label>
+              <input id="r-title" name="title" type="text" required placeholder="Boektitel — auteur"
+                class="w-full px-4 py-3 rounded-xl border border-forest/20 bg-white focus:outline-none focus:ring-2 focus:ring-gold" />
+            </div>
+            <div>
+              <label for="r-note" class="block text-sm font-semibold mb-1.5">Opmerking <span class="text-stone/45 font-normal">(optioneel)</span></label>
+              <textarea id="r-note" name="note" rows="3" placeholder="ISBN, editie, of wanneer je het wil afhalen…"
+                class="w-full px-4 py-3 rounded-xl border border-forest/20 bg-white focus:outline-none focus:ring-2 focus:ring-gold"></textarea>
+            </div>
+            <label class="flex items-start gap-3 text-sm text-stone/75">
+              <input type="checkbox" required class="mt-1 accent-oxblood w-4 h-4" />
+              <span>Ik ga akkoord dat mijn gegevens worden gebruikt om deze reservatie te verwerken. <span class="text-stone/45">(GDPR)</span></span>
+            </label>
+            <button class="w-full bg-oxblood text-cream font-bold px-7 py-3.5 rounded-full hover:bg-oxbloodlt transition shadow-sm">
+              Verstuur reservatie
+            </button>
+            <p class="text-xs text-stone/45 text-center">Voorbeeldformulier — in de live versie komt je reservatie rechtstreeks bij de boekhandel binnen.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GDPR Newsletter -->
+  <section class="bg-gold/20">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-extrabold">Blijf op de hoogte</h2>
+      <p class="text-stone/70 mt-3">Nieuwe titels, leestips &amp; signeersessies — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input
+          id="nl-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          placeholder="jouw@email.be"
+          class="flex-1 px-5 py-3 rounded-full border border-forest/20 bg-white focus:outline-none focus:ring-2 focus:ring-gold"
+        />
+        <button class="bg-forest text-cream font-bold px-7 py-3 rounded-full hover:bg-forestlt transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-stone/45 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-forestdk text-cream/75">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-cream font-extrabold">Boekhandel <span class="text-gold">Athena</span></p>
+        <p class="text-cream/50 text-sm mt-3 max-w-xs">Onafhankelijke boekhandel in hartje Kontich.</p>
+        <p class="text-cream/40 text-xs mt-3 italic">"Reserveer online, haal af in de winkel."</p>
+      </div>
+      <div>
+        <p class="font-bold text-cream mb-3">Aanbod</p>
+        <ul class="space-y-2 text-sm text-cream/55">
+          <li><a href="#assortiment" class="hover:text-gold transition">Fictie &amp; literatuur</a></li>
+          <li><a href="#assortiment" class="hover:text-gold transition">Non-fictie</a></li>
+          <li><a href="#assortiment" class="hover:text-gold transition">Kinder- &amp; jeugdboeken</a></li>
+          <li><a href="#assortiment" class="hover:text-gold transition">Strips &amp; cadeaubon</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-bold text-cream mb-3">Info</p>
+        <ul class="space-y-2 text-sm text-cream/55">
+          <li><a href="#reserveren" class="hover:text-gold transition">Boek reserveren</a></li>
+          <li><a href="#waarom" class="hover:text-gold transition">Online reserveren</a></li>
+          <li><a href="#contact" class="hover:text-gold transition">Contact &amp; route</a></li>
+          <li><a href="#" class="hover:text-gold transition">Privacybeleid</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-bold text-cream mb-3">Contact</p>
+        <ul class="space-y-2 text-sm text-cream/55">
+          <li>Mechelsesteenweg 21</li>
+          <li>2550 Kontich</li>
+          <li><a href="tel:+3234598169" class="hover:text-gold transition">03 459 81 69</a></li>
+          <li><a href="mailto:boekhandel.athena3@telenet.be" class="hover:text-gold transition">boekhandel.athena3@telenet.be</a></li>
+        </ul>
+        <div class="flex gap-3 mt-5">
+          <a href="https://www.facebook.com/" aria-label="Facebook" class="w-9 h-9 rounded-full border border-cream/20 flex items-center justify-center hover:bg-cream/10 transition">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/35">
+        <p>© 2026 Boekhandel Athena. Concept — starter site.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; titel-reservatie.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: fade-up observer + mobile menu toggle -->
+  <script>
+    // Fade-up on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1600);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>
