@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Côté Sud — kaas, wijn & charcuterie · delicatessen in Mortsel</title>
+  <meta name="description" content="Côté Sud is al ~25 jaar hét fijnproeversadres in Mortsel voor kaas, wijn, charcuterie en fijne voeding. Nu ook online: giftboxes, kaasschotels en cadeaubonnen met lokale levering & click&collect." />
+  <link rel="canonical" href="https://cotesud.be/" />
+  <meta name="theme-color" content="#b5532a" />
+  <!-- Social link preview (so the outreach link looks right in WhatsApp/e-mail) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Côté Sud" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Côté Sud — kaas, wijn & charcuterie · Mortsel" />
+  <meta property="og:description" content="~25 jaar fijnproeversadres in Mortsel. Nu ook online: giftboxes, kaasschotels & cadeaubonnen met lokale levering en click&collect." />
+  <meta property="og:url" content="https://cotesud.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23b5532a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='14' fill='%23faf4e9' text-anchor='middle'%3ECS%3C/text%3E%3C/svg%3E" />
+  <!-- Local-SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store", "FoodEstablishment"],
+    "name": "Côté Sud",
+    "description": "Delicatessen voor kaas, wijn, charcuterie en fijne voeding in Mortsel — al ~25 jaar.",
+    "image": "https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://cotesud.be/",
+    "telephone": "+3234407850",
+    "servesCuisine": "French",
+    "priceRange": "€€",
+    "areaServed": "BE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Eggestraat 9",
+      "postalCode": "2640",
+      "addressLocality": "Mortsel",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.1690, "longitude": 4.4610 }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Fraunces', 'serif'], sans: ['Inter', 'sans-serif'] },
+          colors: {
+            ink: '#3a2418',
+            cocoa: '#56392a',
+            cream: '#faf4e9',
+            sand: '#f0e4d0',
+            terra: '#b5532a',
+            terralight: '#cf6a3c',
+            ochre: '#c8902f',
+            olive: '#6f7a40',
+            olivedark: '#54602f',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(58,36,24,.20) 0%, rgba(58,36,24,.45) 55%, rgba(58,36,24,.88) 100%); }
+    .fade-up { opacity: 0; transform: translateY(18px); transition: all .7s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 2px; }
+  </style>
+</head>
+<body class="bg-cream text-ink font-sans antialiased selection:bg-terra/25">
+
+  <a href="#shop" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-terra focus:text-cream focus:rounded-full">Naar de webshop</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-terra text-cream text-center text-[13px] tracking-wide py-2 px-4">
+    🧀 <span class="font-semibold">Nieuw:</span> bestel giftboxes & kaasschotels online — lokale levering in Mortsel & omstreken · of haal af in de winkel.
+  </div>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 bg-cream/85 backdrop-blur border-b border-ink/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-2xl font-700 tracking-tight">Côté<span class="text-terra"> Sud</span></span>
+        <span class="text-[11px] uppercase tracking-[0.25em] text-ink/50 font-600">Delicatessen · Mortsel</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
+        <a href="#shop" class="ug">Webshop</a>
+        <a href="#assortiment" class="ug">Assortiment</a>
+        <a href="#over" class="ug">Over ons</a>
+        <a href="#contact" class="ug">Contact</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="#shop" class="inline-flex items-center gap-2 bg-terra text-cream text-sm font-600 px-4 sm:px-5 py-2.5 rounded-full hover:bg-terralight transition">
+          Bestel online
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-ink/15 text-ink hover:bg-ink/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" hidden class="md:hidden border-t border-ink/10 bg-cream/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#shop" class="py-3 border-b border-ink/5">Webshop</a>
+        <a href="#assortiment" class="py-3 border-b border-ink/5">Assortiment</a>
+        <a href="#over" class="py-3 border-b border-ink/5">Over ons</a>
+        <a href="#contact" class="py-3">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[86vh] flex items-end overflow-hidden bg-cocoa">
+    <img src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=2000&q=80" alt="Ambachtelijke kazen op een houten plank" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-cream font-600 tracking-[0.3em] uppercase text-xs mb-5">Kaas · wijn · charcuterie · Mortsel</p>
+      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
+        Het zuiden op je tafel,<br />nu ook online.
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Al ~25 jaar uw fijnproeversadres in Mortsel: zorgvuldig gekozen kazen, wijnen en charcuterie. Vanaf nu stelt u uw giftbox of kaasschotel ook gewoon online samen.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#shop" class="bg-terra text-cream font-600 px-7 py-3.5 rounded-full hover:bg-terralight transition">Ontdek de webshop</a>
+        <a href="#assortiment" class="border border-cream/40 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">Bekijk het assortiment</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <section class="bg-olivedark text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-cream">Kaas</p><p class="mt-1 text-cream/70">ambachtelijk geselecteerd</p></div>
+      <div><p class="font-serif text-2xl text-cream">Wijn</p><p class="mt-1 text-cream/70">passende wijnen bij elke plank</p></div>
+      <div><p class="font-serif text-2xl text-cream">Charcuterie</p><p class="mt-1 text-cream/70">fijne vleeswaren &amp; tapas</p></div>
+      <div><p class="font-serif text-2xl text-cream">~25 jaar</p><p class="mt-1 text-cream/70">fijnproeversadres in Mortsel</p></div>
+    </div>
+  </section>
+
+  <!-- Assortiment -->
+  <section id="assortiment" class="bg-sand/60 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-terra font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-600">Alles voor de fijnproeverstafel</h2>
+        </div>
+        <p class="text-cocoa/70 max-w-sm">Van een rijpe kaas tot de juiste wijn ernaast — met zorg gekozen en met plezier uitgelegd.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80" alt="Kazen" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-95 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Kazen</h3><p class="text-cream/75 text-sm mt-1">Zacht, gerijpt en geaffineerd — uit Frankrijk en daarbuiten.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80" alt="Wijnen" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-95 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Wijnen</h3><p class="text-cream/75 text-sm mt-1">Een mooie selectie, met advies voor bij uw kaas of charcuterie.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Charcuterie" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-95 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Charcuterie</h3><p class="text-cream/75 text-sm mt-1">Gedroogde ham, worst en fijne vleeswaren, vers gesneden.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Tapas en fijne voeding" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-95 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Tapas &amp; fijne voeding</h3><p class="text-cream/75 text-sm mt-1">Olijven, tapenades, confituren en zuiderse lekkernijen.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=800&q=80" alt="Kaasschotels en geschenkmanden" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-75 group-hover:opacity-95 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Kaasschotels &amp; geschenkmanden</h3><p class="text-cream/75 text-sm mt-1">Samengesteld op maat — voor thuis of als geschenk.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-terra text-cream relative aspect-[4/5] flex items-center justify-center text-center p-6">
+          <div>
+            <p class="font-serif text-2xl font-600">Cadeaubon</p>
+            <p class="text-cream/85 text-sm mt-2">Geef het plezier van fijnproeven cadeau — vrij te besteden in de winkel of webshop.</p>
+            <a href="#shop" class="inline-block mt-5 text-cream font-600 ug">Bestel een bon →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Webshop + lokale levering (the upsell) -->
+  <section id="shop" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-terra font-600 tracking-[0.2em] uppercase text-xs mb-4">Nieuw online</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">Uw giftbox of kaasschotel,<br />online samengesteld.</h2>
+        <p class="text-cocoa/80 text-lg mt-5 leading-relaxed max-w-md">
+          Geen tijd om langs te komen? Stel uw giftbox online samen, bestel een kaasschotel vooraf en kies tussen lokale levering of click&amp;collect in de winkel. Wij maken alles vers klaar.
+        </p>
+        <ul class="mt-7 space-y-3 text-cocoa">
+          <li class="flex items-center gap-3"><span class="text-terra">✓</span> Giftboxes &amp; geschenkmanden — online samen te stellen</li>
+          <li class="flex items-center gap-3"><span class="text-terra">✓</span> Kaasschotel vooraf bestellen voor uw moment</li>
+          <li class="flex items-center gap-3"><span class="text-terra">✓</span> Lokale levering in Mortsel &amp; omstreken of click&amp;collect</li>
+          <li class="flex items-center gap-3"><span class="text-terra">✓</span> Veilig betalen met Bancontact via Mollie</li>
+        </ul>
+        <a href="#contact" class="inline-flex items-center gap-2 mt-9 bg-terra text-cream font-600 px-7 py-3.5 rounded-full hover:bg-terralight transition">
+          Start uw bestelling
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <p class="text-xs text-cocoa/45 mt-5 max-w-md">Voorbeeld van een webshop-flow ter illustratie. Geen producten of prijzen weergegeven.</p>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand">
+          <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=800&q=80" alt="Geschenkmand met fijne voeding" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand mt-8">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80" alt="Wijnselectie" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+
+    <!-- How it works -->
+    <div class="grid sm:grid-cols-3 gap-5 mt-16">
+      <div class="fade-up rounded-2xl bg-sand/60 p-7">
+        <div class="w-10 h-10 rounded-full bg-terra text-cream font-serif text-lg flex items-center justify-center mb-4">1</div>
+        <h3 class="font-serif text-xl font-600">Stel samen</h3>
+        <p class="text-cocoa/70 text-sm mt-2">Kies uw giftbox, kaasschotel of geschenkmand online — voor thuis of om te schenken.</p>
+      </div>
+      <div class="fade-up rounded-2xl bg-sand/60 p-7">
+        <div class="w-10 h-10 rounded-full bg-terra text-cream font-serif text-lg flex items-center justify-center mb-4">2</div>
+        <h3 class="font-serif text-xl font-600">Kies levering</h3>
+        <p class="text-cocoa/70 text-sm mt-2">Lokale levering in Mortsel &amp; omstreken, of click&amp;collect op een moment dat past.</p>
+      </div>
+      <div class="fade-up rounded-2xl bg-sand/60 p-7">
+        <div class="w-10 h-10 rounded-full bg-terra text-cream font-serif text-lg flex items-center justify-center mb-4">3</div>
+        <h3 class="font-serif text-xl font-600">Betaal &amp; geniet</h3>
+        <p class="text-cocoa/70 text-sm mt-2">Veilig afrekenen met Bancontact via Mollie. Wij maken alles vers voor u klaar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Over ons -->
+  <section id="over" class="bg-ink text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80" alt="Fijne voeding en charcuterie" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+      </div>
+      <div class="order-1 lg:order-2 fade-up">
+        <p class="text-ochre font-600 tracking-[0.2em] uppercase text-xs mb-4">Over Côté Sud</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">~25 jaar fijnproeven in Mortsel.</h2>
+        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
+          Côté Sud is al zo'n 25 jaar een vertrouwd adres voor wie houdt van een mooie kaas, een passende wijn en eerlijke charcuterie. We kiezen onze producten met zorg en geven graag advies — van een doordeweekse plank tot een feestelijke schotel.
+        </p>
+        <p class="text-cream/70 mt-4 max-w-md">
+          Met een online webshop brengen we dat vakmanschap nu ook tot bij u thuis, zonder iets van de persoonlijke aanpak te verliezen.
+        </p>
+        <a href="#contact" class="inline-flex items-center gap-2 mt-8 bg-terra text-cream font-600 px-7 py-3.5 rounded-full hover:bg-terralight transition">
+          Kom langs of bestel
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-12">
+    <div class="fade-up">
+      <p class="text-terra font-600 tracking-[0.2em] uppercase text-xs mb-4">Contact &amp; bestellen</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-600">Welkom in de winkel</h2>
+      <p class="text-cocoa/70 text-lg mt-5 max-w-md">Kom proeven en kiezen in de Eggestraat, of laat hieronder weten wat u wenst — we nemen snel contact op.</p>
+      <dl class="mt-9 space-y-5 text-cocoa">
+        <div class="flex gap-4"><span class="text-terra mt-1" aria-hidden="true">📍</span><div><dt class="font-600">Adres</dt><dd class="text-cocoa/70">Eggestraat 9, 2640 Mortsel</dd></div></div>
+        <div class="flex gap-4"><span class="text-terra mt-1" aria-hidden="true">📞</span><div><dt class="font-600">Telefoon</dt><dd class="text-cocoa/70"><a href="tel:+3234407850" class="ug">03 440 78 50</a></dd></div></div>
+        <div class="flex gap-4"><span class="text-terra mt-1" aria-hidden="true">✉️</span><div><dt class="font-600">E-mail</dt><dd class="text-cocoa/70">info@cotesud.be <span class="text-cocoa/40">(voorstel — professioneel domeinadres)</span></dd></div></div>
+      </dl>
+
+      <form class="mt-9 space-y-4" onsubmit="return false">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label for="c-name" class="block text-sm font-600 mb-1">Naam</label>
+            <input id="c-name" name="name" type="text" autocomplete="name" required class="w-full px-4 py-3 rounded-xl border border-cocoa/20 bg-cream focus:outline-none focus:ring-2 focus:ring-terra" />
+          </div>
+          <div>
+            <label for="c-email" class="block text-sm font-600 mb-1">E-mail</label>
+            <input id="c-email" name="email" type="email" autocomplete="email" required class="w-full px-4 py-3 rounded-xl border border-cocoa/20 bg-cream focus:outline-none focus:ring-2 focus:ring-terra" />
+          </div>
+        </div>
+        <div>
+          <label for="c-msg" class="block text-sm font-600 mb-1">Uw vraag of bestelling</label>
+          <textarea id="c-msg" name="message" rows="4" placeholder="Bv. een kaasschotel voor 6 personen, of een giftbox als geschenk…" class="w-full px-4 py-3 rounded-xl border border-cocoa/20 bg-cream focus:outline-none focus:ring-2 focus:ring-terra"></textarea>
+        </div>
+        <button class="bg-terra text-cream font-600 px-7 py-3.5 rounded-full hover:bg-terralight transition">Verstuur aanvraag</button>
+        <p class="text-xs text-cocoa/50">Demoformulier — in de live versie gekoppeld aan e-mail of webshop.</p>
+      </form>
+    </div>
+    <div class="rounded-3xl overflow-hidden min-h-[340px] bg-sand">
+      <iframe title="Kaart Côté Sud, Eggestraat 9 Mortsel" class="w-full h-full min-h-[340px] border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=4.451%2C51.161%2C4.471%2C51.177&layer=mapnik&marker=51.1690%2C4.4610"></iframe>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="bg-terra/15">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600">Blijf op de hoogte</h2>
+      <p class="text-cocoa/70 mt-3">Nieuwe kazen, seizoenswijnen en geschenkideeën — af en toe in uw mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input id="nl-email" name="email" type="email" autocomplete="email" required placeholder="uw@email.be" class="flex-1 px-5 py-3 rounded-full border border-cocoa/20 bg-cream focus:outline-none focus:ring-2 focus:ring-terra" />
+        <button class="bg-terra text-cream font-600 px-7 py-3 rounded-full hover:bg-terralight transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-cocoa/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ink text-cream/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-cream font-700">Côté<span class="text-terra"> Sud</span></p>
+        <p class="text-cream/60 text-sm mt-3 max-w-xs">Kaas, wijn, charcuterie &amp; fijne voeding — al ~25 jaar uw fijnproeversadres in Mortsel.</p>
+      </div>
+      <div><p class="font-600 text-cream mb-3">Winkel</p><ul class="space-y-2 text-sm text-cream/60"><li><a href="#assortiment" class="hover:text-ochre">Assortiment</a></li><li><a href="#shop" class="hover:text-ochre">Webshop</a></li><li><a href="#shop" class="hover:text-ochre">Giftboxes &amp; kaasschotels</a></li></ul></div>
+      <div><p class="font-600 text-cream mb-3">Info</p><ul class="space-y-2 text-sm text-cream/60"><li><a href="#over" class="hover:text-ochre">Over ons</a></li><li><a href="#shop" class="hover:text-ochre">Lokale levering &amp; click&amp;collect</a></li><li><a href="#contact" class="hover:text-ochre">Contact</a></li></ul></div>
+      <div><p class="font-600 text-cream mb-3">Contact</p><ul class="space-y-2 text-sm text-cream/60"><li>Eggestraat 9, 2640 Mortsel</li><li>03 440 78 50</li><li>info@cotesud.be</li></ul></div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/45">
+        <p>© 2026 Côté Sud. Concept-redesign.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe webshop &amp; online verkoop.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1600);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>
