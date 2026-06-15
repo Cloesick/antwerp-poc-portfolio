@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maakmijnfiets — Fietsherstellingen &amp; onderhoud in Wommelgem | Boek online</title>
+  <meta name="description" content="Fietsherstellingen en onderhoud in Wommelgem. Boek je herstelling online, kies ophalen of breng langs. Alle merken, e-bike-service en snelle reparatie — lokaal in Wommelgem." />
+  <link rel="canonical" href="https://maakmijnfiets.be/" />
+  <meta name="theme-color" content="#2b2b2b" />
+  <!-- Open Graph / link preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Maakmijnfiets" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Maakmijnfiets — Fietsherstellingen &amp; onderhoud Wommelgem" />
+  <meta property="og:description" content="Je fiets weer rijklaar. Boek je herstelling online, ophalen of breng langs. Alle merken &amp; e-bike-service in Wommelgem." />
+  <meta property="og:url" content="https://maakmijnfiets.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Inline SVG favicon — monogram MF -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232b2b2b'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='13' fill='%23f08a24' text-anchor='middle'%3EMF%3C/text%3E%3C/svg%3E" />
+  <!-- Local SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BicycleStore",
+    "name": "Maakmijnfiets",
+    "description": "Fietsherstellingen en onderhoud in Wommelgem. Online reparatie-boeking, ophalen of breng langs, alle merken en e-bike-service.",
+    "image": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://maakmijnfiets.be/",
+    "telephone": "+32488199170",
+    "areaServed": "Wommelgem",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Sint-Damiaanstraat 29",
+      "postalCode": "2160",
+      "addressLocality": "Wommelgem",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.2030, "longitude": 4.5200 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "09:00", "closes": "13:00" }
+    ],
+    "hasMap": "https://www.openstreetmap.org/?mlat=51.2030&mlon=4.5200#map=16/51.2030/4.5200",
+    "slogan": "Je fiets weer rijklaar — boek online"
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Barlow Condensed', 'Arial Narrow', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            ink:      '#2b2b2b',
+            coal:     '#3a3733',
+            orange:   '#f08a24',
+            orangelt: '#ff9d3d',
+            amber:    '#d97316',
+            cream:    '#fbf7f0',
+            warm:     '#f3ecdf',
+            warmdk:   '#e6dcc8',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(43,43,43,.20) 0%, rgba(43,43,43,.55) 50%, rgba(43,43,43,.93) 100%); }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 1.5px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 1.5px; }
+    .glow-orange { box-shadow: 0 0 0 0 rgba(240,138,36,.4); }
+    .glow-orange:hover { box-shadow: 0 4px 24px rgba(240,138,36,.3); }
+  </style>
+</head>
+<body class="bg-cream text-ink font-sans antialiased selection:bg-orange/25">
+
+  <!-- Skip link (a11y) -->
+  <a href="#diensten" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-ink focus:text-cream focus:rounded-full">Naar de herstellingen</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-ink text-cream text-center text-[13px] tracking-wide py-2 px-4">
+    <span class="text-orange font-semibold">Nieuw:</span> boek je fietsherstelling voortaan online — ophalen of breng langs in Wommelgem.
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-ink/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[70px] flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#top" class="flex items-baseline gap-2.5" aria-label="Maakmijnfiets — naar de startpagina">
+        <span class="font-display text-[27px] font-700 tracking-tight leading-none uppercase">Maak<span class="text-orange">mijn</span>fiets</span>
+        <span class="text-[11px] uppercase tracking-[0.22em] text-ink/45 font-600 hidden sm:inline">Wommelgem</span>
+      </a>
+      <!-- Desktop nav -->
+      <div class="hidden md:flex items-center gap-7 text-[15px] font-500">
+        <a href="#diensten" class="ug">Herstellingen</a>
+        <a href="#boeken"   class="ug">Online boeken</a>
+        <a href="#over"     class="ug">Over ons</a>
+        <a href="#contact"  class="ug">Contact</a>
+      </div>
+      <!-- CTA + hamburger -->
+      <div class="flex items-center gap-2">
+        <a href="#boeken" class="inline-flex items-center gap-2 bg-orange text-white text-sm font-600 px-4 sm:px-5 py-2.5 rounded-full hover:bg-orangelt transition glow-orange">
+          Boek herstelling
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-ink/15 text-ink hover:bg-ink/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-ink/10 bg-cream/96 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#diensten" class="py-3 border-b border-ink/5">Herstellingen</a>
+        <a href="#boeken"   class="py-3 border-b border-ink/5">Online boeken</a>
+        <a href="#over"     class="py-3 border-b border-ink/5">Over ons</a>
+        <a href="#contact"  class="py-3 border-b border-ink/5">Contact</a>
+        <a href="#boeken"   class="py-3 text-orange font-600">Boek herstelling →</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-coal">
+    <img
+      src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=2200&q=80"
+      alt="Fietsenmaker aan het werk in een fietshersteller-werkplaats"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-28 w-full">
+      <p class="text-orange font-600 tracking-[0.3em] uppercase text-xs mb-5">Fietsherstellingen &amp; onderhoud · Wommelgem</p>
+      <h1 class="font-display text-cream text-[52px] leading-[0.98] sm:text-[86px] font-700 max-w-3xl uppercase">
+        Je fiets weer<br />rijklaar.
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Boek je herstelling online, kies <strong class="text-cream font-600">ophalen</strong> of <strong class="text-cream font-600">breng langs</strong> — en rij snel weer verder. Alle merken, ook e-bikes. Lokaal in Wommelgem.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#boeken" class="bg-orange text-white font-600 px-7 py-3.5 rounded-full hover:bg-orangelt transition">
+          Boek je herstelling
+        </a>
+        <a href="#diensten" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
+          Bekijk wat we doen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TRUST STRIP ═══ -->
+  <section class="bg-ink text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-7 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div>
+        <p class="font-display text-3xl text-orange leading-none uppercase">Snel</p>
+        <p class="mt-1.5 text-cream/65">snelle herstelling</p>
+      </div>
+      <div>
+        <p class="font-display text-3xl text-orange leading-none uppercase">Alle</p>
+        <p class="mt-1.5 text-cream/65">merken &amp; types</p>
+      </div>
+      <div>
+        <p class="font-display text-3xl text-orange leading-none uppercase">E-bike</p>
+        <p class="mt-1.5 text-cream/65">e-bike-service</p>
+      </div>
+      <div>
+        <p class="font-display text-3xl text-orange leading-none uppercase">Lokaal</p>
+        <p class="mt-1.5 text-cream/65">in Wommelgem</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ DIENSTEN GRID ═══ -->
+  <section id="diensten" class="bg-warm/60 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-orange font-600 tracking-[0.22em] uppercase text-xs mb-3">Onze herstellingen</p>
+          <h2 class="font-display text-4xl sm:text-6xl font-700 uppercase">Waarmee we je helpen</h2>
+        </div>
+        <p class="text-coal/65 max-w-sm text-sm">Van een platte band tot een volledige onderhoudsbeurt — je fiets is in goede handen.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <!-- Bandenreparatie -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=800&q=80" alt="Bandenreparatie aan een fiets" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-display text-2xl font-700 uppercase">Banden&shy;reparatie</h3>
+            <p class="text-cream/70 text-sm mt-1">Platte band, nieuwe binnen- of buitenband — snel weer opgepompt en weg.</p>
+          </div>
+        </article>
+
+        <!-- Remmen & versnellingen -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=800&q=80" alt="Versnellingen en remmen afstellen" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-display text-2xl font-700 uppercase">Remmen &amp; versnellingen</h3>
+            <p class="text-cream/70 text-sm mt-1">Afstellen, vervangen en bijregelen — veilig remmen en vlot schakelen.</p>
+          </div>
+        </article>
+
+        <!-- E-bike service -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=800&q=80" alt="E-bike service en onderhoud" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-display text-2xl font-700 uppercase">E-bike service</h3>
+            <p class="text-cream/70 text-sm mt-1">Onderhoud en herstelling van elektrische fietsen — motor, accu &amp; aandrijving.</p>
+          </div>
+        </article>
+
+        <!-- Onderhoudsbeurt -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=800&q=80" alt="Volledige onderhoudsbeurt van een fiets" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-display text-2xl font-700 uppercase">Onderhoudsbeurt</h3>
+            <p class="text-cream/70 text-sm mt-1">Volledige nazicht: ketting, banden, remmen, versnellingen &amp; bouten.</p>
+          </div>
+        </article>
+
+        <!-- Ophalen & brengen -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Fiets ophalen en terugbrengen" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-display text-2xl font-700 uppercase">Ophalen &amp; brengen</h3>
+            <p class="text-cream/70 text-sm mt-1">Geen tijd? Wij halen je fiets op in de buurt en brengen hem rijklaar terug.</p>
+          </div>
+        </article>
+
+        <!-- Offerte op maat CTA card -->
+        <article class="fade-up rounded-2xl bg-orange text-white relative aspect-[4/5] flex items-center justify-center text-center p-8">
+          <div>
+            <svg class="mx-auto mb-4" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="6" cy="17" r="3.5"/><circle cx="18" cy="17" r="3.5"/><path d="M6 17l4-9h6l2 9M10 8h5"/></svg>
+            <p class="font-display text-2xl font-700 uppercase">Offerte op maat</p>
+            <p class="text-white/90 text-sm mt-2 leading-relaxed">Iets bijzonders of een grotere herstelling? Vraag vrijblijvend een prijsindicatie.</p>
+            <a href="#boeken" class="inline-block mt-6 text-white font-600 ug">Vraag een offerte →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ONLINE BOEKING UPSELL ═══ -->
+  <section id="boekuitleg" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div class="fade-up">
+        <p class="text-orange font-600 tracking-[0.22em] uppercase text-xs mb-4">Het gemak van online</p>
+        <h2 class="font-display text-4xl sm:text-6xl font-700 leading-[1.02] uppercase">
+          Boek je herstelling<br />online.
+        </h2>
+        <p class="text-coal/80 text-lg mt-5 leading-relaxed max-w-md">
+          Geen wachtrij, geen heen-en-weer-gebel. Kies wat je fiets nodig heeft, geef door wanneer het past, en wij gaan ermee aan de slag. Liever niet langskomen? Kies ophalen aan huis.
+        </p>
+        <ol class="mt-7 space-y-4 text-coal">
+          <li class="flex items-start gap-4"><span class="flex-none w-8 h-8 rounded-full bg-orange text-white font-700 grid place-items-center text-sm">1</span><span class="mt-0.5">Kies je herstelling en bezorg een korte beschrijving van het probleem.</span></li>
+          <li class="flex items-start gap-4"><span class="flex-none w-8 h-8 rounded-full bg-orange text-white font-700 grid place-items-center text-sm">2</span><span class="mt-0.5">Kies <strong>breng langs</strong> in Wommelgem of laat je fiets <strong>ophalen</strong>.</span></li>
+          <li class="flex items-start gap-4"><span class="flex-none w-8 h-8 rounded-full bg-orange text-white font-700 grid place-items-center text-sm">3</span><span class="mt-0.5">Wij herstellen je fiets en laten weten zodra hij rijklaar is.</span></li>
+        </ol>
+        <a href="#boeken" class="inline-flex items-center gap-2 mt-9 bg-ink text-cream font-600 px-7 py-3.5 rounded-full hover:bg-coal transition">
+          Start je boeking
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-warm">
+          <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=700&q=80" alt="Fietsherstelling in de werkplaats" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-warm mt-8">
+          <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=700&q=80" alt="E-bike onderhoud detail" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ OVER ═══ -->
+  <section id="over" class="bg-warm/70 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-center">
+      <div class="fade-up rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1100&q=80" alt="Fietsenmaker in de werkplaats" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+      </div>
+      <div class="order-1 lg:order-2 fade-up">
+        <p class="text-orange font-600 tracking-[0.22em] uppercase text-xs mb-4">Over Maakmijnfiets</p>
+        <h2 class="font-display text-4xl sm:text-6xl font-700 leading-[1.02] uppercase">Je lokale fiets&shy;hersteller in Wommelgem.</h2>
+        <p class="text-coal/75 text-lg mt-6 leading-relaxed max-w-md">
+          Bij Maakmijnfiets draait alles om één ding: jou snel en zonder gedoe weer op de fiets krijgen. Van een platte band tot een complete onderhoudsbeurt of e-bike-service — we pakken het vakkundig aan, dichtbij huis.
+        </p>
+        <p class="text-coal/75 text-lg mt-4 leading-relaxed max-w-md">
+          Eerlijk advies, duidelijke afspraken en het gemak om alles online te regelen. Zo blijft je fiets veilig, comfortabel en betrouwbaar.
+        </p>
+        <a href="#boeken" class="inline-flex items-center gap-2 mt-9 bg-orange text-white font-600 px-7 py-3.5 rounded-full hover:bg-orangelt transition">
+          Boek je herstelling
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT + BOEKING ═══ -->
+  <section id="contact" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-14">
+
+      <!-- Info + boekingsformulier -->
+      <div class="fade-up space-y-10">
+        <div>
+          <p class="text-orange font-600 tracking-[0.22em] uppercase text-xs mb-4">Contact &amp; boeken</p>
+          <h2 class="font-display text-4xl sm:text-6xl font-700 uppercase">Tot in Wommelgem.</h2>
+          <p class="text-coal/70 text-lg mt-5 max-w-md">Breng je fiets langs, bel ons even, of boek je herstelling meteen online hieronder.</p>
+        </div>
+
+        <dl class="space-y-5 text-coal">
+          <div class="flex gap-4">
+            <span class="text-orange mt-1 text-lg" aria-hidden="true">📍</span>
+            <div>
+              <dt class="font-600">Adres</dt>
+              <dd class="text-coal/65">Sint-Damiaanstraat 29, 2160 Wommelgem</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-orange mt-1 text-lg" aria-hidden="true">📞</span>
+            <div>
+              <dt class="font-600">Telefoon</dt>
+              <dd class="text-coal/65"><a href="tel:+32488199170" class="ug">0488 19 91 70</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-orange mt-1 text-lg" aria-hidden="true">🚲</span>
+            <div>
+              <dt class="font-600">Ophalen &amp; brengen</dt>
+              <dd class="text-coal/65">Mogelijk in Wommelgem en omgeving — geef het door bij je boeking.</dd>
+            </div>
+          </div>
+        </dl>
+
+        <!-- Booking form -->
+        <div id="boeken" class="bg-warm rounded-2xl p-7">
+          <h3 class="font-display text-2xl font-700 mb-5 uppercase">Boek je herstelling online</h3>
+          <form class="space-y-4" onsubmit="return false">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="b-naam" class="block text-sm font-600 mb-1.5">Naam</label>
+                <input id="b-naam" name="naam" type="text" autocomplete="name" required placeholder="Je naam" class="w-full px-4 py-3 rounded-xl border border-coal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-orange text-sm" />
+              </div>
+              <div>
+                <label for="b-tel" class="block text-sm font-600 mb-1.5">Telefoon</label>
+                <input id="b-tel" name="tel" type="tel" autocomplete="tel" required placeholder="04xx xx xx xx" class="w-full px-4 py-3 rounded-xl border border-coal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-orange text-sm" />
+              </div>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="b-type" class="block text-sm font-600 mb-1.5">Type herstelling</label>
+                <select id="b-type" name="type" class="w-full px-4 py-3 rounded-xl border border-coal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-orange text-sm">
+                  <option value="">Kies…</option>
+                  <option>Bandenreparatie</option>
+                  <option>Remmen &amp; versnellingen</option>
+                  <option>E-bike service</option>
+                  <option>Onderhoudsbeurt</option>
+                  <option>Offerte op maat</option>
+                </select>
+              </div>
+              <div>
+                <label for="b-wijze" class="block text-sm font-600 mb-1.5">Breng langs of ophalen</label>
+                <select id="b-wijze" name="wijze" class="w-full px-4 py-3 rounded-xl border border-coal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-orange text-sm">
+                  <option value="">Kies…</option>
+                  <option>Ik breng mijn fiets langs</option>
+                  <option>Ophalen aan huis (Wommelgem e.o.)</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="b-bericht" class="block text-sm font-600 mb-1.5">Wat is er met je fiets? <span class="text-coal/40 font-400">(optioneel)</span></label>
+              <textarea id="b-bericht" name="bericht" rows="3" placeholder="Bv. platte achterband, ketting slipt, e-bike start niet op…" class="w-full px-4 py-3 rounded-xl border border-coal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-orange text-sm resize-none"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-orange text-white font-600 py-3.5 rounded-xl hover:bg-orangelt transition">
+              Verstuur boeking
+            </button>
+            <p class="text-xs text-coal/45">We bevestigen je boeking telefonisch of per bericht. Geen prijzen online — je krijgt vooraf een duidelijke inschatting.</p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="fade-up rounded-3xl overflow-hidden min-h-[440px] bg-warm shadow-sm">
+        <iframe
+          title="Kaart Maakmijnfiets, Sint-Damiaanstraat 29, Wommelgem"
+          class="w-full h-full min-h-[440px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.510%2C51.195%2C4.530%2C51.212&layer=mapnik&marker=51.2030%2C4.5200">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ NEWSLETTER (GDPR-compliant) ═══ -->
+  <section class="bg-orange/12">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-display text-3xl sm:text-5xl font-700 uppercase">Onderhoudstips in je mailbox?</h2>
+      <p class="text-coal/65 mt-3 text-lg">Af en toe een handige tip en een herinnering voor je jaarlijkse onderhoudsbeurt.</p>
+      <form class="mt-8 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief van Maakmijnfiets</label>
+        <input id="nl-email" name="email" type="email" autocomplete="email" required placeholder="jouw@email.be"
+          class="flex-1 px-5 py-3.5 rounded-full border border-coal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-orange text-sm" />
+        <button class="bg-ink text-cream font-600 px-7 py-3.5 rounded-full hover:bg-coal transition text-sm">Inschrijven</button>
+      </form>
+      <p class="text-xs text-coal/45 mt-3">Geen spam. Uitschrijven kan altijd via de link in elke mail. GDPR-conform verwerkt.</p>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="bg-ink text-cream/75">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-9">
+      <div>
+        <p class="font-display text-[26px] text-cream font-700 leading-none uppercase">Maak<span class="text-orange">mijn</span>fiets</p>
+        <p class="text-cream/40 text-xs uppercase tracking-widest mt-1">Fietsherstellingen · Wommelgem</p>
+        <p class="text-cream/55 text-sm mt-4 max-w-xs leading-relaxed">Je lokale fietshersteller. Boek online, breng langs of laat ophalen — je fiets weer rijklaar.</p>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3 text-sm">Herstellingen</p>
+        <ul class="space-y-2 text-sm text-cream/55">
+          <li><a href="#diensten" class="hover:text-orange transition">Bandenreparatie</a></li>
+          <li><a href="#diensten" class="hover:text-orange transition">Remmen &amp; versnellingen</a></li>
+          <li><a href="#diensten" class="hover:text-orange transition">E-bike service</a></li>
+          <li><a href="#diensten" class="hover:text-orange transition">Onderhoudsbeurt</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3 text-sm">Service</p>
+        <ul class="space-y-2 text-sm text-cream/55">
+          <li><a href="#boeken"   class="hover:text-orange transition">Online boeken</a></li>
+          <li><a href="#diensten" class="hover:text-orange transition">Ophalen &amp; brengen</a></li>
+          <li><a href="#diensten" class="hover:text-orange transition">Offerte op maat</a></li>
+          <li><a href="#over"     class="hover:text-orange transition">Over ons</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3 text-sm">Contact</p>
+        <ul class="space-y-2 text-sm text-cream/55">
+          <li>Sint-Damiaanstraat 29</li>
+          <li>2160 Wommelgem</li>
+          <li><a href="tel:+32488199170" class="hover:text-orange transition">0488 19 91 70</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/35">
+        <p>© 2026 Maakmijnfiets.be. Concept — eerste website.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over de eerste website van Maakmijnfiets.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ SCRIPTS ═══ -->
+  <script>
+    // Fade-up on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1600);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else       mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>

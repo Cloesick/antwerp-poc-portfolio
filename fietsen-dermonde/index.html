@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fietsen Dermonde — Fietsenwinkel &amp; herstellingen in Wommelgem</title>
+  <meta name="description" content="Fietsenwinkel en herstellingen in Wommelgem. Stadsfietsen, e-bikes, kinderfietsen, onderdelen &amp; accessoires. Plan uw reparatie-afspraak online — Uilenbaan 65, 2160 Wommelgem." />
+  <link rel="canonical" href="https://fietsendermonde.be/" />
+  <meta name="theme-color" content="#0f2a4a" />
+  <!-- Open Graph / link preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Fietsen Dermonde" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Fietsen Dermonde — Fietsenwinkel &amp; herstellingen Wommelgem" />
+  <meta property="og:description" content="Uw lokale fietsenwinkel in Wommelgem: verkoop, herstellingen en e-bikes. Word gevonden op 'fietsen Wommelgem' en plan uw reparatie online." />
+  <meta property="og:url" content="https://fietsendermonde.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Inline SVG favicon — monogram FD -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f2a4a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='13' fill='%23e63946' text-anchor='middle'%3EFD%3C/text%3E%3C/svg%3E" />
+  <!-- Local SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BicycleStore",
+    "name": "Fietsen Dermonde",
+    "description": "Fietsenwinkel en herstellingen in Wommelgem. Stadsfietsen, e-bikes, kinderfietsen, onderdelen en accessoires. Reparatie-afspraak online te plannen.",
+    "image": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://fietsendermonde.be/",
+    "telephone": "+3233531973",
+    "priceRange": "€€",
+    "areaServed": "Wommelgem en omgeving",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Uilenbaan 65",
+      "postalCode": "2160",
+      "addressLocality": "Wommelgem",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.2030, "longitude": 4.5200 },
+    "hasMap": "https://www.openstreetmap.org/?mlat=51.2030&mlon=4.5200#map=16/51.2030/4.5200",
+    "slogan": "Uw fietsenwinkel én hersteller in Wommelgem"
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Archivo', 'system-ui', 'sans-serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            navy:     '#0f2a4a',
+            navydk:   '#0a1f38',
+            blue:     '#1c4e87',
+            signal:   '#e63946',
+            signallt: '#f0545f',
+            charcoal: '#23262b',
+            cream:    '#faf7f1',
+            sand:     '#f1ebdd',
+            sanddk:   '#e3d9c4',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(15,42,74,.20) 0%, rgba(15,42,74,.55) 50%, rgba(10,31,56,.94) 100%); }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 1.5px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 1.5px; }
+    .glow-signal { box-shadow: 0 0 0 0 rgba(230,57,70,.4); transition: box-shadow .3s; }
+    .glow-signal:hover { box-shadow: 0 4px 24px rgba(230,57,70,.32); }
+    @keyframes spin-wheel { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+    .wheel { animation: spin-wheel 9s linear infinite; transform-origin: center; }
+  </style>
+</head>
+<body class="bg-cream text-charcoal font-sans antialiased selection:bg-signal/25">
+
+  <!-- Skip link (a11y) -->
+  <a href="#assortiment" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-navy focus:text-cream focus:rounded-full">Naar het aanbod</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-navy text-cream text-center text-[13px] tracking-wide py-2 px-4">
+    <span class="text-signallt font-semibold">Nieuw:</span> plan uw reparatie-afspraak online — fiets of e-bike binnenbrengen wordt zoveel makkelijker.
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-navy/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[70px] flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#top" class="flex items-baseline gap-2.5" aria-label="Fietsen Dermonde — naar de startpagina">
+        <span class="font-display text-[24px] font-800 tracking-tight leading-none">Fietsen <span class="text-signal">Dermonde</span></span>
+        <span class="text-[11px] uppercase tracking-[0.22em] text-charcoal/45 font-600 hidden sm:inline">Wommelgem</span>
+      </a>
+      <!-- Desktop nav -->
+      <div class="hidden md:flex items-center gap-7 text-[15px] font-500">
+        <a href="#assortiment"  class="ug">Assortiment</a>
+        <a href="#herstellingen" class="ug">Herstellingen</a>
+        <a href="#website"      class="ug">Eerste website</a>
+        <a href="#verhaal"      class="ug">Over ons</a>
+        <a href="#bezoek"       class="ug">Bezoek</a>
+      </div>
+      <!-- CTA + hamburger -->
+      <div class="flex items-center gap-2">
+        <a href="#afspraak" class="inline-flex items-center gap-2 bg-signal text-cream text-sm font-600 px-4 sm:px-5 py-2.5 rounded-full hover:bg-signallt transition glow-signal">
+          Reparatie boeken
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-navy/15 text-navy hover:bg-navy/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-navy/10 bg-cream/96 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#assortiment"   class="py-3 border-b border-navy/5">Assortiment</a>
+        <a href="#herstellingen" class="py-3 border-b border-navy/5">Herstellingen</a>
+        <a href="#website"       class="py-3 border-b border-navy/5">Eerste website</a>
+        <a href="#verhaal"       class="py-3 border-b border-navy/5">Over ons</a>
+        <a href="#bezoek"        class="py-3 border-b border-navy/5">Bezoek ons</a>
+        <a href="#afspraak"      class="py-3 text-signal font-600">Reparatie boeken →</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-navydk">
+    <img
+      src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=2200&q=80"
+      alt="Fietsen in een fietsenwinkel"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-28 w-full">
+      <p class="text-signallt font-600 tracking-[0.3em] uppercase text-xs mb-5">Fietsenwinkel &amp; herstellingen · Wommelgem</p>
+      <h1 class="font-display text-cream text-[42px] leading-[1.04] sm:text-[68px] font-800 max-w-3xl">
+        Uw fiets in goede<br />handen in Wommelgem.
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Stadsfietsen, e-bikes, kinderfietsen en vakkundige herstellingen — bij u om de hoek aan de Uilenbaan. Verkoop, onderhoud en reparatie onder één dak.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#assortiment" class="bg-signal text-cream font-600 px-7 py-3.5 rounded-full hover:bg-signallt transition">
+          Ontdek het aanbod
+        </a>
+        <a href="#afspraak" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
+          Reparatie plannen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TRUST STRIP ═══ -->
+  <section class="bg-navy text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-7 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div>
+        <p class="font-display text-2xl text-signallt leading-none font-700">Verkoop</p>
+        <p class="mt-1.5 text-cream/65">nieuwe fietsen &amp; e-bikes</p>
+      </div>
+      <div>
+        <p class="font-display text-2xl text-signallt leading-none font-700">Herstellingen</p>
+        <p class="mt-1.5 text-cream/65">vakkundig &amp; snel</p>
+      </div>
+      <div>
+        <p class="font-display text-2xl text-signallt leading-none font-700">E-bikes</p>
+        <p class="mt-1.5 text-cream/65">verkoop &amp; service</p>
+      </div>
+      <div>
+        <p class="font-display text-2xl text-signallt leading-none font-700">Lokaal</p>
+        <p class="mt-1.5 text-cream/65">vertrouwd in Wommelgem</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ INTRO / AANBOD ═══ -->
+  <section id="aanbod" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div class="fade-up">
+        <p class="text-signal font-600 tracking-[0.22em] uppercase text-xs mb-4">Winkel &amp; werkplaats</p>
+        <h2 class="font-display text-4xl sm:text-5xl font-800 leading-tight">
+          Alles voor uw fiets,<br />op één plek.
+        </h2>
+        <p class="text-charcoal/80 text-lg mt-5 leading-relaxed max-w-md">
+          Bij Fietsen Dermonde vindt u een ruime keuze aan fietsen én een eigen werkplaats voor herstellingen en onderhoud. Persoonlijk advies, eerlijke service en jarenlange ervaring — gewoon dichtbij.
+        </p>
+        <ul class="mt-7 space-y-3 text-charcoal">
+          <li class="flex items-center gap-3"><span class="text-signal font-700">✓</span> Verkoop van stads-, kinder- en elektrische fietsen</li>
+          <li class="flex items-center gap-3"><span class="text-signal font-700">✓</span> Eigen werkplaats voor herstellingen &amp; onderhoud</li>
+          <li class="flex items-center gap-3"><span class="text-signal font-700">✓</span> Onderdelen, banden en accessoires op voorraad</li>
+          <li class="flex items-center gap-3"><span class="text-signal font-700">✓</span> Persoonlijk advies — geen anonieme keten</li>
+        </ul>
+        <a href="#assortiment" class="inline-flex items-center gap-2 mt-9 bg-navy text-cream font-600 px-7 py-3.5 rounded-full hover:bg-blue transition">
+          Bekijk alle categorieën
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand">
+          <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=800&q=80" alt="Fiets van dichtbij" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand mt-8">
+          <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=700&q=80" alt="Fiets reparatie in de werkplaats" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ASSORTIMENT GRID ═══ -->
+  <section id="assortiment" class="bg-sand/60 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-signal font-600 tracking-[0.22em] uppercase text-xs mb-3">Ons aanbod</p>
+          <h2 class="font-display text-4xl sm:text-5xl font-800">Voor elke rit een fiets</h2>
+        </div>
+        <p class="text-charcoal/65 max-w-sm text-sm">Van de dagelijkse rit naar het werk tot de eerste fiets van uw kind — wij helpen u kiezen en houden ze rijdend.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <!-- Stadsfietsen -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-navy text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=800&q=80" alt="Stadsfiets" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-navydk via-navy/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-display text-2xl font-700">Stadsfietsen</h3>
+            <p class="text-cream/70 text-sm mt-1">Comfortabel en betrouwbaar voor elke dagelijkse rit door Wommelgem.</p>
+          </div>
+        </article>
+
+        <!-- E-bikes -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-navy text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=850&q=80" alt="Elektrische fiets" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-navydk via-navy/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-display text-2xl font-700">E-bikes</h3>
+            <p class="text-cream/70 text-sm mt-1">Elektrische fietsen voor woon-werkverkeer en ontspannen tochten.</p>
+          </div>
+        </article>
+
+        <!-- Kinderfietsen -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-navy text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=820&q=80" alt="Kinderfiets" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-navydk via-navy/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-display text-2xl font-700">Kinderfietsen</h3>
+            <p class="text-cream/70 text-sm mt-1">De juiste maat en de eerste fiets — veilig op weg met advies.</p>
+          </div>
+        </article>
+
+        <!-- Onderdelen & accessoires -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-navy text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=800&q=80" alt="Fietsonderdelen en accessoires" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-navydk via-navy/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-display text-2xl font-700">Onderdelen &amp; accessoires</h3>
+            <p class="text-cream/70 text-sm mt-1">Banden, sloten, verlichting, fietstassen en alles voor onderweg.</p>
+          </div>
+        </article>
+
+        <!-- Herstellingen -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-navy text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=820&q=80" alt="Fietshersteller aan het werk" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-navydk via-navy/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-display text-2xl font-700">Herstellingen</h3>
+            <p class="text-cream/70 text-sm mt-1">Lekke band, remmen, versnellingen of e-bike-service — wij maken het in orde.</p>
+          </div>
+        </article>
+
+        <!-- Onderhoud CTA card -->
+        <article class="fade-up rounded-2xl bg-signal text-cream relative aspect-[4/5] flex items-center justify-center text-center p-8">
+          <div>
+            <svg class="mx-auto mb-4 wheel" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg>
+            <p class="font-display text-2xl font-700">Onderhoud</p>
+            <p class="text-cream/85 text-sm mt-2 leading-relaxed">Periodieke nazicht- en onderhoudsbeurten houden uw fiets veilig en lang mee.</p>
+            <a href="#afspraak" class="inline-block mt-6 text-cream font-600 ug">Plan een onderhoudsbeurt →</a>
+          </div>
+        </article>
+
+      </div>
+      <p class="text-center text-xs text-charcoal/35 mt-6">Categorieën ter illustratie van het assortiment. Vraag in de winkel naar het actuele aanbod en merken.</p>
+    </div>
+  </section>
+
+  <!-- ═══ HERSTELLINGEN ═══ -->
+  <section id="herstellingen" class="bg-navy text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1100&q=80" alt="Fiets in de werkplaats" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+      </div>
+      <div class="order-1 lg:order-2 fade-up">
+        <p class="text-signallt font-600 tracking-[0.22em] uppercase text-xs mb-4">Eigen werkplaats</p>
+        <h2 class="font-display text-4xl sm:text-5xl font-800 leading-tight">
+          Herstellingen &amp;<br />onderhoud.
+        </h2>
+        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
+          Een lekke band, piepende remmen of versnellingen die niet vlot schakelen? Onze werkplaats brengt uw fiets of e-bike weer in topvorm. Breng hem binnen of plan eenvoudig een afspraak online.
+        </p>
+        <ul class="mt-6 space-y-3 text-cream/80">
+          <li class="flex items-center gap-3"><span class="text-signallt font-700">✓</span> Banden, remmen, versnellingen &amp; ketting</li>
+          <li class="flex items-center gap-3"><span class="text-signallt font-700">✓</span> E-bike-service en algemeen nazicht</li>
+          <li class="flex items-center gap-3"><span class="text-signallt font-700">✓</span> Eerlijk advies vooraf — geen verrassingen</li>
+        </ul>
+        <a href="#afspraak" class="inline-flex items-center gap-2 mt-9 bg-signal text-cream font-600 px-7 py-3.5 rounded-full hover:bg-signallt transition">
+          Plan mijn reparatie
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ WAAROM EEN WEBSITE (UPSELL) ═══ -->
+  <section id="website" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="text-center max-w-2xl mx-auto mb-14 fade-up">
+      <p class="text-signal font-600 tracking-[0.22em] uppercase text-xs mb-3">Waarom een eigen website?</p>
+      <h2 class="font-display text-4xl sm:text-5xl font-800">Uw eerste website — meer klanten, minder telefoons</h2>
+      <p class="text-charcoal/65 mt-4 text-lg">Fietsen Dermonde heeft vandaag nog geen website. Klanten die online zoeken, vinden de zaak (nog) niet. Dit is wat een eigen site verandert.</p>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="fade-up bg-sand/70 rounded-2xl p-7">
+        <div class="w-12 h-12 rounded-xl bg-navy text-cream flex items-center justify-center mb-4">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        </div>
+        <h3 class="font-display text-xl font-700">Gevonden op Google</h3>
+        <p class="text-charcoal/70 text-sm mt-2 leading-relaxed">Wie zoekt op "fietsen Wommelgem" of "e-bike Wommelgem" komt bij u terecht — niet bij de concurrent twee dorpen verder.</p>
+      </div>
+      <div class="fade-up bg-sand/70 rounded-2xl p-7">
+        <div class="w-12 h-12 rounded-xl bg-navy text-cream flex items-center justify-center mb-4">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        </div>
+        <h3 class="font-display text-xl font-700">Reparatie-afspraak online</h3>
+        <p class="text-charcoal/70 text-sm mt-2 leading-relaxed">Klanten boeken zelf een tijdslot voor hun herstelling — minder telefoons tijdens het werk, een vollere werkplaatsplanning.</p>
+      </div>
+      <div class="fade-up bg-sand/70 rounded-2xl p-7">
+        <div class="w-12 h-12 rounded-xl bg-navy text-cream flex items-center justify-center mb-4">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M21 7v5h-5"/></svg>
+        </div>
+        <h3 class="font-display text-xl font-700">De e-bike-vraag stijgt</h3>
+        <p class="text-charcoal/70 text-sm mt-2 leading-relaxed">Steeds meer mensen oriënteren zich online vóór ze een e-bike kopen of laten onderhouden. Wie zichtbaar is, vangt die vraag op.</p>
+      </div>
+    </div>
+    <p class="text-center text-charcoal/60 mt-10 fade-up">Deze demo toont hoe zo'n eerste website eruit kan zien — <a href="#afspraak" class="text-signal font-600 ug">laten we erover praten</a>.</p>
+  </section>
+
+  <!-- ═══ VERHAAL ═══ -->
+  <section id="verhaal" class="bg-sand/70 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-center">
+      <div class="fade-up">
+        <p class="text-signal font-600 tracking-[0.22em] uppercase text-xs mb-4">Over Fietsen Dermonde</p>
+        <h2 class="font-display text-4xl sm:text-5xl font-800 leading-tight">Uw vertrouwde<br />fietsenwinkel in Wommelgem.</h2>
+        <p class="text-charcoal/75 text-lg mt-6 leading-relaxed">
+          Fietsen Dermonde is een lokale fietsenwinkel met eigen werkplaats aan de Uilenbaan in Wommelgem. Wat de zaak typeert: persoonlijk advies, eerlijke herstellingen en de tijd om uw vraag écht te beluisteren.
+        </p>
+        <p class="text-charcoal/75 text-lg mt-4 leading-relaxed">
+          Of u nu een nieuwe e-bike zoekt, de eerste fiets van uw kind komt uitkiezen of gewoon een lekke band laat plakken — u bent welkom en wordt verder geholpen zoals het hoort.
+        </p>
+        <div class="mt-9 grid grid-cols-3 gap-5">
+          <div class="text-center">
+            <p class="font-display text-3xl text-signal font-800">Verkoop</p>
+            <p class="text-charcoal/55 text-xs mt-1">&amp; advies</p>
+          </div>
+          <div class="text-center">
+            <p class="font-display text-3xl text-signal font-800">Service</p>
+            <p class="text-charcoal/55 text-xs mt-1">eigen werkplaats</p>
+          </div>
+          <div class="text-center">
+            <p class="font-display text-3xl text-signal font-800">Lokaal</p>
+            <p class="text-charcoal/55 text-xs mt-1">Wommelgem</p>
+          </div>
+        </div>
+      </div>
+      <div class="fade-up rounded-3xl overflow-hidden aspect-[4/3]">
+        <img src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=1100&q=80" alt="E-bike in de fietsenwinkel" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ BEZOEK + AFSPRAAK ═══ -->
+  <section id="bezoek" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-14">
+
+      <!-- Info + afspraakformulier -->
+      <div class="fade-up space-y-10">
+        <div>
+          <p class="text-signal font-600 tracking-[0.22em] uppercase text-xs mb-4">Bezoek onze winkel</p>
+          <h2 class="font-display text-4xl sm:text-5xl font-800">Welkom aan de Uilenbaan.</h2>
+          <p class="text-charcoal/70 text-lg mt-5 max-w-md">Kom langs voor advies, een nieuwe fiets of een herstelling. Liever vooraf plannen? Vraag uw reparatie-afspraak aan via het formulier hieronder.</p>
+        </div>
+
+        <dl class="space-y-5 text-charcoal">
+          <div class="flex gap-4">
+            <span class="text-signal mt-1 text-lg" aria-hidden="true">📍</span>
+            <div>
+              <dt class="font-600">Adres</dt>
+              <dd class="text-charcoal/65">Uilenbaan 65, 2160 Wommelgem</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-signal mt-1 text-lg" aria-hidden="true">📞</span>
+            <div>
+              <dt class="font-600">Telefoon</dt>
+              <dd class="text-charcoal/65"><a href="tel:+3233531973" class="ug">03 353 19 73</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-signal mt-1 text-lg" aria-hidden="true">🚲</span>
+            <div>
+              <dt class="font-600">Diensten</dt>
+              <dd class="text-charcoal/65">Verkoop · herstellingen · onderhoud · e-bike-service</dd>
+            </div>
+          </div>
+        </dl>
+
+        <!-- Appointment form -->
+        <div id="afspraak" class="bg-sand rounded-2xl p-7">
+          <h3 class="font-display text-2xl font-700 mb-5">Plan uw reparatie-afspraak</h3>
+          <form class="space-y-4" onsubmit="return false">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="apt-naam" class="block text-sm font-600 mb-1.5">Naam</label>
+                <input id="apt-naam" name="naam" type="text" autocomplete="name" required placeholder="Uw naam" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-signal text-sm" />
+              </div>
+              <div>
+                <label for="apt-tel" class="block text-sm font-600 mb-1.5">Telefoon</label>
+                <input id="apt-tel" name="telefoon" type="tel" autocomplete="tel" required placeholder="Uw telefoonnummer" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-signal text-sm" />
+              </div>
+            </div>
+            <div>
+              <label for="apt-type" class="block text-sm font-600 mb-1.5">Type aanvraag</label>
+              <select id="apt-type" name="type" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-signal text-sm">
+                <option value="">Kies een optie…</option>
+                <option>Herstelling stadsfiets</option>
+                <option>Herstelling / service e-bike</option>
+                <option>Onderhoudsbeurt</option>
+                <option>Lekke band</option>
+                <option>Advies nieuwe fiets / e-bike</option>
+              </select>
+            </div>
+            <div>
+              <label for="apt-bericht" class="block text-sm font-600 mb-1.5">Korte toelichting <span class="text-charcoal/40 font-400">(optioneel)</span></label>
+              <textarea id="apt-bericht" name="bericht" rows="3" placeholder="Bv. remmen schuren, e-bike accu nazien, …" class="w-full px-4 py-3 rounded-xl border border-charcoal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-signal text-sm resize-none"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-signal text-cream font-600 py-3.5 rounded-xl hover:bg-signallt transition">
+              Afspraak aanvragen
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="fade-up rounded-3xl overflow-hidden min-h-[440px] bg-sand shadow-sm">
+        <iframe
+          title="Kaart Fietsen Dermonde, Uilenbaan 65, Wommelgem"
+          class="w-full h-full min-h-[440px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.510%2C51.195%2C4.530%2C51.212&layer=mapnik&marker=51.2030%2C4.5200">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ NEWSLETTER (GDPR-compliant) ═══ -->
+  <section class="bg-signal/10">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-display text-3xl sm:text-4xl font-800">Op de hoogte blijven?</h2>
+      <p class="text-charcoal/65 mt-3 text-lg">Nieuwe modellen, acties en onderhoudstips — af en toe in uw mailbox.</p>
+      <form class="mt-8 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief van Fietsen Dermonde</label>
+        <input id="nl-email" name="email" type="email" autocomplete="email" required placeholder="uw@email.be"
+          class="flex-1 px-5 py-3.5 rounded-full border border-charcoal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-signal text-sm" />
+        <button class="bg-navy text-cream font-600 px-7 py-3.5 rounded-full hover:bg-blue transition text-sm">Inschrijven</button>
+      </form>
+      <p class="text-xs text-charcoal/45 mt-3">Geen spam. Uitschrijven kan altijd via de link in elke mail. GDPR-conform verwerkt.</p>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="bg-navydk text-cream/75">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-9">
+      <div>
+        <p class="font-display text-[22px] text-cream font-800 leading-none">Fietsen <span class="text-signal">Dermonde</span></p>
+        <p class="text-cream/40 text-xs uppercase tracking-widest mt-1">Wommelgem</p>
+        <p class="text-cream/55 text-sm mt-4 max-w-xs leading-relaxed">Uw lokale fietsenwinkel met eigen werkplaats — verkoop, herstellingen en e-bike-service in Wommelgem.</p>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3 text-sm">Assortiment</p>
+        <ul class="space-y-2 text-sm text-cream/55">
+          <li><a href="#assortiment" class="hover:text-signal transition">Stadsfietsen</a></li>
+          <li><a href="#assortiment" class="hover:text-signal transition">E-bikes</a></li>
+          <li><a href="#assortiment" class="hover:text-signal transition">Kinderfietsen</a></li>
+          <li><a href="#assortiment" class="hover:text-signal transition">Onderdelen &amp; accessoires</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3 text-sm">Diensten</p>
+        <ul class="space-y-2 text-sm text-cream/55">
+          <li><a href="#herstellingen" class="hover:text-signal transition">Herstellingen</a></li>
+          <li><a href="#herstellingen" class="hover:text-signal transition">Onderhoud</a></li>
+          <li><a href="#afspraak"      class="hover:text-signal transition">Reparatie-afspraak</a></li>
+          <li><a href="#verhaal"       class="hover:text-signal transition">Over ons</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3 text-sm">Contact</p>
+        <ul class="space-y-2 text-sm text-cream/55">
+          <li>Uilenbaan 65</li>
+          <li>2160 Wommelgem</li>
+          <li><a href="tel:+3233531973" class="hover:text-signal transition">03 353 19 73</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/35">
+        <p>© 2026 Fietsen Dermonde. Concept — eerste website.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over de eerste website van Fietsen Dermonde.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ SCRIPTS ═══ -->
+  <script>
+    // Fade-up on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1600);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else       mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>
