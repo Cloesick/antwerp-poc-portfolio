@@ -116,7 +116,9 @@
       { slug: 'de-schutter-hoevezuivel', name: 'De Schutter Hoevezuivel', cat: 'Hoevewinkel · Kapellen', c: '#2f6b3c' },
       { slug: 'chicane',         name: 'Chicane',            cat: 'Bistro · Berchem (reservatie)', c: '#1c2620' },
       { slug: 'hairfusion',      name: 'Hairfusion',         cat: 'Kapsalon · Berchem (afspraken)', c: '#2a1c26' },
-    ];
+          { slug: 'theater-cafe',    name: 'Theater Café',       cat: 'Cultuurcafé · Mortsel (reservatie)', c: '#231a14' },
+      { slug: 'perfect-you',     name: 'Perfect You',        cat: 'Schoonheidssalon · Borgerhout (afspraken)', c: '#2b2230' },
+];
     document.getElementById('grid').innerHTML = pocs.map(p => `
       <a href="${p.slug}/" class="group rounded-2xl overflow-hidden border border-navy/10 bg-white hover:shadow-lg transition block">
         <div class="aspect-[16/10] flex items-end p-5" style="background:linear-gradient(150deg, ${p.c}, ${p.c}cc)">

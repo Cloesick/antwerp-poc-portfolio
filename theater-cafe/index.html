@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Theater Café — cultuur, café & wereldkeuken in Mortsel</title>
+  <meta name="description" content="Het Theater Café in Mortsel: waar cultuur, café en wereldkeuken samenkomen. Doorlopend open keuken. Reserveer voortaan online — in een paar klikken." />
+  <link rel="canonical" href="https://theatercafemortsel.be/" />
+  <meta name="theme-color" content="#231a14" />
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:site_name" content="Theater Café" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Theater Café — cultuur, café & wereldkeuken in Mortsel" />
+  <meta property="og:description" content="Cultuur, café & wereldkeuken in Mortsel — reserveer voortaan online." />
+  <meta property="og:url" content="https://theatercafemortsel.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23231a14'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' fill='%23d49a4e' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Theater Café",
+    "description": "Cultuurcafé in Mortsel — waar cultuur, café en wereldkeuken samenkomen.",
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://theatercafemortsel.be/",
+    "servesCuisine": "International",
+    "telephone": "+3237773174",
+    "priceRange": "€€",
+    "acceptsReservations": "True",
+    "address": { "@type": "PostalAddress", "streetAddress": "Heilig-Kruisstraat 16b", "postalCode": "2640", "addressLocality": "Mortsel", "addressRegion": "Antwerpen", "addressCountry": "BE" },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday"], "opens": "12:00", "closes": "24:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "12:00", "closes": "01:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "12:00", "closes": "22:00" }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { serif: ['Fraunces','serif'], sans: ['Inter','sans-serif'] },
+      colors: { espresso: '#231a14', umber: '#4a3a2a', amber: '#d49a4e', wine: '#7a3640', cream: '#f6f0e6', sand: '#e9ddc9' },
+    } } };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(35,26,20,.2) 0%, rgba(35,26,20,.5) 55%, rgba(35,26,20,.93) 100%); }
+    .tile-grad { background: linear-gradient(160deg, #2e231a, #18120d); }
+    .fade-up { opacity: 0; transform: translateY(18px); transition: all .7s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor,currentColor); background-size: 0% 1px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 1px; }
+  </style>
+</head>
+<body class="bg-cream text-espresso font-sans antialiased selection:bg-amber/30">
+  <a href="#reserveer" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-espresso focus:text-cream focus:rounded-full">Naar reserveren</a>
+
+  <div class="bg-espresso text-cream text-center text-[13px] tracking-wide py-2 px-4">
+    🎭 <span class="font-semibold">Nieuw:</span> reserveer je tafel voortaan online — in een paar klikken, dag en nacht.
+  </div>
+
+  <header class="sticky top-0 z-50 bg-cream/85 backdrop-blur border-b border-espresso/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[70px] flex items-center justify-between">
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-[30px] font-600 tracking-tight italic">Theater Café</span>
+        <span class="text-[10px] uppercase tracking-[0.3em] text-amber font-600">Cultuurcafé · Mortsel</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-[14px] font-500">
+        <a href="#kaart" class="ug">De kaart</a>
+        <a href="#cultuur" class="ug">Cultuur</a>
+        <a href="#praktisch" class="ug">Praktisch</a>
+        <a href="#reserveer" class="ug">Reserveren</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="#reserveer" class="inline-flex items-center gap-2 bg-espresso text-cream text-sm font-600 px-4 sm:px-5 py-2.5 rounded-full hover:bg-umber transition">Reserveer online
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-espresso/15 hover:bg-espresso/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" hidden class="md:hidden border-t border-espresso/10 bg-cream/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#kaart" class="py-3 border-b border-espresso/5">De kaart</a>
+        <a href="#cultuur" class="py-3 border-b border-espresso/5">Cultuur</a>
+        <a href="#praktisch" class="py-3 border-b border-espresso/5">Praktisch</a>
+        <a href="#reserveer" class="py-3">Reserveren</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden">
+    <div class="absolute inset-0 tile-grad"></div>
+    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=2000&q=80" alt="Café-interieur" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-amber font-500 tracking-[0.32em] uppercase text-xs mb-5">Cultuur · Café · Wereldkeuken</p>
+      <h1 class="font-serif text-cream text-[46px] leading-[1.03] sm:text-7xl font-600 max-w-3xl italic">Waar alles<br />samenkomt.</h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed font-300">Het Theater Café is een plek waar cultuur, café en wereldkeuken samenkomen — met doorlopend open keuken. Reserveer voortaan online, geen telefoon nodig.</p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#reserveer" class="bg-amber text-espresso font-600 px-7 py-3.5 rounded-full hover:bg-cream transition">Reserveer een tafel</a>
+        <a href="#kaart" class="border border-cream/40 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">Bekijk de kaart</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-espresso text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-7 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-amber">Cultuurcafé</p><p class="mt-1 text-cream/60">cultuur &amp; gezelligheid</p></div>
+      <div><p class="font-serif text-2xl text-amber">Wereldkeuken</p><p class="mt-1 text-cream/60">smaken van overal</p></div>
+      <div><p class="font-serif text-2xl text-amber">Non-stop</p><p class="mt-1 text-cream/60">doorlopend open keuken</p></div>
+      <div><p class="font-serif text-2xl text-amber">Online</p><p class="mt-1 text-cream/60">reserveren in 1 minuut</p></div>
+    </div>
+  </section>
+
+  <section id="reserveer" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-wine font-600 tracking-[0.2em] uppercase text-xs mb-4">Nieuw — online reserveren</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">Reserveer in een<br />paar klikken.</h2>
+        <p class="text-umber text-lg mt-5 leading-relaxed max-w-md font-300">Vandaag kan een tafel reserveren alleen telefonisch — en dus enkel tijdens de openingsuren. Met een online reservatiemodule boeken gasten 24/7 een tafel, krijgen ze meteen een bevestiging, en daalt het aantal no-shows met automatische herinneringen.</p>
+        <ul class="mt-7 space-y-3 text-umber">
+          <li class="flex items-center gap-3"><span class="text-wine">✓</span> 24/7 reserveren — ook wanneer de zaak gesloten is</li>
+          <li class="flex items-center gap-3"><span class="text-wine">✓</span> Automatische bevestiging + herinnering (minder no-shows)</li>
+          <li class="flex items-center gap-3"><span class="text-wine">✓</span> Eigen gastenlijst &amp; nieuwsbrief voor events &amp; voorstellingen</li>
+        </ul>
+      </div>
+      <div class="fade-up rounded-3xl tile-grad text-cream p-7 sm:p-9">
+        <p class="font-serif text-2xl font-600 text-amber mb-1">Reserveer een tafel</p>
+        <p class="text-cream/60 text-sm mb-6">Demo — zo zou de reservatiemodule eruitzien.</p>
+        <form class="space-y-4" onsubmit="return false">
+          <div class="grid grid-cols-2 gap-3">
+            <label class="block"><span class="text-cream/70 text-xs">Datum</span><input type="date" class="mt-1 w-full px-4 py-2.5 rounded-xl bg-cream/10 border border-cream/15 text-cream focus:outline-none focus:ring-2 focus:ring-amber" /></label>
+            <label class="block"><span class="text-cream/70 text-xs">Tijd</span><input type="time" value="19:30" class="mt-1 w-full px-4 py-2.5 rounded-xl bg-cream/10 border border-cream/15 text-cream focus:outline-none focus:ring-2 focus:ring-amber" /></label>
+          </div>
+          <label class="block"><span class="text-cream/70 text-xs">Aantal personen</span>
+            <select class="mt-1 w-full px-4 py-2.5 rounded-xl bg-cream/10 border border-cream/15 text-cream focus:outline-none focus:ring-2 focus:ring-amber">
+              <option>2 personen</option><option>1 persoon</option><option>3 personen</option><option>4 personen</option><option>5 personen</option><option>6+ (bel ons)</option>
+            </select></label>
+          <label class="block"><span class="text-cream/70 text-xs">Naam</span><input type="text" placeholder="Jouw naam" class="mt-1 w-full px-4 py-2.5 rounded-xl bg-cream/10 border border-cream/15 text-cream placeholder:text-cream/40 focus:outline-none focus:ring-2 focus:ring-amber" /></label>
+          <button class="w-full bg-amber text-espresso font-600 py-3 rounded-full hover:bg-cream transition">Bevestig reservatie</button>
+          <p class="text-cream/40 text-xs text-center">Of bel <a href="tel:037773174" class="underline">03 777 31 74</a> · GDPR-proof</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="kaart" class="bg-sand/60 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div><p class="text-wine font-600 tracking-[0.2em] uppercase text-xs mb-3">De kaart</p><h2 class="font-serif text-4xl sm:text-5xl font-600">Smaken van overal</h2></div>
+        <p class="text-umber max-w-sm font-300">Een wereldkeuken die verrast — van kleine gerechten bij een glas tot een volledig diner. Hieronder ter illustratie.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Gerechten" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Wereldgerechten</h3><p class="text-cream/75 text-sm mt-1 font-300">Smaken van over de hele wereld.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Borrelhapjes" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Bij een glas</h3><p class="text-cream/75 text-sm mt-1 font-300">Kleine gerechten &amp; borrelhapjes.</p></div>
+        </article>
+        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80" alt="Drank" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Bar &amp; wijnen</h3><p class="text-cream/75 text-sm mt-1 font-300">Een goed glas, voor of na de voorstelling.</p></div>
+        </article>
+      </div>
+      <p class="text-center text-xs text-umber/60 mt-6">Voorbeeldcategorieën ter illustratie van de site.</p>
+    </div>
+  </section>
+
+  <section id="cultuur" class="bg-espresso text-cream py-20 sm:py-28">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 text-center fade-up">
+      <p class="text-amber font-600 tracking-[0.2em] uppercase text-xs mb-4">Cultuur &amp; café</p>
+      <h2 class="font-serif text-4xl sm:text-6xl font-600 leading-tight italic">"Waar cultuur, café en wereldkeuken samenkomen."</h2>
+      <p class="text-cream/80 text-lg mt-7 leading-relaxed font-300">Een warme plek in Mortsel om iets te eten, te drinken en cultuur te beleven. Met een online agenda en reservaties vinden gasten en cultuurliefhebbers je nog makkelijker.</p>
+    </div>
+  </section>
+
+  <section id="praktisch" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-12">
+    <div class="fade-up">
+      <p class="text-wine font-600 tracking-[0.2em] uppercase text-xs mb-4">Praktisch</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-600">Tot snel in Mortsel</h2>
+      <dl class="mt-9 space-y-5 text-umber">
+        <div class="flex gap-4"><span class="text-wine mt-1">◦</span><div><dt class="font-500 text-espresso">Adres</dt><dd>Heilig-Kruisstraat 16b, 2640 Mortsel</dd></div></div>
+        <div class="flex gap-4"><span class="text-wine mt-1">◦</span><div><dt class="font-500 text-espresso">Open</dt><dd>Di–Do: 12:00–24:00 · Vr–Za: 12:00–01:00 · Zo: 12:00–22:00 · Ma: gesloten</dd></div></div>
+        <div class="flex gap-4"><span class="text-wine mt-1">◦</span><div><dt class="font-500 text-espresso">Telefoon</dt><dd>03 777 31 74</dd></div></div>
+      </dl>
+      <a href="#reserveer" class="inline-block mt-9 bg-espresso text-cream font-600 px-7 py-3.5 rounded-full hover:bg-umber transition">Reserveer online →</a>
+    </div>
+    <div class="rounded-3xl overflow-hidden min-h-[340px] bg-sand">
+      <iframe title="Kaart Theater Café Mortsel" class="w-full h-full min-h-[340px] border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=4.451%2C51.161%2C4.471%2C51.177&layer=mapnik&marker=51.1690%2C4.4610"></iframe>
+    </div>
+  </section>
+
+  <section class="bg-amber/20">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-4xl sm:text-5xl font-600">Mis geen voorstelling</h2>
+      <p class="text-umber mt-3 font-300">Agenda, events &amp; nieuwe gerechten — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <input type="email" placeholder="jouw@email.be" class="flex-1 px-5 py-3 rounded-full border border-umber/20 bg-cream focus:outline-none focus:ring-2 focus:ring-amber" />
+        <button class="bg-espresso text-cream font-600 px-7 py-3 rounded-full hover:bg-umber transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-umber/60 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <footer class="bg-espresso text-cream/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div><p class="font-serif text-[28px] text-cream font-600 italic">Theater Café</p><p class="text-cream/60 text-sm mt-3 max-w-xs font-300">Cultuurcafé in Mortsel — waar cultuur, café en wereldkeuken samenkomen.</p></div>
+      <div><p class="font-500 text-cream mb-3">Café</p><ul class="space-y-2 text-sm text-cream/60 font-300"><li><a href="#kaart" class="hover:text-amber">De kaart</a></li><li><a href="#cultuur" class="hover:text-amber">Cultuur</a></li><li><a href="#reserveer" class="hover:text-amber">Reserveren</a></li></ul></div>
+      <div><p class="font-500 text-cream mb-3">Praktisch</p><ul class="space-y-2 text-sm text-cream/60 font-300"><li><a href="#praktisch" class="hover:text-amber">Openingsuren</a></li><li><a href="#praktisch" class="hover:text-amber">Bereikbaarheid</a></li></ul></div>
+      <div><p class="font-500 text-cream mb-3">Contact</p><ul class="space-y-2 text-sm text-cream/60 font-300"><li>Heilig-Kruisstraat 16b, 2640 Mortsel</li><li>03 777 31 74</li></ul></div>
+    </div>
+    <div class="border-t border-cream/10"><div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/45"><p>© 2026 Theater Café. Concept-redesign.</p><p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe site &amp; online reserveren.</p></div></div>
+  </footer>
+
+  <script>
+    const mb = document.getElementById('menu-btn'), mm = document.getElementById('mobile-menu');
+    mb && mb.addEventListener('click', () => { const open = mm.hasAttribute('hidden'); if (open) mm.removeAttribute('hidden'); else mm.setAttribute('hidden',''); mb.setAttribute('aria-expanded', String(open)); });
+    mm && mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.setAttribute('hidden',''); mb.setAttribute('aria-expanded','false'); }));
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const fades = document.querySelectorAll('.fade-up');
+    if (reduce) { fades.forEach(el => el.classList.add('in')); }
+    else {
+      const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: 0.12 });
+      fades.forEach(el => io.observe(el));
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach(el => el.classList.add('in')), 1600);
+    }
+  </script>
+</body>
+</html>
