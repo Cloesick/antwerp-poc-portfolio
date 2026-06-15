@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaaswinkel Alpenhoorn — De kaaswinkel van Ekeren</title>
+  <meta name="description" content="Ambachtelijke kaaswinkel in Ekeren: een rijk assortiment Belgische &amp; buitenlandse kazen, kaasschotels, cadeaumanden en alpentoppers. Binnenkort online bestellen met click-and-collect en een kaaswebshop." />
+  <link rel="canonical" href="https://kaaswinkelalpenhoorn.be/" />
+  <meta name="theme-color" content="#4a3410" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Kaaswinkel Alpenhoorn" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Kaaswinkel Alpenhoorn — De kaaswinkel van Ekeren" />
+  <meta property="og:description" content="Een rijk assortiment Belgische &amp; buitenlandse kazen, kaasschotels, cadeaumanden en alpentoppers in Ekeren. Binnenkort online bestellen &amp; click-and-collect." />
+  <meta property="og:url" content="https://kaaswinkelalpenhoorn.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Inline SVG favicon — monogram "Al" -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234a3410'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%23c8a45a' text-anchor='middle'%3EAl%3C/text%3E%3C/svg%3E" />
+  <!-- Local-SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store", "FoodEstablishment"],
+    "name": "Kaaswinkel Alpenhoorn",
+    "description": "Ambachtelijke kaaswinkel in Ekeren met een rijk assortiment Belgische en buitenlandse kazen, kaasschotels, cadeaumanden en alpentoppers.",
+    "image": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://kaaswinkelalpenhoorn.be/",
+    "telephone": "+3235417035",
+    "servesCuisine": ["Belgian", "Cheese"],
+    "priceRange": "€€",
+    "areaServed": "BE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Kloosterstraat 18",
+      "postalCode": "2180",
+      "addressLocality": "Ekeren",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.2790, "longitude": 4.4180 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "09:00", "closes": "12:30" }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
+          colors: {
+            ochre:    '#4a3410',
+            ochrelt:  '#5c4216',
+            ochredk:  '#392708',
+            cream:    '#c8a45a',
+            creamlt:  '#dcc089',
+            pine:     '#2f5a3a',
+            pinelt:   '#3d6e49',
+            paper:    '#f7f1e3',
+            parchment:'#eaddc4',
+            charcoal: '#2b2620',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(57,39,8,.18) 0%, rgba(57,39,8,.52) 50%, rgba(57,39,8,.92) 100%); }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 2px; }
+  </style>
+</head>
+<body class="bg-paper text-ochre font-sans antialiased selection:bg-cream/30">
+
+  <!-- Skip link -->
+  <a href="#bestellen" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-ochre focus:text-paper focus:rounded-full">Naar online bestellen</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-ochre text-paper text-center text-[13px] tracking-wide py-2 px-4">
+    <span aria-hidden="true">🧀</span> <span class="font-semibold">Binnenkort:</span> online kaaswebshop &amp; click-and-collect — plus kaasschotels &amp; cadeaumanden · Kloosterstraat 18, Ekeren.
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-paper/88 backdrop-blur border-b border-ochre/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-ochre">Alpenhoorn<span class="text-cream">·</span></span>
+        <span class="text-[11px] uppercase tracking-[0.22em] text-ochre/50 font-600">Kaaswinkel · Ekeren</span>
+      </a>
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
+        <a href="#bestellen" class="ug">Online bestellen</a>
+        <a href="#assortiment" class="ug">Assortiment</a>
+        <a href="#schotels" class="ug">Schotels &amp; cadeaus</a>
+        <a href="#bezoek" class="ug">Bezoek ons</a>
+      </div>
+      <!-- CTA + hamburger -->
+      <div class="flex items-center gap-2">
+        <a href="#bestellen" class="inline-flex items-center gap-2 bg-cream text-ochredk text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-creamlt transition">
+          Bestel &amp; afhalen
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-ochre/15 text-ochre hover:bg-ochre/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-ochre/10 bg-paper/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#bestellen" class="py-3 border-b border-ochre/8">Online bestellen</a>
+        <a href="#assortiment" class="py-3 border-b border-ochre/8">Assortiment</a>
+        <a href="#schotels" class="py-3 border-b border-ochre/8">Schotels &amp; cadeaus</a>
+        <a href="#bezoek" class="py-3">Bezoek ons</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-ochre">
+    <img
+      src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=2000&q=80"
+      alt="Ambachtelijke kazen bij Kaaswinkel Alpenhoorn Ekeren"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-creamlt font-600 tracking-[0.3em] uppercase text-xs mb-5">
+        <span aria-hidden="true">🧀</span> Kaas · Schotels · Cadeaumanden · Ekeren
+      </p>
+      <h1 class="font-serif text-paper text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
+        De kaaswinkel van Ekeren,<br />binnenkort ook online.
+      </h1>
+      <p class="text-paper/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Een rijk assortiment Belgische en buitenlandse kazen, zorgvuldig samengestelde
+        kaasschotels en cadeaumanden — al jaren de vaste kaaswinkel in de Kloosterstraat.
+        Bestel straks online, haal af of geef een cadeaumand.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#bestellen" class="bg-cream text-ochredk font-700 px-7 py-3.5 rounded-full hover:bg-creamlt transition">
+          Bestel en haal af
+        </a>
+        <a href="#schotels" class="border border-paper/45 text-paper font-600 px-7 py-3.5 rounded-full hover:bg-paper/10 transition">
+          Kaasschotel of cadeaumand
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP strip -->
+  <section class="bg-ochre text-paper/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-creamlt">Ambacht</p><p class="mt-1 text-paper/65">Vers gesneden in de winkel</p></div>
+      <div><p class="font-serif text-2xl text-creamlt">Schotels</p><p class="mt-1 text-paper/65">Kaasschotels op maat</p></div>
+      <div><p class="font-serif text-2xl text-creamlt">Cadeau</p><p class="mt-1 text-paper/65">Cadeaumanden &amp; pakketten</p></div>
+      <div><p class="font-serif text-2xl text-creamlt">Afhaal</p><p class="mt-1 text-paper/65">Online bestellen &amp; click-and-collect</p></div>
+    </div>
+  </section>
+
+  <!-- Online bestellen / click-and-collect -->
+  <section id="bestellen" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-pine font-600 tracking-[0.2em] uppercase text-xs mb-4">Binnenkort: online bestellen</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-ochre">
+          Bestel online,<br />haal af in de winkel.
+        </h2>
+        <p class="text-charcoal/75 text-lg mt-5 leading-relaxed max-w-md">
+          Geen wachtrij, geen stress. Stel uw bestelling samen — een stuk kaas, een volledige
+          kaasschotel of een cadeaumand — en haal af op een tijdstip dat u past
+          in de Kloosterstraat 18.
+        </p>
+        <ul class="mt-7 space-y-3 text-charcoal">
+          <li class="flex items-center gap-3"><span class="text-pine font-700">✓</span> Bestelling vers gesneden bij afhaling</li>
+          <li class="flex items-center gap-3"><span class="text-pine font-700">✓</span> Kaasschotels &amp; cadeaumanden op voorbestelling</li>
+          <li class="flex items-center gap-3"><span class="text-pine font-700">✓</span> Betalen in de winkel (cash · Bancontact)</li>
+        </ul>
+        <a href="#schotels" class="inline-flex items-center gap-2 mt-9 bg-ochre text-paper font-600 px-7 py-3.5 rounded-full hover:bg-ochrelt transition">
+          Of stel een kaasschotel samen
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80"
+            alt="Kaasassortiment in de toonbank"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment mt-8">
+          <img
+            src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=800&q=80"
+            alt="Samengestelde kaasplank"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assortiment grid -->
+  <section id="assortiment" class="bg-parchment/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-pine font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-ochre">Kaas in al haar facetten</h2>
+        </div>
+        <p class="text-charcoal/65 max-w-sm">Belgische en buitenlandse kazen, hard en zacht, jong en belegen — alles vers gesneden en met advies op maat.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Belgische kazen -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ochre text-paper relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80"
+            alt="Belgische kazen assortiment"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-ochre via-ochre/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Belgische kazen</h3>
+            <p class="text-paper/75 text-sm mt-1">Abdijkazen, boerenkaas &amp; streekproducten — vers gesneden op maat.</p>
+          </div>
+        </article>
+        <!-- Alpenkazen -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ochre text-paper relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1631379578550-7038263db699?auto=format&fit=crop&w=800&q=80"
+            alt="Alpenkazen Gruyère en Comté"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-ochre via-ochre/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Alpenkazen</h3>
+            <p class="text-paper/75 text-sm mt-1">Gruyère, Comté &amp; bergkazen — de toppers waar Alpenhoorn naar verwijst.</p>
+          </div>
+        </article>
+        <!-- Zachte kazen -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ochre text-paper relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=800&q=80"
+            alt="Zachte kazen brie en camembert"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-ochre via-ochre/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Zachte kazen</h3>
+            <p class="text-paper/75 text-sm mt-1">Brie, camembert &amp; witschimmelkazen — romig en vol van smaak.</p>
+          </div>
+        </article>
+        <!-- Blauwe & pittige kazen -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ochre text-paper relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1559561853-08451507cbe7?auto=format&fit=crop&w=800&q=80"
+            alt="Blauwe en pittige kazen"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-ochre via-ochre/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Blauwe kazen</h3>
+            <p class="text-paper/75 text-sm mt-1">Roquefort, Gorgonzola &amp; pittige toppers voor de liefhebber.</p>
+          </div>
+        </article>
+        <!-- Kaasschotels -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-ochre text-paper relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=820&q=80"
+            alt="Samengestelde kaasschotels"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-ochre via-ochre/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Kaasschotels</h3>
+            <p class="text-paper/75 text-sm mt-1">Samengestelde schotels met garnituur — op voorbestelling.</p>
+          </div>
+        </article>
+        <!-- Cadeaumanden CTA card -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-cream text-ochredk relative aspect-[4/5] flex items-center justify-center text-center p-6">
+          <div>
+            <p class="font-serif text-2xl font-600">Cadeau&shy;manden</p>
+            <p class="text-ochredk/80 text-sm mt-2">Stel een kaascadeaumand samen — ideaal als verjaardags- of bedrijfscadeau.</p>
+            <a href="#schotels" class="inline-block mt-5 text-ochredk font-700 ug">Stel een cadeaumand samen →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products (illustratief) -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="flex items-end justify-between mb-10">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-ochre">Veelgevraagd uit de toonbank</h2>
+      <a href="#bestellen" class="hidden sm:inline text-pine font-600 ug">Alles bestellen →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Product 1 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=700&q=80"
+            alt="Kaasschotel (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-pine font-600 uppercase tracking-wider">Op voorbestelling</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-ochre">Kaasschotel</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Een ruime selectie kazen met garnituur, mooi geschikt.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-ochre text-paper text-sm font-600 px-4 py-2 rounded-full hover:bg-ochrelt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1631379578550-7038263db699?auto=format&fit=crop&w=700&q=80"
+            alt="Alpenkaas Gruyère (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-pine font-600 uppercase tracking-wider">Klassieker</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-ochre">Alpenkaas</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Gruyère of Comté, vers van het stuk gesneden.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-ochre text-paper text-sm font-600 px-4 py-2 rounded-full hover:bg-ochrelt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=720&q=80"
+            alt="Kaascadeaumand (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-pine font-600 uppercase tracking-wider">Cadeau</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-ochre">Cadeaumand</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Selectie kazen met begeleiders, mooi verpakt om weg te geven.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-ochre text-paper text-sm font-600 px-4 py-2 rounded-full hover:bg-ochrelt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs text-charcoal/40 mt-6">Voorbeeldproducten ter illustratie van de toekomstige kaaswebshop — geen actuele prijzen.</p>
+  </section>
+
+  <!-- Kaasschotel- / cadeaumandaanvraag (the differentiator) -->
+  <section id="schotels" class="bg-ochre text-paper py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img
+          src="https://images.unsplash.com/photo-1631379578550-7038263db699?auto=format&fit=crop&w=1000&q=80"
+          alt="Kaasschotel en cadeaumand met alpenkazen"
+          loading="lazy" decoding="async"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="order-1 lg:order-2 fade-up">
+        <p class="text-creamlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Schotels &amp; cadeaus</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
+          Een feest?<br />Wij stellen de kaasschotel samen.
+        </h2>
+        <p class="text-paper/80 text-lg mt-6 leading-relaxed max-w-md">
+          Verjaardag, receptie, bedrijfsevent of gewoon een gezellige avond? Stel hieronder uw aanvraag samen —
+          datum, aantal personen en wensen — en wij maken een voorstel op maat.
+          Geen prijsverplichtingen, gewoon een vrijblijvende aanvraag.
+        </p>
+
+        <!-- Concept-formulier: kaasschotel-/cadeaumandaanvraag -->
+        <form class="mt-8 bg-paper/5 border border-paper/15 rounded-2xl p-5 sm:p-6 space-y-4" onsubmit="return false">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="t-naam" class="block text-sm font-600 text-paper/90 mb-1">Naam</label>
+              <input id="t-naam" name="naam" type="text" autocomplete="name" placeholder="Uw naam"
+                class="w-full px-4 py-2.5 rounded-lg bg-paper text-charcoal border border-paper/20 focus:outline-none focus:ring-2 focus:ring-cream" />
+            </div>
+            <div>
+              <label for="t-tel" class="block text-sm font-600 text-paper/90 mb-1">Telefoon</label>
+              <input id="t-tel" name="telefoon" type="tel" autocomplete="tel" placeholder="03 ..."
+                class="w-full px-4 py-2.5 rounded-lg bg-paper text-charcoal border border-paper/20 focus:outline-none focus:ring-2 focus:ring-cream" />
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="t-datum" class="block text-sm font-600 text-paper/90 mb-1">Gewenste datum</label>
+              <input id="t-datum" name="datum" type="date"
+                class="w-full px-4 py-2.5 rounded-lg bg-paper text-charcoal border border-paper/20 focus:outline-none focus:ring-2 focus:ring-cream" />
+            </div>
+            <div>
+              <label for="t-personen" class="block text-sm font-600 text-paper/90 mb-1">Aantal personen</label>
+              <input id="t-personen" name="personen" type="number" min="1" placeholder="bv. 8"
+                class="w-full px-4 py-2.5 rounded-lg bg-paper text-charcoal border border-paper/20 focus:outline-none focus:ring-2 focus:ring-cream" />
+            </div>
+          </div>
+          <div>
+            <label for="t-type" class="block text-sm font-600 text-paper/90 mb-1">Type</label>
+            <select id="t-type" name="type"
+              class="w-full px-4 py-2.5 rounded-lg bg-paper text-charcoal border border-paper/20 focus:outline-none focus:ring-2 focus:ring-cream">
+              <option>Kaasschotel</option>
+              <option>Cadeaumand</option>
+              <option>Aperitief &amp; hapjes</option>
+              <option>Alpenkaas-selectie</option>
+              <option>Bedrijfscadeau</option>
+              <option>Iets anders</option>
+            </select>
+          </div>
+          <div>
+            <label for="t-wensen" class="block text-sm font-600 text-paper/90 mb-1">Wensen / opmerkingen</label>
+            <textarea id="t-wensen" name="wensen" rows="3" placeholder="Allergieën, budget, voorkeur zacht/pittig, afhalen of bezorgen ..."
+              class="w-full px-4 py-2.5 rounded-lg bg-paper text-charcoal border border-paper/20 focus:outline-none focus:ring-2 focus:ring-cream"></textarea>
+          </div>
+          <label class="flex items-start gap-3 text-xs text-paper/70">
+            <input type="checkbox" required class="mt-0.5 accent-cream" />
+            <span>Ik ga akkoord dat mijn gegevens enkel worden gebruikt om mijn aanvraag te beantwoorden (GDPR).</span>
+          </label>
+          <button class="w-full bg-cream text-ochredk font-700 px-7 py-3 rounded-full hover:bg-creamlt transition">
+            Verstuur mijn aanvraag
+          </button>
+          <p class="text-[11px] text-paper/50 text-center">Concept-formulier — in de live versie komt uw aanvraag rechtstreeks per e-mail bij Alpenhoorn terecht.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ons verhaal -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="fade-up">
+      <p class="text-pine font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-ochre">De enige kaaswinkel<br />van Ekeren.</h2>
+      <p class="text-charcoal/70 text-lg mt-6 leading-relaxed">
+        Kaaswinkel Alpenhoorn is al jaren een vertrouwd adres in de Kloosterstraat in Ekeren —
+        de enige echte kaaswinkel van de gemeente. Wat ons onderscheidt? Een zorgvuldig samengesteld
+        kaasassortiment, van Belgische boerenkaas tot stevige alpentoppers, met de persoonlijke
+        service van een echte buurtwinkel.
+      </p>
+      <p class="text-charcoal/70 text-lg mt-4 leading-relaxed">
+        Of u nu langskomt voor een stuk kaas, een volledige kaasschotel of een cadeaumand voor
+        een feest — bij Alpenhoorn vindt u kwaliteit en advies op maat. Vandaag bereiken klanten
+        ons enkel telefonisch; binnenkort kan dat ook online: bestellen, afhalen en schotels
+        aanvragen vanuit uw zetel.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-6">
+        <div class="text-center">
+          <p class="font-serif text-4xl text-pine font-700">Enige</p>
+          <p class="text-charcoal/65 text-sm mt-1">Kaaswinkel in Ekeren</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-pine font-700">Vers</p>
+          <p class="text-charcoal/65 text-sm mt-1">Gesneden van het stuk</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-pine font-700">Ekeren</p>
+          <p class="text-charcoal/65 text-sm mt-1">Kloosterstraat 18</p>
+        </div>
+      </div>
+    </div>
+    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
+      <img
+        src="https://images.unsplash.com/photo-1559561853-08451507cbe7?auto=format&fit=crop&w=1000&q=80"
+        alt="Ambachtelijke kazen en kaasschotels"
+        loading="lazy" decoding="async"
+        class="w-full h-full object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Bezoek + kaart -->
+  <section id="bezoek" class="bg-parchment/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+      <div class="fade-up">
+        <p class="text-pine font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-ochre">Welkom in de winkel</h2>
+        <p class="text-charcoal/70 text-lg mt-5 max-w-md">
+          Kom proeven en kiezen in de Kloosterstraat 18 in Ekeren, in het hart van de gemeente.
+        </p>
+        <dl class="mt-9 space-y-5 text-charcoal">
+          <div class="flex gap-4">
+            <span class="text-pine mt-0.5 text-xl" aria-hidden="true">📍</span>
+            <div>
+              <dt class="font-600 text-ochre">Adres</dt>
+              <dd class="text-charcoal/70">Kloosterstraat 18, 2180 Ekeren</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-pine mt-0.5 text-xl" aria-hidden="true">🕑</span>
+            <div>
+              <dt class="font-600 text-ochre">Openingsuren</dt>
+              <dd class="text-charcoal/70">Di–Za: 09:00–18:00 · Zo: 09:00–12:30 · Ma: gesloten</dd>
+              <dd class="text-charcoal/40 text-sm mt-1">(indicatief — graag te bevestigen)</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-pine mt-0.5 text-xl" aria-hidden="true">📞</span>
+            <div>
+              <dt class="font-600 text-ochre">Telefoon</dt>
+              <dd class="text-charcoal/70"><a href="tel:+3235417035" class="ug">03 541 70 35</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-pine mt-0.5 text-xl" aria-hidden="true">🧀</span>
+            <div>
+              <dt class="font-600 text-ochre">Specialiteit</dt>
+              <dd class="text-charcoal/70">Belgische &amp; buitenlandse kazen · alpentoppers · kaasschotels</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-pine mt-0.5 text-xl" aria-hidden="true">💳</span>
+            <div>
+              <dt class="font-600 text-ochre">Betaalmogelijkheden</dt>
+              <dd class="text-charcoal/70">Cash · Bancontact</dd>
+            </div>
+          </div>
+        </dl>
+        <a href="#bestellen" class="inline-block mt-9 bg-ochre text-paper font-600 px-7 py-3.5 rounded-full hover:bg-ochrelt transition">
+          Of bestel online →
+        </a>
+      </div>
+      <!-- OpenStreetMap embed — Kloosterstraat 18, 2180 Ekeren (~51.2790, 4.4180) -->
+      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-parchment shadow-sm">
+        <iframe
+          title="Kaart Kaaswinkel Alpenhoorn — Kloosterstraat 18, 2180 Ekeren"
+          class="w-full h-full min-h-[360px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.409%2C51.274%2C4.427%2C51.284&layer=mapnik&marker=51.2790%2C4.4180"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- GDPR Newsletter -->
+  <section class="bg-cream/20">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-ochre">Blijf op de hoogte</h2>
+      <p class="text-charcoal/70 mt-3">Nieuwe seizoenskazen, kaasschotels en cadeaumanden — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input
+          id="nl-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          placeholder="jouw@email.be"
+          class="flex-1 px-5 py-3 rounded-full border border-ochre/20 bg-paper focus:outline-none focus:ring-2 focus:ring-cream"
+        />
+        <button class="bg-ochre text-paper font-600 px-7 py-3 rounded-full hover:bg-ochrelt transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-charcoal/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ochre text-paper/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-paper font-700">Alpenhoorn<span class="text-cream">·</span></p>
+        <p class="text-paper/55 text-sm mt-1">Kaaswinkel</p>
+        <p class="text-paper/55 text-sm mt-3 max-w-xs">De kaaswinkel van Ekeren. Belgische &amp; buitenlandse kazen, kaasschotels &amp; cadeaumanden — binnenkort ook online.</p>
+      </div>
+      <div>
+        <p class="font-600 text-paper mb-3">Winkel</p>
+        <ul class="space-y-2 text-sm text-paper/60">
+          <li><a href="#assortiment" class="hover:text-creamlt">Assortiment</a></li>
+          <li><a href="#bestellen" class="hover:text-creamlt">Online bestellen</a></li>
+          <li><a href="#schotels" class="hover:text-creamlt">Schotels &amp; cadeaus</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-paper mb-3">Info</p>
+        <ul class="space-y-2 text-sm text-paper/60">
+          <li><a href="#bezoek" class="hover:text-creamlt">Openingsuren</a></li>
+          <li><a href="#bezoek" class="hover:text-creamlt">Contact</a></li>
+          <li><a href="#top" class="hover:text-creamlt">Ons verhaal</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-paper mb-3">Contact</p>
+        <ul class="space-y-2 text-sm text-paper/60">
+          <li>Kloosterstraat 18</li>
+          <li>2180 Ekeren</li>
+          <li><a href="tel:+3235417035" class="hover:text-creamlt">03 541 70 35</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-paper/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-paper/40">
+        <p>© 2026 Kaaswinkel Alpenhoorn. Concept-redesign.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; kaaswebshop.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Fade-up IntersectionObserver
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>

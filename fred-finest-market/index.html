@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fred Finest Market — Luxe gourmet in Edegem · kaviaar, foie gras, truffels, olijfolie &amp; geschenkpakketten</title>
+  <meta name="description" content="Luxe delicatessen in Edegem: kaviaar, foie gras, truffels en eerste-persing olijfolie. Nu met online webshop, checkout en samengestelde geschenkpakketten &amp; relatiegeschenken." />
+  <link rel="canonical" href="https://fredfinestmarket.be/" />
+  <meta name="theme-color" content="#221c16" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Fred Finest Market" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Fred Finest Market — Luxe gourmet in Edegem" />
+  <meta property="og:description" content="Kaviaar, foie gras, truffels &amp; olijfolie — nu met echte webshop, Bancontact-checkout en luxe geschenkpakketten &amp; relatiegeschenken." />
+  <meta property="og:url" content="https://fredfinestmarket.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Inline SVG favicon — monogram "FF" -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23221c16'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%23c2a14e' text-anchor='middle'%3EFF%3C/text%3E%3C/svg%3E" />
+  <!-- Local-SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store", "FoodEstablishment"],
+    "name": "Fred Finest Market",
+    "description": "Luxe gourmet en delicatessen in Edegem. Kaviaar, foie gras, truffels, eerste-persing olijfolie en samengestelde geschenkpakketten & relatiegeschenken.",
+    "image": "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://fredfinestmarket.be/",
+    "telephone": "+3234407103",
+    "servesCuisine": ["Gourmet", "French", "European"],
+    "priceRange": "€€€",
+    "areaServed": "BE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Strijdersstraat 36",
+      "postalCode": "2650",
+      "addressLocality": "Edegem",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.1556, "longitude": 4.4470 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "10:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "10:00", "closes": "13:00" }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
+          colors: {
+            noir:    '#221c16',
+            noirlt:  '#332a21',
+            gold:    '#c2a14e',
+            goldlt:  '#d4ba73',
+            cream:   '#f7f2e8',
+            sand:    '#ebe0cd',
+            cocoa:   '#1a140f',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(34,28,22,.20) 0%, rgba(34,28,22,.55) 50%, rgba(34,28,22,.93) 100%); }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 2px; }
+  </style>
+</head>
+<body class="bg-cream text-noir font-sans antialiased selection:bg-gold/25">
+
+  <!-- Skip link -->
+  <a href="#webshop" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-noir focus:text-cream focus:rounded-full">Naar de webshop</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-noir text-cream text-center text-[13px] tracking-wide py-2 px-4">
+    <span aria-hidden="true">✦</span> <span class="font-semibold">Nieuw:</span> online bestellen mét checkout — betaal veilig met Bancontact &amp; ontvang thuis · Strijdersstraat 36, Edegem.
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-noir/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-noir">Fred Finest Market<span class="text-gold">·</span></span>
+        <span class="hidden sm:inline text-[11px] uppercase tracking-[0.22em] text-noir/50 font-600">Luxe gourmet · Edegem</span>
+      </a>
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
+        <a href="#webshop" class="ug">Webshop</a>
+        <a href="#assortiment" class="ug">Assortiment</a>
+        <a href="#geschenken" class="ug">Geschenkpakketten</a>
+        <a href="#bezoek" class="ug">Bezoek ons</a>
+      </div>
+      <!-- CTA + hamburger -->
+      <div class="flex items-center gap-2">
+        <a href="#webshop" class="inline-flex items-center gap-2 bg-gold text-noir text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-goldlt transition">
+          Online bestellen
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-noir/15 text-noir hover:bg-noir/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-noir/10 bg-cream/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#webshop" class="py-3 border-b border-noir/8">Webshop</a>
+        <a href="#assortiment" class="py-3 border-b border-noir/8">Assortiment</a>
+        <a href="#geschenken" class="py-3 border-b border-noir/8">Geschenkpakketten</a>
+        <a href="#bezoek" class="py-3">Bezoek ons</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-noir">
+    <img
+      src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=2000&q=80"
+      alt="Luxe delicatessen — kaviaar, foie gras en truffels bij Fred Finest Market in Edegem"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-goldlt font-600 tracking-[0.3em] uppercase text-xs mb-5">
+        <span aria-hidden="true">✦</span> Luxe gourmet · kaviaar · foie gras · truffels · Edegem
+      </p>
+      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
+        De fijnste delicatessen,<br />nu ook met één klik besteld.
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Kaviaar, foie gras, verse truffels, eerste-persing olijfolie en uitgelezen specialiteiten —
+        met zorg geselecteerd in onze winkel op de Strijdersstraat. Eindelijk te koop in een échte webshop.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#webshop" class="bg-gold text-noir font-700 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
+          Bestel online
+        </a>
+        <a href="#geschenken" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
+          Geschenkpakketten
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP strip -->
+  <section class="bg-noir text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-goldlt">Uitgelezen</p><p class="mt-1 text-cream/65">Kaviaar &amp; foie gras met zorg gekozen</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Seizoenstruffel</p><p class="mt-1 text-cream/65">Verse truffels op het hoogtepunt</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Cadeauklaar</p><p class="mt-1 text-cream/65">Luxe pakketten &amp; relatiegeschenken</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Checkout</p><p class="mt-1 text-cream/65">Veilig betalen met Bancontact</p></div>
+    </div>
+  </section>
+
+  <!-- Webshop / online bestellen -->
+  <section id="webshop" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Nieuw: webshop met checkout</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-noir">
+          Eindelijk een catalogus<br />waar u óók kunt bestellen.
+        </h2>
+        <p class="text-cocoa/75 text-lg mt-5 leading-relaxed max-w-md">
+          Vandaag heeft Fred Finest Market een gedateerde brochuresite — men kan onze producten bekijken,
+          maar niet kopen. Geen winkelmandje, geen kassa. Dit concept toont hoe Fred Finest Market mét een
+          echte webshop werkt: kies, leg in het mandje en reken af.
+        </p>
+        <ul class="mt-7 space-y-3 text-cocoa">
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Winkelmandje &amp; veilige checkout (Bancontact, Mollie)</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Afhalen in de winkel óf gekoelde verzending in heel België</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Relatiegeschenken &amp; B2B-bestellingen voor bedrijven</li>
+        </ul>
+        <a href="#geschenken" class="inline-flex items-center gap-2 mt-9 bg-noir text-cream font-600 px-7 py-3.5 rounded-full hover:bg-noirlt transition">
+          Bekijk de geschenkpakketten
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand">
+          <img
+            src="https://images.unsplash.com/photo-1599909533730-f9ba9a8a3e93?auto=format&fit=crop&w=800&q=80"
+            alt="Kaviaar als luxe delicatesse"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand mt-8">
+          <img
+            src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80"
+            alt="Eerste-persing olijfolie en fijne delicatessen"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assortiment grid -->
+  <section id="assortiment" class="bg-sand/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-noir">Een huis vol luxe smaken</h2>
+        </div>
+        <p class="text-cocoa/65 max-w-sm">Zes categorieën, met zorg geselecteerd — straks allemaal te bestellen via de webshop.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Kaviaar -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-noir text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1599909533730-f9ba9a8a3e93?auto=format&fit=crop&w=800&q=80"
+            alt="Kaviaar"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-noir via-noir/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Kaviaar</h3>
+            <p class="text-cream/75 text-sm mt-1">Uitgelezen kaviaar, koel bewaard en zorgvuldig geselecteerd.</p>
+          </div>
+        </article>
+        <!-- Foie gras -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-noir text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1432139509613-5c4255815697?auto=format&fit=crop&w=800&q=80"
+            alt="Foie gras"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-noir via-noir/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Foie gras</h3>
+            <p class="text-cream/75 text-sm mt-1">Klassieke foie gras &amp; terrines, ambachtelijk bereid.</p>
+          </div>
+        </article>
+        <!-- Truffels -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-noir text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1609252925148-b0f3a4f8ba1a?auto=format&fit=crop&w=800&q=80"
+            alt="Verse truffels"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-noir via-noir/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Truffels</h3>
+            <p class="text-cream/75 text-sm mt-1">Verse seizoenstruffels en truffelspecialiteiten.</p>
+          </div>
+        </article>
+        <!-- Olijfolie -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-noir text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80"
+            alt="Eerste-persing olijfolie"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-noir via-noir/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Olijfolie</h3>
+            <p class="text-cream/75 text-sm mt-1">Extra vergine, eerste persing — uitgelezen domeinen.</p>
+          </div>
+        </article>
+        <!-- Delicatessen -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-noir text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1505575967455-40e256f73376?auto=format&fit=crop&w=800&q=80"
+            alt="Fijne delicatessen"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-noir via-noir/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Delicatessen</h3>
+            <p class="text-cream/75 text-sm mt-1">Confituren, tapenades &amp; fijne specialiteiten.</p>
+          </div>
+        </article>
+        <!-- Champagne & wijn -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-noir text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80"
+            alt="Champagne en geselecteerde wijnen"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-noir via-noir/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Champagne &amp; wijn</h3>
+            <p class="text-cream/75 text-sm mt-1">Een persoonlijke selectie om de tafel feestelijk te maken.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products (illustratief) -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="flex items-end justify-between mb-10">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-noir">Een greep uit het assortiment</h2>
+      <a href="#webshop" class="hidden sm:inline text-gold font-600 ug">Alles bestellen →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Product 1 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
+          <img
+            src="https://images.unsplash.com/photo-1599909533730-f9ba9a8a3e93?auto=format&fit=crop&w=700&q=80"
+            alt="Kaviaar (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Uitgelezen</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-noir">Kaviaar selectie</h3>
+          <p class="text-cocoa/60 text-sm mt-1">Fijne, zilte parels — koel bewaard, op bestelling.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-cocoa/50 text-sm font-500">Prijs in de webshop</span>
+            <button class="bg-noir text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-noirlt transition">In mandje</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
+          <img
+            src="https://images.unsplash.com/photo-1432139509613-5c4255815697?auto=format&fit=crop&w=700&q=80"
+            alt="Foie gras terrine (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Ambachtelijk</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-noir">Foie gras terrine</h3>
+          <p class="text-cocoa/60 text-sm mt-1">Zacht en verfijnd — een klassieker voor de feestdis.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-cocoa/50 text-sm font-500">Prijs in de webshop</span>
+            <button class="bg-noir text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-noirlt transition">In mandje</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
+          <img
+            src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=700&q=80"
+            alt="Olijfolie extra vergine (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Eerste persing</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-noir">Olijfolie extra vergine</h3>
+          <p class="text-cocoa/60 text-sm mt-1">Fruitig en peperig, van één uitgelezen domein.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-cocoa/50 text-sm font-500">Prijs in de webshop</span>
+            <button class="bg-noir text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-noirlt transition">In mandje</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs text-cocoa/40 mt-6">Voorbeeldproducten ter illustratie van de webshop met winkelmandje &amp; checkout. Prijzen worden samen met u bepaald.</p>
+  </section>
+
+  <!-- Geschenkpakketten / Gift hampers (the differentiator) -->
+  <section id="geschenken" class="bg-noir text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img
+          src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=1000&q=80"
+          alt="Luxe geschenkpakket met kaviaar, foie gras en olijfolie"
+          loading="lazy" decoding="async"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="order-1 lg:order-2 fade-up">
+        <p class="text-goldlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Luxe geschenkpakketten &amp; relatiegeschenken</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
+          Luxe smaken,<br />mooi verpakt om te geven.
+        </h2>
+        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
+          Een eindejaarsgeschenk voor het bedrijf, een bedankje of een verfijnd cadeau? Wij stellen een luxe
+          geschenkpakket samen: kaviaar met foie gras, truffels en olijfolie, of uw eigen combinatie —
+          verzorgd ingepakt en klaar om weg te geven.
+        </p>
+        <ul class="mt-6 space-y-3 text-cream/85">
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Combineer kaviaar + foie gras + truffel naar wens</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Afhalen in de winkel of gekoelde verzending in heel België</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Relatiegeschenken: bedrijfs- en groepsbestellingen welkom (B2B)</li>
+        </ul>
+        <a href="#bezoek" class="inline-flex items-center gap-2 mt-8 bg-gold text-noir font-700 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
+          Stel een pakket samen
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story / Ons verhaal -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="fade-up">
+      <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-noir">Een luxe gourmet<br />in hartje Edegem.</h2>
+      <p class="text-cocoa/70 text-lg mt-6 leading-relaxed">
+        Fred Finest Market is een luxe delicatessenzaak op de Strijdersstraat 36 in Edegem. Bij ons draait alles
+        om verfijning: kaviaar, foie gras, verse seizoenstruffels, eerste-persing olijfolie, fijne delicatessen
+        en een persoonlijke selectie champagne en wijn.
+      </p>
+      <p class="text-cocoa/70 text-lg mt-4 leading-relaxed">
+        Onze klanten kennen ons voor de uitgelezen kwaliteit — alleen kon men online nog niets bestellen,
+        op een gedateerde brochuresite. Met een echte webshop, een veilige checkout en samengestelde
+        geschenkpakketten &amp; relatiegeschenken brengen we Fred Finest Market nu ook tot bij u thuis.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-6">
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">6</p>
+          <p class="text-cocoa/65 text-sm mt-1">Categorieën luxe waren</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">100%</p>
+          <p class="text-cocoa/65 text-sm mt-1">Uitgelezen geselecteerd</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">Edegem</p>
+          <p class="text-cocoa/65 text-sm mt-1">Strijdersstraat 36</p>
+        </div>
+      </div>
+    </div>
+    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
+      <img
+        src="https://images.unsplash.com/photo-1505575967455-40e256f73376?auto=format&fit=crop&w=1000&q=80"
+        alt="Interieur van een luxe delicatessenzaak met fijne specialiteiten"
+        loading="lazy" decoding="async"
+        class="w-full h-full object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Bezoek + kaart -->
+  <section id="bezoek" class="bg-sand/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+      <div class="fade-up">
+        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-noir">Welkom in de winkel</h2>
+        <p class="text-cocoa/70 text-lg mt-5 max-w-md">
+          Kom proeven en kiezen op Strijdersstraat 36 in Edegem, vlakbij het centrum.
+        </p>
+        <dl class="mt-9 space-y-5 text-cocoa">
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📍</span>
+            <div>
+              <dt class="font-600 text-noir">Adres</dt>
+              <dd class="text-cocoa/70">Strijdersstraat 36, 2650 Edegem</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🕑</span>
+            <div>
+              <dt class="font-600 text-noir">Openingsuren</dt>
+              <dd class="text-cocoa/70">Di–Za: 10:00–18:00 · Zo: 10:00–13:00 · Ma: gesloten</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📞</span>
+            <div>
+              <dt class="font-600 text-noir">Telefoon</dt>
+              <dd class="text-cocoa/70"><a href="tel:+3234407103" class="ug">03 440 71 03</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">💳</span>
+            <div>
+              <dt class="font-600 text-noir">Betaalmogelijkheden</dt>
+              <dd class="text-cocoa/70">Cash · Bancontact · in de winkel én online (Mollie)</dd>
+            </div>
+          </div>
+        </dl>
+        <a href="#webshop" class="inline-block mt-9 bg-noir text-cream font-600 px-7 py-3.5 rounded-full hover:bg-noirlt transition">
+          Of bestel online →
+        </a>
+      </div>
+      <!-- OpenStreetMap embed — Strijdersstraat 36, 2650 Edegem (~51.1556, 4.4470) -->
+      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-sand shadow-sm">
+        <iframe
+          title="Kaart Fred Finest Market — Strijdersstraat 36, 2650 Edegem"
+          class="w-full h-full min-h-[360px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.438%2C51.150%2C4.456%2C51.161&layer=mapnik&marker=51.1556%2C4.4470"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- GDPR Newsletter -->
+  <section class="bg-gold/15">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-noir">Blijf op de hoogte</h2>
+      <p class="text-cocoa/70 mt-3">Nieuwe delicatessen, seizoenstruffels en luxe geschenkpakketten — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input
+          id="nl-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          placeholder="jouw@email.be"
+          class="flex-1 px-5 py-3 rounded-full border border-noir/20 bg-cream focus:outline-none focus:ring-2 focus:ring-gold"
+        />
+        <button class="bg-noir text-cream font-600 px-7 py-3 rounded-full hover:bg-noirlt transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-cocoa/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-noir text-cream/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-cream font-700">Fred Finest Market<span class="text-gold">·</span></p>
+        <p class="text-cream/55 text-sm mt-1">Luxe gourmet</p>
+        <p class="text-cream/55 text-sm mt-3 max-w-xs">Luxe delicatessen in hartje Edegem — kaviaar, foie gras, truffels, olijfolie, delicatessen &amp; champagne.</p>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Winkel</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#assortiment" class="hover:text-goldlt">Assortiment</a></li>
+          <li><a href="#webshop" class="hover:text-goldlt">Webshop</a></li>
+          <li><a href="#geschenken" class="hover:text-goldlt">Geschenkpakketten</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Info</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#bezoek" class="hover:text-goldlt">Openingsuren</a></li>
+          <li><a href="#bezoek" class="hover:text-goldlt">Contact</a></li>
+          <li><a href="#top" class="hover:text-goldlt">Ons verhaal</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Contact</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li>Strijdersstraat 36</li>
+          <li>2650 Edegem</li>
+          <li><a href="tel:+3234407103" class="hover:text-goldlt">03 440 71 03</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40">
+        <p>© 2026 Fred Finest Market. Concept-redesign.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; webshop.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Fade-up IntersectionObserver
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>

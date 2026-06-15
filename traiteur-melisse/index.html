@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traiteur-Delicatessen Melisse — Traiteur &amp; delicatessen in Wijnegem</title>
+  <meta name="description" content="Traiteur &amp; delicatessen in Wijnegem: dagverse bereide gerechten, fijne charcuterie en kaas. Nu ook online bestellen, traiteur- &amp; buffetaanvragen (datum, aantal, wensen) en giftable cadeaupakketten." />
+  <link rel="canonical" href="https://traiteurmelisse.be/" />
+  <meta name="theme-color" content="#4a2436" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Traiteur-Delicatessen Melisse" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Traiteur-Delicatessen Melisse — Traiteur &amp; delicatessen in Wijnegem" />
+  <meta property="og:description" content="Dagverse bereide gerechten, fijne charcuterie en kaas in Wijnegem. Online bestellen, traiteur- &amp; buffetaanvragen en giftable cadeaupakketten." />
+  <meta property="og:url" content="https://traiteurmelisse.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Inline SVG favicon — monogram "Ml" -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234a2436'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%23caa46a' text-anchor='middle'%3EMl%3C/text%3E%3C/svg%3E" />
+  <!-- Local-SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store", "FoodEstablishment"],
+    "name": "Traiteur-Delicatessen Melisse",
+    "description": "Traiteur- &amp; delicatessenzaak in Wijnegem. Dagverse bereide gerechten, fijne charcuterie, kaas, buffetten en giftable cadeaupakketten.",
+    "image": "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://traiteurmelisse.be/",
+    "telephone": "+3233532402",
+    "servesCuisine": ["Belgian", "Delicatessen"],
+    "priceRange": "€€",
+    "areaServed": "BE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Turnhoutsebaan 348",
+      "postalCode": "2110",
+      "addressLocality": "Wijnegem",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.2247, "longitude": 4.5256 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "08:30", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "08:30", "closes": "12:30" }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
+          colors: {
+            aub:      '#4a2436',
+            aublt:    '#5a2c42',
+            aubdk:    '#371a28',
+            gold:     '#b8893a',
+            goldlt:   '#caa46a',
+            cream:    '#f6efe4',
+            parchment:'#ece0cc',
+            charcoal: '#2b2422',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(55,26,40,.18) 0%, rgba(55,26,40,.52) 50%, rgba(55,26,40,.92) 100%); }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 2px; }
+  </style>
+</head>
+<body class="bg-cream text-aub font-sans antialiased selection:bg-gold/25">
+
+  <!-- Skip link -->
+  <a href="#bestellen" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-aub focus:text-cream focus:rounded-full">Naar online bestellen</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-aub text-cream text-center text-[13px] tracking-wide py-2 px-4">
+    <span aria-hidden="true">🍽️</span> <span class="font-semibold">Nieuw:</span> online bestellen &amp; afhalen — plus online traiteur- &amp; buffetaanvragen · Turnhoutsebaan 348, Wijnegem.
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-aub/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-aub">Melisse<span class="text-gold">·</span></span>
+        <span class="text-[11px] uppercase tracking-[0.22em] text-aub/50 font-600">Traiteur · Wijnegem</span>
+      </a>
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
+        <a href="#bestellen" class="ug">Online bestellen</a>
+        <a href="#assortiment" class="ug">Assortiment</a>
+        <a href="#traiteur" class="ug">Traiteur &amp; buffet</a>
+        <a href="#bezoek" class="ug">Bezoek ons</a>
+      </div>
+      <!-- CTA + hamburger -->
+      <div class="flex items-center gap-2">
+        <a href="#bestellen" class="inline-flex items-center gap-2 bg-gold text-aubdk text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-goldlt transition">
+          Bestel &amp; afhalen
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-aub/15 text-aub hover:bg-aub/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-aub/10 bg-cream/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#bestellen" class="py-3 border-b border-aub/8">Online bestellen</a>
+        <a href="#assortiment" class="py-3 border-b border-aub/8">Assortiment</a>
+        <a href="#traiteur" class="py-3 border-b border-aub/8">Traiteur &amp; buffet</a>
+        <a href="#bezoek" class="py-3">Bezoek ons</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-aub">
+    <img
+      src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=2000&q=80"
+      alt="Dagverse traiteurgerechten en buffet bij Traiteur-Delicatessen Melisse Wijnegem"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-goldlt font-600 tracking-[0.3em] uppercase text-xs mb-5">
+        <span aria-hidden="true">🍽️</span> Traiteur · Delicatessen · Buffet · Wijnegem
+      </p>
+      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
+        Traiteur &amp; delicatessen,<br />nu ook online.
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Dagverse bereide gerechten, fijne charcuterie en kaas —
+        al jaren een vast adres op de Turnhoutsebaan in Wijnegem. Bestel online, vraag een buffet aan
+        of geef een cadeaupakket.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#bestellen" class="bg-gold text-aubdk font-700 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
+          Bestel en haal af
+        </a>
+        <a href="#traiteur" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
+          Traiteur &amp; buffet aanvragen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP strip -->
+  <section class="bg-aub text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-goldlt">Traiteur</p><p class="mt-1 text-cream/65">Dagverse bereide gerechten</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Buffet</p><p class="mt-1 text-cream/65">Koude &amp; warme buffetten op maat</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Cadeau</p><p class="mt-1 text-cream/65">Charcuterie- &amp; delicatessenpakketten</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Afhaal</p><p class="mt-1 text-cream/65">Online bestellen &amp; afhalen</p></div>
+    </div>
+  </section>
+
+  <!-- Online bestellen / afhalen -->
+  <section id="bestellen" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Nieuw: online bestellen</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-aub">
+          Bestel online,<br />haal af in de winkel.
+        </h2>
+        <p class="text-charcoal/75 text-lg mt-5 leading-relaxed max-w-md">
+          Geen wachtrij, geen stress. Stel uw bestelling samen — dagverse bereide gerechten,
+          fijne charcuterie, kaas of een cadeaupakket — en haal af op een tijdstip dat u past
+          op Turnhoutsebaan 348.
+        </p>
+        <ul class="mt-7 space-y-3 text-charcoal">
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Bestelling vers klaargemaakt bij afhaling</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Schotels &amp; bereide gerechten op voorbestelling</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Betalen in de winkel (cash · Bancontact)</li>
+        </ul>
+        <a href="#traiteur" class="inline-flex items-center gap-2 mt-9 bg-aub text-cream font-600 px-7 py-3.5 rounded-full hover:bg-aublt transition">
+          Of vraag een traiteur-buffet aan
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
+            alt="Dagverse bereide traiteurgerechten"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment mt-8">
+          <img
+            src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=800&q=80"
+            alt="Charcuterie en delicatessen schotel"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assortiment grid -->
+  <section id="assortiment" class="bg-parchment/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-aub">Traiteur, charcuterie &amp; kaas</h2>
+        </div>
+        <p class="text-charcoal/65 max-w-sm">Dagverse bereide gerechten, fijne vleeswaren en een rijk kaasaanbod — alles ambachtelijk klaargemaakt.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Bereide gerechten / traiteur -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-aub text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
+            alt="Bereide gerechten traiteur"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-aub via-aub/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Bereide gerechten</h3>
+            <p class="text-cream/75 text-sm mt-1">Dagverse traiteurschotels &amp; klaargemaakte gerechten om mee te nemen.</p>
+          </div>
+        </article>
+        <!-- Charcuterie -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-aub text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1542901031-ec5eeb518c5e?auto=format&fit=crop&w=800&q=80"
+            alt="Ambachtelijke charcuterie en vleeswaren"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-aub via-aub/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Charcuterie</h3>
+            <p class="text-cream/75 text-sm mt-1">Fijne vleeswaren, hesp, salami &amp; paté — vers gesneden op maat.</p>
+          </div>
+        </article>
+        <!-- Kaas -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-aub text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80"
+            alt="Kaasassortiment delicatessen"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-aub via-aub/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Kaas</h3>
+            <p class="text-cream/75 text-sm mt-1">Belgische &amp; buitenlandse kazen, hard en zacht — ook kaasschotels.</p>
+          </div>
+        </article>
+        <!-- Salades & tapas -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-aub text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80"
+            alt="Verse salades en tapas"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-aub via-aub/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Salades &amp; tapas</h3>
+            <p class="text-cream/75 text-sm mt-1">Huisbereide salades, hapjes &amp; aperitiefschotels voor elke gelegenheid.</p>
+          </div>
+        </article>
+        <!-- Feestschotels -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-aub text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80"
+            alt="Feest- en buffetschotels"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-aub via-aub/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Feest &amp; buffet</h3>
+            <p class="text-cream/75 text-sm mt-1">Koude &amp; warme buffetten, gourmet &amp; charcuterie/kaasschotels — op voorbestelling.</p>
+          </div>
+        </article>
+        <!-- Cadeaupakketten CTA card -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-gold text-aubdk relative aspect-[4/5] flex items-center justify-center text-center p-6">
+          <div>
+            <p class="font-serif text-2xl font-600">Cadeau&shy;pakketten</p>
+            <p class="text-aubdk/80 text-sm mt-2">Stel een charcuterie- of delicatessenpakket samen — ideaal als verjaardags- of bedrijfscadeau.</p>
+            <a href="#traiteur" class="inline-block mt-5 text-aubdk font-700 ug">Vraag een pakket aan →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products (illustratief) -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="flex items-end justify-between mb-10">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-aub">Veelgevraagd uit de toonbank</h2>
+      <a href="#bestellen" class="hidden sm:inline text-gold font-600 ug">Alles bestellen →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Product 1 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80"
+            alt="Bereide dagschotel (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Traiteur</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-aub">Bereide dagschotel</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Wisselend dagvers gerecht, klaar om mee te nemen.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-aub text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-aublt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1542901031-ec5eeb518c5e?auto=format&fit=crop&w=700&q=80"
+            alt="Charcuterieschotel (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Op voorbestelling</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-aub">Charcuterieschotel</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Een ruime selectie fijne vleeswaren, mooi geschikt.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-aub text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-aublt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=80"
+            alt="Koud buffet (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Op voorbestelling</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-aub">Koud buffet</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Samengesteld buffet voor uw feest of event.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-aub text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-aublt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs text-charcoal/40 mt-6">Voorbeeldproducten ter illustratie van de toekomstige online bestelmodule — geen actuele prijzen.</p>
+  </section>
+
+  <!-- Traiteur- / buffetaanvraag (the differentiator) -->
+  <section id="traiteur" class="bg-aub text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img
+          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80"
+          alt="Traiteur buffet en feestschotels"
+          loading="lazy" decoding="async"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="order-1 lg:order-2 fade-up">
+        <p class="text-goldlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Traiteur &amp; buffet</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
+          Een feest?<br />Wij verzorgen het buffet.
+        </h2>
+        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
+          Verjaardag, communie, bedrijfsevent of familiefeest? Stel hieronder uw aanvraag samen —
+          datum, aantal personen en wensen — en wij sturen u een voorstel op maat.
+          Geen prijsverplichtingen, gewoon een vrijblijvende aanvraag.
+        </p>
+
+        <!-- Concept-formulier: traiteur-/buffetaanvraag -->
+        <form class="mt-8 bg-cream/5 border border-cream/15 rounded-2xl p-5 sm:p-6 space-y-4" onsubmit="return false">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="t-naam" class="block text-sm font-600 text-cream/90 mb-1">Naam</label>
+              <input id="t-naam" name="naam" type="text" autocomplete="name" placeholder="Uw naam"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
+            </div>
+            <div>
+              <label for="t-tel" class="block text-sm font-600 text-cream/90 mb-1">Telefoon</label>
+              <input id="t-tel" name="telefoon" type="tel" autocomplete="tel" placeholder="03 ..."
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="t-datum" class="block text-sm font-600 text-cream/90 mb-1">Gewenste datum</label>
+              <input id="t-datum" name="datum" type="date"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
+            </div>
+            <div>
+              <label for="t-personen" class="block text-sm font-600 text-cream/90 mb-1">Aantal personen</label>
+              <input id="t-personen" name="personen" type="number" min="1" placeholder="bv. 25"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
+            </div>
+          </div>
+          <div>
+            <label for="t-type" class="block text-sm font-600 text-cream/90 mb-1">Type</label>
+            <select id="t-type" name="type"
+              class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold">
+              <option>Koud buffet</option>
+              <option>Warm buffet</option>
+              <option>Charcuterie- &amp; kaasschotels</option>
+              <option>Aperitief &amp; hapjes</option>
+              <option>Cadeaupakket</option>
+              <option>Iets anders</option>
+            </select>
+          </div>
+          <div>
+            <label for="t-wensen" class="block text-sm font-600 text-cream/90 mb-1">Wensen / opmerkingen</label>
+            <textarea id="t-wensen" name="wensen" rows="3" placeholder="Allergieën, budget, thema, afhalen of bezorgen ..."
+              class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold"></textarea>
+          </div>
+          <label class="flex items-start gap-3 text-xs text-cream/70">
+            <input type="checkbox" required class="mt-0.5 accent-gold" />
+            <span>Ik ga akkoord dat mijn gegevens enkel worden gebruikt om mijn aanvraag te beantwoorden (GDPR).</span>
+          </label>
+          <button class="w-full bg-gold text-aubdk font-700 px-7 py-3 rounded-full hover:bg-goldlt transition">
+            Verstuur mijn aanvraag
+          </button>
+          <p class="text-[11px] text-cream/50 text-center">Concept-formulier — in de live versie komt uw aanvraag rechtstreeks per e-mail bij Melisse terecht.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ons verhaal -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="fade-up">
+      <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-aub">Vakmanschap aan<br />de Turnhoutsebaan.</h2>
+      <p class="text-charcoal/70 text-lg mt-6 leading-relaxed">
+        Traiteur-Delicatessen Melisse is al jaren een vertrouwd adres op de Turnhoutsebaan in Wijnegem.
+        Wat ons onderscheidt? Dagverse bereide gerechten, ambachtelijke charcuterie en een zorgvuldig
+        samengesteld delicatessen- en kaasassortiment — met de persoonlijke service van een echte buurtwinkel.
+      </p>
+      <p class="text-charcoal/70 text-lg mt-4 leading-relaxed">
+        Of u nu langskomt voor een dagschotel om mee te nemen, een plank charcuterie, een stuk kaas
+        of een volledig buffet voor uw feest — bij Melisse vindt u kwaliteit en advies op maat.
+        Vanaf nu kan dat ook online: bestellen, afhalen en buffetten aanvragen vanuit uw zetel.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-6">
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">Dagvers</p>
+          <p class="text-charcoal/65 text-sm mt-1">Bereide gerechten</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">Op maat</p>
+          <p class="text-charcoal/65 text-sm mt-1">Buffetten &amp; schotels</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">Wijnegem</p>
+          <p class="text-charcoal/65 text-sm mt-1">Turnhoutsebaan 348</p>
+        </div>
+      </div>
+    </div>
+    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
+      <img
+        src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1000&q=80"
+        alt="Dagverse traiteurgerechten en delicatessen"
+        loading="lazy" decoding="async"
+        class="w-full h-full object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Bezoek + kaart -->
+  <section id="bezoek" class="bg-parchment/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+      <div class="fade-up">
+        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-aub">Welkom in de winkel</h2>
+        <p class="text-charcoal/70 text-lg mt-5 max-w-md">
+          Kom proeven en kiezen op Turnhoutsebaan 348 in Wijnegem.
+        </p>
+        <dl class="mt-9 space-y-5 text-charcoal">
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📍</span>
+            <div>
+              <dt class="font-600 text-aub">Adres</dt>
+              <dd class="text-charcoal/70">Turnhoutsebaan 348, 2110 Wijnegem</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🕑</span>
+            <div>
+              <dt class="font-600 text-aub">Openingsuren</dt>
+              <dd class="text-charcoal/70">Di–Za: 08:30–18:00 · Zo: 08:30–12:30 · Ma: gesloten</dd>
+              <dd class="text-charcoal/40 text-sm mt-1">(indicatief — graag te bevestigen)</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📞</span>
+            <div>
+              <dt class="font-600 text-aub">Telefoon</dt>
+              <dd class="text-charcoal/70"><a href="tel:+3233532402" class="ug">03 353 24 02</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📱</span>
+            <div>
+              <dt class="font-600 text-aub">Online</dt>
+              <dd class="text-charcoal/70">
+                Vandaag enkel via Facebook
+                <span class="text-charcoal/40 text-sm ml-1">(voorstel: eigen website &amp; online aanvraag)</span>
+              </dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">💳</span>
+            <div>
+              <dt class="font-600 text-aub">Betaalmogelijkheden</dt>
+              <dd class="text-charcoal/70">Cash · Bancontact</dd>
+            </div>
+          </div>
+        </dl>
+        <a href="#bestellen" class="inline-block mt-9 bg-aub text-cream font-600 px-7 py-3.5 rounded-full hover:bg-aublt transition">
+          Of bestel online →
+        </a>
+      </div>
+      <!-- OpenStreetMap embed — Turnhoutsebaan 348, 2110 Wijnegem (~51.2247, 4.5256) -->
+      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-parchment shadow-sm">
+        <iframe
+          title="Kaart Traiteur-Delicatessen Melisse — Turnhoutsebaan 348, 2110 Wijnegem"
+          class="w-full h-full min-h-[360px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.517%2C51.220%2C4.534%2C51.230&layer=mapnik&marker=51.2247%2C4.5256"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- GDPR Newsletter -->
+  <section class="bg-gold/15">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-aub">Blijf op de hoogte</h2>
+      <p class="text-charcoal/70 mt-3">Nieuwe seizoensgerechten, feest- en buffetschotels en cadeaupakketten — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input
+          id="nl-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          placeholder="jouw@email.be"
+          class="flex-1 px-5 py-3 rounded-full border border-aub/20 bg-cream focus:outline-none focus:ring-2 focus:ring-gold"
+        />
+        <button class="bg-aub text-cream font-600 px-7 py-3 rounded-full hover:bg-aublt transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-charcoal/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-aub text-cream/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-cream font-700">Melisse<span class="text-gold">·</span></p>
+        <p class="text-cream/55 text-sm mt-1">Traiteur-Delicatessen</p>
+        <p class="text-cream/55 text-sm mt-3 max-w-xs">Dagverse bereide gerechten, charcuterie &amp; kaas in Wijnegem. Online bestellen, traiteur-aanvragen &amp; cadeaupakketten.</p>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Winkel</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#assortiment" class="hover:text-goldlt">Assortiment</a></li>
+          <li><a href="#bestellen" class="hover:text-goldlt">Online bestellen</a></li>
+          <li><a href="#traiteur" class="hover:text-goldlt">Traiteur &amp; buffet</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Info</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#bezoek" class="hover:text-goldlt">Openingsuren</a></li>
+          <li><a href="#bezoek" class="hover:text-goldlt">Contact</a></li>
+          <li><a href="#top" class="hover:text-goldlt">Ons verhaal</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Contact</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li>Turnhoutsebaan 348</li>
+          <li>2110 Wijnegem</li>
+          <li><a href="tel:+3233532402" class="hover:text-goldlt">03 353 24 02</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40">
+        <p>© 2026 Traiteur-Delicatessen Melisse. Concept-redesign.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; online traiteuraanvraag.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Fade-up IntersectionObserver
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>
