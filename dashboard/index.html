@@ -81,6 +81,34 @@
     </footer>
   </main>
 
+  <!-- Email composer modal -->
+  <div id="mailModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-navy/50 p-4">
+    <div class="bg-white rounded-2xl w-full max-w-3xl max-h-[92vh] overflow-y-auto shadow-2xl">
+      <div class="flex items-center justify-between px-6 py-4 border-b border-navy/10 sticky top-0 bg-white">
+        <h3 id="mTitle" class="font-serif text-xl font-600">E-mail</h3>
+        <button onclick="closeMail()" class="w-9 h-9 rounded-full hover:bg-navy/5 text-slate text-lg">✕</button>
+      </div>
+      <div class="p-6 grid lg:grid-cols-5 gap-5">
+        <div class="lg:col-span-3 space-y-3">
+          <label class="block"><span class="text-xs text-slate">Aan (e-mail)</span><input id="mTo" class="mt-1 w-full px-3 py-2 rounded-lg border border-navy/15 text-sm focus:outline-none focus:ring-2 focus:ring-sky" placeholder="vul e-mailadres in (of bel)…" /></label>
+          <label class="block"><span class="text-xs text-slate">Onderwerp</span><input id="mSub" class="mt-1 w-full px-3 py-2 rounded-lg border border-navy/15 text-sm focus:outline-none focus:ring-2 focus:ring-sky" /></label>
+          <label class="block"><span class="text-xs text-slate">Bericht</span><textarea id="mBody" rows="13" class="mt-1 w-full px-3 py-2 rounded-lg border border-navy/15 text-sm leading-relaxed focus:outline-none focus:ring-2 focus:ring-sky"></textarea></label>
+          <div class="flex flex-wrap items-center gap-2 pt-1">
+            <button onclick="copyMail()" class="px-4 py-2 rounded-lg bg-navy text-cream text-sm font-600 hover:bg-slate transition">📋 Kopieer</button>
+            <button onclick="openMailto()" class="px-4 py-2 rounded-lg bg-sky text-white text-sm font-600 hover:bg-navy transition">✉ Mailprogramma</button>
+            <button onclick="openGmail()" class="px-4 py-2 rounded-lg bg-white border border-navy/15 text-sm font-600 hover:border-sky transition">📧 Gmail</button>
+            <span id="mCopied" class="text-emerald-600 text-sm font-600 hidden">Gekopieerd ✓</span>
+          </div>
+        </div>
+        <div class="lg:col-span-2">
+          <p class="text-xs text-slate mb-2">Live concept — open &amp; voeg een screenshot toe in je mail:</p>
+          <div class="rounded-xl border border-navy/10 overflow-hidden bg-sand" style="aspect-ratio:3/4"><iframe id="mFrame" class="w-full h-full" style="border:0" loading="lazy"></iframe></div>
+          <a id="mOpen" href="#" target="_blank" rel="noopener" class="inline-block mt-2 text-sky font-600 text-sm hover:underline">Open concept in nieuw tabblad ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script>
     // name|sector|area|status|web|slug|tel   (slug empty = no live PoC)
     const RAW = `
@@ -219,7 +247,7 @@ The Pilates Studio Berchem|Pilates/fitness|Berchem|PoC built|Outdated site|pilat
     // € richtprijs per lead (eenmalig, marktconform — Online Basis €1.250 / Webshop €2.950)
     const EST = { 'Outdated site':2950, 'Facebook-only':2950, 'Phone-only':1250, 'No website':1250 };
     const ACT = { 'New':'Onderzoeken / contacteren', 'PoC built':'Stuur pitch + PoC-link', 'Proposal ready':'Voorstel versturen', 'Contacted':'Opvolgen', 'Lost':'—', 'Disqualified':'—' };
-    leads.forEach(l => { l.est = EST[l.web] || 1250; l.dead = (l.status==='Lost'||l.status==='Disqualified'); });
+    leads.forEach((l,i) => { l.est = EST[l.web] || 1250; l.dead = (l.status==='Lost'||l.status==='Disqualified'); l.id = i; });
 
     let fStatus = 'all', fCat = 'all', q = '', sortK = 'status', current = [];
 
@@ -273,7 +301,7 @@ The Pilates Studio Berchem|Pilates/fitness|Berchem|PoC built|Outdated site|pilat
           <td class="px-4 py-2.5"><span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-600 border ${(STATUS[l.status]||{}).c||''}">${l.status}</span></td>
           <td class="px-4 py-2.5 whitespace-nowrap ${l.dead?'text-slate/40':'text-navy font-600'}">${l.dead?'—':'€ '+l.est.toLocaleString('nl-BE')}</td>
           <td class="px-4 py-2.5 text-slate text-xs">${ACT[l.status]||''}</td>
-          <td class="px-4 py-2.5">${l.slug?`<a href="${BASE}${l.slug}/" target="_blank" rel="noopener" class="text-sky font-600 hover:underline whitespace-nowrap">Bekijk ↗</a>`:`<span class="text-slate/40 text-xs">—</span>`}</td>
+          <td class="px-4 py-2.5 whitespace-nowrap">${l.slug?`<a href="${BASE}${l.slug}/" target="_blank" rel="noopener" class="text-sky font-600 hover:underline">Bekijk ↗</a>`:`<span class="text-slate/40 text-xs">—</span>`} <button onclick="mail(${l.id})" class="ml-1 px-2 py-0.5 rounded-md bg-violet-100 text-violet-700 text-[11px] font-600 hover:bg-violet-200">✉ Mail</button></td>
           <td class="px-4 py-2.5 text-slate whitespace-nowrap">${l.tel||'<span class="text-slate/40">—</span>'}</td>
         </tr>`).join('');
       // pipeline value (excl. Lost/Disqualified)
@@ -310,6 +338,57 @@ The Pilates Studio Berchem|Pilates/fitness|Berchem|PoC built|Outdated site|pilat
     };
 
     document.getElementById('updated').textContent = 'Snapshot van de Airtable-pijplijn · 16 jun 2026 · ververst bij elke deploy.';
+
+    // ---- e-mail composer (commercieel aanbod per lead) ----
+    function emailFor(l){
+      const link = l.slug ? BASE+l.slug+'/' : '';
+      let hook;
+      if(l.web==='Phone-only'||l.web==='No website') hook='jullie online nauwelijks te vinden zijn — geen website waar klanten jullie aanbod, openingsuren of bestellingen terugvinden';
+      else if(l.web==='Facebook-only') hook='alles vandaag via Facebook loopt, waardoor jullie klanten missen die via Google zoeken — én verkoop buiten de openingsuren';
+      else hook='jullie website verouderd oogt en een moderne, mobielvriendelijke uitstraling mist';
+      let belofte;
+      if(/Horeca/.test(l.g)) belofte='een frisse site met online reserveren (24/7 boeken, minder no-shows)';
+      else if(/Diensten/.test(l.g)) belofte='een moderne site met een online afsprakenmodule — klanten boeken zelf, dag en nacht';
+      else if(/Slager|Kaas|Bakkerij|Deli\/food|Chocolatier|Wijn/.test(l.g)) belofte='een moderne site met online bestellen / click & collect';
+      else if(/Mode|Bloemen|Speelgoed|Juwelier/.test(l.g)) belofte='een moderne site met webshop, zodat klanten ook online bij jullie kopen';
+      else belofte = (l.web==='Phone-only'||l.web==='No website') ? 'een moderne, mobielvriendelijke site zodat klanten jullie online vinden' : 'een moderne, mobielvriendelijke site met webshop';
+      const concept = link
+        ? `Ik heb zelfs al een gratis concept voor ${l.name} gemaakt — jullie eigen zaak in een fris, mobielvriendelijk jasje. Je kan het hier live bekijken:\n${link}\n\n`
+        : `Ik maak graag — gratis en vrijblijvend — een concept op maat van ${l.name}, zodat je meteen ziet wat mogelijk is.\n\n`;
+      const subject = link ? `Een nieuwe website voor ${l.name} — het concept staat klaar` : `Een nieuwe website voor ${l.name}`;
+      const body = `Beste,
+
+Ik kwam ${l.name} in ${l.area} tegen — en het viel me op dat ${hook}.
+
+Ik bouw moderne websites en webshops voor lokale zaken in de regio Antwerpen. Voor ${l.name} denk ik concreet aan ${belofte}.
+
+${concept}Mag ik het je eens tonen? Tien minuten, volledig vrijblijvend.
+
+Vriendelijke groet,
+Nicolas — Saspire
+nicolas@saspire.org
+
+— Geen interesse? Eén mailtje en ik neem geen contact meer op. (Koude B2B-prospectie onder GDPR art. 6(1)(f), met opt-out.)`;
+      return { subject, body, link };
+    }
+    window.mail = function(id){
+      const l = leads[id]; const e = emailFor(l);
+      document.getElementById('mTitle').textContent = 'E-mail — ' + l.name;
+      document.getElementById('mTo').value = '';
+      document.getElementById('mSub').value = e.subject;
+      document.getElementById('mBody').value = e.body;
+      const fr = document.getElementById('mFrame'), op = document.getElementById('mOpen');
+      if(e.link){ fr.src = e.link; op.href = e.link; op.style.display=''; } else { fr.removeAttribute('src'); op.style.display='none'; }
+      const m = document.getElementById('mailModal'); m.classList.remove('hidden'); m.classList.add('flex');
+    };
+    window.closeMail = function(){ const m=document.getElementById('mailModal'); m.classList.add('hidden'); m.classList.remove('flex'); document.getElementById('mFrame').removeAttribute('src'); };
+    document.getElementById('mailModal').addEventListener('click', e=>{ if(e.target.id==='mailModal') closeMail(); });
+    document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeMail(); });
+    function payload(){ return { to:document.getElementById('mTo').value.trim(), su:document.getElementById('mSub').value, bo:document.getElementById('mBody').value }; }
+    window.copyMail = function(){ const p=payload(); navigator.clipboard.writeText('Onderwerp: '+p.su+'\n\n'+p.bo).then(()=>{ const c=document.getElementById('mCopied'); c.classList.remove('hidden'); setTimeout(()=>c.classList.add('hidden'),1800); }); };
+    window.openMailto = function(){ const p=payload(); location.href = `mailto:${encodeURIComponent(p.to)}?subject=${encodeURIComponent(p.su)}&body=${encodeURIComponent(p.bo)}`; };
+    window.openGmail = function(){ const p=payload(); window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(p.to)}&su=${encodeURIComponent(p.su)}&body=${encodeURIComponent(p.bo)}`,'_blank'); };
+
     render();
   </script>
 </body>
