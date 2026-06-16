@@ -123,6 +123,7 @@
   <script>
     // name|sector|area|status|web|slug|tel   (slug empty = no live PoC)
     const RAW = `
+'t Dierenwinkeltje (Ekeren)|Dierenspeciaalzaak|Ekeren|New|Phone-only||03 605 02 32
 't Liers Boetiekske|Women's fashion boutique|Lier|PoC built|Facebook-only|liers-boetiekske|
 Amaral Beenhouwerij|Butcher (Portuguese specialties)|Antwerpen|Contacted|Outdated site|amaral|03 294 32 54
 Ann Verbruggen Interieur|Interieur — gordijnen, huistextiel (Rivièra Maison)|Brasschaat|New|Outdated site||03 645 70 33
@@ -152,8 +153,10 @@ Chocolaterie Gauthier|Chocolatier (since 1964)|Mechelen|PoC built|Facebook-only|
 Chocolatier Gauguin|Artisanale chocolatier|Wilrijk|Contacted|No website|chocolatier-gauguin|03 828 51 37
 Chocolatjeeke|Artisanale chocolatier / luxe pralines|Brecht|Contacted|Outdated site|chocolatjeeke|03 284 63 88
 Clinckers Philip (wijnhandel)|Wijnhandel|Mortsel|PoC built|No website|clinckers-philip|03 440 81 93
+Corina! (schoenen)|Schoenen / lederwaren|Mortsel|New|Phone-only||0498 27 65 39
 Côté Sud|Delicatessen (cheese/wine, ~25yr)|Mortsel|PoC built|Outdated site|cote-sud|03 440 78 50
 D'Hoeve (delicatessen)|Delicatessen / traiteur|Edegem|PoC built|No website|dhoeve|03 458 02 18
+David Schoenen|Schoenenwinkel (Naturino, Ara)|Brasschaat|New|No website||03 651 72 82
 De Coninck Decoratie|Window deco, flooring, wallpaper|Borgerhout|PoC built|Outdated site|de-coninck-decoratie|03 321 45 70
 De Eikenhoeve|Hoevewinkel (zuivel)|Kontich|Contacted|Outdated site|de-eikenhoeve|0473 45 13 57
 De Kleine Prins (boekhandel)|Bookshop|Borgerhout|Disqualified|Facebook-only||
@@ -165,19 +168,29 @@ De Vers-Boetiek|Butcher / deli|Mortsel|PoC built|Phone-only|de-vers-boetiek|03 4
 Delicatessen Marceau|Gevogelte, wild, charcuterie|Mechelen|Contacted|Outdated site|delicatessen-marceau|015 41 53 09
 Delikatessen Vervloesem|Charcuterie / kaas / traiteur|Mortsel|Contacted|No website|delikatessen-vervloesem|03 440 62 62
 Den Bezem|Spirituele cadeauwinkel (edelstenen, tarot)|Mortsel|New|Outdated site||03 293 82 56
+Dierenplezier (Merksem)|Dierenspeciaalzaak|Merksem|New|Phone-only||03 644 51 39
 Elec-Lightin'Art|Lighting / electro|Deurne|Disqualified|Phone-only||03 326 39 40
+Elvi Lederwaren|Lederwaren / handtassen|Lier|New|Facebook-only||03 480 21 73
+Fêmea Lingerie|Lingerie & badmode|Brasschaat|New|No website||0495 57 07 36
+Femina Lingerie|Lingerie & corsetterie|Mechelen|New|Outdated site||015 21 60 15
 Fietsen Dermonde G.|Bike shop|Wommelgem|PoC built|Phone-only|fietsen-dermonde|03 353 19 73
 Floriplant|Garden centre / plants & pottery|Schoten|Contacted|Outdated site|floriplant|03 646 64 74
 Frann|Cadeau, woondecoratie, sieraden, huistextiel|Lier|Contacted|Outdated site|frann|0472 75 07 28
 Fred Finest Market|Luxe gourmet (kaviaar, foie gras, truffel, olijfolie)|Edegem|PoC built|Outdated site|fred-finest-market|03 440 71 03
+Froe-Froe Dierenparadijs|Dierenspeciaalzaak + trimsalon|Boom|New|Outdated site||0474 48 38 39
 GeVe Verlichting|Lighting showroom (1969)|Wilrijk|Contacted|Outdated site|geve-verlichting|03 820 11 99
+Gigi's Lingerie|Lingerie & ondergoed|Wijnegem|New|Facebook-only||03 353 77 76
 Golden Globe Wines|Wine merchant|Berchem|PoC built|Phone-only|golden-globe-wines|03 685 06 45
 Hairfusion|Kapsalon (dames/heren/bruid + make-up)|Berchem|PoC built|Outdated site|hairfusion|03 239 33 05
 Harlekijn|Design & sustainable fashion boutique|Mechelen|Contacted|Outdated site|harlekijn|015 20 06 29
 Helios Berchem|Coffee/tea roaster & confectionery (1925)|Berchem|Contacted|Outdated site|helios|03 239 24 54
+Hengelsport Hielkema|Hengelsport|Kapellen|New|Facebook-only||03 664 83 69
+Hengelsport Luchie|Hengelsport|Wilrijk|New|Outdated site||03 828 93 73
 Het Vaarthof|Hoevewinkel (bio groenten, zuivel)|Schoten|Contacted|Outdated site|het-vaarthof|03 658 10 86
 Huis Coveliers|Kookgerei, servies, geschenken, ijzerwaren|Kontich|New|Outdated site||03 457 02 66
 Ikana (slagerij)|Butcher|Kontich|PoC built|Phone-only|slagerij-ikana|03 457 17 28
+Jama Lederwaren|Lederwaren / handtassen|Mortsel|New|Outdated site||03 449 87 41
+Jansen P (dierenzaak)|Dierenspeciaalzaak (vogelvoer, zaaigranen)|Kapellen|New|Phone-only||03 664 24 38
 JJ Wijnen|Wine merchant|Berchem|PoC built|Outdated site|jj-wijnen|0466 34 06 85
 Juwelier Van Rooy|Jeweller / horlogerie|Mortsel|PoC built|Facebook-only|juwelier-van-rooy|
 Kaashandel Fransen|Cheese shop|Schilde|PoC built|Phone-only|kaashandel-fransen|03 383 44 55
@@ -192,9 +205,16 @@ La Praline (Johan Mertens)|Chocolatier (1985)|Ekeren|Contacted|Outdated site|la-
 Larose Brasschaat|Women's clothing boutique|Brasschaat|Contacted|Outdated site|larose|03 651 31 21
 Lauriks Interieur-Decoratie|Interieur — gordijnen, behang, vloeren, deco|Boom|Contacted|Outdated site|lauriks-interieur|03 888 09 27
 Le Cellier de la Gourgasse|Wijnhandel|Boom|PoC built|No website|cellier-gourgasse|03 449 54 97
+Lederwaren Kisimba|Lederwaren|Mortsel|New|Phone-only||03 455 06 17
 Let's Cook Mechelen|Kookgerei, messen (slijpservice), kookboeken|Mechelen|Contacted|Outdated site|lets-cook-mechelen|015 68 09 77
+Lingerie An|Lingerie & corsetterie|Brasschaat|New|Outdated site||03 651 49 71
+Lingerie Fiëla|Lingerie & badmode|Hoboken|New|Outdated site||03 830 20 22
+Lingerie Jabeau|Lingerie & nachtmode|Hove|New|Outdated site||03 454 49 37
+Lingerie Mussenburg|Lingerie & badmode|Kontich|New|Outdated site||03 457 16 28
+Lingerie Parys|Lingerie|Borsbeek|New|Outdated site||03 321 66 46
 LO&S (Tonny Linders)|Women's couture boutique|Antwerp area|Proposal ready|Outdated site|los-tonny-linders|
 Maakmijnfiets.be|Bike repair/shop|Wommelgem|PoC built|Phone-only|maakmijnfiets|0488 19 91 70
+Nannan Bags & Travel|Handtassen / reisbagage|Mechelen|New|Phone-only||015 20 24 57
 Old Bacchus|Wijn- & drankenspeciaalzaak|Schoten|Contacted|Outdated site|old-bacchus|03 658 27 74
 Optiek Coppé|Optician|Mortsel|PoC built|Outdated site|optiek-coppe|03 449 27 38
 Optiek Eksterlaar|Optician|Deurne|PoC built|Outdated site|optiek-eksterlaar|03 322 32 08
@@ -207,12 +227,15 @@ Parfumerie Laroche|Perfumery / cosmetics|Deurne|PoC built|Outdated site|parfumer
 Parfumerie Simonne|Parfumerie + cosmetica + schoonheidsinstituut|Brasschaat|New|No website||03 664 41 91
 Parfumerie Venus|Parfumerie + schoonheidsinstituut|Hove|Contacted|Outdated site|parfumerie-venus|03 454 13 91
 Pasta Rigoletto|Italian deli / traiteur|Antwerpen|Proposal ready|Outdated site|pasta-rigoletto|
+Patrache Dierenspeciaalzaak|Dierenspeciaalzaak|Hoboken|New|Outdated site||03 829 13 43
 Perfect Present|Cadeauwinkel + theeroom (geschenkmanden)|Ekeren|New|Outdated site||03 544 90 09
 Perfect You|Schoonheidssalon (nagels/gelaat/ontharing)|Borgerhout|PoC built|Outdated site|perfect-you|0465 27 38 64
 Pistache Baby Boutique|Baby/children's clothing|Kapellen|PoC built|Facebook-only|pistache-baby|03 437 31 37
 POSY BY E|Cosmeticawinkel|Edegem|New|No website||03 354 35 43
 Puur natuur.Berchem|Flowers, plants, pots|Berchem|PoC built|Facebook-only|puur-natuur|03 289 55 15
 Puur-P|Cadeauwinkel / lifestyle|Wilrijk|New|No website||03 889 29 26
+Schoenen Swaans|Schoenenwinkel|Deurne|New|Phone-only||03 326 01 41
+Schoenen Yvonne|Schoenenwinkel / lederwaren|Deurne|New|Outdated site||03 321 06 54
 Slagerij Devroye|Butcher|Wilrijk|PoC built|Phone-only|slagerij-devroye|03 827 27 47
 Slagerij Huygelen Guy|Butcher|Kontich|PoC built|Phone-only|slagerij-huygelen|03 457 22 46
 Slagerij Lauwers|Butcher|Mortsel|PoC built|Phone-only|slagerij-lauwers|03 449 90 67
@@ -264,12 +287,17 @@ Wit Zwart Deli|Italian delicatessen / traiteur|Antwerpen 2000|Lost|Outdated site
       "Delicatessen Marceau": "marceau.van.riet@telenet.be",
       "Delikatessen Vervloesem": "debelder.willy@gmail.com",
       "Den Bezem": "denbezem@telenet.be",
+      "Elvi Lederwaren": "elvilier@hotmail.com",
+      "Femina Lingerie": "info@femina-lingerie.be",
       "Floriplant": "info@floriplant.be",
       "Frann": "info@frann.be",
+      "Froe-Froe Dierenparadijs": "info@froe-froe.be",
       "GeVe Verlichting": "toonzaal@geve.be",
+      "Gigi's Lingerie": "gigislingerie@skynet.be",
       "Harlekijn": "erna@harlekijnmechelen.be",
       "Helios Berchem": "feliciano.de.luca@skynet.be",
       "Het Vaarthof": "vaarthof@gmail.com",
+      "Jama Lederwaren": "info@jama-lederwaren.be",
       "Kaashandel Kennes": "frankkennes@skynet.be",
       "Keurslager Van Gijsel": "edegem@keurslager-vangijsel.be",
       "Kikker & Ko": "kikkerenko@gmail.com",
@@ -278,15 +306,22 @@ Wit Zwart Deli|Italian delicatessen / traiteur|Antwerpen 2000|Lost|Outdated site
       "Larose Brasschaat": "info@larose-brasschaat.be",
       "Lauriks Interieur-Decoratie": "info@lauriks.be",
       "Let's Cook Mechelen": "letscook.mechelen@gmail.com",
+      "Lingerie An": "info@lingeriean.be",
+      "Lingerie Fiëla": "lingerie.fiela@skynet.be",
+      "Lingerie Jabeau": "info@lingeriejabeau.be",
+      "Lingerie Mussenburg": "info@lingeriemussenburg.be",
+      "Lingerie Parys": "dave.parys@telenet.be",
       "Old Bacchus": "info@oldbacchus.be",
       "Parfumerie AURA": "info@auraparfumerie.be",
       "Parfumerie Dierckx": "info@parfumerie-dierckx.be",
       "Parfumerie Je m'appelle": "mariegoormans2013@hotmail.be",
       "Parfumerie Simonne": "parligna@skynet.be",
       "Parfumerie Venus": "info@parfumerievenus.be",
+      "Patrache Dierenspeciaalzaak": "rogerheynd@gmail.com",
       "Perfect Present": "info@perfectpresent.be",
       "Perfect You": "info@perfectyouschoonheidssalon.be",
       "Puur natuur.Berchem": "puurnatuur2600@gmail.com",
+      "Schoenen Yvonne": "info@schoenen-yvonne.be",
       "Tartuffe (chocolatier)": "info@tartuffe-wilrijk.be",
       "The Deco Factory (Schoten)": "info.schoten@thedecofactory.be",
       "The Pilates Studio Berchem": "thepilatesstudioberchem@gmail.com",
