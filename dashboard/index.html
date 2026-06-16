@@ -97,8 +97,18 @@
             <button onclick="copyMail()" class="px-4 py-2 rounded-lg bg-navy text-cream text-sm font-600 hover:bg-slate transition">📋 Kopieer</button>
             <button onclick="openMailto()" class="px-4 py-2 rounded-lg bg-sky text-white text-sm font-600 hover:bg-navy transition">✉ Mailprogramma</button>
             <button onclick="openGmail()" class="px-4 py-2 rounded-lg bg-white border border-navy/15 text-sm font-600 hover:border-sky transition">📧 Gmail</button>
+            <button id="mDraftBtn" onclick="gmailDraft()" class="px-4 py-2 rounded-lg bg-violet-600 text-white text-sm font-600 hover:bg-violet-700 transition">📎 Gmail-concept + screenshot</button>
             <span id="mCopied" class="text-emerald-600 text-sm font-600 hidden">Gekopieerd ✓</span>
+            <span id="mDraftMsg" class="text-sm font-600 hidden"></span>
           </div>
+          <details class="text-xs text-slate mt-1">
+            <summary class="cursor-pointer hover:text-navy">⚙ Gmail-script instellen (eenmalig)</summary>
+            <p class="mt-2">Plak hier de web-app-URL van je Google Apps Script (zie <code>apps-script/</code> in de repo). Wordt lokaal bewaard.</p>
+            <div class="flex gap-2 mt-2">
+              <input id="mScriptUrl" placeholder="https://script.google.com/macros/s/…/exec" class="flex-1 px-3 py-1.5 rounded-lg border border-navy/15 text-xs focus:outline-none focus:ring-2 focus:ring-sky" />
+              <button onclick="saveScriptUrl()" class="px-3 py-1.5 rounded-lg bg-navy text-cream text-xs font-600">Opslaan</button>
+            </div>
+          </details>
         </div>
         <div class="lg:col-span-2">
           <p class="text-xs text-slate mb-2">Live concept — open &amp; voeg een screenshot toe in je mail:</p>
@@ -205,6 +215,22 @@ The Pilates Studio Berchem|Pilates/fitness|Berchem|PoC built|Outdated site|pilat
 
     const BASE = 'https://cloesick.github.io/antwerp-poc-portfolio/';
     const leads = RAW.split('\n').map(l => { const [name,cat,area,status,web,slug,tel] = l.split('|'); return {name,cat,area,status,web,slug,tel}; });
+
+    // bekende e-mailadressen (backfill uit Airtable)
+    const EMAILS = {
+      'Helios Berchem':'feliciano.de.luca@skynet.be','La Praline (Johan Mertens)':'johan.mertens10@telenet.be','Amaral Beenhouwerij':'beenhouwerijamaralbvba@gmail.com',
+      'Kikker & Ko':'kikkerenko@gmail.com','De Coninck Decoratie':'info.deconinck@skynet.be','Bloem? Bloem!':'bloembloemberchem@gmail.com','Floriplant':'info@floriplant.be',
+      'GeVe Verlichting':'toonzaal@geve.be','Harlekijn':'erna@harlekijnmechelen.be','Larose Brasschaat':'info@larose-brasschaat.be','Kleding Wilan':'info@kledingwilan.be',
+      'Boetiek Cami':'catherine.verdonck@gmail.com','Bloemenweelde Borgerhout':'bloemenweeldeborgerhout@hotmail.com','Puur natuur.Berchem':'puurnatuur2600@gmail.com',
+      'Keurslager Van Gijsel':'edegem@keurslager-vangijsel.be','Bakker Tjoens':'info@tjoens.be','Boekhandel Athena':'boekhandel.athena3@telenet.be','Perfect You':'info@perfectyouschoonheidssalon.be',
+      'The Pilates Studio Berchem':'thepilatesstudioberchem@gmail.com','Café Gourmand':'contact@cafe-gourmand.eu','Unwined':'info@unwined.be','Bourgogne Wijnen':'bourgognewijnen@telenet.be',
+      'Backeros Wines':'info@backeroswines.be','Wijnen Van Durme':'christine@wijnenvandurme.be','Terravino':'wijnen@terravino.be','Old Bacchus':'info@oldbacchus.be',
+      'Chocolaterie Dom':'info@chocolateriedom.be','Chocolatjeeke':'info@chocolatjeeke.be','Chocolatier Gauguin':'gauguin.wilrijk@gmail.com','Tartuffe (chocolatier)':'info@tartuffe-wilrijk.be',
+      'Delikatessen Vervloesem':'debelder.willy@gmail.com','Delicatessen Marceau':'marceau.van.riet@telenet.be','Traiteur-Delicatessen Melisse':'info@melisse.be','De Smulpaap':'info@desmulpaap.com',
+      'De Eikenhoeve':'info@de-eikenhoeve.be','Het Vaarthof':'vaarthof@gmail.com','De Schutter Hoevezuivel':'deschutterhoevezuivel@gmail.com','Bakkerij Heylen-Troonbeeckx':'info@bakkerijheylen.be',
+      'Kaashandel Kennes':'frankkennes@skynet.be','W en M Wagemaker Kaashandel':'wagemakersven@hotmail.com',
+    };
+    leads.forEach(l => l.email = EMAILS[l.name] || '');
 
     const STATUS = {
       'New':            { c:'bg-slate-100 text-slate-700 border-slate-200' },
@@ -374,7 +400,12 @@ nicolas@saspire.org
     window.mail = function(id){
       const l = leads[id]; const e = emailFor(l);
       document.getElementById('mTitle').textContent = 'E-mail — ' + l.name;
-      document.getElementById('mTo').value = '';
+      document.getElementById('mTo').value = l.email || '';
+      MSHOT = e.link ? (BASE + 'shots/' + l.slug + '.jpg') : '';
+      MPOC = e.link || '';
+      document.getElementById('mScriptUrl').value = localStorage.getItem('gmailScriptUrl') || '';
+      document.getElementById('mDraftMsg').classList.add('hidden');
+      document.getElementById('mDraftBtn').style.display = e.link ? '' : 'none';
       document.getElementById('mSub').value = e.subject;
       document.getElementById('mBody').value = e.body;
       const fr = document.getElementById('mFrame'), op = document.getElementById('mOpen');
@@ -388,6 +419,28 @@ nicolas@saspire.org
     window.copyMail = function(){ const p=payload(); navigator.clipboard.writeText('Onderwerp: '+p.su+'\n\n'+p.bo).then(()=>{ const c=document.getElementById('mCopied'); c.classList.remove('hidden'); setTimeout(()=>c.classList.add('hidden'),1800); }); };
     window.openMailto = function(){ const p=payload(); location.href = `mailto:${encodeURIComponent(p.to)}?subject=${encodeURIComponent(p.su)}&body=${encodeURIComponent(p.bo)}`; };
     window.openGmail = function(){ const p=payload(); window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(p.to)}&su=${encodeURIComponent(p.su)}&body=${encodeURIComponent(p.bo)}`,'_blank'); };
+
+    // ---- Gmail-concept met screenshot via Google Apps Script ----
+    let MSHOT = '', MPOC = '';
+    window.saveScriptUrl = function(){
+      const u = document.getElementById('mScriptUrl').value.trim();
+      localStorage.setItem('gmailScriptUrl', u);
+      const m=document.getElementById('mDraftMsg'); m.textContent='URL opgeslagen ✓'; m.className='text-sm font-600 text-emerald-600'; m.classList.remove('hidden'); setTimeout(()=>m.classList.add('hidden'),1800);
+    };
+    window.gmailDraft = async function(){
+      const url = localStorage.getItem('gmailScriptUrl');
+      const m = document.getElementById('mDraftMsg');
+      const show = (t,ok)=>{ m.textContent=t; m.className='text-sm font-600 '+(ok?'text-emerald-600':'text-rose-600'); m.classList.remove('hidden'); };
+      if(!url){ show('Stel eerst de Gmail-script-URL in (⚙ hieronder).', false); return; }
+      const p = payload();
+      show('Concept aanmaken…', true);
+      try{
+        await fetch(url, { method:'POST', mode:'no-cors', headers:{'Content-Type':'text/plain;charset=utf-8'},
+          body: JSON.stringify({ to:p.to, subject:p.su, body:p.bo, poc:MPOC, shot:MSHOT }) });
+        show('Concept met screenshot aangemaakt → Gmail Concepten openen…', true);
+        setTimeout(()=>window.open('https://mail.google.com/mail/u/0/#drafts','_blank'), 1200);
+      }catch(err){ show('Kon het script niet bereiken — controleer de URL.', false); }
+    };
 
     render();
   </script>
