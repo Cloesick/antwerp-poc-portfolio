@@ -58,6 +58,7 @@
         <table class="w-full text-sm">
           <thead class="bg-navy text-cream/90 text-left text-xs uppercase tracking-wide">
             <tr>
+              <th class="px-4 py-3">Preview</th>
               <th class="px-4 py-3" data-k="name">Business</th>
               <th class="px-4 py-3" data-k="cat">Sector</th>
               <th class="px-4 py-3" data-k="area">Gemeente</th>
@@ -320,6 +321,7 @@ The Pilates Studio Berchem|Pilates/fitness|Berchem|PoC built|Outdated site|pilat
       current = rows;
       document.getElementById('rows').innerHTML = rows.map(l=>`
         <tr class="border-t border-navy/5">
+          <td class="px-3 py-2">${l.slug?`<a href="${BASE}${l.slug}/" target="_blank" rel="noopener" class="group relative block w-[112px]"><img src="${BASE}shots/${l.slug}.jpg" loading="lazy" onerror="this.style.display='none'" class="w-[112px] h-[74px] object-cover object-top rounded-md border border-navy/10 shadow-sm transition group-hover:ring-2 group-hover:ring-sky-400"><img src="${BASE}shots/${l.slug}.jpg" loading="lazy" onerror="this.style.display='none'" class="hidden group-hover:block absolute left-[122px] top-0 z-30 w-[420px] max-w-[60vw] rounded-lg border border-navy/15 shadow-2xl pointer-events-none"></a>`:`<div class="w-[112px] h-[74px] rounded-md bg-slate-50 border border-dashed border-navy/15 flex items-center justify-center text-[10px] text-slate/40">geen PoC</div>`}</td>
           <td class="px-4 py-2.5 font-600">${l.name}</td>
           <td class="px-4 py-2.5 text-slate">${l.cat}</td>
           <td class="px-4 py-2.5 text-slate">${l.area}</td>
