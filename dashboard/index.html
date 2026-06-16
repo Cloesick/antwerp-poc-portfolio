@@ -319,22 +319,25 @@ Wit Zwart Deli|Italian delicatessen / traiteur|Antwerpen 2000|Lost|Outdated site
 
     // category grouping from sector keywords
     function group(cat){ const s=cat.toLowerCase();
-      if(/slager|beenhouw/.test(s)) return 'Slager';
-      if(/kaas/.test(s)) return 'Kaas';
-      if(/wijn|bacchus|cellier|vino|unwined/.test(s)) return 'Wijn';
-      if(/chocolat|praline/.test(s)) return 'Chocolatier';
-      if(/bakker|banket|patiss/.test(s)) return 'Bakkerij';
-      if(/delicatess|traiteur|charcut|gourmet|gevogelte|deli|koffie|hoevewinkel/.test(s)) return 'Deli/food';
-      if(/mode|kleding|boetiek|couture|fashion|baby/.test(s)) return 'Mode';
-      if(/bloem|tuincentrum|planten/.test(s)) return 'Bloemen';
-      if(/opticien|optiek/.test(s)) return 'Opticien';
-      if(/juwelier|hoeden/.test(s)) return 'Juwelier';
-      if(/speelgoed/.test(s)) return 'Speelgoed';
-      if(/verlichting|deco|vloeren/.test(s)) return 'Wonen';
-      if(/fiets/.test(s)) return 'Fiets';
-      if(/boekhandel/.test(s)) return 'Boeken';
-      if(/bistro|restaurant|café|cultuurcafé/.test(s)) return 'Horeca';
-      if(/kapsalon|schoonheid|pilates|fitness|parfum/.test(s)) return 'Diensten';
+      if(/slager|beenhouw|butcher/.test(s)) return 'Slager';
+      if(/kaas|cheese/.test(s)) return 'Kaas';
+      if(/wijn|wine|bacchus|cellier|vino|unwined/.test(s)) return 'Wijn';
+      if(/koffie|coffee|roaster/.test(s)) return 'Deli/food';
+      if(/chocolat|praline|confection/.test(s)) return 'Chocolatier';
+      if(/bakker|banket|patiss|bakery|sourdough/.test(s)) return 'Bakkerij';
+      if(/delicatess|delikatess|traiteur|charcut|gourmet|gevogelte|deli|hoevewinkel|hoevezuivel|zuivel/.test(s)) return 'Deli/food';
+      if(/kookger|kookwinkel|cookware|servies|tafelgerei|ijzerwaren/.test(s)) return 'Koken';
+      if(/cadeau|gift|geschenk|concept store|lifestyle/.test(s)) return 'Cadeau';
+      if(/mode|kleding|boetiek|couture|fashion|baby|menswear|women|clothing|clothes/.test(s)) return 'Mode';
+      if(/bloem|tuincentrum|planten|florist|flower|garden|plant|pott/.test(s)) return 'Bloemen';
+      if(/opticien|optiek|optician/.test(s)) return 'Opticien';
+      if(/juwelier|jewell|horlog|hoeden|milliner|hats/.test(s)) return 'Juwelier';
+      if(/speelgoed|toy/.test(s)) return 'Speelgoed';
+      if(/verlichting|lighting|interieur|interior|woon|gordijn|huistextiel|raamdecoratie|vloer|behang/.test(s)) return 'Wonen';
+      if(/fiets|bike|bicycle/.test(s)) return 'Fiets';
+      if(/boekhandel|bookshop|bookstore|boeken/.test(s)) return 'Boeken';
+      if(/bistro|restaurant|café|cafe|cultuurcafé/.test(s)) return 'Horeca';
+      if(/kapsalon|schoonheid|pilates|fitness|parfum|perfum|cosmetic|instituut/.test(s)) return 'Diensten';
       return 'Overig';
     }
     leads.forEach(l => l.g = group(l.cat));
