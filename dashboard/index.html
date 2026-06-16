@@ -123,99 +123,118 @@
   <script>
     // name|sector|area|status|web|slug|tel   (slug empty = no live PoC)
     const RAW = `
-Helios Berchem|Koffiebranderij (1925)|Berchem|Contacted|Outdated site|helios|03 239 24 54
-Wit Zwart Deli|Italiaanse delicatessen|Antwerpen|Lost|Outdated site|wit-zwart-deli|03 294 06 54
-La Praline (Johan Mertens)|Chocolatier (1985)|Ekeren|Contacted|Outdated site|la-praline|03 665 41 88
-Amaral Beenhouwerij|Slagerij (Portugees)|Antwerpen|Contacted|Outdated site|amaral|03 294 32 54
-Pasta Rigoletto|Italiaanse deli/traiteur|Antwerpen|Proposal ready|Outdated site|pasta-rigoletto|
-Kikker & Ko|Speelgoed/hobby|Berchem|Contacted|Outdated site|kikker-en-ko|03 383 59 56
-De Coninck Decoratie|Raamdeco/vloeren|Borgerhout|PoC built|Outdated site|de-coninck-decoratie|03 321 45 70
-Bloem? Bloem!|Bloemist|Berchem|Contacted|Outdated site|bloem-bloem|03 238 51 70
-Floriplant|Tuincentrum|Schoten|Contacted|Outdated site|floriplant|03 646 64 74
-GeVe Verlichting|Verlichting (1969)|Wilrijk|Contacted|Outdated site|geve-verlichting|03 820 11 99
-Harlekijn|Designmode-boetiek|Mechelen|Contacted|Outdated site|harlekijn|015 20 06 29
-Larose Brasschaat|Damesmode|Brasschaat|Contacted|Outdated site|larose|03 651 31 21
-Kleding Wilan|Herenmode|Brasschaat|Contacted|Outdated site|kleding-wilan|03 664 03 69
-Boetiek Cami|Damesmode|Borgerhout|Contacted|Outdated site|boetiek-cami|03 295 53 69
-Carina Marcon|Hoedenmaker|Borgerhout|Proposal ready|Outdated site|carina-marcon|
-LO&S (Tonny Linders)|Damescouture|Antwerpen|Proposal ready|Outdated site|los-tonny-linders|
-Butik Moose|Damesmode|Mechelen|Contacted|Outdated site|butik-moose|
-Bloemenweelde Borgerhout|Bloemist|Borgerhout|PoC built|Facebook-only|bloemenweelde|
-Puur natuur.Berchem|Bloemen/planten|Berchem|PoC built|Facebook-only|puur-natuur|03 289 55 15
-Boerenkamps Mode|Mode|Deurne|Disqualified|Facebook-only||
-Golden Globe Wines|Wijnhandel|Berchem|PoC built|Phone-only|golden-globe-wines|03 685 06 45
-Vinovatie|Wijnhandel|Berchem|PoC built|Phone-only|vinovatie|0479 89 02 17
-Belpi|Wijnhandel|Berchem|PoC built|Phone-only|belpi|0496 20 81 81
-JJ Wijnen|Wijnhandel|Berchem|PoC built|Outdated site|jj-wijnen|0466 34 06 85
-Slagerij Devroye|Slagerij|Wilrijk|PoC built|Phone-only|slagerij-devroye|03 827 27 47
-Slagerij Tack|Slagerij|Wilrijk|PoC built|Phone-only|slagerij-tack|03 449 93 57
-Slagerij Moernaut|Slagerij|Wilrijk|PoC built|Phone-only|slagerij-moernaut|03 230 47 08
-Slagerij Lauwers|Slagerij|Mortsel|PoC built|Phone-only|slagerij-lauwers|03 449 90 67
-De Vers-Boetiek|Slagerij/deli|Mortsel|PoC built|Phone-only|de-vers-boetiek|03 448 33 03
-Ikana (slagerij)|Slagerij|Kontich|PoC built|Phone-only|slagerij-ikana|03 457 17 28
-Slagerij Huygelen Guy|Slagerij|Kontich|PoC built|Phone-only|slagerij-huygelen|03 457 22 46
-Keurslager Van Gijsel|Slagerij|Edegem|PoC built|Phone-only|keurslager-van-gijsel|03 449 64 50
-Beenhouwer Hove|Slagerij|Hove|PoC built|Phone-only|beenhouwerij-hove|03 455 26 74
-Beenhouwerij Kontich (Antw.steenweg 123)|Slagerij|Kontich|New|Phone-only||03 457 63 42
-Kaashandel Fransen|Kaaswinkel|Schilde|PoC built|Phone-only|kaashandel-fransen|03 383 44 55
-Keurkaas Dickers|Kaaswinkel|Merksem|PoC built|Phone-only|keurkaas-dickers|
-Kaashandel Kennes|Kaaswinkel|Lier|PoC built|No website|kaashandel-kennes|
-W en M Wagemaker Kaashandel|Kaaswinkel|Lier|PoC built|No website|wagemaker-kaas|
+'t Liers Boetiekske|Women's fashion boutique|Lier|PoC built|Facebook-only|liers-boetiekske|
+Amaral Beenhouwerij|Butcher (Portuguese specialties)|Antwerpen|Contacted|Outdated site|amaral|03 294 32 54
+Ann Verbruggen Interieur|Interieur — gordijnen, huistextiel (Rivièra Maison)|Brasschaat|New|Outdated site||03 645 70 33
+Art & Design Verlichting (Lichtmeesters)|Verlichting — binnen/tuin, domotica|Brasschaat|New|Outdated site||
+Backeros Wines|Wijnhandel (import, retail)|Aartselaar|Contacted|Outdated site|backeros-wines|0473 17 18 37
+Bakker Tjoens|Bakery / patisserie|Merksem|PoC built|Outdated site|bakker-tjoens|03 645 77 41
+Bakkerij Boulot|Artisan bakery (sourdough)|Borgerhout|PoC built|Outdated site|bakkerij-boulot|03 219 48 81
+Bakkerij Heylen-Troonbeeckx|Banketbakkerij / chocolaterie|Putte|Contacted|Outdated site|bakkerij-heylen|015 23 31 75
+Beenhouwer Hove (Kapelstraat 102)|Butcher|Hove|PoC built|Phone-only|beenhouwerij-hove|03 455 26 74
+Beenhouwerij Kontich (Antwerpsesteenweg 123)|Butcher|Kontich|New|Phone-only||03 457 63 42
+Belpi|Wine merchant|Berchem|PoC built|Phone-only|belpi|0496 20 81 81
+Bloem? Bloem!|Florist / plants|Berchem|Contacted|Outdated site|bloem-bloem|03 238 51 70
+Bloemenweelde Borgerhout|Florist / plants|Borgerhout|PoC built|Facebook-only|bloemenweelde|
+Boekhandel Athena|Bookshop|Kontich|PoC built|Facebook-only|boekhandel-athena|03 459 81 69
+Boerenkamps Mode|Women's & men's fashion|Deurne (verify BE vs NL)|Disqualified|Facebook-only||
+Boetiek Cami|Women's fashion boutique|Borgerhout|Contacted|Outdated site|boetiek-cami|03 295 53 69
+Boetiek Françoise|Fashion (dames/heren)|Lier|PoC built|Facebook-only|boetiek-francoise|03 489 21 76
+Bojet Lifestyle Concept Store|Interieur / cadeau / lifestyle concept store|Mortsel|New|Outdated site||03 457 04 00
+Bourgogne Wijnen|Wijnhandel (Bourgogne, import)|Edegem|Contacted|Outdated site|bourgogne-wijnen|0475 56 27 38
+Butik Moose|Women's fashion boutique|Mechelen|Contacted|Outdated site|butik-moose|
+CADO Merksem|Cadeauwinkel (Swarovski, WoodWick)|Merksem|New|Facebook-only||03 645 90 75
+Café Gourmand (Mechelen)|Koffie, thee, olijfolie, choco, wijn|Mechelen|Contacted|Outdated site|cafe-gourmand|0488 20 62 24
+Carina Marcon|Milliner — handmade hats|Borgerhout|Proposal ready|Outdated site|carina-marcon|
+Chicane|Bistro / restaurant (Belgisch-Frans)|Berchem|PoC built|Outdated site|chicane|03 230 94 91
+Chocolaterie Dom|Artisanale chocolatier / pralines|Lier|Contacted|Outdated site|chocolaterie-dom|03 337 48 44
+Chocolaterie Gauthier|Chocolatier (since 1964)|Mechelen|PoC built|Facebook-only|chocolaterie-gauthier|015 41 72 46
+Chocolatier Gauguin|Artisanale chocolatier|Wilrijk|Contacted|No website|chocolatier-gauguin|03 828 51 37
+Chocolatjeeke|Artisanale chocolatier / luxe pralines|Brecht|Contacted|Outdated site|chocolatjeeke|03 284 63 88
+Clinckers Philip (wijnhandel)|Wijnhandel|Mortsel|PoC built|No website|clinckers-philip|03 440 81 93
+Côté Sud|Delicatessen (cheese/wine, ~25yr)|Mortsel|PoC built|Outdated site|cote-sud|03 440 78 50
+D'Hoeve (delicatessen)|Delicatessen / traiteur|Edegem|PoC built|No website|dhoeve|03 458 02 18
+De Coninck Decoratie|Window deco, flooring, wallpaper|Borgerhout|PoC built|Outdated site|de-coninck-decoratie|03 321 45 70
+De Eikenhoeve|Hoevewinkel (zuivel)|Kontich|Contacted|Outdated site|de-eikenhoeve|0473 45 13 57
+De Kleine Prins (boekhandel)|Bookshop|Borgerhout|Disqualified|Facebook-only||
+De Lente Interieur|Raamdecoratie, zonwering, tapijten|Kontich|New|Outdated site||03 451 02 20
+De Mont (cadeauwinkel)|Woon- & geschenkwinkel (tafelgerei, juwelen)|Deurne|New|Outdated site||03 322 32 12
+De Schutter Hoevezuivel|Hoevewinkel (zuivel, kaas, vlees, ijs)|Kapellen|Contacted|Outdated site|de-schutter-hoevezuivel|
+De Smulpaap|Delicatessen / kaas / ontbijtmanden|Boom|Contacted|Outdated site|de-smulpaap|
+De Vers-Boetiek|Butcher / deli|Mortsel|PoC built|Phone-only|de-vers-boetiek|03 448 33 03
+Delicatessen Marceau|Gevogelte, wild, charcuterie|Mechelen|Contacted|Outdated site|delicatessen-marceau|015 41 53 09
+Delikatessen Vervloesem|Charcuterie / kaas / traiteur|Mortsel|Contacted|No website|delikatessen-vervloesem|03 440 62 62
+Den Bezem|Spirituele cadeauwinkel (edelstenen, tarot)|Mortsel|New|Outdated site||03 293 82 56
+Elec-Lightin'Art|Lighting / electro|Deurne|Disqualified|Phone-only||03 326 39 40
+Fietsen Dermonde G.|Bike shop|Wommelgem|PoC built|Phone-only|fietsen-dermonde|03 353 19 73
+Floriplant|Garden centre / plants & pottery|Schoten|Contacted|Outdated site|floriplant|03 646 64 74
+Frann|Cadeau, woondecoratie, sieraden, huistextiel|Lier|Contacted|Outdated site|frann|0472 75 07 28
+Fred Finest Market|Luxe gourmet (kaviaar, foie gras, truffel, olijfolie)|Edegem|PoC built|Outdated site|fred-finest-market|03 440 71 03
+GeVe Verlichting|Lighting showroom (1969)|Wilrijk|Contacted|Outdated site|geve-verlichting|03 820 11 99
+Golden Globe Wines|Wine merchant|Berchem|PoC built|Phone-only|golden-globe-wines|03 685 06 45
+Hairfusion|Kapsalon (dames/heren/bruid + make-up)|Berchem|PoC built|Outdated site|hairfusion|03 239 33 05
+Harlekijn|Design & sustainable fashion boutique|Mechelen|Contacted|Outdated site|harlekijn|015 20 06 29
+Helios Berchem|Coffee/tea roaster & confectionery (1925)|Berchem|Contacted|Outdated site|helios|03 239 24 54
+Het Vaarthof|Hoevewinkel (bio groenten, zuivel)|Schoten|Contacted|Outdated site|het-vaarthof|03 658 10 86
+Huis Coveliers|Kookgerei, servies, geschenken, ijzerwaren|Kontich|New|Outdated site||03 457 02 66
+Ikana (slagerij)|Butcher|Kontich|PoC built|Phone-only|slagerij-ikana|03 457 17 28
+JJ Wijnen|Wine merchant|Berchem|PoC built|Outdated site|jj-wijnen|0466 34 06 85
+Juwelier Van Rooy|Jeweller / horlogerie|Mortsel|PoC built|Facebook-only|juwelier-van-rooy|
+Kaashandel Fransen|Cheese shop|Schilde|PoC built|Phone-only|kaashandel-fransen|03 383 44 55
+Kaashandel Kennes|Kaaswinkel|Lier|Contacted|No website|kaashandel-kennes|
 Kaaswinkel Alpenhoorn|Kaaswinkel|Ekeren|PoC built|No website|kaaswinkel-alpenhoorn|03 541 70 35
-Speelgoed Mayeur|Speelgoed|Borgerhout|PoC built|Phone-only|speelgoed-mayeur|03 325 08 01
-Speelgoed Stann|Speelgoed|Borgerhout|PoC built|Phone-only|speelgoed-stann|
-Optiek Coppé|Opticien|Mortsel|PoC built|Outdated site|optiek-coppe|03 449 27 38
-Optiek Verhelst|Opticien|Mortsel|PoC built|Outdated site|optiek-verhelst|03 449 94 34
-Optiek Eksterlaar|Opticien|Deurne|PoC built|Outdated site|optiek-eksterlaar|03 322 32 08
-Bakkerij Boulot|Bakkerij (zuurdesem)|Borgerhout|PoC built|Outdated site|bakkerij-boulot|03 219 48 81
-Bakker Tjoens|Bakkerij|Merksem|PoC built|Outdated site|bakker-tjoens|03 645 77 41
-Bakkerij Heylen-Troonbeeckx|Banketbakkerij|Putte|PoC built|Outdated site|bakkerij-heylen|015 23 31 75
-Chocolaterie Gauthier|Chocolatier (1964)|Mechelen|PoC built|Facebook-only|chocolaterie-gauthier|015 41 72 46
-Chocolaterie Dom|Chocolatier|Lier|PoC built|Outdated site|chocolaterie-dom|03 337 48 44
-Chocolatier Gauguin|Chocolatier|Wilrijk|PoC built|No website|chocolatier-gauguin|03 828 51 37
-Chocolatjeeke|Chocolatier (luxe)|Brecht|PoC built|Outdated site|chocolatjeeke|03 284 63 88
-The Chocolate Wizard|Chocolatier/patisserie|Mortsel|PoC built|Outdated site|the-chocolate-wizard|0485 62 00 79
-Tartuffe (chocolatier)|Chocolatier|Wilrijk|PoC built|No website|tartuffe|03 830 30 20
-Côté Sud|Delicatessen (kaas/wijn)|Mortsel|PoC built|Outdated site|cote-sud|03 440 78 50
-Delikatessen Vervloesem|Charcuterie/kaas/traiteur|Mortsel|PoC built|No website|delikatessen-vervloesem|03 440 62 62
-Delicatessen Marceau|Gevogelte/wild/charcuterie|Mechelen|PoC built|Outdated site|delicatessen-marceau|015 41 53 09
-Traiteur-Delicatessen Melisse|Traiteur/deli|Wijnegem|PoC built|Facebook-only|traiteur-melisse|03 353 24 02
-D'Hoeve (delicatessen)|Delicatessen/traiteur|Edegem|PoC built|No website|dhoeve|03 458 02 18
-De Smulpaap|Delicatessen/kaas|Boom|PoC built|Outdated site|de-smulpaap|
-Fred Finest Market|Luxe gourmet|Edegem|PoC built|Outdated site|fred-finest-market|03 440 71 03
-Café Gourmand|Koffie/thee/wijn deli|Mechelen|PoC built|Outdated site|cafe-gourmand|0488 20 62 24
-Unwined|Wijnbar + detail|Mechelen|PoC built|Outdated site|unwined|015 41 81 85
-Bourgogne Wijnen|Wijnhandel|Edegem|PoC built|Outdated site|bourgogne-wijnen|0475 56 27 38
-Backeros Wines|Wijnhandel|Aartselaar|PoC built|Outdated site|backeros-wines|0473 17 18 37
-Wijnen Van Durme|Wijnhandel|Merksem|PoC built|Outdated site|wijnen-van-durme|03 645 91 41
-Terravino|Wijnhandel (wereldwijn)|Mortsel|PoC built|Outdated site|terravino|03 297 84 97
-Old Bacchus|Wijn/dranken|Schoten|PoC built|Outdated site|old-bacchus|03 658 27 74
+Keurkaas Dickers|Cheese shop|Merksem|PoC built|Phone-only|keurkaas-dickers|
+Keurslager Van Gijsel|Butcher|Edegem|PoC built|Phone-only|keurslager-van-gijsel|03 449 64 50
+Kikker & Ko|Toy / hobby shop|Berchem|Contacted|Outdated site|kikker-en-ko|03 383 59 56
+Kleding Wilan|Menswear (Tommy Hilfiger, Digel, Joop)|Brasschaat|Contacted|Outdated site|kleding-wilan|03 664 03 69
+Koen Keersmaekers Juwelen|Jeweller (handmade)|Mortsel|New|Facebook-only||
+La Praline (Johan Mertens)|Chocolatier (1985)|Ekeren|Contacted|Outdated site|la-praline|03 665 41 88
+Larose Brasschaat|Women's clothing boutique|Brasschaat|Contacted|Outdated site|larose|03 651 31 21
+Lauriks Interieur-Decoratie|Interieur — gordijnen, behang, vloeren, deco|Boom|Contacted|Outdated site|lauriks-interieur|03 888 09 27
 Le Cellier de la Gourgasse|Wijnhandel|Boom|PoC built|No website|cellier-gourgasse|03 449 54 97
-Clinckers Philip|Wijnhandel|Mortsel|PoC built|No website|clinckers-philip|03 440 81 93
-De Schutter Hoevezuivel|Hoevewinkel|Kapellen|PoC built|Outdated site|de-schutter-hoevezuivel|
-De Eikenhoeve|Hoevewinkel (zuivel)|Kontich|PoC built|Outdated site|de-eikenhoeve|0473 45 13 57
-Het Vaarthof|Hoevewinkel (bio)|Schoten|PoC built|Outdated site|het-vaarthof|03 658 10 86
-Pistache Baby Boutique|Baby/kinderkleding|Kapellen|PoC built|Facebook-only|pistache-baby|03 437 31 37
-Boetiek Françoise|Mode|Lier|PoC built|Facebook-only|boetiek-francoise|03 489 21 76
-'t Liers Boetiekske|Damesmode|Lier|PoC built|Facebook-only|liers-boetiekske|
-Juwelier Van Rooy|Juwelier|Mortsel|PoC built|Facebook-only|juwelier-van-rooy|
-Koen Keersmaekers Juwelen|Juwelier|Mortsel|New|Facebook-only||
-Boekhandel Athena|Boekhandel|Kontich|PoC built|Facebook-only|boekhandel-athena|03 459 81 69
-De Kleine Prins|Boekhandel|Borgerhout|Disqualified|Facebook-only||
-Parfumerie Laroche|Parfumerie|Deurne|PoC built|Outdated site|parfumerie-laroche|
-Fietsen Dermonde G.|Fietsenwinkel|Wommelgem|PoC built|Phone-only|fietsen-dermonde|03 353 19 73
-Maakmijnfiets.be|Fietsherstel|Wommelgem|PoC built|Phone-only|maakmijnfiets|0488 19 91 70
-Special Lighting|Verlichting|Ekeren|Disqualified|Phone-only||03 644 45 00
-Elec-Lightin'Art|Verlichting/electro|Deurne|Disqualified|Phone-only||03 326 39 40
-Chicane|Bistro/restaurant|Berchem|PoC built|Outdated site|chicane|03 230 94 91
-Theater Café|Cultuurcafé/restaurant|Mortsel|PoC built|Outdated site|theater-cafe|03 777 31 74
-Hairfusion|Kapsalon|Berchem|PoC built|Outdated site|hairfusion|03 239 33 05
-Perfect You|Schoonheidssalon|Borgerhout|PoC built|Outdated site|perfect-you|0465 27 38 64
-The Pilates Studio Berchem|Pilates/fitness|Berchem|PoC built|Outdated site|pilates-studio|03 227 29 72
-Lauriks Interieur-Decoratie|Interieur|Boom|PoC built|Outdated site|lauriks-interieur|03 888 09 27
-Parfumerie Venus|Parfumerie|Hove|PoC built|Outdated site|parfumerie-venus|03 454 13 91
-Frann|Cadeau & lifestyle|Lier|PoC built|Outdated site|frann|0472 75 07 28
-Let's Cook Mechelen|Kookwinkel|Mechelen|PoC built|Outdated site|lets-cook-mechelen|015 68 09 77
+Let's Cook Mechelen|Kookgerei, messen (slijpservice), kookboeken|Mechelen|Contacted|Outdated site|lets-cook-mechelen|015 68 09 77
+LO&S (Tonny Linders)|Women's couture boutique|Antwerp area|Proposal ready|Outdated site|los-tonny-linders|
+Maakmijnfiets.be|Bike repair/shop|Wommelgem|PoC built|Phone-only|maakmijnfiets|0488 19 91 70
+Old Bacchus|Wijn- & drankenspeciaalzaak|Schoten|Contacted|Outdated site|old-bacchus|03 658 27 74
+Optiek Coppé|Optician|Mortsel|PoC built|Outdated site|optiek-coppe|03 449 27 38
+Optiek Eksterlaar|Optician|Deurne|PoC built|Outdated site|optiek-eksterlaar|03 322 32 08
+Optiek Verhelst|Optician|Mortsel|PoC built|Outdated site|optiek-verhelst|03 449 94 34
+Parfumerie AURA|Parfumerie + schoonheidsinstituut|Kapellen|New|Outdated site||03 665 34 49
+Parfumerie Dierckx|Parfumerie + schoonheidsinstituut|Lier|New|Outdated site||03 480 28 36
+Parfumerie Isabelle|Parfumerie|Wilrijk|New|Outdated site||03 827 70 28
+Parfumerie Je m'appelle|Parfumerie + advies|Lier|New|No website||03 480 73 18
+Parfumerie Laroche|Perfumery / cosmetics|Deurne|PoC built|Outdated site|parfumerie-laroche|
+Parfumerie Simonne|Parfumerie + cosmetica + schoonheidsinstituut|Brasschaat|New|No website||03 664 41 91
+Parfumerie Venus|Parfumerie + schoonheidsinstituut|Hove|Contacted|Outdated site|parfumerie-venus|03 454 13 91
+Pasta Rigoletto|Italian deli / traiteur|Antwerpen|Proposal ready|Outdated site|pasta-rigoletto|
+Perfect Present|Cadeauwinkel + theeroom (geschenkmanden)|Ekeren|New|Outdated site||03 544 90 09
+Perfect You|Schoonheidssalon (nagels/gelaat/ontharing)|Borgerhout|PoC built|Outdated site|perfect-you|0465 27 38 64
+Pistache Baby Boutique|Baby/children's clothing|Kapellen|PoC built|Facebook-only|pistache-baby|03 437 31 37
+POSY BY E|Cosmeticawinkel|Edegem|New|No website||03 354 35 43
+Puur natuur.Berchem|Flowers, plants, pots|Berchem|PoC built|Facebook-only|puur-natuur|03 289 55 15
+Puur-P|Cadeauwinkel / lifestyle|Wilrijk|New|No website||03 889 29 26
+Slagerij Devroye|Butcher|Wilrijk|PoC built|Phone-only|slagerij-devroye|03 827 27 47
+Slagerij Huygelen Guy|Butcher|Kontich|PoC built|Phone-only|slagerij-huygelen|03 457 22 46
+Slagerij Lauwers|Butcher|Mortsel|PoC built|Phone-only|slagerij-lauwers|03 449 90 67
+Slagerij Moernaut|Butcher|Wilrijk|PoC built|Phone-only|slagerij-moernaut|03 230 47 08
+Slagerij Tack|Butcher|Wilrijk|PoC built|Phone-only|slagerij-tack|03 449 93 57
+Special Lighting|Lighting / interior|Ekeren|Disqualified|Phone-only||03 644 45 00
+Speelgoed Mayeur|Toy shop|Borgerhout|PoC built|Phone-only|speelgoed-mayeur|03 325 08 01
+Speelgoed Stann|Toy shop|Borgerhout|PoC built|Phone-only|speelgoed-stann|
+Tartuffe (chocolatier)|Artisanale chocolatier / pralines|Wilrijk|Contacted|No website|tartuffe|03 830 30 20
+Terravino|Wijnhandel (wereldwijnen)|Mortsel|Disqualified|Outdated site|terravino|03 297 84 97
+The Chocolate Wizard|Chocolatier / patisserie|Mortsel|PoC built|Outdated site|the-chocolate-wizard|0485 62 00 79
+The Deco Factory (Schoten)|Gordijnen, vloerbekleding, behang, deco|Schoten|New|Outdated site||0475 73 66 26
+The Pilates Studio Berchem|Pilates / fitness studio|Berchem|PoC built|Outdated site|pilates-studio|03 227 29 72
+The Pilates Studio Berchem|Pilates / fitness studio|Berchem|PoC built|Outdated site|pilates-studio|03 227 29 72
+Theater Café|Cultuurcafé / restaurant (wereldkeuken)|Mortsel|PoC built|Outdated site|theater-cafe|03 777 31 74
+Traiteur-Delicatessen Melisse|Traiteur / delicatessen|Wijnegem|Contacted|Facebook-only|traiteur-melisse|03 353 24 02
+Unwined|Wijnbar + detailverkoop|Mechelen|Contacted|Outdated site|unwined|015 41 81 85
+Vepad Verlichting|Verlichting & woondecoratie|Brasschaat|New|Outdated site||03 502 31 33
+Vinovatie|Wine merchant|Berchem|PoC built|Phone-only|vinovatie|0479 89 02 17
+W en M Wagemaker Kaashandel|Kaaswinkel|Lier|Contacted|No website|wagemaker-kaas|
+Wijnen Van Durme|Wijnhandel (incl. Franse wijn)|Merksem|PoC built|Outdated site|wijnen-van-durme|03 645 91 41
+Wit Zwart Deli|Italian delicatessen / traiteur|Antwerpen 2000|Lost|Outdated site|wit-zwart-deli|03 294 06 54
 `.trim();
 
     const BASE = 'https://cloesick.github.io/antwerp-poc-portfolio/';
@@ -223,17 +242,59 @@ Let's Cook Mechelen|Kookwinkel|Mechelen|PoC built|Outdated site|lets-cook-mechel
 
     // bekende e-mailadressen (backfill uit Airtable)
     const EMAILS = {
-      'Helios Berchem':'feliciano.de.luca@skynet.be','La Praline (Johan Mertens)':'johan.mertens10@telenet.be','Amaral Beenhouwerij':'beenhouwerijamaralbvba@gmail.com',
-      'Kikker & Ko':'kikkerenko@gmail.com','De Coninck Decoratie':'info.deconinck@skynet.be','Bloem? Bloem!':'bloembloemberchem@gmail.com','Floriplant':'info@floriplant.be',
-      'GeVe Verlichting':'toonzaal@geve.be','Harlekijn':'erna@harlekijnmechelen.be','Larose Brasschaat':'info@larose-brasschaat.be','Kleding Wilan':'info@kledingwilan.be',
-      'Boetiek Cami':'catherine.verdonck@gmail.com','Bloemenweelde Borgerhout':'bloemenweeldeborgerhout@hotmail.com','Puur natuur.Berchem':'puurnatuur2600@gmail.com',
-      'Keurslager Van Gijsel':'edegem@keurslager-vangijsel.be','Bakker Tjoens':'info@tjoens.be','Boekhandel Athena':'boekhandel.athena3@telenet.be','Perfect You':'info@perfectyouschoonheidssalon.be',
-      'The Pilates Studio Berchem':'thepilatesstudioberchem@gmail.com','Café Gourmand':'contact@cafe-gourmand.eu','Unwined':'info@unwined.be','Bourgogne Wijnen':'bourgognewijnen@telenet.be',
-      'Backeros Wines':'info@backeroswines.be','Wijnen Van Durme':'christine@wijnenvandurme.be','Terravino':'wijnen@terravino.be','Old Bacchus':'info@oldbacchus.be',
-      'Chocolaterie Dom':'info@chocolateriedom.be','Chocolatjeeke':'info@chocolatjeeke.be','Chocolatier Gauguin':'gauguin.wilrijk@gmail.com','Tartuffe (chocolatier)':'info@tartuffe-wilrijk.be',
-      'Delikatessen Vervloesem':'debelder.willy@gmail.com','Delicatessen Marceau':'marceau.van.riet@telenet.be','Traiteur-Delicatessen Melisse':'info@melisse.be','De Smulpaap':'info@desmulpaap.com',
-      'De Eikenhoeve':'info@de-eikenhoeve.be','Het Vaarthof':'vaarthof@gmail.com','De Schutter Hoevezuivel':'deschutterhoevezuivel@gmail.com','Bakkerij Heylen-Troonbeeckx':'info@bakkerijheylen.be',
-      'Kaashandel Kennes':'frankkennes@skynet.be','W en M Wagemaker Kaashandel':'wagemakersven@hotmail.com',
+      "Amaral Beenhouwerij": "beenhouwerijamaralbvba@gmail.com",
+      "Ann Verbruggen Interieur": "info@annverbruggen.be",
+      "Art & Design Verlichting (Lichtmeesters)": "info@lichtmeester.com",
+      "Backeros Wines": "info@backeroswines.be",
+      "Bakker Tjoens": "info@tjoens.be",
+      "Bakkerij Heylen-Troonbeeckx": "info@bakkerijheylen.be",
+      "Bloem? Bloem!": "bloembloemberchem@gmail.com",
+      "Bloemenweelde Borgerhout": "bloemenweeldeborgerhout@hotmail.com",
+      "Boekhandel Athena": "boekhandel.athena3@telenet.be",
+      "Boetiek Cami": "catherine.verdonck@gmail.com",
+      "Bourgogne Wijnen": "bourgognewijnen@telenet.be",
+      "Café Gourmand (Mechelen)": "contact@cafe-gourmand.eu",
+      "Chocolaterie Dom": "info@chocolateriedom.be",
+      "Chocolatier Gauguin": "gauguin.wilrijk@gmail.com",
+      "Chocolatjeeke": "info@chocolatjeeke.be",
+      "De Coninck Decoratie": "info.deconinck@skynet.be",
+      "De Eikenhoeve": "info@de-eikenhoeve.be",
+      "De Schutter Hoevezuivel": "deschutterhoevezuivel@gmail.com",
+      "De Smulpaap": "info@desmulpaap.com",
+      "Delicatessen Marceau": "marceau.van.riet@telenet.be",
+      "Delikatessen Vervloesem": "debelder.willy@gmail.com",
+      "Den Bezem": "denbezem@telenet.be",
+      "Floriplant": "info@floriplant.be",
+      "Frann": "info@frann.be",
+      "GeVe Verlichting": "toonzaal@geve.be",
+      "Harlekijn": "erna@harlekijnmechelen.be",
+      "Helios Berchem": "feliciano.de.luca@skynet.be",
+      "Het Vaarthof": "vaarthof@gmail.com",
+      "Kaashandel Kennes": "frankkennes@skynet.be",
+      "Keurslager Van Gijsel": "edegem@keurslager-vangijsel.be",
+      "Kikker & Ko": "kikkerenko@gmail.com",
+      "Kleding Wilan": "info@kledingwilan.be",
+      "La Praline (Johan Mertens)": "johan.mertens10@telenet.be",
+      "Larose Brasschaat": "info@larose-brasschaat.be",
+      "Lauriks Interieur-Decoratie": "info@lauriks.be",
+      "Let's Cook Mechelen": "letscook.mechelen@gmail.com",
+      "Old Bacchus": "info@oldbacchus.be",
+      "Parfumerie AURA": "info@auraparfumerie.be",
+      "Parfumerie Dierckx": "info@parfumerie-dierckx.be",
+      "Parfumerie Je m'appelle": "mariegoormans2013@hotmail.be",
+      "Parfumerie Simonne": "parligna@skynet.be",
+      "Parfumerie Venus": "info@parfumerievenus.be",
+      "Perfect Present": "info@perfectpresent.be",
+      "Perfect You": "info@perfectyouschoonheidssalon.be",
+      "Puur natuur.Berchem": "puurnatuur2600@gmail.com",
+      "Tartuffe (chocolatier)": "info@tartuffe-wilrijk.be",
+      "The Deco Factory (Schoten)": "info.schoten@thedecofactory.be",
+      "The Pilates Studio Berchem": "thepilatesstudioberchem@gmail.com",
+      "The Pilates Studio Berchem": "thepilatesstudioberchem@gmail.com",
+      "Traiteur-Delicatessen Melisse": "info@melisse.be",
+      "Unwined": "info@unwined.be",
+      "Vepad Verlichting": "info@vepad.be",
+      "W en M Wagemaker Kaashandel": "wagemakersven@hotmail.com",
     };
     leads.forEach(l => l.email = EMAILS[l.name] || '');
 
@@ -242,6 +303,9 @@ Let's Cook Mechelen|Kookwinkel|Mechelen|PoC built|Outdated site|lets-cook-mechel
       'PoC built':      { c:'bg-violet-100 text-violet-700 border-violet-200' },
       'Proposal ready': { c:'bg-sky-100 text-sky-700 border-sky-200' },
       'Contacted':      { c:'bg-blue-100 text-blue-700 border-blue-200' },
+      'Replied':        { c:'bg-cyan-100 text-cyan-700 border-cyan-200' },
+      'Meeting':        { c:'bg-yellow-100 text-yellow-700 border-yellow-200' },
+      'Won':            { c:'bg-emerald-100 text-emerald-700 border-emerald-200' },
       'Lost':           { c:'bg-rose-100 text-rose-700 border-rose-200' },
       'Disqualified':   { c:'bg-zinc-200 text-zinc-500 border-zinc-300' },
     };
@@ -251,7 +315,7 @@ Let's Cook Mechelen|Kookwinkel|Mechelen|PoC built|Outdated site|lets-cook-mechel
       'Facebook-only':  'bg-orange-100 text-orange-700',
       'No website':     'bg-red-200 text-red-800',
     };
-    const STATUS_ORDER = ['New','PoC built','Proposal ready','Contacted','Lost','Disqualified'];
+    const STATUS_ORDER = ['New','PoC built','Proposal ready','Contacted','Replied','Meeting','Won','Lost','Disqualified'];
 
     // category grouping from sector keywords
     function group(cat){ const s=cat.toLowerCase();
@@ -277,7 +341,7 @@ Let's Cook Mechelen|Kookwinkel|Mechelen|PoC built|Outdated site|lets-cook-mechel
 
     // € richtprijs per lead (eenmalig, marktconform — Online Basis €1.250 / Webshop €2.950)
     const EST = { 'Outdated site':2950, 'Facebook-only':2950, 'Phone-only':1250, 'No website':1250 };
-    const ACT = { 'New':'Onderzoeken / contacteren', 'PoC built':'Stuur pitch + PoC-link', 'Proposal ready':'Voorstel versturen', 'Contacted':'Opvolgen', 'Lost':'—', 'Disqualified':'—' };
+    const ACT = { 'New':'Onderzoeken / contacteren', 'PoC built':'Stuur pitch + PoC-link', 'Proposal ready':'Voorstel versturen', 'Contacted':'Opvolgen', 'Replied':'Reageerde — opvolgen', 'Meeting':'Afspraak inplannen', 'Won':'Gewonnen 🎉', 'Lost':'—', 'Disqualified':'—' };
     leads.forEach((l,i) => { l.est = EST[l.web] || 1250; l.dead = (l.status==='Lost'||l.status==='Disqualified'); l.id = i; });
 
     let fStatus = 'all', fCat = 'all', q = '', sortK = 'status', current = [];
