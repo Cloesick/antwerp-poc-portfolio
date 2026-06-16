@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Antwerp Leads — Pipeline Dashboard · Saspire</title>
+  <meta name="description" content="Live pipeline-overzicht van alle Antwerpse web/webshop-prospects: status, sector, en live proof-of-concept per lead." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f1c2e'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' fill='%237db0d8' text-anchor='middle'%3E%E2%97%88%3C/text%3E%3C/svg%3E" />
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { serif: ['Fraunces','serif'], sans: ['Inter','sans-serif'] },
+      colors: { navy: '#0f1c2e', slate: '#33465c', sky: '#3f7cac', cream: '#f6f3ee', sand: '#e8e0d2' },
+    } } };
+  </script>
+  <style>
+    body { background: #f1ece3; }
+    .chip { transition: all .15s; }
+    th { cursor: pointer; user-select: none; }
+    tbody tr:hover { background: #faf7f1; }
+  </style>
+</head>
+<body class="text-navy font-sans antialiased">
+  <header class="max-w-7xl mx-auto px-5 sm:px-8 pt-10 pb-6">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <p class="text-sky font-600 tracking-[0.25em] uppercase text-xs">Saspire · lead-pipeline</p>
+        <h1 class="font-serif text-3xl sm:text-5xl font-600 mt-2">Antwerp Leads — Dashboard</h1>
+        <p class="text-slate mt-2 text-sm">Lokale handelaars &amp; dienstverleners met een verouderde of ontbrekende website. Klik een lead om de live proof-of-concept te bekijken.</p>
+      </div>
+      <a href="../" class="inline-flex items-center gap-2 bg-navy text-cream text-sm font-600 px-5 py-2.5 rounded-full hover:bg-slate transition">← Portfolio van PoC's</a>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-5 sm:px-8 pb-20">
+    <!-- KPI cards -->
+    <div id="kpis" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-6"></div>
+
+    <!-- Controls -->
+    <div class="bg-white rounded-2xl border border-navy/10 p-4 mb-5">
+      <div class="flex flex-wrap items-center gap-3">
+        <input id="search" type="search" placeholder="Zoek op naam, sector of gemeente…" class="flex-1 min-w-[220px] px-4 py-2.5 rounded-xl border border-navy/15 focus:outline-none focus:ring-2 focus:ring-sky text-sm" />
+        <div id="statusFilters" class="flex flex-wrap gap-2"></div>
+      </div>
+      <div id="catFilters" class="flex flex-wrap gap-2 mt-3 pt-3 border-t border-navy/10"></div>
+    </div>
+
+    <!-- Table -->
+    <div class="bg-white rounded-2xl border border-navy/10 overflow-hidden">
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead class="bg-navy text-cream/90 text-left text-xs uppercase tracking-wide">
+            <tr>
+              <th class="px-4 py-3" data-k="name">Business</th>
+              <th class="px-4 py-3" data-k="cat">Sector</th>
+              <th class="px-4 py-3" data-k="area">Gemeente</th>
+              <th class="px-4 py-3" data-k="web">Web</th>
+              <th class="px-4 py-3" data-k="status">Status</th>
+              <th class="px-4 py-3">PoC</th>
+              <th class="px-4 py-3" data-k="tel">Tel</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <p id="count" class="px-4 py-3 text-xs text-slate border-t border-navy/10"></p>
+    </div>
+
+    <footer class="mt-8 text-xs text-slate/70 flex flex-col sm:flex-row justify-between gap-2">
+      <p>© 2026 Saspire — Nicolas · nicolas@saspire.org · bron: Airtable-pipeline</p>
+      <p>Concept-PoC's van echte zaken · niet geïndexeerd.</p>
+    </footer>
+  </main>
+
+  <script>
+    // name|sector|area|status|web|slug|tel   (slug empty = no live PoC)
+    const RAW = `
+Helios Berchem|Koffiebranderij (1925)|Berchem|Contacted|Outdated site|helios|03 239 24 54
+Wit Zwart Deli|Italiaanse delicatessen|Antwerpen|Lost|Outdated site|wit-zwart-deli|03 294 06 54
+La Praline (Johan Mertens)|Chocolatier (1985)|Ekeren|Contacted|Outdated site|la-praline|03 665 41 88
+Amaral Beenhouwerij|Slagerij (Portugees)|Antwerpen|Contacted|Outdated site|amaral|03 294 32 54
+Pasta Rigoletto|Italiaanse deli/traiteur|Antwerpen|Proposal ready|Outdated site|pasta-rigoletto|
+Kikker & Ko|Speelgoed/hobby|Berchem|Contacted|Outdated site|kikker-en-ko|03 383 59 56
+De Coninck Decoratie|Raamdeco/vloeren|Borgerhout|PoC built|Outdated site|de-coninck-decoratie|03 321 45 70
+Bloem? Bloem!|Bloemist|Berchem|Contacted|Outdated site|bloem-bloem|03 238 51 70
+Floriplant|Tuincentrum|Schoten|Contacted|Outdated site|floriplant|03 646 64 74
+GeVe Verlichting|Verlichting (1969)|Wilrijk|Contacted|Outdated site|geve-verlichting|03 820 11 99
+Harlekijn|Designmode-boetiek|Mechelen|Contacted|Outdated site|harlekijn|015 20 06 29
+Larose Brasschaat|Damesmode|Brasschaat|Contacted|Outdated site|larose|03 651 31 21
+Kleding Wilan|Herenmode|Brasschaat|Contacted|Outdated site|kleding-wilan|03 664 03 69
+Boetiek Cami|Damesmode|Borgerhout|Contacted|Outdated site|boetiek-cami|03 295 53 69
+Carina Marcon|Hoedenmaker|Borgerhout|Proposal ready|Outdated site|carina-marcon|
+LO&S (Tonny Linders)|Damescouture|Antwerpen|Proposal ready|Outdated site|los-tonny-linders|
+Butik Moose|Damesmode|Mechelen|Contacted|Outdated site|butik-moose|
+Bloemenweelde Borgerhout|Bloemist|Borgerhout|PoC built|Facebook-only|bloemenweelde|
+Puur natuur.Berchem|Bloemen/planten|Berchem|PoC built|Facebook-only|puur-natuur|03 289 55 15
+Boerenkamps Mode|Mode|Deurne|Disqualified|Facebook-only||
+Golden Globe Wines|Wijnhandel|Berchem|PoC built|Phone-only|golden-globe-wines|03 685 06 45
+Vinovatie|Wijnhandel|Berchem|PoC built|Phone-only|vinovatie|0479 89 02 17
+Belpi|Wijnhandel|Berchem|PoC built|Phone-only|belpi|0496 20 81 81
+JJ Wijnen|Wijnhandel|Berchem|PoC built|Outdated site|jj-wijnen|0466 34 06 85
+Slagerij Devroye|Slagerij|Wilrijk|PoC built|Phone-only|slagerij-devroye|03 827 27 47
+Slagerij Tack|Slagerij|Wilrijk|PoC built|Phone-only|slagerij-tack|03 449 93 57
+Slagerij Moernaut|Slagerij|Wilrijk|PoC built|Phone-only|slagerij-moernaut|03 230 47 08
+Slagerij Lauwers|Slagerij|Mortsel|PoC built|Phone-only|slagerij-lauwers|03 449 90 67
+De Vers-Boetiek|Slagerij/deli|Mortsel|PoC built|Phone-only|de-vers-boetiek|03 448 33 03
+Ikana (slagerij)|Slagerij|Kontich|PoC built|Phone-only|slagerij-ikana|03 457 17 28
+Slagerij Huygelen Guy|Slagerij|Kontich|PoC built|Phone-only|slagerij-huygelen|03 457 22 46
+Keurslager Van Gijsel|Slagerij|Edegem|PoC built|Phone-only|keurslager-van-gijsel|03 449 64 50
+Beenhouwer Hove|Slagerij|Hove|PoC built|Phone-only|beenhouwerij-hove|03 455 26 74
+Beenhouwerij Kontich (Antw.steenweg 123)|Slagerij|Kontich|New|Phone-only||03 457 63 42
+Kaashandel Fransen|Kaaswinkel|Schilde|PoC built|Phone-only|kaashandel-fransen|03 383 44 55
+Keurkaas Dickers|Kaaswinkel|Merksem|PoC built|Phone-only|keurkaas-dickers|
+Kaashandel Kennes|Kaaswinkel|Lier|New|No website||
+W en M Wagemaker Kaashandel|Kaaswinkel|Lier|New|No website||
+Kaaswinkel Alpenhoorn|Kaaswinkel|Ekeren|New|No website||03 541 70 35
+Speelgoed Mayeur|Speelgoed|Borgerhout|PoC built|Phone-only|speelgoed-mayeur|03 325 08 01
+Speelgoed Stann|Speelgoed|Borgerhout|PoC built|Phone-only|speelgoed-stann|
+Optiek Coppé|Opticien|Mortsel|PoC built|Outdated site|optiek-coppe|03 449 27 38
+Optiek Verhelst|Opticien|Mortsel|PoC built|Outdated site|optiek-verhelst|03 449 94 34
+Optiek Eksterlaar|Opticien|Deurne|PoC built|Outdated site|optiek-eksterlaar|03 322 32 08
+Bakkerij Boulot|Bakkerij (zuurdesem)|Borgerhout|PoC built|Outdated site|bakkerij-boulot|03 219 48 81
+Bakker Tjoens|Bakkerij|Merksem|PoC built|Outdated site|bakker-tjoens|03 645 77 41
+Bakkerij Heylen-Troonbeeckx|Banketbakkerij|Putte|New|Outdated site||015 23 31 75
+Chocolaterie Gauthier|Chocolatier (1964)|Mechelen|PoC built|Facebook-only|chocolaterie-gauthier|015 41 72 46
+Chocolaterie Dom|Chocolatier|Lier|New|Outdated site||03 337 48 44
+Chocolatier Gauguin|Chocolatier|Wilrijk|New|No website||03 828 51 37
+Chocolatjeeke|Chocolatier (luxe)|Brecht|New|Outdated site||03 284 63 88
+The Chocolate Wizard|Chocolatier/patisserie|Mortsel|New|Outdated site||0485 62 00 79
+Tartuffe (chocolatier)|Chocolatier|Wilrijk|New|No website||03 830 30 20
+Côté Sud|Delicatessen (kaas/wijn)|Mortsel|PoC built|Outdated site|cote-sud|03 440 78 50
+Delikatessen Vervloesem|Charcuterie/kaas/traiteur|Mortsel|New|No website||03 440 62 62
+Delicatessen Marceau|Gevogelte/wild/charcuterie|Mechelen|New|Outdated site||015 41 53 09
+Traiteur-Delicatessen Melisse|Traiteur/deli|Wijnegem|New|Facebook-only||03 353 24 02
+D'Hoeve (delicatessen)|Delicatessen/traiteur|Edegem|New|No website||03 458 02 18
+De Smulpaap|Delicatessen/kaas|Boom|New|Outdated site||
+Fred Finest Market|Luxe gourmet|Edegem|New|Outdated site||03 440 71 03
+Café Gourmand|Koffie/thee/wijn deli|Mechelen|New|Outdated site||0488 20 62 24
+Unwined|Wijnbar + detail|Mechelen|New|Outdated site||015 41 81 85
+Bourgogne Wijnen|Wijnhandel|Edegem|New|Outdated site||0475 56 27 38
+Backeros Wines|Wijnhandel|Aartselaar|New|Outdated site||0473 17 18 37
+Wijnen Van Durme|Wijnhandel|Merksem|New|Outdated site||03 645 91 41
+Terravino|Wijnhandel (wereldwijn)|Mortsel|New|Outdated site||03 297 84 97
+Old Bacchus|Wijn/dranken|Schoten|New|Outdated site||03 658 27 74
+Le Cellier de la Gourgasse|Wijnhandel|Boom|New|No website||03 449 54 97
+Clinckers Philip|Wijnhandel|Mortsel|New|No website||03 440 81 93
+De Schutter Hoevezuivel|Hoevewinkel|Kapellen|New|Outdated site||
+De Eikenhoeve|Hoevewinkel (zuivel)|Kontich|New|Outdated site||0473 45 13 57
+Het Vaarthof|Hoevewinkel (bio)|Schoten|New|Outdated site||03 658 10 86
+Pistache Baby Boutique|Baby/kinderkleding|Kapellen|PoC built|Facebook-only|pistache-baby|03 437 31 37
+Boetiek Françoise|Mode|Lier|PoC built|Facebook-only|boetiek-francoise|03 489 21 76
+'t Liers Boetiekske|Damesmode|Lier|PoC built|Facebook-only|liers-boetiekske|
+Juwelier Van Rooy|Juwelier|Mortsel|PoC built|Facebook-only|juwelier-van-rooy|
+Koen Keersmaekers Juwelen|Juwelier|Mortsel|New|Facebook-only||
+Boekhandel Athena|Boekhandel|Kontich|PoC built|Facebook-only|boekhandel-athena|03 459 81 69
+De Kleine Prins|Boekhandel|Borgerhout|Disqualified|Facebook-only||
+Parfumerie Laroche|Parfumerie|Deurne|PoC built|Outdated site|parfumerie-laroche|
+Fietsen Dermonde G.|Fietsenwinkel|Wommelgem|PoC built|Phone-only|fietsen-dermonde|03 353 19 73
+Maakmijnfiets.be|Fietsherstel|Wommelgem|PoC built|Phone-only|maakmijnfiets|0488 19 91 70
+Special Lighting|Verlichting|Ekeren|Disqualified|Phone-only||03 644 45 00
+Elec-Lightin'Art|Verlichting/electro|Deurne|Disqualified|Phone-only||03 326 39 40
+Chicane|Bistro/restaurant|Berchem|PoC built|Outdated site|chicane|03 230 94 91
+Theater Café|Cultuurcafé/restaurant|Mortsel|PoC built|Outdated site|theater-cafe|03 777 31 74
+Hairfusion|Kapsalon|Berchem|PoC built|Outdated site|hairfusion|03 239 33 05
+Perfect You|Schoonheidssalon|Borgerhout|PoC built|Outdated site|perfect-you|0465 27 38 64
+The Pilates Studio Berchem|Pilates/fitness|Berchem|PoC built|Outdated site|pilates-studio|03 227 29 72
+`.trim();
+
+    const BASE = 'https://cloesick.github.io/antwerp-poc-portfolio/';
+    const leads = RAW.split('\n').map(l => { const [name,cat,area,status,web,slug,tel] = l.split('|'); return {name,cat,area,status,web,slug,tel}; });
+
+    const STATUS = {
+      'New':            { c:'bg-slate-100 text-slate-700 border-slate-200' },
+      'PoC built':      { c:'bg-violet-100 text-violet-700 border-violet-200' },
+      'Proposal ready': { c:'bg-sky-100 text-sky-700 border-sky-200' },
+      'Contacted':      { c:'bg-blue-100 text-blue-700 border-blue-200' },
+      'Lost':           { c:'bg-rose-100 text-rose-700 border-rose-200' },
+      'Disqualified':   { c:'bg-zinc-200 text-zinc-500 border-zinc-300' },
+    };
+    const WEB = {
+      'Outdated site':  'bg-amber-100 text-amber-800',
+      'Phone-only':     'bg-rose-100 text-rose-700',
+      'Facebook-only':  'bg-orange-100 text-orange-700',
+      'No website':     'bg-red-200 text-red-800',
+    };
+    const STATUS_ORDER = ['New','PoC built','Proposal ready','Contacted','Lost','Disqualified'];
+
+    // category grouping from sector keywords
+    function group(cat){ const s=cat.toLowerCase();
+      if(/slager|beenhouw/.test(s)) return 'Slager';
+      if(/kaas/.test(s)) return 'Kaas';
+      if(/wijn|bacchus|cellier|vino|unwined/.test(s)) return 'Wijn';
+      if(/chocolat|praline/.test(s)) return 'Chocolatier';
+      if(/bakker|banket|patiss/.test(s)) return 'Bakkerij';
+      if(/delicatess|traiteur|charcut|gourmet|gevogelte|deli|koffie|hoevewinkel/.test(s)) return 'Deli/food';
+      if(/mode|kleding|boetiek|couture|fashion|baby/.test(s)) return 'Mode';
+      if(/bloem|tuincentrum|planten/.test(s)) return 'Bloemen';
+      if(/opticien|optiek/.test(s)) return 'Opticien';
+      if(/juwelier|hoeden/.test(s)) return 'Juwelier';
+      if(/speelgoed/.test(s)) return 'Speelgoed';
+      if(/verlichting|deco|vloeren/.test(s)) return 'Wonen';
+      if(/fiets/.test(s)) return 'Fiets';
+      if(/boekhandel/.test(s)) return 'Boeken';
+      if(/bistro|restaurant|café|cultuurcafé/.test(s)) return 'Horeca';
+      if(/kapsalon|schoonheid|pilates|fitness|parfum/.test(s)) return 'Diensten';
+      return 'Overig';
+    }
+    leads.forEach(l => l.g = group(l.cat));
+
+    let fStatus = 'all', fCat = 'all', q = '', sortK = 'status';
+
+    function kpis(){
+      const by = s => leads.filter(l=>l.status===s).length;
+      const cards = [
+        ['Totaal leads', leads.length, 'text-navy'],
+        ['PoC gebouwd', by('PoC built'), 'text-violet-600'],
+        ['Voorstel klaar', by('Proposal ready'), 'text-sky-600'],
+        ['Gecontacteerd', by('Contacted'), 'text-blue-600'],
+        ['Nieuw', by('New'), 'text-slate-500'],
+        ['Lost / DQ', by('Lost')+by('Disqualified'), 'text-rose-500'],
+      ];
+      document.getElementById('kpis').innerHTML = cards.map(([t,n,c])=>`
+        <div class="bg-white rounded-2xl border border-navy/10 p-4">
+          <p class="text-3xl font-serif font-600 ${c}">${n}</p>
+          <p class="text-xs text-slate mt-1">${t}</p>
+        </div>`).join('');
+    }
+
+    function chips(){
+      const sc = STATUS_ORDER.filter(s=>leads.some(l=>l.status===s));
+      document.getElementById('statusFilters').innerHTML =
+        [['all','Alle']].concat(sc.map(s=>[s,s])).map(([k,lab])=>`
+          <button data-s="${k}" class="chip px-3 py-1.5 rounded-full text-xs font-600 border ${k===fStatus?'bg-navy text-cream border-navy':'bg-white text-slate border-navy/15 hover:border-navy/40'}">${lab}${k!=='all'?` <span class="opacity-60">${leads.filter(l=>l.status===k).length}</span>`:''}</button>`).join('');
+      const cats = [...new Set(leads.map(l=>l.g))].sort();
+      document.getElementById('catFilters').innerHTML =
+        [['all','Alle sectoren']].concat(cats.map(c=>[c,c])).map(([k,lab])=>`
+          <button data-c="${k}" class="chip px-3 py-1 rounded-full text-xs font-500 border ${k===fCat?'bg-sky text-white border-sky':'bg-white text-slate border-navy/10 hover:border-sky'}">${lab}${k!=='all'?` <span class="opacity-60">${leads.filter(l=>l.g===k).length}</span>`:''}</button>`).join('');
+      document.querySelectorAll('[data-s]').forEach(b=>b.onclick=()=>{fStatus=b.dataset.s;render();});
+      document.querySelectorAll('[data-c]').forEach(b=>b.onclick=()=>{fCat=b.dataset.c;render();});
+    }
+
+    function render(){
+      kpis(); chips();
+      let rows = leads.filter(l =>
+        (fStatus==='all'||l.status===fStatus) &&
+        (fCat==='all'||l.g===fCat) &&
+        (q===''|| (l.name+' '+l.cat+' '+l.area).toLowerCase().includes(q)));
+      rows.sort((a,b)=>{
+        if(sortK==='status') return STATUS_ORDER.indexOf(a.status)-STATUS_ORDER.indexOf(b.status) || a.name.localeCompare(b.name);
+        return (a[sortK]||'').localeCompare(b[sortK]||'');
+      });
+      document.getElementById('rows').innerHTML = rows.map(l=>`
+        <tr class="border-t border-navy/5">
+          <td class="px-4 py-2.5 font-600">${l.name}</td>
+          <td class="px-4 py-2.5 text-slate">${l.cat}</td>
+          <td class="px-4 py-2.5 text-slate">${l.area}</td>
+          <td class="px-4 py-2.5"><span class="inline-block px-2 py-0.5 rounded-md text-[11px] font-600 ${WEB[l.web]||'bg-slate-100 text-slate-600'}">${l.web}</span></td>
+          <td class="px-4 py-2.5"><span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-600 border ${(STATUS[l.status]||{}).c||''}">${l.status}</span></td>
+          <td class="px-4 py-2.5">${l.slug?`<a href="${BASE}${l.slug}/" target="_blank" rel="noopener" class="text-sky font-600 hover:underline whitespace-nowrap">Bekijk ↗</a>`:`<span class="text-slate/40 text-xs">—</span>`}</td>
+          <td class="px-4 py-2.5 text-slate whitespace-nowrap">${l.tel||'<span class="text-slate/40">—</span>'}</td>
+        </tr>`).join('');
+      document.getElementById('count').textContent = `${rows.length} van ${leads.length} leads · ${leads.filter(l=>l.slug).length} met live PoC`;
+    }
+
+    document.getElementById('search').addEventListener('input', e=>{q=e.target.value.toLowerCase().trim();render();});
+    document.querySelectorAll('th[data-k]').forEach(th=>th.onclick=()=>{sortK=th.dataset.k;render();});
+    render();
+  </script>
+</body>
+</html>
