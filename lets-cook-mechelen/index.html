@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Let's Cook Mechelen — kookgerei, messen &amp; slijpservice · kookboeken &amp; geschenken</title>
+  <meta name="description" content="Kookgerei, kwaliteitsmessen met slijpservice, kookboeken en culinaire geschenken in hartje Mechelen. Nu met online webshop, checkout, online aanvraag voor messen slijpen en kookworkshops met cadeaubonnen." />
+  <link rel="canonical" href="https://letscookmechelen.be/" />
+  <meta name="theme-color" content="#2e2a26" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Let's Cook Mechelen" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Let's Cook Mechelen — kookgerei, messen &amp; slijpservice" />
+  <meta property="og:description" content="Kwaliteitskookgerei, messen met slijpservice, kookboeken &amp; geschenken — nu met echte webshop, Bancontact-checkout, online slijpaanvraag en kookworkshops met cadeaubonnen." />
+  <meta property="og:url" content="https://letscookmechelen.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Inline SVG favicon — monogram "LC" -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232e2a26'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%23b06a3a' text-anchor='middle'%3ELC%3C/text%3E%3C/svg%3E" />
+  <!-- Local-SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Let's Cook Mechelen",
+    "description": "Kookgerei, kwaliteitsmessen met slijpservice, kookboeken en culinaire geschenken in Mechelen. Met online webshop, slijpaanvraag en kookworkshops met cadeaubonnen.",
+    "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://letscookmechelen.be/",
+    "telephone": "+3215680977",
+    "email": "letscook.mechelen@gmail.com",
+    "priceRange": "€€",
+    "areaServed": "BE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "IJzerenleen 19",
+      "postalCode": "2800",
+      "addressLocality": "Mechelen",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.0277, "longitude": 4.4795 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "10:00", "closes": "18:00" }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
+          colors: {
+            charcoal:   '#2e2a26',
+            charcoallt: '#403a33',
+            copper:     '#b06a3a',
+            copperlt:   '#c4824f',
+            cream:      '#f6f1e7',
+            sand:       '#ece2cf',
+            cocoa:      '#241f1a',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(46,42,38,.18) 0%, rgba(46,42,38,.52) 50%, rgba(46,42,38,.91) 100%); }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 2px; }
+  </style>
+</head>
+<body class="bg-cream text-charcoal font-sans antialiased selection:bg-copper/25">
+
+  <!-- Skip link -->
+  <a href="#webshop" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-charcoal focus:text-cream focus:rounded-full">Naar de webshop</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-charcoal text-cream text-center text-[13px] tracking-wide py-2 px-4">
+    <span aria-hidden="true">🔪</span> <span class="font-semibold">Nieuw:</span> online bestellen mét checkout &amp; online slijpaanvraag voor uw messen · IJzerenleen 19, Mechelen.
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-charcoal/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-charcoal">Let's Cook<span class="text-copper">·</span></span>
+        <span class="hidden sm:inline text-[11px] uppercase tracking-[0.22em] text-charcoal/50 font-600">Kookgerei · Mechelen</span>
+      </a>
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
+        <a href="#webshop" class="ug">Webshop</a>
+        <a href="#assortiment" class="ug">Assortiment</a>
+        <a href="#slijpservice" class="ug">Slijpservice</a>
+        <a href="#workshops" class="ug">Workshops</a>
+        <a href="#bezoek" class="ug">Bezoek ons</a>
+      </div>
+      <!-- CTA + hamburger -->
+      <div class="flex items-center gap-2">
+        <a href="#webshop" class="inline-flex items-center gap-2 bg-copper text-cream text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-copperlt transition">
+          Online bestellen
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-charcoal/15 text-charcoal hover:bg-charcoal/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-charcoal/10 bg-cream/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#webshop" class="py-3 border-b border-charcoal/8">Webshop</a>
+        <a href="#assortiment" class="py-3 border-b border-charcoal/8">Assortiment</a>
+        <a href="#slijpservice" class="py-3 border-b border-charcoal/8">Slijpservice</a>
+        <a href="#workshops" class="py-3 border-b border-charcoal/8">Workshops</a>
+        <a href="#bezoek" class="py-3">Bezoek ons</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-charcoal">
+    <img
+      src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=2000&q=80"
+      alt="Kwaliteitskookgerei en messen bij Let's Cook Mechelen"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-copperlt font-600 tracking-[0.3em] uppercase text-xs mb-5">
+        <span aria-hidden="true">🔪</span> Kookgerei · messen · slijpservice · kookboeken · Mechelen
+      </p>
+      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
+        Alles voor de keuken,<br />nu ook met één klik besteld.
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Kwaliteitskookgerei, scherpe messen met slijpservice, kookboeken en culinaire geschenken —
+        zorgvuldig gekozen in onze winkel op de IJzerenleen. Eindelijk te koop in een échte webshop.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#webshop" class="bg-copper text-cream font-700 px-7 py-3.5 rounded-full hover:bg-copperlt transition">
+          Bestel online
+        </a>
+        <a href="#slijpservice" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
+          Messen laten slijpen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP strip -->
+  <section class="bg-charcoal text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-copperlt">Kwaliteit</p><p class="mt-1 text-cream/65">Kookgerei dat een leven meegaat</p></div>
+      <div><p class="font-serif text-2xl text-copperlt">Vlijmscherp</p><p class="mt-1 text-cream/65">Messen mét eigen slijpservice</p></div>
+      <div><p class="font-serif text-2xl text-copperlt">Cadeauklaar</p><p class="mt-1 text-cream/65">Kookboeken &amp; culinaire geschenken</p></div>
+      <div><p class="font-serif text-2xl text-copperlt">Checkout</p><p class="mt-1 text-cream/65">Veilig betalen met Bancontact</p></div>
+    </div>
+  </section>
+
+  <!-- Webshop / online bestellen -->
+  <section id="webshop" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-copper font-600 tracking-[0.2em] uppercase text-xs mb-4">Nieuw: webshop met checkout</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-charcoal">
+          Eindelijk een winkel<br />waar u óók online kunt kopen.
+        </h2>
+        <p class="text-cocoa/75 text-lg mt-5 leading-relaxed max-w-md">
+          Vandaag is letscookmechelen.be een mooie brochuresite — informatief, maar zonder winkelmandje en zonder kassa.
+          Dit concept toont hoe Let's Cook mét een echte webshop werkt: kies uw kookgerei of messen, leg in het mandje en reken veilig af.
+        </p>
+        <ul class="mt-7 space-y-3 text-cocoa">
+          <li class="flex items-center gap-3"><span class="text-copper font-700">✓</span> Winkelmandje &amp; veilige checkout (Bancontact, Mollie)</li>
+          <li class="flex items-center gap-3"><span class="text-copper font-700">✓</span> Afhalen in de winkel óf verzending in heel België</li>
+          <li class="flex items-center gap-3"><span class="text-copper font-700">✓</span> Eigen domein-e-mail i.p.v. een Gmail-adres — professioneler &amp; betrouwbaarder</li>
+        </ul>
+        <a href="#assortiment" class="inline-flex items-center gap-2 mt-9 bg-charcoal text-cream font-600 px-7 py-3.5 rounded-full hover:bg-charcoallt transition">
+          Bekijk het assortiment
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand">
+          <img
+            src="https://images.unsplash.com/photo-1593618998160-e34014e67546?auto=format&fit=crop&w=800&q=80"
+            alt="Kwaliteitsmessen voor in de keuken"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand mt-8">
+          <img
+            src="https://images.unsplash.com/photo-1584990347449-a2d4c2c9b3d3?auto=format&fit=crop&w=800&q=80"
+            alt="Kookgerei en keukengerei"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assortiment grid -->
+  <section id="assortiment" class="bg-sand/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-copper font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-charcoal">Een huis vol kookplezier</h2>
+        </div>
+        <p class="text-cocoa/65 max-w-sm">Vijf categorieën, met zorg geselecteerd — straks allemaal te bestellen via de webshop.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Kookgerei -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-charcoal text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1584990347449-a2d4c2c9b3d3?auto=format&fit=crop&w=800&q=80"
+            alt="Kookgerei: pannen en potten"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Kookgerei</h3>
+            <p class="text-cream/75 text-sm mt-1">Pannen, potten en keukengerei dat een leven meegaat.</p>
+          </div>
+        </article>
+        <!-- Messen -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-charcoal text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1593618998160-e34014e67546?auto=format&fit=crop&w=800&q=80"
+            alt="Kwaliteitsmessen voor de keuken"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Messen</h3>
+            <p class="text-cream/75 text-sm mt-1">Kwaliteitsmessen — mét onze eigen slijpservice.</p>
+          </div>
+        </article>
+        <!-- Snijplanken & accessoires -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-charcoal text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&w=800&q=80"
+            alt="Snijplanken en keukenaccessoires"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Accessoires</h3>
+            <p class="text-cream/75 text-sm mt-1">Snijplanken, keukengerei en handige hulpmiddelen.</p>
+          </div>
+        </article>
+        <!-- Kookboeken -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-charcoal text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1589998059171-988d887df646?auto=format&fit=crop&w=800&q=80"
+            alt="Kookboeken en culinaire literatuur"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Kookboeken</h3>
+            <p class="text-cream/75 text-sm mt-1">Inspiratie van klassiek tot hedendaags, voor elk niveau.</p>
+          </div>
+        </article>
+        <!-- Geschenken -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-charcoal text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80"
+            alt="Culinaire geschenken en cadeaubonnen"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Geschenken</h3>
+            <p class="text-cream/75 text-sm mt-1">Culinaire cadeaus &amp; cadeaubonnen om weg te geven.</p>
+          </div>
+        </article>
+        <!-- Workshops (teaser) -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-copper text-cream relative aspect-[4/5] flex items-center justify-center">
+          <div class="p-6 text-center">
+            <p class="font-serif text-3xl font-600">Kookworkshops</p>
+            <p class="text-cream/85 text-sm mt-2">Boek een plek online of geef een workshop cadeau.</p>
+            <a href="#workshops" class="inline-block mt-4 text-cream font-600 ug">Naar de workshops →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products (illustratief) -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="flex items-end justify-between mb-10">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-charcoal">Een greep uit het assortiment</h2>
+      <a href="#webshop" class="hidden sm:inline text-copper font-600 ug">Alles bestellen →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Product 1 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
+          <img
+            src="https://images.unsplash.com/photo-1593618998160-e34014e67546?auto=format&fit=crop&w=700&q=80"
+            alt="Koksmes (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-copper font-600 uppercase tracking-wider">Vlijmscherp</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-charcoal">Koksmes</h3>
+          <p class="text-cocoa/60 text-sm mt-1">Een betrouwbaar allround mes — inclusief gratis slijpbeurt.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-cocoa/50 text-sm font-500">Prijs in de webshop</span>
+            <button class="bg-charcoal text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-charcoallt transition">In mandje</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
+          <img
+            src="https://images.unsplash.com/photo-1584990347449-a2d4c2c9b3d3?auto=format&fit=crop&w=700&q=80"
+            alt="Kookpan (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-copper font-600 uppercase tracking-wider">Kwaliteit</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-charcoal">Kookpan</h3>
+          <p class="text-cocoa/60 text-sm mt-1">Stevig kookgerei dat jaren meegaat in elke keuken.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-cocoa/50 text-sm font-500">Prijs in de webshop</span>
+            <button class="bg-charcoal text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-charcoallt transition">In mandje</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
+          <img
+            src="https://images.unsplash.com/photo-1589998059171-988d887df646?auto=format&fit=crop&w=700&q=80"
+            alt="Kookboek (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-copper font-600 uppercase tracking-wider">Inspiratie</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-charcoal">Kookboek</h3>
+          <p class="text-cocoa/60 text-sm mt-1">Een mooi kookboek — ideaal als cadeau, met cadeaubon.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-cocoa/50 text-sm font-500">Prijs in de webshop</span>
+            <button class="bg-charcoal text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-charcoallt transition">In mandje</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs text-cocoa/40 mt-6">Voorbeeldproducten ter illustratie van de webshop met winkelmandje &amp; checkout. Prijzen worden samen met u bepaald.</p>
+  </section>
+
+  <!-- Slijpservice (differentiator) -->
+  <section id="slijpservice" class="bg-charcoal text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img
+          src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=1000&q=80"
+          alt="Een mes wordt geslepen tot het weer vlijmscherp is"
+          loading="lazy" decoding="async"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="order-1 lg:order-2 fade-up">
+        <p class="text-copperlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Slijpservice — nu online aan te vragen</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
+          Botte messen?<br />Vraag uw slijpbeurt online aan.
+        </h2>
+        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
+          Wij slijpen uw messen weer vlijmscherp — een vakmanschap waar Let's Cook om bekend staat.
+          In dit concept vraagt u de slijpbeurt gewoon online aan: vul uw gegevens in, kies een datum en breng
+          uw messen langs of stuur ze op. Geen telefoongesprek nodig.
+        </p>
+        <ul class="mt-6 space-y-3 text-cream/85">
+          <li class="flex items-center gap-3"><span class="text-copper font-700">✓</span> Online aanvraagformulier — kies datum &amp; aantal messen</li>
+          <li class="flex items-center gap-3"><span class="text-copper font-700">✓</span> Afgeven in de winkel of opsturen, naar wens</li>
+          <li class="flex items-center gap-3"><span class="text-copper font-700">✓</span> Bevestiging per e-mail zodra uw messen klaar zijn</li>
+        </ul>
+        <a href="#bezoek" class="inline-flex items-center gap-2 mt-8 bg-copper text-cream font-700 px-7 py-3.5 rounded-full hover:bg-copperlt transition">
+          Slijpbeurt aanvragen
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workshops & cadeaubonnen -->
+  <section id="workshops" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-copper font-600 tracking-[0.2em] uppercase text-xs mb-4">Kookworkshops &amp; cadeaubonnen</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-charcoal">
+          Leer koken, of<br />geef het cadeau.
+        </h2>
+        <p class="text-cocoa/75 text-lg mt-6 leading-relaxed max-w-md">
+          Een kookworkshop is een mooi geschenk en een fijne avond uit. In dit concept boekt u een plek
+          rechtstreeks online — en koopt u in twee klikken een cadeaubon die de ontvanger zelf inwisselt.
+          Geen wachtlijst per telefoon meer.
+        </p>
+        <ul class="mt-6 space-y-3 text-cocoa">
+          <li class="flex items-center gap-3"><span class="text-copper font-700">✓</span> Workshops online boeken — bekijk data &amp; beschikbaarheid</li>
+          <li class="flex items-center gap-3"><span class="text-copper font-700">✓</span> Digitale cadeaubonnen, meteen per e-mail te versturen</li>
+          <li class="flex items-center gap-3"><span class="text-copper font-700">✓</span> Ideaal voor verjaardagen, bedankjes of teamuitjes</li>
+        </ul>
+        <a href="#bezoek" class="inline-flex items-center gap-2 mt-8 bg-charcoal text-cream font-600 px-7 py-3.5 rounded-full hover:bg-charcoallt transition">
+          Workshop of cadeaubon
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
+        <img
+          src="https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?auto=format&fit=crop&w=1000&q=80"
+          alt="Kookworkshop met deelnemers aan het werk in de keuken"
+          loading="lazy" decoding="async"
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Story / Ons verhaal -->
+  <section class="bg-sand/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-16 items-center">
+      <div class="fade-up">
+        <p class="text-copper font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-charcoal">Een kookwinkel<br />op de IJzerenleen.</h2>
+        <p class="text-cocoa/70 text-lg mt-6 leading-relaxed">
+          Let's Cook is dé kookwinkel op de IJzerenleen 19, in hartje Mechelen. Bij ons draait alles om de keuken:
+          degelijk kookgerei, vlijmscherpe messen met eigen slijpservice, inspirerende kookboeken en culinaire geschenken.
+        </p>
+        <p class="text-cocoa/70 text-lg mt-4 leading-relaxed">
+          Vandaag vertelt onze website netjes wie we zijn — maar online bestellen, een slijpbeurt aanvragen of een
+          workshop boeken kan nog niet. Met een echte webshop, een online slijpaanvraag, online workshops met cadeaubonnen
+          én een eigen domein-e-mail brengen we Let's Cook nu ook tot bij u thuis.
+        </p>
+        <div class="mt-9 flex flex-wrap gap-6">
+          <div class="text-center">
+            <p class="font-serif text-4xl text-copper font-700">5</p>
+            <p class="text-cocoa/65 text-sm mt-1">Categorieën voor de keuken</p>
+          </div>
+          <div class="text-center">
+            <p class="font-serif text-4xl text-copper font-700">✓</p>
+            <p class="text-cocoa/65 text-sm mt-1">Eigen messen-slijpservice</p>
+          </div>
+          <div class="text-center">
+            <p class="font-serif text-4xl text-copper font-700">Mechelen</p>
+            <p class="text-cocoa/65 text-sm mt-1">IJzerenleen 19</p>
+          </div>
+        </div>
+      </div>
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
+        <img
+          src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?auto=format&fit=crop&w=1000&q=80"
+          alt="Interieur van een kookwinkel met kookgerei en messen"
+          loading="lazy" decoding="async"
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Bezoek + kaart -->
+  <section id="bezoek" class="py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+      <div class="fade-up">
+        <p class="text-copper font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-charcoal">Welkom in de winkel</h2>
+        <p class="text-cocoa/70 text-lg mt-5 max-w-md">
+          Kom kiezen en proeven van het kookplezier op IJzerenleen 19 in Mechelen, op wandelafstand van de Grote Markt.
+        </p>
+        <dl class="mt-9 space-y-5 text-cocoa">
+          <div class="flex gap-4">
+            <span class="text-copper mt-0.5 text-xl" aria-hidden="true">📍</span>
+            <div>
+              <dt class="font-600 text-charcoal">Adres</dt>
+              <dd class="text-cocoa/70">IJzerenleen 19, 2800 Mechelen</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-copper mt-0.5 text-xl" aria-hidden="true">🕑</span>
+            <div>
+              <dt class="font-600 text-charcoal">Openingsuren</dt>
+              <dd class="text-cocoa/70">Di–Za: 10:00–18:00 · Zo &amp; Ma: gesloten</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-copper mt-0.5 text-xl" aria-hidden="true">📞</span>
+            <div>
+              <dt class="font-600 text-charcoal">Telefoon</dt>
+              <dd class="text-cocoa/70"><a href="tel:+3215680977" class="ug">015 68 09 77</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-copper mt-0.5 text-xl" aria-hidden="true">✉️</span>
+            <div>
+              <dt class="font-600 text-charcoal">E-mail</dt>
+              <dd class="text-cocoa/70"><a href="mailto:letscook.mechelen@gmail.com" class="ug">letscook.mechelen@gmail.com</a><br /><span class="text-xs text-cocoa/50">In de nieuwe opzet: een eigen adres zoals info@letscookmechelen.be</span></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-copper mt-0.5 text-xl" aria-hidden="true">💳</span>
+            <div>
+              <dt class="font-600 text-charcoal">Betaalmogelijkheden</dt>
+              <dd class="text-cocoa/70">Cash · Bancontact · in de winkel én online (Mollie)</dd>
+            </div>
+          </div>
+        </dl>
+        <a href="#webshop" class="inline-block mt-9 bg-charcoal text-cream font-600 px-7 py-3.5 rounded-full hover:bg-charcoallt transition">
+          Of bestel online →
+        </a>
+      </div>
+      <!-- OpenStreetMap embed — IJzerenleen 19, 2800 Mechelen (~51.0277, 4.4795) -->
+      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-sand shadow-sm">
+        <iframe
+          title="Kaart Let's Cook Mechelen — IJzerenleen 19, 2800 Mechelen"
+          class="w-full h-full min-h-[360px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.471%2C51.023%2C4.488%2C51.033&layer=mapnik&marker=51.0277%2C4.4795"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- GDPR Newsletter -->
+  <section class="bg-copper/15">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-charcoal">Blijf op de hoogte</h2>
+      <p class="text-cocoa/70 mt-3">Nieuw kookgerei, kookworkshops en slijpacties — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input
+          id="nl-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          placeholder="jouw@email.be"
+          class="flex-1 px-5 py-3 rounded-full border border-charcoal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-copper"
+        />
+        <button class="bg-charcoal text-cream font-600 px-7 py-3 rounded-full hover:bg-charcoallt transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-cocoa/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal text-cream/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-cream font-700">Let's Cook<span class="text-copper">·</span></p>
+        <p class="text-cream/55 text-sm mt-1">Kookgerei · Mechelen</p>
+        <p class="text-cream/55 text-sm mt-3 max-w-xs">Kookgerei, messen met slijpservice, kookboeken &amp; culinaire geschenken in hartje Mechelen.</p>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Winkel</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#assortiment" class="hover:text-copperlt">Assortiment</a></li>
+          <li><a href="#webshop" class="hover:text-copperlt">Webshop</a></li>
+          <li><a href="#slijpservice" class="hover:text-copperlt">Slijpservice</a></li>
+          <li><a href="#workshops" class="hover:text-copperlt">Workshops</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Info</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#bezoek" class="hover:text-copperlt">Openingsuren</a></li>
+          <li><a href="#bezoek" class="hover:text-copperlt">Contact</a></li>
+          <li><a href="#top" class="hover:text-copperlt">Ons verhaal</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Contact</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li>IJzerenleen 19</li>
+          <li>2800 Mechelen</li>
+          <li><a href="tel:+3215680977" class="hover:text-copperlt">015 68 09 77</a></li>
+          <li><a href="mailto:letscook.mechelen@gmail.com" class="hover:text-copperlt">letscook.mechelen@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40">
+        <p>© 2026 Let's Cook Mechelen. Concept-redesign.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; webshop.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Fade-up IntersectionObserver
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>
