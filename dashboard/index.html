@@ -31,6 +31,7 @@
         <p class="text-sky font-600 tracking-[0.25em] uppercase text-xs">Saspire · lead-pipeline</p>
         <h1 class="font-serif text-3xl sm:text-5xl font-600 mt-2">Antwerp Leads — Dashboard</h1>
         <p class="text-slate mt-2 text-sm">Lokale handelaars &amp; dienstverleners met een verouderde of ontbrekende website. Klik een lead om de live proof-of-concept te bekijken.</p>
+        <p id="updated" class="text-slate/60 mt-1 text-xs"></p>
       </div>
       <a href="../" class="inline-flex items-center gap-2 bg-navy text-cream text-sm font-600 px-5 py-2.5 rounded-full hover:bg-slate transition">← Portfolio van PoC's</a>
     </div>
@@ -38,13 +39,15 @@
 
   <main class="max-w-7xl mx-auto px-5 sm:px-8 pb-20">
     <!-- KPI cards -->
-    <div id="kpis" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-6"></div>
+    <div id="kpis" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-4"></div>
+    <div id="pipeval" class="mb-6"></div>
 
     <!-- Controls -->
     <div class="bg-white rounded-2xl border border-navy/10 p-4 mb-5">
       <div class="flex flex-wrap items-center gap-3">
         <input id="search" type="search" placeholder="Zoek op naam, sector of gemeente…" class="flex-1 min-w-[220px] px-4 py-2.5 rounded-xl border border-navy/15 focus:outline-none focus:ring-2 focus:ring-sky text-sm" />
         <div id="statusFilters" class="flex flex-wrap gap-2"></div>
+        <button id="csv" class="px-4 py-2.5 rounded-xl bg-sky text-white text-sm font-600 hover:bg-navy transition whitespace-nowrap">⬇ CSV export</button>
       </div>
       <div id="catFilters" class="flex flex-wrap gap-2 mt-3 pt-3 border-t border-navy/10"></div>
     </div>
@@ -60,6 +63,8 @@
               <th class="px-4 py-3" data-k="area">Gemeente</th>
               <th class="px-4 py-3" data-k="web">Web</th>
               <th class="px-4 py-3" data-k="status">Status</th>
+              <th class="px-4 py-3" data-k="est">€ richtprijs</th>
+              <th class="px-4 py-3" data-k="act">Volgende actie</th>
               <th class="px-4 py-3">PoC</th>
               <th class="px-4 py-3" data-k="tel">Tel</th>
             </tr>
@@ -211,7 +216,12 @@ The Pilates Studio Berchem|Pilates/fitness|Berchem|PoC built|Outdated site|pilat
     }
     leads.forEach(l => l.g = group(l.cat));
 
-    let fStatus = 'all', fCat = 'all', q = '', sortK = 'status';
+    // € richtprijs per lead (eenmalig, marktconform — Online Basis €1.250 / Webshop €2.950)
+    const EST = { 'Outdated site':2950, 'Facebook-only':2950, 'Phone-only':1250, 'No website':1250 };
+    const ACT = { 'New':'Onderzoeken / contacteren', 'PoC built':'Stuur pitch + PoC-link', 'Proposal ready':'Voorstel versturen', 'Contacted':'Opvolgen', 'Lost':'—', 'Disqualified':'—' };
+    leads.forEach(l => { l.est = EST[l.web] || 1250; l.dead = (l.status==='Lost'||l.status==='Disqualified'); });
+
+    let fStatus = 'all', fCat = 'all', q = '', sortK = 'status', current = [];
 
     function kpis(){
       const by = s => leads.filter(l=>l.status===s).length;
@@ -253,6 +263,7 @@ The Pilates Studio Berchem|Pilates/fitness|Berchem|PoC built|Outdated site|pilat
         if(sortK==='status') return STATUS_ORDER.indexOf(a.status)-STATUS_ORDER.indexOf(b.status) || a.name.localeCompare(b.name);
         return (a[sortK]||'').localeCompare(b[sortK]||'');
       });
+      current = rows;
       document.getElementById('rows').innerHTML = rows.map(l=>`
         <tr class="border-t border-navy/5">
           <td class="px-4 py-2.5 font-600">${l.name}</td>
@@ -260,14 +271,45 @@ The Pilates Studio Berchem|Pilates/fitness|Berchem|PoC built|Outdated site|pilat
           <td class="px-4 py-2.5 text-slate">${l.area}</td>
           <td class="px-4 py-2.5"><span class="inline-block px-2 py-0.5 rounded-md text-[11px] font-600 ${WEB[l.web]||'bg-slate-100 text-slate-600'}">${l.web}</span></td>
           <td class="px-4 py-2.5"><span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-600 border ${(STATUS[l.status]||{}).c||''}">${l.status}</span></td>
+          <td class="px-4 py-2.5 whitespace-nowrap ${l.dead?'text-slate/40':'text-navy font-600'}">${l.dead?'—':'€ '+l.est.toLocaleString('nl-BE')}</td>
+          <td class="px-4 py-2.5 text-slate text-xs">${ACT[l.status]||''}</td>
           <td class="px-4 py-2.5">${l.slug?`<a href="${BASE}${l.slug}/" target="_blank" rel="noopener" class="text-sky font-600 hover:underline whitespace-nowrap">Bekijk ↗</a>`:`<span class="text-slate/40 text-xs">—</span>`}</td>
           <td class="px-4 py-2.5 text-slate whitespace-nowrap">${l.tel||'<span class="text-slate/40">—</span>'}</td>
         </tr>`).join('');
+      // pipeline value (excl. Lost/Disqualified)
+      const fmt = n => '€ ' + n.toLocaleString('nl-BE');
+      const valAll = leads.filter(l=>!l.dead).reduce((s,l)=>s+l.est,0);
+      const valShown = rows.filter(l=>!l.dead).reduce((s,l)=>s+l.est,0);
+      const built = leads.filter(l=>l.status==='PoC built');
+      const valBuilt = built.reduce((s,l)=>s+l.est,0);
+      document.getElementById('pipeval').innerHTML = `
+        <div class="bg-navy text-cream rounded-2xl p-5 flex flex-wrap items-center gap-x-10 gap-y-3">
+          <div><p class="text-2xl font-serif font-600 text-white">${fmt(valAll)}</p><p class="text-xs text-cream/60">geschatte pijplijnwaarde (eenmalig, actieve leads)</p></div>
+          <div><p class="text-2xl font-serif font-600 text-sky-300">${fmt(valBuilt)}</p><p class="text-xs text-cream/60">waarde met PoC al gebouwd (${built.length})</p></div>
+          <div><p class="text-2xl font-serif font-600 text-cream/90">${fmt(valShown)}</p><p class="text-xs text-cream/60">waarde van huidige selectie</p></div>
+          <p class="text-[11px] text-cream/40 ml-auto max-w-[280px]">Richtprijzen excl. btw · Online Basis €1.250 / Webshop €2.950. Exclusief maandelijks Zorgplan (€35–99).</p>
+        </div>`;
       document.getElementById('count').textContent = `${rows.length} van ${leads.length} leads · ${leads.filter(l=>l.slug).length} met live PoC`;
     }
 
     document.getElementById('search').addEventListener('input', e=>{q=e.target.value.toLowerCase().trim();render();});
     document.querySelectorAll('th[data-k]').forEach(th=>th.onclick=()=>{sortK=th.dataset.k;render();});
+
+    // CSV export of the current (filtered) selection
+    document.getElementById('csv').onclick = () => {
+      const head = ['Business','Sector','Gemeente','Web','Status','Richtprijs(EUR)','Volgende actie','Telefoon','PoC URL'];
+      const esc = v => '"' + String(v==null?'':v).replace(/"/g,'""') + '"';
+      const lines = [head.map(esc).join(',')].concat(current.map(l => [
+        l.name, l.cat, l.area, l.web, l.status, (l.dead?'':l.est), (ACT[l.status]||''), l.tel||'', (l.slug?BASE+l.slug+'/':'')
+      ].map(esc).join(',')));
+      const blob = new Blob(['﻿'+lines.join('\r\n')], { type:'text/csv;charset=utf-8' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'antwerp-leads-pipeline.csv';
+      a.click(); URL.revokeObjectURL(a.href);
+    };
+
+    document.getElementById('updated').textContent = 'Snapshot van de Airtable-pijplijn · 16 jun 2026 · ververst bij elke deploy.';
     render();
   </script>
 </body>
