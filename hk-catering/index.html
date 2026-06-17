@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HK Catering-Traiteur — Traiteur, feestverzorging &amp; maaltijdbezorging in Hoboken</title>
+  <meta name="description" content="HK Catering-Traiteur in Hoboken: ambachtelijke traiteur, feestverzorging en maaltijdbezorging aan huis. Nu met online offerte- &amp; cateringaanvraag (datum, aantal, wensen), menukaart en buffetten op maat." />
+  <link rel="canonical" href="https://hkcatering.be/" />
+  <meta name="theme-color" content="#6b1f2a" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="HK Catering-Traiteur" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="HK Catering-Traiteur — Traiteur, feestverzorging &amp; maaltijdbezorging in Hoboken" />
+  <meta property="og:description" content="Ambachtelijke traiteur, feestverzorging en maaltijdbezorging in Hoboken. Online offerte- &amp; cateringaanvraag, menukaart en buffetten op maat." />
+  <meta property="og:url" content="https://hkcatering.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Inline SVG favicon — monogram "HK" -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%236b1f2a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%23caa46a' text-anchor='middle'%3EHK%3C/text%3E%3C/svg%3E" />
+  <!-- Local-SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store", "FoodEstablishment"],
+    "name": "HK Catering-Traiteur",
+    "description": "Ambachtelijke traiteur-, feestverzorgings- en maaltijdbezorgingszaak in Hoboken. Buffetten, feestschotels en dagverse maaltijden aan huis.",
+    "image": "https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://hkcatering.be/",
+    "telephone": "+32496874367",
+    "email": "hkcatering24@gmail.com",
+    "servesCuisine": ["Belgian", "Catering"],
+    "priceRange": "€€",
+    "areaServed": "BE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "P. van den Eedenstraat",
+      "postalCode": "2660",
+      "addressLocality": "Hoboken",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.1736, "longitude": 4.3489 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "09:00", "closes": "13:00" }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
+          colors: {
+            wine:     '#6b1f2a',
+            winelt:   '#7a2230',
+            winedk:   '#511620',
+            gold:     '#caa46a',
+            goldlt:   '#e0c592',
+            cream:    '#f6efe4',
+            parchment:'#ece0cc',
+            charcoal: '#2b2422',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(81,22,32,.18) 0%, rgba(81,22,32,.52) 50%, rgba(81,22,32,.92) 100%); }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 2px; }
+  </style>
+</head>
+<body class="bg-cream text-wine font-sans antialiased selection:bg-gold/25">
+
+  <!-- Skip link -->
+  <a href="#aanvraag" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-wine focus:text-cream focus:rounded-full">Naar online aanvraag</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-wine text-cream text-center text-[13px] tracking-wide py-2 px-4">
+    <span aria-hidden="true">🍽️</span> <span class="font-semibold">Nieuw:</span> online offerte- &amp; cateringaanvraag — plus maaltijdbezorging aan huis · P. van den Eedenstraat, Hoboken.
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-wine/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-wine">HK Catering<span class="text-gold">·</span></span>
+        <span class="text-[11px] uppercase tracking-[0.22em] text-wine/50 font-600">Traiteur · Hoboken</span>
+      </a>
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
+        <a href="#aanvraag" class="ug">Offerte aanvragen</a>
+        <a href="#menukaart" class="ug">Menukaart</a>
+        <a href="#feesten" class="ug">Feestverzorging</a>
+        <a href="#bezoek" class="ug">Contact</a>
+      </div>
+      <!-- CTA + hamburger -->
+      <div class="flex items-center gap-2">
+        <a href="#aanvraag" class="inline-flex items-center gap-2 bg-gold text-winedk text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-goldlt transition">
+          Vraag offerte
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-wine/15 text-wine hover:bg-wine/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-wine/10 bg-cream/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#aanvraag" class="py-3 border-b border-wine/8">Offerte aanvragen</a>
+        <a href="#menukaart" class="py-3 border-b border-wine/8">Menukaart</a>
+        <a href="#feesten" class="py-3 border-b border-wine/8">Feestverzorging</a>
+        <a href="#bezoek" class="py-3">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-wine">
+    <img
+      src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=2000&q=80"
+      alt="Ambachtelijke catering en buffet bij HK Catering-Traiteur Hoboken"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-goldlt font-600 tracking-[0.3em] uppercase text-xs mb-5">
+        <span aria-hidden="true">🍽️</span> Traiteur · Feestverzorging · Maaltijdbezorging · Hoboken
+      </p>
+      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
+        Catering &amp; feestverzorging,<br />nu online aan te vragen.
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Buffetten, feestschotels en dagverse maaltijden aan huis —
+        ambachtelijk verzorgd vanuit Hoboken. Vraag online uw offerte aan,
+        bekijk de menukaart of laat een feest volledig verzorgen.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#aanvraag" class="bg-gold text-winedk font-700 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
+          Vraag uw offerte aan
+        </a>
+        <a href="#feesten" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
+          Feest laten verzorgen
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP strip -->
+  <section class="bg-wine text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-goldlt">Ambacht</p><p class="mt-1 text-cream/65">Dagvers in eigen keuken bereid</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Feesten</p><p class="mt-1 text-cream/65">Buffetten &amp; volledige feestverzorging</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Aan huis</p><p class="mt-1 text-cream/65">Maaltijdbezorging in de regio</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Offerte</p><p class="mt-1 text-cream/65">Online aanvragen &amp; voorstel op maat</p></div>
+    </div>
+  </section>
+
+  <!-- Online offerte / maaltijdbezorging -->
+  <section id="bestellen" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Nieuw: online aanvragen</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-wine">
+          Vraag online aan,<br />wij verzorgen de rest.
+        </h2>
+        <p class="text-charcoal/75 text-lg mt-5 leading-relaxed max-w-md">
+          Geen heen-en-weer gebel meer. Stel uw aanvraag samen — buffet, feestschotels,
+          of maaltijden aan huis — geef datum, aantal en wensen door en u krijgt een
+          voorstel op maat in uw mailbox.
+        </p>
+        <ul class="mt-7 space-y-3 text-charcoal">
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Aanvraag dagvers bereid en geleverd of afgehaald</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Buffetten &amp; feestschotels op voorbestelling</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Maaltijdbezorging aan huis in de regio</li>
+        </ul>
+        <a href="#feesten" class="inline-flex items-center gap-2 mt-9 bg-wine text-cream font-600 px-7 py-3.5 rounded-full hover:bg-winelt transition">
+          Of laat uw feest volledig verzorgen
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80"
+            alt="Verzorgd buffet met feestschotels"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment mt-8">
+          <img
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
+            alt="Dagverse bereide maaltijden"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menukaart grid -->
+  <section id="menukaart" class="bg-parchment/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-3">Onze menukaart</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-wine">Buffetten, schotels &amp; maaltijden</h2>
+        </div>
+        <p class="text-charcoal/65 max-w-sm">Van koud en warm buffet tot feestschotels en dagverse maaltijden aan huis — alles ambachtelijk in eigen keuken bereid.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Koud buffet -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=800&q=80"
+            alt="Koud buffet met fijne vleeswaren"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Koud buffet</h3>
+            <p class="text-cream/75 text-sm mt-1">Fijne vleeswaren, vis, salades &amp; garnituur — mooi geschikt op schotel.</p>
+          </div>
+        </article>
+        <!-- Warm buffet -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
+            alt="Warm buffet met bereide gerechten"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Warm buffet</h3>
+            <p class="text-cream/75 text-sm mt-1">Warme gerechten, stoofpotjes &amp; bijgerechten — klaar om op te dienen.</p>
+          </div>
+        </article>
+        <!-- Feestschotels -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80"
+            alt="Feestschotels en gourmet"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Feestschotels</h3>
+            <p class="text-cream/75 text-sm mt-1">Gourmet, fondue &amp; vlees-/visschotels — op voorbestelling voor uw feest.</p>
+          </div>
+        </article>
+        <!-- Aperitief & hapjes -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1541529086526-db283c563270?auto=format&fit=crop&w=800&q=80"
+            alt="Aperitiefhapjes en tapas"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Aperitief &amp; hapjes</h3>
+            <p class="text-cream/75 text-sm mt-1">Huisbereide hapjes, tapas &amp; aperitiefschotels voor elke gelegenheid.</p>
+          </div>
+        </article>
+        <!-- Maaltijden aan huis -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80"
+            alt="Dagverse maaltijden aan huis bezorgd"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Maaltijden aan huis</h3>
+            <p class="text-cream/75 text-sm mt-1">Dagverse maaltijden, bezorgd aan huis in de regio — handig &amp; smaakvol.</p>
+          </div>
+        </article>
+        <!-- Offerte CTA card -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-gold text-winedk relative aspect-[4/5] flex items-center justify-center text-center p-6">
+          <div>
+            <p class="font-serif text-2xl font-600">Offerte op&shy;maat</p>
+            <p class="text-winedk/80 text-sm mt-2">Geef datum, aantal en wensen door — wij stellen een voorstel op maat samen.</p>
+            <a href="#aanvraag" class="inline-block mt-5 text-winedk font-700 ug">Vraag een offerte aan →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured menu items (illustratief) -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="flex items-end justify-between mb-10">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-wine">Veelgevraagd uit onze keuken</h2>
+      <a href="#aanvraag" class="hidden sm:inline text-gold font-600 ug">Alles aanvragen →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Item 1 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=80"
+            alt="Koud buffet (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Op voorbestelling</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-wine">Koud feestbuffet</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Ruime selectie vleeswaren, vis en salades, mooi geschikt.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-wine text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-winelt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Item 2 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80"
+            alt="Warm gerecht (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Klassieker</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-wine">Warm buffetgerecht</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Wisselend warm gerecht met bijgerechten, klaar om op te dienen.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-wine text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-winelt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Item 3 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=700&q=80"
+            alt="Maaltijd aan huis (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Maaltijdbezorging</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-wine">Maaltijd aan huis</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Dagverse maaltijd, bezorgd tot bij u thuis in de regio.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-wine text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-winelt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs text-charcoal/40 mt-6">Voorbeelden ter illustratie van de toekomstige online menukaart &amp; aanvraagmodule — geen actuele prijzen.</p>
+  </section>
+
+  <!-- Feestverzorging / cateringaanvraag (the differentiator) -->
+  <section id="feesten" class="bg-wine text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img
+          src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1000&q=80"
+          alt="Feestverzorging met buffet en gedekte tafels"
+          loading="lazy" decoding="async"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div id="aanvraag" class="order-1 lg:order-2 fade-up">
+        <p class="text-goldlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Feestverzorging &amp; offerte</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
+          Een feest?<br />Wij verzorgen alles.
+        </h2>
+        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
+          Verjaardag, communie, bedrijfsevent of familiefeest? Stel hieronder uw aanvraag samen —
+          datum, aantal personen en wensen — en wij sturen u een voorstel op maat.
+          Vrijblijvend en zonder verplichtingen.
+        </p>
+
+        <!-- Concept-formulier: offerte-/cateringaanvraag -->
+        <form class="mt-8 bg-cream/5 border border-cream/15 rounded-2xl p-5 sm:p-6 space-y-4" onsubmit="return false">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="t-naam" class="block text-sm font-600 text-cream/90 mb-1">Naam</label>
+              <input id="t-naam" name="naam" type="text" autocomplete="name" placeholder="Uw naam"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
+            </div>
+            <div>
+              <label for="t-tel" class="block text-sm font-600 text-cream/90 mb-1">Telefoon</label>
+              <input id="t-tel" name="telefoon" type="tel" autocomplete="tel" placeholder="0496 ..."
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="t-datum" class="block text-sm font-600 text-cream/90 mb-1">Gewenste datum</label>
+              <input id="t-datum" name="datum" type="date"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
+            </div>
+            <div>
+              <label for="t-personen" class="block text-sm font-600 text-cream/90 mb-1">Aantal personen</label>
+              <input id="t-personen" name="personen" type="number" min="1" placeholder="bv. 25"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
+            </div>
+          </div>
+          <div>
+            <label for="t-type" class="block text-sm font-600 text-cream/90 mb-1">Type</label>
+            <select id="t-type" name="type"
+              class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold">
+              <option>Koud buffet</option>
+              <option>Warm buffet</option>
+              <option>Feestschotels</option>
+              <option>Aperitief &amp; hapjes</option>
+              <option>Maaltijdbezorging aan huis</option>
+              <option>Iets anders</option>
+            </select>
+          </div>
+          <div>
+            <label for="t-wensen" class="block text-sm font-600 text-cream/90 mb-1">Wensen / opmerkingen</label>
+            <textarea id="t-wensen" name="wensen" rows="3" placeholder="Allergieën, budget, thema, afhalen of bezorgen ..."
+              class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold"></textarea>
+          </div>
+          <label class="flex items-start gap-3 text-xs text-cream/70">
+            <input type="checkbox" required class="mt-0.5 accent-gold" />
+            <span>Ik ga akkoord dat mijn gegevens enkel worden gebruikt om mijn aanvraag te beantwoorden (GDPR).</span>
+          </label>
+          <button class="w-full bg-gold text-winedk font-700 px-7 py-3 rounded-full hover:bg-goldlt transition">
+            Verstuur mijn aanvraag
+          </button>
+          <p class="text-[11px] text-cream/50 text-center">Concept-formulier — in de live versie komt uw aanvraag gestructureerd per e-mail bij HK Catering terecht.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ons verhaal -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="fade-up">
+      <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-wine">Vakmanschap uit<br />Hoboken.</h2>
+      <p class="text-charcoal/70 text-lg mt-6 leading-relaxed">
+        HK Catering-Traiteur staat voor ambachtelijke catering en feestverzorging vanuit Hoboken.
+        Wat ons onderscheidt? Dagverse bereiding in eigen keuken, buffetten en feestschotels op maat,
+        en de persoonlijke aanpak van een echte traiteur uit de buurt.
+      </p>
+      <p class="text-charcoal/70 text-lg mt-4 leading-relaxed">
+        Of u nu een buffet wenst voor uw feest, feestschotels om af te halen
+        of dagverse maaltijden aan huis — bij HK Catering vindt u kwaliteit en advies op maat.
+        Vanaf nu kan dat ook online: offertes en cateringaanvragen regelt u vanuit uw zetel.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-6">
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">100%</p>
+          <p class="text-charcoal/65 text-sm mt-1">Ambachtelijk</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">Dagvers</p>
+          <p class="text-charcoal/65 text-sm mt-1">In eigen keuken bereid</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">Hoboken</p>
+          <p class="text-charcoal/65 text-sm mt-1">P. van den Eedenstraat</p>
+        </div>
+      </div>
+    </div>
+    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
+      <img
+        src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1000&q=80"
+        alt="Ambachtelijke bereiding in de cateringkeuken"
+        loading="lazy" decoding="async"
+        class="w-full h-full object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Bezoek + kaart -->
+  <section id="bezoek" class="bg-parchment/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+      <div class="fade-up">
+        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Contact</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-wine">Neem contact op</h2>
+        <p class="text-charcoal/70 text-lg mt-5 max-w-md">
+          Vragen over een buffet, feest of maaltijdbezorging? Bel, mail of vraag online uw offerte aan.
+          U vindt ons in de P. van den Eedenstraat in Hoboken.
+        </p>
+        <dl class="mt-9 space-y-5 text-charcoal">
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📍</span>
+            <div>
+              <dt class="font-600 text-wine">Adres</dt>
+              <dd class="text-charcoal/70">P. van den Eedenstraat, 2660 Hoboken</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🕑</span>
+            <div>
+              <dt class="font-600 text-wine">Openingsuren</dt>
+              <dd class="text-charcoal/70">Di–Za: 09:00–18:00 · Zo: 09:00–13:00 · Ma: gesloten</dd>
+              <dd class="text-charcoal/40 text-sm mt-1">(indicatief — graag te bevestigen)</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📞</span>
+            <div>
+              <dt class="font-600 text-wine">Telefoon</dt>
+              <dd class="text-charcoal/70"><a href="tel:+32496874367" class="ug">0496 87 43 67</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">✉️</span>
+            <div>
+              <dt class="font-600 text-wine">E-mail</dt>
+              <dd class="text-charcoal/70">
+                hkcatering24@gmail.com
+                <span class="text-charcoal/40 text-sm ml-1">(voorstel: info@hkcatering.be)</span>
+              </dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🚚</span>
+            <div>
+              <dt class="font-600 text-wine">Bezorging</dt>
+              <dd class="text-charcoal/70">Maaltijdbezorging aan huis · afhalen mogelijk</dd>
+            </div>
+          </div>
+        </dl>
+        <a href="#aanvraag" class="inline-block mt-9 bg-wine text-cream font-600 px-7 py-3.5 rounded-full hover:bg-winelt transition">
+          Of vraag online een offerte aan →
+        </a>
+      </div>
+      <!-- OpenStreetMap embed — P. van den Eedenstraat, 2660 Hoboken (~51.1736, 4.3489) -->
+      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-parchment shadow-sm">
+        <iframe
+          title="Kaart HK Catering-Traiteur — P. van den Eedenstraat, 2660 Hoboken"
+          class="w-full h-full min-h-[360px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.340%2C51.168%2C4.358%2C51.179&layer=mapnik&marker=51.1736%2C4.3489"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- GDPR Newsletter -->
+  <section class="bg-gold/15">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-wine">Blijf op de hoogte</h2>
+      <p class="text-charcoal/70 mt-3">Seizoensbuffetten, feestformules en nieuwe maaltijden — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input
+          id="nl-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          placeholder="jouw@email.be"
+          class="flex-1 px-5 py-3 rounded-full border border-wine/20 bg-cream focus:outline-none focus:ring-2 focus:ring-gold"
+        />
+        <button class="bg-wine text-cream font-600 px-7 py-3 rounded-full hover:bg-winelt transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-charcoal/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-wine text-cream/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-cream font-700">HK Catering<span class="text-gold">·</span></p>
+        <p class="text-cream/55 text-sm mt-1">Traiteur</p>
+        <p class="text-cream/55 text-sm mt-3 max-w-xs">Ambachtelijke traiteur, feestverzorging &amp; maaltijdbezorging in Hoboken. Online offerte- &amp; cateringaanvragen.</p>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Aanbod</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#menukaart" class="hover:text-goldlt">Menukaart</a></li>
+          <li><a href="#aanvraag" class="hover:text-goldlt">Offerte aanvragen</a></li>
+          <li><a href="#feesten" class="hover:text-goldlt">Feestverzorging</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Info</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#bezoek" class="hover:text-goldlt">Openingsuren</a></li>
+          <li><a href="#bezoek" class="hover:text-goldlt">Contact</a></li>
+          <li><a href="#top" class="hover:text-goldlt">Ons verhaal</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Contact</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li>P. van den Eedenstraat</li>
+          <li>2660 Hoboken</li>
+          <li><a href="tel:+32496874367" class="hover:text-goldlt">0496 87 43 67</a></li>
+          <li>hkcatering24@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40">
+        <p>© 2026 HK Catering-Traiteur. Concept-redesign.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; online aanvraagsysteem.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Fade-up IntersectionObserver
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>

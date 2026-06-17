@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Philip Cooking at Home — Kok aan huis, privé-chef &amp; traiteur in Brasschaat</title>
+  <meta name="description" content="Philip Cooking at Home: kok aan huis, privé-chef en traiteur in Brasschaat. Een chef in uw eigen keuken voor diners, feesten en events — plus voorbeeldmenu's en een eenvoudige aanvraagflow." />
+  <link rel="canonical" href="https://philipcookingathome.be/" />
+  <meta name="theme-color" content="#3b2a20" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Philip Cooking at Home" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Philip Cooking at Home — Kok aan huis, privé-chef &amp; traiteur in Brasschaat" />
+  <meta property="og:description" content="Een privé-chef in uw eigen keuken voor diners, feesten en events in Brasschaat en omstreken. Bekijk de voorbeeldmenu's en vraag uw datum aan." />
+  <meta property="og:url" content="https://philipcookingathome.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Inline SVG favicon — monogram "PC" -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233b2a20'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%23a9b884' text-anchor='middle'%3EPC%3C/text%3E%3C/svg%3E" />
+  <!-- Local-SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FoodEstablishment",
+    "name": "Philip Cooking at Home",
+    "description": "Kok aan huis, privé-chef en traiteur in Brasschaat. Een chef in uw eigen keuken voor diners, feesten en events.",
+    "image": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://philipcookingathome.be/",
+    "telephone": "+32497662041",
+    "email": "cookingathome@skynet.be",
+    "servesCuisine": ["Belgian", "French", "Fine dining"],
+    "priceRange": "€€€",
+    "areaServed": "BE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Donksesteenweg 103",
+      "postalCode": "2930",
+      "addressLocality": "Brasschaat",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.2766, "longitude": 4.5012 }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
+          colors: {
+            espresso: '#3b2a20',
+            espressolt:'#4a3528',
+            espressodk:'#2a1d16',
+            sage:     '#7d8a5b',
+            sagelt:   '#a9b884',
+            cream:    '#f6efe4',
+            parchment:'#ece0cc',
+            charcoal: '#2b2422',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(42,29,22,.18) 0%, rgba(42,29,22,.52) 50%, rgba(42,29,22,.92) 100%); }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 2px; }
+  </style>
+</head>
+<body class="bg-cream text-espresso font-sans antialiased selection:bg-sage/25">
+
+  <!-- Skip link -->
+  <a href="#aanvraag" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-espresso focus:text-cream focus:rounded-full">Naar kok-aan-huis aanvragen</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-espresso text-cream text-center text-[13px] tracking-wide py-2 px-4">
+    <span aria-hidden="true">🍽️</span> <span class="font-semibold">Kok aan huis:</span> een privé-chef in uw eigen keuken — diners, feesten &amp; events · Brasschaat en omstreken.
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-espresso/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-espresso">Philip<span class="text-sage">·</span></span>
+        <span class="text-[11px] uppercase tracking-[0.22em] text-espresso/50 font-600">Cooking at Home · Brasschaat</span>
+      </a>
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
+        <a href="#aanvraag" class="ug">Kok aan huis</a>
+        <a href="#diensten" class="ug">Diensten</a>
+        <a href="#menus" class="ug">Voorbeeldmenu's</a>
+        <a href="#contact" class="ug">Contact</a>
+      </div>
+      <!-- CTA + hamburger -->
+      <div class="flex items-center gap-2">
+        <a href="#aanvraag" class="inline-flex items-center gap-2 bg-sage text-espressodk text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-sagelt transition">
+          Vraag uw datum aan
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-espresso/15 text-espresso hover:bg-espresso/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-espresso/10 bg-cream/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#aanvraag" class="py-3 border-b border-espresso/8">Kok aan huis</a>
+        <a href="#diensten" class="py-3 border-b border-espresso/8">Diensten</a>
+        <a href="#menus" class="py-3 border-b border-espresso/8">Voorbeeldmenu's</a>
+        <a href="#contact" class="py-3">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-espresso">
+    <img
+      src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=2000&q=80"
+      alt="Privé-chef die een fijn gerecht bereidt — Philip Cooking at Home Brasschaat"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-sagelt font-600 tracking-[0.3em] uppercase text-xs mb-5">
+        <span aria-hidden="true">🍽️</span> Kok aan huis · Privé-chef · Traiteur · Brasschaat
+      </p>
+      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
+        Een chef in uw keuken,<br />zonder zorgen.
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Philip Cooking at Home brengt fine dining tot bij u thuis. Een privé-chef die kookt,
+        serveert en de keuken weer netjes achterlaat — voor een intiem diner, een verjaardag
+        of een volledig feest. U geniet, wij doen de rest.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#aanvraag" class="bg-sage text-espressodk font-700 px-7 py-3.5 rounded-full hover:bg-sagelt transition">
+          Vraag uw datum aan
+        </a>
+        <a href="#menus" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
+          Bekijk de voorbeeldmenu's
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP strip -->
+  <section class="bg-espresso text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-sagelt">Bij u thuis</p><p class="mt-1 text-cream/65">De chef komt naar uw keuken</p></div>
+      <div><p class="font-serif text-2xl text-sagelt">Op maat</p><p class="mt-1 text-cream/65">Menu volgens uw smaak &amp; budget</p></div>
+      <div><p class="font-serif text-2xl text-sagelt">Volledig</p><p class="mt-1 text-cream/65">Koken, serveren &amp; opruimen</p></div>
+      <div><p class="font-serif text-2xl text-sagelt">Elke gelegenheid</p><p class="mt-1 text-cream/65">Diner, feest of bedrijfsevent</p></div>
+    </div>
+  </section>
+
+  <!-- Kok aan huis intro -->
+  <section id="diensten" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-sage font-600 tracking-[0.2em] uppercase text-xs mb-4">Kok aan huis</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-espresso">
+          Restaurantkwaliteit,<br />in uw eigen huis.
+        </h2>
+        <p class="text-charcoal/75 text-lg mt-5 leading-relaxed max-w-md">
+          Geen tafel reserveren, geen babysit, geen afwas. Philip kookt vers in uw keuken,
+          serveert aan tafel en ruimt alles op. U en uw gasten beleven een avond uit —
+          gewoon thuis, rond uw eigen tafel.
+        </p>
+        <ul class="mt-7 space-y-3 text-charcoal">
+          <li class="flex items-center gap-3"><span class="text-sage font-700">✓</span> Persoonlijk menu op maat van uw gasten</li>
+          <li class="flex items-center gap-3"><span class="text-sage font-700">✓</span> Vers ter plaatse bereid en aan tafel geserveerd</li>
+          <li class="flex items-center gap-3"><span class="text-sage font-700">✓</span> De keuken wordt netjes achtergelaten</li>
+        </ul>
+        <a href="#menus" class="inline-flex items-center gap-2 mt-9 bg-espresso text-cream font-600 px-7 py-3.5 rounded-full hover:bg-espressolt transition">
+          Bekijk de voorbeeldmenu's
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=80"
+            alt="Chef plateert een verfijnd gerecht"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment mt-8">
+          <img
+            src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80"
+            alt="Gedekte tafel voor een diner aan huis"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diensten grid -->
+  <section class="bg-parchment/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-sage font-600 tracking-[0.2em] uppercase text-xs mb-3">Wat Philip verzorgt</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-espresso">Voor elke gelegenheid</h2>
+        </div>
+        <p class="text-charcoal/65 max-w-sm">Van een intiem diner voor twee tot een feest of bedrijfsevent — telkens een menu en aanpak op maat.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Privé-diner -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80"
+            alt="Intiem privé-diner aan huis"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Privé-diner</h3>
+            <p class="text-cream/75 text-sm mt-1">Een verfijnd meergangenmenu voor een romantische of intieme avond.</p>
+          </div>
+        </article>
+        <!-- Feest aan huis -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80"
+            alt="Feestdiner met gasten aan tafel"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Feest aan huis</h3>
+            <p class="text-cream/75 text-sm mt-1">Verjaardag, communie of familiefeest — uw gasten verwennen zonder gedoe.</p>
+          </div>
+        </article>
+        <!-- Bedrijfsevent -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=800&q=80"
+            alt="Verzorgd menu voor een bedrijfsevent"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Bedrijfsevent</h3>
+            <p class="text-cream/75 text-sm mt-1">Een culinaire ervaring voor klanten of team, op locatie verzorgd.</p>
+          </div>
+        </article>
+        <!-- Aperitief & hapjes -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80"
+            alt="Aperitief en fijne hapjes"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Aperitief &amp; hapjes</h3>
+            <p class="text-cream/75 text-sm mt-1">Verfijnde walking dinner of aperitiefformule om uw event te openen.</p>
+          </div>
+        </article>
+        <!-- Traiteur -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
+            alt="Traiteurschotels en bereide gerechten"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Traiteur</h3>
+            <p class="text-cream/75 text-sm mt-1">Liever zelf opdienen? Afgewerkte schotels, klaar om te serveren.</p>
+          </div>
+        </article>
+        <!-- Aanvraag CTA card -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-sage text-espressodk relative aspect-[4/5] flex items-center justify-center text-center p-6">
+          <div>
+            <p class="font-serif text-2xl font-600">Iets anders<br />in gedachten?</p>
+            <p class="text-espressodk/80 text-sm mt-2">Vertel ons uw idee, datum en aantal gasten — Philip stelt een voorstel op maat voor.</p>
+            <a href="#aanvraag" class="inline-block mt-5 text-espressodk font-700 ug">Vraag uw datum aan →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Voorbeeldmenu's (illustratief) -->
+  <section id="menus" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="flex items-end justify-between mb-10">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-espresso">Voorbeeldmenu's</h2>
+      <a href="#aanvraag" class="hidden sm:inline text-sage font-600 ug">Stel uw menu samen →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Menu 1 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=700&q=80"
+            alt="Verfijnd voorgerecht (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-sage font-600 uppercase tracking-wider">Klassiek menu</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-espresso">Drie gangen — seizoen</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Voorgerecht, hoofdgerecht en dessert met verse, seizoensgebonden producten.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-espresso text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-espressolt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Menu 2 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=700&q=80"
+            alt="Meergangen proefmenu (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-sage font-600 uppercase tracking-wider">Fine dining</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-espresso">Proefmenu — meerdere gangen</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Een culinaire ontdekkingsreis in kleine, verfijnde gangen.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-espresso text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-espressolt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Menu 3 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=700&q=80"
+            alt="Walking dinner met hapjes (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-sage font-600 uppercase tracking-wider">Feestformule</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-espresso">Walking dinner &amp; hapjes</h3>
+          <p class="text-charcoal/60 text-sm mt-1">Een reeks fijne hapjes en gerechtjes voor een staand feest.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
+            <button class="bg-espresso text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-espressolt transition">Aanvragen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs text-charcoal/40 mt-6">Voorbeeldmenu's ter illustratie — elk menu wordt persoonlijk samengesteld. Geen actuele prijzen.</p>
+  </section>
+
+  <!-- Kok-aan-huis aanvraag (the differentiator) -->
+  <section id="aanvraag" class="bg-espresso text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img
+          src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=1000&q=80"
+          alt="Chef aan het werk in een huiskeuken"
+          loading="lazy" decoding="async"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="order-1 lg:order-2 fade-up">
+        <p class="text-sagelt font-600 tracking-[0.2em] uppercase text-xs mb-4">Kok aan huis aanvragen</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
+          Plan uw avond.<br />Wij koken bij u thuis.
+        </h2>
+        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
+          Diner, feest of bedrijfsevent? Stel hieronder uw aanvraag samen —
+          datum, aantal gasten, gelegenheid en voorkeuren — en Philip stuurt u
+          een voorstel op maat. Vrijblijvend, zonder verplichtingen.
+        </p>
+
+        <!-- Concept-formulier: kok-aan-huis aanvraag -->
+        <form class="mt-8 bg-cream/5 border border-cream/15 rounded-2xl p-5 sm:p-6 space-y-4" onsubmit="return false">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="a-naam" class="block text-sm font-600 text-cream/90 mb-1">Naam</label>
+              <input id="a-naam" name="naam" type="text" autocomplete="name" placeholder="Uw naam"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-sage" />
+            </div>
+            <div>
+              <label for="a-tel" class="block text-sm font-600 text-cream/90 mb-1">Telefoon</label>
+              <input id="a-tel" name="telefoon" type="tel" autocomplete="tel" placeholder="0497 ..."
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-sage" />
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="a-datum" class="block text-sm font-600 text-cream/90 mb-1">Gewenste datum</label>
+              <input id="a-datum" name="datum" type="date"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-sage" />
+            </div>
+            <div>
+              <label for="a-gasten" class="block text-sm font-600 text-cream/90 mb-1">Aantal gasten</label>
+              <input id="a-gasten" name="gasten" type="number" min="1" placeholder="bv. 8"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-sage" />
+            </div>
+          </div>
+          <div>
+            <label for="a-gelegenheid" class="block text-sm font-600 text-cream/90 mb-1">Gelegenheid</label>
+            <select id="a-gelegenheid" name="gelegenheid"
+              class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-sage">
+              <option>Privé-diner</option>
+              <option>Verjaardag of feest</option>
+              <option>Communie of familiefeest</option>
+              <option>Bedrijfsevent</option>
+              <option>Aperitief &amp; hapjes</option>
+              <option>Iets anders</option>
+            </select>
+          </div>
+          <div>
+            <label for="a-voorkeuren" class="block text-sm font-600 text-cream/90 mb-1">Voorkeuren / opmerkingen</label>
+            <textarea id="a-voorkeuren" name="voorkeuren" rows="3" placeholder="Allergieën, budget, voorkeuren, vegetarisch, thema ..."
+              class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-sage"></textarea>
+          </div>
+          <label class="flex items-start gap-3 text-xs text-cream/70">
+            <input type="checkbox" required class="mt-0.5 accent-sage" />
+            <span>Ik ga akkoord dat mijn gegevens enkel worden gebruikt om mijn aanvraag te beantwoorden (GDPR).</span>
+          </label>
+          <button class="w-full bg-sage text-espressodk font-700 px-7 py-3 rounded-full hover:bg-sagelt transition">
+            Verstuur mijn aanvraag
+          </button>
+          <p class="text-[11px] text-cream/50 text-center">Concept-formulier — in de live versie komt uw aanvraag rechtstreeks per e-mail bij Philip terecht.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ons verhaal -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="fade-up">
+      <p class="text-sage font-600 tracking-[0.2em] uppercase text-xs mb-4">Over Philip</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-espresso">Passie voor koken,<br />bij u aan tafel.</h2>
+      <p class="text-charcoal/70 text-lg mt-6 leading-relaxed">
+        Philip Cooking at Home is een privé-chef en traiteur uit Brasschaat. Met liefde voor
+        het vak en oog voor detail brengt Philip de ervaring van een goed restaurant tot bij
+        u thuis — verse producten, een persoonlijk menu en service aan tafel.
+      </p>
+      <p class="text-charcoal/70 text-lg mt-4 leading-relaxed">
+        Of u nu een intiem diner plant, een verjaardag viert of een bedrijfsevent verzorgt:
+        u kiest de gelegenheid, Philip zorgt voor de keuken. U geniet samen met uw gasten,
+        zonder zorgen over koken, opdienen of afwassen.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-6">
+        <div class="text-center">
+          <p class="font-serif text-4xl text-sage font-700">Vers</p>
+          <p class="text-charcoal/65 text-sm mt-1">Ter plaatse bereid</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-sage font-700">Op maat</p>
+          <p class="text-charcoal/65 text-sm mt-1">Menu volgens uw smaak</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-sage font-700">Brasschaat</p>
+          <p class="text-charcoal/65 text-sm mt-1">&amp; omstreken</p>
+        </div>
+      </div>
+    </div>
+    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
+      <img
+        src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1000&q=80"
+        alt="Privé-chef plateert een verfijnd gerecht"
+        loading="lazy" decoding="async"
+        class="w-full h-full object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Contact + kaart -->
+  <section id="contact" class="bg-parchment/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+      <div class="fade-up">
+        <p class="text-sage font-600 tracking-[0.2em] uppercase text-xs mb-4">Contact</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-espresso">Neem contact op</h2>
+        <p class="text-charcoal/70 text-lg mt-5 max-w-md">
+          Philip Cooking at Home is gevestigd in Brasschaat en kookt aan huis in Brasschaat en omstreken.
+        </p>
+        <dl class="mt-9 space-y-5 text-charcoal">
+          <div class="flex gap-4">
+            <span class="text-sage mt-0.5 text-xl" aria-hidden="true">📍</span>
+            <div>
+              <dt class="font-600 text-espresso">Adres</dt>
+              <dd class="text-charcoal/70">Donksesteenweg 103, 2930 Brasschaat</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-sage mt-0.5 text-xl" aria-hidden="true">🍽️</span>
+            <div>
+              <dt class="font-600 text-espresso">Werkgebied</dt>
+              <dd class="text-charcoal/70">Kok aan huis in Brasschaat &amp; omstreken</dd>
+              <dd class="text-charcoal/40 text-sm mt-1">(grotere afstanden in overleg)</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-sage mt-0.5 text-xl" aria-hidden="true">📞</span>
+            <div>
+              <dt class="font-600 text-espresso">Telefoon</dt>
+              <dd class="text-charcoal/70"><a href="tel:+32497662041" class="ug">0497 66 20 41</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-sage mt-0.5 text-xl" aria-hidden="true">✉️</span>
+            <div>
+              <dt class="font-600 text-espresso">E-mail</dt>
+              <dd class="text-charcoal/70">
+                cookingathome@skynet.be
+                <span class="text-charcoal/40 text-sm ml-1">(voorstel: info@philipcookingathome.be)</span>
+              </dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-sage mt-0.5 text-xl" aria-hidden="true">🌐</span>
+            <div>
+              <dt class="font-600 text-espresso">Website</dt>
+              <dd class="text-charcoal/70">
+                Huidige site momenteel onbereikbaar
+                <span class="text-charcoal/40 text-sm ml-1">(deze nieuwe site lost dat op)</span>
+              </dd>
+            </div>
+          </div>
+        </dl>
+        <a href="#aanvraag" class="inline-block mt-9 bg-espresso text-cream font-600 px-7 py-3.5 rounded-full hover:bg-espressolt transition">
+          Vraag uw datum aan →
+        </a>
+      </div>
+      <!-- OpenStreetMap embed — Donksesteenweg 103, 2930 Brasschaat (~51.2766, 4.5012) -->
+      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-parchment shadow-sm">
+        <iframe
+          title="Kaart Philip Cooking at Home — Donksesteenweg 103, 2930 Brasschaat"
+          class="w-full h-full min-h-[360px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.493%2C51.271%2C4.510%2C51.282&layer=mapnik&marker=51.2766%2C4.5012"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- GDPR Newsletter -->
+  <section class="bg-sage/15">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-espresso">Blijf op de hoogte</h2>
+      <p class="text-charcoal/70 mt-3">Seizoensmenu's, feestformules en culinaire inspiratie — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input
+          id="nl-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          placeholder="jouw@email.be"
+          class="flex-1 px-5 py-3 rounded-full border border-espresso/20 bg-cream focus:outline-none focus:ring-2 focus:ring-sage"
+        />
+        <button class="bg-espresso text-cream font-600 px-7 py-3 rounded-full hover:bg-espressolt transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-charcoal/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-espresso text-cream/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-cream font-700">Philip<span class="text-sage">·</span></p>
+        <p class="text-cream/55 text-sm mt-1">Cooking at Home</p>
+        <p class="text-cream/55 text-sm mt-3 max-w-xs">Kok aan huis, privé-chef &amp; traiteur in Brasschaat. Diners, feesten en events — bij u thuis verzorgd.</p>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Diensten</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#diensten" class="hover:text-sagelt">Kok aan huis</a></li>
+          <li><a href="#menus" class="hover:text-sagelt">Voorbeeldmenu's</a></li>
+          <li><a href="#aanvraag" class="hover:text-sagelt">Aanvraag indienen</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Info</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#contact" class="hover:text-sagelt">Contact</a></li>
+          <li><a href="#contact" class="hover:text-sagelt">Werkgebied</a></li>
+          <li><a href="#top" class="hover:text-sagelt">Over Philip</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Contact</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li>Donksesteenweg 103</li>
+          <li>2930 Brasschaat</li>
+          <li><a href="tel:+32497662041" class="hover:text-sagelt">0497 66 20 41</a></li>
+          <li>cookingathome@skynet.be</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40">
+        <p>© 2026 Philip Cooking at Home. Concept-redesign.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over een nieuwe, werkende website.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Fade-up IntersectionObserver
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>
