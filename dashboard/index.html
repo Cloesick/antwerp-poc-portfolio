@@ -124,21 +124,81 @@
   <script>
     // name|sector|area|status|web|slug|tel   (slug empty = no live PoC)
     const RAW = `
+Bijouke|Juwelier|Tielt|New|Facebook-only||051 40 72 03|2026-06-18 20:27
+Boetiek Boulevard|Damesmode|Waregem|New|Facebook-only||056 60 78 26|2026-06-18 20:27
+Caroline|Damesmode|Waregem|New|Facebook-only||056 60 47 11|2026-06-18 20:27
+Difference|Schoenenzaak|Izegem|New|Facebook-only||0498 11 24 29|2026-06-18 20:27
+Juwelen Ver Eecke|Juwelier|Izegem|New|Outdated site||051 32 21 79|2026-06-18 20:27
+Lily's Fashion|Damesmode|Izegem|New|Facebook-only||0485 75 94 87|2026-06-18 20:27
+Slagerij Cremelie|Slagerij|Waregem|New|Phone-only||056 60 44 63|2026-06-18 20:27
+Slagerij Erika|Slagerij|Tielt|New|Outdated site||051 40 00 41|2026-06-18 20:27
+Slagerij Lieven|Slagerij|Tielt|New|Facebook-only||051 40 07 60|2026-06-18 20:27
+Sterslager Van Assche|Slagerij|Waregem|New|Outdated site||056 60 10 64|2026-06-18 20:27
+Traiteur Speleers|Traiteur|Waregem|New|Facebook-only||056 60 74 42|2026-06-18 20:27
+Viva Lei|Schoenenzaak|Waregem|New|Outdated site||056 60 75 02|2026-06-18 20:27
+Bakkerij 't Molentje|Bakkerij|Pelt|New|Facebook-only||+32 11 64 42 34|2026-06-18 20:26
+Bereket Bakkerij|Bakkerij|Lommel|New|Facebook-only||+32 11 73 60 71|2026-06-18 20:26
+Bloemen Katlijn|Bloemist|Beverlo|New|No website||+32 11 34 34 54|2026-06-18 20:26
+Bloemenwinkel Soof|Bloemist|Neerpelt|New|Facebook-only||+32 473 57 33 89|2026-06-18 20:26
+Boetiek BOVO|Damesmode|Neerpelt|New|Facebook-only||+32 11 66 14 66|2026-06-18 20:26
+Boetiek Sjarbon|Damesmode|Beringen|New|Outdated site||+32 11 42 85 25|2026-06-18 20:26
+Casa Flora Mieke|Bloemist|Lommel|New|Outdated site||+32 11 76 37 24|2026-06-18 20:26
+Dameskleding Smeets|Damesmode|Lommel|New|No website||+32 11 55 00 45|2026-06-18 20:26
+Fashion For Me|Damesmode|Boom|New|Outdated site||+32 3 888 40 39|2026-06-18 20:26
+Flower & Power|Bloemist|Hemiksem|New|Phone-only||+32 3 828 86 93|2026-06-18 20:26
+Greenhouseflowers|Bloemist|Niel|New|Facebook-only||+32 3 888 40 61|2026-06-18 20:26
+Joosten Juwelen|Juwelier|Beringen|New|No website||+32 11 23 23 38|2026-06-18 20:26
+Kapsalon Het Haarpaleis|Kapsalon|Niel|New|Outdated site||+32 3 844 14 88|2026-06-18 20:26
+Kookateljee Codi|Traiteur|Boom|New|Outdated site||+32 497 33 09 79|2026-06-18 20:26
+Sensoy Juwelier|Juwelier|Beverlo|New|No website||+32 11 45 39 89|2026-06-18 20:26
+Slagerij Deckers|Slagerij|Niel|New|Phone-only||+32 3 888 90 73|2026-06-18 20:26
+Slagerij Desender|Slagerij|Niel|New|Phone-only||+32 3 888 29 90|2026-06-18 20:26
+Slagerij Geert Mertens|Slagerij|Lommel|New|Facebook-only||+32 11 54 42 38|2026-06-18 20:26
+Slagerij Grieten|Slagerij|Neerpelt|New|Outdated site||+32 11 64 15 98|2026-06-18 20:26
+Slagerij Leyssens J|Slagerij|Boom|New|Phone-only||+32 3 888 02 68|2026-06-18 20:26
+Slagerij Moulouya|Slagerij|Boom|New|Phone-only||+32 486 51 22 33|2026-06-18 20:26
+Snooka|Damesmode|Boom|New|Phone-only||+32 3 344 07 31|2026-06-18 20:26
+Trendy West Fashion|Damesmode|Boom|New|Outdated site||+32 3 888 13 46|2026-06-18 20:26
+Verdurme Willy|Bloemist|Hemiksem|New|Phone-only||+32 3 877 75 05|2026-06-18 20:26
+Ann Wieme|Bloemist|Deinze|New|Outdated site||09 386 00 00|2026-06-18 20:24
+Bakkerij Chris|Bakkerij|Maldegem|New|Facebook-only||050 71 14 53|2026-06-18 20:24
+Bakkerij Henk|Bakkerij|Maldegem|New|Outdated site||050 71 10 48|2026-06-18 20:24
+Bloemen Els|Bloemist|Maldegem|New|Outdated site||050 71 14 53|2026-06-18 20:24
+Bloemengoed|Bloemist|Maldegem|New|Facebook-only||0473 45 94 04|2026-06-18 20:24
+Dhertoge Slagerij|Slagerij|Deinze|New|Phone-only||09 386 16 13|2026-06-18 20:24
+Diffrent Fashion|Damesmode|Maldegem|New|Outdated site||050 71 12 45|2026-06-18 20:24
+Dominique & Co|Damesmode|Deinze|New|Outdated site||09 380 40 92|2026-06-18 20:24
+Fantasiejuwelen Véronique|Juwelier|Eeklo|New|No website||09 377 23 78|2026-06-18 20:24
+Slagerij Els en Co|Slagerij|Eeklo|New|Outdated site||09 377 12 96|2026-06-18 20:24
+Slagerij Frankel|Slagerij|Eeklo|New|Outdated site||09 378 59 13|2026-06-18 20:24
+Slagerij Philip & Els|Slagerij|Eeklo|New|Outdated site||09 377 21 89|2026-06-18 20:24
+Bloemenmagazijn De Schuur|Bloemist|Helmond|New|No website||+31 492 525527|2026-06-18 20:22
+Boetiek 't Winkeltje|Modezaak|Uden|New|Facebook-only||+31 413 265227|2026-06-18 20:22
+Boetiek 32|Modezaak|Uden|New|No website||+31 413 254587|2026-06-18 20:22
+Boetiek de Kiep|Modezaak|Oss|New|No website||+31 412 638868|2026-06-18 20:22
+Boutique Mieke|Modezaak|Oss|New|Facebook-only||+31 6 43241284|2026-06-18 20:22
+Den Elzen Kaas & Delicatessen|Delicatessen|Oss|New|Facebook-only|||2026-06-18 20:22
+Femme Helmond|Modezaak|Helmond|New|No website||+31 492 553243|2026-06-18 20:22
+Fleurmonde|Bloemist|Uden|New|Facebook-only||+31 413 268628|2026-06-18 20:22
+Gold Legacy|Juwelier|Helmond|New|No website|||2026-06-18 20:22
+Islamitische Slagerij Salama|Slagerij|Helmond|New|Phone-only||+31 492 535461|2026-06-18 20:22
+Slagerij Erdal|Slagerij|Helmond|New|Facebook-only||+31 6 19911835|2026-06-18 20:22
+Slagerij Wilbers|Slagerij|Oss|New|Outdated site||+31 412 622040|2026-06-18 20:22
 Anandi Fashion|Damesmode|Heist-op-den-Berg|New|Outdated site||0498 53 35 51|2026-06-18 12:33
 Art Object Goudsmid|Juwelier|Bergen op Zoom|New|Outdated site||0164-256845|2026-06-18 12:33
 BARBARA Clothing en Life Style|Modezaak|Bergen op Zoom|New|Outdated site||06-17500618|2026-06-18 12:33
 Beenhouwerij Coenaerts|Slagerij|Lier|New|Facebook-only||03 480 04 58|2026-06-18 12:33
 Beenhouwerij Verwimp|Slagerij|Heist-op-den-Berg|New|Facebook-only||015 23 31 18|2026-06-18 12:33
 Bella Donna|Damesmode|Putte|New|Facebook-only||0475 86 28 82|2026-06-18 12:33
-Blended Boetiek en Koffie|Modezaak|Bergen op Zoom|New|Facebook-only||0164-785545|2026-06-18 12:33
+Blended Boetiek en Koffie|Modezaak|Bergen op Zoom|PoC built|Facebook-only|blended-boetiek|0164-785545|2026-06-18 12:33
 Bloemen Voets|Bloemist|Hoeselt|New|Outdated site||089 51 15 86|2026-06-18 12:33
 Brilshop Reyntjens|Opticien|Putte|New|Outdated site||015 75 46 55|2026-06-18 12:33
 Coningsgarden|Bloemist|Maaseik|New|Outdated site||089 45 00 63|2026-06-18 12:33
 Frank Hellinx|Juwelier|Bilzen|New|Outdated site||089 23 56 70|2026-06-18 12:33
 FUNC.boetiek|Modezaak|Breda|New|Facebook-only|||2026-06-18 12:33
 Goudsmid Christel Moens|Juwelier|Tongeren|New|Outdated site||012 26 34 87|2026-06-18 12:33
-Hendrik en Marcella|Delicatessen|Breda|New|Facebook-only||076-5650433|2026-06-18 12:33
-Het Wijnmagazijn|Wijnhandel|Tongeren|New|Outdated site||012 21 72 38|2026-06-18 12:33
+Hendrik en Marcella|Delicatessen|Breda|PoC built|Facebook-only|hendrik-en-marcella|076-5650433|2026-06-18 12:33
+Het Wijnmagazijn|Wijnhandel|Tongeren|PoC built|Outdated site|het-wijnmagazijn|012 21 72 38|2026-06-18 12:33
 Inge Rens Jewellery Design|Juwelier|Bergen op Zoom|New|Outdated site||06-24220397|2026-06-18 12:33
 Kaashuis Roosendaal|Kaaswinkel|Roosendaal|New|Facebook-only||0165-555355|2026-06-18 12:33
 Keurslager P. Krijnen|Slagerij|Bergen op Zoom|New|Outdated site||0164-242464|2026-06-18 12:33
@@ -146,15 +206,15 @@ Optiek Van der Veken|Opticien|Putte|New|Outdated site||015 65 39 65|2026-06-18 1
 Plaghki Juwelier|Juwelier|Maaseik|New|Phone-only||089 56 58 49|2026-06-18 12:33
 Plies Fashion|Damesmode|Heist-op-den-Berg|New|Facebook-only||0477 21 04 00|2026-06-18 12:33
 Rozen en Bottels|Bloemist|Bergen op Zoom|New|Outdated site||0164-266992|2026-06-18 12:33
-Schoenen en Lederwaren Van Woensel|Schoenenzaak|Heist-op-den-Berg|New|No website||015 24 17 89|2026-06-18 12:33
+Schoenen en Lederwaren Van Woensel|Schoenenzaak|Heist-op-den-Berg|PoC built|No website|van-woensel|015 24 17 89|2026-06-18 12:33
 Slagerij Antens|Slagerij|Roosendaal|New|Outdated site||0165-562615|2026-06-18 12:33
 Slagerij Asselberghs-Buts|Slagerij|Lier|New|Outdated site||03 480 81 03|2026-06-18 12:33
 Slagerij Graumans|Slagerij|Breda|New|Outdated site||076-5650038|2026-06-18 12:33
 Slagerij Johan|Slagerij|Lier|New|Phone-only||03 480 19 11|2026-06-18 12:33
-Slagerij Nauwelaerts De Marktslager|Slagerij|Heist-op-den-Berg|New|Facebook-only||0494 24 22 27|2026-06-18 12:33
+Slagerij Nauwelaerts De Marktslager|Slagerij|Heist-op-den-Berg|PoC built|Facebook-only|slagerij-nauwelaerts|0494 24 22 27|2026-06-18 12:33
 Traiteur t'Ingridje|Traiteur|Lier|New|Outdated site||0474 70 15 34|2026-06-18 12:33
-Vergeet Mij Niet Bloemen|Bloemist|Breda|New|Outdated site||076-5640900|2026-06-18 12:33
-Adatto|Damesmode|Zottegem|New|Outdated site||09 356 38 77|2026-06-18 12:31
+Vergeet Mij Niet Bloemen|Bloemist|Breda|PoC built|Outdated site|vergeet-mij-niet|076-5640900|2026-06-18 12:33
+Adatto|Damesmode|Zottegem|PoC built|Outdated site|adatto|09 356 38 77|2026-06-18 12:31
 Ann Fashion|Damesmode|Ninove|New|Outdated site||054 24 42 06|2026-06-18 12:31
 Au Gentil Home|Bloemist|Jette|New|No website||02 427 39 76|2026-06-18 12:31
 Bakkerij De Krakeling|Bakkerij|Geraardsbergen|New|Facebook-only||054 42 14 62|2026-06-18 12:31
@@ -162,9 +222,9 @@ Bakkerij Van Der Bracht|Bakkerij|Ninove|New|Facebook-only||054 33 98 00|2026-06-
 Beenhouwerij Bukas|Slagerij|Dilbeek|New|Facebook-only|||2026-06-18 12:31
 Beenhouwerij Cortoos|Slagerij|Jette|New|Outdated site||02 478 26 75|2026-06-18 12:31
 Bloemen Van Den Broeck Mark|Bloemist|Sint-Pieters-Leeuw|New|No website||02 378 15 87|2026-06-18 12:31
-Boetiek Marylene|Damesmode|Sint-Pieters-Leeuw|New|Facebook-only||+32 476 52 64 76|2026-06-18 12:31
+Boetiek Marylene|Damesmode|Sint-Pieters-Leeuw|PoC built|Facebook-only|boetiek-marylene|+32 476 52 64 76|2026-06-18 12:31
 Boetiek Maryvo|Damesmode|Maaseik|New|Outdated site||089 56 77 18|2026-06-18 12:31
-Boetiek Yvonne|Damesmode|Maaseik|New|Outdated site||089 56 74 95|2026-06-18 12:31
+Boetiek Yvonne|Damesmode|Maaseik|PoC built|Outdated site|boetiek-yvonne|089 56 74 95|2026-06-18 12:31
 DANY Blue|Damesmode|Tongeren|New|Facebook-only||012 39 38 13|2026-06-18 12:31
 Demesmaeker|Bloemist|Jette|New|No website||02 478 63 52|2026-06-18 12:31
 FLEUR bloemenatelier|Bloemist|Zottegem|New|Facebook-only||0471 90 61 60|2026-06-18 12:31
@@ -176,7 +236,7 @@ Marcel Modeboetiek|Damesmode|Sint-Pieters-Leeuw|New|No website||02 378 39 87|202
 MOOI dameskleding|Damesmode|Dilbeek|New|Facebook-only|||2026-06-18 12:31
 o blomme|Bloemist|Ninove|New|Facebook-only||0478 57 54 82|2026-06-18 12:31
 Roosfleurig|Damesmode|Geraardsbergen|New|Outdated site|||2026-06-18 12:31
-Slagerij Buyl Ludo|Slagerij|Ninove|New|Outdated site||054 33 29 25|2026-06-18 12:31
+Slagerij Buyl Ludo|Slagerij|Ninove|PoC built|Outdated site|slagerij-buyl|054 33 29 25|2026-06-18 12:31
 Slagerij De Reuse|Slagerij|Geraardsbergen|New|Facebook-only||0476 24 43 26|2026-06-18 12:31
 Slagerij Groven Eddy|Slagerij|Bilzen|New|Outdated site||089 51 51 99|2026-06-18 12:31
 Slagerij Houben|Slagerij|Maaseik|New|Outdated site||089 56 56 16|2026-06-18 12:31
@@ -402,9 +462,9 @@ Corina! (schoenen)|Schoenen / lederwaren|Mortsel|New|Phone-only||0498 27 65 39|2
 David Schoenen|Schoenenwinkel (Naturino, Ara)|Brasschaat|New|No website||03 651 72 82|2026-06-16 21:59
 Dierenplezier (Merksem)|Dierenspeciaalzaak|Merksem|New|Phone-only||03 644 51 39|2026-06-16 21:59
 Elvi Lederwaren|Lederwaren / handtassen|Lier|Contacted|Facebook-only|elvi-lederwaren|03 480 21 73|2026-06-16 21:59
-Fêmea Lingerie|Lingerie & badmode|Brasschaat|New|No website||0495 57 07 36|2026-06-16 21:59
 Femina Lingerie|Lingerie & corsetterie|Mechelen|Contacted|Outdated site|femina-lingerie|015 21 60 15|2026-06-16 21:59
 Froe-Froe Dierenparadijs|Dierenspeciaalzaak + trimsalon|Boom|Contacted|Outdated site|froe-froe|0474 48 38 39|2026-06-16 21:59
+Fêmea Lingerie|Lingerie & badmode|Brasschaat|New|No website||0495 57 07 36|2026-06-16 21:59
 Gigi's Lingerie|Lingerie & ondergoed|Wijnegem|Contacted|Facebook-only|gigis-lingerie|03 353 77 76|2026-06-16 21:59
 Hengelsport Hielkema|Hengelsport|Kapellen|New|Facebook-only||03 664 83 69|2026-06-16 21:59
 Hengelsport Luchie|Hengelsport|Wilrijk|New|Outdated site||03 828 93 73|2026-06-16 21:59
@@ -549,6 +609,7 @@ Wit Zwart Deli|Italian delicatessen / traiteur|Antwerpen 2000|Lost|Outdated site
       "Atelier eSTe": "info@ateliereste.nl",
       "Backeros Wines": "info@backeroswines.be",
       "Bakker Tjoens": "info@tjoens.be",
+      "Bakkerij Henk": "bakkerijhenk@telenet.be",
       "Bakkerij Heylen-Troonbeeckx": "info@bakkerijheylen.be",
       "Bakkerij Timmermans": "bakkerij.timmermans@skynet.be",
       "BARBARA Clothing en Life Style": "barbaraclothing@kpnmail.nl",
@@ -557,6 +618,7 @@ Wit Zwart Deli|Italian delicatessen / traiteur|Antwerpen 2000|Lost|Outdated site
       "Bella Donna": "gillpepermans1973@hotmail.com",
       "Bellamo": "bellamobeauty@gmail.com",
       "Belle Fleur Lingerie": "lingeriebellefleur9140@gmail.com",
+      "Bereket Bakkerij": "Info@bereket.be",
       "Blended Boetiek en Koffie": "blendedboetiek@outlook.com",
       "Bloem ist Tilburg": "info@bloem-ist.com",
       "Bloem? Bloem!": "bloembloemberchem@gmail.com",
@@ -569,19 +631,26 @@ Wit Zwart Deli|Italian delicatessen / traiteur|Antwerpen 2000|Lost|Outdated site
       "Bloemen Voets": "bloemenvoets@hotmail.com",
       "BloemenDanny": "bloemendanny@skynet.be",
       "Bloemenweelde Borgerhout": "bloemenweeldeborgerhout@hotmail.com",
+      "Bloemenwinkel Soof": "sophie.stoorvogel@icloud.com",
       "Bloemisterij Het Molentje": "info@bloemisterijhetmolentje.nl",
       "Bloemsierkunst Futura": "futurabloemen@gmail.com",
       "Boekhandel Athena": "boekhandel.athena3@telenet.be",
       "Boetiek Andesch": "anja.de.schepper@telenet.be",
+      "Boetiek Boulevard": "boulevard6@telenet.be",
+      "Boetiek BOVO": "bovoneerpelt@gmail.com",
       "Boetiek Cami": "catherine.verdonck@gmail.com",
       "Boetiek Jacqueline": "info@boetiekjacqueline.be",
       "Boetiek Marylene": "marylene-haspeslach@hotmail.be",
       "Boetiek Maryvo": "boetiek.maryvo@gmail.com",
+      "Boetiek Sjarbon": "info@sjarbon.be",
       "Boetiek Yvonne": "info@boetiekyvonne.be",
       "Bourgogne Wijnen": "bourgognewijnen@telenet.be",
+      "Boutique Mieke": "Miekevanoss@gmail.com",
       "Brilshop Reyntjens": "brilshopreyntjens@hotmail.com",
       "Café Gourmand (Mechelen)": "contact@cafe-gourmand.eu",
+      "Caroline": "caroline.witdouck@telenet.be",
       "Casa Del Capriccio": "info@casadelcapriccio.be",
+      "Casa Flora Mieke": "info@casafloramieke.com",
       "Charlie en Goods": "info@charlieandgoods.nl",
       "Chocolaterie Dom": "info@chocolateriedom.be",
       "Chocolaterie Royal": "choc.royal@skynet.be",
@@ -638,8 +707,10 @@ Wit Zwart Deli|Italian delicatessen / traiteur|Antwerpen 2000|Lost|Outdated site
       "Juwelen Claeye": "info@juwelen-claeye.be",
       "Juwelen Oraphi": "juwelenoraphi@gmail.com",
       "Juwelen Toermalijn": "info@juwelen-toermalijn.be",
+      "Juwelen Ver Eecke": "info@juwelenvereecke.be",
       "Juwelier Schenkels": "info@juwelierschenkels.be",
       "Kaashandel Kennes": "frankkennes@skynet.be",
+      "Kapsalon Het Haarpaleis": "hethaarpaleis@telenet.be",
       "Karakter Fashion": "info@karakterfashion.com",
       "Katwalk": "info@katwalklokeren.be",
       "Keurslager P. Krijnen": "info@krijnen.keurslager.nl",
@@ -649,6 +720,7 @@ Wit Zwart Deli|Italian delicatessen / traiteur|Antwerpen 2000|Lost|Outdated site
       "Kleding Wilan": "info@kledingwilan.be",
       "Klokken Henderyckx": "henderyckx@busmail.net",
       "Kok en Company": "info@kok-en-company.be",
+      "Kookateljee Codi": "info@kookateljeecodi.be",
       "La Praline (Johan Mertens)": "johan.mertens10@telenet.be",
       "Larose Brasschaat": "info@larose-brasschaat.be",
       "Lauriks Interieur-Decoratie": "info@lauriks.be",
@@ -703,24 +775,31 @@ Wit Zwart Deli|Italian delicatessen / traiteur|Antwerpen 2000|Lost|Outdated site
       "Slagerij Burms": "info@slagerijburms.be",
       "Slagerij Buyl Ludo": "info@slagerij-buyl.be",
       "Slagerij D'haens": "info@slagerijdhaens.be",
+      "Slagerij Els en Co": "info@elsenco.be",
+      "Slagerij Erdal": "slagerij-erdalbv@hotmail.com",
+      "Slagerij Erika": "info@slagerijerika.be",
+      "Slagerij Frankel": "info@slagerijfrankel.be",
       "Slagerij Geert en Heidi": "geert.sterckx8@telenet.be",
+      "Slagerij Grieten": "slagerij@valkenborgsschoofs.com",
       "Slagerij Groven Eddy": "info@slagerijgroven.be",
       "Slagerij Hamans": "info@slagerijhamans.nl",
+      "Slagerij Lieven": "Lieven.dobbelaere@telenet.be",
       "Slagerij Mertens": "slagerij.mertens@telenet.be",
       "Slagerij Nauwelaerts De Marktslager": "tom@marktslager.be",
       "Slagerij Oosterbosch": "slagerijoosterbosch@gmail.com",
       "Slagerij Renkens": "info@slagerijrenkens.nl",
       "Slagerij Verstraeten": "contact@slagerij-verstraeten.com",
+      "Sterslager Van Assche": "philip.van.assche@telenet.be",
       "Tartuffe (chocolatier)": "info@tartuffe-wilrijk.be",
       "Tassia Kapsalon": "vdpj1@proximus.be",
       "The Deco Factory (Schoten)": "info.schoten@thedecofactory.be",
-      "The Pilates Studio Berchem": "thepilatesstudioberchem@gmail.com",
       "The Pilates Studio Berchem": "thepilatesstudioberchem@gmail.com",
       "Thierens Van Wauwe": "info@tvw.be",
       "Traiteur Steven": "traiteursteven@gmail.com",
       "Traiteur t'Ingridje": "christiaens.ingrid@pandora.be",
       "Traiteur-Delicatessen Melisse": "info@melisse.be",
       "Traiteur-Hannes": "info@traiteur-hannes.be",
+      "Trendy West Fashion": "trendywestfashion.heidi1@telenet.be",
       "Tricolini": "tricolini1@telenet.be",
       "Univers Fashion": "info@universfashion.be",
       "Unwined": "info@unwined.be",
@@ -728,6 +807,7 @@ Wit Zwart Deli|Italian delicatessen / traiteur|Antwerpen 2000|Lost|Outdated site
       "Vepad Verlichting": "info@vepad.be",
       "Vergeet Mij Niet Bloemen": "bloemen@vergeet-mij-niet.com",
       "Verona Moda": "veronabonheiden@gmail.com",
+      "Viva Lei": "ingrid@vivalei.be",
       "Vleeshandel Mues": "bvbamues@proximus.be",
       "Vosco Zuid-Afrikaanse Wijnen": "info@vosco-online.be",
       "VUE Fashion": "info@vue-fashion.be",
