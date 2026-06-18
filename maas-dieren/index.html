@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maas Dierenspeciaalzaak — Dierenspeciaalzaak in Oud-Turnhout</title>
+  <meta name="description" content="Alles voor hond, kat, knaagdier &amp; vogel — voeding, verzorging en accessoires. Maas Dierenspeciaalzaak in Oud-Turnhout. Persoonlijk advies en een ruim assortiment dierenvoeding." />
+  <link rel="canonical" href="https://maas-dierenspeciaalzaak.be/" />
+  <meta name="theme-color" content="#2f6b3c" />
+
+  <!-- Open Graph / social link preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Maas Dierenspeciaalzaak" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Maas Dierenspeciaalzaak — Dierenspeciaalzaak in Oud-Turnhout" />
+  <meta property="og:description" content="Alles voor hond, kat, knaagdier &amp; vogel. Persoonlijk advies in Oud-Turnhout." />
+  <meta property="og:url" content="https://maas-dierenspeciaalzaak.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Inline SVG favicon — monogram M -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232f6b3c'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='15' font-weight='700' fill='%23F6F1E3' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" />
+
+  <!-- Local-SEO structured data — PetStore -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store", "PetStore"],
+    "name": "Maas Dierenspeciaalzaak",
+    "description": "Dierenspeciaalzaak in Oud-Turnhout. Alles voor hond, kat, knaagdier en vogel, met persoonlijk advies.",
+    "image": "https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://maas-dierenspeciaalzaak.be/",
+    "telephone": "+3214450268",
+    "email": "eddymaas@skynet.be",
+    "priceRange": "€€",
+    "areaServed": "BE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Steenweg op Mol 5",
+      "postalCode": "2360",
+      "addressLocality": "Oud-Turnhout",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.3097, "longitude": 4.9817 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "09:00", "closes": "17:00" }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/"
+    ]
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Sora', 'sans-serif'],
+            sans: ['Nunito', 'sans-serif'],
+          },
+          colors: {
+            forest:    '#2f6b3c',
+            forestdark:'#234f2d',
+            forestlight:'#3d8a4e',
+            fresh:     '#8bbf5a',
+            freshlight:'#a8d27c',
+            freshdark: '#6fa345',
+            cream:     '#F6F1E3',
+            creamdark: '#ECE3CC',
+            cloud:     '#FBFAF5',
+            slate:     '#4A5546',
+            clay:      '#E2784B',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad {
+      background: linear-gradient(160deg, rgba(35,79,45,.18) 0%, rgba(35,79,45,.52) 50%, rgba(35,79,45,.90) 100%);
+    }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: all .65s cubic-bezier(.2,.8,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 2px; }
+    .cat-card:hover img { transform: scale(1.07); }
+    .cat-card img { transition: transform .6s cubic-bezier(.2,.8,.2,1); }
+    /* Species/age badge pill */
+    .age-pill { display: inline-flex; align-items: center; gap: 4px; border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 700; letter-spacing: .04em; }
+  </style>
+</head>
+<body class="bg-cloud text-forest font-sans antialiased selection:bg-fresh/40">
+
+  <!-- Skip link for accessibility -->
+  <a href="#shop" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-forest focus:text-cream focus:rounded-full">Naar het assortiment</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-fresh text-forestdark text-center text-[13px] font-700 tracking-wide py-2 px-4">
+    <span aria-hidden="true">🐾</span> Persoonlijk voedingsadvies voor hond, kat, knaagdier &amp; vogel · Click &amp; collect in Oud-Turnhout
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-cloud/90 backdrop-blur border-b border-forest/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-2xl font-800 tracking-tight text-forest">Maas</span>
+        <span class="text-[11px] uppercase tracking-[0.22em] text-forest/45 font-700 hidden sm:inline">Dierenspeciaalzaak · Oud-Turnhout</span>
+      </a>
+      <div class="hidden md:flex items-center gap-7 text-[15px] font-600">
+        <a href="#shop" class="ug">Assortiment</a>
+        <a href="#diersoort" class="ug">Per diersoort</a>
+        <a href="#abonnement" class="ug">Voer-abonnement</a>
+        <a href="#bezoek" class="ug">Bezoek ons</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="tel:+3214450268" class="inline-flex items-center gap-2 bg-fresh text-forestdark text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-freshlight transition shadow-sm">
+          Bel ons
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-forest/15 text-forest hover:bg-forest/6 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-forest/10 bg-cloud/97 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-600">
+        <a href="#shop" class="py-3 border-b border-forest/6">Assortiment</a>
+        <a href="#diersoort" class="py-3 border-b border-forest/6">Per diersoort</a>
+        <a href="#abonnement" class="py-3 border-b border-forest/6">Voer-abonnement</a>
+        <a href="#bezoek" class="py-3">Bezoek ons</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-forest">
+    <img
+      src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?auto=format&fit=crop&w=2000&q=80"
+      alt="Blije hond en kat in een dierenspeciaalzaak"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-fresh font-700 tracking-[0.3em] uppercase text-xs mb-5">Dierenspeciaalzaak · Oud-Turnhout</p>
+      <h1 class="font-serif text-cream text-[40px] leading-[1.08] sm:text-6xl lg:text-7xl font-800 max-w-3xl">
+        Alles voor je<br />trouwste<br /><span class="text-fresh">viervoeter.</span>
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Voeding, verzorging &amp; speelplezier voor hond, kat, knaagdier en vogel — met persoonlijk advies aan de Steenweg op Mol in Oud-Turnhout.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#shop" class="bg-fresh text-forestdark font-700 px-7 py-3.5 rounded-full hover:bg-freshlight transition shadow-md">Ontdek het assortiment</a>
+        <a href="#diersoort" class="border border-cream/45 text-cream font-700 px-7 py-3.5 rounded-full hover:bg-cream/12 transition">Kies je diersoort</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP strip -->
+  <section class="bg-forest text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-5 text-center text-sm">
+      <div>
+        <p class="font-serif text-2xl text-fresh font-700">Advies</p>
+        <p class="mt-1 text-cream/65">persoonlijk voedingsadvies</p>
+      </div>
+      <div>
+        <p class="font-serif text-2xl text-fresh font-700">Abonnement</p>
+        <p class="mt-1 text-cream/65">voer automatisch herhaald</p>
+      </div>
+      <div>
+        <p class="font-serif text-2xl text-fresh font-700">4 diersoorten</p>
+        <p class="mt-1 text-cream/65">hond · kat · knaagdier · vogel</p>
+      </div>
+      <div>
+        <p class="font-serif text-2xl text-fresh font-700">Ruim</p>
+        <p class="mt-1 text-cream/65">groot vers assortiment</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Webshop driver / upsell: facebook-only → online shop -->
+  <section id="shop" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div class="fade-up">
+        <p class="text-clay font-700 tracking-[0.2em] uppercase text-xs mb-4">Binnenkort online</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-800 leading-tight">
+          Je vertrouwde voer,<br />altijd op voorraad thuis.
+        </h2>
+        <p class="text-slate text-lg mt-5 leading-relaxed max-w-md">
+          Vandaag vind je Maas enkel op Facebook. De volgende stap: een eigen webshop waar je rechtstreeks bestelt, filtert op diersoort en een voer-abonnement instelt zodat je nooit meer zonder valt. Afhalen in de winkel in Oud-Turnhout blijft uiteraard mogelijk via click &amp; collect.
+        </p>
+        <ul class="mt-7 space-y-3 text-slate">
+          <li class="flex items-start gap-3">
+            <span class="text-fresh mt-0.5 font-800 text-lg" aria-hidden="true">✓</span>
+            <span>Filter op diersoort: hond, kat, knaagdier &amp; vogel</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-fresh mt-0.5 font-800 text-lg" aria-hidden="true">✓</span>
+            <span>Voer-abonnement — automatisch herhalen, nooit meer zonder</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-fresh mt-0.5 font-800 text-lg" aria-hidden="true">✓</span>
+            <span>Click &amp; collect: online bestellen, in de winkel afhalen</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-fresh mt-0.5 font-800 text-lg" aria-hidden="true">✓</span>
+            <span>Eigen domein-mail in plaats van skynet — professioneel &amp; betrouwbaar</span>
+          </li>
+        </ul>
+        <a href="#diersoort" class="inline-flex items-center gap-2 mt-9 bg-forest text-cream font-700 px-7 py-3.5 rounded-full hover:bg-forestlight transition">
+          Bekijk per diersoort
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-cream">
+          <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80" alt="Hond bij een bak hondenvoeding" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-cream mt-8">
+          <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=800&q=80" alt="Kat die rust in de huiskamer" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assortiment grid — 8 categories -->
+  <section id="assortiment" class="bg-cream/60 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-clay font-700 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-800">Voor elk dier in huis</h2>
+        </div>
+        <p class="text-slate/80 max-w-xs">Van premium voeding tot verzorging, speelgoed en accessoires — alles onder één dak.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <!-- Hond -->
+        <article class="cat-card fade-up rounded-2xl overflow-hidden bg-forest text-cream relative aspect-[3/4] cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?auto=format&fit=crop&w=700&q=80" alt="Hond" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+          <div class="absolute inset-0 bg-gradient-to-t from-forest via-forest/25 to-transparent"></div>
+          <div class="absolute bottom-0 p-5">
+            <h3 class="font-serif text-xl font-700">Hond</h3>
+            <p class="text-cream/70 text-xs mt-1">Voeding, snacks, manden, riemen &amp; speelgoed</p>
+          </div>
+        </article>
+
+        <!-- Kat -->
+        <article class="cat-card fade-up rounded-2xl overflow-hidden bg-forest text-cream relative aspect-[3/4] cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=700&q=80" alt="Kat" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+          <div class="absolute inset-0 bg-gradient-to-t from-forest via-forest/25 to-transparent"></div>
+          <div class="absolute bottom-0 p-5">
+            <h3 class="font-serif text-xl font-700">Kat</h3>
+            <p class="text-cream/70 text-xs mt-1">Brokken, kattenbak, krabpaal &amp; verzorging</p>
+          </div>
+        </article>
+
+        <!-- Knaagdier -->
+        <article class="cat-card fade-up rounded-2xl overflow-hidden bg-forest text-cream relative aspect-[3/4] cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?auto=format&fit=crop&w=700&q=80" alt="Knaagdier" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+          <div class="absolute inset-0 bg-gradient-to-t from-forest via-forest/25 to-transparent"></div>
+          <div class="absolute bottom-0 p-5">
+            <h3 class="font-serif text-xl font-700">Knaagdier</h3>
+            <p class="text-cream/70 text-xs mt-1">Hooi, korrels, kooien &amp; knaagspeelgoed</p>
+          </div>
+        </article>
+
+        <!-- Vogel -->
+        <article class="cat-card fade-up rounded-2xl overflow-hidden bg-forest text-cream relative aspect-[3/4] cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1452570053594-1b985d6ea890?auto=format&fit=crop&w=700&q=80" alt="Vogel" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+          <div class="absolute inset-0 bg-gradient-to-t from-forest via-forest/25 to-transparent"></div>
+          <div class="absolute bottom-0 p-5">
+            <h3 class="font-serif text-xl font-700">Vogel</h3>
+            <p class="text-cream/70 text-xs mt-1">Zaadmengelingen, kooien, zitstokken &amp; baden</p>
+          </div>
+        </article>
+
+        <!-- Verzorging -->
+        <article class="cat-card fade-up rounded-2xl overflow-hidden bg-forest text-cream relative aspect-[3/4] cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?auto=format&fit=crop&w=700&q=80" alt="Verzorging van huisdieren" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+          <div class="absolute inset-0 bg-gradient-to-t from-forest via-forest/25 to-transparent"></div>
+          <div class="absolute bottom-0 p-5">
+            <h3 class="font-serif text-xl font-700">Verzorging</h3>
+            <p class="text-cream/70 text-xs mt-1">Shampoo, borstels, vacht- &amp; huidverzorging</p>
+          </div>
+        </article>
+
+        <!-- Speelgoed -->
+        <article class="cat-card fade-up rounded-2xl overflow-hidden bg-forest text-cream relative aspect-[3/4] cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&w=700&q=80" alt="Dierenspeelgoed" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+          <div class="absolute inset-0 bg-gradient-to-t from-forest via-forest/25 to-transparent"></div>
+          <div class="absolute bottom-0 p-5">
+            <h3 class="font-serif text-xl font-700">Speelgoed</h3>
+            <p class="text-cream/70 text-xs mt-1">Kauwspeelgoed, balletjes, hengels &amp; tunnels</p>
+          </div>
+        </article>
+
+        <!-- Accessoires -->
+        <article class="cat-card fade-up rounded-2xl overflow-hidden bg-forest text-cream relative aspect-[3/4] cursor-pointer">
+          <img src="https://images.unsplash.com/photo-1591946614720-90a587da4a36?auto=format&fit=crop&w=700&q=80" alt="Dierenaccessoires" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70" />
+          <div class="absolute inset-0 bg-gradient-to-t from-forest via-forest/25 to-transparent"></div>
+          <div class="absolute bottom-0 p-5">
+            <h3 class="font-serif text-xl font-700">Accessoires</h3>
+            <p class="text-cream/70 text-xs mt-1">Halsbanden, manden, drink- &amp; voederbakken</p>
+          </div>
+        </article>
+
+        <!-- Voer-abonnement CTA -->
+        <article class="cat-card fade-up rounded-2xl bg-fresh text-forestdark relative aspect-[3/4] flex flex-col items-center justify-center text-center p-6 cursor-pointer hover:bg-freshlight transition">
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="mb-4 opacity-70" aria-hidden="true">
+            <path d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/>
+          </svg>
+          <p class="font-serif text-xl font-800">Voer-abonnement</p>
+          <p class="text-forestdark/75 text-sm mt-2">Je vertrouwde merk automatisch herhaald — nooit meer een lege voerbak</p>
+          <a href="#abonnement" class="inline-block mt-5 text-forestdark font-700 ug">Meer info →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products (illustrative) -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="flex items-end justify-between mb-10">
+      <h2 class="font-serif text-3xl sm:text-4xl font-800">Uit ons assortiment</h2>
+      <a href="#shop" class="hidden sm:inline text-clay font-700 ug">Alles bekijken →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Product 1 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-cream">
+          <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=700&q=80" alt="Zak hondenvoeding" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-4">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="age-pill bg-fresh/25 text-forest">Hond</span>
+            <span class="text-xs text-clay font-700 uppercase tracking-wider">Voer-abonnement</span>
+          </div>
+          <h3 class="font-serif text-xl font-700 mt-1">Premium hondenbrok</h3>
+          <p class="text-slate/65 text-sm mt-1">Hoogwaardige droogvoeding — ook beschikbaar als terugkerende levering.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-sm text-slate/50 font-600">Prijs in de winkel</span>
+            <button class="bg-forest text-cream text-sm font-700 px-4 py-2 rounded-full hover:bg-forestlight transition">Meer info</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-cream">
+          <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=700&q=80" alt="Kat bij een kattenkrabpaal" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-4">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="age-pill bg-clay/15 text-clay">Kat</span>
+            <span class="text-xs text-slate/50 font-700 uppercase tracking-wider">Populair</span>
+          </div>
+          <h3 class="font-serif text-xl font-700 mt-1">Kattenkrabpaal &amp; speelplezier</h3>
+          <p class="text-slate/65 text-sm mt-1">Stevige krabpaal met speeltjes — houdt je meubels heel.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-sm text-slate/50 font-600">Prijs in de winkel</span>
+            <button class="bg-forest text-cream text-sm font-700 px-4 py-2 rounded-full hover:bg-forestlight transition">Meer info</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 — knaagdier -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-fresh/20">
+          <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?auto=format&fit=crop&w=700&q=80" alt="Konijn dat hooi eet" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-4">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="age-pill bg-freshdark/40 text-forest">Knaagdier</span>
+            <span class="text-xs text-clay font-700 uppercase tracking-wider">Click &amp; collect</span>
+          </div>
+          <h3 class="font-serif text-xl font-700 mt-1">Hooi &amp; knaagvoeding</h3>
+          <p class="text-slate/65 text-sm mt-1">Vers hooi, korrels en knaagsnacks voor konijn, cavia &amp; hamster.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-sm text-slate/50 font-600">Prijs in de winkel</span>
+            <button class="bg-forest text-cream text-sm font-700 px-4 py-2 rounded-full hover:bg-forestlight transition">Meer info</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs text-slate/35 mt-6">Voorbeelden ter illustratie van de toekomstige webshop. Prijzen op aanvraag of in de winkel.</p>
+  </section>
+
+  <!-- Differentiator: per-species filter + voer-abonnement -->
+  <section id="diersoort" class="bg-forest text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-center">
+      <div class="fade-up">
+        <p class="text-fresh font-700 tracking-[0.2em] uppercase text-xs mb-4">Slim winkelen</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-800 leading-tight">
+          Filter op diersoort.<br />Vind precies wat past.
+        </h2>
+        <p class="text-cream/75 text-lg mt-6 leading-relaxed max-w-md">
+          Kies je dier en wij tonen alleen de voeding, verzorging en accessoires die ervoor gemaakt zijn. Stel een voer-abonnement in en ontvang je vertrouwde merk automatisch — nooit meer een lege voerbak.
+        </p>
+        <!-- Species filter pills (illustrative) -->
+        <div class="mt-8 flex flex-wrap gap-3">
+          <button class="age-pill bg-fresh text-forestdark text-sm py-2.5 px-5 hover:bg-freshlight transition">Hond</button>
+          <button class="age-pill border border-cream/30 text-cream text-sm py-2.5 px-5 hover:bg-cream/10 transition">Kat</button>
+          <button class="age-pill border border-cream/30 text-cream text-sm py-2.5 px-5 hover:bg-cream/10 transition">Knaagdier</button>
+          <button class="age-pill border border-cream/30 text-cream text-sm py-2.5 px-5 hover:bg-cream/10 transition">Vogel</button>
+        </div>
+        <div id="abonnement" class="mt-8 p-5 rounded-2xl bg-cream/10 border border-cream/15 max-w-md scroll-mt-24">
+          <p class="font-700 text-fresh text-sm mb-2">
+            <svg class="inline mr-1 mb-0.5" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+            Voer-abonnement
+          </p>
+          <p class="text-cream/70 text-sm leading-relaxed">Kies je merk, formaat en frequentie — wij leggen klaar in Oud-Turnhout of leveren aan huis. Pauzeren of stoppen kan altijd. Dat betekent terugkerende omzet voor de winkel en gemak voor jou.</p>
+        </div>
+        <a href="#shop" class="inline-flex items-center gap-2 mt-8 bg-fresh text-forestdark font-700 px-7 py-3.5 rounded-full hover:bg-freshlight transition">
+          Start je zoekopdracht
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-first lg:order-last">
+        <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=1000&q=80" alt="Hond en kat samen, blije huisdieren" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Click & collect section -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3]">
+        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=1000&q=80" alt="Klant haalt een bestelling af in de dierenwinkel" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+      </div>
+      <div class="fade-up">
+        <p class="text-clay font-700 tracking-[0.2em] uppercase text-xs mb-4">Click &amp; collect</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-800 leading-tight">Online bestellen,<br />in de winkel afhalen.</h2>
+        <p class="text-slate text-lg mt-5 leading-relaxed">
+          Met een eigen webshop reserveer je je voer en accessoires van thuis uit en haal je ze op wanneer het jou uitkomt. Geen wachten, niets meer vergeten — alles klaargezet aan de Steenweg op Mol in Oud-Turnhout.
+        </p>
+        <p class="text-slate text-lg mt-4 leading-relaxed">
+          En een eigen domein-mail in plaats van een skynet-adres maakt het meteen professioneler: één herkenbaar adres voor bestellingen, vragen en bevestigingen.
+        </p>
+        <div class="flex flex-wrap gap-3 mt-9">
+          <a href="tel:+3214450268" class="bg-forest text-cream font-700 px-7 py-3.5 rounded-full hover:bg-forestlight transition">Bel voor info →</a>
+          <a href="#bezoek" class="border border-forest/20 text-forest font-700 px-7 py-3.5 rounded-full hover:bg-forest/6 transition">Bekijk openingsuren</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story / USP section -->
+  <section class="bg-cream/60 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3]">
+        <img src="https://images.unsplash.com/photo-1444212477490-ca407925329e?auto=format&fit=crop&w=1000&q=80" alt="Warme sfeer in een dierenspeciaalzaak" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+      </div>
+      <div class="fade-up">
+        <p class="text-clay font-700 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-800 leading-tight">Een vertrouwd adres voor je huisdier.</h2>
+        <p class="text-slate text-lg mt-5 leading-relaxed">
+          Aan de Steenweg op Mol in Oud-Turnhout vind je Maas Dierenspeciaalzaak: een dierenwinkel waar elk huisdier de juiste zorg verdient. Van hond en kat tot knaagdier en vogel — wij denken met je mee.
+        </p>
+        <p class="text-slate text-lg mt-4 leading-relaxed">
+          We geloven in persoonlijk advies: het juiste voer, de juiste verzorging en de juiste accessoires voor jouw dier. Kom langs en ontdek het ruime assortiment.
+        </p>
+        <div class="grid grid-cols-3 gap-5 mt-9">
+          <div class="text-center">
+            <p class="font-serif text-3xl font-800 text-forest">4</p>
+            <p class="text-slate/65 text-xs mt-1">diersoorten</p>
+          </div>
+          <div class="text-center border-x border-forest/10">
+            <p class="font-serif text-3xl font-800 text-forest">C&amp;C</p>
+            <p class="text-slate/65 text-xs mt-1">click &amp; collect</p>
+          </div>
+          <div class="text-center">
+            <p class="font-serif text-3xl font-800 text-forest">2360</p>
+            <p class="text-slate/65 text-xs mt-1">Oud-Turnhout</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit + OpenStreetMap -->
+  <section id="bezoek" class="bg-cloud py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+      <div class="fade-up">
+        <p class="text-clay font-700 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-800">Welkom in Oud-Turnhout</h2>
+        <p class="text-slate text-lg mt-5 max-w-md">Loop binnen aan de Steenweg op Mol — of bel ons even voor een snelle vraag of om iets klaar te leggen.</p>
+        <dl class="mt-9 space-y-5 text-slate">
+          <div class="flex gap-4">
+            <span class="text-clay mt-1 text-xl" aria-hidden="true">📍</span>
+            <div>
+              <dt class="font-700">Adres</dt>
+              <dd class="text-slate/70">Steenweg op Mol 5, 2360 Oud-Turnhout</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-clay mt-1 text-xl" aria-hidden="true">🕑</span>
+            <div>
+              <dt class="font-700">Openingsuren</dt>
+              <dd class="text-slate/70">
+                Di–Vr: 09:00–18:00<br />
+                Za: 09:00–17:00<br />
+                Zo &amp; Ma: gesloten<br />
+                <span class="text-slate/40">(indicatief — gelieve te bevestigen)</span>
+              </dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-clay mt-1 text-xl" aria-hidden="true">📞</span>
+            <div>
+              <dt class="font-700">Telefoon</dt>
+              <dd class="text-slate/70">014 45 02 68</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-clay mt-1 text-xl" aria-hidden="true">🛒</span>
+            <div>
+              <dt class="font-700">Click &amp; collect</dt>
+              <dd class="text-slate/70">Reserveer telefonisch — straks ook via de webshop</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-clay mt-1 text-xl" aria-hidden="true">✉️</span>
+            <div>
+              <dt class="font-700">E-mail</dt>
+              <dd class="text-slate/70">eddymaas@skynet.be</dd>
+            </div>
+          </div>
+        </dl>
+        <div class="flex flex-wrap gap-3 mt-9">
+          <a href="#shop" class="bg-forest text-cream font-700 px-7 py-3.5 rounded-full hover:bg-forestlight transition">Of bekijk het assortiment →</a>
+          <a href="tel:+3214450268" class="border border-forest/20 text-forest font-700 px-7 py-3.5 rounded-full hover:bg-forest/6 transition">
+            Bel ons
+          </a>
+        </div>
+      </div>
+      <div class="rounded-3xl overflow-hidden min-h-[380px] bg-creamdark shadow-sm">
+        <iframe
+          title="Kaart Maas Dierenspeciaalzaak, Steenweg op Mol 5 Oud-Turnhout"
+          class="w-full h-full min-h-[380px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.9737%2C51.3057%2C4.9897%2C51.3137&layer=mapnik&marker=51.3097%2C4.9817">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- GDPR Newsletter -->
+  <section class="bg-fresh/20">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-800">Blijf op de hoogte</h2>
+      <p class="text-slate/70 mt-3">Nieuwe merken, voedingstips &amp; acties — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input
+          id="nl-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          placeholder="jouw@email.be"
+          class="flex-1 px-5 py-3 rounded-full border border-forest/20 bg-white focus:outline-none focus:ring-2 focus:ring-fresh"
+        />
+        <button class="bg-forest text-cream font-700 px-7 py-3 rounded-full hover:bg-forestlight transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-slate/45 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-forest text-cream/75">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-cream font-800">Maas</p>
+        <p class="text-cream/50 text-sm mt-3 max-w-xs">Dierenspeciaalzaak voor hond, kat, knaagdier en vogel, in Oud-Turnhout.</p>
+        <p class="text-cream/40 text-xs mt-3 italic">"Een vertrouwd adres voor je huisdier."</p>
+      </div>
+      <div>
+        <p class="font-700 text-cream mb-3">Winkel</p>
+        <ul class="space-y-2 text-sm text-cream/55">
+          <li><a href="#assortiment" class="hover:text-fresh transition">Assortiment</a></li>
+          <li><a href="#diersoort" class="hover:text-fresh transition">Per diersoort</a></li>
+          <li><a href="#abonnement" class="hover:text-fresh transition">Voer-abonnement</a></li>
+          <li><a href="#shop" class="hover:text-fresh transition">Click &amp; collect</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-700 text-cream mb-3">Info</p>
+        <ul class="space-y-2 text-sm text-cream/55">
+          <li><a href="#bezoek" class="hover:text-fresh transition">Openingsuren</a></li>
+          <li><a href="#bezoek" class="hover:text-fresh transition">Contact &amp; routebeschrijving</a></li>
+          <li><a href="#shop" class="hover:text-fresh transition">Webshop binnenkort</a></li>
+          <li><a href="#" class="hover:text-fresh transition">Privacybeleid</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-700 text-cream mb-3">Contact</p>
+        <ul class="space-y-2 text-sm text-cream/55">
+          <li>Steenweg op Mol 5</li>
+          <li>2360 Oud-Turnhout</li>
+          <li>014 45 02 68</li>
+          <li>eddymaas@skynet.be</li>
+        </ul>
+        <div class="flex gap-3 mt-5">
+          <a href="https://www.facebook.com/" aria-label="Facebook" class="w-9 h-9 rounded-full border border-cream/20 flex items-center justify-center hover:bg-cream/10 transition">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/35">
+        <p>© 2026 Maas Dierenspeciaalzaak, Oud-Turnhout. Concept-redesign.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; webshop.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts: fade-up observer + mobile menu toggle -->
+  <script>
+    // Fade-up on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1600);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>

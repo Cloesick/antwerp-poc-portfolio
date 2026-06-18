@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EVA interieur — interieur- &amp; decowinkel in Halle</title>
+  <meta name="description" content="Interieur- en decowinkel in Halle. Woondecoratie, accessoires en interieurinspiratie voor elke ruimte. Persoonlijk interieuradvies op afspraak — kom langs in onze winkel aan de Klinkaert." />
+  <link rel="canonical" href="https://evainterieur.be/" />
+  <meta name="theme-color" content="#3b3026" />
+  <!-- Open Graph / link preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="EVA interieur" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="EVA interieur — interieur- &amp; decowinkel in Halle" />
+  <meta property="og:description" content="Woondecoratie, accessoires en interieurinspiratie onder één dak. Persoonlijk interieuradvies op afspraak in onze winkel aan de Klinkaert in Halle." />
+  <meta property="og:url" content="https://evainterieur.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Inline SVG favicon — monogram EV -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233b3026'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='13' fill='%23a98b63' text-anchor='middle'%3EEV%3C/text%3E%3C/svg%3E" />
+  <!-- Local SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeGoodsStore",
+    "name": "EVA interieur",
+    "description": "Interieur- en decowinkel in Halle met woondecoratie, accessoires en interieurinspiratie. Persoonlijk interieuradvies op afspraak.",
+    "image": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://evainterieur.be/",
+    "telephone": "+32476223905",
+    "email": "evahauwaert@gmail.com",
+    "priceRange": "€€–€€€",
+    "areaServed": "BE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Klinkaert 1",
+      "postalCode": "1500",
+      "addressLocality": "Halle",
+      "addressRegion": "Vlaams-Brabant",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 50.7339, "longitude": 4.2376 },
+    "hasMap": "https://www.openstreetmap.org/?mlat=50.7339&mlon=4.2376#map=16/50.7339/4.2376",
+    "slogan": "Decoratie &amp; inspiratie voor elke ruimte"
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            ink:      '#2c241c',
+            coal:     '#3b3026',
+            taupe:    '#4a3d30',
+            taupelt:  '#5e4e3e',
+            ochre:    '#a98b63',
+            ochrelt:  '#c3a883',
+            cream:    '#faf6ef',
+            warm:     '#f1e9dc',
+            warmdk:   '#e3d6c2',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(44,36,28,.15) 0%, rgba(44,36,28,.50) 50%, rgba(44,36,28,.93) 100%); }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 1.5px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 1.5px; }
+    .glow-ochre { box-shadow: 0 0 0 0 rgba(169,139,99,.4); }
+    .glow-ochre:hover { box-shadow: 0 4px 24px rgba(169,139,99,.35); }
+    /* Subtle sway for hero accent icon */
+    @keyframes sway { 0%,100%{transform:translateX(0)}50%{transform:translateX(2px)} }
+    .sway { animation: sway 4s ease-in-out infinite; }
+  </style>
+</head>
+<body class="bg-cream text-ink font-sans antialiased selection:bg-ochre/25">
+
+  <!-- Skip link (a11y) -->
+  <a href="#catalogus" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-taupe focus:text-cream focus:rounded-full">Naar het assortiment</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-taupe text-cream text-center text-[13px] tracking-wide py-2 px-4">
+    <span class="text-ochrelt font-semibold">Nieuw:</span> plan uw interieuradvies online — webshop binnenkort opnieuw open.
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-ink/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[70px] flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#top" class="flex items-baseline gap-2.5" aria-label="EVA interieur — naar de startpagina">
+        <span class="font-serif text-[26px] font-700 tracking-tight leading-none">EVA<span class="text-ochre"> interieur</span></span>
+        <span class="text-[11px] uppercase tracking-[0.22em] text-ink/45 font-600 hidden sm:inline">Deco · Halle</span>
+      </a>
+      <!-- Desktop nav -->
+      <div class="hidden md:flex items-center gap-7 text-[15px] font-500">
+        <a href="#catalogus" class="ug">Assortiment</a>
+        <a href="#advies"    class="ug">Interieuradvies</a>
+        <a href="#inspiratie" class="ug">Inspiratie</a>
+        <a href="#verhaal"   class="ug">Over ons</a>
+        <a href="#bezoek"    class="ug">Bezoek</a>
+      </div>
+      <!-- CTA + hamburger -->
+      <div class="flex items-center gap-2">
+        <a href="#afspraak" class="inline-flex items-center gap-2 bg-ochre text-cream text-sm font-600 px-4 sm:px-5 py-2.5 rounded-full hover:bg-ochrelt transition glow-ochre">
+          Afspraak boeken
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-ink/15 text-ink hover:bg-ink/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-ink/10 bg-cream/96 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#catalogus" class="py-3 border-b border-ink/5">Assortiment</a>
+        <a href="#advies"    class="py-3 border-b border-ink/5">Interieuradvies</a>
+        <a href="#inspiratie" class="py-3 border-b border-ink/5">Inspiratie</a>
+        <a href="#verhaal"   class="py-3 border-b border-ink/5">Over ons</a>
+        <a href="#bezoek"    class="py-3 border-b border-ink/5">Bezoek ons</a>
+        <a href="#afspraak"  class="py-3 text-ochre font-600">Afspraak boeken →</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-coal">
+    <img
+      src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=2200&q=80"
+      alt="Warm ingerichte woonkamer met decoratie en accessoires"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-28 w-full">
+      <p class="text-ochrelt font-600 tracking-[0.3em] uppercase text-xs mb-5">Interieur- &amp; decowinkel · Halle</p>
+      <h1 class="font-serif text-cream text-[44px] leading-[1.05] sm:text-[72px] font-600 max-w-3xl">
+        Decoratie &amp; inspiratie<br />voor elke ruimte.
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Woondecoratie, accessoires en interieurinspiratie onder één dak — met persoonlijk advies in de winkel en, binnenkort, opnieuw een werkende webshop.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#catalogus" class="bg-ochre text-cream font-600 px-7 py-3.5 rounded-full hover:bg-ochrelt transition">
+          Ontdek het assortiment
+        </a>
+        <a href="#afspraak" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
+          Plan interieuradvies
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ USP STRIP ═══ -->
+  <section class="bg-taupe text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-7 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div>
+        <p class="font-serif text-3xl text-ochrelt leading-none">Deco</p>
+        <p class="mt-1.5 text-cream/65">voor elke ruimte in huis</p>
+      </div>
+      <div>
+        <p class="font-serif text-3xl text-ochrelt leading-none">Advies</p>
+        <p class="mt-1.5 text-cream/65">persoonlijk &amp; op afspraak</p>
+      </div>
+      <div>
+        <p class="font-serif text-3xl text-ochrelt leading-none">Webshop</p>
+        <p class="mt-1.5 text-cream/65">binnenkort opnieuw open</p>
+      </div>
+      <div>
+        <p class="font-serif text-3xl text-ochrelt leading-none">Lokaal</p>
+        <p class="mt-1.5 text-cream/65">winkel in hart van Halle</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ONLINE CATALOGUS / UPSELL ═══ -->
+  <section id="catalogus" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div class="fade-up">
+        <p class="text-ochre font-600 tracking-[0.22em] uppercase text-xs mb-4">Online &amp; in de winkel</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
+          Stel uw interieur samen<br />ruimte per ruimte.
+        </h2>
+        <p class="text-coal/80 text-lg mt-5 leading-relaxed max-w-md">
+          Blader door inspiratie per ruimte en stijl — woonkamer, eetkamer of slaapkamer — en kom daarna langs voor persoonlijk advies. Of plan uw afspraak rechtstreeks online.
+        </p>
+        <ul class="mt-7 space-y-3 text-coal">
+          <li class="flex items-center gap-3"><span class="text-ochre font-700">✓</span> Woondecoratie &amp; accessoires zorgvuldig geselecteerd</li>
+          <li class="flex items-center gap-3"><span class="text-ochre font-700">✓</span> Kleuren en materialen samen op elkaar afgestemd</li>
+          <li class="flex items-center gap-3"><span class="text-ochre font-700">✓</span> Persoonlijk interieuradvies in de winkel</li>
+          <li class="flex items-center gap-3"><span class="text-ochre font-700">✓</span> Webshop binnenkort opnieuw open voor thuisbezorging</li>
+        </ul>
+        <a href="#assortiment" class="inline-flex items-center gap-2 mt-9 bg-taupe text-cream font-600 px-7 py-3.5 rounded-full hover:bg-coal transition">
+          Bekijk alle categorieën
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-warm">
+          <img src="https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?auto=format&fit=crop&w=800&q=80" alt="Woonkamer met decoratie en zachte textiel" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-warm mt-8">
+          <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=800&q=80" alt="Decoratie-accessoires en woonaccenten" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ASSORTIMENT GRID ═══ -->
+  <section id="assortiment" class="bg-warm/60 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-ochre font-600 tracking-[0.22em] uppercase text-xs mb-3">Ons assortiment</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-600">Voor elke ruimte in huis</h2>
+        </div>
+        <p class="text-coal/65 max-w-sm text-sm">Van accent tot accessoire — alles wat uw interieur compleet maakt, met advies bij elke keuze.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <!-- Woondecoratie -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-taupe text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?auto=format&fit=crop&w=800&q=80" alt="Woondecoratie in een warm ingerichte kamer" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Woondecoratie</h3>
+            <p class="text-cream/70 text-sm mt-1">Sfeervolle accenten die uw ruimte warm en persoonlijk maken.</p>
+          </div>
+        </article>
+
+        <!-- Accessoires -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-taupe text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=800&q=80" alt="Interieuraccessoires en woonaccenten op een tafel" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Accessoires</h3>
+            <p class="text-cream/70 text-sm mt-1">Vazen, kandelaars, schalen &amp; objecten — de details die het verschil maken.</p>
+          </div>
+        </article>
+
+        <!-- Textiel -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-taupe text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Kussens, plaids en zacht huistextiel op een zetel" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Textiel</h3>
+            <p class="text-cream/70 text-sm mt-1">Kussens, plaids &amp; zachte stoffen voor extra warmte en comfort.</p>
+          </div>
+        </article>
+
+        <!-- Verlichting & sfeer -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-taupe text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=800&q=80" alt="Sfeerverlichting en kaarsen in een interieur" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Sfeer &amp; licht</h3>
+            <p class="text-cream/70 text-sm mt-1">Kaarsen, geuren &amp; sfeerverlichting — voor een gezellige thuis.</p>
+          </div>
+        </article>
+
+        <!-- Seizoen -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-taupe text-cream relative aspect-[4/5]">
+          <img src="https://images.unsplash.com/photo-1522444195799-478538b28823?auto=format&fit=crop&w=800&q=80" alt="Seizoensgebonden decoratie en bloemen" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Seizoensdeco</h3>
+            <p class="text-cream/70 text-sm mt-1">Wisselende collecties die met de seizoenen meeleven in huis.</p>
+          </div>
+        </article>
+
+        <!-- Cadeau CTA card -->
+        <article class="fade-up rounded-2xl bg-ochre text-cream relative aspect-[4/5] flex items-center justify-center text-center p-8">
+          <div>
+            <svg class="mx-auto mb-4 sway" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+            <p class="font-serif text-2xl font-600">Cadeau-ideeën</p>
+            <p class="text-cream/85 text-sm mt-2 leading-relaxed">Op zoek naar een warm en origineel cadeau? Wij helpen u graag kiezen.</p>
+            <a href="#afspraak" class="inline-block mt-6 text-cream font-600 ug">Vraag advies →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ UITGELICHTE COLLECTIE (illustratief) ═══ -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="flex items-end justify-between mb-10">
+      <div>
+        <p class="text-ochre font-600 tracking-[0.22em] uppercase text-xs mb-3">Uitgelicht</p>
+        <h2 class="font-serif text-3xl sm:text-4xl font-600">Inspiratie per ruimte</h2>
+      </div>
+      <a href="#inspiratie" class="hidden sm:inline text-ochre font-600 ug text-sm">Alles bekijken →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-warm">
+          <img src="https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?auto=format&fit=crop&w=700&q=80" alt="Woonkamer met decoratie en textiel" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-ochre font-600 uppercase tracking-wider">Woonkamer</p>
+          <h3 class="font-serif text-xl font-600 mt-1">Warm &amp; uitnodigend</h3>
+          <p class="text-coal/55 text-sm mt-1">Zachte accessoires, sfeerlicht en een rustig kleurenpalet in harmonie.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-coal/45 text-sm font-400">Deco · textiel · sfeer</span>
+            <a href="#afspraak" class="bg-taupe text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-coal transition">Advies</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-warm">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=700&q=80" alt="Slaapkamer met zacht textiel en decoratie" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-ochre font-600 uppercase tracking-wider">Slaapkamer</p>
+          <h3 class="font-serif text-xl font-600 mt-1">Rustig &amp; warm</h3>
+          <p class="text-coal/55 text-sm mt-1">Zacht textiel en kalmerende accenten voor een serene slaapkamer.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-coal/45 text-sm font-400">Textiel · accessoires</span>
+            <a href="#afspraak" class="bg-taupe text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-coal transition">Advies</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-warm">
+          <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=700&q=80" alt="Eettafel met sfeerverlichting en decoratie" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-ochre font-600 uppercase tracking-wider">Eetkamer</p>
+          <h3 class="font-serif text-xl font-600 mt-1">Sfeer aan tafel</h3>
+          <p class="text-coal/55 text-sm mt-1">Kandelaars, geuren en tafeldecoratie die elke maaltijd bijzonder maken.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-coal/45 text-sm font-400">Tafeldeco · sfeer</span>
+            <a href="#afspraak" class="bg-taupe text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-coal transition">Advies</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <p class="text-center text-xs text-coal/35 mt-6">Voorbeeldsfeerbeelden ter illustratie van de inspiratie-sectie.</p>
+  </section>
+
+  <!-- ═══ DIFFERENTIATOR — Interieuradvies ═══ -->
+  <section id="advies" class="bg-taupe text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=1100&q=80" alt="Interieuradviseur die kleuren en materialen toont" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+      </div>
+      <div class="order-1 lg:order-2 fade-up">
+        <p class="text-ochrelt font-600 tracking-[0.22em] uppercase text-xs mb-4">Persoonlijk interieuradvies</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
+          Het juiste accent<br />maakt het verschil.
+        </h2>
+        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
+          Nieuwe make-over of gewoon iets fris in huis? Wij helpen u kiezen en stemmen kleuren, materialen en decoratie op elkaar af — zodat alles samenvalt. Kom langs in de winkel of plan een afspraak.
+        </p>
+        <ul class="mt-6 space-y-3 text-cream/80">
+          <li class="flex items-center gap-3"><span class="text-ochrelt font-700">✓</span> Persoonlijk advies in onze winkel in Halle</li>
+          <li class="flex items-center gap-3"><span class="text-ochrelt font-700">✓</span> Kleur- en stijladvies dat ruimtes verbindt</li>
+          <li class="flex items-center gap-3"><span class="text-ochrelt font-700">✓</span> Vrijblijvend — voeg gerust een foto van uw ruimte toe</li>
+        </ul>
+        <a href="#afspraak" id="afspraaknav" class="inline-flex items-center gap-2 mt-9 bg-ochre text-cream font-600 px-7 py-3.5 rounded-full hover:bg-ochrelt transition">
+          Plan mijn interieuradvies
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ INSPIRATIE (per ruimte & stijl) ═══ -->
+  <section id="inspiratie" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="text-center max-w-2xl mx-auto mb-14 fade-up">
+      <p class="text-ochre font-600 tracking-[0.22em] uppercase text-xs mb-3">Inspiratie</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-600">Laat u inspireren per ruimte</h2>
+      <p class="text-coal/65 mt-4 text-lg">Van een gezellige woonkamer tot een serene slaapkamer — ontdek hoe decoratie, textiel en sfeer samen een ruimte maken.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="fade-up group rounded-2xl overflow-hidden aspect-[3/4] relative bg-warm cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1567225557594-88d73e55f2cb?auto=format&fit=crop&w=800&q=80" alt="Woonkamer interieur met decoratie" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+        <div class="absolute bottom-0 p-5 text-cream translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition duration-500">
+          <p class="font-serif text-xl font-600">Woonkamer</p>
+          <p class="text-cream/75 text-sm mt-1">Zachte accessoires, sfeerlicht en een warm kleurenpalet.</p>
+        </div>
+      </div>
+      <div class="fade-up group rounded-2xl overflow-hidden aspect-[3/4] relative bg-warm cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Slaapkamer met zacht textiel" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+        <div class="absolute bottom-0 p-5 text-cream translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition duration-500">
+          <p class="font-serif text-xl font-600">Slaapkamer</p>
+          <p class="text-cream/75 text-sm mt-1">Kalmerende accenten en zacht textiel voor een serene ruimte.</p>
+        </div>
+      </div>
+      <div class="fade-up group rounded-2xl overflow-hidden aspect-[3/4] relative bg-warm cursor-pointer">
+        <img src="https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&w=800&q=80" alt="Eetkamer met sfeerverlichting en tafeldeco" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+        <div class="absolute bottom-0 p-5 text-cream translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition duration-500">
+          <p class="font-serif text-xl font-600">Eetkamer</p>
+          <p class="text-cream/75 text-sm mt-1">Tafeldecoratie en sfeerlicht die elke maaltijd bijzonder maken.</p>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs text-coal/35 mt-6">Illustratieve sfeerbeelden — ter impressie van de inspiratie-galerij.</p>
+  </section>
+
+  <!-- ═══ VERHAAL ═══ -->
+  <section id="verhaal" class="bg-warm/70 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-center">
+      <div class="fade-up">
+        <p class="text-ochre font-600 tracking-[0.22em] uppercase text-xs mb-4">Over EVA interieur</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">Een warm decoadres<br />in hart van Halle.</h2>
+        <p class="text-coal/75 text-lg mt-6 leading-relaxed">
+          EVA interieur is uw interieur- en decowinkel in Halle voor wie zijn thuis een warme, persoonlijke toets wil geven. In onze winkel aan de Klinkaert vindt u een zorgvuldig samengestelde selectie woondecoratie en accessoires — met persoonlijk advies van iemand die met u meedenkt.
+        </p>
+        <p class="text-coal/75 text-lg mt-4 leading-relaxed">
+          Wij geloven dat een interieur pas klopt wanneer de details samenvallen: kleur, materiaal en sfeer in één harmonieus geheel. Daarom helpen we u graag kiezen, en is onze webshop binnenkort opnieuw open voor wie liever thuis bestelt.
+        </p>
+        <div class="mt-9 grid grid-cols-3 gap-5">
+          <div class="text-center">
+            <p class="font-serif text-3xl text-ochre font-600">Deco</p>
+            <p class="text-coal/55 text-xs mt-1">Voor elke ruimte</p>
+          </div>
+          <div class="text-center">
+            <p class="font-serif text-3xl text-ochre font-600">Halle</p>
+            <p class="text-coal/55 text-xs mt-1">Lokaal &amp; persoonlijk</p>
+          </div>
+          <div class="text-center">
+            <p class="font-serif text-3xl text-ochre font-600">Advies</p>
+            <p class="text-coal/55 text-xs mt-1">Met u meegedacht</p>
+          </div>
+        </div>
+      </div>
+      <div class="fade-up rounded-3xl overflow-hidden aspect-[4/3]">
+        <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1100&q=80" alt="Decowinkel met accessoires en woonaccenten" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ BEZOEK + AFSPRAAK ═══ -->
+  <section id="bezoek" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-14">
+
+      <!-- Info + afspraakformulier -->
+      <div class="fade-up space-y-10">
+        <div>
+          <p class="text-ochre font-600 tracking-[0.22em] uppercase text-xs mb-4">Bezoek onze winkel</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-600">Welkom in Halle.</h2>
+          <p class="text-coal/70 text-lg mt-5 max-w-md">Kom langs in onze winkel aan de Klinkaert en ontdek ons volledige aanbod aan woondecoratie en accessoires. Voor persoonlijk interieuradvies werken we graag op afspraak.</p>
+        </div>
+
+        <dl class="space-y-5 text-coal">
+          <div class="flex gap-4">
+            <span class="text-ochre mt-1 text-lg" aria-hidden="true">📍</span>
+            <div>
+              <dt class="font-600">Adres</dt>
+              <dd class="text-coal/65">Klinkaert 1, 1500 Halle</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-ochre mt-1 text-lg" aria-hidden="true">🕑</span>
+            <div>
+              <dt class="font-600">Openingsuren</dt>
+              <dd class="text-coal/65">Op afspraak en tijdens de winkeluren — bel of mail ons gerust.</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-ochre mt-1 text-lg" aria-hidden="true">📞</span>
+            <div>
+              <dt class="font-600">Telefoon</dt>
+              <dd class="text-coal/65"><a href="tel:+32476223905" class="ug">0476 22 39 05</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-ochre mt-1 text-lg" aria-hidden="true">✉️</span>
+            <div>
+              <dt class="font-600">E-mail</dt>
+              <dd class="text-coal/65"><a href="mailto:evahauwaert@gmail.com" class="ug">evahauwaert@gmail.com</a></dd>
+            </div>
+          </div>
+        </dl>
+
+        <!-- Appointment form -->
+        <div id="afspraak" class="bg-warm rounded-2xl p-7">
+          <h3 class="font-serif text-2xl font-600 mb-5">Plan uw interieuradvies-afspraak</h3>
+          <form class="space-y-4" onsubmit="return false">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="apt-naam" class="block text-sm font-600 mb-1.5">Naam</label>
+                <input id="apt-naam" name="naam" type="text" autocomplete="name" required placeholder="Uw naam" class="w-full px-4 py-3 rounded-xl border border-coal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-ochre text-sm" />
+              </div>
+              <div>
+                <label for="apt-email" class="block text-sm font-600 mb-1.5">E-mail</label>
+                <input id="apt-email" name="email" type="email" autocomplete="email" required placeholder="uw@email.be" class="w-full px-4 py-3 rounded-xl border border-coal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-ochre text-sm" />
+              </div>
+            </div>
+            <div>
+              <label for="apt-type" class="block text-sm font-600 mb-1.5">Type advies</label>
+              <select id="apt-type" name="type" class="w-full px-4 py-3 rounded-xl border border-coal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-ochre text-sm">
+                <option value="">Kies een optie…</option>
+                <option>Woondecoratie &amp; accessoires</option>
+                <option>Textiel &amp; sfeer</option>
+                <option>Seizoensdecoratie</option>
+                <option>Volledig interieuradvies</option>
+                <option>Cadeau-advies</option>
+                <option>Vrijblijvend winkelbezoek</option>
+              </select>
+            </div>
+            <div>
+              <label for="apt-bericht" class="block text-sm font-600 mb-1.5">Korte toelichting <span class="text-coal/40 font-400">(optioneel)</span></label>
+              <textarea id="apt-bericht" name="bericht" rows="3" placeholder="Bv. nieuwe deco woonkamer, sfeer in de slaapkamer, foto van de ruimte meesturen, …" class="w-full px-4 py-3 rounded-xl border border-coal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-ochre text-sm resize-none"></textarea>
+            </div>
+            <div>
+              <label for="apt-foto" class="block text-sm font-600 mb-1.5">Foto van uw ruimte <span class="text-coal/40 font-400">(optioneel)</span></label>
+              <input id="apt-foto" name="foto" type="file" accept="image/*" class="w-full text-sm text-coal/70 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-600 file:bg-taupe file:text-cream hover:file:bg-coal file:transition" />
+            </div>
+            <button type="submit" class="w-full bg-ochre text-cream font-600 py-3.5 rounded-xl hover:bg-ochrelt transition">
+              Afspraak aanvragen
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="fade-up rounded-3xl overflow-hidden min-h-[440px] bg-warm shadow-sm">
+        <iframe
+          title="Kaart EVA interieur, Klinkaert 1, Halle"
+          class="w-full h-full min-h-[440px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.221%2C50.726%2C4.254%2C50.742&layer=mapnik&marker=50.7339%2C4.2376">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ NEWSLETTER (GDPR-compliant) ═══ -->
+  <section class="bg-ochre/12">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600">Op de hoogte blijven?</h2>
+      <p class="text-coal/65 mt-3 text-lg">Nieuwe collecties, interieurtrends en seizoensacties — af en toe in uw mailbox.</p>
+      <form class="mt-8 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief van EVA interieur</label>
+        <input id="nl-email" name="email" type="email" autocomplete="email" required placeholder="uw@email.be"
+          class="flex-1 px-5 py-3.5 rounded-full border border-coal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-ochre text-sm" />
+        <button class="bg-taupe text-cream font-600 px-7 py-3.5 rounded-full hover:bg-coal transition text-sm">Inschrijven</button>
+      </form>
+      <p class="text-xs text-coal/45 mt-3">Geen spam. Uitschrijven kan altijd via de link in elke mail. GDPR-conform verwerkt.</p>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="bg-taupe text-cream/75">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-9">
+      <div>
+        <p class="font-serif text-[26px] text-cream font-700 leading-none">EVA<span class="text-ochrelt"> interieur</span></p>
+        <p class="text-cream/40 text-xs uppercase tracking-widest mt-1">Deco · Halle</p>
+        <p class="text-cream/55 text-sm mt-4 max-w-xs leading-relaxed">Interieur- en decowinkel in Halle — woondecoratie, accessoires en interieurinspiratie voor elke ruimte.</p>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3 text-sm">Assortiment</p>
+        <ul class="space-y-2 text-sm text-cream/55">
+          <li><a href="#assortiment" class="hover:text-ochrelt transition">Woondecoratie</a></li>
+          <li><a href="#assortiment" class="hover:text-ochrelt transition">Accessoires</a></li>
+          <li><a href="#assortiment" class="hover:text-ochrelt transition">Textiel &amp; sfeer</a></li>
+          <li><a href="#assortiment" class="hover:text-ochrelt transition">Seizoensdeco</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3 text-sm">Diensten</p>
+        <ul class="space-y-2 text-sm text-cream/55">
+          <li><a href="#advies"    class="hover:text-ochrelt transition">Interieuradvies</a></li>
+          <li><a href="#advies"    class="hover:text-ochrelt transition">Cadeau-advies</a></li>
+          <li><a href="#inspiratie" class="hover:text-ochrelt transition">Inspiratie per ruimte</a></li>
+          <li><a href="#verhaal"   class="hover:text-ochrelt transition">Over EVA interieur</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3 text-sm">Contact</p>
+        <ul class="space-y-2 text-sm text-cream/55">
+          <li>Klinkaert 1</li>
+          <li>1500 Halle</li>
+          <li><a href="tel:+32476223905" class="hover:text-ochrelt transition">0476 22 39 05</a></li>
+          <li><a href="mailto:evahauwaert@gmail.com" class="hover:text-ochrelt transition">evahauwaert@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/35">
+        <p>© 2026 EVA interieur</p>
+        <p>Proof of concept — gebouwd voor een gesprek over de nieuwe website van EVA interieur.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ SCRIPTS ═══ -->
+  <script>
+    // Fade-up on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1600);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else       mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>
