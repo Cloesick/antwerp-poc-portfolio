@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beenhouwerij Ayoub — Ambachtelijke slagerij in Mechelen · vers vlees &amp; feestschotels</title>
+  <meta name="description" content="Ambachtelijke slagerij in Mechelen. Vers vlees, charcuterie, feestschotels en bbq-pakketten. Bestel online en haal af in de winkel — click-and-collect op Brusselsesteenweg 58." />
+  <link rel="canonical" href="https://beenhouwerijayoub.be/" />
+  <meta name="theme-color" content="#6b1f2a" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Beenhouwerij Ayoub" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Beenhouwerij Ayoub — Ambachtelijke slagerij in Mechelen" />
+  <meta property="og:description" content="Vers ambachtelijk vlees, charcuterie en feestschotels op bestelling. Click-and-collect in Mechelen." />
+  <meta property="og:url" content="https://beenhouwerijayoub.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Inline SVG favicon — monogram "BA" -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%236b1f2a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='13' fill='%23caa46a' text-anchor='middle'%3EBA%3C/text%3E%3C/svg%3E" />
+  <!-- Local-SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Butcher", "Store"],
+    "name": "Beenhouwerij Ayoub",
+    "description": "Ambachtelijke slagerij in Mechelen. Vers vlees, charcuterie, feestschotels en bbq-pakketten op bestelling.",
+    "image": "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://beenhouwerijayoub.be/",
+    "telephone": "+32488778002",
+    "email": "beenhouwerijayoub@gmail.com",
+    "priceRange": "€€",
+    "areaServed": "BE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Brusselsesteenweg 58",
+      "postalCode": "2800",
+      "addressLocality": "Mechelen",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.0190, "longitude": 4.4660 }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
+          colors: {
+            burgundy:   '#6b1f2a',
+            burgundylt: '#83303d',
+            gold:       '#caa46a',
+            goldlt:     '#d8ba88',
+            cream:      '#f6f1e7',
+            parchment:  '#ece0cb',
+            bark:        '#3b2820',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(107,31,42,.18) 0%, rgba(107,31,42,.52) 50%, rgba(107,31,42,.91) 100%); }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 2px; }
+  </style>
+</head>
+<body class="bg-cream text-burgundy font-sans antialiased selection:bg-gold/25">
+
+  <!-- Skip link -->
+  <a href="#bestellen" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-burgundy focus:text-cream focus:rounded-full">Naar click-and-collect</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-burgundy text-cream text-center text-[13px] tracking-wide py-2 px-4">
+    <span aria-hidden="true">🥩</span> <span class="font-semibold">Nieuw:</span> click-and-collect — bestel online &amp; haal af in de winkel · Brusselsesteenweg 58, Mechelen.
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-burgundy/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-burgundy">Ayoub<span class="text-gold">·</span></span>
+        <span class="text-[11px] uppercase tracking-[0.22em] text-burgundy/50 font-600">Beenhouwerij · Mechelen</span>
+      </a>
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
+        <a href="#bestellen" class="ug">Click &amp; Collect</a>
+        <a href="#assortiment" class="ug">Assortiment</a>
+        <a href="#feestschotels" class="ug">Feestschotels</a>
+        <a href="#bezoek" class="ug">Bezoek ons</a>
+      </div>
+      <!-- CTA + hamburger -->
+      <div class="flex items-center gap-2">
+        <a href="#bestellen" class="inline-flex items-center gap-2 bg-gold text-burgundy text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-goldlt transition">
+          Bestel &amp; afhalen
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-burgundy/15 text-burgundy hover:bg-burgundy/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-burgundy/10 bg-cream/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#bestellen" class="py-3 border-b border-burgundy/8">Click &amp; Collect</a>
+        <a href="#assortiment" class="py-3 border-b border-burgundy/8">Assortiment</a>
+        <a href="#feestschotels" class="py-3 border-b border-burgundy/8">Feestschotels</a>
+        <a href="#bezoek" class="py-3">Bezoek ons</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-burgundy">
+    <img
+      src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=2000&q=80"
+      alt="Vers ambachtelijk vlees en charcuterie bij Beenhouwerij Ayoub Mechelen"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-goldlt font-600 tracking-[0.3em] uppercase text-xs mb-5">
+        <span aria-hidden="true">🥩</span> Ambachtelijke slagerij · Vers vlees · Mechelen
+      </p>
+      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
+        Ambachtelijk vlees,<br />vakkundig voor u gesneden.
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Vers vlees, fijne charcuterie, feestschotels en bbq-pakketten —
+        dagvers gesneden in de winkel op Brusselsesteenweg 58 in Mechelen.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#bestellen" class="bg-gold text-burgundy font-700 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
+          Bestel en haal af
+        </a>
+        <a href="#feestschotels" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
+          Feestschotels
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP strip -->
+  <section class="bg-burgundy text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-goldlt">Ambacht</p><p class="mt-1 text-cream/65">Dagvers gesneden in de winkel</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Feest</p><p class="mt-1 text-cream/65">Feestschotels op bestelling</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">BBQ</p><p class="mt-1 text-cream/65">Vlees- &amp; bbq-pakketten op maat</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Afhaal</p><p class="mt-1 text-cream/65">Click-and-collect in Mechelen</p></div>
+    </div>
+  </section>
+
+  <!-- Click-and-collect / Webshop upsell -->
+  <section id="bestellen" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Nieuw: click &amp; collect</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-burgundy">
+          Bestel online,<br />haal af in de winkel.
+        </h2>
+        <p class="text-bark/75 text-lg mt-5 leading-relaxed max-w-md">
+          Geen wachtrij, geen stress. Stel uw bestelling samen — vers vlees, charcuterie, een feestschotel of
+          een bbq-pakket — en haal op een tijdstip dat u past af op Brusselsesteenweg 58.
+        </p>
+        <ul class="mt-7 space-y-3 text-bark">
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Verse bestellingen klaar bij afhaling</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Feestschotels &amp; bbq-pakketten op maat</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Betalen in de winkel (cash &amp; Bancontact)</li>
+        </ul>
+        <a href="#feestschotels" class="inline-flex items-center gap-2 mt-9 bg-burgundy text-cream font-600 px-7 py-3.5 rounded-full hover:bg-burgundylt transition">
+          Bekijk de feestschotels
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1551135049-8a33b5883817?auto=format&fit=crop&w=800&q=80"
+            alt="Vers vlees in de toonbank"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment mt-8">
+          <img
+            src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=800&q=80"
+            alt="Charcuterie en fijne vleeswaren"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assortiment grid -->
+  <section id="assortiment" class="bg-parchment/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-burgundy">Alles uit de ambachtelijke slagerij</h2>
+        </div>
+        <p class="text-bark/65 max-w-sm">Vers vlees, charcuterie en bereidingen — alles dagvers in de winkel.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Vers vlees -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1551135049-8a33b5883817?auto=format&fit=crop&w=800&q=80"
+            alt="Vers ambachtelijk vlees"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-burgundy via-burgundy/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Vers vlees</h3>
+            <p class="text-cream/75 text-sm mt-1">Rund, kalf, lam &amp; gevogelte — dagvers op maat gesneden.</p>
+          </div>
+        </article>
+        <!-- Charcuterie -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=800&q=80"
+            alt="Fijne charcuterie en vleeswaren"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-burgundy via-burgundy/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Charcuterie</h3>
+            <p class="text-cream/75 text-sm mt-1">Fijne vleeswaren en huisbereide specialiteiten.</p>
+          </div>
+        </article>
+        <!-- Bereidingen -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=800&q=80"
+            alt="Huisbereide vleesbereidingen"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-burgundy via-burgundy/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Huisbereidingen</h3>
+            <p class="text-cream/75 text-sm mt-1">Gemarineerd vlees, gehakt &amp; dagverse bereidingen.</p>
+          </div>
+        </article>
+        <!-- BBQ -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+            alt="BBQ-pakket met gemarineerd vlees"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-burgundy via-burgundy/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">BBQ-pakketten</h3>
+            <p class="text-cream/75 text-sm mt-1">Samengestelde pakketten voor de barbecue, op maat.</p>
+          </div>
+        </article>
+        <!-- Gevogelte -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=800&q=80"
+            alt="Vers gevogelte"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-burgundy via-burgundy/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Gevogelte</h3>
+            <p class="text-cream/75 text-sm mt-1">Kip en gevogelte, vers en op bestelling.</p>
+          </div>
+        </article>
+        <!-- Feestschotels CTA card -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-gold text-burgundy relative aspect-[4/5] flex items-center justify-center text-center p-6">
+          <div>
+            <p class="font-serif text-2xl font-600">Feest&shy;schotels</p>
+            <p class="text-burgundy/80 text-sm mt-2">Stel een feestschotel samen — ideaal voor een verjaardag, communie of feest.</p>
+            <a href="#feestschotels" class="inline-block mt-5 text-burgundy font-700 ug">Bekijk de schotels →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products (illustratief) -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="flex items-end justify-between mb-10">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-burgundy">Onze meest gevraagde producten</h2>
+      <a href="#bestellen" class="hidden sm:inline text-gold font-600 ug">Alles bestellen →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Product 1 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=700&q=80"
+            alt="Gemengde charcuterieschotel (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Populair</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-burgundy">Charcuterieschotel</h3>
+          <p class="text-bark/60 text-sm mt-1">Assortiment fijne vleeswaren, samengesteld op maat.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-bark/50 text-sm font-500">Prijs op aanvraag</span>
+            <button class="bg-burgundy text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-burgundylt transition">Toevoegen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80"
+            alt="BBQ-pakket (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Seizoen</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-burgundy">BBQ-pakket</h3>
+          <p class="text-bark/60 text-sm mt-1">Gemarineerd vlees voor de barbecue, per persoon samengesteld.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-bark/50 text-sm font-500">Prijs op aanvraag</span>
+            <button class="bg-burgundy text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-burgundylt transition">Toevoegen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=700&q=80"
+            alt="Gemarineerd vlees (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Huisbereiding</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-burgundy">Gemarineerd vlees</h3>
+          <p class="text-bark/60 text-sm mt-1">Dagverse marinades en bereidingen uit eigen keuken.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-bark/50 text-sm font-500">Prijs op aanvraag</span>
+            <button class="bg-burgundy text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-burgundylt transition">Toevoegen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs text-bark/40 mt-6">Voorbeeldproducten ter illustratie van de click-and-collect webshop. Prijzen worden in de winkel bevestigd.</p>
+  </section>
+
+  <!-- Feestschotels (the differentiator) -->
+  <section id="feestschotels" class="bg-burgundy text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img
+          src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=1000&q=80"
+          alt="Feestschotel met vlees en charcuterie"
+          loading="lazy" decoding="async"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="order-1 lg:order-2 fade-up">
+        <p class="text-goldlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Feestschotels op bestelling</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
+          Het feest verzorgd,<br />tot in de puntjes.
+        </h2>
+        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
+          Verjaardag, communie, feest of bedrijfsevent? Wij stellen een feestschotel samen op maat —
+          vers vlees, fijne charcuterie en bereidingen, mooi gepresenteerd en klaar om af te halen.
+        </p>
+        <ul class="mt-6 space-y-3 text-cream/85">
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Samenstelling op maat (aantal personen, budget, thema)</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Afhalen in de winkel op een afgesproken tijdstip</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Tijdig bestellen aanbevolen — vraag gerust naar de mogelijkheden</li>
+        </ul>
+        <a href="#bezoek" class="inline-flex items-center gap-2 mt-8 bg-gold text-burgundy font-700 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
+          Vraag een feestschotel aan
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story / Over ons -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="fade-up">
+      <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-burgundy">Vakmanschap en versheid,<br />elke dag opnieuw.</h2>
+      <p class="text-bark/70 text-lg mt-6 leading-relaxed">
+        Beenhouwerij Ayoub is uw ambachtelijke slagerij op Brusselsesteenweg 58 in Mechelen.
+        Bij ons draait alles om versheid en vakmanschap: vlees wordt dagvers in de winkel
+        gesneden en op maat klaargemaakt zoals u het wenst.
+      </p>
+      <p class="text-bark/70 text-lg mt-4 leading-relaxed">
+        Of u nu komt voor een mooi stuk vlees, een charcuterieschotel voor het feest,
+        een bbq-pakket of een dagverse bereiding — bij Ayoub vindt u kwaliteit en
+        persoonlijk advies.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-6">
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">Vers</p>
+          <p class="text-bark/65 text-sm mt-1">Dagvers gesneden</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">Ambacht</p>
+          <p class="text-bark/65 text-sm mt-1">Op maat klaargemaakt</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">Lokaal</p>
+          <p class="text-bark/65 text-sm mt-1">In hartje Mechelen</p>
+        </div>
+      </div>
+    </div>
+    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
+      <img
+        src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?auto=format&fit=crop&w=1000&q=80"
+        alt="Ambachtelijke slager aan het werk"
+        loading="lazy" decoding="async"
+        class="w-full h-full object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Bezoek + kaart -->
+  <section id="bezoek" class="bg-parchment/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+      <div class="fade-up">
+        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-burgundy">Welkom in de winkel</h2>
+        <p class="text-bark/70 text-lg mt-5 max-w-md">
+          Kom langs op Brusselsesteenweg 58 in Mechelen voor vers vlees en persoonlijk advies.
+        </p>
+        <dl class="mt-9 space-y-5 text-bark">
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📍</span>
+            <div>
+              <dt class="font-600 text-burgundy">Adres</dt>
+              <dd class="text-bark/70">Brusselsesteenweg 58, 2800 Mechelen</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📞</span>
+            <div>
+              <dt class="font-600 text-burgundy">Telefoon</dt>
+              <dd class="text-bark/70"><a href="tel:+32488778002" class="ug">+32 488 77 80 02</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">✉️</span>
+            <div>
+              <dt class="font-600 text-burgundy">E-mail</dt>
+              <dd class="text-bark/70">
+                beenhouwerijayoub@gmail.com
+                <span class="text-bark/40 text-sm ml-1">(voorstel: info@beenhouwerijayoub.be)</span>
+              </dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">💳</span>
+            <div>
+              <dt class="font-600 text-burgundy">Betaalmogelijkheden</dt>
+              <dd class="text-bark/70">Cash · Bancontact</dd>
+            </div>
+          </div>
+        </dl>
+        <a href="#bestellen" class="inline-block mt-9 bg-burgundy text-cream font-600 px-7 py-3.5 rounded-full hover:bg-burgundylt transition">
+          Of bestel online →
+        </a>
+      </div>
+      <!-- OpenStreetMap embed — Brusselsesteenweg 58, 2800 Mechelen (~51.0190, 4.4660) -->
+      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-parchment shadow-sm">
+        <iframe
+          title="Kaart Beenhouwerij Ayoub — Brusselsesteenweg 58, 2800 Mechelen"
+          class="w-full h-full min-h-[360px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.458%2C51.014%2C4.474%2C51.024&layer=mapnik&marker=51.0190%2C4.4660"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- GDPR Newsletter -->
+  <section class="bg-gold/15">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-burgundy">Blijf op de hoogte</h2>
+      <p class="text-bark/70 mt-3">Nieuwe seizoensproducten, feestdagsaanbiedingen en bbq-pakketten — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input
+          id="nl-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          placeholder="jouw@email.be"
+          class="flex-1 px-5 py-3 rounded-full border border-burgundy/20 bg-cream focus:outline-none focus:ring-2 focus:ring-gold"
+        />
+        <button class="bg-burgundy text-cream font-600 px-7 py-3 rounded-full hover:bg-burgundylt transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-bark/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-burgundy text-cream/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-cream font-700">Ayoub<span class="text-gold">·</span></p>
+        <p class="text-cream/55 text-sm mt-1">Beenhouwerij</p>
+        <p class="text-cream/55 text-sm mt-3 max-w-xs">Ambachtelijke slagerij in Mechelen. Vers vlees, charcuterie, feestschotels &amp; bbq-pakketten.</p>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Winkel</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#assortiment" class="hover:text-goldlt">Assortiment</a></li>
+          <li><a href="#bestellen" class="hover:text-goldlt">Click &amp; Collect</a></li>
+          <li><a href="#feestschotels" class="hover:text-goldlt">Feestschotels</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Info</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#bezoek" class="hover:text-goldlt">Contact</a></li>
+          <li><a href="#bezoek" class="hover:text-goldlt">Bezoek ons</a></li>
+          <li><a href="#top" class="hover:text-goldlt">Ons verhaal</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Contact</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li>Brusselsesteenweg 58</li>
+          <li>2800 Mechelen</li>
+          <li><a href="tel:+32488778002" class="hover:text-goldlt">+32 488 77 80 02</a></li>
+          <li>beenhouwerijayoub@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40">
+        <p>© 2026 Beenhouwerij Ayoub. Concept-redesign.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; webshop.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Fade-up IntersectionObserver
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>

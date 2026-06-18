@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slagerij Mertens — Ambachtelijke slagerij in 3 generaties · Blaasveld (Willebroek)</title>
+  <meta name="description" content="Ambachtelijke slagerij in Blaasveld (Willebroek), al 3 generaties. Vers vlees, charcuterie en feestschotels op bestelling. Nu ook click-and-collect en online bestellen." />
+  <link rel="canonical" href="https://slagerijmertens.be/" />
+  <meta name="theme-color" content="#6b1f2a" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Slagerij Mertens" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Slagerij Mertens — Ambachtelijke slagerij in 3 generaties" />
+  <meta property="og:description" content="Vers ambachtelijk vlees, charcuterie en feestschotels op bestelling in Blaasveld (Willebroek). Nu ook click-and-collect." />
+  <meta property="og:url" content="https://slagerijmertens.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Inline SVG favicon — monogram "SM" -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%236b1f2a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='13' fill='%23caa46a' text-anchor='middle'%3ESM%3C/text%3E%3C/svg%3E" />
+  <!-- Local-SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Butcher", "Store"],
+    "name": "Slagerij Mertens",
+    "description": "Ambachtelijke slagerij in Blaasveld (Willebroek), al 3 generaties. Vers vlees, charcuterie en feestschotels op bestelling.",
+    "image": "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://slagerijmertens.be/",
+    "telephone": "+3238866256",
+    "email": "slagerij.mertens@telenet.be",
+    "priceRange": "€€",
+    "areaServed": "BE",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Wouters-Lefebvreplein 6",
+      "postalCode": "2830",
+      "addressLocality": "Blaasveld",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.0644, "longitude": 4.3461 }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
+          colors: {
+            burgundy:  '#6b1f2a',
+            burgundylt:'#84313d',
+            gold:      '#caa46a',
+            goldlt:    '#d9ba87',
+            cream:     '#f6f1e7',
+            parchment: '#ece0cb',
+            bark:      '#3b2a1c',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(107,31,42,.18) 0%, rgba(107,31,42,.52) 50%, rgba(107,31,42,.91) 100%); }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 2px; }
+  </style>
+</head>
+<body class="bg-cream text-burgundy font-sans antialiased selection:bg-gold/25">
+
+  <!-- Skip link -->
+  <a href="#bestellen" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-burgundy focus:text-cream focus:rounded-full">Naar click-and-collect</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-burgundy text-cream text-center text-[13px] tracking-wide py-2 px-4">
+    <span aria-hidden="true">🥩</span> <span class="font-semibold">Nieuw:</span> click-and-collect — bestel feestschotels online &amp; haal af in de winkel · Wouters-Lefebvreplein 6, Blaasveld.
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-burgundy/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-burgundy">Mertens<span class="text-gold">·</span></span>
+        <span class="text-[11px] uppercase tracking-[0.22em] text-burgundy/50 font-600">Slagerij · Blaasveld</span>
+      </a>
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
+        <a href="#bestellen" class="ug">Click &amp; Collect</a>
+        <a href="#assortiment" class="ug">Assortiment</a>
+        <a href="#feestschotels" class="ug">Feestschotels</a>
+        <a href="#bezoek" class="ug">Bezoek ons</a>
+      </div>
+      <!-- CTA + hamburger -->
+      <div class="flex items-center gap-2">
+        <a href="#bestellen" class="inline-flex items-center gap-2 bg-gold text-burgundy text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-goldlt transition">
+          Bestel &amp; afhalen
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-burgundy/15 text-burgundy hover:bg-burgundy/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-burgundy/10 bg-cream/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#bestellen" class="py-3 border-b border-burgundy/8">Click &amp; Collect</a>
+        <a href="#assortiment" class="py-3 border-b border-burgundy/8">Assortiment</a>
+        <a href="#feestschotels" class="py-3 border-b border-burgundy/8">Feestschotels</a>
+        <a href="#bezoek" class="py-3">Bezoek ons</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-burgundy">
+    <img
+      src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=2000&q=80"
+      alt="Ambachtelijk vlees en charcuterie bij Slagerij Mertens Blaasveld"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-goldlt font-600 tracking-[0.3em] uppercase text-xs mb-5">
+        <span aria-hidden="true">🥩</span> Ambachtelijke slagerij · 3 generaties · Blaasveld
+      </p>
+      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
+        Vakmanschap dat smaakt,<br />al drie generaties lang.
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Vers ambachtelijk vlees, huisgemaakte charcuterie en feestschotels op maat —
+        gemaakt met de zorg en kennis van drie generaties slagers in Blaasveld.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#bestellen" class="bg-gold text-burgundy font-700 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
+          Bestel en haal af
+        </a>
+        <a href="#feestschotels" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
+          Feestschotels
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP strip -->
+  <section class="bg-burgundy text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-goldlt">Ambacht</p><p class="mt-1 text-cream/65">Dagvers bereid in eigen winkel</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">3 generaties</p><p class="mt-1 text-cream/65">Vakkennis van vader op zoon</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Feestschotels</p><p class="mt-1 text-cream/65">Op bestelling, mooi opgemaakt</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Afhaal</p><p class="mt-1 text-cream/65">Click-and-collect zonder wachtrij</p></div>
+    </div>
+  </section>
+
+  <!-- Click-and-collect / Webshop upsell -->
+  <section id="bestellen" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Nieuw: click &amp; collect</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-burgundy">
+          Bestel online,<br />haal af in de winkel.
+        </h2>
+        <p class="text-bark/75 text-lg mt-5 leading-relaxed max-w-md">
+          Geen wachtrij, geen stress. Stel uw bestelling samen — vers vlees, charcuterie of
+          een complete feestschotel — en haal op een tijdstip dat u past af op Wouters-Lefebvreplein 6.
+        </p>
+        <ul class="mt-7 space-y-3 text-bark">
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Verse bestellingen klaar bij afhaling</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Feestschotels op maat voor elke gelegenheid</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Betalen in de winkel of online (Bancontact, Visa)</li>
+        </ul>
+        <a href="#feestschotels" class="inline-flex items-center gap-2 mt-9 bg-burgundy text-cream font-600 px-7 py-3.5 rounded-full hover:bg-burgundylt transition">
+          Bekijk de feestschotels
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=800&q=80"
+            alt="Verse charcuterie plank"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment mt-8">
+          <img
+            src="https://images.unsplash.com/photo-1551135049-8a33b5883817?auto=format&fit=crop&w=800&q=80"
+            alt="Vers ambachtelijk vlees in de toonbank"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assortiment grid -->
+  <section id="assortiment" class="bg-parchment/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-burgundy">Alles van de ambachtelijke slager</h2>
+        </div>
+        <p class="text-bark/65 max-w-sm">Vers vlees, huisgemaakte charcuterie en bereidingen — alles dagvers in de winkel.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Vers vlees -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1551135049-8a33b5883817?auto=format&fit=crop&w=800&q=80"
+            alt="Vers ambachtelijk vlees"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-burgundy via-burgundy/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Vers vlees</h3>
+            <p class="text-cream/75 text-sm mt-1">Varken, rund &amp; lam — dagvers gesneden op maat.</p>
+          </div>
+        </article>
+        <!-- Charcuterie -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=800&q=80"
+            alt="Huisgemaakte charcuterie"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-burgundy via-burgundy/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Charcuterie</h3>
+            <p class="text-cream/75 text-sm mt-1">Hesp, salami, paté &amp; huisbereide worst.</p>
+          </div>
+        </article>
+        <!-- Bereidingen -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=800&q=80"
+            alt="Huisbereide vleesbereidingen"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-burgundy via-burgundy/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Bereidingen</h3>
+            <p class="text-cream/75 text-sm mt-1">Gehakt, brochettes, gemarineerd &amp; ovenklaar.</p>
+          </div>
+        </article>
+        <!-- Vleeswaren / beleg -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1606851091851-e8c8c0fca5ba?auto=format&fit=crop&w=800&q=80"
+            alt="Vleeswaren en fijn beleg"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-burgundy via-burgundy/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Fijn beleg</h3>
+            <p class="text-cream/75 text-sm mt-1">Vleeswaren, kaas &amp; broodbeleg vers gesneden.</p>
+          </div>
+        </article>
+        <!-- Barbecue -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=800&q=80"
+            alt="Barbecuepakket vlees"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-burgundy via-burgundy/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Barbecue</h3>
+            <p class="text-cream/75 text-sm mt-1">Barbecuepakketten op maat voor groot &amp; klein.</p>
+          </div>
+        </article>
+        <!-- Feestschotels CTA card -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-gold text-burgundy relative aspect-[4/5] flex items-center justify-center text-center p-6">
+          <div>
+            <p class="font-serif text-2xl font-600">Feest&shy;schotels</p>
+            <p class="text-burgundy/80 text-sm mt-2">Stel een feestschotel samen — ideaal voor een verjaardag, communie of bedrijfsfeest.</p>
+            <a href="#feestschotels" class="inline-block mt-5 text-burgundy font-700 ug">Bekijk de schotels →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products (illustratief) -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="flex items-end justify-between mb-10">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-burgundy">Onze meest gevraagde producten</h2>
+      <a href="#bestellen" class="hidden sm:inline text-gold font-600 ug">Alles bestellen →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Product 1 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=700&q=80"
+            alt="Charcuterieschotel (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Bestseller</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-burgundy">Charcuterieschotel</h3>
+          <p class="text-bark/60 text-sm mt-1">Assortiment huisgemaakte charcuterie, mooi opgemaakt.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-bark/45 text-sm font-400">Prijs op aanvraag</span>
+            <button class="bg-burgundy text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-burgundylt transition">Toevoegen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=700&q=80"
+            alt="Barbecuepakket (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Seizoen</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-burgundy">Barbecuepakket</h3>
+          <p class="text-bark/60 text-sm mt-1">Gevarieerd vlees en brochettes, samengesteld op maat.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-bark/45 text-sm font-400">Prijs op aanvraag</span>
+            <button class="bg-burgundy text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-burgundylt transition">Toevoegen</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
+          <img
+            src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=700&q=80"
+            alt="Ovenklare bereiding (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Huisbereiding</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-burgundy">Ovenklare schotel</h3>
+          <p class="text-bark/60 text-sm mt-1">Vlees ovenklaar bereid — thuis alleen nog opwarmen.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-bark/45 text-sm font-400">Prijs op aanvraag</span>
+            <button class="bg-burgundy text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-burgundylt transition">Toevoegen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs text-bark/40 mt-6">Voorbeeldproducten ter illustratie van de click-and-collect webshop — exacte prijzen in overleg met de slagerij.</p>
+  </section>
+
+  <!-- Feestschotels (the differentiator) -->
+  <section id="feestschotels" class="bg-burgundy text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img
+          src="https://images.unsplash.com/photo-1606851091851-e8c8c0fca5ba?auto=format&fit=crop&w=1000&q=80"
+          alt="Opgemaakte feestschotel met vleeswaren"
+          loading="lazy" decoding="async"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="order-1 lg:order-2 fade-up">
+        <p class="text-goldlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Feestschotels op bestelling</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
+          Een feestschotel<br />die het feest maakt.
+        </h2>
+        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
+          Verjaardag, communie of bedrijfsfeest? Wij stellen een feestschotel op maat samen:
+          fijne charcuterie, vlees, beleg en garnituur —
+          mooi opgemaakt en klaar om te serveren.
+        </p>
+        <ul class="mt-6 space-y-3 text-cream/85">
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Samenstelling op maat (allergieën, budget, aantal personen)</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Afhalen in de winkel op een tijdstip dat past</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Bedrijfs- en groepsbestellingen welkom</li>
+        </ul>
+        <a href="#bezoek" class="inline-flex items-center gap-2 mt-8 bg-gold text-burgundy font-700 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
+          Vraag een feestschotel aan
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story / Over ons -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="fade-up">
+      <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-burgundy">Drie generaties<br />vakmanschap in Blaasveld.</h2>
+      <p class="text-bark/70 text-lg mt-6 leading-relaxed">
+        Slagerij Mertens is al drie generaties lang een vertrouwd adres op het Wouters-Lefebvreplein
+        in Blaasveld (Willebroek). Wat van vader op zoon werd doorgegeven? De zorg voor kwaliteit,
+        het echte ambacht en de tijd om het goed te doen.
+      </p>
+      <p class="text-bark/70 text-lg mt-4 leading-relaxed">
+        Of u nu komt voor een vers stuk vlees, huisgemaakte charcuterie of een feestschotel
+        voor een speciale gelegenheid — bij Mertens vindt u de smaak en het vakmanschap
+        waar de buurt al generaties op rekent.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-6">
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">3</p>
+          <p class="text-bark/65 text-sm mt-1">Generaties slagers</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">100%</p>
+          <p class="text-bark/65 text-sm mt-1">Ambachtelijk vlees</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">Blaasveld</p>
+          <p class="text-bark/65 text-sm mt-1">Hart van de buurt</p>
+        </div>
+      </div>
+    </div>
+    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
+      <img
+        src="https://images.unsplash.com/photo-1556909172-54557c7e4fb7?auto=format&fit=crop&w=1000&q=80"
+        alt="Ambachtelijke slager aan het werk"
+        loading="lazy" decoding="async"
+        class="w-full h-full object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Bezoek + kaart -->
+  <section id="bezoek" class="bg-parchment/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+      <div class="fade-up">
+        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-burgundy">Welkom in de winkel</h2>
+        <p class="text-bark/70 text-lg mt-5 max-w-md">
+          Kom proeven en kiezen op het Wouters-Lefebvreplein 6 in Blaasveld, deelgemeente van Willebroek.
+        </p>
+        <dl class="mt-9 space-y-5 text-bark">
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📍</span>
+            <div>
+              <dt class="font-600 text-burgundy">Adres</dt>
+              <dd class="text-bark/70">Wouters-Lefebvreplein 6, 2830 Blaasveld (Willebroek)</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🕑</span>
+            <div>
+              <dt class="font-600 text-burgundy">Openingsuren</dt>
+              <dd class="text-bark/70">Raadpleeg de winkel voor de actuele openingsuren.</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📞</span>
+            <div>
+              <dt class="font-600 text-burgundy">Telefoon</dt>
+              <dd class="text-bark/70"><a href="tel:+3238866256" class="ug">03 886 62 56</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">✉️</span>
+            <div>
+              <dt class="font-600 text-burgundy">E-mail</dt>
+              <dd class="text-bark/70">
+                <a href="mailto:slagerij.mertens@telenet.be" class="ug">slagerij.mertens@telenet.be</a>
+                <span class="text-bark/40 text-sm ml-1">(voorstel: info@slagerijmertens.be)</span>
+              </dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">💳</span>
+            <div>
+              <dt class="font-600 text-burgundy">Betaalmogelijkheden</dt>
+              <dd class="text-bark/70">Cash · Bancontact · Maaltijdcheques · Visa</dd>
+            </div>
+          </div>
+        </dl>
+        <a href="#bestellen" class="inline-block mt-9 bg-burgundy text-cream font-600 px-7 py-3.5 rounded-full hover:bg-burgundylt transition">
+          Of bestel online →
+        </a>
+      </div>
+      <!-- OpenStreetMap embed — Wouters-Lefebvreplein 6, 2830 Blaasveld (~51.0644, 4.3461) -->
+      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-parchment shadow-sm">
+        <iframe
+          title="Kaart Slagerij Mertens — Wouters-Lefebvreplein 6, 2830 Blaasveld"
+          class="w-full h-full min-h-[360px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.338%2C51.060%2C4.354%2C51.069&layer=mapnik&marker=51.0644%2C4.3461"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- GDPR Newsletter -->
+  <section class="bg-gold/15">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-burgundy">Blijf op de hoogte</h2>
+      <p class="text-bark/70 mt-3">Seizoensproducten, barbecuetips, feestdagsaanbiedingen en feestschotels — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input
+          id="nl-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          placeholder="jouw@email.be"
+          class="flex-1 px-5 py-3 rounded-full border border-burgundy/20 bg-cream focus:outline-none focus:ring-2 focus:ring-gold"
+        />
+        <button class="bg-burgundy text-cream font-600 px-7 py-3 rounded-full hover:bg-burgundylt transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-bark/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-burgundy text-cream/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-cream font-700">Mertens<span class="text-gold">·</span></p>
+        <p class="text-cream/55 text-sm mt-1">Slagerij</p>
+        <p class="text-cream/55 text-sm mt-3 max-w-xs">Ambachtelijke slagerij in Blaasveld (Willebroek), al 3 generaties. Vers vlees, charcuterie &amp; feestschotels.</p>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Winkel</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#assortiment" class="hover:text-goldlt">Assortiment</a></li>
+          <li><a href="#bestellen" class="hover:text-goldlt">Click &amp; Collect</a></li>
+          <li><a href="#feestschotels" class="hover:text-goldlt">Feestschotels</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Info</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#bezoek" class="hover:text-goldlt">Openingsuren</a></li>
+          <li><a href="#bezoek" class="hover:text-goldlt">Contact</a></li>
+          <li><a href="#top" class="hover:text-goldlt">Ons verhaal</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Contact</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li>Wouters-Lefebvreplein 6</li>
+          <li>2830 Blaasveld (Willebroek)</li>
+          <li><a href="tel:+3238866256" class="hover:text-goldlt">03 886 62 56</a></li>
+          <li><a href="mailto:slagerij.mertens@telenet.be" class="hover:text-goldlt">slagerij.mertens@telenet.be</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40">
+        <p>© 2026 Slagerij Mertens. Concept-redesign.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; webshop.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Fade-up IntersectionObserver
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>
