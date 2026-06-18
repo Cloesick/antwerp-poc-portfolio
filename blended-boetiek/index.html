@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blended Boetiek &amp; Koffie — jonge mode, lifestyle &amp; koffiehoek in Bergen op Zoom</title>
+  <meta name="description" content="Blended Boetiek &amp; Koffie in Bergen op Zoom: jonge mode- &amp; lifestyleboetiek met koffiehoek (geopend 2025). Nu ook online — de groeiende collectie, een lookbook en de lifestyle- &amp; koffie-beleving binnen handbereik." />
+  <link rel="canonical" href="https://blendedboetiek.nl/" />
+  <meta name="theme-color" content="#2e2a33" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Blended Boetiek &amp; Koffie" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:title" content="Blended Boetiek &amp; Koffie — jonge mode, lifestyle &amp; koffiehoek in Bergen op Zoom" />
+  <meta property="og:description" content="Jonge mode- &amp; lifestyleboetiek met koffiehoek in Bergen op Zoom. Nu ook online: groeiende collectie, lookbook en lifestyle- &amp; koffie-beleving." />
+  <meta property="og:url" content="https://blendedboetiek.nl/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Inline SVG favicon — monogram "BB" -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232e2a33'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%23b08d57' text-anchor='middle'%3EBB%3C/text%3E%3C/svg%3E" />
+  <!-- Local-SEO structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    "name": "Blended Boetiek & Koffie",
+    "description": "Jonge mode- en lifestyleboetiek met koffiehoek in Bergen op Zoom (geopend 2025). Een groeiende mode- en lifestylecollectie, een lookbook en een koffie-beleving — straks ook online.",
+    "image": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://blendedboetiek.nl/",
+    "telephone": "+31164785545",
+    "email": "blendedboetiek@outlook.com",
+    "priceRange": "€€",
+    "areaServed": "NL",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Lombardenstraat 34",
+      "postalCode": "4611 VZ",
+      "addressLocality": "Bergen op Zoom",
+      "addressRegion": "Noord-Brabant",
+      "addressCountry": "NL"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.4949, "longitude": 4.2911 }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
+          colors: {
+            plum:      '#2e2a33',
+            plumlt:    '#413b48',
+            plumdk:    '#211e26',
+            gold:      '#b08d57',
+            goldlt:    '#c7a878',
+            cream:     '#f6efe4',
+            sand:      '#ece1cf',
+            charcoal:  '#2e2a3310',
+            ink:       '#332f38',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(33,30,38,.16) 0%, rgba(33,30,38,.50) 50%, rgba(33,30,38,.92) 100%); }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 2px; }
+  </style>
+</head>
+<body class="bg-cream text-plum font-sans antialiased selection:bg-gold/30">
+
+  <!-- Skip link -->
+  <a href="#webshop" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-plum focus:text-cream focus:rounded-full">Naar de webshop</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-plum text-cream text-center text-[13px] tracking-wide py-2 px-4">
+    <span aria-hidden="true">☕</span> <span class="font-semibold">Nieuw sinds 2025:</span> jonge mode &amp; lifestyle met koffiehoek — straks ook online · Lombardenstraat 34, Bergen op Zoom.
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-plum/10">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-plum">Blended<span class="text-gold">·</span></span>
+        <span class="text-[11px] uppercase tracking-[0.22em] text-plum/50 font-600">Mode &amp; koffie · Bergen op Zoom</span>
+      </a>
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
+        <a href="#webshop" class="ug">Webshop</a>
+        <a href="#collectie" class="ug">Collectie</a>
+        <a href="#lookbook" class="ug">Lookbook</a>
+        <a href="#bezoek" class="ug">Bezoek ons</a>
+      </div>
+      <!-- CTA + hamburger -->
+      <div class="flex items-center gap-2">
+        <a href="#webshop" class="inline-flex items-center gap-2 bg-gold text-plumdk text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-goldlt transition">
+          Shop de collectie
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
+          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-plum/15 text-plum hover:bg-plum/5 transition">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-plum/10 bg-cream/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
+        <a href="#webshop" class="py-3 border-b border-plum/8">Webshop</a>
+        <a href="#collectie" class="py-3 border-b border-plum/8">Collectie</a>
+        <a href="#lookbook" class="py-3 border-b border-plum/8">Lookbook</a>
+        <a href="#bezoek" class="py-3">Bezoek ons</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-plum">
+    <img
+      src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=2000&q=80"
+      alt="Jonge mode en lifestyle met koffiehoek bij Blended Boetiek & Koffie in Bergen op Zoom"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-goldlt font-600 tracking-[0.3em] uppercase text-xs mb-5">
+        <span aria-hidden="true">☕</span> Mode · Lifestyle · Koffie · Bergen op Zoom
+      </p>
+      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
+        Jonge mode &amp; koffie,<br />nu ook online.
+      </h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
+        Een jonge mode- &amp; lifestyleboetiek met een eigen koffiehoek — sinds 2025 in het hart van
+        Bergen op Zoom. De groeiende collectie, een lookbook en onze lifestyle- &amp; koffie-beleving:
+        straks ontdek je het ook online, niet langer enkel op Facebook en Instagram.
+      </p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#webshop" class="bg-gold text-plumdk font-700 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
+          Shop de collectie
+        </a>
+        <a href="#lookbook" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
+          Bekijk het lookbook
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP strip -->
+  <section class="bg-plum text-cream/90">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-goldlt">2025</p><p class="mt-1 text-cream/65">Jonge boetiek, vers geopend</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Mode</p><p class="mt-1 text-cream/65">Groeiende mode- &amp; lifestylecollectie</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Koffie</p><p class="mt-1 text-cream/65">Eigen koffiehoek &amp; beleving</p></div>
+      <div><p class="font-serif text-2xl text-goldlt">Lookbook</p><p class="mt-1 text-cream/65">Online inspiratie &amp; collectie</p></div>
+    </div>
+  </section>
+
+  <!-- Webshop / online collectie -->
+  <section id="webshop" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Nieuw: de webshop</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-plum">
+          Van social<br />naar webshop.
+        </h2>
+        <p class="text-ink/75 text-lg mt-5 leading-relaxed max-w-md">
+          Blended Boetiek leeft nu volop op Facebook en Instagram — maar een story scrollt voorbij
+          en de collectie groeit snel. Met een eigen webshop staat de volledige collectie altijd
+          netjes online: bladeren, bewaren en straks rechtstreeks bestellen of reserveren.
+        </p>
+        <ul class="mt-7 space-y-3 text-ink">
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> De groeiende collectie altijd online, niet vluchtig in een story</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Een lookbook dat de mode- &amp; koffie-beleving toont</li>
+          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Reserveer online &amp; haal af in de winkel met een kop koffie</li>
+        </ul>
+        <a href="#lookbook" class="inline-flex items-center gap-2 mt-9 bg-plum text-cream font-600 px-7 py-3.5 rounded-full hover:bg-plumlt transition">
+          Of blader door het lookbook
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="fade-up grid grid-cols-2 gap-4">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand">
+          <img
+            src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
+            alt="Jonge mode en lifestyle-items in de boetiek"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand mt-8">
+          <img
+            src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80"
+            alt="Een verse kop koffie in de koffiehoek"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collectie grid -->
+  <section id="collectie" class="bg-sand/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div>
+          <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-3">Onze collectie</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-plum">Mode, lifestyle &amp; koffie</h2>
+        </div>
+        <p class="text-ink/65 max-w-sm">Een jonge, zorgvuldig samengestelde collectie waarin mode en lifestyle samenkomen — en je tussendoor geniet van een goede kop koffie.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <!-- Dameskleding -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-plum text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1485231183945-fffde7cc051e?auto=format&fit=crop&w=800&q=80"
+            alt="Jonge dameskleding en mode"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-plum via-plum/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Kleding</h3>
+            <p class="text-cream/75 text-sm mt-1">Jonge, draagbare mode die met het seizoen meegroeit.</p>
+          </div>
+        </article>
+        <!-- Accessoires -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-plum text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?auto=format&fit=crop&w=800&q=80"
+            alt="Accessoires en sieraden"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-plum via-plum/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Accessoires</h3>
+            <p class="text-cream/75 text-sm mt-1">Tassen, sieraden en details die je look afmaken.</p>
+          </div>
+        </article>
+        <!-- Lifestyle -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-plum text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80"
+            alt="Lifestyle-items en woonaccessoires"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-plum via-plum/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Lifestyle</h3>
+            <p class="text-cream/75 text-sm mt-1">Kleine lifestyle-vondsten die je dag wat mooier maken.</p>
+          </div>
+        </article>
+        <!-- Koffiehoek -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-plum text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=800&q=80"
+            alt="De koffiehoek met verse koffie"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-plum via-plum/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Koffiehoek</h3>
+            <p class="text-cream/75 text-sm mt-1">Even neerstrijken met een verse koffie tijdens het shoppen.</p>
+          </div>
+        </article>
+        <!-- Seizoen -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-plum text-cream relative aspect-[4/5]">
+          <img
+            src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?auto=format&fit=crop&w=800&q=80"
+            alt="Nieuwe seizoenscollectie"
+            loading="lazy" decoding="async"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-plum via-plum/30 to-transparent"></div>
+          <div class="absolute bottom-0 p-6">
+            <h3 class="font-serif text-2xl font-600">Nieuw binnen</h3>
+            <p class="text-cream/75 text-sm mt-1">De nieuwste binnenkomers, vers van het seizoen.</p>
+          </div>
+        </article>
+        <!-- Lookbook CTA card -->
+        <article class="fade-up group rounded-2xl overflow-hidden bg-gold text-plumdk relative aspect-[4/5] flex items-center justify-center text-center p-6">
+          <div>
+            <p class="font-serif text-2xl font-600">Het lookbook</p>
+            <p class="text-plumdk/80 text-sm mt-2">Ontdek hoe mode, lifestyle en koffie samenkomen in onze beleving — straks volledig online te bladeren.</p>
+            <a href="#lookbook" class="inline-block mt-5 text-plumdk font-700 ug">Bekijk het lookbook →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured products (illustratief) -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="flex items-end justify-between mb-10">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-plum">Uit de collectie</h2>
+      <a href="#webshop" class="hidden sm:inline text-gold font-600 ug">Alles bekijken →</a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Product 1 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
+          <img
+            src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=700&q=80"
+            alt="Mode-look uit de collectie (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Kleding</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-plum">Najaarslook</h3>
+          <p class="text-ink/60 text-sm mt-1">Een jonge, draagbare combinatie voor elke dag.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-ink/60 text-sm">Bekijk in de winkel</span>
+            <button class="bg-plum text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-plumlt transition">Reserveren</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
+          <img
+            src="https://images.unsplash.com/photo-1611085583191-a3b181a88401?auto=format&fit=crop&w=700&q=80"
+            alt="Accessoire uit de collectie (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Accessoires</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-plum">Tas &amp; details</h3>
+          <p class="text-ink/60 text-sm mt-1">Het accessoire dat je outfit compleet maakt.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-ink/60 text-sm">Bekijk in de winkel</span>
+            <button class="bg-plum text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-plumlt transition">Reserveren</button>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
+        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
+          <img
+            src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=700&q=80"
+            alt="Koffie-beleving in de boetiek (ter illustratie)"
+            loading="lazy" decoding="async"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="p-4">
+          <p class="text-xs text-gold font-600 uppercase tracking-wider">Koffiehoek</p>
+          <h3 class="font-serif text-xl font-600 mt-1 text-plum">Koffie-moment</h3>
+          <p class="text-ink/60 text-sm mt-1">Even pauzeren met een verse koffie tussen het shoppen.</p>
+          <div class="flex items-center justify-between mt-4">
+            <span class="text-ink/60 text-sm">In de winkel</span>
+            <button class="bg-plum text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-plumlt transition">Langskomen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-xs text-ink/40 mt-6">Voorbeelden ter illustratie van de toekomstige webshop — geen actuele prijzen of voorraad.</p>
+  </section>
+
+  <!-- Lookbook / online ontdekken (the differentiator) -->
+  <section id="lookbook" class="bg-plum text-cream py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <img
+          src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1000&q=80"
+          alt="Lookbook met mode-looks en lifestyle"
+          loading="lazy" decoding="async"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="order-1 lg:order-2 fade-up">
+        <p class="text-goldlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Het lookbook</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
+          Inspiratie nodig?<br />Volg ons lookbook.
+        </h2>
+        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
+          Op zoek naar een complete look, of gewoon nieuwsgierig naar de nieuwste binnenkomers?
+          Laat je inspireren door ons lookbook — en laat hieronder je gegevens achter, dan houden
+          we je op de hoogte van nieuwe collecties en koffie-momenten. Vrijblijvend en zonder verplichting.
+        </p>
+
+        <!-- Concept-formulier: blijf op de hoogte -->
+        <form class="mt-8 bg-cream/5 border border-cream/15 rounded-2xl p-5 sm:p-6 space-y-4" onsubmit="return false">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="g-naam" class="block text-sm font-600 text-cream/90 mb-1">Naam</label>
+              <input id="g-naam" name="naam" type="text" autocomplete="name" placeholder="Je naam"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-ink border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
+            </div>
+            <div>
+              <label for="g-tel" class="block text-sm font-600 text-cream/90 mb-1">Telefoon</label>
+              <input id="g-tel" name="telefoon" type="tel" autocomplete="tel" placeholder="06 ..."
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-ink border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="g-interesse" class="block text-sm font-600 text-cream/90 mb-1">Interesse</label>
+              <input id="g-interesse" name="interesse" type="text" placeholder="bv. dameskleding"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-ink border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
+            </div>
+            <div>
+              <label for="g-maat" class="block text-sm font-600 text-cream/90 mb-1">Maat (indicatief)</label>
+              <input id="g-maat" name="maat" type="text" placeholder="bv. M"
+                class="w-full px-4 py-2.5 rounded-lg bg-cream text-ink border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
+            </div>
+          </div>
+          <div>
+            <label for="g-voorkeur" class="block text-sm font-600 text-cream/90 mb-1">Hoe blijf je graag op de hoogte?</label>
+            <select id="g-voorkeur" name="voorkeur"
+              class="w-full px-4 py-2.5 rounded-lg bg-cream text-ink border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold">
+              <option>Nieuwsbrief per e-mail</option>
+              <option>Bericht bij nieuwe collectie</option>
+              <option>Reserveren &amp; afhalen in de winkel</option>
+            </select>
+          </div>
+          <div>
+            <label for="g-wensen" class="block text-sm font-600 text-cream/90 mb-1">Wensen / opmerkingen</label>
+            <textarea id="g-wensen" name="wensen" rows="3" placeholder="Waar ben je naar op zoek, stijl, kleuren ..."
+              class="w-full px-4 py-2.5 rounded-lg bg-cream text-ink border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold"></textarea>
+          </div>
+          <label class="flex items-start gap-3 text-xs text-cream/70">
+            <input type="checkbox" required class="mt-0.5 accent-gold" />
+            <span>Ik ga akkoord dat mijn gegevens enkel worden gebruikt om mijn aanvraag te beantwoorden (AVG/GDPR).</span>
+          </label>
+          <button class="w-full bg-gold text-plumdk font-700 px-7 py-3 rounded-full hover:bg-goldlt transition">
+            Houd mij op de hoogte
+          </button>
+          <p class="text-[11px] text-cream/50 text-center">Concept-formulier — in de live versie komt je aanvraag rechtstreeks per e-mail bij Blended Boetiek terecht.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ons verhaal -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="fade-up">
+      <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-plum">Een jonge boetiek<br />met een koffiehoek.</h2>
+      <p class="text-ink/70 text-lg mt-6 leading-relaxed">
+        Blended Boetiek &amp; Koffie opende in 2025 de deuren in de Lombardenstraat in Bergen op Zoom.
+        Een jonge mode- &amp; lifestyleboetiek waar je tussen het shoppen door neerstrijkt voor een
+        goede koffie — mode en beleving, mooi geblend.
+      </p>
+      <p class="text-ink/70 text-lg mt-4 leading-relaxed">
+        Tot nu toe vind je ons vooral op Facebook en Instagram. Maar de collectie groeit, en een
+        story is zo voorbij. Met een eigen webshop en lookbook is alles voortaan online te
+        ontdekken — bladeren vanuit je zetel, en daarna langskomen voor de echte beleving.
+      </p>
+      <div class="mt-9 flex flex-wrap gap-6">
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">2025</p>
+          <p class="text-ink/65 text-sm mt-1">Geopend</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">Mode</p>
+          <p class="text-ink/65 text-sm mt-1">&amp; lifestyle</p>
+        </div>
+        <div class="text-center">
+          <p class="font-serif text-4xl text-gold font-700">BoZ</p>
+          <p class="text-ink/65 text-sm mt-1">Lombardenstraat 34</p>
+        </div>
+      </div>
+    </div>
+    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
+      <img
+        src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=1000&q=80"
+        alt="Sfeervolle boetiek met mode en een koffiehoek"
+        loading="lazy" decoding="async"
+        class="w-full h-full object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Bezoek + kaart -->
+  <section id="bezoek" class="bg-sand/55 py-20 sm:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+      <div class="fade-up">
+        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-plum">Welkom in de winkel</h2>
+        <p class="text-ink/70 text-lg mt-5 max-w-md">
+          Kom shoppen en ontdekken op Lombardenstraat 34 in Bergen op Zoom — met een warm onthaal en een verse koffie.
+        </p>
+        <dl class="mt-9 space-y-5 text-ink">
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📍</span>
+            <div>
+              <dt class="font-600 text-plum">Adres</dt>
+              <dd class="text-ink/70">Lombardenstraat 34, 4611 VZ Bergen op Zoom</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🕑</span>
+            <div>
+              <dt class="font-600 text-plum">Openingsuren</dt>
+              <dd class="text-ink/70">Graag te bevestigen — zie Facebook &amp; Instagram</dd>
+              <dd class="text-ink/40 text-sm mt-1">(indicatief — actuele uren op aanvraag)</dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📞</span>
+            <div>
+              <dt class="font-600 text-plum">Telefoon</dt>
+              <dd class="text-ink/70"><a href="tel:+31164785545" class="ug">0164-785545</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">✉️</span>
+            <div>
+              <dt class="font-600 text-plum">E-mail</dt>
+              <dd class="text-ink/70"><a href="mailto:blendedboetiek@outlook.com" class="ug">blendedboetiek@outlook.com</a></dd>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">☕</span>
+            <div>
+              <dt class="font-600 text-plum">Beleving</dt>
+              <dd class="text-ink/70">Jonge mode &amp; lifestyle met eigen koffiehoek</dd>
+            </div>
+          </div>
+        </dl>
+        <a href="#webshop" class="inline-block mt-9 bg-plum text-cream font-600 px-7 py-3.5 rounded-full hover:bg-plumlt transition">
+          Of shop online de collectie →
+        </a>
+      </div>
+      <!-- OpenStreetMap embed — Lombardenstraat 34, 4611 VZ Bergen op Zoom (~51.4949, 4.2911) -->
+      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-sand shadow-sm">
+        <iframe
+          title="Kaart Blended Boetiek & Koffie — Lombardenstraat 34, 4611 VZ Bergen op Zoom"
+          class="w-full h-full min-h-[360px] border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=4.283%2C51.491%2C4.299%2C51.499&layer=mapnik&marker=51.4949%2C4.2911"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- GDPR Newsletter -->
+  <section class="bg-gold/20">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
+      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-plum">Blijf op de hoogte</h2>
+      <p class="text-ink/70 mt-3">Nieuwe collecties, seizoensdrops en koffie-momenten — af en toe in je mailbox.</p>
+      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
+        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
+        <input
+          id="nl-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          placeholder="jouw@email.nl"
+          class="flex-1 px-5 py-3 rounded-full border border-plum/20 bg-cream focus:outline-none focus:ring-2 focus:ring-gold"
+        />
+        <button class="bg-plum text-cream font-600 px-7 py-3 rounded-full hover:bg-plumlt transition">Inschrijven</button>
+      </form>
+      <p class="text-xs text-ink/50 mt-3">Geen spam. Uitschrijven kan altijd. AVG/GDPR-proof.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-plum text-cream/80">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-2xl text-cream font-700">Blended<span class="text-gold">·</span></p>
+        <p class="text-cream/55 text-sm mt-1">Boetiek &amp; koffie</p>
+        <p class="text-cream/55 text-sm mt-3 max-w-xs">Jonge mode- &amp; lifestyleboetiek met koffiehoek in Bergen op Zoom (sinds 2025). Straks ook online: collectie, lookbook &amp; koffie-beleving.</p>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Winkel</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#collectie" class="hover:text-goldlt">Collectie</a></li>
+          <li><a href="#webshop" class="hover:text-goldlt">Webshop</a></li>
+          <li><a href="#lookbook" class="hover:text-goldlt">Lookbook</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Info</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li><a href="#bezoek" class="hover:text-goldlt">Openingsuren</a></li>
+          <li><a href="#bezoek" class="hover:text-goldlt">Contact</a></li>
+          <li><a href="#top" class="hover:text-goldlt">Ons verhaal</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Contact</p>
+        <ul class="space-y-2 text-sm text-cream/60">
+          <li>Lombardenstraat 34</li>
+          <li>4611 VZ Bergen op Zoom</li>
+          <li><a href="tel:+31164785545" class="hover:text-goldlt">0164-785545</a></li>
+          <li><a href="mailto:blendedboetiek@outlook.com" class="hover:text-goldlt">blendedboetiek@outlook.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40">
+        <p>© 2026 Blended Boetiek &amp; Koffie. Concept-redesign.</p>
+        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; webshop.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Fade-up IntersectionObserver
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
+    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+    } else {
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      const setOpen = (open) => {
+        if (open) mobileMenu.removeAttribute('hidden');
+        else mobileMenu.setAttribute('hidden', '');
+        menuBtn.setAttribute('aria-expanded', String(open));
+        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      };
+      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
+      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    }
+  </script>
+</body>
+</html>
