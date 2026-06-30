@@ -1,540 +1,1617 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta name="robots" content="noindex, nofollow" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Optiek Eksterlaar — Opticien in Deurne | Brillen, contactlenzen &amp; oogmeting</title>
-  <meta name="description" content="Optiek Eksterlaar in Deurne — persoonlijk advies, oogmeting, brillen, zonnebrillen en contactlenzen. Plan uw oogmeting online of herbestel uw lenzen in enkele klikken." />
-  <link rel="canonical" href="https://optiekcoppe.be/" />
-  <meta name="theme-color" content="#0c3a3e" />
-  <!-- Open Graph / link preview -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Optiek Eksterlaar" />
-  <meta property="og:locale" content="nl_BE" />
-  <meta property="og:title" content="Optiek Eksterlaar — Opticien in Deurne" />
-  <meta property="og:description" content="Persoonlijk advies, oogmeting, brillen en contactlenzen in Deurne. Plan uw oogmeting online of herbestel uw lenzen in enkele klikken." />
-  <meta property="og:url" content="https://optiekcoppe.be/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=1200&q=80" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- Inline SVG favicon — monogram OC -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230c3a3e'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='13' fill='%23e8a33d' text-anchor='middle'%3EOC%3C/text%3E%3C/svg%3E" />
-  <!-- Local SEO structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Optician",
-    "name": "Optiek Eksterlaar",
-    "description": "Opticien in Deurne met persoonlijk advies, oogmeting, brillen, zonnebrillen en contactlenzen. Online oogmeting-afspraak en contactlens-herbestelling.",
-    "image": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=1200&q=80",
-    "url": "https://optiekcoppe.be/",
-    "telephone": "+3233223208",
-    "priceRange": "€€",
-    "areaServed": "BE",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Eksterlaar 48",
-      "postalCode": "2100",
-      "addressLocality": "Deurne",
-      "addressRegion": "Antwerpen",
-      "addressCountry": "BE"
-    },
-    "geo": { "@type": "GeoCoordinates", "latitude": 51.1690, "longitude": 4.4610 },
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "09:30", "closes": "18:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "09:30", "closes": "17:00" }
-    ],
-    "hasMap": "https://www.openstreetmap.org/?mlat=51.1690&mlon=4.4610#map=16/51.1690/4.4610",
-    "slogan": "Persoonlijk advies voor scherp zicht"
-  }
-  </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            serif: ['Fraunces', 'Georgia', 'serif'],
-            sans: ['Inter', 'sans-serif'],
-          },
-          colors: {
-            petrol:   '#0c3a3e',
-            petroldk: '#082b2e',
-            teal:     '#15565b',
-            teallt:   '#1f6f76',
-            accent:   '#e8a33d',
-            accentlt: '#f1b85e',
-            cream:    '#f8f4ec',
-            warm:     '#efe7d7',
-            warmdk:   '#e2d6bf',
-            ink:      '#1a2424',
-          },
-        },
-      },
-    };
-  </script>
-  <style>
-    html { scroll-behavior: smooth; }
-    .hero-grad { background: linear-gradient(180deg, rgba(12,58,62,.25) 0%, rgba(12,58,62,.55) 50%, rgba(12,58,62,.93) 100%); }
-    .fade-up { opacity: 0; transform: translateY(20px); transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); }
-    .fade-up.in { opacity: 1; transform: none; }
-    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 1.5px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
-    .ug:hover { background-size: 100% 1.5px; }
-    .glow-accent { box-shadow: 0 0 0 0 rgba(232,163,61,.4); }
-    .glow-accent:hover { box-shadow: 0 4px 24px rgba(232,163,61,.32); }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Optiek Eksterlaar - Prismaglazen Specialist Deurne</title>
+<meta name="description" content="Optiek Eksterlaar in Deurne. Meer dan 30 jaar ervaring. Specialist in prismaglazen voor diplopie en convergentieproblemen. Brillen, lenzen en oogmeting.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231e3a8a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' fill='%23ffffff' text-anchor='middle'%3EOE%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" /></noscript>
+<style>
+
+/* ============================================================
+   DESIGN TOKENS
+   ============================================================ */
+:root {
+  --bg:            #f8f9fb;
+  --surface:       #ffffff;
+  --surface-cool:  #e8edf5;
+  --cobalt:        #1e3a8a;
+  --cobalt-dark:   #162d6e;
+  --cobalt-light:  #2d4fa3;
+  --cobalt-muted:  rgba(30,58,138,0.08);
+  --cobalt-border: rgba(30,58,138,0.18);
+  --slate:         #0f172a;
+  --slate-mid:     #334155;
+  --muted:         #64748b;
+  --hairline:      #dde3ed;
+  --white:         #ffffff;
+  --radius-sm:     4px;
+  --radius:        8px;
+  --radius-lg:     16px;
+  --font-serif:    'DM Serif Display', Georgia, serif;
+  --font-sans:     'DM Sans', system-ui, sans-serif;
+  --nav-h:         64px;
+  --max:           1200px;
+  --transition:    0.35s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html { scroll-behavior:smooth; font-size:16px; }
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--slate);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+img { display:block; max-width:100%; }
+a { color:inherit; text-decoration:none; }
+button { font-family:inherit; cursor:pointer; border:none; background:none; }
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  * { animation:none !important; transition:none !important; }
+}
+
+/* ============================================================
+   LAYOUT HELPERS
+   ============================================================ */
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+@media (max-width:768px) { .container { padding:0 20px; } }
+
+/* ============================================================
+   NAVIGATION
+   ============================================================ */
+nav {
+  position: fixed;
+  top:0; left:0; right:0;
+  z-index: 100;
+  height: var(--nav-h);
+  background: var(--white);
+  border-bottom: 1px solid var(--hairline);
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+nav.nav-hidden  { transform: translateY(-100%); }
+nav.nav-visible { transform: translateY(0); }
+nav.nav-scrolled { box-shadow: 0 2px 16px rgba(15,23,42,0.08); }
+
+.nav-inner {
+  max-width: var(--max);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-logo-mark { width:32px; height:32px; flex-shrink:0; }
+.nav-brand {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--cobalt);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+.nav-brand span {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--slate-mid);
+  transition: color var(--transition);
+}
+.nav-links a:hover { color: var(--cobalt); }
+.nav-cta {
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  color: var(--cobalt) !important;
+  border: 1.5px solid var(--cobalt-border) !important;
+  padding: 8px 20px !important;
+  border-radius: var(--radius) !important;
+  transition: background var(--transition), color var(--transition) !important;
+}
+.nav-cta:hover {
+  background: var(--cobalt) !important;
+  color: var(--white) !important;
+}
+@media (max-width:768px) {
+  .nav-links { display:none; }
+  .nav-inner { padding:0 20px; }
+}
+
+/* ============================================================
+   PAGE START OFFSET
+   ============================================================ */
+.page-start { padding-top: var(--nav-h); }
+
+/* ============================================================
+   HERO - Asymmetric split
+   Left: text bottom-anchored / Right: cobalt panel with optical SVG
+   ============================================================ */
+.hero {
+  min-height: calc(100dvh - var(--nav-h));
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+  overflow: hidden;
+}
+.hero-left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 80px 64px 80px 64px;
+  background: var(--white);
+}
+.hero-corner-note {
+  position: absolute;
+  top: 44px;
+  left: 64px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+.hero-eyebrow {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cobalt);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 1.5px;
+  background: var(--cobalt);
+}
+.hero-h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.6rem,4.5vw,4.2rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: var(--slate);
+  margin-bottom: 28px;
+  max-width: 480px;
+}
+.hero-h1 em { font-style:italic; color:var(--cobalt); }
+.hero-sub {
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--slate-mid);
+  line-height: 1.7;
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--cobalt);
+  color: var(--white);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: var(--radius);
+  transition: background var(--transition), transform var(--transition);
+  letter-spacing: 0.01em;
+}
+.btn-primary:hover { background:var(--cobalt-dark); transform:translateY(-1px); }
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--slate-mid);
+  border-bottom: 1px solid var(--hairline);
+  padding-bottom: 2px;
+  transition: color var(--transition), border-color var(--transition);
+}
+.btn-ghost:hover { color:var(--cobalt); border-color:var(--cobalt); }
+
+.hero-right {
+  position: relative;
+  background: var(--cobalt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 520px;
+}
+.hero-right::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 60% 35%, rgba(45,79,163,0.55) 0%, transparent 65%);
+  pointer-events: none;
+}
+/* Second-read moment: oversized numeral as structural watermark */
+.hero-number-bg {
+  position: absolute;
+  bottom: -30px;
+  right: -20px;
+  font-family: var(--font-serif);
+  font-size: 22rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.04);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+  contain: layout style;
+  will-change: auto;
+}
+.hero-svg-wrap {
+  position: relative;
+  z-index: 1;
+  width: 82%;
+  max-width: 460px;
+}
+@media (max-width:900px) {
+  .hero { grid-template-columns:1fr; }
+  .hero-right { min-height:320px; order:-1; }
+  .hero-left { padding:60px 28px 72px; }
+  .hero-corner-note { display:none; }
+}
+
+/* ============================================================
+   MARQUEE
+   ============================================================ */
+.marquee-section {
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+  background: var(--white);
+  overflow: hidden;
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 30s linear infinite;
+}
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 28px;
+  white-space: nowrap;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.marquee-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--cobalt);
+  flex-shrink: 0;
+  opacity: 0.45;
+}
+@keyframes marquee-scroll {
+  from { transform:translateX(0); }
+  to   { transform:translateX(-50%); }
+}
+
+/* ============================================================
+   SERVICES - Bento Asymmetric Grid
+   ============================================================ */
+.services {
+  padding: 100px 0;
+  background: var(--bg);
+}
+.services-header { margin-bottom:60px; }
+.section-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cobalt);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.section-label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 1.5px;
+  background: var(--cobalt);
+}
+.section-h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem,3.5vw,3rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--slate);
+  max-width: 540px;
+}
+.bento-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 16px;
+}
+/* Large hero card */
+.bento-main {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  background: var(--cobalt);
+  border-radius: var(--radius-lg);
+  padding: 52px 48px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 440px;
+  color: var(--white);
+}
+.bento-main::before {
+  content:'';
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at 80% 20%, rgba(45,79,163,0.6) 0%, transparent 60%);
+  pointer-events:none;
+}
+.bento-main-icon {
+  position: absolute;
+  top: 36px;
+  right: 36px;
+  opacity: 0.14;
+}
+.bento-main-tag {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 14px;
+}
+.bento-main-title {
+  font-family: var(--font-serif);
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  color: var(--white);
+}
+.bento-main-body {
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.75);
+  max-width: 340px;
+  margin-bottom: 28px;
+}
+.bento-main-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--white);
+  border-bottom: 1px solid rgba(255,255,255,0.28);
+  padding-bottom: 2px;
+  transition: border-color var(--transition);
+  width: fit-content;
+}
+.bento-main-link:hover { border-color:var(--white); }
+
+/* Standard cards */
+.bento-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  border: 1px solid var(--hairline);
+  position: relative;
+  overflow: hidden;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.bento-card:hover {
+  border-color: var(--cobalt-border);
+  box-shadow: 0 4px 20px rgba(30,58,138,0.07);
+}
+.bento-card-accent {
+  width: 3px;
+  height: 36px;
+  background: var(--cobalt);
+  border-radius: 2px;
+  margin-bottom: 20px;
+  opacity: 0.65;
+}
+.bento-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--slate);
+  margin-bottom: 10px;
+}
+.bento-card-body {
+  font-size: 0.84rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+.bento-card-icon {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  opacity: 0.07;
+}
+/* Wide card spanning 2 columns */
+.bento-wide {
+  grid-column: 2 / 4;
+  grid-row: 2;
+  background: var(--surface-cool);
+  border-radius: var(--radius-lg);
+  padding: 30px 34px;
+  border: 1px solid var(--cobalt-border);
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.bento-wide-text { flex:1; }
+.bento-wide-title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--slate);
+  margin-bottom: 8px;
+}
+.bento-wide-body {
+  font-size: 0.84rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.bento-wide-badge {
+  flex-shrink: 0;
+  background: var(--cobalt);
+  color: var(--white);
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 24px;
+  white-space: nowrap;
+}
+@media (max-width:900px) {
+  .bento-grid { grid-template-columns:1fr 1fr; grid-template-rows:auto; }
+  .bento-main { grid-column:1/3; grid-row:1; min-height:300px; }
+  .bento-wide { grid-column:1/3; flex-direction:column; gap:20px; }
+}
+@media (max-width:600px) {
+  .bento-grid { grid-template-columns:1fr; }
+  .bento-main,.bento-wide { grid-column:1; }
+}
+
+/* ============================================================
+   SPECIALIST SECTION
+   ============================================================ */
+.specialist {
+  padding: 110px 0;
+  background: var(--white);
+  border-top: 1px solid var(--hairline);
+}
+.specialist-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.specialist-h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem,3vw,2.8rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--slate);
+  margin-bottom: 28px;
+}
+.specialist-h2 em { font-style:italic; color:var(--cobalt); }
+.specialist-body {
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--slate-mid);
+  margin-bottom: 24px;
+}
+.specialist-body strong { font-weight:600; color:var(--slate); }
+
+/* Prism diagram block */
+.prism-diagram {
+  margin: 40px 0;
+  background: var(--surface-cool);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  border: 1px solid var(--cobalt-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+.prism-diagram-caption {
+  font-size: 0.73rem;
+  font-weight: 500;
+  color: var(--muted);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Pull quote */
+.pull-quote {
+  position: relative;
+  padding: 40px 36px;
+  background: var(--cobalt);
+  border-radius: var(--radius-lg);
+  margin-bottom: 36px;
+}
+.pull-quote::before {
+  content: '\201C';
+  position: absolute;
+  top: 10px;
+  left: 22px;
+  font-family: var(--font-serif);
+  font-size: 5rem;
+  line-height: 1;
+  color: rgba(255,255,255,0.1);
+  font-style: italic;
+}
+.pull-quote-text {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--white);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+.pull-quote-meta {
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.condition-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+.condition-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: var(--slate-mid);
+  line-height: 1.5;
+}
+.condition-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--cobalt);
+  flex-shrink: 0;
+  margin-top: 7px;
+}
+.specialist-stats {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--hairline);
+  display: flex;
+  gap: 40px;
+}
+.stat-number {
+  font-family: var(--font-serif);
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: var(--cobalt);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.stat-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--muted);
+  margin-top: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+@media (max-width:900px) {
+  .specialist-inner { grid-template-columns:1fr; gap:48px; }
+}
+
+/* ============================================================
+   PITCH - "Waarom een website?"
+   ============================================================ */
+.pitch {
+  padding: 100px 0;
+  background: var(--slate);
+  position: relative;
+  overflow: hidden;
+}
+.pitch::before {
+  content:'';
+  position:absolute;
+  top:-80px; right:-80px;
+  width:500px; height:500px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(30,58,138,0.22) 0%, transparent 70%);
+  pointer-events:none;
+}
+.pitch-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.pitch-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cobalt-light);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pitch-label::before {
+  content:'';
+  display:inline-block;
+  width:20px; height:1.5px;
+  background:var(--cobalt-light);
+}
+.pitch-h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(1.9rem,3vw,2.8rem);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  margin-bottom: 24px;
+}
+.pitch-h2 em { font-style:italic; color:rgba(255,255,255,0.5); }
+.pitch-body {
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.62);
+  margin-bottom: 30px;
+  max-width: 440px;
+}
+.pitch-alert {
+  background: rgba(30,58,138,0.3);
+  border: 1px solid rgba(30,58,138,0.48);
+  border-left: 3px solid var(--cobalt-light);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  font-size: 0.88rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.65;
+}
+.pitch-benefits {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.pitch-benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 22px;
+  border-radius: var(--radius);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: background var(--transition);
+}
+.pitch-benefit:hover { background:rgba(255,255,255,0.07); }
+.pitch-benefit-icon { flex-shrink:0; margin-top:2px; }
+.pitch-benefit-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+.pitch-benefit-body {
+  font-size: 0.82rem;
+  font-weight: 300;
+  color: rgba(255,255,255,0.52);
+  line-height: 1.55;
+}
+@media (max-width:900px) {
+  .pitch-inner { grid-template-columns:1fr; gap:48px; }
+}
+
+/* ============================================================
+   CONTACT
+   ============================================================ */
+.contact {
+  padding: 100px 0;
+  background: var(--bg);
+  border-top: 1px solid var(--hairline);
+}
+.contact-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.contact-h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem,3vw,2.8rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--slate);
+  margin-bottom: 12px;
+}
+.contact-h2 em { font-style:italic; color:var(--cobalt); }
+.contact-sub {
+  font-size: 0.98rem;
+  font-weight: 300;
+  color: var(--muted);
+  margin-bottom: 40px;
+  line-height: 1.65;
+}
+.contact-phone-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.contact-phone-block { margin-bottom:40px; }
+.contact-phone {
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--cobalt);
+  letter-spacing: -0.01em;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.contact-phone a { color:inherit; transition:opacity var(--transition); }
+.contact-phone a:hover { opacity:0.75; }
+.contact-details { display:flex; flex-direction:column; gap:24px; }
+.contact-detail { display:flex; gap:16px; align-items:flex-start; }
+.contact-detail-icon {
+  flex-shrink: 0;
+  width: 40px; height: 40px;
+  background: var(--cobalt-muted);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-detail-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.contact-detail-value {
+  font-size: 0.9rem;
+  color: var(--slate);
+  line-height: 1.55;
+}
+.hours-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px 24px;
+  margin-top: 8px;
+}
+.hours-day { font-size:0.82rem; font-weight:600; color:var(--slate); }
+.hours-time { font-size:0.82rem; color:var(--muted); }
+
+/* Map */
+.contact-map {
+  background: var(--surface-cool);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--cobalt-border);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  position: relative;
+}
+.contact-map-address {
+  position: absolute;
+  bottom: 20px; left: 20px; right: 20px;
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid var(--hairline);
+  padding: 12px 16px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--slate);
+  box-shadow: 0 4px 16px rgba(15,23,42,0.09);
+}
+.contact-map-address strong {
+  display: block;
+  color: var(--cobalt);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 2px;
+}
+@media (max-width:900px) {
+  .contact-inner { grid-template-columns:1fr; gap:48px; }
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer {
+  background: var(--white);
+  border-top: 1px solid var(--hairline);
+  padding: 40px 0;
+}
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footer-brand {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--cobalt);
+}
+.footer-copy { font-size:0.78rem; color:var(--muted); }
+.footer-links { display:flex; gap:24px; list-style:none; }
+.footer-links a { font-size:0.78rem; color:var(--muted); transition:color var(--transition); }
+.footer-links a:hover { color:var(--cobalt); }
+
+/* ============================================================
+   INTERSECTION OBSERVER REVEALS
+   ============================================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.6s cubic-bezier(0.4,0,0.2,1),
+              transform 0.6s cubic-bezier(0.4,0,0.2,1);
+}
+.reveal.revealed { opacity:1; transform:translateY(0); }
+.reveal-delay-1 { transition-delay:0.1s; }
+.reveal-delay-2 { transition-delay:0.2s; }
+.reveal-delay-3 { transition-delay:0.3s; }
+.reveal-delay-4 { transition-delay:0.4s; }
+.reveal-delay-5 { transition-delay:0.5s; }
+
+/* Utilities */
+.sr-only {
+  position:absolute; width:1px; height:1px;
+  padding:0; margin:-1px; overflow:hidden;
+  clip:rect(0,0,0,0); white-space:nowrap; border:0;
+}
+</style>
 </head>
-<body class="bg-cream text-ink font-sans antialiased selection:bg-accent/25">
+<body>
 
-  <!-- Skip link (a11y) -->
-  <a href="#diensten" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-petrol focus:text-cream focus:rounded-full">Naar onze diensten</a>
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav id="main-nav" aria-label="Hoofdnavigatie">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <svg class="nav-logo-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <circle cx="16" cy="16" r="13.5" stroke="#1e3a8a" stroke-width="1.4"/>
+        <circle cx="16" cy="16" r="7" stroke="#1e3a8a" stroke-width="1.4"/>
+        <line x1="16" y1="2.5" x2="16" y2="29.5" stroke="#1e3a8a" stroke-width="0.9" stroke-dasharray="2 2.5" opacity="0.4"/>
+        <line x1="2.5" y1="16" x2="29.5" y2="16" stroke="#1e3a8a" stroke-width="0.9" stroke-dasharray="2 2.5" opacity="0.4"/>
+        <circle cx="16" cy="16" r="2" fill="#1e3a8a"/>
+      </svg>
+      <div class="nav-brand">
+        Optiek Eksterlaar
+        <span>Deurne &middot; Antwerpen</span>
+      </div>
+    </a>
 
-  <!-- Announcement bar -->
-  <div class="bg-petrol text-cream text-center text-[13px] tracking-wide py-2 px-4">
-    <span class="text-accent font-semibold">Nieuw:</span> plan uw oogmeting online &amp; herbestel uw contactlenzen in enkele klikken.
+    <ul class="nav-links" role="list">
+      <li><a href="#diensten">Diensten</a></li>
+      <li><a href="#prismaglazen">Prismaglazen</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="tel:033223208" class="nav-cta">Bel ons</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-start"></div>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" aria-labelledby="hero-heading">
+
+  <!-- Left: text, bottom-anchored -->
+  <div class="hero-left">
+    <div class="hero-corner-note" aria-hidden="true">Familiezaak &middot; Est. Deurne</div>
+
+    <p class="hero-eyebrow">Onafhankelijk opticienbedrijf</p>
+
+    <h1 class="hero-h1" id="hero-heading">
+      Scherp zien,<br>
+      <em>elke dag</em> opnieuw.
+    </h1>
+
+    <p class="hero-sub">
+      Specialist in prismaglazen voor diplopie en convergentieproblemen.
+      Familiezaak in Deurne met meer dan 30 jaar expertise in precisieoptiek.
+    </p>
+
+    <div class="hero-actions">
+      <a href="tel:033223208" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 2.5c-.4 0-.8.2-1 .5L1.2 4C.3 5.1.8 7.8 3.4 10.4c2.6 2.6 5.3 3.1 6.4 2.2l1-.8c.5-.4.5-1.2 0-1.6L9 8.4c-.4-.4-1.1-.4-1.5 0L7 8.9C6.5 8.6 5.6 7.7 5 7.1 4.4 6.5 3.5 5.6 3.2 5.1l.5-.5c.4-.4.4-1.1 0-1.5L2 2.9c-.3-.3-.7-.4-1-.4z" fill="currentColor" opacity="0.9"/>
+        </svg>
+        03 322 32 08
+      </a>
+      <a href="#prismaglazen" class="btn-ghost">
+        Over prismaglazen
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
   </div>
 
-  <!-- Sticky nav -->
-  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-petrol/10">
-    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[70px] flex items-center justify-between">
-      <!-- Logo -->
-      <a href="#top" class="flex items-baseline gap-2.5" aria-label="Optiek Eksterlaar — naar de startpagina">
-        <span class="font-serif text-[26px] font-700 tracking-tight leading-none">Optiek <span class="text-accent">Eksterlaar</span></span>
-        <span class="text-[11px] uppercase tracking-[0.22em] text-petrol/45 font-600 hidden sm:inline">Opticien · Deurne</span>
-      </a>
-      <!-- Desktop nav -->
-      <div class="hidden md:flex items-center gap-7 text-[15px] font-500">
-        <a href="#diensten" class="ug">Diensten</a>
-        <a href="#online"   class="ug">Online afspraak</a>
-        <a href="#advies"   class="ug">Advies</a>
-        <a href="#over"     class="ug">Over ons</a>
-        <a href="#bezoek"   class="ug">Bezoek</a>
-      </div>
-      <!-- CTA + hamburger -->
-      <div class="flex items-center gap-2">
-        <a href="#afspraak" class="inline-flex items-center gap-2 bg-accent text-petroldk text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-accentlt transition glow-accent">
-          Oogmeting boeken
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
-          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-petrol/15 text-petrol hover:bg-petrol/5 transition">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </nav>
-    <!-- Mobile menu -->
-    <div id="mobile-menu" hidden class="md:hidden border-t border-petrol/10 bg-cream/96 backdrop-blur">
-      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
-        <a href="#diensten" class="py-3 border-b border-petrol/5">Diensten</a>
-        <a href="#online"   class="py-3 border-b border-petrol/5">Online afspraak</a>
-        <a href="#advies"   class="py-3 border-b border-petrol/5">Advies</a>
-        <a href="#over"     class="py-3 border-b border-petrol/5">Over ons</a>
-        <a href="#bezoek"   class="py-3 border-b border-petrol/5">Bezoek ons</a>
-        <a href="#afspraak" class="py-3 text-accent font-700">Oogmeting boeken →</a>
-      </div>
-    </div>
-  </header>
+  <!-- Right: cobalt panel with optical SVG -->
+  <div class="hero-right" aria-hidden="true">
+    <div class="hero-number-bg">30</div>
 
-  <!-- ═══ HERO ═══ -->
-  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-petroldk">
-    <img
-      src="https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&w=2200&q=80"
-      alt="Selectie van brillen in een moderne optiekzaak"
-      fetchpriority="high"
-      class="absolute inset-0 w-full h-full object-cover"
-    />
-    <div class="absolute inset-0 hero-grad"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-28 w-full">
-      <p class="text-accent font-600 tracking-[0.3em] uppercase text-xs mb-5">Opticien · Deurne · Antwerpen</p>
-      <h1 class="font-serif text-cream text-[44px] leading-[1.05] sm:text-[72px] font-600 max-w-3xl">
-        Persoonlijk advies<br />voor scherp zicht.
-      </h1>
-      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
-        Brillen, zonnebrillen en contactlenzen — met een oogmeting en deskundig advies op maat. Lokaal verankerd in Deurne.
-      </p>
-      <div class="flex flex-wrap gap-3 mt-9">
-        <a href="#afspraak" class="bg-accent text-petroldk font-700 px-7 py-3.5 rounded-full hover:bg-accentlt transition">
-          Plan uw oogmeting
-        </a>
-        <a href="#diensten" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
-          Ontdek onze diensten
-        </a>
-      </div>
-    </div>
-  </section>
+    <div class="hero-svg-wrap">
+      <svg viewBox="0 0 440 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Precision grid -->
+        <g stroke="white" stroke-width="0.4" opacity="0.05">
+          <line x1="0" y1="40" x2="440" y2="40"/><line x1="0" y1="80" x2="440" y2="80"/>
+          <line x1="0" y1="120" x2="440" y2="120"/><line x1="0" y1="160" x2="440" y2="160"/>
+          <line x1="0" y1="200" x2="440" y2="200"/><line x1="0" y1="240" x2="440" y2="240"/>
+          <line x1="0" y1="280" x2="440" y2="280"/><line x1="0" y1="320" x2="440" y2="320"/>
+          <line x1="0" y1="360" x2="440" y2="360"/>
+          <line x1="40" y1="0" x2="40" y2="380"/><line x1="80" y1="0" x2="80" y2="380"/>
+          <line x1="120" y1="0" x2="120" y2="380"/><line x1="160" y1="0" x2="160" y2="380"/>
+          <line x1="200" y1="0" x2="200" y2="380"/><line x1="240" y1="0" x2="240" y2="380"/>
+          <line x1="280" y1="0" x2="280" y2="380"/><line x1="320" y1="0" x2="320" y2="380"/>
+          <line x1="360" y1="0" x2="360" y2="380"/><line x1="400" y1="0" x2="400" y2="380"/>
+        </g>
 
-  <!-- ═══ TRUST STRIP ═══ -->
-  <section class="bg-petrol text-cream/90">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-7 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
-      <div>
-        <p class="font-serif text-2xl text-accent leading-tight">Persoonlijk</p>
-        <p class="mt-1.5 text-cream/65">advies op maat</p>
-      </div>
-      <div>
-        <p class="font-serif text-2xl text-accent leading-tight">Oogmeting</p>
-        <p class="mt-1.5 text-cream/65">door de opticien</p>
-      </div>
-      <div>
-        <p class="font-serif text-2xl text-accent leading-tight">Service</p>
-        <p class="mt-1.5 text-cream/65">aanpassing &amp; herstel</p>
-      </div>
-      <div>
-        <p class="font-serif text-2xl text-accent leading-tight">Lokaal</p>
-        <p class="mt-1.5 text-cream/65">vertrouwd in Deurne</p>
-      </div>
-    </div>
-  </section>
+        <!-- Lens rings - concentric circles -->
+        <circle cx="220" cy="190" r="155" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+        <circle cx="220" cy="190" r="115" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+        <circle cx="220" cy="190" r="75" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+        <circle cx="220" cy="190" r="38" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
 
-  <!-- ═══ DIENSTEN GRID ═══ -->
-  <section id="diensten" class="bg-warm/60 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
-        <div>
-          <p class="text-accent font-600 tracking-[0.22em] uppercase text-xs mb-3">Onze diensten</p>
-          <h2 class="font-serif text-4xl sm:text-5xl font-600">Alles voor uw zicht</h2>
+        <!-- Cross hairs -->
+        <line x1="220" y1="32" x2="220" y2="348" stroke="rgba(255,255,255,0.12)" stroke-width="1" stroke-dasharray="5 6"/>
+        <line x1="62" y1="190" x2="378" y2="190" stroke="rgba(255,255,255,0.12)" stroke-width="1" stroke-dasharray="5 6"/>
+
+        <!-- Prism body -->
+        <polygon points="220,78 334,294 106,294"
+          fill="rgba(30,58,138,0.22)"
+          stroke="rgba(255,255,255,0.32)"
+          stroke-width="1.5"
+          stroke-linejoin="round"/>
+
+        <!-- Incident light ray (white beam) -->
+        <line x1="46" y1="162" x2="160" y2="188" stroke="rgba(255,255,255,0.7)" stroke-width="2.5" stroke-linecap="round"/>
+        <!-- Dot at entry -->
+        <circle cx="160" cy="188" r="4" fill="white" opacity="0.55"/>
+
+        <!-- Internal refraction hints -->
+        <line x1="160" y1="188" x2="280" y2="185" stroke="rgba(255,255,255,0.22)" stroke-width="1.5" stroke-dasharray="4 5"/>
+        <line x1="160" y1="188" x2="280" y2="190" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="4 5"/>
+        <line x1="160" y1="188" x2="280" y2="195" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="4 5"/>
+
+        <!-- Exit point -->
+        <circle cx="280" cy="190" r="4" fill="white" opacity="0.45"/>
+
+        <!-- Refracted rays (dispersed spectrum) -->
+        <line x1="280" y1="185" x2="420" y2="152" stroke="rgba(147,197,253,0.75)" stroke-width="2" stroke-linecap="round"/>
+        <line x1="280" y1="190" x2="420" y2="190" stroke="rgba(255,255,255,0.55)" stroke-width="2" stroke-linecap="round"/>
+        <line x1="280" y1="195" x2="420" y2="228" stroke="rgba(196,181,253,0.65)" stroke-width="2" stroke-linecap="round"/>
+
+        <!-- Angle annotation arc -->
+        <path d="M 180 176 A 22 22 0 0 1 180 200" stroke="rgba(255,255,255,0.28)" stroke-width="1" fill="none"/>
+        <text x="192" y="193" font-family="DM Sans,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.38)" font-weight="500">prismahoek</text>
+
+        <!-- Prism label -->
+        <text x="220" y="218" font-family="DM Sans,sans-serif" font-size="9" fill="rgba(255,255,255,0.32)" font-weight="600" text-anchor="middle" letter-spacing="0.12em">PRISMA</text>
+
+        <!-- Detail lens upper-right -->
+        <circle cx="372" cy="58" r="38" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+        <circle cx="372" cy="58" r="26" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+        <circle cx="372" cy="58" r="13" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+        <circle cx="372" cy="58" r="3.5" fill="rgba(255,255,255,0.14)"/>
+        <text x="352" y="104" font-family="DM Sans,sans-serif" font-size="7.5" fill="rgba(255,255,255,0.28)" letter-spacing="0.1em" font-weight="600">DIOPTRIE</text>
+
+        <!-- Labels on rays -->
+        <text x="82" y="151" font-family="DM Sans,sans-serif" font-size="8.5" fill="rgba(255,255,255,0.38)" font-weight="400" letter-spacing="0.05em">lichtstraal</text>
+        <text x="338" y="143" font-family="DM Sans,sans-serif" font-size="8.5" fill="rgba(147,197,253,0.65)" font-weight="500" letter-spacing="0.05em">correctie</text>
+
+        <!-- Bottom precision rule -->
+        <line x1="106" y1="316" x2="334" y2="316" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+        <text x="220" y="342" font-family="DM Sans,sans-serif" font-size="8" fill="rgba(255,255,255,0.22)" text-anchor="middle" letter-spacing="0.16em" font-weight="600">OPTIEK EKSTERLAAR &middot; DEURNE</text>
+      </svg>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============================================================
+     MARQUEE
+     ============================================================ -->
+<div class="marquee-section" aria-hidden="true" role="presentation">
+  <div class="marquee-track">
+    <span class="marquee-item">Prismaglazen<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Brillen op maat<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Zonnebrillen<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Contactlenzen<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Oogmeting<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Familiezaak Deurne<span class="marquee-dot"></span></span>
+    <span class="marquee-item">30+ jaar ervaring<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Specialist diplopie<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Antwerpen<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Prismaglazen<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Brillen op maat<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Zonnebrillen<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Contactlenzen<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Oogmeting<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Familiezaak Deurne<span class="marquee-dot"></span></span>
+    <span class="marquee-item">30+ jaar ervaring<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Specialist diplopie<span class="marquee-dot"></span></span>
+    <span class="marquee-item">Antwerpen<span class="marquee-dot"></span></span>
+  </div>
+</div>
+
+<!-- ============================================================
+     SERVICES - BENTO ASYMMETRIC
+     ============================================================ -->
+<section class="services" id="diensten" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="services-header reveal">
+      <p class="section-label">Onze diensten</p>
+      <h2 class="section-h2" id="services-heading">
+        Meer dan brillen.<br>Gerichte zorgverlening voor uw ogen.
+      </h2>
+    </div>
+
+    <div class="bento-grid">
+
+      <!-- Main: Prismaglazen - large panel -->
+      <article class="bento-main reveal">
+        <div class="bento-main-icon" aria-hidden="true">
+          <svg width="170" height="170" viewBox="0 0 170 170" fill="none">
+            <polygon points="85,20 150,140 20,140" stroke="white" stroke-width="2" fill="rgba(255,255,255,0.05)"/>
+            <line x1="8" y1="75" x2="58" y2="82" stroke="white" stroke-width="2" opacity="0.55"/>
+            <line x1="112" y1="80" x2="165" y2="60" stroke="rgba(147,197,253,0.75)" stroke-width="2"/>
+            <line x1="112" y1="83" x2="165" y2="83" stroke="white" stroke-width="1.5" opacity="0.42"/>
+            <line x1="112" y1="86" x2="165" y2="106" stroke="rgba(196,181,253,0.65)" stroke-width="2"/>
+          </svg>
         </div>
-        <p class="text-teal/70 max-w-sm text-sm">Van montuurkeuze tot oogmeting en lenzen — met persoonlijke begeleiding bij elke stap.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
 
-        <!-- Brillen -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-petrol text-cream relative aspect-[4/5]">
-          <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&w=800&q=80" alt="Collectie monturen in de zaak" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
-          <div class="absolute inset-0 bg-gradient-to-t from-petroldk via-petrol/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Brillen</h3>
-            <p class="text-cream/70 text-sm mt-1">Een uitgebreide keuze monturen — afgestemd op uw gezicht en stijl.</p>
-          </div>
-        </article>
+        <p class="bento-main-tag">Onze specialisatie</p>
+        <h3 class="bento-main-title">Prismaglazen</h3>
+        <p class="bento-main-body">
+          Medisch-optische glazen die licht afleiden om stoornissen in de oogbeweging te corrigeren.
+          Behandeling van dubbelzien (diplopie), convergentieproblemen en scheelzien na neurologische aandoeningen.
+        </p>
+        <a href="#prismaglazen" class="bento-main-link">
+          Meer informatie
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </article>
 
-        <!-- Zonnebrillen -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-petrol text-cream relative aspect-[4/5]">
-          <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=800&q=80" alt="Zonnebrillen op een rek" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
-          <div class="absolute inset-0 bg-gradient-to-t from-petroldk via-petrol/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Zonnebrillen</h3>
-            <p class="text-cream/70 text-sm mt-1">Modieuze en optische zonnebrillen, met of zonder sterkte.</p>
-          </div>
-        </article>
+      <!-- Small card: Brillen -->
+      <article class="bento-card reveal reveal-delay-1">
+        <div class="bento-card-accent"></div>
+        <h3 class="bento-card-title">Brillen op maat</h3>
+        <p class="bento-card-body">Uitgebreide collectie monturen. Aangepast aan uw gezicht, correctie en dagelijkse behoeften.</p>
+        <div class="bento-card-icon" aria-hidden="true">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+            <ellipse cx="26" cy="40" rx="18" ry="12" stroke="#1e3a8a" stroke-width="2.5"/>
+            <ellipse cx="54" cy="40" rx="18" ry="12" stroke="#1e3a8a" stroke-width="2.5"/>
+            <line x1="44" y1="40" x2="36" y2="40" stroke="#1e3a8a" stroke-width="2.5"/>
+            <line x1="8" y1="38" x2="8" y2="31" stroke="#1e3a8a" stroke-width="2.5"/>
+            <line x1="72" y1="38" x2="72" y2="31" stroke="#1e3a8a" stroke-width="2.5"/>
+          </svg>
+        </div>
+      </article>
 
-        <!-- Contactlenzen -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-petrol text-cream relative aspect-[4/5]">
-          <img src="https://images.unsplash.com/photo-1556306535-0f09a537f0a3?auto=format&fit=crop&w=800&q=80" alt="Contactlenzen aanpassing" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
-          <div class="absolute inset-0 bg-gradient-to-t from-petroldk via-petrol/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Contactlenzen</h3>
-            <p class="text-cream/70 text-sm mt-1">Aanpassing en opvolging — en eenvoudig online herbestellen.</p>
-          </div>
-        </article>
+      <!-- Small card: Zonnebrillen -->
+      <article class="bento-card reveal reveal-delay-2">
+        <div class="bento-card-accent"></div>
+        <h3 class="bento-card-title">Zonnebrillen</h3>
+        <p class="bento-card-body">Polariserende en UV-beschermende glazen. Ook op sterkte, voor buiten zonder compromis.</p>
+        <div class="bento-card-icon" aria-hidden="true">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+            <ellipse cx="26" cy="44" rx="18" ry="12" stroke="#1e3a8a" stroke-width="2.5"/>
+            <ellipse cx="54" cy="44" rx="18" ry="12" stroke="#1e3a8a" stroke-width="2.5"/>
+            <line x1="44" y1="44" x2="36" y2="44" stroke="#1e3a8a" stroke-width="2.5"/>
+            <path d="M8 44V34" stroke="#1e3a8a" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M72 44V34" stroke="#1e3a8a" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M8 34c10-6 14-6 18-3" stroke="#1e3a8a" stroke-width="1.5" fill="none" opacity="0.4"/>
+          </svg>
+        </div>
+      </article>
 
-        <!-- Oogmeting -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-petrol text-cream relative aspect-[4/5]">
-          <img src="https://images.unsplash.com/photo-1483412033650-1015ddeb83d1?auto=format&fit=crop&w=800&q=80" alt="Oogmeting bij de opticien" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
-          <div class="absolute inset-0 bg-gradient-to-t from-petroldk via-petrol/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Oogmeting</h3>
-            <p class="text-cream/70 text-sm mt-1">Een nauwkeurige meting van uw zicht — eenvoudig online te plannen.</p>
-          </div>
-        </article>
+      <!-- Wide card spanning 2 cols -->
+      <article class="bento-wide reveal reveal-delay-3">
+        <div class="bento-wide-text">
+          <h3 class="bento-wide-title">Contactlenzen &amp; Oogmeting</h3>
+          <p class="bento-wide-body">
+            Daglenzen, maandlenzen en speciale draagschema's. Grondige oogmeting met moderne apparatuur voor een nauwkeurig glazenrecept, inclusief prismahoekbepaling.
+          </p>
+        </div>
+        <span class="bento-wide-badge">Op afspraak</span>
+      </article>
 
-        <!-- Brilglazen -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-petrol text-cream relative aspect-[4/5]">
-          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80" alt="Brilglazen en advies" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
-          <div class="absolute inset-0 bg-gradient-to-t from-petroldk via-petrol/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Brilglazen</h3>
-            <p class="text-cream/70 text-sm mt-1">Enkelvoudige, multifocale en ontspiegelde glazen — advies op maat.</p>
-          </div>
-        </article>
+    </div>
+  </div>
+</section>
 
-        <!-- Herstellingen CTA card -->
-        <article class="fade-up rounded-2xl bg-accent text-petroldk relative aspect-[4/5] flex items-center justify-center text-center p-8">
+<!-- ============================================================
+     SPECIALIST DEEP DIVE
+     ============================================================ -->
+<section class="specialist" id="prismaglazen" aria-labelledby="specialist-heading">
+  <div class="container">
+    <div class="specialist-inner">
+
+      <!-- Left column -->
+      <div>
+        <p class="section-label reveal">Onze specialisatie</p>
+        <h2 class="specialist-h2 reveal reveal-delay-1" id="specialist-heading">
+          Wanneer gewone brillen<br>
+          niet <em>volstaan.</em>
+        </h2>
+        <p class="specialist-body reveal reveal-delay-2">
+          Prismaglazen zijn geen gewone brilglazen. Ze zijn <strong>medisch-optische hulpmiddelen</strong> die specifiek
+          ontworpen zijn om stoornissen in oogbeweging en binoculaire visie te corrigeren. De glazen buigen licht zodat
+          twee oogassen samensmelten tot een enkel, helder beeld.
+        </p>
+        <p class="specialist-body reveal reveal-delay-3">
+          Patienten worden vaak doorverwezen door een <strong>oogarts of neuroloog</strong> na een beroerte,
+          hersenletsel, of bij aandoeningen zoals myasthenia gravis. De aanpassing van prismaglazen vereist
+          nauwkeurige metingen en jarenlange klinische ervaring.
+        </p>
+
+        <!-- Optical prism correction diagram -->
+        <div class="prism-diagram reveal reveal-delay-4" aria-hidden="true">
+          <svg viewBox="0 0 380 158" fill="none" xmlns="http://www.w3.org/2000/svg" width="100%" style="max-width:340px">
+            <!-- Eye left -->
+            <circle cx="42" cy="79" r="22" stroke="#1e3a8a" stroke-width="1.5" fill="rgba(30,58,138,0.05)"/>
+            <circle cx="42" cy="79" r="7" fill="rgba(30,58,138,0.15)"/>
+            <!-- Eye right -->
+            <circle cx="338" cy="79" r="22" stroke="#1e3a8a" stroke-width="1.5" fill="rgba(30,58,138,0.05)"/>
+            <circle cx="338" cy="79" r="7" fill="rgba(30,58,138,0.15)"/>
+
+            <!-- Without prism: diverging (red/faded) -->
+            <line x1="64" y1="68" x2="192" y2="56" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 4" opacity="0.45"/>
+            <line x1="316" y1="68" x2="192" y2="100" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 4" opacity="0.45"/>
+            <circle cx="192" cy="78" r="4" fill="#f87171" opacity="0.35"/>
+            <text x="192" y="70" font-family="DM Sans,sans-serif" font-size="8" fill="#f87171" opacity="0.55" text-anchor="middle">dubbelzien</text>
+
+            <!-- Prism lenses -->
+            <rect x="115" y="56" width="28" height="46" rx="3" fill="rgba(30,58,138,0.08)" stroke="#1e3a8a" stroke-width="1.3" opacity="0.65"/>
+            <rect x="237" y="56" width="28" height="46" rx="3" fill="rgba(30,58,138,0.08)" stroke="#1e3a8a" stroke-width="1.3" opacity="0.65"/>
+            <text x="129" y="50" font-family="DM Sans,sans-serif" font-size="7.5" fill="#1e3a8a" opacity="0.5" text-anchor="middle" letter-spacing="0.06em">PRISMA</text>
+            <text x="251" y="50" font-family="DM Sans,sans-serif" font-size="7.5" fill="#1e3a8a" opacity="0.5" text-anchor="middle" letter-spacing="0.06em">PRISMA</text>
+
+            <!-- With prism: converging (cobalt) -->
+            <line x1="64" y1="79" x2="115" y2="79" stroke="#1e3a8a" stroke-width="2"/>
+            <line x1="143" y1="79" x2="237" y2="79" stroke="#1e3a8a" stroke-width="2"/>
+            <line x1="265" y1="79" x2="316" y2="79" stroke="#1e3a8a" stroke-width="2"/>
+
+            <!-- Converge focal dot -->
+            <circle cx="190" cy="79" r="5.5" fill="#1e3a8a" opacity="0.75"/>
+            <circle cx="190" cy="79" r="2" fill="white"/>
+
+            <text x="190" y="148" font-family="DM Sans,sans-serif" font-size="8.5" fill="#1e3a8a" opacity="0.65" text-anchor="middle" font-weight="600" letter-spacing="0.05em">ENKELVOUDIG ZICHTVELD</text>
+          </svg>
+          <p class="prism-diagram-caption">Hoe prismaglazen dubbelzien corrigeren</p>
+        </div>
+
+        <div class="specialist-stats reveal reveal-delay-5">
           <div>
-            <svg class="mx-auto mb-4" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.3 2.3-2-2 2.3-2.3z"/></svg>
-            <p class="font-serif text-2xl font-600">Herstellingen</p>
-            <p class="text-petroldk/80 text-sm mt-2 leading-relaxed">Bril verbogen of een schroefje kwijt? Wij passen aan en herstellen ter plaatse.</p>
-            <a href="#afspraak" class="inline-block mt-6 text-petroldk font-700 ug">Kom langs of bel ons →</a>
+            <div class="stat-number">30+</div>
+            <div class="stat-label">Jaar ervaring</div>
           </div>
-        </article>
+          <div>
+            <div class="stat-number">Deurne</div>
+            <div class="stat-label">Antwerpen</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <div>
+
+        <div class="pull-quote reveal reveal-delay-1">
+          <p class="pull-quote-text">
+            Prismaglazen vereisen meer dan een brilrecept. Ze vragen om klinisch inzicht, geduld, en jarenlange
+            ervaring met complexe visuele aandoeningen.
+          </p>
+          <p class="pull-quote-meta">Optiek Eksterlaar, Deurne</p>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <p class="section-label" style="margin-bottom:16px">Wie heeft baat bij prismaglazen?</p>
+          <ul class="condition-list" aria-label="Indicaties voor prismaglazen">
+            <li>
+              <span class="condition-dot" aria-hidden="true"></span>
+              <span><strong>Diplopie (dubbelzien)</strong> door scheelzien of oogspierverlamming</span>
+            </li>
+            <li>
+              <span class="condition-dot" aria-hidden="true"></span>
+              <span><strong>Convergentieproblemen</strong>: de ogen samenwerken wordt moeizaam</span>
+            </li>
+            <li>
+              <span class="condition-dot" aria-hidden="true"></span>
+              <span><strong>Na een beroerte of hersenletsel</strong> waarbij oogspieren zijn aangetast</span>
+            </li>
+            <li>
+              <span class="condition-dot" aria-hidden="true"></span>
+              <span><strong>Myasthenia gravis</strong> en andere neuromusculaire aandoeningen</span>
+            </li>
+            <li>
+              <span class="condition-dot" aria-hidden="true"></span>
+              <span><strong>Kinderen met strabismus</strong> voor wie directe chirurgie nog niet aan de orde is</span>
+            </li>
+            <li>
+              <span class="condition-dot" aria-hidden="true"></span>
+              <span><strong>Chronische hoofdpijn en oogvermoeidheid</strong> door subtiele binoculaire stoornissen</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="reveal reveal-delay-3" style="margin-top:36px; padding:28px; background:var(--surface-cool); border-radius:var(--radius-lg); border:1px solid var(--cobalt-border);">
+          <p class="section-label" style="margin-bottom:12px">Praktisch</p>
+          <p style="font-size:0.88rem; color:var(--slate-mid); line-height:1.75; font-weight:300;">
+            Wij werken samen met voorschrijvende oogartsen en neurologen uit de regio Antwerpen.
+            Een doorverwijzing is nuttig, maar niet verplicht voor een eerste gesprek.
+            Neem gerust contact op, wij nemen de tijd voor elke situatie.
+          </p>
+        </div>
 
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ═══ ONLINE AFSPRAAK + LENS-HERBESTELLING (UPSELL) ═══ -->
-  <section id="online" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="grid lg:grid-cols-2 gap-14 items-center">
-      <div class="fade-up">
-        <p class="text-accent font-600 tracking-[0.22em] uppercase text-xs mb-4">Gemak online · service in de zaak</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
-          Boek uw oogmeting.<br />Herbestel uw lenzen.
+<!-- ============================================================
+     PITCH - Waarom een website?
+     ============================================================ -->
+<section class="pitch" aria-labelledby="pitch-heading">
+  <div class="container">
+    <div class="pitch-inner">
+
+      <div>
+        <p class="pitch-label reveal">Gemiste kansen</p>
+        <h2 class="pitch-h2 reveal reveal-delay-1" id="pitch-heading">
+          Uw website is offline.<br>
+          <em>Patienten vinden u niet.</em>
         </h2>
-        <p class="text-teal/80 text-lg mt-5 leading-relaxed max-w-md">
-          Geen wachtrij aan de telefoon: plan uw oogmeting wanneer het ú past, en bestel uw vertrouwde contactlenzen online opnieuw. Het persoonlijke advies blijft, alleen sneller.
+        <p class="pitch-body reveal reveal-delay-2">
+          Wie vandaag zoekt op "prismaglazen Antwerpen" of "optiek Deurne" vindt u niet.
+          Mensen die uw hulp het meest nodig hebben, bereiken de specialist die zij zoeken niet
+          omdat uw digitale aanwezigheid ontbreekt.
         </p>
-        <ul class="mt-7 space-y-3 text-ink">
-          <li class="flex items-center gap-3"><span class="text-accent font-700">✓</span> Online afspraak voor uw oogmeting — 24/7 te boeken</li>
-          <li class="flex items-center gap-3"><span class="text-accent font-700">✓</span> Contactlens-herbestelling in enkele klikken</li>
-          <li class="flex items-center gap-3"><span class="text-accent font-700">✓</span> Herinnering wanneer uw lenzen bijna op zijn</li>
-          <li class="flex items-center gap-3"><span class="text-accent font-700">✓</span> Afhalen in de zaak of bezorgd — u kiest</li>
-        </ul>
-        <div class="flex flex-wrap gap-3 mt-9">
-          <a href="#afspraak" class="inline-flex items-center gap-2 bg-petrol text-cream font-600 px-7 py-3.5 rounded-full hover:bg-teal transition">
-            Oogmeting plannen
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
-          <a href="#afspraak" class="inline-flex items-center gap-2 border border-petrol/25 text-petrol font-600 px-7 py-3.5 rounded-full hover:bg-petrol/5 transition">
-            Lenzen herbestellen
-          </a>
-        </div>
-      </div>
-      <div class="fade-up grid grid-cols-2 gap-4">
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-warm">
-          <img src="https://images.unsplash.com/photo-1483412033650-1015ddeb83d1?auto=format&fit=crop&w=700&q=80" alt="Oogmeting plannen" loading="lazy" decoding="async" class="w-full h-full object-cover" />
-        </div>
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-warm mt-8">
-          <img src="https://images.unsplash.com/photo-1556306535-0f09a537f0a3?auto=format&fit=crop&w=700&q=80" alt="Contactlenzen herbestellen" loading="lazy" decoding="async" class="w-full h-full object-cover" />
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ═══ ADVIES / DIFFERENTIATOR ═══ -->
-  <section id="advies" class="bg-petrol text-cream py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-center">
-      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
-        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1100&q=80" alt="Persoonlijk advies bij de opticien" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+        <div class="pitch-alert reveal reveal-delay-3">
+          optiekeksterlaar.be geeft momenteel een 404-fout. Dit is wat patienten, doorverwijzingen
+          van artsen en nieuwe families in Deurne te zien krijgen wanneer zij u opzoeken.
+        </div>
       </div>
-      <div class="order-1 lg:order-2 fade-up">
-        <p class="text-accent font-600 tracking-[0.22em] uppercase text-xs mb-4">Persoonlijk advies</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
-          De tijd om u<br />écht te helpen.
+
+      <ul class="pitch-benefits reveal reveal-delay-1" aria-label="Voordelen van een werkende website">
+        <li class="pitch-benefit">
+          <div class="pitch-benefit-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="10" r="7.5" stroke="#93c5fd" stroke-width="1.5"/>
+              <path d="M7 10l2 2 4-4" stroke="#93c5fd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <p class="pitch-benefit-title">Vindbaar op Google</p>
+            <p class="pitch-benefit-body">Lokale zoekresultaten voor "prismaglazen Antwerpen" en "optiek Deurne" leiden direct naar u.</p>
+          </div>
+        </li>
+
+        <li class="pitch-benefit">
+          <div class="pitch-benefit-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <rect x="3" y="4" width="14" height="12" rx="2" stroke="#93c5fd" stroke-width="1.5"/>
+              <path d="M3 8h14" stroke="#93c5fd" stroke-width="1.4"/>
+              <path d="M7 12h6" stroke="#93c5fd" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <p class="pitch-benefit-title">Online afspraken</p>
+            <p class="pitch-benefit-body">Een bel-knop of contactformulier verlaagt de drempel voor nieuwe patienten en doorverwijzingen.</p>
+          </div>
+        </li>
+
+        <li class="pitch-benefit">
+          <div class="pitch-benefit-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <circle cx="10" cy="8" r="3" stroke="#93c5fd" stroke-width="1.5"/>
+              <path d="M4 17c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#93c5fd" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <p class="pitch-benefit-title">Patienteninformatie</p>
+            <p class="pitch-benefit-body">Uitleg over prismaglazen, openingsuren en adres. Alles wat een nieuwe patient geruststelt.</p>
+          </div>
+        </li>
+
+        <li class="pitch-benefit">
+          <div class="pitch-benefit-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M10 2C7.5 2 5.5 4 5.5 6.5c0 3.8 4.5 9.5 4.5 9.5s4.5-5.7 4.5-9.5C14.5 4 12.5 2 10 2z" stroke="#93c5fd" stroke-width="1.5" fill="none"/>
+              <circle cx="10" cy="6.5" r="1.5" stroke="#93c5fd" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <div>
+            <p class="pitch-benefit-title">Google Maps profiel</p>
+            <p class="pitch-benefit-body">Een werkende website versterkt uw lokaal profiel en maakt adres, telefoon en uren direct zichtbaar.</p>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section class="contact" id="contact" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="contact-inner">
+
+      <div>
+        <p class="section-label reveal">Bereikbaarheid</p>
+        <h2 class="contact-h2 reveal reveal-delay-1" id="contact-heading">
+          Maak <em>kennis</em><br>met ons team.
         </h2>
-        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
-          Een bril of lens kiezen is meer dan een sterkte: het gaat om comfort, uitstraling en gewoon goed zien. Wij nemen de tijd om samen de juiste keuze te maken — eerlijk en zonder druk.
+        <p class="contact-sub reveal reveal-delay-2">
+          Bel ons voor een afspraak of kom langs in onze winkel in Deurne.
+          We nemen de tijd voor elk consult, ook voor complexe vraagstukken.
         </p>
-        <ul class="mt-6 space-y-3 text-cream/80">
-          <li class="flex items-center gap-3"><span class="text-accent font-700">✓</span> Montuuradvies afgestemd op uw gezicht en stijl</li>
-          <li class="flex items-center gap-3"><span class="text-accent font-700">✓</span> Uitleg over glas- en lensopties in heldere taal</li>
-          <li class="flex items-center gap-3"><span class="text-accent font-700">✓</span> Nazorg, aanpassing en service na aankoop</li>
-        </ul>
-        <a href="#afspraak" class="inline-flex items-center gap-2 mt-9 bg-accent text-petroldk font-700 px-7 py-3.5 rounded-full hover:bg-accentlt transition">
-          Maak een afspraak
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
 
-  <!-- ═══ OVER ONS ═══ -->
-  <section id="over" class="bg-warm/70 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-center">
-      <div class="fade-up">
-        <p class="text-accent font-600 tracking-[0.22em] uppercase text-xs mb-4">Over Optiek Eksterlaar</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">Uw opticien<br />in hartje Deurne.</h2>
-        <p class="text-teal/80 text-lg mt-6 leading-relaxed">
-          Bij Optiek Eksterlaar staat de klant centraal. Als lokale opticien aan de Eksterlaar combineren we vakkennis met persoonlijke aandacht — u bent geen nummer, maar een gezicht dat we kennen.
-        </p>
-        <p class="text-teal/80 text-lg mt-4 leading-relaxed">
-          Of het nu gaat om uw eerste bril, een nieuwe sterkte of het aanpassen van contactlenzen: we begeleiden u van de oogmeting tot de nazorg. Met deze vernieuwde website maken we dat advies nog toegankelijker.
-        </p>
-        <div class="mt-9 grid grid-cols-3 gap-5">
-          <div class="text-center">
-            <p class="font-serif text-3xl text-accent font-600">Deurne</p>
-            <p class="text-teal/60 text-xs mt-1">Lokaal verankerd</p>
-          </div>
-          <div class="text-center">
-            <p class="font-serif text-3xl text-accent font-600">Bril &amp; lens</p>
-            <p class="text-teal/60 text-xs mt-1">Volledig aanbod</p>
-          </div>
-          <div class="text-center">
-            <p class="font-serif text-3xl text-accent font-600">Nazorg</p>
-            <p class="text-teal/60 text-xs mt-1">Service na aankoop</p>
+        <div class="contact-phone-block reveal reveal-delay-3">
+          <p class="contact-phone-label">Telefoon</p>
+          <div class="contact-phone">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+              <circle cx="13" cy="13" r="12" stroke="#1e3a8a" stroke-width="1.4"/>
+              <path d="M17 15.5l-1.6-1.6a.9.9 0 00-1.3 0l-.8.8c-.6-.3-1.6-1.2-2.3-1.9-.7-.7-1.6-1.7-1.9-2.3l.8-.8a.9.9 0 000-1.3L8.3 6.8a.9.9 0 00-1.3 0l-.7.7C5.7 8.2 6 10 7.7 11.7c1.7 1.7 3.5 2 4.2 1.3l.7-.7c.5 1.1 1.6 2.1 2.6 2.1l-.2.2a.9.9 0 000 1.3l1.6 1.6a.9.9 0 001.3 0l.1-.1" stroke="#1e3a8a" stroke-width="1.3" stroke-linecap="round"/>
+            </svg>
+            <a href="tel:033223208">03 322 32 08</a>
           </div>
         </div>
-      </div>
-      <div class="fade-up rounded-3xl overflow-hidden aspect-[4/3]">
-        <img src="https://images.unsplash.com/photo-1577803645773-f96470509666?auto=format&fit=crop&w=1100&q=80" alt="Interieur van de optiekzaak met monturen" loading="lazy" decoding="async" class="w-full h-full object-cover" />
-      </div>
-    </div>
-  </section>
 
-  <!-- ═══ BEZOEK + AFSPRAAK ═══ -->
-  <section id="bezoek" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="grid lg:grid-cols-2 gap-14">
-
-      <!-- Info + afspraakformulier -->
-      <div class="fade-up space-y-10">
-        <div>
-          <p class="text-accent font-600 tracking-[0.22em] uppercase text-xs mb-4">Bezoek ons</p>
-          <h2 class="font-serif text-4xl sm:text-5xl font-600">Welkom in Deurne.</h2>
-          <p class="text-teal/70 text-lg mt-5 max-w-md">Kom langs voor een montuur, een oogmeting of gewoon goed advies. Een afspraak voor uw oogmeting is aanbevolen, zodat we alle tijd voor u hebben.</p>
-        </div>
-
-        <dl class="space-y-5 text-ink">
-          <div class="flex gap-4">
-            <span class="text-accent mt-1 text-lg" aria-hidden="true">📍</span>
+        <div class="contact-details reveal reveal-delay-4">
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path d="M9 2C6.2 2 4 4.2 4 7c0 3.7 5 9 5 9s5-5.3 5-9c0-2.8-2.2-5-5-5z" stroke="#1e3a8a" stroke-width="1.4"/>
+                <circle cx="9" cy="7" r="1.5" stroke="#1e3a8a" stroke-width="1.2"/>
+              </svg>
+            </div>
             <div>
-              <dt class="font-600">Adres</dt>
-              <dd class="text-teal/70">Eksterlaar 48, 2100 Deurne</dd>
+              <p class="contact-detail-label">Adres</p>
+              <p class="contact-detail-value">Eksterlaarstraat, Bistwijk<br>2100 Deurne, Antwerpen</p>
             </div>
           </div>
-          <div class="flex gap-4">
-            <span class="text-accent mt-1 text-lg" aria-hidden="true">🕑</span>
-            <div>
-              <dt class="font-600">Openingsuren</dt>
-              <dd class="text-teal/70">Di–Vr: 9:30–18:00 · Za: 9:30–17:00 · Zo &amp; Ma: gesloten</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-accent mt-1 text-lg" aria-hidden="true">📞</span>
-            <div>
-              <dt class="font-600">Telefoon</dt>
-              <dd class="text-teal/70"><a href="tel:+3233223208" class="ug">03 322 32 08</a></dd>
-            </div>
-          </div>
-        </dl>
 
-        <!-- Appointment form -->
-        <div id="afspraak" class="bg-warm rounded-2xl p-7">
-          <h3 class="font-serif text-2xl font-600 mb-5">Plan uw oogmeting of herbestel lenzen</h3>
-          <form class="space-y-4" onsubmit="return false">
-            <div class="grid sm:grid-cols-2 gap-4">
-              <div>
-                <label for="apt-naam" class="block text-sm font-600 mb-1.5">Naam</label>
-                <input id="apt-naam" name="naam" type="text" autocomplete="name" required placeholder="Uw naam" class="w-full px-4 py-3 rounded-xl border border-teal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-accent text-sm" />
-              </div>
-              <div>
-                <label for="apt-email" class="block text-sm font-600 mb-1.5">E-mail</label>
-                <input id="apt-email" name="email" type="email" autocomplete="email" required placeholder="uw@email.be" class="w-full px-4 py-3 rounded-xl border border-teal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-accent text-sm" />
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <circle cx="9" cy="9" r="7" stroke="#1e3a8a" stroke-width="1.4"/>
+                <path d="M9 5v4.5l3 1.5" stroke="#1e3a8a" stroke-width="1.3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <p class="contact-detail-label">Openingsuren</p>
+              <div class="hours-grid">
+                <span class="hours-day">Ma - Vr</span>
+                <span class="hours-time">09:00 - 12:30 / 13:30 - 18:00</span>
+                <span class="hours-day">Zaterdag</span>
+                <span class="hours-time">09:00 - 12:30</span>
+                <span class="hours-day">Zondag</span>
+                <span class="hours-time">Gesloten</span>
               </div>
             </div>
-            <div>
-              <label for="apt-type" class="block text-sm font-600 mb-1.5">Waarvoor mogen we u helpen?</label>
-              <select id="apt-type" name="type" class="w-full px-4 py-3 rounded-xl border border-teal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-accent text-sm">
-                <option value="">Kies een optie…</option>
-                <option>Oogmeting plannen</option>
-                <option>Nieuwe bril / montuuradvies</option>
-                <option>Contactlenzen aanpassen</option>
-                <option>Contactlenzen herbestellen</option>
-                <option>Herstelling of aanpassing</option>
-              </select>
-            </div>
-            <div>
-              <label for="apt-bericht" class="block text-sm font-600 mb-1.5">Korte toelichting <span class="text-teal/45 font-400">(optioneel)</span></label>
-              <textarea id="apt-bericht" name="bericht" rows="3" placeholder="Bv. voorkeur dag/uur, type lenzen, …" class="w-full px-4 py-3 rounded-xl border border-teal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-accent text-sm resize-none"></textarea>
-            </div>
-            <button type="submit" class="w-full bg-accent text-petroldk font-700 py-3.5 rounded-xl hover:bg-accentlt transition">
-              Aanvraag versturen
-            </button>
-          </form>
+          </div>
         </div>
       </div>
 
       <!-- Map -->
-      <div class="fade-up rounded-3xl overflow-hidden min-h-[440px] bg-warm shadow-sm">
-        <iframe
-          title="Kaart Optiek Eksterlaar, Eksterlaar 48, Deurne"
-          class="w-full h-full min-h-[440px] border-0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=4.452%2C51.205%2C4.472%2C51.222&layer=mapnik&marker=51.2140%2C4.4620">
-        </iframe>
+      <div class="reveal reveal-delay-2">
+        <div class="contact-map" aria-label="Locatie Optiek Eksterlaar in Deurne">
+          <svg viewBox="0 0 340 260" fill="none" xmlns="http://www.w3.org/2000/svg"
+               style="position:absolute;inset:0;width:100%;height:100%;" aria-hidden="true">
+            <rect width="340" height="260" fill="#e8edf5"/>
+            <!-- Street grid blocks -->
+            <rect x="0" y="55" width="340" height="12" fill="white" opacity="0.72"/>
+            <rect x="0" y="108" width="340" height="9" fill="white" opacity="0.52"/>
+            <rect x="0" y="148" width="340" height="14" fill="white" opacity="0.72"/>
+            <rect x="0" y="194" width="340" height="9" fill="white" opacity="0.52"/>
+            <rect x="65" y="0" width="10" height="260" fill="white" opacity="0.52"/>
+            <rect x="136" y="0" width="14" height="260" fill="white" opacity="0.72"/>
+            <rect x="226" y="0" width="10" height="260" fill="white" opacity="0.52"/>
+            <rect x="288" y="0" width="8" height="260" fill="white" opacity="0.42"/>
+            <!-- Building blocks -->
+            <rect x="75" y="63" width="53" height="36" fill="rgba(30,58,138,0.05)" rx="2"/>
+            <rect x="150" y="63" width="68" height="36" fill="rgba(30,58,138,0.05)" rx="2"/>
+            <rect x="75" y="117" width="30" height="24" fill="rgba(30,58,138,0.05)" rx="2"/>
+            <rect x="115" y="117" width="50" height="24" fill="rgba(30,58,138,0.05)" rx="2"/>
+            <rect x="150" y="162" width="68" height="24" fill="rgba(30,58,138,0.05)" rx="2"/>
+            <rect x="236" y="63" width="44" height="36" fill="rgba(30,58,138,0.05)" rx="2"/>
+            <rect x="236" y="117" width="44" height="24" fill="rgba(30,58,138,0.05)" rx="2"/>
+            <!-- Main road highlight -->
+            <rect x="0" y="148" width="340" height="14" fill="rgba(30,58,138,0.07)"/>
+            <text x="170" y="158.5" font-family="DM Sans,sans-serif" font-size="6.5" fill="#1e3a8a" opacity="0.42"
+                  text-anchor="middle" font-weight="600" letter-spacing="0.1em">EKSTERLAARSTRAAT</text>
+            <!-- Pin pulse rings -->
+            <circle cx="170" cy="155" r="32" fill="rgba(30,58,138,0.07)" stroke="rgba(30,58,138,0.14)" stroke-width="1"/>
+            <circle cx="170" cy="155" r="18" fill="rgba(30,58,138,0.1)" stroke="rgba(30,58,138,0.2)" stroke-width="1"/>
+            <!-- Crosshair pin -->
+            <line x1="170" y1="134" x2="170" y2="176" stroke="#1e3a8a" stroke-width="1.5" opacity="0.58"/>
+            <line x1="149" y1="155" x2="191" y2="155" stroke="#1e3a8a" stroke-width="1.5" opacity="0.58"/>
+            <circle cx="170" cy="155" r="6" fill="#1e3a8a" opacity="0.9"/>
+            <circle cx="170" cy="155" r="2.5" fill="white"/>
+          </svg>
+
+          <div class="contact-map-address">
+            <strong>Optiek Eksterlaar</strong>
+            Eksterlaarstraat, 2100 Deurne &nbsp;&middot;&nbsp; 03 322 32 08
+          </div>
+        </div>
+
+        <div style="margin-top:16px;">
+          <a href="tel:033223208" class="btn-primary" style="width:100%; justify-content:center;">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+              <path d="M3 2c-.4 0-.8.2-1 .5L1.2 3.6C.3 4.7.8 7.5 3.4 10.1c2.6 2.6 5.3 3.1 6.4 2.2l1-.8c.5-.4.5-1.2 0-1.6L9 8.1c-.4-.4-1.1-.4-1.5 0L7 8.6C6.5 8.3 5.6 7.4 5 6.8 4.4 6.2 3.5 5.3 3.2 4.8l.5-.5c.4-.4.4-1.1 0-1.5L2 1.9C1.7 1.6 1.3 1.5 1 1.5z" fill="currentColor" opacity="0.88"/>
+            </svg>
+            Bel 03 322 32 08
+          </a>
+        </div>
       </div>
 
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ═══ NEWSLETTER (GDPR-compliant) ═══ -->
-  <section class="bg-accent/12">
-    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600">Op de hoogte blijven?</h2>
-      <p class="text-teal/70 mt-3 text-lg">Nieuwe collecties, acties en een tijdige herinnering voor uw oogmeting — af en toe in uw mailbox.</p>
-      <form class="mt-8 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
-        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief van Optiek Eksterlaar</label>
-        <input id="nl-email" name="email" type="email" autocomplete="email" required placeholder="uw@email.be"
-          class="flex-1 px-5 py-3.5 rounded-full border border-teal/20 bg-cream focus:outline-none focus:ring-2 focus:ring-accent text-sm" />
-        <button class="bg-petrol text-cream font-600 px-7 py-3.5 rounded-full hover:bg-teal transition text-sm">Inschrijven</button>
-      </form>
-      <p class="text-xs text-teal/55 mt-3">Geen spam. Uitschrijven kan altijd via de link in elke mail. GDPR-conform verwerkt.</p>
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">Optiek Eksterlaar</div>
+      <p class="footer-copy">
+        Eksterlaarstraat, 2100 Deurne &nbsp;&middot;&nbsp;
+        <a href="tel:033223208" style="color:inherit">03 322 32 08</a>
+      </p>
+      <ul class="footer-links" role="list">
+        <li><a href="#diensten">Diensten</a></li>
+        <li><a href="#prismaglazen">Prismaglazen</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-  </section>
+  </div>
+</footer>
 
-  <!-- ═══ FOOTER ═══ -->
-  <footer class="bg-petroldk text-cream/75">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-9">
-      <div>
-        <p class="font-serif text-[24px] text-cream font-700 leading-none">Optiek <span class="text-accent">Eksterlaar</span></p>
-        <p class="text-cream/40 text-xs uppercase tracking-widest mt-1">Opticien · Deurne</p>
-        <p class="text-cream/55 text-sm mt-4 max-w-xs leading-relaxed">Uw lokale opticien voor brillen, zonnebrillen en contactlenzen — met persoonlijk advies en oogmeting.</p>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3 text-sm">Diensten</p>
-        <ul class="space-y-2 text-sm text-cream/55">
-          <li><a href="#diensten" class="hover:text-accent transition">Brillen</a></li>
-          <li><a href="#diensten" class="hover:text-accent transition">Zonnebrillen</a></li>
-          <li><a href="#diensten" class="hover:text-accent transition">Contactlenzen</a></li>
-          <li><a href="#diensten" class="hover:text-accent transition">Oogmeting</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3 text-sm">Online</p>
-        <ul class="space-y-2 text-sm text-cream/55">
-          <li><a href="#afspraak" class="hover:text-accent transition">Oogmeting boeken</a></li>
-          <li><a href="#afspraak" class="hover:text-accent transition">Lenzen herbestellen</a></li>
-          <li><a href="#advies"   class="hover:text-accent transition">Persoonlijk advies</a></li>
-          <li><a href="#over"     class="hover:text-accent transition">Over Optiek Eksterlaar</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3 text-sm">Contact</p>
-        <ul class="space-y-2 text-sm text-cream/55">
-          <li>Eksterlaar 48</li>
-          <li>2100 Deurne</li>
-          <li><a href="tel:+3233223208" class="hover:text-accent transition">03 322 32 08</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="border-t border-cream/10">
-      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/35">
-        <p>© 2026 Optiek Eksterlaar. Concept-redesign.</p>
-        <p>Proof of concept — gebouwd voor een gesprek over de nieuwe website van Optiek Eksterlaar.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ═══ SCRIPTS ═══ -->
-  <script>
-    // Fade-up on scroll
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => {
-        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-      });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
-    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
-    } else {
-      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1600);
+<!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+<script>
+// Headroom nav
+(function() {
+  var nav = document.querySelector('nav');
+  var lastY = 0, ticking = false;
+  function update() {
+    var y = window.scrollY || window.pageYOffset;
+    var delta = y - lastY;
+    if (y <= 80) {
+      nav.classList.remove('nav-hidden');
+      nav.classList.add('nav-visible');
+      nav.classList.remove('nav-scrolled');
+    } else if (delta > 8) {
+      nav.classList.add('nav-hidden', 'nav-scrolled');
+      nav.classList.remove('nav-visible');
+    } else if (delta < -5) {
+      nav.classList.remove('nav-hidden');
+      nav.classList.add('nav-visible', 'nav-scrolled');
     }
+    lastY = y;
+    ticking = false;
+  }
+  window.addEventListener('scroll', function() {
+    if (!ticking) { requestAnimationFrame(update); ticking = true; }
+  }, { passive: true });
+  nav.classList.add('nav-visible');
+})();
 
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (menuBtn && mobileMenu) {
-      const setOpen = (open) => {
-        if (open) mobileMenu.removeAttribute('hidden');
-        else       mobileMenu.setAttribute('hidden', '');
-        menuBtn.setAttribute('aria-expanded', String(open));
-        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
-      };
-      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
-      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
-    }
-  </script>
+// IntersectionObserver fade-in
+(function() {
+  var els = document.querySelectorAll('.reveal');
+  if (!els.length) return;
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function(el) { obs.observe(el); });
+})();
+</script>
 </body>
 </html>

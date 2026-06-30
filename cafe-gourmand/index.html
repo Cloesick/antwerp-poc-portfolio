@@ -1,614 +1,1374 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta name="robots" content="noindex, nofollow" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Café Gourmand — Épicerie fine in Mechelen · koffie, olijfolie, chocolade &amp; cadeaupakketten</title>
-  <meta name="description" content="Fijne kruidenierswaren in hartje Mechelen: vers gebrande koffie, thee, olijfolie, chocolade, wijn en specerijen. Nu met online webshop, checkout en samengestelde cadeaupakketten." />
-  <link rel="canonical" href="https://cafe-gourmand.eu/" />
-  <meta name="theme-color" content="#3b2a20" />
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Café Gourmand" />
-  <meta property="og:locale" content="nl_BE" />
-  <meta property="og:title" content="Café Gourmand — Épicerie fine in Mechelen" />
-  <meta property="og:description" content="Vers gebrande koffie, olijfolie, chocolade, wijn &amp; specerijen — nu met echte webshop, Bancontact-checkout en giftable cadeaupakketten." />
-  <meta property="og:url" content="https://cafe-gourmand.eu/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- Inline SVG favicon — monogram "CG" -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233b2a20'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%237d8a5b' text-anchor='middle'%3ECG%3C/text%3E%3C/svg%3E" />
-  <!-- Local-SEO structured data -->
+  <meta name="description" content="Café Gourmand — koffie, thee &amp; wijn in het hart van Mechelen. Ambachtelijke selectie, warme sfeer, lokale passie." />
+  <title>Café Gourmand — Koffie · Thee · Wijn · Mechelen</title>
+
+  <!-- Inline SVG favicon via data URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23b05c2a'/%3E%3Cellipse cx='16' cy='20' rx='7' ry='5' fill='none' stroke='%23faf5ec' stroke-width='1.5'/%3E%3Cellipse cx='16' cy='15' rx='5' ry='2' fill='%23faf5ec' opacity='.6'/%3E%3Cpath d='M23 20 Q25 20 25 23 L23 23' fill='none' stroke='%23faf5ec' stroke-width='1.5' stroke-linecap='round'/%3E%3Cpath d='M14 11 Q14 8 16 7 Q18 6 18 9' fill='none' stroke='%23faf5ec' stroke-width='1.2' stroke-linecap='round' opacity='.8'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts — non-blocking preload pattern -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=DM+Sans:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" /></noscript>
+
+  <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["Store", "FoodEstablishment"],
+    "@type": "CafeOrCoffeeShop",
     "name": "Café Gourmand",
-    "description": "Épicerie fine en fijne kruidenierswaren in Mechelen. Vers gebrande koffie, thee, olijfolie, chocolade, wijn, specerijen en samengestelde cadeaupakketten.",
-    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80",
-    "url": "https://cafe-gourmand.eu/",
+    "description": "Artisanale koffie, thee en wijn in het hart van Mechelen",
+    "url": "https://cafe-gourmand.eu",
     "telephone": "+32488206224",
     "email": "contact@cafe-gourmand.eu",
-    "servesCuisine": ["Gourmet", "European"],
-    "priceRange": "€€",
-    "areaServed": "BE",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Keizerstraat 21",
-      "postalCode": "2800",
       "addressLocality": "Mechelen",
-      "addressRegion": "Antwerpen",
       "addressCountry": "BE"
     },
-    "geo": { "@type": "GeoCoordinates", "latitude": 51.0281, "longitude": 4.4806 },
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "10:00", "closes": "18:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "10:00", "closes": "13:00" }
-    ]
+    "servesCuisine": ["Koffie", "Thee", "Wijn"],
+    "priceRange": "€€"
   }
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
-          colors: {
-            espresso:   '#3b2a20',
-            espressolt: '#4f3a2c',
-            olive:      '#7d8a5b',
-            olivelt:    '#94a070',
-            cream:      '#f6f1e7',
-            sand:       '#ece2cf',
-            cocoa:      '#2c1f17',
-          },
-        },
-      },
-    };
-  </script>
+
   <style>
+    /* ─── RESET & ROOT ─────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:        #faf5ec;
+      --cream-deep:   #f2e9d8;
+      --espresso:     #1e1008;
+      --brown-mid:    #3a2010;
+      --brown-light:  #6b3d1e;
+      --copper:       #b05c2a;
+      --copper-dark:  #8a3d18;
+      --copper-pale:  #d4956a;
+      --sand:         #e8dcc8;
+      --sand-dark:    #cbb898;
+      --steam-tone:   #c9a882;
+
+      --font-display: 'Fraunces', Georgia, serif;
+      --font-body:    'DM Sans', system-ui, sans-serif;
+
+      --nav-h:        72px;
+      --gap:          120px;
+    }
+
     html { scroll-behavior: smooth; }
-    .hero-grad { background: linear-gradient(180deg, rgba(59,42,32,.18) 0%, rgba(59,42,32,.52) 50%, rgba(59,42,32,.91) 100%); }
-    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
-    .fade-up.in { opacity: 1; transform: none; }
-    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
-    .ug:hover { background-size: 100% 2px; }
+
+    body {
+      background: var(--cream);
+      color: var(--espresso);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ─── WARM GRAIN OVERLAY (inline SVG filter) ────────────────── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: .032;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 300px 300px;
+    }
+
+    /* ─── HEADROOM NAV ─────────────────────────────────────────────── */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 48px;
+      background: rgba(250,245,236,.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(176,92,42,.12);
+      transition: transform .32s cubic-bezier(.4,0,.2,1), box-shadow .32s ease, background .3s;
+      will-change: transform;
+    }
+
+    .nav.hr--top {
+      background: transparent;
+      border-color: transparent;
+      box-shadow: none;
+    }
+
+    .nav.hr--unpinned { transform: translateY(-100%); }
+    .nav.hr--pinned   { transform: translateY(0); box-shadow: 0 2px 24px rgba(30,16,8,.09); }
+
+    .nav__logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--font-display);
+      font-size: 1.08rem;
+      font-weight: 600;
+      color: var(--espresso);
+      letter-spacing: -.01em;
+    }
+
+    .nav.hr--top .nav__logo { color: var(--cream); }
+
+    .nav__icon { width: 34px; height: 34px; flex-shrink: 0; }
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      list-style: none;
+    }
+
+    .nav__links a {
+      font-size: .82rem;
+      font-weight: 500;
+      color: var(--brown-mid);
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      transition: color .2s;
+    }
+
+    .nav.hr--top .nav__links a { color: rgba(250,245,236,.7); }
+    .nav.hr--top .nav__links a:hover { color: var(--cream); }
+    .nav__links a:hover { color: var(--copper); }
+
+    .nav__cta {
+      display: inline-flex !important;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 20px !important;
+      background: var(--copper);
+      color: var(--cream) !important;
+      border-radius: 4px;
+      transition: background .2s, transform .15s !important;
+    }
+
+    .nav__cta:hover {
+      background: var(--copper-dark) !important;
+      color: var(--cream) !important;
+      transform: translateY(-1px);
+    }
+
+    /* ─── FADE-UP ───────────────────────────────────────────────────── */
+    .fu {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .68s cubic-bezier(.4,0,.2,1), transform .68s cubic-bezier(.4,0,.2,1);
+    }
+    .fu.vis { opacity: 1; transform: translateY(0); }
+    .fu.d1 { transition-delay: .08s; }
+    .fu.d2 { transition-delay: .18s; }
+    .fu.d3 { transition-delay: .28s; }
+    .fu.d4 { transition-delay: .38s; }
+    .fu.d5 { transition-delay: .48s; }
+
+    /* ─── LAYOUT HELPERS ────────────────────────────────────────────── */
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    .section-eyebrow {
+      font-size: .7rem;
+      font-weight: 500;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: 14px;
+    }
+
+    .section-h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.9rem, 4vw, 3.1rem);
+      font-weight: 500;
+      line-height: 1.11;
+      letter-spacing: -.022em;
+      color: var(--espresso);
+      margin-bottom: 52px;
+    }
+
+    .section-h2 span { color: var(--copper); }
+
+    /* ─── HERO ──────────────────────────────────────────────────────── */
+    /* Composition: bottom-left text over dark atmospheric full-canvas */
+    .hero {
+      position: relative;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background: var(--espresso);
+      overflow: hidden;
+    }
+
+    .hero__bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 68% 55% at 68% 38%, rgba(176,92,42,.17) 0%, transparent 68%),
+        radial-gradient(ellipse 38% 48% at 18% 72%, rgba(107,61,30,.22) 0%, transparent 58%),
+        linear-gradient(155deg, #1e1008 0%, #2b1a0b 42%, #180c05 100%);
+    }
+
+    /* Vertical editorial side-rail — second-read moment */
+    .hero__rail {
+      position: absolute;
+      top: 0; right: 80px; bottom: 0;
+      width: 1px;
+      background: linear-gradient(to bottom, transparent 5%, rgba(176,92,42,.28) 20%, rgba(176,92,42,.28) 80%, transparent 95%);
+      pointer-events: none;
+    }
+
+    .hero__rail-note {
+      position: absolute;
+      top: 50%;
+      right: 96px;
+      transform: translateY(-50%) rotate(90deg);
+      font-size: .65rem;
+      font-weight: 500;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: rgba(176,92,42,.5);
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    /* Steam animation keyframes */
+    @keyframes s1 {
+      0%   { transform: translateY(0)    scaleX(1);    opacity: .7; }
+      50%  { transform: translateY(-20px) scaleX(1.1);  opacity: .35; }
+      100% { transform: translateY(-42px) scaleX(.9);   opacity: 0; }
+    }
+    @keyframes s2 {
+      0%   { transform: translateY(0)    scaleX(1);    opacity: .52; }
+      50%  { transform: translateY(-26px) scaleX(.88);  opacity: .28; }
+      100% { transform: translateY(-50px) scaleX(1.1);  opacity: 0; }
+    }
+    @keyframes s3 {
+      0%   { transform: translateY(0)    scaleX(1);    opacity: .62; }
+      50%  { transform: translateY(-16px) scaleX(1.18); opacity: .32; }
+      100% { transform: translateY(-34px) scaleX(.92);  opacity: 0; }
+    }
+
+    .st1 { animation: s1 3.3s ease-in-out infinite; transform-origin: bottom center; }
+    .st2 { animation: s2 3.9s ease-in-out .6s infinite; transform-origin: bottom center; }
+    .st3 { animation: s3 4.2s ease-in-out 1.2s infinite; transform-origin: bottom center; }
+
+    /* Large cup — right anchor */
+    .hero__cup {
+      position: absolute;
+      right: 110px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 320px;
+      height: 380px;
+      opacity: .78;
+      pointer-events: none;
+    }
+
+    /* Content — bottom-left position */
+    .hero__content {
+      position: relative;
+      z-index: 2;
+      padding: 0 64px 88px;
+      max-width: 660px;
+    }
+
+    .hero__tag {
+      display: inline-block;
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: 22px;
+    }
+
+    .hero__h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 5.8vw, 5.2rem);
+      font-weight: 500;
+      line-height: 1.06;
+      letter-spacing: -.026em;
+      color: var(--cream);
+      margin-bottom: 26px;
+    }
+
+    .hero__h1 em { font-style: normal; color: var(--copper-pale); }
+
+    .hero__sub {
+      font-size: 1.02rem;
+      line-height: 1.68;
+      color: rgba(250,245,236,.6);
+      max-width: 420px;
+      margin-bottom: 42px;
+    }
+
+    .hero__actions {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 30px;
+      background: var(--copper);
+      color: var(--cream);
+      border-radius: 4px;
+      font-size: .86rem;
+      font-weight: 500;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      transition: background .2s, transform .15s, box-shadow .2s;
+    }
+
+    .btn-primary:hover {
+      background: var(--copper-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(176,92,42,.38);
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .86rem;
+      font-weight: 500;
+      color: rgba(250,245,236,.65);
+      border-bottom: 1px solid rgba(250,245,236,.2);
+      padding-bottom: 2px;
+      transition: color .2s, border-color .2s;
+    }
+
+    .btn-ghost:hover { color: var(--cream); border-color: var(--copper); }
+
+    .hero__scroll {
+      position: absolute;
+      bottom: 30px; right: 56px;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: .68rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: rgba(250,245,236,.28);
+      pointer-events: none;
+    }
+
+    .scroll-line { width: 36px; height: 1px; background: rgba(250,245,236,.22); }
+
+    /* ─── AANBOD ────────────────────────────────────────────────────── */
+    .aanbod {
+      background: var(--cream);
+      padding: var(--gap) 0;
+    }
+
+    .aanbod__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      background: var(--sand-dark);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .card {
+      background: var(--cream);
+      padding: 50px 42px;
+      position: relative;
+      overflow: hidden;
+      transition: background .3s;
+    }
+
+    .card:hover { background: var(--cream-deep); }
+
+    .card__num {
+      position: absolute;
+      top: 28px; right: 32px;
+      font-family: var(--font-display);
+      font-size: 4rem;
+      font-weight: 600;
+      line-height: 1;
+      color: rgba(176,92,42,.07);
+      user-select: none;
+      pointer-events: none;
+    }
+
+    .card__icon { width: 52px; height: 52px; margin-bottom: 26px; }
+
+    .card__title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -.014em;
+      color: var(--espresso);
+      margin-bottom: 12px;
+    }
+
+    .card__body {
+      font-size: .92rem;
+      line-height: 1.72;
+      color: var(--brown-mid);
+      margin-bottom: 26px;
+    }
+
+    .card__link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .78rem;
+      font-weight: 500;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--copper);
+      border-bottom: 1px solid var(--copper-pale);
+      padding-bottom: 2px;
+      transition: gap .2s, color .2s;
+    }
+
+    .card__link:hover { color: var(--copper-dark); gap: 12px; }
+
+    .card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 100%; height: 3px;
+      background: var(--copper);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .38s cubic-bezier(.4,0,.2,1);
+    }
+
+    .card:hover::after { transform: scaleX(1); }
+
+    /* ─── AMBACHT ───────────────────────────────────────────────────── */
+    .ambacht {
+      background: var(--espresso);
+      padding: var(--gap) 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ambacht::after {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 480px; height: 480px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(176,92,42,.11) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .ambacht__row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px;
+      align-items: center;
+    }
+
+    .ambacht__eyebrow {
+      font-size: .7rem;
+      font-weight: 500;
+      letter-spacing: .24em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: 18px;
+    }
+
+    .ambacht__h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.75rem, 3.4vw, 2.8rem);
+      font-weight: 500;
+      line-height: 1.13;
+      letter-spacing: -.02em;
+      color: var(--cream);
+      margin-bottom: 26px;
+    }
+
+    .ambacht__p {
+      font-size: .96rem;
+      line-height: 1.77;
+      color: rgba(250,245,236,.62);
+      margin-bottom: 18px;
+    }
+
+    .provenance {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 6px;
+    }
+
+    .prov-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .prov-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--copper);
+      margin-top: 7px;
+      flex-shrink: 0;
+    }
+
+    .prov-item strong {
+      display: block;
+      font-size: .78rem;
+      font-weight: 500;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--copper-pale);
+      margin-bottom: 2px;
+    }
+
+    .prov-item p {
+      font-size: .87rem;
+      line-height: 1.55;
+      color: rgba(250,245,236,.5);
+    }
+
+    /* Panel — right side */
+    .amb-panel {
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(176,92,42,.16);
+      border-radius: 6px;
+      padding: 44px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .amb-panel::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(176,92,42,.055) 0%, transparent 55%);
+      pointer-events: none;
+    }
+
+    .panel-icons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-bottom: 34px;
+    }
+
+    .pi-cell {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .pi-cell svg { width: 48px; height: 48px; }
+
+    .pi-label {
+      font-size: .68rem;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: rgba(250,245,236,.42);
+      text-align: center;
+    }
+
+    .panel-hr {
+      height: 1px;
+      background: rgba(176,92,42,.16);
+      margin-bottom: 28px;
+    }
+
+    .panel-quote {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 500;
+      font-style: italic;
+      line-height: 1.58;
+      color: rgba(250,245,236,.58);
+      padding-left: 18px;
+      border-left: 2px solid var(--copper);
+    }
+
+    .panel-quote cite {
+      display: block;
+      font-family: var(--font-body);
+      font-style: normal;
+      font-size: .7rem;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-top: 12px;
+    }
+
+    /* ─── BEZOEK ────────────────────────────────────────────────────── */
+    .bezoek {
+      background: var(--cream-deep);
+      padding: var(--gap) 0;
+    }
+
+    .bezoek__row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 72px;
+      align-items: start;
+    }
+
+    /* Info blocks column */
+    .info-col {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .info-block {
+      background: var(--cream);
+      border: 1px solid rgba(176,92,42,.1);
+      border-radius: 6px;
+      padding: 30px 34px;
+    }
+
+    .info-block__label {
+      font-size: .68rem;
+      font-weight: 500;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: 10px;
+    }
+
+    .info-block__val {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 500;
+      line-height: 1.48;
+      color: var(--espresso);
+    }
+
+    .info-block__val a { color: var(--copper); transition: color .2s; }
+    .info-block__val a:hover { color: var(--copper-dark); }
+
+    .hours {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 20px;
+      margin-top: 4px;
+    }
+
+    .hour-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+      border-bottom: 1px solid var(--sand);
+    }
+
+    .hour-row .day  { font-size: .8rem; font-weight: 500; color: var(--brown-light); }
+    .hour-row .time { font-size: .8rem; color: var(--espresso); }
+
+    /* CTA panel */
+    .cta-panel {
+      background: var(--copper);
+      border-radius: 6px;
+      padding: 48px;
+      color: var(--cream);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-panel::before {
+      content: '';
+      position: absolute;
+      top: -50px; right: -50px;
+      width: 220px; height: 220px;
+      border-radius: 50%;
+      background: rgba(255,255,255,.08);
+      pointer-events: none;
+    }
+
+    .cta-panel::after {
+      content: '';
+      position: absolute;
+      bottom: -70px; left: -35px;
+      width: 260px; height: 260px;
+      border-radius: 50%;
+      background: rgba(0,0,0,.08);
+      pointer-events: none;
+    }
+
+    .cta-panel__h3 {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      font-weight: 500;
+      line-height: 1.18;
+      letter-spacing: -.016em;
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-panel__sub {
+      font-size: .93rem;
+      line-height: 1.62;
+      color: rgba(250,245,236,.78);
+      margin-bottom: 34px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn-cream {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 26px;
+      background: var(--cream);
+      color: var(--copper-dark);
+      border-radius: 4px;
+      font-size: .84rem;
+      font-weight: 500;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      transition: background .2s, transform .15s;
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn-cream:hover { background: var(--cream-deep); transform: translateY(-1px); }
+
+    /* ─── FOOTER ────────────────────────────────────────────────────── */
+    .footer {
+      background: var(--espresso);
+      padding: 68px 0 40px;
+    }
+
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 64px;
+      margin-bottom: 54px;
+    }
+
+    .footer__logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .footer__logo-text {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--cream);
+      letter-spacing: -.01em;
+    }
+
+    .footer__tagline {
+      font-size: .88rem;
+      line-height: 1.68;
+      color: rgba(250,245,236,.42);
+      max-width: 248px;
+    }
+
+    .footer__col-title {
+      font-size: .68rem;
+      font-weight: 500;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: 18px;
+    }
+
+    .footer__list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer__list a {
+      font-size: .87rem;
+      color: rgba(250,245,236,.46);
+      transition: color .2s;
+    }
+
+    .footer__list a:hover { color: var(--copper-pale); }
+
+    .footer__contact p {
+      font-size: .87rem;
+      color: rgba(250,245,236,.46);
+      margin-bottom: 8px;
+    }
+
+    .footer__contact a {
+      color: rgba(250,245,236,.68);
+      transition: color .2s;
+    }
+
+    .footer__contact a:hover { color: var(--copper-pale); }
+
+    .footer__bottom {
+      border-top: 1px solid rgba(250,245,236,.06);
+      padding-top: 26px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer__copy { font-size: .78rem; color: rgba(250,245,236,.22); }
+
+    .footer__meta {
+      display: flex;
+      gap: 22px;
+    }
+
+    .footer__meta a {
+      font-size: .76rem;
+      color: rgba(250,245,236,.22);
+      transition: color .2s;
+    }
+
+    .footer__meta a:hover { color: rgba(250,245,236,.46); }
+
+    /* ─── RESPONSIVE ────────────────────────────────────────────────── */
+    @media (max-width: 960px) {
+      :root { --gap: 80px; }
+
+      .nav { padding: 0 24px; }
+      .nav__links li:nth-child(-n+3) { display: none; }
+
+      .hero__cup { width: 200px; height: 240px; right: 24px; opacity: .45; }
+      .hero__content { padding: 0 32px 68px; }
+      .hero__rail, .hero__rail-note { display: none; }
+
+      .aanbod__grid { grid-template-columns: 1fr; }
+      .card { padding: 40px 30px; }
+
+      .ambacht__row { grid-template-columns: 1fr; gap: 44px; }
+      .amb-panel { order: -1; }
+
+      .bezoek__row { grid-template-columns: 1fr; gap: 44px; }
+
+      .footer__grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+      .footer__grid > div:first-child { grid-column: 1 / -1; }
+
+      .wrap { padding: 0 24px; }
+    }
+
+    @media (max-width: 600px) {
+      .hero__h1 { font-size: 2.4rem; }
+      .hero__actions { flex-direction: column; align-items: flex-start; }
+      .footer__grid { grid-template-columns: 1fr; }
+      .hours { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
-<body class="bg-cream text-espresso font-sans antialiased selection:bg-olive/25">
 
-  <!-- Skip link -->
-  <a href="#webshop" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-espresso focus:text-cream focus:rounded-full">Naar de webshop</a>
+<body>
 
-  <!-- Announcement bar -->
-  <div class="bg-espresso text-cream text-center text-[13px] tracking-wide py-2 px-4">
-    <span aria-hidden="true">☕</span> <span class="font-semibold">Nieuw:</span> online bestellen mét checkout — betaal veilig met Bancontact &amp; ontvang thuis · Keizerstraat 21, Mechelen.
-  </div>
+  <!-- ═══════════════════════════════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════════════════════════════════ -->
+  <nav class="nav hr--top" id="mainNav" role="navigation" aria-label="Hoofdnavigatie">
 
-  <!-- Sticky nav -->
-  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-espresso/10">
-    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
-      <!-- Logo -->
-      <a href="#top" class="flex items-baseline gap-2">
-        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-espresso">Café Gourmand<span class="text-olive">·</span></span>
-        <span class="hidden sm:inline text-[11px] uppercase tracking-[0.22em] text-espresso/50 font-600">Épicerie fine · Mechelen</span>
-      </a>
-      <!-- Desktop links -->
-      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
-        <a href="#webshop" class="ug">Webshop</a>
-        <a href="#assortiment" class="ug">Assortiment</a>
-        <a href="#cadeaupakketten" class="ug">Cadeaupakketten</a>
-        <a href="#bezoek" class="ug">Bezoek ons</a>
-      </div>
-      <!-- CTA + hamburger -->
-      <div class="flex items-center gap-2">
-        <a href="#webshop" class="inline-flex items-center gap-2 bg-olive text-espresso text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-olivelt transition">
-          Online bestellen
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
-          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-espresso/15 text-espresso hover:bg-espresso/5 transition">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </nav>
-    <!-- Mobile menu -->
-    <div id="mobile-menu" hidden class="md:hidden border-t border-espresso/10 bg-cream/95 backdrop-blur">
-      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
-        <a href="#webshop" class="py-3 border-b border-espresso/8">Webshop</a>
-        <a href="#assortiment" class="py-3 border-b border-espresso/8">Assortiment</a>
-        <a href="#cadeaupakketten" class="py-3 border-b border-espresso/8">Cadeaupakketten</a>
-        <a href="#bezoek" class="py-3">Bezoek ons</a>
-      </div>
-    </div>
-  </header>
+    <a href="#" class="nav__logo" aria-label="Café Gourmand home">
+      <!-- Inline cup icon -->
+      <svg class="nav__icon" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="34" height="34" rx="6" fill="#b05c2a"/>
+        <ellipse cx="17" cy="22" rx="7.5" ry="5" fill="none" stroke="#faf5ec" stroke-width="1.3"/>
+        <ellipse cx="17" cy="17.5" rx="5.8" ry="2" fill="none" stroke="#faf5ec" stroke-width="1.1" opacity=".6"/>
+        <path d="M24.5 22 Q27 22 27 25 L24.5 25" fill="none" stroke="#faf5ec" stroke-width="1.3" stroke-linecap="round"/>
+        <path d="M14.5 14 Q14 11 16.5 9.5 Q19 8 19 11.5" fill="none" stroke="#faf5ec" stroke-width="1.1" stroke-linecap="round" opacity=".75"/>
+        <path d="M17.5 12.5 Q17 10 19 9 Q21 8 21 10.5" fill="none" stroke="#faf5ec" stroke-width="1" stroke-linecap="round" opacity=".5"/>
+      </svg>
+      Café Gourmand
+    </a>
 
-  <!-- Hero -->
-  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-espresso">
-    <img
-      src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=2000&q=80"
-      alt="Vers gebrande koffie en fijne delicatessen bij Café Gourmand in Mechelen"
-      fetchpriority="high"
-      class="absolute inset-0 w-full h-full object-cover"
-    />
-    <div class="absolute inset-0 hero-grad"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
-      <p class="text-olivelt font-600 tracking-[0.3em] uppercase text-xs mb-5">
-        <span aria-hidden="true">☕</span> Épicerie fine · koffie · olijfolie · chocolade · Mechelen
-      </p>
-      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
-        Fijne smaken uit Mechelen,<br />nu ook met één klik besteld.
+    <ul class="nav__links">
+      <li><a href="#aanbod">Aanbod</a></li>
+      <li><a href="#ambacht">Ambacht</a></li>
+      <li><a href="#bezoek">Bezoek</a></li>
+      <li><a href="tel:0488206224" class="nav__cta">Bel ons</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       HERO — bottom-left text, atmospheric dark canvas
+  ═══════════════════════════════════════════════════════════════════ -->
+  <section class="hero" aria-labelledby="hero-h1">
+
+    <div class="hero__bg" aria-hidden="true"></div>
+
+    <!-- Vertical editorial rail -->
+    <div class="hero__rail" aria-hidden="true"></div>
+    <span class="hero__rail-note" aria-hidden="true">Mechelen · Fondé en passion</span>
+
+    <!-- Espresso cup illustration — right anchor -->
+    <svg class="hero__cup" viewBox="0 0 320 380" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- Steam curls -->
+      <g class="st1">
+        <path d="M116 90 Q106 74 116 58 Q126 42 116 26" stroke="rgba(201,168,130,0.55)" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+      </g>
+      <g class="st2">
+        <path d="M155 82 Q143 65 153 47 Q163 29 151 13" stroke="rgba(201,168,130,0.38)" stroke-width="2" stroke-linecap="round" fill="none"/>
+      </g>
+      <g class="st3">
+        <path d="M194 94 Q206 78 196 60 Q186 44 198 28" stroke="rgba(201,168,130,0.46)" stroke-width="2.1" stroke-linecap="round" fill="none"/>
+      </g>
+
+      <!-- Saucer -->
+      <ellipse cx="160" cy="324" rx="100" ry="16" fill="rgba(176,92,42,0.18)"/>
+      <ellipse cx="160" cy="318" rx="94" ry="11.5" fill="#261408" stroke="rgba(176,92,42,0.38)" stroke-width="1.4"/>
+
+      <!-- Cup body -->
+      <path d="M68 175 Q64 268 78 295 Q98 320 160 322 Q222 320 242 295 Q256 268 252 175 Z" fill="#231005" stroke="rgba(176,92,42,0.32)" stroke-width="1.5"/>
+
+      <!-- Cup rim / opening -->
+      <ellipse cx="160" cy="174" rx="92" ry="20" fill="#1a0c04"/>
+      <ellipse cx="160" cy="174" rx="78" ry="14" fill="#381508"/>
+      <ellipse cx="160" cy="174" rx="62" ry="10" fill="#5c2508" opacity=".85"/>
+      <!-- Crema swirl detail -->
+      <path d="M120 172 Q145 167 160 175 Q175 183 200 178" stroke="rgba(176,92,42,0.48)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+      <path d="M134 178 Q152 182 170 176" stroke="rgba(201,120,60,0.36)" stroke-width="1" fill="none" stroke-linecap="round"/>
+
+      <!-- Rim -->
+      <ellipse cx="160" cy="175" rx="92" ry="20" fill="none" stroke="rgba(176,92,42,0.42)" stroke-width="1.8"/>
+
+      <!-- Handle -->
+      <path d="M250 208 Q284 208 284 252 Q284 296 250 296" fill="none" stroke="#1e0d06" stroke-width="16" stroke-linecap="round"/>
+      <path d="M250 208 Q274 208 274 252 Q274 296 250 296" fill="none" stroke="rgba(176,92,42,0.3)" stroke-width="1.8"/>
+
+      <!-- Highlight -->
+      <path d="M86 200 Q80 252 86 284" stroke="rgba(255,255,255,0.05)" stroke-width="8" stroke-linecap="round"/>
+
+      <!-- Decorative band -->
+      <path d="M70 222 Q160 232 250 222" stroke="rgba(176,92,42,0.18)" stroke-width="1" fill="none"/>
+    </svg>
+
+    <!-- Bottom-left text content -->
+    <div class="hero__content">
+      <span class="hero__tag fu">Mechelen · Koffie · Thee · Wijn</span>
+      <h1 class="hero__h1 fu d1" id="hero-h1">
+        Koffie, thee &amp; wijn —<br />
+        in het hart van <em>Mechelen.</em>
       </h1>
-      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
-        Vers gebrande koffie, eerste-persing olijfolie, ambachtelijke chocolade, wijn en specerijen —
-        zorgvuldig geselecteerd in onze winkel op de Keizerstraat. Eindelijk te koop in een échte webshop.
+      <p class="hero__sub fu d2">
+        Een deli waar elke boon, elk blad en elke druif met zorg werd gekozen. Geen haast, geen lawaai — enkel smaak die beklijft.
       </p>
-      <div class="flex flex-wrap gap-3 mt-9">
-        <a href="#webshop" class="bg-olive text-espresso font-700 px-7 py-3.5 rounded-full hover:bg-olivelt transition">
-          Bestel online
+      <div class="hero__actions fu d3">
+        <a href="#bezoek" class="btn-primary">
+          Kom proeven
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </a>
-        <a href="#cadeaupakketten" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
-          Cadeaupakketten
+        <a href="tel:0488206224" class="btn-ghost">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2 2.5C2 2.5 3.5 1 4.5 2.5L5.5 4.5C5.5 4.5 4 5.5 4.5 7C5 8.5 6.5 10 8 10.5C9.5 11 10.5 9.5 10.5 9.5L12.5 10.5C14 11.5 12.5 13 12.5 13C12.5 13 8 14 4 10S1 2.5 1 2.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+          </svg>
+          Bel: 0488 20 62 24
         </a>
       </div>
     </div>
-  </section>
 
-  <!-- USP strip -->
-  <section class="bg-espresso text-cream/90">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
-      <div><p class="font-serif text-2xl text-olivelt">Vers gebrand</p><p class="mt-1 text-cream/65">Koffie, op bestelling gebrand</p></div>
-      <div><p class="font-serif text-2xl text-olivelt">Geselecteerd</p><p class="mt-1 text-cream/65">Olijfolie, chocolade &amp; wijn met zorg gekozen</p></div>
-      <div><p class="font-serif text-2xl text-olivelt">Cadeauklaar</p><p class="mt-1 text-cream/65">Samengestelde pakketten om te geven</p></div>
-      <div><p class="font-serif text-2xl text-olivelt">Checkout</p><p class="mt-1 text-cream/65">Veilig betalen met Bancontact</p></div>
+    <div class="hero__scroll" aria-hidden="true">
+      <span class="scroll-line"></span>
+      Scroll
     </div>
   </section>
 
-  <!-- Webshop / online bestellen -->
-  <section id="webshop" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <div class="fade-up">
-        <p class="text-olive font-600 tracking-[0.2em] uppercase text-xs mb-4">Nieuw: webshop met checkout</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-espresso">
-          Eindelijk een catalogus<br />waar u óók kunt bestellen.
-        </h2>
-        <p class="text-cocoa/75 text-lg mt-5 leading-relaxed max-w-md">
-          Vandaag kan men onze producten online bekijken — maar niet kopen. Geen winkelmandje, geen kassa.
-          Dit concept toont hoe Café Gourmand mét een echte webshop werkt: kies, leg in het mandje en reken af.
-        </p>
-        <ul class="mt-7 space-y-3 text-cocoa">
-          <li class="flex items-center gap-3"><span class="text-olive font-700">✓</span> Winkelmandje &amp; veilige checkout (Bancontact, Mollie)</li>
-          <li class="flex items-center gap-3"><span class="text-olive font-700">✓</span> Afhalen in de winkel óf verzending in heel België</li>
-          <li class="flex items-center gap-3"><span class="text-olive font-700">✓</span> Abonnement op vers gebrande koffie — automatisch geleverd</li>
-        </ul>
-        <a href="#cadeaupakketten" class="inline-flex items-center gap-2 mt-9 bg-espresso text-cream font-600 px-7 py-3.5 rounded-full hover:bg-espressolt transition">
-          Bekijk de cadeaupakketten
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
-      <div class="fade-up grid grid-cols-2 gap-4">
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand">
-          <img
-            src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=800&q=80"
-            alt="Vers gebrande koffiebonen"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand mt-8">
-          <img
-            src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80"
-            alt="Olijfolie en fijne delicatessen"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Assortiment grid -->
-  <section id="assortiment" class="bg-sand/55 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
-        <div>
-          <p class="text-olive font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
-          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-espresso">Een huis vol fijne smaken</h2>
-        </div>
-        <p class="text-cocoa/65 max-w-sm">Zes categorieën, zorgvuldig geselecteerd — straks allemaal te bestellen via de webshop.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+  <!-- ═══════════════════════════════════════════════════════════════
+       AANBOD
+  ═══════════════════════════════════════════════════════════════════ -->
+  <section class="aanbod" id="aanbod" aria-labelledby="aanbod-h2">
+    <div class="wrap">
+
+      <p class="section-eyebrow fu">Wat wij aanbieden</p>
+      <h2 class="section-h2 fu d1" id="aanbod-h2">Drie passies,<br /><span>één adres.</span></h2>
+
+      <div class="aanbod__grid" role="list">
+
         <!-- Koffie -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80"
-            alt="Vers gebrande koffie"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Koffie</h3>
-            <p class="text-cream/75 text-sm mt-1">Single origin &amp; blends, vers gebrand op bestelling.</p>
+        <article class="card fu" role="listitem">
+          <span class="card__num" aria-hidden="true">01</span>
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 11 Q10 5 14 0" stroke="#b05c2a" stroke-width="1.7" stroke-linecap="round" fill="none"/>
+              <path d="M26 9 Q22 3 26 -2" stroke="#b05c2a" stroke-width="1.5" stroke-linecap="round" fill="none" opacity=".65"/>
+              <path d="M10 19 Q9 36 12 42 Q16 48 26 49 Q36 48 40 42 Q43 36 42 19 Z" fill="none" stroke="#b05c2a" stroke-width="1.8"/>
+              <ellipse cx="26" cy="19" rx="16" ry="3.8" fill="none" stroke="#b05c2a" stroke-width="1.4"/>
+              <path d="M40 27 Q48 27 48 35 Q48 43 40 43" fill="none" stroke="#b05c2a" stroke-width="1.8" stroke-linecap="round"/>
+              <ellipse cx="26" cy="50" rx="20" ry="3" fill="none" stroke="#b05c2a" stroke-width="1.3" opacity=".45"/>
+            </svg>
           </div>
+          <h3 class="card__title">Koffie</h3>
+          <p class="card__body">Versgebrande single origins en doordachte blends — van zachte Ethiopische washed tot volle Indonesische robusta. Wij kennen elke teler bij naam.</p>
+          <a href="#ambacht" class="card__link">
+            Ons ambacht
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M2 6.5h9M7.5 3l3.5 3.5L7.5 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
         </article>
+
         <!-- Thee -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&w=800&q=80"
-            alt="Losse thee en kruidenthee"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Thee</h3>
-            <p class="text-cream/75 text-sm mt-1">Losse zwarte, groene &amp; kruidenthee per gewicht.</p>
+        <article class="card fu d1" role="listitem">
+          <span class="card__num" aria-hidden="true">02</span>
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 17 Q12 34 14 40 Q18 48 26 49 Q34 48 38 40 Q40 34 38 17 Z" fill="none" stroke="#b05c2a" stroke-width="1.8"/>
+              <path d="M14 25 Q6 21 6 17 Q6 13 10 13 Q12 13 14 15" fill="none" stroke="#b05c2a" stroke-width="1.7" stroke-linecap="round"/>
+              <path d="M38 21 Q46 21 46 29 Q46 37 38 37" fill="none" stroke="#b05c2a" stroke-width="1.7" stroke-linecap="round"/>
+              <ellipse cx="26" cy="17" rx="12" ry="3.2" fill="none" stroke="#b05c2a" stroke-width="1.4"/>
+              <circle cx="26" cy="13" r="2.2" fill="#b05c2a" opacity=".45"/>
+              <path d="M23 8 Q25 4 27 6" stroke="#b05c2a" stroke-width="1.3" stroke-linecap="round" fill="none" opacity=".55"/>
+            </svg>
           </div>
+          <h3 class="card__title">Thee</h3>
+          <p class="card__body">Losse thee uit Japan, Taiwan, China en de Himalaya. Groene, witte, oolong en gefermenteerde varieteit — elk seizoen een ander verhaal.</p>
+          <a href="#ambacht" class="card__link">
+            Onze selectie
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M2 6.5h9M7.5 3l3.5 3.5L7.5 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
         </article>
-        <!-- Olijfolie -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80"
-            alt="Eerste-persing olijfolie"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Olijfolie</h3>
-            <p class="text-cream/75 text-sm mt-1">Extra vergine, eerste persing — mediterrane domeinen.</p>
-          </div>
-        </article>
-        <!-- Chocolade -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=800&q=80"
-            alt="Ambachtelijke chocolade"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Chocolade</h3>
-            <p class="text-cream/75 text-sm mt-1">Pure tabletten, pralines &amp; bean-to-bar selecties.</p>
-          </div>
-        </article>
+
         <!-- Wijn -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80"
-            alt="Geselecteerde wijnen"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Wijn</h3>
-            <p class="text-cream/75 text-sm mt-1">Een kleine, persoonlijke selectie van huiswijnen.</p>
+        <article class="card fu d2" role="listitem">
+          <span class="card__num" aria-hidden="true">03</span>
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 5 L39 5 Q39 21 26 31 Q13 21 13 5Z" fill="none" stroke="#b05c2a" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M15 13 Q26 22 37 13" stroke="#b05c2a" stroke-width="1.1" fill="none" opacity=".45"/>
+              <line x1="26" y1="31" x2="26" y2="46" stroke="#b05c2a" stroke-width="1.8" stroke-linecap="round"/>
+              <line x1="17" y1="47" x2="35" y2="47" stroke="#b05c2a" stroke-width="2.2" stroke-linecap="round"/>
+              <circle cx="21" cy="18" r="1.4" fill="#b05c2a" opacity=".35"/>
+              <circle cx="28" cy="22" r="1" fill="#b05c2a" opacity=".28"/>
+            </svg>
           </div>
+          <h3 class="card__title">Wijn</h3>
+          <p class="card__body">Natuurwijnen, biodynamische etiketten en kleine domaines die u nergens anders vindt. Elke fles heeft een verhaal dat wij graag vertellen.</p>
+          <a href="#bezoek" class="card__link">
+            Kom langs voor advies
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M2 6.5h9M7.5 3l3.5 3.5L7.5 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
         </article>
-        <!-- Specerijen -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80"
-            alt="Specerijen en kruiden"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Specerijen</h3>
-            <p class="text-cream/75 text-sm mt-1">Verse kruiden, peper, zout &amp; mengelingen per zakje.</p>
-          </div>
-        </article>
+
       </div>
     </div>
   </section>
 
-  <!-- Featured products (illustratief) -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="flex items-end justify-between mb-10">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-espresso">Een greep uit het assortiment</h2>
-      <a href="#webshop" class="hidden sm:inline text-olive font-600 ug">Alles bestellen →</a>
-    </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Product 1 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-          <img
-            src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=700&q=80"
-            alt="Vers gebrande koffie (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-olive font-600 uppercase tracking-wider">Vers gebrand</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-espresso">Huisblend espresso</h3>
-          <p class="text-cocoa/60 text-sm mt-1">Volle, ronde blend — hele bonen of gemalen op maat.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-cocoa/50 text-sm font-500">Prijs in de webshop</span>
-            <button class="bg-espresso text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-espressolt transition">In mandje</button>
-          </div>
-        </div>
-      </div>
-      <!-- Product 2 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-          <img
-            src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=700&q=80"
-            alt="Olijfolie extra vergine (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-olive font-600 uppercase tracking-wider">Eerste persing</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-espresso">Olijfolie extra vergine</h3>
-          <p class="text-cocoa/60 text-sm mt-1">Fruitig en peperig, van één mediterraan domein.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-cocoa/50 text-sm font-500">Prijs in de webshop</span>
-            <button class="bg-espresso text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-espressolt transition">In mandje</button>
-          </div>
-        </div>
-      </div>
-      <!-- Product 3 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-          <img
-            src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=700&q=80"
-            alt="Ambachtelijke chocolade (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-olive font-600 uppercase tracking-wider">Bean-to-bar</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-espresso">Pure chocoladetablet</h3>
-          <p class="text-cocoa/60 text-sm mt-1">Intense, ambachtelijke chocolade van één oorsprong.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-cocoa/50 text-sm font-500">Prijs in de webshop</span>
-            <button class="bg-espresso text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-espressolt transition">In mandje</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p class="text-center text-xs text-cocoa/40 mt-6">Voorbeeldproducten ter illustratie van de webshop met winkelmandje &amp; checkout. Prijzen worden samen met u bepaald.</p>
-  </section>
 
-  <!-- Cadeaupakketten / Gift hampers (the differentiator) -->
-  <section id="cadeaupakketten" class="bg-espresso text-cream py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
-      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
-        <img
-          src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=1000&q=80"
-          alt="Samengesteld cadeaupakket met koffie, olijfolie en chocolade"
-          loading="lazy" decoding="async"
-          class="w-full h-full object-cover"
-        />
-      </div>
-      <div class="order-1 lg:order-2 fade-up">
-        <p class="text-olivelt font-600 tracking-[0.2em] uppercase text-xs mb-4">Giftable cadeaupakketten</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
-          Fijne smaken,<br />mooi verpakt om te geven.
-        </h2>
-        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
-          Een verjaardag, een bedankje of een eindejaarsgeschenk voor het bedrijf? Wij stellen een cadeaupakket
-          samen: vers gebrande koffie met olijfolie en chocolade, of uw eigen combinatie — verzorgd ingepakt
-          en klaar om weg te geven.
-        </p>
-        <ul class="mt-6 space-y-3 text-cream/85">
-          <li class="flex items-center gap-3"><span class="text-olive font-700">✓</span> Combineer koffie + olijfolie + chocolade naar wens</li>
-          <li class="flex items-center gap-3"><span class="text-olive font-700">✓</span> Afhalen in de winkel of verzending in heel België</li>
-          <li class="flex items-center gap-3"><span class="text-olive font-700">✓</span> Bedrijfs- en groepsbestellingen welkom</li>
-        </ul>
-        <a href="#bezoek" class="inline-flex items-center gap-2 mt-8 bg-olive text-espresso font-700 px-7 py-3.5 rounded-full hover:bg-olivelt transition">
-          Stel een pakket samen
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
+  <!-- ═══════════════════════════════════════════════════════════════
+       AMBACHT
+  ═══════════════════════════════════════════════════════════════════ -->
+  <section class="ambacht" id="ambacht" aria-labelledby="ambacht-h2">
+    <div class="wrap">
+      <div class="ambacht__row">
 
-  <!-- Story / Ons verhaal -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
-    <div class="fade-up">
-      <p class="text-olive font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
-      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-espresso">Een épicerie fine<br />in hartje Mechelen.</h2>
-      <p class="text-cocoa/70 text-lg mt-6 leading-relaxed">
-        Café Gourmand is een fijne kruidenierszaak op de Keizerstraat 21, op wandelafstand van de Grote Markt.
-        Bij ons draait alles om smaak: vers gebrande koffie, losse thee, eerste-persing olijfolie,
-        ambachtelijke chocolade, een persoonlijke wijnselectie en geurige specerijen.
-      </p>
-      <p class="text-cocoa/70 text-lg mt-4 leading-relaxed">
-        Onze klanten kennen ons al voor het bladeren door de catalogus — alleen kon men online nog niets bestellen.
-        Met een echte webshop, een veilige checkout en samengestelde cadeaupakketten brengen we Café Gourmand
-        nu ook tot bij u thuis.
-      </p>
-      <div class="mt-9 flex flex-wrap gap-6">
-        <div class="text-center">
-          <p class="font-serif text-4xl text-olive font-700">6</p>
-          <p class="text-cocoa/65 text-sm mt-1">Categorieën fijne waren</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-olive font-700">100%</p>
-          <p class="text-cocoa/65 text-sm mt-1">Geselecteerd op smaak</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-olive font-700">Mechelen</p>
-          <p class="text-cocoa/65 text-sm mt-1">Keizerstraat 21</p>
-        </div>
-      </div>
-    </div>
-    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
-      <img
-        src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1000&q=80"
-        alt="Interieur van een fijne kruidenierszaak met koffie en delicatessen"
-        loading="lazy" decoding="async"
-        class="w-full h-full object-cover"
-      />
-    </div>
-  </section>
+        <!-- Left — story -->
+        <div>
+          <p class="ambacht__eyebrow fu">Ons ambacht</p>
+          <h2 class="ambacht__h2 fu d1" id="ambacht-h2">Van oorsprong tot kopje — elk detail telt.</h2>
+          <p class="ambacht__p fu d2">Café Gourmand is geen keten en geen franchise. Het is een winkel gebouwd op persoonlijke reizen, gesprekken met telers en de overtuiging dat kwaliteit nooit toevallig is.</p>
+          <p class="ambacht__p fu d2">Wij bezoeken theeplantages in de mist van Assam, coöperatieven in Ethiopië en drinken wijn met vignerons die hun grond als familielid behandelen.</p>
 
-  <!-- Bezoek + kaart -->
-  <section id="bezoek" class="bg-sand/55 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
-      <div class="fade-up">
-        <p class="text-olive font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-espresso">Welkom in de winkel</h2>
-        <p class="text-cocoa/70 text-lg mt-5 max-w-md">
-          Kom proeven en kiezen op Keizerstraat 21 in Mechelen, op wandelafstand van de Grote Markt.
-        </p>
-        <dl class="mt-9 space-y-5 text-cocoa">
-          <div class="flex gap-4">
-            <span class="text-olive mt-0.5 text-xl" aria-hidden="true">📍</span>
-            <div>
-              <dt class="font-600 text-espresso">Adres</dt>
-              <dd class="text-cocoa/70">Keizerstraat 21, 2800 Mechelen</dd>
+          <div class="provenance fu d3">
+            <div class="prov-item">
+              <span class="prov-dot"></span>
+              <div>
+                <strong>Koffie</strong>
+                <p>Ethiopië · Colombia · Sumatra — direct trade, kleine batch, vers gebrand in België</p>
+              </div>
+            </div>
+            <div class="prov-item">
+              <span class="prov-dot"></span>
+              <div>
+                <strong>Thee</strong>
+                <p>Japan · Taiwan · Darjeeling — seizoensgebonden oogst, traditionele verwerking</p>
+              </div>
+            </div>
+            <div class="prov-item">
+              <span class="prov-dot"></span>
+              <div>
+                <strong>Wijn</strong>
+                <p>Loire · Jura · Slovenië — biodynamisch, kleine domaines, geen compromis</p>
+              </div>
             </div>
           </div>
-          <div class="flex gap-4">
-            <span class="text-olive mt-0.5 text-xl" aria-hidden="true">🕑</span>
-            <div>
-              <dt class="font-600 text-espresso">Openingsuren</dt>
-              <dd class="text-cocoa/70">Di–Za: 10:00–18:00 · Zo: 10:00–13:00 · Ma: gesloten</dd>
+        </div>
+
+        <!-- Right — panel -->
+        <div class="fu d2">
+          <div class="amb-panel">
+            <div class="panel-icons">
+              <!-- Bean -->
+              <div class="pi-cell">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="24" cy="24" rx="14" ry="20" fill="none" stroke="rgba(176,92,42,0.5)" stroke-width="1.8"/>
+                  <path d="M24 4 Q18 24 24 44" stroke="rgba(176,92,42,0.38)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+                  <ellipse cx="24" cy="24" rx="10" ry="15" fill="rgba(176,92,42,0.07)"/>
+                </svg>
+                <span class="pi-label">Boon</span>
+              </div>
+              <!-- Leaf -->
+              <div class="pi-cell">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 42 Q8 30 8 14 Q8 2 24 2 Q40 2 40 14 Q40 30 24 42Z" fill="none" stroke="rgba(176,92,42,0.5)" stroke-width="1.8"/>
+                  <path d="M24 42 L24 2" stroke="rgba(176,92,42,0.32)" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+                  <path d="M24 22 Q32 16 37 10" stroke="rgba(176,92,42,0.22)" stroke-width="1" fill="none" stroke-linecap="round"/>
+                  <path d="M24 28 Q15 22 11 16" stroke="rgba(176,92,42,0.18)" stroke-width="1" fill="none" stroke-linecap="round"/>
+                </svg>
+                <span class="pi-label">Blad</span>
+              </div>
+              <!-- Grape -->
+              <div class="pi-cell">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="19" cy="19" r="5.5" fill="none" stroke="rgba(176,92,42,0.5)" stroke-width="1.7"/>
+                  <circle cx="29" cy="19" r="5.5" fill="none" stroke="rgba(176,92,42,0.5)" stroke-width="1.7"/>
+                  <circle cx="24" cy="28" r="5.5" fill="none" stroke="rgba(176,92,42,0.48)" stroke-width="1.7"/>
+                  <circle cx="13" cy="28" r="5.5" fill="none" stroke="rgba(176,92,42,0.38)" stroke-width="1.5"/>
+                  <circle cx="35" cy="28" r="5.5" fill="none" stroke="rgba(176,92,42,0.38)" stroke-width="1.5"/>
+                  <circle cx="19" cy="37" r="5.5" fill="none" stroke="rgba(176,92,42,0.32)" stroke-width="1.4"/>
+                  <circle cx="29" cy="37" r="5.5" fill="none" stroke="rgba(176,92,42,0.32)" stroke-width="1.4"/>
+                  <path d="M24 9 Q24 5 27.5 3.5 Q31 3 29.5 7" stroke="rgba(176,92,42,0.38)" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+                </svg>
+                <span class="pi-label">Druif</span>
+              </div>
             </div>
+
+            <div class="panel-hr"></div>
+
+            <blockquote class="panel-quote">
+              "Wij verkopen geen producten. Wij delen een overtuiging dat genieten tijd verdient."
+              <cite>— de eigenaar van Café Gourmand</cite>
+            </blockquote>
           </div>
-          <div class="flex gap-4">
-            <span class="text-olive mt-0.5 text-xl" aria-hidden="true">📞</span>
-            <div>
-              <dt class="font-600 text-espresso">Telefoon</dt>
-              <dd class="text-cocoa/70"><a href="tel:+32488206224" class="ug">0488 20 62 24</a></dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-olive mt-0.5 text-xl" aria-hidden="true">✉️</span>
-            <div>
-              <dt class="font-600 text-espresso">E-mail</dt>
-              <dd class="text-cocoa/70"><a href="mailto:contact@cafe-gourmand.eu" class="ug">contact@cafe-gourmand.eu</a></dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-olive mt-0.5 text-xl" aria-hidden="true">💳</span>
-            <div>
-              <dt class="font-600 text-espresso">Betaalmogelijkheden</dt>
-              <dd class="text-cocoa/70">Cash · Bancontact · in de winkel én online (Mollie)</dd>
-            </div>
-          </div>
-        </dl>
-        <a href="#webshop" class="inline-block mt-9 bg-espresso text-cream font-600 px-7 py-3.5 rounded-full hover:bg-espressolt transition">
-          Of bestel online →
-        </a>
-      </div>
-      <!-- OpenStreetMap embed — Keizerstraat 21, 2800 Mechelen (~51.0281, 4.4806) -->
-      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-sand shadow-sm">
-        <iframe
-          title="Kaart Café Gourmand — Keizerstraat 21, 2800 Mechelen"
-          class="w-full h-full min-h-[360px] border-0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=4.472%2C51.023%2C4.489%2C51.033&layer=mapnik&marker=51.0281%2C4.4806"
-        ></iframe>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- GDPR Newsletter -->
-  <section class="bg-olive/15">
-    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-espresso">Blijf op de hoogte</h2>
-      <p class="text-cocoa/70 mt-3">Nieuwe koffiebranding, seizoensproducten en cadeaupakketten — af en toe in je mailbox.</p>
-      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
-        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
-        <input
-          id="nl-email"
-          name="email"
-          type="email"
-          autocomplete="email"
-          required
-          placeholder="jouw@email.be"
-          class="flex-1 px-5 py-3 rounded-full border border-espresso/20 bg-cream focus:outline-none focus:ring-2 focus:ring-olive"
-        />
-        <button class="bg-espresso text-cream font-600 px-7 py-3 rounded-full hover:bg-espressolt transition">Inschrijven</button>
-      </form>
-      <p class="text-xs text-cocoa/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       BEZOEK
+  ═══════════════════════════════════════════════════════════════════ -->
+  <section class="bezoek" id="bezoek" aria-labelledby="bezoek-h2">
+    <div class="wrap">
+
+      <p class="section-eyebrow fu">Kom langs</p>
+      <h2 class="section-h2 fu d1" id="bezoek-h2">Mechelen wacht<br /><span>op uw bezoek.</span></h2>
+
+      <div class="bezoek__row">
+
+        <!-- Left — CTA panel -->
+        <div class="fu d2">
+          <div class="cta-panel">
+            <h3 class="cta-panel__h3">Proef voor uzelf.<br />Kom langs vandaag.</h3>
+            <p class="cta-panel__sub">Of u nu een geschenk zoekt, een nieuwe favoriete koffie wilt ontdekken of gewoon wil kijken — u bent altijd welkom. Wij maken tijd.</p>
+            <a href="tel:0488206224" class="btn-cream">
+              <svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+                <path d="M2.5 2.5C2.5 2.5 4 1 5 2.5L6 4.5C6 4.5 4.5 5.5 5 7C5.5 8.5 7 10 8.5 10.5C10 11 11 9.5 11 9.5L13 10.5C14.5 11.5 13 13 13 13C13 13 8.5 14 4.5 10S1.5 2.5 1.5 2.5" stroke="#8a3d18" stroke-width="1.3" stroke-linecap="round"/>
+              </svg>
+              Bel: 0488 20 62 24
+            </a>
+          </div>
+        </div>
+
+        <!-- Right — practical info -->
+        <div class="info-col">
+
+          <div class="info-block fu">
+            <p class="info-block__label">Adres</p>
+            <p class="info-block__val">
+              Mechelen, België<br />
+              <small style="font-family:var(--font-body);font-size:.8rem;font-weight:400;color:var(--brown-mid);">Hartje stad, dicht bij de Grote Markt</small>
+            </p>
+          </div>
+
+          <div class="info-block fu d1">
+            <p class="info-block__label">Contact</p>
+            <p class="info-block__val">
+              <a href="tel:0488206224">0488 20 62 24</a><br />
+              <a href="mailto:contact@cafe-gourmand.eu" style="font-size:.92rem;">contact@cafe-gourmand.eu</a>
+            </p>
+          </div>
+
+          <div class="info-block fu d2">
+            <p class="info-block__label">Openingsuren</p>
+            <div class="hours">
+              <div class="hour-row"><span class="day">Ma – Vr</span><span class="time">09:00 – 18:30</span></div>
+              <div class="hour-row"><span class="day">Zaterdag</span><span class="time">09:00 – 17:00</span></div>
+              <div class="hour-row"><span class="day">Zondag</span><span class="time">10:00 – 15:00</span></div>
+              <div class="hour-row"><span class="day">Feestdagen</span><span class="time">Op aanvraag</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-espresso text-cream/80">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div>
-        <p class="font-serif text-2xl text-cream font-700">Café Gourmand<span class="text-olive">·</span></p>
-        <p class="text-cream/55 text-sm mt-1">Épicerie fine</p>
-        <p class="text-cream/55 text-sm mt-3 max-w-xs">Fijne kruidenierswaren in hartje Mechelen — koffie, thee, olijfolie, chocolade, wijn &amp; specerijen.</p>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="wrap">
+
+      <div class="footer__grid">
+
+        <!-- Brand -->
+        <div>
+          <div class="footer__logo">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+              <rect width="30" height="30" rx="5" fill="rgba(176,92,42,0.18)"/>
+              <ellipse cx="15" cy="20" rx="6.5" ry="4.5" fill="none" stroke="rgba(176,92,42,0.65)" stroke-width="1.2"/>
+              <ellipse cx="15" cy="15.5" rx="5" ry="1.8" fill="none" stroke="rgba(176,92,42,0.45)" stroke-width="1.1"/>
+              <path d="M13 12 Q13 9.5 15 8.5 Q17 7.5 17 10.5" fill="none" stroke="rgba(176,92,42,0.45)" stroke-width="1" stroke-linecap="round"/>
+            </svg>
+            <span class="footer__logo-text">Café Gourmand</span>
+          </div>
+          <p class="footer__tagline">Koffie, thee &amp; wijn — ambachtelijk geselecteerd in het hart van Mechelen. Een adres voor wie genieten serieus neemt.</p>
+        </div>
+
+        <!-- Nav links -->
+        <div>
+          <p class="footer__col-title">Aanbod</p>
+          <ul class="footer__list">
+            <li><a href="#aanbod">Koffie</a></li>
+            <li><a href="#aanbod">Thee</a></li>
+            <li><a href="#aanbod">Wijn</a></li>
+            <li><a href="#ambacht">Ons verhaal</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer__contact">
+          <p class="footer__col-title">Contact</p>
+          <p><a href="tel:0488206224">0488 20 62 24</a></p>
+          <p><a href="mailto:contact@cafe-gourmand.eu">contact@cafe-gourmand.eu</a></p>
+          <p style="margin-top:14px;">Mechelen, België</p>
+          <p>Ma – Vr &nbsp;09:00 – 18:30</p>
+        </div>
+
       </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Winkel</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li><a href="#assortiment" class="hover:text-olivelt">Assortiment</a></li>
-          <li><a href="#webshop" class="hover:text-olivelt">Webshop</a></li>
-          <li><a href="#cadeaupakketten" class="hover:text-olivelt">Cadeaupakketten</a></li>
-        </ul>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 Café Gourmand · Mechelen</p>
+        <div class="footer__meta">
+          <a href="#">Privacy</a>
+          <a href="#">Cookies</a>
+        </div>
       </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Info</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li><a href="#bezoek" class="hover:text-olivelt">Openingsuren</a></li>
-          <li><a href="#bezoek" class="hover:text-olivelt">Contact</a></li>
-          <li><a href="#top" class="hover:text-olivelt">Ons verhaal</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Contact</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li>Keizerstraat 21</li>
-          <li>2800 Mechelen</li>
-          <li><a href="tel:+32488206224" class="hover:text-olivelt">0488 20 62 24</a></li>
-          <li><a href="mailto:contact@cafe-gourmand.eu" class="hover:text-olivelt">contact@cafe-gourmand.eu</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="border-t border-cream/10">
-      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40">
-        <p>© 2026 Café Gourmand. Concept-redesign.</p>
-        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; webshop.</p>
-      </div>
+
     </div>
   </footer>
 
-  <!-- Scripts -->
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       INLINE JS — Headroom nav + IntersectionObserver fade-up
+  ═══════════════════════════════════════════════════════════════════ -->
   <script>
-    // Fade-up IntersectionObserver
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
-    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
-    } else {
-      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
+  (function () {
+    'use strict';
+
+    /* ── HEADROOM NAV ──────────────────────────────────────────── */
+    var nav      = document.getElementById('mainNav');
+    var TOL_DOWN = 8;   /* px scrolled down before hiding */
+    var TOL_UP   = 5;   /* px scrolled up before revealing */
+    var OFFSET   = 80;  /* px from top before pinned/unpinned logic */
+    var lastY    = 0;
+    var ticking  = false;
+    var pinned   = true;
+    var atTop    = true;
+
+    function applyNav (y) {
+      var delta = y - lastY;
+
+      if (y < OFFSET) {
+        if (!atTop) {
+          nav.classList.remove('hr--pinned', 'hr--unpinned');
+          nav.classList.add('hr--top');
+          atTop  = true;
+          pinned = true;
+        }
+      } else {
+        if (atTop) {
+          nav.classList.remove('hr--top');
+          atTop = false;
+        }
+        if (delta > TOL_DOWN && pinned) {
+          nav.classList.remove('hr--pinned');
+          nav.classList.add('hr--unpinned');
+          pinned = false;
+        } else if (delta < -TOL_UP && !pinned) {
+          nav.classList.remove('hr--unpinned');
+          nav.classList.add('hr--pinned');
+          pinned = true;
+        }
+      }
+
+      lastY = y;
     }
 
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (menuBtn && mobileMenu) {
-      const setOpen = (open) => {
-        if (open) mobileMenu.removeAttribute('hidden');
-        else mobileMenu.setAttribute('hidden', '');
-        menuBtn.setAttribute('aria-expanded', String(open));
-        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
-      };
-      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
-      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        window.requestAnimationFrame(function () {
+          applyNav(window.pageYOffset || document.documentElement.scrollTop || 0);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+
+    /* Initialise on load */
+    applyNav(window.pageYOffset || 0);
+
+
+    /* ── INTERSECTIONOBSERVER FADE-UP ──────────────────────────── */
+    var els = document.querySelectorAll('.fu');
+
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('vis');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -36px 0px' });
+
+      els.forEach(function (el) { io.observe(el); });
+    } else {
+      /* Fallback for older browsers */
+      els.forEach(function (el) { el.classList.add('vis'); });
     }
+
+  }());
   </script>
+
 </body>
 </html>

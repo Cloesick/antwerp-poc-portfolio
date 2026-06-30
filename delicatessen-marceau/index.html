@@ -1,655 +1,871 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta name="robots" content="noindex, nofollow" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Delicatessen Marceau — Gevogelte, wild &amp; charcuterie in Mechelen</title>
-  <meta name="description" content="Ambachtelijke delicatessen in Mechelen: gevogelte, wild, fijne charcuterie en delicatessen. Binnenkort een veilige nieuwe website met webshop, feest- &amp; seizoensbestellingen (kerst &amp; wild) en cadeaupakketten." />
-  <link rel="canonical" href="https://delicatessenmarceau.be/" />
-  <meta name="theme-color" content="#5a1f28" />
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Delicatessen Marceau" />
-  <meta property="og:locale" content="nl_BE" />
-  <meta property="og:title" content="Delicatessen Marceau — Gevogelte, wild &amp; charcuterie in Mechelen" />
-  <meta property="og:description" content="Gevogelte, wild, fijne charcuterie en delicatessen in Mechelen. Binnenkort veilig online: webshop, feest- &amp; seizoensbestellingen en cadeaupakketten." />
-  <meta property="og:url" content="https://delicatessenmarceau.be/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1518492104633-130d0cc84637?auto=format&fit=crop&w=1200&q=80" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- Inline SVG favicon — monogram "DM" -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%235a1f28'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%23e9c46a' text-anchor='middle'%3EDM%3C/text%3E%3C/svg%3E" />
-  <!-- Local-SEO structured data -->
+  <title>Delicatessen Marceau — Gevogelte · Wild · Charcuterie · Mechelen</title>
+  <meta name="description" content="Delicatessen Marceau in Mechelen — de specialist voor gevogelte, wild en charcuterie. Seizoensgebonden aanbod, vakkennis en ambacht. Bel 015 41 53 09." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Favicon: inline SVG hunting horn data URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230a110d'/%3E%3Cpath d='M6 22 C6 22 8 18 12 16 C16 14 20 15 22 13 C24 11 24 8 22 7 C20 6 18 7 18 9' stroke='%23a06830' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cpath d='M22 7 L26 9' stroke='%23a06830' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='6' cy='22' r='2' fill='%23a06830'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts non-blocking preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" /></noscript>
+
+  <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["Store", "FoodEstablishment"],
+    "@type": "LocalBusiness",
     "name": "Delicatessen Marceau",
-    "description": "Ambachtelijke delicatessenzaak in Mechelen, gespecialiseerd in gevogelte, wild, fijne charcuterie en delicatessen. Feest- en seizoensbestellingen en cadeaupakketten.",
-    "image": "https://images.unsplash.com/photo-1518492104633-130d0cc84637?auto=format&fit=crop&w=1200&q=80",
-    "url": "https://delicatessenmarceau.be/",
-    "telephone": "+3215415309",
-    "servesCuisine": ["Belgian", "Delicatessen", "Game", "Poultry"],
-    "priceRange": "€€",
-    "areaServed": "BE",
+    "description": "Specialist in gevogelte, wild en charcuterie in Mechelen",
+    "telephone": "015 41 53 09",
+    "email": "marceau.van.riet@telenet.be",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Brusselsepoortstraat 24",
-      "postalCode": "2800",
       "addressLocality": "Mechelen",
-      "addressRegion": "Antwerpen",
       "addressCountry": "BE"
     },
-    "geo": { "@type": "GeoCoordinates", "latitude": 51.0247, "longitude": 4.4757 },
+    "priceRange": "EE",
     "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "08:30", "closes": "18:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "08:30", "closes": "12:30" }
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
     ]
   }
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
-          colors: {
-            wine:     '#5a1f28',
-            winelt:   '#6b2531',
-            winedk:   '#42141c',
-            gold:     '#b89358',
-            goldlt:   '#e9c46a',
-            cream:    '#f6efe4',
-            parchment:'#ece0cc',
-            charcoal: '#2b2422',
-          },
-        },
-      },
-    };
-  </script>
+
   <style>
-    html { scroll-behavior: smooth; }
-    .hero-grad { background: linear-gradient(180deg, rgba(66,20,28,.18) 0%, rgba(66,20,28,.52) 50%, rgba(66,20,28,.92) 100%); }
-    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
-    .fade-up.in { opacity: 1; transform: none; }
-    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
-    .ug:hover { background-size: 100% 2px; }
+    /* ================================================================
+       DESIGN TOKENS — Deep Forest / Belgian Autumn
+    ================================================================ */
+    :root {
+      --bg:          #0a110d;
+      --bg-mid:      #0f1a11;
+      --bg-raised:   #131e15;
+      --bronze:      #a06830;
+      --bronze-lt:   #c4894a;
+      --bronze-dk:   #7a4e20;
+      --parchment:   #f2e8d5;
+      --p80: rgba(242,232,213,0.80);
+      --p60: rgba(242,232,213,0.60);
+      --p40: rgba(242,232,213,0.40);
+      --p10: rgba(242,232,213,0.08);
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans:  'DM Sans', system-ui, sans-serif;
+      --nav-h: 68px;
+      --max-w: 1200px;
+      --r:     2px;
+    }
+
+    /* ================================================================
+       RESET
+    ================================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--parchment);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    ul, ol { list-style: none; }
+    button { cursor: pointer; border: none; background: none; font: inherit; }
+    :focus-visible { outline: 2px solid var(--bronze); outline-offset: 3px; }
+    ::selection { background: rgba(160,104,48,0.32); color: var(--parchment); }
+
+    /* ================================================================
+       LAYOUT
+    ================================================================ */
+    .container {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 clamp(1.25rem, 4vw, 3rem);
+    }
+    .sp  { padding: clamp(5rem,10vw,9rem) 0; }
+    .sps { padding: clamp(3rem,6vw,5rem) 0; }
+
+    /* ================================================================
+       TYPE TOKENS
+    ================================================================ */
+    .lbl {
+      display: block;
+      font-family: var(--sans);
+      font-size: .6875rem;
+      font-weight: 500;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--bronze);
+    }
+    .disp {
+      font-family: var(--serif);
+      font-size: clamp(3.2rem,8.5vw,7.5rem);
+      font-weight: 600;
+      line-height: .91;
+      letter-spacing: -.015em;
+      color: var(--parchment);
+    }
+    .hl {
+      font-family: var(--serif);
+      font-size: clamp(2rem,4vw,3.25rem);
+      font-weight: 600;
+      line-height: 1.05;
+      letter-spacing: -.01em;
+      color: var(--parchment);
+    }
+    .sub {
+      font-family: var(--serif);
+      font-size: clamp(1.125rem,2vw,1.5rem);
+      font-style: italic;
+      line-height: 1.4;
+      color: var(--p80);
+    }
+    .bd  { font-family: var(--sans); font-size: .9375rem; line-height: 1.75; color: var(--p80); }
+    .sm  { font-family: var(--sans); font-size: .8125rem; color: var(--p40); }
+
+    /* ================================================================
+       BUTTONS
+    ================================================================ */
+    .bp {
+      display: inline-flex; align-items: center; gap: .6rem;
+      font-family: var(--sans); font-size: .875rem; font-weight: 500; letter-spacing: .06em;
+      color: var(--bg); background: var(--bronze);
+      padding: .875rem 2rem; border-radius: var(--r);
+      transition: background .22s, transform .18s; white-space: nowrap;
+    }
+    .bp:hover { background: var(--bronze-lt); transform: translateY(-1px); }
+    .bp:active { transform: translateY(0); }
+
+    .bg {
+      display: inline-flex; align-items: center; gap: .6rem;
+      font-family: var(--sans); font-size: .875rem; font-weight: 500; letter-spacing: .06em;
+      color: var(--p80); border: 1px solid rgba(242,232,213,.22);
+      padding: .875rem 1.75rem; border-radius: var(--r);
+      transition: color .22s, border-color .22s, transform .18s; white-space: nowrap;
+    }
+    .bg:hover { color: var(--parchment); border-color: rgba(242,232,213,.5); transform: translateY(-1px); }
+
+    .la {
+      display: inline-flex; align-items: center; gap: .5rem;
+      font-family: var(--sans); font-size: .875rem; font-weight: 500; letter-spacing: .04em;
+      color: var(--bronze); border-bottom: 1px solid rgba(160,104,48,.3);
+      padding-bottom: .1rem; transition: color .2s, border-color .2s;
+    }
+    .la:hover { color: var(--bronze-lt); border-color: var(--bronze-lt); }
+    .la:hover svg { transform: translateX(4px); }
+    .la svg { transition: transform .2s; }
+
+    /* ================================================================
+       FADE-UP
+    ================================================================ */
+    .fu {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity .7s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1);
+    }
+    .fu.in { opacity: 1; transform: translateY(0); }
+    .fu[data-d="1"] { transition-delay: .10s; }
+    .fu[data-d="2"] { transition-delay: .20s; }
+    .fu[data-d="3"] { transition-delay: .32s; }
+    .fu[data-d="4"] { transition-delay: .44s; }
+    .fu[data-d="5"] { transition-delay: .56s; }
+
+    /* ================================================================
+       NAV HEADROOM
+    ================================================================ */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 100; height: var(--nav-h);
+      display: flex; align-items: center;
+      transition: transform .3s cubic-bezier(.4,0,.2,1), background .3s ease, backdrop-filter .3s ease;
+    }
+    .nav.sc {
+      background: rgba(10,17,13,.9);
+      backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(160,104,48,.13);
+    }
+    .nav.hi { transform: translateY(-100%); }
+    .nav__i {
+      width: 100%; max-width: var(--max-w);
+      margin: 0 auto; padding: 0 clamp(1.25rem,4vw,3rem);
+      display: flex; align-items: center; justify-content: space-between; gap: 2rem;
+    }
+    .nav__b { display: flex; flex-direction: column; gap: .1rem; }
+    .nav__bn { font-family: var(--serif); font-size: 1.125rem; font-weight: 600; letter-spacing: .05em; color: var(--parchment); line-height: 1; }
+    .nav__bs { font-family: var(--sans); font-size: .625rem; letter-spacing: .2em; text-transform: uppercase; color: var(--bronze); }
+    .nav__l  { display: flex; align-items: center; gap: 2rem; }
+    .nav__l a { font-family: var(--sans); font-size: .8125rem; font-weight: 500; letter-spacing: .07em; color: var(--p80); transition: color .2s; }
+    .nav__l a:hover { color: var(--parchment); }
+    .nav__c {
+      font-family: var(--sans); font-size: .8125rem; font-weight: 500; letter-spacing: .06em;
+      color: var(--bg); background: var(--bronze);
+      padding: .5rem 1.25rem; border-radius: var(--r); transition: background .2s;
+    }
+    .nav__c:hover { background: var(--bronze-lt); }
+    @media (max-width: 768px) { .nav__l { display: none; } }
+
+    /* ================================================================
+       HERO
+    ================================================================ */
+    .hero { position: relative; min-height: 100dvh; display: flex; align-items: flex-end; overflow: hidden; }
+    .h-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 65% 55% at 72% 38%, rgba(28,52,18,.42) 0%, transparent 68%),
+        radial-gradient(ellipse 45% 75% at 18% 78%, rgba(14,24,12,.55) 0%, transparent 58%),
+        linear-gradient(162deg, #0a110d 0%, #0f1a0f 38%, #111a0e 68%, #0a110d 100%);
+    }
+    .h-tx {
+      position: absolute; inset: 0; pointer-events: none;
+      background-image: repeating-linear-gradient(-44deg, transparent, transparent 22px, rgba(160,104,48,.022) 22px, rgba(160,104,48,.022) 23px);
+    }
+    .h-ghost { position: absolute; right: -3vw; top: 50%; transform: translateY(-50%); pointer-events: none; overflow: hidden; }
+    .ghost-w {
+      font-family: var(--serif); font-size: clamp(7rem,20vw,20rem); font-weight: 600;
+      color: transparent; -webkit-text-stroke: 1px rgba(160,104,48,.13);
+      line-height: 1; letter-spacing: .04em; white-space: nowrap; user-select: none;
+    }
+    .h-bird {
+      position: absolute; right: 2vw; bottom: 7vh;
+      width: clamp(220px,35vw,520px); height: auto;
+      opacity: .10; filter: blur(.4px); pointer-events: none;
+    }
+    .h-content {
+      position: relative; z-index: 2; width: 100%;
+      padding-bottom: clamp(4rem,9vh,7rem);
+      padding-top: calc(var(--nav-h) + 3.5rem);
+    }
+    .h-eyebrow { display: flex; align-items: center; gap: .75rem; margin-bottom: 1.75rem; }
+    .h-eline   { width: 2.5rem; height: 1px; background: var(--bronze); opacity: .65; }
+    .h-title   {
+      font-family: var(--serif); font-size: clamp(3.5rem,8.5vw,7.5rem);
+      font-weight: 600; line-height: .91; letter-spacing: -.015em;
+      color: var(--parchment); max-width: 13ch; margin-bottom: 1.75rem;
+    }
+    .h-title em { font-style: italic; color: var(--bronze-lt); }
+    .h-tag  { font-family: var(--serif); font-size: clamp(1rem,1.8vw,1.3rem); font-style: italic; color: var(--p80); max-width: 44ch; line-height: 1.55; margin-bottom: 2.75rem; }
+    .h-acts { display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap; }
+    .h-scroll { position: absolute; bottom: 2rem; right: clamp(1.25rem,4vw,3rem); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: .5rem; }
+    .h-sline  { width: 1px; height: 3rem; background: linear-gradient(to bottom, rgba(160,104,48,.5), transparent); }
+    .h-slabel { font-family: var(--sans); font-size: .6rem; letter-spacing: .22em; text-transform: uppercase; color: var(--p40); writing-mode: vertical-rl; }
+
+    /* ================================================================
+       MARQUEE
+    ================================================================ */
+    .mqs { background: var(--bronze); overflow: hidden; padding: .8rem 0; }
+    .mqt { display: flex; white-space: nowrap; animation: mqa 26s linear infinite; }
+    .mqt:hover { animation-play-state: paused; }
+    @keyframes mqa { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+    .mqi { font-family: var(--sans); font-size: .75rem; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: var(--bg); padding: 0 1.25rem; flex-shrink: 0; }
+    .mqd { color: rgba(10,17,13,.38); }
+
+    /* ================================================================
+       SEIZOEN
+    ================================================================ */
+    .seizoen { background: var(--bg); }
+    .sz-lbl { margin-bottom: clamp(2rem,4vw,3rem); }
+    .sz-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+      border: 1px solid rgba(160,104,48,.12); border-radius: var(--r); overflow: hidden;
+    }
+    @media (max-width: 760px) { .sz-grid { grid-template-columns: 1fr; } }
+
+    .sz-l {
+      position: relative; padding: clamp(2.5rem,5vw,4.5rem);
+      display: flex; flex-direction: column; justify-content: center;
+      background: linear-gradient(140deg, rgba(25,45,18,.26) 0%, transparent 65%), var(--bg-mid);
+      border-right: 1px solid rgba(160,104,48,.09);
+    }
+    .sz-badge { display: flex; align-items: center; gap: .6rem; margin-bottom: 1.5rem; }
+    .sz-dot   { width: 6px; height: 6px; border-radius: 50%; background: var(--bronze); flex-shrink: 0; }
+    .sz-h2    { font-family: var(--serif); font-size: clamp(1.75rem,3.5vw,2.8rem); font-weight: 600; line-height: 1.05; color: var(--parchment); margin-bottom: 1.25rem; }
+    .sz-body  { font-family: var(--sans); font-size: .9375rem; line-height: 1.75; color: var(--p80); max-width: 44ch; margin-bottom: 2rem; }
+    .sz-list  { display: flex; flex-direction: column; gap: .6rem; }
+    .sz-list li { display: flex; align-items: center; gap: .75rem; font-family: var(--sans); font-size: .875rem; color: var(--p80); }
+    .sz-list li::before { content: ''; width: 14px; height: 1px; background: var(--bronze); opacity: .6; flex-shrink: 0; }
+
+    .sz-r   { padding: clamp(2.5rem,5vw,4.5rem); display: flex; flex-direction: column; justify-content: center; }
+    .sz-card { display: flex; gap: 1.5rem; align-items: flex-start; padding: 1.5rem 0; border-bottom: 1px solid rgba(242,232,213,.065); }
+    .sz-card:first-child { padding-top: 0; }
+    .sz-card:last-child  { border-bottom: none; padding-bottom: 0; }
+    .sz-cs { font-family: var(--serif); font-size: .75rem; font-weight: 600; letter-spacing: .10em; text-transform: uppercase; color: var(--bronze); min-width: 4rem; padding-top: .2rem; flex-shrink: 0; }
+    .sz-ch4 { font-family: var(--serif); font-size: 1.0625rem; font-weight: 600; color: var(--parchment); margin-bottom: .3rem; }
+    .sz-cp  { font-family: var(--sans); font-size: .8125rem; line-height: 1.6; color: var(--p60); }
+
+    .oak-div { display: flex; align-items: center; gap: 1rem; margin-top: clamp(3rem,6vw,5rem); }
+    .oak-div::before,.oak-div::after { content: ''; flex: 1; height: 1px; background: linear-gradient(90deg, transparent, rgba(160,104,48,.35), transparent); }
+    .oak-div svg { color: var(--bronze); opacity: .65; flex-shrink: 0; }
+
+    /* ================================================================
+       SPECIALITEITEN
+    ================================================================ */
+    .spec { background: var(--bg-raised); }
+    .spec-hd { text-align: center; margin-bottom: clamp(2.5rem,5vw,4rem); }
+    .spec-hd .lbl { margin-bottom: 1rem; }
+    .spec-hd .hl  { margin-bottom: .9rem; max-width: 22ch; margin-left: auto; margin-right: auto; }
+    .spec-hd .sub { max-width: 50ch; margin: 0 auto; }
+
+    .spec-grid {
+      display: grid; grid-template-columns: repeat(4,1fr); gap: 1px;
+      background: rgba(160,104,48,.09); border: 1px solid rgba(160,104,48,.09);
+      border-radius: var(--r); overflow: hidden;
+    }
+    @media (max-width: 900px) { .spec-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 540px) { .spec-grid { grid-template-columns: 1fr; } }
+
+    .spc {
+      background: var(--bg); padding: clamp(1.75rem,3vw,2.5rem);
+      display: flex; flex-direction: column; gap: .9rem;
+      transition: background .25s; position: relative; overflow: hidden;
+    }
+    .spc::after {
+      content: ''; position: absolute; bottom: 0; left: 0;
+      width: 100%; height: 2px; background: var(--bronze);
+      transform: scaleX(0); transform-origin: left;
+      transition: transform .28s cubic-bezier(.4,0,.2,1);
+    }
+    .spc:hover { background: var(--bg-raised); }
+    .spc:hover::after { transform: scaleX(1); }
+    .spc__ico { width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; color: var(--bronze); }
+    .spc__num { font-family: var(--serif); font-size: .6875rem; font-weight: 600; letter-spacing: .15em; color: var(--p40); }
+    .spc__ttl { font-family: var(--serif); font-size: clamp(1.2rem,2vw,1.4375rem); font-weight: 600; color: var(--parchment); line-height: 1.1; }
+    .spc__bod { font-family: var(--sans); font-size: .875rem; line-height: 1.7; color: var(--p80); flex: 1; }
+    .spc__tags { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: auto; }
+    .stag { font-family: var(--sans); font-size: .6875rem; letter-spacing: .1em; text-transform: uppercase; color: var(--bronze); background: rgba(160,104,48,.08); border: 1px solid rgba(160,104,48,.17); padding: .2rem .6rem; border-radius: 1px; }
+
+    .spec-cta { text-align: center; margin-top: clamp(2.5rem,5vw,4rem); }
+    .spec-cta .bp { margin: 0 auto; }
+    .spec-cta .sm { margin-top: .75rem; }
+
+    /* ================================================================
+       ADVIES
+    ================================================================ */
+    .advies { background: var(--bg); position: relative; overflow: hidden; }
+    .side-rail {
+      position: absolute; left: 1.2rem; top: 50%;
+      transform: translateY(-50%) rotate(180deg); writing-mode: vertical-rl;
+      font-family: var(--serif); font-size: .6875rem; font-style: italic; letter-spacing: .14em;
+      color: var(--p40); pointer-events: none; user-select: none;
+    }
+    @media (max-width: 1280px) { .side-rail { display: none; } }
+
+    .adv-inner {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem,6vw,6rem); align-items: center;
+    }
+    @media (max-width: 760px) { .adv-inner { grid-template-columns: 1fr; } }
+
+    .adv-frame {
+      position: relative; width: 100%; padding-bottom: 110%;
+      background: var(--bg-raised); border: 1px solid rgba(160,104,48,.13);
+      border-radius: var(--r); overflow: hidden;
+    }
+    .adv-frame svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+
+    .adv-c .lbl  { margin-bottom: 1.25rem; }
+    .adv-c .hl   { margin-bottom: 1.5rem; }
+    .adv-c .bd   { margin-bottom: 2rem; }
+    .adv-pts { display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 2.5rem; }
+    .adv-pt  { display: flex; gap: 1rem; align-items: flex-start; }
+    .adv-n   { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; color: var(--bronze); min-width: 2rem; line-height: 1; padding-top: .1rem; }
+    .adv-pt-t { font-family: var(--sans); font-size: .9rem; line-height: 1.65; color: var(--p80); }
+    .adv-pt-t strong { font-weight: 500; color: var(--parchment); }
+
+    /* ================================================================
+       BEZOEK
+    ================================================================ */
+    .bezoek { background: var(--bg-mid); position: relative; overflow: hidden; }
+    .bezoek::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 58% 78% at 82% 50%, rgba(28,52,18,.2) 0%, transparent 64%);
+      pointer-events: none;
+    }
+    .bz-inner { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(3rem,6vw,5rem); align-items: center; }
+    @media (max-width: 760px) { .bz-inner { grid-template-columns: 1fr; } }
+
+    .bz-hl {
+      font-family: var(--serif); font-size: clamp(2.4rem,5vw,4.25rem);
+      font-weight: 600; line-height: 1; letter-spacing: -.01em;
+      color: var(--parchment); margin-bottom: 1.5rem;
+    }
+    .bz-hl em { display: block; font-style: italic; color: var(--bronze-lt); }
+    .bz-body  { font-family: var(--sans); font-size: .9375rem; line-height: 1.75; color: var(--p80); max-width: 46ch; margin-bottom: 2.5rem; }
+    .bz-acts  { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    .bz-info { background: var(--bg-raised); border: 1px solid rgba(160,104,48,.13); border-radius: var(--r); padding: clamp(1.75rem,3vw,2.5rem); }
+    .ir { display: flex; flex-direction: column; gap: .28rem; padding: 1.2rem 0; border-bottom: 1px solid rgba(242,232,213,.065); }
+    .ir:first-child { padding-top: 0; }
+    .ir:last-child  { border-bottom: none; padding-bottom: 0; }
+    .ir-lbl { font-family: var(--sans); font-size: .6875rem; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: var(--bronze); }
+    .ir-val { font-family: var(--serif); font-size: 1.0625rem; font-weight: 600; color: var(--parchment); line-height: 1.4; }
+    .ir-val a { transition: color .2s; }
+    .ir-val a:hover { color: var(--bronze-lt); }
+    .ir-val.sans { font-family: var(--sans); font-size: .9rem; font-weight: 400; color: var(--p80); }
+
+    /* ================================================================
+       FOOTER
+    ================================================================ */
+    .footer { background: var(--bg); border-top: 1px solid rgba(160,104,48,.09); padding: clamp(2.5rem,5vw,3.5rem) 0; }
+    .ft-i { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
+    .ft-brand { font-family: var(--serif); font-size: 1.0625rem; font-weight: 600; color: var(--parchment); letter-spacing: .04em; }
+    .ft-sub   { font-family: var(--sans); font-size: .8rem; color: var(--p40); margin-top: .3rem; }
+    .ft-links { display: flex; gap: 1.5rem; }
+    .ft-links a { font-family: var(--sans); font-size: .8rem; color: var(--p40); letter-spacing: .04em; transition: color .2s; }
+    .ft-links a:hover { color: var(--bronze); }
+    .ft-copy { font-family: var(--sans); font-size: .8rem; color: var(--p40); }
+
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
   </style>
 </head>
-<body class="bg-cream text-wine font-sans antialiased selection:bg-gold/25">
+<body>
 
-  <!-- Skip link -->
-  <a href="#bestellen" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-wine focus:text-cream focus:rounded-full">Naar online bestellen</a>
-
-  <!-- Announcement bar -->
-  <div class="bg-wine text-cream text-center text-[13px] tracking-wide py-2 px-4">
-    <span aria-hidden="true">🔒</span> <span class="font-semibold">Binnenkort:</span> een veilige nieuwe website &amp; webshop — gevogelte, wild &amp; charcuterie online bestellen · Brusselsepoortstraat 24, Mechelen.
+<!-- NAV HEADROOM -->
+<nav class="nav" id="nav" aria-label="Hoofdnavigatie">
+  <div class="nav__i">
+    <a href="#" class="nav__b" aria-label="Delicatessen Marceau — naar startpagina">
+      <span class="nav__bn">Marceau</span>
+      <span class="nav__bs">Gevogelte &middot; Wild &middot; Mechelen</span>
+    </a>
+    <ul class="nav__l" role="list">
+      <li><a href="#seizoen">Seizoen</a></li>
+      <li><a href="#specialiteiten">Specialiteiten</a></li>
+      <li><a href="#advies">Advies</a></li>
+      <li><a href="#bezoek">Bezoek</a></li>
+    </ul>
+    <a href="tel:015415309" class="nav__c">015 41 53 09</a>
   </div>
+</nav>
 
-  <!-- Sticky nav -->
-  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-wine/10">
-    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
-      <!-- Logo -->
-      <a href="#top" class="flex items-baseline gap-2">
-        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-wine">Marceau<span class="text-gold">·</span></span>
-        <span class="text-[11px] uppercase tracking-[0.22em] text-wine/50 font-600">Delicatessen · Mechelen</span>
-      </a>
-      <!-- Desktop links -->
-      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
-        <a href="#bestellen" class="ug">Veilig &amp; online</a>
-        <a href="#assortiment" class="ug">Assortiment</a>
-        <a href="#traiteur" class="ug">Feest &amp; seizoen</a>
-        <a href="#bezoek" class="ug">Bezoek ons</a>
-      </div>
-      <!-- CTA + hamburger -->
-      <div class="flex items-center gap-2">
-        <a href="#bestellen" class="inline-flex items-center gap-2 bg-gold text-winedk text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-goldlt transition">
-          Veilige webshop
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
-          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-wine/15 text-wine hover:bg-wine/5 transition">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </nav>
-    <!-- Mobile menu -->
-    <div id="mobile-menu" hidden class="md:hidden border-t border-wine/10 bg-cream/95 backdrop-blur">
-      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
-        <a href="#bestellen" class="py-3 border-b border-wine/8">Veilig &amp; online</a>
-        <a href="#assortiment" class="py-3 border-b border-wine/8">Assortiment</a>
-        <a href="#traiteur" class="py-3 border-b border-wine/8">Feest &amp; seizoen</a>
-        <a href="#bezoek" class="py-3">Bezoek ons</a>
-      </div>
-    </div>
-  </header>
+<!-- HERO — Giant Statement, bottom-left composition over atmospheric dark forest -->
+<section class="hero" id="home" aria-labelledby="hero-h1">
+  <div class="h-bg"    aria-hidden="true"></div>
+  <div class="h-tx"    aria-hidden="true"></div>
+  <div class="h-ghost" aria-hidden="true"><span class="ghost-w">MARCEAU</span></div>
 
-  <!-- Hero -->
-  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-wine">
-    <img
-      src="https://images.unsplash.com/photo-1518492104633-130d0cc84637?auto=format&fit=crop&w=2000&q=80"
-      alt="Ambachtelijk gevogelte en wild bij Delicatessen Marceau Mechelen"
-      fetchpriority="high"
-      class="absolute inset-0 w-full h-full object-cover"
-    />
-    <div class="absolute inset-0 hero-grad"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
-      <p class="text-goldlt font-600 tracking-[0.3em] uppercase text-xs mb-5">
-        <span aria-hidden="true">🍗</span> Gevogelte · Wild · Charcuterie · Mechelen
-      </p>
-      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
-        Premium gevogelte &amp; wild,<br />binnenkort veilig online.
+  <!-- Pheasant silhouette SVG -->
+  <svg class="h-bird" aria-hidden="true" viewBox="0 0 560 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g fill="#a06830">
+      <ellipse cx="238" cy="208" rx="108" ry="63" transform="rotate(-8 238 208)"/>
+      <ellipse cx="352" cy="158" rx="26"  ry="20"  transform="rotate(-15 352 158)"/>
+      <ellipse cx="304" cy="182" rx="20"  ry="38"  transform="rotate(-25 304 182)"/>
+      <polygon points="375,150 398,156 373,161"/>
+      <circle  cx="361" cy="153" r="3.5" fill="#0a110d"/>
+      <path d="M133 223 C78 198 18 168 3 108 C-4 83 8 68 18 78 C33 93 63 143 118 208Z"/>
+      <path d="M128 233 C68 218 8 208 -12 163 C-20 138 -7 126 6 133 C26 146 63 176 120 226Z"/>
+      <path d="M138 216 C98 178 53 128 28 73 C18 48 33 36 43 46 C60 64 86 123 133 208Z"/>
+      <ellipse cx="228" cy="193" rx="72" ry="28" transform="rotate(-5 228 193)" fill-opacity=".35"/>
+      <line x1="213" y1="268" x2="198" y2="298" stroke="#a06830" stroke-width="4" stroke-linecap="round"/>
+      <line x1="238" y1="270" x2="226" y2="300" stroke="#a06830" stroke-width="4" stroke-linecap="round"/>
+      <line x1="198" y1="298" x2="176" y2="308" stroke="#a06830" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="198" y1="298" x2="193" y2="316" stroke="#a06830" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="198" y1="298" x2="210" y2="310" stroke="#a06830" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="226" y1="300" x2="208" y2="311" stroke="#a06830" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="226" y1="300" x2="223" y2="318" stroke="#a06830" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="226" y1="300" x2="238" y2="313" stroke="#a06830" stroke-width="2.5" stroke-linecap="round"/>
+    </g>
+  </svg>
+
+  <div class="h-content">
+    <div class="container">
+      <div class="h-eyebrow fu">
+        <span class="h-eline" aria-hidden="true"></span>
+        <span class="lbl" style="color:var(--p60)">Delicatessen Marceau &middot; Mechelen</span>
+      </div>
+      <h1 class="h-title fu" id="hero-h1" data-d="1">
+        Gevogelte<br />Wild &amp;<br /><em>Charcuterie</em>
       </h1>
-      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
-        Vers gevogelte, edel wild, fijne charcuterie en delicatessen —
-        al jaren een vast adres aan de Brusselsepoortstraat in Mechelen. Binnenkort kunt u
-        veilig online bestellen, feestschotels reserveren en cadeaupakketten samenstellen.
+      <p class="h-tag fu" data-d="2">
+        De specialist in Mechelen voor seizoensgebonden gevogelte, wild en ambachtelijke charcuterie &mdash; persoonlijk advies, vakkennis van generatie op generatie.
       </p>
-      <div class="flex flex-wrap gap-3 mt-9">
-        <a href="#bestellen" class="bg-gold text-winedk font-700 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
-          Bekijk de veilige webshop
+      <div class="h-acts fu" data-d="3">
+        <a href="#specialiteiten" class="bp">
+          Ons aanbod ontdekken
+          <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M9 1L13 5M13 5L9 9M13 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <a href="#traiteur" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
-          Feest- &amp; seizoensbestelling
+        <a href="tel:015415309" class="bg">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 2.5C2 2.5 3 5.5 5.5 7.5C8 9.5 11.5 10.5 11.5 10.5L12.5 9C12.5 9 11 8 10 8.5C9 9 8.5 9 8.5 9C8.5 9 7 7.5 6 6.5C5 5.5 5 4.5 5 4.5C5 4.5 5.5 4 5.5 3C6 2 5 0.5 5 0.5L3.5 1.5L2 2.5Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Bel: 015 41 53 09
         </a>
       </div>
     </div>
-  </section>
+  </div>
+  <div class="h-scroll" aria-hidden="true">
+    <span class="h-slabel">scroll</span>
+    <div  class="h-sline"></div>
+  </div>
+</section>
 
-  <!-- USP strip -->
-  <section class="bg-wine text-cream/90">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
-      <div><p class="font-serif text-2xl text-goldlt">Veilig</p><p class="mt-1 text-cream/65">Beveiligde site (geldig SSL)</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Gevogelte</p><p class="mt-1 text-cream/65">Vers &amp; ambachtelijk bereid</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Wild</p><p class="mt-1 text-cream/65">Seizoenswild &amp; edele stukken</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Webshop</p><p class="mt-1 text-cream/65">Online bestellen &amp; afhalen</p></div>
+<!-- MARQUEE STRIP -->
+<div class="mqs" role="marquee" aria-label="Onze producten">
+  <div class="mqt" aria-hidden="true">
+    <span class="mqi">Gevogelte</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Fazant</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Haas</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Everzwijn</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Eend</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Charcuterie</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Op bestelling</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Ree</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Patrijs</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Leverbereiding</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Kalkoen</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Terrines</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Gevogelte</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Fazant</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Haas</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Everzwijn</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Eend</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Charcuterie</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Op bestelling</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Ree</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Patrijs</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Leverbereiding</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Kalkoen</span><span class="mqi mqd">&middot;</span>
+    <span class="mqi">Terrines</span><span class="mqi mqd">&middot;</span>
+  </div>
+</div>
+
+<!-- SEIZOEN -->
+<section class="seizoen sp" id="seizoen" aria-labelledby="sz-h2">
+  <div class="container">
+    <div class="sz-lbl fu"><span class="lbl">Seizoensgebonden aanbod</span></div>
+    <div class="sz-grid fu" data-d="1">
+
+      <!-- Left panel -->
+      <div class="sz-l">
+        <div class="sz-badge">
+          <div class="sz-dot" aria-hidden="true"></div>
+          <span class="lbl" style="color:var(--p40)">Herfst &amp; Winter</span>
+        </div>
+        <h2 class="sz-h2" id="sz-h2">Het wild begint<br />zijn seizoen</h2>
+        <p class="sz-body">Wanneer de bossen kleuren en de ochtenden kouder worden, verschijnt het beste wild op onze toonbank. Fazant, haas, ree, everzwijn &mdash; vers, verantwoord, op het juiste moment van het jaar.</p>
+        <ul class="sz-list" aria-label="Seizoensproducten">
+          <li>Fazant &mdash; oktober tot januari</li>
+          <li>Haas &mdash; september tot februari</li>
+          <li>Ree &mdash; heel het najaar beschikbaar</li>
+          <li>Everzwijn &mdash; herfst en winter</li>
+          <li>Kerstgevogelte op bestelling</li>
+        </ul>
+      </div>
+
+      <!-- Right panel: timeline -->
+      <div class="sz-r">
+        <div class="sz-card">
+          <div class="sz-cs">Lente</div>
+          <div><h3 class="sz-ch4">Jonge poularde &amp; fijne vogels</h3><p class="sz-cp">Licht gevogelte voor verfijnde bereiding. Kip, pintade, jonge eend &mdash; vers van Belgische hoeve.</p></div>
+        </div>
+        <div class="sz-card">
+          <div class="sz-cs">Zomer</div>
+          <div><h3 class="sz-ch4">Gevogelte op zijn best</h3><p class="sz-cp">Kalkoen, coquelet, barbecuebereidingen. Gemarineerde stukken en huisbereide worsten voor de grill.</p></div>
+        </div>
+        <div class="sz-card">
+          <div class="sz-cs">Herfst</div>
+          <div><h3 class="sz-ch4">Jachtseizoen opent</h3><p class="sz-cp">Fazant, patrijs, haas. Wildbereidingen, terrines en pat&eacute; maison. Raad op maat voor uw recepten.</p></div>
+        </div>
+        <div class="sz-card">
+          <div class="sz-cs">Winter</div>
+          <div><h3 class="sz-ch4">Kerst &amp; feestdagen</h3><p class="sz-cp">Kalkoen, gans, kapoenen op bestelling. Charcuterieplanken en feestbereidingen op maat.</p></div>
+        </div>
+      </div>
+
     </div>
-  </section>
 
-  <!-- Veilig online / webshop (security-fix hook) -->
-  <section id="bestellen" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <div class="fade-up">
-        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Veilig &amp; online</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-wine">
-          Een veilige site,<br />en eindelijk een webshop.
+    <!-- Oak-leaf divider (second-read moment: single ornamental motif) -->
+    <div class="oak-div fu" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 3C12 3 8 7 8 12C8 15.5 10 18 12 19C14 18 16 15.5 16 12C16 7 12 3 12 3Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+        <path d="M12 19V22M10 13L8.5 14.5M14 13L15.5 14.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIALITEITEN — 4 product cards bento grid -->
+<section class="spec sp" id="specialiteiten" aria-labelledby="spec-h2">
+  <div class="container">
+    <div class="spec-hd fu">
+      <span class="lbl">Onze vier pijlers</span>
+      <h2 class="hl" id="spec-h2">Het vakmanschap<br />in elk stuk vlees</h2>
+      <p class="sub" style="margin-top:.9rem">Elk product gekozen met kennis van het seizoen en respect voor het ambacht.</p>
+    </div>
+
+    <div class="spec-grid">
+
+      <article class="spc fu" data-d="1">
+        <span class="spc__num">01</span>
+        <div class="spc__ico" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <ellipse cx="20" cy="20" rx="10" ry="7" transform="rotate(-15 20 20)" stroke="currentColor" stroke-width="1.5"/>
+            <ellipse cx="24" cy="14" rx="5"  ry="4"  transform="rotate(-20 24 14)" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M27 12 L30 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M10 23 C6 20 4 15 8 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M18 27 L17 31M21 27 L21 31" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="spc__ttl">Gevogelte bereid</h3>
+        <p class="spc__bod">Verse kip, kalkoen, poularde, coquelet en eend &mdash; klaargemaakt voor bereidingen van de eenvoudige braadkip tot het feestelijk kapoentje.</p>
+        <div class="spc__tags">
+          <span class="stag">Kip</span><span class="stag">Kalkoen</span><span class="stag">Eend</span><span class="stag">Pintade</span>
+        </div>
+      </article>
+
+      <article class="spc fu" data-d="2">
+        <span class="spc__num">02</span>
+        <div class="spc__ico" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M18 30 L18 20 C18 20 14 16 10 14 C8 13 7 11 9 10 C11 9 13 11 14 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18 20 C18 20 22 16 26 14 C28 13 29 11 27 10 C25 9 23 11 22 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 14 C9 12 8 9 10 7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            <path d="M26 14 C27 12 28 9 26 7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3 class="spc__ttl">Wild</h3>
+        <p class="spc__bod">Seizoensgebonden wild van vertrouwde Belgische jagers. Fazant, haas, ree, everzwijn en patrijs &mdash; vers of bereid voor uw recept.</p>
+        <div class="spc__tags">
+          <span class="stag">Fazant</span><span class="stag">Haas</span><span class="stag">Ree</span><span class="stag">Everzwijn</span>
+        </div>
+      </article>
+
+      <article class="spc fu" data-d="3">
+        <span class="spc__num">03</span>
+        <div class="spc__ico" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path d="M8 28 L24 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M24 8 L28 10 L26 14 L24 8Z" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linejoin="round"/>
+            <path d="M8 28 L10 30 L12 28 L10 26Z" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linejoin="round"/>
+            <circle cx="27" cy="24" r="4" stroke="currentColor" stroke-width="1.3"/>
+            <circle cx="27" cy="24" r="1.5" stroke="currentColor" stroke-width="1" opacity=".4"/>
+          </svg>
+        </div>
+        <h3 class="spc__ttl">Charcuterie</h3>
+        <p class="spc__bod">Huisbereide charcuterie met vakmanschap: rillettes, rillauw, gerookte producten, worsten en bereidingen op basis van gevogelte en wild.</p>
+        <div class="spc__tags">
+          <span class="stag">Rillettes</span><span class="stag">Worsten</span><span class="stag">Gerookt</span><span class="stag">Salami</span>
+        </div>
+      </article>
+
+      <article class="spc fu" data-d="4">
+        <span class="spc__num">04</span>
+        <div class="spc__ico" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <rect x="10" y="14" width="16" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M8 14 L28 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <rect x="13" y="10" width="10" height="4" rx="1" stroke="currentColor" stroke-width="1.3"/>
+            <path d="M13 20 L23 20M13 24 L20 24" stroke="currentColor" stroke-width="1" stroke-linecap="round" opacity=".5"/>
+          </svg>
+        </div>
+        <h3 class="spc__ttl">Leverbereiding</h3>
+        <p class="spc__bod">Pat&eacute; maison, leverterrine, leverworst en foie gras &mdash; ambachtelijk bereid, smaakvol en authentiek. Een specialiteit die Mechelen kent.</p>
+        <div class="spc__tags">
+          <span class="stag">Pat&eacute;</span><span class="stag">Terrine</span><span class="stag">Leverworst</span><span class="stag">Foie gras</span>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="spec-cta fu" data-d="5">
+      <a href="tel:015415309" class="bp">
+        Vraag uw seizoensaanbod
+        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M9 1L13 5M13 5L9 9M13 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <p class="sm">Bel ons of stuur een e-mail &mdash; wij helpen u graag verder.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ADVIES — Personal expertise; inverted classic: left visual, right text -->
+<section class="advies sp" id="advies" aria-labelledby="adv-h2">
+  <span class="side-rail" aria-hidden="true">Persoonlijk advies &mdash; vakkennis</span>
+  <div class="container">
+    <div class="adv-inner">
+
+      <!-- Left: decorative SVG hunting-horn panel -->
+      <div class="adv-frame fu" data-d="1" role="img" aria-label="Illustratie: jachthoorn en eikentakken als symbool van het ambacht">
+        <svg viewBox="0 0 420 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="420" height="480" fill="#0f1a11"/>
+          <defs>
+            <radialGradient id="ag1" cx="50%" cy="35%" r="68%">
+              <stop offset="0%"   stop-color="#1e381a" stop-opacity=".72"/>
+              <stop offset="100%" stop-color="#0a110d" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="ag2" cx="42%" cy="45%" r="55%">
+              <stop offset="0%"   stop-color="#a06830" stop-opacity=".11"/>
+              <stop offset="100%" stop-color="#a06830" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <rect width="420" height="480" fill="url(#ag1)"/>
+          <ellipse cx="200" cy="210" rx="210" ry="190" fill="url(#ag2)"/>
+          <g opacity=".055" stroke="#a06830" stroke-width=".5">
+            <line x1="0" y1="40"  x2="420" y2="40"/><line x1="0" y1="80"  x2="420" y2="80"/>
+            <line x1="0" y1="120" x2="420" y2="120"/><line x1="0" y1="160" x2="420" y2="160"/>
+            <line x1="0" y1="200" x2="420" y2="200"/><line x1="0" y1="240" x2="420" y2="240"/>
+            <line x1="0" y1="280" x2="420" y2="280"/><line x1="0" y1="320" x2="420" y2="320"/>
+            <line x1="0" y1="360" x2="420" y2="360"/><line x1="0" y1="400" x2="420" y2="400"/>
+            <line x1="0" y1="440" x2="420" y2="440"/>
+          </g>
+          <!-- Hunting horn curve -->
+          <path d="M75 315 C75 315 100 270 148 248 C206 220 280 214 318 196 C346 182 362 160 356 138 C350 116 326 110 304 120 C278 132 268 158 273 175"
+                stroke="#a06830" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+          <ellipse cx="75" cy="315" rx="20" ry="30" stroke="#a06830" stroke-width="2.5" fill="rgba(160,104,48,.07)" transform="rotate(-18 75 315)"/>
+          <path d="M270 175 C270 175 273 167 280 163 C287 159 294 162 296 168" stroke="#a06830" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <circle cx="168" cy="244" r="6" stroke="#a06830" stroke-width="1.5" fill="none" opacity=".52"/>
+          <circle cx="232" cy="218" r="5" stroke="#a06830" stroke-width="1.4" fill="none" opacity=".43"/>
+          <path d="M140 258 C150 330 194 360 200 375" stroke="#a06830" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-dasharray="4 5" opacity=".36"/>
+          <!-- Oak branch -->
+          <path d="M20 415 C75 395 130 405 185 385 C235 368 275 378 325 362 C360 352 395 356 408 365" stroke="#a06830" stroke-width="1.4" fill="none" stroke-linecap="round" opacity=".33"/>
+          <path d="M95 400  C90 390 95 380 105 383 C115 386 113 397 105 400Z" fill="#a06830" opacity=".28"/>
+          <path d="M158 388 C153 378 158 368 168 371 C178 374 176 385 168 388Z" fill="#a06830" opacity=".25"/>
+          <path d="M238 372 C233 362 238 352 248 355 C258 358 256 369 248 372Z" fill="#a06830" opacity=".20"/>
+          <path d="M318 356 C313 346 318 336 328 339 C338 342 336 353 328 356Z" fill="#a06830" opacity=".16"/>
+          <text x="210" y="58"  text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="11" fill="rgba(160,104,48,.48)" letter-spacing="5">MECHELEN</text>
+          <text x="210" y="452" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="13" fill="rgba(242,232,213,.28)" letter-spacing="3" font-style="italic">ambacht &amp; traditie</text>
+        </svg>
+      </div>
+
+      <!-- Right: content -->
+      <div class="adv-c fu" data-d="2">
+        <span class="lbl">Persoonlijk advies</span>
+        <h2 class="hl" id="adv-h2" style="margin-top:1.25rem;margin-bottom:1.5rem;">
+          Meer dan een winkel.<br /><em style="font-style:italic;color:var(--bronze-lt)">Een ambacht.</em>
         </h2>
-        <p class="text-charcoal/75 text-lg mt-5 leading-relaxed max-w-md">
-          Vandaag toont uw website een veiligheidswaarschuwing door een verlopen
-          beveiligingscertificaat — bezoekers haken af nog vóór ze uw gevogelte en wild zien.
-          Wij lossen dat op met een moderne, beveiligde website én een echte webshop.
+        <p class="bd" style="margin-bottom:2rem;">
+          Bij Delicatessen Marceau staat vakkennis centraal. Wij helpen u kiezen: welk stuk past bij uw recept, welke bereiding past bij het seizoen, hoe lang hangt het wild, hoe smaakvol op de grill.
         </p>
-        <ul class="mt-7 space-y-3 text-charcoal">
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Geldig SSL-certificaat — geen waarschuwing meer, vertrouwd slotje</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Webshop voor gevogelte, wild &amp; charcuterie</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Bestellen, afhalen &amp; betalen in de winkel (cash · Bancontact)</li>
-        </ul>
-        <a href="#traiteur" class="inline-flex items-center gap-2 mt-9 bg-wine text-cream font-600 px-7 py-3.5 rounded-full hover:bg-winelt transition">
-          Of plaats een feest- of wildbestelling
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        <div class="adv-pts">
+          <div class="adv-pt">
+            <span class="adv-n">1.</span>
+            <p class="adv-pt-t"><strong>Advies op maat</strong> &mdash; vertel ons voor hoeveel personen en welk gerecht, wij snijden en bereiden exact wat u nodig hebt.</p>
+          </div>
+          <div class="adv-pt">
+            <span class="adv-n">2.</span>
+            <p class="adv-pt-t"><strong>Bereiding naar wens</strong> &mdash; gevuld, gebonden, gemarineerd of enkel schoongemaakt. U kiest, wij doen de rest.</p>
+          </div>
+          <div class="adv-pt">
+            <span class="adv-n">3.</span>
+            <p class="adv-pt-t"><strong>Bestelling op maat</strong> &mdash; voor feesten, evenementen of bijzondere gelegenheden. Tijdig besteld, perfect klaar.</p>
+          </div>
+        </div>
+        <a href="mailto:marceau.van.riet@telenet.be" class="la">
+          Stuur ons een vraag
+          <svg width="14" height="10" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M9 1L13 5M13 5L9 9M13 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
       </div>
-      <div class="fade-up grid grid-cols-2 gap-4">
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment">
-          <img
-            src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=800&q=80"
-            alt="Vers gevogelte in de toonbank"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment mt-8">
-          <img
-            src="https://images.unsplash.com/photo-1542901031-ec5eeb518c5e?auto=format&fit=crop&w=800&q=80"
-            alt="Fijne charcuterie selectie"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Assortiment grid -->
-  <section id="assortiment" class="bg-parchment/55 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
-        <div>
-          <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
-          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-wine">Gevogelte, wild &amp; charcuterie</h2>
-        </div>
-        <p class="text-charcoal/65 max-w-sm">Vers gevogelte, edel seizoenswild, fijne vleeswaren en delicatessen — alles ambachtelijk geselecteerd en bereid in de winkel.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <!-- Gevogelte -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1587593810167-a84920ea0781?auto=format&fit=crop&w=800&q=80"
-            alt="Vers gevogelte en gevulde kip"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Gevogelte</h3>
-            <p class="text-cream/75 text-sm mt-1">Kip, kalkoen, parelhoen &amp; eend — vers, gevuld of gebraad op maat.</p>
-          </div>
-        </article>
-        <!-- Wild -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1602470520998-f4a52199a3d6?auto=format&fit=crop&w=800&q=80"
-            alt="Seizoenswild en edele stukken"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Wild</h3>
-            <p class="text-cream/75 text-sm mt-1">Hert, ree, fazant &amp; haas — edel seizoenswild, klaar voor de feesttafel.</p>
-          </div>
-        </article>
-        <!-- Charcuterie -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1542901031-ec5eeb518c5e?auto=format&fit=crop&w=800&q=80"
-            alt="Ambachtelijke charcuterie en vleeswaren"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Charcuterie</h3>
-            <p class="text-cream/75 text-sm mt-1">Fijne vleeswaren, paté, wildpaté &amp; salami — vers gesneden op maat.</p>
-          </div>
-        </article>
-        <!-- Delicatessen -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80"
-            alt="Fijne delicatessen en kaas"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Delicatessen</h3>
-            <p class="text-cream/75 text-sm mt-1">Fijne kazen, foie gras, tapenades &amp; fijnkost om uw tafel af te werken.</p>
-          </div>
-        </article>
-        <!-- Feestschotels -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80"
-            alt="Feest- en gourmetschotels"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Feestschotels</h3>
-            <p class="text-cream/75 text-sm mt-1">Gevogelte-, wild- &amp; charcurterieschotels voor kerst en feest — op voorbestelling.</p>
-          </div>
-        </article>
-        <!-- Cadeaupakketten CTA card -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-gold text-winedk relative aspect-[4/5] flex items-center justify-center text-center p-6">
-          <div>
-            <p class="font-serif text-2xl font-600">Cadeau&shy;pakketten</p>
-            <p class="text-winedk/80 text-sm mt-2">Stel een gevogelte-, wild- of delicatessenpakket samen — ideaal als feest- of bedrijfscadeau.</p>
-            <a href="#traiteur" class="inline-block mt-5 text-winedk font-700 ug">Vraag een pakket aan →</a>
-          </div>
-        </article>
-      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Featured products (illustratief) -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="flex items-end justify-between mb-10">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-wine">Veelgevraagd uit de toonbank</h2>
-      <a href="#bestellen" class="hidden sm:inline text-gold font-600 ug">Alles bestellen →</a>
-    </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Product 1 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
-          <img
-            src="https://images.unsplash.com/photo-1587593810167-a84920ea0781?auto=format&fit=crop&w=700&q=80"
-            alt="Gevuld gevogelte (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Op voorbestelling</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-wine">Gevuld gevogelte</h3>
-          <p class="text-charcoal/60 text-sm mt-1">Gevulde kip of kalkoen, klaar voor de oven — feestklassieker.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
-            <button class="bg-wine text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-winelt transition">Aanvragen</button>
-          </div>
-        </div>
-      </div>
-      <!-- Product 2 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
-          <img
-            src="https://images.unsplash.com/photo-1602470520998-f4a52199a3d6?auto=format&fit=crop&w=700&q=80"
-            alt="Wildgerecht (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Seizoen</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-wine">Wild van het seizoen</h3>
-          <p class="text-charcoal/60 text-sm mt-1">Edel seizoenswild — hert, ree of fazant, panklaar gesneden.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
-            <button class="bg-wine text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-winelt transition">Aanvragen</button>
-          </div>
-        </div>
-      </div>
-      <!-- Product 3 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
-          <img
-            src="https://images.unsplash.com/photo-1542901031-ec5eeb518c5e?auto=format&fit=crop&w=700&q=80"
-            alt="Charcuterieschotel (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Klassieker</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-wine">Charcuterieschotel</h3>
-          <p class="text-charcoal/60 text-sm mt-1">Een ruime selectie fijne vleeswaren &amp; paté, mooi geschikt.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
-            <button class="bg-wine text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-winelt transition">Aanvragen</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p class="text-center text-xs text-charcoal/40 mt-6">Voorbeeldproducten ter illustratie van de toekomstige webshop — geen actuele prijzen.</p>
-  </section>
+<!-- BEZOEK — stacked left CTA + info panel right -->
+<section class="bezoek sp" id="bezoek" aria-labelledby="bz-h2">
+  <div class="container">
+    <div class="bz-inner">
 
-  <!-- Feest- / seizoens- & wildbestelling (the differentiator) -->
-  <section id="traiteur" class="bg-wine text-cream py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
-      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
-        <img
-          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80"
-          alt="Feestschotels met gevogelte en wild"
-          loading="lazy" decoding="async"
-          class="w-full h-full object-cover"
-        />
-      </div>
-      <div class="order-1 lg:order-2 fade-up">
-        <p class="text-goldlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Feest &amp; seizoen</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
-          Kerst, feest of wild?<br />Reserveer op voorhand.
-        </h2>
-        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
-          Kerst, nieuwjaar, communie of een familiefeest? Stel hieronder uw bestelling samen —
-          datum, aantal personen en wensen — en wij maken uw gevogelte, wild of feestschotel klaar.
-          Geen prijsverplichtingen, gewoon een vrijblijvende aanvraag.
-        </p>
-
-        <!-- Concept-formulier: feest-/seizoensbestelling -->
-        <form class="mt-8 bg-cream/5 border border-cream/15 rounded-2xl p-5 sm:p-6 space-y-4" onsubmit="return false">
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label for="t-naam" class="block text-sm font-600 text-cream/90 mb-1">Naam</label>
-              <input id="t-naam" name="naam" type="text" autocomplete="name" placeholder="Uw naam"
-                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
-            </div>
-            <div>
-              <label for="t-tel" class="block text-sm font-600 text-cream/90 mb-1">Telefoon</label>
-              <input id="t-tel" name="telefoon" type="tel" autocomplete="tel" placeholder="015 ..."
-                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
-            </div>
-          </div>
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label for="t-datum" class="block text-sm font-600 text-cream/90 mb-1">Gewenste datum</label>
-              <input id="t-datum" name="datum" type="date"
-                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
-            </div>
-            <div>
-              <label for="t-personen" class="block text-sm font-600 text-cream/90 mb-1">Aantal personen</label>
-              <input id="t-personen" name="personen" type="number" min="1" placeholder="bv. 8"
-                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
-            </div>
-          </div>
-          <div>
-            <label for="t-type" class="block text-sm font-600 text-cream/90 mb-1">Type</label>
-            <select id="t-type" name="type"
-              class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold">
-              <option>Gevogelte (gevuld / gebraad)</option>
-              <option>Wild van het seizoen</option>
-              <option>Charcuterie- &amp; feestschotels</option>
-              <option>Kerst- / eindejaarsbestelling</option>
-              <option>Cadeaupakket</option>
-              <option>Iets anders</option>
-            </select>
-          </div>
-          <div>
-            <label for="t-wensen" class="block text-sm font-600 text-cream/90 mb-1">Wensen / opmerkingen</label>
-            <textarea id="t-wensen" name="wensen" rows="3" placeholder="Allergieën, budget, bereiding, afhaaltijdstip ..."
-              class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold"></textarea>
-          </div>
-          <label class="flex items-start gap-3 text-xs text-cream/70">
-            <input type="checkbox" required class="mt-0.5 accent-gold" />
-            <span>Ik ga akkoord dat mijn gegevens enkel worden gebruikt om mijn aanvraag te beantwoorden (GDPR).</span>
-          </label>
-          <button class="w-full bg-gold text-winedk font-700 px-7 py-3 rounded-full hover:bg-goldlt transition">
-            Verstuur mijn aanvraag
-          </button>
-          <p class="text-[11px] text-cream/50 text-center">Concept-formulier — in de live versie komt uw aanvraag rechtstreeks bij Delicatessen Marceau terecht.</p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Ons verhaal -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
-    <div class="fade-up">
-      <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
-      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-wine">Vakmanschap aan de<br />Brusselsepoort.</h2>
-      <p class="text-charcoal/70 text-lg mt-6 leading-relaxed">
-        Delicatessen Marceau is al jaren een vertrouwd adres aan de Brusselsepoortstraat in Mechelen.
-        Wat ons onderscheidt? Vers gevogelte, edel seizoenswild, ambachtelijke charcuterie en fijne
-        delicatessen — met de persoonlijke service van een echte speciaalzaak.
-      </p>
-      <p class="text-charcoal/70 text-lg mt-4 leading-relaxed">
-        Of u nu langskomt voor een gebraad, een stuk wild, een charcuterieschotel of een volledig
-        feestmenu — bij Marceau vindt u kwaliteit en advies op maat. Binnenkort kan dat ook online,
-        op een veilige website: bestellen, afhalen en feestschotels reserveren vanuit uw zetel.
-      </p>
-      <div class="mt-9 flex flex-wrap gap-6">
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">100%</p>
-          <p class="text-charcoal/65 text-sm mt-1">Ambachtelijk</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">Seizoen</p>
-          <p class="text-charcoal/65 text-sm mt-1">Wild &amp; gevogelte</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">Mechelen</p>
-          <p class="text-charcoal/65 text-sm mt-1">Brusselsepoortstraat 24</p>
+      <div class="fu">
+        <span class="lbl" style="margin-bottom:1.5rem">Plan uw bezoek</span>
+        <h2 class="bz-hl" id="bz-h2">Kom langs<em>in Mechelen</em></h2>
+        <p class="bz-body">Onze toonbank is dagelijks gevuld met het beste van het seizoen. Langs komen is de beste manier om te zien wat er is &mdash; of bel ons vooraf zodat wij uw bestelling kunnen klaarzetten.</p>
+        <div class="bz-acts">
+          <a href="tel:015415309" class="bp">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 2.5C2 2.5 3 5.5 5.5 7.5C8 9.5 11.5 10.5 11.5 10.5L12.5 9C12.5 9 11 8 10 8.5C9 9 8.5 9 8.5 9C8.5 9 7 7.5 6 6.5C5 5.5 5 4.5 5 4.5C5 4.5 5.5 4 5.5 3C6 2 5 0.5 5 0.5L3.5 1.5L2 2.5Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Bel: 015 41 53 09
+          </a>
+          <a href="mailto:marceau.van.riet@telenet.be" class="bg">E-mail sturen</a>
         </div>
       </div>
-    </div>
-    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
-      <img
-        src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=1000&q=80"
-        alt="Ambachtelijk gevogelte en delicatessen"
-        loading="lazy" decoding="async"
-        class="w-full h-full object-cover"
-      />
-    </div>
-  </section>
 
-  <!-- Bezoek + kaart -->
-  <section id="bezoek" class="bg-parchment/55 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
-      <div class="fade-up">
-        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-wine">Welkom in de winkel</h2>
-        <p class="text-charcoal/70 text-lg mt-5 max-w-md">
-          Kom proeven en kiezen aan de Brusselsepoortstraat 24 in Mechelen, vlakbij het centrum.
-        </p>
-        <dl class="mt-9 space-y-5 text-charcoal">
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📍</span>
-            <div>
-              <dt class="font-600 text-wine">Adres</dt>
-              <dd class="text-charcoal/70">Brusselsepoortstraat 24, 2800 Mechelen</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🕑</span>
-            <div>
-              <dt class="font-600 text-wine">Openingsuren</dt>
-              <dd class="text-charcoal/70">Di–Za: 08:30–18:00 · Zo: 08:30–12:30 · Ma: gesloten</dd>
-              <dd class="text-charcoal/40 text-sm mt-1">(indicatief — graag te bevestigen)</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📞</span>
-            <div>
-              <dt class="font-600 text-wine">Telefoon</dt>
-              <dd class="text-charcoal/70"><a href="tel:+3215415309" class="ug">015 41 53 09</a></dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🔒</span>
-            <div>
-              <dt class="font-600 text-wine">Veiligheid</dt>
-              <dd class="text-charcoal/70">Nieuwe site met geldig SSL-certificaat</dd>
-              <dd class="text-charcoal/40 text-sm mt-1">(huidige site toont een veiligheidswaarschuwing)</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">💳</span>
-            <div>
-              <dt class="font-600 text-wine">Betaalmogelijkheden</dt>
-              <dd class="text-charcoal/70">Cash · Bancontact</dd>
-            </div>
-          </div>
-        </dl>
-        <a href="#bestellen" class="inline-block mt-9 bg-wine text-cream font-600 px-7 py-3.5 rounded-full hover:bg-winelt transition">
-          Of bekijk de veilige webshop →
-        </a>
+      <div class="bz-info fu" data-d="2">
+        <div class="ir">
+          <span class="ir-lbl">Locatie</span>
+          <span class="ir-val">Mechelen, Belgi&euml;</span>
+        </div>
+        <div class="ir">
+          <span class="ir-lbl">Telefoon</span>
+          <span class="ir-val"><a href="tel:015415309">015 41 53 09</a></span>
+        </div>
+        <div class="ir">
+          <span class="ir-lbl">E-mail</span>
+          <span class="ir-val sans"><a href="mailto:marceau.van.riet@telenet.be">marceau.van.riet@telenet.be</a></span>
+        </div>
+        <div class="ir">
+          <span class="ir-lbl">Openingsuren</span>
+          <span class="ir-val" style="font-size:.9375rem;line-height:1.55">
+            Di &mdash; Za: 9:00 &ndash; 18:00<br />
+            <span style="font-size:.8125rem;color:var(--p40);font-family:var(--sans);font-weight:400">Gesloten op zon- en maandag</span>
+          </span>
+        </div>
+        <div class="ir">
+          <span class="ir-lbl">Bestelling op maat</span>
+          <span class="ir-val sans">Voor feesten en bijzondere gelegenheden &mdash; tijdig aanvragen, perfect klaar.</span>
+        </div>
       </div>
-      <!-- OpenStreetMap embed — Brusselsepoortstraat 24, 2800 Mechelen (~51.0247, 4.4757) -->
-      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-parchment shadow-sm">
-        <iframe
-          title="Kaart Delicatessen Marceau — Brusselsepoortstraat 24, 2800 Mechelen"
-          class="w-full h-full min-h-[360px] border-0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=4.467%2C51.020%2C4.484%2C51.030&layer=mapnik&marker=51.0247%2C4.4757"
-        ></iframe>
-      </div>
-    </div>
-  </section>
 
-  <!-- GDPR Newsletter -->
-  <section class="bg-gold/15">
-    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-wine">Blijf op de hoogte</h2>
-      <p class="text-charcoal/70 mt-3">Seizoenswild, kerst- &amp; feestschotels en cadeaupakketten — af en toe in je mailbox.</p>
-      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
-        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
-        <input
-          id="nl-email"
-          name="email"
-          type="email"
-          autocomplete="email"
-          required
-          placeholder="jouw@email.be"
-          class="flex-1 px-5 py-3 rounded-full border border-wine/20 bg-cream focus:outline-none focus:ring-2 focus:ring-gold"
-        />
-        <button class="bg-wine text-cream font-600 px-7 py-3 rounded-full hover:bg-winelt transition">Inschrijven</button>
-      </form>
-      <p class="text-xs text-charcoal/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="bg-wine text-cream/80">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="ft-i">
       <div>
-        <p class="font-serif text-2xl text-cream font-700">Marceau<span class="text-gold">·</span></p>
-        <p class="text-cream/55 text-sm mt-1">Delicatessen</p>
-        <p class="text-cream/55 text-sm mt-3 max-w-xs">Gevogelte, wild, charcuterie &amp; delicatessen in Mechelen. Binnenkort veilig online bestellen, feest- &amp; seizoensbestellingen en cadeaupakketten.</p>
+        <div class="ft-brand">Delicatessen Marceau</div>
+        <p class="ft-sub">Gevogelte &middot; Wild &middot; Charcuterie &mdash; Mechelen</p>
       </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Winkel</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li><a href="#assortiment" class="hover:text-goldlt">Assortiment</a></li>
-          <li><a href="#bestellen" class="hover:text-goldlt">Veilig &amp; online</a></li>
-          <li><a href="#traiteur" class="hover:text-goldlt">Feest &amp; seizoen</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Info</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li><a href="#bezoek" class="hover:text-goldlt">Openingsuren</a></li>
-          <li><a href="#bezoek" class="hover:text-goldlt">Contact</a></li>
-          <li><a href="#top" class="hover:text-goldlt">Ons verhaal</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Contact</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li>Brusselsepoortstraat 24</li>
-          <li>2800 Mechelen</li>
-          <li><a href="tel:+3215415309" class="hover:text-goldlt">015 41 53 09</a></li>
-        </ul>
-      </div>
+      <nav class="ft-links" aria-label="Footernavigatie">
+        <a href="tel:015415309">015 41 53 09</a>
+        <a href="mailto:marceau.van.riet@telenet.be">E-mail</a>
+        <a href="#home">Naar boven</a>
+      </nav>
+      <p class="ft-copy">&copy; <span id="yr"></span> Delicatessen Marceau</p>
     </div>
-    <div class="border-t border-cream/10">
-      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40">
-        <p>© 2026 Delicatessen Marceau. Concept-redesign.</p>
-        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; webshop.</p>
-      </div>
-    </div>
-  </footer>
+  </div>
+</footer>
 
-  <!-- Scripts -->
-  <script>
-    // Fade-up IntersectionObserver
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
-    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
-    } else {
-      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* Headroom nav: TOL_DOWN=8px, TOL_UP=5px, offset=80px, requestAnimationFrame */
+  (function(){
+    var nav=document.getElementById('nav');
+    var lastY=0,rafId=null,hidden=false,scrolled=false;
+    var TOL_DOWN=8,TOL_UP=5,OFFSET=80;
+    function tick(){
+      rafId=null;
+      var y=window.scrollY||window.pageYOffset;
+      var d=y-lastY;
+      if(y>OFFSET){
+        if(!scrolled){nav.classList.add('sc');scrolled=true;}
+        if(d>TOL_DOWN&&!hidden){nav.classList.add('hi');hidden=true;}
+        else if(d<-TOL_UP&&hidden){nav.classList.remove('hi');hidden=false;}
+      } else {
+        if(scrolled){nav.classList.remove('sc');scrolled=false;}
+        if(hidden){nav.classList.remove('hi');hidden=false;}
+      }
+      lastY=y;
     }
+    window.addEventListener('scroll',function(){if(!rafId)rafId=requestAnimationFrame(tick);},{passive:true});
+  })();
 
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (menuBtn && mobileMenu) {
-      const setOpen = (open) => {
-        if (open) mobileMenu.removeAttribute('hidden');
-        else mobileMenu.setAttribute('hidden', '');
-        menuBtn.setAttribute('aria-expanded', String(open));
-        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
-      };
-      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
-      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
-    }
-  </script>
+  /* IntersectionObserver fade-up */
+  (function(){
+    var els=document.querySelectorAll('.fu');
+    if(!('IntersectionObserver' in window)){els.forEach(function(el){el.classList.add('in');});return;}
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+    },{threshold:0.10,rootMargin:'0px 0px -36px 0px'});
+    els.forEach(function(el){io.observe(el);});
+  })();
+</script>
+
 </body>
 </html>

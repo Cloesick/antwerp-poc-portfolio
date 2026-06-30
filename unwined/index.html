@@ -1,655 +1,1727 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta name="robots" content="noindex, nofollow" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Unwined — Wijnbar met detailverkoop · wijnwebshop &amp; tafelreservatie · Mechelen</title>
-  <meta name="description" content="Wijnbar met detailverkoop in hartje Mechelen. Binnenkort een echte wijnwebshop met filters, online afrekenen (Mollie, 18+), online tafelreservatie voor de bar en proefboxen aan huis. 18+." />
-  <link rel="canonical" href="https://unwined.be/" />
-  <meta name="theme-color" content="#3a1f2a" />
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Unwined" />
-  <meta property="og:locale" content="nl_BE" />
-  <meta property="og:title" content="Unwined — Wijnbar met detailverkoop · wijnwebshop &amp; tafelreservatie" />
-  <meta property="og:description" content="Wijnbar met detailverkoop in Mechelen. Binnenkort wijnwebshop met filters, online afrekenen, tafelreservatie voor de bar en proefboxen. 18+." />
-  <meta property="og:url" content="https://unwined.be/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=80" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- Inline SVG favicon — monogram "Un" -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233a1f2a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%23b08d57' text-anchor='middle'%3EUn%3C/text%3E%3C/svg%3E" />
-  <!-- Local-SEO structured data -->
+  <title>Unwined — Wijnbar &amp; Wijnwinkel Mechelen</title>
+  <meta name="description" content="Unwined is dé wijnbar en wijnwinkel in het hart van Mechelen. Kom proeven, ontdekken en meenemen — elke fles heeft een verhaal." />
+
+  <!-- Favicon: wine glass SVG via data URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f1419'/%3E%3Cpath d='M10 5 h12 l-2 8 a6 6 0 0 1-8 0 Z' fill='none' stroke='%23b87333' stroke-width='1.5'/%3E%3Cline x1='16' y1='13' x2='16' y2='24' stroke='%23b87333' stroke-width='1.5'/%3E%3Cline x1='11' y1='24' x2='21' y2='24' stroke='%23b87333' stroke-width='1.5'/%3E%3Ccircle cx='14' cy='8' r='0.8' fill='%23b87333' opacity='0.7'/%3E%3Ccircle cx='17' cy='6.5' r='0.6' fill='%23b87333' opacity='0.5'/%3E%3Ccircle cx='15.5' cy='10' r='0.5' fill='%23b87333' opacity='0.4'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts — non-blocking preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=DM+Sans:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" /></noscript>
+
+  <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["BarOrPub", "Store"],
+    "@type": "LocalBusiness",
     "name": "Unwined",
-    "description": "Wijnbar met detailverkoop in Mechelen. Wijnwebshop met filters en online afrekenen, online tafelreservatie voor de bar en proefboxen.",
-    "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=80",
-    "url": "https://unwined.be/",
+    "description": "Wijnbar en wijnwinkel in Mechelen. Proef, ontdek en neem mee — curated natural wines, biodynamische wijnen en lokale wijnmakers.",
     "telephone": "+3215418185",
     "email": "info@unwined.be",
-    "priceRange": "€€",
-    "servesCuisine": "Wijnbar",
-    "areaServed": "BE",
+    "url": "https://www.unwined.be",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Steenweg 22",
-      "postalCode": "2800",
       "addressLocality": "Mechelen",
-      "addressRegion": "Antwerpen",
       "addressCountry": "BE"
     },
-    "geo": { "@type": "GeoCoordinates", "latitude": 51.0281, "longitude": 4.4801 }
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday"], "opens": "16:00", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "14:00", "closes": "23:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "14:00", "closes": "20:00" }
+    ],
+    "servesCuisine": "Wine Bar",
+    "priceRange": "€€"
   }
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { serif: ['Cormorant Garamond', 'serif'], sans: ['Inter', 'sans-serif'] },
-          colors: {
-            plum:    '#3a1f2a',
-            plumdk:  '#2a1620',
-            wine:    '#5a2f3f',
-            gold:    '#b08d57',
-            goldlt:  '#c8a772',
-            cream:   '#f7f1e7',
-            sand:    '#ece1cd',
-            clay:    '#8a7458',
-            ink:     '#2a1620',
-          },
-        },
-      },
-    };
-  </script>
+
   <style>
+    /* ── Reset & base ─────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    .hero-grad { background: linear-gradient(180deg, rgba(42,22,32,.18) 0%, rgba(42,22,32,.52) 52%, rgba(42,22,32,.92) 100%); }
-    .tile-grad { background: linear-gradient(160deg, #5a2f3f, #2a1620); }
-    .fade-up { opacity: 0; transform: translateY(20px); transition: all .8s cubic-bezier(.2,.7,.2,1); }
-    .fade-up.in { opacity: 1; transform: none; }
-    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 1px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
-    .ug:hover { background-size: 100% 1px; }
+    body {
+      background: #0f1419;
+      color: #f2e8dc;
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Design tokens ────────────────────────────────────────── */
+    :root {
+      --bg:         #0f1419;
+      --bg-2:       #161c23;
+      --bg-3:       #1d252f;
+      --copper:     #b87333;
+      --copper-lt:  #d4956a;
+      --amber:      #e8a84c;
+      --text:       #f2e8dc;
+      --text-dim:   rgba(242,232,220,0.65);
+      --text-faint: rgba(242,232,220,0.38);
+      --border:     rgba(184,115,51,0.18);
+      --border-lt:  rgba(242,232,220,0.08);
+      --radius:     4px;
+      --radius-lg:  8px;
+    }
+
+    /* ── Typography ───────────────────────────────────────────── */
+    h1, h2, h3, h4 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 700;
+      line-height: 1.08;
+      letter-spacing: -0.022em;
+    }
+
+    /* ══════════════════════════════════════════════
+       NAV / HEADROOM
+    ══════════════════════════════════════════════ */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 900;
+      padding: 0 clamp(1.5rem, 5vw, 3rem);
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(15,20,25,0.0);
+      backdrop-filter: blur(0px);
+      transition:
+        background 0.3s ease,
+        backdrop-filter 0.3s ease,
+        transform 0.28s cubic-bezier(.4,0,.2,1),
+        box-shadow 0.3s ease;
+    }
+    .nav.scrolled {
+      background: rgba(15,20,25,0.90);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 1px 0 var(--border);
+    }
+    .nav.hidden { transform: translateY(-100%); }
+
+    .nav__logo {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 700;
+      font-size: 1.35rem;
+      letter-spacing: -0.03em;
+      color: var(--text);
+    }
+    .nav__logo span { color: var(--copper); }
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav__links a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-dim);
+      transition: color 0.2s;
+      letter-spacing: 0.01em;
+    }
+    .nav__links a:hover { color: var(--text); }
+
+    .nav__cta {
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--copper);
+      border: 1px solid var(--copper);
+      padding: 0.45rem 1.1rem;
+      border-radius: var(--radius);
+      transition: background 0.2s, color 0.2s;
+      white-space: nowrap;
+    }
+    .nav__cta:hover { background: var(--copper); color: #0f1419; }
+
+    /* ══════════════════════════════════════════════
+       FADE-UP (IntersectionObserver)
+    ══════════════════════════════════════════════ */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(32px);
+      transition:
+        opacity  0.72s cubic-bezier(.16,1,.3,1),
+        transform 0.72s cubic-bezier(.16,1,.3,1);
+    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .fade-up.d1 { transition-delay: 0.10s; }
+    .fade-up.d2 { transition-delay: 0.20s; }
+    .fade-up.d3 { transition-delay: 0.34s; }
+    .fade-up.d4 { transition-delay: 0.48s; }
+
+    /* ══════════════════════════════════════════════
+       HERO
+    ══════════════════════════════════════════════ */
+    .hero {
+      position: relative;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: clamp(2rem,6vw,4rem) clamp(1.5rem,6vw,4rem);
+      overflow: hidden;
+    }
+
+    /* Full-canvas SVG background */
+    .hero__bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    /* Ghost "WINE" behind everything */
+    .hero__ghost {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -55%);
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(8rem, 22vw, 22rem);
+      letter-spacing: -0.04em;
+      line-height: 1;
+      -webkit-text-stroke: 1px rgba(184,115,51,0.11);
+      color: transparent;
+      user-select: none;
+      pointer-events: none;
+      white-space: nowrap;
+      z-index: 1;
+    }
+
+    /* Gradient overlay for text readability, bottom-left anchor */
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(160deg, rgba(15,20,25,0.18) 0%, rgba(15,20,25,0.0) 40%, rgba(15,20,25,0.85) 75%, rgba(15,20,25,0.97) 100%),
+        linear-gradient(to right, rgba(15,20,25,0.72) 0%, rgba(15,20,25,0.0) 55%);
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 3;
+      max-width: 660px;
+    }
+
+    .hero__eyebrow {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: 1.25rem;
+    }
+
+    .hero__h1 {
+      font-size: clamp(2.8rem, 6.5vw, 6.5rem);
+      font-weight: 700;
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero__sub {
+      font-size: clamp(1rem,1.4vw,1.125rem);
+      color: rgba(242,232,220,0.70);
+      max-width: 420px;
+      line-height: 1.72;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero__actions {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    /* Scroll indicator */
+    .hero__scroll {
+      position: absolute;
+      bottom: 2.5rem;
+      right: clamp(1.5rem, 5vw, 3.5rem);
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .hero__scroll-label {
+      font-size: 0.6rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      writing-mode: vertical-rl;
+    }
+    .hero__scroll-line {
+      width: 1px;
+      height: 48px;
+      background: linear-gradient(to bottom, var(--copper), transparent);
+      animation: scrollPulse 1.8s ease-in-out infinite;
+    }
+    @keyframes scrollPulse {
+      0%,100% { opacity: 0.28; transform: scaleY(0.5); transform-origin: top; }
+      50%      { opacity: 1;    transform: scaleY(1); }
+    }
+
+    /* ══════════════════════════════════════════════
+       BUTTONS
+    ══════════════════════════════════════════════ */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--copper);
+      color: #0f1419;
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-weight: 500;
+      font-size: 0.9375rem;
+      padding: 0.85rem 2rem;
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      letter-spacing: 0.01em;
+      text-decoration: none;
+    }
+    .btn-primary:hover { background: var(--copper-lt); transform: translateY(-1px); }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text);
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-weight: 500;
+      font-size: 0.9375rem;
+      padding: 0.85rem 0;
+      border: none;
+      background: none;
+      cursor: pointer;
+      border-bottom: 1px solid var(--border-lt);
+      transition: border-color 0.2s, color 0.2s;
+      letter-spacing: 0.01em;
+      text-decoration: none;
+    }
+    .btn-ghost:hover { border-color: var(--copper); color: var(--copper); }
+
+    /* ══════════════════════════════════════════════
+       MARQUEE STRIP
+    ══════════════════════════════════════════════ */
+    .marquee {
+      background: var(--copper);
+      overflow: hidden;
+      padding: 0.75rem 0;
+    }
+    .marquee__track {
+      display: flex;
+      width: max-content;
+      animation: marqueeScroll 34s linear infinite;
+    }
+    .marquee__item {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      padding: 0 2rem;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: #0f1419;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .marquee__dot {
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: rgba(15,20,25,0.35);
+      flex-shrink: 0;
+    }
+    @keyframes marqueeScroll {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* ══════════════════════════════════════════════
+       SHARED SECTION STYLES
+    ══════════════════════════════════════════════ */
+    .section {
+      padding: clamp(5rem,9vw,9rem) clamp(1.5rem,6vw,4rem);
+    }
+    .section--alt  { background: var(--bg-2); }
+    .section--deep { background: var(--bg-3); }
+
+    .section__label {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: 1.25rem;
+    }
+    .section__h2 {
+      font-size: clamp(2rem,4.5vw,4rem);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      color: var(--text);
+      line-height: 1.08;
+    }
+    .section__lead {
+      font-size: clamp(1rem,1.4vw,1.125rem);
+      color: var(--text-dim);
+      max-width: 480px;
+      line-height: 1.76;
+      margin-top: 1.25rem;
+    }
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: var(--copper);
+      margin: 1.5rem 0;
+      opacity: 0.55;
+    }
+
+    /* ══════════════════════════════════════════════
+       BAR SECTION
+    ══════════════════════════════════════════════ */
+    .bar-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem,6vw,7rem);
+      align-items: center;
+    }
+    .bar-visual {
+      aspect-ratio: 4/5;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .bar-visual svg { width: 100%; height: 100%; display: block; }
+
+    .hours-table { margin-top: 2.5rem; border-top: 1px solid var(--border-lt); }
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid var(--border-lt);
+    }
+    .hours-row__day  { font-size: 0.875rem; color: var(--text-dim); font-weight: 500; }
+    .hours-row__time { font-family: 'Fraunces', serif; font-size: 0.9rem; color: var(--text); }
+    .hours-row__off  { font-size: 0.875rem; color: var(--text-faint); font-style: italic; }
+
+    /* ══════════════════════════════════════════════
+       WINKEL SECTION
+    ══════════════════════════════════════════════ */
+    .winkel-header { max-width: 600px; margin: 0 auto 4rem; text-align: center; }
+
+    .bottles-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 1.5px;
+      background: var(--border-lt);
+      border: 1px solid var(--border-lt);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .bottle-card {
+      background: var(--bg);
+      padding: clamp(2rem,4vw,3rem) 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.85rem;
+      transition: background 0.2s;
+    }
+    .bottle-card:hover { background: var(--bg-3); }
+    .bottle-card__icon { width: 44px; margin-bottom: 0.25rem; }
+    .bottle-card__tag {
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: var(--copper);
+      background: rgba(184,115,51,0.1);
+      padding: 0.22rem 0.7rem;
+      border-radius: 2px;
+    }
+    .bottle-card__name {
+      font-family: 'Fraunces', serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text);
+      text-align: center;
+      letter-spacing: -0.02em;
+    }
+    .bottle-card__desc {
+      font-size: 0.875rem;
+      color: var(--text-dim);
+      text-align: center;
+      line-height: 1.6;
+      max-width: 230px;
+    }
+    .bottle-card__price {
+      font-family: 'Fraunces', serif;
+      font-size: 0.9375rem;
+      color: var(--copper);
+      margin-top: auto;
+    }
+
+    .winkel-cta { margin-top: 3.5rem; text-align: center; }
+    .winkel-cta p { font-size: 0.9rem; color: var(--text-faint); margin-top: 1rem; }
+
+    /* ══════════════════════════════════════════════
+       EVENTS SECTION
+    ══════════════════════════════════════════════ */
+    .events-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem,6vw,7rem);
+      align-items: start;
+    }
+
+    .events-list { margin-top: 2.5rem; }
+    .event-item {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      padding: 1.4rem 0;
+      border-bottom: 1px solid var(--border-lt);
+      transition: opacity 0.2s;
+    }
+    .event-item:first-child { border-top: 1px solid var(--border-lt); }
+    .event-item:hover { opacity: 0.78; }
+
+    .event-date { flex-shrink: 0; width: 52px; text-align: center; }
+    .event-day {
+      font-family: 'Fraunces', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--copper);
+      line-height: 1;
+    }
+    .event-month {
+      display: block;
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--text-faint);
+      margin-top: 0.2rem;
+    }
+    .event-body { flex: 1; }
+    .event-title {
+      font-family: 'Fraunces', serif;
+      font-size: 1.075rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.015em;
+    }
+    .event-meta {
+      font-size: 0.8125rem;
+      color: var(--text-dim);
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .event-badge {
+      font-size: 0.58rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: rgba(184,115,51,0.12);
+      color: var(--copper);
+      border: 1px solid rgba(184,115,51,0.25);
+      padding: 0.18rem 0.48rem;
+      border-radius: 2px;
+    }
+    .event-price {
+      color: var(--copper);
+      font-weight: 500;
+      font-size: 0.875rem;
+      flex-shrink: 0;
+      align-self: flex-start;
+      margin-top: 0.15rem;
+    }
+
+    .events-aside { position: sticky; top: 96px; }
+    .events-visual {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      aspect-ratio: 3/4;
+    }
+    .events-visual svg { width: 100%; height: 100%; display: block; }
+
+    .events-promo {
+      margin-top: 2rem;
+      background: var(--bg-3);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+    }
+    .events-promo h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.015em;
+    }
+    .events-promo p {
+      font-size: 0.875rem;
+      color: var(--text-dim);
+      line-height: 1.65;
+      margin-bottom: 1.25rem;
+    }
+
+    /* ══════════════════════════════════════════════
+       CONTACT SECTION
+    ══════════════════════════════════════════════ */
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem,6vw,7rem);
+      align-items: start;
+    }
+    .contact-map {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      aspect-ratio: 1;
+      border: 1px solid var(--border-lt);
+    }
+    .contact-map svg { width: 100%; height: 100%; display: block; }
+
+    .contact-rows { margin-top: 2rem; border-top: 1px solid var(--border-lt); }
+    .contact-row {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+      padding: 1.3rem 0;
+      border-bottom: 1px solid var(--border-lt);
+    }
+    .contact-icon {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius);
+      background: rgba(184,115,51,0.10);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .contact-label {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--text-faint);
+      margin-bottom: 0.2rem;
+    }
+    .contact-value {
+      font-size: 1rem;
+      color: var(--text);
+      font-weight: 500;
+    }
+    .contact-value a { transition: color 0.2s; }
+    .contact-value a:hover { color: var(--copper); }
+
+    .contact-cta-box {
+      margin-top: 2.5rem;
+      padding: 2rem;
+      background: var(--bg-3);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      text-align: center;
+    }
+    .contact-cta-box h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+    .contact-cta-box p {
+      font-size: 0.9rem;
+      color: var(--text-dim);
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    .secondary-link {
+      display: inline-block;
+      margin-top: 1rem;
+      font-size: 0.875rem;
+      color: var(--text-faint);
+      transition: color 0.2s;
+    }
+    .secondary-link:hover { color: var(--copper); }
+    .secondary-link em { color: var(--copper); font-style: normal; }
+
+    /* ══════════════════════════════════════════════
+       FOOTER
+    ══════════════════════════════════════════════ */
+    .footer {
+      background: #0a0e12;
+      border-top: 1px solid var(--border-lt);
+      padding: 3.5rem clamp(1.5rem,6vw,4rem) 2rem;
+    }
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+    .footer-logo {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      margin-bottom: 0.5rem;
+    }
+    .footer-logo span { color: var(--copper); }
+    .footer-tagline { font-size: 0.875rem; color: var(--text-faint); line-height: 1.55; }
+
+    .footer-cols { display: flex; gap: 3rem; flex-wrap: wrap; }
+    .footer-col-title {
+      font-size: 0.62rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-faint);
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+    .footer-col a { font-size: 0.875rem; color: var(--text-dim); transition: color 0.2s; }
+    .footer-col a:hover { color: var(--copper); }
+    .footer-col li { font-size: 0.875rem; color: var(--text-faint); }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      border-top: 1px solid var(--border-lt);
+      padding-top: 1.5rem;
+    }
+    .footer-copy { font-size: 0.8rem; color: var(--text-faint); }
+    .footer-note { font-size: 0.75rem; color: var(--text-faint); }
+
+    /* ══════════════════════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════════════════════ */
+    @media (max-width: 900px) {
+      .bar-layout        { grid-template-columns: 1fr; }
+      .bar-visual        { aspect-ratio: 16/9; }
+      .bottles-grid      { grid-template-columns: 1fr 1fr; }
+      .events-layout     { grid-template-columns: 1fr; }
+      .events-aside      { position: static; }
+      .contact-layout    { grid-template-columns: 1fr; }
+      .nav__links        { display: none; }
+    }
+    @media (max-width: 600px) {
+      .bottles-grid      { grid-template-columns: 1fr; }
+      .hero__h1          { font-size: clamp(2.4rem,10vw,4rem); }
+    }
+
+    /* ── Accessibility ────────────────────────────────────────── */
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
   </style>
 </head>
-<body class="bg-cream text-ink font-sans antialiased selection:bg-gold/30">
+<body>
 
-  <!-- Skip link -->
-  <a href="#webshop" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-plum focus:text-cream focus:rounded-full">Naar de wijnwebshop</a>
+<!-- ══════════════════════════════════════════════
+     NAV
+══════════════════════════════════════════════ -->
+<nav class="nav" id="mainNav" role="navigation" aria-label="Hoofdnavigatie">
+  <a href="#" class="nav__logo">Un<span>w</span>ined</a>
+  <ul class="nav__links">
+    <li><a href="#bar">De bar</a></li>
+    <li><a href="#winkel">Winkel</a></li>
+    <li><a href="#events">Proeverijen</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="tel:015418185" class="nav__cta">Bel: 015 41 81 85</a>
+</nav>
 
-  <!-- Announcement bar -->
-  <div class="bg-plum text-cream text-center text-[13px] tracking-[0.12em] py-2 px-4">
-    <span aria-hidden="true">🍷</span> <span class="font-semibold">Binnenkort:</span> wijnwebshop met filters &amp; online afrekenen + tafelreservatie voor de bar. <span class="text-goldlt font-semibold">18+</span>
+
+<!-- ══════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+
+  <!-- Ghost word — aria-hidden -->
+  <span class="hero__ghost" aria-hidden="true">WINE</span>
+
+  <!-- SVG background canvas: warm dark atmosphere + wine glass + bubbles -->
+  <svg class="hero__bg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice"
+       xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <radialGradient id="hg1" cx="66%" cy="40%" r="58%">
+        <stop offset="0%"   stop-color="#6b3a1f" stop-opacity="0.60"/>
+        <stop offset="45%"  stop-color="#3d1c08" stop-opacity="0.30"/>
+        <stop offset="100%" stop-color="#0f1419" stop-opacity="0"/>
+      </radialGradient>
+      <radialGradient id="hg2" cx="70%" cy="38%" r="36%">
+        <stop offset="0%"   stop-color="#b87333" stop-opacity="0.07"/>
+        <stop offset="100%" stop-color="#b87333" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="wineF" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%"   stop-color="#8b2500" stop-opacity="0.55"/>
+        <stop offset="100%" stop-color="#4a1200" stop-opacity="0.70"/>
+      </linearGradient>
+      <linearGradient id="glassF" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%"   stop-color="#b87333" stop-opacity="0.07"/>
+        <stop offset="100%" stop-color="#f2e8dc"  stop-opacity="0.02"/>
+      </linearGradient>
+      <filter id="bGlow" x="-60%" y="-60%" width="220%" height="220%">
+        <feGaussianBlur stdDeviation="3" result="b"/>
+        <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+
+    <rect width="1440" height="900" fill="#0f1419"/>
+    <rect width="1440" height="900" fill="url(#hg1)"/>
+    <rect width="1440" height="900" fill="url(#hg2)"/>
+
+    <!-- Decorative grid lines -->
+    <line x1="0"    y1="1"   x2="1440" y2="1"   stroke="rgba(184,115,51,0.06)" stroke-width="1"/>
+    <line x1="0"    y1="899" x2="1440" y2="899" stroke="rgba(184,115,51,0.06)" stroke-width="1"/>
+    <line x1="52"   y1="80"  x2="52"   y2="820" stroke="rgba(184,115,51,0.05)" stroke-width="1"/>
+    <line x1="1388" y1="80"  x2="1388" y2="820" stroke="rgba(184,115,51,0.04)" stroke-width="1"/>
+
+    <!-- Primary wine glass — right-center -->
+    <g transform="translate(950,65) scale(1.18)" filter="url(#bGlow)">
+      <!-- Bowl -->
+      <path d="M60 20 L180 20 L170 132 Q155 198 120 212 Q85 198 70 132 Z"
+            fill="url(#glassF)"
+            stroke="rgba(184,115,51,0.24)"
+            stroke-width="1.1"
+            stroke-linejoin="round"/>
+      <!-- Wine fill -->
+      <path d="M75 132 L165 132 L163 112 Q153 188 120 202 Q87 188 77 112 Z"
+            fill="url(#wineF)"/>
+      <!-- Stem -->
+      <line x1="120" y1="212" x2="120" y2="322" stroke="rgba(184,115,51,0.20)" stroke-width="1.4"/>
+      <!-- Base -->
+      <ellipse cx="120" cy="326" rx="55" ry="8" fill="none"
+               stroke="rgba(184,115,51,0.17)" stroke-width="1.1"/>
+      <!-- Glass highlight -->
+      <path d="M78 56 Q87 82 80 112" fill="none"
+            stroke="rgba(242,232,220,0.08)" stroke-width="2.5" stroke-linecap="round"/>
+
+      <!-- Rising bubbles — copper/amber -->
+      <circle cx="95"  cy="170" r="2.8" fill="#b87333" opacity="0.55"/>
+      <circle cx="112" cy="150" r="2.0" fill="#d4956a" opacity="0.46"/>
+      <circle cx="130" cy="157" r="3.2" fill="#b87333" opacity="0.40"/>
+      <circle cx="108" cy="132" r="1.8" fill="#e8a84c" opacity="0.52"/>
+      <circle cx="143" cy="140" r="2.2" fill="#b87333" opacity="0.38"/>
+      <circle cx="120" cy="120" r="1.4" fill="#d4956a" opacity="0.56"/>
+      <circle cx="100" cy="112" r="2.5" fill="#b87333" opacity="0.30"/>
+      <circle cx="138" cy="110" r="1.6" fill="#e8a84c" opacity="0.46"/>
+      <circle cx="116" cy="100" r="1.2" fill="#b87333" opacity="0.60"/>
+      <circle cx="127" cy="87"  r="0.9" fill="#d4956a" opacity="0.50"/>
+      <circle cx="103" cy="90"  r="1.1" fill="#e8a84c" opacity="0.40"/>
+      <circle cx="140" cy="77"  r="0.7" fill="#b87333" opacity="0.36"/>
+      <circle cx="115" cy="70"  r="0.8" fill="#d4956a" opacity="0.55"/>
+      <circle cx="88"  cy="92"  r="1.0" fill="#b87333" opacity="0.20"/>
+      <circle cx="152" cy="102" r="0.7" fill="#e8a84c" opacity="0.25"/>
+    </g>
+
+    <!-- Ghost second glass — faint depth -->
+    <g transform="translate(820,205) scale(0.55)" opacity="0.10">
+      <path d="M60 20 L180 20 L170 132 Q155 198 120 212 Q85 198 70 132 Z"
+            fill="none" stroke="#b87333" stroke-width="1.5"/>
+      <line x1="120" y1="212" x2="120" y2="322" stroke="#b87333" stroke-width="1"/>
+      <ellipse cx="120" cy="326" rx="55" ry="8" fill="none" stroke="#b87333" stroke-width="1"/>
+    </g>
+
+    <!-- Ambient warmth pool below glass -->
+    <ellipse cx="1080" cy="820" rx="220" ry="50" fill="rgba(184,115,51,0.04)"/>
+  </svg>
+
+  <!-- Hero copy — bottom-left composition anchor -->
+  <div class="hero__content">
+    <p class="hero__eyebrow fade-up">Wijnbar &amp; Wijnwinkel · Mechelen</p>
+    <h1 class="hero__h1 fade-up d1">
+      Wijn drinken<br>&amp; ontdekken —<br>in Mechelen.
+    </h1>
+    <p class="hero__sub fade-up d2">
+      Een plek voor nieuwsgierige neuzen. Kom langs voor een glas, kies een fles mee te nemen, of schrijf je in voor één van onze proeverijen.
+    </p>
+    <div class="hero__actions fade-up d3">
+      <a href="#contact" class="btn-primary">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Reserveer een tafel
+      </a>
+      <a href="tel:015418185" class="btn-ghost">
+        Bel: 015 41 81 85 &nbsp;&rarr;
+      </a>
+    </div>
   </div>
 
-  <!-- Sticky nav -->
-  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-plum/10">
-    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[70px] flex items-center justify-between">
-      <!-- Logo -->
-      <a href="#top" class="flex items-baseline gap-2">
-        <span class="font-serif text-[27px] font-700 tracking-tight text-plum">Un<span class="italic font-600 text-gold">wined</span></span>
-      </a>
-      <!-- Desktop links -->
-      <div class="hidden md:flex items-center gap-8 text-[15px] font-400">
-        <a href="#webshop" class="ug">Webshop</a>
-        <a href="#assortiment" class="ug">Assortiment</a>
-        <a href="#reserveren" class="ug">Reserveren</a>
-        <a href="#verhaal" class="ug">Ons verhaal</a>
-        <a href="#bezoek" class="ug">Bezoek ons</a>
-      </div>
-      <!-- CTA + hamburger -->
-      <div class="flex items-center gap-2">
-        <a href="#reserveren" class="inline-flex items-center gap-2 bg-plum text-cream text-sm font-600 px-4 sm:px-5 py-2.5 rounded-full hover:bg-wine transition">
-          Tafel reserveren
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
-          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-plum/15 text-plum hover:bg-plum/5 transition">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </nav>
-    <!-- Mobile menu -->
-    <div id="mobile-menu" hidden class="md:hidden border-t border-plum/10 bg-cream/95 backdrop-blur">
-      <div class="px-5 py-3 flex flex-col text-[15px] font-400">
-        <a href="#webshop" class="py-3 border-b border-plum/8">Webshop</a>
-        <a href="#assortiment" class="py-3 border-b border-plum/8">Assortiment</a>
-        <a href="#reserveren" class="py-3 border-b border-plum/8">Reserveren</a>
-        <a href="#verhaal" class="py-3 border-b border-plum/8">Ons verhaal</a>
-        <a href="#bezoek" class="py-3">Bezoek ons</a>
-      </div>
-    </div>
-  </header>
+  <!-- Scroll indicator -->
+  <div class="hero__scroll" aria-hidden="true">
+    <div class="hero__scroll-line"></div>
+    <span class="hero__scroll-label">Scroll</span>
+  </div>
+</section>
 
-  <!-- Hero -->
-  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-plum">
-    <div class="absolute inset-0 tile-grad"></div>
-    <img
-      src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=2000&q=80"
-      alt="Glazen wijn op de toog van een sfeervolle wijnbar"
-      fetchpriority="high"
-      class="absolute inset-0 w-full h-full object-cover"
-    />
-    <div class="absolute inset-0 hero-grad"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
-      <p class="text-goldlt font-500 tracking-[0.32em] uppercase text-xs mb-5">
-        Wijnbar met detailverkoop · Steenweg 22 · Mechelen
+
+<!-- ══════════════════════════════════════════════
+     MARQUEE STRIP
+══════════════════════════════════════════════ -->
+<div class="marquee" role="complementary" aria-label="Thema's bij Unwined">
+  <div class="marquee__track" aria-hidden="true">
+    <div class="marquee__item">Proeverijen <span class="marquee__dot"></span></div>
+    <div class="marquee__item">Natural wine <span class="marquee__dot"></span></div>
+    <div class="marquee__item">Biodynamisch <span class="marquee__dot"></span></div>
+    <div class="marquee__item">Lokale wijnmakers <span class="marquee__dot"></span></div>
+    <div class="marquee__item">Apéro <span class="marquee__dot"></span></div>
+    <div class="marquee__item">Orange wine <span class="marquee__dot"></span></div>
+    <div class="marquee__item">Mechelen <span class="marquee__dot"></span></div>
+    <div class="marquee__item">Pét-nat <span class="marquee__dot"></span></div>
+    <!-- duplicate for seamless loop -->
+    <div class="marquee__item">Proeverijen <span class="marquee__dot"></span></div>
+    <div class="marquee__item">Natural wine <span class="marquee__dot"></span></div>
+    <div class="marquee__item">Biodynamisch <span class="marquee__dot"></span></div>
+    <div class="marquee__item">Lokale wijnmakers <span class="marquee__dot"></span></div>
+    <div class="marquee__item">Apéro <span class="marquee__dot"></span></div>
+    <div class="marquee__item">Orange wine <span class="marquee__dot"></span></div>
+    <div class="marquee__item">Mechelen <span class="marquee__dot"></span></div>
+    <div class="marquee__item">Pét-nat <span class="marquee__dot"></span></div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     BAR SECTION
+══════════════════════════════════════════════ -->
+<section class="section section--alt" id="bar">
+  <div class="bar-layout">
+
+    <!-- Inline SVG bar scene -->
+    <div class="bar-visual fade-up">
+      <svg viewBox="0 0 480 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <radialGradient id="barGlow" cx="50%" cy="36%" r="65%">
+            <stop offset="0%"   stop-color="#5a2d10" stop-opacity="0.62"/>
+            <stop offset="100%" stop-color="#0f1419" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="shGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%"   stop-color="#2a1a0a"/>
+            <stop offset="100%" stop-color="#1a0f06"/>
+          </linearGradient>
+          <linearGradient id="btGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%"   stop-color="#3d1c08"/>
+            <stop offset="100%" stop-color="#1a0805"/>
+          </linearGradient>
+          <filter id="bGlow2" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="3" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <rect width="480" height="600" fill="#161c23"/>
+        <rect width="480" height="600" fill="url(#barGlow)"/>
+
+        <!-- Top shelf -->
+        <rect x="28" y="90" width="424" height="7" rx="2" fill="url(#shGrad)" stroke="rgba(184,115,51,0.14)" stroke-width="1"/>
+        <rect x="28" y="91" width="424" height="18" fill="rgba(184,115,51,0.035)"/>
+
+        <!-- Bottles — top shelf row -->
+        <g transform="translate(42,14)">
+          <rect x="8" y="0"  width="20" height="78" rx="4" fill="url(#btGrad)"/>
+          <rect x="9" y="-9" width="18" height="14" rx="2" fill="#2a1408"/>
+          <rect x="11" y="-16" width="14" height="9" rx="1" fill="#3d1c08"/>
+          <rect x="10" y="22" width="16" height="22" rx="1" fill="rgba(184,115,51,0.11)"/>
+        </g>
+        <g transform="translate(78,10)">
+          <rect x="8" y="0"  width="18" height="82" rx="3" fill="#2e1a0a"/>
+          <rect x="9" y="-7" width="16" height="11" rx="2" fill="#1a0d05"/>
+          <rect x="11" y="-13" width="12" height="8" rx="1" fill="#2e1408"/>
+          <rect x="10" y="24" width="14" height="24" rx="1" fill="rgba(232,168,76,0.09)"/>
+        </g>
+        <g transform="translate(112,4)">
+          <rect x="8" y="0"  width="22" height="90" rx="4" fill="#1d1008"/>
+          <rect x="10" y="-10" width="18" height="15" rx="2" fill="#150d06"/>
+          <rect x="12" y="-18" width="14" height="10" rx="1" fill="#1d1008"/>
+          <rect x="11" y="28" width="16" height="28" rx="1" fill="rgba(184,115,51,0.08)"/>
+        </g>
+        <g transform="translate(154,16)">
+          <rect x="8" y="0" width="19" height="76" rx="3" fill="#331a0a"/>
+          <rect x="9" y="-7" width="17" height="11" rx="2" fill="#22110a"/>
+          <rect x="11" y="-13" width="13" height="8" rx="1" fill="#2e1408"/>
+          <rect x="10" y="22" width="15" height="20" rx="1" fill="rgba(212,149,106,0.11)"/>
+        </g>
+        <g transform="translate(192,10)">
+          <rect x="8" y="0" width="21" height="84" rx="4" fill="#28170a"/>
+          <rect x="10" y="-8" width="17" height="13" rx="2" fill="#1a0f06"/>
+          <rect x="12" y="-15" width="13" height="9" rx="1" fill="#281408"/>
+          <rect x="11" y="26" width="15" height="26" rx="1" fill="rgba(184,115,51,0.09)"/>
+        </g>
+        <g transform="translate(230,20)">
+          <rect x="8" y="0" width="18" height="72" rx="3" fill="#1f1309"/>
+          <rect x="9" y="-6" width="16" height="10" rx="2" fill="#140d06"/>
+          <rect x="11" y="-12" width="12" height="8" rx="1" fill="#1f1309"/>
+        </g>
+        <g transform="translate(264,7)">
+          <rect x="8" y="0" width="22" height="87" rx="4" fill="#3a1c0a"/>
+          <rect x="10" y="-9" width="18" height="14" rx="2" fill="#261308"/>
+          <rect x="12" y="-17" width="14" height="10" rx="1" fill="#3a1c0a"/>
+          <rect x="11" y="28" width="16" height="28" rx="1" fill="rgba(232,168,76,0.07)"/>
+        </g>
+        <g transform="translate(306,18)">
+          <rect x="8" y="0" width="19" height="74" rx="3" fill="#241508"/>
+          <rect x="9" y="-7" width="17" height="11" rx="2" fill="#180e05"/>
+        </g>
+        <g transform="translate(342,12)">
+          <rect x="8" y="0" width="21" height="82" rx="4" fill="#301808"/>
+          <rect x="10" y="-8" width="17" height="12" rx="2" fill="#1e0e05"/>
+          <rect x="12" y="-14" width="13" height="8" rx="1" fill="#301808"/>
+        </g>
+        <g transform="translate(382,24)">
+          <rect x="8" y="0" width="18" height="68" rx="3" fill="#1a0f08"/>
+          <rect x="9" y="-5" width="16" height="9"  rx="2" fill="#110a04"/>
+        </g>
+        <g transform="translate(414,15)">
+          <rect x="8" y="0" width="20" height="78" rx="4" fill="#2e1608"/>
+          <rect x="9" y="-8" width="18" height="12" rx="2" fill="#1c0f06"/>
+          <rect x="11" y="-14" width="14" height="8" rx="1" fill="#2e1608"/>
+        </g>
+
+        <!-- Mid shelf -->
+        <rect x="28" y="240" width="424" height="7" rx="2" fill="url(#shGrad)" stroke="rgba(184,115,51,0.11)" stroke-width="1"/>
+
+        <!-- Bottles mid — wider silhouettes -->
+        <g transform="translate(46,152)">
+          <ellipse cx="25" cy="80" rx="25" ry="8" fill="#1a0d06"/>
+          <rect x="6"  y="12" width="38" height="70" rx="6" fill="#261508"/>
+          <rect x="13" y="0"  width="24" height="16" rx="4" fill="#1a0d06"/>
+          <rect x="16" y="-6" width="18" height="10" rx="2" fill="#2a1208"/>
+          <rect x="8"  y="36" width="34" height="30" rx="2" fill="rgba(184,115,51,0.10)"/>
+          <text x="25" y="55" text-anchor="middle" fill="rgba(184,115,51,0.38)" font-family="serif" font-size="5.5" font-style="italic">Domaine</text>
+        </g>
+        <g transform="translate(138,160)">
+          <rect x="6" y="0" width="24" height="72" rx="4" fill="#331a0a"/>
+          <rect x="8" y="-8" width="20" height="12" rx="3" fill="#22110a"/>
+          <rect x="10" y="-14" width="16" height="8" rx="2" fill="#2e1408"/>
+          <rect x="8" y="22" width="20" height="28" rx="1" fill="rgba(232,168,76,0.09)"/>
+        </g>
+        <g transform="translate(192,156)">
+          <ellipse cx="22" cy="80" rx="22" ry="7" fill="#18100a"/>
+          <rect x="4"  y="10" width="36" height="72" rx="7" fill="#1f1208"/>
+          <rect x="10" y="0"  width="24" height="14" rx="4" fill="#180f08"/>
+          <rect x="13" y="-6" width="18" height="9"  rx="2" fill="#261408"/>
+          <rect x="6"  y="32" width="32" height="32" rx="2" fill="rgba(184,115,51,0.08)"/>
+        </g>
+        <g transform="translate(276,163)">
+          <rect x="6" y="0" width="22" height="70" rx="3" fill="#28160a"/>
+          <rect x="8" y="-7" width="18" height="11" rx="2" fill="#1a0f06"/>
+          <rect x="10" y="-13" width="14" height="8" rx="1" fill="#281408"/>
+        </g>
+        <g transform="translate(340,153)">
+          <ellipse cx="28" cy="84" rx="28" ry="9" fill="#1d1008"/>
+          <rect x="3"  y="10" width="50" height="76" rx="8" fill="#261408"/>
+          <rect x="12" y="0"  width="30" height="16" rx="5" fill="#1a0e06"/>
+          <rect x="16" y="-7" width="22" height="10" rx="3" fill="#2a1408"/>
+          <rect x="6"  y="36" width="44" height="34" rx="2" fill="rgba(184,115,51,0.09)"/>
+          <text x="27" y="56" text-anchor="middle" fill="rgba(184,115,51,0.36)" font-family="serif" font-size="6" font-style="italic">Château</text>
+        </g>
+        <g transform="translate(410,162)">
+          <rect x="5" y="0" width="23" height="70" rx="3" fill="#20130a"/>
+          <rect x="7" y="-7" width="19" height="11" rx="2" fill="#160e06"/>
+          <rect x="9" y="-13" width="15" height="8" rx="1" fill="#201308"/>
+        </g>
+
+        <!-- Bottom shelf -->
+        <rect x="28" y="390" width="424" height="7" rx="2" fill="url(#shGrad)" stroke="rgba(184,115,51,0.09)" stroke-width="1"/>
+
+        <!-- Bar counter -->
+        <rect x="0" y="500" width="480" height="100" fill="#150d08"/>
+        <rect x="0" y="500" width="480" height="3" fill="rgba(184,115,51,0.20)"/>
+
+        <!-- Two wine glasses on counter -->
+        <g transform="translate(140,396)" filter="url(#bGlow2)">
+          <!-- Glass 1 — with wine -->
+          <path d="M20 8 L62 8 L58 55 Q48 78 41 82 Q34 78 24 55 Z"
+                fill="rgba(100,30,10,0.38)" stroke="rgba(184,115,51,0.26)" stroke-width="0.8"/>
+          <path d="M24 55 L58 55 L56 46 Q48 74 41 80 Q34 74 26 46 Z"
+                fill="rgba(139,37,0,0.48)"/>
+          <line x1="41" y1="82" x2="41" y2="130" stroke="rgba(184,115,51,0.17)" stroke-width="1.1"/>
+          <ellipse cx="41" cy="133" rx="20" ry="4.5" fill="none" stroke="rgba(184,115,51,0.13)" stroke-width="0.8"/>
+          <!-- Bubbles -->
+          <circle cx="36" cy="65" r="1.4" fill="#b87333" opacity="0.52"/>
+          <circle cx="43" cy="56" r="1.1" fill="#d4956a" opacity="0.44"/>
+          <circle cx="39" cy="48" r="0.9" fill="#b87333" opacity="0.46"/>
+          <circle cx="46" cy="42" r="0.7" fill="#e8a84c" opacity="0.50"/>
+          <circle cx="38" cy="36" r="0.6" fill="#b87333" opacity="0.40"/>
+          <!-- Glass 2 — empty, right -->
+          <g transform="translate(82,6)">
+            <path d="M20 0 L62 0 L58 48 Q48 70 41 74 Q34 70 24 48 Z"
+                  fill="rgba(184,115,51,0.05)" stroke="rgba(184,115,51,0.18)" stroke-width="0.8"/>
+            <line x1="41" y1="74" x2="41" y2="120" stroke="rgba(184,115,51,0.14)" stroke-width="1.1"/>
+            <ellipse cx="41" cy="123" rx="20" ry="4.5" fill="none" stroke="rgba(184,115,51,0.11)" stroke-width="0.8"/>
+          </g>
+        </g>
+
+        <!-- Candle on counter -->
+        <g transform="translate(225,348)">
+          <rect x="12" y="0" width="14" height="40" rx="2" fill="rgba(242,232,220,0.05)" stroke="rgba(242,232,220,0.10)" stroke-width="0.8"/>
+          <ellipse cx="19" cy="-5" rx="3.5" ry="5.5" fill="#e8a84c" opacity="0.65"/>
+          <ellipse cx="19" cy="-3" rx="2" ry="3.5" fill="#f2c87a" opacity="0.85"/>
+        </g>
+
+        <!-- Candle glow -->
+        <ellipse cx="244" cy="395" rx="80" ry="30" fill="rgba(232,168,76,0.04)"/>
+        <!-- Counter ambient warmth -->
+        <ellipse cx="240" cy="502" rx="170" ry="28" fill="rgba(184,115,51,0.05)"/>
+      </svg>
+    </div>
+
+    <!-- Bar text -->
+    <div>
+      <span class="section__label fade-up">De bar</span>
+      <h2 class="section__h2 fade-up d1">
+        Een plek om<br>te blijven zitten.
+      </h2>
+      <div class="divider fade-up d1"></div>
+      <p class="section__lead fade-up d2">
+        Unwined is geen gewone wijnbar. We kiezen elke fles met zorg — natural wines, biodynamische druiventelers, kleine domeinen die je niet in de supermarkt vindt. Bij een glas praten we graag over wat je drinkt.
       </p>
-      <h1 class="font-serif text-cream text-[44px] leading-[1.03] sm:text-8xl font-600 max-w-3xl">
-        Een glas in de bar,<br /><span class="italic">een fles voor thuis.</span>
-      </h1>
-      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed font-300">
-        Unwined is een wijnbar met detailverkoop in hartje Mechelen. Binnenkort kan dat ook online:
-        reserveer je tafel met één klik en bestel je favoriete fles in onze wijnwebshop.
+      <p class="section__lead fade-up d3" style="margin-top:1rem;">
+        Terras bij mooi weer. Gezellig binnen als het regent. Altijd een goeie fles open.
       </p>
-      <div class="flex flex-wrap gap-3 mt-9">
-        <a href="#webshop" class="bg-gold text-ink font-600 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
-          Naar de wijnwebshop
-        </a>
-        <a href="#reserveren" class="border border-cream/40 text-cream font-500 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
-          Reserveer een tafel
-        </a>
+
+      <div class="hours-table fade-up d2">
+        <div class="hours-row">
+          <span class="hours-row__day">Maandag</span>
+          <span class="hours-row__off">Gesloten</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-row__day">Di &ndash; Do</span>
+          <span class="hours-row__time">16:00 &ndash; 22:00</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-row__day">Vr &ndash; Za</span>
+          <span class="hours-row__time">14:00 &ndash; 23:00</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-row__day">Zondag</span>
+          <span class="hours-row__time">14:00 &ndash; 20:00</span>
+        </div>
       </div>
-      <p class="text-cream/55 text-xs mt-6">Wijn is voor volwassenen — verkoop en schenken uitsluitend aan personen vanaf 18 jaar.</p>
-    </div>
-  </section>
 
-  <!-- USP strip -->
-  <section class="bg-plum text-cream/90">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-7 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
-      <div><p class="font-serif text-2xl text-goldlt">Wijnbar</p><p class="mt-1 text-cream/60">Per glas in een warm kader</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Detailverkoop</p><p class="mt-1 text-cream/60">Neem je favoriete fles mee</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Online bestellen</p><p class="mt-1 text-cream/60">Webshop met Mollie-checkout</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Reserveren</p><p class="mt-1 text-cream/60">Tafel online vastleggen</p></div>
-    </div>
-  </section>
-
-  <!-- Wijnwebshop / online bestellen (the differentiator) -->
-  <section id="webshop" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <div class="fade-up">
-        <p class="text-gold font-500 tracking-[0.2em] uppercase text-xs mb-4">Binnenkort: de wijnwebshop</p>
-        <h2 class="font-serif text-4xl sm:text-6xl font-600 leading-tight text-plum">
-          De fles van in de bar,<br /><span class="italic">nu ook online te bestellen.</span>
-        </h2>
-        <p class="text-clay text-lg mt-5 leading-relaxed max-w-md font-300">
-          Vandaag is Unwined een bar — wie de wijn van gisteren wil naprutsen, moet langskomen of bellen.
-          Geen winkelwagen, geen online bestelling. Met een echte webshop vindt je gast in een paar klikken
-          de juiste fles en rekent meteen af.
-        </p>
-        <ul class="mt-7 space-y-3 text-clay">
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Filter op <strong class="font-600 text-ink">kleur</strong> (rood, wit, bubbels, rosé)</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Filter op <strong class="font-600 text-ink">druif &amp; streek</strong> en smaakprofiel</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Filter op <strong class="font-600 text-ink">gelegenheid</strong> en budget</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Afrekenen met Mollie (Bancontact) · leeftijdsverificatie 18+</li>
-        </ul>
-        <a href="#assortiment" class="inline-flex items-center gap-2 mt-9 bg-plum text-cream font-600 px-7 py-3.5 rounded-full hover:bg-wine transition">
-          Bekijk het assortiment
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      <div style="margin-top:2.5rem;" class="fade-up d3">
+        <a href="tel:015418185" class="btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.1 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 3a2 2 0 0 1-.4 2L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2-.4c1 .3 2 .6 3 .7A2 2 0 0 1 22 17Z"/></svg>
+          Bel: 015 41 81 85
         </a>
       </div>
-
-      <!-- Filter concept mock -->
-      <div class="fade-up rounded-3xl bg-white shadow-sm border border-plum/10 p-6 sm:p-7">
-        <div class="flex items-center justify-between">
-          <p class="font-serif text-2xl font-600 text-plum">Vind jouw wijn</p>
-          <span class="text-xs text-clay/70">conceptweergave</span>
-        </div>
-        <div class="mt-5 space-y-5">
-          <div>
-            <p class="text-xs font-600 uppercase tracking-wider text-clay mb-2">Kleur</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1.5 rounded-full bg-plum text-cream text-sm">Rood</span>
-              <span class="px-3 py-1.5 rounded-full border border-plum/20 text-ink text-sm">Wit</span>
-              <span class="px-3 py-1.5 rounded-full border border-plum/20 text-ink text-sm">Bubbels</span>
-              <span class="px-3 py-1.5 rounded-full border border-plum/20 text-ink text-sm">Rosé</span>
-            </div>
-          </div>
-          <div>
-            <p class="text-xs font-600 uppercase tracking-wider text-clay mb-2">Druif</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1.5 rounded-full bg-gold/25 text-ink text-sm">Pinot Noir</span>
-              <span class="px-3 py-1.5 rounded-full border border-plum/20 text-ink text-sm">Chardonnay</span>
-              <span class="px-3 py-1.5 rounded-full border border-plum/20 text-ink text-sm">Syrah</span>
-            </div>
-          </div>
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <p class="text-xs font-600 uppercase tracking-wider text-clay">Budget</p>
-              <p class="text-xs text-clay/70">per fles</p>
-            </div>
-            <div class="h-1.5 rounded-full bg-sand relative">
-              <div class="absolute inset-y-0 left-0 w-2/3 rounded-full bg-gold"></div>
-              <span class="absolute -top-1 left-2/3 w-4 h-4 -ml-2 rounded-full bg-plum border-2 border-white shadow"></span>
-            </div>
-          </div>
-          <button class="w-full bg-plum text-cream font-600 py-3 rounded-full hover:bg-wine transition">Toon 24 wijnen</button>
-          <p class="text-[11px] text-clay/60 text-center">Conceptueel — filters &amp; checkout worden live gekoppeld in de echte webshop.</p>
-        </div>
-      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Assortiment grid -->
-  <section id="assortiment" class="bg-sand/60 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
-        <div>
-          <p class="text-gold font-500 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
-          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-plum">Van rood tot proefbox</h2>
-        </div>
-        <p class="text-clay max-w-sm font-300">Een greep uit wat je bij Unwined vindt — aan de bar én straks in de webshop. Beschikbaarheid wisselt per seizoen.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <!-- Rode wijn -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-plum text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80"
-            alt="Rode wijn"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Rode wijn</h3>
-            <p class="text-cream/75 text-sm mt-1 font-300">Van soepel en fruitig tot vol en krachtig.</p>
-          </div>
-        </article>
-        <!-- Witte wijn -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-plum text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80"
-            alt="Witte wijn"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Witte wijn</h3>
-            <p class="text-cream/75 text-sm mt-1 font-300">Fris en mineraal of net wat ronder en rijper.</p>
-          </div>
-        </article>
-        <!-- Bubbels -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-plum text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80"
-            alt="Bubbels, crémant en champagne"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Bubbels</h3>
-            <p class="text-cream/75 text-sm mt-1 font-300">Crémant &amp; champagne om te vieren.</p>
-          </div>
-        </article>
-        <!-- Proefbox -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-plum text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1474722883778-792e7990302f?auto=format&fit=crop&w=800&q=80"
-            alt="Proefbox met geselecteerde wijnen"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Proefbox</h3>
-            <p class="text-cream/75 text-sm mt-1 font-300">Ontdek thuis een selectie van de bar.</p>
-          </div>
-        </article>
-        <!-- Cadeaupakketten -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-plum text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80"
-            alt="Wijn-cadeaupakket"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Cadeaupakketten</h3>
-            <p class="text-cream/75 text-sm mt-1 font-300">Een verzorgd geschenk, samengesteld op maat.</p>
-          </div>
-        </article>
-        <!-- Proefbox CTA card -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-gold text-ink relative aspect-[4/5] flex items-center justify-center text-center p-6">
-          <div>
-            <p class="font-serif text-3xl font-600">Proef&shy;box thuis</p>
-            <p class="text-ink/75 text-sm mt-2 font-300">Stel een proefbox samen met wijnen die je aan de bar leerde kennen — ideaal om thuis verder te ontdekken of cadeau te geven.</p>
-            <a href="#reserveren" class="inline-block mt-5 text-plum font-600 ug">Ontdek de proefbox →</a>
-          </div>
-        </article>
-      </div>
-      <p class="text-xs text-clay/70 mt-8 text-center">Onze selectie wisselt regelmatig. Beschikbaarheid en advies altijd in overleg, aan de bar of via de webshop.</p>
+
+<!-- ══════════════════════════════════════════════
+     WINKEL SECTION
+══════════════════════════════════════════════ -->
+<section class="section" id="winkel">
+  <div class="winkel-header">
+    <span class="section__label fade-up">De winkel</span>
+    <h2 class="section__h2 fade-up d1">Curated flessen<br>voor thuis.</h2>
+    <p class="section__lead fade-up d2" style="margin:1.25rem auto 0; text-align:center;">
+      Elke fles in onze winkel is zelf geselecteerd. Geen grote merken — wel bijzondere producenten verteld met een eerlijk label.
+    </p>
+  </div>
+
+  <div class="bottles-grid fade-up">
+    <!-- Card 1 -->
+    <div class="bottle-card">
+      <svg class="bottle-card__icon" viewBox="0 0 48 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="16" y="36" width="16" height="68" rx="3" fill="rgba(184,115,51,0.11)" stroke="rgba(184,115,51,0.28)" stroke-width="1"/>
+        <rect x="18" y="18" width="12" height="22" rx="3" fill="rgba(184,115,51,0.07)" stroke="rgba(184,115,51,0.20)" stroke-width="1"/>
+        <rect x="20" y="10" width="8"  height="11" rx="1" fill="rgba(184,115,51,0.14)" stroke="rgba(184,115,51,0.22)" stroke-width="1"/>
+        <rect x="18" y="55" width="12" height="22" rx="1" fill="rgba(184,115,51,0.17)"/>
+        <circle cx="24" cy="72" r="1.2" fill="rgba(232,168,76,0.6)"/>
+        <circle cx="24" cy="63" r="0.8" fill="rgba(232,168,76,0.5)"/>
+        <circle cx="24" cy="55" r="0.6" fill="rgba(232,168,76,0.4)"/>
+      </svg>
+      <span class="bottle-card__tag">Natural &middot; Rood</span>
+      <h3 class="bottle-card__name">Gamay Macéré</h3>
+      <p class="bottle-card__desc">Lichte maceratie, frisse tannines. Soepel, fruitig, goed gekoeld te drinken — een herfstavond in een fles.</p>
+      <span class="bottle-card__price">Vanaf &euro; 16</span>
     </div>
-  </section>
 
-  <!-- Featured wines (illustratief) -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="flex items-end justify-between mb-10">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-plum">Een greep uit de webshop</h2>
-      <a href="#webshop" class="hidden sm:inline text-gold font-600 ug">Alles bekijken →</a>
+    <!-- Card 2 -->
+    <div class="bottle-card">
+      <svg class="bottle-card__icon" viewBox="0 0 48 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <ellipse cx="24" cy="104" rx="14" ry="4" fill="rgba(184,115,51,0.09)"/>
+        <rect x="12" y="38" width="24" height="68" rx="6" fill="rgba(212,149,106,0.09)" stroke="rgba(212,149,106,0.25)" stroke-width="1"/>
+        <rect x="16" y="22" width="16" height="20" rx="4" fill="rgba(212,149,106,0.07)" stroke="rgba(212,149,106,0.18)" stroke-width="1"/>
+        <rect x="19" y="13" width="10" height="12" rx="2" fill="rgba(212,149,106,0.13)" stroke="rgba(212,149,106,0.20)" stroke-width="1"/>
+        <rect x="14" y="58" width="20" height="28" rx="1" fill="rgba(212,149,106,0.13)"/>
+      </svg>
+      <span class="bottle-card__tag">Biodynamisch &middot; Wit</span>
+      <h3 class="bottle-card__name">Riesling Kabinett</h3>
+      <p class="bottle-card__desc">Mineraal strak, met een haiku van zoetzure peer. Gecertificeerd biodynamisch. Verrassend veelzijdig aan tafel.</p>
+      <span class="bottle-card__price">Vanaf &euro; 22</span>
     </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Wine 1 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-          <img
-            src="https://images.unsplash.com/photo-1474722883778-792e7990302f?auto=format&fit=crop&w=700&q=80"
-            alt="Rode wijn (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Rood · Pinot Noir</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-plum">Huiskeuze Rood</h3>
-          <p class="text-clay/80 text-sm mt-1 font-300">Soepele rode met rood fruit — onze favoriet aan de bar.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-sm text-clay/70 font-300">Voorbeeldartikel</span>
-            <button class="bg-plum text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-wine transition">In winkelwagen</button>
-          </div>
-        </div>
-      </div>
-      <!-- Wine 2 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-          <img
-            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80"
-            alt="Witte wijn (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Wit · Chardonnay</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-plum">Huiskeuze Wit</h3>
-          <p class="text-clay/80 text-sm mt-1 font-300">Mineraal en elegant — ideaal bij vis en gevogelte.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-sm text-clay/70 font-300">Voorbeeldartikel</span>
-            <button class="bg-plum text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-wine transition">In winkelwagen</button>
-          </div>
-        </div>
-      </div>
-      <!-- Wine 3 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-          <img
-            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=700&q=80"
-            alt="Bubbels (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Bubbels</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-plum">Crémant Brut</h3>
-          <p class="text-clay/80 text-sm mt-1 font-300">Fijne bubbels om te vieren of cadeau te geven.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-sm text-clay/70 font-300">Voorbeeldartikel</span>
-            <button class="bg-plum text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-wine transition">In winkelwagen</button>
-          </div>
-        </div>
-      </div>
+
+    <!-- Card 3 -->
+    <div class="bottle-card">
+      <svg class="bottle-card__icon" viewBox="0 0 48 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="17" y="32" width="14" height="72" rx="2" fill="rgba(232,168,76,0.09)" stroke="rgba(232,168,76,0.26)" stroke-width="1"/>
+        <rect x="18" y="16" width="12" height="20" rx="2" fill="rgba(232,168,76,0.07)" stroke="rgba(232,168,76,0.18)" stroke-width="1"/>
+        <rect x="20" y="8"  width="8"  height="11" rx="1" fill="rgba(232,168,76,0.13)" stroke="rgba(232,168,76,0.20)" stroke-width="1"/>
+        <rect x="18" y="52" width="12" height="28" rx="1" fill="rgba(232,168,76,0.15)"/>
+        <circle cx="24" cy="70" r="1.5" fill="rgba(184,115,51,0.52)"/>
+        <circle cx="24" cy="59" r="1.0" fill="rgba(184,115,51,0.40)"/>
+        <circle cx="24" cy="48" r="0.7" fill="rgba(184,115,51,0.35)"/>
+      </svg>
+      <span class="bottle-card__tag">Orange &middot; Skin-contact</span>
+      <h3 class="bottle-card__name">Amber Traminer</h3>
+      <p class="bottle-card__desc">Huidmaceratie van 21 dagen. Nootachtig, complex, met een lange afdronk. Voor de avontuurlijke gast.</p>
+      <span class="bottle-card__price">Vanaf &euro; 28</span>
     </div>
-    <p class="text-center text-xs text-clay/60 mt-6">Voorbeeldwijnen ter illustratie van de webshop — er worden geen prijzen of claims getoond in deze conceptversie.</p>
-  </section>
 
-  <!-- Bar-reservatie & proefbox (the second differentiator) -->
-  <section id="reserveren" class="bg-plum text-cream py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
-      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
-        <img
-          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80"
-          alt="Gezellige tafel met wijn in de bar"
-          loading="lazy" decoding="async"
-          class="w-full h-full object-cover"
-        />
-      </div>
-      <div class="order-1 lg:order-2 fade-up">
-        <p class="text-goldlt font-500 tracking-[0.2em] uppercase text-xs mb-4">Tafelreservatie &amp; proefbox</p>
-        <h2 class="font-serif text-4xl sm:text-6xl font-600 leading-tight">
-          Reserveer je tafel,<br /><span class="italic">of proef thuis verder.</span>
-        </h2>
-        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md font-300">
-          Vandaag gaat reserveren via telefoon of bij het binnenstappen. Met online tafelreservatie leg je
-          je plekje vast wanneer het jou past — ook 's avonds laat. En wie de bar mist, neemt met een
-          <strong class="font-600 text-cream">proefbox</strong> een stukje Unwined mee naar huis.
-        </p>
-        <ul class="mt-6 space-y-3 text-cream/85">
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Online tafelreservatie — datum, uur &amp; aantal personen</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Bevestiging per mail, herinnering vooraf</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Proefbox op maat — ontdek thuis een selectie van de bar</li>
-        </ul>
-
-        <!-- Reservatie concept mock -->
-        <div class="mt-8 rounded-3xl bg-cream/10 border border-cream/15 p-5 sm:p-6 backdrop-blur">
-          <div class="flex items-center justify-between mb-4">
-            <p class="font-serif text-xl font-600 text-cream">Reserveer een tafel</p>
-            <span class="text-xs text-cream/50">conceptweergave</span>
-          </div>
-          <div class="grid grid-cols-2 gap-3">
-            <div class="bg-cream/10 rounded-xl px-4 py-3">
-              <p class="text-[11px] uppercase tracking-wider text-cream/50">Datum</p>
-              <p class="text-cream font-500 mt-0.5">vr 20 juni</p>
-            </div>
-            <div class="bg-cream/10 rounded-xl px-4 py-3">
-              <p class="text-[11px] uppercase tracking-wider text-cream/50">Uur</p>
-              <p class="text-cream font-500 mt-0.5">19:30</p>
-            </div>
-            <div class="bg-cream/10 rounded-xl px-4 py-3 col-span-2">
-              <p class="text-[11px] uppercase tracking-wider text-cream/50">Aantal personen</p>
-              <p class="text-cream font-500 mt-0.5">2 personen</p>
-            </div>
-          </div>
-          <button class="w-full mt-4 bg-gold text-ink font-600 py-3 rounded-full hover:bg-goldlt transition">Bevestig reservatie</button>
-          <p class="text-[11px] text-cream/45 text-center mt-3">Conceptueel — reservatiesysteem wordt live gekoppeld.</p>
-        </div>
-      </div>
+    <!-- Card 4 -->
+    <div class="bottle-card">
+      <svg class="bottle-card__icon" viewBox="0 0 48 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <ellipse cx="24" cy="106" rx="16" ry="5" fill="rgba(184,115,51,0.07)"/>
+        <rect x="10" y="34" width="28" height="74" rx="8" fill="rgba(184,115,51,0.08)" stroke="rgba(184,115,51,0.20)" stroke-width="1"/>
+        <rect x="15" y="18" width="18" height="20" rx="5" fill="rgba(184,115,51,0.06)" stroke="rgba(184,115,51,0.16)" stroke-width="1"/>
+        <rect x="18" y="9"  width="12" height="12" rx="3" fill="rgba(184,115,51,0.11)" stroke="rgba(184,115,51,0.18)" stroke-width="1"/>
+        <rect x="12" y="56" width="24" height="30" rx="2" fill="rgba(184,115,51,0.11)"/>
+      </svg>
+      <span class="bottle-card__tag">Pét-nat &middot; Mousseux</span>
+      <h3 class="bottle-card__name">Bulles de Loire</h3>
+      <p class="bottle-card__desc">Pétillant naturel van chenin blanc. Fris, speels, feestelijk. Perfect als aperitief of in plaats van champagne.</p>
+      <span class="bottle-card__price">Vanaf &euro; 19</span>
     </div>
-  </section>
 
-  <!-- Ons verhaal -->
-  <section id="verhaal" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
-    <div class="fade-up">
-      <p class="text-gold font-500 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
-      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-plum">Een wijnbar waar je ook<br />de fles mee naar huis neemt.</h2>
-      <p class="text-clay text-lg mt-6 leading-relaxed font-300">
-        Unwined is een wijnbar met detailverkoop op Steenweg 22 in Mechelen. Bij ons proef je per glas in een
-        warm, ontspannen kader — en valt een wijn in de smaak, dan neem je 'm gewoon mee. Geen drempel,
-        geen poespas: lekkere wijn, eerlijk advies en een plek om te blijven hangen.
+    <!-- Card 5 -->
+    <div class="bottle-card">
+      <svg class="bottle-card__icon" viewBox="0 0 48 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="17" y="36" width="14" height="68" rx="3" fill="rgba(139,70,30,0.13)" stroke="rgba(139,70,30,0.28)" stroke-width="1"/>
+        <rect x="18" y="20" width="12" height="20" rx="3" fill="rgba(139,70,30,0.09)" stroke="rgba(139,70,30,0.20)" stroke-width="1"/>
+        <rect x="20" y="12" width="8"  height="11" rx="1" fill="rgba(139,70,30,0.14)" stroke="rgba(139,70,30,0.20)" stroke-width="1"/>
+        <rect x="18" y="56" width="12" height="24" rx="1" fill="rgba(139,70,30,0.18)"/>
+      </svg>
+      <span class="bottle-card__tag">Lokaal &middot; Ros&eacute;</span>
+      <h3 class="bottle-card__name">Hagelandse Zomer</h3>
+      <p class="bottle-card__desc">Van een kleine Belgische druiventeler uit het Hageland. Lichte, droge rosé — lokaal trots, werelds van smaak.</p>
+      <span class="bottle-card__price">Vanaf &euro; 14</span>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="bottle-card">
+      <svg class="bottle-card__icon" viewBox="0 0 48 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <ellipse cx="24" cy="105" rx="13" ry="4" fill="rgba(184,115,51,0.09)"/>
+        <rect x="14" y="36" width="20" height="70" rx="4" fill="rgba(212,149,106,0.07)" stroke="rgba(212,149,106,0.20)" stroke-width="1"/>
+        <rect x="17" y="20" width="14" height="20" rx="4" fill="rgba(212,149,106,0.06)" stroke="rgba(212,149,106,0.16)" stroke-width="1"/>
+        <rect x="19" y="12" width="10" height="11" rx="2" fill="rgba(212,149,106,0.11)" stroke="rgba(212,149,106,0.18)" stroke-width="1"/>
+        <rect x="15" y="58" width="18" height="28" rx="1" fill="rgba(212,149,106,0.13)"/>
+        <circle cx="24" cy="74" r="1.3" fill="rgba(184,115,51,0.48)"/>
+        <circle cx="24" cy="65" r="0.9" fill="rgba(184,115,51,0.38)"/>
+      </svg>
+      <span class="bottle-card__tag">Magnums &middot; Cadeau</span>
+      <h3 class="bottle-card__name">Cadeaupakket</h3>
+      <p class="bottle-card__desc">Laat ons een fles kiezen op maat van de gelegenheid. Verpakt met een handgeschreven notitie — voor jezelf of als geschenk.</p>
+      <span class="bottle-card__price">Op vraag</span>
+    </div>
+  </div>
+
+  <div class="winkel-cta fade-up">
+    <a href="mailto:info@unwined.be" class="btn-primary">Vraag advies per mail</a>
+    <p>of kom langs tijdens onze openingsuren &mdash; we helpen je graag</p>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     EVENTS SECTION
+══════════════════════════════════════════════ -->
+<section class="section section--alt" id="events">
+  <div class="events-layout">
+
+    <!-- Left: list + header -->
+    <div>
+      <span class="section__label fade-up">Proeverijen &amp; events</span>
+      <h2 class="section__h2 fade-up d1">Kom leren<br>terwijl je geniet.</h2>
+      <div class="divider fade-up d1"></div>
+      <p class="section__lead fade-up d2">
+        Onze proeverijen zijn voor iedereen — van nieuwsgierige beginner tot ervaren wijnliefhebber. Kleine groepen, veel aandacht, altijd een verrassing.
       </p>
-      <p class="text-clay text-lg mt-4 leading-relaxed font-300">
-        Wat tot nu ontbrak, is het online verlengstuk van de bar. Daarom bouwen we aan een echte webshop,
-        online tafelreservatie en proefboxen — zodat je ook van thuis uit kunt reserveren, bestellen en
-        ontdekken.
-      </p>
-      <div class="mt-9 flex flex-wrap gap-8">
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">Bar</p>
-          <p class="text-clay/80 text-sm mt-1">Per glas, ter plaatse</p>
+
+      <div class="events-list fade-up d2">
+
+        <div class="event-item">
+          <div class="event-date">
+            <div class="event-day">12</div>
+            <span class="event-month">Jul</span>
+          </div>
+          <div class="event-body">
+            <div class="event-title">Natural Wine Introductie</div>
+            <div class="event-meta">
+              <span>19:30 &ndash; 21:30</span>
+              <span>max. 12 p.</span>
+              <span class="event-badge">Bijna vol</span>
+            </div>
+          </div>
+          <div class="event-price">&euro; 38</div>
         </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">Retail</p>
-          <p class="text-clay/80 text-sm mt-1">Fles mee naar huis</p>
+
+        <div class="event-item">
+          <div class="event-date">
+            <div class="event-day">19</div>
+            <span class="event-month">Jul</span>
+          </div>
+          <div class="event-body">
+            <div class="event-title">Zomer Ap&eacute;ro Proeverij</div>
+            <div class="event-meta">
+              <span>17:00 &ndash; 19:30</span>
+              <span>max. 16 p.</span>
+            </div>
+          </div>
+          <div class="event-price">&euro; 32</div>
         </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">18+</p>
-          <p class="text-clay/80 text-sm mt-1">Verantwoord genieten</p>
+
+        <div class="event-item">
+          <div class="event-date">
+            <div class="event-day">26</div>
+            <span class="event-month">Jul</span>
+          </div>
+          <div class="event-body">
+            <div class="event-title">Belgische Wijnen &mdash; een ontdekking</div>
+            <div class="event-meta">
+              <span>19:00 &ndash; 21:00</span>
+              <span>max. 10 p.</span>
+            </div>
+          </div>
+          <div class="event-price">&euro; 35</div>
         </div>
+
+        <div class="event-item">
+          <div class="event-date">
+            <div class="event-day">09</div>
+            <span class="event-month">Aug</span>
+          </div>
+          <div class="event-body">
+            <div class="event-title">Orange &amp; Skin Contact Workshop</div>
+            <div class="event-meta">
+              <span>19:30 &ndash; 22:00</span>
+              <span>max. 12 p.</span>
+              <span class="event-badge">Nieuw</span>
+            </div>
+          </div>
+          <div class="event-price">&euro; 42</div>
+        </div>
+
+        <div class="event-item">
+          <div class="event-date">
+            <div class="event-day">16</div>
+            <span class="event-month">Aug</span>
+          </div>
+          <div class="event-body">
+            <div class="event-title">Priv&eacute; proeverij op aanvraag</div>
+            <div class="event-meta">
+              <span>Flexibel</span>
+              <span>min. 6 / max. 20 p.</span>
+            </div>
+          </div>
+          <div class="event-price">Op maat</div>
+        </div>
+
+      </div>
+
+      <div style="margin-top:2.5rem;" class="fade-up d3">
+        <a href="mailto:info@unwined.be" class="btn-primary">Schrijf je in</a>
       </div>
     </div>
-    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
-      <img
-        src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1000&q=80"
-        alt="Wijnrek met flessen in de bar"
-        loading="lazy" decoding="async"
-        class="w-full h-full object-cover"
-      />
-    </div>
-  </section>
 
-  <!-- Bezoek + kaart -->
-  <section id="bezoek" class="bg-sand/60 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
-      <div class="fade-up">
-        <p class="text-gold font-500 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-plum">Welkom in Mechelen</h2>
-        <p class="text-clay text-lg mt-5 max-w-md font-300">
-          Kom proeven en kiezen op Steenweg 22 in Mechelen, of reserveer je tafel en bestel straks online.
-        </p>
-        <dl class="mt-9 space-y-5 text-clay">
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📍</span>
-            <div>
-              <dt class="font-600 text-plum">Adres</dt>
-              <dd class="text-clay">Steenweg 22, 2800 Mechelen</dd>
-            </div>
+    <!-- Right: visual + promo -->
+    <div class="events-aside fade-up d2">
+      <div class="events-visual">
+        <svg viewBox="0 0 400 530" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <radialGradient id="evGlow" cx="50%" cy="35%" r="65%">
+              <stop offset="0%"   stop-color="#5a2d10" stop-opacity="0.70"/>
+              <stop offset="60%"  stop-color="#2a1005" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#0f1419" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="tGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"   stop-color="#1a0f08"/>
+              <stop offset="100%" stop-color="#0f0a06"/>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="530" fill="#0f1419"/>
+          <rect width="400" height="530" fill="url(#evGlow)"/>
+
+          <!-- Round table -->
+          <ellipse cx="200" cy="402" rx="162" ry="52" fill="url(#tGrad)" stroke="rgba(184,115,51,0.11)" stroke-width="1"/>
+          <ellipse cx="200" cy="397" rx="157" ry="47" fill="rgba(26,15,8,0.82)"/>
+
+          <!-- Bottle center -->
+          <g transform="translate(178,262)">
+            <rect x="4" y="12" width="36" height="115" rx="6" fill="#261408" stroke="rgba(184,115,51,0.17)" stroke-width="1"/>
+            <rect x="10" y="2" width="24" height="16" rx="4" fill="#1a0d06"/>
+            <rect x="14" y="-4" width="16" height="10" rx="2" fill="#261408"/>
+            <rect x="6" y="46" width="32" height="38" rx="1" fill="rgba(184,115,51,0.09)"/>
+            <text x="22" y="69" text-anchor="middle" fill="rgba(184,115,51,0.38)" font-family="serif" font-size="7" font-style="italic">Unwined</text>
+            <text x="22" y="78" text-anchor="middle" fill="rgba(184,115,51,0.28)" font-family="serif" font-size="5">Mechelen</text>
+          </g>
+
+          <!-- Glass left — with wine -->
+          <g transform="translate(88,297)">
+            <path d="M10 0 L44 0 L40 44 Q30 64 27 68 Q24 64 14 44 Z"
+                  fill="rgba(139,37,0,0.44)" stroke="rgba(184,115,51,0.22)" stroke-width="0.8"/>
+            <path d="M14 44 L40 44 L38 36 Q30 60 27 66 Q24 60 16 36 Z" fill="rgba(100,20,0,0.50)"/>
+            <line x1="27" y1="68" x2="27" y2="108" stroke="rgba(184,115,51,0.14)" stroke-width="1"/>
+            <ellipse cx="27" cy="111" rx="18" ry="4" fill="none" stroke="rgba(184,115,51,0.11)" stroke-width="0.8"/>
+            <circle cx="23" cy="55" r="1.2" fill="#b87333" opacity="0.52"/>
+            <circle cx="28" cy="46" r="0.9" fill="#d4956a" opacity="0.44"/>
+            <circle cx="25" cy="38" r="0.7" fill="#e8a84c" opacity="0.50"/>
+          </g>
+
+          <!-- Glass right — empty -->
+          <g transform="translate(262,302)">
+            <path d="M10 0 L44 0 L40 40 Q30 58 27 62 Q24 58 14 40 Z"
+                  fill="rgba(184,115,51,0.05)" stroke="rgba(184,115,51,0.18)" stroke-width="0.8"/>
+            <line x1="27" y1="62" x2="27" y2="100" stroke="rgba(184,115,51,0.12)" stroke-width="1"/>
+            <ellipse cx="27" cy="103" rx="18" ry="4" fill="none" stroke="rgba(184,115,51,0.09)" stroke-width="0.8"/>
+          </g>
+
+          <!-- Candle -->
+          <g transform="translate(192,342)">
+            <rect x="12" y="0" width="14" height="40" rx="2" fill="rgba(242,232,220,0.05)" stroke="rgba(242,232,220,0.10)" stroke-width="0.8"/>
+            <ellipse cx="19" cy="-5" rx="3.5" ry="5.5" fill="#e8a84c" opacity="0.65"/>
+            <ellipse cx="19" cy="-3" rx="2"   ry="3.5" fill="#f2c87a" opacity="0.85"/>
+          </g>
+
+          <!-- Candlelight glow -->
+          <ellipse cx="210" cy="342" rx="60" ry="28" fill="rgba(232,168,76,0.04)"/>
+
+          <!-- Guest silhouettes — very faint -->
+          <ellipse cx="58"  cy="202" rx="28" ry="38" fill="rgba(184,115,51,0.04)"/>
+          <ellipse cx="58"  cy="162" rx="18" ry="18" fill="rgba(184,115,51,0.04)"/>
+          <ellipse cx="342" cy="198" rx="26" ry="36" fill="rgba(184,115,51,0.04)"/>
+          <ellipse cx="342" cy="160" rx="17" ry="17" fill="rgba(184,115,51,0.04)"/>
+          <ellipse cx="200" cy="142" rx="20" ry="32" fill="rgba(184,115,51,0.03)"/>
+          <ellipse cx="200" cy="108" rx="14" ry="14" fill="rgba(184,115,51,0.03)"/>
+
+          <!-- Second-read moment: structural side-rail numeral "07" -->
+          <text x="382" y="322" fill="rgba(184,115,51,0.055)" font-family="serif" font-size="80" font-weight="700" text-anchor="end">07</text>
+
+          <!-- Ceiling ambient warm light -->
+          <ellipse cx="200" cy="0" rx="100" ry="55" fill="rgba(232,168,76,0.04)"/>
+        </svg>
+      </div>
+
+      <div class="events-promo">
+        <h4>Groepen &amp; bedrijfsuitjes</h4>
+        <p>Privé proeverij organiseren voor collega&apos;s, vrienden of familie? We stellen een maatprogramma samen — inclusief begeleiding, hapjes en keuze uit ons volledige assortiment.</p>
+        <a href="mailto:info@unwined.be" class="btn-ghost">Stuur ons een bericht &nbsp;&rarr;</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     CONTACT SECTION
+══════════════════════════════════════════════ -->
+<section class="section" id="contact">
+  <div class="contact-layout">
+
+    <!-- Map: inline SVG Mechelen schematic -->
+    <div class="contact-map fade-up">
+      <svg viewBox="0 0 440 440" xmlns="http://www.w3.org/2000/svg"
+           aria-label="Kaartschema Mechelen stadscentrum met locatie Unwined" role="img">
+        <rect width="440" height="440" fill="#161c23"/>
+
+        <!-- Street grid — simplified Mechelen block layout -->
+        <line x1="120" y1="0"   x2="120" y2="440" stroke="rgba(242,232,220,0.045)" stroke-width="7"/>
+        <line x1="220" y1="0"   x2="220" y2="440" stroke="rgba(242,232,220,0.060)" stroke-width="9"/>
+        <line x1="320" y1="0"   x2="320" y2="440" stroke="rgba(242,232,220,0.040)" stroke-width="6"/>
+        <line x1="60"  y1="0"   x2="60"  y2="440" stroke="rgba(242,232,220,0.025)" stroke-width="5"/>
+        <line x1="380" y1="0"   x2="380" y2="440" stroke="rgba(242,232,220,0.025)" stroke-width="5"/>
+
+        <line x1="0" y1="140" x2="440" y2="140" stroke="rgba(242,232,220,0.060)" stroke-width="9"/>
+        <line x1="0" y1="220" x2="440" y2="220" stroke="rgba(242,232,220,0.045)" stroke-width="7"/>
+        <line x1="0" y1="300" x2="440" y2="300" stroke="rgba(242,232,220,0.040)" stroke-width="6"/>
+        <line x1="0" y1="80"  x2="440" y2="80"  stroke="rgba(242,232,220,0.025)" stroke-width="4"/>
+        <line x1="0" y1="360" x2="440" y2="360" stroke="rgba(242,232,220,0.025)" stroke-width="4"/>
+
+        <!-- Diagonal Mechelen-like street -->
+        <line x1="0" y1="440" x2="320" y2="0" stroke="rgba(242,232,220,0.025)" stroke-width="4"/>
+
+        <!-- Grote Markt block -->
+        <rect x="162" y="102" width="118" height="78" rx="2" fill="rgba(242,232,220,0.035)" stroke="rgba(242,232,220,0.055)" stroke-width="1"/>
+        <text x="221" y="145" text-anchor="middle" fill="rgba(242,232,220,0.16)" font-family="system-ui,sans-serif" font-size="7.5" font-weight="500" letter-spacing="0.08em">GROTE MARKT</text>
+
+        <!-- River Dijle -->
+        <path d="M0 260 Q80 250 160 270 Q240 285 320 265 Q380 252 440 260"
+              fill="none" stroke="rgba(100,150,200,0.11)" stroke-width="11" stroke-linecap="round"/>
+
+        <!-- St. Rombouts -->
+        <rect x="191" y="109" width="26" height="26" rx="1" fill="rgba(184,115,51,0.07)" stroke="rgba(184,115,51,0.14)" stroke-width="1"/>
+
+        <!-- City blocks -->
+        <rect x="30"  y="28"  width="50" height="34" rx="1" fill="rgba(242,232,220,0.022)"/>
+        <rect x="140" y="20"  width="40" height="29" rx="1" fill="rgba(242,232,220,0.022)"/>
+        <rect x="240" y="27"  width="58" height="29" rx="1" fill="rgba(242,232,220,0.022)"/>
+        <rect x="352" y="20"  width="48" height="38" rx="1" fill="rgba(242,232,220,0.022)"/>
+        <rect x="30"  y="160" width="54" height="38" rx="1" fill="rgba(242,232,220,0.022)"/>
+        <rect x="141" y="216" width="44" height="54" rx="1" fill="rgba(242,232,220,0.022)"/>
+        <rect x="248" y="152" width="42" height="34" rx="1" fill="rgba(242,232,220,0.022)"/>
+        <rect x="340" y="160" width="56" height="44" rx="1" fill="rgba(242,232,220,0.022)"/>
+        <rect x="28"  y="318" width="58" height="44" rx="1" fill="rgba(242,232,220,0.022)"/>
+        <rect x="152" y="320" width="46" height="38" rx="1" fill="rgba(242,232,220,0.022)"/>
+        <rect x="246" y="318" width="50" height="46" rx="1" fill="rgba(242,232,220,0.022)"/>
+        <rect x="350" y="316" width="52" height="46" rx="1" fill="rgba(242,232,220,0.022)"/>
+
+        <!-- Location pin -->
+        <g transform="translate(200,196)">
+          <ellipse cx="0" cy="33" rx="10" ry="4" fill="rgba(184,115,51,0.20)"/>
+          <path d="M0 -24 C-14 -24 -22 -14 -22 -4 C-22 12 0 32 0 32 C0 32 22 12 22 -4 C22 -14 14 -24 0 -24 Z" fill="#b87333"/>
+          <circle cx="0" cy="-4" r="8" fill="#0f1419"/>
+          <circle cx="0" cy="-4" r="3" fill="#b87333"/>
+        </g>
+
+        <!-- Label bubble -->
+        <rect x="218" y="197" width="64" height="22" rx="3" fill="#b87333"/>
+        <text x="250" y="212" text-anchor="middle" fill="#0f1419" font-family="serif" font-size="9.5" font-weight="700" letter-spacing="-0.01em">Unwined</text>
+
+        <!-- City name -->
+        <text x="220" y="422" text-anchor="middle" fill="rgba(242,232,220,0.16)" font-family="system-ui,sans-serif" font-size="8.5" letter-spacing="0.14em" font-weight="500">MECHELEN</text>
+
+        <!-- Compass N -->
+        <text x="412" y="24" fill="rgba(242,232,220,0.10)" font-family="system-ui,sans-serif" font-size="9" letter-spacing="0.04em">N</text>
+        <line x1="416" y1="28" x2="416" y2="42" stroke="rgba(242,232,220,0.09)" stroke-width="1"/>
+      </svg>
+    </div>
+
+    <!-- Contact info -->
+    <div class="fade-up d1">
+      <span class="section__label">Kom langs</span>
+      <h2 class="section__h2">Vind ons<br>in Mechelen.</h2>
+      <div class="divider"></div>
+      <p class="section__lead">
+        We zijn makkelijk te bereiken vanuit het station. Een tafel reserveren is handig maar niet verplicht — kom gewoon langs.
+      </p>
+
+      <div class="contact-rows">
+        <div class="contact-row">
+          <div class="contact-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#b87333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
           </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🕑</span>
-            <div>
-              <dt class="font-600 text-plum">Openingsuren</dt>
-              <dd class="text-clay">Wo–Za: 16:00–24:00 · Zo: 15:00–22:00 · Ma &amp; Di: gesloten</dd>
-              <dd class="text-clay/60 text-sm mt-1">(indicatief — definitieve uren in overleg)</dd>
-            </div>
+          <div>
+            <div class="contact-label">Adres</div>
+            <div class="contact-value">Mechelen, Belgi&euml;</div>
           </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📞</span>
-            <div>
-              <dt class="font-600 text-plum">Telefoon</dt>
-              <dd class="text-clay"><a href="tel:+3215418185" class="ug">015 41 81 85</a></dd>
-            </div>
+        </div>
+
+        <div class="contact-row">
+          <div class="contact-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#b87333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.1 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 3a2 2 0 0 1-.4 2L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2-.4c1 .3 2 .6 3 .7A2 2 0 0 1 22 17Z"/></svg>
           </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">✉️</span>
-            <div>
-              <dt class="font-600 text-plum">E-mail</dt>
-              <dd class="text-clay"><a href="mailto:info@unwined.be" class="ug">info@unwined.be</a></dd>
-            </div>
+          <div>
+            <div class="contact-label">Telefoon</div>
+            <div class="contact-value"><a href="tel:015418185">015 41 81 85</a></div>
           </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">💳</span>
-            <div>
-              <dt class="font-600 text-plum">Betaalmogelijkheden</dt>
-              <dd class="text-clay">In de bar · online via Mollie / Bancontact (webshop) · leeftijdsverificatie 18+</dd>
-            </div>
+        </div>
+
+        <div class="contact-row">
+          <div class="contact-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#b87333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </div>
-        </dl>
-        <a href="#reserveren" class="inline-block mt-9 bg-plum text-cream font-600 px-7 py-3.5 rounded-full hover:bg-wine transition">
-          Reserveer een tafel →
+          <div>
+            <div class="contact-label">E-mail</div>
+            <div class="contact-value"><a href="mailto:info@unwined.be">info@unwined.be</a></div>
+          </div>
+        </div>
+
+        <div class="contact-row">
+          <div class="contact-icon" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#b87333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <div class="contact-label">Vandaag open</div>
+            <div class="contact-value" id="todayHours">16:00 &ndash; 22:00</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-cta-box fade-up d2">
+        <h3>Reserveer een tafel</h3>
+        <p>Groot gezelschap of een speciaal moment? Bel ons of stuur een mailtje &mdash; we regelen het graag.</p>
+        <a href="tel:015418185" class="btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.1 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 3a2 2 0 0 1-.4 2L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2-.4c1 .3 2 .6 3 .7A2 2 0 0 1 22 17Z"/></svg>
+          Bel: 015 41 81 85
+        </a>
+        <br>
+        <a class="secondary-link" href="mailto:info@unwined.be">
+          of mail naar <em>info@unwined.be</em>
         </a>
       </div>
-      <!-- OpenStreetMap embed — Steenweg 22, 2800 Mechelen (~51.0281, 4.4801) -->
-      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-sand shadow-sm">
-        <iframe
-          title="Kaart Unwined — Steenweg 22, 2800 Mechelen"
-          class="w-full h-full min-h-[360px] border-0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=4.4701%2C51.0231%2C4.4901%2C51.0331&layer=mapnik&marker=51.0281%2C4.4801"
-        ></iframe>
-      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- GDPR Newsletter -->
-  <section class="bg-gold/20">
-    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
-      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-plum">Blijf op de hoogte</h2>
-      <p class="text-clay mt-3 font-300">Nieuwe wijnen op de kaart, proefavonden, proefboxen en cadeautips — af en toe in je mailbox.</p>
-      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
-        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
-        <input
-          id="nl-email"
-          name="email"
-          type="email"
-          autocomplete="email"
-          required
-          placeholder="jouw@email.be"
-          class="flex-1 px-5 py-3 rounded-full border border-clay/25 bg-cream focus:outline-none focus:ring-2 focus:ring-gold"
-        />
-        <button class="bg-plum text-cream font-600 px-7 py-3 rounded-full hover:bg-wine transition">Inschrijven</button>
-      </form>
-      <p class="text-xs text-clay/60 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof. Inschrijven vanaf 18 jaar.</p>
+
+<!-- ══════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">Un<span>w</span>ined</div>
+      <p class="footer-tagline">Wijnbar &amp; wijnwinkel<br>Mechelen, Belgi&euml;</p>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="bg-ink text-cream/80">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div>
-        <p class="font-serif text-[26px] text-cream font-700">Un<span class="italic font-600 text-goldlt">wined</span></p>
-        <p class="text-cream/60 text-sm mt-3 max-w-xs font-300">Wijnbar met detailverkoop in Mechelen. Binnenkort webshop, online tafelreservatie en proefboxen.</p>
-        <p class="text-cream/45 text-xs mt-4">Verkoop en schenken uitsluitend aan personen vanaf 18 jaar. Geniet, maar drink met mate.</p>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Webshop</p>
-        <ul class="space-y-2 text-sm text-cream/60 font-300">
-          <li><a href="#webshop" class="hover:text-goldlt">Online bestellen</a></li>
-          <li><a href="#assortiment" class="hover:text-goldlt">Assortiment</a></li>
-          <li><a href="#assortiment" class="hover:text-goldlt">Proefboxen</a></li>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <div class="footer-col-title">Navigatie</div>
+        <ul>
+          <li><a href="#bar">De bar</a></li>
+          <li><a href="#winkel">Winkel</a></li>
+          <li><a href="#events">Proeverijen</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Bar</p>
-        <ul class="space-y-2 text-sm text-cream/60 font-300">
-          <li><a href="#reserveren" class="hover:text-goldlt">Tafel reserveren</a></li>
-          <li><a href="#bezoek" class="hover:text-goldlt">Openingsuren</a></li>
-          <li><a href="#verhaal" class="hover:text-goldlt">Ons verhaal</a></li>
+      <div class="footer-col">
+        <div class="footer-col-title">Contact</div>
+        <ul>
+          <li><a href="tel:015418185">015 41 81 85</a></li>
+          <li><a href="mailto:info@unwined.be">info@unwined.be</a></li>
         </ul>
       </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Contact</p>
-        <ul class="space-y-2 text-sm text-cream/60 font-300">
-          <li>Steenweg 22</li>
-          <li>2800 Mechelen</li>
-          <li><a href="tel:+3215418185" class="hover:text-goldlt">015 41 81 85</a></li>
-          <li><a href="mailto:info@unwined.be" class="hover:text-goldlt">info@unwined.be</a></li>
+      <div class="footer-col">
+        <div class="footer-col-title">Openingsuren</div>
+        <ul>
+          <li>Di &ndash; Do: 16:00 &ndash; 22:00</li>
+          <li>Vr &ndash; Za: 14:00 &ndash; 23:00</li>
+          <li>Zo: 14:00 &ndash; 20:00</li>
         </ul>
       </div>
     </div>
-    <div class="border-t border-cream/10">
-      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/45">
-        <p>© 2026 Unwined. Concept-redesign.</p>
-        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website, wijnwebshop &amp; reservaties.</p>
-      </div>
-    </div>
-  </footer>
+  </div>
 
-  <!-- Scripts -->
-  <script>
-    // Fade-up IntersectionObserver
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
-    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
-    } else {
-      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2025 Unwined, Mechelen. Alle rechten voorbehouden.</span>
+    <span class="footer-note">Website concept door Saspire</span>
+  </div>
+</footer>
+
+
+<!-- ══════════════════════════════════════════════
+     SCRIPTS — inline, no external deps
+══════════════════════════════════════════════ -->
+<script>
+/* ── Headroom nav ─────────────────────────────────────────────── */
+(function () {
+  var nav     = document.getElementById('mainNav');
+  var TOL_DOWN = 8;
+  var TOL_UP   = 5;
+  var OFFSET   = 80;
+  var lastY    = 0;
+  var ticking  = false;
+  var hidden   = false;
+  var scrolled = false;
+
+  function update(y) {
+    var delta = y - lastY;
+
+    if (y > OFFSET && !scrolled) {
+      nav.classList.add('scrolled');
+      scrolled = true;
+    } else if (y <= OFFSET && scrolled) {
+      nav.classList.remove('scrolled');
+      scrolled = false;
     }
 
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (menuBtn && mobileMenu) {
-      const setOpen = (open) => {
-        if (open) mobileMenu.removeAttribute('hidden');
-        else mobileMenu.setAttribute('hidden', '');
-        menuBtn.setAttribute('aria-expanded', String(open));
-        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
-      };
-      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
-      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+    if (y <= OFFSET) {
+      if (hidden) { nav.classList.remove('hidden'); hidden = false; }
+    } else if (delta > TOL_DOWN && !hidden) {
+      nav.classList.add('hidden');
+      hidden = true;
+    } else if (delta < -TOL_UP && hidden) {
+      nav.classList.remove('hidden');
+      hidden = false;
     }
-  </script>
+
+    lastY   = y;
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function () {
+    if (!ticking) {
+      requestAnimationFrame(function () { update(window.scrollY); });
+      ticking = true;
+    }
+  }, { passive: true });
+}());
+
+/* ── IntersectionObserver fade-up ────────────────────────────── */
+(function () {
+  var els = document.querySelectorAll('.fade-up');
+  if (!('IntersectionObserver' in window)) {
+    for (var i = 0; i < els.length; i++) { els[i].classList.add('visible'); }
+    return;
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.10, rootMargin: '0px 0px -40px 0px' });
+  for (var j = 0; j < els.length; j++) { io.observe(els[j]); }
+}());
+
+/* ── Dynamic today's hours ───────────────────────────────────── */
+(function () {
+  var el = document.getElementById('todayHours');
+  if (!el) return;
+  var day = new Date().getDay();
+  var map = {
+    0: '14:00 – 20:00',
+    1: 'Vandaag gesloten',
+    2: '16:00 – 22:00',
+    3: '16:00 – 22:00',
+    4: '16:00 – 22:00',
+    5: '14:00 – 23:00',
+    6: '14:00 – 23:00'
+  };
+  el.textContent = map[day] || '—';
+  if (day === 1) el.style.color = 'var(--text-faint)';
+}());
+</script>
+
 </body>
 </html>

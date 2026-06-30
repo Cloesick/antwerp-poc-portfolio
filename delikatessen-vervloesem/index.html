@@ -1,659 +1,1242 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta name="robots" content="noindex, nofollow" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Delikatessen Vervloesem — Charcuterie, kaas &amp; traiteur in Mortsel</title>
-  <meta name="description" content="Ambachtelijke delicatessen in Mortsel: fijne charcuterie, kaas en dagverse bereide gerechten. Nu ook online bestellen met click-and-collect, traiteur- &amp; buffetaanvragen en giftable cadeaupakketten." />
-  <link rel="canonical" href="https://delikatessenvervloesem.be/" />
-  <meta name="theme-color" content="#6b1f2a" />
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Delikatessen Vervloesem" />
-  <meta property="og:locale" content="nl_BE" />
-  <meta property="og:title" content="Delikatessen Vervloesem — Charcuterie, kaas &amp; traiteur in Mortsel" />
-  <meta property="og:description" content="Fijne charcuterie, kaas en dagverse bereide gerechten in Mortsel. Online bestellen, traiteur- &amp; buffetaanvragen en giftable cadeaupakketten." />
-  <meta property="og:url" content="https://delikatessenvervloesem.be/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=1200&q=80" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- Inline SVG favicon — monogram "DV" -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%236b1f2a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%23e9c46a' text-anchor='middle'%3EDV%3C/text%3E%3C/svg%3E" />
-  <!-- Local-SEO structured data -->
+  <meta name="description" content="Delikatessen Vervloesem — Uw vertrouwde charcuterie, kaas en traiteur in Mortsel. Ambachtelijke kwaliteit, vers bereid, voor feest en dagelijks genot." />
+  <meta name="theme-color" content="#0d0f11" />
+  <title>Delikatessen Vervloesem — Charcuterie &amp; Traiteur Mortsel</title>
+
+  <!-- Inline SVG favicon via data URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230d0f11'/%3E%3Cpath d='M6 22 Q16 10 26 22' stroke='%23f3ede0' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Cellipse cx='16' cy='21' rx='6' ry='3' fill='%233a5a7a' opacity='0.8'/%3E%3Ccircle cx='11' cy='19' r='2' fill='%23f3ede0' opacity='0.6'/%3E%3Ccircle cx='21' cy='19' r='2.5' fill='%23f3ede0' opacity='0.5'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts non-blocking preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=DM+Sans:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" /></noscript>
+
+  <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["Store", "FoodEstablishment"],
+    "@type": "LocalBusiness",
     "name": "Delikatessen Vervloesem",
-    "description": "Ambachtelijke delicatessen-, charcuterie-, kaas- en traiteurzaak in Mortsel. Fijne charcuterie, kaas, bereide gerechten en giftable cadeaupakketten.",
-    "image": "https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=1200&q=80",
-    "url": "https://delikatessenvervloesem.be/",
+    "description": "Ambachtelijke charcuterie, kaas, salade-bar en traiteur schotels in Mortsel. Verse bereiding, seizoensgebonden specialiteiten en feestmanden op maat.",
     "telephone": "+3234406262",
     "email": "debelder.willy@gmail.com",
-    "servesCuisine": ["Belgian", "Delicatessen"],
-    "priceRange": "€€",
-    "areaServed": "BE",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Statielei 60",
-      "postalCode": "2640",
       "addressLocality": "Mortsel",
-      "addressRegion": "Antwerpen",
       "addressCountry": "BE"
     },
-    "geo": { "@type": "GeoCoordinates", "latitude": 51.1690, "longitude": 4.4615 },
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "08:30", "closes": "18:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "08:30", "closes": "12:30" }
-    ]
+    "servesCuisine": ["Charcuterie", "Kaas", "Traiteur"],
+    "priceRange": "€€"
   }
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
-          colors: {
-            wine:     '#6b1f2a',
-            winelt:   '#7a2230',
-            winedk:   '#511620',
-            gold:     '#b8893a',
-            goldlt:   '#e9c46a',
-            cream:    '#f6efe4',
-            parchment:'#ece0cc',
-            charcoal: '#2b2422',
-          },
-        },
-      },
-    };
-  </script>
+
   <style>
-    html { scroll-behavior: smooth; }
-    .hero-grad { background: linear-gradient(180deg, rgba(81,22,32,.18) 0%, rgba(81,22,32,.52) 50%, rgba(81,22,32,.92) 100%); }
-    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
-    .fade-up.in { opacity: 1; transform: none; }
-    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
-    .ug:hover { background-size: 100% 2px; }
+    /* ========================================
+       DESIGN TOKENS
+       ======================================== */
+    :root {
+      --bg:         #0d0f11;
+      --surface:    #131619;
+      --surface-2:  #1a1e23;
+      --accent:     #3a5a7a;
+      --accent-mid: #4a6e8f;
+      --cream:      #f3ede0;
+      --cream-80:   rgba(243,237,224,0.80);
+      --cream-55:   rgba(243,237,224,0.55);
+      --cream-30:   rgba(243,237,224,0.30);
+      --cream-12:   rgba(243,237,224,0.12);
+      --cream-06:   rgba(243,237,224,0.06);
+      --serif:      'Playfair Display', Georgia, serif;
+      --sans:       'DM Sans', system-ui, sans-serif;
+      --r-sm:       4px;
+      --r-md:       8px;
+      --r-lg:       14px;
+      --ease:       0.28s cubic-bezier(.4,0,.2,1);
+    }
+
+    /* ========================================
+       RESET & BASE
+       ======================================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--cream-80);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+    /* ========================================
+       HEADROOM NAV
+       ======================================== */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      padding: 0 clamp(1.25rem, 5vw, 3rem);
+      transition: transform 0.32s cubic-bezier(.4,0,.2,1),
+                  background 0.32s ease,
+                  box-shadow 0.32s ease;
+      background: transparent;
+    }
+    .nav.headroom--pinned   { transform: translateY(0); }
+    .nav.headroom--unpinned { transform: translateY(-100%); }
+    .nav.nav--scrolled {
+      background: rgba(13,15,17,0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 1px 0 var(--cream-12);
+    }
+    .nav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .nav__brand { display: flex; flex-direction: column; gap: 1px; line-height: 1; }
+    .nav__brand-name {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--cream);
+      letter-spacing: 0.04em;
+    }
+    .nav__brand-sub {
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--cream-55);
+    }
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: clamp(1.25rem, 2.5vw, 2.25rem);
+      list-style: none;
+    }
+    .nav__links a {
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--cream-55);
+      transition: color var(--ease);
+    }
+    .nav__links a:hover { color: var(--cream); }
+    .nav__cta {
+      padding: 0.5rem 1.1rem;
+      border: 1px solid var(--cream-30);
+      border-radius: var(--r-sm);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--cream-80);
+      transition: background var(--ease), border-color var(--ease), color var(--ease);
+    }
+    .nav__cta:hover {
+      background: var(--cream-06);
+      border-color: var(--cream-55);
+      color: var(--cream);
+    }
+
+    /* ========================================
+       FADE-UP OBSERVER
+       ======================================== */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s cubic-bezier(.4,0,.2,1),
+                  transform 0.65s cubic-bezier(.4,0,.2,1);
+    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .fade-up.d1 { transition-delay: 0.12s; }
+    .fade-up.d2 { transition-delay: 0.24s; }
+    .fade-up.d3 { transition-delay: 0.36s; }
+    .fade-up.d4 { transition-delay: 0.48s; }
+
+    /* ========================================
+       LAYOUT HELPERS
+       ======================================== */
+    .section {
+      padding: clamp(4rem, 8vw, 7.5rem) clamp(1.25rem, 5vw, 3rem);
+    }
+    .container { max-width: 1280px; margin: 0 auto; }
+    .section-label {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent-mid);
+      margin-bottom: 1.25rem;
+    }
+
+    /* ========================================
+       BUTTONS
+       ======================================== */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.8rem 1.8rem;
+      background: var(--accent);
+      color: var(--cream);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      border-radius: var(--r-sm);
+      transition: background var(--ease), transform var(--ease);
+    }
+    .btn-primary:hover { background: var(--accent-mid); transform: translateY(-1px); }
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--cream-80);
+      letter-spacing: 0.04em;
+      border-bottom: 1px solid var(--cream-30);
+      padding-bottom: 2px;
+      transition: color var(--ease), border-color var(--ease);
+    }
+    .btn-ghost:hover { color: var(--cream); border-color: var(--cream-80); }
+
+    /* ========================================
+       HERO — centered low over canvas
+       ======================================== */
+    .hero {
+      position: relative;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+    }
+    .hero__canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .hero__canvas svg { width: 100%; height: 100%; }
+    .hero__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(13,15,17,0.98) 0%,
+        rgba(13,15,17,0.72) 38%,
+        rgba(13,15,17,0.28) 68%,
+        rgba(13,15,17,0.10) 100%
+      );
+    }
+    .hero__ghost {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: clamp(3.5rem, 12vw, 13rem);
+      white-space: nowrap;
+      -webkit-text-stroke: 1px rgba(58,90,122,0.22);
+      color: transparent;
+      letter-spacing: 0.08em;
+      user-select: none;
+      pointer-events: none;
+      line-height: 1;
+    }
+    .hero__content {
+      position: relative;
+      z-index: 2;
+      padding: 0 clamp(1.25rem, 5vw, 3rem) clamp(3.5rem, 7vw, 6rem);
+      max-width: 1280px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .hero__tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent-mid);
+      margin-bottom: 1.4rem;
+    }
+    .hero__tag::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--accent-mid);
+    }
+    .hero__headline {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: clamp(2.4rem, 5.5vw, 5.2rem);
+      line-height: 1.12;
+      color: var(--cream);
+      max-width: 820px;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.5rem;
+    }
+    .hero__sub {
+      font-size: clamp(0.95rem, 1.4vw, 1.12rem);
+      color: var(--cream-80);
+      max-width: 520px;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
+    .hero__actions {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+    }
+
+    /* ========================================
+       AMBACHT — right-img / left-text (inverted classic)
+       ======================================== */
+    .ambacht {
+      background: var(--surface);
+      border-top: 1px solid var(--cream-06);
+      border-bottom: 1px solid var(--cream-06);
+    }
+    .ambacht__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2.5rem, 5vw, 5rem);
+      align-items: center;
+    }
+    .ambacht__visual {
+      position: relative;
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: var(--surface-2);
+      order: 2;
+    }
+    .ambacht__visual svg { width: 100%; height: 100%; }
+    .ambacht__visual::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 1px solid var(--cream-12);
+      border-radius: var(--r-lg);
+      pointer-events: none;
+    }
+    .ambacht__text { order: 1; }
+    .ambacht__headline {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: clamp(1.8rem, 3vw, 2.8rem);
+      line-height: 1.18;
+      color: var(--cream);
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.01em;
+    }
+    .ambacht__body {
+      font-size: clamp(0.92rem, 1.2vw, 1.02rem);
+      color: var(--cream-80);
+      line-height: 1.75;
+      margin-bottom: 1.25rem;
+    }
+    .ambacht__pillars { display: flex; flex-direction: column; gap: 0.75rem; margin-top: 2rem; }
+    .ambacht__pillar { display: flex; align-items: flex-start; gap: 0.75rem; }
+    .ambacht__dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent-mid);
+      margin-top: 0.5rem;
+      flex-shrink: 0;
+    }
+    .ambacht__pillar-text { font-size: 0.9rem; color: var(--cream-80); line-height: 1.55; }
+
+    /* ========================================
+       AANBOD — 2×2 cards, dark bg
+       ======================================== */
+    .aanbod { background: var(--bg); }
+    .aanbod__header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 3.5rem;
+    }
+    .aanbod__headline {
+      font-family: var(--serif);
+      font-size: clamp(1.9rem, 3.2vw, 3rem);
+      font-weight: 600;
+      color: var(--cream);
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.85rem;
+    }
+    .aanbod__sub { font-size: 0.95rem; color: var(--cream-55); line-height: 1.7; }
+    .aanbod__wrap { position: relative; }
+    /* Second-read moment: oversized ghost numeral */
+    .editorial-numeral {
+      position: absolute;
+      bottom: -0.10em; right: -0.04em;
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: clamp(5rem, 11vw, 11rem);
+      -webkit-text-stroke: 1px var(--cream-12);
+      color: transparent;
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+    }
+    .aanbod__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.25rem;
+    }
+    .product-card {
+      background: var(--surface);
+      border: 1px solid var(--cream-06);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      transition: border-color var(--ease), transform var(--ease);
+    }
+    .product-card:hover { border-color: var(--cream-30); transform: translateY(-3px); }
+    .product-card__visual {
+      aspect-ratio: 16/9;
+      background: var(--surface-2);
+      overflow: hidden;
+    }
+    .product-card__visual svg { width: 100%; height: 100%; }
+    .product-card__body { padding: 1.5rem 1.75rem 1.75rem; }
+    .product-card__icon { font-size: 1.5rem; margin-bottom: 0.85rem; display: block; }
+    .product-card__title {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: 1.22rem;
+      color: var(--cream);
+      margin-bottom: 0.55rem;
+      line-height: 1.25;
+    }
+    .product-card__desc { font-size: 0.87rem; color: var(--cream-55); line-height: 1.65; }
+
+    /* ========================================
+       FEESTMANDEN — stacked left, portrait visual right
+       ======================================== */
+    .feestmanden {
+      background: var(--surface);
+      border-top: 1px solid var(--cream-06);
+      position: relative;
+      overflow: hidden;
+    }
+    .feestmanden::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -120px;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(58,90,122,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .feestmanden__inner {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: clamp(2.5rem, 5vw, 5rem);
+      align-items: center;
+    }
+    .feestmanden__headline {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: clamp(1.9rem, 3vw, 2.9rem);
+      color: var(--cream);
+      line-height: 1.18;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.25rem;
+    }
+    .feestmanden__body {
+      font-size: 0.96rem;
+      color: var(--cream-80);
+      line-height: 1.75;
+      margin-bottom: 2rem;
+    }
+    .feestmanden__features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .feestmanden__feat {
+      background: var(--surface-2);
+      border: 1px solid var(--cream-06);
+      border-radius: var(--r-md);
+      padding: 1rem 1.1rem;
+    }
+    .feestmanden__feat-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent-mid);
+      margin-bottom: 0.3rem;
+    }
+    .feestmanden__feat-value { font-size: 0.9rem; color: var(--cream-80); line-height: 1.45; }
+    .feestmanden__visual {
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      background: var(--surface-2);
+      position: relative;
+    }
+    .feestmanden__visual svg { width: 100%; height: 100%; }
+    .feestmanden__visual::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border: 1px solid var(--cream-12);
+      border-radius: var(--r-lg);
+      pointer-events: none;
+    }
+
+    /* ========================================
+       PITCH HOOK — mini centred
+       ======================================== */
+    .pitch {
+      background: var(--bg);
+      border-top: 1px solid var(--cream-06);
+      border-bottom: 1px solid var(--cream-06);
+      text-align: center;
+    }
+    .pitch__headline {
+      font-family: var(--serif);
+      font-style: italic;
+      font-weight: 400;
+      font-size: clamp(1.5rem, 3vw, 2.6rem);
+      color: var(--cream-80);
+      max-width: 820px;
+      margin: 0 auto 0.75rem;
+      line-height: 1.35;
+    }
+    .pitch__strong { font-style: normal; font-weight: 600; color: var(--cream); }
+    .pitch__sub {
+      font-size: 0.92rem;
+      color: var(--cream-55);
+      max-width: 520px;
+      margin: 0 auto 2.25rem;
+      line-height: 1.7;
+    }
+
+    /* ========================================
+       BEZOEK / CONTACT
+       ======================================== */
+    .bezoek {
+      background: var(--surface);
+      border-top: 1px solid var(--cream-06);
+    }
+    .bezoek__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2.5rem, 5vw, 5rem);
+      align-items: start;
+    }
+    .bezoek__headline {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: clamp(1.9rem, 3vw, 2.9rem);
+      color: var(--cream);
+      line-height: 1.18;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.01em;
+    }
+    .bezoek__body {
+      font-size: 0.95rem;
+      color: var(--cream-80);
+      line-height: 1.75;
+      margin-bottom: 2.25rem;
+    }
+    .contact-block { display: flex; flex-direction: column; gap: 0.85rem; }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 0.9rem 1.1rem;
+      background: var(--surface-2);
+      border: 1px solid var(--cream-06);
+      border-radius: var(--r-md);
+      transition: border-color var(--ease);
+    }
+    .contact-item:hover { border-color: var(--cream-30); }
+    .contact-item__icon {
+      width: 36px; height: 36px;
+      border-radius: var(--r-sm);
+      background: rgba(58,90,122,0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-item__icon svg {
+      width: 16px; height: 16px;
+      stroke: var(--accent-mid);
+      fill: none;
+      stroke-width: 1.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .contact-item__label {
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--cream-55);
+      display: block;
+      margin-bottom: 1px;
+    }
+    .contact-item__value { font-size: 0.95rem; color: var(--cream); font-weight: 500; }
+    .bezoek__map {
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: var(--surface-2);
+      border: 1px solid var(--cream-12);
+    }
+    .bezoek__map svg { width: 100%; height: 100%; }
+
+    /* ========================================
+       FOOTER
+       ======================================== */
+    .footer {
+      background: var(--bg);
+      border-top: 1px solid var(--cream-06);
+      padding: clamp(2rem, 4vw, 3rem) clamp(1.25rem, 5vw, 3rem);
+    }
+    .footer__inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer__brand { font-family: var(--serif); font-weight: 600; font-size: 1rem; color: var(--cream-80); }
+    .footer__meta { font-size: 0.78rem; color: var(--cream-30); }
+    .footer__email { font-size: 0.82rem; color: var(--cream-55); transition: color var(--ease); }
+    .footer__email:hover { color: var(--cream-80); }
+
+    /* ========================================
+       RESPONSIVE
+       ======================================== */
+    @media (max-width: 860px) {
+      .nav__links { display: none; }
+      .ambacht__grid,
+      .feestmanden__inner,
+      .bezoek__grid { grid-template-columns: 1fr; }
+      .ambacht__visual { order: 0; }
+      .ambacht__text { order: 1; }
+      .aanbod__grid { grid-template-columns: 1fr; }
+      .feestmanden__visual { aspect-ratio: 16/10; }
+      .bezoek__map { aspect-ratio: 16/9; }
+    }
+    @media (max-width: 560px) {
+      .feestmanden__features { grid-template-columns: 1fr; }
+      .hero__ghost { font-size: clamp(2.8rem, 18vw, 5.5rem); }
+    }
   </style>
 </head>
-<body class="bg-cream text-wine font-sans antialiased selection:bg-gold/25">
+<body>
 
-  <!-- Skip link -->
-  <a href="#bestellen" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-wine focus:text-cream focus:rounded-full">Naar online bestellen</a>
-
-  <!-- Announcement bar -->
-  <div class="bg-wine text-cream text-center text-[13px] tracking-wide py-2 px-4">
-    <span aria-hidden="true">🧀</span> <span class="font-semibold">Nieuw:</span> online bestellen &amp; click-and-collect — plus traiteur- &amp; buffetaanvragen · Statielei 60, Mortsel.
+<!-- ========== NAV ========== -->
+<nav class="nav headroom--pinned" id="nav" role="navigation" aria-label="Hoofdnavigatie">
+  <div class="nav__inner">
+    <a href="#" class="nav__brand" aria-label="Delikatessen Vervloesem — beginpagina">
+      <span class="nav__brand-name">Vervloesem</span>
+      <span class="nav__brand-sub">Delikatessen &amp; Traiteur</span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="#ambacht">Ambacht</a></li>
+      <li><a href="#aanbod">Aanbod</a></li>
+      <li><a href="#feestmanden">Feestmanden</a></li>
+      <li><a href="#bezoek">Contact</a></li>
+    </ul>
+    <a href="tel:+3234406262" class="nav__cta">Bel ons</a>
   </div>
+</nav>
 
-  <!-- Sticky nav -->
-  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-wine/10">
-    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
-      <!-- Logo -->
-      <a href="#top" class="flex items-baseline gap-2">
-        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-wine">Vervloesem<span class="text-gold">·</span></span>
-        <span class="text-[11px] uppercase tracking-[0.22em] text-wine/50 font-600">Delikatessen · Mortsel</span>
+<!-- ========== HERO — centered low, dark atmospheric ========== -->
+<section class="hero" aria-label="Welkomst" id="hero">
+  <div class="hero__canvas" aria-hidden="true">
+    <svg viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="bgG" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#0d0f11"/>
+          <stop offset="100%" stop-color="#111418"/>
+        </linearGradient>
+        <linearGradient id="marbleG" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#2a2e35"/>
+          <stop offset="100%" stop-color="#1e2228"/>
+        </linearGradient>
+        <linearGradient id="domeG" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="rgba(200,195,185,0.11)"/>
+          <stop offset="100%" stop-color="rgba(200,195,185,0.03)"/>
+        </linearGradient>
+        <radialGradient id="ambLight" cx="50%" cy="25%" r="58%">
+          <stop offset="0%" stop-color="rgba(58,90,122,0.14)"/>
+          <stop offset="100%" stop-color="transparent"/>
+        </radialGradient>
+        <filter id="glow"><feGaussianBlur stdDeviation="2.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <!-- Background -->
+      <rect width="1440" height="900" fill="url(#bgG)"/>
+      <rect width="1440" height="900" fill="url(#ambLight)"/>
+      <!-- Subtle grid -->
+      <g stroke="rgba(243,237,224,0.025)" stroke-width="1">
+        <line x1="0" y1="180" x2="1440" y2="180"/>
+        <line x1="0" y1="360" x2="1440" y2="360"/>
+        <line x1="0" y1="540" x2="1440" y2="540"/>
+        <line x1="288" y1="0" x2="288" y2="900"/>
+        <line x1="576" y1="0" x2="576" y2="900"/>
+        <line x1="864" y1="0" x2="864" y2="900"/>
+        <line x1="1152" y1="0" x2="1152" y2="900"/>
+      </g>
+      <!-- Marble counter -->
+      <rect x="180" y="555" width="1080" height="155" rx="6" fill="url(#marbleG)" opacity="0.88"/>
+      <path d="M200 575 Q380 558 540 580 Q680 598 820 562 Q970 524 1130 572 Q1210 582 1260 568" stroke="rgba(243,237,224,0.055)" stroke-width="1.5" fill="none"/>
+      <path d="M250 615 Q440 598 610 620 Q750 636 900 604 Q1040 574 1200 618" stroke="rgba(243,237,224,0.038)" stroke-width="1" fill="none"/>
+      <rect x="180" y="705" width="1080" height="7" rx="2" fill="rgba(243,237,224,0.055)"/>
+      <rect x="180" y="555" width="1080" height="3" rx="1" fill="rgba(243,237,224,0.09)"/>
+      <!-- Cheese dome (center-left) -->
+      <g transform="translate(320,395)">
+        <ellipse cx="148" cy="162" rx="152" ry="17" fill="rgba(243,237,224,0.065)"/>
+        <path d="M0 162 Q0 10 148 0 Q296 10 296 162 Z" fill="url(#domeG)" stroke="rgba(243,237,224,0.13)" stroke-width="1"/>
+        <circle cx="148" cy="7" r="10" fill="rgba(243,237,224,0.09)" stroke="rgba(243,237,224,0.16)" stroke-width="1.5"/>
+        <rect x="144" y="0" width="8" height="16" fill="rgba(243,237,224,0.07)"/>
+        <!-- Cheese inside -->
+        <ellipse cx="148" cy="162" rx="118" ry="14" fill="rgba(190,148,68,0.22)"/>
+        <rect x="62" y="108" width="172" height="54" rx="3" fill="rgba(182,138,60,0.20)"/>
+        <circle cx="96" cy="127" r="5" fill="rgba(243,237,224,0.055)"/>
+        <circle cx="138" cy="119" r="4" fill="rgba(243,237,224,0.048)"/>
+        <circle cx="175" cy="130" r="6" fill="rgba(243,237,224,0.052)"/>
+        <text x="148" y="142" text-anchor="middle" font-family="Georgia,serif" font-size="9" fill="rgba(243,237,224,0.30)" letter-spacing="3">COMTÉ</text>
+      </g>
+      <!-- Charcuterie board (right) -->
+      <g transform="translate(840,445)">
+        <rect x="0" y="50" width="330" height="185" rx="12" fill="rgba(115,75,35,0.18)" stroke="rgba(175,125,75,0.18)" stroke-width="1"/>
+        <line x1="22" y1="60" x2="18" y2="228" stroke="rgba(175,125,75,0.075)" stroke-width="1"/>
+        <line x1="68" y1="56" x2="66" y2="232" stroke="rgba(175,125,75,0.06)" stroke-width="1"/>
+        <line x1="128" y1="54" x2="128" y2="234" stroke="rgba(175,125,75,0.055)" stroke-width="1"/>
+        <line x1="198" y1="54" x2="200" y2="234" stroke="rgba(175,125,75,0.055)" stroke-width="1"/>
+        <line x1="262" y1="56" x2="264" y2="232" stroke="rgba(175,125,75,0.06)" stroke-width="1"/>
+        <line x1="308" y1="60" x2="312" y2="228" stroke="rgba(175,125,75,0.07)" stroke-width="1"/>
+        <rect x="308" y="132" width="55" height="30" rx="15" fill="rgba(115,75,35,0.20)" stroke="rgba(175,125,75,0.16)" stroke-width="1"/>
+        <!-- Charcuterie slices -->
+        <ellipse cx="82" cy="158" rx="42" ry="30" fill="rgba(155,55,38,0.36)" stroke="rgba(175,72,48,0.22)" stroke-width="1"/>
+        <ellipse cx="82" cy="163" rx="42" ry="30" fill="rgba(152,52,35,0.30)"/>
+        <ellipse cx="82" cy="168" rx="42" ry="30" fill="rgba(148,48,32,0.26)"/>
+        <path d="M54 152 Q68 145 82 152 Q94 158 106 152" stroke="rgba(243,237,224,0.17)" stroke-width="1" fill="none"/>
+        <path d="M56 162 Q72 155 88 163 Q98 168 112 162" stroke="rgba(243,237,224,0.12)" stroke-width="0.8" fill="none"/>
+        <!-- Cheese triangle -->
+        <polygon points="185,98 238,98 222,168" fill="rgba(195,158,76,0.28)" stroke="rgba(215,172,86,0.22)" stroke-width="1"/>
+        <!-- Herbs -->
+        <circle cx="158" cy="180" r="3" fill="rgba(75,118,58,0.52)"/>
+        <circle cx="167" cy="186" r="2" fill="rgba(75,118,58,0.46)"/>
+        <circle cx="150" cy="188" r="2.5" fill="rgba(75,118,58,0.42)"/>
+        <circle cx="175" cy="175" r="2" fill="rgba(75,118,58,0.50)"/>
+        <!-- Knife -->
+        <path d="M250 92 L248 178" stroke="rgba(243,237,224,0.16)" stroke-width="2" stroke-linecap="round"/>
+        <rect x="244" y="175" width="10" height="8" rx="2" fill="rgba(175,125,75,0.22)"/>
+      </g>
+      <!-- Cornichon bowl (far left accent) -->
+      <g transform="translate(115,498)">
+        <ellipse cx="80" cy="62" rx="76" ry="30" fill="rgba(58,90,122,0.16)" stroke="rgba(58,90,122,0.20)" stroke-width="1.5"/>
+        <circle cx="52" cy="54" r="8" fill="rgba(58,105,55,0.52)"/>
+        <circle cx="72" cy="47" r="6" fill="rgba(58,105,55,0.47)"/>
+        <circle cx="94" cy="55" r="7" fill="rgba(58,105,55,0.45)"/>
+        <circle cx="112" cy="49" r="5" fill="rgba(58,105,55,0.50)"/>
+      </g>
+      <!-- Editorial vertical rails -->
+      <line x1="178" y1="70" x2="178" y2="900" stroke="rgba(243,237,224,0.038)" stroke-width="1"/>
+      <line x1="1262" y1="70" x2="1262" y2="900" stroke="rgba(243,237,224,0.038)" stroke-width="1"/>
+      <!-- Top nav tint -->
+      <rect x="0" y="0" width="1440" height="80" fill="rgba(13,15,17,0.38)"/>
+      <rect x="0" y="79" width="1440" height="1" fill="rgba(243,237,224,0.045)"/>
+    </svg>
+  </div>
+  <div class="hero__overlay" aria-hidden="true"></div>
+  <span class="hero__ghost" aria-hidden="true">VERVLOESEM</span>
+  <div class="hero__content">
+    <div class="hero__tag fade-up">Mortsel, Antwerpen</div>
+    <h1 class="hero__headline fade-up d1">
+      Uw vertrouwde<br>delikatessen<br>in Mortsel.
+    </h1>
+    <p class="hero__sub fade-up d2">
+      Charcuterie met karakter. Kaas uit eigen selectie.<br>
+      De traiteur die u kent — al jaren de vaste stek van uw buurt.
+    </p>
+    <div class="hero__actions fade-up d3">
+      <a href="#feestmanden" class="btn-primary">
+        Bestel uw feestmand
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h8M7.5 3.5l4 3.5-4 3.5"/></svg>
       </a>
-      <!-- Desktop links -->
-      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
-        <a href="#bestellen" class="ug">Online bestellen</a>
-        <a href="#assortiment" class="ug">Assortiment</a>
-        <a href="#traiteur" class="ug">Traiteur &amp; buffet</a>
-        <a href="#bezoek" class="ug">Bezoek ons</a>
-      </div>
-      <!-- CTA + hamburger -->
-      <div class="flex items-center gap-2">
-        <a href="#bestellen" class="inline-flex items-center gap-2 bg-gold text-winedk text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-goldlt transition">
-          Bestel &amp; afhalen
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
-          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-wine/15 text-wine hover:bg-wine/5 transition">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </nav>
-    <!-- Mobile menu -->
-    <div id="mobile-menu" hidden class="md:hidden border-t border-wine/10 bg-cream/95 backdrop-blur">
-      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
-        <a href="#bestellen" class="py-3 border-b border-wine/8">Online bestellen</a>
-        <a href="#assortiment" class="py-3 border-b border-wine/8">Assortiment</a>
-        <a href="#traiteur" class="py-3 border-b border-wine/8">Traiteur &amp; buffet</a>
-        <a href="#bezoek" class="py-3">Bezoek ons</a>
-      </div>
+      <a href="tel:+3234406262" class="btn-ghost">Bel: 03 440 62 62</a>
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- Hero -->
-  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-wine">
-    <img
-      src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=2000&q=80"
-      alt="Ambachtelijke charcuterie en kaas bij Delikatessen Vervloesem Mortsel"
-      fetchpriority="high"
-      class="absolute inset-0 w-full h-full object-cover"
-    />
-    <div class="absolute inset-0 hero-grad"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
-      <p class="text-goldlt font-600 tracking-[0.3em] uppercase text-xs mb-5">
-        <span aria-hidden="true">🧀</span> Charcuterie · Kaas · Traiteur · Mortsel
-      </p>
-      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
-        Ambachtelijke delicatessen,<br />nu ook online.
-      </h1>
-      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
-        Fijne charcuterie, een rijk kaasassortiment en dagverse bereide gerechten —
-        al jaren een vast adres op de Statielei in Mortsel. Bestel online, vraag een buffet aan
-        of geef een cadeaupakket.
-      </p>
-      <div class="flex flex-wrap gap-3 mt-9">
-        <a href="#bestellen" class="bg-gold text-winedk font-700 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
-          Bestel en haal af
-        </a>
-        <a href="#traiteur" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
-          Traiteur &amp; buffet aanvragen
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- USP strip -->
-  <section class="bg-wine text-cream/90">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
-      <div><p class="font-serif text-2xl text-goldlt">Ambacht</p><p class="mt-1 text-cream/65">Dagvers gesneden in de winkel</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Traiteur</p><p class="mt-1 text-cream/65">Bereide gerechten &amp; buffetten</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Cadeau</p><p class="mt-1 text-cream/65">Charcuterie- &amp; kaaspakketten</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Afhaal</p><p class="mt-1 text-cream/65">Online bestellen &amp; click-and-collect</p></div>
-    </div>
-  </section>
-
-  <!-- Online bestellen / click-and-collect -->
-  <section id="bestellen" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <div class="fade-up">
-        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Nieuw: online bestellen</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-wine">
-          Bestel online,<br />haal af in de winkel.
-        </h2>
-        <p class="text-charcoal/75 text-lg mt-5 leading-relaxed max-w-md">
-          Geen wachtrij, geen stress. Stel uw bestelling samen — fijne charcuterie, kaas,
-          bereide gerechten of een cadeaupakket — en haal af op een tijdstip dat u past
-          op Statielei 60.
-        </p>
-        <ul class="mt-7 space-y-3 text-charcoal">
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Bestelling vers klaargemaakt bij afhaling</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Schotels &amp; bereide gerechten op voorbestelling</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Betalen in de winkel (cash · Bancontact)</li>
-        </ul>
-        <a href="#traiteur" class="inline-flex items-center gap-2 mt-9 bg-wine text-cream font-600 px-7 py-3.5 rounded-full hover:bg-winelt transition">
-          Of vraag een traiteur-buffet aan
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
-      <div class="fade-up grid grid-cols-2 gap-4">
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment">
-          <img
-            src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=800&q=80"
-            alt="Fijne charcuterie schotel"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment mt-8">
-          <img
-            src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=800&q=80"
-            alt="Kaasplank assortiment"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
+<!-- ========== AMBACHT ========== -->
+<section class="section ambacht" id="ambacht" aria-labelledby="ambacht-h2">
+  <div class="container">
+    <div class="ambacht__grid">
+      <div class="ambacht__text">
+        <span class="section-label fade-up">Het Ambacht</span>
+        <h2 class="ambacht__headline fade-up d1" id="ambacht-h2">Met de hand gesneden.<br>Geen shortcuts.</h2>
+        <p class="ambacht__body fade-up d2">Bij Delikatessen Vervloesem snijden we nog met de hand. Elke portie charcuterie wordt op maat bereid, elke kaas met kennis geselecteerd. Geen voorverpakking, geen grote centrale keuken.</p>
+        <p class="ambacht__body fade-up d2">Wat u bij ons koopt, is bereid zoals het hoort — met aandacht voor het product en de mensen die het eten.</p>
+        <div class="ambacht__pillars fade-up d3">
+          <div class="ambacht__pillar"><span class="ambacht__dot"></span><span class="ambacht__pillar-text">Vers gesneden charcuterie van Belgische en Europese herkomst</span></div>
+          <div class="ambacht__pillar"><span class="ambacht__dot"></span><span class="ambacht__pillar-text">Kaasselectie op rijpheid en seizoen — niet op rotatie</span></div>
+          <div class="ambacht__pillar"><span class="ambacht__dot"></span><span class="ambacht__pillar-text">Huisgemaakte salades en traiteur bereid op bestelling</span></div>
+          <div class="ambacht__pillar"><span class="ambacht__dot"></span><span class="ambacht__pillar-text">Al jaren het vertrouwde adres van Mortsel en omgeving</span></div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Assortiment grid -->
-  <section id="assortiment" class="bg-parchment/55 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
-        <div>
-          <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
-          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-wine">Charcuterie, kaas &amp; traiteur</h2>
-        </div>
-        <p class="text-charcoal/65 max-w-sm">Fijne vleeswaren, een rijk kaasaanbod en dagverse bereide gerechten — alles ambachtelijk in de winkel.</p>
+      <!-- Craft illustration: knife + board -->
+      <div class="ambacht__visual fade-up d2" aria-hidden="true">
+        <svg viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg">
+          <rect width="560" height="420" fill="#131619"/>
+          <defs>
+            <radialGradient id="craftG" cx="50%" cy="38%" r="55%">
+              <stop offset="0%" stop-color="rgba(58,90,122,0.16)"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+            <linearGradient id="woodG" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="rgba(135,88,42,0.25)"/>
+              <stop offset="100%" stop-color="rgba(98,62,28,0.18)"/>
+            </linearGradient>
+          </defs>
+          <rect width="560" height="420" fill="url(#craftG)"/>
+          <!-- Cutting board -->
+          <rect x="78" y="162" width="404" height="212" rx="10" fill="url(#woodG)" stroke="rgba(178,128,78,0.17)" stroke-width="1"/>
+          <line x1="98" y1="170" x2="96" y2="368" stroke="rgba(178,128,78,0.065)" stroke-width="1"/>
+          <line x1="144" y1="166" x2="142" y2="372" stroke="rgba(178,128,78,0.052)" stroke-width="1"/>
+          <line x1="208" y1="163" x2="208" y2="374" stroke="rgba(178,128,78,0.058)" stroke-width="1"/>
+          <line x1="288" y1="163" x2="290" y2="374" stroke="rgba(178,128,78,0.050)" stroke-width="1"/>
+          <line x1="368" y1="166" x2="370" y2="372" stroke="rgba(178,128,78,0.055)" stroke-width="1"/>
+          <line x1="428" y1="170" x2="430" y2="368" stroke="rgba(178,128,78,0.065)" stroke-width="1"/>
+          <!-- Prosciutto fan -->
+          <ellipse cx="228" cy="272" rx="74" ry="46" fill="rgba(155,52,36,0.38)" transform="rotate(-8 228 272)"/>
+          <ellipse cx="233" cy="278" rx="74" ry="46" fill="rgba(152,49,34,0.33)" transform="rotate(-3 233 278)"/>
+          <ellipse cx="238" cy="284" rx="74" ry="46" fill="rgba(148,46,31,0.29)"/>
+          <path d="M196 260 Q228 251 260 261" stroke="rgba(243,237,224,0.20)" stroke-width="1.5" fill="none"/>
+          <path d="M190 273 Q228 264 266 275" stroke="rgba(243,237,224,0.14)" stroke-width="1" fill="none"/>
+          <path d="M196 286 Q228 278 260 288" stroke="rgba(243,237,224,0.10)" stroke-width="0.8" fill="none"/>
+          <!-- Cheese wedge -->
+          <polygon points="340,212 452,212 436,318" fill="rgba(205,164,82,0.32)" stroke="rgba(218,174,88,0.20)" stroke-width="1"/>
+          <line x1="340" y1="212" x2="436" y2="318" stroke="rgba(158,118,44,0.33)" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="390" cy="248" r="5" fill="rgba(243,237,224,0.07)"/>
+          <circle cx="408" cy="272" r="4" fill="rgba(243,237,224,0.065)"/>
+          <circle cx="372" cy="280" r="6" fill="rgba(243,237,224,0.060)"/>
+          <!-- Chef knife -->
+          <g transform="translate(88,94)" opacity="0.82">
+            <path d="M0 0 L346 0 L346 26 Q282 30 0 21 Z" fill="rgba(198,198,210,0.13)" stroke="rgba(243,237,224,0.18)" stroke-width="1"/>
+            <line x1="0" y1="21" x2="346" y2="26" stroke="rgba(243,237,224,0.27)" stroke-width="0.5"/>
+            <line x1="0" y1="0" x2="346" y2="0" stroke="rgba(243,237,224,0.16)" stroke-width="1.5"/>
+            <rect x="-70" y="-6" width="80" height="34" rx="8" fill="rgba(78,48,22,0.44)" stroke="rgba(178,128,78,0.20)" stroke-width="1"/>
+            <circle cx="-20" cy="11" r="3" fill="rgba(178,158,98,0.28)"/>
+            <circle cx="-38" cy="11" r="3" fill="rgba(178,158,98,0.26)"/>
+            <circle cx="-56" cy="11" r="3" fill="rgba(178,158,98,0.28)"/>
+          </g>
+          <!-- Garnish -->
+          <circle cx="388" cy="342" r="4" fill="rgba(68,118,58,0.54)"/>
+          <circle cx="400" cy="334" r="3" fill="rgba(68,118,58,0.48)"/>
+          <circle cx="375" cy="338" r="3.5" fill="rgba(68,118,58,0.46)"/>
+          <!-- Editorial side-rail text -->
+          <text x="34" y="290" font-family="Georgia,serif" font-size="9" fill="rgba(243,237,224,0.24)" letter-spacing="4" transform="rotate(-90 34 290)">AMBACHT</text>
+          <!-- Bottom highlight rail -->
+          <rect x="78" y="370" width="404" height="2" rx="1" fill="rgba(243,237,224,0.075)"/>
+        </svg>
       </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+    </div>
+  </div>
+</section>
+
+<!-- ========== AANBOD ========== -->
+<section class="section aanbod" id="aanbod" aria-labelledby="aanbod-h2">
+  <div class="container">
+    <div class="aanbod__header fade-up">
+      <span class="section-label">Ons Aanbod</span>
+      <h2 class="aanbod__headline" id="aanbod-h2">Vier specialiteiten,<br>één adres.</h2>
+      <p class="aanbod__sub">Charcuterie, kaas, salade-bar en traiteur — dagelijks vers, op maat van uw tafel.</p>
+    </div>
+    <div class="aanbod__wrap">
+      <span class="editorial-numeral" aria-hidden="true">4</span>
+      <div class="aanbod__grid">
         <!-- Charcuterie -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1542901031-ec5eeb518c5e?auto=format&fit=crop&w=800&q=80"
-            alt="Ambachtelijke charcuterie en vleeswaren"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Charcuterie</h3>
-            <p class="text-cream/75 text-sm mt-1">Fijne vleeswaren, hesp, salami &amp; paté — vers gesneden op maat.</p>
+        <article class="product-card fade-up d1">
+          <div class="product-card__visual" aria-hidden="true">
+            <svg viewBox="0 0 480 270" xmlns="http://www.w3.org/2000/svg">
+              <rect width="480" height="270" fill="#1a1e23"/>
+              <defs><radialGradient id="c1g" cx="30%" cy="50%" r="60%"><stop offset="0%" stop-color="rgba(155,52,36,0.20)"/><stop offset="100%" stop-color="transparent"/></radialGradient></defs>
+              <rect width="480" height="270" fill="url(#c1g)"/>
+              <circle cx="122" cy="135" r="72" fill="rgba(152,48,32,0.38)" stroke="rgba(175,68,48,0.18)" stroke-width="1.5"/>
+              <circle cx="122" cy="135" r="60" fill="rgba(146,44,28,0.33)"/>
+              <circle cx="102" cy="120" r="6" fill="rgba(243,237,224,0.11)"/>
+              <circle cx="138" cy="112" r="4" fill="rgba(243,237,224,0.09)"/>
+              <circle cx="148" cy="142" r="8" fill="rgba(243,237,224,0.09)"/>
+              <circle cx="110" cy="158" r="5" fill="rgba(243,237,224,0.08)"/>
+              <circle cx="88" cy="148" r="7" fill="rgba(243,237,224,0.07)"/>
+              <circle cx="122" cy="135" r="72" fill="none" stroke="rgba(195,78,52,0.16)" stroke-width="3"/>
+              <ellipse cx="300" cy="135" rx="102" ry="14" fill="rgba(152,48,32,0.28)" transform="rotate(-5 300 135)"/>
+              <ellipse cx="306" cy="146" rx="102" ry="14" fill="rgba(148,45,29,0.24)" transform="rotate(-5 306 146)"/>
+              <ellipse cx="312" cy="157" rx="102" ry="14" fill="rgba(144,42,26,0.21)" transform="rotate(-5 312 157)"/>
+              <text x="246" y="58" font-family="Georgia,serif" font-size="10" fill="rgba(243,237,224,0.22)" letter-spacing="4" text-anchor="middle">CHARCUTERIE</text>
+            </svg>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__icon" aria-hidden="true">🥩</span>
+            <h3 class="product-card__title">Charcuterie</h3>
+            <p class="product-card__desc">Salami, jambon, filet americain, pâté en seizoensspecialiteiten — vers gesneden op de gram. Van Belgische ambacht tot Italiaanse en Spaanse klassiekers.</p>
           </div>
         </article>
         <!-- Kaas -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80"
-            alt="Kaasassortiment delicatessen"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Kaas</h3>
-            <p class="text-cream/75 text-sm mt-1">Belgische &amp; buitenlandse kazen, hard en zacht — ook kaasschotels.</p>
+        <article class="product-card fade-up d2">
+          <div class="product-card__visual" aria-hidden="true">
+            <svg viewBox="0 0 480 270" xmlns="http://www.w3.org/2000/svg">
+              <rect width="480" height="270" fill="#1a1e23"/>
+              <defs><radialGradient id="c2g" cx="68%" cy="40%" r="60%"><stop offset="0%" stop-color="rgba(198,158,68,0.17)"/><stop offset="100%" stop-color="transparent"/></radialGradient></defs>
+              <rect width="480" height="270" fill="url(#c2g)"/>
+              <circle cx="198" cy="145" r="92" fill="rgba(196,162,72,0.23)" stroke="rgba(178,138,58,0.18)" stroke-width="1.5"/>
+              <circle cx="198" cy="145" r="82" fill="rgba(190,156,68,0.18)"/>
+              <circle cx="198" cy="145" r="92" fill="none" stroke="rgba(158,118,43,0.28)" stroke-width="6" stroke-dasharray="4 6"/>
+              <circle cx="174" cy="130" r="8" fill="rgba(243,237,224,0.065)"/>
+              <circle cx="212" cy="155" r="6" fill="rgba(243,237,224,0.058)"/>
+              <circle cx="186" cy="166" r="9" fill="rgba(243,237,224,0.055)"/>
+              <circle cx="228" cy="128" r="5" fill="rgba(243,237,224,0.048)"/>
+              <circle cx="194" cy="104" r="7" fill="rgba(243,237,224,0.058)"/>
+              <polygon points="342,78 432,128 382,218 312,198 292,118" fill="rgba(208,168,78,0.28)" stroke="rgba(218,178,83,0.16)" stroke-width="1"/>
+              <line x1="342" y1="78" x2="432" y2="128" stroke="rgba(158,118,43,0.33)" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="375" cy="155" r="5" fill="rgba(243,237,224,0.065)"/>
+              <circle cx="350" cy="175" r="4" fill="rgba(243,237,224,0.058)"/>
+              <text x="200" y="200" font-family="Georgia,serif" font-size="9" fill="rgba(243,237,224,0.20)" letter-spacing="4" text-anchor="middle">KAASSELECTIE</text>
+            </svg>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__icon" aria-hidden="true">🧀</span>
+            <h3 class="product-card__title">Kaas</h3>
+            <p class="product-card__desc">Gerookt, zacht, gerijpt of blauw — onze kaastafel is samengesteld op rijpheid en smaak. Comté, brie, geitenkaas en huisspécialités wisselend op seizoen.</p>
           </div>
         </article>
-        <!-- Bereide gerechten / traiteur -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
-            alt="Bereide gerechten traiteur"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Bereide gerechten</h3>
-            <p class="text-cream/75 text-sm mt-1">Dagverse traiteurschotels &amp; klaargemaakte gerechten om mee te nemen.</p>
+        <!-- Salade-bar -->
+        <article class="product-card fade-up d3">
+          <div class="product-card__visual" aria-hidden="true">
+            <svg viewBox="0 0 480 270" xmlns="http://www.w3.org/2000/svg">
+              <rect width="480" height="270" fill="#1a1e23"/>
+              <defs><radialGradient id="c3g" cx="50%" cy="58%" r="55%"><stop offset="0%" stop-color="rgba(58,108,58,0.17)"/><stop offset="100%" stop-color="transparent"/></radialGradient></defs>
+              <rect width="480" height="270" fill="url(#c3g)"/>
+              <path d="M98 98 Q98 222 240 232 Q382 222 382 98 Z" fill="rgba(38,48,58,0.52)" stroke="rgba(243,237,224,0.10)" stroke-width="1"/>
+              <ellipse cx="240" cy="98" rx="142" ry="22" fill="rgba(48,58,68,0.58)" stroke="rgba(243,237,224,0.13)" stroke-width="1"/>
+              <ellipse cx="240" cy="103" rx="128" ry="17" fill="rgba(58,108,48,0.43)"/>
+              <ellipse cx="194" cy="106" rx="36" ry="18" fill="rgba(62,118,52,0.52)"/>
+              <ellipse cx="246" cy="103" rx="30" ry="16" fill="rgba(68,128,58,0.48)"/>
+              <ellipse cx="292" cy="108" rx="32" ry="17" fill="rgba(58,112,48,0.50)"/>
+              <ellipse cx="220" cy="98" rx="28" ry="14" fill="rgba(78,138,62,0.43)"/>
+              <circle cx="172" cy="97" r="8" fill="rgba(198,58,38,0.62)"/>
+              <circle cx="302" cy="101" r="7" fill="rgba(193,54,36,0.58)"/>
+              <circle cx="256" cy="94" r="6" fill="rgba(202,62,40,0.60)"/>
+              <ellipse cx="214" cy="96" rx="7" ry="5" fill="rgba(48,58,38,0.72)"/>
+              <ellipse cx="268" cy="99" rx="6" ry="4" fill="rgba(48,58,38,0.68)"/>
+              <text x="240" y="196" font-family="Georgia,serif" font-size="10" fill="rgba(243,237,224,0.20)" letter-spacing="3" text-anchor="middle">SALADE-BAR</text>
+            </svg>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__icon" aria-hidden="true">🥗</span>
+            <h3 class="product-card__title">Salade-bar</h3>
+            <p class="product-card__desc">Verse composiet-salades, pasta-salades, taboulé en seizoensbereidingen — dagelijks vers gemaakt, perfect voor een snelle lunch of als bijgerecht.</p>
           </div>
         </article>
-        <!-- Salades & tapas -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80"
-            alt="Verse salades en tapas"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Salades &amp; tapas</h3>
-            <p class="text-cream/75 text-sm mt-1">Huisbereide salades, hapjes &amp; aperitiefschotels voor elke gelegenheid.</p>
+        <!-- Traiteur -->
+        <article class="product-card fade-up d4">
+          <div class="product-card__visual" aria-hidden="true">
+            <svg viewBox="0 0 480 270" xmlns="http://www.w3.org/2000/svg">
+              <rect width="480" height="270" fill="#1a1e23"/>
+              <defs><radialGradient id="c4g" cx="40%" cy="35%" r="58%"><stop offset="0%" stop-color="rgba(58,90,122,0.19)"/><stop offset="100%" stop-color="transparent"/></radialGradient></defs>
+              <rect width="480" height="270" fill="url(#c4g)"/>
+              <ellipse cx="240" cy="182" rx="192" ry="44" fill="rgba(34,42,52,0.68)" stroke="rgba(243,237,224,0.09)" stroke-width="1"/>
+              <ellipse cx="240" cy="172" rx="186" ry="39" fill="rgba(39,47,57,0.63)"/>
+              <ellipse cx="180" cy="156" rx="40" ry="8" fill="rgba(243,237,224,0.045)" transform="rotate(-15 180 156)"/>
+              <path d="M78 172 Q78 68 240 54 Q402 68 402 172 Z" fill="rgba(34,42,52,0.52)" stroke="rgba(243,237,224,0.09)" stroke-width="1"/>
+              <path d="M138 142 Q200 100 302 132" stroke="rgba(243,237,224,0.07)" stroke-width="2" fill="none"/>
+              <circle cx="240" cy="57" r="12" fill="rgba(39,49,63,0.68)" stroke="rgba(243,237,224,0.13)" stroke-width="1.5"/>
+              <rect x="236" y="44" width="8" height="18" fill="rgba(39,49,63,0.58)"/>
+              <rect x="143" y="136" width="40" height="30" rx="3" fill="rgba(58,90,122,0.33)"/>
+              <rect x="198" y="129" width="50" height="37" rx="3" fill="rgba(58,90,122,0.28)"/>
+              <rect x="266" y="133" width="45" height="33" rx="3" fill="rgba(58,90,122,0.30)"/>
+              <path d="M163 131 Q165 119 163 109" stroke="rgba(243,237,224,0.11)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <path d="M224 125 Q226 113 224 103" stroke="rgba(243,237,224,0.09)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <path d="M286 129 Q288 117 286 107" stroke="rgba(243,237,224,0.10)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <text x="240" y="228" font-family="Georgia,serif" font-size="10" fill="rgba(243,237,224,0.20)" letter-spacing="3" text-anchor="middle">TRAITEUR</text>
+            </svg>
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__icon" aria-hidden="true">🍽️</span>
+            <h3 class="product-card__title">Traiteur Schotels</h3>
+            <p class="product-card__desc">Koude schotels, warme gerechten op bestelling en feestplatten voor elke gelegenheid. Van tien tot honderd personen — bereid met zorg, geleverd op tijd.</p>
           </div>
         </article>
-        <!-- Feestschotels -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80"
-            alt="Feest- en gourmetschotels"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Feestschotels</h3>
-            <p class="text-cream/75 text-sm mt-1">Gourmet, fondue &amp; charcuterie/kaasschotels — op voorbestelling.</p>
-          </div>
-        </article>
-        <!-- Cadeaupakketten CTA card -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-gold text-winedk relative aspect-[4/5] flex items-center justify-center text-center p-6">
-          <div>
-            <p class="font-serif text-2xl font-600">Cadeau&shy;pakketten</p>
-            <p class="text-winedk/80 text-sm mt-2">Stel een charcuterie- of kaaspakket samen — ideaal als verjaardags- of bedrijfscadeau.</p>
-            <a href="#traiteur" class="inline-block mt-5 text-winedk font-700 ug">Vraag een pakket aan →</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+      </div><!-- /.aanbod__grid -->
+    </div><!-- /.aanbod__wrap -->
+  </div>
+</section>
 
-  <!-- Featured products (illustratief) -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="flex items-end justify-between mb-10">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-wine">Veelgevraagd uit de toonbank</h2>
-      <a href="#bestellen" class="hidden sm:inline text-gold font-600 ug">Alles bestellen →</a>
-    </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Product 1 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
-          <img
-            src="https://images.unsplash.com/photo-1542901031-ec5eeb518c5e?auto=format&fit=crop&w=700&q=80"
-            alt="Charcuterieschotel (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
+<!-- ========== FEESTMANDEN ========== -->
+<section class="section feestmanden" id="feestmanden" aria-labelledby="feest-h2">
+  <div class="container">
+    <div class="feestmanden__inner">
+      <div>
+        <span class="section-label fade-up">Feestmanden</span>
+        <h2 class="feestmanden__headline fade-up d1" id="feest-h2">Een mand vol<br>smaken. Op maat<br>van uw feest.</h2>
+        <p class="feestmanden__body fade-up d2">Of het nu een verjaardag is, een bedrijfsgeschenk of de eindejaarsviering — een feestmand van Vervloesem zegt meer dan een enveloppe. Wij samenstellen op uw budget en uw smaak.</p>
+        <div class="feestmanden__features fade-up d3">
+          <div class="feestmanden__feat"><div class="feestmanden__feat-label">Samenstelling</div><div class="feestmanden__feat-value">Volledig op maat</div></div>
+          <div class="feestmanden__feat"><div class="feestmanden__feat-label">Budget</div><div class="feestmanden__feat-value">Elk budget mogelijk</div></div>
+          <div class="feestmanden__feat"><div class="feestmanden__feat-label">Formaat</div><div class="feestmanden__feat-value">Klein tot groot</div></div>
+          <div class="feestmanden__feat"><div class="feestmanden__feat-label">Afhaling</div><div class="feestmanden__feat-value">Op afspraak, Mortsel</div></div>
         </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Op voorbestelling</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-wine">Charcuterieschotel</h3>
-          <p class="text-charcoal/60 text-sm mt-1">Een ruime selectie fijne vleeswaren, mooi geschikt.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
-            <button class="bg-wine text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-winelt transition">Aanvragen</button>
-          </div>
-        </div>
-      </div>
-      <!-- Product 2 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
-          <img
-            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=700&q=80"
-            alt="Kaasschotel (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Klassieker</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-wine">Kaasschotel</h3>
-          <p class="text-charcoal/60 text-sm mt-1">Samengestelde selectie kazen met garnituur.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
-            <button class="bg-wine text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-winelt transition">Aanvragen</button>
-          </div>
-        </div>
-      </div>
-      <!-- Product 3 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
-          <img
-            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80"
-            alt="Bereid dagschotel (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Traiteur</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-wine">Bereide dagschotel</h3>
-          <p class="text-charcoal/60 text-sm mt-1">Wisselend dagvers gerecht, klaar om mee te nemen.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
-            <button class="bg-wine text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-winelt transition">Aanvragen</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p class="text-center text-xs text-charcoal/40 mt-6">Voorbeeldproducten ter illustratie van de toekomstige online bestelmodule — geen actuele prijzen.</p>
-  </section>
-
-  <!-- Traiteur- / buffetaanvraag (the differentiator) -->
-  <section id="traiteur" class="bg-wine text-cream py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
-      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
-        <img
-          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80"
-          alt="Traiteur buffet en feestschotels"
-          loading="lazy" decoding="async"
-          class="w-full h-full object-cover"
-        />
-      </div>
-      <div class="order-1 lg:order-2 fade-up">
-        <p class="text-goldlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Traiteur &amp; buffet</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
-          Een feest?<br />Wij verzorgen het buffet.
-        </h2>
-        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
-          Verjaardag, communie, bedrijfsevent of familiefeest? Stel hieronder uw aanvraag samen —
-          datum, aantal personen en wensen — en wij sturen u een voorstel op maat.
-          Geen prijs verplichtingen, gewoon een vrijblijvende aanvraag.
-        </p>
-
-        <!-- Concept-formulier: traiteur-/buffetaanvraag -->
-        <form class="mt-8 bg-cream/5 border border-cream/15 rounded-2xl p-5 sm:p-6 space-y-4" onsubmit="return false">
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label for="t-naam" class="block text-sm font-600 text-cream/90 mb-1">Naam</label>
-              <input id="t-naam" name="naam" type="text" autocomplete="name" placeholder="Uw naam"
-                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
-            </div>
-            <div>
-              <label for="t-tel" class="block text-sm font-600 text-cream/90 mb-1">Telefoon</label>
-              <input id="t-tel" name="telefoon" type="tel" autocomplete="tel" placeholder="03 ..."
-                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
-            </div>
-          </div>
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label for="t-datum" class="block text-sm font-600 text-cream/90 mb-1">Gewenste datum</label>
-              <input id="t-datum" name="datum" type="date"
-                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
-            </div>
-            <div>
-              <label for="t-personen" class="block text-sm font-600 text-cream/90 mb-1">Aantal personen</label>
-              <input id="t-personen" name="personen" type="number" min="1" placeholder="bv. 25"
-                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
-            </div>
-          </div>
-          <div>
-            <label for="t-type" class="block text-sm font-600 text-cream/90 mb-1">Type</label>
-            <select id="t-type" name="type"
-              class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold">
-              <option>Koud buffet</option>
-              <option>Warm buffet</option>
-              <option>Charcuterie- &amp; kaasschotels</option>
-              <option>Aperitief &amp; hapjes</option>
-              <option>Cadeaupakket</option>
-              <option>Iets anders</option>
-            </select>
-          </div>
-          <div>
-            <label for="t-wensen" class="block text-sm font-600 text-cream/90 mb-1">Wensen / opmerkingen</label>
-            <textarea id="t-wensen" name="wensen" rows="3" placeholder="Allergieën, budget, thema, afhalen of bezorgen ..."
-              class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold"></textarea>
-          </div>
-          <label class="flex items-start gap-3 text-xs text-cream/70">
-            <input type="checkbox" required class="mt-0.5 accent-gold" />
-            <span>Ik ga akkoord dat mijn gegevens enkel worden gebruikt om mijn aanvraag te beantwoorden (GDPR).</span>
-          </label>
-          <button class="w-full bg-gold text-winedk font-700 px-7 py-3 rounded-full hover:bg-goldlt transition">
-            Verstuur mijn aanvraag
-          </button>
-          <p class="text-[11px] text-cream/50 text-center">Concept-formulier — in de live versie komt uw aanvraag rechtstreeks per e-mail bij Vervloesem terecht.</p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Ons verhaal -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
-    <div class="fade-up">
-      <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
-      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-wine">Vakmanschap aan<br />de Statielei.</h2>
-      <p class="text-charcoal/70 text-lg mt-6 leading-relaxed">
-        Delikatessen Vervloesem is al jaren een vertrouwd adres op de Statielei in Mortsel.
-        Wat ons onderscheidt? Ambachtelijke charcuterie, een zorgvuldig samengesteld kaasassortiment
-        en dagverse bereide gerechten — met de persoonlijke service van een echte buurtwinkel.
-      </p>
-      <p class="text-charcoal/70 text-lg mt-4 leading-relaxed">
-        Of u nu langskomt voor een plank charcuterie, een stuk kaas, een dagschotel om mee te nemen
-        of een volledig buffet voor uw feest — bij Vervloesem vindt u kwaliteit en advies op maat.
-        Vanaf nu kan dat ook online: bestellen, afhalen en buffetten aanvragen vanuit uw zetel.
-      </p>
-      <div class="mt-9 flex flex-wrap gap-6">
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">100%</p>
-          <p class="text-charcoal/65 text-sm mt-1">Ambachtelijk</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">Dagvers</p>
-          <p class="text-charcoal/65 text-sm mt-1">Bereide gerechten</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">Mortsel</p>
-          <p class="text-charcoal/65 text-sm mt-1">Statielei 60</p>
-        </div>
-      </div>
-    </div>
-    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
-      <img
-        src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=1000&q=80"
-        alt="Ambachtelijke delicatessen en bereide gerechten"
-        loading="lazy" decoding="async"
-        class="w-full h-full object-cover"
-      />
-    </div>
-  </section>
-
-  <!-- Bezoek + kaart -->
-  <section id="bezoek" class="bg-parchment/55 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
-      <div class="fade-up">
-        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-wine">Welkom in de winkel</h2>
-        <p class="text-charcoal/70 text-lg mt-5 max-w-md">
-          Kom proeven en kiezen op Statielei 60 in Mortsel, vlakbij het station.
-        </p>
-        <dl class="mt-9 space-y-5 text-charcoal">
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📍</span>
-            <div>
-              <dt class="font-600 text-wine">Adres</dt>
-              <dd class="text-charcoal/70">Statielei 60, 2640 Mortsel</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🕑</span>
-            <div>
-              <dt class="font-600 text-wine">Openingsuren</dt>
-              <dd class="text-charcoal/70">Di–Za: 08:30–18:00 · Zo: 08:30–12:30 · Ma: gesloten</dd>
-              <dd class="text-charcoal/40 text-sm mt-1">(indicatief — graag te bevestigen)</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📞</span>
-            <div>
-              <dt class="font-600 text-wine">Telefoon</dt>
-              <dd class="text-charcoal/70"><a href="tel:+3234406262" class="ug">03 440 62 62</a></dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">✉️</span>
-            <div>
-              <dt class="font-600 text-wine">E-mail</dt>
-              <dd class="text-charcoal/70">
-                debelder.willy@gmail.com
-                <span class="text-charcoal/40 text-sm ml-1">(voorstel: info@delikatessenvervloesem.be)</span>
-              </dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">💳</span>
-            <div>
-              <dt class="font-600 text-wine">Betaalmogelijkheden</dt>
-              <dd class="text-charcoal/70">Cash · Bancontact</dd>
-            </div>
-          </div>
-        </dl>
-        <a href="#bestellen" class="inline-block mt-9 bg-wine text-cream font-600 px-7 py-3.5 rounded-full hover:bg-winelt transition">
-          Of bestel online →
+        <a href="tel:+3234406262" class="btn-primary fade-up d4">
+          Bel voor uw feestmand
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 9.5c-.5.9-1.7 1.7-2.8 1.4C5.8 10.4 3.6 8.2 3.1 5.8c-.3-1.1.5-2.3 1.4-2.8l.9-.5 1.6 2.8-.8.5c-.3.2-.4.5-.2.8.5.8 1.4 1.7 2.1 2.1.3.2.6.1.8-.2l.5-.8 2.8 1.6-.7.9z"/></svg>
         </a>
       </div>
-      <!-- OpenStreetMap embed — Statielei 60, 2640 Mortsel (~51.1690, 4.4615) -->
-      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-parchment shadow-sm">
-        <iframe
-          title="Kaart Delikatessen Vervloesem — Statielei 60, 2640 Mortsel"
-          class="w-full h-full min-h-[360px] border-0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=4.453%2C51.164%2C4.470%2C51.174&layer=mapnik&marker=51.1690%2C4.4615"
-        ></iframe>
+      <!-- Basket illustration -->
+      <div class="feestmanden__visual fade-up d2" aria-hidden="true">
+        <svg viewBox="0 0 380 512" xmlns="http://www.w3.org/2000/svg">
+          <rect width="380" height="512" fill="#1a1e23"/>
+          <defs>
+            <radialGradient id="mGlow" cx="50%" cy="60%" r="52%">
+              <stop offset="0%" stop-color="rgba(58,90,122,0.18)"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+            <linearGradient id="wickerG" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="rgba(155,112,52,0.34)"/>
+              <stop offset="100%" stop-color="rgba(118,82,36,0.26)"/>
+            </linearGradient>
+          </defs>
+          <rect width="380" height="512" fill="url(#mGlow)"/>
+          <!-- Basket body -->
+          <path d="M58 252 Q53 422 190 442 Q327 422 322 252 Z" fill="url(#wickerG)" stroke="rgba(178,128,68,0.21)" stroke-width="1.5"/>
+          <!-- Wicker weave -->
+          <g stroke="rgba(178,128,68,0.13)" stroke-width="1" fill="none">
+            <path d="M63 272 Q190 257 317 272"/>
+            <path d="M60 297 Q190 282 320 297"/>
+            <path d="M59 322 Q190 307 321 322"/>
+            <path d="M59 347 Q190 332 321 347"/>
+            <path d="M60 372 Q190 358 320 372"/>
+            <path d="M63 397 Q190 384 317 397"/>
+            <path d="M68 418 Q190 406 312 418"/>
+            <line x1="88" y1="254" x2="78" y2="434"/>
+            <line x1="128" y1="250" x2="122" y2="440"/>
+            <line x1="168" y1="249" x2="167" y2="442"/>
+            <line x1="208" y1="249" x2="211" y2="442"/>
+            <line x1="248" y1="250" x2="254" y2="440"/>
+            <line x1="288" y1="254" x2="298" y2="434"/>
+          </g>
+          <!-- Rim -->
+          <path d="M58 252 Q53 232 190 222 Q327 232 322 252 Q327 272 190 267 Q53 272 58 252 Z" fill="rgba(158,112,52,0.36)" stroke="rgba(178,128,68,0.23)" stroke-width="1.5"/>
+          <!-- Handles -->
+          <path d="M98 228 Q88 122 128 112 Q158 107 174 132" stroke="rgba(158,112,52,0.43)" stroke-width="8" fill="none" stroke-linecap="round"/>
+          <path d="M282 228 Q292 122 252 112 Q222 107 206 132" stroke="rgba(158,112,52,0.43)" stroke-width="8" fill="none" stroke-linecap="round"/>
+          <path d="M128 112 Q190 97 252 112" stroke="rgba(158,112,52,0.48)" stroke-width="10" fill="none" stroke-linecap="round"/>
+          <path d="M128 112 Q190 97 252 112" stroke="rgba(178,128,68,0.18)" stroke-width="3" fill="none" stroke-dasharray="6 8"/>
+          <!-- Ribbon -->
+          <path d="M174 132 Q190 120 206 132" stroke="rgba(58,90,122,0.68)" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <ellipse cx="163" cy="127" rx="18" ry="10" fill="rgba(58,90,122,0.38)" transform="rotate(-20 163 127)"/>
+          <ellipse cx="217" cy="127" rx="18" ry="10" fill="rgba(58,90,122,0.38)" transform="rotate(20 217 127)"/>
+          <ellipse cx="190" cy="130" rx="7" ry="5" fill="rgba(58,90,122,0.52)"/>
+          <!-- Contents -->
+          <polygon points="143,222 216,222 200,250 160,250" fill="rgba(196,162,72,0.43)" stroke="rgba(218,178,84,0.20)" stroke-width="1"/>
+          <circle cx="258" cy="240" r="23" fill="rgba(152,48,32,0.48)" stroke="rgba(175,68,48,0.22)" stroke-width="1.5"/>
+          <circle cx="258" cy="240" r="17" fill="rgba(146,44,28,0.40)"/>
+          <circle cx="251" cy="235" r="3" fill="rgba(243,237,224,0.11)"/>
+          <circle cx="263" cy="242" r="4" fill="rgba(243,237,224,0.09)"/>
+          <ellipse cx="128" cy="230" rx="28" ry="12" fill="rgba(62,118,52,0.52)"/>
+          <ellipse cx="118" cy="225" rx="22" ry="9" fill="rgba(68,128,60,0.46)"/>
+          <!-- Shadow -->
+          <ellipse cx="190" cy="448" rx="132" ry="18" fill="rgba(0,0,0,0.22)"/>
+          <!-- Label -->
+          <text x="28" y="348" font-family="Georgia,serif" font-size="8" fill="rgba(243,237,224,0.21)" letter-spacing="4" transform="rotate(-90 28 348)">FEESTMAND</text>
+        </svg>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- GDPR Newsletter -->
-  <section class="bg-gold/15">
-    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-wine">Blijf op de hoogte</h2>
-      <p class="text-charcoal/70 mt-3">Nieuwe seizoensproducten, feestschotels en cadeaupakketten — af en toe in je mailbox.</p>
-      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
-        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
-        <input
-          id="nl-email"
-          name="email"
-          type="email"
-          autocomplete="email"
-          required
-          placeholder="jouw@email.be"
-          class="flex-1 px-5 py-3 rounded-full border border-wine/20 bg-cream focus:outline-none focus:ring-2 focus:ring-gold"
-        />
-        <button class="bg-wine text-cream font-600 px-7 py-3 rounded-full hover:bg-winelt transition">Inschrijven</button>
-      </form>
-      <p class="text-xs text-charcoal/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+<!-- ========== PITCH HOOK — mini centred ========== -->
+<section class="section pitch" aria-label="Online vindbaarheid">
+  <div class="container">
+    <span class="section-label fade-up">Goed om te weten</span>
+    <p class="pitch__headline fade-up d1">
+      "Geen website = uw klanten<br><span class="pitch__strong">vinden u niet."</span>
+    </p>
+    <p class="pitch__sub fade-up d2">
+      Deze pagina is een demonstratie — gebouwd om te tonen wat digitale zichtbaarheid kan betekenen voor een zaak zoals Delikatessen Vervloesem. Meer klanten, meer feestmanden, minder gemiste kansen.
+    </p>
+    <div class="fade-up d3">
+      <a href="mailto:debelder.willy@gmail.com" class="btn-ghost">
+        debelder.willy@gmail.com
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 10 L10 2M5 2h5v5"/></svg>
+      </a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="bg-wine text-cream/80">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- ========== BEZOEK ========== -->
+<section class="section bezoek" id="bezoek" aria-labelledby="bezoek-h2">
+  <div class="container">
+    <div class="bezoek__grid">
       <div>
-        <p class="font-serif text-2xl text-cream font-700">Vervloesem<span class="text-gold">·</span></p>
-        <p class="text-cream/55 text-sm mt-1">Delikatessen</p>
-        <p class="text-cream/55 text-sm mt-3 max-w-xs">Ambachtelijke charcuterie, kaas &amp; traiteur in Mortsel. Online bestellen, traiteur-aanvragen &amp; cadeaupakketten.</p>
+        <span class="section-label fade-up">Bezoek Ons</span>
+        <h2 class="bezoek__headline fade-up d1" id="bezoek-h2">U vindt ons<br>in Mortsel.</h2>
+        <p class="bezoek__body fade-up d2">Delikatessen Vervloesem is uw vertrouwde buur in Mortsel. Kom langs voor dagelijks verse aankopen of bel vooraf voor een bestelling op maat — feestmanden, traiteur schotels en partijbestellingen.</p>
+        <div class="contact-block fade-up d3">
+          <a href="tel:+3234406262" class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.04 6.04l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div><span class="contact-item__label">Telefoon</span><span class="contact-item__value">03 440 62 62</span></div>
+          </a>
+          <a href="mailto:debelder.willy@gmail.com" class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+            </div>
+            <div><span class="contact-item__label">E-mail</span><span class="contact-item__value">debelder.willy@gmail.com</span></div>
+          </a>
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div><span class="contact-item__label">Locatie</span><span class="contact-item__value">Mortsel, Antwerpen</span></div>
+          </div>
+        </div>
       </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Winkel</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li><a href="#assortiment" class="hover:text-goldlt">Assortiment</a></li>
-          <li><a href="#bestellen" class="hover:text-goldlt">Online bestellen</a></li>
-          <li><a href="#traiteur" class="hover:text-goldlt">Traiteur &amp; buffet</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Info</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li><a href="#bezoek" class="hover:text-goldlt">Openingsuren</a></li>
-          <li><a href="#bezoek" class="hover:text-goldlt">Contact</a></li>
-          <li><a href="#top" class="hover:text-goldlt">Ons verhaal</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Contact</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li>Statielei 60</li>
-          <li>2640 Mortsel</li>
-          <li><a href="tel:+3234406262" class="hover:text-goldlt">03 440 62 62</a></li>
-          <li>debelder.willy@gmail.com</li>
-        </ul>
+      <!-- Map illustration -->
+      <div class="bezoek__map fade-up d2" role="presentation" aria-hidden="true">
+        <svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg">
+          <rect width="480" height="360" fill="#131619"/>
+          <defs>
+            <pattern id="mapPat" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(243,237,224,0.038)" stroke-width="1"/>
+            </pattern>
+          </defs>
+          <rect width="480" height="360" fill="url(#mapPat)"/>
+          <!-- Streets -->
+          <rect x="0" y="155" width="480" height="12" fill="rgba(243,237,224,0.058)" rx="2"/>
+          <rect x="0" y="222" width="480" height="8" fill="rgba(243,237,224,0.038)" rx="2"/>
+          <rect x="0" y="80" width="480" height="6" fill="rgba(243,237,224,0.030)" rx="2"/>
+          <rect x="180" y="0" width="12" height="360" fill="rgba(243,237,224,0.058)" rx="2"/>
+          <rect x="312" y="0" width="8" height="360" fill="rgba(243,237,224,0.038)" rx="2"/>
+          <rect x="82" y="0" width="6" height="360" fill="rgba(243,237,224,0.030)" rx="2"/>
+          <!-- Buildings -->
+          <rect x="20" y="20" width="50" height="42" rx="2" fill="rgba(58,90,122,0.11)" stroke="rgba(58,90,122,0.17)" stroke-width="1"/>
+          <rect x="96" y="20" width="66" height="52" rx="2" fill="rgba(58,90,122,0.09)" stroke="rgba(58,90,122,0.14)" stroke-width="1"/>
+          <rect x="200" y="18" width="92" height="56" rx="2" fill="rgba(58,90,122,0.10)" stroke="rgba(58,90,122,0.15)" stroke-width="1"/>
+          <rect x="326" y="20" width="56" height="46" rx="2" fill="rgba(58,90,122,0.09)" stroke="rgba(58,90,122,0.14)" stroke-width="1"/>
+          <rect x="402" y="20" width="58" height="52" rx="2" fill="rgba(58,90,122,0.08)" stroke="rgba(58,90,122,0.13)" stroke-width="1"/>
+          <rect x="20" y="176" width="42" height="36" rx="2" fill="rgba(58,90,122,0.09)" stroke="rgba(58,90,122,0.14)" stroke-width="1"/>
+          <rect x="82" y="180" width="80" height="32" rx="2" fill="rgba(58,90,122,0.08)" stroke="rgba(58,90,122,0.13)" stroke-width="1"/>
+          <rect x="200" y="178" width="96" height="33" rx="2" fill="rgba(58,90,122,0.10)" stroke="rgba(58,90,122,0.15)" stroke-width="1"/>
+          <rect x="326" y="176" width="62" height="38" rx="2" fill="rgba(58,90,122,0.09)" stroke="rgba(58,90,122,0.14)" stroke-width="1"/>
+          <rect x="418" y="176" width="42" height="33" rx="2" fill="rgba(58,90,122,0.08)" stroke="rgba(58,90,122,0.13)" stroke-width="1"/>
+          <rect x="20" y="242" width="54" height="98" rx="2" fill="rgba(58,90,122,0.09)" stroke="rgba(58,90,122,0.14)" stroke-width="1"/>
+          <rect x="100" y="246" width="70" height="90" rx="2" fill="rgba(58,90,122,0.08)" stroke="rgba(58,90,122,0.13)" stroke-width="1"/>
+          <rect x="200" y="243" width="102" height="94" rx="2" fill="rgba(58,90,122,0.10)" stroke="rgba(58,90,122,0.15)" stroke-width="1"/>
+          <rect x="326" y="246" width="66" height="84" rx="2" fill="rgba(58,90,122,0.09)" stroke="rgba(58,90,122,0.14)" stroke-width="1"/>
+          <rect x="418" y="242" width="42" height="92" rx="2" fill="rgba(58,90,122,0.08)" stroke="rgba(58,90,122,0.13)" stroke-width="1"/>
+          <!-- Street label -->
+          <text x="20" y="152" font-family="sans-serif" font-size="8" fill="rgba(243,237,224,0.28)" letter-spacing="1">Gemeentestraat</text>
+          <!-- Map pin -->
+          <g transform="translate(228,62)">
+            <circle cx="0" cy="0" r="22" fill="rgba(58,90,122,0.11)" stroke="rgba(58,90,122,0.23)" stroke-width="1"/>
+            <circle cx="0" cy="0" r="14" fill="rgba(58,90,122,0.19)" stroke="rgba(58,90,122,0.33)" stroke-width="1.5"/>
+            <path d="M0 -20 C-12 -20 -12 -4 0 8 C12 -4 12 -20 0 -20 Z" fill="var(--accent)" stroke="rgba(243,237,224,0.18)" stroke-width="1"/>
+            <circle cx="0" cy="-12" r="4" fill="rgba(243,237,224,0.78)"/>
+            <ellipse cx="0" cy="10" rx="6" ry="2" fill="rgba(0,0,0,0.28)"/>
+          </g>
+          <text x="240" y="124" font-family="Georgia,serif" font-size="11" fill="rgba(243,237,224,0.48)" letter-spacing="3" text-anchor="middle">MORTSEL</text>
+          <!-- Scale -->
+          <line x1="362" y1="330" x2="442" y2="330" stroke="rgba(243,237,224,0.28)" stroke-width="1.5"/>
+          <line x1="362" y1="325" x2="362" y2="335" stroke="rgba(243,237,224,0.28)" stroke-width="1.5"/>
+          <line x1="442" y1="325" x2="442" y2="335" stroke="rgba(243,237,224,0.28)" stroke-width="1.5"/>
+          <text x="402" y="345" font-family="sans-serif" font-size="8" fill="rgba(243,237,224,0.33)" text-anchor="middle" letter-spacing="1">500 m</text>
+        </svg>
       </div>
     </div>
-    <div class="border-t border-cream/10">
-      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40">
-        <p>© 2026 Delikatessen Vervloesem. Concept-redesign.</p>
-        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; webshop.</p>
-      </div>
-    </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- Scripts -->
-  <script>
-    // Fade-up IntersectionObserver
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
-    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
-    } else {
-      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <span class="footer__brand">Delikatessen Vervloesem</span>
+    <a href="mailto:debelder.willy@gmail.com" class="footer__email">debelder.willy@gmail.com</a>
+    <span class="footer__meta">Mortsel, Antwerpen &mdash; 03 440 62 62</span>
+  </div>
+</footer>
+
+<!-- ========== HEADROOM ========== -->
+<script>
+(function(){
+  'use strict';
+  var nav=document.getElementById('nav');
+  if(!nav)return;
+  var TOL_DOWN=8,TOL_UP=5,OFFSET=80;
+  var lastY=0,ticking=false,dDown=0,dUp=0,pinned=true;
+  function update(){
+    var y=window.pageYOffset||window.scrollY;
+    var delta=y-lastY;
+    if(y>OFFSET) nav.classList.add('nav--scrolled');
+    else nav.classList.remove('nav--scrolled');
+    if(y<OFFSET){
+      if(!pinned){pinned=true;nav.classList.remove('headroom--unpinned');nav.classList.add('headroom--pinned');}
+      lastY=y;ticking=false;return;
     }
+    if(delta>0){dUp=0;dDown+=delta;if(dDown>TOL_DOWN&&pinned){pinned=false;nav.classList.remove('headroom--pinned');nav.classList.add('headroom--unpinned');}}
+    else{dDown=0;dUp+=Math.abs(delta);if(dUp>TOL_UP&&!pinned){pinned=true;nav.classList.remove('headroom--unpinned');nav.classList.add('headroom--pinned');}}
+    lastY=y;ticking=false;
+  }
+  window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});
+  update();
+}());
+</script>
 
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (menuBtn && mobileMenu) {
-      const setOpen = (open) => {
-        if (open) mobileMenu.removeAttribute('hidden');
-        else mobileMenu.setAttribute('hidden', '');
-        menuBtn.setAttribute('aria-expanded', String(open));
-        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
-      };
-      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
-      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
-    }
-  </script>
+<!-- ========== FADE-UP OBSERVER ========== -->
+<script>
+(function(){
+  'use strict';
+  if(!('IntersectionObserver' in window)){
+    document.querySelectorAll('.fade-up').forEach(function(el){el.classList.add('visible');});
+    return;
+  }
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}
+    });
+  },{threshold:0.10,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.fade-up').forEach(function(el){obs.observe(el);});
+}());
+</script>
+
 </body>
 </html>

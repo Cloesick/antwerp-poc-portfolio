@@ -1,646 +1,1532 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta name="robots" content="noindex, nofollow" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Chocolate Wizard — Chocolatier &amp; patisserie in Mortsel</title>
-  <meta name="description" content="Chocolatier &amp; patisserie in Mortsel. Handgemaakte pralines, taarten en cadeaudozen. Binnenkort: bestel je cadeaudozen &amp; patisserie online met click-and-collect in Mortsel." />
-  <link rel="canonical" href="https://thechocolatewizard.be/" />
-  <meta name="theme-color" content="#2e1d14" />
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="The Chocolate Wizard" />
-  <meta property="og:locale" content="nl_BE" />
-  <meta property="og:title" content="The Chocolate Wizard — Chocolatier &amp; patisserie in Mortsel" />
-  <meta property="og:description" content="Handgemaakte pralines, taarten en cadeaudozen. Binnenkort: bestel je cadeaudozen &amp; patisserie online met click-and-collect in Mortsel." />
-  <meta property="og:url" content="https://thechocolatewizard.be/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&w=1200&q=80" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- Inline SVG favicon — monogram "CW" -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232e1d14'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%23c8a06a' text-anchor='middle'%3ECW%3C/text%3E%3C/svg%3E" />
-  <!-- Local-SEO structured data -->
+  <title>The Chocolate Wizard — Chocolatier &amp; Patisserie · Mortsel</title>
+  <meta name="description" content="Handgemaakte chocolade en patisserie op bestelling. Single-origin bonbons, pralines en gâteaux uit Mortsel. Bel 0485 62 00 79." />
+
+  <!-- Inline SVG favicon via data URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230c0810'/%3E%3Cpath d='M16 4 L19.5 11.5 L28 13.5 L22 19.5 L23.5 28 L16 24 L8.5 28 L10 19.5 L4 13.5 L12.5 11.5 Z' fill='%237c3aed' opacity='0.9'/%3E%3Ccircle cx='16' cy='17' r='4' fill='%23f5efd8'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts non-blocking preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Outfit:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Outfit:wght@400;500&display=swap" rel="stylesheet" /></noscript>
+
+  <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["Store", "FoodEstablishment"],
+    "@type": "LocalBusiness",
     "name": "The Chocolate Wizard",
-    "description": "Chocolatier en patisserie in Mortsel. Handgemaakte pralines, taarten, gebak en cadeaudozen.",
-    "image": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&w=1200&q=80",
-    "url": "https://thechocolatewizard.be/",
+    "description": "Handgemaakte chocolade en patisserie op bestelling. Single-origin bonbons, pralines en gâteaux uit Mortsel.",
     "telephone": "+32485620079",
-    "servesCuisine": ["Chocolate", "Pastry", "Belgian"],
-    "priceRange": "€€",
-    "areaServed": "BE",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Statielei 6",
-      "postalCode": "2640",
       "addressLocality": "Mortsel",
-      "addressRegion": "Antwerpen",
+      "addressRegion": "Antwerp",
       "addressCountry": "BE"
     },
-    "geo": { "@type": "GeoCoordinates", "latitude": 51.1690, "longitude": 4.4612 },
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "18:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "09:00", "closes": "12:30" }
-    ]
+    "priceRange": "€€",
+    "servesCuisine": ["Chocolade", "Patisserie"]
   }
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
-          colors: {
-            cocoa:    '#2e1d14',
-            cocoalt:  '#3d281a',
-            gold:     '#c8a06a',
-            goldlt:   '#d8b681',
-            ivory:    '#f6efe4',
-            cream:    '#ece0cd',
-            bark:     '#382518',
-          },
-        },
-      },
-    };
-  </script>
+
   <style>
+    /* ─── DESIGN TOKENS ─── */
+    :root {
+      --bg-deep:       #0c0810;
+      --bg-mid:        #13101a;
+      --bg-surface:    #1a1526;
+      --bg-card:       #201a2e;
+      --purple-vivid:  #7c3aed;
+      --purple-muted:  #5b21b6;
+      --purple-soft:   #9d6bff;
+      --purple-faint:  rgba(124,58,237,0.12);
+      --gold:          #f5efd8;
+      --gold-dim:      rgba(245,239,216,0.80);
+      --gold-faint:    rgba(245,239,216,0.38);
+      --gold-whisper:  rgba(245,239,216,0.10);
+      --choco:         #8b4513;
+      --choco-warm:    #c98a3a;
+      --radius-sm:     6px;
+      --radius-md:     12px;
+      --radius-lg:     20px;
+      --ff-display:    'Fraunces', Georgia, serif;
+      --ff-body:       'Outfit', system-ui, sans-serif;
+      --nav-h:         68px;
+      --ease:          cubic-bezier(0.22,1,0.36,1);
+    }
+
+    /* ─── RESET ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    .hero-grad { background: linear-gradient(180deg, rgba(46,29,20,.18) 0%, rgba(46,29,20,.52) 50%, rgba(46,29,20,.92) 100%); }
-    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
-    .fade-up.in { opacity: 1; transform: none; }
-    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
-    .ug:hover { background-size: 100% 2px; }
+    body {
+      background: var(--bg-deep);
+      color: var(--gold);
+      font-family: var(--ff-body);
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    img, svg { display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+    /* ─── HEADROOM NAV ─── */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 900;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 clamp(1.5rem, 5vw, 4rem);
+      background: rgba(12,8,16,0.88);
+      backdrop-filter: blur(18px) saturate(160%);
+      -webkit-backdrop-filter: blur(18px) saturate(160%);
+      border-bottom: 1px solid var(--gold-whisper);
+      transform: translateY(0);
+      transition: transform 0.38s var(--ease), background 0.3s ease;
+      will-change: transform;
+    }
+    .nav.is-unpinned { transform: translateY(-100%); }
+    .nav.is-pinned   { transform: translateY(0); }
+
+    .nav__logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: var(--ff-display);
+      font-size: 1.1rem;
+      color: var(--gold);
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+    .nav__logo svg { flex-shrink: 0; }
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav__links a {
+      font-size: 0.83rem;
+      font-weight: 500;
+      color: var(--gold-dim);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: color 0.25s ease;
+    }
+    .nav__links a:hover { color: var(--gold); }
+
+    .nav__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.52rem 1.2rem;
+      background: var(--purple-vivid);
+      color: var(--gold);
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      transition: background 0.25s ease, transform 0.25s ease;
+    }
+    .nav__cta:hover { background: var(--purple-soft); transform: translateY(-1px); }
+
+    @media (max-width: 720px) {
+      .nav__links { display: none; }
+    }
+
+    /* ─── FADE-UP (IntersectionObserver only) ─── */
+    .fu {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+    }
+    .fu.in { opacity: 1; transform: translateY(0); }
+    .fu.d1 { transition-delay: 0.10s; }
+    .fu.d2 { transition-delay: 0.20s; }
+    .fu.d3 { transition-delay: 0.30s; }
+    .fu.d4 { transition-delay: 0.42s; }
+
+    /* ─── SHARED SECTION SPACING ─── */
+    .section-pad {
+      padding: clamp(5rem, 10vw, 9rem) clamp(1.5rem, 6vw, 5rem);
+    }
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold-whisper) 30%, var(--gold-whisper) 70%, transparent);
+    }
+    .section-kicker {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--purple-soft);
+      margin-bottom: 0.9rem;
+      display: block;
+    }
+    .section-headline {
+      font-family: var(--ff-display);
+      color: var(--gold);
+      letter-spacing: -0.025em;
+      line-height: 1.1;
+    }
+
+    /* ─── BUTTONS ─── */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 2rem;
+      background: var(--purple-vivid);
+      color: var(--gold);
+      border-radius: 100px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      box-shadow: 0 4px 28px rgba(124,58,237,0.35);
+      transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .btn-primary:hover {
+      background: var(--purple-soft);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 36px rgba(124,58,237,0.5);
+    }
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 2rem;
+      border: 1px solid var(--gold-faint);
+      color: var(--gold-dim);
+      border-radius: 100px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: border-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+    }
+    .btn-outline:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+      transform: translateY(-2px);
+    }
+    .btn-gold {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.95rem 2.4rem;
+      background: var(--gold);
+      color: var(--bg-deep);
+      border-radius: 100px;
+      font-size: 1rem;
+      font-weight: 500;
+      box-shadow: 0 4px 24px rgba(245,239,216,0.14);
+      transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .btn-gold:hover {
+      background: #fffbf0;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 36px rgba(245,239,216,0.22);
+    }
+
+    /* ─── SPARKLE ANIMATION ─── */
+    .sp {
+      display: inline-block;
+      animation: sp-pulse 3.2s ease-in-out infinite;
+    }
+    .sp:nth-child(2) { animation-delay: 0.9s; }
+    .sp:nth-child(3) { animation-delay: 1.8s; }
+    @keyframes sp-pulse {
+      0%,100% { opacity: 0.35; transform: scale(1); }
+      50%      { opacity: 1;    transform: scale(1.18); }
+    }
+
+    /* ════════════════════════════════════════
+       HERO
+    ════════════════════════════════════════ */
+    .hero {
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      padding: calc(var(--nav-h) + 4rem) clamp(1.5rem, 6vw, 5rem) 6rem;
+      background: var(--bg-deep);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Star canvas fills the section */
+    #starCanvas {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    /* Radial atmospheric glow */
+    .hero__glow {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse 70% 60% at 50% 42%, rgba(124,58,237,0.13) 0%, transparent 70%),
+        radial-gradient(ellipse 100% 45% at 50% 100%, rgba(12,8,16,0.95) 0%, transparent 55%);
+    }
+
+    .hero__inner {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 840px;
+    }
+
+    /* Ghost word — aria-hidden */
+    .hero__ghost {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -54%);
+      font-family: var(--ff-display);
+      font-size: clamp(5rem, 14vw, 12rem);
+      font-weight: 700;
+      color: transparent;
+      -webkit-text-stroke: 1.5px rgba(124,58,237,0.17);
+      letter-spacing: -0.03em;
+      line-height: 1;
+      white-space: nowrap;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    /* Wizard hat SVG — used as design element */
+    .hero__hat {
+      width: clamp(110px, 16vw, 190px);
+      height: auto;
+      margin: 0 auto 1.8rem;
+      filter: drop-shadow(0 0 32px rgba(124,58,237,0.42));
+    }
+
+    .hero__kicker {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--purple-soft);
+      margin-bottom: 1.2rem;
+    }
+
+    .hero__h1 {
+      font-family: var(--ff-display);
+      font-size: clamp(2.6rem, 6.5vw, 5.4rem);
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: -0.03em;
+      line-height: 1.07;
+      margin-bottom: 1.4rem;
+    }
+    .hero__h1 em {
+      font-style: italic;
+      color: var(--purple-soft);
+    }
+
+    .hero__sub {
+      font-size: clamp(0.95rem, 1.8vw, 1.12rem);
+      color: var(--gold-dim);
+      max-width: 500px;
+      margin: 0 auto 2.8rem;
+      line-height: 1.72;
+    }
+
+    .hero__actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* Scroll indicator */
+    .hero__scroll {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+    .hero__scroll-label {
+      font-size: 0.62rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .hero__scroll-bar {
+      width: 1px;
+      height: 38px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+      animation: scroll-bar 2s ease-in-out infinite;
+    }
+    @keyframes scroll-bar {
+      0%,100% { opacity: 0.4; transform: scaleY(1); }
+      50%      { opacity: 1;   transform: scaleY(0.55); }
+    }
+
+    /* ════════════════════════════════════════
+       MARQUEE
+    ════════════════════════════════════════ */
+    .marquee {
+      background: var(--purple-vivid);
+      padding: 0.8rem 0;
+      overflow: hidden;
+      white-space: nowrap;
+      border-top: 1px solid rgba(245,239,216,0.07);
+      border-bottom: 1px solid rgba(245,239,216,0.07);
+    }
+    .marquee__track {
+      display: inline-flex;
+      animation: mq-scroll 30s linear infinite;
+    }
+    .marquee:hover .marquee__track { animation-play-state: paused; }
+    .marquee__item {
+      font-size: 0.76rem;
+      font-weight: 500;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+      color: var(--gold);
+      padding: 0 2rem;
+    }
+    .marquee__item::after {
+      content: '\2726';
+      margin-left: 2rem;
+      opacity: 0.55;
+    }
+    @keyframes mq-scroll {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* ════════════════════════════════════════
+       ATELIER
+    ════════════════════════════════════════ */
+    .atelier {
+      background: var(--bg-mid);
+    }
+    .atelier__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    @media (max-width: 800px) {
+      .atelier__grid { grid-template-columns: 1fr; gap: 3rem; }
+    }
+
+    /* Bean illustration container */
+    .atelier__vis {
+      background: var(--bg-surface);
+      border: 1px solid var(--gold-whisper);
+      border-radius: var(--radius-lg);
+      padding: 2.8rem 2.2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .atelier__vis::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 80% at 60% 40%, rgba(124,58,237,0.10) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    /* "Second read" moment — oversized numeral side-rail */
+    .atelier__vis-num {
+      position: absolute;
+      bottom: -2rem;
+      right: -1rem;
+      font-family: var(--ff-display);
+      font-size: 8rem;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(124,58,237,0.14);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .atelier__text-kicker { margin-bottom: 0.9rem; }
+    .atelier__h2 {
+      font-size: clamp(1.85rem, 3.5vw, 2.85rem);
+      margin-bottom: 1.4rem;
+    }
+    .atelier__body {
+      color: var(--gold-dim);
+      font-size: 0.96rem;
+      line-height: 1.78;
+      margin-bottom: 1rem;
+    }
+    .atelier__body + .atelier__body { margin-top: 0; }
+
+    .atelier__pillars {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1.8rem;
+    }
+    .pillar {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.9rem;
+    }
+    .pillar__icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--purple-faint);
+      border: 1px solid rgba(124,58,237,0.22);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+    .pillar__copy strong {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--gold);
+      margin-bottom: 0.15rem;
+    }
+    .pillar__copy span {
+      font-size: 0.82rem;
+      color: var(--gold-dim);
+    }
+
+    /* ════════════════════════════════════════
+       COLLECTIE
+    ════════════════════════════════════════ */
+    .collectie {
+      background: var(--bg-deep);
+    }
+    .collectie__header {
+      text-align: center;
+      margin-bottom: 3.8rem;
+    }
+    .collectie__header .section-headline {
+      font-size: clamp(1.9rem, 4vw, 3rem);
+    }
+
+    .collectie__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.4rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    @media (max-width: 840px) {
+      .collectie__grid { grid-template-columns: 1fr; max-width: 420px; }
+    }
+
+    .pcard {
+      background: var(--bg-card);
+      border: 1px solid var(--gold-whisper);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: transform 0.3s var(--ease), border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .pcard:hover {
+      transform: translateY(-5px);
+      border-color: rgba(124,58,237,0.38);
+      box-shadow: 0 14px 44px rgba(124,58,237,0.16);
+    }
+    .pcard__vis {
+      height: 196px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .pcard__vis--bonbons  { background: linear-gradient(135deg, #1a0f2e 0%, #2d1a4a 100%); }
+    .pcard__vis--pralines { background: linear-gradient(135deg, #1a130b 0%, #3d2810 100%); }
+    .pcard__vis--gateaux  { background: linear-gradient(135deg, #0e191a 0%, #183030 100%); }
+    .pcard__body { padding: 1.5rem; }
+    .pcard__tag  {
+      font-size: 0.67rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--purple-soft);
+      margin-bottom: 0.4rem;
+    }
+    .pcard__name {
+      font-family: var(--ff-display);
+      font-size: 1.3rem;
+      color: var(--gold);
+      letter-spacing: -0.015em;
+      margin-bottom: 0.6rem;
+    }
+    .pcard__desc {
+      font-size: 0.84rem;
+      color: var(--gold-dim);
+      line-height: 1.65;
+    }
+
+    /* ════════════════════════════════════════
+       BESTELLEN
+    ════════════════════════════════════════ */
+    .bestellen {
+      background: var(--bg-surface);
+      position: relative;
+    }
+    .bestellen::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 65% 70% at 50% 50%, rgba(124,58,237,0.09) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .bestellen__inner {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .bestellen__h2 {
+      font-size: clamp(2rem, 5vw, 3.8rem);
+      margin-bottom: 1.1rem;
+    }
+    .bestellen__h2 em {
+      font-style: italic;
+      color: var(--purple-soft);
+    }
+    .bestellen__sub {
+      color: var(--gold-dim);
+      font-size: 1rem;
+      line-height: 1.72;
+      max-width: 500px;
+      margin: 0 auto 0.5rem;
+    }
+    .bestellen__note {
+      font-size: 0.77rem;
+      color: var(--gold-faint);
+      letter-spacing: 0.04em;
+      margin-bottom: 2.8rem;
+    }
+    .bestellen__actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+    .bestellen__trust {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--gold-faint);
+      letter-spacing: 0.03em;
+    }
+
+    /* ════════════════════════════════════════
+       BEZOEK
+    ════════════════════════════════════════ */
+    .bezoek {
+      background: var(--bg-mid);
+    }
+    .bezoek__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      align-items: center;
+    }
+    @media (max-width: 800px) {
+      .bezoek__grid { grid-template-columns: 1fr; gap: 3rem; }
+    }
+
+    .bezoek__h2 {
+      font-size: clamp(1.85rem, 3.5vw, 2.85rem);
+      margin-bottom: 1.2rem;
+    }
+    .bezoek__body {
+      color: var(--gold-dim);
+      font-size: 0.96rem;
+      line-height: 1.78;
+      margin-bottom: 2rem;
+    }
+    .bezoek__details {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .bdetail {
+      display: flex;
+      gap: 0.85rem;
+      align-items: flex-start;
+    }
+    .bdetail__icon {
+      width: 34px;
+      height: 34px;
+      border-radius: var(--radius-sm);
+      background: var(--purple-faint);
+      border: 1px solid rgba(124,58,237,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.88rem;
+      flex-shrink: 0;
+    }
+    .bdetail__copy strong {
+      display: block;
+      font-size: 0.87rem;
+      font-weight: 500;
+      color: var(--gold);
+      margin-bottom: 0.12rem;
+    }
+    .bdetail__copy span {
+      font-size: 0.81rem;
+      color: var(--gold-dim);
+    }
+
+    /* Map placeholder */
+    .bezoek__map {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--gold-whisper);
+      background: var(--bg-surface);
+      height: 340px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .bezoek__map-label {
+      font-size: 0.78rem;
+      color: var(--gold-faint);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 0.7rem;
+      text-align: center;
+    }
+
+    /* ════════════════════════════════════════
+       FOOTER
+    ════════════════════════════════════════ */
+    .footer {
+      background: var(--bg-deep);
+      border-top: 1px solid var(--gold-whisper);
+      padding: 3.5rem clamp(1.5rem, 6vw, 5rem) 2.5rem;
+    }
+    .footer__inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+    }
+    .footer__brand-logo {
+      font-family: var(--ff-display);
+      font-size: 1.05rem;
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.55rem;
+    }
+    .footer__tagline {
+      font-size: 0.8rem;
+      color: var(--gold-dim);
+      font-style: italic;
+      margin-bottom: 0.3rem;
+    }
+    .footer__loc {
+      font-size: 0.74rem;
+      color: var(--gold-faint);
+    }
+    .footer__links-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .footer__links-title {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold-faint);
+      margin-bottom: 0.25rem;
+    }
+    .footer__links-group a {
+      font-size: 0.84rem;
+      color: var(--gold-dim);
+      transition: color 0.2s ease;
+    }
+    .footer__links-group a:hover { color: var(--gold); }
+
+    .footer__bottom {
+      max-width: 1100px;
+      margin: 2.5rem auto 0;
+      padding-top: 1.6rem;
+      border-top: 1px solid var(--gold-whisper);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer__copy {
+      font-size: 0.75rem;
+      color: var(--gold-faint);
+    }
+    .footer__copy a {
+      color: var(--purple-soft);
+      transition: color 0.2s ease;
+    }
+    .footer__copy a:hover { color: var(--purple-vivid); }
   </style>
 </head>
-<body class="bg-ivory text-cocoa font-sans antialiased selection:bg-gold/25">
+<body>
 
-  <!-- Skip link -->
-  <a href="#bestellen" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-cocoa focus:text-ivory focus:rounded-full">Naar de webshop</a>
+  <!-- ─── NAV ─── -->
+  <nav class="nav" id="mainNav" aria-label="Hoofdnavigatie">
+    <a href="#hero" class="nav__logo">
+      <!-- Inline star-within-circle icon -->
+      <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+        <circle cx="14" cy="14" r="14" fill="#0c0810"/>
+        <path d="M14 4 L16.8 10.2 L24 12 L19 17 L20.2 24 L14 21 L7.8 24 L9 17 L4 12 L11.2 10.2 Z" fill="#7c3aed" opacity="0.88"/>
+        <circle cx="14" cy="14.5" r="3.2" fill="#f5efd8" opacity="0.9"/>
+      </svg>
+      The Chocolate Wizard
+    </a>
+    <ul class="nav__links">
+      <li><a href="#atelier">Atelier</a></li>
+      <li><a href="#collectie">Collectie</a></li>
+      <li><a href="#bestellen">Bestellen</a></li>
+      <li><a href="#bezoek">Bezoek</a></li>
+      <li>
+        <a href="tel:+32485620079" class="nav__cta">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5 2 2 0 0 1 3.6 2.87h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.5a16 16 0 0 0 6 6l.72-.72a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.28 18z"/>
+          </svg>
+          Bel ons
+        </a>
+      </li>
+    </ul>
+  </nav>
 
-  <!-- Announcement bar -->
-  <div class="bg-cocoa text-ivory text-center text-[13px] tracking-wide py-2 px-4">
-    <span aria-hidden="true">🍫</span> <span class="font-semibold">Binnenkort:</span> bestel je cadeaudozen &amp; patisserie online — met click-and-collect in Mortsel.
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero" aria-label="Welkompagina">
+    <canvas id="starCanvas" aria-hidden="true"></canvas>
+    <div class="hero__glow" aria-hidden="true"></div>
+
+    <!-- Ghost word — decorative, aria-hidden -->
+    <span class="hero__ghost" aria-hidden="true">WIZARD</span>
+
+    <div class="hero__inner">
+      <!-- Wizard hat with chocolate drips -->
+      <svg class="hero__hat fu" viewBox="0 0 200 230" aria-hidden="true">
+        <!-- Sparkles around -->
+        <text x="8"   y="52"  font-size="13" fill="#9d6bff" class="sp">&#10022;</text>
+        <text x="172" y="36"  font-size="10" fill="#f5efd8" class="sp">&#10022;</text>
+        <text x="184" y="94"  font-size="15" fill="#7c3aed" class="sp">&#10022;</text>
+        <text x="6"   y="126" font-size="9"  fill="#9d6bff" class="sp">&#10022;</text>
+        <text x="158" y="136" font-size="12" fill="#f5efd8" class="sp">&#10022;</text>
+
+        <!-- Hat body (cone) -->
+        <path d="M100 8 L148 162 L52 162 Z"
+              fill="#1a1230"
+              stroke="#7c3aed"
+              stroke-width="1.4"
+              stroke-linejoin="round"/>
+
+        <!-- Hat brim -->
+        <ellipse cx="100" cy="162" rx="60" ry="14"
+                 fill="#13101a"
+                 stroke="#7c3aed"
+                 stroke-width="1.4"/>
+
+        <!-- Hat band -->
+        <rect x="53" y="150" width="94" height="12" rx="2" fill="#7c3aed" opacity="0.5"/>
+
+        <!-- Moon on hat -->
+        <path d="M106 58 a17 17 0 1 1-21 0 a11 11 0 1 0 21 0"
+              fill="#9d6bff" opacity="0.28"/>
+
+        <!-- Stars on hat surface -->
+        <text x="87"  y="115" font-size="10" fill="#f5efd8" opacity="0.4" text-anchor="middle">&#10022;</text>
+        <text x="111" y="90"  font-size="8"  fill="#9d6bff" opacity="0.6" text-anchor="middle">&#9733;</text>
+
+        <!-- Chocolate drips from brim -->
+        <path d="M68 172 Q66 187 69 198 Q71 204 69 208" stroke="#8b4513" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="68.5" cy="209" rx="3.8" ry="4.5" fill="#8b4513"/>
+
+        <path d="M88 174 Q86 190 89 202" stroke="#c98a3a" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+        <ellipse cx="88.5" cy="203" rx="3.2" ry="3.8" fill="#c98a3a"/>
+
+        <path d="M114 173 Q116 188 113 200 Q111 205 113 209" stroke="#8b4513" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+        <ellipse cx="112.5" cy="210" rx="3.2" ry="4" fill="#8b4513"/>
+
+        <path d="M132 174 Q134 185 131 195" stroke="#c98a3a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="130.5" cy="196" rx="2.8" ry="3.2" fill="#c98a3a"/>
+
+        <!-- Magic wand hint -->
+        <line x1="148" y1="54" x2="176" y2="28" stroke="#f5efd8" stroke-width="1.2" opacity="0.35" stroke-dasharray="4 3"/>
+        <circle cx="176" cy="28" r="4" fill="#9d6bff" opacity="0.55"/>
+        <circle cx="176" cy="28" r="2" fill="#f5efd8" opacity="0.75"/>
+      </svg>
+
+      <span class="hero__kicker fu d1">
+        <span class="sp">&#10022;</span>
+        Chocolatier &amp; Patisserie &middot; Mortsel
+        <span class="sp">&#10022;</span>
+      </span>
+
+      <h1 class="hero__h1 fu d2">
+        Waar chocolade<br>
+        <em>tovenarij wordt.</em>
+      </h1>
+
+      <p class="hero__sub fu d3">
+        Handgemaakte bonbons, pralines en g&acirc;teaux op bestelling.
+        Single-origin cacao, ambacht zonder compromis.
+      </p>
+
+      <div class="hero__actions fu d4">
+        <a href="#collectie" class="btn-primary">
+          Ontdek de collectie
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="tel:+32485620079" class="btn-outline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5 2 2 0 0 1 3.6 2.87h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.5a16 16 0 0 0 6 6l.72-.72a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.28 18z"/></svg>
+          Bel: 0485 62 00 79
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll cue — decorative, aria-hidden -->
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-bar"></div>
+      <span class="hero__scroll-label">Ontdekken</span>
+    </div>
+  </section>
+
+  <!-- ─── MARQUEE ─── -->
+  <div class="marquee" aria-hidden="true" role="presentation">
+    <div class="marquee__track">
+      <span class="marquee__item">Handgemaakt</span>
+      <span class="marquee__item">Single Origin</span>
+      <span class="marquee__item">Op Bestelling</span>
+      <span class="marquee__item">Patisserie</span>
+      <span class="marquee__item">Chocolade</span>
+      <span class="marquee__item">Magie</span>
+      <span class="marquee__item">Bonbons</span>
+      <span class="marquee__item">Pralines</span>
+      <span class="marquee__item">Mortsel</span>
+      <!-- Duplicate for seamless loop -->
+      <span class="marquee__item">Handgemaakt</span>
+      <span class="marquee__item">Single Origin</span>
+      <span class="marquee__item">Op Bestelling</span>
+      <span class="marquee__item">Patisserie</span>
+      <span class="marquee__item">Chocolade</span>
+      <span class="marquee__item">Magie</span>
+      <span class="marquee__item">Bonbons</span>
+      <span class="marquee__item">Pralines</span>
+      <span class="marquee__item">Mortsel</span>
+    </div>
   </div>
 
-  <!-- Sticky nav -->
-  <header class="sticky top-0 z-50 bg-ivory/88 backdrop-blur border-b border-cocoa/10">
-    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
-      <!-- Logo -->
-      <a href="#top" class="flex items-baseline gap-2">
-        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-cocoa">Chocolate Wizard<span class="text-gold">·</span></span>
-        <span class="text-[11px] uppercase tracking-[0.22em] text-cocoa/50 font-600">Chocolatier · Mortsel</span>
-      </a>
-      <!-- Desktop links -->
-      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
-        <a href="#bestellen" class="ug">Webshop</a>
-        <a href="#assortiment" class="ug">Assortiment</a>
-        <a href="#configurator" class="ug">Stel je doos samen</a>
-        <a href="#bezoek" class="ug">Bezoek ons</a>
-      </div>
-      <!-- CTA + hamburger -->
-      <div class="flex items-center gap-2">
-        <a href="#bestellen" class="inline-flex items-center gap-2 bg-gold text-cocoa text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-goldlt transition">
-          Bestel online
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
-          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-cocoa/15 text-cocoa hover:bg-cocoa/5 transition">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </nav>
-    <!-- Mobile menu -->
-    <div id="mobile-menu" hidden class="md:hidden border-t border-cocoa/10 bg-ivory/95 backdrop-blur">
-      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
-        <a href="#bestellen" class="py-3 border-b border-cocoa/8">Webshop</a>
-        <a href="#assortiment" class="py-3 border-b border-cocoa/8">Assortiment</a>
-        <a href="#configurator" class="py-3 border-b border-cocoa/8">Stel je doos samen</a>
-        <a href="#bezoek" class="py-3">Bezoek ons</a>
-      </div>
-    </div>
-  </header>
+  <!-- ─── ATELIER ─── -->
+  <section class="atelier section-pad" id="atelier" aria-labelledby="atelier-h2">
+    <div class="atelier__grid">
 
-  <!-- Hero -->
-  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-cocoa">
-    <img
-      src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&w=2000&q=80"
-      alt="Handgemaakte Belgische pralines bij The Chocolate Wizard in Mortsel"
-      fetchpriority="high"
-      class="absolute inset-0 w-full h-full object-cover"
-    />
-    <div class="absolute inset-0 hero-grad"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
-      <p class="text-goldlt font-600 tracking-[0.3em] uppercase text-xs mb-5">
-        <span aria-hidden="true">🍫</span> Chocolatier &amp; patisserie · Pralines &amp; cadeaudozen · Mortsel
-      </p>
-      <h1 class="font-serif text-ivory text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
-        Een vleugje magie<br />in elke chocolade.
-      </h1>
-      <p class="text-ivory/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
-        Handgemaakte pralines, fijne patisserie en mooie cadeaudozen — ambachtelijk
-        gemaakt in onze chocolaterie aan de Statielei in Mortsel. Binnenkort ook online.
-      </p>
-      <div class="flex flex-wrap gap-3 mt-9">
-        <a href="#bestellen" class="bg-gold text-cocoa font-700 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
-          Bestel online
-        </a>
-        <a href="#configurator" class="border border-ivory/45 text-ivory font-600 px-7 py-3.5 rounded-full hover:bg-ivory/10 transition">
-          Stel je eigen doos samen
-        </a>
+      <!-- Visual: cocoa bean + pod illustration -->
+      <div class="atelier__vis fu">
+        <svg viewBox="0 0 340 300" width="100%" aria-hidden="true">
+          <defs>
+            <radialGradient id="beanGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%"   stop-color="#7c3aed" stop-opacity="0.16"/>
+              <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <!-- Ambient glow -->
+          <ellipse cx="170" cy="150" rx="140" ry="130" fill="url(#beanGlow)"/>
+
+          <!-- Cocoa pod body -->
+          <ellipse cx="170" cy="148" rx="62" ry="88" fill="#1e120a" stroke="#c98a3a" stroke-width="1.4"/>
+          <!-- Pod ribs -->
+          <path d="M145 75 Q156 148 145 221" stroke="#8b4513" stroke-width="0.9" fill="none" opacity="0.55"/>
+          <path d="M158 67 Q169 148 158 229" stroke="#8b4513" stroke-width="0.9" fill="none" opacity="0.55"/>
+          <path d="M172 66 Q182 148 172 230" stroke="#8b4513" stroke-width="0.9" fill="none" opacity="0.55"/>
+          <path d="M186 68 Q196 148 186 228" stroke="#8b4513" stroke-width="0.9" fill="none" opacity="0.55"/>
+          <path d="M199 76 Q206 148 199 220" stroke="#8b4513" stroke-width="0.9" fill="none" opacity="0.45"/>
+          <!-- Stem -->
+          <path d="M170 59 Q175 46 181 42 Q186 38 183 34" stroke="#c98a3a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <!-- Leaf -->
+          <path d="M183 34 Q202 26 200 16 Q187 20 183 34" fill="#2a4a1a" opacity="0.65"/>
+
+          <!-- Floating beans -->
+          <g transform="translate(58,100) rotate(-22)">
+            <ellipse cx="0" cy="0" rx="17" ry="10" fill="#3d1f0a" stroke="#8b4513" stroke-width="0.9"/>
+            <line x1="0" y1="-9" x2="0" y2="9" stroke="#c98a3a" stroke-width="0.7" opacity="0.55"/>
+          </g>
+          <g transform="translate(284,112) rotate(16)">
+            <ellipse cx="0" cy="0" rx="13" ry="8" fill="#3d1f0a" stroke="#8b4513" stroke-width="0.9"/>
+            <line x1="0" y1="-7" x2="0" y2="7" stroke="#c98a3a" stroke-width="0.7" opacity="0.55"/>
+          </g>
+          <g transform="translate(66,190) rotate(12)">
+            <ellipse cx="0" cy="0" rx="10" ry="6" fill="#3d1f0a" stroke="#8b4513" stroke-width="0.7"/>
+          </g>
+
+          <!-- Sparkle accents -->
+          <text x="38"  y="58"  font-size="11" fill="#9d6bff" opacity="0.48">&#10022;</text>
+          <text x="288" y="202" font-size="9"  fill="#f5efd8" opacity="0.32">&#10022;</text>
+          <text x="28"  y="245" font-size="8"  fill="#7c3aed" opacity="0.38">&#10022;</text>
+          <text x="300" y="62"  font-size="8"  fill="#9d6bff" opacity="0.42">&#10022;</text>
+        </svg>
+        <!-- Second-read numeral -->
+        <span class="atelier__vis-num" aria-hidden="true">01</span>
       </div>
-    </div>
-  </section>
 
-  <!-- USP strip -->
-  <section class="bg-cocoa text-ivory/90">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
-      <div><p class="font-serif text-2xl text-goldlt">Ambacht</p><p class="mt-1 text-ivory/65">Dagvers gemaakt in eigen atelier</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Op maat</p><p class="mt-1 text-ivory/65">Stel je eigen cadeaudoos samen</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Patisserie</p><p class="mt-1 text-ivory/65">Taarten &amp; gebak voor elk feest</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Click &amp; collect</p><p class="mt-1 text-ivory/65">Online bestellen, afhalen in Mortsel</p></div>
-    </div>
-  </section>
-
-  <!-- Webshop / online bestellen -->
-  <section id="bestellen" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <div class="fade-up">
-        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Binnenkort: online bestellen</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-cocoa">
-          Bestel je cadeaus online,<br />haal af wanneer het past.
+      <!-- Text -->
+      <div class="fu d1">
+        <span class="section-kicker atelier__text-kicker">Het Atelier</span>
+        <h2 class="section-headline atelier__h2" id="atelier-h2">
+          Ambacht dat<br>je kunt proeven.
         </h2>
-        <p class="text-bark/75 text-lg mt-5 leading-relaxed max-w-md">
-          Een verjaardag, bedankje of feestdag? Kies een cadeaudoos of stel je eigen
-          praline-selectie samen — reserveer een taart of patisserie online en haal alles
-          vlot af in onze winkel in Mortsel met click-and-collect.
+        <p class="atelier__body">
+          In ons kleine atelier in Mortsel verwerken we zorgvuldig geselecteerde single-origin cacaobonen tot chocolade die verhalen vertelt. Geen fabriekssmaken &mdash; enkel geduld, techniek en een vleugje magie.
         </p>
-        <ul class="mt-7 space-y-3 text-bark">
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Online bestellen &amp; afhalen in Mortsel (click-and-collect)</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Persoonlijk cadeaukaartje bij je bestelling</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Taarten &amp; patisserie vooraf reserveren voor je feest</li>
-        </ul>
-        <a href="#configurator" class="inline-flex items-center gap-2 mt-9 bg-cocoa text-ivory font-600 px-7 py-3.5 rounded-full hover:bg-cocoalt transition">
-          Stel je eigen doos samen
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        <p class="atelier__body">
+          Elk stuk verlaat ons atelier met een naam, een herkomst en een karakter. Op bestelling, nooit van de plank.
+        </p>
+
+        <div class="atelier__pillars">
+          <div class="pillar">
+            <div class="pillar__icon" aria-hidden="true">&#127807;</div>
+            <div class="pillar__copy">
+              <strong>Single-origin cacao</strong>
+              <span>Directe relaties met plantages in Ecuador, Madagascar en Vietnam.</span>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar__icon" aria-hidden="true">&#129497;</div>
+            <div class="pillar__copy">
+              <strong>Magische recepten</strong>
+              <span>Smaakverhalen die je niet verwacht &mdash; lavendel, kardemom, yuzu.</span>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar__icon" aria-hidden="true">&#129330;</div>
+            <div class="pillar__copy">
+              <strong>Volledig handgemaakt</strong>
+              <span>Van tempering tot afwerking &mdash; alles door mensenhanden.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ─── COLLECTIE ─── -->
+  <section class="collectie section-pad" id="collectie" aria-labelledby="collectie-h2">
+    <div class="collectie__header fu">
+      <span class="section-kicker">
+        <span class="sp">&#10022;</span>
+        Onze cre&auml;ties
+        <span class="sp">&#10022;</span>
+      </span>
+      <h2 class="section-headline" id="collectie-h2">De Collectie</h2>
+    </div>
+
+    <div class="collectie__grid">
+
+      <!-- Bonbons -->
+      <article class="pcard fu d1">
+        <div class="pcard__vis pcard__vis--bonbons" aria-hidden="true">
+          <svg viewBox="0 0 180 160" width="180" height="160">
+            <defs>
+              <radialGradient id="bg1" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.07"/>
+                <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <circle cx="90" cy="80" r="58" fill="url(#bg1)"/>
+            <!-- Three bonbons arranged asymmetrically -->
+            <ellipse cx="62" cy="74" rx="22" ry="14" fill="#2d1a4a"/>
+            <ellipse cx="62" cy="74" rx="22" ry="14" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.5"/>
+            <ellipse cx="62" cy="70" rx="10" ry="4.5" fill="rgba(157,107,255,0.18)"/>
+
+            <ellipse cx="110" cy="68" rx="20" ry="13" fill="#3d1f5a"/>
+            <ellipse cx="110" cy="68" rx="20" ry="13" fill="none" stroke="#9d6bff" stroke-width="0.8" opacity="0.4"/>
+            <ellipse cx="110" cy="64" rx="9" ry="4" fill="rgba(157,107,255,0.14)"/>
+
+            <ellipse cx="86" cy="102" rx="24" ry="15" fill="#251540"/>
+            <ellipse cx="86" cy="102" rx="24" ry="15" fill="none" stroke="#7c3aed" stroke-width="0.9" opacity="0.55"/>
+            <ellipse cx="86" cy="98" rx="11" ry="5" fill="rgba(157,107,255,0.22)"/>
+
+            <!-- Gold drizzle lines -->
+            <path d="M55 60 Q62 52 69 60" stroke="#c98a3a" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+            <path d="M102 54 Q110 47 118 54" stroke="#f5efd8" stroke-width="0.8" fill="none" stroke-linecap="round" opacity="0.38"/>
+
+            <text x="90" y="138" font-size="9" fill="#9d6bff" opacity="0.4" text-anchor="middle" letter-spacing="2" font-family="Outfit,sans-serif">bonbons</text>
+          </svg>
+        </div>
+        <div class="pcard__body">
+          <p class="pcard__tag">Stuk &middot; Doos</p>
+          <h3 class="pcard__name">Bonbons</h3>
+          <p class="pcard__desc">Gevulde chocoladekunstwerken met ganache, caramel of pralin&eacute;. Verrassende smaakcombinaties per seizoen &mdash; altijd op bestelling.</p>
+        </div>
+      </article>
+
+      <!-- Pralines -->
+      <article class="pcard fu d2">
+        <div class="pcard__vis pcard__vis--pralines" aria-hidden="true">
+          <svg viewBox="0 0 180 160" width="180" height="160">
+            <defs>
+              <radialGradient id="bg2" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#8b4513" stop-opacity="0.09"/>
+                <stop offset="100%" stop-color="#8b4513" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <circle cx="90" cy="80" r="56" fill="url(#bg2)"/>
+            <!-- Box outline -->
+            <rect x="34" y="48" width="112" height="76" rx="5" fill="#2a1505" stroke="#8b4513" stroke-width="0.9"/>
+            <!-- 2x3 praline grid -->
+            <circle cx="62"  cy="70" r="13" fill="#3d2000" stroke="#c98a3a" stroke-width="0.7"/>
+            <circle cx="62"  cy="70" r="7"  fill="#4a2a00" opacity="0.55"/>
+            <circle cx="90"  cy="70" r="13" fill="#4a2200" stroke="#8b4513" stroke-width="0.7"/>
+            <circle cx="90"  cy="70" r="7"  fill="#5a3000" opacity="0.55"/>
+            <circle cx="118" cy="70" r="13" fill="#3d1800" stroke="#c98a3a" stroke-width="0.7"/>
+            <circle cx="118" cy="70" r="7"  fill="#4a2000" opacity="0.55"/>
+            <circle cx="62"  cy="100" r="13" fill="#3d2200" stroke="#8b4513" stroke-width="0.7"/>
+            <circle cx="62"  cy="100" r="7"  fill="#4a2a00" opacity="0.5"/>
+            <circle cx="90"  cy="100" r="13" fill="#4a1a00" stroke="#c98a3a" stroke-width="0.7"/>
+            <circle cx="90"  cy="100" r="7"  fill="#5a2800" opacity="0.5"/>
+            <circle cx="118" cy="100" r="13" fill="#3d2000" stroke="#8b4513" stroke-width="0.7"/>
+            <circle cx="118" cy="100" r="7"  fill="#4a2800" opacity="0.5"/>
+            <!-- Highlight dots -->
+            <circle cx="64"  cy="67" r="2.2" fill="rgba(245,239,216,0.16)"/>
+            <circle cx="92"  cy="67" r="2.2" fill="rgba(245,239,216,0.14)"/>
+            <circle cx="120" cy="67" r="2.2" fill="rgba(245,239,216,0.16)"/>
+          </svg>
+        </div>
+        <div class="pcard__body">
+          <p class="pcard__tag">Doos &middot; Geschenk</p>
+          <h3 class="pcard__name">Pralines</h3>
+          <p class="pcard__desc">Klassiek Belgisch ambacht hertaald in eigen handschrift. In doosjes van 9 tot 36 stuks &mdash; ideaal als geschenk of voor een bijzonder moment.</p>
+        </div>
+      </article>
+
+      <!-- Gâteaux -->
+      <article class="pcard fu d3">
+        <div class="pcard__vis pcard__vis--gateaux" aria-hidden="true">
+          <svg viewBox="0 0 180 160" width="180" height="160">
+            <defs>
+              <radialGradient id="bg3" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#008060" stop-opacity="0.07"/>
+                <stop offset="100%" stop-color="#008060" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <circle cx="90" cy="80" r="56" fill="url(#bg3)"/>
+            <!-- Layered cake cross-section style -->
+            <!-- Bottom layer -->
+            <ellipse cx="90" cy="120" rx="50" ry="11" fill="#0e2a20"/>
+            <rect x="40" y="96" width="100" height="24" fill="#0e2a20"/>
+            <ellipse cx="90" cy="96" rx="50" ry="11" fill="#153820"/>
+            <!-- Middle layer -->
+            <ellipse cx="90" cy="96" rx="40" ry="9.5" fill="#1a4a30"/>
+            <rect x="50" y="74" width="80" height="22" fill="#1a4a30"/>
+            <ellipse cx="90" cy="74" rx="40" ry="9.5" fill="#224535"/>
+            <!-- Top layer -->
+            <ellipse cx="90" cy="74" rx="30" ry="7.5" fill="#2a5540"/>
+            <rect x="60" y="55" width="60" height="19" fill="#2a5540"/>
+            <ellipse cx="90" cy="55" rx="30" ry="7.5" fill="#305a44"/>
+            <!-- Ganache top drip -->
+            <ellipse cx="90" cy="55" rx="30" ry="7.5" fill="#1a0c04" opacity="0.55"/>
+            <path d="M78 55 Q76 65 79 72"  stroke="#8b4513" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+            <path d="M90 55 Q88 67 91 73"  stroke="#c98a3a" stroke-width="2"   fill="none" stroke-linecap="round"/>
+            <path d="M102 55 Q104 64 102 71" stroke="#8b4513" stroke-width="2"  fill="none" stroke-linecap="round"/>
+            <!-- Gold decorative dots -->
+            <circle cx="82" cy="49" r="2.4" fill="#c98a3a" opacity="0.68"/>
+            <circle cx="90" cy="47" r="2.8" fill="#f5efd8" opacity="0.48"/>
+            <circle cx="98" cy="49" r="2"   fill="#c98a3a" opacity="0.58"/>
+            <!-- Star topper -->
+            <text x="90" y="44" font-size="9" fill="#9d6bff" text-anchor="middle">&#10022;</text>
+          </svg>
+        </div>
+        <div class="pcard__body">
+          <p class="pcard__tag">Op maat &middot; Feest</p>
+          <h3 class="pcard__name">G&acirc;teaux</h3>
+          <p class="pcard__desc">Chocoladetaarten voor elk bijzonder moment. Van intieme verjaardag tot groot feest &mdash; altijd persoonlijk, altijd gemaakt met zorg.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ─── BESTELLEN ─── -->
+  <section class="bestellen section-pad" id="bestellen" aria-labelledby="bestellen-h2">
+    <div class="bestellen__inner">
+      <span class="section-kicker fu">
+        <span class="sp">&#10022;</span>
+        Op bestelling
+        <span class="sp">&#10022;</span>
+      </span>
+
+      <h2 class="section-headline bestellen__h2 fu d1" id="bestellen-h2">
+        Klaar om te<br>
+        <em>toveren</em>?
+      </h2>
+
+      <p class="bestellen__sub fu d2">
+        Alle cre&auml;ties worden uitsluitend op bestelling gemaakt. Contacteer ons voor persoonlijk advies over smaak, verpakking en levering.
+      </p>
+      <p class="bestellen__note fu d2">
+        Bestel minstens 5 werkdagen op voorhand &middot; Afhalen in Mortsel
+      </p>
+
+      <div class="bestellen__actions fu d3">
+        <a href="tel:+32485620079" class="btn-gold">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5 2 2 0 0 1 3.6 2.87h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.5a16 16 0 0 0 6 6l.72-.72a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.28 18z"/></svg>
+          Bel: 0485 62 00 79
+        </a>
+        <a href="#bezoek" class="btn-outline">
+          Bezoek ons atelier
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
-      <div class="fade-up grid grid-cols-2 gap-4">
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-cream">
-          <img
-            src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=800&q=80"
-            alt="Assortiment handgemaakte pralines"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
+
+      <div class="bestellen__trust fu d4">
+        <div class="trust-item">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          100% handgemaakt
         </div>
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-cream mt-8">
-          <img
-            src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=800&q=80"
-            alt="Chocolade cadeaudoos als cadeau"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
+        <div class="trust-item">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          Persoonlijke aanpak
+        </div>
+        <div class="trust-item">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Afhalen in Mortsel
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Assortiment grid -->
-  <section id="assortiment" class="bg-cream/55 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
-        <div>
-          <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
-          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-cocoa">Pralines, patisserie &amp; meer</h2>
-        </div>
-        <p class="text-bark/65 max-w-sm">Alles ambachtelijk gemaakt in eigen atelier — van klassieke pralines tot fijne taarten en seizoenscollecties.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <!-- Pralines -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-cocoa text-ivory relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=800&q=80"
-            alt="Handgemaakte pralines"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-cocoa via-cocoa/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Pralines</h3>
-            <p class="text-ivory/75 text-sm mt-1">Klassiekers &amp; nieuwe creaties — ganache, praliné &amp; gianduja.</p>
-          </div>
-        </article>
-        <!-- Patisserie -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-cocoa text-ivory relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80"
-            alt="Fijne patisserie en taarten"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-cocoa via-cocoa/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Patisserie</h3>
-            <p class="text-ivory/75 text-sm mt-1">Taarten, gebak &amp; fijne desserts — vers uit het atelier.</p>
-          </div>
-        </article>
-        <!-- Cadeaudozen -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-cocoa text-ivory relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=800&q=80"
-            alt="Cadeaudozen met chocolade"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-cocoa via-cocoa/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Cadeaudozen</h3>
-            <p class="text-ivory/75 text-sm mt-1">Mooi verpakt &amp; klaar om te geven — 12 of 24 stuks.</p>
-          </div>
-        </article>
-        <!-- Seizoen -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-cocoa text-ivory relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1547043879-1c47a07d9c6e?auto=format&fit=crop&w=800&q=80"
-            alt="Seizoenscollectie chocolade"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-cocoa via-cocoa/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Seizoenscollecties</h3>
-            <p class="text-ivory/75 text-sm mt-1">Valentijn, Pasen, Moederdag &amp; Kerst — telkens nieuw.</p>
-          </div>
-        </article>
-        <!-- Truffels & specialiteiten -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-cocoa text-ivory relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1605522561233-768ad7a8fabf?auto=format&fit=crop&w=800&q=80"
-            alt="Truffels en chocolade specialiteiten"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-cocoa via-cocoa/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Truffels &amp; specialiteiten</h3>
-            <p class="text-ivory/75 text-sm mt-1">Truffels, mendiants &amp; huisgemaakte lekkernijen.</p>
-          </div>
-        </article>
-        <!-- Configurator CTA card -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-gold text-cocoa relative aspect-[4/5] flex items-center justify-center text-center p-6">
-          <div>
-            <p class="font-serif text-2xl font-600">Stel je eigen<br />doos samen</p>
-            <p class="text-cocoa/80 text-sm mt-2">Kies zelf je pralines — 12 of 24 stuks — en maak een persoonlijk cadeau.</p>
-            <a href="#configurator" class="inline-block mt-5 text-cocoa font-700 ug">Naar de configurator →</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+  <div class="section-divider"></div>
 
-  <!-- Featured products (illustratief) -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="flex items-end justify-between mb-10">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-cocoa">Onze meest gevraagde cadeaus</h2>
-      <a href="#bestellen" class="hidden sm:inline text-gold font-600 ug">Alles bestellen →</a>
-    </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Product 1 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-cream">
-          <img
-            src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=700&q=80"
-            alt="Cadeaudoos met 24 pralines (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Bestseller</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-cocoa">Cadeaudoos 24 pralines</h3>
-          <p class="text-bark/60 text-sm mt-1">Een ruime selectie van onze huispralines, mooi verpakt.</p>
-          <div class="flex items-center justify-end mt-4">
-            <button class="bg-cocoa text-ivory text-sm font-600 px-4 py-2 rounded-full hover:bg-cocoalt transition">Bekijken</button>
-          </div>
-        </div>
-      </div>
-      <!-- Product 2 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-cream">
-          <img
-            src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=80"
-            alt="Chocoladetaart patisserie (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Huisbereiding</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-cocoa">Chocoladetaart</h3>
-          <p class="text-bark/60 text-sm mt-1">Fijne huisgemaakte taart met intense chocolade — vooraf te reserveren.</p>
-          <div class="flex items-center justify-end mt-4">
-            <button class="bg-cocoa text-ivory text-sm font-600 px-4 py-2 rounded-full hover:bg-cocoalt transition">Bekijken</button>
-          </div>
-        </div>
-      </div>
-      <!-- Product 3 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-cream">
-          <img
-            src="https://images.unsplash.com/photo-1605522561233-768ad7a8fabf?auto=format&fit=crop&w=700&q=80"
-            alt="Doos truffels (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Seizoen</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-cocoa">Truffeldoos</h3>
-          <p class="text-bark/60 text-sm mt-1">Zachte huisgemaakte truffels — het hele jaar door geliefd.</p>
-          <div class="flex items-center justify-end mt-4">
-            <button class="bg-cocoa text-ivory text-sm font-600 px-4 py-2 rounded-full hover:bg-cocoalt transition">Bekijken</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p class="text-center text-xs text-bark/40 mt-6">Voorbeeldproducten ter illustratie van de toekomstige cadeauwebshop.</p>
-  </section>
+  <!-- ─── BEZOEK ─── -->
+  <section class="bezoek section-pad" id="bezoek" aria-labelledby="bezoek-h2">
+    <div class="bezoek__grid">
 
-  <!-- Praline-doos configurator (the differentiator) -->
-  <section id="configurator" class="bg-cocoa text-ivory py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
-      <div class="order-2 lg:order-1 fade-up">
-        <p class="text-goldlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Praline-doos configurator</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
-          Stel je eigen<br />cadeaudoos samen.
+      <!-- Text -->
+      <div class="fu">
+        <span class="section-kicker">Atelier &amp; Afhaling</span>
+        <h2 class="section-headline bezoek__h2" id="bezoek-h2">
+          Ontmoet de wizard<br>
+          in Mortsel.
         </h2>
-        <p class="text-ivory/80 text-lg mt-6 leading-relaxed max-w-md">
-          Kies eerst je doosgrootte en daarna je favoriete pralines uit ons assortiment.
-          Een persoonlijk cadeau dat helemaal naar smaak is — afhalen in de winkel met
-          click-and-collect in Mortsel.
+        <p class="bezoek__body">
+          Ons atelier bevindt zich in het hart van Mortsel, op een steenworp van Antwerpen. Bestelling afhalen na afspraak &mdash; bel ons om een tijdstip te bevestigen.
         </p>
 
-        <!-- Concept-illustratie van de configurator -->
-        <div class="mt-8 rounded-2xl bg-ivory/5 border border-ivory/10 p-6">
-          <p class="text-xs uppercase tracking-[0.2em] text-goldlt font-600 mb-4">Stap 1 — kies je doos</p>
-          <div class="grid grid-cols-2 gap-3" role="group" aria-label="Kies je doosgrootte">
-            <button type="button" data-box="12" aria-pressed="true"
-              class="box-opt rounded-xl border-2 border-gold bg-gold/15 px-4 py-5 text-center transition">
-              <span class="block font-serif text-3xl text-ivory">12</span>
-              <span class="block text-ivory/70 text-sm mt-1">stuks</span>
-            </button>
-            <button type="button" data-box="24" aria-pressed="false"
-              class="box-opt rounded-xl border-2 border-ivory/15 px-4 py-5 text-center transition hover:border-ivory/40">
-              <span class="block font-serif text-3xl text-ivory">24</span>
-              <span class="block text-ivory/70 text-sm mt-1">stuks</span>
-            </button>
+        <div class="bezoek__details">
+          <div class="bdetail">
+            <div class="bdetail__icon" aria-hidden="true">&#128205;</div>
+            <div class="bdetail__copy">
+              <strong>Locatie</strong>
+              <span>Mortsel (Antwerpen), Belgi&euml;</span>
+            </div>
           </div>
-
-          <p class="text-xs uppercase tracking-[0.2em] text-goldlt font-600 mt-6 mb-3">Stap 2 — kies je pralines</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="rounded-full bg-ivory/10 text-ivory/85 text-sm px-3 py-1.5">Melk praliné</span>
-            <span class="rounded-full bg-ivory/10 text-ivory/85 text-sm px-3 py-1.5">Pure ganache</span>
-            <span class="rounded-full bg-ivory/10 text-ivory/85 text-sm px-3 py-1.5">Gianduja</span>
-            <span class="rounded-full bg-ivory/10 text-ivory/85 text-sm px-3 py-1.5">Karamel &amp; zeezout</span>
-            <span class="rounded-full bg-ivory/10 text-ivory/85 text-sm px-3 py-1.5">Hazelnoot</span>
-            <span class="rounded-full bg-ivory/10 text-ivory/85 text-sm px-3 py-1.5">Koffie</span>
+          <div class="bdetail">
+            <div class="bdetail__icon" aria-hidden="true">&#128222;</div>
+            <div class="bdetail__copy">
+              <strong>Telefoon</strong>
+              <span><a href="tel:+32485620079" style="color:var(--purple-soft)">0485 62 00 79</a></span>
+            </div>
           </div>
-
-          <div class="mt-6 flex items-center justify-between gap-4">
-            <p class="text-ivory/70 text-sm">Gekozen: <span id="box-size" class="text-ivory font-600">12</span>-stuks doos op maat</p>
-            <a href="#bezoek" class="inline-flex items-center gap-2 bg-gold text-cocoa font-700 px-5 py-2.5 rounded-full hover:bg-goldlt transition">
-              Doos samenstellen
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
+          <div class="bdetail">
+            <div class="bdetail__icon" aria-hidden="true">&#128336;</div>
+            <div class="bdetail__copy">
+              <strong>Openingsuren</strong>
+              <span>Op afspraak &middot; Bel voor beschikbaarheid</span>
+            </div>
+          </div>
+          <div class="bdetail">
+            <div class="bdetail__icon" aria-hidden="true">&#128663;</div>
+            <div class="bdetail__copy">
+              <strong>Bereikbaarheid</strong>
+              <span>Vlot bereikbaar vanuit Antwerpen &middot; parkeren mogelijk</span>
+            </div>
           </div>
         </div>
-        <p class="text-ivory/40 text-xs mt-4">Concept-illustratie van de online configurator — interactie en pralinekeuze volgen in de definitieve webshop.</p>
       </div>
 
-      <div class="order-1 lg:order-2 rounded-3xl overflow-hidden aspect-[4/3]">
-        <img
-          src="https://images.unsplash.com/photo-1623660053975-cf75a8be0908?auto=format&fit=crop&w=1000&q=80"
-          alt="Open praline-doos met gevarieerde pralines"
-          loading="lazy" decoding="async"
-          class="w-full h-full object-cover"
-        />
+      <!-- Map placeholder SVG -->
+      <div class="bezoek__map fu d2" aria-label="Kaartlocatie Mortsel">
+        <svg style="position:absolute;inset:0;width:100%;height:100%"
+             viewBox="0 0 480 340"
+             preserveAspectRatio="xMidYMid slice"
+             aria-hidden="true">
+          <rect width="480" height="340" fill="#13101a"/>
+          <!-- Street grid -->
+          <line x1="0" y1="85"  x2="480" y2="85"  stroke="rgba(245,239,216,0.04)" stroke-width="1"/>
+          <line x1="0" y1="170" x2="480" y2="170" stroke="rgba(245,239,216,0.06)" stroke-width="1.5"/>
+          <line x1="0" y1="255" x2="480" y2="255" stroke="rgba(245,239,216,0.04)" stroke-width="1"/>
+          <line x1="80"  y1="0" x2="80"  y2="340" stroke="rgba(245,239,216,0.04)" stroke-width="1"/>
+          <line x1="200" y1="0" x2="200" y2="340" stroke="rgba(245,239,216,0.06)" stroke-width="1.5"/>
+          <line x1="320" y1="0" x2="320" y2="340" stroke="rgba(245,239,216,0.04)" stroke-width="1"/>
+          <line x1="400" y1="0" x2="400" y2="340" stroke="rgba(245,239,216,0.04)" stroke-width="1"/>
+          <!-- Diagonal road -->
+          <line x1="0" y1="340" x2="480" y2="0" stroke="rgba(245,239,216,0.03)" stroke-width="1"/>
+          <!-- Block fills -->
+          <rect x="85"  y="90"  width="110" height="75"  rx="3" fill="rgba(124,58,237,0.05)"/>
+          <rect x="205" y="90"  width="110" height="75"  rx="3" fill="rgba(124,58,237,0.04)"/>
+          <rect x="85"  y="175" width="110" height="75"  rx="3" fill="rgba(124,58,237,0.04)"/>
+          <rect x="205" y="175" width="110" height="75"  rx="3" fill="rgba(124,58,237,0.06)"/>
+          <rect x="325" y="90"  width="70"  height="75"  rx="3" fill="rgba(124,58,237,0.03)"/>
+          <rect x="325" y="175" width="70"  height="75"  rx="3" fill="rgba(124,58,237,0.04)"/>
+          <!-- Pulse ring (CSS animate SVG) -->
+          <circle cx="240" cy="170" r="40" fill="rgba(124,58,237,0.12)" stroke="rgba(124,58,237,0.25)" stroke-width="1">
+            <animate attributeName="r" from="30" to="54" dur="2.6s" repeatCount="indefinite"/>
+            <animate attributeName="stroke-opacity" from="0.35" to="0" dur="2.6s" repeatCount="indefinite"/>
+          </circle>
+          <!-- Pin shadow -->
+          <circle cx="240" cy="175" rx="24" ry="6" fill="rgba(0,0,0,0.28)" transform="scale(1,0.3) translate(0,350)"/>
+          <!-- Pin body -->
+          <circle cx="240" cy="170" r="18" fill="rgba(124,58,237,0.28)" stroke="#7c3aed" stroke-width="1.5"/>
+          <circle cx="240" cy="170" r="10" fill="#7c3aed"/>
+          <circle cx="240" cy="166" r="3.5" fill="#f5efd8" opacity="0.65"/>
+          <!-- Pin tail -->
+          <path d="M240 188 L240 210" stroke="#7c3aed" stroke-width="2" stroke-linecap="round" opacity="0.65"/>
+          <circle cx="240" cy="213" r="3" fill="#7c3aed" opacity="0.35"/>
+        </svg>
+        <!-- Overlay label -->
+        <div style="position:relative;z-index:1;text-align:center">
+          <div style="font-size:1.7rem" aria-hidden="true">&#128506;</div>
+          <p class="bezoek__map-label">Mortsel, Antwerpen</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Story / vakmanschap -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
-    <div class="fade-up">
-      <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
-      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-cocoa">Vakmanschap in elke praline.</h2>
-      <p class="text-bark/70 text-lg mt-6 leading-relaxed">
-        Bij The Chocolate Wizard draait alles om ambacht. Onze pralines, taarten en
-        truffels worden met de hand gemaakt in eigen atelier, met zorgvuldig gekozen
-        chocolade en verse ingrediënten — zonder compromis op smaak.
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__brand-logo">
+          <svg width="20" height="20" viewBox="0 0 28 28" aria-hidden="true">
+            <circle cx="14" cy="14" r="14" fill="#0c0810"/>
+            <path d="M14 4 L16.8 10.2 L24 12 L19 17 L20.2 24 L14 21 L7.8 24 L9 17 L4 12 L11.2 10.2 Z" fill="#7c3aed" opacity="0.88"/>
+            <circle cx="14" cy="14.5" r="3.2" fill="#f5efd8" opacity="0.9"/>
+          </svg>
+          The Chocolate Wizard
+        </div>
+        <p class="footer__tagline">Waar chocolade tovenarij wordt.</p>
+        <p class="footer__loc">Mortsel, Antwerpen &middot; Belgi&euml;</p>
+      </div>
+
+      <div class="footer__links-group">
+        <p class="footer__links-title">Navigatie</p>
+        <a href="#atelier">Het Atelier</a>
+        <a href="#collectie">De Collectie</a>
+        <a href="#bestellen">Bestellen</a>
+        <a href="#bezoek">Bezoek</a>
+      </div>
+
+      <div class="footer__links-group">
+        <p class="footer__links-title">Contact</p>
+        <a href="tel:+32485620079">0485 62 00 79</a>
+        <a href="#bezoek">Afhaling in Mortsel</a>
+        <a href="#bestellen">Op bestelling</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copy">
+        &copy; 2025 The Chocolate Wizard &middot; Mortsel
+        <span style="margin:0 0.4rem;opacity:0.28">&middot;</span>
+        <a href="https://saspire.org" target="_blank" rel="noopener noreferrer">Website door Saspire</a>
       </p>
-      <p class="text-bark/70 text-lg mt-4 leading-relaxed">
-        In onze winkel aan de Statielei 6 in Mortsel zijn we een vertrouwd adres in de
-        streek. Of u nu langskomt voor een doosje voor onderweg, een taart voor een feest
-        of een cadeaudoos voor een speciale gelegenheid: u proeft het verschil van échte
-        ambachtelijke chocolade.
-      </p>
-      <div class="mt-9 flex flex-wrap gap-6">
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">1</p>
-          <p class="text-bark/65 text-sm mt-1">Winkel: Mortsel</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">100%</p>
-          <p class="text-bark/65 text-sm mt-1">Ambachtelijk gemaakt</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">4</p>
-          <p class="text-bark/65 text-sm mt-1">Seizoenscollecties per jaar</p>
-        </div>
-      </div>
-    </div>
-    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
-      <img
-        src="https://images.unsplash.com/photo-1574265933369-9d4d9c2d3eea?auto=format&fit=crop&w=1000&q=80"
-        alt="Chocolatier aan het werk in het atelier"
-        loading="lazy" decoding="async"
-        class="w-full h-full object-cover"
-      />
-    </div>
-  </section>
-
-  <!-- Bezoek + kaart -->
-  <section id="bezoek" class="bg-cream/55 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
-      <div class="fade-up">
-        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-cocoa">Onze winkel in Mortsel</h2>
-        <p class="text-bark/70 text-lg mt-5 max-w-md">
-          Kom proeven en kiezen aan de Statielei 6 in Mortsel — vlak bij het station.
-        </p>
-        <dl class="mt-9 space-y-5 text-bark">
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📍</span>
-            <div>
-              <dt class="font-600 text-cocoa">Winkel — Mortsel</dt>
-              <dd class="text-bark/70">Statielei 6, 2640 Mortsel</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🕑</span>
-            <div>
-              <dt class="font-600 text-cocoa">Openingsuren</dt>
-              <dd class="text-bark/70">Di–Za: 09:00–18:00 · Zo: 09:00–12:30 · Ma: gesloten</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📞</span>
-            <div>
-              <dt class="font-600 text-cocoa">Telefoon</dt>
-              <dd class="text-bark/70"><a href="tel:+32485620079" class="ug">0485 62 00 79</a></dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📦</span>
-            <div>
-              <dt class="font-600 text-cocoa">Click &amp; collect</dt>
-              <dd class="text-bark/70">Bestel online &amp; haal vlot af in de winkel</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">💳</span>
-            <div>
-              <dt class="font-600 text-cocoa">Betaalmogelijkheden</dt>
-              <dd class="text-bark/70">Cash · Bancontact · Visa · Online (Mollie)</dd>
-            </div>
-          </div>
-        </dl>
-        <a href="#bestellen" class="inline-block mt-9 bg-cocoa text-ivory font-600 px-7 py-3.5 rounded-full hover:bg-cocoalt transition">
-          Of bestel online →
-        </a>
-      </div>
-      <!-- OpenStreetMap embed — Statielei 6, 2640 Mortsel (~51.1690, 4.4612) -->
-      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-cream shadow-sm">
-        <iframe
-          title="Kaart The Chocolate Wizard — Statielei 6, 2640 Mortsel"
-          class="w-full h-full min-h-[360px] border-0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=4.453%2C51.165%2C4.469%2C51.173&layer=mapnik&marker=51.1690%2C4.4612"
-        ></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- GDPR Newsletter -->
-  <section class="bg-gold/15">
-    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-cocoa">Blijf op de hoogte</h2>
-      <p class="text-bark/70 mt-3">Nieuwe seizoenscollecties, feestdagsaanbiedingen en exclusieve cadeaudozen — af en toe in je mailbox.</p>
-      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
-        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
-        <input
-          id="nl-email"
-          name="email"
-          type="email"
-          autocomplete="email"
-          required
-          placeholder="jouw@email.be"
-          class="flex-1 px-5 py-3 rounded-full border border-cocoa/20 bg-ivory focus:outline-none focus:ring-2 focus:ring-gold"
-        />
-        <button class="bg-cocoa text-ivory font-600 px-7 py-3 rounded-full hover:bg-cocoalt transition">Inschrijven</button>
-      </form>
-      <p class="text-xs text-bark/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-cocoa text-ivory/80">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div>
-        <p class="font-serif text-2xl text-ivory font-700">The Chocolate Wizard<span class="text-gold">·</span></p>
-        <p class="text-ivory/55 text-sm mt-1">Chocolatier &amp; patisserie</p>
-        <p class="text-ivory/55 text-sm mt-3 max-w-xs">Chocolatier &amp; patisserie aan de Statielei in Mortsel. Ambachtelijk gemaakt in eigen atelier.</p>
-      </div>
-      <div>
-        <p class="font-600 text-ivory mb-3">Winkel</p>
-        <ul class="space-y-2 text-sm text-ivory/60">
-          <li><a href="#assortiment" class="hover:text-goldlt">Assortiment</a></li>
-          <li><a href="#bestellen" class="hover:text-goldlt">Webshop</a></li>
-          <li><a href="#configurator" class="hover:text-goldlt">Stel je doos samen</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-ivory mb-3">Info</p>
-        <ul class="space-y-2 text-sm text-ivory/60">
-          <li><a href="#bezoek" class="hover:text-goldlt">Openingsuren</a></li>
-          <li><a href="#bezoek" class="hover:text-goldlt">Contact</a></li>
-          <li><a href="#top" class="hover:text-goldlt">Ons verhaal</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-ivory mb-3">Contact</p>
-        <ul class="space-y-2 text-sm text-ivory/60">
-          <li>Statielei 6, 2640 Mortsel</li>
-          <li><a href="tel:+32485620079" class="hover:text-goldlt">0485 62 00 79</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="border-t border-ivory/10">
-      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-ivory/40">
-        <p>© 2026 The Chocolate Wizard. Concept-redesign.</p>
-        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; webshop.</p>
+      <div aria-hidden="true" style="display:flex;gap:0.55rem;align-items:center">
+        <span class="sp" style="font-size:0.72rem;color:var(--purple-soft)">&#10022;</span>
+        <span class="sp" style="font-size:0.58rem;color:var(--gold-faint)">&#10022;</span>
+        <span class="sp" style="font-size:0.78rem;color:var(--purple-vivid)">&#10022;</span>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
+  <!-- ─── SCRIPTS (all inline) ─── -->
   <script>
-    // Fade-up IntersectionObserver
+  (() => {
+    'use strict';
+
+    /* ══════════════════════════════
+       1. HEADROOM NAV
+       TOL_DOWN=8px, TOL_UP=5px, offset=80px, rAF
+    ══════════════════════════════ */
+    const nav       = document.getElementById('mainNav');
+    const TOL_DOWN  = 8;
+    const TOL_UP    = 5;
+    const OFFSET    = 80;
+
+    let lastY       = window.scrollY;
+    let rafPending  = false;
+
+    function applyHeadroom() {
+      const y    = window.scrollY;
+      const diff = y - lastY;
+
+      if (y < OFFSET) {
+        nav.classList.remove('is-unpinned');
+        nav.classList.add('is-pinned');
+      } else if (diff > TOL_DOWN) {
+        nav.classList.add('is-unpinned');
+        nav.classList.remove('is-pinned');
+      } else if (diff < -TOL_UP) {
+        nav.classList.remove('is-unpinned');
+        nav.classList.add('is-pinned');
+      }
+
+      lastY      = y;
+      rafPending = false;
+    }
+
+    window.addEventListener('scroll', () => {
+      if (!rafPending) {
+        rafPending = true;
+        requestAnimationFrame(applyHeadroom);
+      }
+    }, { passive: true });
+
+
+    /* ══════════════════════════════
+       2. INTERSECTIONOBSERVER — fade-up
+    ══════════════════════════════ */
+    const fadeEls = document.querySelectorAll('.fu');
     const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
-    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
-    } else {
-      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1600);
-    }
-
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (menuBtn && mobileMenu) {
-      const setOpen = (open) => {
-        if (open) mobileMenu.removeAttribute('hidden');
-        else mobileMenu.setAttribute('hidden', '');
-        menuBtn.setAttribute('aria-expanded', String(open));
-        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
-      };
-      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
-      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
-    }
-
-    // Praline-doos configurator (concept) — toggle 12 / 24
-    const boxOpts = document.querySelectorAll('.box-opt');
-    const boxSize = document.getElementById('box-size');
-    boxOpts.forEach((btn) => btn.addEventListener('click', () => {
-      boxOpts.forEach((b) => {
-        const active = b === btn;
-        b.setAttribute('aria-pressed', String(active));
-        b.classList.toggle('border-gold', active);
-        b.classList.toggle('bg-gold/15', active);
-        b.classList.toggle('border-ivory/15', !active);
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
       });
-      if (boxSize) boxSize.textContent = btn.getAttribute('data-box');
-    }));
+    }, { threshold: 0.10, rootMargin: '0px 0px -36px 0px' });
+
+    fadeEls.forEach(el => io.observe(el));
+
+
+    /* ══════════════════════════════
+       3. STAR CANVAS — hero starfield
+    ══════════════════════════════ */
+    const canvas = document.getElementById('starCanvas');
+    const ctx    = canvas.getContext('2d');
+    let stars    = [];
+    let rafId;
+
+    function resizeCanvas() {
+      const section = canvas.parentElement;
+      canvas.width  = section.offsetWidth;
+      canvas.height = section.offsetHeight;
+    }
+
+    function buildStars() {
+      stars = [];
+      const count = Math.min(Math.floor((canvas.width * canvas.height) / 5800), 130);
+      for (let i = 0; i < count; i++) {
+        stars.push({
+          x:     Math.random() * canvas.width,
+          y:     Math.random() * canvas.height,
+          r:     Math.random() * 1.3 + 0.25,
+          alpha: Math.random() * 0.65 + 0.1,
+          speed: Math.random() * 0.014 + 0.004,
+          phase: Math.random() * Math.PI * 2,
+          gold:  Math.random() < 0.28   /* gold vs purple */
+        });
+      }
+    }
+
+    function renderStars(ts) {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      const t = ts * 0.001;
+
+      for (let i = 0; i < stars.length; i++) {
+        const s = stars[i];
+        const a = s.alpha * (0.5 + 0.5 * Math.sin(t * s.speed * 9 + s.phase));
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        ctx.fillStyle = s.gold
+          ? `rgba(245,239,216,${a})`
+          : `rgba(157,107,255,${a * 0.85})`;
+        ctx.fill();
+      }
+
+      rafId = requestAnimationFrame(renderStars);
+    }
+
+    function startCanvas() {
+      resizeCanvas();
+      buildStars();
+      if (rafId) cancelAnimationFrame(rafId);
+      requestAnimationFrame(renderStars);
+    }
+
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(startCanvas, 180);
+    });
+
+    startCanvas();
+
+
+    /* ══════════════════════════════
+       4. ACTIVE NAV LINK HIGHLIGHT
+    ══════════════════════════════ */
+    const sections = document.querySelectorAll('section[id]');
+    const navAs    = document.querySelectorAll('.nav__links a:not(.nav__cta)');
+
+    const sio = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const id = e.target.getAttribute('id');
+          navAs.forEach(a => {
+            a.style.color = (a.getAttribute('href') === '#' + id)
+              ? 'var(--gold)'
+              : '';
+          });
+        }
+      });
+    }, { threshold: 0.42 });
+
+    sections.forEach(s => sio.observe(s));
+
+  })();
   </script>
+
 </body>
 </html>

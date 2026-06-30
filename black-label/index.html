@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Black Label — Boekhandel in Borgerhout · Maréestraat</title>
+  <meta name="description" content="Black Label is de onafhankelijke boekhandel in Borgerhout. Romans, strips, non-fictie, kinderboeken en meer. Kom langs in de Maréestraat 33." />
+  <link rel="canonical" href="https://blacklabel-borgerhout.be/" />
+  <meta name="theme-color" content="#1a1410" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Black Label Borgerhout" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Black Label — Boekhandel in Borgerhout" />
+  <meta property="og:description" content="Onafhankelijke boekhandel in hartje Borgerhout — romans, strips, non-fictie &amp; meer." />
+  <meta property="og:url" content="https://blacklabel-borgerhout.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231a1410'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='16' fill='%23c9a96e' text-anchor='middle'%3EBL%3C/text%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BookStore",
+    "name": "Black Label",
+    "description": "Onafhankelijke boekhandel in Borgerhout met romans, strips, non-fictie en kinderboeken.",
+    "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://blacklabel-borgerhout.be/",
+    "telephone": "+3232360212",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Maréestraat 33",
+      "postalCode": "2140",
+      "addressLocality": "Borgerhout",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.2122,
+      "longitude": 4.4337
+    }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { serif: ['Libre Baskerville','Georgia','serif'], sans: ['Inter','sans-serif'] },
+      colors: {
+        ink:      '#1a1410',
+        inksoft:  '#2e2519',
+        umber:    '#5c4a35',
+        amber:    '#c9a96e',
+        cream:    '#f5f0e8',
+        parchment:'#ede5d4',
+        claret:   '#7a2535',
+        claretmid:'#9c3145',
+        fog:      '#d6cdbf',
+      },
+    } } };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(26,20,16,.08) 0%, rgba(26,20,16,.42) 50%, rgba(26,20,16,.92) 100%); }
+    .shelf-grad { background: linear-gradient(160deg, #2e2519, #1a1410); }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: opacity .85s cubic-bezier(.2,.7,.2,1), transform .85s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor,currentColor); background-size: 0% 1px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s ease; }
+    .ug:hover { background-size: 100% 1px; }
+    .card-img { transition: opacity .6s ease, transform .7s ease; }
+    .card:hover .card-img { opacity: 1 !important; transform: scale(1.06); }
+  </style>
+</head>
+<body class="bg-cream text-ink font-sans antialiased selection:bg-amber/30">
+
+  <!-- Skip link -->
+  <a href="#aanbod" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-ink focus:text-cream focus:rounded-full">Naar het aanbod</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-claret text-cream text-center text-[13px] tracking-[0.14em] py-2 px-4 uppercase font-500">
+    Gevonden worden op Google &amp; Maps — daarvoor helpen wij jou graag
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-ink/10">
+    <nav class="max-w-6xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between" aria-label="Hoofdnavigatie">
+      <a href="#top" class="flex items-baseline gap-2.5" aria-label="Black Label — naar de top">
+        <span class="font-serif text-[26px] font-700 tracking-tight">Black Label</span>
+        <span class="hidden sm:inline text-[10px] uppercase tracking-[0.32em] text-amber font-600">Borgerhout</span>
+      </a>
+      <div class="hidden md:flex items-center gap-7 text-[14px] font-400 tracking-wide">
+        <a href="#aanbod" class="ug">Aanbod</a>
+        <a href="#waarom" class="ug">Waarom langskomen</a>
+        <a href="#bezoek" class="ug">Openingsuren</a>
+        <a href="#contact" class="ug">Contact</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="tel:+3232360212" class="hidden sm:inline-flex items-center gap-2 bg-ink text-cream text-sm font-500 px-5 py-2.5 rounded-full hover:bg-inksoft transition">
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+          Bel ons
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-ink/15 hover:bg-ink/5 transition">
+          <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-ink/10 bg-cream/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-400">
+        <a href="#aanbod"  class="py-3 border-b border-ink/5">Aanbod</a>
+        <a href="#waarom"  class="py-3 border-b border-ink/5">Waarom langskomen</a>
+        <a href="#bezoek"  class="py-3 border-b border-ink/5">Openingsuren</a>
+        <a href="#contact" class="py-3">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[90vh] flex items-end overflow-hidden">
+    <div class="absolute inset-0 shelf-grad"></div>
+    <img
+      src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=2000&q=80"
+      alt="Boekenrekken vol verhalen bij Black Label Borgerhout"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-6xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-amber font-500 tracking-[0.35em] uppercase text-xs mb-5">Boekhandel · Borgerhout</p>
+      <h1 class="font-serif text-cream text-[46px] leading-[1.06] sm:text-8xl font-700 max-w-3xl">Verhalen<br /><em class="font-400">voor iedereen.</em></h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed font-300">Black Label is de onafhankelijke boekhandel in de Maréestraat. Van literaire romans tot strips — een selectie met karakter, midden in Borgerhout.</p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#bezoek" class="bg-cream text-ink font-500 px-7 py-3.5 rounded-full hover:bg-parchment transition">Kom langs</a>
+        <a href="#aanbod" class="border border-cream/40 text-cream font-500 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">Ons aanbod</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats bar -->
+  <section class="bg-ink text-cream/90" aria-label="Kernfeiten">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-7 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div><p class="font-serif text-2xl text-amber">Borgerhout</p><p class="mt-1 text-cream/60">hart van de wijk</p></div>
+      <div><p class="font-serif text-2xl text-amber">Onafhankelijk</p><p class="mt-1 text-cream/60">eigen selectie</p></div>
+      <div><p class="font-serif text-2xl text-amber">Persoonlijk</p><p class="mt-1 text-cream/60">advies van kenners</p></div>
+      <div><p class="font-serif text-2xl text-amber">Bel &amp; Bezoek</p><p class="mt-1 text-cream/60">+32 3 236 02 12</p></div>
+    </div>
+  </section>
+
+  <!-- Aanbod / categorieën -->
+  <section id="aanbod" class="max-w-6xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="mb-12 fade-up">
+      <p class="text-amber font-500 tracking-[0.2em] uppercase text-xs mb-3">Wat we doen</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-700 leading-tight">Een winkel vol verhalen</h2>
+      <p class="text-umber text-lg mt-4 max-w-2xl font-300 leading-relaxed">Bij Black Label vind je een zorgvuldig samengesteld aanbod — van tijdloze romans tot de nieuwste graphic novels. Altijd met oog voor kwaliteit en diversiteit.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <article class="card fade-up group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=75" alt="Romans en literatuur" class="card-img absolute inset-0 w-full h-full object-cover opacity-65" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/35 to-transparent"></div>
+        <div class="absolute bottom-0 p-6">
+          <h3 class="font-serif text-2xl font-700">Romans &amp; literatuur</h3>
+          <p class="text-cream/75 text-sm mt-1 font-300">Nederlandstalig, vertaald, hedendaags &amp; klassiek.</p>
+        </div>
+      </article>
+
+      <article class="card fade-up group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=75" alt="Non-fictie en essays" class="card-img absolute inset-0 w-full h-full object-cover opacity-65" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/35 to-transparent"></div>
+        <div class="absolute bottom-0 p-6">
+          <h3 class="font-serif text-2xl font-700">Non-fictie &amp; essays</h3>
+          <p class="text-cream/75 text-sm mt-1 font-300">Geschiedenis, maatschappij, wetenschap &amp; biografie.</p>
+        </div>
+      </article>
+
+      <article class="card fade-up group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=800&q=75" alt="Strips en graphic novels" class="card-img absolute inset-0 w-full h-full object-cover opacity-65" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/35 to-transparent"></div>
+        <div class="absolute bottom-0 p-6">
+          <h3 class="font-serif text-2xl font-700">Strips &amp; graphic novels</h3>
+          <p class="text-cream/75 text-sm mt-1 font-300">Europees, Manga &amp; indie comics voor jong en oud.</p>
+        </div>
+      </article>
+
+      <article class="card fade-up group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=75" alt="Kinderboeken" class="card-img absolute inset-0 w-full h-full object-cover opacity-65" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/35 to-transparent"></div>
+        <div class="absolute bottom-0 p-6">
+          <h3 class="font-serif text-2xl font-700">Kinderboeken</h3>
+          <p class="text-cream/75 text-sm mt-1 font-300">Prentenboeken, jeugdliteratuur &amp; young adult.</p>
+        </div>
+      </article>
+
+      <article class="card fade-up group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=800&q=75" alt="Poëzie en theater" class="card-img absolute inset-0 w-full h-full object-cover opacity-65" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/35 to-transparent"></div>
+        <div class="absolute bottom-0 p-6">
+          <h3 class="font-serif text-2xl font-700">Poëzie &amp; theater</h3>
+          <p class="text-cream/75 text-sm mt-1 font-300">Dichtbundels, toneelstukken &amp; spoken word.</p>
+        </div>
+      </article>
+
+      <article class="card fade-up group rounded-2xl overflow-hidden shelf-grad text-cream relative aspect-[4/5] flex items-center justify-center text-center p-8">
+        <div>
+          <p class="font-serif text-2xl font-700">Cadeaubon</p>
+          <p class="text-cream/75 text-sm mt-3 font-300 leading-relaxed">Het perfecte cadeau voor elke lezer — vraag ernaar in de winkel.</p>
+          <a href="#contact" class="inline-block mt-6 text-amber font-500 ug">Meer info →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Waarom langskomen -->
+  <section id="waarom" class="bg-parchment py-20 sm:py-28">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <div class="fade-up">
+          <p class="text-amber font-500 tracking-[0.2em] uppercase text-xs mb-4">Waarom langskomen</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-700 leading-tight">Meer dan<br />een boekhandel</h2>
+          <p class="text-umber text-lg mt-5 leading-relaxed font-300 max-w-md">Black Label is een ontmoetingsplaats. Je vindt er niet alleen boeken — je vindt mensen die er écht in geloven. Persoonlijk advies, verrassende aanbevelingen en een warm welkom.</p>
+          <ul class="mt-8 space-y-4 text-umber">
+            <li class="flex items-start gap-3">
+              <span class="text-amber mt-0.5 font-700">—</span>
+              <span><strong class="text-ink font-500">Persoonlijk advies</strong> van boekenliefhebbers met vakkennis</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-amber mt-0.5 font-700">—</span>
+              <span><strong class="text-ink font-500">Onverwachte ontdekkingen</strong> — titels die je nergens anders vindt</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-amber mt-0.5 font-700">—</span>
+              <span><strong class="text-ink font-500">Lokale verankering</strong> — trots onderdeel van Borgerhout</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-amber mt-0.5 font-700">—</span>
+              <span><strong class="text-ink font-500">Bestellen mogelijk</strong> — niet in stock? We regelen het voor je</span>
+            </li>
+          </ul>
+          <a href="#bezoek" class="inline-flex items-center gap-2 mt-9 bg-ink text-cream font-500 px-7 py-3.5 rounded-full hover:bg-inksoft transition">
+            Plan je bezoek
+            <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="fade-up grid grid-cols-2 gap-4">
+          <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-umber">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=800&q=75" alt="Boekenrekken" class="w-full h-full object-cover" />
+          </div>
+          <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-umber mt-8">
+            <img loading="lazy" src="https://images.unsplash.com/photo-1526243741027-444d633d7365?auto=format&fit=crop&w=800&q=75" alt="Boek lezen" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote / sfeer -->
+  <section class="bg-ink text-cream py-20 sm:py-28">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 text-center fade-up">
+      <p class="text-amber font-500 tracking-[0.2em] uppercase text-xs mb-5">De boekhandel</p>
+      <h2 class="font-serif text-3xl sm:text-5xl font-400 leading-snug italic">"Een goed boek is het beste cadeau dat je iemand — of jezelf — kunt geven."</h2>
+      <p class="text-cream/70 text-lg mt-8 leading-relaxed font-300">Black Label staat voor onafhankelijk, betrokken en met hart voor het boek. Midden in Borgerhout, altijd welkom.</p>
+    </div>
+  </section>
+
+  <!-- Openingsuren + kaart -->
+  <section id="bezoek" class="max-w-6xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-12">
+    <div class="fade-up">
+      <p class="text-amber font-500 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-700">Welkom in<br />Borgerhout</h2>
+      <p class="text-umber text-lg mt-5 max-w-md font-300">Je vindt ons in de Maréestraat 33, vlak in het hart van Borgerhout.</p>
+      <dl class="mt-9 space-y-5 text-umber">
+        <div class="flex gap-4">
+          <span class="text-amber mt-1 font-700" aria-hidden="true">◦</span>
+          <div>
+            <dt class="font-500 text-ink">Adres</dt>
+            <dd>Maréestraat 33, 2140 Borgerhout</dd>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <span class="text-amber mt-1 font-700" aria-hidden="true">◦</span>
+          <div>
+            <dt class="font-500 text-ink">Openingsuren</dt>
+            <dd>Di–Za: 10:00–18:00<br /><span class="text-sm text-umber/70">Ma &amp; zo: gesloten</span></dd>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <span class="text-amber mt-1 font-700" aria-hidden="true">◦</span>
+          <div>
+            <dt class="font-500 text-ink">Telefoon</dt>
+            <dd><a href="tel:+3232360212" class="ug">+32 3 236 02 12</a></dd>
+          </div>
+        </div>
+      </dl>
+      <a href="tel:+3232360212" class="inline-flex items-center gap-2 mt-9 bg-claret text-cream font-500 px-7 py-3.5 rounded-full hover:bg-claretmid transition">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+        Bel of kom langs
+      </a>
+    </div>
+    <div class="rounded-3xl overflow-hidden min-h-[360px] bg-fog border border-ink/8">
+      <iframe
+        title="Kaart Black Label Borgerhout — Maréestraat 33"
+        class="w-full h-full min-h-[360px] border-0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=4.4257%2C51.2082%2C4.4417%2C51.2162&layer=mapnik&marker=51.2122%2C4.4337"
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-parchment py-20 sm:py-28">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-center">
+      <div class="fade-up">
+        <p class="text-amber font-500 tracking-[0.2em] uppercase text-xs mb-4">Contact</p>
+        <h2 class="font-serif text-4xl sm:text-5xl font-700 leading-tight">Neem contact op</h2>
+        <p class="text-umber text-lg mt-5 font-300 leading-relaxed max-w-md">Een vraag over ons aanbod, een bestelling regelen of gewoon een boek aanraden? Bel ons of kom gewoon binnen — wij helpen je graag.</p>
+        <div class="mt-9 space-y-4">
+          <a href="tel:+3232360212" class="flex items-center gap-4 p-5 rounded-2xl bg-ink text-cream hover:bg-inksoft transition group">
+            <span class="flex-shrink-0 w-11 h-11 rounded-full bg-amber/20 flex items-center justify-center">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            </span>
+            <div>
+              <p class="font-500 text-sm text-cream/60 mb-0.5">Telefoon</p>
+              <p class="font-serif text-xl font-700">+32 3 236 02 12</p>
+            </div>
+          </a>
+          <div class="flex items-center gap-4 p-5 rounded-2xl bg-cream border border-fog">
+            <span class="flex-shrink-0 w-11 h-11 rounded-full bg-amber/15 flex items-center justify-center">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <div>
+              <p class="font-500 text-sm text-umber mb-0.5">Adres</p>
+              <p class="font-serif text-xl font-700">Maréestraat 33, 2140 Borgerhout</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Nieuwsbrief -->
+      <div class="fade-up">
+        <div class="bg-ink text-cream rounded-3xl p-8 sm:p-10">
+          <p class="text-amber font-500 tracking-[0.2em] uppercase text-xs mb-4">Blijf op de hoogte</p>
+          <h3 class="font-serif text-2xl sm:text-3xl font-700 leading-snug">Nieuwe titels &amp; tips in je mailbox</h3>
+          <p class="text-cream/70 mt-3 font-300 leading-relaxed">Schrijf je in voor onze nieuwsbrief en ontvang af en toe een boekentip of nieuws van de winkel. Geen spam, uitschrijven kan altijd.</p>
+          <form class="mt-7 flex flex-col gap-3" onsubmit="return false;" aria-label="Nieuwsbrief aanmelden">
+            <label for="nl-email" class="sr-only">E-mailadres</label>
+            <input id="nl-email" type="email" placeholder="jouw@email.be" autocomplete="email" class="px-5 py-3.5 rounded-full bg-cream/10 text-cream placeholder-cream/40 border border-cream/20 focus:outline-none focus:ring-2 focus:ring-amber" />
+            <button type="submit" class="bg-amber text-ink font-600 px-7 py-3.5 rounded-full hover:bg-amber/80 transition">Inschrijven</button>
+          </form>
+          <p class="text-xs text-cream/40 mt-3">GDPR-proof. Je gegevens worden nooit gedeeld.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ink text-cream/80">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-serif text-[26px] text-cream font-700">Black Label</p>
+        <p class="text-cream/55 text-sm mt-3 max-w-xs font-300">Onafhankelijke boekhandel in de Maréestraat, hartje Borgerhout.</p>
+      </div>
+      <div>
+        <p class="font-500 text-cream mb-3">Aanbod</p>
+        <ul class="space-y-2 text-sm text-cream/55 font-300">
+          <li><a href="#aanbod" class="hover:text-amber transition">Romans &amp; literatuur</a></li>
+          <li><a href="#aanbod" class="hover:text-amber transition">Non-fictie &amp; essays</a></li>
+          <li><a href="#aanbod" class="hover:text-amber transition">Strips &amp; graphic novels</a></li>
+          <li><a href="#aanbod" class="hover:text-amber transition">Kinderboeken</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-500 text-cream mb-3">Info</p>
+        <ul class="space-y-2 text-sm text-cream/55 font-300">
+          <li><a href="#waarom" class="hover:text-amber transition">Waarom langskomen</a></li>
+          <li><a href="#bezoek" class="hover:text-amber transition">Openingsuren</a></li>
+          <li><a href="#contact" class="hover:text-amber transition">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-500 text-cream mb-3">Bezoek ons</p>
+        <ul class="space-y-2 text-sm text-cream/55 font-300">
+          <li>Maréestraat 33</li>
+          <li>2140 Borgerhout</li>
+          <li><a href="tel:+3232360212" class="hover:text-amber transition">+32 3 236 02 12</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-6xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40">
+        <p>© 2026 Black Label Borgerhout.</p>
+        <p>Concept-mockup — een proof of concept, gebouwd voor een gesprek over jullie nieuwe website.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile hamburger menu toggle
+    const mb = document.getElementById('menu-btn');
+    const mm = document.getElementById('mobile-menu');
+    if (mb && mm) {
+      mb.addEventListener('click', () => {
+        const isOpen = !mm.hasAttribute('hidden');
+        if (isOpen) { mm.setAttribute('hidden', ''); mb.setAttribute('aria-expanded', 'false'); }
+        else { mm.removeAttribute('hidden'); mb.setAttribute('aria-expanded', 'true'); }
+      });
+      mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+        mm.setAttribute('hidden', '');
+        mb.setAttribute('aria-expanded', 'false');
+      }));
+    }
+
+    // Fade-up IntersectionObserver with setTimeout safety-reveal fallback
+    const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const fades = document.querySelectorAll('.fade-up');
+    if (prefersReduced) {
+      fades.forEach(el => el.classList.add('in'));
+    } else {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12 });
+      fades.forEach(el => io.observe(el));
+      // Safety fallback — reveal any remaining after 1.6s so sections never stay blank
+      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach(el => el.classList.add('in')), 1600);
+    }
+  </script>
+</body>
+</html>

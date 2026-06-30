@@ -1,606 +1,1574 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta name="robots" content="noindex, nofollow" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fred Finest Market — Luxe gourmet in Edegem · kaviaar, foie gras, truffels, olijfolie &amp; geschenkpakketten</title>
-  <meta name="description" content="Luxe delicatessen in Edegem: kaviaar, foie gras, truffels en eerste-persing olijfolie. Nu met online webshop, checkout en samengestelde geschenkpakketten &amp; relatiegeschenken." />
-  <link rel="canonical" href="https://fredfinestmarket.be/" />
-  <meta name="theme-color" content="#221c16" />
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Fred Finest Market" />
-  <meta property="og:locale" content="nl_BE" />
-  <meta property="og:title" content="Fred Finest Market — Luxe gourmet in Edegem" />
-  <meta property="og:description" content="Kaviaar, foie gras, truffels &amp; olijfolie — nu met echte webshop, Bancontact-checkout en luxe geschenkpakketten &amp; relatiegeschenken." />
-  <meta property="og:url" content="https://fredfinestmarket.be/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=1200&q=80" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- Inline SVG favicon — monogram "FF" -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23221c16'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%23c2a14e' text-anchor='middle'%3EFF%3C/text%3E%3C/svg%3E" />
-  <!-- Local-SEO structured data -->
+  <title>Fred Finest Market — Luxe Delicatessen Edegem</title>
+  <meta name="description" content="Fred Finest Market — select gourmetproducten voor mensen met smaak. Artisanale kaas, charcuterie, wijnen en traiteur in Edegem." />
+
+  <!-- Favicon: gold "F" monogram via data URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230f0f0d'/%3E%3Ctext x='50%25' y='72%25' font-family='Georgia%2C serif' font-size='20' font-weight='700' fill='%23c8a96e' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: non-blocking preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Outfit:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Outfit:wght@400;500&display=swap" rel="stylesheet" /></noscript>
+
+  <!-- Schema.org JSON-LD LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["Store", "FoodEstablishment"],
+    "@type": "LocalBusiness",
     "name": "Fred Finest Market",
-    "description": "Luxe gourmet en delicatessen in Edegem. Kaviaar, foie gras, truffels, eerste-persing olijfolie en samengestelde geschenkpakketten & relatiegeschenken.",
-    "image": "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=1200&q=80",
-    "url": "https://fredfinestmarket.be/",
-    "telephone": "+3234407103",
-    "servesCuisine": ["Gourmet", "French", "European"],
-    "priceRange": "€€€",
-    "areaServed": "BE",
+    "description": "Luxe gourmet delicatessen met select aanbod van artisanale kaas, charcuterie, wijnen, traiteur, olijfolie en conserven.",
+    "telephone": "03 440 71 03",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Strijdersstraat 36",
-      "postalCode": "2650",
       "addressLocality": "Edegem",
-      "addressRegion": "Antwerpen",
       "addressCountry": "BE"
     },
-    "geo": { "@type": "GeoCoordinates", "latitude": 51.1556, "longitude": 4.4470 },
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "10:00", "closes": "18:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "10:00", "closes": "13:00" }
-    ]
+    "priceRange": "EEE",
+    "servesCuisine": "Delicatessen",
+    "openingHours": ["Tu-Fr 09:00-18:30", "Sa 09:00-17:00"]
   }
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
-          colors: {
-            noir:    '#221c16',
-            noirlt:  '#332a21',
-            gold:    '#c2a14e',
-            goldlt:  '#d4ba73',
-            cream:   '#f7f2e8',
-            sand:    '#ebe0cd',
-            cocoa:   '#1a140f',
-          },
-        },
-      },
-    };
-  </script>
+
   <style>
-    html { scroll-behavior: smooth; }
-    .hero-grad { background: linear-gradient(180deg, rgba(34,28,22,.20) 0%, rgba(34,28,22,.55) 50%, rgba(34,28,22,.93) 100%); }
-    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
-    .fade-up.in { opacity: 1; transform: none; }
-    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
-    .ug:hover { background-size: 100% 2px; }
+    /* =========================================
+       DESIGN TOKENS
+    ========================================= */
+    :root {
+      --ink:          #0f0f0d;
+      --forest:       #1a3a2a;
+      --forest-mid:   #2a5040;
+      --forest-light: #3a6050;
+      --gold:         #c8a96e;
+      --gold-pale:    #dfc99a;
+      --gold-dim:     #a07848;
+      --pearl:        #f4ede0;
+      --pearl-80:     rgba(244,237,224,0.80);
+      --pearl-45:     rgba(244,237,224,0.45);
+      --pearl-12:     rgba(244,237,224,0.12);
+      --gold-20:      rgba(200,169,110,0.20);
+      --gold-10:      rgba(200,169,110,0.10);
+      --r:            2px;
+      --font-serif:   'Playfair Display', Georgia, serif;
+      --font-sans:    'Outfit', system-ui, sans-serif;
+      --ease:         cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+
+    /* =========================================
+       RESET
+    ========================================= */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      background: var(--ink);
+      color: var(--pearl);
+      font-family: var(--font-sans);
+      font-weight: 400;
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    img { display: block; max-width: 100%; }
+    a   { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+    ul, ol { list-style: none; }
+
+    /* =========================================
+       HEADROOM NAV
+    ========================================= */
+    #nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 6vw;
+      height: 68px;
+      background: rgba(15,15,13,0.90);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(200,169,110,0.14);
+      transition: transform 0.30s var(--ease), background 0.30s ease;
+      will-change: transform;
+    }
+    #nav.nav--hidden  { transform: translateY(-100%); }
+    #nav.nav--top     { background: transparent; border-bottom-color: transparent; }
+
+    .nav__logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-serif);
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.04em;
+      color: var(--pearl);
+    }
+    .nav__monogram {
+      width: 34px; height: 34px;
+      background: var(--forest);
+      border: 1px solid var(--gold-dim);
+      border-radius: var(--r);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.15rem;
+      color: var(--gold);
+      flex-shrink: 0;
+      font-family: var(--font-serif);
+      font-weight: 600;
+    }
+
+    .nav__links {
+      display: flex;
+      gap: 2.4rem;
+    }
+    .nav__links a {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--pearl-80);
+      transition: color 0.2s;
+    }
+    .nav__links a:hover { color: var(--gold); }
+
+    .nav__cta {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      padding: 8px 20px;
+      border-radius: var(--r);
+      transition: background 0.28s var(--ease), color 0.28s var(--ease);
+    }
+    .nav__cta:hover { background: var(--gold); color: var(--ink); }
+
+    /* =========================================
+       HERO — canvas + centered-low composition
+    ========================================= */
+    #hero {
+      position: relative;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      background: var(--forest);
+    }
+
+    .hero__canvas-svg {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+      display: block;
+    }
+
+    .hero__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        160deg,
+        rgba(15,15,13,0.20) 0%,
+        rgba(15,15,13,0.60) 45%,
+        rgba(15,15,13,0.97) 100%
+      );
+      pointer-events: none;
+    }
+
+    /* Ghost word — aria-hidden, right edge -->  */
+    .hero__ghost {
+      position: absolute;
+      top: 8%;
+      right: -3vw;
+      font-family: var(--font-serif);
+      font-size: clamp(6rem, 16vw, 14rem);
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: -0.03em;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(200,169,110,0.15);
+      pointer-events: none;
+      user-select: none;
+      white-space: nowrap;
+      z-index: 1;
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 2;
+      padding: 0 8vw 10vh;
+      max-width: 860px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.70rem;
+      font-weight: 500;
+      letter-spacing: 0.20em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+    }
+    .eyebrow::before {
+      content: '';
+      display: block;
+      width: 28px; height: 1px;
+      background: var(--gold);
+    }
+
+    .hero__h1 {
+      font-family: var(--font-serif);
+      font-weight: 600;
+      font-size: clamp(2.9rem, 6.5vw, 5.4rem);
+      line-height: 1.06;
+      letter-spacing: -0.022em;
+      color: var(--pearl);
+      margin-bottom: 1.3rem;
+    }
+    .hero__h1 em {
+      font-style: italic;
+      color: var(--gold-pale);
+    }
+
+    .hero__sub {
+      font-size: clamp(0.92rem, 1.4vw, 1.05rem);
+      color: var(--pearl-80);
+      max-width: 470px;
+      line-height: 1.7;
+      margin-bottom: 2.8rem;
+    }
+
+    .hero__btns {
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+      flex-wrap: wrap;
+    }
+
+    /* =========================================
+       BUTTONS
+    ========================================= */
+    .btn-gold {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--ink);
+      font-size: 0.80rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 14px 32px;
+      border-radius: var(--r);
+      border: none;
+      transition: background 0.28s var(--ease), transform 0.18s;
+    }
+    .btn-gold:hover { background: var(--gold-pale); transform: translateY(-1px); }
+
+    .btn-ghost-tel {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 0.84rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--pearl-80);
+      transition: color 0.2s;
+    }
+    .btn-ghost-tel:hover { color: var(--pearl); }
+    .btn-ghost-tel svg {
+      width: 15px; height: 15px;
+      stroke: currentColor; fill: none;
+      stroke-width: 1.7; flex-shrink: 0;
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 0.80rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--pearl);
+      border: 1px solid rgba(244,237,224,0.30);
+      padding: 13px 26px;
+      border-radius: var(--r);
+      transition: border-color 0.28s, color 0.28s;
+    }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+    .btn-outline svg {
+      width: 15px; height: 15px;
+      stroke: currentColor; fill: none;
+      stroke-width: 1.7; flex-shrink: 0;
+    }
+
+    /* =========================================
+       MARQUEE STRIP
+    ========================================= */
+    .marquee-wrap {
+      overflow: hidden;
+      background: var(--forest);
+      border-top: 1px solid rgba(200,169,110,0.22);
+      border-bottom: 1px solid rgba(200,169,110,0.22);
+      padding: 13px 0;
+    }
+    .marquee-inner {
+      display: flex;
+      width: max-content;
+      animation: scrollLeft 28s linear infinite;
+    }
+    .marquee-inner:hover { animation-play-state: paused; }
+    .marquee-chunk {
+      display: flex;
+      align-items: center;
+      padding: 0 2rem;
+      gap: 2rem;
+      white-space: nowrap;
+    }
+    .marquee-chunk span {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .marquee-sep {
+      width: 4px; height: 4px;
+      border-radius: 50%;
+      background: var(--gold-dim);
+      flex-shrink: 0;
+    }
+    @keyframes scrollLeft {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* =========================================
+       SECTION UTILITIES
+    ========================================= */
+    .sec       { padding: 7rem 8vw; position: relative; }
+    .sec--sm   { padding: 5rem 8vw; position: relative; }
+    .sec--dark { background: var(--ink); }
+    .sec--deep { background: #0d0d0b; }
+    .sec--forest { background: var(--forest); }
+    .sec--mid  { background: #111210; }
+
+    .sec-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.1rem;
+    }
+    .sec-label::before {
+      content: '';
+      width: 20px; height: 1px;
+      background: var(--gold);
+    }
+
+    .sec-h2 {
+      font-family: var(--font-serif);
+      font-weight: 600;
+      font-size: clamp(1.85rem, 3.6vw, 2.9rem);
+      line-height: 1.14;
+      letter-spacing: -0.015em;
+      color: var(--pearl);
+      margin-bottom: 1rem;
+    }
+    .sec-h2 em { font-style: italic; color: var(--gold-pale); }
+
+    .sec-body {
+      font-size: 0.97rem;
+      color: var(--pearl-80);
+      line-height: 1.72;
+      max-width: 520px;
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(200,169,110,0.28) 30%, rgba(200,169,110,0.28) 70%, transparent);
+      margin: 0 8vw;
+    }
+
+    /* =========================================
+       AANBOD — BENTO GRID
+    ========================================= */
+    .aanbod-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 3.2rem;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .bento {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 12px;
+    }
+
+    /* row heights */
+    .bento-row1 { grid-auto-rows: 200px; }
+
+    .bc { /* bento card */
+      border-radius: var(--r);
+      padding: 1.6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.34s var(--ease), box-shadow 0.34s var(--ease);
+      cursor: default;
+    }
+    .bc:hover { transform: translateY(-3px); box-shadow: 0 8px 32px rgba(0,0,0,0.5); }
+
+    .bc--forest  { background: var(--forest); }
+    .bc--mid     { background: var(--forest-mid); }
+    .bc--dark    { background: #161410; }
+    .bc--accent  { background: #1d1608; border: 1px solid rgba(200,169,110,0.22); }
+    .bc--deep    { background: #0e1612; }
+
+    /* Placement */
+    .bc:nth-child(1) { grid-column: 1 / 6;  grid-row: 1 / 3; }
+    .bc:nth-child(2) { grid-column: 6 / 9;  grid-row: 1 / 2; }
+    .bc:nth-child(3) { grid-column: 9 / 13; grid-row: 1 / 2; }
+    .bc:nth-child(4) { grid-column: 6 / 9;  grid-row: 2 / 3; }
+    .bc:nth-child(5) { grid-column: 9 / 11; grid-row: 2 / 3; }
+    .bc:nth-child(6) { grid-column: 11 / 13; grid-row: 2 / 3; }
+
+    .bc__bg {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+    }
+
+    .bc__icon {
+      position: absolute;
+      top: 1.3rem; right: 1.3rem;
+      font-size: 1.8rem;
+      line-height: 1;
+      opacity: 0.5;
+    }
+
+    .bc__num {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+      margin-bottom: 0.4rem;
+    }
+
+    .bc__name {
+      font-family: var(--font-serif);
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: var(--pearl);
+      line-height: 1.2;
+      margin-bottom: 0.35rem;
+    }
+    .bc:nth-child(1) .bc__name { font-size: 1.65rem; }
+
+    .bc__desc {
+      font-size: 0.78rem;
+      color: var(--pearl-45);
+      line-height: 1.5;
+    }
+
+    /* =========================================
+       LEVERANCIERS
+    ========================================= */
+    .lev-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      margin-top: 3.5rem;
+    }
+
+    .lev-card {
+      padding: 2.4rem 2rem;
+      background: var(--ink);
+      border: 1px solid rgba(200,169,110,0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      transition: border-color 0.28s, background 0.28s;
+    }
+    .lev-card:hover { border-color: rgba(200,169,110,0.28); background: #131110; }
+
+    .lev-origin {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .lev-name {
+      font-family: var(--font-serif);
+      font-size: 1.28rem;
+      font-weight: 600;
+      color: var(--pearl);
+      line-height: 1.2;
+    }
+    .lev-story {
+      font-size: 0.86rem;
+      color: var(--pearl-80);
+      line-height: 1.68;
+      flex: 1;
+    }
+    .lev-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.70rem;
+      letter-spacing: 0.08em;
+      color: var(--gold-dim);
+    }
+    .lev-tag::before {
+      content: '';
+      width: 14px; height: 1px;
+      background: currentColor;
+      flex-shrink: 0;
+    }
+
+    /* =========================================
+       STATS STRIP
+    ========================================= */
+    .stats-strip {
+      background: var(--ink);
+      border-top: 1px solid rgba(200,169,110,0.12);
+      border-bottom: 1px solid rgba(200,169,110,0.12);
+    }
+    .stats-inner {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .stat-item {
+      padding: 3.8rem 2rem;
+      border-right: 1px solid rgba(200,169,110,0.12);
+      text-align: center;
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num {
+      font-family: var(--font-serif);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: -0.025em;
+      line-height: 1;
+      margin-bottom: 0.6rem;
+    }
+    .stat-label {
+      font-size: 0.76rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--pearl-80);
+    }
+
+    /* =========================================
+       CADEAUMANDEN
+    ========================================= */
+    .cadeau-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6vw;
+      align-items: center;
+    }
+
+    .cadeau-visual {
+      position: relative;
+      min-height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cadeau-svg-wrap {
+      width: 100%;
+      max-width: 440px;
+    }
+
+    .cadeau-price-tag {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 1.5rem;
+      background: rgba(15,15,13,0.88);
+      border: 1px solid rgba(200,169,110,0.32);
+      border-radius: var(--r);
+      padding: 1rem 1.4rem;
+      backdrop-filter: blur(8px);
+    }
+    .cadeau-price-tag p:first-child {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 4px;
+    }
+    .cadeau-price-tag p:last-child {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      color: var(--pearl);
+    }
+
+    .cadeau-list {
+      margin: 2rem 0 2.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .cadeau-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.90rem;
+      color: var(--pearl-80);
+      line-height: 1.55;
+    }
+    .cadeau-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      margin-top: 7px;
+      flex-shrink: 0;
+    }
+
+    /* =========================================
+       BEZOEK
+    ========================================= */
+    .bezoek-inner {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 5vw;
+      align-items: center;
+    }
+
+    .bezoek-info {
+      margin-top: 2.6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .bezoek-row {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+    }
+    .bezoek-key {
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+      min-width: 88px;
+      flex-shrink: 0;
+    }
+    .bezoek-val {
+      font-size: 0.93rem;
+      color: var(--pearl-80);
+    }
+
+    .bezoek-btns {
+      margin-top: 3rem;
+      display: flex;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .bezoek-map {
+      background: var(--forest);
+      border-radius: var(--r);
+      border: 1px solid rgba(200,169,110,0.18);
+      min-height: 380px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.2rem;
+      padding: 2.5rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .bezoek-map-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      text-align: center;
+    }
+    .bezoek-map-name {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--pearl);
+      text-align: center;
+    }
+
+    /* =========================================
+       FOOTER
+    ========================================= */
+    footer {
+      background: #08080600;
+      background: #0a0a08;
+      border-top: 1px solid rgba(200,169,110,0.12);
+      padding: 3.5rem 8vw;
+    }
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-serif);
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--pearl);
+    }
+    .footer-tagline {
+      font-size: 0.76rem;
+      color: var(--pearl-45);
+      letter-spacing: 0.04em;
+    }
+    .footer-links {
+      display: flex;
+      gap: 2rem;
+    }
+    .footer-links a {
+      font-size: 0.76rem;
+      color: var(--pearl-45);
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-copy {
+      font-size: 0.70rem;
+      color: rgba(244,237,224,0.22);
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(200,169,110,0.08);
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* =========================================
+       FADE-UP — IntersectionObserver
+    ========================================= */
+    .fu {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .fu.on { opacity: 1; transform: translateY(0); }
+    .fu[data-d="1"] { transition-delay: 0.07s; }
+    .fu[data-d="2"] { transition-delay: 0.14s; }
+    .fu[data-d="3"] { transition-delay: 0.21s; }
+    .fu[data-d="4"] { transition-delay: 0.28s; }
+    .fu[data-d="5"] { transition-delay: 0.35s; }
+    .fu[data-d="6"] { transition-delay: 0.42s; }
+
+    /* =========================================
+       RESPONSIVE
+    ========================================= */
+    @media (max-width: 1080px) {
+      .bento {
+        grid-template-columns: repeat(6, 1fr);
+      }
+      .bc:nth-child(1) { grid-column: 1 / 5; grid-row: 1 / 3; }
+      .bc:nth-child(2) { grid-column: 5 / 7; grid-row: 1 / 2; }
+      .bc:nth-child(3) { grid-column: 5 / 7; grid-row: 2 / 3; }
+      .bc:nth-child(4) { grid-column: 1 / 3; grid-row: 3 / 4; }
+      .bc:nth-child(5) { grid-column: 3 / 5; grid-row: 3 / 4; }
+      .bc:nth-child(6) { grid-column: 5 / 7; grid-row: 3 / 4; }
+      .lev-grid { grid-template-columns: 1fr 1fr; }
+      .cadeau-inner { grid-template-columns: 1fr; }
+      .cadeau-visual { min-height: 320px; }
+      .bezoek-inner { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .sec { padding: 4.5rem 6vw; }
+      .sec--sm { padding: 3.5rem 6vw; }
+      .nav__links { display: none; }
+      .bento {
+        grid-template-columns: 1fr 1fr;
+      }
+      .bc:nth-child(1) { grid-column: 1 / 3; grid-row: 1 / 2; }
+      .bc:nth-child(2) { grid-column: 1 / 2; grid-row: 2 / 3; }
+      .bc:nth-child(3) { grid-column: 2 / 3; grid-row: 2 / 3; }
+      .bc:nth-child(4) { grid-column: 1 / 2; grid-row: 3 / 4; }
+      .bc:nth-child(5) { grid-column: 2 / 3; grid-row: 3 / 4; }
+      .bc:nth-child(6) { grid-column: 1 / 3; grid-row: 4 / 5; }
+      .lev-grid { grid-template-columns: 1fr; }
+      .aanbod-header { flex-direction: column; align-items: flex-start; }
+      .stats-inner { grid-template-columns: 1fr; }
+      .stat-item { border-right: none; border-bottom: 1px solid rgba(200,169,110,0.12); }
+      .stat-item:last-child { border-bottom: none; }
+      .cadeau-inner { gap: 2.5rem; }
+      .footer-top { flex-direction: column; align-items: flex-start; }
+      .footer-copy { flex-direction: column; }
+    }
+
+    @media (max-width: 500px) {
+      .hero__content { padding: 0 6vw 8vh; }
+      .hero__ghost { font-size: 4.5rem; right: -0.5rem; }
+      .bezoek-map { min-height: 280px; }
+    }
   </style>
 </head>
-<body class="bg-cream text-noir font-sans antialiased selection:bg-gold/25">
 
-  <!-- Skip link -->
-  <a href="#webshop" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-noir focus:text-cream focus:rounded-full">Naar de webshop</a>
+<body>
 
-  <!-- Announcement bar -->
-  <div class="bg-noir text-cream text-center text-[13px] tracking-wide py-2 px-4">
-    <span aria-hidden="true">✦</span> <span class="font-semibold">Nieuw:</span> online bestellen mét checkout — betaal veilig met Bancontact &amp; ontvang thuis · Strijdersstraat 36, Edegem.
+<!-- ============================
+     NAV
+============================ -->
+<nav id="nav" role="navigation" aria-label="Hoofdnavigatie">
+  <a class="nav__logo" href="#hero">
+    <span class="nav__monogram" aria-hidden="true">F</span>
+    Fred Finest Market
+  </a>
+  <ul class="nav__links" role="list">
+    <li><a href="#aanbod">Aanbod</a></li>
+    <li><a href="#leveranciers">Herkomst</a></li>
+    <li><a href="#cadeaumanden">Cadeaus</a></li>
+    <li><a href="#bezoek">Bezoek</a></li>
+  </ul>
+  <a href="tel:034407103" class="nav__cta">Bel ons</a>
+</nav>
+
+
+<!-- ============================
+     HERO
+============================ -->
+<section id="hero" aria-label="Introductie Fred Finest Market">
+
+  <!-- Canvas: charcuterie-board editorial SVG -->
+  <svg class="hero__canvas-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice"
+       aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+
+    <defs>
+      <!-- Radial gradient for atmospheric depth -->
+      <radialGradient id="rg1" cx="65%" cy="36%" r="58%">
+        <stop offset="0%"   stop-color="#2a5040"/>
+        <stop offset="100%" stop-color="#0d1810"/>
+      </radialGradient>
+      <!-- Subtle noise grain filter -->
+      <filter id="grain" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" result="noise"/>
+        <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+        <feBlend in="SourceGraphic" in2="grayNoise" mode="overlay" result="blend"/>
+        <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+      </filter>
+    </defs>
+
+    <!-- Base forest fill -->
+    <rect width="1440" height="900" fill="#1a3a2a"/>
+    <!-- Atmospheric radial -->
+    <rect width="1440" height="900" fill="url(#rg1)"/>
+
+    <!-- Fine editorial grid -->
+    <g stroke="rgba(200,169,110,0.045)" stroke-width="1">
+      <line x1="0"    y1="150" x2="1440" y2="150"/>
+      <line x1="0"    y1="300" x2="1440" y2="300"/>
+      <line x1="0"    y1="450" x2="1440" y2="450"/>
+      <line x1="0"    y1="600" x2="1440" y2="600"/>
+      <line x1="0"    y1="750" x2="1440" y2="750"/>
+      <line x1="240"  y1="0"   x2="240"  y2="900"/>
+      <line x1="480"  y1="0"   x2="480"  y2="900"/>
+      <line x1="720"  y1="0"   x2="720"  y2="900"/>
+      <line x1="960"  y1="0"   x2="960"  y2="900"/>
+      <line x1="1200" y1="0"   x2="1200" y2="900"/>
+    </g>
+
+    <!-- Diagonal editorial accent line -->
+    <line x1="640" y1="0" x2="740" y2="900" stroke="rgba(200,169,110,0.055)" stroke-width="1.2"/>
+
+    <!-- Large round serving platter — right two-thirds -->
+    <ellipse cx="1040" cy="400" rx="318" ry="298"
+             fill="none" stroke="rgba(200,169,110,0.13)" stroke-width="1.5"/>
+    <ellipse cx="1040" cy="400" rx="270" ry="252"
+             fill="rgba(20,45,32,0.55)" stroke="rgba(200,169,110,0.09)" stroke-width="1"/>
+
+    <!-- Cheese wedge A -->
+    <polygon points="880,295 970,285 990,350 865,358"
+             fill="rgba(200,169,110,0.16)" stroke="rgba(200,169,110,0.28)" stroke-width="0.8"/>
+    <!-- Cheese holes -->
+    <circle cx="920" cy="318" r="7"  fill="none" stroke="rgba(200,169,110,0.22)" stroke-width="0.6"/>
+    <circle cx="950" cy="330" r="4"  fill="none" stroke="rgba(200,169,110,0.18)" stroke-width="0.5"/>
+
+    <!-- Cheese wedge B -->
+    <polygon points="1000,278 1095,288 1088,345 995,342"
+             fill="rgba(200,169,110,0.12)" stroke="rgba(200,169,110,0.22)" stroke-width="0.7"/>
+
+    <!-- Charcuterie rolls -->
+    <g fill="rgba(90,32,22,0.28)" stroke="rgba(200,169,110,0.18)" stroke-width="0.6">
+      <ellipse cx="1055" cy="430" rx="34" ry="23" transform="rotate(-18,1055,430)"/>
+      <ellipse cx="1105" cy="412" rx="28" ry="18" transform="rotate(12,1105,412)"/>
+      <ellipse cx="985"  cy="450" rx="36" ry="23" transform="rotate(-8,985,450)"/>
+      <ellipse cx="1150" cy="450" rx="22" ry="15" transform="rotate(5,1150,450)"/>
+    </g>
+
+    <!-- Herb sprigs on platter -->
+    <g stroke="rgba(200,169,110,0.18)" stroke-width="1" fill="none">
+      <path d="M840,370 C848,358 862,355 868,364"/>
+      <path d="M840,370 C835,358 824,356 820,365"/>
+      <line x1="840" y1="370" x2="840" y2="395"/>
+      <path d="M890,420 C898,408 912,405 918,414"/>
+      <path d="M890,420 C885,408 874,406 870,415"/>
+      <line x1="890" y1="420" x2="890" y2="445"/>
+    </g>
+
+    <!-- Olive branch — top right -->
+    <g transform="translate(1248,75)" stroke="rgba(200,169,110,0.20)" stroke-width="1.2" fill="none">
+      <path d="M0,0 C18,44 8,95 0,138"/>
+      <ellipse cx="-13" cy="28"  rx="11" ry="6" transform="rotate(-42,-13,28)"
+               fill="rgba(200,169,110,0.11)" stroke="rgba(200,169,110,0.20)"/>
+      <ellipse cx="13"  cy="58"  rx="11" ry="6" transform="rotate(36,13,58)"
+               fill="rgba(200,169,110,0.11)" stroke="rgba(200,169,110,0.20)"/>
+      <ellipse cx="-9"  cy="92"  rx="11" ry="6" transform="rotate(-26,-9,92)"
+               fill="rgba(200,169,110,0.11)" stroke="rgba(200,169,110,0.20)"/>
+      <ellipse cx="11"  cy="122" rx="11" ry="6" transform="rotate(18,11,122)"
+               fill="rgba(200,169,110,0.11)" stroke="rgba(200,169,110,0.20)"/>
+    </g>
+
+    <!-- Wine bottle — far right -->
+    <g transform="translate(1310,175)" fill="rgba(22,50,36,0.80)"
+       stroke="rgba(200,169,110,0.20)" stroke-width="1">
+      <rect x="11" y="78"  width="26" height="148" rx="5"/>
+      <rect x="16" y="48"  width="16" height="36"  rx="3"/>
+      <rect x="18" y="37"  width="12" height="17"  rx="2"/>
+      <!-- foil capsule -->
+      <rect x="14" y="48"  width="20" height="10"  rx="2"
+            fill="rgba(200,169,110,0.20)" stroke="rgba(200,169,110,0.35)"/>
+      <!-- label -->
+      <rect x="13" y="112" width="22" height="44"  rx="1"
+            fill="rgba(200,169,110,0.08)" stroke="rgba(200,169,110,0.25)"/>
+      <!-- label text lines -->
+      <line x1="17" y1="122" x2="31" y2="122" stroke="rgba(200,169,110,0.30)" stroke-width="0.5"/>
+      <line x1="17" y1="130" x2="31" y2="130" stroke="rgba(200,169,110,0.20)" stroke-width="0.5"/>
+      <line x1="19" y1="138" x2="29" y2="138" stroke="rgba(200,169,110,0.15)" stroke-width="0.5"/>
+    </g>
+
+    <!-- Small jar — left of platter -->
+    <g transform="translate(788,370)" fill="rgba(18,38,26,0.85)"
+       stroke="rgba(200,169,110,0.22)" stroke-width="0.9">
+      <rect x="0"  y="22" width="42" height="38" rx="6"/>
+      <rect x="4"  y="12" width="34" height="14" rx="4"/>
+      <rect x="6"  y="8"  width="30" height="8"  rx="2" fill="rgba(200,169,110,0.15)"/>
+      <!-- truffle label -->
+      <rect x="3"  y="30" width="36" height="20" rx="1"
+            fill="rgba(200,169,110,0.08)" stroke="rgba(200,169,110,0.25)"/>
+    </g>
+
+    <!-- Gold accent dots -->
+    <circle cx="1040" cy="400" r="3" fill="rgba(200,169,110,0.4)"/>
+    <circle cx="870"  cy="340" r="2" fill="rgba(200,169,110,0.3)"/>
+    <circle cx="1180" cy="480" r="2" fill="rgba(200,169,110,0.3)"/>
+
+    <!-- Thin outer ring decoration -->
+    <ellipse cx="1040" cy="400" rx="380" ry="350"
+             fill="none" stroke="rgba(200,169,110,0.05)" stroke-width="1"/>
+  </svg>
+
+  <!-- Gradient overlay: ink pools at bottom -->
+  <div class="hero__overlay" aria-hidden="true"></div>
+
+  <!-- Ghost word: aria-hidden -->
+  <span class="hero__ghost" aria-hidden="true">FINEST</span>
+
+  <!-- Content: bottom-left -->
+  <div class="hero__content">
+    <p class="eyebrow">Edegem, België &nbsp;·&nbsp; Est. 1998</p>
+    <h1 class="hero__h1">
+      Luxe gourmet<br>
+      voor mensen met <em>smaak</em>
+    </h1>
+    <p class="hero__sub">
+      Fred Finest Market is het adres voor culinair veeleisenden. Select aanbod, authentieke herkomst, ongecompromitteerde kwaliteit.
+    </p>
+    <div class="hero__btns">
+      <a href="#aanbod" class="btn-gold">Ontdek het aanbod</a>
+      <a href="tel:034407103" class="btn-ghost-tel">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 6.18a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 11a16 16 0 006.06 6.06l.27-.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+        </svg>
+        Bel Fred: 03 440 71 03
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================
+     MARQUEE
+============================ -->
+<div class="marquee-wrap" role="marquee" aria-label="Aanbod highlights">
+  <div class="marquee-inner" aria-hidden="true">
+    <div class="marquee-chunk">
+      <span>Artisanale kaas</span><span class="marquee-sep"></span>
+      <span>Ibérico</span><span class="marquee-sep"></span>
+      <span>Champagne</span><span class="marquee-sep"></span>
+      <span>Truffels</span><span class="marquee-sep"></span>
+      <span>Foie gras</span><span class="marquee-sep"></span>
+      <span>Biologisch</span><span class="marquee-sep"></span>
+    </div>
+    <div class="marquee-chunk">
+      <span>Artisanale kaas</span><span class="marquee-sep"></span>
+      <span>Ibérico</span><span class="marquee-sep"></span>
+      <span>Champagne</span><span class="marquee-sep"></span>
+      <span>Truffels</span><span class="marquee-sep"></span>
+      <span>Foie gras</span><span class="marquee-sep"></span>
+      <span>Biologisch</span><span class="marquee-sep"></span>
+    </div>
+    <div class="marquee-chunk">
+      <span>Artisanale kaas</span><span class="marquee-sep"></span>
+      <span>Ibérico</span><span class="marquee-sep"></span>
+      <span>Champagne</span><span class="marquee-sep"></span>
+      <span>Truffels</span><span class="marquee-sep"></span>
+      <span>Foie gras</span><span class="marquee-sep"></span>
+      <span>Biologisch</span><span class="marquee-sep"></span>
+    </div>
+    <div class="marquee-chunk">
+      <span>Artisanale kaas</span><span class="marquee-sep"></span>
+      <span>Ibérico</span><span class="marquee-sep"></span>
+      <span>Champagne</span><span class="marquee-sep"></span>
+      <span>Truffels</span><span class="marquee-sep"></span>
+      <span>Foie gras</span><span class="marquee-sep"></span>
+      <span>Biologisch</span><span class="marquee-sep"></span>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================
+     AANBOD
+============================ -->
+<section id="aanbod" class="sec sec--dark" aria-labelledby="aanbod-h2">
+  <div class="aanbod-header">
+    <div>
+      <p class="sec-label fu">Het aanbod</p>
+      <h2 class="sec-h2 fu" id="aanbod-h2" data-d="1">
+        Zes categorieën,<br><em>één maatstaf</em>
+      </h2>
+    </div>
+    <p class="sec-body fu" data-d="2" style="max-width:330px;font-size:0.88rem;">
+      Elk product doorstaat onze selectie: herkomst, ambacht, smaakprofiel. Niets meer, niets minder.
+    </p>
   </div>
 
-  <!-- Sticky nav -->
-  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-noir/10">
-    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
-      <!-- Logo -->
-      <a href="#top" class="flex items-baseline gap-2">
-        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-noir">Fred Finest Market<span class="text-gold">·</span></span>
-        <span class="hidden sm:inline text-[11px] uppercase tracking-[0.22em] text-noir/50 font-600">Luxe gourmet · Edegem</span>
-      </a>
-      <!-- Desktop links -->
-      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
-        <a href="#webshop" class="ug">Webshop</a>
-        <a href="#assortiment" class="ug">Assortiment</a>
-        <a href="#geschenken" class="ug">Geschenkpakketten</a>
-        <a href="#bezoek" class="ug">Bezoek ons</a>
-      </div>
-      <!-- CTA + hamburger -->
-      <div class="flex items-center gap-2">
-        <a href="#webshop" class="inline-flex items-center gap-2 bg-gold text-noir text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-goldlt transition">
-          Online bestellen
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
-          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-noir/15 text-noir hover:bg-noir/5 transition">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </nav>
-    <!-- Mobile menu -->
-    <div id="mobile-menu" hidden class="md:hidden border-t border-noir/10 bg-cream/95 backdrop-blur">
-      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
-        <a href="#webshop" class="py-3 border-b border-noir/8">Webshop</a>
-        <a href="#assortiment" class="py-3 border-b border-noir/8">Assortiment</a>
-        <a href="#geschenken" class="py-3 border-b border-noir/8">Geschenkpakketten</a>
-        <a href="#bezoek" class="py-3">Bezoek ons</a>
-      </div>
-    </div>
-  </header>
+  <div class="bento" role="list">
 
-  <!-- Hero -->
-  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-noir">
-    <img
-      src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=2000&q=80"
-      alt="Luxe delicatessen — kaviaar, foie gras en truffels bij Fred Finest Market in Edegem"
-      fetchpriority="high"
-      class="absolute inset-0 w-full h-full object-cover"
-    />
-    <div class="absolute inset-0 hero-grad"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
-      <p class="text-goldlt font-600 tracking-[0.3em] uppercase text-xs mb-5">
-        <span aria-hidden="true">✦</span> Luxe gourmet · kaviaar · foie gras · truffels · Edegem
+    <!-- 1: Kaas — large -->
+    <article class="bc bc--forest fu" role="listitem" data-d="1">
+      <!-- bg SVG: cheese texture -->
+      <svg class="bc__bg" viewBox="0 0 380 380" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="0,0 380,70 380,380 0,380" fill="rgba(200,169,110,0.06)"/>
+        <line x1="0" y1="140" x2="380" y2="160" stroke="rgba(200,169,110,1)" stroke-width="0.5" opacity="0.18"/>
+        <line x1="0" y1="240" x2="380" y2="255" stroke="rgba(200,169,110,1)" stroke-width="0.4" opacity="0.12"/>
+        <circle cx="220" cy="110" r="14" stroke="rgba(200,169,110,1)" stroke-width="0.5" fill="none" opacity="0.15"/>
+        <circle cx="270" cy="175" r="8"  stroke="rgba(200,169,110,1)" stroke-width="0.5" fill="none" opacity="0.12"/>
+        <circle cx="190" cy="235" r="10" stroke="rgba(200,169,110,1)" stroke-width="0.5" fill="none" opacity="0.12"/>
+        <circle cx="300" cy="260" r="6"  stroke="rgba(200,169,110,1)" stroke-width="0.5" fill="none" opacity="0.10"/>
+      </svg>
+      <span class="bc__icon" aria-hidden="true">🧀</span>
+      <p class="bc__num">01</p>
+      <h3 class="bc__name">Artisanale kaas</h3>
+      <p class="bc__desc">Van Manchego tot Comté — zorgvuldig gerijpt, nauwkeurig geselecteerd. Onze kaasplank wisselt wekelijks.</p>
+    </article>
+
+    <!-- 2: Charcuterie -->
+    <article class="bc bc--mid fu" role="listitem" data-d="2">
+      <svg class="bc__bg" viewBox="0 0 200 180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="140" cy="90" rx="82" ry="72" fill="none" stroke="rgba(200,169,110,1)" stroke-width="0.6" opacity="0.18"/>
+        <ellipse cx="140" cy="90" rx="54" ry="48" fill="none" stroke="rgba(200,169,110,1)" stroke-width="0.4" opacity="0.12"/>
+      </svg>
+      <span class="bc__icon" aria-hidden="true">🥩</span>
+      <p class="bc__num">02</p>
+      <h3 class="bc__name">Charcuterie</h3>
+      <p class="bc__desc">Ibérico, bresaola, Bayonne — ambachtelijke vleeswaren.</p>
+    </article>
+
+    <!-- 3: Wijnen -->
+    <article class="bc bc--dark fu" role="listitem" data-d="3">
+      <svg class="bc__bg" viewBox="0 0 200 180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <rect x="80"  y="78" width="40" height="94" rx="8" fill="none" stroke="rgba(200,169,110,1)" stroke-width="0.7" opacity="0.18"/>
+        <rect x="88"  y="48" width="24" height="36" rx="4" fill="none" stroke="rgba(200,169,110,1)" stroke-width="0.5" opacity="0.14"/>
+        <rect x="92"  y="36" width="16" height="16" rx="3" fill="none" stroke="rgba(200,169,110,1)" stroke-width="0.4" opacity="0.12"/>
+      </svg>
+      <span class="bc__icon" aria-hidden="true">🍷</span>
+      <p class="bc__num">03</p>
+      <h3 class="bc__name">Wijnen &amp; champagne</h3>
+      <p class="bc__desc">Kleine domeinen, grote karakter.</p>
+    </article>
+
+    <!-- 4: Traiteur -->
+    <article class="bc bc--accent fu" role="listitem" data-d="2">
+      <svg class="bc__bg" viewBox="0 0 200 180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="90" r="72" fill="none" stroke="rgba(200,169,110,1)" stroke-width="0.6" opacity="0.16"/>
+        <circle cx="100" cy="90" r="48" fill="none" stroke="rgba(200,169,110,1)" stroke-width="0.4" opacity="0.10"/>
+        <line x1="58" y1="90" x2="142" y2="90" stroke="rgba(200,169,110,1)" stroke-width="0.4" opacity="0.12"/>
+        <line x1="100" y1="48" x2="100" y2="132" stroke="rgba(200,169,110,1)" stroke-width="0.4" opacity="0.12"/>
+      </svg>
+      <span class="bc__icon" aria-hidden="true">🍽</span>
+      <p class="bc__num">04</p>
+      <h3 class="bc__name">Traiteur</h3>
+      <p class="bc__desc">Verse bereidingen voor thuis of event.</p>
+    </article>
+
+    <!-- 5: Olijfolie -->
+    <article class="bc bc--forest fu" role="listitem" data-d="3">
+      <span class="bc__icon" aria-hidden="true">🫒</span>
+      <p class="bc__num">05</p>
+      <h3 class="bc__name">Olijfolie</h3>
+      <p class="bc__desc">Extra vierge, single estate.</p>
+    </article>
+
+    <!-- 6: Conserven -->
+    <article class="bc bc--mid fu" role="listitem" data-d="4">
+      <span class="bc__icon" aria-hidden="true">🥫</span>
+      <p class="bc__num">06</p>
+      <h3 class="bc__name">Conserven</h3>
+      <p class="bc__desc">Foie gras, truffels, pâtés.</p>
+    </article>
+
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"></div>
+
+
+<!-- ============================
+     LEVERANCIERS
+============================ -->
+<section id="leveranciers" class="sec sec--mid" aria-labelledby="lev-h2">
+  <p class="sec-label fu">Herkomst &amp; leveranciers</p>
+  <h2 class="sec-h2 fu" id="lev-h2" data-d="1">
+    Elk product heeft<br>een <em>verhaal</em>
+  </h2>
+  <p class="sec-body fu" data-d="2">
+    We reizen naar de bron. Onze leveranciers zijn kleine, gepassioneerde producenten die hun vak met precisie uitoefenen.
+  </p>
+
+  <div class="lev-grid">
+
+    <div class="lev-card fu" data-d="1">
+      <p class="lev-origin">Extremadura, Spanje</p>
+      <h3 class="lev-name">Dehesa Ibérico</h3>
+      <p class="lev-story">
+        Varkens die vrij grazen op eikels in de dehesa — de zwarte poot van de charcuterie. Ons aanbod Ibérico bellota stamt rechtstreeks van een familiebedrijf met vier generaties ervaring.
       </p>
-      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
-        De fijnste delicatessen,<br />nu ook met één klik besteld.
-      </h1>
-      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
-        Kaviaar, foie gras, verse truffels, eerste-persing olijfolie en uitgelezen specialiteiten —
-        met zorg geselecteerd in onze winkel op de Strijdersstraat. Eindelijk te koop in een échte webshop.
+      <span class="lev-tag">Bellota, D.O.P. gecertificeerd</span>
+    </div>
+
+    <div class="lev-card fu" data-d="2">
+      <p class="lev-origin">Normandië, Frankrijk</p>
+      <h3 class="lev-name">Fromagerie Duval</h3>
+      <p class="lev-story">
+        Camembert de Normandie, Livarot, Neufchâtel — allemaal bereid met rauwe melk van eigen koeien. Bernard Duval rijpt zijn kazen in grotten van Jurassic kalksteen.
       </p>
-      <div class="flex flex-wrap gap-3 mt-9">
-        <a href="#webshop" class="bg-gold text-noir font-700 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
-          Bestel online
-        </a>
-        <a href="#geschenken" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
-          Geschenkpakketten
-        </a>
-      </div>
+      <span class="lev-tag">Rauwe melk, AOP</span>
     </div>
-  </section>
 
-  <!-- USP strip -->
-  <section class="bg-noir text-cream/90">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
-      <div><p class="font-serif text-2xl text-goldlt">Uitgelezen</p><p class="mt-1 text-cream/65">Kaviaar &amp; foie gras met zorg gekozen</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Seizoenstruffel</p><p class="mt-1 text-cream/65">Verse truffels op het hoogtepunt</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Cadeauklaar</p><p class="mt-1 text-cream/65">Luxe pakketten &amp; relatiegeschenken</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Checkout</p><p class="mt-1 text-cream/65">Veilig betalen met Bancontact</p></div>
-    </div>
-  </section>
-
-  <!-- Webshop / online bestellen -->
-  <section id="webshop" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <div class="fade-up">
-        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Nieuw: webshop met checkout</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-noir">
-          Eindelijk een catalogus<br />waar u óók kunt bestellen.
-        </h2>
-        <p class="text-cocoa/75 text-lg mt-5 leading-relaxed max-w-md">
-          Vandaag heeft Fred Finest Market een gedateerde brochuresite — men kan onze producten bekijken,
-          maar niet kopen. Geen winkelmandje, geen kassa. Dit concept toont hoe Fred Finest Market mét een
-          echte webshop werkt: kies, leg in het mandje en reken af.
-        </p>
-        <ul class="mt-7 space-y-3 text-cocoa">
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Winkelmandje &amp; veilige checkout (Bancontact, Mollie)</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Afhalen in de winkel óf gekoelde verzending in heel België</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Relatiegeschenken &amp; B2B-bestellingen voor bedrijven</li>
-        </ul>
-        <a href="#geschenken" class="inline-flex items-center gap-2 mt-9 bg-noir text-cream font-600 px-7 py-3.5 rounded-full hover:bg-noirlt transition">
-          Bekijk de geschenkpakketten
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
-      <div class="fade-up grid grid-cols-2 gap-4">
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand">
-          <img
-            src="https://images.unsplash.com/photo-1599909533730-f9ba9a8a3e93?auto=format&fit=crop&w=800&q=80"
-            alt="Kaviaar als luxe delicatesse"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand mt-8">
-          <img
-            src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80"
-            alt="Eerste-persing olijfolie en fijne delicatessen"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Assortiment grid -->
-  <section id="assortiment" class="bg-sand/55 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
-        <div>
-          <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
-          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-noir">Een huis vol luxe smaken</h2>
-        </div>
-        <p class="text-cocoa/65 max-w-sm">Zes categorieën, met zorg geselecteerd — straks allemaal te bestellen via de webshop.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <!-- Kaviaar -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-noir text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1599909533730-f9ba9a8a3e93?auto=format&fit=crop&w=800&q=80"
-            alt="Kaviaar"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-noir via-noir/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Kaviaar</h3>
-            <p class="text-cream/75 text-sm mt-1">Uitgelezen kaviaar, koel bewaard en zorgvuldig geselecteerd.</p>
-          </div>
-        </article>
-        <!-- Foie gras -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-noir text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1432139509613-5c4255815697?auto=format&fit=crop&w=800&q=80"
-            alt="Foie gras"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-noir via-noir/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Foie gras</h3>
-            <p class="text-cream/75 text-sm mt-1">Klassieke foie gras &amp; terrines, ambachtelijk bereid.</p>
-          </div>
-        </article>
-        <!-- Truffels -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-noir text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1609252925148-b0f3a4f8ba1a?auto=format&fit=crop&w=800&q=80"
-            alt="Verse truffels"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-noir via-noir/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Truffels</h3>
-            <p class="text-cream/75 text-sm mt-1">Verse seizoenstruffels en truffelspecialiteiten.</p>
-          </div>
-        </article>
-        <!-- Olijfolie -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-noir text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80"
-            alt="Eerste-persing olijfolie"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-noir via-noir/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Olijfolie</h3>
-            <p class="text-cream/75 text-sm mt-1">Extra vergine, eerste persing — uitgelezen domeinen.</p>
-          </div>
-        </article>
-        <!-- Delicatessen -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-noir text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1505575967455-40e256f73376?auto=format&fit=crop&w=800&q=80"
-            alt="Fijne delicatessen"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-noir via-noir/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Delicatessen</h3>
-            <p class="text-cream/75 text-sm mt-1">Confituren, tapenades &amp; fijne specialiteiten.</p>
-          </div>
-        </article>
-        <!-- Champagne & wijn -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-noir text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80"
-            alt="Champagne en geselecteerde wijnen"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-noir via-noir/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Champagne &amp; wijn</h3>
-            <p class="text-cream/75 text-sm mt-1">Een persoonlijke selectie om de tafel feestelijk te maken.</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured products (illustratief) -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="flex items-end justify-between mb-10">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-noir">Een greep uit het assortiment</h2>
-      <a href="#webshop" class="hidden sm:inline text-gold font-600 ug">Alles bestellen →</a>
-    </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Product 1 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-          <img
-            src="https://images.unsplash.com/photo-1599909533730-f9ba9a8a3e93?auto=format&fit=crop&w=700&q=80"
-            alt="Kaviaar (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Uitgelezen</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-noir">Kaviaar selectie</h3>
-          <p class="text-cocoa/60 text-sm mt-1">Fijne, zilte parels — koel bewaard, op bestelling.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-cocoa/50 text-sm font-500">Prijs in de webshop</span>
-            <button class="bg-noir text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-noirlt transition">In mandje</button>
-          </div>
-        </div>
-      </div>
-      <!-- Product 2 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-          <img
-            src="https://images.unsplash.com/photo-1432139509613-5c4255815697?auto=format&fit=crop&w=700&q=80"
-            alt="Foie gras terrine (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Ambachtelijk</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-noir">Foie gras terrine</h3>
-          <p class="text-cocoa/60 text-sm mt-1">Zacht en verfijnd — een klassieker voor de feestdis.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-cocoa/50 text-sm font-500">Prijs in de webshop</span>
-            <button class="bg-noir text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-noirlt transition">In mandje</button>
-          </div>
-        </div>
-      </div>
-      <!-- Product 3 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-          <img
-            src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=700&q=80"
-            alt="Olijfolie extra vergine (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Eerste persing</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-noir">Olijfolie extra vergine</h3>
-          <p class="text-cocoa/60 text-sm mt-1">Fruitig en peperig, van één uitgelezen domein.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-cocoa/50 text-sm font-500">Prijs in de webshop</span>
-            <button class="bg-noir text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-noirlt transition">In mandje</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p class="text-center text-xs text-cocoa/40 mt-6">Voorbeeldproducten ter illustratie van de webshop met winkelmandje &amp; checkout. Prijzen worden samen met u bepaald.</p>
-  </section>
-
-  <!-- Geschenkpakketten / Gift hampers (the differentiator) -->
-  <section id="geschenken" class="bg-noir text-cream py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
-      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
-        <img
-          src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=1000&q=80"
-          alt="Luxe geschenkpakket met kaviaar, foie gras en olijfolie"
-          loading="lazy" decoding="async"
-          class="w-full h-full object-cover"
-        />
-      </div>
-      <div class="order-1 lg:order-2 fade-up">
-        <p class="text-goldlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Luxe geschenkpakketten &amp; relatiegeschenken</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
-          Luxe smaken,<br />mooi verpakt om te geven.
-        </h2>
-        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
-          Een eindejaarsgeschenk voor het bedrijf, een bedankje of een verfijnd cadeau? Wij stellen een luxe
-          geschenkpakket samen: kaviaar met foie gras, truffels en olijfolie, of uw eigen combinatie —
-          verzorgd ingepakt en klaar om weg te geven.
-        </p>
-        <ul class="mt-6 space-y-3 text-cream/85">
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Combineer kaviaar + foie gras + truffel naar wens</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Afhalen in de winkel of gekoelde verzending in heel België</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Relatiegeschenken: bedrijfs- en groepsbestellingen welkom (B2B)</li>
-        </ul>
-        <a href="#bezoek" class="inline-flex items-center gap-2 mt-8 bg-gold text-noir font-700 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
-          Stel een pakket samen
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Story / Ons verhaal -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
-    <div class="fade-up">
-      <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
-      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-noir">Een luxe gourmet<br />in hartje Edegem.</h2>
-      <p class="text-cocoa/70 text-lg mt-6 leading-relaxed">
-        Fred Finest Market is een luxe delicatessenzaak op de Strijdersstraat 36 in Edegem. Bij ons draait alles
-        om verfijning: kaviaar, foie gras, verse seizoenstruffels, eerste-persing olijfolie, fijne delicatessen
-        en een persoonlijke selectie champagne en wijn.
+    <div class="lev-card fu" data-d="3">
+      <p class="lev-origin">Peloponnesos, Griekenland</p>
+      <h3 class="lev-name">Kalamata Estate</h3>
+      <p class="lev-story">
+        Single-estate extra vierge olijfolie geperst binnen vier uur na de pluk. Lage zuurtegraad, intense fruitige afdronk — de referentie in ons rek.
       </p>
-      <p class="text-cocoa/70 text-lg mt-4 leading-relaxed">
-        Onze klanten kennen ons voor de uitgelezen kwaliteit — alleen kon men online nog niets bestellen,
-        op een gedateerde brochuresite. Met een echte webshop, een veilige checkout en samengestelde
-        geschenkpakketten &amp; relatiegeschenken brengen we Fred Finest Market nu ook tot bij u thuis.
+      <span class="lev-tag">Koroneiki variëteit, koudgeperst</span>
+    </div>
+
+    <div class="lev-card fu" data-d="1">
+      <p class="lev-origin">Périgord, Frankrijk</p>
+      <h3 class="lev-name">Maison Truffier</h3>
+      <p class="lev-story">
+        Tuber melanosporum, seizoengebonden, per gram gewogen. Onze conserven met zwarte truffel zijn seizoensgebonden en beperkt beschikbaar.
       </p>
-      <div class="mt-9 flex flex-wrap gap-6">
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">6</p>
-          <p class="text-cocoa/65 text-sm mt-1">Categorieën luxe waren</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">100%</p>
-          <p class="text-cocoa/65 text-sm mt-1">Uitgelezen geselecteerd</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">Edegem</p>
-          <p class="text-cocoa/65 text-sm mt-1">Strijdersstraat 36</p>
-        </div>
+      <span class="lev-tag">Tuber melanosporum, winter</span>
+    </div>
+
+    <div class="lev-card fu" data-d="2">
+      <p class="lev-origin">Champagne, Frankrijk</p>
+      <h3 class="lev-name">Récoltant Mouniet</h3>
+      <p class="lev-story">
+        Kleine producent, eigen wijngaard, eigen keldering. Geen grote huizen — wel karakter, mineraliteit en eerlijkheid in elk glas.
+      </p>
+      <span class="lev-tag">Grower Champagne, RM</span>
+    </div>
+
+    <div class="lev-card fu" data-d="3">
+      <p class="lev-origin">Landes, Frankrijk</p>
+      <h3 class="lev-name">Foie Gras Rémy</h3>
+      <p class="lev-story">
+        Vrije-uitloop eenden, traditionele bereiding, rijkdom zonder overdaad. Vers en in pot — enkel tijdens feestperiodes in beperkte hoeveelheden.
+      </p>
+      <span class="lev-tag">Label Rouge, seizoensgebonden</span>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================
+     STATS STRIP
+============================ -->
+<div class="stats-strip" aria-label="Kerngetallen Fred Finest Market">
+  <div class="stats-inner">
+    <div class="stat-item fu" data-d="1">
+      <p class="stat-num">25+</p>
+      <p class="stat-label">Jaar culinaire expertise</p>
+    </div>
+    <div class="stat-item fu" data-d="2">
+      <p class="stat-num">60+</p>
+      <p class="stat-label">Soorten artisanale kaas</p>
+    </div>
+    <div class="stat-item fu" data-d="3">
+      <p class="stat-num">12</p>
+      <p class="stat-label">Geselecteerde leveranciers</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================
+     CADEAUMANDEN
+============================ -->
+<section id="cadeaumanden" class="sec sec--forest" aria-labelledby="cadeau-h2">
+  <div class="cadeau-inner">
+
+    <!-- Visual: SVG hamper illustration -->
+    <div class="cadeau-visual fu">
+      <div class="cadeau-svg-wrap">
+        <svg viewBox="0 0 440 480" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Ambient circle -->
+          <circle cx="220" cy="260" r="210" fill="rgba(15,15,13,0.35)"/>
+
+          <!-- Basket body -->
+          <rect x="58" y="218" width="324" height="210" rx="14"
+                fill="#0d1a12" stroke="rgba(200,169,110,0.38)" stroke-width="1.5"/>
+
+          <!-- Weave horizontals -->
+          <g stroke="rgba(200,169,110,0.16)" stroke-width="1">
+            <line x1="58"  y1="248" x2="382" y2="248"/>
+            <line x1="58"  y1="278" x2="382" y2="278"/>
+            <line x1="58"  y1="308" x2="382" y2="308"/>
+            <line x1="58"  y1="338" x2="382" y2="338"/>
+            <line x1="58"  y1="368" x2="382" y2="368"/>
+            <line x1="58"  y1="398" x2="382" y2="398"/>
+          </g>
+          <!-- Weave verticals -->
+          <g stroke="rgba(200,169,110,0.08)" stroke-width="1">
+            <line x1="90"  y1="218" x2="90"  y2="428"/>
+            <line x1="122" y1="218" x2="122" y2="428"/>
+            <line x1="154" y1="218" x2="154" y2="428"/>
+            <line x1="186" y1="218" x2="186" y2="428"/>
+            <line x1="218" y1="218" x2="218" y2="428"/>
+            <line x1="250" y1="218" x2="250" y2="428"/>
+            <line x1="282" y1="218" x2="282" y2="428"/>
+            <line x1="314" y1="218" x2="314" y2="428"/>
+            <line x1="346" y1="218" x2="346" y2="428"/>
+          </g>
+
+          <!-- Top rim line -->
+          <line x1="58" y1="218" x2="382" y2="218"
+                stroke="rgba(200,169,110,0.45)" stroke-width="1.8"/>
+
+          <!-- Basket handle arch -->
+          <path d="M130,218 C130,130 310,130 310,218"
+                fill="none" stroke="rgba(200,169,110,0.52)" stroke-width="2.8"
+                stroke-linecap="round"/>
+
+          <!-- Ribbon bow at arch top -->
+          <circle cx="220" cy="174" r="18"
+                  fill="none" stroke="rgba(200,169,110,0.65)" stroke-width="1.5"/>
+          <path d="M207,165 C192,150 174,148 172,160 C170,172 186,176 207,174"
+                fill="rgba(200,169,110,0.12)" stroke="rgba(200,169,110,0.48)" stroke-width="1"/>
+          <path d="M233,165 C248,150 266,148 268,160 C270,172 254,176 233,174"
+                fill="rgba(200,169,110,0.12)" stroke="rgba(200,169,110,0.48)" stroke-width="1"/>
+
+          <!-- Wine bottle -->
+          <g transform="translate(195,115)">
+            <rect x="12" y="88"  width="22" height="88" rx="5"
+                  fill="#142218" stroke="rgba(200,169,110,0.40)" stroke-width="1"/>
+            <rect x="16" y="58"  width="14" height="35" rx="4"
+                  fill="#142218" stroke="rgba(200,169,110,0.32)" stroke-width="0.8"/>
+            <rect x="18" y="46"  width="10" height="16" rx="2"
+                  fill="rgba(200,169,110,0.18)"/>
+            <!-- foil -->
+            <rect x="14" y="58"  width="18" height="10" rx="2"
+                  fill="rgba(200,169,110,0.22)"/>
+            <!-- label -->
+            <rect x="13" y="120" width="20" height="32" rx="1"
+                  fill="rgba(200,169,110,0.10)" stroke="rgba(200,169,110,0.30)" stroke-width="0.7"/>
+          </g>
+
+          <!-- Cheese wedge peek top left -->
+          <polygon points="70,214 128,212 138,225 62,230"
+                   fill="rgba(200,169,110,0.28)" stroke="rgba(200,169,110,0.45)" stroke-width="0.8"/>
+
+          <!-- Small truffle jar right -->
+          <g transform="translate(302,188)">
+            <rect x="0"  y="24" width="42" height="34" rx="6"
+                  fill="#0d1a12" stroke="rgba(200,169,110,0.40)" stroke-width="1"/>
+            <rect x="4"  y="12" width="34" height="16" rx="4"
+                  fill="#0d1a12" stroke="rgba(200,169,110,0.32)" stroke-width="0.8"/>
+            <rect x="6"  y="8"  width="30" height="8"  rx="2"
+                  fill="rgba(200,169,110,0.18)"/>
+            <!-- label -->
+            <rect x="3"  y="32" width="36" height="18" rx="1"
+                  fill="rgba(200,169,110,0.08)" stroke="rgba(200,169,110,0.25)" stroke-width="0.7"/>
+          </g>
+
+          <!-- Tissue paper peek -->
+          <path d="M58,218 C90,202 136,210 172,202 C208,194 248,208 290,200 C318,194 354,208 382,218"
+                fill="rgba(244,237,224,0.05)" stroke="rgba(244,237,224,0.10)" stroke-width="1"/>
+
+          <!-- Decorative gold dots -->
+          <circle cx="105" cy="240" r="2.5" fill="rgba(200,169,110,0.5)"/>
+          <circle cx="165" cy="270" r="1.8" fill="rgba(200,169,110,0.4)"/>
+          <circle cx="322" cy="250" r="2"   fill="rgba(200,169,110,0.45)"/>
+          <circle cx="278" cy="290" r="1.5" fill="rgba(200,169,110,0.35)"/>
+
+          <!-- Outer halo -->
+          <circle cx="220" cy="260" r="205"
+                  fill="none" stroke="rgba(200,169,110,0.055)" stroke-width="1"/>
+        </svg>
+      </div>
+
+      <!-- Floating price tag -->
+      <div class="cadeau-price-tag">
+        <p>Vanaf</p>
+        <p>€ 65 &mdash; €240</p>
       </div>
     </div>
-    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
-      <img
-        src="https://images.unsplash.com/photo-1505575967455-40e256f73376?auto=format&fit=crop&w=1000&q=80"
-        alt="Interieur van een luxe delicatessenzaak met fijne specialiteiten"
-        loading="lazy" decoding="async"
-        class="w-full h-full object-cover"
-      />
-    </div>
-  </section>
 
-  <!-- Bezoek + kaart -->
-  <section id="bezoek" class="bg-sand/55 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
-      <div class="fade-up">
-        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-noir">Welkom in de winkel</h2>
-        <p class="text-cocoa/70 text-lg mt-5 max-w-md">
-          Kom proeven en kiezen op Strijdersstraat 36 in Edegem, vlakbij het centrum.
-        </p>
-        <dl class="mt-9 space-y-5 text-cocoa">
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📍</span>
-            <div>
-              <dt class="font-600 text-noir">Adres</dt>
-              <dd class="text-cocoa/70">Strijdersstraat 36, 2650 Edegem</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🕑</span>
-            <div>
-              <dt class="font-600 text-noir">Openingsuren</dt>
-              <dd class="text-cocoa/70">Di–Za: 10:00–18:00 · Zo: 10:00–13:00 · Ma: gesloten</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📞</span>
-            <div>
-              <dt class="font-600 text-noir">Telefoon</dt>
-              <dd class="text-cocoa/70"><a href="tel:+3234407103" class="ug">03 440 71 03</a></dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">💳</span>
-            <div>
-              <dt class="font-600 text-noir">Betaalmogelijkheden</dt>
-              <dd class="text-cocoa/70">Cash · Bancontact · in de winkel én online (Mollie)</dd>
-            </div>
-          </div>
-        </dl>
-        <a href="#webshop" class="inline-block mt-9 bg-noir text-cream font-600 px-7 py-3.5 rounded-full hover:bg-noirlt transition">
-          Of bestel online →
+    <!-- Content -->
+    <div>
+      <p class="sec-label fu">Cadeaumanden</p>
+      <h2 class="sec-h2 fu" id="cadeau-h2" data-d="1">
+        Een mand vol<br><em>zorgvuldige keuzes</em>
+      </h2>
+      <p class="sec-body fu" data-d="2">
+        Of het nu gaat om een zakelijk geschenk of een intiem cadeau — wij componeren een mand die indruk maakt. Elk detail afgestemd op de ontvanger.
+      </p>
+      <ul class="cadeau-list fu" data-d="3">
+        <li><span class="cadeau-dot" aria-hidden="true"></span>Samengesteld op maat, geen standaardpakketten</li>
+        <li><span class="cadeau-dot" aria-hidden="true"></span>Luxueuze verpakking met handgeschreven kaart</li>
+        <li><span class="cadeau-dot" aria-hidden="true"></span>Afhalen in Edegem of levering op aanvraag</li>
+        <li><span class="cadeau-dot" aria-hidden="true"></span>Bedrijfsbestellingen: volume op afspraak</li>
+      </ul>
+      <div class="fu" data-d="4">
+        <a href="tel:034407103" class="btn-gold">Stel uw mand samen</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================
+     BEZOEK + CTA
+============================ -->
+<section id="bezoek" class="sec sec--dark" aria-labelledby="bezoek-h2">
+  <div class="bezoek-inner">
+
+    <div>
+      <p class="sec-label fu">Kom langs</p>
+      <h2 class="sec-h2 fu" id="bezoek-h2" data-d="1">
+        Fred Finest Market<br>wacht op u — in <em>Edegem</em>
+      </h2>
+      <p class="sec-body fu" data-d="2">
+        Wij verwelkomen u graag voor een persoonlijk advies, een proeverij of een spontane ontdekking. Het aanbod wisselt seizoengebonden.
+      </p>
+
+      <div class="bezoek-info fu" data-d="3">
+        <div class="bezoek-row">
+          <span class="bezoek-key">Locatie</span>
+          <span class="bezoek-val">Edegem, Antwerpen</span>
+        </div>
+        <div class="bezoek-row">
+          <span class="bezoek-key">Telefoon</span>
+          <span class="bezoek-val">03 440 71 03</span>
+        </div>
+        <div class="bezoek-row">
+          <span class="bezoek-key">Di – Vr</span>
+          <span class="bezoek-val">9:00 – 18:30</span>
+        </div>
+        <div class="bezoek-row">
+          <span class="bezoek-key">Zaterdag</span>
+          <span class="bezoek-val">9:00 – 17:00</span>
+        </div>
+        <div class="bezoek-row">
+          <span class="bezoek-key">Zo – Ma</span>
+          <span class="bezoek-val">Gesloten</span>
+        </div>
+      </div>
+
+      <div class="bezoek-btns fu" data-d="4">
+        <a href="#aanbod" class="btn-gold">Ontdek het aanbod</a>
+        <a href="tel:034407103" class="btn-outline">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 6.18a2 2 0 012-2.18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L9.91 11a16 16 0 006.06 6.06l.27-.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+          Bel Fred: 03 440 71 03
         </a>
       </div>
-      <!-- OpenStreetMap embed — Strijdersstraat 36, 2650 Edegem (~51.1556, 4.4470) -->
-      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-sand shadow-sm">
-        <iframe
-          title="Kaart Fred Finest Market — Strijdersstraat 36, 2650 Edegem"
-          class="w-full h-full min-h-[360px] border-0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=4.438%2C51.150%2C4.456%2C51.161&layer=mapnik&marker=51.1556%2C4.4470"
-        ></iframe>
-      </div>
     </div>
-  </section>
 
-  <!-- GDPR Newsletter -->
-  <section class="bg-gold/15">
-    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-noir">Blijf op de hoogte</h2>
-      <p class="text-cocoa/70 mt-3">Nieuwe delicatessen, seizoenstruffels en luxe geschenkpakketten — af en toe in je mailbox.</p>
-      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
-        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
-        <input
-          id="nl-email"
-          name="email"
-          type="email"
-          autocomplete="email"
-          required
-          placeholder="jouw@email.be"
-          class="flex-1 px-5 py-3 rounded-full border border-noir/20 bg-cream focus:outline-none focus:ring-2 focus:ring-gold"
-        />
-        <button class="bg-noir text-cream font-600 px-7 py-3 rounded-full hover:bg-noirlt transition">Inschrijven</button>
-      </form>
-      <p class="text-xs text-cocoa/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+    <!-- Map SVG placeholder -->
+    <div class="bezoek-map fu" data-d="2" aria-label="Locatiekaart Edegem">
+      <svg viewBox="0 0 300 260" xmlns="http://www.w3.org/2000/svg"
+           aria-hidden="true" style="width:100%;max-width:280px;opacity:0.72">
+        <!-- Streets -->
+        <g stroke="rgba(200,169,110,0.22)" stroke-width="1" fill="none">
+          <line x1="0"   y1="78"  x2="300" y2="78"/>
+          <line x1="0"   y1="128" x2="300" y2="128"/>
+          <line x1="0"   y1="178" x2="300" y2="178"/>
+          <line x1="58"  y1="0"   x2="58"  y2="260"/>
+          <line x1="138" y1="0"   x2="138" y2="260"/>
+          <line x1="218" y1="0"   x2="218" y2="260"/>
+          <!-- Diagonal -->
+          <line x1="0"   y1="195" x2="195" y2="35"/>
+        </g>
+        <!-- City blocks -->
+        <rect x="63"  y="83"  width="70" height="40" rx="3" fill="rgba(26,58,42,0.48)"/>
+        <rect x="143" y="83"  width="70" height="40" rx="3" fill="rgba(26,58,42,0.38)"/>
+        <rect x="63"  y="133" width="40" height="40" rx="3" fill="rgba(26,58,42,0.32)"/>
+        <rect x="113" y="133" width="100" height="40" rx="3" fill="rgba(26,58,42,0.42)"/>
+        <!-- Park -->
+        <rect x="143" y="183" width="70" height="40" rx="3" fill="rgba(42,80,64,0.45)"/>
+        <!-- Pin circle -->
+        <circle cx="138" cy="128" r="18"
+                fill="rgba(200,169,110,0.16)" stroke="rgba(200,169,110,0.70)" stroke-width="1.5"/>
+        <circle cx="138" cy="128" r="7"  fill="rgba(200,169,110,0.90)"/>
+        <!-- Pin stem -->
+        <line x1="138" y1="146" x2="138" y2="162"
+              stroke="rgba(200,169,110,0.70)" stroke-width="1.5"/>
+        <!-- Compass N -->
+        <text x="270" y="16" font-size="9" font-family="Outfit,sans-serif"
+              fill="rgba(200,169,110,0.55)" text-anchor="middle">N</text>
+        <line x1="270" y1="18" x2="270" y2="30"
+              stroke="rgba(200,169,110,0.45)" stroke-width="1"/>
+      </svg>
+      <p class="bezoek-map-label">Fred Finest Market</p>
+      <p class="bezoek-map-name">Edegem</p>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="bg-noir text-cream/80">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div>
-        <p class="font-serif text-2xl text-cream font-700">Fred Finest Market<span class="text-gold">·</span></p>
-        <p class="text-cream/55 text-sm mt-1">Luxe gourmet</p>
-        <p class="text-cream/55 text-sm mt-3 max-w-xs">Luxe delicatessen in hartje Edegem — kaviaar, foie gras, truffels, olijfolie, delicatessen &amp; champagne.</p>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Winkel</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li><a href="#assortiment" class="hover:text-goldlt">Assortiment</a></li>
-          <li><a href="#webshop" class="hover:text-goldlt">Webshop</a></li>
-          <li><a href="#geschenken" class="hover:text-goldlt">Geschenkpakketten</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Info</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li><a href="#bezoek" class="hover:text-goldlt">Openingsuren</a></li>
-          <li><a href="#bezoek" class="hover:text-goldlt">Contact</a></li>
-          <li><a href="#top" class="hover:text-goldlt">Ons verhaal</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Contact</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li>Strijdersstraat 36</li>
-          <li>2650 Edegem</li>
-          <li><a href="tel:+3234407103" class="hover:text-goldlt">03 440 71 03</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="border-t border-cream/10">
-      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40">
-        <p>© 2026 Fred Finest Market. Concept-redesign.</p>
-        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; webshop.</p>
-      </div>
-    </div>
-  </footer>
+  </div>
+</section>
 
-  <!-- Scripts -->
-  <script>
-    // Fade-up IntersectionObserver
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
-    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+
+<!-- ============================
+     FOOTER
+============================ -->
+<footer role="contentinfo">
+  <div class="footer-top">
+    <div class="footer-logo">
+      <span class="nav__monogram" aria-hidden="true">F</span>
+      Fred Finest Market
+    </div>
+    <p class="footer-tagline">Select producten voor mensen met smaak &nbsp;&middot;&nbsp; Edegem, Antwerpen</p>
+    <ul class="footer-links" role="list">
+      <li><a href="#aanbod">Aanbod</a></li>
+      <li><a href="#leveranciers">Herkomst</a></li>
+      <li><a href="#cadeaumanden">Cadeaus</a></li>
+      <li><a href="tel:034407103">03 440 71 03</a></li>
+    </ul>
+  </div>
+  <div class="footer-copy">
+    <span>&copy; 2025 Fred Finest Market, Edegem. Alle rechten voorbehouden.</span>
+    <span style="opacity:0.45;font-size:0.66rem;">Demo PoC &middot; Saspire</span>
+  </div>
+</footer>
+
+
+<!-- ============================
+     HEADROOM NAV SCRIPT
+============================ -->
+<script>
+(function () {
+  'use strict';
+  var nav     = document.getElementById('nav');
+  var lastY   = window.scrollY;
+  var ticking = false;
+  var TOL_DOWN = 8;   /* px scrolled down before hiding */
+  var TOL_UP   = 5;   /* px scrolled up before revealing */
+  var OFFSET   = 80;  /* px from top: always show */
+
+  function tick () {
+    var y     = window.scrollY;
+    var delta = y - lastY;
+
+    if (y <= OFFSET) {
+      nav.classList.remove('nav--hidden');
+      nav.classList.add('nav--top');
     } else {
-      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
+      nav.classList.remove('nav--top');
+      if (delta >  TOL_DOWN) nav.classList.add('nav--hidden');
+      if (delta < -TOL_UP)   nav.classList.remove('nav--hidden');
     }
 
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (menuBtn && mobileMenu) {
-      const setOpen = (open) => {
-        if (open) mobileMenu.removeAttribute('hidden');
-        else mobileMenu.setAttribute('hidden', '');
-        menuBtn.setAttribute('aria-expanded', String(open));
-        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
-      };
-      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
-      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
-    }
-  </script>
+    lastY   = y;
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function () {
+    if (!ticking) { window.requestAnimationFrame(tick); ticking = true; }
+  }, { passive: true });
+
+  tick(); /* init */
+}());
+</script>
+
+
+<!-- ============================
+     INTERSECTIONOBSERVER FADE-UP
+============================ -->
+<script>
+(function () {
+  'use strict';
+  var els = document.querySelectorAll('.fu');
+
+  if (!window.IntersectionObserver) {
+    els.forEach(function (el) { el.classList.add('on'); });
+    return;
+  }
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('on');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.10, rootMargin: '0px 0px -36px 0px' });
+
+  els.forEach(function (el) { io.observe(el); });
+}());
+</script>
+
 </body>
 </html>

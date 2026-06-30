@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stripwinkel Alex -- Berchem, Antwerpen</title>
+<meta name="description" content="De beste strips, manga en graphic novels van Berchem. Stripwinkel Alex op Gitschotellei -- jouw stripspeciaalzaak in Antwerpen.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%231a1a2e'/%3E%3Ctext x='16' y='22' font-family='Impact,sans-serif' font-size='14' fill='%23e63946' text-anchor='middle'%3ESTR%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Bangers&family=Barlow:ital,wght@0,400;0,600;0,700;1,400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link href="https://fonts.googleapis.com/css2?family=Bangers&family=Barlow:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" /></noscript>
+<style>
+
+/* RESET + BASE */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ink: #1a1a2e;
+  --ink-deep: #0d0d1a;
+  --navy: #16213e;
+  --paper: #f5f0e8;
+  --red: #e63946;
+  --yellow: #ffd166;
+  --panel-gap: clamp(8px, 1.5vw, 16px);
+  --section-pad: clamp(3rem, 8vw, 6rem);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: var(--ink);
+  color: var(--paper);
+  overflow-x: hidden;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: var(--ink-deep);
+  border-bottom: 3px solid var(--red);
+  padding: 0 clamp(1rem, 4vw, 2.5rem);
+  transition: transform 0.28s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+nav.nav-hidden { transform: translateY(-100%); }
+nav.nav-visible { transform: translateY(0); }
+
+.nav-logo {
+  font-family: 'Bangers', cursive;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  color: var(--paper);
+  text-decoration: none;
+  line-height: 1;
+}
+.nav-logo span { color: var(--red); }
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  align-items: center;
+}
+.nav-links a {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--paper);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.nav-links a:hover { color: var(--red); }
+
+.nav-cta {
+  background: var(--red) !important;
+  color: var(--paper) !important;
+  padding: 0.4rem 1rem;
+  border: 2px solid var(--paper);
+  font-weight: 700 !important;
+}
+.nav-cta:hover { background: transparent !important; }
+
+@media (max-width: 680px) { .nav-links { display: none; } }
+
+/* HERO */
+.hero {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 7rem clamp(1rem, 5vw, 3rem) 4rem;
+  background: var(--ink-deep);
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(245,240,232,0.06) 1px, transparent 1px);
+  background-size: 20px 20px;
+  z-index: 0;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 0; right: 0;
+  height: 80px;
+  background: var(--ink);
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  z-index: 1;
+}
+
+.hero-inner { position: relative; z-index: 2; max-width: 900px; }
+
+.hero-eyebrow {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--red);
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.hero-eyebrow::before,
+.hero-eyebrow::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 40px;
+  background: var(--red);
+}
+
+.hero-headline {
+  font-family: 'Bangers', cursive;
+  font-size: clamp(4rem, 14vw, 10rem);
+  line-height: 0.9;
+  letter-spacing: 4px;
+  color: var(--paper);
+  text-shadow: 5px 5px 0 var(--red), 8px 8px 0 rgba(230,57,70,0.3);
+  margin-bottom: 0.3em;
+}
+.hero-headline .accent { color: var(--red); }
+
+.hero-sub {
+  font-family: 'Barlow', sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  color: rgba(245,240,232,0.8);
+  max-width: 540px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.5;
+}
+
+/* Speech bubble */
+.speech-bubble {
+  position: absolute;
+  top: clamp(90px, 14vw, 140px);
+  right: clamp(1rem, 6vw, 8rem);
+  background: var(--yellow);
+  color: var(--ink-deep);
+  font-family: 'Bangers', cursive;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  letter-spacing: 1px;
+  padding: 0.7em 1.1em;
+  border: 3px solid var(--ink-deep);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.2;
+  box-shadow: 4px 4px 0 var(--ink-deep);
+  z-index: 3;
+  rotate: 8deg;
+  min-width: 110px;
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: bubble-wiggle 3s ease-in-out infinite;
+}
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -22px; left: 20px;
+  width: 0; height: 0;
+  border-left: 14px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 22px solid var(--ink-deep);
+}
+.speech-bubble::before {
+  content: '';
+  position: absolute;
+  bottom: -18px; left: 22px;
+  width: 0; height: 0;
+  border-left: 12px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 19px solid var(--yellow);
+  z-index: 1;
+}
+@keyframes bubble-wiggle {
+  0%, 100% { rotate: 8deg; }
+  50% { rotate: 11deg; }
+}
+
+.hero-cta-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0.85rem 2.2rem;
+  border: 3px solid var(--paper);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.15s, color 0.15s, transform 0.1s;
+}
+.btn:active { transform: translate(2px, 2px); }
+.btn-primary {
+  background: var(--red);
+  color: var(--paper);
+  border-color: var(--paper);
+  box-shadow: 4px 4px 0 var(--paper);
+}
+.btn-primary:hover { background: var(--paper); color: var(--ink-deep); }
+.btn-ghost {
+  background: transparent;
+  color: var(--paper);
+  border-color: rgba(245,240,232,0.4);
+}
+.btn-ghost:hover { border-color: var(--paper); background: rgba(245,240,232,0.08); }
+
+/* MARQUEE */
+.marquee-strip {
+  background: var(--red);
+  border-top: 3px solid var(--paper);
+  border-bottom: 3px solid var(--paper);
+  padding: 0.75rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.marquee-track {
+  display: inline-flex;
+  animation: marquee-scroll 28s linear infinite;
+}
+.marquee-track span {
+  font-family: 'Bangers', cursive;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  color: var(--paper);
+  padding: 0 1.5rem;
+}
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* COMIC PANEL GRID */
+.panels-section {
+  padding: var(--section-pad) clamp(1rem, 4vw, 2.5rem);
+  background: var(--ink);
+}
+.panels-header {
+  text-align: center;
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
+}
+.panels-header h2 {
+  font-family: 'Bangers', cursive;
+  font-size: clamp(2.4rem, 7vw, 5rem);
+  letter-spacing: 3px;
+  line-height: 1;
+  color: var(--paper);
+}
+.panels-header h2 em { color: var(--red); font-style: normal; }
+.panels-header p { font-size: 1rem; color: rgba(245,240,232,0.80); margin-top: 0.8rem; }
+
+/* Asymmetric comic layout */
+.comic-page {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr 1.5fr;
+  grid-template-rows: auto auto;
+  gap: var(--panel-gap);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.panel {
+  background: var(--navy);
+  border: 3px solid var(--paper);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  opacity: 0;
+  transform: scale(0.95) translateY(12px);
+}
+.panel.in-view {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.panel:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 6px 6px 0 var(--red);
+  z-index: 2;
+}
+
+.panel-1 { grid-column: 1; grid-row: 1 / 3; min-height: 420px; }
+.panel-2 { grid-column: 2; grid-row: 1; min-height: 200px; }
+.panel-3 { grid-column: 3; grid-row: 1; min-height: 200px; }
+.panel-4 { grid-column: 2; grid-row: 2; min-height: 200px; }
+.panel-5 { grid-column: 3; grid-row: 2; min-height: 200px; }
+
+@media (max-width: 768px) {
+  .comic-page { grid-template-columns: 1fr 1fr; }
+  .panel-1 { grid-column: 1 / 3; grid-row: auto; min-height: 220px; }
+  .panel-2, .panel-3, .panel-4, .panel-5 { grid-column: auto; grid-row: auto; min-height: 170px; }
+}
+@media (max-width: 480px) {
+  .comic-page { grid-template-columns: 1fr; }
+  .panel-1, .panel-2, .panel-3, .panel-4, .panel-5 { grid-column: 1; }
+}
+
+.panel-inner {
+  padding: clamp(1.2rem, 3vw, 2rem);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 2;
+}
+.panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(245,240,232,0.04) 1px, transparent 1px);
+  background-size: 12px 12px;
+  z-index: 1;
+}
+.panel-number {
+  position: absolute;
+  top: 10px; right: 14px;
+  font-family: 'Bangers', cursive;
+  font-size: 4rem;
+  color: rgba(245,240,232,0.06);
+  line-height: 1;
+  z-index: 1;
+  user-select: none;
+}
+.panel-graphic {
+  position: absolute;
+  top: 1rem; left: 1rem;
+  z-index: 2;
+}
+.panel-badge {
+  background: var(--red);
+  border: 2px solid var(--paper);
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 0.25rem 0.6rem;
+  color: var(--paper);
+  display: inline-block;
+}
+.panel-cat {
+  font-family: 'Bangers', cursive;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  letter-spacing: 2px;
+  color: var(--paper);
+  line-height: 1;
+  margin-bottom: 0.4rem;
+  text-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+  position: relative;
+  z-index: 2;
+}
+.panel-cat span { color: var(--red); }
+.panel-desc {
+  font-size: 0.85rem;
+  color: rgba(245,240,232,0.80);
+  line-height: 1.4;
+  position: relative;
+  z-index: 2;
+  max-width: 260px;
+}
+.panel::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--red);
+  z-index: 3;
+}
+.panel-1 .panel-cat { font-size: clamp(2.5rem, 5vw, 4rem); }
+
+.panel:nth-child(1) { transition-delay: 0s; }
+.panel:nth-child(2) { transition-delay: 0.08s; }
+.panel:nth-child(3) { transition-delay: 0.14s; }
+.panel:nth-child(4) { transition-delay: 0.2s; }
+.panel:nth-child(5) { transition-delay: 0.26s; }
+
+/* PITCH SECTION */
+.pitch-section {
+  background: var(--navy);
+  padding: var(--section-pad) clamp(1rem, 4vw, 2.5rem);
+  position: relative;
+  overflow: hidden;
+  border-top: 4px solid var(--red);
+  border-bottom: 4px solid var(--red);
+}
+.pitch-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(230,57,70,0.08) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+.pitch-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: start;
+}
+@media (max-width: 700px) { .pitch-inner { grid-template-columns: 1fr; } }
+
+.pitch-quote-wrap { position: relative; }
+.pitch-quote-mark {
+  font-family: 'Bangers', cursive;
+  font-size: 8rem;
+  line-height: 0.7;
+  color: var(--red);
+  opacity: 0.3;
+  position: absolute;
+  top: -1rem; left: -1rem;
+  user-select: none;
+}
+.pitch-quote {
+  font-family: 'Bangers', cursive;
+  font-size: clamp(1.5rem, 3.5vw, 2.4rem);
+  letter-spacing: 1px;
+  color: var(--paper);
+  line-height: 1.25;
+  padding-left: 1.5rem;
+  border-left: 5px solid var(--red);
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+}
+.pitch-quote em { color: var(--red); font-style: normal; }
+.pitch-attr {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(245,240,232,0.80);
+  padding-left: 1.5rem;
+}
+.pitch-facts h3 {
+  font-family: 'Bangers', cursive;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  letter-spacing: 2px;
+  color: var(--paper);
+  margin-bottom: 1.5rem;
+}
+.pitch-facts h3 span { color: var(--red); }
+
+.missing-list { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
+.missing-list li {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 0.8rem;
+  align-items: start;
+  padding: 0.9rem 1rem;
+  background: rgba(245,240,232,0.04);
+  border: 2px solid rgba(245,240,232,0.1);
+  border-left: 4px solid var(--red);
+}
+.missing-list .icon-box {
+  background: var(--red);
+  width: 32px; height: 32px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--paper);
+  font-family: 'Barlow', sans-serif;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.missing-list .item-text strong {
+  display: block;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--paper);
+  margin-bottom: 0.2rem;
+}
+.missing-list .item-text span {
+  font-size: 0.8rem;
+  color: rgba(245,240,232,0.80);
+  line-height: 1.3;
+}
+
+/* ARRIVALS SECTION */
+.arrivals-section {
+  padding: var(--section-pad) clamp(1rem, 4vw, 2.5rem);
+  background: var(--ink);
+}
+.arrivals-inner { max-width: 1100px; margin: 0 auto; }
+
+.section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+  flex-wrap: wrap;
+}
+.section-header h2 {
+  font-family: 'Bangers', cursive;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  letter-spacing: 3px;
+  color: var(--paper);
+  line-height: 1;
+}
+.section-header h2 span { color: var(--red); }
+.section-eyebrow {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--red);
+  padding: 0.25rem 0.75rem;
+  border: 2px solid var(--red);
+  white-space: nowrap;
+}
+
+.arrivals-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: var(--panel-gap);
+}
+@media (max-width: 680px) { .arrivals-grid { grid-template-columns: 1fr; } }
+
+.arrival-featured {
+  background: var(--navy);
+  border: 3px solid var(--paper);
+  position: relative;
+  overflow: hidden;
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  opacity: 0;
+  transform: translateX(-16px);
+}
+.arrival-featured.in-view {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.arrival-featured::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(245,240,232,0.04) 1px, transparent 1px);
+  background-size: 14px 14px;
+}
+.arrival-featured::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--red);
+}
+
+.featured-label {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--red);
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  z-index: 2;
+}
+.featured-label::before {
+  content: '';
+  display: inline-block;
+  width: 8px; height: 8px;
+  background: var(--red);
+  border-radius: 50%;
+  animation: pulse-dot 1.6s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
+}
+
+.arrival-featured h3 {
+  font-family: 'Bangers', cursive;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  letter-spacing: 2px;
+  color: var(--paper);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+}
+.arrival-featured p {
+  font-size: 0.9rem;
+  color: rgba(245,240,232,0.7);
+  line-height: 1.6;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 1.5rem;
+}
+
+.arrival-sidebar { display: flex; flex-direction: column; gap: var(--panel-gap); }
+
+.arrival-card {
+  background: var(--navy);
+  border: 2px solid var(--paper);
+  padding: 1.2rem 1.4rem;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(16px);
+}
+.arrival-card.in-view {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.5s ease 0.1s, transform 0.5s ease 0.1s;
+}
+.arrival-card:nth-child(2).in-view { transition-delay: 0.2s; }
+.arrival-card:nth-child(3).in-view { transition-delay: 0.3s; }
+.arrival-card::after {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px;
+  background: var(--red);
+}
+.arrival-card h3 {
+  font-family: 'Bangers', cursive;
+  font-size: 1.3rem;
+  letter-spacing: 1.5px;
+  color: var(--paper);
+  margin-bottom: 0.35rem;
+  padding-left: 0.75rem;
+}
+.arrival-card p {
+  font-size: 0.8rem;
+  color: rgba(245,240,232,0.80);
+  line-height: 1.4;
+  padding-left: 0.75rem;
+}
+
+/* Mini speech bubble */
+.speech-mini {
+  background: var(--yellow);
+  color: var(--ink-deep);
+  font-family: 'Bangers', cursive;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 0.6rem 1rem;
+  border: 2px solid var(--ink-deep);
+  display: inline-block;
+  position: relative;
+  margin-top: 0.5rem;
+  line-height: 1.2;
+  z-index: 2;
+}
+.speech-mini::after {
+  content: '';
+  position: absolute;
+  bottom: -12px; left: 18px;
+  border-left: 10px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 12px solid var(--ink-deep);
+}
+.speech-mini::before {
+  content: '';
+  position: absolute;
+  bottom: -9px; left: 20px;
+  border-left: 8px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 10px solid var(--yellow);
+  z-index: 1;
+}
+
+/* WHY ONLINE */
+.why-section {
+  background: var(--ink-deep);
+  padding: var(--section-pad) clamp(1rem, 4vw, 2.5rem);
+  border-top: 4px solid rgba(245,240,232,0.08);
+}
+.why-inner { max-width: 1100px; margin: 0 auto; }
+.why-inner h2 {
+  font-family: 'Bangers', cursive;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  letter-spacing: 3px;
+  color: var(--paper);
+  margin-bottom: 0.5rem;
+}
+.why-inner h2 span { color: var(--red); }
+.why-inner > p {
+  font-size: 1rem;
+  color: rgba(245,240,232,0.80);
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
+  max-width: 600px;
+}
+
+.stats-band {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  background: var(--paper);
+  border: 3px solid var(--paper);
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+}
+@media (max-width: 580px) { .stats-band { grid-template-columns: 1fr; } }
+
+.stat-cell {
+  background: var(--ink);
+  padding: clamp(1.5rem, 4vw, 2.5rem) 1.5rem;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.92);
+}
+.stat-cell.in-view {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.stat-cell:nth-child(2).in-view { transition-delay: 0.1s; }
+.stat-cell:nth-child(3).in-view { transition-delay: 0.2s; }
+
+.stat-num {
+  font-family: 'Bangers', cursive;
+  font-size: clamp(3rem, 8vw, 5rem);
+  color: var(--red);
+  letter-spacing: 2px;
+  line-height: 1;
+  display: block;
+}
+.stat-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(245,240,232,0.80);
+  margin-top: 0.5rem;
+}
+
+.why-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+@media (max-width: 600px) { .why-features { grid-template-columns: 1fr; } }
+
+.why-feature {
+  border: 2px solid rgba(245,240,232,0.12);
+  padding: 1.5rem;
+  border-left: 4px solid var(--red);
+  opacity: 0;
+  transform: translateY(10px);
+}
+.why-feature.in-view {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.why-feature:nth-child(2).in-view { transition-delay: 0.1s; }
+.why-feature:nth-child(3).in-view { transition-delay: 0.15s; }
+.why-feature:nth-child(4).in-view { transition-delay: 0.2s; }
+
+.why-feature h3 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--paper);
+  margin-bottom: 0.5rem;
+}
+.why-feature p {
+  font-size: 0.85rem;
+  color: rgba(245,240,232,0.80);
+  line-height: 1.5;
+}
+
+/* CONTACT */
+.contact-section {
+  background: var(--ink);
+  padding: var(--section-pad) clamp(1rem, 4vw, 2.5rem);
+  border-top: 4px solid var(--red);
+}
+.contact-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: start;
+}
+@media (max-width: 680px) { .contact-inner { grid-template-columns: 1fr; } }
+
+.contact-left h2 {
+  font-family: 'Bangers', cursive;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  letter-spacing: 3px;
+  color: var(--paper);
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+.contact-left h2 span { color: var(--red); }
+
+.contact-list { list-style: none; display: flex; flex-direction: column; gap: 1.2rem; }
+.contact-list li {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+.contact-icon {
+  width: 44px; height: 44px;
+  background: var(--red);
+  border: 2px solid var(--paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.contact-icon svg { width: 20px; height: 20px; fill: var(--paper); }
+.contact-detail strong {
+  display: block;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(245,240,232,0.80);
+  margin-bottom: 0.2rem;
+}
+.contact-detail a {
+  color: var(--paper);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.15s;
+}
+.contact-detail a:hover { color: var(--red); }
+.contact-detail span { color: var(--paper); font-size: 1rem; }
+
+.contact-hours {
+  margin-top: 2rem;
+  border: 2px solid rgba(245,240,232,0.15);
+  border-left: 4px solid var(--red);
+  padding: 1.2rem 1.5rem;
+}
+.contact-hours h3 {
+  font-family: 'Bangers', cursive;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  color: var(--paper);
+  margin-bottom: 0.8rem;
+}
+.hours-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid rgba(245,240,232,0.08);
+  font-size: 0.85rem;
+}
+.hours-row:last-child { border-bottom: none; }
+.hours-row .day { color: rgba(245,240,232,0.80); }
+.hours-row .time { color: var(--paper); font-weight: 600; text-align: right; }
+.hours-row.closed .time { color: #e63946; }
+
+/* Map panel */
+.contact-map {
+  background: var(--navy);
+  border: 3px solid var(--paper);
+  aspect-ratio: 4 / 3;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.contact-map::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(245,240,232,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245,240,232,0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.map-pin {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+.map-pin svg { width: 56px; height: 56px; filter: drop-shadow(0 0 16px rgba(230,57,70,0.6)); }
+.crosshair-h, .crosshair-v {
+  position: absolute;
+  background: rgba(230,57,70,0.25);
+}
+.crosshair-h { height: 1px; left: 0; right: 0; top: 50%; }
+.crosshair-v { width: 1px; top: 0; bottom: 0; left: 50%; }
+.map-label {
+  background: var(--red);
+  color: var(--paper);
+  font-family: 'Bangers', cursive;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  padding: 0.4rem 1.2rem;
+  border: 2px solid var(--paper);
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.map-sublabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(245,240,232,0.80);
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+/* FOOTER */
+footer {
+  background: var(--ink-deep);
+  border-top: 3px solid rgba(245,240,232,0.08);
+  padding: 2.5rem clamp(1rem, 4vw, 2.5rem);
+}
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.footer-brand { font-family: 'Bangers', cursive; font-size: 1.6rem; letter-spacing: 2px; color: var(--paper); }
+.footer-brand span { color: var(--red); }
+.footer-note { font-size: 0.75rem; color: rgba(245,240,232,0.80); text-align: right; line-height: 1.6; }
+.footer-fb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: rgba(245,240,232,0.90);
+  text-decoration: none;
+  border: 2px solid rgba(245,240,232,0.2);
+  padding: 0.5rem 1rem;
+  transition: border-color 0.15s, color 0.15s;
+}
+.footer-fb:hover { border-color: var(--red); color: var(--paper); }
+
+/* SCREEN READER ONLY */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+/* REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .panel, .arrival-featured, .arrival-card, .stat-cell, .why-feature {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="main-nav" role="navigation" aria-label="Hoofdnavigatie">
+  <a href="#top" class="nav-logo">Strip<span>Alex</span></a>
+  <ul class="nav-links">
+    <li><a href="#collectie">Collectie</a></li>
+    <li><a href="#nieuws">Nieuws</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="tel:+3232362540" class="btn nav-cta">Bel ons</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top" aria-label="Hero">
+  <div class="speech-bubble" role="img" aria-label="Nu ook online beschikbaar">
+    Nu ook<br>online!
+  </div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">
+      <span>Stripwinkel Alex</span>
+    </p>
+    <h1 class="hero-headline">
+      De Beste<br>
+      <span class="accent">Strips</span><br>
+      van Berchem
+    </h1>
+    <p class="hero-sub">
+      Strips, manga, graphic novels en collectors in het hart van Berchem. Gitschotellei, Antwerpen.
+    </p>
+    <div class="hero-cta-group">
+      <a href="#collectie" class="btn btn-primary">Ontdek de Collectie</a>
+      <a href="#contact" class="btn btn-ghost">Vind ons</a>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE (ONE ONLY) -->
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Strips</span><span>&middot;</span>
+    <span>Manga</span><span>&middot;</span>
+    <span>Graphic Novels</span><span>&middot;</span>
+    <span>Albums</span><span>&middot;</span>
+    <span>Collectors</span><span>&middot;</span>
+    <span>Tweedehands</span><span>&middot;</span>
+    <span>Berchem</span><span>&middot;</span>
+    <span>Antwerpen</span><span>&middot;</span>
+    <span>Strips</span><span>&middot;</span>
+    <span>Manga</span><span>&middot;</span>
+    <span>Graphic Novels</span><span>&middot;</span>
+    <span>Albums</span><span>&middot;</span>
+    <span>Collectors</span><span>&middot;</span>
+    <span>Tweedehands</span><span>&middot;</span>
+    <span>Berchem</span><span>&middot;</span>
+    <span>Antwerpen</span><span>&middot;</span>
+  </div>
+</div>
+
+<!-- COMIC PANEL GRID -->
+<section class="panels-section" id="collectie" aria-label="Collectie">
+  <div class="panels-header">
+    <h2>Alles wat je <em>zoekt</em></h2>
+    <p>Vijf categorieën. Duizenden titels. Eén adres in Berchem.</p>
+  </div>
+  <div class="comic-page">
+
+    <div class="panel panel-1" data-reveal>
+      <div class="panel-number">01</div>
+      <div class="panel-graphic"><span class="panel-badge">Bestsellers</span></div>
+      <div class="panel-inner">
+        <h3 class="panel-cat"><span>Strips</span> &amp; Albums</h3>
+        <p class="panel-desc">Van Tintin tot Lucky Luke, van Suske en Wiske tot de nieuwste Belgische uitgaven. Klassiekers en actuele releases.</p>
+      </div>
+    </div>
+
+    <div class="panel panel-2" data-reveal>
+      <div class="panel-number">02</div>
+      <div class="panel-graphic"><span class="panel-badge">Hot</span></div>
+      <div class="panel-inner">
+        <h3 class="panel-cat">Manga &amp; <span>Anime</span></h3>
+        <p class="panel-desc">Naruto, One Piece, Demon Slayer en meer. Alle volumes, alle series.</p>
+      </div>
+    </div>
+
+    <div class="panel panel-3" data-reveal>
+      <div class="panel-number">03</div>
+      <div class="panel-graphic"><span class="panel-badge">Literair</span></div>
+      <div class="panel-inner">
+        <h3 class="panel-cat"><span>Graphic</span> Novels</h3>
+        <p class="panel-desc">Verhalen voor volwassenen. De beste grafische romans in NL, FR en EN.</p>
+      </div>
+    </div>
+
+    <div class="panel panel-4" data-reveal>
+      <div class="panel-number">04</div>
+      <div class="panel-inner">
+        <h3 class="panel-cat">Col<span>lectors</span></h3>
+        <p class="panel-desc">Gelimiteerde edities, signatuurreeksen en zeldzame herdrukken.</p>
+      </div>
+    </div>
+
+    <div class="panel panel-5" data-reveal>
+      <div class="panel-number">05</div>
+      <div class="panel-inner">
+        <h3 class="panel-cat"><span>Tweede</span>hands</h3>
+        <p class="panel-desc">Breng je oude strips in voor inruil. Schat in andermans troep.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- NEW ARRIVALS -->
+<section class="arrivals-section" id="nieuws" aria-label="Nieuws en nieuwe releases">
+  <div class="arrivals-inner">
+    <div class="section-header">
+      <h2>Wat er <span>Nu</span> Aankomt</h2>
+      <span class="section-eyebrow">Live Updates</span>
+    </div>
+    <div class="arrivals-grid">
+      <div class="arrival-featured" data-reveal-left>
+        <p class="featured-label">Nieuw deze week</p>
+        <h3>Signeersessies, releases &amp; events</h3>
+        <p>
+          Elke week nieuwe titels in de winkel. Signeersessies met Belgische auteurs, release-parties voor grote strips en manga, en pre-order mogelijkheden voor aankomende reeksen. Dit alles mis je nu als je niet online staat.
+        </p>
+        <div class="speech-mini">Reserveer jouw exemplaar!</div>
+        <br><br>
+        <a href="tel:+3232362540" class="btn btn-primary" style="position:relative;z-index:2;">Bel voor reservaties</a>
+      </div>
+      <div class="arrival-sidebar">
+        <div class="arrival-card" data-reveal-right>
+          <h3>Nieuwkomers</h3>
+          <p>Wekelijks nieuwe strips en manga direct van de distributeur. Altijd vers.</p>
+        </div>
+        <div class="arrival-card" data-reveal-right>
+          <h3>Signeersessies</h3>
+          <p>Regelmatig te gast: Vlaamse en Belgische stripauteurs. Laat je exemplaar signeren.</p>
+        </div>
+        <div class="arrival-card" data-reveal-right>
+          <h3>Pre-order Service</h3>
+          <p>Reserveer nieuwe delen van je favoriete reeks voordat ze uitverkopen.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PITCH SECTION -->
+<section class="pitch-section" aria-label="Waarom een website">
+  <div class="pitch-inner">
+    <div class="pitch-quote-wrap">
+      <div class="pitch-quote-mark" aria-hidden="true">"</div>
+      <blockquote class="pitch-quote">
+        "Elke dag zoeken mensen <em>'stripwinkel Antwerpen'</em> en ze vinden jullie niet."
+      </blockquote>
+      <p class="pitch-attr">Zoekopdrachten die jullie nu mislopen</p>
+    </div>
+    <div class="pitch-facts">
+      <h3>Wat ontbreekt <span>nu</span></h3>
+      <ul class="missing-list" role="list">
+        <li>
+          <div class="icon-box" aria-hidden="true">1</div>
+          <div class="item-text">
+            <strong>Google-zichtbaarheid</strong>
+            <span>Stripwinkelalex.be is offline. Wie zoekt vindt niets. Concurrenten pakken die klanten.</span>
+          </div>
+        </li>
+        <li>
+          <div class="icon-box" aria-hidden="true">2</div>
+          <div class="item-text">
+            <strong>Online reserveringen</strong>
+            <span>Klanten willen albums reserveren zonder te moeten bellen. Dat kan nu niet.</span>
+          </div>
+        </li>
+        <li>
+          <div class="icon-box" aria-hidden="true">3</div>
+          <div class="item-text">
+            <strong>Evenementen aankondigen</strong>
+            <span>Signeersessies, releases en acties bereiken alleen vaste Facebook-volgers.</span>
+          </div>
+        </li>
+        <li>
+          <div class="icon-box" aria-hidden="true">4</div>
+          <div class="item-text">
+            <strong>Nieuwe klanten</strong>
+            <span>Toeristen, nieuwe bewoners, ouders op zoek naar strips voor kinderen. Zij vinden jullie niet.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- WHY ONLINE -->
+<section class="why-section" aria-label="De kracht van online aanwezigheid">
+  <div class="why-inner">
+    <h2>Wat een website <span>oplevert</span></h2>
+    <p>Concrete voordelen voor een gevestigde stripwinkel als jullie.</p>
+
+    <div class="stats-band" role="list">
+      <div class="stat-cell" data-reveal-scale role="listitem">
+        <span class="stat-num">73%</span>
+        <p class="stat-label">van shoppers zoekt online voor een winkelbezoek</p>
+      </div>
+      <div class="stat-cell" data-reveal-scale role="listitem">
+        <span class="stat-num">3x</span>
+        <p class="stat-label">meer bereik via Google dan via sociale media alleen</p>
+      </div>
+      <div class="stat-cell" data-reveal-scale role="listitem">
+        <span class="stat-num">0</span>
+        <p class="stat-label">kosten per bezoeker via organische zoekopdrachten</p>
+      </div>
+    </div>
+
+    <div class="why-features">
+      <div class="why-feature" data-reveal-up>
+        <h3>Google Maps + Zoeken</h3>
+        <p>Een werkende website activeert jullie Google Business profiel volledig. Openingsuren, adres, foto's en reviews zichtbaar voor iedereen die zoekt.</p>
+      </div>
+      <div class="why-feature" data-reveal-up>
+        <h3>Vaste klanten behouden</h3>
+        <p>Nieuwsbrief, evenementen en nieuwe releases direct bij jullie trouwste klanten. Niet afhankelijk van Facebook-algoritmes.</p>
+      </div>
+      <div class="why-feature" data-reveal-up>
+        <h3>Nieuwe doelgroepen</h3>
+        <p>Manga-fans, graphic novel-lezers, cadeau-zoekers. Specifieke categorieaanbiedingen trekken nieuwe bezoekers aan.</p>
+      </div>
+      <div class="why-feature" data-reveal-up>
+        <h3>Jullie expertise online</h3>
+        <p>Aanbevelingen, recensies, de persoonlijke touch van een onafhankelijke stripspeciaalzaak. Dat verkoopt beter dan elke webshop.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact" aria-label="Contact en locatie">
+  <div class="contact-inner">
+    <div class="contact-left">
+      <h2>Kom <span>langs</span></h2>
+      <ul class="contact-list" role="list">
+        <li>
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.62 10.79a15.45 15.45 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27 11.36 11.36 0 003.55.56 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.56 3.55 1 1 0 01-.27 1.11z"/>
+            </svg>
+          </div>
+          <div class="contact-detail">
+            <strong>Telefoon</strong>
+            <a href="tel:+3232362540">+32 3 236 25 40</a>
+          </div>
+        </li>
+        <li>
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/>
+            </svg>
+          </div>
+          <div class="contact-detail">
+            <strong>Adres</strong>
+            <a href="https://maps.google.com/?q=Gitschotellei+Berchem+Antwerpen" target="_blank" rel="noopener">Gitschotellei, 2600 Berchem</a>
+          </div>
+        </li>
+        <li>
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+            </svg>
+          </div>
+          <div class="contact-detail">
+            <strong>Facebook</strong>
+            <a href="https://facebook.com/stripwinkelalex" target="_blank" rel="noopener">facebook.com/stripwinkelalex</a>
+          </div>
+        </li>
+      </ul>
+
+      <div class="contact-hours">
+        <h3>Openingsuren</h3>
+        <div class="hours-row closed"><span class="day">Maandag</span><span class="time">Gesloten</span></div>
+        <div class="hours-row"><span class="day">Dinsdag</span><span class="time">10:00 - 18:00</span></div>
+        <div class="hours-row"><span class="day">Woensdag</span><span class="time">10:00 - 18:00</span></div>
+        <div class="hours-row"><span class="day">Donderdag</span><span class="time">10:00 - 18:00</span></div>
+        <div class="hours-row"><span class="day">Vrijdag</span><span class="time">10:00 - 18:00</span></div>
+        <div class="hours-row"><span class="day">Zaterdag</span><span class="time">10:00 - 17:00</span></div>
+        <div class="hours-row closed"><span class="day">Zondag</span><span class="time">Gesloten</span></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="contact-map" aria-label="Kaart - Stripwinkel Alex Berchem">
+        <div class="crosshair-h" aria-hidden="true"></div>
+        <div class="crosshair-v" aria-hidden="true"></div>
+        <div class="map-pin">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z" fill="#e63946"/>
+            <circle cx="12" cy="9" r="2.5" fill="#f5f0e8"/>
+          </svg>
+          <div class="map-label">Stripwinkel Alex</div>
+          <p class="map-sublabel">Gitschotellei &middot; Berchem</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Strip<span>Alex</span></div>
+    <a href="https://facebook.com/stripwinkelalex" target="_blank" rel="noopener" class="footer-fb">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+      </svg>
+      Volg ons op Facebook
+    </a>
+    <div class="footer-note">
+      Stripwinkel Alex &middot; Berchem, Antwerpen<br>
+      <span style="font-size:0.7rem;opacity:0.5;">Dit is een demo-pagina -- gebouwd als voorstel voor Stripwinkel Alex</span>
+    </div>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script>
+// Headroom nav (inline, no CDN)
+(function() {
+  var nav = document.querySelector('nav');
+  var lastY = 0, ticking = false;
+  function update() {
+    var y = window.scrollY || window.pageYOffset;
+    var delta = y - lastY;
+    if (y <= 80) {
+      nav.classList.remove('nav-hidden');
+      nav.classList.add('nav-visible', 'nav-top');
+    } else if (delta > 8) {
+      nav.classList.add('nav-hidden');
+      nav.classList.remove('nav-visible', 'nav-top');
+    } else if (delta < -5) {
+      nav.classList.remove('nav-hidden');
+      nav.classList.add('nav-visible');
+    }
+    lastY = y;
+    ticking = false;
+  }
+  window.addEventListener('scroll', function() {
+    if (!ticking) { requestAnimationFrame(update); ticking = true; }
+  }, { passive: true });
+  nav.classList.add('nav-visible', 'nav-top');
+})();
+
+// IntersectionObserver reveal (NO scroll listener for reveal)
+(function() {
+  var opts = { threshold: 0.12, rootMargin: '0px 0px -40px 0px' };
+
+  function makeObs(cls) {
+    return new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('in-view');
+          this.unobserve(e.target);
+        }
+      }.bind(this));
+    }, opts);
+  }
+
+  var panelObs = makeObs('panel');
+  document.querySelectorAll('[data-reveal]').forEach(function(el) { panelObs.observe(el); });
+
+  var leftObs = makeObs('left');
+  document.querySelectorAll('[data-reveal-left]').forEach(function(el) { leftObs.observe(el); });
+
+  var rightObs = makeObs('right');
+  document.querySelectorAll('[data-reveal-right]').forEach(function(el) { rightObs.observe(el); });
+
+  var scaleObs = makeObs('scale');
+  document.querySelectorAll('[data-reveal-scale]').forEach(function(el) { scaleObs.observe(el); });
+
+  var upObs = makeObs('up');
+  document.querySelectorAll('[data-reveal-up]').forEach(function(el) { upObs.observe(el); });
+})();
+</script>
+</body>
+</html>

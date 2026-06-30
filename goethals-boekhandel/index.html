@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Goethals Boekhandel — Boeken, kranten &amp; tijdschriften · Wilrijk</title>
+  <meta name="description" content="Goethals Boekhandel in Wilrijk (Heistraat 43) — uw lokale boekhandel voor boeken, kranten, tijdschriften en meer. Kom langs of bel ons." />
+  <link rel="canonical" href="https://goethals-boekhandel.be/" />
+  <meta name="theme-color" content="#2a1a0e" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Goethals Boekhandel" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Goethals Boekhandel — Boeken, kranten &amp; tijdschriften · Wilrijk" />
+  <meta property="og:description" content="Uw vertrouwde boekhandel en dagbladhandel in Wilrijk. Boeken, kranten, tijdschriften en meer." />
+  <meta property="og:url" content="https://goethals-boekhandel.be/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232a1a0e'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' fill='%23c4874a' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BookStore",
+    "name": "Goethals Boekhandel",
+    "description": "Boekhandel en dagbladhandel in Wilrijk — boeken, kranten, tijdschriften en meer.",
+    "image": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1200&q=80",
+    "url": "https://goethals-boekhandel.be/",
+    "telephone": "+3238283302",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Heistraat 43",
+      "postalCode": "2610",
+      "addressLocality": "Wilrijk",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 51.1716,
+      "longitude": 4.3939
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "07:00",
+        "closes": "18:00"
+      }
+    ],
+    "priceRange": "€"
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: {
+        serif: ['Playfair Display', 'Georgia', 'serif'],
+        sans: ['Source Sans 3', 'system-ui', 'sans-serif']
+      },
+      colors: {
+        ink:     '#2a1a0e',
+        quill:   '#4a3020',
+        amber:   '#c4874a',
+        rust:    '#8b3a2a',
+        parchment: '#f5ede0',
+        cream:   '#faf6ef',
+        sand:    '#ede0cc'
+      }
+    } } };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-grad { background: linear-gradient(180deg, rgba(42,26,14,.08) 0%, rgba(42,26,14,.38) 50%, rgba(42,26,14,.90) 100%); }
+    .dark-grad { background: linear-gradient(135deg, #1e120a, #2a1a0e); }
+    .fade-up { opacity: 0; transform: translateY(20px); transition: opacity .75s cubic-bezier(.2,.7,.2,1), transform .75s cubic-bezier(.2,.7,.2,1); }
+    .fade-up.in { opacity: 1; transform: none; }
+    .ug { background-image: linear-gradient(currentColor,currentColor); background-size: 0% 1px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
+    .ug:hover { background-size: 100% 1px; }
+    .card-lift { transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s; }
+    .card-lift:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(42,26,14,.18); }
+  </style>
+</head>
+<body class="bg-cream text-ink font-sans antialiased selection:bg-amber/30">
+
+  <!-- Skip link -->
+  <a href="#assortiment" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-ink focus:text-cream focus:rounded-full">Naar het assortiment</a>
+
+  <!-- Announcement bar -->
+  <div class="bg-rust text-cream text-center text-[12px] tracking-[0.18em] py-2 px-4 uppercase font-500">
+    Elke dag verse kranten &amp; tijdschriften — Heistraat 43, Wilrijk
+  </div>
+
+  <!-- Sticky nav -->
+  <header class="sticky top-0 z-50 bg-cream/90 backdrop-blur border-b border-ink/10">
+    <nav class="max-w-6xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between" role="navigation" aria-label="Hoofdnavigatie">
+      <a href="#top" aria-label="Goethals Boekhandel — home" class="flex items-baseline gap-2.5">
+        <span class="font-serif text-[28px] font-700 leading-none">Goethals</span>
+        <span class="text-[10px] uppercase tracking-[0.3em] text-amber font-600 hidden sm:inline">Boekhandel · Wilrijk</span>
+      </a>
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-8 text-[14px] font-500 tracking-wide">
+        <a href="#assortiment" class="ug">Assortiment</a>
+        <a href="#waarom" class="ug">Onze winkel</a>
+        <a href="#bezoek" class="ug">Openingsuren</a>
+        <a href="#contact" class="ug">Contact</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="tel:+3238283302" aria-label="Bel ons op 03 828 33 02" class="hidden sm:inline-flex items-center gap-2 bg-ink text-cream text-sm font-500 px-5 py-2.5 rounded-full hover:bg-quill transition">
+          <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.03 2.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+          Bel ons
+        </a>
+        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-ink/15 hover:bg-ink/5 transition">
+          <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" hidden class="md:hidden border-t border-ink/10 bg-cream/95 backdrop-blur">
+      <div class="px-5 py-3 flex flex-col text-[15px] font-400">
+        <a href="#assortiment" class="py-3 border-b border-ink/5">Assortiment</a>
+        <a href="#waarom" class="py-3 border-b border-ink/5">Onze winkel</a>
+        <a href="#bezoek" class="py-3 border-b border-ink/5">Openingsuren</a>
+        <a href="#contact" class="py-3">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[86vh] flex items-end overflow-hidden">
+    <div class="absolute inset-0 dark-grad"></div>
+    <img
+      src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=2000&q=80"
+      alt="Boeken in een sfeervolle boekhandel"
+      fetchpriority="high"
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative max-w-6xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
+      <p class="text-amber font-500 tracking-[0.35em] uppercase text-xs mb-4">Boekhandel &amp; dagbladhandel · Wilrijk</p>
+      <h1 class="font-serif text-cream text-[46px] leading-[1.05] sm:text-7xl font-700 max-w-2xl">Uw vertrouwde<br />boekhandel<br /><em class="font-600">in Wilrijk.</em></h1>
+      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-lg leading-relaxed font-300">Boeken, kranten, tijdschriften — elke dag klaar in hartje Wilrijk. Persoonlijk advies en een brede keuze, vlak bij u om de hoek.</p>
+      <div class="flex flex-wrap gap-3 mt-9">
+        <a href="#assortiment" class="bg-parchment text-ink font-600 px-7 py-3.5 rounded-full hover:bg-amber hover:text-cream transition">Ontdek ons assortiment</a>
+        <a href="#bezoek" class="border border-cream/40 text-cream font-500 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">Openingsuren &amp; adres</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <section class="bg-ink text-cream/90" aria-label="Sterke punten">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-7 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
+      <div>
+        <p class="font-serif text-2xl text-amber">Lokaal</p>
+        <p class="mt-1 text-cream/60 font-300">Heistraat 43, Wilrijk</p>
+      </div>
+      <div>
+        <p class="font-serif text-2xl text-amber">Dagelijks</p>
+        <p class="mt-1 text-cream/60 font-300">Verse kranten elke ochtend</p>
+      </div>
+      <div>
+        <p class="font-serif text-2xl text-amber">Breed</p>
+        <p class="mt-1 text-cream/60 font-300">Boeken, tijdschriften &amp; meer</p>
+      </div>
+      <div>
+        <p class="font-serif text-2xl text-amber">Persoonlijk</p>
+        <p class="mt-1 text-cream/60 font-300">Advies van een echte boekhandelaar</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Assortiment -->
+  <section id="assortiment" class="max-w-6xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
+    <div class="mb-12 fade-up">
+      <p class="text-amber font-500 tracking-[0.2em] uppercase text-xs mb-3">Wat we aanbieden</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-700">Een ruim assortiment,<br />voor iedereen.</h2>
+      <p class="text-quill text-lg mt-4 max-w-xl font-300">Van de ochtendkrant tot het nieuwste boek — bij Goethals vindt u wat u zoekt.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <article class="fade-up card-lift group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+        <img
+          src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=800&q=80"
+          alt="Boeken in de rekken"
+          loading="lazy"
+          class="absolute inset-0 w-full h-full object-cover opacity-65 group-hover:opacity-85 group-hover:scale-105 transition duration-700"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+        <div class="absolute bottom-0 p-6">
+          <h3 class="font-serif text-2xl font-700">Boeken</h3>
+          <p class="text-cream/75 text-sm mt-1 font-300">Romans, non-fictie, kinder- en jeugdboeken, studieboeken.</p>
+        </div>
+      </article>
+
+      <article class="fade-up card-lift group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+        <img
+          src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80"
+          alt="Dagbladen en kranten"
+          loading="lazy"
+          class="absolute inset-0 w-full h-full object-cover opacity-65 group-hover:opacity-85 group-hover:scale-105 transition duration-700"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+        <div class="absolute bottom-0 p-6">
+          <h3 class="font-serif text-2xl font-700">Kranten</h3>
+          <p class="text-cream/75 text-sm mt-1 font-300">Alle Belgische en internationale dagbladen, elke ochtend vers.</p>
+        </div>
+      </article>
+
+      <article class="fade-up card-lift group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+        <img
+          src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=800&q=80"
+          alt="Tijdschriften en magazines"
+          loading="lazy"
+          class="absolute inset-0 w-full h-full object-cover opacity-65 group-hover:opacity-85 group-hover:scale-105 transition duration-700"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+        <div class="absolute bottom-0 p-6">
+          <h3 class="font-serif text-2xl font-700">Tijdschriften</h3>
+          <p class="text-cream/75 text-sm mt-1 font-300">Een ruime selectie magazines — wekelijks, maandelijks en special editions.</p>
+        </div>
+      </article>
+
+      <article class="fade-up card-lift group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+        <img
+          src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=800&q=80"
+          alt="Schoolspullen en kantoorartikelen"
+          loading="lazy"
+          class="absolute inset-0 w-full h-full object-cover opacity-65 group-hover:opacity-85 group-hover:scale-105 transition duration-700"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+        <div class="absolute bottom-0 p-6">
+          <h3 class="font-serif text-2xl font-700">Schoolartikelen</h3>
+          <p class="text-cream/75 text-sm mt-1 font-300">Schriften, pennen, mappen en alles voor school of kantoor.</p>
+        </div>
+      </article>
+
+      <article class="fade-up card-lift group rounded-2xl overflow-hidden bg-ink text-cream relative aspect-[4/5]">
+        <img
+          src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=800&q=80"
+          alt="Cadeauartikelen en wenskaarten"
+          loading="lazy"
+          class="absolute inset-0 w-full h-full object-cover opacity-65 group-hover:opacity-85 group-hover:scale-105 transition duration-700"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
+        <div class="absolute bottom-0 p-6">
+          <h3 class="font-serif text-2xl font-700">Wenskaarten &amp; cadeaus</h3>
+          <p class="text-cream/75 text-sm mt-1 font-300">Kaarten voor elk moment, leuke cadeautjes en boekenbonnen.</p>
+        </div>
+      </article>
+
+      <article class="fade-up card-lift rounded-2xl dark-grad text-cream relative aspect-[4/5] flex items-center justify-center text-center p-8">
+        <div>
+          <div class="text-amber mb-3 flex justify-center">
+            <svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <p class="font-serif text-2xl font-700">Lotto &amp; diensten</p>
+          <p class="text-cream/75 text-sm mt-2 font-300">Lotto-punten en andere handige diensten — alles onder één dak.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Waarom langskomen -->
+  <section id="waarom" class="bg-sand/50 py-20 sm:py-28">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8">
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <div class="fade-up">
+          <p class="text-amber font-500 tracking-[0.2em] uppercase text-xs mb-4">Waarom langskomen</p>
+          <h2 class="font-serif text-4xl sm:text-5xl font-700 leading-tight">De lokale boekhandel<br />die u verdient.</h2>
+          <p class="text-quill text-lg mt-5 leading-relaxed font-300 max-w-md">Bij Goethals Boekhandel staat de buurt centraal. Al jarenlang zijn we het vaste adres voor iedereen in Wilrijk die op zoek is naar een goed boek, de ochtendkrant of een verjaardagskaart.</p>
+          <ul class="mt-8 space-y-4 text-quill font-300">
+            <li class="flex items-start gap-3">
+              <span class="text-amber mt-0.5 shrink-0" aria-hidden="true">◦</span>
+              <span><strong class="font-600 text-ink">Persoonlijk advies</strong> — wij kennen ons assortiment van voor tot achter</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-amber mt-0.5 shrink-0" aria-hidden="true">◦</span>
+              <span><strong class="font-600 text-ink">Elke dag vers</strong> — kranten en tijdschriften, zodra ze er zijn</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-amber mt-0.5 shrink-0" aria-hidden="true">◦</span>
+              <span><strong class="font-600 text-ink">Snel en makkelijk</strong> — vlak bij huis, makkelijk parkeren in de buurt</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-amber mt-0.5 shrink-0" aria-hidden="true">◦</span>
+              <span><strong class="font-600 text-ink">Bestellen op aanvraag</strong> — boek niet in stock? We regelen het voor u</span>
+            </li>
+          </ul>
+          <a href="#contact" class="inline-flex items-center gap-2 mt-9 bg-ink text-cream font-500 px-7 py-3.5 rounded-full hover:bg-quill transition">
+            Kom langs of bel ons
+            <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="fade-up grid grid-cols-2 gap-4">
+          <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80"
+              alt="Sfeervolle boekenwinkel"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-sand mt-8">
+            <img
+              src="https://images.unsplash.com/photo-1524578271613-d550eacf6090?auto=format&fit=crop&w=600&q=80"
+              alt="Lezen en bladeren in de winkel"
+              loading="lazy"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google / online zichtbaarheid pitch -->
+  <section class="bg-ink text-cream py-16 sm:py-20" aria-label="Online gevonden worden">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 text-center fade-up">
+      <p class="text-amber font-500 tracking-[0.2em] uppercase text-xs mb-4">Online gevonden worden</p>
+      <h2 class="font-serif text-3xl sm:text-5xl font-700 italic leading-snug">"Uw winkel verdient<br />een plek op Google."</h2>
+      <p class="text-cream/80 text-lg mt-6 leading-relaxed font-300">
+        Klanten zoeken vandaag eerst online — ook voor de dichtstbijzijnde boekhandel. Met een eigen website en Google Maps-profiel verschijnt Goethals Boekhandel als eerste in de zoekresultaten: openingsuren, adres, telefoon — alles direct zichtbaar.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3 justify-center text-sm text-cream/70 font-300">
+        <span class="px-4 py-2 rounded-full border border-cream/20">Google Business Profile</span>
+        <span class="px-4 py-2 rounded-full border border-cream/20">Google Maps zichtbaarheid</span>
+        <span class="px-4 py-2 rounded-full border border-cream/20">Mobiel vriendelijk</span>
+        <span class="px-4 py-2 rounded-full border border-cream/20">Openingsuren up-to-date</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Openingsuren + kaart -->
+  <section id="bezoek" class="max-w-6xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-12">
+    <div class="fade-up">
+      <p class="text-amber font-500 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-700">Welkom in de winkel</h2>
+      <p class="text-quill text-lg mt-4 max-w-md font-300">U vindt ons elke dag op de Heistraat in Wilrijk.</p>
+      <dl class="mt-9 space-y-5 text-quill">
+        <div class="flex gap-4">
+          <span class="text-amber mt-1 shrink-0" aria-hidden="true">◦</span>
+          <div>
+            <dt class="font-600 text-ink">Adres</dt>
+            <dd class="font-300">Heistraat 43, 2610 Wilrijk</dd>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <span class="text-amber mt-1 shrink-0" aria-hidden="true">◦</span>
+          <div>
+            <dt class="font-600 text-ink">Openingsuren</dt>
+            <dd class="font-300">Ma–Za: 07:00–18:00</dd>
+            <dd class="font-300 text-quill/70">Zondag: gesloten</dd>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <span class="text-amber mt-1 shrink-0" aria-hidden="true">◦</span>
+          <div>
+            <dt class="font-600 text-ink">Telefoon</dt>
+            <dd><a href="tel:+3238283302" class="font-300 hover:text-amber transition ug">03 828 33 02</a></dd>
+          </div>
+        </div>
+      </dl>
+      <a href="tel:+3238283302" class="inline-flex items-center gap-2 mt-9 bg-ink text-cream font-500 px-7 py-3.5 rounded-full hover:bg-quill transition">
+        <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.03 2.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+        Bel 03 828 33 02
+      </a>
+    </div>
+    <div class="rounded-3xl overflow-hidden min-h-[340px] bg-sand">
+      <iframe
+        title="Kaart Goethals Boekhandel, Heistraat 43, Wilrijk"
+        class="w-full h-full min-h-[340px] border-0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=4.3839%2C51.1666%2C4.4039%2C51.1766&layer=mapnik&marker=51.1716%2C4.3939"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- Contact / CTA -->
+  <section id="contact" class="bg-parchment py-20 sm:py-28">
+    <div class="max-w-3xl mx-auto px-5 sm:px-8 text-center fade-up">
+      <p class="text-amber font-500 tracking-[0.2em] uppercase text-xs mb-4">Contact</p>
+      <h2 class="font-serif text-4xl sm:text-5xl font-700">Vragen of info?<br /><em class="font-600">Bel of kom langs.</em></h2>
+      <p class="text-quill text-lg mt-5 leading-relaxed font-300 max-w-lg mx-auto">
+        Of het nu gaat om een boekentip, een bestelling op aanvraag of een vraag over onze diensten — we helpen u graag verder.
+      </p>
+      <div class="mt-9 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:+3238283302" class="inline-flex items-center justify-center gap-2 bg-ink text-cream font-600 px-8 py-4 rounded-full text-base hover:bg-quill transition">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.03 2.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+          03 828 33 02
+        </a>
+        <a href="#bezoek" class="inline-flex items-center justify-center gap-2 border-2 border-ink text-ink font-600 px-8 py-4 rounded-full text-base hover:bg-ink hover:text-cream transition">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Heistraat 43, Wilrijk
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ink text-cream/80" role="contentinfo">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div>
+        <p class="font-serif text-[28px] text-cream font-700">Goethals</p>
+        <p class="text-amber text-xs font-500 tracking-widest uppercase mt-0.5">Boekhandel &amp; Dagbladhandel</p>
+        <p class="text-cream/55 text-sm mt-4 max-w-xs font-300">Heistraat 43 · 2610 Wilrijk<br />Uw lokale boekhandel.</p>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Assortiment</p>
+        <ul class="space-y-2 text-sm text-cream/60 font-300">
+          <li><a href="#assortiment" class="hover:text-amber transition">Boeken</a></li>
+          <li><a href="#assortiment" class="hover:text-amber transition">Kranten</a></li>
+          <li><a href="#assortiment" class="hover:text-amber transition">Tijdschriften</a></li>
+          <li><a href="#assortiment" class="hover:text-amber transition">Schoolartikelen</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-600 text-cream mb-3">Bezoek ons</p>
+        <ul class="space-y-2 text-sm text-cream/60 font-300">
+          <li>Heistraat 43, 2610 Wilrijk</li>
+          <li>Ma–Za: 07:00–18:00</li>
+          <li><a href="tel:+3238283302" class="hover:text-amber transition">03 828 33 02</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-cream/10">
+      <div class="max-w-6xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40 font-300">
+        <p>&copy; 2026 Goethals Boekhandel. Alle rechten voorbehouden.</p>
+        <p>Concept-redesign — proof of concept, gebouwd voor een gesprek over uw nieuwe website.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile hamburger toggle
+    const mb = document.getElementById('menu-btn');
+    const mm = document.getElementById('mobile-menu');
+    if (mb && mm) {
+      mb.addEventListener('click', () => {
+        const isOpen = !mm.hasAttribute('hidden');
+        if (isOpen) {
+          mm.setAttribute('hidden', '');
+          mb.setAttribute('aria-expanded', 'false');
+        } else {
+          mm.removeAttribute('hidden');
+          mb.setAttribute('aria-expanded', 'true');
+        }
+      });
+      mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+        mm.setAttribute('hidden', '');
+        mb.setAttribute('aria-expanded', 'false');
+      }));
+    }
+
+    // Fade-up IntersectionObserver with safety-reveal fallback
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const fades = document.querySelectorAll('.fade-up');
+    if (reduce) {
+      fades.forEach(el => el.classList.add('in'));
+    } else {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('in');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      fades.forEach(el => io.observe(el));
+      // Safety fallback: reveal any section that never triggered the observer
+      setTimeout(() => {
+        document.querySelectorAll('.fade-up:not(.in)').forEach(el => el.classList.add('in'));
+      }, 1600);
+    }
+  </script>
+</body>
+</html>

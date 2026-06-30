@@ -1,633 +1,1040 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta name="robots" content="noindex, nofollow" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wijnen Van Durme — Wijnhandel met Franse-wijn focus · Merksem (Antwerpen)</title>
-  <meta name="description" content="Wijnhandel in Merksem, met focus op Franse wijn. Ontdek onze nieuwe wijnwebshop met filters per streek, druif en prijs, online bestellen met Mollie, cadeaupakketten en wijnadvies. 18+." />
-  <link rel="canonical" href="https://wijnenvandurme.be/" />
-  <meta name="theme-color" content="#6a1420" />
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Wijnen Van Durme" />
-  <meta property="og:locale" content="nl_BE" />
-  <meta property="og:title" content="Wijnen Van Durme — Wijnhandel met Franse-wijn focus" />
-  <meta property="og:description" content="Een echte wijnwebshop met filters per streek, druif en prijs — online bestellen, cadeaupakketten en wijnadvies. Wijnhandel in Merksem. 18+." />
-  <meta property="og:url" content="https://wijnenvandurme.be/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=80" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- Inline SVG favicon — monogram "VD" -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%236a1420'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%23b08d57' text-anchor='middle'%3EVD%3C/text%3E%3C/svg%3E" />
-  <!-- Local-SEO structured data -->
+  <title>Wijnen Van Durme – Wijnhandel Merksem, Antwerpen</title>
+  <meta name="description" content="Wijnen Van Durme is dé vertrouwde wijnhandel van Merksem. Christine en haar team adviseren u persoonlijk bij elke fles. Bezoek onze winkel in Antwerpen-Merksem." />
+
+  <!-- Favicon via inline SVG data URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%230e1420'/%3E%3Cellipse cx='16' cy='13' rx='5' ry='8' fill='none' stroke='%23b8962a' stroke-width='1.5'/%3E%3Crect x='14.5' y='20' width='3' height='5' rx='1' fill='%23b8962a'/%3E%3Crect x='12' y='24.5' width='8' height='1.5' rx='.75' fill='%23b8962a'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts non-blocking preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=DM+Sans:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" /></noscript>
+
+  <!-- Schema.org JSON-LD LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Store",
+    "@type": "LocalBusiness",
     "name": "Wijnen Van Durme",
-    "description": "Wijnhandel in Merksem (Antwerpen), met focus op Franse wijn. Wijnwebshop met filters, online bestellen, cadeaupakketten en wijnadvies.",
-    "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=80",
-    "url": "https://wijnenvandurme.be/",
+    "description": "Familiale wijnhandel in Merksem, Antwerpen. Persoonlijk advies van Christine en haar team.",
     "telephone": "+3236459141",
     "email": "christine@wijnenvandurme.be",
-    "priceRange": "€€€",
-    "areaServed": "BE",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Groenendaallaan 22",
-      "postalCode": "2170",
       "addressLocality": "Merksem",
       "addressRegion": "Antwerpen",
       "addressCountry": "BE"
     },
-    "geo": { "@type": "GeoCoordinates", "latitude": 51.2407, "longitude": 4.4486 }
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "18:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:30", "closes": "17:00" }
+    ],
+    "priceRange": "EE",
+    "currenciesAccepted": "EUR"
   }
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { serif: ['Cormorant Garamond', 'serif'], sans: ['Inter', 'sans-serif'] },
-          colors: {
-            burgundy:  '#6a1420',
-            bordeaux:  '#7c1a28',
-            merlot:    '#8c2233',
-            gold:      '#b08d57',
-            goldlt:    '#c8a974',
-            cream:     '#f8f2e9',
-            sand:      '#ece1cd',
-            clay:      '#8a7458',
-            ink:       '#2c0d12',
-          },
-        },
-      },
-    };
-  </script>
+
   <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:        #0e1420;
+      --navy-mid:    #121a2a;
+      --navy-light:  #1a2238;
+      --gold:        #b8962a;
+      --gold-light:  #d4ae4a;
+      --gold-dim:    rgba(184,150,42,0.18);
+      --cream:       #f3ece0;
+      --cream-dim:   rgba(243,236,224,0.80);
+      --cream-faint: rgba(243,236,224,0.45);
+      --cream-ghost: rgba(243,236,224,0.10);
+      --ff-display:  'Playfair Display', Georgia, serif;
+      --ff-body:     'DM Sans', system-ui, sans-serif;
+      --nav-h:       72px;
+      --r:           4px;
+      --ease:        cubic-bezier(0.22,1,0.36,1);
+    }
+
     html { scroll-behavior: smooth; }
-    .hero-grad { background: linear-gradient(180deg, rgba(44,13,18,.18) 0%, rgba(44,13,18,.52) 52%, rgba(44,13,18,.92) 100%); }
-    .tile-grad { background: linear-gradient(160deg, #7c1a28, #2c0d12); }
-    .fade-up { opacity: 0; transform: translateY(20px); transition: all .8s cubic-bezier(.2,.7,.2,1); }
-    .fade-up.in { opacity: 1; transform: none; }
-    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 1px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
-    .ug:hover { background-size: 100% 1px; }
+
+    body {
+      background: var(--navy);
+      color: var(--cream);
+      font-family: var(--ff-body);
+      font-size: 16px;
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    /* ── NAV ── */
+    #nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      height: var(--nav-h);
+      display: flex; align-items: center;
+      padding: 0 clamp(20px,5vw,80px);
+      background: rgba(14,20,32,0.90);
+      backdrop-filter: blur(18px) saturate(1.4);
+      -webkit-backdrop-filter: blur(18px) saturate(1.4);
+      border-bottom: 1px solid var(--cream-ghost);
+      transition: transform 0.38s var(--ease), background 0.28s, box-shadow 0.28s;
+      will-change: transform;
+    }
+    #nav.nav-hidden   { transform: translateY(-100%); }
+    #nav.nav-scrolled { background: rgba(14,20,32,0.98); box-shadow: 0 2px 28px rgba(0,0,0,.55); }
+
+    .nav-logo {
+      font-family: var(--ff-display); font-weight: 600; font-size: 1.1rem;
+      letter-spacing: .03em; color: var(--cream);
+      display: flex; align-items: center; gap: 9px;
+    }
+    .nav-links { display: flex; align-items: center; gap: 32px; margin-left: auto; list-style: none; }
+    .nav-links a {
+      font-size: .82rem; font-weight: 500; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--cream-dim);
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--gold-light); }
+    .nav-cta {
+      margin-left: 28px; padding: 8px 20px;
+      border: 1px solid var(--gold); border-radius: var(--r);
+      font-size: .8rem; font-weight: 500; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--gold-light) !important;
+      transition: background .2s, color .2s;
+    }
+    .nav-cta:hover { background: var(--gold); color: var(--navy) !important; }
+
+    /* ── HERO ── */
+    #hero {
+      position: relative; min-height: 100dvh;
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 0 clamp(24px,6vw,100px) clamp(56px,8vh,100px);
+      overflow: hidden;
+    }
+    .hero-arch { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; }
+    .hero-overlay {
+      position: absolute; inset: 0; z-index: 1;
+      background: linear-gradient(to top, rgba(14,20,32,.93) 0%, rgba(14,20,32,.52) 50%, rgba(14,20,32,.22) 100%);
+    }
+    .hero-ghost {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%,-54%);
+      font-family: var(--ff-display); font-weight: 600;
+      font-size: clamp(48px,13vw,160px);
+      letter-spacing: .1em; white-space: nowrap;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(184,150,42,0.13);
+      user-select: none; pointer-events: none; z-index: 2;
+    }
+    .hero-content { position: relative; z-index: 3; max-width: 660px; }
+    .kicker {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-size: .76rem; font-weight: 500; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--gold-light); margin-bottom: 18px;
+    }
+    .kicker::before { content:''; display:block; width:28px; height:1px; background:var(--gold); }
+    .hero-h1 {
+      font-family: var(--ff-display); font-weight: 600;
+      font-size: clamp(2.2rem,5.8vw,4rem); line-height: 1.12;
+      letter-spacing: -.01em; color: var(--cream); margin-bottom: 20px;
+    }
+    .hero-h1 em { font-style: italic; color: var(--gold-light); }
+    .hero-sub {
+      font-size: clamp(.95rem,1.5vw,1.12rem); color: var(--cream-dim);
+      max-width: 500px; margin-bottom: 38px; line-height: 1.72;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+    .hero-scroll {
+      position: absolute; bottom: 32px; right: clamp(24px,6vw,100px); z-index: 3;
+      display: flex; flex-direction: column; align-items: center; gap: 6px;
+      font-size: .7rem; letter-spacing: .14em; text-transform: uppercase;
+      color: var(--cream-faint); writing-mode: vertical-rl;
+    }
+    .hero-scroll::after {
+      content:''; display:block; width:1px; height:44px;
+      background: linear-gradient(to bottom, var(--cream-faint), transparent);
+    }
+
+    /* ── BUTTONS ── */
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 13px 28px; background: var(--gold); color: var(--navy);
+      font-family: var(--ff-body); font-weight: 500; font-size: .86rem;
+      letter-spacing: .06em; text-transform: uppercase;
+      border-radius: var(--r); border: none; cursor: pointer;
+      transition: background .28s var(--ease), transform .18s;
+    }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 13px 26px; background: transparent; color: var(--cream-dim);
+      font-family: var(--ff-body); font-weight: 500; font-size: .86rem;
+      letter-spacing: .06em; text-transform: uppercase;
+      border-radius: var(--r); border: 1px solid var(--cream-ghost); cursor: pointer;
+      transition: border-color .22s, color .22s;
+    }
+    .btn-ghost:hover { border-color: var(--cream-dim); color: var(--cream); }
+
+    /* ── SHARED LAYOUT ── */
+    .container { max-width: 1180px; margin: 0 auto; padding: 0 clamp(20px,5vw,72px); }
+    section { position: relative; }
+    .section-kicker {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-size: .74rem; font-weight: 500; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: 14px;
+    }
+    .section-kicker::before { content:''; display:block; width:22px; height:1px; background:var(--gold); }
+    .divider {
+      width:100%; height:1px;
+      background: linear-gradient(to right, transparent, var(--cream-ghost) 25%, var(--cream-ghost) 75%, transparent);
+    }
+
+    /* ── FADE-UP ── */
+    .fade-up {
+      opacity: 0; transform: translateY(26px);
+      transition: opacity .65s var(--ease), transform .65s var(--ease);
+    }
+    .fade-up.visible { opacity: 1; transform: none; }
+    .d1 { transition-delay: .10s; }
+    .d2 { transition-delay: .20s; }
+    .d3 { transition-delay: .32s; }
+    .d4 { transition-delay: .44s; }
+    .d5 { transition-delay: .56s; }
+    .d6 { transition-delay: .68s; }
+
+    /* ── FAMILIE ── */
+    #familie { padding: clamp(80px,10vh,140px) 0; background: var(--navy-mid); }
+    .familie-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center;
+    }
+    .familie-visual { position: relative; }
+    .familie-portrait {
+      position: relative; aspect-ratio: 3/4; border-radius: 2px; overflow: hidden;
+    }
+    .familie-portrait-caption {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 18px 20px;
+      background: linear-gradient(to top, rgba(14,20,32,.9), transparent);
+      font-size: .76rem; letter-spacing: .08em; color: var(--cream-dim); font-style: italic;
+    }
+    .familie-corner {
+      position: absolute; top: -18px; left: -18px; width: 72px; height: 72px;
+      border-top: 2px solid var(--gold); border-left: 2px solid var(--gold);
+      pointer-events: none;
+    }
+    .familie-h2 {
+      font-family: var(--ff-display); font-weight: 600;
+      font-size: clamp(1.8rem,3.2vw,2.8rem); line-height: 1.18;
+      color: var(--cream); margin-bottom: 22px;
+    }
+    .familie-h2 em { font-style: italic; color: var(--gold-light); }
+    .familie-body { color: var(--cream-dim); font-size: 1rem; line-height: 1.78; margin-bottom: 16px; }
+    .familie-quote {
+      margin: 28px 0; padding: 20px 26px;
+      border-left: 2px solid var(--gold); background: var(--cream-ghost);
+      border-radius: 0 var(--r) var(--r) 0;
+    }
+    .familie-quote p {
+      font-family: var(--ff-display); font-style: italic;
+      font-size: 1.05rem; color: var(--cream); line-height: 1.6;
+    }
+    .familie-quote cite {
+      display: block; margin-top: 10px;
+      font-family: var(--ff-body); font-style: normal;
+      font-size: .76rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold);
+    }
+
+    /* ── SELECTIE ── */
+    #selectie { padding: clamp(80px,10vh,140px) 0; background: var(--navy); }
+    .selectie-header {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+      align-items: end; margin-bottom: 60px;
+    }
+    .selectie-h2 {
+      font-family: var(--ff-display); font-weight: 600;
+      font-size: clamp(1.8rem,3.2vw,2.8rem); line-height: 1.18; color: var(--cream);
+    }
+    .selectie-intro { color: var(--cream-dim); font-size: .98rem; line-height: 1.75; }
+    .selectie-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; }
+    .region-card { position: relative; aspect-ratio: 4/5; overflow: hidden; }
+    .region-card-bg { position: absolute; inset: 0; transition: transform .7s var(--ease); }
+    .region-card:hover .region-card-bg { transform: scale(1.04); }
+    .region-card-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(14,20,32,.9) 0%, rgba(14,20,32,.28) 55%, rgba(14,20,32,.08) 100%);
+    }
+    .region-card-content { position: absolute; bottom: 0; left: 0; right: 0; padding: 26px 22px; }
+    .region-flag { font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin-bottom: 5px; }
+    .region-name { font-family: var(--ff-display); font-weight: 600; font-size: 1.28rem; color: var(--cream); margin-bottom: 5px; line-height: 1.2; }
+    .region-desc { font-size: .8rem; color: var(--cream-dim); line-height: 1.5; }
+
+    /* ── CADEAUS ── */
+    #cadeaus { padding: clamp(80px,10vh,140px) 0; background: var(--navy-mid); overflow: hidden; }
+    .cadeaus-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 0; align-items: stretch; }
+    .cadeaus-visual { position: relative; min-height: 520px; }
+    .cadeaus-content {
+      padding: clamp(44px,6vw,80px); display: flex; flex-direction: column; justify-content: center;
+    }
+    .cadeaus-h2 {
+      font-family: var(--ff-display); font-weight: 600;
+      font-size: clamp(1.65rem,2.8vw,2.5rem); line-height: 1.18;
+      color: var(--cream); margin-bottom: 18px;
+    }
+    .cadeaus-h2 em { font-style: italic; color: var(--gold-light); }
+    .cadeaus-body { color: var(--cream-dim); font-size: .98rem; line-height: 1.78; margin-bottom: 28px; }
+    .cadeaus-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 36px; }
+    .cadeaus-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: .93rem; color: var(--cream-dim);
+    }
+    .cadeaus-list li::before {
+      content: ''; display: block; flex-shrink: 0; width: 14px; height: 14px; margin-top: 4px;
+      background: var(--gold);
+      clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    }
+
+    /* ── BEZOEK ── */
+    #bezoek { padding: clamp(80px,10vh,140px) 0; background: var(--navy); }
+    .bezoek-h2 {
+      font-family: var(--ff-display); font-weight: 600;
+      font-size: clamp(1.8rem,3.2vw,2.8rem); line-height: 1.18;
+      color: var(--cream); margin-bottom: 52px;
+    }
+    .bezoek-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+    .bezoek-info { display: flex; flex-direction: column; gap: 30px; }
+    .info-label { font-size: .74rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin-bottom: 7px; }
+    .info-val { font-size: .97rem; color: var(--cream-dim); line-height: 1.65; }
+    .info-val a { color: var(--cream); text-decoration: underline; text-decoration-color: rgba(243,236,224,.28); text-underline-offset: 3px; transition: text-decoration-color .2s; }
+    .info-val a:hover { text-decoration-color: var(--gold); }
+    .hours-table { width: 100%; border-collapse: collapse; }
+    .hours-table td { padding: 5px 0; font-size: .93rem; color: var(--cream-dim); }
+    .hours-table td:last-child { text-align: right; color: var(--cream); }
+    .hours-table tr.closed td { opacity: .38; }
+    .bezoek-cta-box {
+      padding: clamp(28px,4vw,44px);
+      background: linear-gradient(135deg, var(--navy-light) 0%, rgba(184,150,42,.05) 100%);
+      border: 1px solid rgba(184,150,42,.18); border-radius: var(--r);
+      display: flex; flex-direction: column; gap: 18px;
+    }
+    .bezoek-cta-box h3 {
+      font-family: var(--ff-display); font-weight: 600; font-size: 1.45rem; line-height: 1.25; color: var(--cream);
+    }
+    .bezoek-cta-box p { font-size: .93rem; color: var(--cream-dim); line-height: 1.7; }
+    .bezoek-ghost-num {
+      font-family: var(--ff-display); font-size: 6rem; font-weight: 600; line-height: 1;
+      color: transparent; -webkit-text-stroke: 1px rgba(184,150,42,.17);
+      user-select: none; pointer-events: none;
+      margin-bottom: -16px; margin-top: -8px;
+    }
+    .phone-link {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: var(--ff-display); font-size: 1.55rem; font-weight: 600;
+      color: var(--gold-light); letter-spacing: .02em; transition: color .2s;
+    }
+    .phone-link:hover { color: var(--cream); }
+    .email-link {
+      display: inline-flex; align-items: center; gap: 8px; font-size: .86rem;
+      color: var(--cream-dim); letter-spacing: .04em;
+      border-bottom: 1px solid var(--cream-ghost); padding-bottom: 2px;
+      transition: color .2s, border-color .2s;
+    }
+    .email-link:hover { color: var(--gold-light); border-color: var(--gold); }
+    .bezoek-note { padding-top: 14px; border-top: 1px solid var(--cream-ghost); }
+    .bezoek-note p { font-size: .8rem; color: var(--cream-faint); line-height: 1.6; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy-mid); border-top: 1px solid var(--cream-ghost);
+      padding: clamp(44px,6vh,68px) 0 clamp(24px,4vh,36px);
+    }
+    .footer-inner { display: flex; flex-direction: column; gap: 32px; }
+    .footer-top { display: grid; grid-template-columns: 1fr auto auto; gap: 36px; align-items: start; }
+    .footer-brand {
+      font-family: var(--ff-display); font-weight: 600; font-size: 1.18rem;
+      color: var(--cream); display: flex; align-items: center; gap: 9px; margin-bottom: 9px;
+    }
+    .footer-tagline { font-size: .83rem; color: var(--cream-faint); line-height: 1.6; max-width: 260px; }
+    .footer-col-title { font-size: .74rem; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin-bottom: 13px; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .footer-links a { font-size: .86rem; color: var(--cream-dim); transition: color .2s; }
+    .footer-links a:hover { color: var(--cream); }
+    .footer-bottom {
+      display: flex; align-items: center; justify-content: space-between;
+      padding-top: 24px; border-top: 1px solid var(--cream-ghost);
+    }
+    .footer-copy { font-size: .76rem; color: var(--cream-faint); }
+    .footer-address { font-size: .76rem; color: var(--cream-faint); text-align: right; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .familie-grid { grid-template-columns: 1fr; gap: 44px; }
+      .familie-visual { max-width: 400px; }
+      .selectie-header { grid-template-columns: 1fr; }
+      .selectie-grid { grid-template-columns: repeat(2,1fr); }
+      .cadeaus-inner { grid-template-columns: 1fr; }
+      .cadeaus-visual { min-height: 280px; }
+      .bezoek-grid { grid-template-columns: 1fr; gap: 40px; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+      .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
+      .footer-address { text-align: center; }
+    }
+    @media (max-width: 600px) {
+      .selectie-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
-<body class="bg-cream text-ink font-sans antialiased selection:bg-gold/30">
 
-  <!-- Skip link -->
-  <a href="#webshop" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-burgundy focus:text-cream focus:rounded-full">Naar de wijnwebshop</a>
+<body>
 
-  <!-- Announcement bar -->
-  <div class="bg-burgundy text-cream text-center text-[13px] tracking-[0.12em] py-2 px-4">
-    <span aria-hidden="true">🍇</span> <span class="font-semibold">Binnenkort online:</span> onze wijnwebshop met filters per streek, druif &amp; prijs — Franse wijn, online bestellen met Mollie. <span class="text-goldlt font-semibold">18+</span>
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Hoofdnavigatie">
+  <a href="#" class="nav-logo" aria-label="Wijnen Van Durme startpagina">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M10 2h4v4.5c1.8.9 3 2.8 3 5V19a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-7.5c0-2.2 1.2-4.1 3-5V2z" stroke="#b8962a" stroke-width="1.3" stroke-linejoin="round"/>
+      <line x1="7" y1="14" x2="17" y2="14" stroke="#b8962a" stroke-width="1" opacity=".5"/>
+    </svg>
+    Wijnen Van Durme
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="#familie">Ons Verhaal</a></li>
+    <li><a href="#selectie">Selectie</a></li>
+    <li><a href="#cadeaus">Cadeaus</a></li>
+    <li><a href="#bezoek" class="nav-cta">Kom langs</a></li>
+  </ul>
+</nav>
+
+
+<!-- HERO -->
+<section id="hero" aria-label="Hero">
+
+  <!-- Full-bleed wine cellar barrel vault inline SVG -->
+  <svg class="hero-arch" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true" role="img" aria-label="Wijnkelder interieur illustratie">
+    <defs>
+      <pattern id="stonewall" x="0" y="0" width="80" height="50" patternUnits="userSpaceOnUse">
+        <rect width="80" height="50" fill="#09100f"/>
+        <rect x="2" y="2" width="36" height="22" rx="1" fill="#0c1520" stroke="#131c2c" stroke-width=".5"/>
+        <rect x="42" y="2" width="36" height="22" rx="1" fill="#0b1420" stroke="#131c2c" stroke-width=".5"/>
+        <rect x="2" y="27" width="74" height="20" rx="1" fill="#0c1622" stroke="#131c2c" stroke-width=".5"/>
+      </pattern>
+      <radialGradient id="candleglow" cx="50%" cy="55%" r="44%">
+        <stop offset="0%"  stop-color="#8b5e1a" stop-opacity=".8"/>
+        <stop offset="40%" stop-color="#4a3008" stop-opacity=".4"/>
+        <stop offset="100%" stop-color="#0e1420" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="sidevign" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%"   stop-color="#09100f" stop-opacity=".75"/>
+        <stop offset="18%"  stop-color="#09100f" stop-opacity="0"/>
+        <stop offset="82%"  stop-color="#09100f" stop-opacity="0"/>
+        <stop offset="100%" stop-color="#09100f" stop-opacity=".75"/>
+      </linearGradient>
+      <linearGradient id="floorgold" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#7a560f" stop-opacity=".4"/>
+        <stop offset="100%" stop-color="#0e1420" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+
+    <!-- Stone wall -->
+    <rect width="1440" height="900" fill="url(#stonewall)"/>
+    <!-- Floor -->
+    <rect x="0" y="680" width="1440" height="220" fill="#07090f"/>
+    <rect x="0" y="676" width="1440" height="55" fill="url(#floorgold)" opacity=".8"/>
+
+    <!-- Barrel vault arch -->
+    <path d="M400 685 Q400 45 720 45 Q1040 45 1040 685" fill="none" stroke="#1c2c3e" stroke-width="30"/>
+    <path d="M400 685 Q400 45 720 45 Q1040 45 1040 685" fill="none" stroke="#233040" stroke-width="15"/>
+    <path d="M400 685 Q400 45 720 45 Q1040 45 1040 685" fill="none" stroke="#2a3a50" stroke-width="6"/>
+
+    <!-- Arch inner dark -->
+    <path d="M412 685 Q412 60 720 60 Q1028 60 1028 685 Z" fill="#0e1420" opacity=".5"/>
+
+    <!-- Keystone -->
+    <path d="M706 49 L720 32 L734 49 L720 54 Z" fill="#2c3c50" stroke="#b8962a" stroke-width=".8" opacity=".5"/>
+
+    <!-- Voussoir guides -->
+    <g stroke="#182436" stroke-width=".7" fill="none" opacity=".4">
+      <path d="M425 685 Q422 270 720 65"/>
+      <path d="M460 685 Q454 240 720 85"/>
+      <path d="M505 685 Q492 215 720 108"/>
+      <path d="M560 685 Q540 198 720 128"/>
+      <path d="M622 685 Q600 188 720 148"/>
+      <path d="M685 685 Q670 184 720 168"/>
+      <path d="M755 685 Q770 184 720 168"/>
+      <path d="M818 685 Q840 188 720 148"/>
+      <path d="M880 685 Q900 198 720 128"/>
+      <path d="M935 685 Q948 215 720 108"/>
+      <path d="M980 685 Q986 240 720 85"/>
+      <path d="M1015 685 Q1018 270 720 65"/>
+    </g>
+
+    <!-- BARRELS back row -->
+    <g opacity=".35">
+      <ellipse cx="468" cy="614" rx="42" ry="20" fill="#2a1904"/>
+      <rect x="426" y="595" width="84" height="58" rx="4" fill="#2e1c06"/>
+      <ellipse cx="468" cy="653" rx="42" ry="20" fill="#1e1204"/>
+      <line x1="426" y1="622" x2="510" y2="622" stroke="#3e2810" stroke-width="1.5"/>
+      <line x1="426" y1="638" x2="510" y2="638" stroke="#3e2810" stroke-width="1.5"/>
+      <line x1="428" y1="597" x2="428" y2="651" stroke="#b8962a" stroke-width="1" opacity=".4"/>
+      <line x1="508" y1="597" x2="508" y2="651" stroke="#b8962a" stroke-width="1" opacity=".4"/>
+      <ellipse cx="972" cy="614" rx="42" ry="20" fill="#2a1904"/>
+      <rect x="930" y="595" width="84" height="58" rx="4" fill="#2e1c06"/>
+      <ellipse cx="972" cy="653" rx="42" ry="20" fill="#1e1204"/>
+      <line x1="930" y1="622" x2="1014" y2="622" stroke="#3e2810" stroke-width="1.5"/>
+      <line x1="930" y1="638" x2="1014" y2="638" stroke="#3e2810" stroke-width="1.5"/>
+      <line x1="932" y1="597" x2="932" y2="651" stroke="#b8962a" stroke-width="1" opacity=".4"/>
+      <line x1="1012" y1="597" x2="1012" y2="651" stroke="#b8962a" stroke-width="1" opacity=".4"/>
+    </g>
+
+    <!-- BARRELS mid -->
+    <g opacity=".7">
+      <ellipse cx="542" cy="662" rx="55" ry="26" fill="#321c08"/>
+      <rect x="487" y="640" width="110" height="68" rx="5" fill="#3a2008"/>
+      <ellipse cx="542" cy="708" rx="55" ry="26" fill="#261408"/>
+      <line x1="487" y1="668" x2="597" y2="668" stroke="#502e10" stroke-width="2"/>
+      <line x1="487" y1="688" x2="597" y2="688" stroke="#502e10" stroke-width="2"/>
+      <line x1="490" y1="642" x2="490" y2="706" stroke="#b8962a" stroke-width="1.2" opacity=".55"/>
+      <line x1="594" y1="642" x2="594" y2="706" stroke="#b8962a" stroke-width="1.2" opacity=".55"/>
+      <circle cx="542" cy="675" r="5" fill="#4a2a09" stroke="#b8962a" stroke-width=".8"/>
+      <ellipse cx="898" cy="662" rx="55" ry="26" fill="#321c08"/>
+      <rect x="843" y="640" width="110" height="68" rx="5" fill="#3a2008"/>
+      <ellipse cx="898" cy="708" rx="55" ry="26" fill="#261408"/>
+      <line x1="843" y1="668" x2="953" y2="668" stroke="#502e10" stroke-width="2"/>
+      <line x1="843" y1="688" x2="953" y2="688" stroke="#502e10" stroke-width="2"/>
+      <line x1="846" y1="642" x2="846" y2="706" stroke="#b8962a" stroke-width="1.2" opacity=".55"/>
+      <line x1="950" y1="642" x2="950" y2="706" stroke="#b8962a" stroke-width="1.2" opacity=".55"/>
+      <circle cx="898" cy="675" r="5" fill="#4a2a09" stroke="#b8962a" stroke-width=".8"/>
+    </g>
+
+    <!-- BARRELS front -->
+    <g opacity=".92">
+      <ellipse cx="582" cy="742" rx="72" ry="32" fill="#3c2208"/>
+      <rect x="510" y="715" width="144" height="88" rx="5" fill="#472a08"/>
+      <ellipse cx="582" cy="803" rx="72" ry="32" fill="#2c1806"/>
+      <line x1="510" y1="742" x2="654" y2="742" stroke="#6a3e14" stroke-width="2.5"/>
+      <line x1="510" y1="768" x2="654" y2="768" stroke="#6a3e14" stroke-width="2.5"/>
+      <line x1="513" y1="717" x2="513" y2="801" stroke="#b8962a" stroke-width="1.5" opacity=".65"/>
+      <line x1="651" y1="717" x2="651" y2="801" stroke="#b8962a" stroke-width="1.5" opacity=".65"/>
+      <circle cx="582" cy="754" r="7" fill="#582e0c" stroke="#b8962a" stroke-width="1.2"/>
+      <ellipse cx="858" cy="742" rx="72" ry="32" fill="#3c2208"/>
+      <rect x="786" y="715" width="144" height="88" rx="5" fill="#472a08"/>
+      <ellipse cx="858" cy="803" rx="72" ry="32" fill="#2c1806"/>
+      <line x1="786" y1="742" x2="930" y2="742" stroke="#6a3e14" stroke-width="2.5"/>
+      <line x1="786" y1="768" x2="930" y2="768" stroke="#6a3e14" stroke-width="2.5"/>
+      <line x1="789" y1="717" x2="789" y2="801" stroke="#b8962a" stroke-width="1.5" opacity=".65"/>
+      <line x1="927" y1="717" x2="927" y2="801" stroke="#b8962a" stroke-width="1.5" opacity=".65"/>
+      <circle cx="858" cy="754" r="7" fill="#582e0c" stroke="#b8962a" stroke-width="1.2"/>
+    </g>
+
+    <!-- Candle + glow -->
+    <rect x="715" y="696" width="10" height="18" rx="2" fill="#c89020" opacity=".75"/>
+    <rect x="710" y="712" width="20" height="5" rx="2" fill="#a07018" opacity=".7"/>
+    <ellipse cx="720" cy="690" rx="3" ry="7" fill="#ffd080" opacity=".28"/>
+    <ellipse cx="720" cy="686" rx="2" ry="4" fill="#fff0c0" opacity=".2"/>
+    <ellipse cx="720" cy="700" rx="520" ry="290" fill="url(#candleglow)" opacity="1"/>
+
+    <!-- Side vignette -->
+    <rect width="1440" height="900" fill="url(#sidevign)"/>
+
+    <!-- Gold dust particles -->
+    <g fill="#b8962a" opacity=".18">
+      <circle cx="625" cy="390" r="1.2"/><circle cx="682" cy="315" r=".8"/>
+      <circle cx="752" cy="375" r="1"/><circle cx="812" cy="438" r="1.2"/>
+      <circle cx="695" cy="475" r=".8"/><circle cx="735" cy="348" r=".6"/>
+      <circle cx="662" cy="508" r="1"/><circle cx="795" cy="312" r=".7"/>
+    </g>
+  </svg>
+
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-ghost" aria-hidden="true">VAN DURME</div>
+
+  <div class="hero-content">
+    <p class="kicker fade-up">Merksem &middot; Antwerpen &middot; Wijnhandel</p>
+    <h1 class="hero-h1 fade-up d1">
+      Al jaren <em>d&eacute; wijnhandel</em><br>van Merksem
+    </h1>
+    <p class="hero-sub fade-up d2">
+      Christine en haar team kennen elke fles &mdash; van streekeigen wijnen tot zorgvuldig geselecteerde flessen uit de hele wereld. Welkom in onze kelder.
+    </p>
+    <div class="hero-actions fade-up d3">
+      <a href="#bezoek" class="btn-primary">
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M8 1.5C5.5 1.5 3.5 3.5 3.5 6c0 3.5 4.5 8.5 4.5 8.5S12.5 9.5 12.5 6c0-2.5-2-4.5-4.5-4.5zm0 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="currentColor"/>
+        </svg>
+        Kom langs voor advies
+      </a>
+      <a href="tel:036459141" class="btn-ghost">
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M3 2h3l1 3-1.5 1.5a8 8 0 0 0 3 3L10 8l3 1v3a1 1 0 0 1-1 1A11 11 0 0 1 2 3a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.2" fill="none"/>
+        </svg>
+        Bel Christine
+      </a>
+    </div>
   </div>
 
-  <!-- Sticky nav -->
-  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-burgundy/10">
-    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[70px] flex items-center justify-between">
-      <!-- Logo -->
-      <a href="#top" class="flex items-baseline gap-2">
-        <span class="font-serif text-[27px] font-700 tracking-tight text-burgundy">Wijnen <span class="italic font-600">Van Durme</span></span>
-      </a>
-      <!-- Desktop links -->
-      <div class="hidden md:flex items-center gap-8 text-[15px] font-400">
-        <a href="#webshop" class="ug">Webshop</a>
-        <a href="#assortiment" class="ug">Assortiment</a>
-        <a href="#cadeau" class="ug">Cadeau &amp; advies</a>
-        <a href="#verhaal" class="ug">Ons verhaal</a>
-        <a href="#bezoek" class="ug">Bezoek ons</a>
-      </div>
-      <!-- CTA + hamburger -->
-      <div class="flex items-center gap-2">
-        <a href="#webshop" class="inline-flex items-center gap-2 bg-burgundy text-cream text-sm font-600 px-4 sm:px-5 py-2.5 rounded-full hover:bg-merlot transition">
-          Bestel online
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
-          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-burgundy/15 text-burgundy hover:bg-burgundy/5 transition">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </nav>
-    <!-- Mobile menu -->
-    <div id="mobile-menu" hidden class="md:hidden border-t border-burgundy/10 bg-cream/95 backdrop-blur">
-      <div class="px-5 py-3 flex flex-col text-[15px] font-400">
-        <a href="#webshop" class="py-3 border-b border-burgundy/8">Webshop</a>
-        <a href="#assortiment" class="py-3 border-b border-burgundy/8">Assortiment</a>
-        <a href="#cadeau" class="py-3 border-b border-burgundy/8">Cadeau &amp; advies</a>
-        <a href="#verhaal" class="py-3 border-b border-burgundy/8">Ons verhaal</a>
-        <a href="#bezoek" class="py-3">Bezoek ons</a>
-      </div>
-    </div>
-  </header>
+  <span class="hero-scroll" aria-hidden="true">Ontdek</span>
+</section>
 
-  <!-- Hero -->
-  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-burgundy">
-    <div class="absolute inset-0 tile-grad"></div>
-    <img
-      src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=2000&q=80"
-      alt="Flessen Franse wijn in de wijnhandel"
-      fetchpriority="high"
-      class="absolute inset-0 w-full h-full object-cover"
-    />
-    <div class="absolute inset-0 hero-grad"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
-      <p class="text-goldlt font-500 tracking-[0.32em] uppercase text-xs mb-5">
-        Wijnhandel · Franse wijn · Merksem (Antwerpen)
-      </p>
-      <h1 class="font-serif text-cream text-[44px] leading-[1.03] sm:text-8xl font-600 max-w-3xl">
-        Franse wijn,<br /><span class="italic">tot bij u thuis.</span>
-      </h1>
-      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed font-300">
-        Een wijnhandel met passie voor Franse wijn. Vandaag is onze website offline —
-        daarom bouwen we een echte webshop: filter op streek, druif en prijs, en bestel online met Mollie.
-      </p>
-      <div class="flex flex-wrap gap-3 mt-9">
-        <a href="#webshop" class="bg-gold text-ink font-600 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
-          Naar de wijnwebshop
-        </a>
-        <a href="#cadeau" class="border border-cream/40 text-cream font-500 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
-          Cadeaupakketten &amp; advies
-        </a>
+
+<!-- FAMILIE -->
+<section id="familie" aria-labelledby="familie-h2">
+  <div class="container">
+    <div class="familie-grid">
+
+      <div class="familie-visual fade-up">
+        <div class="familie-corner" aria-hidden="true"></div>
+        <div class="familie-portrait">
+          <svg width="100%" height="100%" viewBox="0 0 480 640" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Sfeervolle wijnkelder interieur">
+            <defs>
+              <radialGradient id="portglow" cx="45%" cy="38%" r="58%">
+                <stop offset="0%" stop-color="#7a4a10" stop-opacity=".65"/>
+                <stop offset="65%" stop-color="#3a1e08" stop-opacity=".3"/>
+                <stop offset="100%" stop-color="#0e1420" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="portbottomfade" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="55%" stop-color="transparent"/>
+                <stop offset="100%" stop-color="#121a2a"/>
+              </linearGradient>
+            </defs>
+            <rect width="480" height="640" fill="#0c1320"/>
+            <ellipse cx="195" cy="185" rx="265" ry="310" fill="url(#portglow)" opacity="1"/>
+            <!-- Wine rack -->
+            <g fill="#19100a" stroke="#2a1a0a" stroke-width=".8" opacity=".75">
+              <rect x="340" y="80" width="132" height="400" rx="2"/>
+              <rect x="340" y="142" width="132" height="5" fill="#271808"/>
+              <rect x="340" y="202" width="132" height="5" fill="#271808"/>
+              <rect x="340" y="262" width="132" height="5" fill="#271808"/>
+              <rect x="340" y="322" width="132" height="5" fill="#271808"/>
+              <rect x="340" y="382" width="132" height="5" fill="#271808"/>
+              <g fill="#1a2010" stroke="#203020" stroke-width=".5">
+                <ellipse cx="363" cy="145" rx="14" ry="4" fill="#1a2818"/>
+                <rect x="349" y="96" width="28" height="50" rx="14" fill="#1a2818"/>
+                <ellipse cx="396" cy="145" rx="14" ry="4" fill="#1a1818"/>
+                <rect x="382" y="96" width="28" height="50" rx="14" fill="#1c1818"/>
+                <ellipse cx="430" cy="145" rx="14" ry="4" fill="#182018"/>
+                <rect x="416" y="96" width="28" height="50" rx="14" fill="#182018"/>
+                <ellipse cx="363" cy="205" rx="14" ry="4" fill="#281a10"/>
+                <rect x="349" y="156" width="28" height="50" rx="14" fill="#281a10"/>
+                <ellipse cx="396" cy="205" rx="14" ry="4" fill="#1a2818"/>
+                <rect x="382" y="156" width="28" height="50" rx="14" fill="#1a2818"/>
+              </g>
+            </g>
+            <!-- Wine glass -->
+            <g transform="translate(115,285)" stroke="#c09840" stroke-width="1.1" fill="none" opacity=".65">
+              <path d="M28 185 Q18 125 12 82 Q6 40 28 22 Q50 40 44 82 Q38 125 28 185Z" fill="rgba(90,16,8,.32)" stroke="#8a4818"/>
+              <line x1="28" y1="185" x2="28" y2="215"/>
+              <line x1="10" y1="215" x2="46" y2="215"/>
+            </g>
+            <!-- Bottle on table with label -->
+            <g transform="translate(58,332)" fill="#1a2010" stroke="#263020" stroke-width=".8" opacity=".85">
+              <rect x="10" y="0" width="22" height="115" rx="11" fill="#192010"/>
+              <rect x="13" y="-18" width="16" height="23" rx="8" fill="#1c2018"/>
+              <rect x="6" y="34" width="30" height="22" rx="1" fill="#e8d4a0" opacity=".75"/>
+              <text x="21" y="46" text-anchor="middle" font-size="4.5" fill="#0e1208" font-family="Georgia,serif" font-style="italic">Van Durme</text>
+            </g>
+            <rect width="480" height="640" fill="url(#portbottomfade)"/>
+          </svg>
+          <p class="familie-portrait-caption">In onze kelder &mdash; Merksem, Antwerpen</p>
+        </div>
       </div>
-      <p class="text-cream/55 text-xs mt-6">Wijn is voor volwassenen — verkoop uitsluitend aan personen vanaf 18 jaar.</p>
-    </div>
-  </section>
 
-  <!-- USP strip -->
-  <section class="bg-burgundy text-cream/90">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-7 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
-      <div><p class="font-serif text-2xl text-goldlt">Franse wijn</p><p class="mt-1 text-cream/60">Onze specialiteit &amp; passie</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Persoonlijk advies</p><p class="mt-1 text-cream/60">De juiste fles bij elk moment</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Online bestellen</p><p class="mt-1 text-cream/60">Webshop met Mollie</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Cadeaupakketten</p><p class="mt-1 text-cream/60">Geschenken &amp; relatiegeschenken</p></div>
-    </div>
-  </section>
-
-  <!-- Wijnwebshop / online bestellen (the differentiator) -->
-  <section id="webshop" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <div class="fade-up">
-        <p class="text-gold font-500 tracking-[0.2em] uppercase text-xs mb-4">Nieuw: de wijnwebshop</p>
-        <h2 class="font-serif text-4xl sm:text-6xl font-600 leading-tight text-burgundy">
-          Online bestellen,<br /><span class="italic">eindelijk met een winkelwagen.</span>
+      <div class="fade-up d2">
+        <span class="section-kicker">Ons Verhaal</span>
+        <h2 class="familie-h2" id="familie-h2">
+          Een familiezaak met<br><em>passie voor de druif</em>
         </h2>
-        <p class="text-clay text-lg mt-5 leading-relaxed max-w-md font-300">
-          Vandaag is jullie website offline — wie naar de wijnhandel zoekt, vindt geen site en kan niets online kopen.
-          Met een echte webshop vindt de klant in een paar klikken de juiste fles, en rekent meteen af.
+        <p class="familie-body">
+          Wijnen Van Durme is meer dan een winkel &mdash; het is een vertrouwde plek in de buurt. Gevestigd in het hart van Merksem, waar klanten gerust binnenstappen voor een praatje over wat er in hun glas hoort te gaan.
         </p>
-        <ul class="mt-7 space-y-3 text-clay">
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Filter op <strong class="font-600 text-ink">streek</strong> (Bordeaux, Bourgogne, Rhône, Loire…)</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Filter op <strong class="font-600 text-ink">druif</strong> (Cabernet, Pinot Noir, Chardonnay…)</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Filter op <strong class="font-600 text-ink">prijs</strong> en gelegenheid</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Afrekenen met Mollie (Bancontact) · leeftijdsverificatie 18+</li>
-        </ul>
-        <a href="#assortiment" class="inline-flex items-center gap-2 mt-9 bg-burgundy text-cream font-600 px-7 py-3.5 rounded-full hover:bg-merlot transition">
-          Bekijk het assortiment
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        <p class="familie-body">
+          Christine bouwde door op wat haar voorgangers begonnen: een selectie samenstellen met kennis en gevoel, niet met catalogussen. Elke fles die in de rekken staat, heeft een reden.
+        </p>
+        <blockquote class="familie-quote">
+          <p>&ldquo;Ik help u graag de wijn vinden die past &mdash; bij uw smaak, bij uw gelegenheid, bij uw budget.&rdquo;</p>
+          <cite>&mdash; Christine, Wijnen Van Durme</cite>
+        </blockquote>
+        <p class="familie-body">
+          Of u nu op zoek bent naar een dagelijkse huiswijn of naar een bijzondere fles voor een jubileum: in Merksem hoeft u niet ver te zoeken.
+        </p>
+        <a href="tel:036459141" class="btn-primary" style="margin-top:8px;">
+          Bel Christine: 03&nbsp;645&nbsp;91&nbsp;41
         </a>
       </div>
 
-      <!-- Filter concept mock -->
-      <div class="fade-up rounded-3xl bg-white shadow-sm border border-burgundy/10 p-6 sm:p-7">
-        <div class="flex items-center justify-between">
-          <p class="font-serif text-2xl font-600 text-burgundy">Vind jouw wijn</p>
-          <span class="text-xs text-clay/70">conceptweergave</span>
-        </div>
-        <div class="mt-5 space-y-5">
-          <div>
-            <p class="text-xs font-600 uppercase tracking-wider text-clay mb-2">Streek</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1.5 rounded-full bg-burgundy text-cream text-sm">Bordeaux</span>
-              <span class="px-3 py-1.5 rounded-full border border-burgundy/20 text-ink text-sm">Bourgogne</span>
-              <span class="px-3 py-1.5 rounded-full border border-burgundy/20 text-ink text-sm">Rhône</span>
-              <span class="px-3 py-1.5 rounded-full border border-burgundy/20 text-ink text-sm">Loire</span>
-            </div>
-          </div>
-          <div>
-            <p class="text-xs font-600 uppercase tracking-wider text-clay mb-2">Druif</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1.5 rounded-full bg-gold/25 text-ink text-sm">Cabernet</span>
-              <span class="px-3 py-1.5 rounded-full border border-burgundy/20 text-ink text-sm">Pinot Noir</span>
-              <span class="px-3 py-1.5 rounded-full border border-burgundy/20 text-ink text-sm">Chardonnay</span>
-            </div>
-          </div>
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <p class="text-xs font-600 uppercase tracking-wider text-clay">Prijs</p>
-              <p class="text-xs text-clay/70">tot € 45</p>
-            </div>
-            <div class="h-1.5 rounded-full bg-sand relative">
-              <div class="absolute inset-y-0 left-0 w-2/3 rounded-full bg-gold"></div>
-              <span class="absolute -top-1 left-2/3 w-4 h-4 -ml-2 rounded-full bg-burgundy border-2 border-white shadow"></span>
-            </div>
-          </div>
-          <button class="w-full bg-burgundy text-cream font-600 py-3 rounded-full hover:bg-merlot transition">Toon 24 wijnen</button>
-          <p class="text-[11px] text-clay/60 text-center">Conceptueel — filters &amp; checkout worden live gekoppeld in de echte webshop.</p>
-        </div>
-      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Assortiment grid -->
-  <section id="assortiment" class="bg-sand/60 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
-        <div>
-          <p class="text-gold font-500 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
-          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-burgundy">Van Frankrijk tot bubbels</h2>
-        </div>
-        <p class="text-clay max-w-sm font-300">Een greep uit wat u bij ons vindt — met de focus op Franse wijn. Beschikbaarheid wisselt per seizoen.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <!-- Frankrijk -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1474722883778-792e7990302f?auto=format&fit=crop&w=800&q=80"
-            alt="Franse wijn en wijngaard"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Franse wijn</h3>
-            <p class="text-cream/75 text-sm mt-1 font-300">Onze specialiteit — Bordeaux, Bourgogne, Rhône &amp; Loire.</p>
-          </div>
-        </article>
-        <!-- Rode wijn -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80"
-            alt="Rode wijn"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Rode wijn</h3>
-            <p class="text-cream/75 text-sm mt-1 font-300">Van soepel en fruitig tot vol en krachtig.</p>
-          </div>
-        </article>
-        <!-- Witte wijn -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80"
-            alt="Witte wijn"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Witte wijn</h3>
-            <p class="text-cream/75 text-sm mt-1 font-300">Fris en mineraal of net wat ronder en rijper.</p>
-          </div>
-        </article>
-        <!-- Bubbels -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80"
-            alt="Bubbels, crémant en champagne"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Bubbels &amp; Champagne</h3>
-            <p class="text-cream/75 text-sm mt-1 font-300">Crémant &amp; champagne om te vieren.</p>
-          </div>
-        </article>
-        <!-- Cadeaupakketten -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80"
-            alt="Wijn-cadeaupakket"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Cadeaupakketten</h3>
-            <p class="text-cream/75 text-sm mt-1 font-300">Verzorgde wijngeschenken, samengesteld op maat.</p>
-          </div>
-        </article>
-        <!-- Advies CTA card -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-gold text-ink relative aspect-[4/5] flex items-center justify-center text-center p-6">
-          <div>
-            <p class="font-serif text-3xl font-600">Wijn&shy;advies</p>
-            <p class="text-ink/75 text-sm mt-2 font-300">Niet zeker welke fles? Wij denken graag mee — voor bij het eten, een cadeau of een speciale gelegenheid.</p>
-            <a href="#cadeau" class="inline-block mt-5 text-burgundy font-600 ug">Vraag advies →</a>
-          </div>
-        </article>
-      </div>
-      <p class="text-xs text-clay/70 mt-8 text-center">Onze selectie wisselt regelmatig. Beschikbaarheid en advies altijd in overleg of via de webshop.</p>
-    </div>
-  </section>
+<div class="divider"></div>
 
-  <!-- Featured wines (illustratief) -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="flex items-end justify-between mb-10">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-burgundy">Een greep uit de webshop</h2>
-      <a href="#webshop" class="hidden sm:inline text-gold font-600 ug">Alles bekijken →</a>
-    </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Wine 1 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-          <img
-            src="https://images.unsplash.com/photo-1474722883778-792e7990302f?auto=format&fit=crop&w=700&q=80"
-            alt="Bordeaux rouge (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Bordeaux · Cabernet</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-burgundy">Bordeaux Rouge</h3>
-          <p class="text-clay/80 text-sm mt-1 font-300">Vol en gestructureerd met rijp donker fruit — een klassieker.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-sm text-clay/70 font-300">Voorbeeldartikel</span>
-            <button class="bg-burgundy text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-merlot transition">In winkelwagen</button>
-          </div>
-        </div>
-      </div>
-      <!-- Wine 2 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-          <img
-            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80"
-            alt="Bourgogne blanc (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Bourgogne · Chardonnay</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-burgundy">Bourgogne Blanc</h3>
-          <p class="text-clay/80 text-sm mt-1 font-300">Mineraal en elegant — ideaal bij vis en gevogelte.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-sm text-clay/70 font-300">Voorbeeldartikel</span>
-            <button class="bg-burgundy text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-merlot transition">In winkelwagen</button>
-          </div>
-        </div>
-      </div>
-      <!-- Wine 3 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-          <img
-            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=700&q=80"
-            alt="Champagne (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Bubbels</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-burgundy">Champagne brut</h3>
-          <p class="text-clay/80 text-sm mt-1 font-300">Fijne bubbels om te vieren of cadeau te geven.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-sm text-clay/70 font-300">Voorbeeldartikel</span>
-            <button class="bg-burgundy text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-merlot transition">In winkelwagen</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p class="text-center text-xs text-clay/60 mt-6">Voorbeeldwijnen ter illustratie van de webshop — er worden geen prijzen of claims getoond in deze conceptversie.</p>
-  </section>
 
-  <!-- Cadeau / advies & proeverij (the second differentiator) -->
-  <section id="cadeau" class="bg-burgundy text-cream py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
-      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
-        <img
-          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80"
-          alt="Wijn-cadeaupakket en relatiegeschenk"
-          loading="lazy" decoding="async"
-          class="w-full h-full object-cover"
-        />
-      </div>
-      <div class="order-1 lg:order-2 fade-up">
-        <p class="text-goldlt font-500 tracking-[0.2em] uppercase text-xs mb-4">Cadeaupakketten &amp; wijnadvies</p>
-        <h2 class="font-serif text-4xl sm:text-6xl font-600 leading-tight">
-          Wijn als<br /><span class="italic">geschenk dat blijft hangen.</span>
-        </h2>
-        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md font-300">
-          Wijn is bij uitstek giftable. Wij stellen een verzorgd wijn-cadeaupakket samen — voor een verjaardag,
-          een bedankje of als <strong class="font-600 text-cream">relatiegeschenk</strong> voor uw klanten en medewerkers.
-          Niet zeker welke fles? Vraag gerust persoonlijk wijnadvies.
-        </p>
-        <ul class="mt-6 space-y-3 text-cream/85">
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Cadeaupakketten op maat (thema, budget, aantal)</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Relatiegeschenken &amp; bedrijfsbestellingen — ideaal voor kerst</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Persoonlijk wijnadvies: samen de juiste Franse wijnen kiezen</li>
-        </ul>
-        <a href="#bezoek" class="inline-flex items-center gap-2 mt-8 bg-gold text-ink font-600 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
-          Vraag een pakket of advies aan
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Ons verhaal -->
-  <section id="verhaal" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
-    <div class="fade-up">
-      <p class="text-gold font-500 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
-      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-burgundy">Een wijnhandel met<br />een hart voor Frankrijk.</h2>
-      <p class="text-clay text-lg mt-6 leading-relaxed font-300">
-        Wijnen Van Durme is een vertrouwde wijnhandel in Merksem, met een uitgesproken voorliefde voor
-        Franse wijn. Wat ons drijft is de zoektocht naar eerlijke wijnen met karakter — uit Bordeaux,
-        Bourgogne, de Rhône en de Loire — die we met plezier en kennis van zaken aanbevelen.
-      </p>
-      <p class="text-clay text-lg mt-4 leading-relaxed font-300">
-        Of u nu een fles zoekt voor bij het eten, een geschenk voor een liefhebber of een relatiegeschenk
-        voor uw klanten — wij denken graag met u mee. Voortaan kan dat ook online, met een echte webshop en
-        afhaling of levering.
-      </p>
-      <div class="mt-9 flex flex-wrap gap-8">
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">Frankrijk</p>
-          <p class="text-clay/80 text-sm mt-1">Onze specialiteit</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">Advies</p>
-          <p class="text-clay/80 text-sm mt-1">Persoonlijk &amp; eerlijk</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">18+</p>
-          <p class="text-clay/80 text-sm mt-1">Verantwoord genieten</p>
-        </div>
-      </div>
-    </div>
-    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
-      <img
-        src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1000&q=80"
-        alt="Wijnkelder met flessen op rek"
-        loading="lazy" decoding="async"
-        class="w-full h-full object-cover"
-      />
-    </div>
-  </section>
-
-  <!-- Bezoek + kaart -->
-  <section id="bezoek" class="bg-sand/60 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+<!-- SELECTIE -->
+<section id="selectie" aria-labelledby="selectie-h2">
+  <div class="container">
+    <div class="selectie-header">
       <div class="fade-up">
-        <p class="text-gold font-500 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-burgundy">Welkom in Merksem</h2>
-        <p class="text-clay text-lg mt-5 max-w-md font-300">
-          Kom proeven en kiezen op Groenendaallaan 22 in Merksem, of bestel online en haal af.
-        </p>
-        <dl class="mt-9 space-y-5 text-clay">
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📍</span>
-            <div>
-              <dt class="font-600 text-burgundy">Adres</dt>
-              <dd class="text-clay">Groenendaallaan 22, 2170 Merksem</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🕑</span>
-            <div>
-              <dt class="font-600 text-burgundy">Openingsuren</dt>
-              <dd class="text-clay">Di–Vr: 10:00–18:30 · Za: 10:00–18:00 · Zo &amp; Ma: gesloten</dd>
-              <dd class="text-clay/60 text-sm mt-1">(indicatief — definitieve uren in overleg)</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📞</span>
-            <div>
-              <dt class="font-600 text-burgundy">Telefoon</dt>
-              <dd class="text-clay"><a href="tel:+3236459141" class="ug">03 645 91 41</a></dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">✉️</span>
-            <div>
-              <dt class="font-600 text-burgundy">E-mail</dt>
-              <dd class="text-clay"><a href="mailto:christine@wijnenvandurme.be" class="ug">christine@wijnenvandurme.be</a></dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">💳</span>
-            <div>
-              <dt class="font-600 text-burgundy">Betaalmogelijkheden</dt>
-              <dd class="text-clay">In de winkel · online via Mollie / Bancontact (webshop) · leeftijdsverificatie 18+</dd>
-            </div>
-          </div>
-        </dl>
-        <a href="#webshop" class="inline-block mt-9 bg-burgundy text-cream font-600 px-7 py-3.5 rounded-full hover:bg-merlot transition">
-          Of bestel online →
+        <span class="section-kicker">Onze Selectie</span>
+        <h2 class="selectie-h2" id="selectie-h2">Wijnen uit<br>de wereld</h2>
+      </div>
+      <p class="selectie-intro fade-up d1">
+        Van de zonnige hellingen van Toscane tot de koele valleien van Bourgondië &mdash; wij selecteren met aandacht voor terroir, producent en eerlijke prijs.
+      </p>
+    </div>
+
+    <div class="selectie-grid">
+
+      <article class="region-card fade-up">
+        <div class="region-card-bg">
+          <svg width="100%" height="100%" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <radialGradient id="rg1" cx="50%" cy="30%" r="60%"><stop offset="0%" stop-color="#4a2060" stop-opacity=".45"/><stop offset="100%" stop-color="#100820" stop-opacity="0"/></radialGradient>
+            </defs>
+            <rect width="400" height="500" fill="#140c1e"/>
+            <rect width="400" height="500" fill="url(#rg1)"/>
+            <g stroke="#2a1840" stroke-width="1" fill="none" opacity=".4">
+              <path d="M-20 380 Q200 338 420 380"/><path d="M-20 352 Q200 308 420 352"/>
+              <path d="M-20 324 Q200 278 420 324"/><path d="M-20 296 Q200 248 420 296"/>
+            </g>
+          </svg>
+        </div>
+        <div class="region-card-overlay"></div>
+        <div class="region-card-content">
+          <p class="region-flag">&#127467;&#127479; Frankrijk</p>
+          <h3 class="region-name">Bourgogne</h3>
+          <p class="region-desc">Pinot Noir &amp; Chardonnay op hun elegantst. Terroir-gedreven, tijdloos.</p>
+        </div>
+      </article>
+
+      <article class="region-card fade-up d1">
+        <div class="region-card-bg">
+          <svg width="100%" height="100%" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <radialGradient id="rg2" cx="60%" cy="25%" r="55%"><stop offset="0%" stop-color="#8a4010" stop-opacity=".55"/><stop offset="100%" stop-color="#1e1008" stop-opacity="0"/></radialGradient>
+            </defs>
+            <rect width="400" height="500" fill="#1c1006"/>
+            <rect width="400" height="500" fill="url(#rg2)"/>
+            <ellipse cx="80" cy="200" rx="18" ry="78" fill="#160a04" opacity=".5"/>
+            <ellipse cx="128" cy="215" rx="18" ry="68" fill="#160a04" opacity=".5"/>
+            <ellipse cx="330" cy="205" rx="18" ry="73" fill="#160a04" opacity=".5"/>
+            <path d="M0 348 Q100 278 200 318 Q300 358 400 288 L400 500 L0 500Z" fill="#180e06" opacity=".5"/>
+          </svg>
+        </div>
+        <div class="region-card-overlay"></div>
+        <div class="region-card-content">
+          <p class="region-flag">&#127470;&#127481; Itali&euml;</p>
+          <h3 class="region-name">Toscane</h3>
+          <p class="region-desc">Chianti, Brunello, Morellino &mdash; de volle karakter van de Italiaanse zon.</p>
+        </div>
+      </article>
+
+      <article class="region-card fade-up d2">
+        <div class="region-card-bg">
+          <svg width="100%" height="100%" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <radialGradient id="rg3" cx="40%" cy="35%" r="52%"><stop offset="0%" stop-color="#a03010" stop-opacity=".48"/><stop offset="100%" stop-color="#1e0808" stop-opacity="0"/></radialGradient>
+            </defs>
+            <rect width="400" height="500" fill="#1c0808"/>
+            <rect width="400" height="500" fill="url(#rg3)"/>
+            <path d="M0 298 L80 178 L160 278 L240 138 L320 238 L400 178 L400 500 L0 500Z" fill="#160606" opacity=".55"/>
+          </svg>
+        </div>
+        <div class="region-card-overlay"></div>
+        <div class="region-card-content">
+          <p class="region-flag">&#127466;&#127480; Spanje</p>
+          <h3 class="region-name">Rioja</h3>
+          <p class="region-desc">Tempranillo met diepte. Van Crianza tot Gran Reserva, met rijping op eik.</p>
+        </div>
+      </article>
+
+      <article class="region-card fade-up d1">
+        <div class="region-card-bg">
+          <svg width="100%" height="100%" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <radialGradient id="rg4" cx="50%" cy="40%" r="55%"><stop offset="0%" stop-color="#306040" stop-opacity=".42"/><stop offset="100%" stop-color="#0c1818" stop-opacity="0"/></radialGradient>
+            </defs>
+            <rect width="400" height="500" fill="#0c1818"/>
+            <rect width="400" height="500" fill="url(#rg4)"/>
+            <path d="M155 0 Q175 100 165 200 Q155 300 175 400 Q185 450 170 500" fill="none" stroke="#1e3830" stroke-width="24" opacity=".42"/>
+          </svg>
+        </div>
+        <div class="region-card-overlay"></div>
+        <div class="region-card-content">
+          <p class="region-flag">&#127467;&#127479; Frankrijk</p>
+          <h3 class="region-name">Rh&ocirc;ne</h3>
+          <p class="region-desc">Syrah en Grenache in krachtige blends. Kruidig, vol, gedurfd.</p>
+        </div>
+      </article>
+
+      <article class="region-card fade-up d2">
+        <div class="region-card-bg">
+          <svg width="100%" height="100%" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <radialGradient id="rg5" cx="70%" cy="22%" r="60%"><stop offset="0%" stop-color="#602880" stop-opacity=".38"/><stop offset="100%" stop-color="#100818" stop-opacity="0"/></radialGradient>
+            </defs>
+            <rect width="400" height="500" fill="#100818"/>
+            <rect width="400" height="500" fill="url(#rg5)"/>
+            <path d="M0 318 L60 178 L120 258 L180 98 L240 198 L300 138 L360 218 L400 168 L400 500 L0 500Z" fill="#180c20" opacity=".62"/>
+          </svg>
+        </div>
+        <div class="region-card-overlay"></div>
+        <div class="region-card-content">
+          <p class="region-flag">&#127462;&#127479; Argentini&euml;</p>
+          <h3 class="region-name">Mendoza</h3>
+          <p class="region-desc">Malbec aan de voet van de Andes &mdash; krachtig, rijp fruit, fluweelzacht.</p>
+        </div>
+      </article>
+
+      <article class="region-card fade-up d3">
+        <div class="region-card-bg">
+          <svg width="100%" height="100%" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <radialGradient id="rg6" cx="32%" cy="30%" r="62%"><stop offset="0%" stop-color="#104830" stop-opacity=".5"/><stop offset="100%" stop-color="#081818" stop-opacity="0"/></radialGradient>
+            </defs>
+            <rect width="400" height="500" fill="#081818"/>
+            <rect width="400" height="500" fill="url(#rg6)"/>
+            <path d="M0 348 Q100 298 200 338 Q300 378 400 318 L400 500 L0 500Z" fill="#0c2018" opacity=".5"/>
+          </svg>
+        </div>
+        <div class="region-card-overlay"></div>
+        <div class="region-card-content">
+          <p class="region-flag">&#127475;&#127487; Nieuw-Zeeland</p>
+          <h3 class="region-name">Marlborough</h3>
+          <p class="region-desc">Sauvignon Blanc met intensiteit &mdash; citrus, kruiden, fris en direct.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CADEAUS -->
+<section id="cadeaus" aria-labelledby="cadeaus-h2">
+  <div class="cadeaus-inner">
+
+    <div class="cadeaus-visual fade-up" aria-hidden="true">
+      <svg width="100%" height="100%" viewBox="0 0 640 720" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" style="display:block;position:absolute;inset:0;">
+        <defs>
+          <radialGradient id="giftglow" cx="50%" cy="55%" r="50%">
+            <stop offset="0%" stop-color="#8a6a18" stop-opacity=".38"/>
+            <stop offset="100%" stop-color="#0c1520" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="boxlid" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#2a1e0a"/><stop offset="100%" stop-color="#1c1406"/>
+          </linearGradient>
+          <linearGradient id="boxbody" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#1e1608"/><stop offset="100%" stop-color="#130e04"/>
+          </linearGradient>
+          <linearGradient id="ribbony" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#d4ae4a"/><stop offset="100%" stop-color="#9a7420"/>
+          </linearGradient>
+        </defs>
+        <rect width="640" height="720" fill="#0c1520"/>
+        <rect width="640" height="720" fill="url(#giftglow)"/>
+        <!-- Box lid -->
+        <rect x="145" y="245" width="355" height="78" rx="3" fill="url(#boxlid)" stroke="#382a0e" stroke-width="1"/>
+        <path d="M145 245 L164 226 L500 226 L519 245 Z" fill="#2c1e08" stroke="#382a0e" stroke-width=".8"/>
+        <!-- Box body -->
+        <rect x="145" y="323" width="355" height="195" rx="2" fill="url(#boxbody)" stroke="#281808" stroke-width="1"/>
+        <!-- Ribbon vertical -->
+        <rect x="302" y="226" width="38" height="292" fill="url(#ribbony)" opacity=".9"/>
+        <!-- Ribbon horizontal -->
+        <rect x="145" y="271" width="355" height="34" fill="url(#ribbony)" opacity=".9"/>
+        <!-- Bow -->
+        <path d="M321 228 Q272 192 252 212 Q232 227 282 243 Q312 250 321 242 Z" fill="#d4ae4a" stroke="#b08e28" stroke-width=".8"/>
+        <path d="M321 228 Q370 192 390 212 Q410 227 360 243 Q330 250 321 242 Z" fill="#d4ae4a" stroke="#b08e28" stroke-width=".8"/>
+        <ellipse cx="321" cy="237" rx="17" ry="13" fill="#c09828"/>
+        <ellipse cx="321" cy="237" rx="10" ry="8" fill="#d8aa38"/>
+        <!-- Bottles -->
+        <g transform="translate(248,142)" opacity=".88">
+          <rect x="11" y="0" width="20" height="92" rx="10" fill="#1a2010" stroke="#243020" stroke-width=".8"/>
+          <rect x="14" y="-16" width="14" height="20" rx="7" fill="#182010"/>
+          <rect x="7" y="43" width="28" height="20" rx="1" fill="#e8d4a0" opacity=".85"/>
+          <text x="21" y="53" text-anchor="middle" font-size="4" fill="#1a1208" font-family="Georgia,serif" font-style="italic">Van Durme</text>
+        </g>
+        <g transform="translate(376,150)" opacity=".85">
+          <rect x="11" y="0" width="20" height="84" rx="10" fill="#280810" stroke="#380c10" stroke-width=".8"/>
+          <rect x="14" y="-14" width="14" height="18" rx="7" fill="#280810"/>
+          <rect x="7" y="36" width="28" height="20" rx="1" fill="#f0e4c0" opacity=".85"/>
+          <text x="21" y="46" text-anchor="middle" font-size="4" fill="#1a1208" font-family="Georgia,serif" font-style="italic">Van Durme</text>
+        </g>
+        <!-- Shadow -->
+        <ellipse cx="332" cy="542" rx="210" ry="18" fill="#07090e" opacity=".65"/>
+      </svg>
+    </div>
+
+    <div class="cadeaus-content fade-up d2">
+      <span class="section-kicker">Cadeaus &amp; Gelegenheden</span>
+      <h2 class="cadeaus-h2" id="cadeaus-h2">
+        Een fles die<br><em>iets vertelt</em>
+      </h2>
+      <p class="cadeaus-body">
+        Voor een verjaardag, een huwelijksjubileum, een bedrijfsevenement of gewoon om iemand te verrassen &mdash; wij helpen u de juiste keuze maken en presenteren de wijn op maat.
+      </p>
+      <ul class="cadeaus-list" role="list">
+        <li>Persoonlijk advies bij elke gelegenheid</li>
+        <li>Geschenkverpakking en cadeaubon op aanvraag</li>
+        <li>Samengestelde wijnpakketten voor bedrijven</li>
+        <li>Hulp bij de tafelwijn voor uw event of feest</li>
+        <li>Wijnselectie voor huwelijken en jubilea</li>
+        <li>Leveringen in Merksem en omgeving op afspraak</li>
+      </ul>
+      <div style="display:flex;flex-direction:column;gap:11px;align-items:flex-start;">
+        <a href="tel:036459141" class="btn-primary">Bel voor een cadeau-advies</a>
+        <a href="mailto:christine@wijnenvandurme.be" class="btn-ghost">Mail Christine</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- BEZOEK -->
+<section id="bezoek" aria-labelledby="bezoek-h2">
+  <div class="container">
+    <h2 class="bezoek-h2 fade-up" id="bezoek-h2">Bezoek ons in Merksem</h2>
+    <div class="bezoek-grid">
+
+      <div class="bezoek-info">
+        <div class="fade-up">
+          <p class="info-label">Adres</p>
+          <p class="info-val">Merksem (Antwerpen)<br><span style="font-size:.86rem;opacity:.65;">Contacteer ons voor het exacte adres</span></p>
+        </div>
+        <div class="fade-up d1">
+          <p class="info-label">Openingsuren</p>
+          <table class="hours-table" aria-label="Openingsuren">
+            <tbody>
+              <tr><td>Dinsdag &ndash; Vrijdag</td><td>10:00 &ndash; 18:30</td></tr>
+              <tr><td>Zaterdag</td><td>09:30 &ndash; 17:00</td></tr>
+              <tr class="closed"><td>Zondag</td><td>Gesloten</td></tr>
+              <tr class="closed"><td>Maandag</td><td>Gesloten</td></tr>
+            </tbody>
+          </table>
+          <p style="font-size:.8rem;color:var(--cream-faint);margin-top:10px;font-style:italic;">Buiten de uren? Bel of mail voor een afspraak.</p>
+        </div>
+        <div class="fade-up d2">
+          <p class="info-label">Contact</p>
+          <p class="info-val">
+            <a href="tel:036459141" style="display:block;margin-bottom:5px;">03 645 91 41</a>
+            <a href="mailto:christine@wijnenvandurme.be">christine@wijnenvandurme.be</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="bezoek-cta-box fade-up d2">
+        <div class="bezoek-ghost-num" aria-hidden="true">C</div>
+        <h3>Kom langs voor<br>persoonlijk advies</h3>
+        <p>Christine en haar team staan klaar &mdash; of u nu &eacute;&eacute;n fles zoekt of een complete selectie wilt samenstellen.</p>
+        <a href="tel:036459141" class="phone-link" aria-label="Bel ons: 03 645 91 41">
+          <svg width="20" height="20" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            <path d="M4 3h4.5l1.5 4-2 1.5a10 10 0 0 0 4 4L14 11l4 1.5V17a2 2 0 0 1-2 2C7.6 19 3 14.4 3 5a2 2 0 0 1 1-1.8V3z" stroke="currentColor" stroke-width="1.4" fill="none"/>
+          </svg>
+          03&nbsp;645&nbsp;91&nbsp;41
         </a>
+        <a href="mailto:christine@wijnenvandurme.be" class="email-link">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <rect x="1" y="3" width="14" height="10" rx="1.5" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M1 4l7 5 7-5" stroke="currentColor" stroke-width="1.2"/>
+          </svg>
+          christine@wijnenvandurme.be
+        </a>
+        <div class="bezoek-note">
+          <p>Gratis parkeren in de buurt.<br>Wij leveren ook op afspraak in Merksem en omgeving.</p>
+        </div>
       </div>
-      <!-- OpenStreetMap embed — Groenendaallaan 22, 2170 Merksem (~51.2407, 4.4486) -->
-      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-sand shadow-sm">
-        <iframe
-          title="Kaart Wijnen Van Durme — Groenendaallaan 22, 2170 Merksem"
-          class="w-full h-full min-h-[360px] border-0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=4.4386%2C51.2357%2C4.4586%2C51.2457&layer=mapnik&marker=51.2407%2C4.4486"
-        ></iframe>
-      </div>
-    </div>
-  </section>
 
-  <!-- GDPR Newsletter -->
-  <section class="bg-gold/20">
-    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
-      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-burgundy">Blijf op de hoogte</h2>
-      <p class="text-clay mt-3 font-300">Nieuwe Franse wijnen, ontdekkingen, proeverijen en cadeautips — af en toe in je mailbox.</p>
-      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
-        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
-        <input
-          id="nl-email"
-          name="email"
-          type="email"
-          autocomplete="email"
-          required
-          placeholder="jouw@email.be"
-          class="flex-1 px-5 py-3 rounded-full border border-clay/25 bg-cream focus:outline-none focus:ring-2 focus:ring-gold"
-        />
-        <button class="bg-burgundy text-cream font-600 px-7 py-3 rounded-full hover:bg-merlot transition">Inschrijven</button>
-      </form>
-      <p class="text-xs text-clay/60 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof. Inschrijven vanaf 18 jaar.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="bg-ink text-cream/80">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="container footer-inner">
+    <div class="footer-top">
       <div>
-        <p class="font-serif text-[26px] text-cream font-700">Wijnen <span class="italic font-600">Van Durme</span></p>
-        <p class="text-cream/60 text-sm mt-3 max-w-xs font-300">Wijnhandel in Merksem, met focus op Franse wijn. Webshop, cadeaupakketten en persoonlijk wijnadvies.</p>
-        <p class="text-cream/45 text-xs mt-4">Verkoop uitsluitend aan personen vanaf 18 jaar. Geniet, maar drink met mate.</p>
+        <div class="footer-brand">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M10 2h4v4.5c1.8.9 3 2.8 3 5V19a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-7.5c0-2.2 1.2-4.1 3-5V2z" stroke="#b8962a" stroke-width="1.3" stroke-linejoin="round"/>
+          </svg>
+          Wijnen Van Durme
+        </div>
+        <p class="footer-tagline">Familiale wijnhandel in het hart van Merksem, Antwerpen. Persoonlijk advies, eerlijke selectie.</p>
       </div>
       <div>
-        <p class="font-600 text-cream mb-3">Webshop</p>
-        <ul class="space-y-2 text-sm text-cream/60 font-300">
-          <li><a href="#webshop" class="hover:text-goldlt">Online bestellen</a></li>
-          <li><a href="#assortiment" class="hover:text-goldlt">Assortiment</a></li>
-          <li><a href="#cadeau" class="hover:text-goldlt">Cadeaupakketten</a></li>
+        <p class="footer-col-title">Navigatie</p>
+        <ul class="footer-links" role="list">
+          <li><a href="#familie">Ons Verhaal</a></li>
+          <li><a href="#selectie">Selectie</a></li>
+          <li><a href="#cadeaus">Cadeaus</a></li>
+          <li><a href="#bezoek">Bezoek ons</a></li>
         </ul>
       </div>
       <div>
-        <p class="font-600 text-cream mb-3">Info</p>
-        <ul class="space-y-2 text-sm text-cream/60 font-300">
-          <li><a href="#cadeau" class="hover:text-goldlt">Cadeau &amp; advies</a></li>
-          <li><a href="#bezoek" class="hover:text-goldlt">Openingsuren</a></li>
-          <li><a href="#verhaal" class="hover:text-goldlt">Ons verhaal</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Contact</p>
-        <ul class="space-y-2 text-sm text-cream/60 font-300">
-          <li>Groenendaallaan 22</li>
-          <li>2170 Merksem</li>
-          <li><a href="tel:+3236459141" class="hover:text-goldlt">03 645 91 41</a></li>
-          <li><a href="mailto:christine@wijnenvandurme.be" class="hover:text-goldlt">christine@wijnenvandurme.be</a></li>
+        <p class="footer-col-title">Contact</p>
+        <ul class="footer-links" role="list">
+          <li><a href="tel:036459141">03 645 91 41</a></li>
+          <li><a href="mailto:christine@wijnenvandurme.be">christine@wijnenvandurme.be</a></li>
+          <li style="color:var(--cream-faint);font-size:.83rem;margin-top:5px;">Di&ndash;Vr: 10:00&ndash;18:30</li>
+          <li style="color:var(--cream-faint);font-size:.83rem;">Za: 09:30&ndash;17:00</li>
         </ul>
       </div>
     </div>
-    <div class="border-t border-cream/10">
-      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/45">
-        <p>© 2026 Wijnen Van Durme. Concept-redesign.</p>
-        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; wijnwebshop.</p>
-      </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2024 Wijnen Van Durme &middot; Merksem, Antwerpen</p>
+      <p class="footer-address">Wijnhandel &middot; Merksem &middot; Antwerpen</p>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <!-- Scripts -->
-  <script>
-    // Fade-up IntersectionObserver
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
-    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
-    } else {
-      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
-    }
 
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (menuBtn && mobileMenu) {
-      const setOpen = (open) => {
-        if (open) mobileMenu.removeAttribute('hidden');
-        else mobileMenu.setAttribute('hidden', '');
-        menuBtn.setAttribute('aria-expanded', String(open));
-        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
-      };
-      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
-      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
-    }
-  </script>
+<script>
+(function(){
+  'use strict';
+
+  /* ── HEADROOM ── */
+  var nav=document.getElementById('nav'),
+      TOL_DOWN=8, TOL_UP=5, OFFSET=80,
+      lastY=0, ticking=false, hidden=false, scrolled=false;
+
+  function updateNav(y){
+    var d=y-lastY;
+    if(y>OFFSET&&!scrolled){nav.classList.add('nav-scrolled');scrolled=true;}
+    else if(y<=OFFSET&&scrolled){nav.classList.remove('nav-scrolled');scrolled=false;}
+    if(y>OFFSET){
+      if(d>TOL_DOWN&&!hidden){nav.classList.add('nav-hidden');hidden=true;}
+      else if(d<-TOL_UP&&hidden){nav.classList.remove('nav-hidden');hidden=false;}
+    }else if(hidden){nav.classList.remove('nav-hidden');hidden=false;}
+    lastY=y; ticking=false;
+  }
+
+  window.addEventListener('scroll',function(){
+    var y=window.pageYOffset||document.documentElement.scrollTop;
+    if(!ticking){requestAnimationFrame(function(){updateNav(y);});ticking=true;}
+  },{passive:true});
+
+  /* ── INTERSECTIONOBSERVER FADE-UP ── */
+  var els=document.querySelectorAll('.fade-up');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}
+      });
+    },{threshold:0.1,rootMargin:'0px 0px -36px 0px'});
+    els.forEach(function(el){io.observe(el);});
+  }else{
+    els.forEach(function(el){el.classList.add('visible');});
+  }
+}());
+</script>
+
 </body>
 </html>

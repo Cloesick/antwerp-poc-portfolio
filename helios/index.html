@@ -1,438 +1,749 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta name="robots" content="noindex, nofollow" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Helios Berchem — Ambachtelijke koffie, thee & chocolade sinds 1925</title>
-  <meta name="description" content="Vierde generatie koffiebranderij in Berchem. Dagvers gebrand op een authentieke brander uit 1925. Nu ook online — verzending in heel België." />
-  <link rel="canonical" href="https://heliosberchem.be/" />
-  <meta name="theme-color" content="#2b1a12" />
-  <!-- Social link preview (so the outreach link looks right in WhatsApp/e-mail) -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Helios Berchem" />
-  <meta property="og:locale" content="nl_BE" />
-  <meta property="og:title" content="Helios Berchem — Ambachtelijke koffie, thee & chocolade sinds 1925" />
-  <meta property="og:description" content="Dagvers gebrand sinds 1925 — nu ook online, met verzending in heel België." />
-  <meta property="og:url" content="https://heliosberchem.be/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1200&q=80" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- Inline SVG favicon — no extra request, no /favicon.ico 404 -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232b1a12'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' fill='%23c98a4b' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E" />
-  <!-- Local-SEO structured data (directly targets the "lokale vindbaarheid" gap) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CafeOrCoffeeShop",
-    "name": "Helios Berchem",
-    "description": "Ambachtelijke koffiebranderij, theehuis & chocolaterie sinds 1925 — vierde generatie.",
-    "image": "https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1200&q=80",
-    "url": "https://heliosberchem.be/",
-    "telephone": "+3232392454",
-    "email": "info@heliosberchem.be",
-    "foundingDate": "1925",
-    "priceRange": "€€",
-    "award": "Golden Smile Award 2010",
-    "areaServed": "BE",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Statiestraat 13",
-      "postalCode": "2600",
-      "addressLocality": "Berchem",
-      "addressRegion": "Antwerpen",
-      "addressCountry": "BE"
-    },
-    "geo": { "@type": "GeoCoordinates", "latitude": 51.2006, "longitude": 4.4375 },
-    "openingHoursSpecification": [{
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"],
-      "opens": "10:00",
-      "closes": "18:00"
-    }]
-  }
-  </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { serif: ['Fraunces', 'serif'], sans: ['Inter', 'sans-serif'] },
-          colors: {
-            espresso: '#2b1a12',
-            roast: '#4a2c1d',
-            copper: '#b06a3b',
-            caramel: '#c98a4b',
-            cream: '#f6efe6',
-            sand: '#efe3d3',
-          },
-        },
-      },
-    };
-  </script>
-  <style>
-    html { scroll-behavior: smooth; }
-    .hero-grad { background: linear-gradient(180deg, rgba(43,26,18,.15) 0%, rgba(43,26,18,.55) 55%, rgba(43,26,18,.92) 100%); }
-    .tile-grad { background: linear-gradient(160deg, #3a2418, #1f130c); }
-    .fade-up { opacity: 0; transform: translateY(18px); transition: all .7s cubic-bezier(.2,.7,.2,1); }
-    .fade-up.in { opacity: 1; transform: none; }
-    .underline-grow { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
-    .underline-grow:hover { background-size: 100% 2px; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Helios — Licht &amp; Interieur · Berchem</title>
+<meta name="description" content="Helios Berchem — luxe verlichting en meubelen showroom in Berchem. Ontdek onze collectie van Flos, Vibia, Artemide en Louis Poulsen. Bezoek onze showroom op Driekoningenstraat 14." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23080807'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' fill='%23c8a85c' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E" />
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:       #080807;
+  --bg2:      #0e0d0c;
+  --surface:  #141311;
+  --text:     #f0ebe3;
+  --muted:    #8a8a8a;
+  --subtle:   #6b6560;
+  --accent:   #c8a85c;
+  --border:   rgba(255,255,255,.07);
+  --radius:   2px;
+  --nav-h:    64px;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  padding-top: var(--nav-h);
+}
+
+/* ─── Nav ─── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  background: rgba(8,8,7,.9);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  transition: transform .28s cubic-bezier(.4,0,.2,1), box-shadow .28s ease;
+}
+nav.headroom--unpinned { transform: translateY(-100%); }
+nav.headroom--pinned   { transform: translateY(0); }
+nav.headroom--not-top  { box-shadow: 0 2px 24px rgba(0,0,0,.7); }
+
+.nav-logo {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text);
+}
+.nav-logo span { color: var(--accent); }
+
+.nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(240,235,227,0.8);
+  text-decoration: none;
+  transition: color .2s;
+}
+.nav-links a:hover { color: var(--text); }
+
+.nav-cta {
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 10px 22px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background .2s, color .2s;
+}
+.nav-cta:hover { background: var(--accent); color: var(--bg); }
+
+/* ─── Hero ─── */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100dvh;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 80px 60px 80px 60px;
+}
+.hero-eyebrow {
+  font-size: 11px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 28px;
+}
+.hero-h1 {
+  font-size: clamp(52px, 6vw, 88px);
+  font-weight: 200;
+  line-height: 1.0;
+  letter-spacing: -.02em;
+  margin-bottom: 28px;
+}
+.hero-h1 em { font-style: italic; font-weight: 300; color: var(--accent); }
+.hero-sub {
+  font-size: 16px;
+  color: var(--muted);
+  max-width: 38ch;
+  line-height: 1.65;
+  margin-bottom: 48px;
+}
+.hero-actions { display: flex; gap: 16px; align-items: center; }
+.btn-primary {
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  background: var(--accent);
+  color: var(--bg);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  transition: opacity .2s;
+}
+.btn-primary:hover { opacity: .85; }
+.btn-ghost {
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 14px 0;
+  color: rgba(240,235,227,0.85);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(240,235,227,0.4);
+  transition: color .2s, border-color .2s;
+}
+.btn-ghost:hover { color: var(--text); border-color: var(--text); }
+
+.hero-image {
+  position: relative;
+  overflow: hidden;
+}
+.hero-image-inner {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, #1a150a 0%, #0b0905 40%, #181410 100%);
+}
+/* Atmospheric light bloom */
+.hero-image-inner::before {
+  content: '';
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  width: 220px;
+  height: 320px;
+  background: radial-gradient(ellipse at center, rgba(200,168,92,.18) 0%, transparent 70%);
+  filter: blur(40px);
+}
+.hero-image-inner::after {
+  content: '';
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+  width: 140px;
+  height: 200px;
+  background: radial-gradient(ellipse at center, rgba(200,168,92,.10) 0%, transparent 70%);
+  filter: blur(30px);
+}
+
+/* Pendant lamp SVG decoration */
+.lamp-svg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: .7;
+}
+
+/* ─── Marquee strip ─── */
+.marquee-strip {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 20px 0;
+  overflow: hidden;
+  background: var(--bg2);
+}
+.marquee-track {
+  display: flex;
+  gap: 64px;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+.marquee-track:hover { animation-play-state: paused; }
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.marquee-item {
+  font-size: 11px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: rgba(240,235,227,0.75);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.marquee-item span { color: var(--accent); font-size: 8px; }
+
+/* ─── Collection ─── */
+.collection {
+  padding: 120px 60px;
+}
+.section-label {
+  font-size: 11px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 64px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+  max-width: 120px;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: auto auto;
+  gap: 16px;
+}
+.col-item {
+  position: relative;
+  overflow: hidden;
+  background: var(--surface);
+  cursor: pointer;
+}
+.col-item:first-child {
+  grid-row: 1 / 3;
+  min-height: 580px;
+}
+.col-item:nth-child(2),
+.col-item:nth-child(3) { min-height: 280px; }
+
+.col-img {
+  position: absolute;
+  inset: 0;
+  transition: transform .6s cubic-bezier(.25,.46,.45,.94);
+}
+.col-item:hover .col-img { transform: scale(1.04); }
+
+/* Warm lighting atmospheres for each item */
+.col-item:nth-child(1) .col-img {
+  background: linear-gradient(160deg, #1c1509 0%, #0d0b07 50%, #1a1208 100%);
+}
+.col-item:nth-child(1) .col-img::before {
+  content: '';
+  position: absolute;
+  top: 20%; left: 35%;
+  width: 180px; height: 260px;
+  background: radial-gradient(ellipse, rgba(200,168,92,.22) 0%, transparent 65%);
+  filter: blur(30px);
+}
+.col-item:nth-child(2) .col-img {
+  background: linear-gradient(180deg, #141008 0%, #080705 100%);
+}
+.col-item:nth-child(2) .col-img::before {
+  content: '';
+  position: absolute;
+  bottom: 30%; right: 25%;
+  width: 100px; height: 150px;
+  background: radial-gradient(ellipse, rgba(200,168,92,.2) 0%, transparent 65%);
+  filter: blur(20px);
+}
+.col-item:nth-child(3) .col-img {
+  background: linear-gradient(135deg, #0c0a08 0%, #181410 100%);
+}
+.col-item:nth-child(3) .col-img::before {
+  content: '';
+  position: absolute;
+  top: 20%; left: 20%;
+  width: 120px; height: 120px;
+  background: radial-gradient(circle, rgba(200,168,92,.15) 0%, transparent 65%);
+  filter: blur(20px);
+}
+
+.col-caption {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 32px 28px 28px;
+  background: linear-gradient(to top, rgba(8,8,7,.95) 0%, transparent 100%);
+  z-index: 2;
+}
+.col-caption h3 {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: .04em;
+  margin-bottom: 6px;
+}
+.col-caption p {
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+/* ─── About / Brand story ─── */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0;
+  border-top: 1px solid var(--border);
+  padding: 120px 60px;
+}
+.about-stat {
+  padding-right: 80px;
+  border-right: 1px solid var(--border);
+}
+.about-year {
+  font-size: clamp(72px, 9vw, 128px);
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: -.04em;
+  color: var(--subtle);
+  margin-bottom: 24px;
+}
+.about-year-label {
+  font-size: 11px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.about-body {
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+.about-body h2 {
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -.01em;
+}
+.about-body p {
+  font-size: 16px;
+  color: var(--muted);
+  max-width: 52ch;
+  line-height: 1.75;
+}
+.about-tags {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.tag {
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+/* ─── Brands ─── */
+.brands {
+  padding: 80px 60px;
+  border-top: 1px solid var(--border);
+  background: var(--bg2);
+}
+.brands-label {
+  font-size: 11px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 48px;
+  text-align: center;
+}
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px;
+  align-items: center;
+}
+.brand-item {
+  font-size: 13px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--subtle);
+  text-align: center;
+  padding: 20px;
+  border: 1px solid transparent;
+  transition: color .2s, border-color .2s;
+}
+.brand-item:hover { color: var(--muted); border-color: var(--border); }
+
+/* ─── CTA ─── */
+.showroom-cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 480px;
+  border-top: 1px solid var(--border);
+}
+.cta-text {
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cta-text h2 {
+  font-size: clamp(36px, 4vw, 58px);
+  font-weight: 200;
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  max-width: 14ch;
+}
+.cta-text h2 em { font-style: italic; color: var(--accent); }
+.cta-details {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.cta-detail-row {
+  display: flex;
+  gap: 40px;
+}
+.cta-detail { display: flex; flex-direction: column; gap: 6px; }
+.cta-detail-label {
+  font-size: 10px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.cta-detail-val {
+  font-size: 14px;
+  color: var(--muted);
+}
+.cta-map {
+  position: relative;
+  overflow: hidden;
+  background: var(--surface);
+}
+.cta-map-inner {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, #0f0d0a 0%, #13110d 60%, #0a0907 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cta-map-inner::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 120px;
+  background: linear-gradient(to bottom, transparent, var(--accent), transparent);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cta-map-inner::after {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, var(--accent), transparent);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.map-pin {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: transparent;
+  box-shadow: 0 0 20px rgba(200,168,92,.5);
+  z-index: 2;
+}
+
+/* ─── Footer ─── */
+footer {
+  padding: 40px 60px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-logo {
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.footer-logo span { color: var(--accent); }
+.footer-copy {
+  font-size: 11px;
+  color: var(--subtle);
+  letter-spacing: .08em;
+}
+.footer-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+.footer-links a {
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--subtle);
+  text-decoration: none;
+  transition: color .2s;
+}
+.footer-links a:hover { color: var(--muted); }
+
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+  .col-item:hover .col-img { transform: none; }
+}
+</style>
 </head>
-<body class="bg-cream text-espresso font-sans antialiased selection:bg-caramel/30">
+<body>
 
-  <a href="#shop" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-espresso focus:text-cream focus:rounded-full">Naar de webshop</a>
+<!-- ─── Nav ─── -->
+<nav id="nav">
+  <a href="#" class="nav-logo">H<span>e</span>lios</a>
+  <ul class="nav-links">
+    <li><a href="#collectie">Collectie</a></li>
+    <li><a href="#over-ons">Atelier</a></li>
+    <li><a href="#showroom">Showroom</a></li>
+  </ul>
+  <a href="#showroom" class="nav-cta">Afspraak maken</a>
+</nav>
 
-  <!-- Announcement bar -->
-  <div class="bg-espresso text-cream text-center text-[13px] tracking-wide py-2 px-4">
-    ☕ <span class="font-semibold">Nieuw:</span> bestel online en laat je koffie thuisbezorgen — gratis verzending vanaf € 40 in heel België.
+<!-- ─── Hero ─── -->
+<section class="hero">
+  <div class="hero-text">
+    <p class="hero-eyebrow">Berchem, Antwerpen &nbsp;·&nbsp; Sedert 1983</p>
+    <h1 class="hero-h1">Licht<br>dat <em>vormt.</em></h1>
+    <p class="hero-sub">Handpicked verlichting en meubelen voor de meest veeleisende interieurs. Van pendant tot lounge, van Flos tot Vibia.</p>
+    <div class="hero-actions">
+      <a href="#collectie" class="btn-primary">Verken de collectie</a>
+      <a href="#over-ons" class="btn-ghost">Ons verhaal</a>
+    </div>
   </div>
+  <div class="hero-image">
+    <div class="hero-image-inner"></div>
+    <!-- Pendant lamp SVG -->
+    <svg class="lamp-svg" width="120" height="340" viewBox="0 0 120 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- cable -->
+      <line x1="60" y1="0" x2="60" y2="130" stroke="#c8a85c" stroke-width="1" stroke-opacity="0.5"/>
+      <!-- shade -->
+      <path d="M30 130 Q30 110 60 110 Q90 110 90 130 L100 210 Q100 225 60 225 Q20 225 20 210 Z" fill="#1a150a" stroke="#c8a85c" stroke-width="0.8" stroke-opacity="0.4"/>
+      <!-- inner glow -->
+      <ellipse cx="60" cy="218" rx="32" ry="6" fill="#c8a85c" fill-opacity="0.12"/>
+      <!-- light cone -->
+      <path d="M20 225 L0 340 L120 340 L100 225 Z" fill="url(#cone)" fill-opacity="0.06"/>
+      <defs>
+        <linearGradient id="cone" x1="60" y1="225" x2="60" y2="340" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#c8a85c" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#c8a85c" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+</section>
 
-  <!-- Nav -->
-  <header class="sticky top-0 z-50 bg-cream/85 backdrop-blur border-b border-espresso/10">
-    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
-      <a href="#top" class="flex items-baseline gap-2">
-        <span class="font-serif text-2xl font-700 tracking-tight">Helios</span>
-        <span class="text-[11px] uppercase tracking-[0.25em] text-copper font-600">Berchem · 1925</span>
-      </a>
-      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
-        <a href="#shop" class="underline-grow">Webshop</a>
-        <a href="#assortiment" class="underline-grow">Assortiment</a>
-        <a href="#verhaal" class="underline-grow">Ons verhaal</a>
-        <a href="#bezoek" class="underline-grow">Bezoek ons</a>
-      </div>
-      <div class="flex items-center gap-2">
-        <a href="#shop" class="inline-flex items-center gap-2 bg-espresso text-cream text-sm font-600 px-4 sm:px-5 py-2.5 rounded-full hover:bg-roast transition">
-          Bestel online
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
-          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-espresso/15 text-espresso hover:bg-espresso/5 transition">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </nav>
-    <div id="mobile-menu" hidden class="md:hidden border-t border-espresso/10 bg-cream/95 backdrop-blur">
-      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
-        <a href="#shop" class="py-3 border-b border-espresso/5">Webshop</a>
-        <a href="#assortiment" class="py-3 border-b border-espresso/5">Assortiment</a>
-        <a href="#verhaal" class="py-3 border-b border-espresso/5">Ons verhaal</a>
-        <a href="#bezoek" class="py-3">Bezoek ons</a>
+<!-- ─── Marquee ─── -->
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-item">Verlichting <span>+</span></div>
+    <div class="marquee-item">Meubelen <span>+</span></div>
+    <div class="marquee-item">Pendant <span>+</span></div>
+    <div class="marquee-item">Wandlamp <span>+</span></div>
+    <div class="marquee-item">Vloerlamp <span>+</span></div>
+    <div class="marquee-item">Tafellamp <span>+</span></div>
+    <div class="marquee-item">Interieuradvies <span>+</span></div>
+    <div class="marquee-item">Op Maat <span>+</span></div>
+    <div class="marquee-item">Verlichting <span>+</span></div>
+    <div class="marquee-item">Meubelen <span>+</span></div>
+    <div class="marquee-item">Pendant <span>+</span></div>
+    <div class="marquee-item">Wandlamp <span>+</span></div>
+    <div class="marquee-item">Vloerlamp <span>+</span></div>
+    <div class="marquee-item">Tafellamp <span>+</span></div>
+    <div class="marquee-item">Interieuradvies <span>+</span></div>
+    <div class="marquee-item">Op Maat <span>+</span></div>
+  </div>
+</div>
+
+<!-- ─── Collection ─── -->
+<section class="collection" id="collectie">
+  <div class="section-label">Nieuwe collectie</div>
+  <h2 class="sr-only">Collectie overzicht</h2>
+  <div class="collection-grid">
+    <div class="col-item">
+      <div class="col-img"></div>
+      <div class="col-caption">
+        <h3>Sculptuur in Licht</h3>
+        <p>Pendant collectie &nbsp;·&nbsp; Vanaf €380</p>
       </div>
     </div>
-  </header>
-
-  <!-- Hero -->
-  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden">
-    <div class="absolute inset-0 tile-grad"></div>
-    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=2000&q=80" alt="Versgebrande koffiebonen" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover" />
-    <div class="absolute inset-0 hero-grad"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
-      <p class="text-caramel font-600 tracking-[0.3em] uppercase text-xs mb-5">Koffiebranderij · sinds 1925</p>
-      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
-        Vier generaties<br />versgebrande smaak.
-      </h1>
-      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
-        Dagvers gebrand op onze authentieke brander uit 1925. Koffie, thee, chocolade en delicatessen uit het hart van Berchem — nu ook online.
-      </p>
-      <div class="flex flex-wrap gap-3 mt-9">
-        <a href="#shop" class="bg-caramel text-espresso font-600 px-7 py-3.5 rounded-full hover:bg-copper hover:text-cream transition">Ontdek de webshop</a>
-        <a href="#bezoek" class="border border-cream/40 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">Bezoek de winkel</a>
+    <div class="col-item">
+      <div class="col-img"></div>
+      <div class="col-caption">
+        <h3>Lounge Seating</h3>
+        <p>Fauteuils &amp; Stoelen</p>
       </div>
     </div>
-  </section>
-
-  <!-- Trust strip -->
-  <section class="bg-espresso text-cream/90">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
-      <div><p class="font-serif text-2xl text-caramel">4ᵉ</p><p class="mt-1 text-cream/70">generatie familiezaak</p></div>
-      <div><p class="font-serif text-2xl text-caramel">100</p><p class="mt-1 text-cream/70">jaar ambacht (1925→2025)</p></div>
-      <div><p class="font-serif text-2xl text-caramel">75+</p><p class="mt-1 text-cream/70">soorten koffie & thee</p></div>
-      <div><p class="font-serif text-2xl text-caramel">★</p><p class="mt-1 text-cream/70">Golden Smile Award 2010</p></div>
-    </div>
-  </section>
-
-  <!-- Webshop highlight (the upsell) -->
-  <section id="shop" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <div class="fade-up">
-        <p class="text-copper font-600 tracking-[0.2em] uppercase text-xs mb-4">Nieuw online</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">Je vaste koffie,<br />nu tot aan je deur.</h2>
-        <p class="text-roast/80 text-lg mt-5 leading-relaxed max-w-md">
-          Geen tijd om langs te komen? Bestel je favoriete bonen, thee en pralines online. Wij branden, malen op maat en versturen vers — in heel België.
-        </p>
-        <ul class="mt-7 space-y-3 text-roast">
-          <li class="flex items-center gap-3"><span class="text-copper">✓</span> Maling op maat (espresso, filter, French press)</li>
-          <li class="flex items-center gap-3"><span class="text-copper">✓</span> Verzending in heel België &amp; afhaling in de winkel</li>
-          <li class="flex items-center gap-3"><span class="text-copper">✓</span> Veilig betalen met Bancontact, Visa &amp; PayPal</li>
-        </ul>
-        <a href="#assortiment" class="inline-flex items-center gap-2 mt-9 bg-espresso text-cream font-600 px-7 py-3.5 rounded-full hover:bg-roast transition">
-          Start je bestelling
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
+    <div class="col-item">
+      <div class="col-img"></div>
+      <div class="col-caption">
+        <h3>Wandcomposities</h3>
+        <p>Wandverlichting</p>
       </div>
-      <div class="fade-up grid grid-cols-2 gap-4">
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-roast">
-          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Koffie zetten" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+    </div>
+  </div>
+</section>
+
+<!-- ─── About ─── -->
+<section class="about" id="over-ons">
+  <div class="about-stat">
+    <div class="about-year" aria-hidden="true">1983</div>
+    <div class="about-year-label">Opgericht in Berchem</div>
+  </div>
+  <div class="about-body">
+    <h2>Meer dan vier decennia vakmanschap in licht en vorm</h2>
+    <p>Helios begon als een familieatelier in het hart van Berchem. Vandaag werken we samen met de meest vooruitstrevende Europese ontwerpers om licht te kiezen dat past bij wie u bent, niet bij wie iedereen denkt te moeten zijn.</p>
+    <div class="about-tags">
+      <span class="tag">Showroom &amp; Atelier</span>
+      <span class="tag">Persoonlijk Advies</span>
+      <span class="tag">Installatie</span>
+      <span class="tag">Op Maat</span>
+    </div>
+  </div>
+</section>
+
+<!-- ─── Brands ─── -->
+<section class="brands">
+  <p class="brands-label">Merken die wij verdelen</p>
+  <div class="brands-grid">
+    <div class="brand-item">Flos</div>
+    <div class="brand-item">Vibia</div>
+    <div class="brand-item">Artemide</div>
+    <div class="brand-item">Louis Poulsen</div>
+    <div class="brand-item">Oluce</div>
+  </div>
+</section>
+
+<!-- ─── Showroom CTA ─── -->
+<section class="showroom-cta" id="showroom">
+  <div class="cta-text">
+    <h2>Kom langs in ons <em>showroom.</em></h2>
+    <div class="cta-details">
+      <div class="cta-detail-row">
+        <div class="cta-detail">
+          <span class="cta-detail-label">Adres</span>
+          <span class="cta-detail-val">Driekoningenstraat 14<br>2600 Berchem</span>
         </div>
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-roast mt-8">
-          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Espresso" loading="lazy" decoding="async" class="w-full h-full object-cover" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Assortiment -->
-  <section id="assortiment" class="bg-sand/60 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
-        <div>
-          <p class="text-copper font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
-          <h2 class="font-serif text-4xl sm:text-5xl font-600">Alles voor de fijnproever</h2>
-        </div>
-        <p class="text-roast/70 max-w-sm">Van versgebrande bonen tot Italiaanse delicatessen — zorgvuldig geselecteerd sinds 1925.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <!-- card -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
-          <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80" alt="Koffie" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
-          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Koffie</h3>
-            <p class="text-cream/75 text-sm mt-1">15+ blends, ambachtelijk gebrand — incl. onze Felix espresso.</p>
-          </div>
-        </article>
-        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
-          <img src="https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&w=800&q=80" alt="Thee" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
-          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Thee</h3>
-            <p class="text-cream/75 text-sm mt-1">60+ soorten: fruit, groen, zwart en matcha.</p>
-          </div>
-        </article>
-        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
-          <img src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&w=800&q=80" alt="Chocolade" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
-          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Chocolaterie</h3>
-            <p class="text-cream/75 text-sm mt-1">Pralines, nougatines, marsepein en meer.</p>
-          </div>
-        </article>
-        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
-          <img src="https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?auto=format&fit=crop&w=800&q=80" alt="Confiserie" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
-          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Confiserie</h3>
-            <p class="text-cream/75 text-sm mt-1">Muisjes, zuurtjes, mokatines &amp; jappekes.</p>
-          </div>
-        </article>
-        <article class="fade-up group rounded-2xl overflow-hidden bg-espresso text-cream relative aspect-[4/5]">
-          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=800&q=80" alt="Delicatessen" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
-          <div class="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Delicatessen</h3>
-            <p class="text-cream/75 text-sm mt-1">Italiaanse wijn, pasta, tapenades &amp; olijven.</p>
-          </div>
-        </article>
-        <article class="fade-up group rounded-2xl overflow-hidden tile-grad text-cream relative aspect-[4/5] flex items-center justify-center text-center p-6">
-          <div>
-            <p class="font-serif text-2xl font-600">Geschenk&shy;pakketten</p>
-            <p class="text-cream/75 text-sm mt-2">Stel zelf je pakket samen — perfect om te schenken.</p>
-            <a href="#shop" class="inline-block mt-5 text-caramel font-600 underline-grow">Stel samen →</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured products -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="flex items-end justify-between mb-10">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600">Klassiekers van het huis</h2>
-      <a href="#shop" class="hidden sm:inline text-copper font-600 underline-grow">Alles bekijken →</a>
-    </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand"><img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=700&q=80" alt="Felix Koffie" loading="lazy" decoding="async" class="w-full h-full object-cover" /></div>
-        <div class="p-4">
-          <p class="text-xs text-copper font-600 uppercase tracking-wider">Bestseller</p>
-          <h3 class="font-serif text-xl font-600 mt-1">Felix Espressoblend</h3>
-          <p class="text-roast/60 text-sm mt-1">Vol &amp; krachtig — onze handtekening sinds decennia.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="font-600 text-lg">€ 8,50 <span class="text-sm text-roast/50 font-400">/ 250g</span></span>
-            <button class="bg-espresso text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-roast transition">In mandje</button>
-          </div>
+        <div class="cta-detail">
+          <span class="cta-detail-label">Openingstijden</span>
+          <span class="cta-detail-val">Di-Za: 10:00 - 18:00<br>Zo-Ma: Gesloten</span>
         </div>
       </div>
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand"><img src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?auto=format&fit=crop&w=700&q=80" alt="Verse thee" loading="lazy" decoding="async" class="w-full h-full object-cover" /></div>
-        <div class="p-4">
-          <p class="text-xs text-copper font-600 uppercase tracking-wider">Favoriet</p>
-          <h3 class="font-serif text-xl font-600 mt-1">Losse Matcha &amp; groene thee</h3>
-          <p class="text-roast/60 text-sm mt-1">Verse blends, per 100g afgewogen.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="font-600 text-lg">€ 6,00 <span class="text-sm text-roast/50 font-400">/ 100g</span></span>
-            <button class="bg-espresso text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-roast transition">In mandje</button>
-          </div>
+      <div class="cta-detail-row">
+        <div class="cta-detail">
+          <span class="cta-detail-label">Contact</span>
+          <span class="cta-detail-val">info@helios-berchem.be<br>+32 3 230 00 00</span>
         </div>
       </div>
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand"><img src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&w=700&q=80" alt="Pralines" loading="lazy" decoding="async" class="w-full h-full object-cover" /></div>
-        <div class="p-4">
-          <p class="text-xs text-copper font-600 uppercase tracking-wider">Geschenk</p>
-          <h3 class="font-serif text-xl font-600 mt-1">Assortiment Pralines</h3>
-          <p class="text-roast/60 text-sm mt-1">Handgekozen doosje — ideaal cadeau.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="font-600 text-lg">€ 12,90 <span class="text-sm text-roast/50 font-400">/ doos</span></span>
-            <button class="bg-espresso text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-roast transition">In mandje</button>
-          </div>
-        </div>
-      </div>
+      <a href="mailto:info@helios-berchem.be" class="btn-primary" style="align-self:flex-start">Stuur een bericht</a>
     </div>
-    <p class="text-center text-xs text-roast/40 mt-6">Voorbeeldproducten &amp; prijzen ter illustratie van de webshop.</p>
-  </section>
+  </div>
+  <div class="cta-map">
+    <div class="cta-map-inner">
+      <div class="map-pin"></div>
+    </div>
+  </div>
+</section>
 
-  <!-- Verhaal -->
-  <section id="verhaal" class="bg-espresso text-cream py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
-      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
-        <img src="https://images.unsplash.com/photo-1442550528053-c431ecb55509?auto=format&fit=crop&w=1000&q=80" alt="Ambachtelijk koffiebranden" loading="lazy" decoding="async" class="w-full h-full object-cover" />
-      </div>
-      <div class="order-1 lg:order-2 fade-up">
-        <p class="text-caramel font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">Sinds 1925 trouw aan ons ambacht.</h2>
-        <p class="text-cream/80 text-lg mt-6 leading-relaxed">
-          Vier generaties lang branden wij koffie op dezelfde authentieke machine uit 1925. Wat begon als een buurtwinkel in de Statiestraat groeide uit tot een vaste waarde voor wie houdt van echte smaak.
-        </p>
-        <p class="text-cream/80 text-lg mt-4 leading-relaxed">
-          <span class="font-serif italic text-caramel">"Wij geloven in producten met een ongelooflijke smaak."</span>
-        </p>
-        <div class="flex gap-10 mt-9 pt-8 border-t border-cream/15">
-          <div><p class="font-serif text-3xl text-caramel">1925</p><p class="text-cream/60 text-sm mt-1">Opgericht</p></div>
-          <div><p class="font-serif text-3xl text-caramel">2010</p><p class="text-cream/60 text-sm mt-1">Golden Smile Award</p></div>
-          <div><p class="font-serif text-3xl text-caramel">Berchem</p><p class="text-cream/60 text-sm mt-1">Statiestraat 13</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- ─── Footer ─── -->
+<footer>
+  <div class="footer-logo">H<span>e</span>lios</div>
+  <ul class="footer-links">
+    <li><a href="#">Privacy</a></li>
+    <li><a href="#">Cookies</a></li>
+    <li><a href="#">Sitemap</a></li>
+  </ul>
+  <p class="footer-copy">© 2025 Helios Berchem</p>
+</footer>
 
-  <!-- Bezoek -->
-  <section id="bezoek" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-12">
-    <div class="fade-up">
-      <p class="text-copper font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
-      <h2 class="font-serif text-4xl sm:text-5xl font-600">Welkom in de winkel</h2>
-      <p class="text-roast/70 text-lg mt-5 max-w-md">Kom de geur van versgebrande koffie zelf opsnuiven in hartje Berchem.</p>
-
-      <dl class="mt-9 space-y-5 text-roast">
-        <div class="flex gap-4">
-          <span class="text-copper mt-1" aria-hidden="true">📍</span>
-          <div><dt class="font-600">Adres</dt><dd class="text-roast/70">Statiestraat 13, 2600 Berchem</dd></div>
-        </div>
-        <div class="flex gap-4">
-          <span class="text-copper mt-1" aria-hidden="true">🕑</span>
-          <div><dt class="font-600">Openingsuren</dt><dd class="text-roast/70">Di–Za: 10:00–18:00 · Zo &amp; Ma: gesloten</dd></div>
-        </div>
-        <div class="flex gap-4">
-          <span class="text-copper mt-1" aria-hidden="true">📞</span>
-          <div><dt class="font-600">Telefoon</dt><dd class="text-roast/70">03 239 24 54</dd></div>
-        </div>
-        <div class="flex gap-4">
-          <span class="text-copper mt-1" aria-hidden="true">✉️</span>
-          <div><dt class="font-600">E-mail</dt><dd class="text-roast/70">info@heliosberchem.be</dd></div>
-        </div>
-      </dl>
-      <a href="#shop" class="inline-block mt-9 bg-espresso text-cream font-600 px-7 py-3.5 rounded-full hover:bg-roast transition">Of bestel online →</a>
-    </div>
-    <div class="rounded-3xl overflow-hidden min-h-[340px] bg-sand">
-      <iframe title="Kaart Helios Berchem" class="w-full h-full min-h-[340px] border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=4.430%2C51.197%2C4.445%2C51.204&layer=mapnik&marker=51.2006%2C4.4375"></iframe>
-    </div>
-  </section>
-
-  <!-- Newsletter / CTA -->
-  <section class="bg-caramel/25">
-    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600">Blijf op de hoogte</h2>
-      <p class="text-roast/70 mt-3">Nieuwe blends, seizoensproducten en acties — af en toe in je mailbox.</p>
-      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
-        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
-        <input id="nl-email" name="email" type="email" autocomplete="email" required placeholder="jouw@email.be" class="flex-1 px-5 py-3 rounded-full border border-roast/20 bg-cream focus:outline-none focus:ring-2 focus:ring-copper" />
-        <button class="bg-espresso text-cream font-600 px-7 py-3 rounded-full hover:bg-roast transition">Inschrijven</button>
-      </form>
-      <p class="text-xs text-roast/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-espresso text-cream/80">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div>
-        <p class="font-serif text-2xl text-cream font-700">Helios <span class="text-caramel text-sm align-top">1925</span></p>
-        <p class="text-cream/60 text-sm mt-3 max-w-xs">Ambachtelijke koffiebranderij, theehuis &amp; chocolaterie in Berchem. Vierde generatie.</p>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Winkel</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li><a href="#assortiment" class="hover:text-caramel">Assortiment</a></li>
-          <li><a href="#shop" class="hover:text-caramel">Webshop</a></li>
-          <li><a href="#shop" class="hover:text-caramel">Geschenkpakketten</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Info</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li><a href="#verhaal" class="hover:text-caramel">Ons verhaal</a></li>
-          <li><a href="#bezoek" class="hover:text-caramel">Openingsuren</a></li>
-          <li><a href="#bezoek" class="hover:text-caramel">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Contact</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li>Statiestraat 13, 2600 Berchem</li>
-          <li>03 239 24 54</li>
-          <li>info@heliosberchem.be</li>
-        </ul>
-      </div>
-    </div>
-    <div class="border-t border-cream/10">
-      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/45">
-        <p>© 2026 Helios Berchem. Concept-redesign.</p>
-        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; webshop.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const fades = document.querySelectorAll('.fade-up');
-    if (reduce) {
-      fades.forEach((el) => el.classList.add('in'));
-    } else {
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-      }, { threshold: 0.12 });
-      fades.forEach((el) => io.observe(el));
-      // Safety: never leave content stuck hidden if the observer doesn't fire (e.g. no scroll).
-      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1600);
+<script>
+/* Headroom scroll-aware nav */
+(function () {
+  var nav = document.getElementById('nav');
+  var lastY = 0, ticking = false;
+  var OFFSET = 80, TOL_DOWN = 8, TOL_UP = 5;
+  function update() {
+    var y = window.scrollY;
+    var delta = y - lastY;
+    if (y <= OFFSET) {
+      nav.classList.remove('headroom--unpinned', 'headroom--not-top');
+      nav.classList.add('headroom--pinned');
+    } else if (delta > TOL_DOWN) {
+      nav.classList.add('headroom--unpinned', 'headroom--not-top');
+      nav.classList.remove('headroom--pinned');
+    } else if (delta < -TOL_UP) {
+      nav.classList.remove('headroom--unpinned');
+      nav.classList.add('headroom--pinned', 'headroom--not-top');
     }
-
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (menuBtn && mobileMenu) {
-      const setOpen = (open) => {
-        if (open) mobileMenu.removeAttribute('hidden');
-        else mobileMenu.setAttribute('hidden', '');
-        menuBtn.setAttribute('aria-expanded', String(open));
-        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
-      };
-      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
-      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
-    }
-  </script>
+    lastY = y;
+    ticking = false;
+  }
+  window.addEventListener('scroll', function () {
+    if (!ticking) { requestAnimationFrame(update); ticking = true; }
+  }, { passive: true });
+  nav.classList.add('headroom--pinned');
+})();
+</script>
 </body>
 </html>

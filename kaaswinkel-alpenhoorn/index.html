@@ -1,658 +1,1684 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta name="robots" content="noindex, nofollow" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kaaswinkel Alpenhoorn — De kaaswinkel van Ekeren</title>
-  <meta name="description" content="Ambachtelijke kaaswinkel in Ekeren: een rijk assortiment Belgische &amp; buitenlandse kazen, kaasschotels, cadeaumanden en alpentoppers. Binnenkort online bestellen met click-and-collect en een kaaswebshop." />
-  <link rel="canonical" href="https://kaaswinkelalpenhoorn.be/" />
-  <meta name="theme-color" content="#4a3410" />
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Kaaswinkel Alpenhoorn" />
-  <meta property="og:locale" content="nl_BE" />
-  <meta property="og:title" content="Kaaswinkel Alpenhoorn — De kaaswinkel van Ekeren" />
-  <meta property="og:description" content="Een rijk assortiment Belgische &amp; buitenlandse kazen, kaasschotels, cadeaumanden en alpentoppers in Ekeren. Binnenkort online bestellen &amp; click-and-collect." />
-  <meta property="og:url" content="https://kaaswinkelalpenhoorn.be/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=1200&q=80" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- Inline SVG favicon — monogram "Al" -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234a3410'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%23c8a45a' text-anchor='middle'%3EAl%3C/text%3E%3C/svg%3E" />
-  <!-- Local-SEO structured data -->
+  <title>Kaaswinkel Alpenhoorn — Bergkazen uit Ekeren</title>
+  <meta name="description" content="Kaaswinkel Alpenhoorn in Ekeren. Specialist in bergkazen: Gruyère, Emmental, Raclette, Appenzeller en Beaufort. Van de Alpen naar uw tafel." />
+
+  <!-- Favicon: inline SVG alpine horn -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d1118'/%3E%3Cpath d='M4 24 C4 24 8 10 14 10 C18 10 20 14 26 14 L28 20 L24 18 C20 18 18 14 14 14 C10 14 7 22 4 24 Z' fill='%23d4731a'/%3E%3Cpath d='M4 20 L6 18 L8 22 L4 24 Z' fill='%23d0d8e4'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: non-blocking preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=DM+Sans:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" /></noscript>
+
+  <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["Store", "FoodEstablishment"],
+    "@type": "LocalBusiness",
     "name": "Kaaswinkel Alpenhoorn",
-    "description": "Ambachtelijke kaaswinkel in Ekeren met een rijk assortiment Belgische en buitenlandse kazen, kaasschotels, cadeaumanden en alpentoppers.",
-    "image": "https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=1200&q=80",
-    "url": "https://kaaswinkelalpenhoorn.be/",
-    "telephone": "+3235417035",
-    "servesCuisine": ["Belgian", "Cheese"],
-    "priceRange": "€€",
-    "areaServed": "BE",
+    "description": "Specialist in bergkazen uit de Alpen. Gruyère, Emmental, Raclette, Appenzeller, Beaufort en meer — in Ekeren.",
+    "telephone": "03 541 70 35",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Kloosterstraat 18",
-      "postalCode": "2180",
       "addressLocality": "Ekeren",
       "addressRegion": "Antwerpen",
       "addressCountry": "BE"
     },
-    "geo": { "@type": "GeoCoordinates", "latitude": 51.2790, "longitude": 4.4180 },
     "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "18:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "09:00", "closes": "12:30" }
-    ]
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    ],
+    "priceRange": "€€",
+    "servesCuisine": "Cheese"
   }
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
-          colors: {
-            ochre:    '#4a3410',
-            ochrelt:  '#5c4216',
-            ochredk:  '#392708',
-            cream:    '#c8a45a',
-            creamlt:  '#dcc089',
-            pine:     '#2f5a3a',
-            pinelt:   '#3d6e49',
-            paper:    '#f7f1e3',
-            parchment:'#eaddc4',
-            charcoal: '#2b2620',
-          },
-        },
-      },
-    };
-  </script>
+
   <style>
+    /* ─── Reset & Base ──────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --night:       #0d1118;
+      --night-mid:   #131922;
+      --night-light: #1a2334;
+      --steel:       #d0d8e4;
+      --steel-dim:   #8a97a8;
+      --amber:       #d4731a;
+      --amber-light: #e8892b;
+      --cream:       #f4ede0;
+      --cream-dim:   rgba(244,237,224,0.80);
+      --cream-faint: rgba(244,237,224,0.45);
+
+      --font-display: 'Fraunces', Georgia, serif;
+      --font-body:    'DM Sans', system-ui, sans-serif;
+
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 16px;
+
+      --nav-h: 72px;
+      --section-gap: clamp(80px, 10vw, 140px);
+    }
+
     html { scroll-behavior: smooth; }
-    .hero-grad { background: linear-gradient(180deg, rgba(57,39,8,.18) 0%, rgba(57,39,8,.52) 50%, rgba(57,39,8,.92) 100%); }
-    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
-    .fade-up.in { opacity: 1; transform: none; }
-    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
-    .ug:hover { background-size: 100% 2px; }
+
+    body {
+      background-color: var(--night);
+      color: var(--cream);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ─── Utility ──────────────────────────────────────────────── */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 clamp(20px, 4vw, 60px);
+    }
+
+    .label {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--amber);
+    }
+
+    /* ─── Fade-up on scroll ─────────────────────────────────────── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .fade-up.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── NAV (Headroom) ────────────────────────────────────────── */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      background: transparent;
+      transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .nav.headroom--pinned   { transform: translateY(0); }
+    .nav.headroom--unpinned { transform: translateY(-100%); }
+    .nav.headroom--scrolled {
+      background: rgba(13,17,24,0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 1px 0 rgba(208,216,228,0.08);
+    }
+
+    .nav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 clamp(20px, 4vw, 60px);
+    }
+
+    .nav__logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .nav__logo-text {
+      font-family: var(--font-display);
+      font-size: 18px;
+      color: var(--cream);
+      letter-spacing: -0.01em;
+      line-height: 1.1;
+    }
+    .nav__logo-sub {
+      font-family: var(--font-body);
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--steel-dim);
+      display: block;
+      margin-top: 1px;
+    }
+
+    .nav__links {
+      display: flex;
+      gap: 36px;
+      list-style: none;
+    }
+    .nav__links a {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--cream-dim);
+      transition: color 0.2s;
+    }
+    .nav__links a:hover { color: var(--cream); }
+
+    .nav__cta {
+      font-family: var(--font-body);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--night);
+      background: var(--amber);
+      padding: 10px 22px;
+      border-radius: var(--radius-sm);
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .nav__cta:hover { background: var(--amber-light); }
+
+    @media (max-width: 768px) { .nav__links { display: none; } }
+
+    /* ─── HERO ──────────────────────────────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      padding-bottom: clamp(60px, 8vw, 100px);
+    }
+
+    .hero__canvas {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .hero__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(13,17,24,0.96) 0%,
+        rgba(13,17,24,0.55) 45%,
+        rgba(13,17,24,0.22) 100%
+      );
+      z-index: 1;
+    }
+
+    .hero__ghost {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -52%);
+      font-family: var(--font-display);
+      font-size: clamp(80px, 16vw, 220px);
+      font-weight: 600;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(208,216,228,0.10);
+      letter-spacing: -0.04em;
+      white-space: nowrap;
+      user-select: none;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 3;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 clamp(20px, 4vw, 60px);
+      width: 100%;
+    }
+
+    .hero__eyebrow { margin-bottom: 20px; }
+
+    .hero__headline {
+      font-family: var(--font-display);
+      font-size: clamp(42px, 7.5vw, 108px);
+      font-weight: 600;
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+      color: var(--cream);
+      max-width: 820px;
+      margin-bottom: 28px;
+    }
+    .hero__headline em {
+      font-style: normal;
+      color: var(--amber);
+    }
+
+    .hero__sub {
+      font-family: var(--font-body);
+      font-size: clamp(15px, 1.8vw, 18px);
+      color: var(--cream-dim);
+      max-width: 480px;
+      margin-bottom: 44px;
+      line-height: 1.65;
+    }
+
+    .hero__actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      color: var(--night);
+      background: var(--amber);
+      padding: 14px 28px;
+      border-radius: var(--radius-sm);
+      transition: background 0.2s, transform 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-primary:hover { background: var(--amber-light); transform: translateY(-1px); }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--cream-dim);
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(244,237,224,0.25);
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .btn-ghost:hover { color: var(--cream); border-color: var(--cream); }
+
+    .hero__scroll-hint {
+      position: absolute;
+      bottom: 28px;
+      right: clamp(20px, 4vw, 60px);
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      opacity: 0.45;
+    }
+    .hero__scroll-hint span {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      writing-mode: vertical-rl;
+      color: var(--steel);
+    }
+    .hero__scroll-line {
+      width: 1px;
+      height: 48px;
+      background: linear-gradient(to bottom, var(--steel), transparent);
+    }
+
+    /* ─── MARQUEE ───────────────────────────────────────────────── */
+    .marquee-section {
+      border-top: 1px solid rgba(208,216,228,0.08);
+      border-bottom: 1px solid rgba(208,216,228,0.08);
+      padding: 20px 0;
+      overflow: hidden;
+      background: var(--night-mid);
+    }
+    .marquee-track {
+      display: flex;
+      white-space: nowrap;
+      animation: marquee-scroll 28s linear infinite;
+    }
+    .marquee-track:hover { animation-play-state: paused; }
+
+    @keyframes marquee-scroll {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    .marquee-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 28px;
+      padding: 0 28px;
+      font-family: var(--font-display);
+      font-size: clamp(13px, 1.4vw, 16px);
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: var(--steel-dim);
+    }
+    .marquee-dot {
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--amber);
+      flex-shrink: 0;
+    }
+
+    /* ─── SECTIONS ──────────────────────────────────────────────── */
+    .section { padding: var(--section-gap) 0; }
+
+    .section__header { margin-bottom: clamp(48px, 6vw, 80px); }
+
+    .section__headline {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 5vw, 64px);
+      font-weight: 600;
+      line-height: 1.08;
+      letter-spacing: -0.025em;
+      color: var(--cream);
+      margin-top: 14px;
+    }
+
+    .section__sub {
+      margin-top: 16px;
+      font-size: clamp(14px, 1.5vw, 16px);
+      color: var(--cream-dim);
+      max-width: 560px;
+      line-height: 1.65;
+    }
+
+    /* ─── CHEESE GRID ───────────────────────────────────────────── */
+    .cheese-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 2px;
+    }
+    @media (max-width: 1024px) {
+      .cheese-grid { grid-template-columns: repeat(3, 1fr); }
+      .cheese-grid .cheese-card:nth-child(n+4) { display: none; }
+    }
+    @media (max-width: 640px) {
+      .cheese-grid { grid-template-columns: repeat(2, 1fr); }
+      .cheese-grid .cheese-card:nth-child(n+3) { display: none; }
+    }
+
+    .cheese-card {
+      background: var(--night-light);
+      border: 1px solid rgba(208,216,228,0.06);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+    .cheese-card:hover { transform: translateY(-4px); border-color: rgba(212,115,26,0.35); }
+
+    .cheese-card__visual {
+      aspect-ratio: 3/2;
+      position: relative;
+      overflow: hidden;
+      background: var(--night-mid);
+    }
+    .cheese-card__svg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      inset: 0;
+    }
+
+    .cheese-card__body {
+      padding: 20px 18px 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cheese-card__origin {
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--amber);
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+    .cheese-card__name {
+      font-family: var(--font-display);
+      font-size: clamp(18px, 2vw, 24px);
+      font-weight: 600;
+      color: var(--cream);
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+    .cheese-card__desc {
+      font-size: 13px;
+      color: var(--cream-dim);
+      line-height: 1.55;
+      flex: 1;
+    }
+    .cheese-card__profile {
+      display: flex;
+      gap: 6px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+    .profile-tag {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      color: var(--steel-dim);
+      background: rgba(208,216,228,0.06);
+      border: 1px solid rgba(208,216,228,0.1);
+      border-radius: 20px;
+      padding: 3px 10px;
+    }
+
+    /* ─── FONDUE SECTION ────────────────────────────────────────── */
+    .fondue-section {
+      background: var(--night-mid);
+      position: relative;
+      overflow: hidden;
+    }
+    .fondue-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(212,115,26,0.4), transparent);
+    }
+
+    .fondue-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(40px, 6vw, 80px);
+      align-items: center;
+    }
+    @media (max-width: 768px) { .fondue-inner { grid-template-columns: 1fr; } }
+
+    .fondue-visual {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: var(--night-light);
+    }
+    .fondue-visual__svg { width: 100%; height: 100%; }
+
+    .fondue-badge {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: var(--amber);
+      color: var(--night);
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+    }
+
+    .fondue-list {
+      list-style: none;
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .fondue-list li {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .fondue-list__icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .fondue-list__text strong {
+      display: block;
+      font-weight: 500;
+      font-size: 15px;
+      color: var(--cream);
+      margin-bottom: 2px;
+    }
+    .fondue-list__text span { font-size: 13px; color: var(--cream-dim); }
+    .fondue-cta { margin-top: 36px; }
+
+    /* ─── ADVIES ────────────────────────────────────────────────── */
+    .advies-section { position: relative; overflow: hidden; }
+    .advies-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 15% 100%, rgba(212,115,26,0.06) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 80% at 85% 0%, rgba(208,216,228,0.04) 0%, transparent 60%);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .advies-inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 5fr 4fr;
+      gap: clamp(40px, 7vw, 100px);
+      align-items: start;
+    }
+    @media (max-width: 768px) { .advies-inner { grid-template-columns: 1fr; } }
+
+    .advies-quote__mark {
+      font-family: var(--font-display);
+      font-size: 120px;
+      line-height: 0.7;
+      color: rgba(212,115,26,0.15);
+      user-select: none;
+      margin-bottom: -16px;
+      display: block;
+    }
+    .advies-quote__text {
+      font-family: var(--font-display);
+      font-size: clamp(24px, 3.5vw, 42px);
+      font-weight: 600;
+      line-height: 1.18;
+      letter-spacing: -0.02em;
+      color: var(--cream);
+      margin-bottom: 28px;
+    }
+    .advies-quote__attribution {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .advies-quote__avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+      border: 2px solid rgba(212,115,26,0.3);
+    }
+    .advies-quote__name { font-weight: 500; font-size: 15px; color: var(--cream); }
+    .advies-quote__role { font-size: 12px; color: var(--cream-dim); letter-spacing: 0.04em; }
+
+    .advies-right { padding-top: 8px; }
+    .advies-right .section__headline { font-size: clamp(26px, 3vw, 40px); margin-bottom: 20px; }
+
+    .advies-features {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .advies-feature {
+      display: flex;
+      gap: 16px;
+      padding: 20px;
+      background: var(--night-light);
+      border: 1px solid rgba(208,216,228,0.06);
+      border-radius: var(--radius-md);
+      transition: border-color 0.2s;
+    }
+    .advies-feature:hover { border-color: rgba(212,115,26,0.25); }
+    .advies-feature__num {
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 600;
+      color: rgba(212,115,26,0.35);
+      line-height: 1;
+      flex-shrink: 0;
+      padding-top: 2px;
+    }
+    .advies-feature__content strong {
+      display: block;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--cream);
+      margin-bottom: 4px;
+    }
+    .advies-feature__content span {
+      font-size: 13px;
+      color: var(--cream-dim);
+      line-height: 1.5;
+    }
+
+    /* ─── METRICS STRIP ─────────────────────────────────────────── */
+    .metrics-strip {
+      background: var(--night-light);
+      border-top: 1px solid rgba(208,216,228,0.06);
+      border-bottom: 1px solid rgba(208,216,228,0.06);
+      padding: clamp(40px, 5vw, 64px) 0;
+    }
+    .metrics-inner {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+    }
+    @media (max-width: 640px) {
+      .metrics-inner { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    }
+    .metric-item {
+      padding: 0 clamp(20px, 3vw, 40px);
+      border-right: 1px solid rgba(208,216,228,0.06);
+      text-align: center;
+    }
+    .metric-item:last-child { border-right: none; }
+    .metric-item__val {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 4.5vw, 56px);
+      font-weight: 600;
+      color: var(--cream);
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+    .metric-item__val sup { font-size: 0.45em; color: var(--amber); vertical-align: super; }
+    .metric-item__label {
+      font-size: 12px;
+      color: var(--cream-dim);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 10px;
+    }
+
+    /* ─── BEZOEK ─────────────────────────────────────────────────── */
+    .bezoek-section { background: var(--night); }
+
+    .bezoek-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(48px, 7vw, 100px);
+      align-items: start;
+    }
+    @media (max-width: 768px) { .bezoek-inner { grid-template-columns: 1fr; } }
+
+    .bezoek-map {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: var(--night-light);
+      border: 1px solid rgba(208,216,228,0.06);
+    }
+    .bezoek-map__svg { width: 100%; height: 100%; }
+
+    .bezoek-details { padding-top: 8px; }
+    .bezoek-details .section__headline { margin-bottom: 32px; }
+
+    .bezoek-info-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .bezoek-info-item { display: flex; gap: 16px; align-items: flex-start; }
+    .bezoek-info-icon {
+      width: 20px; height: 20px;
+      flex-shrink: 0;
+      margin-top: 2px;
+      color: var(--amber);
+    }
+    .bezoek-info-label {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 4px;
+      font-weight: 500;
+    }
+    .bezoek-info-value { font-size: 16px; color: var(--cream); font-weight: 500; }
+    .bezoek-info-value a { color: var(--cream); transition: color 0.2s; }
+    .bezoek-info-value a:hover { color: var(--amber); }
+
+    .bezoek-hours {
+      margin-top: 28px;
+      padding: 20px;
+      background: var(--night-light);
+      border: 1px solid rgba(208,216,228,0.06);
+      border-radius: var(--radius-md);
+    }
+    .bezoek-hours__title {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--amber);
+      font-weight: 500;
+      margin-bottom: 14px;
+    }
+    .bezoek-hours__row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      padding: 5px 0;
+      border-bottom: 1px solid rgba(208,216,228,0.05);
+      color: var(--cream-dim);
+    }
+    .bezoek-hours__row:last-child { border-bottom: none; }
+    .bezoek-hours__row strong { color: var(--cream); font-weight: 500; }
+
+    .bezoek-cta-block {
+      margin-top: 36px;
+      padding: 28px;
+      background: linear-gradient(135deg, rgba(212,115,26,0.12) 0%, rgba(212,115,26,0.04) 100%);
+      border: 1px solid rgba(212,115,26,0.25);
+      border-radius: var(--radius-md);
+    }
+    .bezoek-cta-block p {
+      font-size: 14px;
+      color: var(--cream-dim);
+      margin-bottom: 16px;
+      line-height: 1.55;
+    }
+    .btn-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-display);
+      font-size: clamp(20px, 2.5vw, 28px);
+      font-weight: 600;
+      color: var(--cream);
+      letter-spacing: -0.01em;
+      transition: color 0.2s;
+    }
+    .btn-phone:hover { color: var(--amber); }
+
+    /* ─── CTA BANNER ─────────────────────────────────────────────── */
+    .cta-banner {
+      position: relative;
+      background: var(--night-light);
+      border-top: 1px solid rgba(208,216,228,0.06);
+      overflow: hidden;
+      padding: clamp(60px, 8vw, 110px) 0;
+    }
+    .cta-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 80% at 50% 120%, rgba(212,115,26,0.1) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .cta-banner__ghost {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: var(--font-display);
+      font-size: clamp(60px, 14vw, 180px);
+      font-weight: 600;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(208,216,228,0.05);
+      letter-spacing: -0.04em;
+      white-space: nowrap;
+      user-select: none;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .cta-banner__inner { position: relative; z-index: 1; text-align: center; }
+    .cta-banner__headline {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 5.5vw, 72px);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      line-height: 1.06;
+      color: var(--cream);
+      max-width: 700px;
+      margin: 16px auto 28px;
+    }
+    .cta-banner__sub {
+      font-size: clamp(14px, 1.5vw, 17px);
+      color: var(--cream-dim);
+      max-width: 440px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+    .cta-banner__actions {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ─── FOOTER ─────────────────────────────────────────────────── */
+    .footer {
+      background: var(--night);
+      border-top: 1px solid rgba(208,216,228,0.06);
+      padding: clamp(40px, 5vw, 60px) 0 clamp(24px, 3vw, 32px);
+    }
+    .footer__inner {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+    }
+    @media (max-width: 640px) { .footer__inner { grid-template-columns: 1fr; gap: 32px; } }
+
+    .footer__brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .footer__tagline { font-size: 13px; color: var(--cream-dim); line-height: 1.6; max-width: 280px; }
+    .footer__heading {
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--amber);
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+    .footer__list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer__list a { font-size: 14px; color: var(--cream-dim); transition: color 0.2s; }
+    .footer__list a:hover { color: var(--cream); }
+
+    .footer__bottom {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(208,216,228,0.06);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer__copy { font-size: 12px; color: var(--steel-dim); }
+    .footer__ekeren { font-size: 12px; color: var(--steel-dim); letter-spacing: 0.08em; }
   </style>
 </head>
-<body class="bg-paper text-ochre font-sans antialiased selection:bg-cream/30">
+<body>
 
-  <!-- Skip link -->
-  <a href="#bestellen" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-ochre focus:text-paper focus:rounded-full">Naar online bestellen</a>
+  <!-- NAV -->
+  <nav class="nav" id="headroom-nav" aria-label="Hoofdnavigatie">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="Kaaswinkel Alpenhoorn — homepage">
+        <svg width="34" height="34" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="36" height="36" rx="5" fill="#131922"/>
+          <path d="M3 27 L11 12 L16 20 L21 8 L28 27 Z" fill="none" stroke="#d0d8e4" stroke-width="1.2" stroke-linejoin="round"/>
+          <path d="M5 25 C7 25 9 21 12 19 C15 17 18 19 22 19 C26 19 29 17 33 21" stroke="#d4731a" stroke-width="2" stroke-linecap="round" fill="none"/>
+          <circle cx="5" cy="25" r="2" fill="#d4731a"/>
+        </svg>
+        <div>
+          <span class="nav__logo-text">Alpenhoorn</span>
+          <span class="nav__logo-sub">Kaaswinkel · Ekeren</span>
+        </div>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#bergkazen">Bergkazen</a></li>
+        <li><a href="#fondue">Fondue &amp; Raclette</a></li>
+        <li><a href="#advies">Advies</a></li>
+        <li><a href="#bezoek">Bezoek ons</a></li>
+      </ul>
+      <a href="tel:035417035" class="nav__cta">Bel: 03 541 70 35</a>
+    </div>
+  </nav>
 
-  <!-- Announcement bar -->
-  <div class="bg-ochre text-paper text-center text-[13px] tracking-wide py-2 px-4">
-    <span aria-hidden="true">🧀</span> <span class="font-semibold">Binnenkort:</span> online kaaswebshop &amp; click-and-collect — plus kaasschotels &amp; cadeaumanden · Kloosterstraat 18, Ekeren.
+  <!-- HERO — bottom-left text over alpine canvas -->
+  <section class="hero" aria-labelledby="hero-headline">
+
+    <svg class="hero__canvas" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#070c15"/>
+          <stop offset="60%" stop-color="#0d1118"/>
+          <stop offset="100%" stop-color="#141c2a"/>
+        </linearGradient>
+        <linearGradient id="snow" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#d0d8e4" stop-opacity="0.95"/>
+          <stop offset="100%" stop-color="#8a97a8" stop-opacity="0.2"/>
+        </linearGradient>
+        <linearGradient id="mtfar" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#1a2334"/>
+          <stop offset="100%" stop-color="#0d1118"/>
+        </linearGradient>
+        <radialGradient id="star-glow" cx="50%" cy="25%" r="55%">
+          <stop offset="0%" stop-color="#d0d8e4" stop-opacity="0.05"/>
+          <stop offset="100%" stop-color="#d0d8e4" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <rect width="1440" height="900" fill="url(#sky)"/>
+      <rect width="1440" height="900" fill="url(#star-glow)"/>
+
+      <!-- Stars -->
+      <g fill="#d0d8e4">
+        <circle cx="110" cy="72" r="0.9" opacity="0.55"/><circle cx="265" cy="50" r="1.1" opacity="0.4"/>
+        <circle cx="440" cy="95" r="0.7" opacity="0.65"/><circle cx="610" cy="38" r="0.8" opacity="0.5"/>
+        <circle cx="775" cy="70" r="0.6" opacity="0.6"/><circle cx="940" cy="28" r="1.0" opacity="0.35"/>
+        <circle cx="1085" cy="62" r="0.9" opacity="0.5"/><circle cx="1265" cy="42" r="0.7" opacity="0.65"/>
+        <circle cx="190" cy="135" r="0.6" opacity="0.4"/><circle cx="350" cy="158" r="0.8" opacity="0.3"/>
+        <circle cx="520" cy="125" r="0.5" opacity="0.5"/><circle cx="690" cy="150" r="0.7" opacity="0.4"/>
+        <circle cx="855" cy="118" r="0.6" opacity="0.5"/><circle cx="1025" cy="140" r="0.9" opacity="0.3"/>
+        <circle cx="1190" cy="108" r="0.7" opacity="0.4"/><circle cx="1370" cy="88" r="0.5" opacity="0.6"/>
+        <circle cx="75"  cy="195" r="0.5" opacity="0.3"/><circle cx="325" cy="182" r="0.6" opacity="0.35"/>
+        <circle cx="480" cy="205" r="0.4" opacity="0.4"/><circle cx="645" cy="192" r="0.8" opacity="0.3"/>
+        <circle cx="810" cy="210" r="0.5" opacity="0.35"/><circle cx="980" cy="178" r="0.6" opacity="0.3"/>
+        <circle cx="1145" cy="202" r="0.7" opacity="0.25"/><circle cx="1310" cy="172" r="0.5" opacity="0.4"/>
+      </g>
+
+      <!-- Far mountains -->
+      <path d="M-50 700 L80 395 L200 595 L325 315 L485 545 L605 275 L755 498 L905 258 L1055 478 L1185 298 L1325 458 L1490 318 L1490 900 L-50 900 Z"
+            fill="url(#mtfar)" opacity="0.45"/>
+
+      <!-- Snow caps far -->
+      <path d="M325 315 L304 380 L346 380 Z" fill="url(#snow)" opacity="0.7"/>
+      <path d="M605 275 L578 358 L632 358 Z" fill="url(#snow)" opacity="0.75"/>
+      <path d="M905 258 L874 350 L936 350 Z" fill="url(#snow)" opacity="0.8"/>
+      <path d="M1185 298 L1158 378 L1212 378 Z" fill="url(#snow)" opacity="0.65"/>
+
+      <!-- Mid mountains -->
+      <path d="M-50 780 L62 515 L182 675 L302 438 L432 618 L542 375 L682 578 L782 318 L924 558 L1044 378 L1162 538 L1282 358 L1490 518 L1490 900 L-50 900 Z"
+            fill="#131922"/>
+
+      <!-- Snow caps mid -->
+      <path d="M542 375 L512 455 L572 455 Z" fill="url(#snow)" opacity="0.85"/>
+      <path d="M782 318 L750 412 L814 412 Z" fill="url(#snow)" opacity="0.92"/>
+      <path d="M1044 378 L1015 458 L1073 458 Z" fill="url(#snow)" opacity="0.8"/>
+      <path d="M1282 358 L1255 438 L1309 438 Z" fill="url(#snow)" opacity="0.75"/>
+
+      <!-- Foreground mass -->
+      <path d="M-50 900 L-50 720 L105 578 L228 678 L364 518 L506 648 L645 478 L808 618 L945 458 L1108 618 L1248 498 L1365 638 L1490 558 L1490 900 Z"
+            fill="#0d1118"/>
+
+      <!-- Alpine horn — sweeping across the lower foreground -->
+      <g opacity="0.80">
+        <!-- Horn tube -->
+        <path d="M-20 640 C20 638 60 600 110 585 C160 570 220 572 290 565 C360 558 440 550 530 545 C620 540 720 538 820 534 C900 531 980 528 1060 524 C1120 521 1180 516 1240 510"
+              stroke="#d4731a" stroke-width="9" stroke-linecap="round" fill="none" opacity="0.6"/>
+        <!-- Horn bell -->
+        <path d="M1240 510 C1275 506 1308 498 1332 484 C1350 473 1360 458 1355 440 C1350 422 1333 416 1312 420 C1291 424 1270 438 1254 452 C1244 460 1238 470 1236 480 C1234 490 1237 500 1243 507 L1240 510 Z"
+              fill="#d4731a" opacity="0.55"/>
+        <!-- Mouthpiece -->
+        <circle cx="-20" cy="640" r="10" fill="#d4731a" opacity="0.7"/>
+        <circle cx="-20" cy="640" r="5"  fill="#e8892b"/>
+        <!-- Sound waves -->
+        <path d="M1348 462 C1378 455 1398 438 1390 412" stroke="#d4731a" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.28"/>
+        <path d="M1360 470 C1398 460 1422 440 1412 408" stroke="#d4731a" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.18"/>
+        <path d="M1372 478 C1418 466 1445 442 1432 404" stroke="#d4731a" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.12"/>
+      </g>
+
+      <!-- Foreground fog -->
+      <path d="M-50 820 Q200 790 440 812 Q640 830 840 806 Q1040 782 1240 812 Q1380 827 1490 818 L1490 900 L-50 900 Z"
+            fill="#0d1118" opacity="0.92"/>
+    </svg>
+
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__ghost" aria-hidden="true">ALPENHOORN</div>
+
+    <div class="hero__content">
+      <div class="hero__eyebrow fade-up">
+        <span class="label">Kaaswinkel · Ekeren · Antwerpen</span>
+      </div>
+      <h1 class="hero__headline fade-up" id="hero-headline">
+        Van de <em>Alpen</em><br />naar uw tafel.
+      </h1>
+      <p class="hero__sub fade-up">
+        Bergkazen met karakter. Gruyère, Emmental, Raclette en meer —
+        zorgvuldig geselecteerd door kenners, voor kenners in Ekeren.
+      </p>
+      <div class="hero__actions fade-up">
+        <a href="#bergkazen" class="btn-primary">
+          Ontdek de bergkazen
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2 7H12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="tel:035417035" class="btn-ghost">Bel: 03 541 70 35</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section" aria-label="Onze specialiteiten">
+    <div class="marquee-track" aria-hidden="true">
+      <span class="marquee-item">Gruyère <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Emmental <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Raclette <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Appenzeller <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Beaufort <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Geitenkaas <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Ekeren <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Gruyère <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Emmental <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Raclette <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Appenzeller <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Beaufort <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Geitenkaas <span class="marquee-dot"></span></span>
+      <span class="marquee-item">Ekeren <span class="marquee-dot"></span></span>
+    </div>
   </div>
 
-  <!-- Sticky nav -->
-  <header class="sticky top-0 z-50 bg-paper/88 backdrop-blur border-b border-ochre/10">
-    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
-      <!-- Logo -->
-      <a href="#top" class="flex items-baseline gap-2">
-        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-ochre">Alpenhoorn<span class="text-cream">·</span></span>
-        <span class="text-[11px] uppercase tracking-[0.22em] text-ochre/50 font-600">Kaaswinkel · Ekeren</span>
-      </a>
-      <!-- Desktop links -->
-      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
-        <a href="#bestellen" class="ug">Online bestellen</a>
-        <a href="#assortiment" class="ug">Assortiment</a>
-        <a href="#schotels" class="ug">Schotels &amp; cadeaus</a>
-        <a href="#bezoek" class="ug">Bezoek ons</a>
+  <!-- BERGKAZEN -->
+  <section class="section" id="bergkazen" aria-labelledby="bergkazen-title">
+    <div class="container">
+      <div class="section__header fade-up">
+        <span class="label">Onze selectie</span>
+        <h2 class="section__headline" id="bergkazen-title">De vijf toppen<br />van onze kaaskelder</h2>
+        <p class="section__sub">Elk wiel draagt het verhaal van zijn bergstreek. Zorgvuldig gerijpt, met respect voor ambacht en seizoen.</p>
       </div>
-      <!-- CTA + hamburger -->
-      <div class="flex items-center gap-2">
-        <a href="#bestellen" class="inline-flex items-center gap-2 bg-cream text-ochredk text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-creamlt transition">
-          Bestel &amp; afhalen
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
-          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-ochre/15 text-ochre hover:bg-ochre/5 transition">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </nav>
-    <!-- Mobile menu -->
-    <div id="mobile-menu" hidden class="md:hidden border-t border-ochre/10 bg-paper/95 backdrop-blur">
-      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
-        <a href="#bestellen" class="py-3 border-b border-ochre/8">Online bestellen</a>
-        <a href="#assortiment" class="py-3 border-b border-ochre/8">Assortiment</a>
-        <a href="#schotels" class="py-3 border-b border-ochre/8">Schotels &amp; cadeaus</a>
-        <a href="#bezoek" class="py-3">Bezoek ons</a>
-      </div>
-    </div>
-  </header>
 
-  <!-- Hero -->
-  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-ochre">
-    <img
-      src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=2000&q=80"
-      alt="Ambachtelijke kazen bij Kaaswinkel Alpenhoorn Ekeren"
-      fetchpriority="high"
-      class="absolute inset-0 w-full h-full object-cover"
-    />
-    <div class="absolute inset-0 hero-grad"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
-      <p class="text-creamlt font-600 tracking-[0.3em] uppercase text-xs mb-5">
-        <span aria-hidden="true">🧀</span> Kaas · Schotels · Cadeaumanden · Ekeren
-      </p>
-      <h1 class="font-serif text-paper text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
-        De kaaswinkel van Ekeren,<br />binnenkort ook online.
-      </h1>
-      <p class="text-paper/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
-        Een rijk assortiment Belgische en buitenlandse kazen, zorgvuldig samengestelde
-        kaasschotels en cadeaumanden — al jaren de vaste kaaswinkel in de Kloosterstraat.
-        Bestel straks online, haal af of geef een cadeaumand.
-      </p>
-      <div class="flex flex-wrap gap-3 mt-9">
-        <a href="#bestellen" class="bg-cream text-ochredk font-700 px-7 py-3.5 rounded-full hover:bg-creamlt transition">
-          Bestel en haal af
-        </a>
-        <a href="#schotels" class="border border-paper/45 text-paper font-600 px-7 py-3.5 rounded-full hover:bg-paper/10 transition">
-          Kaasschotel of cadeaumand
-        </a>
+      <div class="cheese-grid fade-up">
+
+        <!-- Gruyère -->
+        <article class="cheese-card" tabindex="0">
+          <div class="cheese-card__visual">
+            <svg class="cheese-card__svg" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="gg1" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#2a1f0a"/><stop offset="100%" stop-color="#1a1208"/>
+                </linearGradient>
+              </defs>
+              <rect width="300" height="200" fill="url(#gg1)"/>
+              <ellipse cx="150" cy="130" rx="120" ry="60" fill="#c8922a" opacity="0.9"/>
+              <ellipse cx="150" cy="115" rx="120" ry="55" fill="#d4a33a"/>
+              <ellipse cx="150" cy="113" rx="120" ry="55" fill="none" stroke="#a87820" stroke-width="4"/>
+              <ellipse cx="100" cy="105" rx="10" ry="7" fill="#b88828" opacity="0.8"/>
+              <ellipse cx="160" cy="98" rx="7" ry="5" fill="#b88828" opacity="0.7"/>
+              <ellipse cx="200" cy="112" rx="8" ry="6" fill="#b88828" opacity="0.75"/>
+              <ellipse cx="130" cy="118" rx="6" ry="4" fill="#b88828" opacity="0.6"/>
+              <ellipse cx="150" cy="100" rx="100" ry="40" fill="white" opacity="0.04"/>
+            </svg>
+          </div>
+          <div class="cheese-card__body">
+            <p class="cheese-card__origin">Fribourg, Zwitserland</p>
+            <h3 class="cheese-card__name">Gruyère AOP</h3>
+            <p class="cheese-card__desc">Nootachtig en romig, gerijpt op houten planken. Het hart van elke kaasfondue.</p>
+            <div class="cheese-card__profile">
+              <span class="profile-tag">Nootachtig</span>
+              <span class="profile-tag">Romig</span>
+              <span class="profile-tag">12+ mnd</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Emmental -->
+        <article class="cheese-card" tabindex="0">
+          <div class="cheese-card__visual">
+            <svg class="cheese-card__svg" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="gg2" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#1e1a08"/><stop offset="100%" stop-color="#141208"/>
+                </linearGradient>
+              </defs>
+              <rect width="300" height="200" fill="url(#gg2)"/>
+              <path d="M30 180 L150 40 L270 180 Z" fill="#e8c84a" opacity="0.85"/>
+              <path d="M30 180 L150 40 L270 180 Z" fill="none" stroke="#c4a428" stroke-width="2"/>
+              <circle cx="130" cy="130" r="18" fill="#c4a428" opacity="0.7"/>
+              <circle cx="175" cy="115" r="12" fill="#c4a428" opacity="0.65"/>
+              <circle cx="110" cy="155" r="9"  fill="#c4a428" opacity="0.6"/>
+              <circle cx="195" cy="148" r="15" fill="#c4a428" opacity="0.7"/>
+              <circle cx="150" cy="165" r="8"  fill="#c4a428" opacity="0.55"/>
+            </svg>
+          </div>
+          <div class="cheese-card__body">
+            <p class="cheese-card__origin">Berner Oberland, Zwitserland</p>
+            <h3 class="cheese-card__name">Emmental AOP</h3>
+            <p class="cheese-card__desc">De iconische gaten, de zachte smaak. Mild en lichtzoet met een frisse afdronk.</p>
+            <div class="cheese-card__profile">
+              <span class="profile-tag">Mild</span>
+              <span class="profile-tag">Lichtzoet</span>
+              <span class="profile-tag">4+ mnd</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Raclette -->
+        <article class="cheese-card" tabindex="0">
+          <div class="cheese-card__visual">
+            <svg class="cheese-card__svg" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="gg3" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#2a1810"/><stop offset="100%" stop-color="#1a1008"/>
+                </linearGradient>
+                <radialGradient id="rm3" cx="50%" cy="80%" r="60%">
+                  <stop offset="0%" stop-color="#e8c84a" stop-opacity="0.5"/>
+                  <stop offset="100%" stop-color="#e8c84a" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <rect width="300" height="200" fill="url(#gg3)"/>
+              <path d="M50 160 L50 80 Q150 20 250 80 L250 160 Z" fill="#d4a840" opacity="0.8"/>
+              <path d="M50 160 L50 80 Q150 20 250 80 L250 160 Z" fill="none" stroke="#a87820" stroke-width="3"/>
+              <rect fill="url(#rm3)" width="300" height="200"/>
+              <path d="M50 80 Q150 20 250 80" stroke="#8a6010" stroke-width="8" fill="none" stroke-linecap="round"/>
+              <path d="M150 30 Q145 15 150 5" stroke="#d4731a" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+              <path d="M120 40 Q114 24 118 12" stroke="#d4731a" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.25"/>
+              <path d="M180 38 Q186 20 182 8" stroke="#d4731a" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.25"/>
+            </svg>
+          </div>
+          <div class="cheese-card__body">
+            <p class="cheese-card__origin">Wallis, Zwitserland</p>
+            <h3 class="cheese-card__name">Raclette du Valais</h3>
+            <p class="cheese-card__desc">Rijke, volmondige smaak die perfect smelt. Voor raclette-avonden van formaat.</p>
+            <div class="cheese-card__profile">
+              <span class="profile-tag">Volmondig</span>
+              <span class="profile-tag">Smeltend</span>
+              <span class="profile-tag">3–6 mnd</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Appenzeller -->
+        <article class="cheese-card" tabindex="0">
+          <div class="cheese-card__visual">
+            <svg class="cheese-card__svg" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="gg4" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#1a140c"/><stop offset="100%" stop-color="#120e08"/>
+                </linearGradient>
+              </defs>
+              <rect width="300" height="200" fill="url(#gg4)"/>
+              <ellipse cx="150" cy="110" rx="110" ry="80" fill="#c8922a"/>
+              <ellipse cx="150" cy="108" rx="110" ry="80" fill="none" stroke="#a07018" stroke-width="5"/>
+              <circle cx="108" cy="88" r="3"  fill="#a07018" opacity="0.5"/>
+              <circle cx="150" cy="83" r="2.5" fill="#a07018" opacity="0.4"/>
+              <circle cx="188" cy="93" r="3"  fill="#a07018" opacity="0.5"/>
+              <circle cx="128" cy="113" r="2"  fill="#a07018" opacity="0.35"/>
+              <circle cx="173" cy="118" r="3"  fill="#a07018" opacity="0.45"/>
+              <circle cx="150" cy="128" r="2.5" fill="#a07018" opacity="0.4"/>
+              <ellipse cx="150" cy="108" rx="50" ry="36" fill="none" stroke="#d4731a" stroke-width="1" opacity="0.3"/>
+            </svg>
+          </div>
+          <div class="cheese-card__body">
+            <p class="cheese-card__origin">Appenzell, Zwitserland</p>
+            <h3 class="cheese-card__name">Appenzeller</h3>
+            <p class="cheese-card__desc">Gepekeld met kruiden en witte wijn. Kruidig, pittig en onmiskenbaar eigen karakter.</p>
+            <div class="cheese-card__profile">
+              <span class="profile-tag">Kruidig</span>
+              <span class="profile-tag">Pittig</span>
+              <span class="profile-tag">3–8 mnd</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Beaufort -->
+        <article class="cheese-card" tabindex="0">
+          <div class="cheese-card__visual">
+            <svg class="cheese-card__svg" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="gg5" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#0e1820"/><stop offset="100%" stop-color="#091218"/>
+                </linearGradient>
+              </defs>
+              <rect width="300" height="200" fill="url(#gg5)"/>
+              <path d="M0 160 L60 80 L120 130 L180 60 L240 110 L300 70 L300 200 L0 200 Z" fill="#131922" opacity="0.8"/>
+              <path d="M180 60 L162 100 L198 100 Z" fill="#d0d8e4" opacity="0.5"/>
+              <path d="M60 185 L60 120 Q150 90 240 120 L240 185 Z" fill="#c8a030"/>
+              <path d="M60 185 L60 120 Q150 90 240 120 L240 185 Z" fill="none" stroke="#a07820" stroke-width="2"/>
+              <path d="M60 120 Q150 100 240 120" stroke="#907010" stroke-width="4" fill="none"/>
+            </svg>
+          </div>
+          <div class="cheese-card__body">
+            <p class="cheese-card__origin">Savoie, Frankrijk</p>
+            <h3 class="cheese-card__name">Beaufort AOP</h3>
+            <p class="cheese-card__desc">De prins der Alpenkazen. Floral, boterrijk en gerijpt in de bergkelders van Savoie.</p>
+            <div class="cheese-card__profile">
+              <span class="profile-tag">Bloemenrijk</span>
+              <span class="profile-tag">Boterrijk</span>
+              <span class="profile-tag">6+ mnd</span>
+            </div>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
 
-  <!-- USP strip -->
-  <section class="bg-ochre text-paper/90">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
-      <div><p class="font-serif text-2xl text-creamlt">Ambacht</p><p class="mt-1 text-paper/65">Vers gesneden in de winkel</p></div>
-      <div><p class="font-serif text-2xl text-creamlt">Schotels</p><p class="mt-1 text-paper/65">Kaasschotels op maat</p></div>
-      <div><p class="font-serif text-2xl text-creamlt">Cadeau</p><p class="mt-1 text-paper/65">Cadeaumanden &amp; pakketten</p></div>
-      <div><p class="font-serif text-2xl text-creamlt">Afhaal</p><p class="mt-1 text-paper/65">Online bestellen &amp; click-and-collect</p></div>
-    </div>
-  </section>
+  <!-- FONDUE & RACLETTE -->
+  <section class="section fondue-section" id="fondue" aria-labelledby="fondue-title">
+    <div class="container">
+      <div class="fondue-inner">
 
-  <!-- Online bestellen / click-and-collect -->
-  <section id="bestellen" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <div class="fade-up">
-        <p class="text-pine font-600 tracking-[0.2em] uppercase text-xs mb-4">Binnenkort: online bestellen</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-ochre">
-          Bestel online,<br />haal af in de winkel.
-        </h2>
-        <p class="text-charcoal/75 text-lg mt-5 leading-relaxed max-w-md">
-          Geen wachtrij, geen stress. Stel uw bestelling samen — een stuk kaas, een volledige
-          kaasschotel of een cadeaumand — en haal af op een tijdstip dat u past
-          in de Kloosterstraat 18.
-        </p>
-        <ul class="mt-7 space-y-3 text-charcoal">
-          <li class="flex items-center gap-3"><span class="text-pine font-700">✓</span> Bestelling vers gesneden bij afhaling</li>
-          <li class="flex items-center gap-3"><span class="text-pine font-700">✓</span> Kaasschotels &amp; cadeaumanden op voorbestelling</li>
-          <li class="flex items-center gap-3"><span class="text-pine font-700">✓</span> Betalen in de winkel (cash · Bancontact)</li>
-        </ul>
-        <a href="#schotels" class="inline-flex items-center gap-2 mt-9 bg-ochre text-paper font-600 px-7 py-3.5 rounded-full hover:bg-ochrelt transition">
-          Of stel een kaasschotel samen
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
-      <div class="fade-up grid grid-cols-2 gap-4">
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment">
-          <img
-            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80"
-            alt="Kaasassortiment in de toonbank"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
+        <div class="fondue-visual fade-up" aria-hidden="true">
+          <svg class="fondue-visual__svg" viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="rg-warm" cx="50%" cy="70%" r="60%">
+                <stop offset="0%" stop-color="#d4731a" stop-opacity="0.2"/>
+                <stop offset="100%" stop-color="#d4731a" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="lg-pot" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#2a2010"/><stop offset="100%" stop-color="#1a1408"/>
+              </linearGradient>
+              <linearGradient id="lg-cheese" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#e8c84a"/><stop offset="100%" stop-color="#c4a428"/>
+              </linearGradient>
+            </defs>
+            <rect width="480" height="360" fill="#131922"/>
+            <rect width="480" height="360" fill="url(#rg-warm)"/>
+            <!-- Stand -->
+            <rect x="195" y="292" width="10" height="42" rx="3" fill="#4a4035" transform="rotate(-10,200,313)"/>
+            <rect x="275" y="292" width="10" height="42" rx="3" fill="#4a4035" transform="rotate(10,280,313)"/>
+            <rect x="234" y="288" width="12" height="46" rx="3" fill="#4a4035"/>
+            <ellipse cx="240" cy="296" rx="50" ry="8" fill="#3a3025" stroke="#5a5040" stroke-width="2"/>
+            <!-- Flame -->
+            <ellipse cx="240" cy="308" rx="32" ry="10" fill="#d4731a" opacity="0.12"/>
+            <path d="M228 294 C228 280 232 270 240 266 C248 270 252 280 252 294" fill="#d4731a" opacity="0.65"/>
+            <path d="M232 294 C232 282 236 274 240 270 C244 274 248 282 248 294" fill="#e8892b" opacity="0.55"/>
+            <path d="M236 294 C236 286 238 280 240 276 C242 280 244 286 244 294" fill="#f4c060" opacity="0.45"/>
+            <!-- Pot -->
+            <path d="M120 238 Q120 288 240 293 Q360 288 360 238 L340 158 Q240 138 140 158 Z" fill="url(#lg-pot)"/>
+            <ellipse cx="240" cy="160" rx="100" ry="18" fill="#3a3025" stroke="#5a5040" stroke-width="2"/>
+            <ellipse cx="240" cy="160" rx="95" ry="15" fill="url(#lg-cheese)"/>
+            <!-- Cheese surface -->
+            <ellipse cx="200" cy="158" rx="12" ry="4" fill="#e0b830" opacity="0.6"/>
+            <ellipse cx="260" cy="156" rx="8"  ry="3" fill="#e0b830" opacity="0.5"/>
+            <ellipse cx="240" cy="163" rx="6"  ry="2.5" fill="#e0b830" opacity="0.55"/>
+            <!-- Handles -->
+            <rect x="100" y="198" width="24" height="12" rx="4" fill="#5a5040"/>
+            <rect x="356" y="198" width="24" height="12" rx="4" fill="#5a5040"/>
+            <!-- Fork 1 -->
+            <g transform="rotate(-25,190,158)">
+              <rect x="184" y="68" width="3" height="92" rx="1.5" fill="#d0d8e4"/>
+              <rect x="182" y="66" width="7" height="3" rx="1" fill="#8a97a8"/>
+              <line x1="183" y1="66" x2="183" y2="56" stroke="#d0d8e4" stroke-width="1.5"/>
+              <line x1="186" y1="66" x2="186" y2="54" stroke="#d0d8e4" stroke-width="1.5"/>
+              <line x1="189" y1="66" x2="189" y2="56" stroke="#d0d8e4" stroke-width="1.5"/>
+              <rect x="183" y="44" width="9" height="9" rx="1.5" fill="#c8922a" transform="rotate(10,187,48)"/>
+            </g>
+            <!-- Fork 2 -->
+            <g transform="rotate(15,290,158)">
+              <rect x="287" y="63" width="3" height="97" rx="1.5" fill="#d0d8e4"/>
+              <rect x="285" y="61" width="7" height="3" rx="1" fill="#8a97a8"/>
+              <line x1="286" y1="61" x2="286" y2="51" stroke="#d0d8e4" stroke-width="1.5"/>
+              <line x1="289" y1="61" x2="289" y2="49" stroke="#d0d8e4" stroke-width="1.5"/>
+              <line x1="292" y1="61" x2="292" y2="51" stroke="#d0d8e4" stroke-width="1.5"/>
+            </g>
+            <!-- Steam -->
+            <path d="M200 143 Q195 128 200 113" stroke="#d0d8e4" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.22"/>
+            <path d="M240 138 Q234 120 240 103" stroke="#d0d8e4" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.18"/>
+            <path d="M275 142 Q281 126 276 110" stroke="#d0d8e4" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.2"/>
+            <!-- Background mountain -->
+            <path d="M380 360 L380 258 L420 198 L460 258 L460 360 Z" fill="#1a2334" opacity="0.55"/>
+            <path d="M420 198 L404 238 L436 238 Z" fill="#d0d8e4" opacity="0.18"/>
+          </svg>
+          <div class="fondue-badge">Winter · Seizoen</div>
         </div>
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment mt-8">
-          <img
-            src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=800&q=80"
-            alt="Samengestelde kaasplank"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
+
+        <div class="fondue-content fade-up">
+          <span class="label">Fondue &amp; Raclette</span>
+          <h2 class="section__headline" id="fondue-title">Warmte rond<br />de tafel.</h2>
+          <p class="section__sub">Van complete fonduesets tot raclette-wiel op maat — voor intieme avonden en grotere tafelgezelschappen.</p>
+
+          <ul class="fondue-list">
+            <li>
+              <svg class="fondue-list__icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <circle cx="10" cy="10" r="8" stroke="#d4731a" stroke-width="1.5"/>
+                <path d="M6 10l3 3 5-5" stroke="#d4731a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="fondue-list__text">
+                <strong>Fonduesets — compleet</strong>
+                <span>Kaas, brood en alles erbij. Kant-en-klaar voor 2 tot 12 personen.</span>
+              </div>
+            </li>
+            <li>
+              <svg class="fondue-list__icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <circle cx="10" cy="10" r="8" stroke="#d4731a" stroke-width="1.5"/>
+                <path d="M6 10l3 3 5-5" stroke="#d4731a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="fondue-list__text">
+                <strong>Raclette op maat</strong>
+                <span>Een half wiel Raclette du Valais, vers gesneden op bestelling.</span>
+              </div>
+            </li>
+            <li>
+              <svg class="fondue-list__icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <circle cx="10" cy="10" r="8" stroke="#d4731a" stroke-width="1.5"/>
+                <path d="M6 10l3 3 5-5" stroke="#d4731a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="fondue-list__text">
+                <strong>Seizonskaasborden</strong>
+                <span>Samengestelde plateaus voor elk seizoen en elke gelegenheid.</span>
+              </div>
+            </li>
+          </ul>
+          <div class="fondue-cta">
+            <a href="tel:035417035" class="btn-primary">
+              Bestel op maat
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M2 7H12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- METRICS STRIP — second-read moment: oversized numerals -->
+  <div class="metrics-strip" aria-label="Over Alpenhoorn">
+    <div class="container">
+      <div class="metrics-inner">
+        <div class="metric-item fade-up">
+          <div class="metric-item__val">40<sup>+</sup></div>
+          <div class="metric-item__label">Soorten bergkaas</div>
+        </div>
+        <div class="metric-item fade-up">
+          <div class="metric-item__val">3</div>
+          <div class="metric-item__label">Alpenlanden</div>
+        </div>
+        <div class="metric-item fade-up">
+          <div class="metric-item__val">25<sup>j</sup></div>
+          <div class="metric-item__label">Jaar vakmanschap</div>
+        </div>
+        <div class="metric-item fade-up">
+          <div class="metric-item__val">1</div>
+          <div class="metric-item__label">Winkel in Ekeren</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADVIES -->
+  <section class="section advies-section" id="advies" aria-labelledby="advies-title">
+    <div class="container">
+      <div class="advies-inner">
+
+        <div class="advies-quote fade-up">
+          <span class="advies-quote__mark" aria-hidden="true">"</span>
+          <blockquote class="advies-quote__text">
+            Elke kaas heeft zijn verhaal. Ik vertel het u graag,
+            van de alpenweide tot op uw plank.
+          </blockquote>
+          <div class="advies-quote__attribution">
+            <div class="advies-quote__avatar">
+              <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" width="48" height="48" aria-hidden="true">
+                <rect width="48" height="48" fill="#1a2334"/>
+                <circle cx="24" cy="18" r="9" fill="#8a97a8" opacity="0.7"/>
+                <path d="M8 42 Q8 30 24 30 Q40 30 40 42" fill="#8a97a8" opacity="0.5"/>
+              </svg>
+            </div>
+            <div>
+              <div class="advies-quote__name">Frank — Kaasmeester</div>
+              <div class="advies-quote__role">Kaaswinkel Alpenhoorn · Ekeren</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="advies-right fade-up">
+          <span class="label">Persoonlijk advies</span>
+          <h2 class="section__headline" id="advies-title">Kaaskennis,<br />persoonlijk.</h2>
+          <div class="advies-features">
+            <div class="advies-feature">
+              <div class="advies-feature__num">01</div>
+              <div class="advies-feature__content">
+                <strong>Smaakprofiel op maat</strong>
+                <span>Vertel ons uw voorkeur en wij stellen een selectie samen die past bij uw smaak en gelegenheid.</span>
+              </div>
+            </div>
+            <div class="advies-feature">
+              <div class="advies-feature__num">02</div>
+              <div class="advies-feature__content">
+                <strong>Rijpingsadvies</strong>
+                <span>Wanneer is de kaas op zijn best? Wij adviseren bewaartemperatuur en ideaal consumptietijdstip.</span>
+              </div>
+            </div>
+            <div class="advies-feature">
+              <div class="advies-feature__num">03</div>
+              <div class="advies-feature__content">
+                <strong>Wijn- en bierparing</strong>
+                <span>Van Zwitserse Fendant bij Gruyère tot een Belgische tripel naast Appenzeller.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BEZOEK ONS -->
+  <section class="section bezoek-section" id="bezoek" aria-labelledby="bezoek-title">
+    <div class="container">
+      <div class="bezoek-inner">
+
+        <div class="bezoek-map fade-up" aria-label="Kaart van Ekeren">
+          <svg class="bezoek-map__svg" viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg">
+            <rect width="480" height="360" fill="#131922"/>
+            <!-- Streets -->
+            <line x1="0" y1="180" x2="480" y2="180" stroke="#1a2334" stroke-width="12"/>
+            <line x1="240" y1="0" x2="240" y2="360" stroke="#1a2334" stroke-width="12"/>
+            <line x1="0" y1="120" x2="480" y2="120" stroke="#161f2c" stroke-width="6"/>
+            <line x1="0" y1="240" x2="480" y2="240" stroke="#161f2c" stroke-width="6"/>
+            <line x1="160" y1="0" x2="160" y2="360" stroke="#161f2c" stroke-width="6"/>
+            <line x1="320" y1="0" x2="320" y2="360" stroke="#161f2c" stroke-width="6"/>
+            <line x1="0" y1="80" x2="480" y2="80" stroke="#141b28" stroke-width="3"/>
+            <line x1="0" y1="280" x2="480" y2="280" stroke="#141b28" stroke-width="3"/>
+            <line x1="80" y1="0" x2="80" y2="360" stroke="#141b28" stroke-width="3"/>
+            <line x1="400" y1="0" x2="400" y2="360" stroke="#141b28" stroke-width="3"/>
+            <line x1="0" y1="0" x2="340" y2="360" stroke="#161f2c" stroke-width="5"/>
+            <!-- Park -->
+            <rect x="280" y="90" width="110" height="70" rx="8" fill="#0f2010" opacity="0.7"/>
+            <!-- Blocks -->
+            <rect x="170" y="130" width="60" height="40" rx="3" fill="#151d28" opacity="0.8"/>
+            <rect x="250" y="130" width="60" height="40" rx="3" fill="#151d28" opacity="0.8"/>
+            <rect x="170" y="190" width="60" height="40" rx="3" fill="#151d28" opacity="0.8"/>
+            <rect x="250" y="190" width="60" height="40" rx="3" fill="#151d28" opacity="0.7"/>
+            <rect x="90"  y="130" width="60" height="40" rx="3" fill="#151d28" opacity="0.7"/>
+            <rect x="90"  y="190" width="60" height="40" rx="3" fill="#151d28" opacity="0.7"/>
+            <rect x="330" y="190" width="60" height="40" rx="3" fill="#151d28" opacity="0.7"/>
+            <!-- Store pin -->
+            <circle cx="240" cy="180" r="22" fill="#d4731a" opacity="0.22"/>
+            <circle cx="240" cy="180" r="14" fill="#d4731a" opacity="0.48"/>
+            <circle cx="240" cy="180" r="6"  fill="#d4731a"/>
+            <path   d="M240 186 L240 212" stroke="#d4731a" stroke-width="2.5" stroke-linecap="round"/>
+            <rect   x="196" y="218" width="88" height="26" rx="4" fill="#1a2334"/>
+            <text   x="240" y="235" font-size="11" fill="#f4ede0" text-anchor="middle" font-family="sans-serif" letter-spacing="0.06em">ALPENHOORN</text>
+            <!-- Compass -->
+            <g transform="translate(430,40)">
+              <circle r="14" fill="#1a2334" stroke="rgba(208,216,228,0.12)" stroke-width="1"/>
+              <text y="-5" font-size="9" fill="#d4731a" text-anchor="middle" font-family="sans-serif" font-weight="bold">N</text>
+              <line x1="0" y1="0" x2="0" y2="-9" stroke="#d4731a" stroke-width="1.5"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="bezoek-details fade-up">
+          <span class="label">Bezoek ons</span>
+          <h2 class="section__headline" id="bezoek-title">Ekeren wacht<br />op u.</h2>
+
+          <ul class="bezoek-info-list">
+            <li class="bezoek-info-item">
+              <svg class="bezoek-info-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M10 2a6 6 0 0 1 6 6c0 4-6 10-6 10S4 12 4 8a6 6 0 0 1 6-6Z" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="10" cy="8" r="2" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+              <div>
+                <div class="bezoek-info-label">Adres</div>
+                <div class="bezoek-info-value">Ekeren, Antwerpen</div>
+              </div>
+            </li>
+            <li class="bezoek-info-item">
+              <svg class="bezoek-info-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M3 5.5C3 4.67 3.67 4 4.5 4c.42 0 .82.17 1.11.47l1.9 1.9a1.57 1.57 0 0 1 0 2.22l-.7.7a8.93 8.93 0 0 0 4.9 4.9l.7-.7a1.57 1.57 0 0 1 2.22 0l1.9 1.9c.3.3.47.7.47 1.11 0 .83-.67 1.5-1.5 1.5C7.62 18 2 12.38 2 5.5c0-.83.67-1.5 1.5-1.5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+              <div>
+                <div class="bezoek-info-label">Telefoon</div>
+                <div class="bezoek-info-value"><a href="tel:035417035">03 541 70 35</a></div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="bezoek-hours">
+            <div class="bezoek-hours__title">Openingsuren</div>
+            <div class="bezoek-hours__row"><strong>Dinsdag – Vrijdag</strong> <span>09:00 – 18:00</span></div>
+            <div class="bezoek-hours__row"><strong>Zaterdag</strong>          <span>09:00 – 17:00</span></div>
+            <div class="bezoek-hours__row"><strong>Maandag / Zondag</strong>  <span>Gesloten</span></div>
+          </div>
+
+          <div class="bezoek-cta-block">
+            <p>Bel ons voor reservaties, grotere bestellingen of advies op maat.</p>
+            <a href="tel:035417035" class="btn-phone">
+              <svg width="22" height="22" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M3 5.5C3 4.67 3.67 4 4.5 4c.42 0 .82.17 1.11.47l1.9 1.9a1.57 1.57 0 0 1 0 2.22l-.7.7a8.93 8.93 0 0 0 4.9 4.9l.7-.7a1.57 1.57 0 0 1 2.22 0l1.9 1.9c.3.3.47.7.47 1.11 0 .83-.67 1.5-1.5 1.5C7.62 18 2 12.38 2 5.5c0-.83.67-1.5 1.5-1.5z" stroke="#d4731a" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+              03 541 70 35
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner" aria-labelledby="cta-headline">
+    <div class="cta-banner__ghost" aria-hidden="true">KAAS</div>
+    <div class="container">
+      <div class="cta-banner__inner fade-up">
+        <span class="label">Klaar om te proeven?</span>
+        <h2 class="cta-banner__headline" id="cta-headline">Ontdek de<br />bergkazen van Ekeren.</h2>
+        <p class="cta-banner__sub">Kom langs in de winkel of bel ons voor advies. Wij helpen u de juiste kaas vinden voor elke gelegenheid.</p>
+        <div class="cta-banner__actions">
+          <a href="#bergkazen" class="btn-primary">
+            Ontdek de bergkazen
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2 7H12M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="tel:035417035" class="btn-ghost">Bel: 03 541 70 35</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Assortiment grid -->
-  <section id="assortiment" class="bg-parchment/55 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Paginavoet">
+    <div class="container">
+      <div class="footer__inner">
         <div>
-          <p class="text-pine font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
-          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-ochre">Kaas in al haar facetten</h2>
+          <div class="footer__brand">
+            <svg width="28" height="28" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect width="36" height="36" rx="5" fill="#131922"/>
+              <path d="M3 27 L11 12 L16 20 L21 8 L28 27 Z" fill="none" stroke="#d0d8e4" stroke-width="1.2" stroke-linejoin="round"/>
+              <path d="M5 25 C7 25 9 21 12 19 C15 17 18 19 22 19 C26 19 29 17 33 21" stroke="#d4731a" stroke-width="2" stroke-linecap="round" fill="none"/>
+              <circle cx="5" cy="25" r="2" fill="#d4731a"/>
+            </svg>
+            <span style="font-family:var(--font-display);font-size:16px;color:var(--cream);letter-spacing:-0.01em">Alpenhoorn</span>
+          </div>
+          <p class="footer__tagline">Specialist in bergkazen uit Zwitserland, Oostenrijk en de Savoie. Van de Alpen naar uw tafel — in Ekeren.</p>
         </div>
-        <p class="text-charcoal/65 max-w-sm">Belgische en buitenlandse kazen, hard en zacht, jong en belegen — alles vers gesneden en met advies op maat.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <!-- Belgische kazen -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-ochre text-paper relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80"
-            alt="Belgische kazen assortiment"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ochre via-ochre/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Belgische kazen</h3>
-            <p class="text-paper/75 text-sm mt-1">Abdijkazen, boerenkaas &amp; streekproducten — vers gesneden op maat.</p>
-          </div>
-        </article>
-        <!-- Alpenkazen -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-ochre text-paper relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1631379578550-7038263db699?auto=format&fit=crop&w=800&q=80"
-            alt="Alpenkazen Gruyère en Comté"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ochre via-ochre/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Alpenkazen</h3>
-            <p class="text-paper/75 text-sm mt-1">Gruyère, Comté &amp; bergkazen — de toppers waar Alpenhoorn naar verwijst.</p>
-          </div>
-        </article>
-        <!-- Zachte kazen -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-ochre text-paper relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=800&q=80"
-            alt="Zachte kazen brie en camembert"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ochre via-ochre/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Zachte kazen</h3>
-            <p class="text-paper/75 text-sm mt-1">Brie, camembert &amp; witschimmelkazen — romig en vol van smaak.</p>
-          </div>
-        </article>
-        <!-- Blauwe & pittige kazen -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-ochre text-paper relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1559561853-08451507cbe7?auto=format&fit=crop&w=800&q=80"
-            alt="Blauwe en pittige kazen"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ochre via-ochre/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Blauwe kazen</h3>
-            <p class="text-paper/75 text-sm mt-1">Roquefort, Gorgonzola &amp; pittige toppers voor de liefhebber.</p>
-          </div>
-        </article>
-        <!-- Kaasschotels -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-ochre text-paper relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=820&q=80"
-            alt="Samengestelde kaasschotels"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ochre via-ochre/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Kaasschotels</h3>
-            <p class="text-paper/75 text-sm mt-1">Samengestelde schotels met garnituur — op voorbestelling.</p>
-          </div>
-        </article>
-        <!-- Cadeaumanden CTA card -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-cream text-ochredk relative aspect-[4/5] flex items-center justify-center text-center p-6">
-          <div>
-            <p class="font-serif text-2xl font-600">Cadeau&shy;manden</p>
-            <p class="text-ochredk/80 text-sm mt-2">Stel een kaascadeaumand samen — ideaal als verjaardags- of bedrijfscadeau.</p>
-            <a href="#schotels" class="inline-block mt-5 text-ochredk font-700 ug">Stel een cadeaumand samen →</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured products (illustratief) -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="flex items-end justify-between mb-10">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-ochre">Veelgevraagd uit de toonbank</h2>
-      <a href="#bestellen" class="hidden sm:inline text-pine font-600 ug">Alles bestellen →</a>
-    </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Product 1 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
-          <img
-            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=700&q=80"
-            alt="Kaasschotel (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
+        <div>
+          <div class="footer__heading">Kazen</div>
+          <ul class="footer__list">
+            <li><a href="#bergkazen">Gruyère AOP</a></li>
+            <li><a href="#bergkazen">Emmental AOP</a></li>
+            <li><a href="#bergkazen">Raclette du Valais</a></li>
+            <li><a href="#bergkazen">Appenzeller</a></li>
+            <li><a href="#bergkazen">Beaufort AOP</a></li>
+          </ul>
         </div>
-        <div class="p-4">
-          <p class="text-xs text-pine font-600 uppercase tracking-wider">Op voorbestelling</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-ochre">Kaasschotel</h3>
-          <p class="text-charcoal/60 text-sm mt-1">Een ruime selectie kazen met garnituur, mooi geschikt.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
-            <button class="bg-ochre text-paper text-sm font-600 px-4 py-2 rounded-full hover:bg-ochrelt transition">Aanvragen</button>
-          </div>
+        <div>
+          <div class="footer__heading">Contact</div>
+          <ul class="footer__list">
+            <li><a href="tel:035417035">03 541 70 35</a></li>
+            <li><a href="#bezoek">Winkel in Ekeren</a></li>
+            <li><a href="#fondue">Fondue &amp; Raclette</a></li>
+            <li><a href="#advies">Persoonlijk advies</a></li>
+          </ul>
         </div>
       </div>
-      <!-- Product 2 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
-          <img
-            src="https://images.unsplash.com/photo-1631379578550-7038263db699?auto=format&fit=crop&w=700&q=80"
-            alt="Alpenkaas Gruyère (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-pine font-600 uppercase tracking-wider">Klassieker</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-ochre">Alpenkaas</h3>
-          <p class="text-charcoal/60 text-sm mt-1">Gruyère of Comté, vers van het stuk gesneden.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
-            <button class="bg-ochre text-paper text-sm font-600 px-4 py-2 rounded-full hover:bg-ochrelt transition">Aanvragen</button>
-          </div>
-        </div>
-      </div>
-      <!-- Product 3 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
-          <img
-            src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=720&q=80"
-            alt="Kaascadeaumand (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-pine font-600 uppercase tracking-wider">Cadeau</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-ochre">Cadeaumand</h3>
-          <p class="text-charcoal/60 text-sm mt-1">Selectie kazen met begeleiders, mooi verpakt om weg te geven.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
-            <button class="bg-ochre text-paper text-sm font-600 px-4 py-2 rounded-full hover:bg-ochrelt transition">Aanvragen</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p class="text-center text-xs text-charcoal/40 mt-6">Voorbeeldproducten ter illustratie van de toekomstige kaaswebshop — geen actuele prijzen.</p>
-  </section>
-
-  <!-- Kaasschotel- / cadeaumandaanvraag (the differentiator) -->
-  <section id="schotels" class="bg-ochre text-paper py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
-      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
-        <img
-          src="https://images.unsplash.com/photo-1631379578550-7038263db699?auto=format&fit=crop&w=1000&q=80"
-          alt="Kaasschotel en cadeaumand met alpenkazen"
-          loading="lazy" decoding="async"
-          class="w-full h-full object-cover"
-        />
-      </div>
-      <div class="order-1 lg:order-2 fade-up">
-        <p class="text-creamlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Schotels &amp; cadeaus</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
-          Een feest?<br />Wij stellen de kaasschotel samen.
-        </h2>
-        <p class="text-paper/80 text-lg mt-6 leading-relaxed max-w-md">
-          Verjaardag, receptie, bedrijfsevent of gewoon een gezellige avond? Stel hieronder uw aanvraag samen —
-          datum, aantal personen en wensen — en wij maken een voorstel op maat.
-          Geen prijsverplichtingen, gewoon een vrijblijvende aanvraag.
-        </p>
-
-        <!-- Concept-formulier: kaasschotel-/cadeaumandaanvraag -->
-        <form class="mt-8 bg-paper/5 border border-paper/15 rounded-2xl p-5 sm:p-6 space-y-4" onsubmit="return false">
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label for="t-naam" class="block text-sm font-600 text-paper/90 mb-1">Naam</label>
-              <input id="t-naam" name="naam" type="text" autocomplete="name" placeholder="Uw naam"
-                class="w-full px-4 py-2.5 rounded-lg bg-paper text-charcoal border border-paper/20 focus:outline-none focus:ring-2 focus:ring-cream" />
-            </div>
-            <div>
-              <label for="t-tel" class="block text-sm font-600 text-paper/90 mb-1">Telefoon</label>
-              <input id="t-tel" name="telefoon" type="tel" autocomplete="tel" placeholder="03 ..."
-                class="w-full px-4 py-2.5 rounded-lg bg-paper text-charcoal border border-paper/20 focus:outline-none focus:ring-2 focus:ring-cream" />
-            </div>
-          </div>
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label for="t-datum" class="block text-sm font-600 text-paper/90 mb-1">Gewenste datum</label>
-              <input id="t-datum" name="datum" type="date"
-                class="w-full px-4 py-2.5 rounded-lg bg-paper text-charcoal border border-paper/20 focus:outline-none focus:ring-2 focus:ring-cream" />
-            </div>
-            <div>
-              <label for="t-personen" class="block text-sm font-600 text-paper/90 mb-1">Aantal personen</label>
-              <input id="t-personen" name="personen" type="number" min="1" placeholder="bv. 8"
-                class="w-full px-4 py-2.5 rounded-lg bg-paper text-charcoal border border-paper/20 focus:outline-none focus:ring-2 focus:ring-cream" />
-            </div>
-          </div>
-          <div>
-            <label for="t-type" class="block text-sm font-600 text-paper/90 mb-1">Type</label>
-            <select id="t-type" name="type"
-              class="w-full px-4 py-2.5 rounded-lg bg-paper text-charcoal border border-paper/20 focus:outline-none focus:ring-2 focus:ring-cream">
-              <option>Kaasschotel</option>
-              <option>Cadeaumand</option>
-              <option>Aperitief &amp; hapjes</option>
-              <option>Alpenkaas-selectie</option>
-              <option>Bedrijfscadeau</option>
-              <option>Iets anders</option>
-            </select>
-          </div>
-          <div>
-            <label for="t-wensen" class="block text-sm font-600 text-paper/90 mb-1">Wensen / opmerkingen</label>
-            <textarea id="t-wensen" name="wensen" rows="3" placeholder="Allergieën, budget, voorkeur zacht/pittig, afhalen of bezorgen ..."
-              class="w-full px-4 py-2.5 rounded-lg bg-paper text-charcoal border border-paper/20 focus:outline-none focus:ring-2 focus:ring-cream"></textarea>
-          </div>
-          <label class="flex items-start gap-3 text-xs text-paper/70">
-            <input type="checkbox" required class="mt-0.5 accent-cream" />
-            <span>Ik ga akkoord dat mijn gegevens enkel worden gebruikt om mijn aanvraag te beantwoorden (GDPR).</span>
-          </label>
-          <button class="w-full bg-cream text-ochredk font-700 px-7 py-3 rounded-full hover:bg-creamlt transition">
-            Verstuur mijn aanvraag
-          </button>
-          <p class="text-[11px] text-paper/50 text-center">Concept-formulier — in de live versie komt uw aanvraag rechtstreeks per e-mail bij Alpenhoorn terecht.</p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Ons verhaal -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
-    <div class="fade-up">
-      <p class="text-pine font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
-      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-ochre">De enige kaaswinkel<br />van Ekeren.</h2>
-      <p class="text-charcoal/70 text-lg mt-6 leading-relaxed">
-        Kaaswinkel Alpenhoorn is al jaren een vertrouwd adres in de Kloosterstraat in Ekeren —
-        de enige echte kaaswinkel van de gemeente. Wat ons onderscheidt? Een zorgvuldig samengesteld
-        kaasassortiment, van Belgische boerenkaas tot stevige alpentoppers, met de persoonlijke
-        service van een echte buurtwinkel.
-      </p>
-      <p class="text-charcoal/70 text-lg mt-4 leading-relaxed">
-        Of u nu langskomt voor een stuk kaas, een volledige kaasschotel of een cadeaumand voor
-        een feest — bij Alpenhoorn vindt u kwaliteit en advies op maat. Vandaag bereiken klanten
-        ons enkel telefonisch; binnenkort kan dat ook online: bestellen, afhalen en schotels
-        aanvragen vanuit uw zetel.
-      </p>
-      <div class="mt-9 flex flex-wrap gap-6">
-        <div class="text-center">
-          <p class="font-serif text-4xl text-pine font-700">Enige</p>
-          <p class="text-charcoal/65 text-sm mt-1">Kaaswinkel in Ekeren</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-pine font-700">Vers</p>
-          <p class="text-charcoal/65 text-sm mt-1">Gesneden van het stuk</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-pine font-700">Ekeren</p>
-          <p class="text-charcoal/65 text-sm mt-1">Kloosterstraat 18</p>
-        </div>
-      </div>
-    </div>
-    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
-      <img
-        src="https://images.unsplash.com/photo-1559561853-08451507cbe7?auto=format&fit=crop&w=1000&q=80"
-        alt="Ambachtelijke kazen en kaasschotels"
-        loading="lazy" decoding="async"
-        class="w-full h-full object-cover"
-      />
-    </div>
-  </section>
-
-  <!-- Bezoek + kaart -->
-  <section id="bezoek" class="bg-parchment/55 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
-      <div class="fade-up">
-        <p class="text-pine font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-ochre">Welkom in de winkel</h2>
-        <p class="text-charcoal/70 text-lg mt-5 max-w-md">
-          Kom proeven en kiezen in de Kloosterstraat 18 in Ekeren, in het hart van de gemeente.
-        </p>
-        <dl class="mt-9 space-y-5 text-charcoal">
-          <div class="flex gap-4">
-            <span class="text-pine mt-0.5 text-xl" aria-hidden="true">📍</span>
-            <div>
-              <dt class="font-600 text-ochre">Adres</dt>
-              <dd class="text-charcoal/70">Kloosterstraat 18, 2180 Ekeren</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-pine mt-0.5 text-xl" aria-hidden="true">🕑</span>
-            <div>
-              <dt class="font-600 text-ochre">Openingsuren</dt>
-              <dd class="text-charcoal/70">Di–Za: 09:00–18:00 · Zo: 09:00–12:30 · Ma: gesloten</dd>
-              <dd class="text-charcoal/40 text-sm mt-1">(indicatief — graag te bevestigen)</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-pine mt-0.5 text-xl" aria-hidden="true">📞</span>
-            <div>
-              <dt class="font-600 text-ochre">Telefoon</dt>
-              <dd class="text-charcoal/70"><a href="tel:+3235417035" class="ug">03 541 70 35</a></dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-pine mt-0.5 text-xl" aria-hidden="true">🧀</span>
-            <div>
-              <dt class="font-600 text-ochre">Specialiteit</dt>
-              <dd class="text-charcoal/70">Belgische &amp; buitenlandse kazen · alpentoppers · kaasschotels</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-pine mt-0.5 text-xl" aria-hidden="true">💳</span>
-            <div>
-              <dt class="font-600 text-ochre">Betaalmogelijkheden</dt>
-              <dd class="text-charcoal/70">Cash · Bancontact</dd>
-            </div>
-          </div>
-        </dl>
-        <a href="#bestellen" class="inline-block mt-9 bg-ochre text-paper font-600 px-7 py-3.5 rounded-full hover:bg-ochrelt transition">
-          Of bestel online →
-        </a>
-      </div>
-      <!-- OpenStreetMap embed — Kloosterstraat 18, 2180 Ekeren (~51.2790, 4.4180) -->
-      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-parchment shadow-sm">
-        <iframe
-          title="Kaart Kaaswinkel Alpenhoorn — Kloosterstraat 18, 2180 Ekeren"
-          class="w-full h-full min-h-[360px] border-0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=4.409%2C51.274%2C4.427%2C51.284&layer=mapnik&marker=51.2790%2C4.4180"
-        ></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- GDPR Newsletter -->
-  <section class="bg-cream/20">
-    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-ochre">Blijf op de hoogte</h2>
-      <p class="text-charcoal/70 mt-3">Nieuwe seizoenskazen, kaasschotels en cadeaumanden — af en toe in je mailbox.</p>
-      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
-        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
-        <input
-          id="nl-email"
-          name="email"
-          type="email"
-          autocomplete="email"
-          required
-          placeholder="jouw@email.be"
-          class="flex-1 px-5 py-3 rounded-full border border-ochre/20 bg-paper focus:outline-none focus:ring-2 focus:ring-cream"
-        />
-        <button class="bg-ochre text-paper font-600 px-7 py-3 rounded-full hover:bg-ochrelt transition">Inschrijven</button>
-      </form>
-      <p class="text-xs text-charcoal/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-ochre text-paper/80">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div>
-        <p class="font-serif text-2xl text-paper font-700">Alpenhoorn<span class="text-cream">·</span></p>
-        <p class="text-paper/55 text-sm mt-1">Kaaswinkel</p>
-        <p class="text-paper/55 text-sm mt-3 max-w-xs">De kaaswinkel van Ekeren. Belgische &amp; buitenlandse kazen, kaasschotels &amp; cadeaumanden — binnenkort ook online.</p>
-      </div>
-      <div>
-        <p class="font-600 text-paper mb-3">Winkel</p>
-        <ul class="space-y-2 text-sm text-paper/60">
-          <li><a href="#assortiment" class="hover:text-creamlt">Assortiment</a></li>
-          <li><a href="#bestellen" class="hover:text-creamlt">Online bestellen</a></li>
-          <li><a href="#schotels" class="hover:text-creamlt">Schotels &amp; cadeaus</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-paper mb-3">Info</p>
-        <ul class="space-y-2 text-sm text-paper/60">
-          <li><a href="#bezoek" class="hover:text-creamlt">Openingsuren</a></li>
-          <li><a href="#bezoek" class="hover:text-creamlt">Contact</a></li>
-          <li><a href="#top" class="hover:text-creamlt">Ons verhaal</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-paper mb-3">Contact</p>
-        <ul class="space-y-2 text-sm text-paper/60">
-          <li>Kloosterstraat 18</li>
-          <li>2180 Ekeren</li>
-          <li><a href="tel:+3235417035" class="hover:text-creamlt">03 541 70 35</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="border-t border-paper/10">
-      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-paper/40">
-        <p>© 2026 Kaaswinkel Alpenhoorn. Concept-redesign.</p>
-        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; kaaswebshop.</p>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 Kaaswinkel Alpenhoorn · Ekeren · Alle rechten voorbehouden</p>
+        <span class="footer__ekeren">EKEREN · ANTWERPEN · BELGIË</span>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
+  <!-- SCRIPTS: Headroom + IntersectionObserver fade-up -->
   <script>
-    // Fade-up IntersectionObserver
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
-    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
-    } else {
-      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
-    }
+    (function () {
+      'use strict';
 
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (menuBtn && mobileMenu) {
-      const setOpen = (open) => {
-        if (open) mobileMenu.removeAttribute('hidden');
-        else mobileMenu.setAttribute('hidden', '');
-        menuBtn.setAttribute('aria-expanded', String(open));
-        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
-      };
-      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
-      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
-    }
+      /* Fade-up on scroll */
+      var fadeEls = document.querySelectorAll('.fade-up');
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in-view');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        fadeEls.forEach(function (el) { io.observe(el); });
+      } else {
+        fadeEls.forEach(function (el) { el.classList.add('in-view'); });
+      }
+
+      /* Headroom nav */
+      var nav     = document.getElementById('headroom-nav');
+      var TOL_DOWN = 8;
+      var TOL_UP   = 5;
+      var OFFSET   = 80;
+      var lastY    = 0;
+      var accDown  = 0;
+      var accUp    = 0;
+      var hidden   = false;
+      var ticking  = false;
+
+      function clamp(v, lo, hi) { return Math.min(Math.max(v, lo), hi); }
+
+      function updateNav() {
+        var y     = window.pageYOffset || document.documentElement.scrollTop;
+        var delta = y - lastY;
+
+        if (y > OFFSET) {
+          nav.classList.add('headroom--scrolled');
+        } else {
+          nav.classList.remove('headroom--scrolled');
+        }
+
+        if (y <= OFFSET) {
+          nav.classList.remove('headroom--unpinned');
+          nav.classList.add('headroom--pinned');
+          hidden = false; accDown = 0; accUp = 0;
+        } else if (delta > 0) {
+          accDown += delta; accUp = 0;
+          if (accDown > TOL_DOWN && !hidden) {
+            nav.classList.add('headroom--unpinned');
+            nav.classList.remove('headroom--pinned');
+            hidden = true;
+          }
+        } else if (delta < 0) {
+          accUp += Math.abs(delta); accDown = 0;
+          if (accUp > TOL_UP && hidden) {
+            nav.classList.remove('headroom--unpinned');
+            nav.classList.add('headroom--pinned');
+            hidden = false;
+          }
+        }
+
+        lastY   = clamp(y, 0, document.body.scrollHeight);
+        ticking = false;
+      }
+
+      window.addEventListener('scroll', function () {
+        if (!ticking) { requestAnimationFrame(updateNav); ticking = true; }
+      }, { passive: true });
+
+      updateNav();
+    }());
   </script>
+
 </body>
 </html>

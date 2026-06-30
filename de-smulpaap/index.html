@@ -1,658 +1,718 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta name="robots" content="noindex, nofollow" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>De Smulpaap — Delicatessen, kaas, charcuterie &amp; ontbijtmanden in Boom</title>
-  <meta name="description" content="Ambachtelijke delicatessen in Boom: fijne charcuterie, kaas, ontbijtmanden &amp; geschenkmanden. Binnenkort online bestellen met click-and-collect — ideaal als giftable cadeau." />
-  <link rel="canonical" href="https://desmulpaap.be/" />
-  <meta name="theme-color" content="#6b1f2a" />
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="De Smulpaap" />
-  <meta property="og:locale" content="nl_BE" />
-  <meta property="og:title" content="De Smulpaap — Delicatessen, kaas, charcuterie &amp; ontbijtmanden in Boom" />
-  <meta property="og:description" content="Fijne charcuterie, kaas, ontbijtmanden &amp; geschenkmanden in Boom. Binnenkort online bestellen, click-and-collect en giftable cadeaumanden." />
-  <meta property="og:url" content="https://desmulpaap.be/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=1200&q=80" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- Inline SVG favicon — monogram "DS" -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%236b1f2a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%23caa46a' text-anchor='middle'%3EDS%3C/text%3E%3C/svg%3E" />
-  <!-- Local-SEO structured data -->
+  <title>De Smulpaap — Kaas &amp; Delicatessen · Boom</title>
+  <meta name="description" content="De Smulpaap in Boom: ambachtelijke kaas, charcuterie, verse salades, tapas, olijven en confituren. Voor iedereen die graag smuld." />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23c07a25'/%3E%3Ccircle cx='32' cy='32' r='30' fill='none' stroke='%23110d08' stroke-width='2'/%3E%3Cpath d='M32 32 L62 32 A30 30 0 0 0 47 6.04 Z' fill='%23f5ede0'/%3E%3Ccircle cx='20' cy='28' r='4' fill='%23110d08' opacity='.18'/%3E%3Ccircle cx='36' cy='42' r='3' fill='%23110d08' opacity='.18'/%3E%3Crect x='44' y='4' width='3' height='18' rx='1.5' fill='%23a0522d' transform='rotate(-30 45.5 13)'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Outfit:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Outfit:wght@400;500&display=swap" rel="stylesheet" /></noscript>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["Store", "FoodEstablishment"],
+    "@type": "LocalBusiness",
     "name": "De Smulpaap",
-    "description": "Ambachtelijke delicatessen-, charcuterie- en kaaszaak in Boom. Fijne charcuterie, kaas, ontbijtmanden en geschenkmanden — giftable cadeaumanden.",
-    "image": "https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=1200&q=80",
-    "url": "https://desmulpaap.be/",
+    "description": "Delicatessen en kaaswinkel in Boom, Belgie.",
     "email": "info@desmulpaap.com",
-    "servesCuisine": ["Belgian", "Delicatessen"],
-    "priceRange": "€€",
-    "areaServed": "BE",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Blauwstraat 67",
-      "postalCode": "2850",
-      "addressLocality": "Boom",
-      "addressRegion": "Antwerpen",
-      "addressCountry": "BE"
-    },
-    "geo": { "@type": "GeoCoordinates", "latitude": 51.0867, "longitude": 4.3700 },
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "08:30", "closes": "18:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "08:30", "closes": "12:30" }
-    ]
+    "address": { "@type": "PostalAddress", "addressLocality": "Boom", "addressCountry": "BE" },
+    "priceRange": "EE"
   }
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
-          colors: {
-            wine:     '#6b1f2a',
-            winelt:   '#7a2230',
-            winedk:   '#511620',
-            gold:     '#caa46a',
-            goldlt:   '#e0c294',
-            cream:    '#f6efe4',
-            parchment:'#ece0cc',
-            charcoal: '#2b2422',
-          },
-        },
-      },
-    };
-  </script>
+
   <style>
+    :root {
+      --cocoa: #110d08;
+      --amber: #c07a25;
+      --amber-lt: #d4913a;
+      --cream: #f5ede0;
+      --cream-80: rgba(245,237,224,0.80);
+      --warm-mid: #3a2c1a;
+      --warm-dark: #1e1710;
+      --border: rgba(192,122,37,0.22);
+      --ff-display: 'Fraunces', Georgia, serif;
+      --ff-body: 'Outfit', system-ui, sans-serif;
+      --radius: 4px;
+      --radius-lg: 10px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    .hero-grad { background: linear-gradient(180deg, rgba(81,22,32,.18) 0%, rgba(81,22,32,.52) 50%, rgba(81,22,32,.92) 100%); }
-    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
-    .fade-up.in { opacity: 1; transform: none; }
-    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
-    .ug:hover { background-size: 100% 2px; }
+    body { background: var(--cocoa); color: var(--cream); font-family: var(--ff-body); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    ul, ol { list-style: none; }
+
+    /* Fade-up */
+    .fade-up { opacity: 0; transform: translateY(28px); transition: opacity .65s ease, transform .65s ease; }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    /* NAV */
+    .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 0 clamp(1.5rem,5vw,4rem); height: 68px; display: flex; align-items: center; justify-content: space-between; transition: transform .32s ease, background .32s ease, box-shadow .32s ease; }
+    .nav.pinned { background: rgba(17,13,8,0.95); backdrop-filter: blur(10px); box-shadow: 0 1px 0 var(--border); }
+    .nav.unpinned { transform: translateY(-100%); }
+    .nav-logo { font-family: var(--ff-display); font-size: 1.25rem; color: var(--amber); letter-spacing: -.01em; display: flex; align-items: center; gap: .5rem; }
+    .nav-logo-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--amber); }
+    .nav-links { display: flex; gap: 2rem; align-items: center; }
+    .nav-links a { font-size: .875rem; font-weight: 500; color: var(--cream-80); transition: color .2s; }
+    .nav-links a:hover { color: var(--cream); }
+    .nav-cta { background: var(--amber); color: var(--cocoa) !important; padding: .45rem 1.1rem; border-radius: var(--radius); font-weight: 500; font-size: .85rem !important; }
+    .nav-cta:hover { background: var(--amber-lt) !important; }
+
+    /* HERO */
+    .hero { min-height: 100dvh; position: relative; display: flex; align-items: flex-end; padding: clamp(2rem,6vw,6rem) clamp(1.5rem,6vw,5rem); overflow: hidden; }
+    .hero-svg-bg { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(160deg, rgba(17,13,8,.78) 0%, rgba(17,13,8,.42) 55%, rgba(17,13,8,.85) 100%); z-index: 1; }
+    .hero-ghost { position: absolute; right: -.08em; top: 50%; transform: translateY(-50%); font-family: var(--ff-display); font-size: clamp(7rem,18vw,22rem); line-height: 1; color: transparent; -webkit-text-stroke: 1px rgba(192,122,37,.18); letter-spacing: -.04em; user-select: none; pointer-events: none; z-index: 2; white-space: nowrap; }
+    .hero-content { position: relative; z-index: 3; max-width: 640px; }
+    .hero-label { font-size: .75rem; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: var(--amber); margin-bottom: 1.25rem; display: flex; align-items: center; gap: .75rem; }
+    .hero-label::before { content: ''; display: inline-block; width: 32px; height: 1px; background: var(--amber); }
+    .hero-h1 { font-family: var(--ff-display); font-size: clamp(2.8rem,6.5vw,6.5rem); line-height: 1.0; letter-spacing: -.025em; color: var(--cream); margin-bottom: 1.5rem; }
+    .hero-h1 em { font-style: normal; color: var(--amber); }
+    .hero-sub { font-size: clamp(1rem,1.4vw,1.2rem); color: var(--cream-80); max-width: 440px; margin-bottom: 2.5rem; line-height: 1.65; }
+    .hero-actions { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
+    .btn-primary { background: var(--amber); color: var(--cocoa); padding: .85rem 2rem; border-radius: var(--radius); font-family: var(--ff-body); font-weight: 500; font-size: .95rem; transition: background .22s, transform .15s; border: none; display: inline-flex; align-items: center; gap: .5rem; cursor: pointer; }
+    .btn-primary:hover { background: var(--amber-lt); transform: translateY(-1px); }
+    .btn-primary svg { width: 16px; height: 16px; }
+    .btn-ghost { color: var(--cream-80); font-size: .9rem; font-weight: 500; display: inline-flex; align-items: center; gap: .4rem; border-bottom: 1px solid rgba(245,237,224,.3); padding-bottom: 2px; transition: color .2s, border-color .2s; }
+    .btn-ghost:hover { color: var(--cream); border-color: rgba(245,237,224,.7); }
+    .hero-scroll { position: absolute; bottom: 2rem; right: clamp(1.5rem,5vw,4rem); z-index: 3; display: flex; flex-direction: column; align-items: center; gap: .4rem; opacity: .5; }
+    .hero-scroll span { font-size: .65rem; letter-spacing: .15em; text-transform: uppercase; writing-mode: vertical-rl; }
+    .hero-scroll-line { width: 1px; height: 48px; background: linear-gradient(to bottom, var(--amber), transparent); }
+
+    /* MARQUEE */
+    .marquee-wrap { background: var(--amber); overflow: hidden; padding: .85rem 0; }
+    .marquee-track { display: flex; width: max-content; animation: marquee-scroll 28s linear infinite; }
+    .marquee-track:hover { animation-play-state: paused; }
+    .marquee-item { font-family: var(--ff-body); font-size: .8rem; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--cocoa); padding: 0 2.5rem; white-space: nowrap; }
+    .marquee-dot { display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: var(--cocoa); opacity: .5; margin-left: 2.5rem; vertical-align: middle; position: relative; top: -1px; }
+    @keyframes marquee-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    /* SECTION COMMONS */
+    .section-inner { max-width: 1200px; margin: 0 auto; padding: clamp(4rem,8vw,8rem) clamp(1.5rem,5vw,4rem); }
+    .section-label { font-size: .7rem; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--amber); margin-bottom: 1rem; display: flex; align-items: center; gap: .6rem; }
+    .section-label::before { content: ''; display: inline-block; width: 20px; height: 1px; background: var(--amber); }
+    .section-h2 { font-family: var(--ff-display); font-size: clamp(2rem,4.5vw,4rem); line-height: 1.05; letter-spacing: -.02em; color: var(--cream); margin-bottom: 1rem; }
+    .section-lead { font-size: clamp(1rem,1.3vw,1.15rem); color: var(--cream-80); max-width: 520px; line-height: 1.7; }
+
+    /* AANBOD */
+    .aanbod-section { background: var(--warm-dark); }
+    .aanbod-header { display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; margin-bottom: 3.5rem; flex-wrap: wrap; }
+    .aanbod-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem; }
+    .aanbod-card { background: var(--warm-mid); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 2rem 1.75rem 1.75rem; position: relative; overflow: hidden; transition: border-color .22s, transform .22s; }
+    .aanbod-card:hover { border-color: rgba(192,122,37,.5); transform: translateY(-3px); }
+    .aanbod-card.large { grid-column: span 2; }
+    .aanbod-icon { width: 48px; height: 48px; margin-bottom: 1.25rem; }
+    .aanbod-card-title { font-family: var(--ff-display); font-size: 1.35rem; color: var(--cream); margin-bottom: .6rem; }
+    .aanbod-card-desc { font-size: .9rem; color: var(--cream-80); line-height: 1.6; }
+    .aanbod-card-tag { position: absolute; top: 1.25rem; right: 1.25rem; font-size: .65rem; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--amber); background: rgba(192,122,37,.12); border: 1px solid rgba(192,122,37,.25); border-radius: 20px; padding: .2rem .7rem; }
+    .aanbod-card::after { content: attr(data-num); position: absolute; bottom: -.15em; right: .5rem; font-family: var(--ff-display); font-size: 5rem; line-height: 1; color: rgba(192,122,37,.06); pointer-events: none; user-select: none; }
+
+    /* KAASPLANK */
+    .kaasplank-section { background: var(--cocoa); border-top: 1px solid var(--border); }
+    .kaasplank-inner { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(3rem,6vw,6rem); align-items: center; }
+    .kaasplank-visual { position: relative; }
+    .kaasplank-svg-wrap { border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border); background: var(--warm-mid); aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; }
+    .kaasplank-badge { position: absolute; bottom: -1rem; right: -1rem; background: var(--amber); color: var(--cocoa); border-radius: 50%; width: 90px; height: 90px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: var(--ff-display); font-size: .72rem; font-weight: 700; text-align: center; line-height: 1.2; border: 3px solid var(--cocoa); }
+    .steps-list { margin-top: 2rem; display: flex; flex-direction: column; gap: 1.25rem; }
+    .step-item { display: flex; gap: 1.25rem; align-items: flex-start; }
+    .step-num { flex-shrink: 0; width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-family: var(--ff-display); font-size: .85rem; color: var(--amber); margin-top: 2px; }
+    .step-text strong { display: block; font-weight: 500; font-size: .95rem; color: var(--cream); margin-bottom: .2rem; }
+    .step-text span { font-size: .875rem; color: var(--cream-80); }
+
+    /* CADEAUS */
+    .cadeaus-section { background: var(--warm-dark); }
+    .cadeaus-inner { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(3rem,6vw,6rem); align-items: start; }
+    .hamper-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .hamper-card { background: var(--cocoa); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem 1.25rem; transition: border-color .22s; }
+    .hamper-card:hover { border-color: rgba(192,122,37,.45); }
+    .hamper-card.featured { grid-column: span 2; background: linear-gradient(135deg, var(--warm-mid) 0%, rgba(58,44,26,.6) 100%); border-color: rgba(192,122,37,.35); display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: center; }
+    .hamper-icon { font-size: 2rem; margin-bottom: .75rem; }
+    .hamper-card.featured .hamper-icon { font-size: 2.5rem; margin-bottom: 0; }
+    .hamper-card-title { font-family: var(--ff-display); font-size: 1rem; color: var(--cream); margin-bottom: .35rem; }
+    .hamper-card-desc { font-size: .83rem; color: var(--cream-80); line-height: 1.55; }
+    .cadeaus-right { display: flex; flex-direction: column; gap: 2rem; }
+    .quote-block { border-left: 2px solid var(--amber); padding-left: 1.5rem; }
+    .quote-text { font-family: var(--ff-display); font-size: clamp(1.1rem,1.8vw,1.5rem); line-height: 1.35; color: var(--cream); margin-bottom: .75rem; }
+    .quote-attr { font-size: .8rem; color: var(--amber); font-weight: 500; letter-spacing: .1em; text-transform: uppercase; }
+    .cadeaus-cta-block { background: var(--warm-mid); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.75rem; }
+    .cadeaus-cta-block p { font-size: .9rem; color: var(--cream-80); margin-bottom: 1.25rem; line-height: 1.6; }
+
+    /* BEZOEK */
+    .bezoek-section { background: var(--cocoa); position: relative; }
+    .bezoek-section::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 80% 50%, rgba(192,122,37,.07) 0%, transparent 70%); pointer-events: none; }
+    .bezoek-inner { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(3rem,6vw,6rem); align-items: start; }
+    .bezoek-info { display: flex; flex-direction: column; gap: 2rem; }
+    .info-row { display: flex; gap: 1.25rem; align-items: flex-start; }
+    .info-icon { flex-shrink: 0; width: 42px; height: 42px; border-radius: var(--radius); background: rgba(192,122,37,.1); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; }
+    .info-icon svg { width: 20px; height: 20px; color: var(--amber); }
+    .info-text strong { display: block; font-weight: 500; color: var(--cream); font-size: .95rem; margin-bottom: .2rem; }
+    .info-text span, .info-text a { font-size: .88rem; color: var(--cream-80); line-height: 1.6; }
+    .info-text a:hover { color: var(--amber); }
+    .bezoek-cta-panel { background: var(--amber); border-radius: var(--radius-lg); padding: clamp(2rem,4vw,3.5rem); position: sticky; top: 100px; }
+    .bezoek-cta-panel .panel-label { font-size: .7rem; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: var(--cocoa); opacity: .65; margin-bottom: 1rem; }
+    .bezoek-cta-panel h3 { font-family: var(--ff-display); font-size: clamp(1.6rem,3vw,2.8rem); line-height: 1.05; letter-spacing: -.02em; color: var(--cocoa); margin-bottom: 1rem; }
+    .bezoek-cta-panel p { font-size: .95rem; color: var(--cocoa); opacity: .8; margin-bottom: 2rem; line-height: 1.6; }
+    .btn-dark { background: var(--cocoa); color: var(--cream); padding: .85rem 1.75rem; border-radius: var(--radius); font-family: var(--ff-body); font-weight: 500; font-size: .92rem; display: inline-flex; align-items: center; gap: .5rem; transition: background .2s, transform .15s; border: none; cursor: pointer; }
+    .btn-dark:hover { background: var(--warm-mid); transform: translateY(-1px); }
+    .btn-dark svg { width: 16px; height: 16px; }
+
+    /* FOOTER */
+    .footer { background: var(--warm-dark); border-top: 1px solid var(--border); padding: clamp(2.5rem,5vw,4rem) clamp(1.5rem,5vw,4rem); }
+    .footer-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; flex-wrap: wrap; }
+    .footer-brand { font-family: var(--ff-display); font-size: 1.5rem; color: var(--amber); }
+    .footer-meta { font-size: .8rem; color: var(--cream-80); line-height: 1.7; }
+    .footer-meta a { color: var(--amber); }
+    .footer-meta a:hover { text-decoration: underline; }
+    .footer-tagline { font-size: .8rem; color: var(--cream-80); opacity: .6; letter-spacing: .05em; }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .aanbod-grid { grid-template-columns: 1fr 1fr; }
+      .aanbod-card.large { grid-column: span 2; }
+      .kaasplank-inner, .cadeaus-inner, .bezoek-inner { grid-template-columns: 1fr; }
+      .bezoek-cta-panel { position: static; }
+    }
+    @media (max-width: 600px) {
+      .aanbod-grid { grid-template-columns: 1fr; }
+      .aanbod-card.large { grid-column: span 1; }
+      .hamper-cards { grid-template-columns: 1fr; }
+      .hamper-card.featured { grid-column: span 1; }
+      .hero-ghost { display: none; }
+    }
   </style>
 </head>
-<body class="bg-cream text-wine font-sans antialiased selection:bg-gold/25">
+<body>
 
-  <!-- Skip link -->
-  <a href="#bestellen" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-wine focus:text-cream focus:rounded-full">Naar online bestellen</a>
+<nav class="nav" id="mainNav" role="navigation" aria-label="Hoofdnavigatie">
+  <a href="#" class="nav-logo">
+    <span class="nav-logo-dot" aria-hidden="true"></span>De Smulpaap
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="#aanbod">Aanbod</a></li>
+    <li><a href="#kaasplank">Kaasplank</a></li>
+    <li><a href="#cadeaus">Cadeaus</a></li>
+    <li><a href="#bezoek" class="nav-cta">Bezoek ons</a></li>
+  </ul>
+</nav>
 
-  <!-- Announcement bar -->
-  <div class="bg-wine text-cream text-center text-[13px] tracking-wide py-2 px-4">
-    <span aria-hidden="true">🧺</span> <span class="font-semibold">Binnenkort:</span> ontbijtmanden &amp; geschenkmanden online bestellen &amp; afhalen — nu enkel telefonisch · Blauwstraat 67, Boom.
+<!-- HERO: bottom-left text, full SVG illustrated canvas -->
+<section class="hero" aria-label="Hero">
+  <svg class="hero-svg-bg" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <rect width="1440" height="900" fill="#18100a"/>
+    <radialGradient id="hg1" cx="72%" cy="44%" r="52%">
+      <stop offset="0%" stop-color="#7a3d08" stop-opacity=".7"/>
+      <stop offset="100%" stop-color="#110d08" stop-opacity="0"/>
+    </radialGradient>
+    <rect width="1440" height="900" fill="url(#hg1)"/>
+
+    <!-- LARGE CHEESE WHEEL, right center -->
+    <g transform="translate(1050,440)">
+      <circle cx="6" cy="8" r="295" fill="#0a0704" opacity=".55"/>
+      <circle cx="0" cy="0" r="290" fill="#7a4210"/>
+      <circle cx="0" cy="0" r="264" fill="#c4922a"/>
+      <ellipse cx="-80" cy="-65" rx="22" ry="17" fill="#9a6c1a" opacity=".55"/>
+      <ellipse cx="65" cy="38"   rx="17" ry="13" fill="#9a6c1a" opacity=".5"/>
+      <ellipse cx="-25" cy="105" rx="13" ry="10" fill="#9a6c1a" opacity=".5"/>
+      <ellipse cx="115" cy="-85" rx="15" ry="11" fill="#9a6c1a" opacity=".5"/>
+      <ellipse cx="-145" cy="42" rx="11" ry="9"  fill="#9a6c1a" opacity=".5"/>
+      <ellipse cx="52" cy="-135" rx="13" ry="9"  fill="#9a6c1a" opacity=".45"/>
+      <ellipse cx="165" cy="82"  rx="10" ry="7"  fill="#9a6c1a" opacity=".45"/>
+      <circle cx="0" cy="0" r="290" fill="none" stroke="#5c3008" stroke-width="8" opacity=".55"/>
+      <circle cx="0" cy="0" r="280" fill="none" stroke="#8B4808" stroke-width="2" opacity=".35"/>
+      <!-- wedge cutout -->
+      <path d="M0,0 L-210,210 A290,290 0 0,1 -290,0 Z" fill="#110d08" opacity=".92"/>
+      <line x1="0" y1="0" x2="-210" y2="210" stroke="#d4a840" stroke-width="2.5" opacity=".45"/>
+      <line x1="0" y1="0" x2="-290" y2="0"   stroke="#d4a840" stroke-width="2"   opacity=".35"/>
+      <!-- knife -->
+      <g transform="translate(-155,72) rotate(-44)">
+        <rect x="-4.5" y="-118" width="9" height="138" rx="2.5" fill="#ddd0b0" opacity=".9"/>
+        <rect x="1.5"  y="-118" width="4" height="138" rx="1.5" fill="#f5ede0"  opacity=".45"/>
+        <rect x="-7"   y="18"   width="14" height="10" rx="2.5" fill="#7a6840"  opacity=".9"/>
+        <rect x="-5.5" y="28"   width="11" height="44" rx="3"   fill="#5c3820"/>
+        <circle cx="0" cy="37" r="2.2" fill="#8B7340"/>
+        <circle cx="0" cy="52" r="2.2" fill="#8B7340"/>
+      </g>
+    </g>
+
+    <!-- FIG 1 -->
+    <g transform="translate(840,195) rotate(18)">
+      <ellipse cx="0" cy="0" rx="27" ry="36" fill="#5a2870" opacity=".65"/>
+      <circle cx="-7" cy="2"  r="2.5" fill="#f5ede0" opacity=".32"/>
+      <circle cx="4"  cy="7"  r="2"   fill="#f5ede0" opacity=".32"/>
+      <path d="M0,-36 C-4,-46 4,-52 0,-58" stroke="#3a2010" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".8"/>
+      <path d="M0,-47 C7,-55 15,-50 11,-43 C7,-38 0,-43 0,-47Z" fill="#2d5a1a" opacity=".6"/>
+    </g>
+    <!-- FIG 2 -->
+    <g transform="translate(1295,670) rotate(-22)">
+      <ellipse cx="0" cy="0" rx="20" ry="28" fill="#5a2870" opacity=".5"/>
+      <path d="M0,-28 C-3,-38 3,-42 0,-46" stroke="#3a2010" stroke-width="2" fill="none" stroke-linecap="round" opacity=".7"/>
+      <path d="M0,-37 C6,-44 12,-40 9,-34 C6,-30 0,-34 0,-37Z" fill="#2d5a1a" opacity=".5"/>
+    </g>
+
+    <!-- GRAPES -->
+    <g transform="translate(1360,570)">
+      <circle cx="0"   cy="0"   r="15" fill="#6a3da0" opacity=".58"/>
+      <circle cx="24"  cy="-7"  r="15" fill="#6a3da0" opacity=".58"/>
+      <circle cx="12"  cy="-26" r="14" fill="#7848b0" opacity=".52"/>
+      <circle cx="-15" cy="-19" r="13" fill="#6a3da0" opacity=".52"/>
+      <circle cx="35"  cy="-23" r="13" fill="#7848b0" opacity=".48"/>
+      <circle cx="11"  cy="-46" r="12" fill="#6a3da0" opacity=".48"/>
+      <circle cx="-5"  cy="-42" r="11" fill="#7848b0" opacity=".44"/>
+      <circle cx="-4"  cy="-7"  r="3.5" fill="#f5ede0" opacity=".18"/>
+      <circle cx="18"  cy="-13" r="3"   fill="#f5ede0" opacity=".18"/>
+      <path d="M11,-57 C9,-70 15,-75 13,-80" stroke="#3a2010" stroke-width="2" fill="none" stroke-linecap="round" opacity=".7"/>
+      <path d="M13,-69 C22,-80 32,-74 28,-63 C24,-56 13,-63 13,-69Z" fill="#2d5a1a" opacity=".48"/>
+    </g>
+
+    <!-- WALNUT 1 -->
+    <g transform="translate(788,695) rotate(32)">
+      <ellipse cx="0" cy="0" rx="23" ry="19" fill="#6b3d10" opacity=".6"/>
+      <ellipse cx="0" cy="0" rx="23" ry="19" fill="none" stroke="#4a2808" stroke-width="2.2" opacity=".55"/>
+      <path d="M-23,0 C-10,-9 10,9 23,0"  stroke="#4a2808" stroke-width="1.5" fill="none" opacity=".65"/>
+    </g>
+    <!-- WALNUT 2 -->
+    <g transform="translate(880,748) rotate(-16)">
+      <ellipse cx="0" cy="0" rx="18" ry="15" fill="#6b3d10" opacity=".52"/>
+      <ellipse cx="0" cy="0" rx="18" ry="15" fill="none" stroke="#4a2808" stroke-width="2" opacity=".48"/>
+    </g>
+
+    <!-- ROSEMARY -->
+    <g transform="translate(752,558) rotate(36)" opacity=".5">
+      <path d="M0,0 L0,-125" stroke="#2d5a1a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <path d="M0,-18 C-13,-25 -17,-21 -15,-17" stroke="#3d6e22" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <path d="M0,-18 C13,-25 17,-21 15,-17"   stroke="#3d6e22" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <path d="M0,-38 C-11,-45 -15,-41 -13,-37" stroke="#3d6e22" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <path d="M0,-38 C11,-45 15,-41 13,-37"   stroke="#3d6e22" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <path d="M0,-58 C-12,-65 -16,-61 -14,-57" stroke="#3d6e22" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <path d="M0,-58 C12,-65 16,-61 14,-57"   stroke="#3d6e22" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <path d="M0,-78 C-9,-85 -13,-81 -11,-77"  stroke="#3d6e22" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <path d="M0,-78 C9,-85 13,-81 11,-77"    stroke="#3d6e22" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <path d="M0,-98 C-6,-105 -9,-102 -8,-98"  stroke="#3d6e22" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+      <path d="M0,-98 C6,-105 9,-102 8,-98"    stroke="#3d6e22" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- SALAMI DISC -->
+    <g transform="translate(930,752)">
+      <ellipse cx="5" cy="5" rx="42" ry="42" fill="#110d08" opacity=".4"/>
+      <circle cx="0" cy="0" r="42" fill="#8B1e1e" opacity=".62"/>
+      <circle cx="-13" cy="-10" r="6.5" fill="#f5ede0" opacity=".2"/>
+      <circle cx="15"  cy="6"   r="5.5" fill="#f5ede0" opacity=".2"/>
+      <circle cx="-5"  cy="17"  r="4.5" fill="#f5ede0" opacity=".2"/>
+      <circle cx="0"   cy="0"   r="42"  fill="none" stroke="#6b1818" stroke-width="5" opacity=".45"/>
+    </g>
+
+    <!-- OLIVE BRANCH -->
+    <g transform="translate(310,790) rotate(-22)" opacity=".38">
+      <path d="M0,0 C32,-32 72,-22 94,-52" stroke="#3d6e22" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <ellipse cx="32" cy="-32" rx="7" ry="11" fill="#2a5a1a" opacity=".8" transform="rotate(22 32 -32)"/>
+      <ellipse cx="62" cy="-40" rx="6" ry="9"  fill="#3a6e28" opacity=".8" transform="rotate(-14 62 -40)"/>
+      <ellipse cx="82" cy="-50" rx="5" ry="8"  fill="#2a5a1a" opacity=".8" transform="rotate(12 82 -50)"/>
+      <path d="M26,-23 C19,-15 15,-7 21,-3 C27,2 31,-8 26,-23Z"    fill="#3d6e22" opacity=".65"/>
+      <path d="M57,-32 C50,-24 46,-16 52,-12 C58,-8 62,-18 57,-32Z" fill="#3d6e22" opacity=".65"/>
+    </g>
+
+    <!-- CRACKERS -->
+    <g transform="translate(208,828)" opacity=".28">
+      <rect x="0" y="0" width="112" height="28" rx="4" fill="none" stroke="#c07a25" stroke-width="1.5"/>
+      <line x1="37" y1="0"  x2="37"  y2="28" stroke="#c07a25" stroke-width="1" opacity=".6"/>
+      <line x1="74" y1="0"  x2="74"  y2="28" stroke="#c07a25" stroke-width="1" opacity=".6"/>
+      <line x1="0"  y1="14" x2="112" y2="14" stroke="#c07a25" stroke-width=".8" opacity=".5"/>
+    </g>
+
+    <!-- spice dots -->
+    <g fill="#c07a25" opacity=".22">
+      <circle cx="645" cy="725" r="2.2"/>
+      <circle cx="662" cy="742" r="1.6"/>
+      <circle cx="658" cy="712" r="1.2"/>
+      <circle cx="682" cy="732" r="2"/>
+      <circle cx="802" cy="804" r="1.5"/>
+      <circle cx="822" cy="788" r="2"/>
+    </g>
+  </svg>
+
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-ghost" aria-hidden="true">SMULPAAP</div>
+
+  <div class="hero-content fade-up">
+    <p class="hero-label">Delicatessen &amp; Kaas &middot; Boom</p>
+    <h1 class="hero-h1">Voor <em>smulpapen</em><br>in Boom</h1>
+    <p class="hero-sub">Ambachtelijke kaas, charcuterie en de beste delicatessen van de streek &mdash; voor iedereen die graag smuld.</p>
+    <div class="hero-actions">
+      <a href="#aanbod" class="btn-primary">
+        Ontdek het aanbod
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+      </a>
+      <a href="mailto:info@desmulpaap.com" class="btn-ghost">
+        info@desmulpaap.com
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="12" height="10" rx="1.5"/><path d="M2 5l6 5 6-5"/></svg>
+      </a>
+    </div>
   </div>
 
-  <!-- Sticky nav -->
-  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-wine/10">
-    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
-      <!-- Logo -->
-      <a href="#top" class="flex items-baseline gap-2">
-        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-wine">De Smulpaap<span class="text-gold">·</span></span>
-        <span class="text-[11px] uppercase tracking-[0.22em] text-wine/50 font-600">Delicatessen · Boom</span>
-      </a>
-      <!-- Desktop links -->
-      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
-        <a href="#bestellen" class="ug">Online bestellen</a>
-        <a href="#assortiment" class="ug">Assortiment</a>
-        <a href="#manden" class="ug">Ontbijt- &amp; geschenkmanden</a>
-        <a href="#bezoek" class="ug">Bezoek ons</a>
-      </div>
-      <!-- CTA + hamburger -->
-      <div class="flex items-center gap-2">
-        <a href="#manden" class="inline-flex items-center gap-2 bg-gold text-winedk text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-goldlt transition">
-          Bestel een mand
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
-          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-wine/15 text-wine hover:bg-wine/5 transition">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </nav>
-    <!-- Mobile menu -->
-    <div id="mobile-menu" hidden class="md:hidden border-t border-wine/10 bg-cream/95 backdrop-blur">
-      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
-        <a href="#bestellen" class="py-3 border-b border-wine/8">Online bestellen</a>
-        <a href="#assortiment" class="py-3 border-b border-wine/8">Assortiment</a>
-        <a href="#manden" class="py-3 border-b border-wine/8">Ontbijt- &amp; geschenkmanden</a>
-        <a href="#bezoek" class="py-3">Bezoek ons</a>
-      </div>
-    </div>
-  </header>
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="hero-scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
 
-  <!-- Hero -->
-  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-wine">
-    <img
-      src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=2000&q=80"
-      alt="Ambachtelijke charcuterie en kaas bij delicatessen De Smulpaap in Boom"
-      fetchpriority="high"
-      class="absolute inset-0 w-full h-full object-cover"
-    />
-    <div class="absolute inset-0 hero-grad"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
-      <p class="text-goldlt font-600 tracking-[0.3em] uppercase text-xs mb-5">
-        <span aria-hidden="true">🧺</span> Delicatessen · Kaas · Charcuterie · Ontbijtmanden · Boom
-      </p>
-      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
-        Ambachtelijke delicatessen,<br />ontbijtmanden om cadeau te geven.
-      </h1>
-      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
-        Fijne charcuterie, een rijk kaasassortiment en feestelijke ontbijt- en geschenkmanden —
-        een vast adres in de Blauwstraat in Boom. Binnenkort kunt u uw mand ook online bestellen
-        en afhalen.
-      </p>
-      <div class="flex flex-wrap gap-3 mt-9">
-        <a href="#manden" class="bg-gold text-winedk font-700 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
-          Bestel een ontbijtmand
-        </a>
-        <a href="#assortiment" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
-          Bekijk het assortiment
-        </a>
+<!-- MARQUEE -->
+<div class="marquee-wrap" aria-hidden="true" role="presentation">
+  <div class="marquee-track">
+    <span class="marquee-item">Ambachtelijke kaas</span><span class="marquee-dot"></span>
+    <span class="marquee-item">Charcuterie</span><span class="marquee-dot"></span>
+    <span class="marquee-item">Tapas</span><span class="marquee-dot"></span>
+    <span class="marquee-item">Verse salades</span><span class="marquee-dot"></span>
+    <span class="marquee-item">Olijven</span><span class="marquee-dot"></span>
+    <span class="marquee-item">Confituren</span><span class="marquee-dot"></span>
+    <span class="marquee-item">Ambachtelijke kaas</span><span class="marquee-dot"></span>
+    <span class="marquee-item">Charcuterie</span><span class="marquee-dot"></span>
+    <span class="marquee-item">Tapas</span><span class="marquee-dot"></span>
+    <span class="marquee-item">Verse salades</span><span class="marquee-dot"></span>
+    <span class="marquee-item">Olijven</span><span class="marquee-dot"></span>
+    <span class="marquee-item">Confituren</span><span class="marquee-dot"></span>
+  </div>
+</div>
+
+<!-- AANBOD -->
+<section class="aanbod-section" id="aanbod" aria-labelledby="aanbod-h">
+  <div class="section-inner">
+    <div class="aanbod-header">
+      <div>
+        <div class="section-label">Wat we bieden</div>
+        <h2 class="section-h2" id="aanbod-h">Alles voor de<br>echte smulpaap</h2>
       </div>
+      <p class="section-lead fade-up">Van gerookte vleeswaren tot zeldzame kazen &mdash; wij selecteren met liefde en kennis van zaken.</p>
     </div>
-  </section>
-
-  <!-- USP strip -->
-  <section class="bg-wine text-cream/90">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
-      <div><p class="font-serif text-2xl text-goldlt">Ambacht</p><p class="mt-1 text-cream/65">Dagvers gesneden in de winkel</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Ontbijtmanden</p><p class="mt-1 text-cream/65">Feestelijk &amp; volledig samengesteld</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Cadeau</p><p class="mt-1 text-cream/65">Geschenkmanden voor elke gelegenheid</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Afhaal</p><p class="mt-1 text-cream/65">Binnenkort: online bestellen &amp; click-and-collect</p></div>
+    <div class="aanbod-grid">
+      <article class="aanbod-card large fade-up" data-num="01">
+        <div class="aanbod-card-tag">Specialiteit</div>
+        <svg class="aanbod-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M4 38 L24 8 L44 38 Z" fill="rgba(192,122,37,0.18)" stroke="#c07a25" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="18" cy="28" r="3.5" fill="#c07a25" opacity=".5"/>
+          <circle cx="30" cy="25" r="2.8" fill="#c07a25" opacity=".5"/>
+          <circle cx="24" cy="33" r="2.2" fill="#c07a25" opacity=".5"/>
+        </svg>
+        <h3 class="aanbod-card-title">Ambachtelijke Kaas</h3>
+        <p class="aanbod-card-desc">Harde en zachte kazen, gerijpte toppers en seizoenskeuzes &mdash; rechtstreeks van kleine producenten. Wij vertellen het verhaal achter elk stuk.</p>
+      </article>
+      <article class="aanbod-card fade-up" data-num="02">
+        <svg class="aanbod-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="24" cy="24" r="18" fill="rgba(139,32,32,0.18)" stroke="#c07a25" stroke-width="2"/>
+          <circle cx="16" cy="20" r="3"   fill="#c07a25" opacity=".35"/>
+          <circle cx="30" cy="28" r="2.5" fill="#c07a25" opacity=".35"/>
+          <circle cx="22" cy="30" r="2"   fill="#c07a25" opacity=".35"/>
+        </svg>
+        <h3 class="aanbod-card-title">Charcuterie</h3>
+        <p class="aanbod-card-desc">Gerookt, gedroogd en gekruid vlees van de beste ambachtslieden. Ham, salami, coppa en meer.</p>
+      </article>
+      <article class="aanbod-card fade-up" data-num="03">
+        <svg class="aanbod-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M8 22 Q24 38 40 22" stroke="#c07a25" stroke-width="2" fill="rgba(192,122,37,0.12)" stroke-linecap="round"/>
+          <rect x="18" y="36" width="12" height="5" rx="2.5" fill="rgba(192,122,37,0.3)" stroke="#c07a25" stroke-width="1.5"/>
+          <path d="M12 22 C14 12 34 12 36 22" stroke="#c07a25" stroke-width="1.5" fill="none" stroke-dasharray="3 3"/>
+        </svg>
+        <h3 class="aanbod-card-title">Verse Salades</h3>
+        <p class="aanbod-card-desc">Dagvers bereid, vol kleur en smaak. Ideaal als lunchbijdrage of bijgerecht aan tafel.</p>
+      </article>
+      <article class="aanbod-card fade-up" data-num="04">
+        <svg class="aanbod-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="6" y="28" width="36" height="8" rx="4" fill="rgba(192,122,37,0.18)" stroke="#c07a25" stroke-width="1.5"/>
+          <circle cx="16" cy="24" r="6" fill="rgba(192,122,37,0.12)" stroke="#c07a25" stroke-width="1.5"/>
+          <circle cx="32" cy="24" r="6" fill="rgba(192,122,37,0.12)" stroke="#c07a25" stroke-width="1.5"/>
+          <circle cx="24" cy="22" r="5" fill="rgba(192,122,37,0.12)" stroke="#c07a25" stroke-width="1.5"/>
+        </svg>
+        <h3 class="aanbod-card-title">Tapas</h3>
+        <p class="aanbod-card-desc">Mediterrane hapjes voor gezellig samenzijn. Kant-en-klaar om mee te nemen.</p>
+      </article>
+      <article class="aanbod-card fade-up" data-num="05">
+        <svg class="aanbod-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="20" cy="27" rx="9" ry="13" fill="rgba(45,90,26,0.25)" stroke="#c07a25" stroke-width="1.5" transform="rotate(-14 20 27)"/>
+          <ellipse cx="30" cy="25" rx="8" ry="12" fill="rgba(45,90,26,0.25)" stroke="#c07a25" stroke-width="1.5" transform="rotate(11 30 25)"/>
+          <path d="M20,14 C16,8 24,4 24,10"  stroke="#3d6e22" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <path d="M30,13 C26,7 34,4 33,10"  stroke="#3d6e22" stroke-width="2" fill="none" stroke-linecap="round"/>
+        </svg>
+        <h3 class="aanbod-card-title">Olijven</h3>
+        <p class="aanbod-card-desc">Gemarineerd, gevuld en puur &mdash; een zorgvuldige selectie uit de Middellandse Zee.</p>
+      </article>
+      <article class="aanbod-card fade-up" data-num="06">
+        <svg class="aanbod-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="12" y="18" width="24" height="24" rx="4" fill="rgba(192,122,37,0.18)" stroke="#c07a25" stroke-width="1.5"/>
+          <rect x="14" y="13" width="20" height="8"  rx="2" fill="rgba(192,122,37,0.25)" stroke="#c07a25" stroke-width="1.5"/>
+          <path d="M14,29 Q24,35 34,29" stroke="#c07a25" stroke-width="1.5" fill="rgba(139,32,32,0.2)" stroke-linecap="round"/>
+        </svg>
+        <h3 class="aanbod-card-title">Confituren</h3>
+        <p class="aanbod-card-desc">Huisgemaakte en artisanale confituren &mdash; de perfecte begeleider voor elke kaasplank.</p>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Online bestellen / click-and-collect -->
-  <section id="bestellen" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
+<!-- KAASPLANK -->
+<section class="kaasplank-section" id="kaasplank" aria-labelledby="kaasplank-h">
+  <div class="section-inner">
+    <div class="kaasplank-inner">
+      <div class="kaasplank-visual fade-up">
+        <div class="kaasplank-svg-wrap">
+          <svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%" aria-hidden="true">
+            <rect x="20" y="20" width="440" height="320" rx="12" fill="#3a2010" opacity=".88"/>
+            <path d="M20,80 Q240,70 460,80"    stroke="#4a2c18" stroke-width="1" fill="none" opacity=".45"/>
+            <path d="M20,140 Q240,130 460,140"  stroke="#4a2c18" stroke-width="1" fill="none" opacity=".45"/>
+            <path d="M20,200 Q240,210 460,200"  stroke="#4a2c18" stroke-width="1" fill="none" opacity=".45"/>
+            <path d="M20,260 Q240,252 460,260"  stroke="#4a2c18" stroke-width="1" fill="none" opacity=".45"/>
+            <rect x="20" y="20" width="440" height="320" rx="12" fill="none" stroke="#6b3d10" stroke-width="3" opacity=".55"/>
+            <!-- Brie round -->
+            <circle cx="118" cy="132" r="62" fill="#f0e8d0" opacity=".82"/>
+            <circle cx="118" cy="132" r="62" fill="none" stroke="#d4c090" stroke-width="2" opacity=".65"/>
+            <text x="118" y="136" text-anchor="middle" font-size="9" fill="#8B7050" opacity=".45" font-family="Georgia,serif" font-style="italic">Brie</text>
+            <!-- Hard cheese wedge -->
+            <path d="M262,58 L382,78 L360,202 L242,182 Z" fill="#c4922a" opacity=".78"/>
+            <path d="M262,58 L382,78 L360,202 L242,182 Z" fill="none" stroke="#8B5010" stroke-width="2" opacity=".55"/>
+            <circle cx="302" cy="112" r="9"   fill="#9a6c1a" opacity=".48"/>
+            <circle cx="342" cy="142" r="7"   fill="#9a6c1a" opacity=".48"/>
+            <circle cx="282" cy="158" r="5.5" fill="#9a6c1a" opacity=".48"/>
+            <!-- Blue cheese crumble -->
+            <ellipse cx="142" cy="272" rx="72" ry="48" fill="#e8d8c0" opacity=".72"/>
+            <path d="M102,257 C112,262 132,250 152,264 C168,272 178,260 188,267" stroke="#4a5880" stroke-width="2"   fill="none" opacity=".55" stroke-linecap="round"/>
+            <path d="M112,280 C127,272 142,284 162,277"                          stroke="#4a5880" stroke-width="1.5" fill="none" opacity=".48" stroke-linecap="round"/>
+            <!-- Jam jar -->
+            <rect x="352" y="242" width="52" height="62" rx="5" fill="#8B2020" opacity=".68"/>
+            <rect x="350" y="232" width="56" height="16" rx="4" fill="#6b1818" opacity=".68"/>
+            <rect x="358" y="254" width="40" height="26" rx="3" fill="#f5ede0" opacity=".18"/>
+            <!-- Crackers -->
+            <rect x="232" y="262" width="62" height="18" rx="3" fill="#d4a840" opacity=".62"/>
+            <rect x="236" y="270" width="62" height="18" rx="3" fill="#c09030" opacity=".62" transform="rotate(-7 267 279)"/>
+            <rect x="228" y="278" width="62" height="18" rx="3" fill="#b87a20" opacity=".62" transform="rotate(5 259 287)"/>
+            <!-- Herbs -->
+            <circle cx="197" cy="202" r="3"   fill="#3d6e22" opacity=".48"/>
+            <circle cx="208" cy="212" r="2"   fill="#3d6e22" opacity=".48"/>
+            <circle cx="188" cy="217" r="2.5" fill="#3d6e22" opacity=".48"/>
+            <!-- Honey drizzle -->
+            <path d="M422,58 C420,78 426,88 422,102" stroke="#f0a020" stroke-width="3.5" fill="none" stroke-linecap="round" opacity=".48"/>
+            <ellipse cx="422" cy="104" rx="5.5" ry="3.5" fill="#f0a020" opacity=".42"/>
+            <!-- Walnut -->
+            <ellipse cx="212" cy="112" rx="15" ry="12" fill="#6b3d10" opacity=".58"/>
+            <ellipse cx="212" cy="112" rx="15" ry="12" fill="none" stroke="#4a2808" stroke-width="1.5" opacity=".55"/>
+          </svg>
+        </div>
+        <div class="kaasplank-badge" aria-label="Stel je plank samen">Stel<br>je plank<br>samen</div>
+      </div>
       <div class="fade-up">
-        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Binnenkort: online bestellen</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-wine">
-          Bestel uw mand online,<br />haal af in de winkel.
-        </h2>
-        <p class="text-charcoal/75 text-lg mt-5 leading-relaxed max-w-md">
-          Een ontbijtmand of geschenkmand is het perfecte cadeau — maar vandaag kan dat enkel
-          telefonisch. Met de nieuwe webshop stelt u zelf uw mand samen, kiest u een afhaalmoment
-          en haalt u op in de Blauwstraat 67. Geen telefoonrondes meer, geen misverstanden.
-        </p>
-        <ul class="mt-7 space-y-3 text-charcoal">
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Ontbijt- &amp; geschenkmanden online samenstellen</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Charcuterie, kaas &amp; traiteur op voorbestelling</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Click-and-collect — vers klaargemaakt bij afhaling</li>
-        </ul>
-        <a href="#manden" class="inline-flex items-center gap-2 mt-9 bg-wine text-cream font-600 px-7 py-3.5 rounded-full hover:bg-winelt transition">
-          Ontdek de manden
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
-      <div class="fade-up grid grid-cols-2 gap-4">
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment">
-          <img
-            src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80"
-            alt="Feestelijke ontbijtmand met verse producten"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment mt-8">
-          <img
-            src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=800&q=80"
-            alt="Fijne charcuterie schotel"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Assortiment grid -->
-  <section id="assortiment" class="bg-parchment/55 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
-        <div>
-          <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
-          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-wine">Charcuterie, kaas &amp; manden</h2>
-        </div>
-        <p class="text-charcoal/65 max-w-sm">Fijne vleeswaren, een rijk kaasaanbod en feestelijke ontbijt- en geschenkmanden — alles ambachtelijk in de winkel.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <!-- Charcuterie -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1542901031-ec5eeb518c5e?auto=format&fit=crop&w=800&q=80"
-            alt="Ambachtelijke charcuterie en vleeswaren"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Charcuterie</h3>
-            <p class="text-cream/75 text-sm mt-1">Fijne vleeswaren, hesp, salami &amp; paté — vers gesneden op maat.</p>
-          </div>
-        </article>
-        <!-- Kaas -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80"
-            alt="Kaasassortiment delicatessen"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Kaas</h3>
-            <p class="text-cream/75 text-sm mt-1">Belgische &amp; buitenlandse kazen, hard en zacht — ook kaasschotels.</p>
-          </div>
-        </article>
-        <!-- Ontbijtmanden -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80"
-            alt="Feestelijke ontbijtmand met verse producten"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Ontbijtmanden</h3>
-            <p class="text-cream/75 text-sm mt-1">Verwen iemand met een volledig samengestelde verse ontbijtmand.</p>
-          </div>
-        </article>
-        <!-- Geschenkmanden -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?auto=format&fit=crop&w=800&q=80"
-            alt="Geschenkmand met fijne delicatessen"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Geschenkmanden</h3>
-            <p class="text-cream/75 text-sm mt-1">Cadeaumanden met charcuterie, kaas &amp; lekkernijen — voor elke gelegenheid.</p>
-          </div>
-        </article>
-        <!-- Traiteur -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
-            alt="Bereide gerechten traiteur"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Traiteur</h3>
-            <p class="text-cream/75 text-sm mt-1">Dagverse traiteurschotels &amp; klaargemaakte gerechten om mee te nemen.</p>
-          </div>
-        </article>
-        <!-- Manden CTA card -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-gold text-winedk relative aspect-[4/5] flex items-center justify-center text-center p-6">
-          <div>
-            <p class="font-serif text-2xl font-600">Mand op maat</p>
-            <p class="text-winedk/80 text-sm mt-2">Stel een ontbijt- of geschenkmand samen — ideaal als verjaardags-, bedank- of bedrijfscadeau.</p>
-            <a href="#manden" class="inline-block mt-5 text-winedk font-700 ug">Vraag een mand aan →</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured products (illustratief) -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="flex items-end justify-between mb-10">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-wine">Veelgevraagd uit de winkel</h2>
-      <a href="#manden" class="hidden sm:inline text-gold font-600 ug">Alles bestellen →</a>
-    </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Product 1 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
-          <img
-            src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=700&q=80"
-            alt="Ontbijtmand (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Bestseller cadeau</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-wine">Ontbijtmand</h3>
-          <p class="text-charcoal/60 text-sm mt-1">Vers brood, charcuterie, kaas &amp; lekkernijen, feestelijk verpakt.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-charcoal/60 text-sm">Vanaf — prijs op aanvraag</span>
-            <button class="bg-wine text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-winelt transition">Aanvragen</button>
-          </div>
-        </div>
-      </div>
-      <!-- Product 2 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
-          <img
-            src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?auto=format&fit=crop&w=700&q=80"
-            alt="Geschenkmand (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Cadeau-klassieker</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-wine">Geschenkmand</h3>
-          <p class="text-charcoal/60 text-sm mt-1">Samengestelde mand met fijne delicatessen — voor elke gelegenheid.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-charcoal/60 text-sm">Vanaf — prijs op aanvraag</span>
-            <button class="bg-wine text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-winelt transition">Aanvragen</button>
-          </div>
-        </div>
-      </div>
-      <!-- Product 3 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
-          <img
-            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=700&q=80"
-            alt="Kaasschotel (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Klassieker</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-wine">Kaasschotel</h3>
-          <p class="text-charcoal/60 text-sm mt-1">Samengestelde selectie kazen met garnituur.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-charcoal/60 text-sm">Vanaf — prijs op aanvraag</span>
-            <button class="bg-wine text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-winelt transition">Aanvragen</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p class="text-center text-xs text-charcoal/40 mt-6">Voorbeeldproducten ter illustratie van de toekomstige online bestelmodule — geen actuele prijzen.</p>
-  </section>
-
-  <!-- Ontbijtmand / geschenkmand concept (the differentiator) -->
-  <section id="manden" class="bg-wine text-cream py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
-      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
-        <img
-          src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=1000&q=80"
-          alt="Feestelijke ontbijtmand en geschenkmand"
-          loading="lazy" decoding="async"
-          class="w-full h-full object-cover"
-        />
-      </div>
-      <div class="order-1 lg:order-2 fade-up">
-        <p class="text-goldlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Ontbijt- &amp; geschenkmanden</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
-          Een cadeau<br />dat verwent.
-        </h2>
-        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
-          Een verjaardag, een bedankje of een feestelijk ontbijt thuis? Stel hieronder uw mand samen —
-          gelegenheid, budget en wensen — en wij maken er iets moois van. Vandaag enkel telefonisch te
-          bestellen; met de webshop kan dat straks volledig online.
-        </p>
-
-        <!-- Concept-formulier: ontbijt-/geschenkmandaanvraag -->
-        <form class="mt-8 bg-cream/5 border border-cream/15 rounded-2xl p-5 sm:p-6 space-y-4" onsubmit="return false">
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label for="t-naam" class="block text-sm font-600 text-cream/90 mb-1">Naam</label>
-              <input id="t-naam" name="naam" type="text" autocomplete="name" placeholder="Uw naam"
-                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
+        <div class="section-label">Kaasplank</div>
+        <h2 class="section-h2" id="kaasplank-h">Jouw ideale<br>kaasplank</h2>
+        <p class="section-lead" style="margin-bottom:0">Geen gestandaardiseerde selectie. Wij helpen je een plank samenstellen die past bij jouw smaak, gelegenheid en gasten.</p>
+        <ol class="steps-list" role="list">
+          <li class="step-item">
+            <div class="step-num" aria-hidden="true">1</div>
+            <div class="step-text">
+              <strong>Kies je kazen</strong>
+              <span>Jong, gerijpt, zacht of blauw &mdash; wij leggen het verschil uit en laten je proeven.</span>
             </div>
-            <div>
-              <label for="t-tel" class="block text-sm font-600 text-cream/90 mb-1">Telefoon</label>
-              <input id="t-tel" name="telefoon" type="tel" autocomplete="tel" placeholder="03 ..."
-                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
+          </li>
+          <li class="step-item">
+            <div class="step-num" aria-hidden="true">2</div>
+            <div class="step-text">
+              <strong>Voeg begeleiding toe</strong>
+              <span>Charcuterie, confituur, honing, noten en vers brood &mdash; de perfecte toevoeging.</span>
             </div>
-          </div>
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label for="t-datum" class="block text-sm font-600 text-cream/90 mb-1">Gewenste afhaaldatum</label>
-              <input id="t-datum" name="datum" type="date"
-                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
+          </li>
+          <li class="step-item">
+            <div class="step-num" aria-hidden="true">3</div>
+            <div class="step-text">
+              <strong>Klaar om te smullen</strong>
+              <span>Wij verpakken netjes en geven tips mee voor de perfecte presentatie thuis.</span>
             </div>
-            <div>
-              <label for="t-personen" class="block text-sm font-600 text-cream/90 mb-1">Aantal personen</label>
-              <input id="t-personen" name="personen" type="number" min="1" placeholder="bv. 2"
-                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
-            </div>
-          </div>
-          <div>
-            <label for="t-type" class="block text-sm font-600 text-cream/90 mb-1">Type mand</label>
-            <select id="t-type" name="type"
-              class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold">
-              <option>Ontbijtmand</option>
-              <option>Geschenkmand</option>
-              <option>Charcuterie- &amp; kaasschotels</option>
-              <option>Bedrijfscadeau (meerdere manden)</option>
-              <option>Iets anders</option>
-            </select>
-          </div>
-          <div>
-            <label for="t-wensen" class="block text-sm font-600 text-cream/90 mb-1">Wensen / opmerkingen</label>
-            <textarea id="t-wensen" name="wensen" rows="3" placeholder="Allergieën, budget, gelegenheid, afhalen of bezorgen ..."
-              class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold"></textarea>
-          </div>
-          <label class="flex items-start gap-3 text-xs text-cream/70">
-            <input type="checkbox" required class="mt-0.5 accent-gold" />
-            <span>Ik ga akkoord dat mijn gegevens enkel worden gebruikt om mijn aanvraag te beantwoorden (GDPR).</span>
-          </label>
-          <button class="w-full bg-gold text-winedk font-700 px-7 py-3 rounded-full hover:bg-goldlt transition">
-            Verstuur mijn aanvraag
-          </button>
-          <p class="text-[11px] text-cream/50 text-center">Concept-formulier — in de live versie komt uw aanvraag rechtstreeks per e-mail bij De Smulpaap terecht.</p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Ons verhaal -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
-    <div class="fade-up">
-      <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
-      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-wine">Vakmanschap in<br />de Blauwstraat.</h2>
-      <p class="text-charcoal/70 text-lg mt-6 leading-relaxed">
-        De Smulpaap is een vertrouwd delicatessenadres in de Blauwstraat in Boom.
-        Wat ons onderscheidt? Ambachtelijke charcuterie, een zorgvuldig samengesteld kaasassortiment
-        en vooral onze feestelijke ontbijt- en geschenkmanden — met de persoonlijke service van een
-        echte buurtwinkel.
-      </p>
-      <p class="text-charcoal/70 text-lg mt-4 leading-relaxed">
-        Of u nu langskomt voor een plank charcuterie, een stuk kaas of een cadeau dat indruk maakt —
-        bij De Smulpaap vindt u kwaliteit en advies op maat. Vandaag bestelt u uw mand telefonisch;
-        binnenkort kan dat ook volledig online: samenstellen, afhalen of als cadeau laten klaarmaken.
-      </p>
-      <div class="mt-9 flex flex-wrap gap-6">
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">100%</p>
-          <p class="text-charcoal/65 text-sm mt-1">Ambachtelijk</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">Giftable</p>
-          <p class="text-charcoal/65 text-sm mt-1">Ontbijt- &amp; geschenkmanden</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">Boom</p>
-          <p class="text-charcoal/65 text-sm mt-1">Blauwstraat 67</p>
+          </li>
+        </ol>
+        <div style="margin-top:2.5rem">
+          <a href="mailto:info@desmulpaap.com" class="btn-primary">
+            Vraag advies aan
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="12" height="10" rx="1.5"/><path d="M2 5l6 5 6-5"/></svg>
+          </a>
         </div>
       </div>
     </div>
-    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
-      <img
-        src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=1000&q=80"
-        alt="Ambachtelijke delicatessen en verse producten"
-        loading="lazy" decoding="async"
-        class="w-full h-full object-cover"
-      />
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Bezoek + kaart -->
-  <section id="bezoek" class="bg-parchment/55 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+<!-- CADEAUS -->
+<section class="cadeaus-section" id="cadeaus" aria-labelledby="cadeaus-h">
+  <div class="section-inner">
+    <div class="section-label">Cadeaus &amp; Feesten</div>
+    <h2 class="section-h2 fade-up" id="cadeaus-h" style="margin-bottom:3rem">Een cadeau<br>dat smaak heeft</h2>
+    <div class="cadeaus-inner">
       <div class="fade-up">
-        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-wine">Welkom in de winkel</h2>
-        <p class="text-charcoal/70 text-lg mt-5 max-w-md">
-          Kom proeven en kiezen op Blauwstraat 67 in Boom — en bestel uw ontbijt- of geschenkmand
-          (voorlopig telefonisch of via e-mail).
-        </p>
-        <dl class="mt-9 space-y-5 text-charcoal">
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📍</span>
+        <div class="hamper-cards">
+          <div class="hamper-card featured">
+            <div class="hamper-icon" aria-hidden="true">&#127873;</div>
             <div>
-              <dt class="font-600 text-wine">Adres</dt>
-              <dd class="text-charcoal/70">Blauwstraat 67, 2850 Boom</dd>
+              <div class="hamper-card-title">Luxe smulpakket op maat</div>
+              <div class="hamper-card-desc">Stel zelf je mand samen of laat ons dat doen &mdash; een uniek cadeau voor elke gelegenheid.</div>
             </div>
           </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🕑</span>
-            <div>
-              <dt class="font-600 text-wine">Openingsuren</dt>
-              <dd class="text-charcoal/70">Di–Za: 08:30–18:00 · Zo: 08:30–12:30 · Ma: gesloten</dd>
-              <dd class="text-charcoal/40 text-sm mt-1">(indicatief — graag te bevestigen)</dd>
-            </div>
+          <div class="hamper-card">
+            <div class="hamper-icon" aria-hidden="true">&#129803;</div>
+            <div class="hamper-card-title">Confituren &amp; specialiteiten</div>
+            <div class="hamper-card-desc">Huisgemaakte potten voor de fijnproever thuis.</div>
           </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🧺</span>
-            <div>
-              <dt class="font-600 text-wine">Manden bestellen</dt>
-              <dd class="text-charcoal/70">Voorlopig enkel telefonisch of via e-mail</dd>
-              <dd class="text-charcoal/40 text-sm mt-1">(binnenkort online via de webshop)</dd>
-            </div>
+          <div class="hamper-card">
+            <div class="hamper-icon" aria-hidden="true">&#129346;</div>
+            <div class="hamper-card-title">Feestpakketten</div>
+            <div class="hamper-card-desc">Voor bedrijven, verjaardagen en familiefeesten.</div>
           </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">✉️</span>
-            <div>
-              <dt class="font-600 text-wine">E-mail</dt>
-              <dd class="text-charcoal/70">
-                <a href="mailto:info@desmulpaap.com" class="ug">info@desmulpaap.com</a>
-              </dd>
-            </div>
+          <div class="hamper-card">
+            <div class="hamper-icon" aria-hidden="true">&#129386;</div>
+            <div class="hamper-card-title">Tapas &amp; borrelbox</div>
+            <div class="hamper-card-desc">Kant-en-klaar voor een gezellig aperitief met vrienden.</div>
           </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">💳</span>
-            <div>
-              <dt class="font-600 text-wine">Betaalmogelijkheden</dt>
-              <dd class="text-charcoal/70">Cash · Bancontact</dd>
-            </div>
+          <div class="hamper-card">
+            <div class="hamper-icon" aria-hidden="true">&#129472;</div>
+            <div class="hamper-card-title">Kaascollectie</div>
+            <div class="hamper-card-desc">Een curatieve selectie van 4 topkazen, mooi verpakt.</div>
           </div>
-        </dl>
-        <a href="#manden" class="inline-block mt-9 bg-wine text-cream font-600 px-7 py-3.5 rounded-full hover:bg-winelt transition">
-          Bestel een mand →
-        </a>
+        </div>
       </div>
-      <!-- OpenStreetMap embed — Blauwstraat 67, 2850 Boom (~51.0867, 4.3700) -->
-      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-parchment shadow-sm">
-        <iframe
-          title="Kaart De Smulpaap — Blauwstraat 67, 2850 Boom"
-          class="w-full h-full min-h-[360px] border-0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=4.361%2C51.082%2C4.379%2C51.092&layer=mapnik&marker=51.0867%2C4.3700"
-        ></iframe>
+      <div class="cadeaus-right fade-up">
+        <div class="quote-block">
+          <p class="quote-text">&#8220;Het mooiste cadeau is iets dat je samen beleeft &mdash; aan tafel.&#8221;</p>
+          <div class="quote-attr">De Smulpaap &middot; Boom</div>
+        </div>
+        <div class="cadeaus-cta-block">
+          <p>Wil je een cadeau bestellen of een bestelling op maat? Stuur ons een mailtje en we helpen je verder.</p>
+          <a href="mailto:info@desmulpaap.com" class="btn-primary" style="font-size:.9rem;padding:.75rem 1.5rem">
+            Bestel op maat
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+          </a>
+        </div>
+        <div style="border-top:1px solid var(--border);padding-top:1.5rem">
+          <div style="font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--amber);margin-bottom:.5rem;opacity:.8">Notitie</div>
+          <p style="font-size:.82rem;color:var(--cream-80);line-height:1.65">Alle pakketten worden met zorg verpakt en kunnen opgehaald worden in onze winkel in Boom. Mail ons voor grote orders of bedrijfscadeaus.</p>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- GDPR Newsletter -->
-  <section class="bg-gold/15">
-    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-wine">Blijf op de hoogte</h2>
-      <p class="text-charcoal/70 mt-3">Nieuwe seizoensproducten, feestmanden en cadeau-ideeën — plus een seintje zodra de webshop online is.</p>
-      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
-        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
-        <input
-          id="nl-email"
-          name="email"
-          type="email"
-          autocomplete="email"
-          required
-          placeholder="jouw@email.be"
-          class="flex-1 px-5 py-3 rounded-full border border-wine/20 bg-cream focus:outline-none focus:ring-2 focus:ring-gold"
-        />
-        <button class="bg-wine text-cream font-600 px-7 py-3 rounded-full hover:bg-winelt transition">Inschrijven</button>
-      </form>
-      <p class="text-xs text-charcoal/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
+<!-- BEZOEK -->
+<section class="bezoek-section" id="bezoek" aria-labelledby="bezoek-h">
+  <div class="section-inner">
+    <div class="bezoek-inner">
+      <div class="fade-up">
+        <div class="section-label">Bezoek ons</div>
+        <h2 class="section-h2" id="bezoek-h" style="margin-bottom:2.5rem">Welkom in<br>Boom</h2>
+        <div class="bezoek-info">
+          <div class="info-row">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            </div>
+            <div class="info-text">
+              <strong>Adres</strong>
+              <span>Boom, Provincie Antwerpen, Belgi&euml;</span>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8l10 6 10-6"/></svg>
+            </div>
+            <div class="info-text">
+              <strong>E-mail</strong>
+              <a href="mailto:info@desmulpaap.com">info@desmulpaap.com</a>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+            </div>
+            <div class="info-text">
+              <strong>Openingstijden</strong>
+              <span>Di &ndash; Za: 09:00 &ndash; 18:00<br>Zo &amp; Ma: gesloten</span>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:3rem;display:flex;gap:2.5rem;flex-wrap:wrap;border-top:1px solid var(--border);padding-top:2rem">
+          <div>
+            <div style="font-family:var(--ff-display);font-size:2.2rem;color:var(--amber);line-height:1;letter-spacing:-.02em">+200</div>
+            <div style="font-size:.78rem;color:var(--cream-80);margin-top:.25rem;letter-spacing:.05em">soorten kaas</div>
+          </div>
+          <div>
+            <div style="font-family:var(--ff-display);font-size:2.2rem;color:var(--amber);line-height:1;letter-spacing:-.02em">Boom</div>
+            <div style="font-size:.78rem;color:var(--cream-80);margin-top:.25rem;letter-spacing:.05em">hartje Antwerpen</div>
+          </div>
+          <div>
+            <div style="font-family:var(--ff-display);font-size:2.2rem;color:var(--amber);line-height:1;letter-spacing:-.02em">Vers</div>
+            <div style="font-size:.78rem;color:var(--cream-80);margin-top:.25rem;letter-spacing:.05em">elke dag</div>
+          </div>
+        </div>
+      </div>
+      <div class="fade-up">
+        <div class="bezoek-cta-panel">
+          <div class="panel-label">Direct contact</div>
+          <h3>Zin om te smullen?</h3>
+          <p>Stuur ons een bericht voor vragen, bestellingen op maat of gewoon goed advies over kaas. We antwoorden snel.</p>
+          <a href="mailto:info@desmulpaap.com" class="btn-dark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 8l10 6 10-6"/></svg>
+            info@desmulpaap.com
+          </a>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="bg-wine text-cream/80">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div>
-        <p class="font-serif text-2xl text-cream font-700">De Smulpaap<span class="text-gold">·</span></p>
-        <p class="text-cream/55 text-sm mt-1">Delicatessen</p>
-        <p class="text-cream/55 text-sm mt-3 max-w-xs">Ambachtelijke charcuterie, kaas &amp; delicatessen in Boom. Ontbijtmanden, geschenkmanden &amp; binnenkort online bestellen.</p>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Winkel</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li><a href="#assortiment" class="hover:text-goldlt">Assortiment</a></li>
-          <li><a href="#bestellen" class="hover:text-goldlt">Online bestellen</a></li>
-          <li><a href="#manden" class="hover:text-goldlt">Ontbijt- &amp; geschenkmanden</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Info</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li><a href="#bezoek" class="hover:text-goldlt">Openingsuren</a></li>
-          <li><a href="#bezoek" class="hover:text-goldlt">Contact</a></li>
-          <li><a href="#top" class="hover:text-goldlt">Ons verhaal</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Contact</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li>Blauwstraat 67</li>
-          <li>2850 Boom</li>
-          <li><a href="mailto:info@desmulpaap.com" class="hover:text-goldlt">info@desmulpaap.com</a></li>
-        </ul>
-      </div>
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand">De Smulpaap</div>
+    <div class="footer-meta">
+      Delicatessen &amp; Kaaswinkel &middot; Boom, Belgi&euml;<br>
+      <a href="mailto:info@desmulpaap.com">info@desmulpaap.com</a>
     </div>
-    <div class="border-t border-cream/10">
-      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40">
-        <p>© 2026 De Smulpaap. Concept-redesign.</p>
-        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; webshop.</p>
-      </div>
-    </div>
-  </footer>
+    <div class="footer-tagline">Voor iedereen die graag smuld.</div>
+  </div>
+</footer>
 
-  <!-- Scripts -->
-  <script>
-    // Fade-up IntersectionObserver
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
-    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+<!-- HEADROOM JS -->
+<script>
+(function(){
+  'use strict';
+  var nav=document.getElementById('mainNav');
+  var lastY=0,ticking=false,pinned=true;
+  var TOL_DOWN=8,TOL_UP=5,OFFSET=80;
+  function tick(){
+    var y=window.scrollY||window.pageYOffset;
+    var d=y-lastY;
+    if(y>OFFSET){
+      if(d>TOL_DOWN&&pinned){nav.classList.remove('pinned');nav.classList.add('unpinned');pinned=false;}
+      else if(d<-TOL_UP&&!pinned){nav.classList.add('pinned');nav.classList.remove('unpinned');pinned=true;}
     } else {
-      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
+      nav.classList.remove('unpinned');
     }
+    if(y>20) nav.classList.add('pinned');
+    else if(y<=20){nav.classList.remove('pinned');pinned=true;}
+    lastY=y;ticking=false;
+  }
+  window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(tick);ticking=true;}},{passive:true});
+})();
+</script>
 
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (menuBtn && mobileMenu) {
-      const setOpen = (open) => {
-        if (open) mobileMenu.removeAttribute('hidden');
-        else mobileMenu.setAttribute('hidden', '');
-        menuBtn.setAttribute('aria-expanded', String(open));
-        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
-      };
-      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
-      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
-    }
-  </script>
+<!-- IntersectionObserver fade-up -->
+<script>
+(function(){
+  'use strict';
+  var els=document.querySelectorAll('.fade-up');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('visible');});return;}
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){entry.target.classList.add('visible');obs.unobserve(entry.target);}
+    });
+  },{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(e){obs.observe(e);});
+})();
+</script>
+
 </body>
 </html>

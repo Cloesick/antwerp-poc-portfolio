@@ -1,647 +1,1672 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta name="robots" content="noindex, nofollow" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>D'Hoeve — Delicatessen &amp; traiteur in Edegem</title>
-  <meta name="description" content="Ambachtelijke delicatessen &amp; traiteur in Edegem: fijne charcuterie, kaas en dagverse bereide gerechten. Binnenkort online bestellen met click-and-collect, traiteur- &amp; buffetaanvragen en giftable cadeaupakketten." />
-  <link rel="canonical" href="https://dhoeve-edegem.be/" />
-  <meta name="theme-color" content="#6b1f2a" />
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="D'Hoeve" />
-  <meta property="og:locale" content="nl_BE" />
-  <meta property="og:title" content="D'Hoeve — Delicatessen &amp; traiteur in Edegem" />
-  <meta property="og:description" content="Fijne charcuterie, kaas en dagverse bereide gerechten in Edegem. Online bestellen, traiteur- &amp; buffetaanvragen en giftable cadeaupakketten." />
-  <meta property="og:url" content="https://dhoeve-edegem.be/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=1200&q=80" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- Inline SVG favicon — monogram "DH" -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%236b1f2a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%23caa46a' text-anchor='middle'%3EDH%3C/text%3E%3C/svg%3E" />
-  <!-- Local-SEO structured data -->
+  <meta name="description" content="D'Hoeve — verse traiteur en delicatessen uit Edegem. Dagverse soepen, warme gerechten, koude schotels en huisgemaakte confituren. Bel 03 458 02 18." />
+  <title>D'Hoeve — Verse Traiteur · Edegem</title>
+
+  <!-- Inline SVG favicon via data URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%233d2010'/%3E%3Cpolygon points='6,26 16,10 26,26' fill='none' stroke='%239a4a20' stroke-width='2'/%3E%3Crect x='13' y='18' width='6' height='8' fill='%239a4a20'/%3E%3Crect x='4' y='26' width='24' height='2' fill='%239a4a20'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts non-blocking preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=DM+Sans:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" /></noscript>
+
+  <!-- Schema.org JSON-LD LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["Store", "FoodEstablishment"],
+    "@type": "LocalBusiness",
     "name": "D'Hoeve",
-    "description": "Ambachtelijke delicatessen- en traiteurzaak in Edegem. Fijne charcuterie, kaas, bereide gerechten en giftable cadeaupakketten.",
-    "image": "https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=1200&q=80",
-    "url": "https://dhoeve-edegem.be/",
+    "description": "Verse traiteur en delicatessen in Edegem. Dagverse soepen, warme gerechten, koude schotels en huisgemaakte confituren.",
     "telephone": "+3234580218",
-    "servesCuisine": ["Belgian", "Delicatessen"],
-    "priceRange": "€€",
-    "areaServed": "BE",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Gemeenteplein 17",
-      "postalCode": "2650",
       "addressLocality": "Edegem",
       "addressRegion": "Antwerpen",
       "addressCountry": "BE"
     },
-    "geo": { "@type": "GeoCoordinates", "latitude": 51.1561, "longitude": 4.4470 },
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "08:30", "closes": "18:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "08:30", "closes": "12:30" }
-    ]
+    "servesCuisine": "Belgian",
+    "priceRange": "€€"
   }
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
-          colors: {
-            wine:     '#6b1f2a',
-            winelt:   '#7a2230',
-            winedk:   '#511620',
-            gold:     '#caa46a',
-            goldlt:   '#e0c490',
-            cream:    '#f6efe4',
-            parchment:'#ece0cc',
-            charcoal: '#2b2422',
-          },
-        },
-      },
-    };
-  </script>
+
   <style>
+    /* ═══════════════════════════════════════════════
+       DESIGN TOKENS
+    ═══════════════════════════════════════════════ */
+    :root {
+      --c-bg:          #f7f3eb;
+      --c-surface:     #f0e9d8;
+      --c-surface-alt: #e8dfc8;
+      --c-chestnut:    #3d2010;
+      --c-terra:       #9a4a20;
+      --c-body:        #2a1508;
+      --c-muted:       #7a5c44;
+      --c-hairline:    rgba(61,32,16,.12);
+      --c-ghost:       rgba(61,32,16,.04);
+
+      --f-display: 'Fraunces', Georgia, serif;
+      --f-body:    'DM Sans', system-ui, sans-serif;
+
+      --nav-h:    68px;
+      --r:        6px;
+      --r-lg:     14px;
+      --ease:     cubic-bezier(.4,0,.2,1);
+      --trans:    .28s var(--ease);
+    }
+
+    /* ═══════════════════════════════════════════════
+       RESET
+    ═══════════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    .hero-grad { background: linear-gradient(180deg, rgba(81,22,32,.18) 0%, rgba(81,22,32,.52) 50%, rgba(81,22,32,.92) 100%); }
-    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
-    .fade-up.in { opacity: 1; transform: none; }
-    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
-    .ug:hover { background-size: 100% 2px; }
+    body {
+      font-family: var(--f-body);
+      background: var(--c-bg);
+      color: var(--c-body);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    button { cursor: pointer; font-family: inherit; border: none; }
+
+    /* ═══════════════════════════════════════════════
+       UTILITIES
+    ═══════════════════════════════════════════════ */
+    .container {
+      width: min(1120px, 100% - 48px);
+      margin-inline: auto;
+    }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+
+    /* ═══════════════════════════════════════════════
+       FADE-UP ANIMATION
+    ═══════════════════════════════════════════════ */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity .65s ease, transform .65s ease;
+    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .fade-up.d1 { transition-delay: .1s; }
+    .fade-up.d2 { transition-delay: .2s; }
+    .fade-up.d3 { transition-delay: .3s; }
+    .fade-up.d4 { transition-delay: .4s; }
+
+    /* ═══════════════════════════════════════════════
+       NAVIGATION — headroom
+    ═══════════════════════════════════════════════ */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      transition: transform var(--trans), background var(--trans), box-shadow var(--trans);
+    }
+    .nav.scrolled {
+      background: rgba(247,243,235,.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 1px 0 var(--c-hairline);
+    }
+    .nav.hidden { transform: translateY(-100%); }
+
+    .nav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .nav__logo {
+      font-family: var(--f-display);
+      font-size: 1.3rem;
+      color: var(--c-chestnut);
+      letter-spacing: -.02em;
+    }
+    .nav__logo span { color: var(--c-terra); }
+
+    .nav__links {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+    .nav__links a {
+      font-size: .875rem;
+      font-weight: 500;
+      color: var(--c-muted);
+      transition: color var(--trans);
+    }
+    .nav__links a:hover { color: var(--c-chestnut); }
+
+    .nav__cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--c-terra);
+      color: #fff;
+      font-size: .875rem;
+      font-weight: 500;
+      padding: 10px 20px;
+      border-radius: var(--r);
+      transition: background var(--trans);
+    }
+    .nav__cta:hover { background: var(--c-chestnut); }
+
+    .nav__burger {
+      display: none;
+      background: none;
+      padding: 6px;
+      color: var(--c-chestnut);
+    }
+
+    /* Mobile menu overlay */
+    .mob-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--c-bg);
+      z-index: 99;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+    }
+    .mob-menu.open { display: flex; }
+    .mob-menu a {
+      font-family: var(--f-display);
+      font-size: 2rem;
+      color: var(--c-chestnut);
+      letter-spacing: -.02em;
+    }
+    .mob-menu__x {
+      position: absolute;
+      top: 20px; right: 24px;
+      background: none;
+      font-size: 1.5rem;
+      color: var(--c-chestnut);
+    }
+
+    /* ═══════════════════════════════════════════════
+       SHARED BUTTON STYLES
+    ═══════════════════════════════════════════════ */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--c-terra);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 14px 28px;
+      border-radius: var(--r);
+      border: none;
+      transition: background var(--trans), transform var(--trans);
+    }
+    .btn-primary:hover { background: #b35a28; transform: translateY(-1px); }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(247,243,235,.85);
+      font-size: 1rem;
+      font-weight: 500;
+      border: 1px solid rgba(247,243,235,.3);
+      padding: 13px 24px;
+      border-radius: var(--r);
+      background: none;
+      transition: border-color var(--trans), color var(--trans);
+    }
+    .btn-ghost:hover { border-color: rgba(247,243,235,.7); color: #f7f3eb; }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--c-chestnut);
+      font-size: .95rem;
+      font-weight: 500;
+      border: 1.5px solid var(--c-chestnut);
+      padding: 12px 22px;
+      border-radius: var(--r);
+      background: none;
+      transition: background var(--trans), color var(--trans);
+    }
+    .btn-outline:hover { background: var(--c-chestnut); color: #f7f3eb; }
+
+    .btn-cream {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #f7f3eb;
+      color: var(--c-chestnut);
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 14px 28px;
+      border-radius: var(--r);
+      border: none;
+      transition: background var(--trans), transform var(--trans);
+    }
+    .btn-cream:hover { background: #ece5d6; transform: translateY(-1px); }
+
+    /* ═══════════════════════════════════════════════
+       SHARED TYPOGRAPHY
+    ═══════════════════════════════════════════════ */
+    .eyebrow {
+      display: inline-block;
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--c-terra);
+      margin-bottom: 14px;
+    }
+    .section-h2 {
+      font-family: var(--f-display);
+      font-size: clamp(1.9rem, 3.5vw, 3rem);
+      color: var(--c-chestnut);
+      line-height: 1.15;
+      letter-spacing: -.025em;
+      margin-bottom: 18px;
+    }
+    .section-body {
+      font-size: 1rem;
+      color: var(--c-muted);
+      line-height: 1.75;
+      max-width: 460px;
+    }
+
+    /* ═══════════════════════════════════════════════
+       HERO
+       Composition: stacked bottom-left over dark full-bleed illustrated BG
+    ═══════════════════════════════════════════════ */
+    .hero {
+      min-height: 100dvh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      background: #1a0804;
+    }
+    .hero__bg-svg {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+    }
+    .hero__vignette {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(18,6,2,.88) 0%,
+        rgba(18,6,2,.5) 38%,
+        rgba(18,6,2,.15) 70%,
+        transparent 100%
+      );
+    }
+    /* Ghost word — second-read moment */
+    .hero__ghost-word {
+      position: absolute;
+      top: 42%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: var(--f-display);
+      font-size: clamp(5rem, 16vw, 16rem);
+      color: rgba(247,243,235,.038);
+      white-space: nowrap;
+      pointer-events: none;
+      user-select: none;
+      letter-spacing: -.04em;
+      line-height: 1;
+    }
+    .hero__content {
+      position: relative;
+      z-index: 2;
+      padding-bottom: clamp(52px, 9vh, 100px);
+    }
+    .hero__label {
+      display: inline-block;
+      font-size: .74rem;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--c-terra);
+      background: rgba(154,74,32,.18);
+      border: 1px solid rgba(154,74,32,.35);
+      padding: 5px 13px;
+      border-radius: 40px;
+      margin-bottom: 22px;
+    }
+    .hero__h1 {
+      font-family: var(--f-display);
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      color: #f7f3eb;
+      line-height: 1.1;
+      letter-spacing: -.03em;
+      max-width: 680px;
+      margin-bottom: 20px;
+    }
+    .hero__h1 em {
+      font-style: normal;
+      color: #e0a870;
+    }
+    .hero__sub {
+      font-size: clamp(.95rem, 1.3vw, 1.1rem);
+      color: rgba(247,243,235,.7);
+      max-width: 440px;
+      margin-bottom: 36px;
+      line-height: 1.75;
+    }
+    .hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+    /* Phone badge — right side, desktop only */
+    .hero__badge {
+      position: absolute;
+      bottom: clamp(52px, 9vh, 100px);
+      right: 0;
+      background: rgba(247,243,235,.09);
+      border: 1px solid rgba(247,243,235,.16);
+      border-radius: var(--r-lg);
+      padding: 18px 24px;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      color: #f7f3eb;
+      font-size: .85rem;
+      z-index: 2;
+    }
+    .hero__badge strong {
+      display: block;
+      font-family: var(--f-display);
+      font-size: 1.1rem;
+      color: #e0a870;
+      margin-top: 4px;
+    }
+
+    /* ═══════════════════════════════════════════════
+       KEUKEN SECTION
+       Composition: right-visual / left-text split (60/40 inverted)
+    ═══════════════════════════════════════════════ */
+    .keuken {
+      padding: clamp(80px, 11vw, 140px) 0;
+      background: var(--c-bg);
+    }
+    .keuken__grid {
+      display: grid;
+      grid-template-columns: 1fr 1.05fr;
+      gap: clamp(40px, 6vw, 80px);
+      align-items: center;
+    }
+    .keuken__visual {
+      position: relative;
+    }
+    .keuken__pot-box {
+      background: var(--c-surface);
+      border-radius: var(--r-lg);
+      border: 1px solid var(--c-hairline);
+      padding: clamp(32px, 5vw, 56px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 4/3;
+      overflow: hidden;
+      position: relative;
+    }
+    .keuken__pot-box::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 60%, rgba(154,74,32,.07) 0%, transparent 70%);
+    }
+    .keuken__tag {
+      position: absolute;
+      bottom: -12px;
+      right: 28px;
+      background: var(--c-terra);
+      color: #fff;
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 7px 16px;
+      border-radius: 40px;
+    }
+    .keuken__pillars {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .keuken__pillar {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .keuken__p-icon {
+      flex-shrink: 0;
+      width: 36px; height: 36px;
+      background: rgba(154,74,32,.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+    .keuken__p-text strong {
+      display: block;
+      font-weight: 500;
+      color: var(--c-chestnut);
+      font-size: .93rem;
+    }
+    .keuken__p-text span {
+      font-size: .85rem;
+      color: var(--c-muted);
+    }
+
+    /* ═══════════════════════════════════════════════
+       AANBOD SECTION
+       Composition: centered head + 4-column card grid on dark BG
+    ═══════════════════════════════════════════════ */
+    .aanbod {
+      padding: clamp(80px, 11vw, 140px) 0;
+      background: var(--c-chestnut);
+      position: relative;
+      overflow: hidden;
+    }
+    .aanbod__ghost {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: var(--f-display);
+      font-size: clamp(4rem, 14vw, 13rem);
+      color: rgba(247,243,235,.028);
+      pointer-events: none;
+      white-space: nowrap;
+      letter-spacing: -.04em;
+    }
+    .aanbod__head {
+      text-align: center;
+      margin-bottom: clamp(48px, 7vw, 72px);
+    }
+    .aanbod__head .eyebrow { color: #e0a870; }
+    .aanbod__head .section-h2 { color: #f7f3eb; }
+
+    .aanbod__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+    .aanbod__card {
+      background: rgba(247,243,235,.055);
+      border: 1px solid rgba(247,243,235,.09);
+      border-radius: var(--r-lg);
+      padding: 30px 22px 26px;
+      transition: background var(--trans), transform var(--trans);
+    }
+    .aanbod__card:hover {
+      background: rgba(247,243,235,.09);
+      transform: translateY(-3px);
+    }
+    .aanbod__c-icon {
+      width: 50px; height: 50px;
+      background: rgba(154,74,32,.22);
+      border-radius: var(--r);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .aanbod__card h3 {
+      font-family: var(--f-display);
+      font-size: 1.18rem;
+      color: #f7f3eb;
+      letter-spacing: -.02em;
+      margin-bottom: 10px;
+    }
+    .aanbod__card p {
+      font-size: .875rem;
+      color: rgba(247,243,235,.58);
+      line-height: 1.65;
+    }
+    .aanbod__c-link {
+      display: inline-block;
+      margin-top: 18px;
+      font-size: .72rem;
+      font-weight: 500;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #e0a870;
+      border-bottom: 1px solid rgba(224,168,112,.35);
+      padding-bottom: 2px;
+    }
+
+    /* ═══════════════════════════════════════════════
+       CATERING SECTION
+       Composition: text left / illustrated visual right on warm surface
+    ═══════════════════════════════════════════════ */
+    .catering {
+      padding: clamp(80px, 11vw, 140px) 0;
+      background: var(--c-surface);
+    }
+    .catering__grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: clamp(40px, 6vw, 80px);
+      align-items: center;
+    }
+    .catering__list {
+      margin-top: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .catering__li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: .95rem;
+      color: var(--c-body);
+    }
+    .catering__li::before {
+      content: '';
+      flex-shrink: 0;
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--c-terra);
+    }
+    .catering__ctas {
+      margin-top: 36px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+
+    /* Visual side */
+    .catering__vis {
+      background: var(--c-bg);
+      border-radius: var(--r-lg);
+      border: 1px solid var(--c-hairline);
+      padding: clamp(24px, 3.5vw, 40px);
+      position: relative;
+      overflow: hidden;
+    }
+    .catering__vis::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 65% 25%, rgba(154,74,32,.07) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .catering__detail-grid {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .catering__dc {
+      background: var(--c-surface);
+      border-radius: var(--r);
+      border: 1px solid var(--c-hairline);
+      padding: 18px;
+    }
+    .catering__dc h4 {
+      font-family: var(--f-display);
+      font-size: .95rem;
+      color: var(--c-chestnut);
+      margin-bottom: 6px;
+      letter-spacing: -.015em;
+    }
+    .catering__dc p {
+      font-size: .8rem;
+      color: var(--c-muted);
+      line-height: 1.6;
+    }
+
+    /* ═══════════════════════════════════════════════
+       PITCH STRIP
+       Full-width terracotta band — "geen website" message
+    ═══════════════════════════════════════════════ */
+    .pitch {
+      background: var(--c-terra);
+      padding: clamp(52px, 7vw, 80px) 0;
+      overflow: hidden;
+      position: relative;
+    }
+    .pitch::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        -45deg,
+        transparent 0px, transparent 22px,
+        rgba(255,255,255,.04) 22px, rgba(255,255,255,.04) 23px
+      );
+      pointer-events: none;
+    }
+    .pitch__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .pitch__eyebrow {
+      font-size: .7rem;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: rgba(247,243,235,.6);
+      margin-bottom: 10px;
+    }
+    .pitch__h2 {
+      font-family: var(--f-display);
+      font-size: clamp(1.45rem, 2.8vw, 2.2rem);
+      color: #f7f3eb;
+      letter-spacing: -.025em;
+      line-height: 1.22;
+      max-width: 520px;
+    }
+    .pitch__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .pitch__tel {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(247,243,235,.8);
+      font-size: .95rem;
+      border: 1px solid rgba(247,243,235,.28);
+      padding: 13px 20px;
+      border-radius: var(--r);
+      transition: border-color var(--trans), color var(--trans);
+    }
+    .pitch__tel:hover { border-color: rgba(247,243,235,.65); color: #f7f3eb; }
+
+    /* ═══════════════════════════════════════════════
+       BEZOEK SECTION
+       Composition: info left + illustrated map right
+    ═══════════════════════════════════════════════ */
+    .bezoek {
+      padding: clamp(80px, 11vw, 140px) 0;
+      background: var(--c-bg);
+    }
+    .bezoek__grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: clamp(40px, 6vw, 80px);
+      align-items: start;
+    }
+    .bezoek__details {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+    .bezoek__detail {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .bezoek__d-icon {
+      flex-shrink: 0;
+      width: 40px; height: 40px;
+      background: rgba(154,74,32,.1);
+      border-radius: var(--r);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .bezoek__d-text strong {
+      display: block;
+      font-weight: 500;
+      color: var(--c-chestnut);
+      font-size: .9rem;
+      margin-bottom: 3px;
+    }
+    .bezoek__d-text span {
+      font-size: .875rem;
+      color: var(--c-muted);
+      line-height: 1.6;
+    }
+    .bezoek__cta-box {
+      margin-top: 36px;
+      background: var(--c-surface);
+      border-radius: var(--r-lg);
+      border: 1px solid var(--c-hairline);
+      padding: 26px;
+    }
+    .bezoek__cta-box p {
+      font-size: .9rem;
+      color: var(--c-muted);
+      margin-bottom: 18px;
+      line-height: 1.7;
+    }
+
+    /* Map placeholder */
+    .bezoek__map {
+      background: var(--c-surface);
+      border-radius: var(--r-lg);
+      border: 1px solid var(--c-hairline);
+      overflow: hidden;
+      aspect-ratio: 4 / 3.2;
+    }
+
+    /* ═══════════════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════════════ */
+    .footer {
+      background: var(--c-chestnut);
+      padding: clamp(44px, 6vw, 68px) 0 clamp(28px, 4vw, 40px);
+    }
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 40px;
+    }
+    .footer__logo {
+      font-family: var(--f-display);
+      font-size: 1.4rem;
+      color: #f7f3eb;
+      letter-spacing: -.025em;
+      margin-bottom: 12px;
+    }
+    .footer__tagline {
+      font-size: .875rem;
+      color: rgba(247,243,235,.52);
+      line-height: 1.7;
+      max-width: 260px;
+    }
+    .footer__col-title {
+      font-size: .7rem;
+      font-weight: 500;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      color: rgba(247,243,235,.4);
+      margin-bottom: 16px;
+    }
+    .footer__col ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer__col ul a {
+      font-size: .875rem;
+      color: rgba(247,243,235,.58);
+      transition: color var(--trans);
+    }
+    .footer__col ul a:hover { color: #f7f3eb; }
+    .footer__bottom {
+      margin-top: clamp(32px, 5vw, 48px);
+      padding-top: 20px;
+      border-top: 1px solid rgba(247,243,235,.09);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .footer__copy { font-size: .78rem; color: rgba(247,243,235,.32); }
+    .footer__by   { font-size: .78rem; color: rgba(247,243,235,.32); }
+    .footer__by a {
+      color: rgba(224,168,112,.6);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .footer__by a:hover { color: #e0a870; }
+
+    /* ═══════════════════════════════════════════════
+       RESPONSIVE
+    ═══════════════════════════════════════════════ */
+    @media (max-width: 900px) {
+      .nav__links,
+      .nav__cta { display: none; }
+      .nav__burger { display: flex; }
+
+      .keuken__grid  { grid-template-columns: 1fr; }
+      .keuken__visual { order: -1; }
+      .aanbod__grid   { grid-template-columns: 1fr 1fr; }
+      .catering__grid { grid-template-columns: 1fr; }
+      .catering__vis  { order: -1; }
+      .bezoek__grid   { grid-template-columns: 1fr; }
+      .footer__grid   { grid-template-columns: 1fr; gap: 28px; }
+      .pitch__inner   { flex-direction: column; align-items: flex-start; }
+      .hero__badge    { display: none; }
+    }
+    @media (max-width: 560px) {
+      .aanbod__grid         { grid-template-columns: 1fr; }
+      .catering__detail-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
-<body class="bg-cream text-wine font-sans antialiased selection:bg-gold/25">
+<body>
 
-  <!-- Skip link -->
-  <a href="#bestellen" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-wine focus:text-cream focus:rounded-full">Naar online bestellen</a>
+<!-- ════════════════════════════════════════════
+     NAVIGATION
+════════════════════════════════════════════ -->
+<nav class="nav" id="mainNav" role="navigation" aria-label="Hoofdnavigatie">
+  <div class="container">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="D'Hoeve — naar de top">D'<span>Hoeve</span></a>
+      <ul class="nav__links" role="list">
+        <li><a href="#keuken">Onze keuken</a></li>
+        <li><a href="#aanbod">Aanbod</a></li>
+        <li><a href="#catering">Catering</a></li>
+        <li><a href="#bezoek">Bezoek ons</a></li>
+      </ul>
+      <a href="tel:034580218" class="nav__cta" aria-label="Bel D'Hoeve 03 458 02 18">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.61 4.9C1.6 3.82 2.38 2.9 3.46 2.72L6.46 2a2 2 0 0 1 2.15 1.27l1.4 3.5a2 2 0 0 1-.45 2.11L8 10.44s1.8 4.6 6 6l1.56-1.56a2 2 0 0 1 2.11-.45l3.5 1.4A2 2 0 0 1 22 16.92z"/></svg>
+        Bel ons
+      </a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu openen" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
 
-  <!-- Announcement bar -->
-  <div class="bg-wine text-cream text-center text-[13px] tracking-wide py-2 px-4">
-    <span aria-hidden="true">🧀</span> <span class="font-semibold">Binnenkort:</span> online bestellen &amp; click-and-collect — plus traiteur- &amp; buffetaanvragen · Gemeenteplein 17, Edegem.
+<!-- Mobile menu -->
+<div class="mob-menu" id="mobMenu" role="dialog" aria-modal="true" aria-label="Navigatiemenu">
+  <button class="mob-menu__x" id="mobClose" aria-label="Menu sluiten">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <a href="#keuken"  class="mob-link">Onze keuken</a>
+  <a href="#aanbod"  class="mob-link">Aanbod</a>
+  <a href="#catering" class="mob-link">Catering</a>
+  <a href="#bezoek"  class="mob-link">Bezoek ons</a>
+  <a href="tel:034580218" class="btn-primary">Bel: 03 458 02 18</a>
+</div>
+
+
+<!-- ════════════════════════════════════════════
+     HERO
+     Composition: bottom-left text over full-bleed dark farmhouse illustration
+════════════════════════════════════════════ -->
+<section class="hero" id="top" aria-labelledby="hero-h1">
+
+  <!-- Farmhouse night scene — inline SVG background -->
+  <svg class="hero__bg-svg" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+    <!-- Deep night sky base -->
+    <rect width="1440" height="900" fill="#110501"/>
+
+    <!-- Warm sky glow — hearth / amber horizon -->
+    <radialGradient id="hg1" cx="50%" cy="55%" r="65%">
+      <stop offset="0%" stop-color="#4a1c06" stop-opacity=".85"/>
+      <stop offset="60%" stop-color="#200b02" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#0a0300" stop-opacity="1"/>
+    </radialGradient>
+    <rect width="1440" height="900" fill="url(#hg1)"/>
+
+    <!-- Low terracotta glow from hearth inside -->
+    <radialGradient id="hg2" cx="50%" cy="90%" r="45%">
+      <stop offset="0%" stop-color="#9a4a20" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#9a4a20" stop-opacity="0"/>
+    </radialGradient>
+    <rect width="1440" height="900" fill="url(#hg2)"/>
+
+    <!-- Stars -->
+    <circle cx="120"  cy="60"  r="1.4" fill="#f7f3eb" opacity=".45"/>
+    <circle cx="280"  cy="38"  r="1"   fill="#f7f3eb" opacity=".3"/>
+    <circle cx="440"  cy="80"  r="1.2" fill="#f7f3eb" opacity=".38"/>
+    <circle cx="620"  cy="28"  r="1"   fill="#f7f3eb" opacity=".28"/>
+    <circle cx="820"  cy="55"  r="1.3" fill="#f7f3eb" opacity=".4"/>
+    <circle cx="1000" cy="35"  r="1"   fill="#f7f3eb" opacity=".32"/>
+    <circle cx="1180" cy="70"  r="1.2" fill="#f7f3eb" opacity=".38"/>
+    <circle cx="1340" cy="42"  r="1.1" fill="#f7f3eb" opacity=".3"/>
+    <circle cx="1400" cy="90"  r="1"   fill="#f7f3eb" opacity=".25"/>
+    <circle cx="200"  cy="130" r=".9"  fill="#f7f3eb" opacity=".22"/>
+    <circle cx="960"  cy="18"  r="1"   fill="#f7f3eb" opacity=".3"/>
+
+    <!-- Moon -->
+    <circle cx="1260" cy="80" r="28" fill="#e8d4a0" opacity=".18"/>
+    <circle cx="1268" cy="74" r="28" fill="#110501"/>
+
+    <!-- Ground -->
+    <rect x="0" y="720" width="1440" height="180" fill="#0c0400"/>
+    <rect x="0" y="718" width="1440" height="5" fill="#180800" opacity=".8"/>
+
+    <!-- Large tree left -->
+    <rect x="225" y="480" width="18" height="242" fill="#0d0401"/>
+    <ellipse cx="234" cy="440" rx="68" ry="96" fill="#0c0401" opacity=".9"/>
+    <ellipse cx="234" cy="416" rx="50" ry="70" fill="#130601" opacity=".75"/>
+
+    <!-- Large tree right -->
+    <rect x="1198" y="500" width="18" height="222" fill="#0d0401"/>
+    <ellipse cx="1207" cy="460" rx="62" ry="88" fill="#0c0401" opacity=".9"/>
+    <ellipse cx="1207" cy="438" rx="45" ry="64" fill="#130601" opacity=".75"/>
+
+    <!-- Shrubs / hedge base -->
+    <ellipse cx="380"  cy="718" rx="60" ry="22" fill="#0e0501" opacity=".85"/>
+    <ellipse cx="1060" cy="718" rx="55" ry="20" fill="#0e0501" opacity=".8"/>
+
+    <!-- ── FARMHOUSE MAIN STRUCTURE ── -->
+    <!-- Foundation / base -->
+    <rect x="460" y="400" width="520" height="322" fill="#180800"/>
+
+    <!-- Roof -->
+    <polygon points="440,400 720,200 1000,400" fill="#110501"/>
+    <polygon points="440,400 720,200 1000,400" fill="none" stroke="#2a1004" stroke-width="2"/>
+
+    <!-- Chimney left -->
+    <rect x="590" y="198" width="38" height="96" fill="#150700"/>
+    <rect x="584" y="192" width="50" height="10" rx="2" fill="#1c0b02"/>
+    <!-- Smoke wisps -->
+    <path d="M609 186 Q604 168 610 152 Q616 136 612 118" fill="none" stroke="#2a1206" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+    <path d="M618 182 Q622 162 618 146 Q614 130 619 112" fill="none" stroke="#2a1206" stroke-width="2.5" stroke-linecap="round" opacity=".4"/>
+
+    <!-- Main facade -->
+    <rect x="460" y="400" width="520" height="322" fill="#180900"/>
+
+    <!-- Timber frame detail lines (facade) -->
+    <line x1="600" y1="400" x2="600" y2="722" stroke="#221002" stroke-width="1.5" opacity=".7"/>
+    <line x1="720" y1="400" x2="720" y2="722" stroke="#221002" stroke-width="1.5" opacity=".7"/>
+    <line x1="840" y1="400" x2="840" y2="722" stroke="#221002" stroke-width="1.5" opacity=".7"/>
+    <line x1="460" y1="520" x2="980" y2="520" stroke="#221002" stroke-width="1.5" opacity=".6"/>
+    <line x1="460" y1="640" x2="980" y2="640" stroke="#221002" stroke-width="1.5" opacity=".5"/>
+
+    <!-- Porch canopy -->
+    <rect x="580" y="560" width="280" height="16" rx="5" fill="#110501"/>
+    <!-- Porch posts -->
+    <rect x="598" y="576" width="12" height="146" fill="#150700"/>
+    <rect x="830" y="576" width="12" height="146" fill="#150700"/>
+    <!-- Porch base beam -->
+    <rect x="598" y="718" width="244" height="8" rx="3" fill="#110501"/>
+
+    <!-- Front door (arch top) -->
+    <path d="M672 722 L672 620 Q720 580 768 620 L768 722 Z" fill="#0c0400"/>
+    <path d="M672 722 L672 620 Q720 580 768 620 L768 722 Z" fill="none" stroke="#2a1004" stroke-width="2"/>
+    <!-- Door knob -->
+    <circle cx="756" cy="672" r="5" fill="#3d1c08" opacity=".8"/>
+    <!-- Door light spill onto porch floor -->
+    <radialGradient id="dg" cx="50%" cy="100%" r="50%">
+      <stop offset="0%" stop-color="#9a4a20" stop-opacity=".28"/>
+      <stop offset="100%" stop-color="#9a4a20" stop-opacity="0"/>
+    </radialGradient>
+    <ellipse cx="720" cy="722" rx="70" ry="16" fill="url(#dg)"/>
+
+    <!-- Window left upper -->
+    <rect x="488" y="430" width="88" height="72" rx="4" fill="#0d0502" stroke="#2a1004" stroke-width="1.5"/>
+    <line x1="532" y1="430" x2="532" y2="502" stroke="#2a1004" stroke-width="1"/>
+    <line x1="488" y1="466" x2="576" y2="466" stroke="#2a1004" stroke-width="1"/>
+    <!-- Window glow inside -->
+    <rect x="488" y="430" width="88" height="72" rx="4" fill="#9a4a20" opacity=".1"/>
+    <radialGradient id="wg1" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#c4702a" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#c4702a" stop-opacity="0"/>
+    </radialGradient>
+    <rect x="488" y="430" width="88" height="72" rx="4" fill="url(#wg1)"/>
+    <!-- Window light spill on ground -->
+    <ellipse cx="532" cy="722" rx="38" ry="9" fill="#9a4a20" opacity=".08"/>
+
+    <!-- Window right upper -->
+    <rect x="864" y="430" width="88" height="72" rx="4" fill="#0d0502" stroke="#2a1004" stroke-width="1.5"/>
+    <line x1="908" y1="430" x2="908" y2="502" stroke="#2a1004" stroke-width="1"/>
+    <line x1="864" y1="466" x2="952" y2="466" stroke="#2a1004" stroke-width="1"/>
+    <rect x="864" y="430" width="88" height="72" rx="4" fill="#9a4a20" opacity=".1"/>
+    <rect x="864" y="430" width="88" height="72" rx="4" fill="url(#wg1)"/>
+    <ellipse cx="908" cy="722" rx="38" ry="9" fill="#9a4a20" opacity=".07"/>
+
+    <!-- Dormer window in roof -->
+    <rect x="674" y="270" width="92" height="72" rx="4" fill="#0d0502" stroke="#2a1004" stroke-width="1.5"/>
+    <polygon points="668,270 720,240 772,270" fill="#110501" stroke="#2a1004" stroke-width="1"/>
+    <line x1="720" y1="270" x2="720" y2="342" stroke="#2a1004" stroke-width="1"/>
+    <line x1="674" y1="306" x2="766" y2="306" stroke="#2a1004" stroke-width="1"/>
+    <rect x="674" y="270" width="92" height="72" rx="4" fill="#9a4a20" opacity=".08"/>
+
+    <!-- Hanging herbs on porch beam rope -->
+    <path d="M608 565 Q720 548 830 564" fill="none" stroke="#3a1808" stroke-width="1.5" opacity=".65"/>
+    <!-- Bundle 1 -->
+    <line x1="648" y1="564" x2="648" y2="600" stroke="#4a2010" stroke-width="1.8"/>
+    <ellipse cx="648" cy="610" rx="11" ry="17" fill="#2a1008" opacity=".65"/>
+    <path d="M640 604 Q648 596 656 604" fill="#221006" opacity=".5"/>
+    <!-- Bundle 2 -->
+    <line x1="700" y1="558" x2="700" y2="596" stroke="#4a2010" stroke-width="1.8"/>
+    <ellipse cx="700" cy="606" rx="10" ry="15" fill="#2a1008" opacity=".6"/>
+    <!-- Bundle 3 -->
+    <line x1="750" y1="562" x2="750" y2="600" stroke="#4a2010" stroke-width="1.8"/>
+    <ellipse cx="750" cy="610" rx="11" ry="16" fill="#2a1008" opacity=".65"/>
+    <!-- Bundle 4 small -->
+    <line x1="800" y1="566" x2="800" y2="598" stroke="#4a2010" stroke-width="1.5"/>
+    <ellipse cx="800" cy="607" rx="9" ry="13" fill="#2a1008" opacity=".55"/>
+
+    <!-- Side herbs hanging left wall -->
+    <path d="M295 295 Q348 276 400 294" fill="none" stroke="#3a1808" stroke-width="1.2" opacity=".5"/>
+    <line x1="318" y1="292" x2="318" y2="326" stroke="#4a2010" stroke-width="1.5"/>
+    <ellipse cx="318" cy="335" rx="9" ry="13" fill="#2a1008" opacity=".5"/>
+    <line x1="360" y1="280" x2="360" y2="315" stroke="#4a2010" stroke-width="1.5"/>
+    <ellipse cx="360" cy="323" rx="8" ry="12" fill="#2a1008" opacity=".5"/>
+    <line x1="390" y1="292" x2="390" y2="325" stroke="#4a2010" stroke-width="1.5"/>
+    <ellipse cx="390" cy="333" rx="8" ry="11" fill="#2a1008" opacity=".45"/>
+
+    <!-- Barrel / crate on right -->
+    <rect x="990" y="666" width="48" height="56" rx="6" fill="#150700"/>
+    <line x1="990" y1="686" x2="1038" y2="686" stroke="#2a1004" stroke-width="1.5"/>
+    <line x1="990" y1="702" x2="1038" y2="702" stroke="#2a1004" stroke-width="1.5"/>
+    <ellipse cx="1014" cy="666" rx="24" ry="6" fill="#1c0b02"/>
+  </svg>
+
+  <div class="hero__vignette" aria-hidden="true"></div>
+  <div class="hero__ghost-word" aria-hidden="true">D'HOEVE</div>
+
+  <div class="hero__content container">
+    <div class="fade-up">
+      <span class="hero__label">Traiteur &amp; Delicatessen · Edegem</span>
+    </div>
+    <h1 class="hero__h1 fade-up d1" id="hero-h1">
+      Verse traiteur<br />van de <em>boerderij</em> —<br />alsof thuis gekookt.
+    </h1>
+    <p class="hero__sub fade-up d2">
+      Dagvers bereid in onze eigen keuken. Eerlijke smaken, traditionele Belgische
+      recepten, warmte in elke portie. Voor thuis, voor feest, voor elk moment.
+    </p>
+    <div class="hero__actions fade-up d3">
+      <a href="#aanbod" class="btn-primary">
+        Bekijk ons aanbod
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="tel:034580218" class="btn-ghost">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.61 4.9C1.6 3.82 2.38 2.9 3.46 2.72L6.46 2a2 2 0 0 1 2.15 1.27l1.4 3.5a2 2 0 0 1-.45 2.11L8 10.44s1.8 4.6 6 6l1.56-1.56a2 2 0 0 1 2.11-.45l3.5 1.4A2 2 0 0 1 22 16.92z"/></svg>
+        03 458 02 18
+      </a>
+    </div>
   </div>
 
-  <!-- Sticky nav -->
-  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-wine/10">
-    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
-      <!-- Logo -->
-      <a href="#top" class="flex items-baseline gap-2">
-        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-wine">D'Hoeve<span class="text-gold">·</span></span>
-        <span class="text-[11px] uppercase tracking-[0.22em] text-wine/50 font-600">Delicatessen · Edegem</span>
-      </a>
-      <!-- Desktop links -->
-      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
-        <a href="#bestellen" class="ug">Online bestellen</a>
-        <a href="#assortiment" class="ug">Assortiment</a>
-        <a href="#traiteur" class="ug">Traiteur &amp; buffet</a>
-        <a href="#bezoek" class="ug">Bezoek ons</a>
-      </div>
-      <!-- CTA + hamburger -->
-      <div class="flex items-center gap-2">
-        <a href="#bestellen" class="inline-flex items-center gap-2 bg-gold text-winedk text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-goldlt transition">
-          Bestel &amp; afhalen
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
-          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-wine/15 text-wine hover:bg-wine/5 transition">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </nav>
-    <!-- Mobile menu -->
-    <div id="mobile-menu" hidden class="md:hidden border-t border-wine/10 bg-cream/95 backdrop-blur">
-      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
-        <a href="#bestellen" class="py-3 border-b border-wine/8">Online bestellen</a>
-        <a href="#assortiment" class="py-3 border-b border-wine/8">Assortiment</a>
-        <a href="#traiteur" class="py-3 border-b border-wine/8">Traiteur &amp; buffet</a>
-        <a href="#bezoek" class="py-3">Bezoek ons</a>
-      </div>
-    </div>
-  </header>
+  <!-- Phone badge — desktop only -->
+  <div class="hero__badge fade-up d4" aria-label="Telefoonnummer D'Hoeve">
+    <div>Bel voor uw bestelling</div>
+    <strong>03 458 02 18</strong>
+  </div>
+</section>
 
-  <!-- Hero -->
-  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-wine">
-    <img
-      src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=2000&q=80"
-      alt="Ambachtelijke charcuterie en kaas bij D'Hoeve Edegem"
-      fetchpriority="high"
-      class="absolute inset-0 w-full h-full object-cover"
-    />
-    <div class="absolute inset-0 hero-grad"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
-      <p class="text-goldlt font-600 tracking-[0.3em] uppercase text-xs mb-5">
-        <span aria-hidden="true">🧀</span> Charcuterie · Kaas · Traiteur · Edegem
-      </p>
-      <h1 class="font-serif text-cream text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
-        Ambachtelijke delicatessen,<br />binnenkort ook online.
-      </h1>
-      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
-        Fijne charcuterie, een rijk kaasassortiment en dagverse bereide gerechten —
-        al jaren een vast adres op het Gemeenteplein in Edegem. Bestel online, vraag een buffet aan
-        of geef een cadeaupakket.
-      </p>
-      <div class="flex flex-wrap gap-3 mt-9">
-        <a href="#bestellen" class="bg-gold text-winedk font-700 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
-          Bestel en haal af
-        </a>
-        <a href="#traiteur" class="border border-cream/45 text-cream font-600 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
-          Traiteur &amp; buffet aanvragen
-        </a>
-      </div>
-    </div>
-  </section>
 
-  <!-- USP strip -->
-  <section class="bg-wine text-cream/90">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
-      <div><p class="font-serif text-2xl text-goldlt">Ambacht</p><p class="mt-1 text-cream/65">Dagvers gesneden in de winkel</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Traiteur</p><p class="mt-1 text-cream/65">Bereide gerechten &amp; buffetten</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Cadeau</p><p class="mt-1 text-cream/65">Charcuterie- &amp; kaaspakketten</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Afhaal</p><p class="mt-1 text-cream/65">Online bestellen &amp; click-and-collect</p></div>
-    </div>
-  </section>
+<!-- ════════════════════════════════════════════
+     KEUKEN
+     Layout: left-text / right-cast-iron-pot visual
+════════════════════════════════════════════ -->
+<section class="keuken" id="keuken" aria-labelledby="keuken-h2">
+  <div class="container">
+    <div class="keuken__grid">
 
-  <!-- Online bestellen / click-and-collect -->
-  <section id="bestellen" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Text -->
       <div class="fade-up">
-        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Binnenkort: online bestellen</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-wine">
-          Bestel online,<br />haal af in de winkel.
-        </h2>
-        <p class="text-charcoal/75 text-lg mt-5 leading-relaxed max-w-md">
-          Geen wachtrij, geen stress. Stel uw bestelling samen — fijne charcuterie, kaas,
-          bereide gerechten of een cadeaupakket — en haal af op een tijdstip dat u past
-          op Gemeenteplein 17.
+        <span class="eyebrow">Onze keuken</span>
+        <h2 class="section-h2" id="keuken-h2">Gekookt met<br />gevoel voor traditie</h2>
+        <p class="section-body">
+          In de keuken van D'Hoeve werken we elke dag met verse, lokale producten.
+          Geen e-nummers, geen shortcuts — gewoon eerlijk koken zoals oma dat deed,
+          maar met de vakkennis van een traiteur die er zijn hart in legt.
         </p>
-        <ul class="mt-7 space-y-3 text-charcoal">
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Bestelling vers klaargemaakt bij afhaling</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Schotels &amp; bereide gerechten op voorbestelling</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Betalen in de winkel (cash · Bancontact)</li>
+        <ul class="keuken__pillars" role="list">
+          <li class="keuken__pillar fade-up d1">
+            <div class="keuken__p-icon" aria-hidden="true">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#9a4a20" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="keuken__p-text">
+              <strong>Elke dag vers</strong>
+              <span>Bereid op de dag zelf — nooit opgewarmd van gisteren</span>
+            </div>
+          </li>
+          <li class="keuken__pillar fade-up d2">
+            <div class="keuken__p-icon" aria-hidden="true">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#9a4a20" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div class="keuken__p-text">
+              <strong>Traditionele Belgische recepten</strong>
+              <span>Stoverij, waterzooi, paling in 't groen — klassiekers met zorg</span>
+            </div>
+          </li>
+          <li class="keuken__pillar fade-up d3">
+            <div class="keuken__p-icon" aria-hidden="true">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#9a4a20" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="keuken__p-text">
+              <strong>Herkenbare kwaliteit</strong>
+              <span>Lokale leveranciers, seizoensgebonden, geen compromissen</span>
+            </div>
+          </li>
         </ul>
-        <a href="#traiteur" class="inline-flex items-center gap-2 mt-9 bg-wine text-cream font-600 px-7 py-3.5 rounded-full hover:bg-winelt transition">
-          Of vraag een traiteur-buffet aan
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
       </div>
-      <div class="fade-up grid grid-cols-2 gap-4">
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment">
-          <img
-            src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=800&q=80"
-            alt="Fijne charcuterie schotel"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-parchment mt-8">
-          <img
-            src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?auto=format&fit=crop&w=800&q=80"
-            alt="Kaasplank assortiment"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Assortiment grid -->
-  <section id="assortiment" class="bg-parchment/55 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
-        <div>
-          <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
-          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-wine">Charcuterie, kaas &amp; traiteur</h2>
-        </div>
-        <p class="text-charcoal/65 max-w-sm">Fijne vleeswaren, een rijk kaasaanbod en dagverse bereide gerechten — alles ambachtelijk in de winkel.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <!-- Charcuterie -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1542901031-ec5eeb518c5e?auto=format&fit=crop&w=800&q=80"
-            alt="Ambachtelijke charcuterie en vleeswaren"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Charcuterie</h3>
-            <p class="text-cream/75 text-sm mt-1">Fijne vleeswaren, hesp, salami &amp; paté — vers gesneden op maat.</p>
-          </div>
-        </article>
-        <!-- Kaas -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80"
-            alt="Kaasassortiment delicatessen"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Kaas</h3>
-            <p class="text-cream/75 text-sm mt-1">Belgische &amp; buitenlandse kazen, hard en zacht — ook kaasschotels.</p>
-          </div>
-        </article>
-        <!-- Bereide gerechten / traiteur -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80"
-            alt="Bereide gerechten traiteur"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Bereide gerechten</h3>
-            <p class="text-cream/75 text-sm mt-1">Dagverse traiteurschotels &amp; klaargemaakte gerechten om mee te nemen.</p>
-          </div>
-        </article>
-        <!-- Salades & tapas -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80"
-            alt="Verse salades en tapas"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Salades &amp; tapas</h3>
-            <p class="text-cream/75 text-sm mt-1">Huisbereide salades, hapjes &amp; aperitiefschotels voor elke gelegenheid.</p>
-          </div>
-        </article>
-        <!-- Feestschotels -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80"
-            alt="Feest- en gourmetschotels"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-wine via-wine/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Feestschotels</h3>
-            <p class="text-cream/75 text-sm mt-1">Gourmet, fondue &amp; charcuterie/kaasschotels — op voorbestelling.</p>
-          </div>
-        </article>
-        <!-- Cadeaupakketten CTA card -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-gold text-winedk relative aspect-[4/5] flex items-center justify-center text-center p-6">
-          <div>
-            <p class="font-serif text-2xl font-600">Cadeau&shy;pakketten</p>
-            <p class="text-winedk/80 text-sm mt-2">Stel een charcuterie- of kaaspakket samen — ideaal als verjaardags- of bedrijfscadeau.</p>
-            <a href="#traiteur" class="inline-block mt-5 text-winedk font-700 ug">Vraag een pakket aan →</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+      <!-- Cast iron pot illustration -->
+      <div class="keuken__visual fade-up d2">
+        <div class="keuken__pot-box">
+          <svg viewBox="0 0 320 290" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:100%;max-width:300px;">
+            <!-- Steam wisps -->
+            <path d="M122 68 Q116 50 124 34 Q130 18 125 4" fill="none" stroke="#c4a882" stroke-width="2.5" stroke-linecap="round" opacity=".42"/>
+            <path d="M160 62 Q154 44 162 28 Q168 12 163 -2" fill="none" stroke="#c4a882" stroke-width="2.5" stroke-linecap="round" opacity=".38"/>
+            <path d="M198 68 Q192 50 200 34 Q206 18 201 4" fill="none" stroke="#c4a882" stroke-width="2.5" stroke-linecap="round" opacity=".4"/>
 
-  <!-- Featured products (illustratief) -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="flex items-end justify-between mb-10">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-wine">Veelgevraagd uit de toonbank</h2>
-      <a href="#bestellen" class="hidden sm:inline text-gold font-600 ug">Alles bestellen →</a>
-    </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Product 1 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
-          <img
-            src="https://images.unsplash.com/photo-1542901031-ec5eeb518c5e?auto=format&fit=crop&w=700&q=80"
-            alt="Charcuterieschotel (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Op voorbestelling</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-wine">Charcuterieschotel</h3>
-          <p class="text-charcoal/60 text-sm mt-1">Een ruime selectie fijne vleeswaren, mooi geschikt.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
-            <button class="bg-wine text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-winelt transition">Aanvragen</button>
-          </div>
-        </div>
-      </div>
-      <!-- Product 2 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
-          <img
-            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=700&q=80"
-            alt="Kaasschotel (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Klassieker</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-wine">Kaasschotel</h3>
-          <p class="text-charcoal/60 text-sm mt-1">Samengestelde selectie kazen met garnituur.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
-            <button class="bg-wine text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-winelt transition">Aanvragen</button>
-          </div>
-        </div>
-      </div>
-      <!-- Product 3 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-parchment">
-          <img
-            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80"
-            alt="Bereid dagschotel (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Traiteur</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-wine">Bereide dagschotel</h3>
-          <p class="text-charcoal/60 text-sm mt-1">Wisselend dagvers gerecht, klaar om mee te nemen.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-charcoal/60 text-sm">Prijs op aanvraag</span>
-            <button class="bg-wine text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-winelt transition">Aanvragen</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p class="text-center text-xs text-charcoal/40 mt-6">Voorbeeldproducten ter illustratie van de toekomstige online bestelmodule — geen actuele prijzen.</p>
-  </section>
+            <!-- Pot body shadow -->
+            <ellipse cx="160" cy="230" rx="108" ry="14" fill="#3d2010" opacity=".12"/>
 
-  <!-- Traiteur- / buffetaanvraag (the differentiator) -->
-  <section id="traiteur" class="bg-wine text-cream py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
-      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
-        <img
-          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80"
-          alt="Traiteur buffet en feestschotels"
-          loading="lazy" decoding="async"
-          class="w-full h-full object-cover"
-        />
-      </div>
-      <div class="order-1 lg:order-2 fade-up">
-        <p class="text-goldlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Traiteur &amp; buffet</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
-          Een feest?<br />Wij verzorgen het buffet.
-        </h2>
-        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md">
-          Verjaardag, communie, bedrijfsevent of familiefeest? Stel hieronder uw aanvraag samen —
-          datum, aantal personen en wensen — en wij sturen u een voorstel op maat.
-          Geen prijs verplichtingen, gewoon een vrijblijvende aanvraag.
-        </p>
+            <!-- Pot body -->
+            <path d="M58 122 Q52 228 160 238 Q268 228 262 122 Z" fill="#1e0c04"/>
+            <path d="M58 122 Q52 228 160 238 Q268 228 262 122 Z" fill="none" stroke="#3d2010" stroke-width="2"/>
+            <!-- Sheen on pot -->
+            <path d="M78 136 Q110 126 148 132" fill="none" stroke="#5a3820" stroke-width="2" opacity=".35"/>
 
-        <!-- Concept-formulier: traiteur-/buffetaanvraag -->
-        <form class="mt-8 bg-cream/5 border border-cream/15 rounded-2xl p-5 sm:p-6 space-y-4" onsubmit="return false">
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label for="t-naam" class="block text-sm font-600 text-cream/90 mb-1">Naam</label>
-              <input id="t-naam" name="naam" type="text" autocomplete="name" placeholder="Uw naam"
-                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
-            </div>
-            <div>
-              <label for="t-tel" class="block text-sm font-600 text-cream/90 mb-1">Telefoon</label>
-              <input id="t-tel" name="telefoon" type="tel" autocomplete="tel" placeholder="03 ..."
-                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
-            </div>
-          </div>
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div>
-              <label for="t-datum" class="block text-sm font-600 text-cream/90 mb-1">Gewenste datum</label>
-              <input id="t-datum" name="datum" type="date"
-                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
-            </div>
-            <div>
-              <label for="t-personen" class="block text-sm font-600 text-cream/90 mb-1">Aantal personen</label>
-              <input id="t-personen" name="personen" type="number" min="1" placeholder="bv. 25"
-                class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold" />
-            </div>
-          </div>
-          <div>
-            <label for="t-type" class="block text-sm font-600 text-cream/90 mb-1">Type</label>
-            <select id="t-type" name="type"
-              class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold">
-              <option>Koud buffet</option>
-              <option>Warm buffet</option>
-              <option>Charcuterie- &amp; kaasschotels</option>
-              <option>Aperitief &amp; hapjes</option>
-              <option>Cadeaupakket</option>
-              <option>Iets anders</option>
-            </select>
-          </div>
-          <div>
-            <label for="t-wensen" class="block text-sm font-600 text-cream/90 mb-1">Wensen / opmerkingen</label>
-            <textarea id="t-wensen" name="wensen" rows="3" placeholder="Allergieën, budget, thema, afhalen of bezorgen ..."
-              class="w-full px-4 py-2.5 rounded-lg bg-cream text-charcoal border border-cream/20 focus:outline-none focus:ring-2 focus:ring-gold"></textarea>
-          </div>
-          <label class="flex items-start gap-3 text-xs text-cream/70">
-            <input type="checkbox" required class="mt-0.5 accent-gold" />
-            <span>Ik ga akkoord dat mijn gegevens enkel worden gebruikt om mijn aanvraag te beantwoorden (GDPR).</span>
-          </label>
-          <button class="w-full bg-gold text-winedk font-700 px-7 py-3 rounded-full hover:bg-goldlt transition">
-            Verstuur mijn aanvraag
-          </button>
-          <p class="text-[11px] text-cream/50 text-center">Concept-formulier — in de live versie komt uw aanvraag rechtstreeks per e-mail bij D'Hoeve terecht.</p>
-        </form>
-      </div>
-    </div>
-  </section>
+            <!-- Pot top rim -->
+            <ellipse cx="160" cy="122" rx="102" ry="22" fill="#2a1508"/>
+            <ellipse cx="160" cy="122" rx="102" ry="22" fill="none" stroke="#3d2010" stroke-width="2"/>
 
-  <!-- Ons verhaal -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
-    <div class="fade-up">
-      <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
-      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-wine">Vakmanschap aan<br />het Gemeenteplein.</h2>
-      <p class="text-charcoal/70 text-lg mt-6 leading-relaxed">
-        D'Hoeve is al jaren een vertrouwd adres op het Gemeenteplein in Edegem.
-        Wat ons onderscheidt? Ambachtelijke charcuterie, een zorgvuldig samengesteld kaasassortiment
-        en dagverse bereide gerechten — met de persoonlijke service van een echte buurtwinkel.
-      </p>
-      <p class="text-charcoal/70 text-lg mt-4 leading-relaxed">
-        Of u nu langskomt voor een plank charcuterie, een stuk kaas, een dagschotel om mee te nemen
-        of een volledig buffet voor uw feest — bij D'Hoeve vindt u kwaliteit en advies op maat.
-        Binnenkort kan dat ook online: bestellen, afhalen en buffetten aanvragen vanuit uw zetel.
-      </p>
-      <div class="mt-9 flex flex-wrap gap-6">
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">100%</p>
-          <p class="text-charcoal/65 text-sm mt-1">Ambachtelijk</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">Dagvers</p>
-          <p class="text-charcoal/65 text-sm mt-1">Bereide gerechten</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">Edegem</p>
-          <p class="text-charcoal/65 text-sm mt-1">Gemeenteplein 17</p>
-        </div>
-      </div>
-    </div>
-    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
-      <img
-        src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=1000&q=80"
-        alt="Ambachtelijke delicatessen en bereide gerechten"
-        loading="lazy" decoding="async"
-        class="w-full h-full object-cover"
-      />
-    </div>
-  </section>
+            <!-- Lid -->
+            <ellipse cx="160" cy="108" rx="94" ry="20" fill="#3d2010"/>
+            <path d="M90 108 Q160 76 230 108" fill="#4a2810"/>
+            <ellipse cx="160" cy="108" rx="94" ry="20" fill="none" stroke="#5a3820" stroke-width="1.5"/>
 
-  <!-- Bezoek + kaart -->
-  <section id="bezoek" class="bg-parchment/55 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
+            <!-- Lid knob -->
+            <rect x="152" y="62" width="16" height="22" rx="8" fill="#5a3820" stroke="#7a5030" stroke-width="1.5"/>
+            <ellipse cx="160" cy="80" rx="19" ry="9" fill="#5a3820" stroke="#7a5030" stroke-width="1.5"/>
+            <ellipse cx="160" cy="78" rx="19" ry="9" fill="#6a4828"/>
+
+            <!-- Left handle -->
+            <path d="M53 130 Q26 130 26 152 Q26 174 53 174" fill="none" stroke="#2a1508" stroke-width="14" stroke-linecap="round"/>
+            <path d="M53 130 Q26 130 26 152 Q26 174 53 174" fill="none" stroke="#3d2010" stroke-width="10" stroke-linecap="round"/>
+
+            <!-- Right handle -->
+            <path d="M267 130 Q294 130 294 152 Q294 174 267 174" fill="none" stroke="#2a1508" stroke-width="14" stroke-linecap="round"/>
+            <path d="M267 130 Q294 130 294 152 Q294 174 267 174" fill="none" stroke="#3d2010" stroke-width="10" stroke-linecap="round"/>
+
+            <!-- Ladle -->
+            <line x1="226" y1="92" x2="310" y2="32" stroke="#5a3820" stroke-width="5" stroke-linecap="round"/>
+            <ellipse cx="218" cy="99" rx="23" ry="14" fill="none" stroke="#5a3820" stroke-width="4.5"/>
+            <ellipse cx="218" cy="99" rx="23" ry="14" fill="#4a2810" opacity=".65"/>
+
+            <!-- Contents suggestion -->
+            <ellipse cx="118" cy="116" rx="18" ry="8" fill="#4a2810" opacity=".55"/>
+            <ellipse cx="160" cy="113" rx="15" ry="7" fill="#3d2010" opacity=".5"/>
+            <ellipse cx="202" cy="116" rx="17" ry="7" fill="#4a2810" opacity=".55"/>
+
+            <!-- Herb sprig leaning -->
+            <line x1="80" y1="180" x2="110" y2="105" stroke="#7a5044" stroke-width="2" stroke-linecap="round"/>
+            <path d="M102 112 Q95 104 100 96 Q107 104 102 112Z" fill="#5a3c28" opacity=".65"/>
+            <path d="M108 120 Q114 112 110 104 Q104 112 108 120Z" fill="#5a3c28" opacity=".6"/>
+          </svg>
+        </div>
+        <span class="keuken__tag">Dagvers bereid</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     AANBOD — 4-card grid on dark chestnut BG
+════════════════════════════════════════════ -->
+<section class="aanbod" id="aanbod" aria-labelledby="aanbod-h2">
+  <div class="aanbod__ghost" aria-hidden="true">Aanbod</div>
+  <div class="container">
+    <div class="aanbod__head fade-up">
+      <span class="eyebrow">Wat wij maken</span>
+      <h2 class="section-h2" id="aanbod-h2">Elke dag iets lekkers<br />uit onze keuken</h2>
+    </div>
+    <div class="aanbod__grid" role="list">
+
+      <!-- Soepen -->
+      <article class="aanbod__card fade-up d1" role="listitem">
+        <div class="aanbod__c-icon" aria-hidden="true">
+          <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#e0a870" stroke-width="1.8" aria-hidden="true">
+            <path d="M12 2a4 4 0 0 1 4 4v1H8V6a4 4 0 0 1 4-4z"/><path d="M3 9h18v1a9 9 0 0 1-18 0V9z"/><path d="M9 21h6"/><path d="M12 17v4"/>
+          </svg>
+        </div>
+        <h3>Verse soepen</h3>
+        <p>Tomaten-basilicum, groentensoep, erwtensoep — dagelijks wisselend, altijd warm en vullend.</p>
+        <span class="aanbod__c-link">Dagelijks vers</span>
+      </article>
+
+      <!-- Warme gerechten -->
+      <article class="aanbod__card fade-up d2" role="listitem">
+        <div class="aanbod__c-icon" aria-hidden="true">
+          <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#e0a870" stroke-width="1.8" aria-hidden="true">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/>
+          </svg>
+        </div>
+        <h3>Warme gerechten</h3>
+        <p>Stoverij, konijn in de kriek, blinde vinken — hartige klassiekers klaar voor op tafel.</p>
+        <span class="aanbod__c-link">Op bestelling</span>
+      </article>
+
+      <!-- Koude schotels -->
+      <article class="aanbod__card fade-up d3" role="listitem">
+        <div class="aanbod__c-icon" aria-hidden="true">
+          <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#e0a870" stroke-width="1.8" aria-hidden="true">
+            <ellipse cx="12" cy="12" rx="10" ry="4"/><path d="M2 12c0 2.2 4.5 4 10 4s10-1.8 10-4"/><path d="M2 17c0 2.2 4.5 4 10 4s10-1.8 10-4"/>
+          </svg>
+        </div>
+        <h3>Koude schotels</h3>
+        <p>Charcuterie, paté, gevulde eieren, Belgische kaasplank — perfect voor elk gezelschap.</p>
+        <span class="aanbod__c-link">Afhalen of leveren</span>
+      </article>
+
+      <!-- Confituren -->
+      <article class="aanbod__card fade-up d4" role="listitem">
+        <div class="aanbod__c-icon" aria-hidden="true">
+          <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#e0a870" stroke-width="1.8" aria-hidden="true">
+            <path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>
+          </svg>
+        </div>
+        <h3>Huisgemaakte confituren</h3>
+        <p>Aardbei, abrikoos, pruim met specerijen — met liefde ingemaakt, in kleine potjes.</p>
+        <span class="aanbod__c-link">Heel het jaar</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     CATERING — warm surface, editorial split
+════════════════════════════════════════════ -->
+<section class="catering" id="catering" aria-labelledby="catering-h2">
+  <div class="container">
+    <div class="catering__grid">
+
+      <!-- Text left -->
       <div class="fade-up">
-        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-wine">Welkom in de winkel</h2>
-        <p class="text-charcoal/70 text-lg mt-5 max-w-md">
-          Kom proeven en kiezen op Gemeenteplein 17 in Edegem, in het hart van de gemeente.
+        <span class="eyebrow">Catering &amp; levering</span>
+        <h2 class="section-h2" id="catering-h2">Uw feest,<br />onze keuken.</h2>
+        <p class="section-body">
+          Of het nu een familiefeest is, een wake, een verjaardag of gewoon een
+          drukke week — wij zorgen dat er lekker eten op tafel staat.
+          Afhalen in Edegem of thuislevering op afspraak.
         </p>
-        <dl class="mt-9 space-y-5 text-charcoal">
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📍</span>
-            <div>
-              <dt class="font-600 text-wine">Adres</dt>
-              <dd class="text-charcoal/70">Gemeenteplein 17, 2650 Edegem</dd>
-            </div>
+        <ul class="catering__list" aria-label="Catering diensten">
+          <li class="catering__li">Thuislevering op afspraak in de regio Edegem</li>
+          <li class="catering__li">Cateringpakketten voor feesten en bijeenkomsten</li>
+          <li class="catering__li">Rouwmaaltijden en condoleantie-schotels</li>
+          <li class="catering__li">Persoonlijk advies op maat van uw budget</li>
+          <li class="catering__li">Portieverpakkingen voor 2 tot 50+ personen</li>
+        </ul>
+        <div class="catering__ctas">
+          <a href="tel:034580218" class="btn-primary">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.61 4.9C1.6 3.82 2.38 2.9 3.46 2.72L6.46 2a2 2 0 0 1 2.15 1.27l1.4 3.5a2 2 0 0 1-.45 2.11L8 10.44s1.8 4.6 6 6l1.56-1.56a2 2 0 0 1 2.11-.45l3.5 1.4A2 2 0 0 1 22 16.92z"/></svg>
+            Bel voor catering
+          </a>
+          <a href="#bezoek" class="btn-outline">Kom langs</a>
+        </div>
+      </div>
+
+      <!-- Visual right -->
+      <div class="catering__vis fade-up d2">
+        <!-- Table illustration SVG -->
+        <svg viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:100%;margin-bottom:20px;">
+          <!-- Table top -->
+          <rect x="16" y="148" width="328" height="12" rx="5" fill="#c4a882" opacity=".35"/>
+          <!-- Table legs -->
+          <rect x="36"  y="160" width="10" height="48" rx="4" fill="#c4a882" opacity=".25"/>
+          <rect x="314" y="160" width="10" height="48" rx="4" fill="#c4a882" opacity=".25"/>
+
+          <!-- Bread basket -->
+          <ellipse cx="88" cy="146" rx="46" ry="15" fill="#b89060" opacity=".3"/>
+          <path d="M48 146 Q88 120 128 146" fill="#c4a882" opacity=".35"/>
+          <ellipse cx="88" cy="144" rx="38" ry="12" fill="#d4b888" opacity=".28"/>
+          <ellipse cx="78"  cy="136" rx="14" ry="9"  fill="#c4a882" opacity=".45"/>
+          <ellipse cx="98"  cy="134" rx="12" ry="8"  fill="#d4b888" opacity=".4"/>
+
+          <!-- Wine glass 1 -->
+          <path d="M188 60 Q183 90 173 100 L203 100 Q193 90 188 60 Z" fill="none" stroke="#9a4a20" stroke-width="1.8" opacity=".45"/>
+          <ellipse cx="188" cy="58" rx="16" ry="8" fill="none" stroke="#9a4a20" stroke-width="1.8" opacity=".45"/>
+          <ellipse cx="188" cy="57" rx="13" ry="5" fill="#9a4a20" opacity=".08"/>
+          <line x1="188" y1="100" x2="188" y2="118" stroke="#9a4a20" stroke-width="1.8" opacity=".4"/>
+          <line x1="176" y1="118" x2="200" y2="118" stroke="#9a4a20" stroke-width="1.8" opacity=".4"/>
+
+          <!-- Wine glass 2 -->
+          <path d="M226 70 Q221 98 211 107 L241 107 Q231 98 226 70 Z" fill="none" stroke="#9a4a20" stroke-width="1.8" opacity=".38"/>
+          <ellipse cx="226" cy="68" rx="15" ry="7" fill="none" stroke="#9a4a20" stroke-width="1.8" opacity=".38"/>
+          <line x1="226" y1="107" x2="226" y2="124" stroke="#9a4a20" stroke-width="1.8" opacity=".35"/>
+          <line x1="214" y1="124" x2="238" y2="124" stroke="#9a4a20" stroke-width="1.8" opacity=".35"/>
+
+          <!-- Cheese board -->
+          <rect x="248" y="120" width="88" height="24" rx="4" fill="#c4a882" opacity=".3"/>
+          <ellipse cx="275" cy="125" rx="14" ry="7" fill="#d4b888" opacity=".4"/>
+          <ellipse cx="306" cy="122" rx="11" ry="6" fill="#b89060" opacity=".36"/>
+
+          <!-- Flower centrepiece -->
+          <line x1="140" y1="144" x2="140" y2="92" stroke="#7a5c44" stroke-width="1.8" opacity=".45"/>
+          <circle cx="140" cy="86" r="9" fill="#9a4a20" opacity=".28"/>
+          <circle cx="129" cy="93" r="7" fill="#b85a28" opacity=".22"/>
+          <circle cx="151" cy="94" r="7" fill="#c4702a" opacity=".22"/>
+          <path d="M133 100 Q120 88 128 78 Q136 88 133 100Z" fill="#7a5c44" opacity=".3"/>
+          <path d="M147 100 Q160 88 152 78 Q144 88 147 100Z" fill="#7a5c44" opacity=".3"/>
+
+          <!-- Candle -->
+          <rect x="314" y="90" width="10" height="56" rx="3" fill="#f7f3eb" opacity=".45"/>
+          <ellipse cx="319" cy="88" rx="5" ry="3" fill="#e8d0a0" opacity=".55"/>
+          <path d="M319 82 Q321 72 319 64 Q317 72 319 82" fill="#e8b870" opacity=".65"/>
+
+          <!-- Napkin -->
+          <path d="M50 145 Q44 135 52 126 Q60 135 56 145Z" fill="#f7f3eb" opacity=".28"/>
+        </svg>
+
+        <div class="catering__detail-grid">
+          <div class="catering__dc">
+            <h4>Afhalen</h4>
+            <p>Telefonisch bestellen, ophalen in Edegem op uw gewenst uur.</p>
           </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🕑</span>
-            <div>
-              <dt class="font-600 text-wine">Openingsuren</dt>
-              <dd class="text-charcoal/70">Di–Za: 08:30–18:00 · Zo: 08:30–12:30 · Ma: gesloten</dd>
-              <dd class="text-charcoal/40 text-sm mt-1">(indicatief — graag te bevestigen)</dd>
-            </div>
+          <div class="catering__dc">
+            <h4>Levering</h4>
+            <p>Thuislevering in de regio, op afspraak en op tijd.</p>
           </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📞</span>
-            <div>
-              <dt class="font-600 text-wine">Telefoon</dt>
-              <dd class="text-charcoal/70"><a href="tel:+3234580218" class="ug">03 458 02 18</a></dd>
-            </div>
+          <div class="catering__dc">
+            <h4>Feestpakket</h4>
+            <p>Volledig samengesteld menu voor uw gezelschap.</p>
           </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">💳</span>
-            <div>
-              <dt class="font-600 text-wine">Betaalmogelijkheden</dt>
-              <dd class="text-charcoal/70">Cash · Bancontact</dd>
-            </div>
+          <div class="catering__dc">
+            <h4>Op maat</h4>
+            <p>Dieetwensen, allergieën — wij passen ons aan.</p>
           </div>
-        </dl>
-        <a href="#bestellen" class="inline-block mt-9 bg-wine text-cream font-600 px-7 py-3.5 rounded-full hover:bg-winelt transition">
-          Of bestel online →
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     PITCH STRIP
+════════════════════════════════════════════ -->
+<section class="pitch" aria-label="Online zichtbaarheid">
+  <div class="container">
+    <div class="pitch__inner fade-up">
+      <div>
+        <p class="pitch__eyebrow">Waarom een website?</p>
+        <h2 class="pitch__h2">
+          "Geen website = uw buren<br />vinden u niet online."
+        </h2>
+      </div>
+      <div class="pitch__actions">
+        <a href="tel:034580218" class="btn-cream">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.61 4.9C1.6 3.82 2.38 2.9 3.46 2.72L6.46 2a2 2 0 0 1 2.15 1.27l1.4 3.5a2 2 0 0 1-.45 2.11L8 10.44s1.8 4.6 6 6l1.56-1.56a2 2 0 0 1 2.11-.45l3.5 1.4A2 2 0 0 1 22 16.92z"/></svg>
+          Bestel uw menu
         </a>
-      </div>
-      <!-- OpenStreetMap embed — Gemeenteplein 17, 2650 Edegem (~51.1561, 4.4470) -->
-      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-parchment shadow-sm">
-        <iframe
-          title="Kaart D'Hoeve — Gemeenteplein 17, 2650 Edegem"
-          class="w-full h-full min-h-[360px] border-0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=4.439%2C51.151%2C4.456%2C51.161&layer=mapnik&marker=51.1561%2C4.4470"
-        ></iframe>
+        <a href="tel:034580218" class="pitch__tel">Bel: 03 458 02 18</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- GDPR Newsletter -->
-  <section class="bg-gold/15">
-    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-wine">Blijf op de hoogte</h2>
-      <p class="text-charcoal/70 mt-3">Nieuwe seizoensproducten, feestschotels en cadeaupakketten — af en toe in je mailbox.</p>
-      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
-        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
-        <input
-          id="nl-email"
-          name="email"
-          type="email"
-          autocomplete="email"
-          required
-          placeholder="jouw@email.be"
-          class="flex-1 px-5 py-3 rounded-full border border-wine/20 bg-cream focus:outline-none focus:ring-2 focus:ring-gold"
-        />
-        <button class="bg-wine text-cream font-600 px-7 py-3 rounded-full hover:bg-winelt transition">Inschrijven</button>
-      </form>
-      <p class="text-xs text-charcoal/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="bg-wine text-cream/80">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div>
-        <p class="font-serif text-2xl text-cream font-700">D'Hoeve<span class="text-gold">·</span></p>
-        <p class="text-cream/55 text-sm mt-1">Delicatessen &amp; traiteur</p>
-        <p class="text-cream/55 text-sm mt-3 max-w-xs">Ambachtelijke charcuterie, kaas &amp; traiteur in Edegem. Online bestellen, traiteur-aanvragen &amp; cadeaupakketten.</p>
+<!-- ════════════════════════════════════════════
+     BEZOEK
+════════════════════════════════════════════ -->
+<section class="bezoek" id="bezoek" aria-labelledby="bezoek-h2">
+  <div class="container">
+    <div class="bezoek__grid">
+
+      <!-- Info left -->
+      <div class="fade-up">
+        <span class="eyebrow">Kom langs</span>
+        <h2 class="section-h2" id="bezoek-h2">D'Hoeve in Edegem —<br />altijd welkom.</h2>
+        <p class="section-body">
+          We staan elke dag voor u klaar. Kom langs in onze zaak in Edegem
+          of bel op voorhand om uw bestelling te plaatsen.
+        </p>
+
+        <div class="bezoek__details">
+          <div class="bezoek__detail">
+            <div class="bezoek__d-icon" aria-hidden="true">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#9a4a20" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="bezoek__d-text">
+              <strong>Adres</strong>
+              <span>Edegem, Antwerpen · België</span>
+            </div>
+          </div>
+          <div class="bezoek__detail">
+            <div class="bezoek__d-icon" aria-hidden="true">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#9a4a20" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.61 4.9C1.6 3.82 2.38 2.9 3.46 2.72L6.46 2a2 2 0 0 1 2.15 1.27l1.4 3.5a2 2 0 0 1-.45 2.11L8 10.44s1.8 4.6 6 6l1.56-1.56a2 2 0 0 1 2.11-.45l3.5 1.4A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="bezoek__d-text">
+              <strong>Telefoon</strong>
+              <span><a href="tel:034580218" style="color:var(--c-terra);font-weight:500;">03 458 02 18</a></span>
+            </div>
+          </div>
+          <div class="bezoek__detail">
+            <div class="bezoek__d-icon" aria-hidden="true">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#9a4a20" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div class="bezoek__d-text">
+              <strong>Openingsuren</strong>
+              <span>Di–Vr: 09:00–18:30<br />Za: 09:00–17:00<br />Zo–Ma: gesloten</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bezoek__cta-box fade-up d2">
+          <p>
+            Bel vooraf voor grote bestellingen of catering — wij plannen graag samen
+            met u wat u nodig heeft.
+          </p>
+          <a href="tel:034580218" class="btn-primary">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.61 4.9C1.6 3.82 2.38 2.9 3.46 2.72L6.46 2a2 2 0 0 1 2.15 1.27l1.4 3.5a2 2 0 0 1-.45 2.11L8 10.44s1.8 4.6 6 6l1.56-1.56a2 2 0 0 1 2.11-.45l3.5 1.4A2 2 0 0 1 22 16.92z"/></svg>
+            Bel: 03 458 02 18
+          </a>
+        </div>
       </div>
+
+      <!-- Map illustration right -->
+      <div class="bezoek__map fade-up d2">
+        <svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg" aria-label="Kaart van Edegem — locatie D'Hoeve" style="width:100%;height:100%;">
+          <rect width="480" height="380" fill="#e8dfc8"/>
+
+          <!-- Roads -->
+          <rect x="0"   y="170" width="480" height="18" fill="#d4c8a8"/>
+          <rect x="210" y="0"   width="16"  height="380" fill="#d4c8a8"/>
+          <rect x="0"   y="112" width="480" height="10" fill="#dbd0b0" opacity=".7"/>
+          <rect x="0"   y="278" width="480" height="10" fill="#dbd0b0" opacity=".6"/>
+          <rect x="102" y="0"   width="10"  height="380" fill="#dbd0b0" opacity=".6"/>
+          <rect x="342" y="0"   width="10"  height="380" fill="#dbd0b0" opacity=".55"/>
+          <!-- Centre line dashes -->
+          <line x1="0" y1="179" x2="480" y2="179" stroke="#c8bc98" stroke-width="1" stroke-dasharray="18,12"/>
+          <line x1="218" y1="0" x2="218" y2="380" stroke="#c8bc98" stroke-width="1" stroke-dasharray="18,12"/>
+
+          <!-- Park green -->
+          <rect x="252" y="18" width="82" height="76" rx="8" fill="#c8d8a8" opacity=".65"/>
+          <text x="293" y="62" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="9" fill="#7a8a60" opacity=".9">Park</text>
+
+          <!-- Building blocks -->
+          <rect x="18"  y="18"  width="72" height="84" rx="3" fill="#c4b898" opacity=".45"/>
+          <rect x="108" y="18"  width="88" height="84" rx="3" fill="#c4b898" opacity=".4"/>
+          <rect x="352" y="18"  width="110" height="84" rx="3" fill="#c4b898" opacity=".42"/>
+          <rect x="18"  y="122" width="76" height="38" rx="3" fill="#c4b898" opacity=".4"/>
+          <rect x="118" y="122" width="68" height="38" rx="3" fill="#c4b898" opacity=".38"/>
+          <rect x="244" y="122" width="84" height="38" rx="3" fill="#c4b898" opacity=".4"/>
+          <rect x="360" y="122" width="100" height="38" rx="3" fill="#c4b898" opacity=".38"/>
+          <rect x="18"  y="198" width="78" height="68" rx="3" fill="#c4b898" opacity=".38"/>
+          <rect x="118" y="198" width="62" height="68" rx="3" fill="#c4b898" opacity=".36"/>
+          <rect x="244" y="198" width="84" height="68" rx="3" fill="#c4b898" opacity=".38"/>
+          <rect x="358" y="198" width="100" height="68" rx="3" fill="#c4b898" opacity=".36"/>
+          <rect x="18"  y="292" width="72" height="70" rx="3" fill="#c4b898" opacity=".38"/>
+          <rect x="112" y="292" width="88" height="70" rx="3" fill="#c4b898" opacity=".36"/>
+          <rect x="244" y="292" width="84" height="70" rx="3" fill="#c4b898" opacity=".38"/>
+          <rect x="360" y="292" width="100" height="70" rx="3" fill="#c4b898" opacity=".36"/>
+
+          <!-- Pin shadow -->
+          <ellipse cx="218" cy="185" rx="15" ry="5" fill="#3d2010" opacity=".18"/>
+          <!-- Pin body -->
+          <path d="M218 106 C205 106 195 117 195 130 C195 148 218 182 218 182 C218 182 241 148 241 130 C241 117 231 106 218 106 Z" fill="#9a4a20"/>
+          <path d="M218 106 C205 106 195 117 195 130 C195 148 218 182 218 182 C218 182 241 148 241 130 C241 117 231 106 218 106 Z" fill="none" stroke="#3d2010" stroke-width="1.8"/>
+          <!-- Pin inner -->
+          <circle cx="218" cy="130" r="12" fill="#f7f3eb"/>
+          <text x="218" y="135" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" fill="#9a4a20" font-weight="700">H</text>
+
+          <!-- Label bubble -->
+          <rect x="230" y="104" width="90" height="26" rx="6" fill="#3d2010"/>
+          <text x="275" y="122" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="10" fill="#f7f3eb" font-weight="500">D'Hoeve</text>
+
+          <!-- City name -->
+          <text x="244" y="346" font-family="DM Sans,sans-serif" font-size="12" fill="#7a5c44" opacity=".75" font-weight="500">Edegem</text>
+
+          <!-- Compass rose -->
+          <g transform="translate(444,344)">
+            <circle cx="0" cy="0" r="18" fill="rgba(61,32,16,.07)" stroke="#c4b898" stroke-width="1"/>
+            <text x="0" y="-5" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="7" fill="#7a5c44">N</text>
+            <line x1="0" y1="-2" x2="0" y2="-13" stroke="#9a4a20" stroke-width="2" stroke-linecap="round"/>
+            <line x1="0" y1="2"  x2="0" y2="13"  stroke="#c4b898" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="-13" y1="0" x2="13" y2="0" stroke="#c4b898" stroke-width="1" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
       <div>
-        <p class="font-600 text-cream mb-3">Winkel</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li><a href="#assortiment" class="hover:text-goldlt">Assortiment</a></li>
-          <li><a href="#bestellen" class="hover:text-goldlt">Online bestellen</a></li>
-          <li><a href="#traiteur" class="hover:text-goldlt">Traiteur &amp; buffet</a></li>
+        <p class="footer__logo">D'Hoeve</p>
+        <p class="footer__tagline">
+          Verse traiteur en delicatessen in Edegem.<br />
+          Eerlijk, dagvers en met zorg bereid.
+        </p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__col-title">Navigatie</p>
+        <ul role="list">
+          <li><a href="#keuken">Onze keuken</a></li>
+          <li><a href="#aanbod">Aanbod</a></li>
+          <li><a href="#catering">Catering</a></li>
+          <li><a href="#bezoek">Bezoek ons</a></li>
         </ul>
       </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Info</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li><a href="#bezoek" class="hover:text-goldlt">Openingsuren</a></li>
-          <li><a href="#bezoek" class="hover:text-goldlt">Contact</a></li>
-          <li><a href="#top" class="hover:text-goldlt">Ons verhaal</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Contact</p>
-        <ul class="space-y-2 text-sm text-cream/60">
-          <li>Gemeenteplein 17</li>
-          <li>2650 Edegem</li>
-          <li><a href="tel:+3234580218" class="hover:text-goldlt">03 458 02 18</a></li>
+      <div class="footer__col">
+        <p class="footer__col-title">Contact</p>
+        <ul role="list">
+          <li><a href="tel:034580218">03 458 02 18</a></li>
+          <li><a href="#bezoek">Edegem, Antwerpen</a></li>
+          <li><span style="color:rgba(247,243,235,.38);font-size:.875rem;">Di–Za: 09:00–18:30</span></li>
         </ul>
       </div>
     </div>
-    <div class="border-t border-cream/10">
-      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/40">
-        <p>© 2026 D'Hoeve. Concept-redesign.</p>
-        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; webshop.</p>
-      </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2025 D'Hoeve &mdash; Edegem</p>
+      <p class="footer__by">
+        Website demo door <a href="https://saspire.org" target="_blank" rel="noopener noreferrer">Saspire</a>
+      </p>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <!-- Scripts -->
-  <script>
-    // Fade-up IntersectionObserver
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
-    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+
+<!-- ════════════════════════════════════════════
+     JS — Headroom nav + IntersectionObserver + mobile menu
+════════════════════════════════════════════ -->
+<script>
+(function () {
+  'use strict';
+
+  /* ── Headroom nav ───────────────────────── */
+  var nav      = document.getElementById('mainNav');
+  var TOL_DOWN = 8;   /* px scroll down before hiding */
+  var TOL_UP   = 5;   /* px scroll up before showing */
+  var OFFSET   = 80;  /* px from top before activating */
+  var lastY    = 0;
+  var ticking  = false;
+  var pinned   = true;
+
+  function processScroll() {
+    var y    = window.pageYOffset;
+    var diff = y - lastY;
+
+    if (y < OFFSET) {
+      nav.classList.remove('scrolled', 'hidden');
     } else {
-      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
+      nav.classList.add('scrolled');
+      if (diff > TOL_DOWN && pinned) {
+        nav.classList.add('hidden');
+        pinned = false;
+      } else if (diff < -TOL_UP && !pinned) {
+        nav.classList.remove('hidden');
+        pinned = true;
+      }
     }
+    lastY   = y;
+    ticking = false;
+  }
 
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (menuBtn && mobileMenu) {
-      const setOpen = (open) => {
-        if (open) mobileMenu.removeAttribute('hidden');
-        else mobileMenu.setAttribute('hidden', '');
-        menuBtn.setAttribute('aria-expanded', String(open));
-        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
-      };
-      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
-      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
+  window.addEventListener('scroll', function () {
+    if (!ticking) {
+      requestAnimationFrame(processScroll);
+      ticking = true;
     }
-  </script>
+  }, { passive: true });
+
+  processScroll();
+
+  /* ── IntersectionObserver fade-up ──────── */
+  var fadeEls = document.querySelectorAll('.fade-up');
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -36px 0px' });
+
+    fadeEls.forEach(function (el) { io.observe(el); });
+  } else {
+    fadeEls.forEach(function (el) { el.classList.add('visible'); });
+  }
+
+  /* ── Mobile menu ────────────────────────── */
+  var burger  = document.getElementById('navBurger');
+  var menu    = document.getElementById('mobMenu');
+  var closeBtn = document.getElementById('mobClose');
+  var links   = menu.querySelectorAll('.mob-link, .btn-primary');
+
+  function open()  {
+    menu.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    burger.setAttribute('aria-expanded', 'true');
+  }
+  function close() {
+    menu.classList.remove('open');
+    document.body.style.overflow = '';
+    burger.setAttribute('aria-expanded', 'false');
+  }
+
+  burger.addEventListener('click', open);
+  closeBtn.addEventListener('click', close);
+  links.forEach(function (l) { l.addEventListener('click', close); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') close();
+  });
+
+})();
+</script>
+
 </body>
 </html>

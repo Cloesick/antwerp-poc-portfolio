@@ -1,633 +1,660 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta name="robots" content="noindex, nofollow" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Old Bacchus — Wijn- &amp; drankenspeciaalzaak · Schoten</title>
-  <meta name="description" content="Wijn- en drankenspeciaalzaak in Schoten. Ontdek onze wijnwebshop met filters per streek, druif en prijs — online bestellen met Bancontact / Mollie, cadeaupakketten en proeverijen. 18+." />
-  <link rel="canonical" href="https://oldbacchus.be/" />
-  <meta name="theme-color" content="#5b1a2b" />
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Old Bacchus" />
-  <meta property="og:locale" content="nl_BE" />
-  <meta property="og:title" content="Old Bacchus — Wijn- &amp; drankenspeciaalzaak · Schoten" />
-  <meta property="og:description" content="Een echte wijnwebshop met filters per streek, druif en prijs — online bestellen, cadeaupakketten en proeverijen. Wijn- &amp; drankenspeciaalzaak in Schoten. 18+." />
-  <meta property="og:url" content="https://oldbacchus.be/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=80" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- Inline SVG favicon — monogram "OB" -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%235b1a2b'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%23c2a14e' text-anchor='middle'%3EOB%3C/text%3E%3C/svg%3E" />
-  <!-- Local-SEO structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Store",
-    "name": "Old Bacchus",
-    "description": "Wijn- en drankenspeciaalzaak in Schoten. Wijnwebshop met filters per streek, druif en prijs, online bestellen, cadeaupakketten en proeverijen.",
-    "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=80",
-    "url": "https://oldbacchus.be/",
-    "telephone": "+3236582774",
-    "email": "info@oldbacchus.be",
-    "priceRange": "€€€",
-    "areaServed": "BE",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Sint-Cordulastraat 34",
-      "postalCode": "2900",
-      "addressLocality": "Schoten",
-      "addressRegion": "Antwerpen",
-      "addressCountry": "BE"
-    },
-    "geo": { "@type": "GeoCoordinates", "latitude": 51.2530, "longitude": 4.4990 }
-  }
-  </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { serif: ['Cormorant Garamond', 'serif'], sans: ['Inter', 'sans-serif'] },
-          colors: {
-            burgundy:  '#5b1a2b',
-            bordeaux:  '#6e2235',
-            merlot:    '#7c2840',
-            gold:      '#c2a14e',
-            goldlt:    '#d4b667',
-            cream:     '#f7f1e7',
-            sand:      '#ece1cd',
-            clay:      '#8a7458',
-            ink:       '#2c161c',
-          },
-        },
-      },
-    };
-  </script>
-  <style>
-    html { scroll-behavior: smooth; }
-    .hero-grad { background: linear-gradient(180deg, rgba(44,22,28,.18) 0%, rgba(44,22,28,.52) 52%, rgba(44,22,28,.92) 100%); }
-    .tile-grad { background: linear-gradient(160deg, #6e2235, #2c161c); }
-    .fade-up { opacity: 0; transform: translateY(20px); transition: all .8s cubic-bezier(.2,.7,.2,1); }
-    .fade-up.in { opacity: 1; transform: none; }
-    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 1px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
-    .ug:hover { background-size: 100% 1px; }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Old Bacchus — Wijn, Bier &amp; Spirits in Schoten</title>
+<meta name="description" content="Old Bacchus is uw lokale wijn- en drankenspezialist in Schoten. Klassieke wijnen, craft bier, whisky, gin en meer. Ontdek ons uitgebreid aanbod." />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23110e08'/%3E%3Cellipse cx='32' cy='26' rx='10' ry='13' fill='%23c9851a'/%3E%3Ccircle cx='32' cy='14' r='6' fill='%23c9851a'/%3E%3Cellipse cx='24' cy='20' rx='4' ry='5' fill='%23c9851a' transform='rotate(-20 24 20)'/%3E%3Cellipse cx='40' cy='20' rx='4' ry='5' fill='%23c9851a' transform='rotate(20 40 20)'/%3E%3Crect x='27' y='39' width='10' height='16' rx='2' fill='%23c9851a'/%3E%3Crect x='22' y='53' width='20' height='4' rx='2' fill='%23c9851a'/%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Outfit:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Outfit:wght@400;500&display=swap" rel="stylesheet" /></noscript>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Old Bacchus",
+  "description": "Wijn, bier en spirits specialist in Schoten, Belgie. Van klassiek tot craft.",
+  "telephone": "03 658 27 74",
+  "email": "info@oldbacchus.be",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Schoten",
+    "addressCountry": "BE"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "10:00",
+      "closes": "18:30"
+    }
+  ],
+  "priceRange": "EU",
+  "hasMap": "https://maps.google.com/?q=Old+Bacchus+Schoten"
+}
+</script>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root {
+  --near-black: #110e08;
+  --amber: #c9851a;
+  --amber-light: #e0a040;
+  --amber-dark: #9a640f;
+  --cream: #f4ede0;
+  --cream-muted: rgba(244,237,224,0.78);
+  --cream-faint: rgba(244,237,224,0.38);
+  --surface-1: #1c1710;
+  --surface-2: #221e14;
+  --surface-3: #2a2418;
+  --border: rgba(201,133,26,0.22);
+  --border-strong: rgba(201,133,26,0.45);
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --ff-display: 'Fraunces', Georgia, serif;
+  --ff-body: 'Outfit', system-ui, sans-serif;
+  --nav-h: 68px;
+  --max-w: 1160px;
+}
+
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--near-black);color:var(--cream);font-family:var(--ff-body);font-size:1rem;line-height:1.7;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);display:flex;align-items:center;padding:0 clamp(1.25rem,5vw,3rem);transition:background .3s ease,box-shadow .3s ease,transform .35s ease;background:transparent}
+.nav.is-pinned{background:rgba(17,14,8,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--border)}
+.nav.is-unpinned{transform:translateY(-100%)}
+.nav__brand{display:flex;align-items:center;gap:.65rem;font-family:var(--ff-display);font-size:1.35rem;font-weight:700;color:var(--cream);letter-spacing:-.01em}
+.nav__brand svg{width:32px;height:32px;flex-shrink:0}
+.nav__links{display:flex;align-items:center;gap:2rem;margin-left:auto;list-style:none}
+.nav__links a{font-size:.875rem;font-weight:500;color:var(--cream-muted);transition:color .2s}
+.nav__links a:hover{color:var(--amber-light)}
+.nav__cta{margin-left:1.5rem;padding:.5rem 1.25rem;border:1.5px solid var(--amber);border-radius:var(--radius-sm);font-size:.875rem;font-weight:500;color:var(--amber-light);transition:background .2s,color .2s}
+.nav__cta:hover{background:var(--amber);color:var(--near-black)}
+.nav__burger{display:none;width:36px;height:36px;align-items:center;justify-content:center;flex-direction:column;gap:5px;margin-left:auto;cursor:pointer}
+.nav__burger span{display:block;width:22px;height:2px;background:var(--cream);border-radius:2px}
+
+/* HERO */
+.hero{min-height:100dvh;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:calc(var(--nav-h) + 2rem) clamp(1.25rem,5vw,3rem) 4rem}
+.hero__bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 60% 40%,rgba(201,133,26,.10) 0%,transparent 60%),radial-gradient(ellipse 50% 50% at 20% 80%,rgba(201,133,26,.06) 0%,transparent 55%);pointer-events:none}
+.hero__ghost{position:absolute;bottom:-.15em;right:-.08em;font-family:var(--ff-display);font-size:clamp(6rem,18vw,18rem);font-weight:700;line-height:1;color:transparent;-webkit-text-stroke:1.5px rgba(201,133,26,.18);user-select:none;pointer-events:none;white-space:nowrap}
+.hero__inner{position:relative;z-index:2;max-width:700px;text-align:center}
+.hero__eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.8125rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);margin-bottom:1.25rem}
+.hero__eyebrow::before,.hero__eyebrow::after{content:'';display:block;width:24px;height:1px;background:var(--amber);opacity:.6}
+.hero__title{font-family:var(--ff-display);font-size:clamp(2.4rem,7vw,5rem);font-weight:700;line-height:1.1;letter-spacing:-.02em;color:var(--cream);margin-bottom:1.25rem}
+.hero__title em{font-style:normal;color:var(--amber-light)}
+.hero__sub{font-size:clamp(1rem,2.5vw,1.2rem);color:var(--cream-muted);max-width:520px;margin:0 auto 2.5rem;line-height:1.65}
+.hero__actions{display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap}
+.btn-primary{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2rem;background:var(--amber);color:var(--near-black);font-family:var(--ff-body);font-size:.9375rem;font-weight:500;border-radius:var(--radius-sm);border:none;transition:background .2s,transform .15s}
+.btn-primary:hover{background:var(--amber-light);transform:translateY(-1px)}
+.btn-secondary{display:inline-flex;align-items:center;gap:.5rem;padding:.875rem 2rem;background:transparent;color:var(--cream);font-family:var(--ff-body);font-size:.9375rem;font-weight:500;border:1.5px solid rgba(244,237,224,.30);border-radius:var(--radius-sm);transition:border-color .2s,color .2s}
+.btn-secondary:hover{border-color:var(--cream)}
+.hero__bacchus{margin:3.5rem auto 0;display:flex;justify-content:center}
+.bacchus-svg{width:clamp(160px,28vw,240px);opacity:.92}
+
+/* MARQUEE */
+.marquee-wrap{background:var(--surface-1);border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;padding:1rem 0}
+.marquee-track{display:flex;width:max-content;animation:marquee 30s linear infinite}
+.marquee-track:hover{animation-play-state:paused}
+.marquee-item{display:flex;align-items:center;gap:2rem;padding:0 2rem;font-family:var(--ff-display);font-size:1.05rem;font-weight:600;color:var(--amber);letter-spacing:.04em;white-space:nowrap}
+.marquee-dot{width:5px;height:5px;border-radius:50%;background:var(--amber);opacity:.5;flex-shrink:0}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* SECTIONS */
+.section{padding:clamp(4rem,10vw,7rem) clamp(1.25rem,5vw,3rem);max-width:var(--max-w);margin:0 auto}
+.section__header{text-align:center;margin-bottom:3.5rem}
+.section__label{display:inline-block;font-size:.75rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:.75rem}
+.section__title{font-family:var(--ff-display);font-size:clamp(1.9rem,5vw,3rem);font-weight:700;line-height:1.15;letter-spacing:-.02em;color:var(--cream)}
+.section__desc{margin-top:1rem;font-size:1.0625rem;color:var(--cream-muted);max-width:540px;margin-left:auto;margin-right:auto}
+.divider-wrap{padding:0 clamp(1.25rem,5vw,3rem);max-width:var(--max-w);margin:0 auto}
+.divider-line{height:1px;background:linear-gradient(to right,transparent,var(--border-strong),transparent)}
+
+/* BENTO */
+.bento{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
+.bento__card{background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-md);padding:2rem 1.75rem 1.75rem;position:relative;overflow:hidden;transition:border-color .25s,transform .25s;display:flex;flex-direction:column;gap:.75rem}
+.bento__card:hover{border-color:var(--border-strong);transform:translateY(-3px)}
+.bento__card::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 60% at 80% 10%,rgba(201,133,26,.07) 0%,transparent 70%);pointer-events:none}
+.bento__icon{width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:rgba(201,133,26,.12);border-radius:10px;margin-bottom:.25rem}
+.bento__icon svg{width:26px;height:26px;fill:none;stroke:var(--amber);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.bento__name{font-family:var(--ff-display);font-size:1.35rem;font-weight:700;color:var(--cream);line-height:1.2}
+.bento__text{font-size:.9375rem;color:var(--cream-muted);line-height:1.6}
+.bento__tag{display:inline-block;font-size:.75rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--amber);background:rgba(201,133,26,.10);border:1px solid rgba(201,133,26,.22);border-radius:4px;padding:.25rem .6rem;margin-top:auto;align-self:flex-start}
+
+/* TOPPERS */
+.toppers-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.25rem}
+.topper-card{background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;transition:border-color .25s,transform .25s;display:flex;flex-direction:column}
+.topper-card:hover{border-color:var(--border-strong);transform:translateY(-3px)}
+.topper-card__visual{height:180px;background:var(--surface-3);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.topper-card__badge{position:absolute;top:.75rem;right:.75rem;background:var(--amber);color:var(--near-black);font-size:.75rem;font-weight:500;padding:.2rem .55rem;border-radius:4px}
+.topper-card__body{padding:1.25rem 1.25rem 1.5rem;display:flex;flex-direction:column;gap:.4rem;flex:1}
+.topper-card__cat{font-size:.75rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--amber)}
+.topper-card__name{font-family:var(--ff-display);font-size:1.15rem;font-weight:700;color:var(--cream);line-height:1.25}
+.topper-card__desc{font-size:.875rem;color:var(--cream-muted);line-height:1.55}
+.topper-card__price{margin-top:auto;padding-top:.85rem;display:flex;align-items:center;justify-content:space-between}
+.topper-card__amount{font-family:var(--ff-display);font-size:1.4rem;font-weight:700;color:var(--amber-light)}
+.topper-card__unit{font-size:.8rem;color:var(--cream-faint)}
+
+/* EVENTS */
+.events-layout{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;align-items:start}
+.event-card{background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.75rem;display:flex;gap:1.25rem;transition:border-color .25s}
+.event-card:hover{border-color:var(--border-strong)}
+.event-card__icon{width:44px;height:44px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:rgba(201,133,26,.12);border-radius:10px}
+.event-card__icon svg{width:22px;height:22px;fill:none;stroke:var(--amber);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.event-card__title{font-family:var(--ff-display);font-size:1.1rem;font-weight:700;color:var(--cream);margin-bottom:.35rem;line-height:1.25}
+.event-card__text{font-size:.9rem;color:var(--cream-muted);line-height:1.6}
+.event-cta{grid-column:1/-1;background:var(--surface-3);border:1px solid var(--border-strong);border-radius:var(--radius-lg);padding:2.5rem 2.25rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+.event-cta__text h3{font-family:var(--ff-display);font-size:1.5rem;font-weight:700;color:var(--cream);margin-bottom:.4rem}
+.event-cta__text p{font-size:.9375rem;color:var(--cream-muted)}
+
+/* BEZOEK */
+.bezoek-layout{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center}
+.bezoek__intro{font-size:1.0625rem;color:var(--cream-muted);line-height:1.7;margin-bottom:2rem}
+.contact-list{list-style:none;display:flex;flex-direction:column;gap:1rem;margin-bottom:2.5rem}
+.contact-list li{display:flex;align-items:flex-start;gap:1rem}
+.contact-list__icon{width:40px;height:40px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:rgba(201,133,26,.12);border-radius:8px;margin-top:.1rem}
+.contact-list__icon svg{width:18px;height:18px;fill:none;stroke:var(--amber);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.contact-list__label{font-size:.78rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);display:block;margin-bottom:.15rem}
+.contact-list__value{font-size:1rem;color:var(--cream)}
+.contact-list__value a{color:var(--cream);transition:color .2s}
+.contact-list__value a:hover{color:var(--amber-light)}
+.hours-table{background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;width:100%}
+.hours-row{display:flex;justify-content:space-between;align-items:center;padding:.75rem 1.25rem;border-bottom:1px solid rgba(201,133,26,.10);font-size:.9375rem}
+.hours-row:last-child{border-bottom:none}
+.hours-row__day{color:var(--cream-muted)}
+.hours-row__time{color:var(--cream);font-weight:500}
+.hours-row__closed{color:rgba(244,237,224,.40);font-style:italic}
+.map-placeholder{background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius-md);height:400px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.map-grid-bg{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(201,133,26,.04) 0px,rgba(201,133,26,.04) 1px,transparent 1px,transparent 40px),repeating-linear-gradient(90deg,rgba(201,133,26,.04) 0px,rgba(201,133,26,.04) 1px,transparent 1px,transparent 40px);pointer-events:none}
+.map-inner{text-align:center;padding:2rem;position:relative;z-index:1}
+.map-inner svg{width:64px;height:64px;fill:none;stroke:var(--amber);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;margin:0 auto 1rem;opacity:.7}
+.map-inner p{font-family:var(--ff-display);font-size:1.15rem;font-weight:700;color:var(--cream);margin-bottom:.35rem}
+.map-inner span{font-size:.9rem;color:var(--cream-muted)}
+.map-link{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.25rem;font-size:.875rem;font-weight:500;color:var(--amber);border:1px solid var(--border-strong);border-radius:var(--radius-sm);padding:.6rem 1.1rem;transition:background .2s}
+.map-link:hover{background:rgba(201,133,26,.08)}
+.map-link svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* HIGHLIGHT STRIP */
+.highlight-strip{background:rgba(201,133,26,.07);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:1.75rem clamp(1.25rem,5vw,3rem)}
+.highlight-strip__inner{max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;justify-content:center;gap:3.5rem;flex-wrap:wrap;text-align:center}
+.highlight-stat__number{font-family:var(--ff-display);font-size:1.75rem;font-weight:700;color:var(--amber-light);line-height:1}
+.highlight-stat__label{font-size:.8125rem;color:var(--cream-muted);margin-top:.2rem}
+
+/* FOOTER */
+.footer{background:var(--surface-1);border-top:1px solid var(--border);padding:3rem clamp(1.25rem,5vw,3rem) 2rem}
+.footer__inner{max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;padding-bottom:2.5rem;border-bottom:1px solid var(--border);margin-bottom:1.75rem}
+.footer__brand-name{font-family:var(--ff-display);font-size:1.3rem;font-weight:700;color:var(--cream);margin-bottom:.75rem;display:flex;align-items:center;gap:.5rem}
+.footer__brand-name svg{width:26px;height:26px}
+.footer__tagline{font-size:.9375rem;color:var(--cream-muted);line-height:1.6;max-width:280px}
+.footer__contact{margin-top:1.25rem;display:flex;flex-direction:column;gap:.4rem}
+.footer__contact a{font-size:.9rem;color:var(--cream-muted);transition:color .2s}
+.footer__contact a:hover{color:var(--amber-light)}
+.footer__col h4{font-family:var(--ff-display);font-size:.9rem;font-weight:600;color:var(--cream);letter-spacing:.04em;text-transform:uppercase;margin-bottom:1rem}
+.footer__col ul{list-style:none;display:flex;flex-direction:column;gap:.55rem}
+.footer__col ul li a{font-size:.9rem;color:var(--cream-muted);transition:color .2s}
+.footer__col ul li a:hover{color:var(--amber-light)}
+.footer__bottom{max-width:var(--max-w);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.footer__copy{font-size:.8rem;color:var(--cream-faint)}
+.footer__demo-note{font-size:.75rem;color:var(--amber);background:rgba(201,133,26,.10);border:1px solid var(--border);border-radius:4px;padding:.2rem .65rem}
+
+/* FADE-UP */
+.fade-up{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
+.fade-up.in-view{opacity:1;transform:translateY(0)}
+.fade-up-d1{transition-delay:.1s}
+.fade-up-d2{transition-delay:.2s}
+.fade-up-d3{transition-delay:.3s}
+.fade-up-d4{transition-delay:.4s}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .nav__links{display:none}
+  .nav__burger{display:flex}
+  .bento{grid-template-columns:1fr}
+  .events-layout{grid-template-columns:1fr}
+  .bezoek-layout{grid-template-columns:1fr}
+  .footer__inner{grid-template-columns:1fr;gap:2rem}
+  .event-cta{flex-direction:column;align-items:flex-start}
+  .toppers-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:480px){
+  .toppers-grid{grid-template-columns:1fr}
+  .hero__actions{flex-direction:column;align-items:stretch}
+  .btn-primary,.btn-secondary{justify-content:center}
+  .highlight-strip__inner{gap:2rem}
+}
+</style>
 </head>
-<body class="bg-cream text-ink font-sans antialiased selection:bg-gold/30">
+<body>
 
-  <!-- Skip link -->
-  <a href="#webshop" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-burgundy focus:text-cream focus:rounded-full">Naar de wijnwebshop</a>
+<!-- NAV -->
+<nav class="nav" id="nav" role="navigation" aria-label="Hoofdnavigatie">
+  <a href="#" class="nav__brand" aria-label="Old Bacchus homepage">
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="16" cy="16" r="16" fill="#1c1710"/>
+      <ellipse cx="16" cy="13" rx="5" ry="6.5" fill="#c9851a"/>
+      <circle cx="16" cy="7.5" r="3" fill="#c9851a"/>
+      <ellipse cx="11.5" cy="10" rx="2" ry="2.5" fill="#c9851a" transform="rotate(-18 11.5 10)"/>
+      <ellipse cx="20.5" cy="10" rx="2" ry="2.5" fill="#c9851a" transform="rotate(18 20.5 10)"/>
+      <rect x="13.5" y="19.5" width="5" height="8" rx="1.5" fill="#c9851a"/>
+      <rect x="11" y="26.5" width="10" height="2.5" rx="1.25" fill="#c9851a"/>
+    </svg>
+    Old Bacchus
+  </a>
+  <ul class="nav__links" role="list">
+    <li><a href="#aanbod">Aanbod</a></li>
+    <li><a href="#toppers">Toppers</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#bezoek">Bezoek</a></li>
+  </ul>
+  <a href="tel:036582774" class="nav__cta" aria-label="Bel ons: 03 658 27 74">Bel ons</a>
+  <button class="nav__burger" aria-label="Menu openen" aria-expanded="false" id="burger">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
-  <!-- Announcement bar -->
-  <div class="bg-burgundy text-cream text-center text-[13px] tracking-[0.12em] py-2 px-4">
-    <span aria-hidden="true">🍇</span> <span class="font-semibold">Nieuw:</span> onze wijnwebshop met filters per streek, druif &amp; prijs — online bestellen met Bancontact / Mollie. <span class="text-goldlt font-semibold">18+</span>
-  </div>
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="hero__ghost" aria-hidden="true">BACCHUS</div>
 
-  <!-- Sticky nav -->
-  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-burgundy/10">
-    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[70px] flex items-center justify-between">
-      <!-- Logo -->
-      <a href="#top" class="flex items-baseline gap-2">
-        <span class="font-serif text-[27px] font-700 tracking-tight text-burgundy">Old <span class="italic font-600">Bacchus</span></span>
+  <div class="hero__inner">
+    <span class="hero__eyebrow">Schoten &bull; Wijn &amp; Dranken</span>
+    <h1 class="hero__title" id="hero-title">
+      Wijn, bier &amp; spirits &mdash;<br>
+      <em>in Schoten</em>
+    </h1>
+    <p class="hero__sub">
+      Bij Old Bacchus vindt u alles van een klassieke Bourgogne tot een eigenwijze craft IPA.
+      Kennis zonder snobisme, keuze zonder keuzestress.
+    </p>
+    <div class="hero__actions">
+      <a href="#aanbod" class="btn-primary">Ontdek het aanbod</a>
+      <a href="tel:036582774" class="btn-secondary">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 3.55 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Bel: 03 658 27 74
       </a>
-      <!-- Desktop links -->
-      <div class="hidden md:flex items-center gap-8 text-[15px] font-400">
-        <a href="#webshop" class="ug">Webshop</a>
-        <a href="#assortiment" class="ug">Assortiment</a>
-        <a href="#cadeau" class="ug">Cadeau &amp; proeverij</a>
-        <a href="#verhaal" class="ug">Ons verhaal</a>
-        <a href="#bezoek" class="ug">Bezoek ons</a>
-      </div>
-      <!-- CTA + hamburger -->
-      <div class="flex items-center gap-2">
-        <a href="#webshop" class="inline-flex items-center gap-2 bg-burgundy text-cream text-sm font-600 px-4 sm:px-5 py-2.5 rounded-full hover:bg-merlot transition">
-          Bestel online
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
-          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-burgundy/15 text-burgundy hover:bg-burgundy/5 transition">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </nav>
-    <!-- Mobile menu -->
-    <div id="mobile-menu" hidden class="md:hidden border-t border-burgundy/10 bg-cream/95 backdrop-blur">
-      <div class="px-5 py-3 flex flex-col text-[15px] font-400">
-        <a href="#webshop" class="py-3 border-b border-burgundy/8">Webshop</a>
-        <a href="#assortiment" class="py-3 border-b border-burgundy/8">Assortiment</a>
-        <a href="#cadeau" class="py-3 border-b border-burgundy/8">Cadeau &amp; proeverij</a>
-        <a href="#verhaal" class="py-3 border-b border-burgundy/8">Ons verhaal</a>
-        <a href="#bezoek" class="py-3">Bezoek ons</a>
-      </div>
     </div>
-  </header>
 
-  <!-- Hero -->
-  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-burgundy">
-    <div class="absolute inset-0 tile-grad"></div>
-    <img
-      src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=2000&q=80"
-      alt="Flessen wijn in de drankenspeciaalzaak"
-      fetchpriority="high"
-      class="absolute inset-0 w-full h-full object-cover"
-    />
-    <div class="absolute inset-0 hero-grad"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
-      <p class="text-goldlt font-500 tracking-[0.32em] uppercase text-xs mb-5">
-        Wijn- &amp; drankenspeciaalzaak · Schoten
-      </p>
-      <h1 class="font-serif text-cream text-[44px] leading-[1.03] sm:text-8xl font-600 max-w-3xl">
-        Goede wijn,<br /><span class="italic">tot bij u thuis.</span>
-      </h1>
-      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed font-300">
-        Al jaren uw speciaalzaak voor wijn en sterke dranken in Schoten.
-        Voortaan ook een echte webshop: filter op streek, druif en prijs, en bestel online met Bancontact of Mollie.
-      </p>
-      <div class="flex flex-wrap gap-3 mt-9">
-        <a href="#webshop" class="bg-gold text-ink font-600 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
-          Naar de wijnwebshop
-        </a>
-        <a href="#cadeau" class="border border-cream/40 text-cream font-500 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
-          Cadeaupakketten &amp; proeverij
-        </a>
-      </div>
-      <p class="text-cream/55 text-xs mt-6">Wijn en sterke drank zijn voor volwassenen — verkoop uitsluitend aan personen vanaf 18 jaar.</p>
+    <div class="hero__bacchus" aria-hidden="true">
+      <svg class="bacchus-svg" viewBox="0 0 240 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="70" y="245" width="100" height="18" rx="5" fill="#2a2418" stroke="#c9851a" stroke-width="1"/>
+        <rect x="82" y="237" width="76" height="12" rx="3" fill="#2a2418" stroke="#c9851a" stroke-width="1"/>
+        <path d="M88 210 C72 205 60 185 62 160 L78 100 L162 100 L178 160 C180 185 168 205 152 210 Z" fill="#221e14" stroke="#c9851a" stroke-width="1.5"/>
+        <path d="M100 115 Q105 155 95 210" stroke="rgba(201,133,26,0.3)" stroke-width="1" fill="none"/>
+        <path d="M120 110 Q122 160 120 215" stroke="rgba(201,133,26,0.3)" stroke-width="1" fill="none"/>
+        <path d="M140 115 Q135 155 145 210" stroke="rgba(201,133,26,0.3)" stroke-width="1" fill="none"/>
+        <circle cx="120" cy="108" r="5" fill="#c9851a" opacity="0.8"/>
+        <rect x="108" y="78" width="24" height="28" rx="4" fill="#e0a860"/>
+        <ellipse cx="120" cy="58" rx="30" ry="34" fill="#e0a860"/>
+        <ellipse cx="120" cy="62" rx="22" ry="24" fill="#d4914a" opacity="0.3"/>
+        <path d="M95 70 Q100 95 120 100 Q140 95 145 70" fill="#c47a30" opacity="0.7"/>
+        <path d="M98 72 Q103 88 120 92 Q137 88 142 72" fill="#b36820" opacity="0.5"/>
+        <path d="M100 76 Q96 82 100 86" stroke="#9a5515" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <path d="M107 88 Q103 94 107 98" stroke="#9a5515" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <path d="M120 91 Q118 97 120 100" stroke="#9a5515" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <path d="M133 88 Q137 94 133 98" stroke="#9a5515" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <path d="M140 76 Q144 82 140 86" stroke="#9a5515" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <ellipse cx="109" cy="55" rx="4.5" ry="4" fill="white"/>
+        <ellipse cx="131" cy="55" rx="4.5" ry="4" fill="white"/>
+        <circle cx="110" cy="55.5" r="2.5" fill="#4a2c0a"/>
+        <circle cx="132" cy="55.5" r="2.5" fill="#4a2c0a"/>
+        <circle cx="111" cy="54.5" r="0.8" fill="white"/>
+        <circle cx="133" cy="54.5" r="0.8" fill="white"/>
+        <path d="M104 49 Q109 46.5 114 48.5" stroke="#7a4a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <path d="M126 48.5 Q131 46.5 136 49" stroke="#7a4a1a" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <path d="M118 57 Q116 64 119 68 Q121 70 123 68 Q126 64 122 57" stroke="#c47a30" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        <path d="M111 73 Q120 80 129 73" stroke="#9a5515" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+        <ellipse cx="90" cy="58" rx="5" ry="7" fill="#d4914a"/>
+        <ellipse cx="150" cy="58" rx="5" ry="7" fill="#d4914a"/>
+        <path d="M92 42 Q85 28 90 18 Q95 10 100 14" stroke="#5a8c30" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <path d="M148 42 Q155 28 150 18 Q145 10 140 14" stroke="#5a8c30" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <path d="M90 18 Q120 8 150 18" stroke="#5a8c30" stroke-width="1.5" fill="none"/>
+        <ellipse cx="94" cy="38" rx="6" ry="4" fill="#4a7c22" transform="rotate(-30 94 38)"/>
+        <ellipse cx="89" cy="30" rx="6" ry="4" fill="#5a8c30" transform="rotate(-50 89 30)"/>
+        <ellipse cx="91" cy="21" rx="6" ry="4" fill="#4a7c22" transform="rotate(-70 91 21)"/>
+        <ellipse cx="146" cy="38" rx="6" ry="4" fill="#4a7c22" transform="rotate(30 146 38)"/>
+        <ellipse cx="151" cy="30" rx="6" ry="4" fill="#5a8c30" transform="rotate(50 151 30)"/>
+        <ellipse cx="149" cy="21" rx="6" ry="4" fill="#4a7c22" transform="rotate(70 149 21)"/>
+        <ellipse cx="108" cy="12" rx="6" ry="4" fill="#5a8c30" transform="rotate(-10 108 12)"/>
+        <ellipse cx="120" cy="9" rx="6" ry="4" fill="#4a7c22"/>
+        <ellipse cx="132" cy="12" rx="6" ry="4" fill="#5a8c30" transform="rotate(10 132 12)"/>
+        <circle cx="97" cy="26" r="3" fill="#8b3a9e" opacity="0.8"/>
+        <circle cx="100" cy="23" r="2.5" fill="#7a2d8c" opacity="0.8"/>
+        <circle cx="104" cy="22" r="2.5" fill="#8b3a9e" opacity="0.8"/>
+        <circle cx="143" cy="26" r="3" fill="#8b3a9e" opacity="0.8"/>
+        <circle cx="140" cy="23" r="2.5" fill="#7a2d8c" opacity="0.8"/>
+        <circle cx="136" cy="22" r="2.5" fill="#8b3a9e" opacity="0.8"/>
+        <path d="M155 145 L160 170 Q168 178 175 170 L180 145 Z" fill="#221e14" stroke="#c9851a" stroke-width="1.5"/>
+        <path d="M160 170 L167.5 185 L175 170" stroke="#c9851a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <line x1="167.5" y1="185" x2="167.5" y2="195" stroke="#c9851a" stroke-width="1.5"/>
+        <ellipse cx="167.5" cy="196" rx="8" ry="2.5" stroke="#c9851a" stroke-width="1.5" fill="none"/>
+        <path d="M158 155 L162 170 Q167.5 174 173 170 L177 155 Z" fill="#8b1a2a" opacity="0.7"/>
+        <path d="M162 148 Q165 145 168 148" stroke="rgba(244,237,224,0.4)" stroke-width="1" fill="none" stroke-linecap="round"/>
+        <path d="M65 145 Q55 160 60 175" stroke="#5a8c30" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        <circle cx="65" cy="168" r="5" fill="#7a2d8c" opacity="0.85"/>
+        <circle cx="72" cy="173" r="5" fill="#8b3a9e" opacity="0.85"/>
+        <circle cx="60" cy="176" r="5" fill="#7a2d8c" opacity="0.85"/>
+        <circle cx="68" cy="181" r="5" fill="#9b4aae" opacity="0.85"/>
+        <circle cx="75" cy="180" r="4.5" fill="#7a2d8c" opacity="0.85"/>
+        <circle cx="63" cy="185" r="4.5" fill="#8b3a9e" opacity="0.85"/>
+        <circle cx="71" cy="188" r="4" fill="#7a2d8c" opacity="0.85"/>
+        <path d="M55 150 Q45 142 50 135 Q58 130 62 140 Q55 145 55 150Z" fill="#4a7c22" opacity="0.8"/>
+        <path d="M62 145 Q58 132 64 126 Q72 122 72 133 Q65 138 62 145Z" fill="#5a8c30" opacity="0.8"/>
+        <path d="M62 208 Q120 220 178 208" stroke="#c9851a" stroke-width="1" fill="none" opacity="0.5"/>
+        <path d="M68 215 Q120 226 172 215" stroke="#c9851a" stroke-width="0.8" fill="none" opacity="0.35"/>
+      </svg>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- USP strip -->
-  <section class="bg-burgundy text-cream/90">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-7 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
-      <div><p class="font-serif text-2xl text-goldlt">Speciaalzaak</p><p class="mt-1 text-cream/60">Wijn &amp; sterke dranken</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Persoonlijk advies</p><p class="mt-1 text-cream/60">Vakkennis uit de winkel</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Online bestellen</p><p class="mt-1 text-cream/60">Webshop met Bancontact</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Cadeau &amp; proeverij</p><p class="mt-1 text-cream/60">Pakketten &amp; degustaties</p></div>
+<!-- MARQUEE -->
+<div class="marquee-wrap" role="region" aria-label="Ons assortiment">
+  <div class="marquee-track" aria-hidden="true">
+    <div class="marquee-item">
+      Wijn <span class="marquee-dot"></span> Craft bier <span class="marquee-dot"></span> Spirits <span class="marquee-dot"></span> Whisky <span class="marquee-dot"></span> Gin <span class="marquee-dot"></span> Apero <span class="marquee-dot"></span> Cadeaupakketten <span class="marquee-dot"></span> Proeverijen <span class="marquee-dot"></span>
     </div>
-  </section>
-
-  <!-- Wijnwebshop / online bestellen (the differentiator) -->
-  <section id="webshop" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <div class="fade-up">
-        <p class="text-gold font-500 tracking-[0.2em] uppercase text-xs mb-4">Nieuw: de wijnwebshop</p>
-        <h2 class="font-serif text-4xl sm:text-6xl font-600 leading-tight text-burgundy">
-          Online bestellen,<br /><span class="italic">eindelijk met een winkelwagen.</span>
-        </h2>
-        <p class="text-clay text-lg mt-5 leading-relaxed max-w-md font-300">
-          Vandaag opent de knop &ldquo;Bestel nu&rdquo; gewoon een PDF — geen winkelwagen, geen online bestelling, geen afrekenen.
-          Met een echte webshop vindt de klant in een paar klikken de juiste fles, en rekent meteen veilig af.
-        </p>
-        <ul class="mt-7 space-y-3 text-clay">
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Filter op <strong class="font-600 text-ink">streek</strong> (Bordeaux, Bourgogne, Rhône, Italië…)</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Filter op <strong class="font-600 text-ink">druif</strong> (Pinot Noir, Chardonnay, Merlot…)</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Filter op <strong class="font-600 text-ink">prijs</strong> en gelegenheid</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Afrekenen met Bancontact / Mollie · leeftijdsverificatie 18+</li>
-        </ul>
-        <a href="#assortiment" class="inline-flex items-center gap-2 mt-9 bg-burgundy text-cream font-600 px-7 py-3.5 rounded-full hover:bg-merlot transition">
-          Bekijk het assortiment
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
-
-      <!-- Filter concept mock -->
-      <div class="fade-up rounded-3xl bg-white shadow-sm border border-burgundy/10 p-6 sm:p-7">
-        <div class="flex items-center justify-between">
-          <p class="font-serif text-2xl font-600 text-burgundy">Vind jouw fles</p>
-          <span class="text-xs text-clay/70">conceptweergave</span>
-        </div>
-        <div class="mt-5 space-y-5">
-          <div>
-            <p class="text-xs font-600 uppercase tracking-wider text-clay mb-2">Streek</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1.5 rounded-full bg-burgundy text-cream text-sm">Bordeaux</span>
-              <span class="px-3 py-1.5 rounded-full border border-burgundy/20 text-ink text-sm">Bourgogne</span>
-              <span class="px-3 py-1.5 rounded-full border border-burgundy/20 text-ink text-sm">Rhône</span>
-              <span class="px-3 py-1.5 rounded-full border border-burgundy/20 text-ink text-sm">Italië</span>
-            </div>
-          </div>
-          <div>
-            <p class="text-xs font-600 uppercase tracking-wider text-clay mb-2">Druif</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1.5 rounded-full bg-gold/25 text-ink text-sm">Pinot Noir</span>
-              <span class="px-3 py-1.5 rounded-full border border-burgundy/20 text-ink text-sm">Chardonnay</span>
-              <span class="px-3 py-1.5 rounded-full border border-burgundy/20 text-ink text-sm">Merlot</span>
-            </div>
-          </div>
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <p class="text-xs font-600 uppercase tracking-wider text-clay">Prijs</p>
-              <p class="text-xs text-clay/70">tot € 45</p>
-            </div>
-            <div class="h-1.5 rounded-full bg-sand relative">
-              <div class="absolute inset-y-0 left-0 w-2/3 rounded-full bg-gold"></div>
-              <span class="absolute -top-1 left-2/3 w-4 h-4 -ml-2 rounded-full bg-burgundy border-2 border-white shadow"></span>
-            </div>
-          </div>
-          <button class="w-full bg-burgundy text-cream font-600 py-3 rounded-full hover:bg-merlot transition">Toon 24 flessen</button>
-          <p class="text-[11px] text-clay/60 text-center">Conceptueel — filters &amp; checkout worden live gekoppeld in de echte webshop.</p>
-        </div>
-      </div>
+    <div class="marquee-item">
+      Wijn <span class="marquee-dot"></span> Craft bier <span class="marquee-dot"></span> Spirits <span class="marquee-dot"></span> Whisky <span class="marquee-dot"></span> Gin <span class="marquee-dot"></span> Apero <span class="marquee-dot"></span> Cadeaupakketten <span class="marquee-dot"></span> Proeverijen <span class="marquee-dot"></span>
     </div>
-  </section>
+  </div>
+</div>
 
-  <!-- Assortiment grid -->
-  <section id="assortiment" class="bg-sand/60 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
-        <div>
-          <p class="text-gold font-500 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
-          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-burgundy">Van rood &amp; wit tot sterke dranken</h2>
-        </div>
-        <p class="text-clay max-w-sm font-300">Een greep uit wat u bij ons vindt — wijn, bubbels en sterke dranken. Beschikbaarheid wisselt per seizoen.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <!-- Rode wijn -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80"
-            alt="Rode wijn"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Rode wijn</h3>
-            <p class="text-cream/75 text-sm mt-1 font-300">Van soepel en fruitig tot vol en krachtig.</p>
-          </div>
-        </article>
-        <!-- Witte wijn -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80"
-            alt="Witte wijn"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Witte wijn</h3>
-            <p class="text-cream/75 text-sm mt-1 font-300">Fris en mineraal of net wat ronder en rijper.</p>
-          </div>
-        </article>
-        <!-- Bubbels -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80"
-            alt="Bubbels, crémant en champagne"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Bubbels &amp; Champagne</h3>
-            <p class="text-cream/75 text-sm mt-1 font-300">Cava, crémant &amp; champagne om te vieren.</p>
-          </div>
-        </article>
-        <!-- Sterke dranken -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?auto=format&fit=crop&w=800&q=80"
-            alt="Sterke dranken, whisky en gin"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Sterke dranken</h3>
-            <p class="text-cream/75 text-sm mt-1 font-300">Whisky, gin, rum &amp; likeuren — een ruime keuze.</p>
-          </div>
-        </article>
-        <!-- Wijnkelder / advies -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=800&q=80"
-            alt="Wijnkelder met flessen op rek"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Onze kelder</h3>
-            <p class="text-cream/75 text-sm mt-1 font-300">Een zorgvuldig opgebouwde selectie met advies.</p>
-          </div>
-        </article>
-        <!-- Cadeaupakketten CTA card -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-gold text-ink relative aspect-[4/5] flex items-center justify-center text-center p-6">
-          <div>
-            <p class="font-serif text-3xl font-600">Cadeau&shy;pakketten</p>
-            <p class="text-ink/75 text-sm mt-2 font-300">Stel een wijn- of dranken-cadeaupakket samen — voor een verjaardag, het einde van het jaar of een relatiegeschenk.</p>
-            <a href="#cadeau" class="inline-block mt-5 text-burgundy font-600 ug">Bekijk de pakketten →</a>
-          </div>
-        </article>
-      </div>
-      <p class="text-xs text-clay/70 mt-8 text-center">Onze selectie wisselt regelmatig. Beschikbaarheid en advies altijd in overleg of via de webshop.</p>
-    </div>
-  </section>
+<!-- HIGHLIGHT STRIP -->
+<div class="highlight-strip">
+  <div class="highlight-strip__inner">
+    <div class="highlight-stat fade-up"><div class="highlight-stat__number">500+</div><div class="highlight-stat__label">Wijnen en spirits</div></div>
+    <div class="highlight-stat fade-up fade-up-d1"><div class="highlight-stat__number">80+</div><div class="highlight-stat__label">Craft bieren</div></div>
+    <div class="highlight-stat fade-up fade-up-d2"><div class="highlight-stat__number">30+</div><div class="highlight-stat__label">Jaar ervaring</div></div>
+    <div class="highlight-stat fade-up fade-up-d3"><div class="highlight-stat__number">100%</div><div class="highlight-stat__label">Persoonlijk advies</div></div>
+  </div>
+</div>
 
-  <!-- Featured wines (illustratief) -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="flex items-end justify-between mb-10">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-burgundy">Een greep uit de webshop</h2>
-      <a href="#webshop" class="hidden sm:inline text-gold font-600 ug">Alles bekijken →</a>
+<!-- AANBOD -->
+<section class="section" id="aanbod" aria-labelledby="aanbod-title">
+  <div class="section__header fade-up">
+    <span class="section__label">Ons aanbod</span>
+    <h2 class="section__title" id="aanbod-title">Van klassiek tot craft</h2>
+    <p class="section__desc">Vier categorieen, een adres. Altijd met persoonlijk advies erbij.</p>
+  </div>
+  <div class="bento">
+    <div class="bento__card fade-up fade-up-d1">
+      <div class="bento__icon" aria-hidden="true"><svg viewBox="0 0 26 26"><path d="M9 2h8v4l2 5v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V11l2-5V2z"/><line x1="7" y1="14" x2="19" y2="14"/></svg></div>
+      <div class="bento__name">Wijn</div>
+      <p class="bento__text">Rode, witte en rose wijnen van topproducenten uit Bordeaux, Bourgogne, Italie, Spanje en de Nieuwe Wereld. Van dagelijkse druif tot bijzondere fles voor een speciale gelegenheid.</p>
+      <span class="bento__tag">Rood &middot; Wit &middot; Rose &middot; Schuimwijn</span>
     </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Item 1 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-          <img
-            src="https://images.unsplash.com/photo-1474722883778-792e7990302f?auto=format&fit=crop&w=700&q=80"
-            alt="Rode wijn (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Bordeaux · Rood</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-burgundy">Rode wijn</h3>
-          <p class="text-clay/80 text-sm mt-1 font-300">Een soepele rode klassieker met rood fruit — bij vlees of kaas.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-sm text-clay/70 font-300">Voorbeeldartikel</span>
-            <button class="bg-burgundy text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-merlot transition">In winkelwagen</button>
-          </div>
-        </div>
-      </div>
-      <!-- Item 2 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-          <img
-            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80"
-            alt="Witte wijn (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Bourgogne · Wit</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-burgundy">Witte wijn</h3>
-          <p class="text-clay/80 text-sm mt-1 font-300">Mineraal en elegant — ideaal bij vis en gevogelte.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-sm text-clay/70 font-300">Voorbeeldartikel</span>
-            <button class="bg-burgundy text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-merlot transition">In winkelwagen</button>
-          </div>
-        </div>
-      </div>
-      <!-- Item 3 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-          <img
-            src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?auto=format&fit=crop&w=700&q=80"
-            alt="Sterke dranken (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Sterke dranken</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-burgundy">Whisky &amp; gin</h3>
-          <p class="text-clay/80 text-sm mt-1 font-300">Een mooie fles om te schenken of cadeau te geven.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-sm text-clay/70 font-300">Voorbeeldartikel</span>
-            <button class="bg-burgundy text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-merlot transition">In winkelwagen</button>
-          </div>
-        </div>
-      </div>
+    <div class="bento__card fade-up fade-up-d2">
+      <div class="bento__icon" aria-hidden="true"><svg viewBox="0 0 26 26"><path d="M6 4h12l2 3v14l-2 3H6l-2-3V7l2-3z"/><path d="M18 9h4v8h-4"/><line x1="9" y1="8" x2="9" y2="18"/><line x1="13" y1="8" x2="13" y2="18"/></svg></div>
+      <div class="bento__name">Craft bier</div>
+      <p class="bento__text">Een zorgvuldig gecureerde selectie van Belgische en internationale craft bieren. Tripels, saisons, stouts, IPA's en seizoensbieren &mdash; altijd iets nieuws te ontdekken.</p>
+      <span class="bento__tag">Belgisch &middot; Craft &middot; Seizoensbier</span>
     </div>
-    <p class="text-center text-xs text-clay/60 mt-6">Voorbeeldartikelen ter illustratie van de webshop — er worden geen prijzen of claims getoond in deze conceptversie.</p>
-  </section>
+    <div class="bento__card fade-up fade-up-d1">
+      <div class="bento__icon" aria-hidden="true"><svg viewBox="0 0 26 26"><path d="M10 3h6l1 4-4 5v10H9V12L5 7l5-4z"/><line x1="8" y1="7" x2="18" y2="7"/></svg></div>
+      <div class="bento__name">Spirits</div>
+      <p class="bento__text">Whisky's, gins, rums, cognacs en meer. Of u nu een single malt zoekt of een avontuurlijke gin voor uw home bar &mdash; onze selectie is breed en weloverwogen.</p>
+      <span class="bento__tag">Whisky &middot; Gin &middot; Rum &middot; Cognac</span>
+    </div>
+    <div class="bento__card fade-up fade-up-d2">
+      <div class="bento__icon" aria-hidden="true"><svg viewBox="0 0 26 26"><rect x="3" y="9" width="20" height="14" rx="2"/><path d="M3 9V7a4 4 0 0 1 4-4c2 0 4 2 6 6 2-4 4-6 6-6a4 4 0 0 1 4 4v2"/><line x1="13" y1="9" x2="13" y2="23"/></svg></div>
+      <div class="bento__name">Apero &amp; cadeau</div>
+      <p class="bento__text">Vermouth, porto, cava en alles voor een geslaagd aperitief. Prachtige cadeaupakketten op maat &mdash; ideaal voor feestdagen, jubilea of een mooi bedrijfsgeschenk.</p>
+      <span class="bento__tag">Apero &middot; Porto &middot; Cadeaupakket</span>
+    </div>
+  </div>
+</section>
 
-  <!-- Cadeau / proeverij (the second differentiator) -->
-  <section id="cadeau" class="bg-burgundy text-cream py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
-      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
-        <img
-          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80"
-          alt="Wijn-cadeaupakket en proeverij"
-          loading="lazy" decoding="async"
-          class="w-full h-full object-cover"
-        />
+<div class="divider-wrap"><div class="divider-line"></div></div>
+
+<!-- TOPPERS -->
+<section class="section" id="toppers" aria-labelledby="toppers-title">
+  <div class="section__header fade-up">
+    <span class="section__label">Seizoenstoppers</span>
+    <h2 class="section__title" id="toppers-title">Nu in de kijker</h2>
+    <p class="section__desc">Onze medewerkers kozen deze flessen voor u uit. Altijd wisselend, altijd de moeite.</p>
+  </div>
+  <div class="toppers-grid">
+
+    <article class="topper-card fade-up fade-up-d1">
+      <div class="topper-card__visual">
+        <div class="map-grid-bg" aria-hidden="true"></div>
+        <svg width="58" height="120" viewBox="0 0 58 120" fill="none" aria-hidden="true">
+          <rect x="22" y="0" width="14" height="8" rx="2" fill="#c9851a" opacity="0.7"/>
+          <rect x="18" y="8" width="22" height="68" rx="3" fill="#2a2418" stroke="#c9851a" stroke-width="1.5"/>
+          <rect x="16" y="76" width="26" height="36" rx="3" fill="#221e14" stroke="#c9851a" stroke-width="1.5"/>
+          <rect x="18" y="50" width="22" height="1.5" fill="#c9851a" opacity="0.5"/>
+          <rect x="19" y="78" width="18" height="10" rx="1" fill="#c9851a" opacity="0.14"/>
+          <text x="29" y="86" text-anchor="middle" font-size="5" fill="#c9851a" font-family="Georgia,serif">BORDEAUX</text>
+          <text x="29" y="93" text-anchor="middle" font-size="4" fill="rgba(244,237,224,0.5)" font-family="Georgia,serif">2019</text>
+          <ellipse cx="29" cy="4" rx="5.5" ry="2.5" fill="#c9851a" opacity="0.5"/>
+        </svg>
+        <span class="topper-card__badge">Aanrader</span>
       </div>
-      <div class="order-1 lg:order-2 fade-up">
-        <p class="text-goldlt font-500 tracking-[0.2em] uppercase text-xs mb-4">Cadeaupakketten &amp; proeverijen</p>
-        <h2 class="font-serif text-4xl sm:text-6xl font-600 leading-tight">
-          Een fles als<br /><span class="italic">geschenk dat blijft hangen.</span>
-        </h2>
-        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md font-300">
-          Wijn en een mooie fles sterke drank zijn bij uitstek giftable. Wij stellen een verzorgd cadeaupakket samen —
-          voor een verjaardag, een bedankje of als <strong class="font-600 text-cream">relatiegeschenk</strong> voor uw klanten en medewerkers.
-          Liever eerst proeven? Vraag een proeverij aan.
-        </p>
-        <ul class="mt-6 space-y-3 text-cream/85">
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Cadeaupakketten op maat (thema, budget, aantal)</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Relatiegeschenken &amp; bedrijfsbestellingen — ideaal voor kerst</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Proeverij-aanvraag: ontdek samen de juiste wijnen &amp; dranken</li>
-        </ul>
-        <a href="#bezoek" class="inline-flex items-center gap-2 mt-8 bg-gold text-ink font-600 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
-          Vraag een pakket of proeverij aan
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      <div class="topper-card__body">
+        <span class="topper-card__cat">Rode wijn &middot; Frankrijk</span>
+        <h3 class="topper-card__name">Chateau Haut-Vigneau 2019</h3>
+        <p class="topper-card__desc">Ronde, elegante Bordeaux met noten van bramen, cederhout en een fluweelzachte afdronk. Perfect bij stoofvlees of gegrild vlees.</p>
+        <div class="topper-card__price"><span class="topper-card__amount">&euro; 18,50</span><span class="topper-card__unit">per fles</span></div>
+      </div>
+    </article>
+
+    <article class="topper-card fade-up fade-up-d2">
+      <div class="topper-card__visual">
+        <div class="map-grid-bg" aria-hidden="true"></div>
+        <svg width="52" height="120" viewBox="0 0 52 120" fill="none" aria-hidden="true">
+          <rect x="20" y="4" width="12" height="6" rx="2" fill="#c9851a" opacity="0.6"/>
+          <rect x="16" y="10" width="20" height="54" rx="4" fill="#2a2418" stroke="#c9851a" stroke-width="1.5"/>
+          <rect x="14" y="64" width="24" height="44" rx="4" fill="#221e14" stroke="#c9851a" stroke-width="1.5"/>
+          <rect x="16" y="40" width="20" height="2" fill="#c9851a" opacity="0.4"/>
+          <rect x="16" y="68" width="18" height="13" rx="1.5" fill="#c9851a" opacity="0.12"/>
+          <text x="26" y="77" text-anchor="middle" font-size="4.5" fill="#c9851a" font-family="Georgia,serif">SPEYSIDE</text>
+          <text x="26" y="84" text-anchor="middle" font-size="3.8" fill="rgba(244,237,224,0.5)" font-family="Georgia,serif">12 YEARS</text>
+          <ellipse cx="26" cy="7" rx="5" ry="2.2" fill="#c9851a" opacity="0.45"/>
+        </svg>
+        <span class="topper-card__badge">Bestseller</span>
+      </div>
+      <div class="topper-card__body">
+        <span class="topper-card__cat">Single Malt &middot; Schotland</span>
+        <h3 class="topper-card__name">Speyside 12 Year Old</h3>
+        <p class="topper-card__desc">Honingzoet met vanille, rijpe perzik en een warme, lange afdronk. Ideaal instapmodel voor de whiskyliefhebber die wil beginnen.</p>
+        <div class="topper-card__price"><span class="topper-card__amount">&euro; 42,00</span><span class="topper-card__unit">per fles 700ml</span></div>
+      </div>
+    </article>
+
+    <article class="topper-card fade-up fade-up-d3">
+      <div class="topper-card__visual">
+        <div class="map-grid-bg" aria-hidden="true"></div>
+        <svg width="48" height="120" viewBox="0 0 48 120" fill="none" aria-hidden="true">
+          <rect x="18" y="5" width="12" height="5" rx="2" fill="#6ab0d4" opacity="0.6"/>
+          <path d="M14 18 Q13 13 18 10 L30 10 Q35 13 34 18 L37 80 Q37 85 24 85 Q11 85 11 80 Z" fill="#1a1f2e" stroke="#6ab0d4" stroke-width="1.5"/>
+          <rect x="10" y="85" width="28" height="28" rx="3" fill="#151a26" stroke="#6ab0d4" stroke-width="1.5"/>
+          <rect x="12" y="88" width="24" height="12" rx="1" fill="#6ab0d4" opacity="0.10"/>
+          <text x="24" y="96" text-anchor="middle" font-size="4.5" fill="#6ab0d4" font-family="Georgia,serif">DRY GIN</text>
+          <text x="24" y="103" text-anchor="middle" font-size="3.8" fill="rgba(244,237,224,0.4)" font-family="Georgia,serif">BOTANICAL</text>
+          <circle cx="24" cy="50" r="8" fill="#6ab0d4" opacity="0.06"/>
+        </svg>
+        <span class="topper-card__badge">Nieuw!</span>
+      </div>
+      <div class="topper-card__body">
+        <span class="topper-card__cat">Artisanale Gin &middot; Belgie</span>
+        <h3 class="topper-card__name">Antwerp Botanical Dry Gin</h3>
+        <p class="topper-card__desc">Lokale gin met jeneverbes, koriander en citruszest. Fris, krachtig en perfect voor een klassieke G&amp;T. Trots Antwaarps.</p>
+        <div class="topper-card__price"><span class="topper-card__amount">&euro; 34,95</span><span class="topper-card__unit">per fles 500ml</span></div>
+      </div>
+    </article>
+
+    <article class="topper-card fade-up fade-up-d4">
+      <div class="topper-card__visual">
+        <div class="map-grid-bg" aria-hidden="true"></div>
+        <svg width="52" height="120" viewBox="0 0 52 120" fill="none" aria-hidden="true">
+          <rect x="22" y="0" width="8" height="10" rx="2" fill="#c9851a" opacity="0.5"/>
+          <path d="M18 24 Q17 14 22.5 10 L29.5 10 Q35 14 34 24 L35 55 Q35 60 26 60 Q17 60 17 55 Z" fill="#2a2418" stroke="#c9851a" stroke-width="1.5"/>
+          <rect x="14" y="60" width="24" height="50" rx="3" fill="#221e14" stroke="#c9851a" stroke-width="1.5"/>
+          <ellipse cx="26" cy="24" rx="7" ry="6" fill="none" stroke="rgba(201,133,26,0.3)" stroke-width="1"/>
+          <rect x="16" y="65" width="20" height="12" rx="1.5" fill="#c9851a" opacity="0.09"/>
+          <text x="26" y="73" text-anchor="middle" font-size="4" fill="#c9851a" font-family="Georgia,serif">CHAMPAGNE</text>
+          <text x="26" y="80" text-anchor="middle" font-size="3.5" fill="rgba(244,237,224,0.4)" font-family="Georgia,serif">BRUT NV</text>
+          <circle cx="26" cy="42" r="1" fill="rgba(244,237,224,0.3)"/>
+          <circle cx="22" cy="36" r="0.8" fill="rgba(244,237,224,0.25)"/>
+          <circle cx="30" cy="38" r="0.7" fill="rgba(244,237,224,0.2)"/>
+        </svg>
+      </div>
+      <div class="topper-card__body">
+        <span class="topper-card__cat">Champagne &middot; Frankrijk</span>
+        <h3 class="topper-card__name">Maison Vidal Brut NV</h3>
+        <p class="topper-card__desc">Fijne bubbels, brioche en een frisse citroen-appeltoets. Een champagne die boven zijn prijs uitstijgt &mdash; ideaal voor wie wil vieren zonder fortuin uit te geven.</p>
+        <div class="topper-card__price"><span class="topper-card__amount">&euro; 29,50</span><span class="topper-card__unit">per fles</span></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<div class="divider-wrap"><div class="divider-line"></div></div>
+
+<!-- EVENTS -->
+<section class="section" id="events" aria-labelledby="events-title">
+  <div class="section__header fade-up">
+    <span class="section__label">Beleving</span>
+    <h2 class="section__title" id="events-title">Proeverijen &amp; cadeaus</h2>
+    <p class="section__desc">Meer dan dranken kopen &mdash; een ervaring opdoen. Wij organiseren proeverijen en stellen gepersonaliseerde cadeaupakketten samen.</p>
+  </div>
+  <div class="events-layout">
+    <div class="event-card fade-up fade-up-d1">
+      <div class="event-card__icon" aria-hidden="true"><svg viewBox="0 0 22 22"><circle cx="11" cy="11" r="9"/><path d="M11 7v4l3 2"/></svg></div>
+      <div><h3 class="event-card__title">Wijnproeverijen</h3><p class="event-card__text">Regelmatig organiseren we thematische proeverijen: van een klassieke Bourgognevertical tot Spaanse druivenrassen. Begeleiding door onze wijnkenner. Beperkt aantal plaatsen.</p></div>
+    </div>
+    <div class="event-card fade-up fade-up-d2">
+      <div class="event-card__icon" aria-hidden="true"><svg viewBox="0 0 22 22"><path d="M6 2h10l2 7H4L6 2z"/><path d="M4 9v11h14V9"/><path d="M9 9v12m4-12v12"/></svg></div>
+      <div><h3 class="event-card__title">Whisky &amp; spirits avonden</h3><p class="event-card__text">Duik in de wereld van single malts, bourbons of gins. Elk kwartaal een nieuw thema, steeds met een vertegenwoordiger of producent aan tafel.</p></div>
+    </div>
+    <div class="event-card fade-up fade-up-d1">
+      <div class="event-card__icon" aria-hidden="true"><svg viewBox="0 0 22 22"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75"/></svg></div>
+      <div><h3 class="event-card__title">Prive proeverijen</h3><p class="event-card__text">Uw eigen wijn- of spirits avond &mdash; teambuilding, vrijgezellenfeest of gewoon met vrienden. Wij verzorgen de selectie, het materiaal en de begeleiding. Prijs op aanvraag.</p></div>
+    </div>
+    <div class="event-card fade-up fade-up-d2">
+      <div class="event-card__icon" aria-hidden="true"><svg viewBox="0 0 22 22"><rect x="3" y="4" width="16" height="16" rx="2"/><path d="M3 9h16"/><path d="M8 2v4m6-4v4"/></svg></div>
+      <div><h3 class="event-card__title">Kerst &amp; feestdagen</h3><p class="event-card__text">Rond de feestdagen voorzien we een uitgebreid gamma geschenkverpakkingen en kerstpakketten. Van een enkele fles in stijlvol papier tot een uitgebreid pakket voor klanten.</p></div>
+    </div>
+    <div class="event-cta fade-up">
+      <div class="event-cta__text">
+        <h3>Cadeaupakketten op maat</h3>
+        <p>Vertel ons het budget en de gelegenheid &mdash; wij zorgen voor de rest. Afhalen of bezorging op afspraak.</p>
+      </div>
+      <div style="display:flex;gap:.75rem;flex-wrap:wrap">
+        <a href="mailto:info@oldbacchus.be" class="btn-primary">Vraag info aan</a>
+        <a href="tel:036582774" class="btn-secondary">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 3.55 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Bel ons
         </a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Ons verhaal -->
-  <section id="verhaal" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
+<div class="divider-wrap"><div class="divider-line"></div></div>
+
+<!-- BEZOEK -->
+<section class="section" id="bezoek" aria-labelledby="bezoek-title">
+  <div class="section__header fade-up">
+    <span class="section__label">Kom langs</span>
+    <h2 class="section__title" id="bezoek-title">Vind ons in Schoten</h2>
+  </div>
+  <div class="bezoek-layout">
     <div class="fade-up">
-      <p class="text-gold font-500 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
-      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-burgundy">Een speciaalzaak met<br />een hart voor de fles.</h2>
-      <p class="text-clay text-lg mt-6 leading-relaxed font-300">
-        Old Bacchus is een onafhankelijke wijn- en drankenspeciaalzaak in Schoten. Wat ons drijft is de zoektocht
-        naar eerlijke wijnen en mooie sterke dranken met karakter — gekozen door mensen die er elke dag mee bezig zijn
-        en die u graag met raad bijstaan.
-      </p>
-      <p class="text-clay text-lg mt-4 leading-relaxed font-300">
-        Of u nu een fles zoekt voor bij het eten, een geschenk voor een liefhebber of een relatiegeschenk
-        voor uw klanten — wij denken graag met u mee. Voortaan kan dat ook online, met een echte webshop en
-        afhaling of levering.
-      </p>
-      <div class="mt-9 flex flex-wrap gap-8">
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">Schoten</p>
-          <p class="text-clay/80 text-sm mt-1">Uw lokale speciaalzaak</p>
+      <p class="bezoek__intro">Old Bacchus is uw vertrouwde wijn- en drankenzaak in Schoten. Kom gerust langs voor een goed gesprek, een verrassend advies of gewoon om te snuisteren tussen onze flessen.</p>
+      <ul class="contact-list" role="list">
+        <li>
+          <div class="contact-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 3.55 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><span class="contact-list__label">Telefoon</span><div class="contact-list__value"><a href="tel:036582774">03 658 27 74</a></div></div>
+        </li>
+        <li>
+          <div class="contact-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div><span class="contact-list__label">E-mail</span><div class="contact-list__value"><a href="mailto:info@oldbacchus.be">info@oldbacchus.be</a></div></div>
+        </li>
+        <li>
+          <div class="contact-list__icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><span class="contact-list__label">Adres</span><div class="contact-list__value">Schoten, Antwerpen</div></div>
+        </li>
+      </ul>
+      <div class="hours-table" role="table" aria-label="Openingsuren">
+        <div class="hours-row" role="row"><span class="hours-row__day" role="cell">Maandag</span><span class="hours-row__closed" role="cell">Gesloten</span></div>
+        <div class="hours-row" role="row"><span class="hours-row__day" role="cell">Dinsdag &ndash; vrijdag</span><span class="hours-row__time" role="cell">10:00 &ndash; 18:30</span></div>
+        <div class="hours-row" role="row"><span class="hours-row__day" role="cell">Zaterdag</span><span class="hours-row__time" role="cell">10:00 &ndash; 18:00</span></div>
+        <div class="hours-row" role="row"><span class="hours-row__day" role="cell">Zondag</span><span class="hours-row__closed" role="cell">Gesloten</span></div>
+      </div>
+    </div>
+    <div class="fade-up fade-up-d2">
+      <div class="map-placeholder" role="img" aria-label="Locatie Old Bacchus in Schoten">
+        <div class="map-grid-bg" aria-hidden="true"></div>
+        <div class="map-inner">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4C21 4 12 13 12 24c0 16 20 36 20 36s20-20 20-36C52 13 43 4 32 4z"/><circle cx="32" cy="24" r="7" fill="#c9851a"/></svg>
+          <p>Old Bacchus</p>
+          <span>Schoten, Antwerpen</span>
+          <div><a href="https://maps.google.com/?q=Old+Bacchus+Schoten" class="map-link" target="_blank" rel="noopener noreferrer" aria-label="Open in Google Maps (nieuw tabblad)">Open in Google Maps<svg viewBox="0 0 14 14" aria-hidden="true"><path d="M3 3h8v8"/><path d="M3 11L11 3"/></svg></a></div>
         </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">Advies</p>
-          <p class="text-clay/80 text-sm mt-1">Vakkennis &amp; passie</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">18+</p>
-          <p class="text-clay/80 text-sm mt-1">Verantwoord genieten</p>
-        </div>
       </div>
     </div>
-    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
-      <img
-        src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1000&q=80"
-        alt="Wijnkelder met flessen op rek"
-        loading="lazy" decoding="async"
-        class="w-full h-full object-cover"
-      />
-    </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Bezoek + kaart -->
-  <section id="bezoek" class="bg-sand/60 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
-      <div class="fade-up">
-        <p class="text-gold font-500 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-burgundy">Welkom in Schoten</h2>
-        <p class="text-clay text-lg mt-5 max-w-md font-300">
-          Kom proeven en kiezen op Sint-Cordulastraat 34 in Schoten, of bestel online en haal af.
-        </p>
-        <dl class="mt-9 space-y-5 text-clay">
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📍</span>
-            <div>
-              <dt class="font-600 text-burgundy">Adres</dt>
-              <dd class="text-clay">Sint-Cordulastraat 34, 2900 Schoten</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🕑</span>
-            <div>
-              <dt class="font-600 text-burgundy">Openingsuren</dt>
-              <dd class="text-clay">Di–Vr: 10:00–18:30 · Za: 10:00–18:00 · Zo &amp; Ma: gesloten</dd>
-              <dd class="text-clay/60 text-sm mt-1">(indicatief — definitieve uren in overleg)</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📞</span>
-            <div>
-              <dt class="font-600 text-burgundy">Telefoon</dt>
-              <dd class="text-clay"><a href="tel:+3236582774" class="ug">03 658 27 74</a></dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">✉️</span>
-            <div>
-              <dt class="font-600 text-burgundy">E-mail</dt>
-              <dd class="text-clay"><a href="mailto:info@oldbacchus.be" class="ug">info@oldbacchus.be</a></dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">💳</span>
-            <div>
-              <dt class="font-600 text-burgundy">Betaalmogelijkheden</dt>
-              <dd class="text-clay">In de winkel · online via Bancontact / Mollie (webshop) · leeftijdsverificatie 18+</dd>
-            </div>
-          </div>
-        </dl>
-        <a href="#webshop" class="inline-block mt-9 bg-burgundy text-cream font-600 px-7 py-3.5 rounded-full hover:bg-merlot transition">
-          Of bestel online →
-        </a>
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="footer__inner">
+    <div>
+      <div class="footer__brand-name">
+        <svg viewBox="0 0 26 26" fill="none" aria-hidden="true"><circle cx="13" cy="13" r="13" fill="#2a2418"/><ellipse cx="13" cy="10.5" rx="4" ry="5.5" fill="#c9851a"/><circle cx="13" cy="6" r="2.5" fill="#c9851a"/><ellipse cx="9" cy="8" rx="1.8" ry="2.2" fill="#c9851a" transform="rotate(-18 9 8)"/><ellipse cx="17" cy="8" rx="1.8" ry="2.2" fill="#c9851a" transform="rotate(18 17 8)"/><rect x="11" y="16" width="4" height="7" rx="1.2" fill="#c9851a"/><rect x="9" y="21.5" width="8" height="2.2" rx="1.1" fill="#c9851a"/></svg>
+        Old Bacchus
       </div>
-      <!-- OpenStreetMap embed — Sint-Cordulastraat 34, 2900 Schoten (~51.2530, 4.4990) -->
-      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-sand shadow-sm">
-        <iframe
-          title="Kaart Old Bacchus — Sint-Cordulastraat 34, 2900 Schoten"
-          class="w-full h-full min-h-[360px] border-0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=4.4890%2C51.2480%2C4.5090%2C51.2580&layer=mapnik&marker=51.2530%2C4.4990"
-        ></iframe>
-      </div>
+      <p class="footer__tagline">Van klassiek tot craft &mdash; uw wijn- en drankenzaak in Schoten. Persoonlijk advies, curieus aanbod.</p>
+      <div class="footer__contact"><a href="tel:036582774">03 658 27 74</a><a href="mailto:info@oldbacchus.be">info@oldbacchus.be</a></div>
     </div>
-  </section>
-
-  <!-- GDPR Newsletter -->
-  <section class="bg-gold/20">
-    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
-      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-burgundy">Blijf op de hoogte</h2>
-      <p class="text-clay mt-3 font-300">Nieuwe wijnen, mooie sterke dranken, proeverijen en cadeautips — af en toe in je mailbox.</p>
-      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
-        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
-        <input
-          id="nl-email"
-          name="email"
-          type="email"
-          autocomplete="email"
-          required
-          placeholder="jouw@email.be"
-          class="flex-1 px-5 py-3 rounded-full border border-clay/25 bg-cream focus:outline-none focus:ring-2 focus:ring-gold"
-        />
-        <button class="bg-burgundy text-cream font-600 px-7 py-3 rounded-full hover:bg-merlot transition">Inschrijven</button>
-      </form>
-      <p class="text-xs text-clay/60 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof. Inschrijven vanaf 18 jaar.</p>
+    <div class="footer__col">
+      <h4>Aanbod</h4>
+      <ul><li><a href="#aanbod">Wijn</a></li><li><a href="#aanbod">Craft bier</a></li><li><a href="#aanbod">Spirits &amp; whisky</a></li><li><a href="#aanbod">Apero &amp; cadeau</a></li><li><a href="#toppers">Seizoenstoppers</a></li></ul>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-ink text-cream/80">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div>
-        <p class="font-serif text-[26px] text-cream font-700">Old <span class="italic font-600">Bacchus</span></p>
-        <p class="text-cream/60 text-sm mt-3 max-w-xs font-300">Wijn- &amp; drankenspeciaalzaak in Schoten. Webshop, cadeaupakketten en proeverijen.</p>
-        <p class="text-cream/45 text-xs mt-4">Verkoop uitsluitend aan personen vanaf 18 jaar. Geniet, maar drink met mate.</p>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Webshop</p>
-        <ul class="space-y-2 text-sm text-cream/60 font-300">
-          <li><a href="#webshop" class="hover:text-goldlt">Online bestellen</a></li>
-          <li><a href="#assortiment" class="hover:text-goldlt">Assortiment</a></li>
-          <li><a href="#cadeau" class="hover:text-goldlt">Cadeaupakketten</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Info</p>
-        <ul class="space-y-2 text-sm text-cream/60 font-300">
-          <li><a href="#cadeau" class="hover:text-goldlt">Proeverijen &amp; relatiegeschenken</a></li>
-          <li><a href="#bezoek" class="hover:text-goldlt">Openingsuren</a></li>
-          <li><a href="#verhaal" class="hover:text-goldlt">Ons verhaal</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Contact</p>
-        <ul class="space-y-2 text-sm text-cream/60 font-300">
-          <li>Sint-Cordulastraat 34</li>
-          <li>2900 Schoten</li>
-          <li><a href="tel:+3236582774" class="hover:text-goldlt">03 658 27 74</a></li>
-          <li><a href="mailto:info@oldbacchus.be" class="hover:text-goldlt">info@oldbacchus.be</a></li>
-        </ul>
-      </div>
+    <div class="footer__col">
+      <h4>Info</h4>
+      <ul><li><a href="#events">Proeverijen</a></li><li><a href="#events">Cadeaupakketten</a></li><li><a href="#bezoek">Openingsuren</a></li><li><a href="#bezoek">Contact</a></li><li><a href="https://maps.google.com/?q=Old+Bacchus+Schoten" target="_blank" rel="noopener noreferrer">Route</a></li></ul>
     </div>
-    <div class="border-t border-cream/10">
-      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/45">
-        <p>© 2026 Old Bacchus. Concept-redesign.</p>
-        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; wijnwebshop.</p>
-      </div>
-    </div>
-  </footer>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">&copy; 2025 Old Bacchus &mdash; Schoten, Belgie &nbsp;&bull;&nbsp; <a href="mailto:info@oldbacchus.be" style="color:inherit">info@oldbacchus.be</a></p>
+    <span class="footer__demo-note">Demo PoC</span>
+  </div>
+</footer>
 
-  <!-- Scripts -->
-  <script>
-    // Fade-up IntersectionObserver
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
-    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
-    } else {
-      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
-    }
-
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (menuBtn && mobileMenu) {
-      const setOpen = (open) => {
-        if (open) mobileMenu.removeAttribute('hidden');
-        else mobileMenu.setAttribute('hidden', '');
-        menuBtn.setAttribute('aria-expanded', String(open));
-        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
-      };
-      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
-      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
-    }
-  </script>
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  var lastY=0,ticking=false,scrollDelta=0,lastDir='up';
+  var TOL_DOWN=8,TOL_UP=5,OFFSET=80;
+  function tick(){
+    var y=window.scrollY||window.pageYOffset;
+    var diff=y-lastY;
+    if(y<OFFSET){nav.classList.remove('is-pinned','is-unpinned');lastY=y;scrollDelta=0;ticking=false;return;}
+    nav.classList.add('is-pinned');
+    if(diff>0){if(lastDir!=='down'){scrollDelta=0;lastDir='down';}scrollDelta+=diff;if(scrollDelta>TOL_DOWN)nav.classList.add('is-unpinned');}
+    else if(diff<0){if(lastDir!=='up'){scrollDelta=0;lastDir='up';}scrollDelta+=Math.abs(diff);if(scrollDelta>TOL_UP)nav.classList.remove('is-unpinned');}
+    lastY=y;ticking=false;
+  }
+  window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(tick);ticking=true;}},{passive:true});
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in-view');io.unobserve(e.target);}});},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.fade-up').forEach(function(el){io.observe(el);});
+  } else {document.querySelectorAll('.fade-up').forEach(function(el){el.classList.add('in-view');});}
+  document.querySelectorAll('a[href^="#"]').forEach(function(link){link.addEventListener('click',function(e){var h=this.getAttribute('href');if(h==='#')return;var t=document.querySelector(h);if(t){e.preventDefault();var top=t.getBoundingClientRect().top+window.scrollY-84;window.scrollTo({top:top,behavior:'smooth'});}});});
+  var burger=document.getElementById('burger'),mOpen=false;
+  if(burger){burger.addEventListener('click',function(){var links=document.querySelector('.nav__links');mOpen=!mOpen;if(mOpen){links.style.cssText='display:flex;position:fixed;top:68px;left:0;right:0;flex-direction:column;background:rgba(17,14,8,.97);padding:1.5rem 2rem;gap:1.25rem;border-bottom:1px solid rgba(201,133,26,.22);z-index:99';}else{links.style.cssText='';}burger.setAttribute('aria-expanded',mOpen?'true':'false');});}
+})();
+</script>
 </body>
 </html>

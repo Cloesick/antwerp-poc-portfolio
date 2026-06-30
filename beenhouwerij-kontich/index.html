@@ -1,0 +1,1968 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beenhouwerij Kontich — Antwerpsesteenweg 123</title>
+  <meta name="description" content="Traditionele beenhouwerij in Kontich. Handgesneden vlees, Belgische rassen, eerlijk vakmanschap. Antwerpsesteenweg 123 — bel 03 457 63 42." />
+
+  <!-- Inline SVG favicon via data URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%238b1a1a'/%3E%3Cpath d='M10 22 Q14 10 20 14 Q24 17 22 22' stroke='%23f3ebe0' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='22' cy='10' r='2.5' fill='%23f3ebe0'/%3E%3Cline x1='22' y1='10' x2='22' y2='14' stroke='%23f3ebe0' stroke-width='1.5'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: non-blocking preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Outfit:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Outfit:wght@400;500&display=swap" rel="stylesheet" /></noscript>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Beenhouwerij Kontich",
+    "description": "Traditionele Belgische beenhouwerij in Kontich. Handgesneden vlees, verse bereidingen, eerlijk vakmanschap.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Antwerpsesteenweg 123",
+      "addressLocality": "Kontich",
+      "postalCode": "2550",
+      "addressCountry": "BE"
+    },
+    "telephone": "+3234576342",
+    "priceRange": "€€",
+    "servesCuisine": "Slagerij",
+    "areaServed": "Kontich"
+  }
+  </script>
+
+  <style>
+    /* ─── RESET & BASE ─────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    :root {
+      --ink:        #120508;
+      --red:        #8b1a1a;
+      --red-dark:   #5a0e0e;
+      --red-deep:   #3a0808;
+      --parchment:  #f3ebe0;
+      --parchment2: #e8ddd0;
+      --parchment3: #d4c9b8;
+      --cream:      #faf6f0;
+      --ghost-red:  rgba(139,26,26,0.12);
+
+      --ff-display: 'Fraunces', Georgia, serif;
+      --ff-body:    'Outfit', system-ui, sans-serif;
+
+      --nav-h: 68px;
+      --section-pad: clamp(5rem, 10vw, 9rem);
+    }
+
+    body {
+      background: var(--ink);
+      color: var(--parchment);
+      font-family: var(--ff-body);
+      font-size: 1rem;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; font-family: inherit; }
+
+    /* ─── HEADROOM NAV ─────────────────────────────────────────── */
+    #nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 clamp(1.5rem, 5vw, 4rem);
+      background: rgba(18,5,8,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(243,235,224,0.08);
+      transition: transform 0.35s cubic-bezier(0.4,0,0.2,1),
+                  background 0.3s ease;
+      will-change: transform;
+    }
+    #nav.nav--hidden { transform: translateY(-100%); }
+    #nav.nav--top    { background: transparent; border-bottom-color: transparent; }
+
+    .nav__brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .nav__logo {
+      width: 38px; height: 38px;
+      flex-shrink: 0;
+    }
+    .nav__name {
+      font-family: var(--ff-display);
+      font-size: 1.05rem;
+      letter-spacing: 0.01em;
+      color: var(--parchment);
+      line-height: 1.2;
+    }
+    .nav__name span {
+      display: block;
+      font-family: var(--ff-body);
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(243,235,224,0.55);
+    }
+
+    .nav__cta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 1.25rem;
+      background: var(--red);
+      color: var(--parchment);
+      border: none;
+      border-radius: 2px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: background 0.2s ease;
+    }
+    .nav__cta:hover { background: #a32020; }
+    .nav__cta svg { width: 14px; height: 14px; }
+
+    /* ─── FADE-UP ANIMATION ────────────────────────────────────── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.72s cubic-bezier(0.22,1,0.36,1),
+                  transform 0.72s cubic-bezier(0.22,1,0.36,1);
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .fade-up[data-delay="1"] { transition-delay: 0.1s; }
+    .fade-up[data-delay="2"] { transition-delay: 0.2s; }
+    .fade-up[data-delay="3"] { transition-delay: 0.3s; }
+    .fade-up[data-delay="4"] { transition-delay: 0.4s; }
+    .fade-up[data-delay="5"] { transition-delay: 0.5s; }
+
+    /* ─── SHARED UTILITIES ─────────────────────────────────────── */
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-family: var(--ff-body);
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(243,235,224,0.5);
+      margin-bottom: 1.4rem;
+    }
+    .section-label::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--red);
+    }
+
+    .h2 {
+      font-family: var(--ff-display);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--parchment);
+    }
+
+    .body-text {
+      font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+      line-height: 1.75;
+      color: rgba(243,235,224,0.82);
+      max-width: 52ch;
+    }
+
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: rgba(243,235,224,0.08);
+    }
+
+    /* ─── BTN STYLES ───────────────────────────────────────────── */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.9rem 2rem;
+      background: var(--red);
+      color: var(--parchment);
+      border: none;
+      border-radius: 2px;
+      font-family: var(--ff-body);
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: background 0.2s ease, transform 0.15s ease;
+    }
+    .btn-primary:hover {
+      background: #a32020;
+      transform: translateY(-1px);
+    }
+    .btn-primary svg { width: 16px; height: 16px; }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.85rem 1.75rem;
+      background: transparent;
+      color: var(--parchment);
+      border: 1px solid rgba(243,235,224,0.3);
+      border-radius: 2px;
+      font-family: var(--ff-body);
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .btn-ghost:hover {
+      border-color: var(--parchment);
+      background: rgba(243,235,224,0.05);
+    }
+
+    /* ════════════════════════════════════════════════════════════ */
+    /* SECTION 1 — HERO                                            */
+    /* ════════════════════════════════════════════════════════════ */
+    #hero {
+      position: relative;
+      min-height: 100dvh;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      background: var(--ink);
+    }
+
+    /* Ghost "KONTICH" lettermark — aria-hidden */
+    .hero__ghost {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: var(--ff-display);
+      font-size: clamp(7rem, 20vw, 18rem);
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: transparent;
+      -webkit-text-stroke: 1.5px rgba(139,26,26,0.18);
+      text-stroke: 1.5px rgba(139,26,26,0.18);
+      white-space: nowrap;
+      user-select: none;
+      pointer-events: none;
+      line-height: 1;
+    }
+
+    /* SVG butcher shop illustration */
+    .hero__illustration {
+      position: absolute;
+      top: 0; right: 0;
+      width: 52%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.22;
+      pointer-events: none;
+    }
+    .hero__illustration svg {
+      width: 90%;
+      height: auto;
+    }
+
+    /* Vertical red accent line */
+    .hero__line {
+      position: absolute;
+      top: 0;
+      left: clamp(1.5rem, 5vw, 4rem);
+      width: 1px;
+      height: 100%;
+      background: linear-gradient(to bottom, transparent, var(--red) 30%, var(--red) 70%, transparent);
+      opacity: 0.4;
+    }
+
+    /* Noise texture overlay */
+    .hero__noise {
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      opacity: 0.6;
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 2;
+      padding: var(--nav-h) clamp(1.5rem, 5vw, 4rem) clamp(4rem, 8vw, 7rem);
+      max-width: 700px;
+    }
+
+    .hero__eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+      font-family: var(--ff-body);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(243,235,224,0.45);
+    }
+    .hero__eyebrow::before {
+      content: '';
+      width: 32px;
+      height: 1px;
+      background: var(--red);
+      flex-shrink: 0;
+    }
+
+    .hero__h1 {
+      font-family: var(--ff-display);
+      font-size: clamp(2.6rem, 7vw, 5.5rem);
+      font-weight: 700;
+      line-height: 1.0;
+      letter-spacing: -0.03em;
+      color: var(--parchment);
+      margin-bottom: 1.75rem;
+    }
+    .hero__h1 em {
+      font-style: normal;
+      color: var(--red);
+      display: block;
+    }
+
+    .hero__sub {
+      font-size: clamp(1rem, 1.8vw, 1.15rem);
+      line-height: 1.7;
+      color: rgba(243,235,224,0.75);
+      max-width: 44ch;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero__cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .hero__tel {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: rgba(243,235,224,0.6);
+      letter-spacing: 0.04em;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid rgba(243,235,224,0.2);
+      transition: color 0.2s;
+    }
+    .hero__tel:hover { color: var(--parchment); }
+    .hero__tel svg { width: 14px; height: 14px; color: var(--red); }
+
+    /* Bottom scroll indicator */
+    .hero__scroll {
+      position: absolute;
+      bottom: 2.5rem;
+      right: clamp(1.5rem, 5vw, 4rem);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(243,235,224,0.3);
+      z-index: 2;
+    }
+    .hero__scroll::after {
+      content: '';
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(to bottom, var(--red), transparent);
+      animation: scrollLine 2s ease-in-out infinite;
+    }
+    @keyframes scrollLine {
+      0%, 100% { opacity: 0.3; transform: scaleY(1); }
+      50% { opacity: 1; transform: scaleY(1.15); }
+    }
+
+    /* ════════════════════════════════════════════════════════════ */
+    /* SECTION 2 — AMBACHT (CRAFT)                                 */
+    /* ════════════════════════════════════════════════════════════ */
+    #ambacht {
+      padding: var(--section-pad) clamp(1.5rem, 5vw, 4rem);
+      background: var(--cream);
+      color: var(--ink);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #ambacht .section-label { color: rgba(18,5,8,0.4); }
+    #ambacht .section-label::before { background: var(--red); }
+
+    #ambacht .h2 { color: var(--ink); }
+
+    .ambacht__layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem, 6vw, 6rem);
+      align-items: start;
+    }
+
+    .ambacht__left {}
+
+    .ambacht__body {
+      font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+      line-height: 1.8;
+      color: rgba(18,5,8,0.72);
+      margin-bottom: 2.5rem;
+    }
+
+    .ambacht__quote {
+      border-left: 3px solid var(--red);
+      padding: 1.25rem 1.75rem;
+      background: rgba(139,26,26,0.06);
+      font-family: var(--ff-display);
+      font-size: clamp(1.1rem, 2vw, 1.4rem);
+      font-weight: 700;
+      color: var(--red-dark);
+      line-height: 1.4;
+      letter-spacing: -0.01em;
+    }
+
+    .ambacht__right {
+      position: relative;
+    }
+
+    /* Illustrated butcher window SVG panel */
+    .ambacht__visual {
+      background: var(--ink);
+      border-radius: 2px;
+      aspect-ratio: 4/5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .ambacht__visual-inner {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .ambacht__craft-tag {
+      position: absolute;
+      top: 1.5rem;
+      right: -1rem;
+      background: var(--red);
+      color: var(--parchment);
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 0.5rem 1rem;
+      transform: rotate(90deg);
+      transform-origin: right center;
+      white-space: nowrap;
+    }
+
+    .ambacht__pillars {
+      margin-top: 2.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+
+    .ambacht__pillar {
+      padding: 1.25rem;
+      border: 1px solid rgba(18,5,8,0.1);
+      border-radius: 2px;
+    }
+    .ambacht__pillar-icon {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 0.75rem;
+      color: var(--red);
+    }
+    .ambacht__pillar h4 {
+      font-family: var(--ff-display);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 0.35rem;
+      letter-spacing: -0.01em;
+    }
+    .ambacht__pillar p {
+      font-size: 0.82rem;
+      line-height: 1.6;
+      color: rgba(18,5,8,0.6);
+    }
+
+    /* ════════════════════════════════════════════════════════════ */
+    /* SECTION 3 — AANBOD (PRODUCT CARDS)                         */
+    /* ════════════════════════════════════════════════════════════ */
+    #aanbod {
+      padding: var(--section-pad) clamp(1.5rem, 5vw, 4rem);
+      background: var(--ink);
+      position: relative;
+    }
+
+    .aanbod__header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: end;
+      margin-bottom: clamp(3rem, 5vw, 5rem);
+    }
+
+    .aanbod__intro {
+      font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+      line-height: 1.7;
+      color: rgba(243,235,224,0.72);
+    }
+
+    .aanbod__grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1px;
+      background: rgba(243,235,224,0.08);
+      border: 1px solid rgba(243,235,224,0.08);
+    }
+
+    .aanbod__card {
+      background: var(--ink);
+      padding: 2rem 1.5rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      transition: background 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .aanbod__card:hover {
+      background: var(--red-deep);
+    }
+    .aanbod__card:hover .aanbod__card-arrow {
+      transform: translate(3px, -3px);
+    }
+
+    .aanbod__card-num {
+      font-family: var(--ff-body);
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      color: rgba(243,235,224,0.3);
+      margin-bottom: 2rem;
+    }
+
+    .aanbod__card-icon {
+      width: 44px;
+      height: 44px;
+      margin-bottom: 1.5rem;
+      color: var(--red);
+      flex-shrink: 0;
+    }
+
+    .aanbod__card-title {
+      font-family: var(--ff-display);
+      font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+      font-weight: 700;
+      color: var(--parchment);
+      letter-spacing: -0.015em;
+      margin-bottom: 0.75rem;
+      line-height: 1.2;
+    }
+
+    .aanbod__card-body {
+      font-size: 0.82rem;
+      line-height: 1.65;
+      color: rgba(243,235,224,0.55);
+      flex: 1;
+      margin-bottom: 1.5rem;
+    }
+
+    .aanbod__card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: auto;
+    }
+    .aanbod__tag {
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.6rem;
+      border: 1px solid rgba(243,235,224,0.15);
+      color: rgba(243,235,224,0.45);
+      border-radius: 1px;
+    }
+
+    .aanbod__card-arrow {
+      position: absolute;
+      top: 1.75rem;
+      right: 1.5rem;
+      width: 16px;
+      height: 16px;
+      color: rgba(243,235,224,0.2);
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+    .aanbod__card:hover .aanbod__card-arrow { color: var(--parchment); }
+
+    /* ════════════════════════════════════════════════════════════ */
+    /* SECTION 4 — HOOK / PITCH                                    */
+    /* ════════════════════════════════════════════════════════════ */
+    #pitch {
+      padding: var(--section-pad) clamp(1.5rem, 5vw, 4rem);
+      background: var(--red-dark);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pitch__ghost {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: var(--ff-display);
+      font-size: clamp(5rem, 16vw, 14rem);
+      font-weight: 700;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(243,235,224,0.08);
+      text-stroke: 1px rgba(243,235,224,0.08);
+      white-space: nowrap;
+      user-select: none;
+      pointer-events: none;
+      letter-spacing: 0.04em;
+    }
+
+    .pitch__layout {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: clamp(3rem, 6vw, 6rem);
+      align-items: center;
+    }
+
+    .pitch__stat-row {
+      display: flex;
+      gap: 3rem;
+      margin-bottom: 2.5rem;
+    }
+    .pitch__stat {}
+    .pitch__stat-num {
+      font-family: var(--ff-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      color: var(--parchment);
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+    .pitch__stat-label {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(243,235,224,0.5);
+    }
+
+    .pitch__headline {
+      font-family: var(--ff-display);
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.025em;
+      color: var(--parchment);
+      margin-bottom: 1.5rem;
+    }
+
+    .pitch__body {
+      font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+      line-height: 1.75;
+      color: rgba(243,235,224,0.78);
+      margin-bottom: 2rem;
+    }
+
+    .pitch__hook {
+      padding: 1.5rem 2rem;
+      border: 1px solid rgba(243,235,224,0.2);
+      background: rgba(18,5,8,0.25);
+      font-family: var(--ff-display);
+      font-size: clamp(1rem, 1.8vw, 1.25rem);
+      font-weight: 700;
+      color: var(--parchment);
+      letter-spacing: -0.01em;
+      line-height: 1.4;
+    }
+    .pitch__hook strong {
+      color: #f5c2c2;
+      font-weight: 700;
+    }
+
+    .pitch__right {}
+    .pitch__visual-block {
+      background: rgba(18,5,8,0.4);
+      border: 1px solid rgba(243,235,224,0.1);
+      padding: 2.5rem;
+      border-radius: 2px;
+    }
+
+    .pitch__checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .pitch__checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.875rem;
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: rgba(243,235,224,0.8);
+    }
+    .pitch__check {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      margin-top: 0.05em;
+      color: var(--parchment);
+      background: var(--red);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .pitch__check svg { width: 11px; height: 11px; }
+
+    /* ════════════════════════════════════════════════════════════ */
+    /* SECTION 5 — FEESTMENU                                       */
+    /* ════════════════════════════════════════════════════════════ */
+    #feest {
+      padding: var(--section-pad) clamp(1.5rem, 5vw, 4rem);
+      background: var(--cream);
+      color: var(--ink);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #feest .section-label { color: rgba(18,5,8,0.4); }
+    #feest .section-label::before { background: var(--red); }
+    #feest .h2 { color: var(--ink); }
+
+    .feest__layout {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: clamp(3rem, 6vw, 6rem);
+      align-items: start;
+    }
+
+    .feest__body {
+      font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+      line-height: 1.8;
+      color: rgba(18,5,8,0.68);
+      margin-bottom: 2rem;
+    }
+
+    .feest__items {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .feest__item {
+      display: grid;
+      grid-template-columns: 2.5rem 1fr;
+      gap: 1.25rem;
+      align-items: start;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(18,5,8,0.1);
+    }
+    .feest__item:first-child { border-top: 1px solid rgba(18,5,8,0.1); }
+
+    .feest__item-num {
+      font-family: var(--ff-display);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--red);
+      line-height: 1;
+      padding-top: 0.15rem;
+    }
+
+    .feest__item-title {
+      font-family: var(--ff-display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 0.3rem;
+      letter-spacing: -0.01em;
+    }
+    .feest__item-desc {
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: rgba(18,5,8,0.58);
+    }
+
+    /* Large visual panel right side */
+    .feest__panel {
+      background: var(--ink);
+      padding: 3rem;
+      border-radius: 2px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feest__panel-label {
+      font-family: var(--ff-body);
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(243,235,224,0.4);
+    }
+
+    .feest__panel-headline {
+      font-family: var(--ff-display);
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      font-weight: 700;
+      color: var(--parchment);
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+
+    .feest__panel-body {
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: rgba(243,235,224,0.65);
+    }
+
+    .feest__panel-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--parchment);
+      border-bottom: 1px solid rgba(243,235,224,0.3);
+      padding-bottom: 0.25rem;
+      transition: border-color 0.2s;
+    }
+    .feest__panel-cta:hover { border-color: var(--parchment); }
+    .feest__panel-cta svg { width: 14px; height: 14px; }
+
+    .feest__panel-bg {
+      position: absolute;
+      bottom: 0; right: 0;
+      width: 60%;
+      height: auto;
+      opacity: 0.06;
+      pointer-events: none;
+    }
+
+    /* ════════════════════════════════════════════════════════════ */
+    /* SECTION 6 — BEZOEK (VISIT / CONTACT)                       */
+    /* ════════════════════════════════════════════════════════════ */
+    #bezoek {
+      padding: var(--section-pad) clamp(1.5rem, 5vw, 4rem);
+      background: var(--ink);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bezoek__layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem, 6vw, 7rem);
+      align-items: start;
+    }
+
+    .bezoek__body {
+      font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+      line-height: 1.8;
+      color: rgba(243,235,224,0.72);
+      margin-bottom: 3rem;
+    }
+
+    .bezoek__info {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .bezoek__info-item {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+    }
+    .bezoek__info-icon {
+      width: 42px;
+      height: 42px;
+      background: rgba(139,26,26,0.18);
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--red);
+    }
+    .bezoek__info-icon svg { width: 20px; height: 20px; }
+    .bezoek__info-label {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(243,235,224,0.35);
+      margin-bottom: 0.4rem;
+    }
+    .bezoek__info-value {
+      font-family: var(--ff-display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--parchment);
+      letter-spacing: -0.01em;
+    }
+    .bezoek__info-value a {
+      transition: color 0.2s;
+    }
+    .bezoek__info-value a:hover { color: rgba(243,235,224,0.7); }
+
+    /* Hours table */
+    .bezoek__hours {
+      background: rgba(243,235,224,0.04);
+      border: 1px solid rgba(243,235,224,0.08);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .bezoek__hours-title {
+      padding: 1.25rem 1.75rem;
+      font-family: var(--ff-body);
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(243,235,224,0.4);
+      border-bottom: 1px solid rgba(243,235,224,0.08);
+    }
+
+    .bezoek__hours-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.9rem 1.75rem;
+      border-bottom: 1px solid rgba(243,235,224,0.05);
+      font-size: 0.88rem;
+    }
+    .bezoek__hours-row:last-child { border-bottom: none; }
+    .bezoek__hours-day { color: rgba(243,235,224,0.55); }
+    .bezoek__hours-time { color: var(--parchment); font-weight: 500; }
+    .bezoek__hours-row.closed .bezoek__hours-time { color: rgba(243,235,224,0.25); }
+
+    /* Map placeholder */
+    .bezoek__map {
+      background: rgba(139,26,26,0.08);
+      border: 1px solid rgba(139,26,26,0.2);
+      border-radius: 2px;
+      aspect-ratio: 4/3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      position: relative;
+      overflow: hidden;
+      margin-top: 2rem;
+    }
+
+    .bezoek__map-label {
+      font-family: var(--ff-body);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(243,235,224,0.35);
+    }
+
+    .bezoek__map-address {
+      font-family: var(--ff-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--parchment);
+      text-align: center;
+      letter-spacing: -0.01em;
+      line-height: 1.3;
+    }
+
+    .bezoek__map-pin {
+      width: 48px;
+      height: 48px;
+      background: var(--red);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--parchment);
+      box-shadow: 0 0 0 8px rgba(139,26,26,0.2);
+    }
+    .bezoek__map-pin svg { width: 22px; height: 22px; }
+
+    /* Grid lines decorative */
+    .bezoek__map::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(139,26,26,0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(139,26,26,0.08) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    /* ════════════════════════════════════════════════════════════ */
+    /* FINAL CTA BAND                                              */
+    /* ════════════════════════════════════════════════════════════ */
+    #cta-band {
+      padding: clamp(4rem, 7vw, 7rem) clamp(1.5rem, 5vw, 4rem);
+      background: var(--red-dark);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    #cta-band::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 60% at 50% 120%, rgba(18,5,8,0.6), transparent);
+      pointer-events: none;
+    }
+
+    .ctaband__label {
+      font-family: var(--ff-body);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(243,235,224,0.45);
+    }
+
+    .ctaband__headline {
+      font-family: var(--ff-display);
+      font-size: clamp(1.8rem, 5vw, 3.5rem);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      color: var(--parchment);
+      line-height: 1.05;
+      position: relative;
+      z-index: 1;
+    }
+
+    .ctaband__sub {
+      font-size: clamp(0.9rem, 1.4vw, 1.05rem);
+      color: rgba(243,235,224,0.65);
+      max-width: 44ch;
+      line-height: 1.7;
+      position: relative;
+      z-index: 1;
+    }
+
+    .ctaband__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .ctaband__tel-big {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: var(--ff-display);
+      font-size: clamp(1.5rem, 3vw, 2.25rem);
+      font-weight: 700;
+      color: var(--parchment);
+      letter-spacing: -0.02em;
+      transition: opacity 0.2s;
+    }
+    .ctaband__tel-big:hover { opacity: 0.8; }
+    .ctaband__tel-big svg { width: 28px; height: 28px; color: rgba(243,235,224,0.5); }
+
+    /* ════════════════════════════════════════════════════════════ */
+    /* FOOTER                                                      */
+    /* ════════════════════════════════════════════════════════════ */
+    footer {
+      padding: 2.5rem clamp(1.5rem, 5vw, 4rem);
+      background: var(--ink);
+      border-top: 1px solid rgba(243,235,224,0.07);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .footer__brand {
+      font-family: var(--ff-display);
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--parchment);
+      letter-spacing: -0.01em;
+    }
+    .footer__brand span {
+      display: block;
+      font-family: var(--ff-body);
+      font-size: 0.68rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(243,235,224,0.35);
+      margin-top: 0.2rem;
+    }
+
+    .footer__meta {
+      font-size: 0.78rem;
+      color: rgba(243,235,224,0.3);
+      line-height: 1.6;
+      text-align: right;
+    }
+
+    /* ─── RESPONSIVE ─────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      .ambacht__layout,
+      .aanbod__header,
+      .pitch__layout,
+      .feest__layout,
+      .bezoek__layout { grid-template-columns: 1fr; }
+
+      .aanbod__grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+      .aanbod__grid > :last-child {
+        grid-column: span 2;
+      }
+
+      .hero__illustration { display: none; }
+
+      .pitch__stat-row { gap: 2rem; }
+
+      .footer__meta { text-align: left; }
+    }
+
+    @media (max-width: 600px) {
+      .aanbod__grid {
+        grid-template-columns: 1fr !important;
+      }
+      .aanbod__grid > :last-child { grid-column: span 1; }
+      .ambacht__pillars { grid-template-columns: 1fr; }
+      .ctaband__tel-big { font-size: 1.4rem; }
+      .feest__panel { padding: 2rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- HEADROOM NAV                                               -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <nav id="nav" role="navigation" aria-label="Hoofdnavigatie">
+    <div class="nav__brand">
+      <!-- Inline SVG logo mark -->
+      <svg class="nav__logo" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="38" height="38" rx="3" fill="#8b1a1a"/>
+        <!-- Cleaver silhouette -->
+        <rect x="8" y="14" width="22" height="10" rx="1.5" fill="#f3ebe0"/>
+        <rect x="26" y="10" width="4" height="18" rx="1" fill="#f3ebe0"/>
+        <circle cx="28" cy="9" r="2" fill="#f3ebe0"/>
+        <!-- Blade detail -->
+        <path d="M8 18 Q15 16 26 18" stroke="#8b1a1a" stroke-width="1.2" fill="none"/>
+      </svg>
+      <div class="nav__name">
+        Beenhouwerij Kontich
+        <span>Antwerpsesteenweg 123</span>
+      </div>
+    </div>
+    <a class="nav__cta" href="tel:034576342" aria-label="Bel ons: 03 457 63 42">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.07 1.18 2 2 0 012.03 0h3a2 2 0 012 1.72c.127.96.36 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+      </svg>
+      Bel 03 457 63 42
+    </a>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- SECTION 1 — HERO                                          -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <section id="hero" aria-label="Hero">
+
+    <div class="hero__ghost" aria-hidden="true">KONTICH</div>
+
+    <!-- Inline SVG butcher window illustration -->
+    <div class="hero__illustration" aria-hidden="true">
+      <svg viewBox="0 0 500 600" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <!-- Shop front frame -->
+        <rect x="40" y="60" width="420" height="480" rx="4" stroke="#f3ebe0" stroke-width="2.5"/>
+        <!-- Awning -->
+        <path d="M30 60 L470 60 L450 110 L50 110 Z" fill="#8b1a1a"/>
+        <line x1="100" y1="60" x2="90" y2="110" stroke="#f3ebe0" stroke-width="1.5" opacity="0.4"/>
+        <line x1="160" y1="60" x2="150" y2="110" stroke="#f3ebe0" stroke-width="1.5" opacity="0.4"/>
+        <line x1="220" y1="60" x2="210" y2="110" stroke="#f3ebe0" stroke-width="1.5" opacity="0.4"/>
+        <line x1="280" y1="60" x2="270" y2="110" stroke="#f3ebe0" stroke-width="1.5" opacity="0.4"/>
+        <line x1="340" y1="60" x2="330" y2="110" stroke="#f3ebe0" stroke-width="1.5" opacity="0.4"/>
+        <line x1="400" y1="60" x2="390" y2="110" stroke="#f3ebe0" stroke-width="1.5" opacity="0.4"/>
+        <!-- Sign -->
+        <rect x="80" y="120" width="340" height="60" rx="3" fill="none" stroke="#f3ebe0" stroke-width="1.5" opacity="0.6"/>
+        <text x="250" y="160" font-family="Georgia,serif" font-size="22" fill="#f3ebe0" text-anchor="middle" opacity="0.85" font-weight="bold">BEENHOUWERIJ</text>
+        <!-- Window -->
+        <rect x="60" y="200" width="380" height="220" rx="3" fill="none" stroke="#f3ebe0" stroke-width="1.5" opacity="0.5"/>
+        <!-- Hanging hooks -->
+        <line x1="130" y1="200" x2="130" y2="230" stroke="#f3ebe0" stroke-width="1.5" opacity="0.6"/>
+        <path d="M130 230 Q135 240 128 250" stroke="#f3ebe0" stroke-width="1.5" fill="none" opacity="0.6"/>
+        <line x1="200" y1="200" x2="200" y2="235" stroke="#f3ebe0" stroke-width="1.5" opacity="0.6"/>
+        <path d="M200 235 Q205 248 197 258" stroke="#f3ebe0" stroke-width="1.5" fill="none" opacity="0.6"/>
+        <line x1="270" y1="200" x2="270" y2="228" stroke="#f3ebe0" stroke-width="1.5" opacity="0.6"/>
+        <path d="M270 228 Q275 240 267 250" stroke="#f3ebe0" stroke-width="1.5" fill="none" opacity="0.6"/>
+        <line x1="340" y1="200" x2="340" y2="232" stroke="#f3ebe0" stroke-width="1.5" opacity="0.6"/>
+        <path d="M340 232 Q346 244 337 255" stroke="#f3ebe0" stroke-width="1.5" fill="none" opacity="0.6"/>
+        <!-- Cuts of meat silhouettes -->
+        <ellipse cx="130" cy="285" rx="28" ry="38" fill="#8b1a1a" opacity="0.7" transform="rotate(-15,130,285)"/>
+        <ellipse cx="200" cy="290" rx="22" ry="44" fill="#8b1a1a" opacity="0.6" transform="rotate(10,200,290)"/>
+        <ellipse cx="270" cy="282" rx="32" ry="35" fill="#8b1a1a" opacity="0.65" transform="rotate(-8,270,282)"/>
+        <ellipse cx="340" cy="288" rx="25" ry="40" fill="#8b1a1a" opacity="0.6" transform="rotate(12,340,288)"/>
+        <!-- Counter -->
+        <rect x="60" y="430" width="380" height="50" rx="2" fill="#f3ebe0" opacity="0.12"/>
+        <rect x="60" y="425" width="380" height="8" rx="1" fill="#f3ebe0" opacity="0.2"/>
+        <!-- Door -->
+        <rect x="190" y="430" width="120" height="110" rx="2" fill="none" stroke="#f3ebe0" stroke-width="1.5" opacity="0.4"/>
+        <circle cx="295" cy="490" r="3" fill="#f3ebe0" opacity="0.5"/>
+        <!-- Cleaver decoration -->
+        <rect x="220" y="330" width="60" height="28" rx="3" fill="none" stroke="#f3ebe0" stroke-width="1.5" opacity="0.35"/>
+        <rect x="276" y="322" width="10" height="44" rx="2" fill="none" stroke="#f3ebe0" stroke-width="1.5" opacity="0.35"/>
+      </svg>
+    </div>
+
+    <div class="hero__line" aria-hidden="true"></div>
+    <div class="hero__noise" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow fade-up">Sinds generaties — Kontich</p>
+      <h1 class="hero__h1 fade-up" data-delay="1">
+        Uw beenhouwerij
+        <em>in Kontich.</em>
+      </h1>
+      <p class="hero__sub fade-up" data-delay="2">
+        Handgesneden vlees. Eerlijk vakmanschap. Belgische rassen van bij de boer.
+        Van bij ons, voor bij u — elke dag vers.
+      </p>
+      <div class="hero__cta-row fade-up" data-delay="3">
+        <a class="btn-primary" href="tel:034576342">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.07 1.18 2 2 0 012.03 0h3a2 2 0 012 1.72c.127.96.36 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+          </svg>
+          Bestel uw weekend vlees
+        </a>
+        <a class="hero__tel" href="tel:034576342">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.07 1.18 2 2 0 012.03 0h3a2 2 0 012 1.72c.127.96.36 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+          </svg>
+          Bel: 03 457 63 42
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">Scroll</div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- SECTION 2 — AMBACHT                                       -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <section id="ambacht" aria-label="Ons ambacht">
+    <div class="ambacht__layout">
+
+      <div class="ambacht__left">
+        <p class="section-label fade-up">Ons ambacht</p>
+        <h2 class="h2 fade-up" data-delay="1" style="color:var(--ink)">
+          Met twee handen.<br>Geen<br>compromissen.
+        </h2>
+        <p class="ambacht__body fade-up" data-delay="2">
+          Beenhouwerij Kontich staat voor wat het zegt: het vak van de beenhouwerij,
+          beoefend zoals het hoort. Elke snede is manueel werk. Elk stuk vlees is geselecteerd
+          bij Belgische telers die hun dieren goed kennen.
+        </p>
+        <p class="ambacht__body fade-up" data-delay="2">
+          Geen centrale distributie. Geen anoniem koelvlees.
+          Wij weten waar uw vlees vandaan komt — en dat maakt het verschil op uw bord.
+        </p>
+        <blockquote class="ambacht__quote fade-up" data-delay="3">
+          "Van bij ons, voor bij u."
+        </blockquote>
+
+        <div class="ambacht__pillars fade-up" data-delay="4">
+          <div class="ambacht__pillar">
+            <svg class="ambacht__pillar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <h4>Belgische herkomst</h4>
+            <p>Uitsluitend van gekende Belgische boerderijen binnen de regio.</p>
+          </div>
+          <div class="ambacht__pillar">
+            <svg class="ambacht__pillar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+            </svg>
+            <h4>Dagverse aanvoer</h4>
+            <p>Maandag tot zaterdag vers gesneden — nooit ouder dan één dag op de toonbank.</p>
+          </div>
+          <div class="ambacht__pillar">
+            <svg class="ambacht__pillar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/>
+              <path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+              <path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/>
+              <path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/>
+              <path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/>
+              <path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/>
+              <path d="M10 9.5C10 8.67 9.33 8 8.5 8h-5C2.67 8 2 8.67 2 9.5S2.67 11 3.5 11h5c.83 0 1.5-.67 1.5-1.5z"/>
+              <path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"/>
+            </svg>
+            <h4>Manueel vakmanschap</h4>
+            <p>Elk stuk wordt met de hand gesneden, op maat van uw bestelling.</p>
+          </div>
+          <div class="ambacht__pillar">
+            <svg class="ambacht__pillar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+            <h4>Persoonlijk advies</h4>
+            <p>Wij adviseren u over bereiding, snede en seizoensaanbod.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ambacht__right fade-up" data-delay="2">
+        <div class="ambacht__visual">
+          <!-- Decorative SVG butcher interior -->
+          <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;opacity:0.5">
+            <rect width="400" height="500" fill="#120508"/>
+            <!-- Background gradient -->
+            <defs>
+              <radialGradient id="rg1" cx="50%" cy="40%" r="55%">
+                <stop offset="0%" stop-color="#5a0e0e" stop-opacity="0.4"/>
+                <stop offset="100%" stop-color="#120508" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <rect width="400" height="500" fill="url(#rg1)"/>
+            <!-- Tiled floor -->
+            <path d="M0 400 L400 400 L400 500 L0 500Z" fill="#1e0a0a" opacity="0.8"/>
+            <line x1="0" y1="400" x2="400" y2="400" stroke="#f3ebe0" stroke-width="0.8" opacity="0.15"/>
+            <!-- Tile lines -->
+            <line x1="100" y1="400" x2="100" y2="500" stroke="#f3ebe0" stroke-width="0.5" opacity="0.08"/>
+            <line x1="200" y1="400" x2="200" y2="500" stroke="#f3ebe0" stroke-width="0.5" opacity="0.08"/>
+            <line x1="300" y1="400" x2="300" y2="500" stroke="#f3ebe0" stroke-width="0.5" opacity="0.08"/>
+            <line x1="0" y1="450" x2="400" y2="450" stroke="#f3ebe0" stroke-width="0.5" opacity="0.08"/>
+            <!-- Counter front -->
+            <rect x="0" y="350" width="400" height="55" fill="#1a0808" opacity="0.95"/>
+            <rect x="0" y="345" width="400" height="8" fill="#f3ebe0" opacity="0.08"/>
+            <!-- Display case glass -->
+            <rect x="0" y="210" width="400" height="140" fill="#f3ebe0" opacity="0.03"/>
+            <rect x="0" y="210" width="400" height="3" fill="#f3ebe0" opacity="0.15"/>
+            <rect x="0" y="350" width="400" height="3" fill="#f3ebe0" opacity="0.15"/>
+            <!-- Products in display -->
+            <ellipse cx="70" cy="285" rx="38" ry="52" fill="#8b1a1a" opacity="0.55" transform="rotate(-10,70,285)"/>
+            <ellipse cx="155" cy="280" rx="28" ry="58" fill="#7a1515" opacity="0.5" transform="rotate(8,155,280)"/>
+            <ellipse cx="230" cy="285" rx="42" ry="48" fill="#8b1a1a" opacity="0.52" transform="rotate(-5,230,285)"/>
+            <ellipse cx="315" cy="278" rx="30" ry="55" fill="#7a1515" opacity="0.48" transform="rotate(12,315,278)"/>
+            <!-- Hanging bar at top -->
+            <rect x="20" y="100" width="360" height="5" rx="2" fill="#f3ebe0" opacity="0.2"/>
+            <!-- Hooks on bar -->
+            <line x1="80" y1="105" x2="80" y2="130" stroke="#f3ebe0" stroke-width="1.5" opacity="0.5"/>
+            <path d="M80 130 Q88 145 75 160" stroke="#f3ebe0" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <line x1="160" y1="105" x2="160" y2="130" stroke="#f3ebe0" stroke-width="1.5" opacity="0.5"/>
+            <path d="M160 130 Q168 145 155 160" stroke="#f3ebe0" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <line x1="240" y1="105" x2="240" y2="130" stroke="#f3ebe0" stroke-width="1.5" opacity="0.5"/>
+            <path d="M240 130 Q248 145 235 160" stroke="#f3ebe0" stroke-width="1.5" fill="none" opacity="0.5"/>
+            <line x1="320" y1="105" x2="320" y2="130" stroke="#f3ebe0" stroke-width="1.5" opacity="0.5"/>
+            <path d="M320 130 Q328 145 315 160" stroke="#f3ebe0" stroke-width="1.5" fill="none" opacity="0.5"/>
+          </svg>
+          <div class="ambacht__visual-inner">
+            <!-- Stylised "B" monogram -->
+            <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" style="width:80px;height:80px;opacity:0.8" aria-hidden="true">
+              <circle cx="60" cy="60" r="58" stroke="#8b1a1a" stroke-width="1.5" fill="none"/>
+              <text x="60" y="80" font-family="Georgia,serif" font-size="64" fill="#f3ebe0" text-anchor="middle" font-weight="bold" opacity="0.9">B</text>
+            </svg>
+          </div>
+          <span class="ambacht__craft-tag" aria-hidden="true">Vakmanschap</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- SECTION 3 — AANBOD                                        -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <section id="aanbod" aria-label="Ons aanbod">
+
+    <div class="aanbod__header">
+      <div>
+        <p class="section-label fade-up">Ons aanbod</p>
+        <h2 class="h2 fade-up" data-delay="1">Wat u bij ons vindt.</h2>
+      </div>
+      <p class="aanbod__intro fade-up" data-delay="2">
+        Vijf categorieën vlees, elke dag vers. Van rund tot gevogelte —
+        wij snijden het op maat van uw recept en uw gezelschap.
+      </p>
+    </div>
+
+    <div class="aanbod__grid">
+
+      <!-- 1. RUNDSVLEES -->
+      <article class="aanbod__card fade-up" data-delay="1">
+        <span class="aanbod__card-num">01</span>
+        <svg class="aanbod__card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <!-- Stylised bull head -->
+          <path d="M12 3 C8 3 5 5 5 9 C5 13 8 15 12 15 C16 15 19 13 19 9 C19 5 16 3 12 3Z"/>
+          <path d="M5 9 L2 7 M19 9 L22 7"/>
+          <circle cx="9" cy="9" r="1.2" fill="currentColor"/>
+          <circle cx="15" cy="9" r="1.2" fill="currentColor"/>
+          <path d="M9 12 Q12 14 15 12"/>
+          <path d="M8 3 L6 1 M16 3 L18 1"/>
+        </svg>
+        <h3 class="aanbod__card-title">Rundsvlees</h3>
+        <p class="aanbod__card-body">Belgisch witblauw en Limousin. Steak, stoverij, rosbief, filet — gesneden zoals u het wenst.</p>
+        <div class="aanbod__card-tags">
+          <span class="aanbod__tag">Belgisch witblauw</span>
+          <span class="aanbod__tag">Limousin</span>
+        </div>
+        <svg class="aanbod__card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+        </svg>
+      </article>
+
+      <!-- 2. VARKENSVLEES -->
+      <article class="aanbod__card fade-up" data-delay="2">
+        <span class="aanbod__card-num">02</span>
+        <svg class="aanbod__card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <ellipse cx="12" cy="11" rx="7" ry="6"/>
+          <path d="M8 17 L7 21 M16 17 L17 21"/>
+          <path d="M6 13 C3 12 2 9 4 8"/>
+          <path d="M18 13 C21 12 22 9 20 8"/>
+          <circle cx="10" cy="10" r="0.8" fill="currentColor"/>
+          <circle cx="14" cy="10" r="0.8" fill="currentColor"/>
+          <path d="M10 13 Q12 14.5 14 13"/>
+        </svg>
+        <h3 class="aanbod__card-title">Varkensvlees</h3>
+        <p class="aanbod__card-body">Kotelet, varkensgebraad, spareribs, filet. Vers van Belgische boerderijen, vol van smaak.</p>
+        <div class="aanbod__card-tags">
+          <span class="aanbod__tag">Kotelet</span>
+          <span class="aanbod__tag">Gebraad</span>
+        </div>
+        <svg class="aanbod__card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+        </svg>
+      </article>
+
+      <!-- 3. GEHAKT -->
+      <article class="aanbod__card fade-up" data-delay="3">
+        <span class="aanbod__card-num">03</span>
+        <svg class="aanbod__card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <!-- Cleaver shape -->
+          <rect x="4" y="8" width="16" height="10" rx="1.5"/>
+          <rect x="16" y="4" width="4" height="16" rx="1"/>
+          <line x1="4" y1="12" x2="16" y2="12" stroke-width="0.8" opacity="0.5"/>
+          <circle cx="18" cy="5.5" r="1.5" fill="currentColor"/>
+        </svg>
+        <h3 class="aanbod__card-title">Gehakt</h3>
+        <p class="aanbod__card-body">Vers gehakt ter plaatse. Gemengd, runder of half-om-half — elke dag opnieuw bereid.</p>
+        <div class="aanbod__card-tags">
+          <span class="aanbod__tag">Runder</span>
+          <span class="aanbod__tag">Half-om-half</span>
+        </div>
+        <svg class="aanbod__card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+        </svg>
+      </article>
+
+      <!-- 4. BEREIDINGEN -->
+      <article class="aanbod__card fade-up" data-delay="4">
+        <span class="aanbod__card-num">04</span>
+        <svg class="aanbod__card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 11 L3 19 C3 20.1 3.9 21 5 21 L19 21 C20.1 21 21 20.1 21 19 L21 11"/>
+          <rect x="1" y="7" width="22" height="4" rx="1"/>
+          <path d="M12 7 L12 3"/>
+          <path d="M8 3 L16 3"/>
+        </svg>
+        <h3 class="aanbod__card-title">Bereidingen</h3>
+        <p class="aanbod__card-body">Huisgemaakte charcuterie, pâtés, worstjes en gemarineerde stukken. Klaar voor de pan of BBQ.</p>
+        <div class="aanbod__card-tags">
+          <span class="aanbod__tag">Huisgemaakt</span>
+          <span class="aanbod__tag">Gemarineerd</span>
+        </div>
+        <svg class="aanbod__card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+        </svg>
+      </article>
+
+      <!-- 5. GEVOGELTE -->
+      <article class="aanbod__card fade-up" data-delay="5">
+        <span class="aanbod__card-num">05</span>
+        <svg class="aanbod__card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M16 7 C16 4.8 14.2 3 12 3 S8 4.8 8 7 C8 9 9 10.5 10 11.5 L10 20 C10 20.6 10.4 21 11 21 L13 21 C13.6 21 14 20.6 14 20 L14 11.5 C15 10.5 16 9 16 7Z"/>
+          <path d="M8 7 L5 5 M16 7 L19 5"/>
+          <path d="M10 15 L8 17 M14 15 L16 17"/>
+        </svg>
+        <h3 class="aanbod__card-title">Gevogelte</h3>
+        <p class="aanbod__card-body">Kip, kalkoen, eend — heel of in stukken. Seizoensgebonden aanbod van Belgische pluimveebedrijven.</p>
+        <div class="aanbod__card-tags">
+          <span class="aanbod__tag">Kip</span>
+          <span class="aanbod__tag">Kalkoen</span>
+          <span class="aanbod__tag">Eend</span>
+        </div>
+        <svg class="aanbod__card-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/>
+        </svg>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- SECTION 4 — PITCH / HOOK                                  -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <section id="pitch" aria-label="Waarom een website?">
+    <div class="pitch__ghost" aria-hidden="true">ONLINE</div>
+
+    <div class="pitch__layout">
+      <div>
+        <p class="section-label fade-up" style="color:rgba(243,235,224,0.4)">Een eerlijk woord</p>
+        <div class="pitch__stat-row fade-up" data-delay="1">
+          <div class="pitch__stat">
+            <div class="pitch__stat-num">68%</div>
+            <div class="pitch__stat-label">zoekt lokaal online</div>
+          </div>
+          <div class="pitch__stat">
+            <div class="pitch__stat-num">3×</div>
+            <div class="pitch__stat-label">meer nieuwe klanten</div>
+          </div>
+        </div>
+        <h2 class="pitch__headline fade-up" data-delay="2">
+          Geen website = de helft van uw wijk kent u niet.
+        </h2>
+        <p class="pitch__body fade-up" data-delay="3">
+          Mensen zoeken hun slager via hun telefoon. Als u niet verschijnt, kiest de buurt
+          voor wie wél zichtbaar is — ook al bent u de betere vakman. Een eenvoudige online
+          aanwezigheid verandert dat volledig.
+        </p>
+        <blockquote class="pitch__hook fade-up" data-delay="4">
+          <strong>Telefoonnummer is goed.</strong><br>
+          Een adres en openingsuren online is beter.<br>
+          Uw verhaal vertellen wint klanten.
+        </blockquote>
+      </div>
+
+      <div class="pitch__right fade-up" data-delay="2">
+        <div class="pitch__visual-block">
+          <p style="font-family:var(--ff-body);font-size:0.68rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:rgba(243,235,224,0.35);margin-bottom:1.5rem;">Wat u mist zonder online aanwezigheid</p>
+          <ul class="pitch__checklist">
+            <li>
+              <span class="pitch__check" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Nieuwe klanten die "slager Kontich" googelen vinden u niet
+            </li>
+            <li>
+              <span class="pitch__check" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Geen openingsuren online = onnodige telefoons of gemiste bezoeken
+            </li>
+            <li>
+              <span class="pitch__check" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Uw verhaal en kwaliteit blijven onbekend bij de helft van de buurt
+            </li>
+            <li>
+              <span class="pitch__check" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Feestbestellingen worden geplaatst bij de concurrent die wel online staat
+            </li>
+            <li>
+              <span class="pitch__check" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </span>
+              Nieuwe inwoners van Kontich weten niet dat u bestaat
+            </li>
+          </ul>
+
+          <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(243,235,224,0.08)">
+            <a class="btn-primary" href="tel:034576342" style="width:100%;justify-content:center;">
+              Praat met ons: 03 457 63 42
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- SECTION 5 — FEESTMENU                                     -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <section id="feest" aria-label="Feestmenu en grootse bestellingen">
+    <p class="section-label fade-up">Op bestelling</p>
+    <h2 class="h2 fade-up" data-delay="1" style="color:var(--ink);margin-bottom:clamp(2.5rem,4vw,4rem)">
+      Van feestbraden<br>tot hele dieren.
+    </h2>
+
+    <div class="feest__layout">
+
+      <div>
+        <p class="feest__body fade-up">
+          Voor uw kerstdiner, communiefeest, bedrijfsreceptie of familiemaaltijd —
+          wij bereiden groot of klein op bestelling. Bel ons tijdig, dan zorgen wij voor de rest.
+        </p>
+
+        <div class="feest__items fade-up" data-delay="1">
+          <div class="feest__item">
+            <div class="feest__item-num">I</div>
+            <div>
+              <h3 class="feest__item-title">Feestbraad & rollade</h3>
+              <p class="feest__item-desc">Gevuld varkensgebraad, rollade op maat, kerstkip of -kalkoen. Klaar voor de oven.</p>
+            </div>
+          </div>
+          <div class="feest__item">
+            <div class="feest__item-num">II</div>
+            <div>
+              <h3 class="feest__item-title">Hele dieren op bestelling</h3>
+              <p class="feest__item-desc">Lam, big of kalkoen in zijn geheel — mits bestelling minimum 5 dagen op voorhand.</p>
+            </div>
+          </div>
+          <div class="feest__item">
+            <div class="feest__item-num">III</div>
+            <div>
+              <h3 class="feest__item-title">Partyschaal vleeswaren</h3>
+              <p class="feest__item-desc">Opgemaakte schotels charcuterie, carpaccio of vleeswaren voor recepties en buffetten.</p>
+            </div>
+          </div>
+          <div class="feest__item">
+            <div class="feest__item-num">IV</div>
+            <div>
+              <h3 class="feest__item-title">BBQ-pakketten</h3>
+              <p class="feest__item-desc">Samengestelde grill­pakketten: gemarineerde spiesjes, entrecôtes, worstjes en meer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feest__panel fade-up" data-delay="2">
+        <!-- Decorative SVG background element -->
+        <svg class="feest__panel-bg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true">
+          <circle cx="150" cy="150" r="140" stroke="#f3ebe0" stroke-width="1"/>
+          <circle cx="150" cy="150" r="100" stroke="#f3ebe0" stroke-width="0.5"/>
+          <circle cx="150" cy="150" r="60" stroke="#f3ebe0" stroke-width="0.3"/>
+          <line x1="10" y1="150" x2="290" y2="150" stroke="#f3ebe0" stroke-width="0.5"/>
+          <line x1="150" y1="10" x2="150" y2="290" stroke="#f3ebe0" stroke-width="0.5"/>
+          <line x1="51" y1="51" x2="249" y2="249" stroke="#f3ebe0" stroke-width="0.3"/>
+          <line x1="249" y1="51" x2="51" y2="249" stroke="#f3ebe0" stroke-width="0.3"/>
+        </svg>
+
+        <p class="feest__panel-label">Feestbestellingen</p>
+        <h3 class="feest__panel-headline">
+          Uw tafel verdient het beste van Kontich.
+        </h3>
+        <p class="feest__panel-body">
+          Bel ons gerust op voor advies. Wij bespreken uw gezelschap, uw budget en uw
+          smaakvoorkeur. Grote bestellingen reserveren wij met plezier.
+        </p>
+        <div>
+          <p style="font-family:var(--ff-body);font-size:0.68rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:rgba(243,235,224,0.3);margin-bottom:0.75rem;">Rechtstreeks bellen</p>
+          <a class="btn-primary" href="tel:034576342" style="margin-bottom:1rem;display:inline-flex;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.07 1.18 2 2 0 012.03 0h3a2 2 0 012 1.72c.127.96.36 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+            </svg>
+            03 457 63 42
+          </a>
+          <br>
+          <a class="feest__panel-cta" href="#bezoek">
+            Onze locatie bekijken
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+        </div>
+
+        <div style="padding-top:1.5rem;border-top:1px solid rgba(243,235,224,0.08);margin-top:auto;">
+          <p style="font-size:0.78rem;line-height:1.7;color:rgba(243,235,224,0.4);">
+            Tip: bel minimum 3 werkdagen op voorhand voor grotere bestellingen.
+            Voor de feestperiode (Kerst, Nieuwjaar) raden wij 2 weken aan.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- SECTION 6 — BEZOEK                                        -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <section id="bezoek" aria-label="Bezoek ons">
+
+    <div class="bezoek__layout">
+
+      <div>
+        <p class="section-label fade-up">Bezoek ons</p>
+        <h2 class="h2 fade-up" data-delay="1">
+          U vindt ons op de<br>Antwerpsesteenweg.
+        </h2>
+        <p class="bezoek__body fade-up" data-delay="2">
+          Wij zijn gelegen in het hart van Kontich, langs de Antwerpsesteenweg.
+          Makkelijk bereikbaar met de auto of te voet vanuit het centrum.
+          Bel gerust vooraf voor grote bestellingen of vragen over ons aanbod.
+        </p>
+
+        <div class="bezoek__info fade-up" data-delay="3">
+          <div class="bezoek__info-item">
+            <div class="bezoek__info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <p class="bezoek__info-label">Adres</p>
+              <p class="bezoek__info-value">Antwerpsesteenweg 123<br>2550 Kontich, België</p>
+            </div>
+          </div>
+          <div class="bezoek__info-item">
+            <div class="bezoek__info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.07 1.18 2 2 0 012.03 0h3a2 2 0 012 1.72c.127.96.36 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+              </svg>
+            </div>
+            <div>
+              <p class="bezoek__info-label">Telefoon</p>
+              <p class="bezoek__info-value">
+                <a href="tel:034576342" style="color:var(--parchment);">03 457 63 42</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-up" data-delay="2">
+        <!-- Hours table -->
+        <div class="bezoek__hours">
+          <div class="bezoek__hours-title">Openingsuren</div>
+          <div class="bezoek__hours-row">
+            <span class="bezoek__hours-day">Maandag</span>
+            <span class="bezoek__hours-time">08:00 – 18:00</span>
+          </div>
+          <div class="bezoek__hours-row">
+            <span class="bezoek__hours-day">Dinsdag</span>
+            <span class="bezoek__hours-time">08:00 – 18:00</span>
+          </div>
+          <div class="bezoek__hours-row">
+            <span class="bezoek__hours-day">Woensdag</span>
+            <span class="bezoek__hours-time">08:00 – 18:00</span>
+          </div>
+          <div class="bezoek__hours-row">
+            <span class="bezoek__hours-day">Donderdag</span>
+            <span class="bezoek__hours-time">08:00 – 18:00</span>
+          </div>
+          <div class="bezoek__hours-row">
+            <span class="bezoek__hours-day">Vrijdag</span>
+            <span class="bezoek__hours-time">08:00 – 18:30</span>
+          </div>
+          <div class="bezoek__hours-row">
+            <span class="bezoek__hours-day">Zaterdag</span>
+            <span class="bezoek__hours-time">07:30 – 13:00</span>
+          </div>
+          <div class="bezoek__hours-row closed">
+            <span class="bezoek__hours-day">Zondag</span>
+            <span class="bezoek__hours-time">Gesloten</span>
+          </div>
+        </div>
+
+        <!-- Map placeholder -->
+        <div class="bezoek__map" role="img" aria-label="Kaartlocatie: Antwerpsesteenweg 123, Kontich">
+          <div class="bezoek__map-pin" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <p class="bezoek__map-label">Kontich</p>
+          <p class="bezoek__map-address">Antwerpsesteenweg 123<br>2550 Kontich</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- CTA BAND                                                   -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <section id="cta-band" aria-label="Contacteer ons">
+    <p class="ctaband__label fade-up">Bel vandaag nog</p>
+    <h2 class="ctaband__headline fade-up" data-delay="1">
+      Bestel uw weekend vlees.<br>
+      <span style="color:rgba(243,235,224,0.55);">Vers. Op maat. Van bij ons.</span>
+    </h2>
+    <p class="ctaband__sub fade-up" data-delay="2">
+      Bel ons gerust voor advies, bestellingen of vragen.
+      Wij helpen u graag verder — geen website nodig, gewoon bellen.
+    </p>
+    <div class="ctaband__actions fade-up" data-delay="3">
+      <a class="ctaband__tel-big" href="tel:034576342" aria-label="Bel 03 457 63 42">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.07 1.18 2 2 0 012.03 0h3a2 2 0 012 1.72c.127.96.36 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        03 457 63 42
+      </a>
+    </div>
+    <p style="font-size:0.75rem;color:rgba(243,235,224,0.3);position:relative;z-index:1;">
+      Antwerpsesteenweg 123, 2550 Kontich
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- FOOTER                                                     -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer__brand">
+      Beenhouwerij Kontich
+      <span>Antwerpsesteenweg 123 · 2550 Kontich · 03 457 63 42</span>
+    </div>
+    <div class="footer__meta">
+      <p>Geen email · Bereikbaar per telefoon</p>
+      <p style="margin-top:0.25rem;">Ma–Vr 08:00–18:00 · Za 07:30–13:00</p>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <!-- INLINE JS: HEADROOM + INTERSECTION OBSERVER              -->
+  <!-- ══════════════════════════════════════════════════════════ -->
+  <script>
+    // ── Headroom nav ──────────────────────────────────────────
+    (function () {
+      var nav       = document.getElementById('nav');
+      var lastY     = 0;
+      var ticking   = false;
+      var TOL_DOWN  = 8;   // px before hiding on scroll down
+      var TOL_UP    = 5;   // px before showing on scroll up
+      var OFFSET    = 80;  // px from top before headroom activates
+
+      function onScroll() {
+        var y = window.scrollY || window.pageYOffset;
+
+        // At top
+        if (y <= OFFSET) {
+          nav.classList.add('nav--top');
+          nav.classList.remove('nav--hidden');
+          lastY = y;
+          ticking = false;
+          return;
+        }
+
+        nav.classList.remove('nav--top');
+
+        var delta = y - lastY;
+
+        if (delta > TOL_DOWN) {
+          // Scrolling down
+          nav.classList.add('nav--hidden');
+          lastY = y;
+        } else if (delta < -TOL_UP) {
+          // Scrolling up
+          nav.classList.remove('nav--hidden');
+          lastY = y;
+        }
+
+        ticking = false;
+      }
+
+      function requestTick() {
+        if (!ticking) {
+          requestAnimationFrame(onScroll);
+          ticking = true;
+        }
+      }
+
+      window.addEventListener('scroll', requestTick, { passive: true });
+
+      // Init
+      onScroll();
+    }());
+
+    // ── IntersectionObserver fade-up ───────────────────────────
+    (function () {
+      var elements = document.querySelectorAll('.fade-up');
+
+      if (!('IntersectionObserver' in window)) {
+        // Fallback: make all visible
+        elements.forEach(function (el) { el.classList.add('visible'); });
+        return;
+      }
+
+      var observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.12,
+          rootMargin: '0px 0px -40px 0px'
+        }
+      );
+
+      elements.forEach(function (el) { observer.observe(el); });
+    }());
+  </script>
+
+</body>
+</html>

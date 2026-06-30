@@ -1,648 +1,1666 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta name="robots" content="noindex, nofollow" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tartuffe — Artisanale chocolatier &amp; pralines in Wilrijk</title>
-  <meta name="description" content="Artisanale chocolatier in Wilrijk. Handgemaakte pralines, truffels en cadeaudozen. Al 22 jaar ambacht — nu eindelijk online: stel je cadeaudoos samen, bestel met click-and-collect en ontdek onze seizoenscollecties." />
-  <link rel="canonical" href="https://tartuffe-wilrijk.be/" />
-  <meta name="theme-color" content="#3a2417" />
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Tartuffe" />
-  <meta property="og:locale" content="nl_BE" />
-  <meta property="og:title" content="Tartuffe — Artisanale chocolatier &amp; pralines in Wilrijk" />
-  <meta property="og:description" content="Handgemaakte pralines, truffels en cadeaudozen uit Wilrijk. Stel je eigen cadeaudoos samen en reserveer met click-and-collect." />
-  <meta property="og:url" content="https://tartuffe-wilrijk.be/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&w=1200&q=80" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- Inline SVG favicon — monogram "Tf" -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233a2417'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='13' fill='%23c8a06a' text-anchor='middle'%3ETf%3C/text%3E%3C/svg%3E" />
-  <!-- Local-SEO structured data -->
+  <title>Tartuffe — Chocolatier Wilrijk</title>
+  <meta name="description" content="Tartuffe is een ambachtelijke chocolatier in Wilrijk, Antwerpen. Handgemaakte ganaches, truffels en tabletten gemaakt met karakter." />
+
+  <!-- Inline SVG favicon: stylised truffle shape -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='18' r='13' fill='%230e0905'/%3E%3Ccircle cx='16' cy='18' r='13' fill='none' stroke='%238b6e52' stroke-width='1.5'/%3E%3Cellipse cx='11' cy='14' rx='3.5' ry='3' fill='%231a1008' opacity='0.85'/%3E%3Cellipse cx='21' cy='21' rx='3' ry='2.5' fill='%231a1008' opacity='0.8'/%3E%3Cellipse cx='19' cy='12' rx='2.5' ry='2' fill='%231a1008' opacity='0.7'/%3E%3Ccircle cx='9' cy='20' r='2' fill='%231a1008' opacity='0.75'/%3E%3Cpath d='M14 5 C15 3 14 1 15 0' stroke='%238b6e52' stroke-width='1' fill='none' opacity='0.55'/%3E%3Cpath d='M18 4 C20 2 19 0 20 -1' stroke='%238b6e52' stroke-width='0.8' fill='none' opacity='0.4'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts — non-blocking preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500&display=swap" rel="stylesheet" /></noscript>
+
+  <!-- Schema.org JSON-LD — LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": ["Store", "FoodEstablishment"],
+    "@type": "LocalBusiness",
     "name": "Tartuffe",
-    "description": "Artisanale chocolatier en pralinewinkel in Wilrijk. Handgemaakte pralines, truffels, cadeaudozen en seizoenscollecties — al meer dan 22 jaar ambachtelijk gemaakt.",
-    "image": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&w=1200&q=80",
-    "url": "https://tartuffe-wilrijk.be/",
+    "description": "Ambachtelijke chocolatier in Wilrijk, Antwerpen. Handgemaakte ganaches, truffels en tabletten.",
     "telephone": "+3238303020",
-    "servesCuisine": ["Chocolate", "Belgian"],
-    "priceRange": "€€",
-    "areaServed": "BE",
+    "email": "info@tartuffe-wilrijk.be",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Mastplein 43",
-      "postalCode": "2610",
       "addressLocality": "Wilrijk",
       "addressRegion": "Antwerpen",
       "addressCountry": "BE"
     },
-    "geo": { "@type": "GeoCoordinates", "latitude": 51.1697, "longitude": 4.3938 },
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:30", "closes": "18:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "09:30", "closes": "12:30" }
-    ]
+    "priceRange": "€€",
+    "servesCuisine": "Chocolaterie"
   }
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Inter', 'sans-serif'] },
-          colors: {
-            cocoa:    '#3a2417',
-            cocoalt:  '#4a2c1a',
-            gold:     '#c8a06a',
-            goldlt:   '#d8b681',
-            ivory:    '#f6efe4',
-            cream:    '#ece0cd',
-            bark:     '#3b2e1a',
-          },
-        },
-      },
-    };
-  </script>
+
   <style>
-    html { scroll-behavior: smooth; }
-    .hero-grad { background: linear-gradient(180deg, rgba(58,36,23,.18) 0%, rgba(58,36,23,.52) 50%, rgba(58,36,23,.92) 100%); }
-    .fade-up { opacity: 0; transform: translateY(20px); transition: all .75s cubic-bezier(.2,.7,.2,1); }
-    .fade-up.in { opacity: 1; transform: none; }
-    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 2px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
-    .ug:hover { background-size: 100% 2px; }
+    /* ================================================================
+       DESIGN TOKENS
+    ================================================================ */
+    :root {
+      --bg:           #0e0905;
+      --bg-raised:    #130c06;
+      --bg-card:      #1a1008;
+      --accent:       #8b6e52;
+      --accent-lt:    #b89474;
+      --accent-pale:  #c9a882;
+      --ivory:        #f4ede2;
+      --ivory-82:     rgba(244,237,226,0.82);
+      --ivory-55:     rgba(244,237,226,0.55);
+      --ivory-30:     rgba(244,237,226,0.30);
+      --ivory-14:     rgba(244,237,226,0.14);
+      --ivory-07:     rgba(244,237,226,0.07);
+      --font-d:       'Cormorant Garamond', Georgia, serif;
+      --font-b:       'Outfit', system-ui, sans-serif;
+      --ease:         cubic-bezier(0.22, 1, 0.36, 1);
+      --r-sm:         4px;
+      --r-md:         8px;
+      --r-lg:         16px;
+    }
+
+    /* ================================================================
+       RESET
+    ================================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--ivory-82);
+      font-family: var(--font-b);
+      font-weight: 400;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+    img { display: block; max-width: 100%; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ================================================================
+       HEADROOM NAV
+    ================================================================ */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 900;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 clamp(1.5rem, 5vw, 3rem);
+      border-bottom: 1px solid transparent;
+      transition: transform 0.34s var(--ease), background 0.34s var(--ease), border-color 0.3s;
+      will-change: transform;
+    }
+    .nav.hr--pinned   { transform: translateY(0); }
+    .nav.hr--unpinned { transform: translateY(-100%); }
+    .nav.hr--not-top  {
+      background: rgba(14,9,5,0.9);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom-color: var(--ivory-14);
+    }
+
+    .nav__logo {
+      font-family: var(--font-d);
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ivory);
+    }
+
+    .nav__list {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav__list a {
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ivory-82);
+      transition: color 0.2s;
+    }
+    .nav__list a:hover { color: var(--ivory); }
+
+    .nav__cta-link {
+      padding: 0.45rem 1.1rem;
+      border: 1px solid var(--accent);
+      color: var(--accent-pale) !important;
+      border-radius: var(--r-sm);
+      transition: background 0.2s, color 0.2s !important;
+    }
+    .nav__cta-link:hover { background: var(--accent); color: var(--bg) !important; }
+
+    .nav__burger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.4rem;
+      color: var(--ivory);
+    }
+
+    /* ================================================================
+       FADE-UP via IntersectionObserver
+    ================================================================ */
+    .fu {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+    }
+    .fu.in { opacity: 1; transform: none; }
+    .fu.d1 { transition-delay: 0.10s; }
+    .fu.d2 { transition-delay: 0.22s; }
+    .fu.d3 { transition-delay: 0.34s; }
+    .fu.d4 { transition-delay: 0.46s; }
+
+    /* ================================================================
+       SHARED LAYOUT
+    ================================================================ */
+    .wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 clamp(1.5rem, 5vw, 3rem);
+    }
+
+    .eyebrow {
+      display: block;
+      font-family: var(--font-b);
+      font-size: 0.675rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+    }
+
+    /* ================================================================
+       BUTTONS
+    ================================================================ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-b);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border-radius: var(--r-sm);
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.15s;
+      padding: 0.85rem 1.875rem;
+      border: 1px solid transparent;
+    }
+    .btn--solid {
+      background: var(--accent);
+      color: var(--bg);
+      border-color: var(--accent);
+    }
+    .btn--solid:hover {
+      background: var(--accent-pale);
+      border-color: var(--accent-pale);
+      transform: translateY(-1px);
+    }
+    .btn--ghost {
+      background: transparent;
+      color: var(--ivory-82);
+      border-color: var(--ivory-30);
+    }
+    .btn--ghost:hover { border-color: var(--ivory-82); color: var(--ivory); }
+
+    /* ================================================================
+       HERO — image-as-canvas, text bottom-left
+    ================================================================ */
+    .hero {
+      min-height: 100dvh;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+
+    /* SVG background canvas */
+    .hero__bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+    .hero__bg svg { width: 100%; height: 100%; }
+
+    /* Ghost word — large -webkit-text-stroke */
+    .hero__ghost {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -54%);
+      font-family: var(--font-d);
+      font-size: clamp(8rem, 22vw, 20rem);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+      -webkit-text-stroke: 1px rgba(139,110,82,0.16);
+      color: transparent;
+      user-select: none;
+      z-index: 1;
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 2;
+      padding: clamp(1.5rem, 5vw, 3rem);
+      padding-bottom: clamp(4rem, 9vh, 7rem);
+      max-width: 620px;
+    }
+
+    .hero__eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.675rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+    }
+    .hero__eyebrow::before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 1px;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .hero__h1 {
+      font-family: var(--font-d);
+      font-size: clamp(3rem, 7.5vw, 6.25rem);
+      font-weight: 400;
+      line-height: 1.04;
+      letter-spacing: -0.01em;
+      color: var(--ivory);
+      margin-bottom: 1.375rem;
+    }
+    .hero__h1 em { font-style: italic; color: var(--accent-pale); }
+
+    .hero__sub {
+      font-size: clamp(0.9375rem, 1.4vw, 1.0625rem);
+      color: var(--ivory-82);
+      line-height: 1.72;
+      max-width: 430px;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero__actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    /* Vertical rail — right edge second-read moment */
+    .hero__rail {
+      position: absolute;
+      right: clamp(1.5rem, 4vw, 3rem);
+      bottom: 2.5rem;
+      z-index: 2;
+      writing-mode: vertical-rl;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.625rem;
+    }
+    .hero__rail span {
+      font-size: 0.6rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .hero__rail::after {
+      content: '';
+      width: 1px;
+      height: 44px;
+      background: var(--accent);
+      display: block;
+    }
+
+    /* ================================================================
+       ATELIER
+    ================================================================ */
+    .atelier {
+      background: var(--bg-raised);
+      padding: clamp(5rem, 10vh, 8.5rem) 0;
+      border-top: 1px solid var(--ivory-07);
+    }
+    .atelier__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem, 6vw, 6rem);
+      align-items: center;
+    }
+    /* visual first on desktop (right = visual, left = text) */
+    .atelier__visual { order: 2; }
+    .atelier__text   { order: 1; }
+
+    .atelier__svg {
+      width: 100%;
+      max-width: 420px;
+      display: block;
+      margin: 0 auto;
+    }
+    .atelier__caption {
+      text-align: center;
+      font-size: 0.675rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-top: 0.875rem;
+    }
+
+    .atelier__h2 {
+      font-family: var(--font-d);
+      font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+      font-weight: 400;
+      line-height: 1.1;
+      color: var(--ivory);
+      margin-bottom: 1.5rem;
+    }
+    .atelier__h2 em { font-style: italic; color: var(--accent-pale); }
+
+    .atelier__p {
+      font-size: 0.9875rem;
+      color: var(--ivory-82);
+      line-height: 1.76;
+      margin-bottom: 1.125rem;
+    }
+
+    .pillars {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 2rem;
+    }
+    .pillar {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.1rem 1.25rem;
+      background: var(--ivory-07);
+      border: 1px solid var(--ivory-14);
+      border-radius: var(--r-md);
+    }
+    .pillar__ico { width: 34px; height: 34px; flex-shrink: 0; margin-top: 0.1rem; }
+    .pillar__name {
+      font-family: var(--font-d);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ivory);
+      margin-bottom: 0.2rem;
+    }
+    .pillar__desc { font-size: 0.875rem; color: var(--ivory-82); line-height: 1.6; }
+
+    /* ================================================================
+       COLLECTIE
+    ================================================================ */
+    .collectie {
+      background: var(--bg);
+      padding: clamp(5rem, 10vh, 8.5rem) 0;
+      border-top: 1px solid var(--ivory-07);
+    }
+    .collectie__hdr {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 2rem;
+      margin-bottom: clamp(2.5rem, 5vw, 4rem);
+    }
+    .collectie__h2 {
+      font-family: var(--font-d);
+      font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+      font-weight: 400;
+      line-height: 1.1;
+      color: var(--ivory);
+    }
+    .collectie__h2 em { font-style: italic; color: var(--accent-pale); }
+    .collectie__aside {
+      font-size: 0.9375rem;
+      color: var(--ivory-82);
+      max-width: 300px;
+      text-align: right;
+      line-height: 1.65;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      background: var(--bg-card);
+      aspect-ratio: 3/4;
+    }
+    .card__bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+    .card__bg svg { width: 100%; height: 100%; }
+
+    .card__top {
+      position: absolute;
+      top: 1.375rem;
+      left: 1.5rem;
+      z-index: 1;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent-pale);
+      border: 1px solid var(--accent);
+      padding: 0.22rem 0.6rem;
+      border-radius: 2px;
+    }
+
+    .card__body {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      z-index: 1;
+      padding: 2rem 1.625rem 1.875rem;
+      background: linear-gradient(to top, rgba(14,9,5,0.98) 0%, rgba(14,9,5,0.78) 55%, transparent 100%);
+    }
+    .card__num {
+      display: block;
+      font-family: var(--font-d);
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .card__h3 {
+      font-family: var(--font-d);
+      font-size: clamp(1.375rem, 2.5vw, 1.75rem);
+      font-weight: 600;
+      color: var(--ivory);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+    .card__desc { font-size: 0.875rem; color: var(--ivory-82); line-height: 1.6; }
+
+    /* ================================================================
+       BESTELLEN
+    ================================================================ */
+    .bestellen {
+      background: var(--bg-raised);
+      padding: clamp(5rem, 10vh, 8.5rem) 0;
+      border-top: 1px solid var(--ivory-07);
+    }
+    .bestellen__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem, 6vw, 6rem);
+      align-items: center;
+    }
+
+    .bestellen__h2 {
+      font-family: var(--font-d);
+      font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+      font-weight: 400;
+      line-height: 1.1;
+      color: var(--ivory);
+      margin-bottom: 1.25rem;
+    }
+    .bestellen__h2 em { font-style: italic; color: var(--accent-pale); }
+
+    .bestellen__p {
+      font-size: 0.9875rem;
+      color: var(--ivory-82);
+      line-height: 1.76;
+      margin-bottom: 1.875rem;
+    }
+
+    .contact-stack { display: flex; flex-direction: column; gap: 0.875rem; margin-bottom: 2.25rem; }
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.125rem 1.375rem;
+      background: var(--ivory-07);
+      border: 1px solid var(--ivory-14);
+      border-radius: var(--r-md);
+      transition: border-color 0.2s;
+    }
+    .contact-row:hover { border-color: var(--accent); }
+    .contact-ico {
+      width: 38px; height: 38px;
+      flex-shrink: 0;
+      background: var(--bg-card);
+      border: 1px solid var(--ivory-14);
+      border-radius: var(--r-sm);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .contact-lbl {
+      display: block;
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.18rem;
+    }
+    .contact-val {
+      font-family: var(--font-d);
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--ivory);
+    }
+
+    .pitch {
+      padding: 1.875rem;
+      background: linear-gradient(135deg, rgba(139,110,82,0.13) 0%, rgba(139,110,82,0.04) 100%);
+      border: 1px solid var(--accent);
+      border-radius: var(--r-md);
+    }
+    .pitch__eyebrow {
+      display: block;
+      font-size: 0.62rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.625rem;
+    }
+    .pitch__h {
+      font-family: var(--font-d);
+      font-size: clamp(1.25rem, 2.3vw, 1.5rem);
+      font-weight: 600;
+      color: var(--ivory);
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+    .pitch__p {
+      font-size: 0.9375rem;
+      color: var(--ivory-82);
+      line-height: 1.7;
+      margin-bottom: 1.375rem;
+    }
+
+    /* Theatre mask panel */
+    .mask-panel {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      background: var(--bg-card);
+      border: 1px solid var(--ivory-14);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+    }
+    .mask-panel svg { width: 100%; height: 100%; }
+
+    .quote-block {
+      padding: 1.375rem 1.5rem;
+      border-left: 2px solid var(--accent);
+    }
+    .quote-block p {
+      font-family: var(--font-d);
+      font-size: 1.0625rem;
+      font-style: italic;
+      color: var(--ivory);
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+    .quote-block cite {
+      font-size: 0.72rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-style: normal;
+    }
+
+    /* ================================================================
+       BEZOEK
+    ================================================================ */
+    .bezoek {
+      background: var(--bg);
+      padding: clamp(5rem, 10vh, 8.5rem) 0;
+      border-top: 1px solid var(--ivory-07);
+    }
+    .bezoek__grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: clamp(3rem, 6vw, 5rem);
+      align-items: start;
+    }
+
+    .bezoek__h2 {
+      font-family: var(--font-d);
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      font-weight: 400;
+      line-height: 1.1;
+      color: var(--ivory);
+      margin-bottom: 1.125rem;
+    }
+    .bezoek__h2 em { font-style: italic; color: var(--accent-pale); }
+    .bezoek__p { font-size: 0.9375rem; color: var(--ivory-82); line-height: 1.72; margin-bottom: 1.375rem; }
+
+    .addr {
+      padding: 1.375rem;
+      background: var(--ivory-07);
+      border: 1px solid var(--ivory-14);
+      border-radius: var(--r-md);
+      font-size: 0.9375rem;
+      color: var(--ivory-82);
+      line-height: 1.72;
+      margin-bottom: 1.5rem;
+    }
+    .addr strong { color: var(--ivory); }
+    .addr a { color: var(--accent-pale); }
+    .addr a:hover { color: var(--ivory); }
+
+    /* Map placeholder -->
+    .map {
+      aspect-ratio: 16/9;
+      background: var(--bg-card);
+      border: 1px solid var(--ivory-14);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+    }
+    .map svg { width: 100%; height: 100%; }
+
+    /* ================================================================
+       FOOTER
+    ================================================================ */
+    .footer {
+      background: var(--bg);
+      border-top: 1px solid var(--ivory-14);
+      padding: 2.875rem 0 2.25rem;
+    }
+    .footer__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.375rem;
+      margin-bottom: 2rem;
+    }
+    .footer__brand {
+      font-family: var(--font-d);
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ivory);
+    }
+    .footer__tag {
+      font-size: 0.74rem;
+      letter-spacing: 0.08em;
+      color: var(--ivory-55);
+      margin-top: 0.2rem;
+    }
+    .footer__nav { display: flex; gap: 1.875rem; list-style: none; flex-wrap: wrap; }
+    .footer__nav a {
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ivory-55);
+      transition: color 0.2s;
+    }
+    .footer__nav a:hover { color: var(--ivory-82); }
+    .footer__legal {
+      font-size: 0.68rem;
+      color: var(--ivory-30);
+      letter-spacing: 0.05em;
+      text-align: center;
+      padding-top: 1.875rem;
+      border-top: 1px solid var(--ivory-07);
+    }
+    .footer__legal a { color: var(--accent); }
+
+    /* ================================================================
+       RESPONSIVE
+    ================================================================ */
+    @media (max-width: 800px) {
+      .nav__list { display: none; }
+      .nav__list.open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        inset: 68px 0 0 0;
+        background: rgba(14,9,5,0.97);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        padding: 3rem 2rem;
+        gap: 2rem;
+        z-index: 899;
+      }
+      .nav__list.open a { font-size: 1.1rem; }
+      .nav__burger { display: block; }
+
+      .atelier__grid { grid-template-columns: 1fr; }
+      .atelier__visual { order: -1; }
+      .atelier__svg { max-width: 260px; }
+
+      .collectie__hdr { flex-direction: column; align-items: flex-start; }
+      .collectie__aside { text-align: left; max-width: none; }
+      .cards { grid-template-columns: 1fr; }
+      .card { aspect-ratio: 4/3; }
+
+      .bestellen__grid { grid-template-columns: 1fr; }
+      .bezoek__grid    { grid-template-columns: 1fr; }
+
+      .footer__row { flex-direction: column; align-items: flex-start; }
+      .hero__rail  { display: none; }
+    }
+
+    @media (max-width: 480px) {
+      .hero__actions { flex-direction: column; align-items: flex-start; }
+      .btn { width: 100%; justify-content: center; }
+    }
+
+    /* scrollbar */
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
   </style>
 </head>
-<body class="bg-ivory text-cocoa font-sans antialiased selection:bg-gold/25">
+<body>
 
-  <!-- Skip link -->
-  <a href="#bestellen" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-cocoa focus:text-ivory focus:rounded-full">Naar de webshop</a>
+  <!-- ============================================================
+       NAV
+  ============================================================ -->
+  <nav class="nav hr--pinned hr--top" id="mainNav" role="navigation" aria-label="Hoofdnavigatie">
+    <a href="#hero" class="nav__logo" aria-label="Tartuffe — startpagina">Tartuffe</a>
 
-  <!-- Announcement bar -->
-  <div class="bg-cocoa text-ivory text-center text-[13px] tracking-wide py-2 px-4">
-    <span aria-hidden="true">🍫</span> <span class="font-semibold">Eindelijk online:</span> stel je eigen cadeaudoos samen &amp; reserveer met click-and-collect in Wilrijk.
-  </div>
+    <ul class="nav__list" id="navList" role="list">
+      <li><a href="#atelier">Atelier</a></li>
+      <li><a href="#collectie">Collectie</a></li>
+      <li><a href="#bestellen">Bestellen</a></li>
+      <li><a href="tel:+3238303020" class="nav__cta-link">Bel ons</a></li>
+    </ul>
 
-  <!-- Sticky nav -->
-  <header class="sticky top-0 z-50 bg-ivory/88 backdrop-blur border-b border-cocoa/10">
-    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[68px] flex items-center justify-between">
-      <!-- Logo -->
-      <a href="#top" class="flex items-baseline gap-2">
-        <span class="font-serif text-[1.6rem] font-700 tracking-tight text-cocoa">Tartuffe<span class="text-gold">·</span></span>
-        <span class="text-[11px] uppercase tracking-[0.22em] text-cocoa/50 font-600">Chocolatier · Wilrijk</span>
-      </a>
-      <!-- Desktop links -->
-      <div class="hidden md:flex items-center gap-8 text-[15px] font-500">
-        <a href="#bestellen" class="ug">Online bestellen</a>
-        <a href="#assortiment" class="ug">Assortiment</a>
-        <a href="#configurator" class="ug">Stel je doos samen</a>
-        <a href="#bezoek" class="ug">Bezoek ons</a>
-      </div>
-      <!-- CTA + hamburger -->
-      <div class="flex items-center gap-2">
-        <a href="#bestellen" class="inline-flex items-center gap-2 bg-gold text-cocoa text-sm font-700 px-4 sm:px-5 py-2.5 rounded-full hover:bg-goldlt transition">
-          Bestel online
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
-          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-cocoa/15 text-cocoa hover:bg-cocoa/5 transition">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </nav>
-    <!-- Mobile menu -->
-    <div id="mobile-menu" hidden class="md:hidden border-t border-cocoa/10 bg-ivory/95 backdrop-blur">
-      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
-        <a href="#bestellen" class="py-3 border-b border-cocoa/8">Online bestellen</a>
-        <a href="#assortiment" class="py-3 border-b border-cocoa/8">Assortiment</a>
-        <a href="#configurator" class="py-3 border-b border-cocoa/8">Stel je doos samen</a>
-        <a href="#bezoek" class="py-3">Bezoek ons</a>
-      </div>
+    <button class="nav__burger" id="navBurger" aria-label="Menu openen" aria-expanded="false">
+      <svg width="22" height="15" viewBox="0 0 22 15" fill="none" aria-hidden="true">
+        <rect y="0"  width="22" height="1.5" rx="1" fill="currentColor"/>
+        <rect y="6.5" width="16" height="1.5" rx="1" fill="currentColor"/>
+        <rect y="13" width="22" height="1.5" rx="1" fill="currentColor"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- ============================================================
+       HERO — image-as-canvas, text anchored bottom-left
+  ============================================================ -->
+  <section class="hero" id="hero" aria-labelledby="hero-h1">
+
+    <div class="hero__bg" aria-hidden="true">
+      <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="hg" cx="62%" cy="42%" r="68%">
+            <stop offset="0%"   stop-color="#1c0f07"/>
+            <stop offset="50%"  stop-color="#100805"/>
+            <stop offset="100%" stop-color="#0e0905"/>
+          </radialGradient>
+          <linearGradient id="hfade" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%"   stop-color="transparent"/>
+            <stop offset="50%"  stop-color="rgba(14,9,5,0.65)"/>
+            <stop offset="100%" stop-color="#0e0905"/>
+          </linearGradient>
+          <linearGradient id="hfadeL" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%"   stop-color="rgba(14,9,5,0.85)"/>
+            <stop offset="45%"  stop-color="rgba(14,9,5,0.30)"/>
+            <stop offset="100%" stop-color="transparent"/>
+          </linearGradient>
+        </defs>
+
+        <!-- Base fill -->
+        <rect width="1440" height="900" fill="url(#hg)"/>
+
+        <!-- Subtle dot grid -->
+        <g fill="rgba(244,237,226,0.028)">
+          <circle cx="120" cy="90"  r="1.2"/>  <circle cx="240" cy="90"  r="1.2"/>
+          <circle cx="360" cy="90"  r="1.2"/>  <circle cx="480" cy="90"  r="1.2"/>
+          <circle cx="600" cy="90"  r="1.2"/>  <circle cx="720" cy="90"  r="1.2"/>
+          <circle cx="840" cy="90"  r="1.2"/>  <circle cx="960" cy="90"  r="1.2"/>
+          <circle cx="1080" cy="90" r="1.2"/>  <circle cx="1200" cy="90" r="1.2"/>
+          <circle cx="1320" cy="90" r="1.2"/>
+          <circle cx="120" cy="210" r="1.2"/>  <circle cx="240" cy="210" r="1.2"/>
+          <circle cx="360" cy="210" r="1.2"/>  <circle cx="480" cy="210" r="1.2"/>
+          <circle cx="600" cy="210" r="1.2"/>  <circle cx="720" cy="210" r="1.2"/>
+          <circle cx="840" cy="210" r="1.2"/>  <circle cx="960" cy="210" r="1.2"/>
+          <circle cx="1080" cy="210" r="1.2"/> <circle cx="1200" cy="210" r="1.2"/>
+          <circle cx="1320" cy="210" r="1.2"/>
+          <circle cx="120" cy="330" r="1.2"/>  <circle cx="240" cy="330" r="1.2"/>
+          <circle cx="360" cy="330" r="1.2"/>  <circle cx="480" cy="330" r="1.2"/>
+          <circle cx="600" cy="330" r="1.2"/>  <circle cx="720" cy="330" r="1.2"/>
+          <circle cx="840" cy="330" r="1.2"/>  <circle cx="960" cy="330" r="1.2"/>
+          <circle cx="1080" cy="330" r="1.2"/> <circle cx="1200" cy="330" r="1.2"/>
+          <circle cx="1320" cy="330" r="1.2"/>
+          <circle cx="120" cy="450" r="1.2"/>  <circle cx="240" cy="450" r="1.2"/>
+          <circle cx="360" cy="450" r="1.2"/>  <circle cx="480" cy="450" r="1.2"/>
+          <circle cx="600" cy="450" r="1.2"/>  <circle cx="720" cy="450" r="1.2"/>
+          <circle cx="840" cy="450" r="1.2"/>  <circle cx="960" cy="450" r="1.2"/>
+          <circle cx="1080" cy="450" r="1.2"/> <circle cx="1200" cy="450" r="1.2"/>
+          <circle cx="120" cy="570" r="1.2"/>  <circle cx="240" cy="570" r="1.2"/>
+          <circle cx="360" cy="570" r="1.2"/>  <circle cx="600" cy="570" r="1.2"/>
+          <circle cx="840" cy="570" r="1.2"/>  <circle cx="1080" cy="570" r="1.2"/>
+          <circle cx="120" cy="690" r="1.2"/>  <circle cx="360" cy="690" r="1.2"/>
+          <circle cx="600" cy="690" r="1.2"/>  <circle cx="840" cy="690" r="1.2"/>
+          <circle cx="1080" cy="690" r="1.2"/>
+        </g>
+
+        <!-- Large truffle body — dominant right-side element -->
+        <g transform="translate(960,390)">
+          <!-- Main mass -->
+          <ellipse cx="0" cy="0" rx="260" ry="240" fill="#130906"/>
+          <!-- Surface bumps — tuber melanosporum -->
+          <circle cx="-80" cy="-100" r="55"  fill="#0e0804" opacity="0.96"/>
+          <circle cx="70"  cy="-115" r="42"  fill="#0e0804" opacity="0.93"/>
+          <circle cx="145" cy="-45"  r="60"  fill="#0e0804" opacity="0.94"/>
+          <circle cx="130" cy="80"   r="48"  fill="#0e0804" opacity="0.91"/>
+          <circle cx="20"  cy="145"  r="55"  fill="#0e0804" opacity="0.93"/>
+          <circle cx="-100" cy="100" r="45"  fill="#0e0804" opacity="0.9"/>
+          <circle cx="-155" cy="20"  r="40"  fill="#0e0804" opacity="0.88"/>
+          <circle cx="-50"  cy="5"   r="32"  fill="#100905" opacity="0.75"/>
+          <circle cx="50"   cy="30"  r="28"  fill="#100905" opacity="0.7"/>
+          <circle cx="-20"  cy="-55" r="24"  fill="#100905" opacity="0.68"/>
+          <circle cx="180"  cy="20"  r="28"  fill="#0e0804" opacity="0.8"/>
+          <circle cx="-130" cy="-50" r="22"  fill="#0e0804" opacity="0.75"/>
+          <circle cx="90"   cy="-60" r="20"  fill="#0f0905" opacity="0.7"/>
+          <circle cx="-30"  cy="185" r="20"  fill="#0e0804" opacity="0.7"/>
+          <circle cx="80"   cy="165" r="18"  fill="#0f0905" opacity="0.65"/>
+          <!-- Crosshatch lines clipped to truffle -->
+          <clipPath id="tc0">
+            <ellipse cx="0" cy="0" rx="258" ry="238"/>
+          </clipPath>
+          <g clip-path="url(#tc0)" stroke="#8b6e52" stroke-width="0.7" opacity="0.11" fill="none">
+            <line x1="-220" y1="-240" x2="220"  y2="240"/>
+            <line x1="-180" y1="-240" x2="260"  y2="240"/>
+            <line x1="-260" y1="-240" x2="180"  y2="240"/>
+            <line x1="-140" y1="-240" x2="300"  y2="240"/>
+            <line x1="-100" y1="-240" x2="340"  y2="240"/>
+            <line x1="-220" y1="240"  x2="220"  y2="-240"/>
+            <line x1="-180" y1="240"  x2="260"  y2="-240"/>
+            <line x1="-260" y1="240"  x2="180"  y2="-240"/>
+            <line x1="-140" y1="240"  x2="300"  y2="-240"/>
+          </g>
+          <!-- Edge ring -->
+          <ellipse cx="0" cy="0" rx="260" ry="240" stroke="#8b6e52" stroke-width="0.6" fill="none" opacity="0.22"/>
+          <!-- Highlight -->
+          <ellipse cx="-65" cy="-90" rx="80" ry="55" fill="rgba(255,210,140,0.04)" transform="rotate(-20,-65,-90)"/>
+        </g>
+
+        <!-- Aroma wisps -->
+        <g stroke="#8b6e52" stroke-width="1.3" fill="none" stroke-linecap="round" opacity="0.38">
+          <path d="M910 145 C916 122,904 99, 912 76 C920 53,907 30,915 8"    stroke-dasharray="3,5"/>
+          <path d="M938 138 C945 113,932 88, 941 63 C950 38,936 13,944 -12"  stroke-dasharray="3,4"/>
+          <path d="M965 142 C971 118,958 94, 967 70 C976 46,962 22,970 -2"   stroke-dasharray="4,4"/>
+          <path d="M993 150 C998 127,985 104,994 81 C1003 58,990 35,998 12"  stroke-dasharray="3,5"/>
+          <path d="M1018 157 C1022 135,1010 113,1019 91"                      stroke-dasharray="3,4"/>
+        </g>
+
+        <!-- Scattered small fragments -->
+        <ellipse cx="200" cy="750" rx="65" ry="55" fill="#8b6e52" opacity="0.08"/>
+        <ellipse cx="175" cy="750" rx="45" ry="38" fill="#130906" opacity="0.6"/>
+        <ellipse cx="360" cy="110" rx="42" ry="38" fill="#130906" opacity="0.25"/>
+
+        <!-- Bottom left fade for text legibility -->
+        <rect width="1440" height="900" fill="url(#hfadeL)"/>
+        <rect width="1440" height="900" fill="url(#hfade)"/>
+      </svg>
     </div>
-  </header>
 
-  <!-- Hero -->
-  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-cocoa">
-    <img
-      src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&w=2000&q=80"
-      alt="Handgemaakte Belgische pralines bij chocolatier Tartuffe in Wilrijk"
-      fetchpriority="high"
-      class="absolute inset-0 w-full h-full object-cover"
-    />
-    <div class="absolute inset-0 hero-grad"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
-      <p class="text-goldlt font-600 tracking-[0.3em] uppercase text-xs mb-5">
-        <span aria-hidden="true">🍫</span> Artisanale chocolatier · Pralines &amp; cadeaudozen · Wilrijk
-      </p>
-      <h1 class="font-serif text-ivory text-[42px] leading-[1.05] sm:text-7xl font-600 max-w-3xl">
-        22 jaar ambacht,<br />nu eindelijk online.
+    <!-- Ghost word -->
+    <span class="hero__ghost" aria-hidden="true">TARTUFFE</span>
+
+    <!-- Content -->
+    <div class="hero__content">
+      <div class="hero__eyebrow fu">
+        Wilrijk &middot; Antwerpen &middot; Ambacht
+      </div>
+
+      <h1 class="hero__h1 fu d1" id="hero-h1">
+        Chocolade<br />
+        met <em>karakter.</em>
       </h1>
-      <p class="text-ivory/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed">
-        Verse pralines, truffels en mooie cadeaudozen — al meer dan twee decennia
-        met de hand gemaakt in onze winkel op het Mastplein in Wilrijk.
-        Vanaf nu te reserveren via click-and-collect.
+
+      <p class="hero__sub fu d2">
+        Tartuffe is geen winkel. Het is een atelier.
+        Elk stuk is handgemaakt, elke ganache gecomponeerd als een partituur —
+        donker, eerlijk, onverwacht.
       </p>
-      <div class="flex flex-wrap gap-3 mt-9">
-        <a href="#bestellen" class="bg-gold text-cocoa font-700 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
-          Bestel online
+
+      <div class="hero__actions fu d3">
+        <a href="#collectie" class="btn btn--solid">
+          Ontdek het atelier
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </a>
-        <a href="#configurator" class="border border-ivory/45 text-ivory font-600 px-7 py-3.5 rounded-full hover:bg-ivory/10 transition">
-          Stel je eigen doos samen
+        <a href="tel:+3238303020" class="btn btn--ghost">
+          Bel: 03 830 30 20
         </a>
       </div>
     </div>
-  </section>
 
-  <!-- USP strip -->
-  <section class="bg-cocoa text-ivory/90">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
-      <div><p class="font-serif text-2xl text-goldlt">22+ jaar</p><p class="mt-1 text-ivory/65">Ambacht in Wilrijk</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Op maat</p><p class="mt-1 text-ivory/65">Stel je eigen cadeaudoos samen</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Click &amp; collect</p><p class="mt-1 text-ivory/65">Reserveer online, haal af in de winkel</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Seizoen</p><p class="mt-1 text-ivory/65">Wisselende seizoenscollecties</p></div>
+    <div class="hero__rail" aria-hidden="true">
+      <span>Scroll</span>
     </div>
   </section>
 
-  <!-- Webshop / online bestellen -->
-  <section id="bestellen" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <div class="fade-up">
-        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Nieuw: online bestellen</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-cocoa">
-          Reserveer je cadeaus online,<br />haal ze op in Wilrijk.
-        </h2>
-        <p class="text-bark/75 text-lg mt-5 leading-relaxed max-w-md">
-          Een verjaardag, bedankje of feestdag? Kies een cadeaudoos of stel je eigen
-          praline-selectie samen — reserveer online en haal ze klaar en wel op in onze
-          winkel op het Mastplein. Geen wachtrij, geen verrassingen.
-        </p>
-        <ul class="mt-7 space-y-3 text-bark">
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Click-and-collect: online reserveren, afhalen in de winkel</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Persoonlijk cadeaukaartje bij je bestelling</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Altijd dagvers — gemaakt in eigen atelier in Wilrijk</li>
-        </ul>
-        <a href="#configurator" class="inline-flex items-center gap-2 mt-9 bg-cocoa text-ivory font-600 px-7 py-3.5 rounded-full hover:bg-cocoalt transition">
-          Stel je eigen doos samen
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
-      <div class="fade-up grid grid-cols-2 gap-4">
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-cream">
-          <img
-            src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=800&q=80"
-            alt="Assortiment handgemaakte pralines"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
+  <!-- ============================================================
+       ATELIER
+  ============================================================ -->
+  <section class="atelier" id="atelier" aria-labelledby="atelier-h2">
+    <div class="wrap">
+      <div class="atelier__grid">
+
+        <!-- Text -->
+        <div class="atelier__text">
+          <span class="eyebrow fu">Het atelier</span>
+
+          <h2 class="atelier__h2 fu d1" id="atelier-h2">
+            Vakmanschap<br />
+            in elk <em>detail.</em>
+          </h2>
+
+          <p class="atelier__p fu d2">
+            Tartuffe maakt chocolade zoals het hoort: met enkelvoudige origine bonen,
+            gefermenteerde ganaches en seizoensgebonden ingrediënten uit de regio.
+            Geen grote lijnen. Geen compromissen.
+          </p>
+
+          <p class="atelier__p fu d2">
+            De naam verwijst naar de zwarte truffel — rauw, aards, ongepolijst —
+            maar ook naar Molière's meesterwerk over schijn en waarheid.
+            Want echte chocolade liegt nooit.
+          </p>
+
+          <div class="pillars">
+            <div class="pillar fu d2">
+              <svg class="pillar__ico" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+                <circle cx="17" cy="17" r="16" stroke="#8b6e52" stroke-width="1"/>
+                <path d="M9 22 C11 16,13 12,17 10 C21 8,24 12,25 18" stroke="#8b6e52" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+                <circle cx="17" cy="20" r="3.5" fill="#8b6e52" opacity="0.65"/>
+              </svg>
+              <div>
+                <p class="pillar__name">Single-origin cacao</p>
+                <p class="pillar__desc">Bonen van één oorsprong, geselecteerd op terroir. Ecuador, Madagascar of Peru — elk seizoen anders.</p>
+              </div>
+            </div>
+
+            <div class="pillar fu d3">
+              <svg class="pillar__ico" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+                <circle cx="17" cy="17" r="16" stroke="#8b6e52" stroke-width="1"/>
+                <path d="M10 19 L13 13 L17 21 L21 9 L24 17" stroke="#8b6e52" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div>
+                <p class="pillar__name">Truffel-infusies</p>
+                <p class="pillar__desc">Echte truffelaroma's verwerkt in donkere ganaches. Discreet aanwezig, onmiskenbaar herkenbaar.</p>
+              </div>
+            </div>
+
+            <div class="pillar fu d4">
+              <svg class="pillar__ico" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+                <circle cx="17" cy="17" r="16" stroke="#8b6e52" stroke-width="1"/>
+                <rect x="11" y="12" width="12" height="10" rx="1" stroke="#8b6e52" stroke-width="1" fill="none"/>
+                <line x1="11" y1="16" x2="23" y2="16" stroke="#8b6e52" stroke-width="0.8"/>
+                <line x1="17" y1="12" x2="17" y2="22" stroke="#8b6e52" stroke-width="0.8"/>
+              </svg>
+              <div>
+                <p class="pillar__name">Seizoensgebonden collectie</p>
+                <p class="pillar__desc">Het aanbod wisselt. Neem contact op voor de actuele collectie en bijzondere bestellingen.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-cream mt-8">
-          <img
-            src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=800&q=80"
-            alt="Chocolade cadeaudoos als geschenk"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
+
+        <!-- Truffle illustration -->
+        <div class="atelier__visual">
+          <svg class="atelier__svg fu d1" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustratie van een zwarte truffel">
+            <defs>
+              <radialGradient id="trg" cx="36%" cy="33%" r="65%">
+                <stop offset="0%"   stop-color="#2c1b0d"/>
+                <stop offset="100%" stop-color="#0e0905"/>
+              </radialGradient>
+              <radialGradient id="trhl" cx="32%" cy="28%" r="40%">
+                <stop offset="0%"   stop-color="rgba(210,165,100,0.09)"/>
+                <stop offset="100%" stop-color="transparent"/>
+              </radialGradient>
+              <filter id="trShadow">
+                <feDropShadow dx="0" dy="14" stdDeviation="28" flood-color="#0a0603" flood-opacity="0.85"/>
+              </filter>
+            </defs>
+
+            <!-- Shadow plate -->
+            <ellipse cx="210" cy="380" rx="145" ry="22" fill="#0c0805" opacity="0.55"/>
+
+            <!-- Main body -->
+            <g filter="url(#trShadow)">
+              <ellipse cx="210" cy="210" rx="170" ry="158" fill="url(#trg)"/>
+            </g>
+
+            <!-- Surface bumps -->
+            <circle cx="148" cy="148" r="40"  fill="#0f0905" opacity="0.96"/>
+            <circle cx="225" cy="125" r="30"  fill="#100905" opacity="0.92"/>
+            <circle cx="298" cy="160" r="48"  fill="#100905" opacity="0.94"/>
+            <circle cx="310" cy="245" r="40"  fill="#100905" opacity="0.91"/>
+            <circle cx="265" cy="308" r="34"  fill="#100905" opacity="0.89"/>
+            <circle cx="178" cy="298" r="44"  fill="#100905" opacity="0.92"/>
+            <circle cx="115" cy="238" r="37"  fill="#0f0905" opacity="0.9"/>
+            <circle cx="148" cy="290" r="22"  fill="#100a05" opacity="0.82"/>
+            <circle cx="195" cy="192" r="30"  fill="#0f0905" opacity="0.76"/>
+            <circle cx="258" cy="208" r="24"  fill="#0f0905" opacity="0.72"/>
+            <circle cx="188" cy="138" r="18"  fill="#100a05" opacity="0.72"/>
+            <circle cx="280" cy="132" r="16"  fill="#0f0905" opacity="0.67"/>
+            <circle cx="332" cy="198" r="19"  fill="#0f0905" opacity="0.74"/>
+            <circle cx="98"  cy="192" r="18"  fill="#0f0905" opacity="0.72"/>
+            <circle cx="126" cy="162" r="14"  fill="#0f0905" opacity="0.66"/>
+            <circle cx="338" cy="272" r="14"  fill="#0f0905" opacity="0.65"/>
+            <circle cx="80"  cy="268" r="16"  fill="#0f0905" opacity="0.7"/>
+
+            <!-- Crosshatch texture -->
+            <clipPath id="trc">
+              <ellipse cx="210" cy="210" rx="168" ry="156"/>
+            </clipPath>
+            <g clip-path="url(#trc)" stroke="#8b6e52" stroke-width="0.65" opacity="0.14" fill="none">
+              <line x1="40"  y1="55"  x2="380" y2="395"/>
+              <line x1="70"  y1="55"  x2="410" y2="395"/>
+              <line x1="10"  y1="55"  x2="350" y2="395"/>
+              <line x1="-20" y1="55"  x2="320" y2="395"/>
+              <line x1="100" y1="55"  x2="440" y2="395"/>
+              <line x1="40"  y1="395" x2="380" y2="55"/>
+              <line x1="70"  y1="395" x2="410" y2="55"/>
+              <line x1="10"  y1="395" x2="350" y2="55"/>
+              <line x1="-20" y1="395" x2="320" y2="55"/>
+            </g>
+
+            <!-- Highlight sheen -->
+            <ellipse cx="162" cy="165" rx="78" ry="55" fill="url(#trhl)" transform="rotate(-18,162,165)"/>
+
+            <!-- Accent ring -->
+            <ellipse cx="210" cy="210" rx="170" ry="158" stroke="#8b6e52" stroke-width="0.6" fill="none" opacity="0.28"/>
+
+            <!-- Aroma wisps -->
+            <g stroke="#8b6e52" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.42">
+              <path d="M178 50 C183 32,173 14,180 -4"   stroke-dasharray="3,5"/>
+              <path d="M202 44 C209 25,197 6, 205 -13"  stroke-dasharray="3,4"/>
+              <path d="M228 48 C234 30,222 11,230 -8"   stroke-dasharray="4,4"/>
+              <path d="M253 54 C258 37,246 19,254 2"    stroke-dasharray="3,5"/>
+            </g>
+
+            <!-- Small satellite pieces -->
+            <ellipse cx="75"  cy="362" rx="19" ry="14" fill="#1c1008" opacity="0.82"/>
+            <ellipse cx="365" cy="352" rx="14" ry="11" fill="#1c1008" opacity="0.72"/>
+            <ellipse cx="48"  cy="320" rx="10" ry="8"  fill="#1c1008" opacity="0.62"/>
+          </svg>
+          <p class="atelier__caption fu d2">Tuber melanosporum — de zwarte truffel</p>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Assortiment grid -->
-  <section id="assortiment" class="bg-cream/55 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+  <!-- ============================================================
+       COLLECTIE
+  ============================================================ -->
+  <section class="collectie" id="collectie" aria-labelledby="collectie-h2">
+    <div class="wrap">
+
+      <div class="collectie__hdr">
         <div>
-          <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
-          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-cocoa">Pralines, truffels &amp; meer</h2>
+          <span class="eyebrow fu">Collectie</span>
+          <h2 class="collectie__h2 fu d1" id="collectie-h2">
+            Drie lijnen,<br />
+            één <em>filosofie.</em>
+          </h2>
         </div>
-        <p class="text-bark/65 max-w-sm">Alles ambachtelijk gemaakt in eigen atelier — van klassieke pralines tot seizoenscollecties.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <!-- Pralines -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-cocoa text-ivory relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=800&q=80"
-            alt="Handgemaakte pralines"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-cocoa via-cocoa/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Pralines</h3>
-            <p class="text-ivory/75 text-sm mt-1">Klassiekers &amp; nieuwe creaties — ganache, praliné &amp; gianduja.</p>
-          </div>
-        </article>
-        <!-- Truffels -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-cocoa text-ivory relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1605522561233-768ad7a8fabf?auto=format&fit=crop&w=800&q=80"
-            alt="Huisgemaakte chocolade truffels"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-cocoa via-cocoa/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Truffels</h3>
-            <p class="text-ivory/75 text-sm mt-1">Zachte huisgemaakte truffels — het hele jaar door geliefd.</p>
-          </div>
-        </article>
-        <!-- Cadeaudozen -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-cocoa text-ivory relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=800&q=80"
-            alt="Cadeaudozen met chocolade"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-cocoa via-cocoa/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Cadeaudozen</h3>
-            <p class="text-ivory/75 text-sm mt-1">Mooi verpakt &amp; klaar om te geven — verschillende formaten.</p>
-          </div>
-        </article>
-        <!-- Tabletten -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-cocoa text-ivory relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=800&q=80"
-            alt="Fijne chocoladetabletten"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-cocoa via-cocoa/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Tabletten</h3>
-            <p class="text-ivory/75 text-sm mt-1">Puur, melk &amp; wit — met noten, fruit of fleur de sel.</p>
-          </div>
-        </article>
-        <!-- Seizoen -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-cocoa text-ivory relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1547043879-1c47a07d9c6e?auto=format&fit=crop&w=800&q=80"
-            alt="Seizoenscollectie chocolade"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-cocoa via-cocoa/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Seizoenscollecties</h3>
-            <p class="text-ivory/75 text-sm mt-1">Valentijn, Pasen, Moederdag &amp; Kerst — telkens nieuw.</p>
-          </div>
-        </article>
-        <!-- Configurator CTA card -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-gold text-cocoa relative aspect-[4/5] flex items-center justify-center text-center p-6">
-          <div>
-            <p class="font-serif text-2xl font-600">Stel je eigen<br />cadeaudoos samen</p>
-            <p class="text-cocoa/80 text-sm mt-2">Kies zelf je pralines en maak een persoonlijk cadeau op maat.</p>
-            <a href="#configurator" class="inline-block mt-5 text-cocoa font-700 ug">Naar de configurator →</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured products (illustratief) -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="flex items-end justify-between mb-10">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-cocoa">Onze meest gevraagde cadeaus</h2>
-      <a href="#bestellen" class="hidden sm:inline text-gold font-600 ug">Alles bekijken →</a>
-    </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Product 1 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-cream">
-          <img
-            src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=700&q=80"
-            alt="Cadeaudoos met assortiment pralines (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Bestseller</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-cocoa">Cadeaudoos pralines</h3>
-          <p class="text-bark/60 text-sm mt-1">Een ruime selectie van onze huispralines, mooi verpakt.</p>
-          <div class="flex items-center justify-end mt-4">
-            <button class="bg-cocoa text-ivory text-sm font-600 px-4 py-2 rounded-full hover:bg-cocoalt transition">Bekijken</button>
-          </div>
-        </div>
-      </div>
-      <!-- Product 2 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-cream">
-          <img
-            src="https://images.unsplash.com/photo-1605522561233-768ad7a8fabf?auto=format&fit=crop&w=700&q=80"
-            alt="Doos huisgemaakte truffels (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Huisbereiding</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-cocoa">Truffeldoos</h3>
-          <p class="text-bark/60 text-sm mt-1">Zachte, huisgemaakte truffels in een mooie geschenkverpakking.</p>
-          <div class="flex items-center justify-end mt-4">
-            <button class="bg-cocoa text-ivory text-sm font-600 px-4 py-2 rounded-full hover:bg-cocoalt transition">Bekijken</button>
-          </div>
-        </div>
-      </div>
-      <!-- Product 3 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-cream">
-          <img
-            src="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=700&q=80"
-            alt="Chocoladetablet puur (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Seizoen</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-cocoa">Tablet puur</h3>
-          <p class="text-bark/60 text-sm mt-1">Intense pure chocolade met fleur de sel, in eigen atelier gegoten.</p>
-          <div class="flex items-center justify-end mt-4">
-            <button class="bg-cocoa text-ivory text-sm font-600 px-4 py-2 rounded-full hover:bg-cocoalt transition">Bekijken</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p class="text-center text-xs text-bark/40 mt-6">Voorbeeldproducten ter illustratie van de toekomstige cadeauwebshop.</p>
-  </section>
-
-  <!-- Cadeaudoos configurator (the differentiator) -->
-  <section id="configurator" class="bg-cocoa text-ivory py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
-      <div class="order-2 lg:order-1 fade-up">
-        <p class="text-goldlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Cadeaudoos configurator</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">
-          Stel je eigen<br />cadeaudoos samen.
-        </h2>
-        <p class="text-ivory/80 text-lg mt-6 leading-relaxed max-w-md">
-          Kies eerst je doosgrootte en daarna je favoriete pralines uit ons assortiment.
-          Een persoonlijk cadeau dat helemaal naar smaak is — reserveer online en
-          haal het op met click-and-collect in onze winkel in Wilrijk.
+        <p class="collectie__aside fu d2">
+          Elk stuk is handgemaakt in beperkte oplage.
+          Beschikbaarheid varieert per seizoen.
         </p>
+      </div>
 
-        <!-- Concept-illustratie van de configurator -->
-        <div class="mt-8 rounded-2xl bg-ivory/5 border border-ivory/10 p-6">
-          <p class="text-xs uppercase tracking-[0.2em] text-goldlt font-600 mb-4">Stap 1 — kies je doos</p>
-          <div class="grid grid-cols-2 gap-3" role="group" aria-label="Kies je doosgrootte">
-            <button type="button" data-box="12" aria-pressed="true"
-              class="box-opt rounded-xl border-2 border-gold bg-gold/15 px-4 py-5 text-center transition">
-              <span class="block font-serif text-3xl text-ivory">12</span>
-              <span class="block text-ivory/70 text-sm mt-1">stuks</span>
-            </button>
-            <button type="button" data-box="24" aria-pressed="false"
-              class="box-opt rounded-xl border-2 border-ivory/15 px-4 py-5 text-center transition hover:border-ivory/40">
-              <span class="block font-serif text-3xl text-ivory">24</span>
-              <span class="block text-ivory/70 text-sm mt-1">stuks</span>
-            </button>
+      <div class="cards fu d1">
+
+        <!-- Card 1: Ganaches -->
+        <article class="card" aria-label="Ganaches — handgemaakte chocolade vullingen">
+          <div class="card__bg" aria-hidden="true">
+            <svg viewBox="0 0 400 534" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="cg1" cx="50%" cy="38%" r="65%">
+                  <stop offset="0%"   stop-color="#201108"/>
+                  <stop offset="100%" stop-color="#0a0603"/>
+                </radialGradient>
+                <linearGradient id="cwave1" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%"   stop-color="transparent"/>
+                  <stop offset="100%" stop-color="rgba(8,5,2,0.5)"/>
+                </linearGradient>
+              </defs>
+              <rect width="400" height="534" fill="url(#cg1)"/>
+              <!-- Flowing chocolate texture -->
+              <path d="M0 210 C90 168,180 248,270 188 C330 148,390 208,400 168 L400 534 L0 534Z" fill="#130906" opacity="0.72"/>
+              <path d="M0 295 C110 252,210 322,310 270 C365 238,395 282,400 262 L400 534 L0 534Z" fill="#0e0805" opacity="0.82"/>
+              <!-- Ganache cubes -->
+              <g opacity="0.55">
+                <rect x="60"  y="100" width="48" height="48" rx="3" fill="#1d1008" stroke="#8b6e52" stroke-width="0.6"/>
+                <rect x="60"  y="152" width="48" height="48" rx="3" fill="#1d1008" stroke="#8b6e52" stroke-width="0.6"/>
+                <rect x="113" y="100" width="48" height="48" rx="3" fill="#1d1008" stroke="#8b6e52" stroke-width="0.6"/>
+                <rect x="113" y="152" width="48" height="48" rx="3" fill="#1d1008" stroke="#8b6e52" stroke-width="0.6"/>
+                <rect x="166" y="100" width="48" height="48" rx="3" fill="#1d1008" stroke="#8b6e52" stroke-width="0.6"/>
+                <rect x="166" y="152" width="48" height="48" rx="3" fill="#1d1008" stroke="#8b6e52" stroke-width="0.6"/>
+                <!-- Top glint -->
+                <rect x="62"  y="102" width="44" height="9" rx="2" fill="rgba(255,215,140,0.07)"/>
+                <rect x="115" y="102" width="44" height="9" rx="2" fill="rgba(255,215,140,0.07)"/>
+                <rect x="168" y="102" width="44" height="9" rx="2" fill="rgba(255,215,140,0.07)"/>
+              </g>
+              <!-- Gold accent circle -->
+              <circle cx="320" cy="118" r="38" fill="#8b6e52" opacity="0.07"/>
+              <circle cx="320" cy="118" r="20" fill="#8b6e52" opacity="0.09"/>
+              <rect width="400" height="534" fill="url(#cwave1)"/>
+            </svg>
+          </div>
+          <div class="card__top">
+            <span class="badge">Handgemaakt</span>
+          </div>
+          <div class="card__body">
+            <span class="card__num">01</span>
+            <h3 class="card__h3">Ganaches</h3>
+            <p class="card__desc">Donkere, subtiele vullingen op basis van verse room en enkele origine chocolade. Per twee of per twaalf.</p>
+          </div>
+        </article>
+
+        <!-- Card 2: Truffels -->
+        <article class="card" aria-label="Truffels — signatuurstuk van het atelier">
+          <div class="card__bg" aria-hidden="true">
+            <svg viewBox="0 0 400 534" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="cg2" cx="55%" cy="48%" r="70%">
+                  <stop offset="0%"   stop-color="#1e1309"/>
+                  <stop offset="100%" stop-color="#090604"/>
+                </radialGradient>
+              </defs>
+              <rect width="400" height="534" fill="url(#cg2)"/>
+              <!-- Central truffle -->
+              <circle cx="200" cy="205" r="92" fill="#130906"/>
+              <circle cx="200" cy="205" r="92" fill="none" stroke="#8b6e52" stroke-width="0.6" opacity="0.28"/>
+              <!-- Bumps -->
+              <circle cx="160" cy="163" r="24" fill="#0e0805"/>
+              <circle cx="228" cy="153" r="19" fill="#0e0805"/>
+              <circle cx="262" cy="196" r="27" fill="#0e0805"/>
+              <circle cx="248" cy="248" r="20" fill="#0e0805"/>
+              <circle cx="175" cy="257" r="24" fill="#0e0805"/>
+              <circle cx="142" cy="228" r="17" fill="#0e0805"/>
+              <circle cx="198" cy="180" r="16" fill="#0f0906"/>
+              <!-- Crosshatch clip -->
+              <clipPath id="cc2"><circle cx="200" cy="205" r="90"/></clipPath>
+              <g clip-path="url(#cc2)" stroke="#8b6e52" stroke-width="0.5" opacity="0.12" fill="none">
+                <line x1="110" y1="115" x2="290" y2="295"/>
+                <line x1="130" y1="115" x2="310" y2="295"/>
+                <line x1="90"  y1="115" x2="270" y2="295"/>
+                <line x1="110" y1="295" x2="290" y2="115"/>
+                <line x1="90"  y1="295" x2="270" y2="115"/>
+              </g>
+              <!-- Background small truffles -->
+              <circle cx="82"  cy="360" r="44" fill="#130906" opacity="0.78"/>
+              <circle cx="336" cy="385" r="58" fill="#130906" opacity="0.68"/>
+              <circle cx="52"  cy="148" r="30" fill="#130906" opacity="0.58"/>
+              <circle cx="358" cy="136" r="34" fill="#130906" opacity="0.62"/>
+              <!-- Cocoa powder -->
+              <ellipse cx="200" cy="348" rx="88" ry="16" fill="#8b6e52" opacity="0.09"/>
+              <!-- Aroma -->
+              <g stroke="#8b6e52" stroke-width="0.9" fill="none" stroke-linecap="round" opacity="0.28">
+                <path d="M183 110 C188 94,180 78,186 62" stroke-dasharray="2,4"/>
+                <path d="M203 107 C209 90,200 74,206 58" stroke-dasharray="2,4"/>
+                <path d="M221 112 C226 96,217 80,223 64" stroke-dasharray="2,4"/>
+              </g>
+            </svg>
+          </div>
+          <div class="card__top">
+            <span class="badge">Seizoen</span>
+          </div>
+          <div class="card__body">
+            <span class="card__num">02</span>
+            <h3 class="card__h3">Truffels</h3>
+            <p class="card__desc">Gerold in cacaopoeder, met een hart van truffelaroma en bittere chocolade. Het signatuurstuk van het atelier.</p>
+          </div>
+        </article>
+
+        <!-- Card 3: Tabletten -->
+        <article class="card" aria-label="Tabletten — single origin chocolade repen">
+          <div class="card__bg" aria-hidden="true">
+            <svg viewBox="0 0 400 534" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="cg3" cx="40%" cy="52%" r="62%">
+                  <stop offset="0%"   stop-color="#1b1008"/>
+                  <stop offset="100%" stop-color="#070503"/>
+                </radialGradient>
+              </defs>
+              <rect width="400" height="534" fill="url(#cg3)"/>
+              <!-- Chocolate bar top-down view -->
+              <g transform="translate(72,90)">
+                <rect x="0" y="0" width="256" height="172" rx="5" fill="#1e1008"/>
+                <rect x="0" y="0" width="256" height="172" rx="5" stroke="#8b6e52" stroke-width="0.9" fill="none" opacity="0.38"/>
+                <!-- Segments 4 col × 4 row -->
+                <g fill="#180d07" stroke="#2b1508" stroke-width="1">
+                  <rect x="8"   y="8"   width="52" height="36" rx="2"/>
+                  <rect x="66"  y="8"   width="52" height="36" rx="2"/>
+                  <rect x="124" y="8"   width="52" height="36" rx="2"/>
+                  <rect x="182" y="8"   width="66" height="36" rx="2"/>
+                  <rect x="8"   y="50"  width="52" height="36" rx="2"/>
+                  <rect x="66"  y="50"  width="52" height="36" rx="2"/>
+                  <rect x="124" y="50"  width="52" height="36" rx="2"/>
+                  <rect x="182" y="50"  width="66" height="36" rx="2"/>
+                  <rect x="8"   y="92"  width="52" height="36" rx="2"/>
+                  <rect x="66"  y="92"  width="52" height="36" rx="2"/>
+                  <rect x="124" y="92"  width="52" height="36" rx="2"/>
+                  <rect x="182" y="92"  width="66" height="36" rx="2"/>
+                  <rect x="8"   y="128" width="52" height="36" rx="2"/>
+                  <rect x="66"  y="128" width="52" height="36" rx="2"/>
+                  <rect x="124" y="128" width="52" height="36" rx="2"/>
+                  <rect x="182" y="128" width="66" height="36" rx="2"/>
+                </g>
+                <!-- Top glint -->
+                <rect x="0" y="0" width="256" height="22" rx="5" fill="rgba(255,215,140,0.04)"/>
+                <!-- Snapped piece -->
+                <g transform="translate(276, 58)">
+                  <rect x="0" y="0" width="58" height="40" rx="2" fill="#1e1008" stroke="#8b6e52" stroke-width="0.6" opacity="0.88" transform="rotate(-13)"/>
+                  <rect x="8" y="8" width="42" height="24" rx="1.5" fill="#180d07" transform="rotate(-13)"/>
+                  <rect x="0" y="0" width="58" height="11" rx="2" fill="rgba(255,215,140,0.04)" transform="rotate(-13)"/>
+                </g>
+              </g>
+              <!-- Second bar, angled background -->
+              <g transform="translate(40,316) rotate(-7)">
+                <rect x="0" y="0" width="188" height="126" rx="3" fill="#130906" stroke="#8b6e52" stroke-width="0.5" opacity="0.32"/>
+              </g>
+              <!-- Foil wrap hint at bottom -->
+              <path d="M115 454 C158 434,255 452,308 432 L318 468 C274 488,170 472,110 476Z" fill="#8b6e52" opacity="0.10"/>
+              <!-- Label -->
+              <text x="200" y="518" text-anchor="middle" font-family="Georgia, serif" font-size="10" letter-spacing="5" fill="#8b6e52" opacity="0.42">TARTUFFE</text>
+            </svg>
+          </div>
+          <div class="card__top">
+            <span class="badge">Origine</span>
+          </div>
+          <div class="card__body">
+            <span class="card__num">03</span>
+            <h3 class="card__h3">Tabletten</h3>
+            <p class="card__desc">70% tot 90% cacao, enkele origine. Strakke tabletten met duidelijk karakter — recht voor zijn raap, als Wilrijk zelf.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BESTELLEN
+  ============================================================ -->
+  <section class="bestellen" id="bestellen" aria-labelledby="bestellen-h2">
+    <div class="wrap">
+      <div class="bestellen__grid">
+
+        <!-- Text + contact -->
+        <div>
+          <span class="eyebrow fu">Bestellen</span>
+
+          <h2 class="bestellen__h2 fu d1" id="bestellen-h2">
+            Geen webshop.<br />
+            Wél een <em>antwoord.</em>
+          </h2>
+
+          <p class="bestellen__p fu d2">
+            Tartuffe werkt op afroep en maatopdracht. Bel of mail voor
+            beschikbaarheid, persoonlijke samenstellingen, of bestellingen
+            voor evenementen en cadeaus.
+          </p>
+
+          <div class="contact-stack fu d2">
+            <a href="tel:+3238303020" class="contact-row" aria-label="Bel Tartuffe op 03 830 30 20">
+              <div class="contact-ico">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                  <path d="M3 2h3l1.5 3.5-1.8 1.4a10 10 0 004.4 4.4L11.5 9.5 15 11v3a2 2 0 01-2 2A13 13 0 011 4a2 2 0 012-2z" stroke="#8b6e52" stroke-width="1.15" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-lbl">Telefoon</span>
+                <span class="contact-val">03 830 30 20</span>
+              </div>
+            </a>
+
+            <a href="mailto:info@tartuffe-wilrijk.be" class="contact-row" aria-label="Mail Tartuffe op info@tartuffe-wilrijk.be">
+              <div class="contact-ico">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                  <rect x="2" y="4" width="14" height="10" rx="2" stroke="#8b6e52" stroke-width="1.15" fill="none"/>
+                  <path d="M2 6.5l7 4.5 7-4.5" stroke="#8b6e52" stroke-width="1.15" stroke-linecap="round" fill="none"/>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-lbl">E-mail</span>
+                <span class="contact-val">info@tartuffe-wilrijk.be</span>
+              </div>
+            </a>
           </div>
 
-          <p class="text-xs uppercase tracking-[0.2em] text-goldlt font-600 mt-6 mb-3">Stap 2 — kies je pralines</p>
-          <div class="flex flex-wrap gap-2">
-            <span class="rounded-full bg-ivory/10 text-ivory/85 text-sm px-3 py-1.5">Melk praliné</span>
-            <span class="rounded-full bg-ivory/10 text-ivory/85 text-sm px-3 py-1.5">Pure ganache</span>
-            <span class="rounded-full bg-ivory/10 text-ivory/85 text-sm px-3 py-1.5">Gianduja</span>
-            <span class="rounded-full bg-ivory/10 text-ivory/85 text-sm px-3 py-1.5">Karamel &amp; zeezout</span>
-            <span class="rounded-full bg-ivory/10 text-ivory/85 text-sm px-3 py-1.5">Hazelnoot</span>
-            <span class="rounded-full bg-ivory/10 text-ivory/85 text-sm px-3 py-1.5">Koffie</span>
-          </div>
-
-          <div class="mt-6 flex items-center justify-between gap-4">
-            <p class="text-ivory/70 text-sm">Gekozen: <span id="box-size" class="text-ivory font-600">12</span>-stuks doos op maat</p>
-            <a href="#bezoek" class="inline-flex items-center gap-2 bg-gold text-cocoa font-700 px-5 py-2.5 rounded-full hover:bg-goldlt transition">
-              Doos samenstellen
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          <!-- Pitch box -->
+          <div class="pitch fu d3">
+            <span class="pitch__eyebrow">Alleen telefonisch bereikbaar</span>
+            <p class="pitch__h">Uw klanten vinden u niet online — laten we dat veranderen.</p>
+            <p class="pitch__p">
+              Een atelier als Tartuffe verdient een digitaal tehuis dat even zorgvuldig is
+              als het product zelf. Wij bouwen het voor u — met respect voor het ambacht.
+            </p>
+            <a href="mailto:nicolas@saspire.org" class="btn btn--solid">
+              Vraag een voorstel op
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </a>
           </div>
         </div>
-        <p class="text-ivory/40 text-xs mt-4">Concept-illustratie van de online configurator — interactie en pralinekeuze volgen in de definitieve webshop.</p>
-      </div>
 
-      <div class="order-1 lg:order-2 rounded-3xl overflow-hidden aspect-[4/3]">
-        <img
-          src="https://images.unsplash.com/photo-1623660053975-cf75a8be0908?auto=format&fit=crop&w=1000&q=80"
-          alt="Open cadeaudoos met gevarieerde pralines"
-          loading="lazy" decoding="async"
-          class="w-full h-full object-cover"
-        />
+        <!-- Visual: theatre mask + quote -->
+        <div class="fu d2" style="display:flex; flex-direction:column; gap:1.5rem;">
+
+          <div class="mask-panel" role="img" aria-label="Theatrale maskers met chocolade — Molière-verwijzing">
+            <svg viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="mbg" cx="50%" cy="42%" r="62%">
+                  <stop offset="0%"   stop-color="#201208"/>
+                  <stop offset="100%" stop-color="#0c0703"/>
+                </radialGradient>
+              </defs>
+              <rect width="480" height="360" fill="url(#mbg)"/>
+
+              <!-- Background dot texture -->
+              <g fill="#8b6e52" opacity="0.045">
+                <circle cx="48"  cy="48"  r="2"/>  <circle cx="144" cy="32"  r="1.5"/>
+                <circle cx="240" cy="48"  r="2"/>  <circle cx="336" cy="32"  r="1.5"/>
+                <circle cx="432" cy="48"  r="2"/>  <circle cx="96"  cy="112" r="1.5"/>
+                <circle cx="192" cy="96"  r="2"/>  <circle cx="288" cy="112" r="1.5"/>
+                <circle cx="384" cy="96"  r="2"/>  <circle cx="48"  cy="272" r="1.5"/>
+                <circle cx="144" cy="296" r="2"/>  <circle cx="432" cy="296" r="2"/>
+              </g>
+
+              <!-- Comedy mask — left -->
+              <g transform="translate(90,55)">
+                <path d="M0 82 C0 30,32 0,78 0 C124 0,146 30,146 82 C146 134,124 166,78 171 C32 166,0 134,0 82Z"
+                      fill="#1c1008" stroke="#8b6e52" stroke-width="1" opacity="0.9"/>
+                <!-- Brow arch -->
+                <path d="M22 18 C42 -4,62 -8,82 -4 C102 0,122 12,132 26"
+                      stroke="#8b6e52" stroke-width="0.8" fill="none" opacity="0.48"/>
+                <!-- Left eye -->
+                <path d="M24 68 C35 54,56 52,67 68 C56 82,35 82,24 68Z" fill="#080503" stroke="#8b6e52" stroke-width="0.8"/>
+                <ellipse cx="37" cy="65" rx="5" ry="3.5" fill="rgba(255,215,140,0.11)"/>
+                <!-- Right eye -->
+                <path d="M82 68 C93 54,114 52,125 68 C114 82,93 82,82 68Z" fill="#080503" stroke="#8b6e52" stroke-width="0.8"/>
+                <ellipse cx="95" cy="65" rx="5" ry="3.5" fill="rgba(255,215,140,0.11)"/>
+                <!-- Upturned smile -->
+                <path d="M30 120 C50 138,102 138,122 120" stroke="#8b6e52" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <!-- Ribbon -->
+                <path d="M58 171 C63 183,72 188,78 191 C84 188,93 183,98 171"
+                      stroke="#8b6e52" stroke-width="1" fill="none" opacity="0.45"/>
+              </g>
+
+              <!-- Tragedy mask — right -->
+              <g transform="translate(255,68)">
+                <path d="M0 82 C0 30,32 0,78 0 C124 0,146 30,146 82 C146 134,124 166,78 171 C32 166,0 134,0 82Z"
+                      fill="#150e06" stroke="#8b6e52" stroke-width="1" opacity="0.85"/>
+                <!-- Brow arch -->
+                <path d="M22 18 C42 -4,62 -8,82 -4 C102 0,122 12,132 26"
+                      stroke="#8b6e52" stroke-width="0.8" fill="none" opacity="0.43"/>
+                <!-- Frown brows -->
+                <path d="M24 55 C35 48,52 48,65 55" stroke="#8b6e52" stroke-width="0.8" fill="none" opacity="0.5"/>
+                <path d="M80 55 C92 48,109 48,122 55" stroke="#8b6e52" stroke-width="0.8" fill="none" opacity="0.5"/>
+                <!-- Left eye -->
+                <path d="M22 72 C33 58,54 56,65 72 C54 86,33 86,22 72Z" fill="#080503" stroke="#8b6e52" stroke-width="0.8"/>
+                <ellipse cx="35" cy="69" rx="5" ry="3.5" fill="rgba(255,215,140,0.10)"/>
+                <!-- Right eye -->
+                <path d="M80 72 C91 58,112 56,123 72 C112 86,91 86,80 72Z" fill="#080503" stroke="#8b6e52" stroke-width="0.8"/>
+                <ellipse cx="93" cy="69" rx="5" ry="3.5" fill="rgba(255,215,140,0.10)"/>
+                <!-- Tear -->
+                <path d="M32 90 C30 98,28 105,30 112" stroke="#8b6e52" stroke-width="0.8" fill="none" opacity="0.38" stroke-linecap="round"/>
+                <!-- Downturned mouth -->
+                <path d="M28 124 C48 108,108 108,128 124" stroke="#8b6e52" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                <!-- Ribbon -->
+                <path d="M58 171 C63 183,72 188,78 191 C84 188,93 183,98 171"
+                      stroke="#8b6e52" stroke-width="1" fill="none" opacity="0.42"/>
+              </g>
+
+              <!-- Chocolate drips from tops of masks -->
+              <path d="M170 57 C170 68,168 80,169 96 C170 108,172 116,171 128 L171 136 C171 141,174 144,174 144 C174 144,170 145,170 136" fill="#0e0805" opacity="0.9"/>
+              <path d="M192 57 C191 70,189 84,190 102 C191 114,193 120,192 132" fill="#0f0906" opacity="0.85"/>
+              <path d="M335 70 C335 84,333 100,334 118 C335 130,337 138,336 152 L337 160 C337 166,340 168,340 168 C340 168,335 169,335 160" fill="#0e0805" opacity="0.88"/>
+              <path d="M358 70 C357 86,355 104,356 120 C357 130,359 136,358 148" fill="#0f0906" opacity="0.82"/>
+
+              <!-- Caption -->
+              <text x="240" y="342" text-anchor="middle" font-family="Georgia, serif" font-size="9" letter-spacing="5" fill="#8b6e52" opacity="0.38">COMÉDIE &amp; TRAGÉDIE</text>
+
+              <!-- Corner brackets -->
+              <g stroke="#8b6e52" stroke-width="0.5" opacity="0.28" fill="none">
+                <polyline points="0,36 0,0 36,0"/><polyline points="480,36 480,0 444,0"/>
+                <polyline points="0,324 0,360 36,360"/><polyline points="480,324 480,360 444,360"/>
+              </g>
+            </svg>
+          </div>
+
+          <blockquote class="quote-block">
+            <p>"De schijn bedriegt. Maar echte chocolade — nooit."</p>
+            <cite>— Tartuffe, Wilrijk</cite>
+          </blockquote>
+
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Story / vakmanschap -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
-    <div class="fade-up">
-      <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
-      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-cocoa">22 jaar vakmanschap in elke praline.</h2>
-      <p class="text-bark/70 text-lg mt-6 leading-relaxed">
-        Bij Tartuffe draait al meer dan twee decennia alles om ambacht. Onze pralines,
-        truffels en tabletten worden met de hand gemaakt in eigen atelier, met
-        zorgvuldig gekozen chocolade en verse ingrediënten — zonder compromis op smaak.
+  <!-- ============================================================
+       BEZOEK
+  ============================================================ -->
+  <section class="bezoek" id="bezoek" aria-labelledby="bezoek-h2">
+    <div class="wrap">
+      <div class="bezoek__grid">
+
+        <div>
+          <span class="eyebrow fu">Bezoek</span>
+          <h2 class="bezoek__h2 fu d1" id="bezoek-h2">
+            In het hart<br />
+            van <em>Wilrijk.</em>
+          </h2>
+          <p class="bezoek__p fu d2">
+            Het atelier bevindt zich in Wilrijk, een steenworp van het centrum van Antwerpen.
+            Bezoek op afspraak. Bel of mail vooraf.
+          </p>
+          <div class="addr fu d2">
+            <strong>Tartuffe</strong><br />
+            Wilrijk, Antwerpen<br /><br />
+            <a href="tel:+3238303020">03 830 30 20</a><br />
+            <a href="mailto:info@tartuffe-wilrijk.be">info@tartuffe-wilrijk.be</a>
+          </div>
+          <div class="fu d3">
+            <a href="tel:+3238303020" class="btn btn--solid">
+              Bel voor een afspraak
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Map placeholder -->
+        <div class="map fu d2" role="img" aria-label="Situatiekaart — Tartuffe in Wilrijk, Antwerpen">
+          <svg viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="mpg" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M40 0L0 0 0 40" fill="none" stroke="rgba(139,110,82,0.09)" stroke-width="0.5"/>
+              </pattern>
+              <pattern id="mpb" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+                <rect x="6" y="6" width="68" height="30" rx="2" fill="rgba(139,110,82,0.055)"/>
+                <rect x="6" y="42" width="32" height="30" rx="2" fill="rgba(139,110,82,0.045)"/>
+                <rect x="44" y="42" width="30" height="30" rx="2" fill="rgba(139,110,82,0.065)"/>
+              </pattern>
+            </defs>
+            <rect width="640" height="360" fill="#100804"/>
+            <rect width="640" height="360" fill="url(#mpg)"/>
+            <rect width="640" height="360" fill="url(#mpb)"/>
+            <!-- Major roads -->
+            <line x1="0"   y1="180" x2="640" y2="180" stroke="rgba(139,110,82,0.22)" stroke-width="2.5"/>
+            <line x1="320" y1="0"   x2="320" y2="360" stroke="rgba(139,110,82,0.22)" stroke-width="2.5"/>
+            <line x1="0"   y1="90"  x2="640" y2="270" stroke="rgba(139,110,82,0.1)"  stroke-width="1.5"/>
+            <line x1="640" y1="90"  x2="0"   y2="270" stroke="rgba(139,110,82,0.1)"  stroke-width="1.5"/>
+            <!-- Road labels -->
+            <text x="158" y="173" text-anchor="middle" font-family="sans-serif" font-size="7" fill="rgba(244,237,226,0.28)" letter-spacing="1">BOOMSESTEENWEG</text>
+            <text x="482" y="173" text-anchor="middle" font-family="sans-serif" font-size="7" fill="rgba(244,237,226,0.28)" letter-spacing="1">PRINS BOUDEWIJNLAAN</text>
+            <!-- Neighbourhood -->
+            <text x="160" y="105" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="rgba(244,237,226,0.17)" letter-spacing="3">WILRIJK</text>
+            <text x="495" y="288" text-anchor="middle" font-family="Georgia, serif" font-size="9"  fill="rgba(244,237,226,0.11)" letter-spacing="2">ANTWERPEN</text>
+            <!-- Glow rings around pin -->
+            <circle cx="320" cy="180" r="60"  stroke="#8b6e52" stroke-width="0.5"  stroke-dasharray="3,5" fill="none" opacity="0.28"/>
+            <circle cx="320" cy="180" r="110" stroke="#8b6e52" stroke-width="0.3"  stroke-dasharray="2,6" fill="none" opacity="0.14"/>
+            <!-- Pin -->
+            <circle cx="320" cy="180" r="18" fill="rgba(139,110,82,0.14)"/>
+            <circle cx="320" cy="180" r="10" fill="rgba(139,110,82,0.28)"/>
+            <circle cx="320" cy="180" r="4.5" fill="#8b6e52"/>
+            <!-- Label bubble -->
+            <rect x="231" y="148" width="92" height="24" rx="3" fill="#0e0905" stroke="#8b6e52" stroke-width="0.8"/>
+            <text x="277" y="164" text-anchor="middle" font-family="Georgia, serif" font-size="9" letter-spacing="2.5" fill="#c9a882">TARTUFFE</text>
+            <!-- North indicator -->
+            <g transform="translate(602,28)">
+              <circle cx="0" cy="0" r="15" fill="rgba(139,110,82,0.09)" stroke="#8b6e52" stroke-width="0.5"/>
+              <path d="M0 -11 L3.5 3 L0 0.5 L-3.5 3Z" fill="#8b6e52" opacity="0.82"/>
+              <path d="M0 11  L3.5 -3 L0 -0.5 L-3.5 -3Z" fill="rgba(139,110,82,0.28)"/>
+              <text x="0" y="-16" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#8b6e52" opacity="0.65">N</text>
+            </g>
+          </svg>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="wrap">
+      <div class="footer__row">
+        <div>
+          <p class="footer__brand">Tartuffe</p>
+          <p class="footer__tag">Ambachtelijke chocolatier — Wilrijk, Antwerpen</p>
+        </div>
+        <ul class="footer__nav" role="list">
+          <li><a href="#atelier">Atelier</a></li>
+          <li><a href="#collectie">Collectie</a></li>
+          <li><a href="tel:+3238303020">03 830 30 20</a></li>
+          <li><a href="mailto:info@tartuffe-wilrijk.be">E-mail</a></li>
+        </ul>
+      </div>
+      <p class="footer__legal">
+        &copy; 2025 Tartuffe, Wilrijk &mdash; Chocolade met karakter.
+        Uw klanten vinden u niet online.
+        <a href="mailto:nicolas@saspire.org">Laten we dat veranderen.</a>
       </p>
-      <p class="text-bark/70 text-lg mt-4 leading-relaxed">
-        Vanuit onze winkel op het Mastplein in Wilrijk zijn we al jaren een vertrouwd
-        adres in de buurt. Of u nu langskomt voor een doosje voor onderweg of een
-        cadeaudoos voor een speciale gelegenheid: u proeft het verschil van échte
-        ambachtelijke chocolade.
-      </p>
-      <div class="mt-9 flex flex-wrap gap-6">
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">22+</p>
-          <p class="text-bark/65 text-sm mt-1">Jaar ambacht</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">100%</p>
-          <p class="text-bark/65 text-sm mt-1">Ambachtelijk gemaakt</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">4</p>
-          <p class="text-bark/65 text-sm mt-1">Seizoenscollecties per jaar</p>
-        </div>
-      </div>
-    </div>
-    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
-      <img
-        src="https://images.unsplash.com/photo-1574265933369-9d4d9c2d3eea?auto=format&fit=crop&w=1000&q=80"
-        alt="Chocolatier aan het werk in het atelier"
-        loading="lazy" decoding="async"
-        class="w-full h-full object-cover"
-      />
-    </div>
-  </section>
-
-  <!-- Bezoek + kaart -->
-  <section id="bezoek" class="bg-cream/55 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
-      <div class="fade-up">
-        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-cocoa">Onze winkel in Wilrijk</h2>
-        <p class="text-bark/70 text-lg mt-5 max-w-md">
-          Kom proeven en kiezen op het Mastplein 43 in Wilrijk — of reserveer online
-          en haal je cadeaudoos klaar en wel op met click-and-collect.
-        </p>
-        <dl class="mt-9 space-y-5 text-bark">
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📍</span>
-            <div>
-              <dt class="font-600 text-cocoa">Adres</dt>
-              <dd class="text-bark/70">Mastplein 43, 2610 Wilrijk</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🕑</span>
-            <div>
-              <dt class="font-600 text-cocoa">Openingsuren</dt>
-              <dd class="text-bark/70">Di–Za: 09:30–18:00 · Zo: 09:30–12:30 · Ma: gesloten</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📞</span>
-            <div>
-              <dt class="font-600 text-cocoa">Telefoon</dt>
-              <dd class="text-bark/70"><a href="tel:+3238303020" class="ug">03 830 30 20</a></dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🛍️</span>
-            <div>
-              <dt class="font-600 text-cocoa">Click &amp; collect</dt>
-              <dd class="text-bark/70">Reserveer online, haal af in de winkel — geen wachtrij</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">💳</span>
-            <div>
-              <dt class="font-600 text-cocoa">Betaalmogelijkheden</dt>
-              <dd class="text-bark/70">Cash · Bancontact · Visa · Online (Mollie)</dd>
-            </div>
-          </div>
-        </dl>
-        <a href="#bestellen" class="inline-block mt-9 bg-cocoa text-ivory font-600 px-7 py-3.5 rounded-full hover:bg-cocoalt transition">
-          Of bestel online →
-        </a>
-      </div>
-      <!-- OpenStreetMap embed — Mastplein 43, 2610 Wilrijk (~51.1697, 4.3938) -->
-      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-cream shadow-sm">
-        <iframe
-          title="Kaart Tartuffe — Mastplein 43, 2610 Wilrijk"
-          class="w-full h-full min-h-[360px] border-0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=4.386%2C51.166%2C4.402%2C51.174&layer=mapnik&marker=51.1697%2C4.3938"
-        ></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- GDPR Newsletter -->
-  <section class="bg-gold/15">
-    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-cocoa">Blijf op de hoogte</h2>
-      <p class="text-bark/70 mt-3">Nieuwe seizoenscollecties, feestdagsaanbiedingen en exclusieve cadeaudozen — af en toe in je mailbox.</p>
-      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
-        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
-        <input
-          id="nl-email"
-          name="email"
-          type="email"
-          autocomplete="email"
-          required
-          placeholder="jouw@email.be"
-          class="flex-1 px-5 py-3 rounded-full border border-cocoa/20 bg-ivory focus:outline-none focus:ring-2 focus:ring-gold"
-        />
-        <button class="bg-cocoa text-ivory font-600 px-7 py-3 rounded-full hover:bg-cocoalt transition">Inschrijven</button>
-      </form>
-      <p class="text-xs text-bark/50 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof.</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-cocoa text-ivory/80">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div>
-        <p class="font-serif text-2xl text-ivory font-700">Tartuffe<span class="text-gold">·</span></p>
-        <p class="text-ivory/55 text-sm mt-1">Chocolatier</p>
-        <p class="text-ivory/55 text-sm mt-3 max-w-xs">Artisanale chocolatier &amp; pralines op het Mastplein in Wilrijk. Al 22+ jaar ambachtelijk gemaakt in eigen atelier.</p>
-      </div>
-      <div>
-        <p class="font-600 text-ivory mb-3">Winkel</p>
-        <ul class="space-y-2 text-sm text-ivory/60">
-          <li><a href="#assortiment" class="hover:text-goldlt">Assortiment</a></li>
-          <li><a href="#bestellen" class="hover:text-goldlt">Online bestellen</a></li>
-          <li><a href="#configurator" class="hover:text-goldlt">Stel je doos samen</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-ivory mb-3">Info</p>
-        <ul class="space-y-2 text-sm text-ivory/60">
-          <li><a href="#bezoek" class="hover:text-goldlt">Openingsuren</a></li>
-          <li><a href="#bezoek" class="hover:text-goldlt">Contact</a></li>
-          <li><a href="#top" class="hover:text-goldlt">Ons verhaal</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-ivory mb-3">Contact</p>
-        <ul class="space-y-2 text-sm text-ivory/60">
-          <li>Mastplein 43, 2610 Wilrijk</li>
-          <li><a href="tel:+3238303020" class="hover:text-goldlt">03 830 30 20</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="border-t border-ivory/10">
-      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-ivory/40">
-        <p>© 2026 Tartuffe. Concept-redesign.</p>
-        <p>Proof of concept — gebouwd voor een gesprek over jullie eerste website &amp; webshop.</p>
-      </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
+  <!-- ============================================================
+       JS — Headroom + IntersectionObserver + mobile nav
+  ============================================================ -->
   <script>
-    // Fade-up IntersectionObserver
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
-    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
+  (function () {
+    'use strict';
+
+    /* ── Headroom ──────────────────────────────────────────── */
+    var nav        = document.getElementById('mainNav');
+    var TOL_DOWN   = 8;
+    var TOL_UP     = 5;
+    var OFFSET     = 80;
+    var lastY      = 0;
+    var ticking    = false;
+    var accum      = 0;
+
+    function applyHeadroom () {
+      var y = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (y < OFFSET) {
+        nav.classList.add('hr--top');
+        nav.classList.remove('hr--not-top', 'hr--unpinned');
+        nav.classList.add('hr--pinned');
+        lastY = y;
+        ticking = false;
+        return;
+      }
+
+      nav.classList.remove('hr--top');
+      nav.classList.add('hr--not-top');
+
+      var delta = y - lastY;
+
+      if (delta > 0) {
+        accum += delta;
+        if (accum > TOL_DOWN) {
+          nav.classList.add('hr--unpinned');
+          nav.classList.remove('hr--pinned');
+        }
+      } else {
+        accum += delta;
+        if (accum < -TOL_UP) {
+          nav.classList.remove('hr--unpinned');
+          nav.classList.add('hr--pinned');
+        }
+      }
+
+      if ((delta > 0 && accum < 0) || (delta < 0 && accum > 0)) { accum = 0; }
+
+      lastY = y;
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', function () {
+      if (!ticking) { requestAnimationFrame(applyHeadroom); ticking = true; }
+    }, { passive: true });
+
+    /* ── IntersectionObserver fade-up ──────────────────────── */
+    var fuEls = document.querySelectorAll('.fu');
+
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.10, rootMargin: '0px 0px -44px 0px' });
+
+      fuEls.forEach(function (el) { io.observe(el); });
     } else {
-      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1600);
+      fuEls.forEach(function (el) { el.classList.add('in'); });
     }
 
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (menuBtn && mobileMenu) {
-      const setOpen = (open) => {
-        if (open) mobileMenu.removeAttribute('hidden');
-        else mobileMenu.setAttribute('hidden', '');
-        menuBtn.setAttribute('aria-expanded', String(open));
-        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
-      };
-      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
-      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
-    }
+    /* ── Mobile nav ─────────────────────────────────────────── */
+    var burger  = document.getElementById('navBurger');
+    var navList = document.getElementById('navList');
 
-    // Cadeaudoos configurator (concept) — toggle 12 / 24
-    const boxOpts = document.querySelectorAll('.box-opt');
-    const boxSize = document.getElementById('box-size');
-    boxOpts.forEach((btn) => btn.addEventListener('click', () => {
-      boxOpts.forEach((b) => {
-        const active = b === btn;
-        b.setAttribute('aria-pressed', String(active));
-        b.classList.toggle('border-gold', active);
-        b.classList.toggle('bg-gold/15', active);
-        b.classList.toggle('border-ivory/15', !active);
+    burger.addEventListener('click', function () {
+      var open = navList.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+    });
+
+    navList.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        navList.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
+        burger.setAttribute('aria-label', 'Menu openen');
       });
-      if (boxSize) boxSize.textContent = btn.getAttribute('data-box');
-    }));
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!nav.contains(e.target)) {
+        navList.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+  }());
   </script>
+
 </body>
 </html>

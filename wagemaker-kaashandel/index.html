@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>W en M Wagemaker Kaashandel – Lier</title>
+  <meta name="description" content="W en M Wagemaker Kaashandel – al jaren uw kaasboer op de markt in Lier. Jong, belegen, oud, geit, schaap en speciale kazen rechtstreeks van de toonbank." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23b8622a'/%3E%3Ccircle cx='16' cy='16' r='11' fill='%23f8f3e8'/%3E%3Cellipse cx='12' cy='14' rx='2.5' ry='2' fill='%23b8622a' opacity='.45'/%3E%3Cellipse cx='19' cy='18' rx='2' ry='1.6' fill='%23b8622a' opacity='.35'/%3E%3Cellipse cx='16' cy='12' rx='1.5' ry='1.2' fill='%23b8622a' opacity='.3'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts – non-blocking preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Outfit:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Outfit:wght@400;500&display=swap" rel="stylesheet" /></noscript>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "W en M Wagemaker Kaashandel",
+    "description": "Gespecialiseerde kaashandel op de markt van Lier. Jong, belegen, oud, geitenkaas, schapenkaas en speciale kazen.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lier",
+      "addressCountry": "BE"
+    },
+    "email": "wagemakersven@hotmail.com",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "07:00",
+        "closes": "13:00"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ============================
+       RESET & CUSTOM PROPERTIES
+       ============================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --linen:    #f8f3e8;
+      --linen-dk: #ede6d3;
+      --ochre:    #b8622a;
+      --ochre-lt: #d4844e;
+      --ochre-dk: #8a4520;
+      --ink:      #2a1a0a;
+      --ink-60:   rgba(42, 26, 10, 0.60);
+      --ink-30:   rgba(42, 26, 10, 0.30);
+      --ink-12:   rgba(42, 26, 10, 0.12);
+      --cream:    #f2ead8;
+      --sand:     #e8ddc8;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body:    'Outfit', system-ui, sans-serif;
+      --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+      --nav-h: 68px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      background: var(--linen);
+      color: var(--ink);
+      font-family: var(--font-body);
+      font-weight: 400;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img { display: block; max-width: 100%; }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* ============================
+       HEADROOM NAV
+       ============================ */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      height: var(--nav-h);
+      background: rgba(248, 243, 232, 0.96);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--ink-12);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2.5rem;
+      transition: transform 0.32s var(--ease-out), box-shadow 0.32s;
+      will-change: transform;
+    }
+
+    .nav.headroom--pinned   { transform: translateY(0); }
+    .nav.headroom--unpinned { transform: translateY(-100%); }
+    .nav.headroom--not-top  { box-shadow: 0 2px 18px rgba(42,26,10,.10); }
+
+    .nav-brand {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .nav-brand-initials {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 1.25rem;
+      letter-spacing: 0.04em;
+      color: var(--ochre-dk);
+    }
+
+    .nav-brand-sub {
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ink-60);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--ink);
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--ochre); }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--linen) !important;
+      background: var(--ochre);
+      border-radius: 2px;
+      padding: 0.5rem 1.1rem;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .nav-cta:hover {
+      background: var(--ochre-dk);
+      transform: translateY(-1px);
+    }
+
+    /* ============================
+       FADE-UP OBSERVER
+       ============================ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.72s var(--ease-out), transform 0.72s var(--ease-out);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-d1 { transition-delay: 0.08s; }
+    .reveal-d2 { transition-delay: 0.18s; }
+    .reveal-d3 { transition-delay: 0.28s; }
+    .reveal-d4 { transition-delay: 0.38s; }
+    .reveal-d5 { transition-delay: 0.46s; }
+    .reveal-d6 { transition-delay: 0.54s; }
+
+    /* ============================
+       SECTION UTILITIES
+       ============================ */
+    section {
+      position: relative;
+    }
+
+    .container {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .label-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ochre);
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: clamp(2rem, 4vw, 2.85rem);
+      line-height: 1.18;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+    }
+
+    .section-body {
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      color: var(--ink-60);
+      max-width: 52ch;
+    }
+
+    /* ============================
+       §1 HERO
+       ============================ */
+    #hero {
+      min-height: 100dvh;
+      background: var(--ink);
+      display: grid;
+      grid-template-rows: 1fr;
+      overflow: hidden;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 100dvh;
+    }
+
+    /* Left side – SVG market stall illustration */
+    .hero-visual {
+      position: relative;
+      background: #1c1008;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-ghost-word {
+      position: absolute;
+      bottom: -0.12em;
+      left: -0.04em;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: clamp(4rem, 9vw, 8.5rem);
+      letter-spacing: -0.03em;
+      color: rgba(184, 98, 42, 0.13);
+      line-height: 1;
+      user-select: none;
+      pointer-events: none;
+      white-space: nowrap;
+    }
+
+    /* Market stall SVG */
+    .market-stall-svg {
+      width: 88%;
+      max-width: 520px;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Right side – hero text, bottom-left anchored */
+    .hero-text-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: clamp(2.5rem, 5vw, 5rem);
+      padding-bottom: clamp(4rem, 7vw, 7rem);
+      background: var(--ink);
+      position: relative;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ochre);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-h1 {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: clamp(2.6rem, 4.5vw, 4.4rem);
+      line-height: 1.08;
+      letter-spacing: -0.025em;
+      color: var(--linen);
+      margin-bottom: 1.8rem;
+    }
+
+    .hero-h1 em {
+      font-style: italic;
+      font-weight: 400;
+      color: var(--ochre-lt);
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      line-height: 1.65;
+      color: rgba(248, 243, 232, 0.55);
+      max-width: 38ch;
+      margin-bottom: 2.6rem;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: var(--ochre);
+      color: var(--linen);
+      border-radius: 2px;
+      padding: 0.85rem 1.75rem;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn-primary:hover {
+      background: var(--ochre-dk);
+      transform: translateY(-2px);
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: rgba(248, 243, 232, 0.55);
+      border-bottom: 1px solid rgba(248, 243, 232, 0.2);
+      padding-bottom: 0.1rem;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .btn-ghost:hover {
+      color: var(--linen);
+      border-color: rgba(248, 243, 232, 0.5);
+    }
+
+    /* Scroll indicator */
+    .hero-scroll-hint {
+      position: absolute;
+      bottom: 2.2rem;
+      right: 2.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(248, 243, 232, 0.3);
+    }
+
+    .scroll-line {
+      width: 36px;
+      height: 1px;
+      background: rgba(248, 243, 232, 0.2);
+    }
+
+    /* ============================
+       §2 MARQUEE
+       ============================ */
+    .marquee-section {
+      background: var(--ochre);
+      padding: 0.95rem 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .marquee-track {
+      display: inline-flex;
+      animation: marquee-run 26s linear infinite;
+    }
+
+    .marquee-track:hover { animation-play-state: paused; }
+
+    @keyframes marquee-run {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    .marquee-item {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--linen);
+      letter-spacing: 0.04em;
+      padding: 0 2.6rem;
+    }
+
+    .marquee-dot {
+      color: rgba(248, 243, 232, 0.45);
+    }
+
+    /* ============================
+       §3 FAMILIE
+       ============================ */
+    #familie {
+      padding: 8rem 0 7rem;
+      background: var(--linen);
+    }
+
+    .familie-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+    }
+
+    .familie-text {}
+
+    .familie-text .section-title {
+      margin-bottom: 1.4rem;
+    }
+
+    .familie-text .section-body {
+      margin-bottom: 1.4rem;
+    }
+
+    .familie-detail {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .familie-detail-line {
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ochre);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .familie-detail-line::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 1px;
+      background: var(--ochre);
+    }
+
+    /* Familie visual – illustrated cheese counter SVG */
+    .familie-visual {
+      position: relative;
+      border-radius: 3px;
+      overflow: hidden;
+      background: var(--cream);
+      aspect-ratio: 4 / 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .familie-counter-svg {
+      width: 90%;
+      max-width: 440px;
+    }
+
+    .familie-badge {
+      position: absolute;
+      bottom: 1.8rem;
+      left: 1.8rem;
+      background: var(--ochre);
+      color: var(--linen);
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      font-style: italic;
+      padding: 0.55rem 1rem;
+      border-radius: 2px;
+      letter-spacing: 0.02em;
+    }
+
+    /* Second-read moment: oversized initials */
+    .familie-initials-bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 14rem;
+      letter-spacing: -0.06em;
+      color: rgba(184, 98, 42, 0.065);
+      line-height: 1;
+      pointer-events: none;
+      user-select: none;
+      white-space: nowrap;
+    }
+
+    /* ============================
+       §4 SELECTIE
+       ============================ */
+    #selectie {
+      padding: 7rem 0 8rem;
+      background: var(--linen-dk);
+    }
+
+    .selectie-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: end;
+      margin-bottom: 4rem;
+    }
+
+    .selectie-header-right {
+      text-align: right;
+    }
+
+    .selectie-header-right .section-body {
+      margin-left: auto;
+      text-align: left;
+    }
+
+    .cheese-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .cheese-card {
+      background: var(--linen);
+      border-radius: 3px;
+      padding: 2rem 1.8rem 1.8rem;
+      border: 1px solid var(--ink-12);
+      transition: transform 0.22s var(--ease-out), box-shadow 0.22s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cheese-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 36px rgba(42, 26, 10, 0.10);
+    }
+
+    .cheese-card-num {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.4rem;
+      font-family: var(--font-display);
+      font-size: 3.5rem;
+      font-weight: 600;
+      color: var(--ink-12);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .cheese-icon {
+      margin-bottom: 1.2rem;
+    }
+
+    .cheese-card-title {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 1.25rem;
+      color: var(--ink);
+      margin-bottom: 0.55rem;
+      letter-spacing: -0.01em;
+    }
+
+    .cheese-card-desc {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: var(--ink-60);
+    }
+
+    .cheese-card-footer {
+      margin-top: 1.4rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--ink-12);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .cheese-tag {
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ochre);
+    }
+
+    .cheese-arrow {
+      color: var(--ochre);
+      font-size: 1.1rem;
+      transition: transform 0.2s;
+    }
+
+    .cheese-card:hover .cheese-arrow {
+      transform: translateX(4px);
+    }
+
+    /* ============================
+       §5 MARKT
+       ============================ */
+    #markt {
+      padding: 8rem 0 7rem;
+      background: var(--ink);
+      color: var(--linen);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .markt-bg-pattern {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .markt-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: start;
+      position: relative;
+      z-index: 2;
+    }
+
+    .markt-text .label-tag { color: var(--ochre-lt); }
+
+    .markt-text .section-title {
+      color: var(--linen);
+      margin-bottom: 1.4rem;
+    }
+
+    .markt-text .section-body {
+      color: rgba(248, 243, 232, 0.55);
+    }
+
+    .markt-days {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .markt-day-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 1.2rem 0;
+      border-bottom: 1px solid rgba(248, 243, 232, 0.1);
+    }
+
+    .markt-day-row:first-child {
+      padding-top: 0;
+    }
+
+    .markt-day-name {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 1.15rem;
+      color: var(--linen);
+      letter-spacing: -0.01em;
+    }
+
+    .markt-day-detail {
+      font-size: 0.875rem;
+      color: rgba(248, 243, 232, 0.45);
+      text-align: right;
+    }
+
+    .markt-day-time {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--ochre-lt);
+    }
+
+    .markt-highlight {
+      background: rgba(184, 98, 42, 0.16);
+      border-radius: 3px;
+      padding: 1.8rem;
+      margin-top: 2rem;
+    }
+
+    .markt-highlight-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ochre-lt);
+      margin-bottom: 0.6rem;
+      font-weight: 500;
+    }
+
+    .markt-highlight-text {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.08rem;
+      color: var(--linen);
+      line-height: 1.5;
+    }
+
+    /* ============================
+       §6 BEZOEK / CTA
+       ============================ */
+    #bezoek {
+      padding: 8rem 0 8rem;
+      background: var(--linen);
+    }
+
+    .bezoek-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .bezoek-text .section-title {
+      margin-bottom: 1.4rem;
+    }
+
+    .bezoek-text .section-body {
+      margin-bottom: 2.4rem;
+    }
+
+    .bezoek-email-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1.15rem;
+      color: var(--ochre-dk);
+      border-bottom: 1.5px solid var(--ochre);
+      padding-bottom: 0.15rem;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .bezoek-email-link:hover {
+      color: var(--ink);
+      border-color: var(--ink);
+    }
+
+    .bezoek-cta-block {
+      margin-top: 2.5rem;
+    }
+
+    .bezoek-cta-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-60);
+      margin-bottom: 0.9rem;
+    }
+
+    .bezoek-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: var(--ochre);
+      color: var(--linen);
+      border-radius: 2px;
+      padding: 0.9rem 1.85rem;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .bezoek-cta-btn:hover {
+      background: var(--ochre-dk);
+      transform: translateY(-2px);
+    }
+
+    /* Bezoek visual – Lier illustration */
+    .bezoek-visual {
+      background: var(--cream);
+      border-radius: 3px;
+      aspect-ratio: 4 / 5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bezoek-ghost-lier {
+      position: absolute;
+      bottom: -0.05em;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 7rem;
+      letter-spacing: -0.04em;
+      color: rgba(184, 98, 42, 0.09);
+      white-space: nowrap;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .bezoek-location-card {
+      position: relative;
+      z-index: 2;
+      background: var(--linen);
+      border: 1px solid var(--ink-12);
+      border-radius: 3px;
+      padding: 2.2rem 2rem;
+      width: 80%;
+      max-width: 300px;
+    }
+
+    .location-city {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: var(--ink);
+      margin-bottom: 0.3rem;
+    }
+
+    .location-country {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ochre);
+      margin-bottom: 1.2rem;
+    }
+
+    .location-detail {
+      font-size: 0.875rem;
+      color: var(--ink-60);
+      line-height: 1.55;
+      margin-bottom: 0.3rem;
+    }
+
+    .location-divider {
+      height: 1px;
+      background: var(--ink-12);
+      margin: 1.2rem 0;
+    }
+
+    .location-email {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--ochre-dk);
+      word-break: break-all;
+    }
+
+    /* ============================
+       FOOTER
+       ============================ */
+    footer {
+      background: var(--ink);
+      color: var(--linen);
+      padding: 4rem 0 3rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 3rem;
+    }
+
+    .footer-brand .nav-brand-initials {
+      font-size: 1.6rem;
+      color: var(--linen);
+    }
+
+    .footer-brand .nav-brand-sub {
+      color: rgba(248, 243, 232, 0.45);
+    }
+
+    .footer-tagline {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 0.95rem;
+      color: rgba(248, 243, 232, 0.45);
+      margin-top: 0.8rem;
+    }
+
+    .footer-col-title {
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: rgba(248, 243, 232, 0.35);
+      margin-bottom: 1rem;
+    }
+
+    .footer-link {
+      display: block;
+      font-size: 0.875rem;
+      color: rgba(248, 243, 232, 0.6);
+      margin-bottom: 0.5rem;
+      transition: color 0.2s;
+    }
+
+    .footer-link:hover { color: var(--linen); }
+
+    .footer-email-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--ochre-lt);
+      border-bottom: 1px solid rgba(212, 132, 78, 0.35);
+      padding-bottom: 0.1rem;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .footer-email-cta:hover {
+      color: var(--linen);
+      border-color: rgba(248, 243, 232, 0.4);
+    }
+
+    .footer-bottom {
+      margin-top: 3.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(248, 243, 232, 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-copy {
+      font-size: 0.78rem;
+      color: rgba(248, 243, 232, 0.25);
+    }
+
+    .footer-location-tag {
+      font-size: 0.78rem;
+      color: rgba(248, 243, 232, 0.25);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* ============================
+       RESPONSIVE
+       ============================ */
+    @media (max-width: 900px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        min-height: 42vw;
+        order: -1;
+      }
+
+      .hero-ghost-word { font-size: 4rem; }
+
+      .familie-grid,
+      .markt-inner,
+      .bezoek-inner {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .selectie-header {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .selectie-header-right { text-align: left; }
+      .selectie-header-right .section-body { margin-left: 0; }
+
+      .cheese-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .nav-links { display: none; }
+
+      #familie,
+      #selectie,
+      #markt,
+      #bezoek {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+      }
+    }
+
+    @media (max-width: 580px) {
+      .cheese-grid { grid-template-columns: 1fr; }
+      .footer-inner { flex-direction: column; }
+    }
+
+    /* ============================
+       CHEESE ICON SVGs (inline)
+       ============================ */
+    .cheese-icon svg {
+      width: 44px;
+      height: 44px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       NAV
+       ============================================================ -->
+  <nav class="nav headroom--pinned" id="headroom" aria-label="Hoofdnavigatie">
+    <a href="#hero" class="nav-brand" aria-label="W en M Wagemaker Kaashandel – naar beginpagina">
+      <span class="nav-brand-initials">W&M Wagemaker</span>
+      <span class="nav-brand-sub">Kaashandel · Lier</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#familie">Familie</a></li>
+      <li><a href="#selectie">Selectie</a></li>
+      <li><a href="#markt">Markt</a></li>
+      <li><a href="#bezoek" class="nav-cta">Weekse kaart</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============================================================
+       §1 HERO — stacked diptych: visual left / text right (bottom-anchored)
+       ============================================================ -->
+  <section id="hero">
+    <div class="hero-inner">
+
+      <!-- Visual left: market stall SVG on dark ground -->
+      <div class="hero-visual">
+        <span class="hero-ghost-word" aria-hidden="true">WAGEMAKER</span>
+
+        <!-- Market stall / canopy SVG with cheese rounds -->
+        <svg class="market-stall-svg" viewBox="0 0 480 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kaasmarktkraam illustratie">
+          <!-- Canopy top bar shadow -->
+          <rect x="20" y="72" width="440" height="8" rx="2" fill="#0f0804" opacity=".6"/>
+          <!-- Canopy main – ochre striped awning -->
+          <polygon points="20,80 460,80 430,130 50,130" fill="#8a4520"/>
+          <!-- Awning stripes -->
+          <polygon points="20,80 60,80 40,130 10,130" fill="#b8622a" opacity=".6"/>
+          <polygon points="90,80 130,80 115,130 75,130" fill="#b8622a" opacity=".6"/>
+          <polygon points="160,80 200,80 190,130 150,130" fill="#b8622a" opacity=".6"/>
+          <polygon points="230,80 270,80 265,130 225,130" fill="#b8622a" opacity=".6"/>
+          <polygon points="300,80 340,80 340,130 300,130" fill="#b8622a" opacity=".6"/>
+          <polygon points="370,80 410,80 415,130 375,130" fill="#b8622a" opacity=".6"/>
+          <!-- Awning fringe -->
+          <path d="M48,130 Q54,142 60,130" fill="#6b3316"/>
+          <path d="M76,130 Q82,142 88,130" fill="#6b3316"/>
+          <path d="M104,130 Q110,142 116,130" fill="#6b3316"/>
+          <path d="M132,130 Q138,142 144,130" fill="#6b3316"/>
+          <path d="M160,130 Q166,142 172,130" fill="#6b3316"/>
+          <path d="M188,130 Q194,142 200,130" fill="#6b3316"/>
+          <path d="M216,130 Q222,142 228,130" fill="#6b3316"/>
+          <path d="M244,130 Q250,142 256,130" fill="#6b3316"/>
+          <path d="M272,130 Q278,142 284,130" fill="#6b3316"/>
+          <path d="M300,130 Q306,142 312,130" fill="#6b3316"/>
+          <path d="M328,130 Q334,142 340,130" fill="#6b3316"/>
+          <path d="M356,130 Q362,142 368,130" fill="#6b3316"/>
+          <path d="M384,130 Q390,142 396,130" fill="#6b3316"/>
+          <path d="M412,130 Q418,142 424,130" fill="#6b3316"/>
+          <!-- Support poles -->
+          <rect x="42" y="130" width="8" height="195" rx="2" fill="#5c3010"/>
+          <rect x="430" y="130" width="8" height="195" rx="2" fill="#5c3010"/>
+          <!-- Counter / toonbank -->
+          <rect x="28" y="255" width="424" height="18" rx="3" fill="#c8a46a"/>
+          <rect x="30" y="272" width="420" height="70" rx="2" fill="#b89254"/>
+          <!-- Counter front panel lines (wood grain) -->
+          <line x1="30" y1="285" x2="450" y2="285" stroke="#a07840" stroke-width="1.2" opacity=".5"/>
+          <line x1="30" y1="298" x2="450" y2="298" stroke="#a07840" stroke-width="1" opacity=".4"/>
+          <line x1="30" y1="312" x2="450" y2="312" stroke="#a07840" stroke-width="1" opacity=".35"/>
+          <!-- Counter top highlight -->
+          <rect x="28" y="253" width="424" height="4" rx="1" fill="#d8b47c" opacity=".6"/>
+
+          <!-- === CHEESE ROUNDS === -->
+
+          <!-- Big back wheel – full round, sliced -->
+          <!-- Main wheel body -->
+          <ellipse cx="150" cy="222" rx="72" ry="28" fill="#d4a44c"/>
+          <!-- Wheel side height -->
+          <path d="M78,222 Q78,258 150,258 Q222,258 222,222" fill="#b88830"/>
+          <!-- Rind ring top -->
+          <ellipse cx="150" cy="222" rx="72" ry="28" fill="none" stroke="#8a6020" stroke-width="3.5"/>
+          <!-- Holes in cheese top -->
+          <ellipse cx="130" cy="217" rx="5" ry="3.5" fill="#b88830" opacity=".7"/>
+          <ellipse cx="158" cy="224" rx="4" ry="3" fill="#b88830" opacity=".6"/>
+          <ellipse cx="172" cy="212" rx="3.5" ry="2.5" fill="#b88830" opacity=".65"/>
+          <!-- Age label text area -->
+          <rect x="110" y="232" width="80" height="18" rx="2" fill="rgba(0,0,0,0.12)"/>
+          <text x="150" y="244" font-family="Georgia,serif" font-size="8" fill="#f8f3e8" text-anchor="middle" letter-spacing="1" font-style="italic">Oud Belegen</text>
+
+          <!-- Stacked wheel behind big one -->
+          <ellipse cx="150" cy="185" rx="68" ry="26" fill="#c49840"/>
+          <path d="M82,185 Q82,214 150,214 Q218,214 218,185" fill="#a87e28"/>
+          <ellipse cx="150" cy="185" rx="68" ry="26" fill="none" stroke="#8a6020" stroke-width="2.5"/>
+
+          <!-- Front half-wedge (jong belegen) -->
+          <path d="M290,255 L340,180 L390,255 Z" fill="#e8c86c"/>
+          <path d="M290,255 Q340,265 390,255 L390,268 Q340,278 290,268 Z" fill="#c8a44c"/>
+          <path d="M290,255 L340,180 L340,193 L290,268 Z" fill="#d4b058"/>
+          <!-- Wedge side fill -->
+          <ellipse cx="340" cy="255" rx="50" ry="10" fill="#c8a44c" opacity=".5"/>
+          <ellipse cx="340" cy="178" rx="6" ry="3" fill="#a8842c"/>
+          <!-- Holes in wedge -->
+          <ellipse cx="325" cy="228" rx="4" ry="3.5" fill="#c8a84c" opacity=".7"/>
+          <ellipse cx="350" cy="215" rx="3.5" ry="3" fill="#c8a84c" opacity=".6"/>
+          <ellipse cx="362" cy="235" rx="3" ry="2.5" fill="#c8a84c" opacity=".65"/>
+
+          <!-- Small goat cheese log, front right -->
+          <ellipse cx="408" cy="252" rx="28" ry="12" fill="#f0e8d4"/>
+          <path d="M380,252 Q380,268 408,268 Q436,268 436,252" fill="#d8d0bc"/>
+          <ellipse cx="408" cy="252" rx="28" ry="12" fill="none" stroke="#c0b8a0" stroke-width="2"/>
+          <!-- Goat cheese label -->
+          <text x="408" y="258" font-family="Georgia,serif" font-size="7" fill="#6b5030" text-anchor="middle" letter-spacing="0.5" font-style="italic">Geit</text>
+
+          <!-- Tiny schapenkaas round top-right, stacked -->
+          <ellipse cx="62" cy="198" rx="40" ry="16" fill="#dcc884"/>
+          <path d="M22,198 Q22,218 62,218 Q102,218 102,198" fill="#b8a460"/>
+          <ellipse cx="62" cy="198" rx="40" ry="16" fill="none" stroke="#9a8040" stroke-width="2"/>
+
+          <!-- Price/label tags -->
+          <rect x="210" y="146" width="52" height="26" rx="3" fill="#f8f3e8"/>
+          <text x="236" y="158" font-family="Georgia,serif" font-size="7.5" fill="#b8622a" text-anchor="middle" letter-spacing="0.5">Wagemaker</text>
+          <text x="236" y="168" font-family="Georgia,serif" font-size="9" fill="#2a1a0a" text-anchor="middle" font-weight="600">Kaashandel</text>
+          <!-- Tag string -->
+          <line x1="236" y1="146" x2="230" y2="133" stroke="#8a4520" stroke-width="1" stroke-dasharray="3 2"/>
+
+          <!-- Decorative herbs/leaf accent on counter -->
+          <ellipse cx="80" cy="256" rx="10" ry="4" fill="#4a7040" opacity=".6"/>
+          <ellipse cx="95" cy="253" rx="8" ry="3.5" fill="#3a5c30" opacity=".55"/>
+          <ellipse cx="420" cy="256" rx="9" ry="3.5" fill="#4a7040" opacity=".6"/>
+        </svg>
+      </div>
+
+      <!-- Text right – bottom-left anchored -->
+      <div class="hero-text-side">
+        <p class="hero-eyebrow reveal">Kaashandel · Lier · België</p>
+        <h1 class="hero-h1 reveal reveal-d1">
+          Kaas zoals<br />
+          het <em>hoort</em> —<br />
+          Lier
+        </h1>
+        <p class="hero-sub reveal reveal-d2">
+          Al jaren uw kaasboer op de markt. W en M Wagemaker brengt traditionele, gerijpte kazen van eigen selectie rechtstreeks van de toonbank naar uw tafel.
+        </p>
+        <div class="hero-ctas reveal reveal-d3">
+          <a href="#bezoek" class="btn-primary">
+            Vraag onze weekse kaart
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#selectie" class="btn-ghost">
+            Onze selectie
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6h8M6 2l4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- Scroll hint -->
+        <div class="hero-scroll-hint" aria-hidden="true">
+          <span class="scroll-line"></span>
+          Scroll
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       §2 MARQUEE
+       ============================================================ -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">Jong belegen</span><span class="marquee-item marquee-dot">·</span>
+      <span class="marquee-item">Oud</span><span class="marquee-item marquee-dot">·</span>
+      <span class="marquee-item">Leidse</span><span class="marquee-item marquee-dot">·</span>
+      <span class="marquee-item">Geitenkaas</span><span class="marquee-item marquee-dot">·</span>
+      <span class="marquee-item">Schapenkaas</span><span class="marquee-item marquee-dot">·</span>
+      <span class="marquee-item">Gerijpt</span><span class="marquee-item marquee-dot">·</span>
+      <span class="marquee-item">Lier</span><span class="marquee-item marquee-dot">·</span>
+      <!-- repeat for seamless loop -->
+      <span class="marquee-item">Jong belegen</span><span class="marquee-item marquee-dot">·</span>
+      <span class="marquee-item">Oud</span><span class="marquee-item marquee-dot">·</span>
+      <span class="marquee-item">Leidse</span><span class="marquee-item marquee-dot">·</span>
+      <span class="marquee-item">Geitenkaas</span><span class="marquee-item marquee-dot">·</span>
+      <span class="marquee-item">Schapenkaas</span><span class="marquee-item marquee-dot">·</span>
+      <span class="marquee-item">Gerijpt</span><span class="marquee-item marquee-dot">·</span>
+      <span class="marquee-item">Lier</span><span class="marquee-item marquee-dot">·</span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       §3 FAMILIE
+       ============================================================ -->
+  <section id="familie" aria-label="Over de familie Wagemaker">
+    <div class="container">
+      <div class="familie-grid">
+
+        <div class="familie-text">
+          <p class="label-tag reveal">Familie · Vakmanschap</p>
+          <h2 class="section-title reveal reveal-d1">Al jaren<br />uw kaasboer</h2>
+          <p class="section-body reveal reveal-d2" style="margin-bottom:1rem;">
+            W en M Wagemaker – twee initialen, één passie. Jarenlange ervaring op de Lierse markt heeft ons geleerd dat goede kaas begint met eerlijke keuzes: de juiste melk, de juiste rijping, en het geduld om het goed te doen.
+          </p>
+          <p class="section-body reveal reveal-d2">
+            Van licht-frisse jonge kaas tot diepe, gekristalliseerde oude: onze toonbank is uw gids. Elke week een verse selectie, elke week dezelfde zorg.
+          </p>
+          <div class="familie-detail reveal reveal-d3" style="margin-top: 2rem;">
+            <span class="familie-detail-line">Familiebedrijf – twee generaties</span>
+            <span class="familie-detail-line">Wekelijkse versheid gegarandeerd</span>
+            <span class="familie-detail-line">Persoonlijk advies aan de toonbank</span>
+          </div>
+        </div>
+
+        <!-- Familie visual: cheese counter illustration -->
+        <div class="familie-visual reveal reveal-d2">
+          <span class="familie-initials-bg" aria-hidden="true">WM</span>
+
+          <!-- Simplified counter / deli showcase SVG -->
+          <svg class="familie-counter-svg" viewBox="0 0 440 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kaashandel toonbank illustratie">
+            <!-- Background warm floor -->
+            <rect x="0" y="220" width="440" height="100" rx="0" fill="#d4b87c" opacity=".3"/>
+
+            <!-- Counter body -->
+            <rect x="20" y="175" width="400" height="100" rx="4" fill="#c8a464"/>
+            <!-- Counter glass top -->
+            <rect x="20" y="162" width="400" height="18" rx="3" fill="#d8b87c"/>
+            <!-- Glass shine -->
+            <rect x="24" y="163" width="390" height="6" rx="2" fill="rgba(255,255,255,0.2)"/>
+            <!-- Counter front face wood grain -->
+            <line x1="24" y1="196" x2="416" y2="196" stroke="#a07840" stroke-width="1.5" opacity=".4"/>
+            <line x1="24" y1="218" x2="416" y2="218" stroke="#a07840" stroke-width="1" opacity=".3"/>
+            <line x1="24" y1="240" x2="416" y2="240" stroke="#a07840" stroke-width="1" opacity=".3"/>
+
+            <!-- === Cheese display ON counter === -->
+
+            <!-- Big round wheel, back center -->
+            <ellipse cx="220" cy="148" rx="64" ry="24" fill="#d4a44c"/>
+            <path d="M156,148 Q156,178 220,178 Q284,178 284,148" fill="#b88030"/>
+            <ellipse cx="220" cy="148" rx="64" ry="24" fill="none" stroke="#8a5c18" stroke-width="3"/>
+            <!-- Cheese holes -->
+            <ellipse cx="202" cy="143" rx="5" ry="3.5" fill="#b88030" opacity=".6"/>
+            <ellipse cx="228" cy="150" rx="4.5" ry="3" fill="#b88030" opacity=".55"/>
+            <ellipse cx="248" cy="138" rx="4" ry="3" fill="#b88030" opacity=".5"/>
+
+            <!-- Left wedge -->
+            <path d="M72,162 L112,110 L152,162 Z" fill="#e8c870"/>
+            <path d="M72,162 Q112,172 152,162 L152,175 Q112,185 72,175 Z" fill="#c8a44c"/>
+            <!-- Wedge rind -->
+            <path d="M72,162 L112,110 L112,121 L72,175 Z" fill="#d4b058"/>
+            <!-- Wedge holes -->
+            <ellipse cx="104" cy="140" rx="4.5" ry="4" fill="#c8a84c" opacity=".65"/>
+            <ellipse cx="122" cy="152" rx="3.5" ry="3" fill="#c8a84c" opacity=".55"/>
+
+            <!-- Right goat cheese log -->
+            <ellipse cx="360" cy="158" rx="32" ry="11" fill="#f0ead8"/>
+            <path d="M328,158 Q328,174 360,174 Q392,174 392,158" fill="#dcd4c0"/>
+            <ellipse cx="360" cy="158" rx="32" ry="11" fill="none" stroke="#c0b8a0" stroke-width="2"/>
+            <!-- Goat rind dots pattern -->
+            <circle cx="344" cy="154" r="1.5" fill="#b0a888" opacity=".6"/>
+            <circle cx="355" cy="161" r="1.5" fill="#b0a888" opacity=".5"/>
+            <circle cx="368" cy="151" r="1.5" fill="#b0a888" opacity=".6"/>
+            <circle cx="376" cy="160" r="1.5" fill="#b0a888" opacity=".5"/>
+
+            <!-- Small schaap round -->
+            <ellipse cx="370" cy="125" rx="28" ry="10" fill="#dcc474"/>
+            <path d="M342,125 Q342,140 370,140 Q398,140 398,125" fill="#b8a050"/>
+            <ellipse cx="370" cy="125" rx="28" ry="10" fill="none" stroke="#9a7c30" stroke-width="1.8"/>
+
+            <!-- Price chalk labels -->
+            <rect x="155" y="108" width="60" height="22" rx="2" fill="rgba(42,26,10,0.75)"/>
+            <text x="185" y="120" font-family="Georgia,serif" font-size="8.5" fill="#f8f3e8" text-anchor="middle" letter-spacing="0.5" font-style="italic">Wagemaker</text>
+            <text x="185" y="130" font-family="Georgia,serif" font-size="7" fill="#d4844e" text-anchor="middle" letter-spacing="1">LIER</text>
+
+            <!-- Herb garnish left -->
+            <ellipse cx="50" cy="165" rx="12" ry="5" fill="#4a6e38" opacity=".7"/>
+            <ellipse cx="65" cy="162" rx="10" ry="4" fill="#3d5c2e" opacity=".6"/>
+
+            <!-- Herb garnish right counter -->
+            <ellipse cx="412" cy="168" rx="11" ry="4.5" fill="#4a6e38" opacity=".65"/>
+
+            <!-- Knife on counter -->
+            <rect x="180" y="160" width="80" height="4" rx="2" fill="#8a8878" opacity=".7" transform="rotate(-12 220 162)"/>
+            <rect x="176" y="158" width="14" height="7" rx="1.5" fill="#4a3820" opacity=".8" transform="rotate(-12 220 162)"/>
+          </svg>
+
+          <div class="familie-badge">Al jaren voor Lier</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       §4 SELECTIE
+       ============================================================ -->
+  <section id="selectie" aria-label="Onze kaasvariëteiten">
+    <div class="container">
+
+      <div class="selectie-header">
+        <div class="selectie-header-left">
+          <p class="label-tag reveal">Selectie</p>
+          <h2 class="section-title reveal reveal-d1">Zes soorten,<br />één vakman</h2>
+        </div>
+        <div class="selectie-header-right reveal reveal-d2">
+          <p class="section-body">
+            Van de milde, frisse jonge kaas tot de diepe karakter van een extra oud gerijpt wiel — onze toonbank biedt de hele wereld van kaas in zes zorgvuldig gekozen variëteiten.
+          </p>
+        </div>
+      </div>
+
+      <div class="cheese-grid">
+
+        <!-- 1. Jong -->
+        <article class="cheese-card reveal reveal-d1">
+          <span class="cheese-card-num" aria-hidden="true">1</span>
+          <div class="cheese-icon" aria-hidden="true">
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="22" cy="24" rx="18" ry="8" fill="#e8d080"/>
+              <path d="M4,24 Q4,36 22,36 Q40,36 40,24" fill="#c8b060"/>
+              <ellipse cx="22" cy="24" rx="18" ry="8" fill="none" stroke="#a09040" stroke-width="2"/>
+              <ellipse cx="17" cy="22" rx="2.5" ry="2" fill="#c8b060" opacity=".6"/>
+              <ellipse cx="27" cy="25" rx="2" ry="1.6" fill="#c8b060" opacity=".5"/>
+            </svg>
+          </div>
+          <h3 class="cheese-card-title">Jong</h3>
+          <p class="cheese-card-desc">Mild en romig, slechts enkele weken gerijpt. Ideaal voor jonge kaasliefhebbers of op een broodje met een snufje zeezout.</p>
+          <div class="cheese-card-footer">
+            <span class="cheese-tag">Rijping 4–6 wkn</span>
+            <span class="cheese-arrow" aria-hidden="true">→</span>
+          </div>
+        </article>
+
+        <!-- 2. Belegen -->
+        <article class="cheese-card reveal reveal-d2">
+          <span class="cheese-card-num" aria-hidden="true">2</span>
+          <div class="cheese-icon" aria-hidden="true">
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="22" cy="23" rx="18" ry="7.5" fill="#d4a44c"/>
+              <path d="M4,23 Q4,35 22,35 Q40,35 40,23" fill="#b08028"/>
+              <ellipse cx="22" cy="23" rx="18" ry="7.5" fill="none" stroke="#8a6020" stroke-width="2"/>
+              <ellipse cx="15" cy="21" rx="2.5" ry="2" fill="#b08028" opacity=".65"/>
+              <ellipse cx="25" cy="24" rx="2" ry="1.8" fill="#b08028" opacity=".55"/>
+              <ellipse cx="30" cy="19" rx="2" ry="1.5" fill="#b08028" opacity=".5"/>
+            </svg>
+          </div>
+          <h3 class="cheese-card-title">Belegen</h3>
+          <p class="cheese-card-desc">Meer smaak, lichte kristallen. De kaas met karakter die door iedereen gewaardeerd wordt — van dagelijks genot tot kaasplank.</p>
+          <div class="cheese-card-footer">
+            <span class="cheese-tag">Rijping 4–6 mnd</span>
+            <span class="cheese-arrow" aria-hidden="true">→</span>
+          </div>
+        </article>
+
+        <!-- 3. Oud -->
+        <article class="cheese-card reveal reveal-d3">
+          <span class="cheese-card-num" aria-hidden="true">3</span>
+          <div class="cheese-icon" aria-hidden="true">
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6,32 L22,8 L38,32 Z" fill="#c89030"/>
+              <path d="M6,32 Q22,40 38,32 L38,36 Q22,44 6,36 Z" fill="#a07020"/>
+              <ellipse cx="18" cy="22" rx="2.5" ry="2.5" fill="#a07020" opacity=".65"/>
+              <ellipse cx="26" cy="18" rx="2" ry="2" fill="#a07020" opacity=".55"/>
+              <ellipse cx="28" cy="27" rx="2" ry="1.8" fill="#a07020" opacity=".5"/>
+              <path d="M6,32 L22,8 L22,12 L6,36 Z" fill="#b07828"/>
+            </svg>
+          </div>
+          <h3 class="cheese-card-title">Oud</h3>
+          <p class="cheese-card-desc">Intense smaak, kruimelig van structuur en dooraderd met tyrosine-kristallen. Een kaas die u niet snel vergeet.</p>
+          <div class="cheese-card-footer">
+            <span class="cheese-tag">Rijping 10–12 mnd</span>
+            <span class="cheese-arrow" aria-hidden="true">→</span>
+          </div>
+        </article>
+
+        <!-- 4. Geit -->
+        <article class="cheese-card reveal reveal-d4">
+          <span class="cheese-card-num" aria-hidden="true">4</span>
+          <div class="cheese-icon" aria-hidden="true">
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="22" cy="26" rx="16" ry="6" fill="#efe8d4"/>
+              <path d="M6,26 Q6,36 22,36 Q38,36 38,26" fill="#d8d0bc"/>
+              <ellipse cx="22" cy="26" rx="16" ry="6" fill="none" stroke="#c0b8a0" stroke-width="2"/>
+              <circle cx="15" cy="24" r="1.5" fill="#b0a888" opacity=".5"/>
+              <circle cx="23" cy="27" r="1.5" fill="#b0a888" opacity=".45"/>
+              <circle cx="30" cy="23" r="1.5" fill="#b0a888" opacity=".5"/>
+              <ellipse cx="22" cy="20" rx="5" ry="3" fill="#e8e0cc" opacity=".8"/>
+            </svg>
+          </div>
+          <h3 class="cheese-card-title">Geitenkaas</h3>
+          <p class="cheese-card-desc">Friszuur, typisch geiteneigen karakter. Zowel vers als gerijpt op onze toonbank — een klasse apart voor de fijnproever.</p>
+          <div class="cheese-card-footer">
+            <span class="cheese-tag">Vers &amp; Gerijpt</span>
+            <span class="cheese-arrow" aria-hidden="true">→</span>
+          </div>
+        </article>
+
+        <!-- 5. Schaap -->
+        <article class="cheese-card reveal reveal-d5">
+          <span class="cheese-card-num" aria-hidden="true">5</span>
+          <div class="cheese-icon" aria-hidden="true">
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="22" cy="24" rx="16" ry="7" fill="#dcc870"/>
+              <path d="M6,24 Q6,36 22,36 Q38,36 38,24" fill="#b8a450"/>
+              <ellipse cx="22" cy="24" rx="16" ry="7" fill="none" stroke="#9a8030" stroke-width="2"/>
+              <ellipse cx="16" cy="22" rx="2.5" ry="2" fill="#b0a050" opacity=".6"/>
+              <ellipse cx="26" cy="25" rx="2.2" ry="1.8" fill="#b0a050" opacity=".55"/>
+              <ellipse cx="31" cy="20" rx="2" ry="1.6" fill="#b0a050" opacity=".5"/>
+            </svg>
+          </div>
+          <h3 class="cheese-card-title">Schapenkaas</h3>
+          <p class="cheese-card-desc">Voller en zoeter dan koemelkkaas. Geweldig bij honing of walnoten. Onze schapenkazen komen van geselecteerde producenten.</p>
+          <div class="cheese-card-footer">
+            <span class="cheese-tag">Artisanaal</span>
+            <span class="cheese-arrow" aria-hidden="true">→</span>
+          </div>
+        </article>
+
+        <!-- 6. Speciaal -->
+        <article class="cheese-card reveal reveal-d6">
+          <span class="cheese-card-num" aria-hidden="true">6</span>
+          <div class="cheese-icon" aria-hidden="true">
+            <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Leidse with cloves – special wedge -->
+              <path d="M7,33 L22,10 L37,33 Z" fill="#d09838"/>
+              <path d="M7,33 Q22,41 37,33 L37,37 Q22,45 7,37 Z" fill="#a87820"/>
+              <path d="M7,33 L22,10 L22,14 L7,37 Z" fill="#bc8830"/>
+              <!-- Clove seeds -->
+              <circle cx="18" cy="24" r="2" fill="#5a3c18" opacity=".7"/>
+              <circle cx="26" cy="20" r="2" fill="#5a3c18" opacity=".65"/>
+              <circle cx="24" cy="29" r="2" fill="#5a3c18" opacity=".6"/>
+              <circle cx="14" cy="30" r="1.5" fill="#5a3c18" opacity=".55"/>
+            </svg>
+          </div>
+          <h3 class="cheese-card-title">Speciaal</h3>
+          <p class="cheese-card-desc">Leidse, kümmel, kruiden of rook — onze speciale kazen wisselen per seizoen en week. Vraag ons naar de weekse kaart voor de actuele specials.</p>
+          <div class="cheese-card-footer">
+            <span class="cheese-tag">Wisselend aanbod</span>
+            <span class="cheese-arrow" aria-hidden="true">→</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       §5 MARKT
+       ============================================================ -->
+  <section id="markt" aria-label="Marktdagen en openingsuren">
+    <!-- Dark background grid pattern via SVG -->
+    <div class="markt-bg-pattern" aria-hidden="true">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+            <path d="M 48 0 L 0 0 0 48" fill="none" stroke="rgba(248,243,232,0.04)" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid)"/>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="markt-inner">
+
+        <div class="markt-text">
+          <p class="label-tag reveal">Marktdagen</p>
+          <h2 class="section-title reveal reveal-d1">Wanneer vindt<br />u ons?</h2>
+          <p class="section-body reveal reveal-d2">
+            Wagemaker Kaashandel staat wekelijks op de markt van Lier. Kom vroeg voor de beste keuze — de mooiste wielen gaan snel.
+          </p>
+
+          <div class="markt-highlight reveal reveal-d3">
+            <p class="markt-highlight-label">Ons motto</p>
+            <p class="markt-highlight-text">
+              "Een goede kaas heeft geen reclame nodig — alleen geduld."
+            </p>
+          </div>
+        </div>
+
+        <div class="markt-days">
+
+          <div class="markt-day-row reveal reveal-d1">
+            <div>
+              <div class="markt-day-name">Zaterdag</div>
+              <div class="markt-day-detail">Grote Markt · Lier</div>
+            </div>
+            <div class="markt-day-time">07:00 – 13:00</div>
+          </div>
+
+          <div class="markt-day-row reveal reveal-d2">
+            <div>
+              <div class="markt-day-name">Wekelijks</div>
+              <div class="markt-day-detail">Hele jaar door · ook in winter</div>
+            </div>
+            <div class="markt-day-time">Vast standplaats</div>
+          </div>
+
+          <div class="markt-day-row reveal reveal-d3">
+            <div>
+              <div class="markt-day-name">Weekse kaart</div>
+              <div class="markt-day-detail">Actueel aanbod per mail</div>
+            </div>
+            <div class="markt-day-time">Op aanvraag</div>
+          </div>
+
+          <div class="markt-day-row reveal reveal-d4">
+            <div>
+              <div class="markt-day-name">Contact</div>
+              <div class="markt-day-detail">Vragen of grote bestellingen</div>
+            </div>
+            <div class="markt-day-time">
+              <a href="mailto:wagemakersven@hotmail.com" style="color: var(--ochre-lt); transition: color 0.2s;"
+                onmouseover="this.style.color='#f8f3e8'"
+                onmouseout="this.style.color='var(--ochre-lt)'">
+                Per mail
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       §6 BEZOEK / CTA
+       ============================================================ -->
+  <section id="bezoek" aria-label="Bezoek ons in Lier">
+    <div class="container">
+      <div class="bezoek-inner">
+
+        <div class="bezoek-text">
+          <p class="label-tag reveal">Bezoek · Contact</p>
+          <h2 class="section-title reveal reveal-d1">Kom langs<br /><em style="font-family:var(--font-display);font-style:italic;color:var(--ochre);">in Lier</em></h2>
+          <p class="section-body reveal reveal-d2">
+            U vindt ons elke zaterdag op de Grote Markt van Lier. Wilt u weten wat er deze week op de toonbank ligt? Vraag onze weekse kaart aan via e-mail en wij bezorgen u een overzicht van het actuele aanbod.
+          </p>
+
+          <p class="section-body reveal reveal-d3">
+            Voor grote bestellingen, cadeaumanden of vragen over onze kazen staat Sven Wagemaker persoonlijk voor u klaar.
+          </p>
+
+          <div class="bezoek-cta-block reveal reveal-d4">
+            <p class="bezoek-cta-label">Stuur ons een bericht</p>
+            <a href="mailto:wagemakersven@hotmail.com" class="bezoek-email-link">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <rect x="1" y="3" width="14" height="10" rx="1.5" stroke="currentColor" stroke-width="1.4"/>
+                <path d="M1 4.5L8 9.5L15 4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+              wagemakersven@hotmail.com
+            </a>
+          </div>
+
+          <div class="reveal reveal-d5" style="margin-top: 1.8rem;">
+            <p class="bezoek-cta-label">Of kom direct langs</p>
+            <a href="mailto:wagemakersven@hotmail.com?subject=Weekse%20kaart%20aanvraag&body=Goeiendag%2C%0A%0AIk%20zou%20graag%20de%20weekse%20kaart%20ontvangen.%0A%0ABedankt!" class="bezoek-cta-btn">
+              Vraag weekse kaart
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bezoek visual: location card on cream bg with ghost LIER -->
+        <div class="bezoek-visual reveal reveal-d2">
+          <span class="bezoek-ghost-lier" aria-hidden="true">LIER</span>
+
+          <div class="bezoek-location-card">
+            <div class="location-city">Lier</div>
+            <div class="location-country">België · Antwerpen</div>
+            <div class="location-detail">
+              <strong>Grote Markt, Lier</strong>
+            </div>
+            <div class="location-detail">Elke zaterdag</div>
+            <div class="location-detail">07:00 – 13:00 uur</div>
+            <div class="location-divider"></div>
+            <div class="location-detail" style="font-size: 0.78rem; color: var(--ink-60); margin-bottom: 0.5rem;">E-mail</div>
+            <a href="mailto:wagemakersven@hotmail.com" class="location-email">wagemakersven@hotmail.com</a>
+
+            <!-- Mini cheese wheel accent -->
+            <div style="margin-top: 1.5rem; display: flex; justify-content: flex-end;">
+              <svg width="38" height="38" viewBox="0 0 38 38" fill="none" aria-hidden="true">
+                <ellipse cx="19" cy="21" rx="17" ry="7" fill="#d4a44c"/>
+                <path d="M2,21 Q2,32 19,32 Q36,32 36,21" fill="#b08028"/>
+                <ellipse cx="19" cy="21" rx="17" ry="7" fill="none" stroke="#8a6020" stroke-width="2"/>
+                <ellipse cx="14" cy="19" rx="2.5" ry="2" fill="#b08028" opacity=".6"/>
+                <ellipse cx="23" cy="22" rx="2" ry="1.7" fill="#b08028" opacity=".5"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+
+        <div class="footer-brand">
+          <div class="nav-brand">
+            <span class="nav-brand-initials" style="color:var(--linen);">W&M Wagemaker</span>
+            <span class="nav-brand-sub">Kaashandel · Lier · België</span>
+          </div>
+          <p class="footer-tagline">Al jaren uw kaasboer op de markt.</p>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Navigatie</p>
+          <a href="#familie" class="footer-link">Over ons</a>
+          <a href="#selectie" class="footer-link">Selectie</a>
+          <a href="#markt" class="footer-link">Marktdagen</a>
+          <a href="#bezoek" class="footer-link">Bezoek</a>
+        </div>
+
+        <div>
+          <p class="footer-col-title">Contact</p>
+          <a href="mailto:wagemakersven@hotmail.com" class="footer-email-cta">
+            <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <rect x="1" y="3" width="14" height="10" rx="1.5" stroke="currentColor" stroke-width="1.4"/>
+              <path d="M1 4.5L8 9.5L15 4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+            wagemakersven@hotmail.com
+          </a>
+          <p class="footer-link" style="margin-top:0.8rem; cursor: default;">Grote Markt · Lier</p>
+          <p class="footer-link" style="cursor: default;">Zaterdag 07:00–13:00</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 W en M Wagemaker Kaashandel · Lier</p>
+        <span class="footer-location-tag">
+          <svg width="11" height="11" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <circle cx="7" cy="6" r="2.5" stroke="currentColor" stroke-width="1.3"/>
+            <path d="M7 1C4.24 1 2 3.24 2 6c0 3.5 5 8 5 8s5-4.5 5-8c0-2.76-2.24-5-5-5z" stroke="currentColor" stroke-width="1.3"/>
+          </svg>
+          Lier, België
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       JS – Headroom nav + IntersectionObserver fade-up
+       ============================================================ -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* ---- HEADROOM NAV ---- */
+      var nav       = document.getElementById('headroom');
+      var lastY     = 0;
+      var ticking   = false;
+      var TOL_DOWN  = 8;
+      var TOL_UP    = 5;
+      var OFFSET    = 80;
+
+      function updateNav() {
+        var y = window.scrollY || window.pageYOffset;
+
+        // not-top class
+        if (y > 10) {
+          nav.classList.add('headroom--not-top');
+        } else {
+          nav.classList.remove('headroom--not-top');
+        }
+
+        // pin / unpin
+        var diff = y - lastY;
+
+        if (y <= OFFSET) {
+          nav.classList.add('headroom--pinned');
+          nav.classList.remove('headroom--unpinned');
+        } else if (diff > TOL_DOWN) {
+          // scrolling down
+          nav.classList.remove('headroom--pinned');
+          nav.classList.add('headroom--unpinned');
+        } else if (diff < -TOL_UP) {
+          // scrolling up
+          nav.classList.add('headroom--pinned');
+          nav.classList.remove('headroom--unpinned');
+        }
+
+        lastY = y;
+        ticking = false;
+      }
+
+      window.addEventListener('scroll', function () {
+        if (!ticking) {
+          requestAnimationFrame(updateNav);
+          ticking = true;
+        }
+      }, { passive: true });
+
+      /* ---- INTERSECTIONOBSERVER FADE-UP ---- */
+      var revealEls = document.querySelectorAll('.reveal');
+
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              io.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.12,
+          rootMargin: '0px 0px -40px 0px'
+        });
+
+        revealEls.forEach(function (el) {
+          io.observe(el);
+        });
+      } else {
+        // fallback: show all immediately
+        revealEls.forEach(function (el) {
+          el.classList.add('visible');
+        });
+      }
+
+    }());
+  </script>
+
+</body>
+</html>

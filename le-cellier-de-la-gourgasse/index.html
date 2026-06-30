@@ -1,0 +1,1949 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Le Cellier de la Gourgasse — cave à vins artisanale à Boom. Bordeaux, Bourgogne, Loire, Rhône, Alsace. Sélection personnelle, conseil sans prétention. Bel: 03 449 54 97." />
+  <title>Le Cellier de la Gourgasse — Cave à Vins · Boom</title>
+
+  <!-- Inline SVG favicon via data URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230f100c'/%3E%3Cellipse cx='16' cy='14' rx='5' ry='8' fill='none' stroke='%23722030' stroke-width='1.5'/%3E%3Crect x='14.5' y='22' width='3' height='5' rx='1' fill='%23722030'/%3E%3Crect x='11' y='27' width='10' height='1.5' rx='.75' fill='%23f0e8d0'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts non-blocking preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" /></noscript>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Le Cellier de la Gourgasse",
+    "description": "Cave à vins artisanale à Boom — sélection personnelle de vins français : Bordeaux, Bourgogne, Rhône, Loire, Alsace.",
+    "telephone": "+3234495497",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Boom",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "url": "https://lecellierdelagourgasse.be",
+    "priceRange": "€€",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "10:00",
+        "closes": "18:30"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ============================================================
+       RESET & CUSTOM PROPERTIES
+    ============================================================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg:         #0f100c;
+      --bg-mid:     #181910;
+      --bg-surface: #1e1f17;
+      --wine:       #722030;
+      --wine-light: #8f2a3d;
+      --wine-dim:   rgba(114, 32, 48, 0.18);
+      --cream:      #f0e8d0;
+      --cream-dim:  rgba(240, 232, 208, 0.80);
+      --cream-mute: rgba(240, 232, 208, 0.45);
+      --cream-ghost:rgba(240, 232, 208, 0.10);
+      --serif:      'Cormorant Garamond', Georgia, serif;
+      --sans:       'DM Sans', system-ui, sans-serif;
+      --radius:     3px;
+      --transition: 420ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--cream);
+      font-family: var(--sans);
+      font-weight: 400;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img { display: block; max-width: 100%; }
+    a   { color: inherit; text-decoration: none; }
+
+    /* ============================================================
+       HEADROOM NAV
+    ============================================================ */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 clamp(1.5rem, 5vw, 4rem);
+      height: 72px;
+      transition: transform 320ms ease, background 320ms ease, box-shadow 320ms ease;
+      background: transparent;
+    }
+
+    .nav.is-scrolled {
+      background: rgba(15, 16, 12, 0.94);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 1px 0 rgba(240, 232, 208, 0.06);
+    }
+
+    .nav.is-hidden {
+      transform: translateY(-100%);
+    }
+
+    .nav__logo {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--cream);
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      line-height: 1.1;
+    }
+
+    .nav__logo span {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cream-mute);
+    }
+
+    .nav__links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
+
+    .nav__links a {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--cream-dim);
+      transition: color 200ms ease;
+    }
+
+    .nav__links a:hover { color: var(--cream); }
+
+    .nav__cta {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--cream);
+      border: 1px solid rgba(240, 232, 208, 0.30);
+      padding: 0.55rem 1.25rem;
+      border-radius: var(--radius);
+      transition: background 200ms ease, border-color 200ms ease;
+    }
+
+    .nav__cta:hover {
+      background: var(--wine-dim);
+      border-color: var(--wine);
+    }
+
+    /* ============================================================
+       HERO — CELLAR ARCH VISUAL (centered low over SVG canvas)
+    ============================================================ */
+    .hero {
+      position: relative;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      background-color: var(--bg);
+    }
+
+    /* Inline SVG atmospheric cellar arch */
+    .hero__arch {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .hero__arch svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Ghost word CELLIER — large behind everything */
+    .hero__ghost {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -46%);
+      font-family: var(--serif);
+      font-size: clamp(9rem, 22vw, 22rem);
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      line-height: 1;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(114, 32, 48, 0.22);
+      text-stroke: 1px rgba(114, 32, 48, 0.22);
+      white-space: nowrap;
+      pointer-events: none;
+      user-select: none;
+      z-index: 1;
+    }
+
+    /* Hero text — bottom-left composition */
+    .hero__content {
+      position: relative;
+      z-index: 3;
+      padding: clamp(2rem, 6vw, 5rem) clamp(1.5rem, 6vw, 5rem);
+      padding-bottom: clamp(3rem, 8vw, 7rem);
+      max-width: 700px;
+    }
+
+    .hero__eyebrow {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--wine-light);
+      margin-bottom: 1.25rem;
+      opacity: 0;
+      animation: fadeUp 0.9s 0.3s forwards;
+    }
+
+    .hero__headline {
+      font-family: var(--serif);
+      font-size: clamp(2.8rem, 7vw, 6.5rem);
+      font-weight: 400;
+      line-height: 1.04;
+      letter-spacing: -0.01em;
+      color: var(--cream);
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fadeUp 0.9s 0.5s forwards;
+    }
+
+    .hero__headline em {
+      font-style: italic;
+      color: var(--cream-dim);
+    }
+
+    .hero__sub {
+      font-family: var(--sans);
+      font-size: clamp(0.85rem, 1.5vw, 1rem);
+      font-weight: 400;
+      color: var(--cream-dim);
+      line-height: 1.7;
+      max-width: 420px;
+      margin-bottom: 2.5rem;
+      opacity: 0;
+      animation: fadeUp 0.9s 0.7s forwards;
+    }
+
+    .hero__actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.9s 0.9s forwards;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--cream);
+      background: var(--wine);
+      padding: 0.85rem 2rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--wine);
+      transition: background var(--transition), transform 180ms ease;
+    }
+
+    .btn-primary:hover {
+      background: var(--wine-light);
+      transform: translateY(-1px);
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--cream-dim);
+      background: transparent;
+      padding: 0.85rem 2rem;
+      border-radius: var(--radius);
+      border: 1px solid rgba(240, 232, 208, 0.20);
+      transition: border-color 200ms ease, color 200ms ease;
+    }
+
+    .btn-ghost:hover {
+      border-color: rgba(240, 232, 208, 0.50);
+      color: var(--cream);
+    }
+
+    /* Scroll hint */
+    .hero__scroll {
+      position: absolute;
+      bottom: 2rem;
+      right: clamp(1.5rem, 5vw, 4rem);
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      opacity: 0;
+      animation: fadeUp 1s 1.4s forwards;
+    }
+
+    .hero__scroll span {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cream-mute);
+      writing-mode: vertical-lr;
+    }
+
+    .hero__scroll-line {
+      width: 1px;
+      height: 40px;
+      background: linear-gradient(to bottom, var(--cream-mute), transparent);
+    }
+
+    /* ============================================================
+       MARQUEE
+    ============================================================ */
+    .marquee-strip {
+      background: var(--wine);
+      padding: 0.75rem 0;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .marquee-inner {
+      display: flex;
+      gap: 0;
+      white-space: nowrap;
+      animation: marquee 28s linear infinite;
+    }
+
+    .marquee-inner:hover { animation-play-state: paused; }
+
+    .marquee-item {
+      font-family: var(--serif);
+      font-size: 0.9rem;
+      font-weight: 400;
+      font-style: italic;
+      letter-spacing: 0.08em;
+      color: rgba(240, 232, 208, 0.90);
+      padding: 0 2.5rem;
+      flex-shrink: 0;
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* ============================================================
+       SECTION SHARED STYLES
+    ============================================================ */
+    .section {
+      padding: clamp(4rem, 10vw, 9rem) clamp(1.5rem, 6vw, 5rem);
+    }
+
+    .section--dark   { background: var(--bg); }
+    .section--mid    { background: var(--bg-mid); }
+    .section--surface{ background: var(--bg-surface); }
+
+    .section__eyebrow {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--wine-light);
+      margin-bottom: 1rem;
+    }
+
+    .section__title {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5vw, 4rem);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      color: var(--cream);
+      margin-bottom: 1.5rem;
+    }
+
+    .section__lead {
+      font-family: var(--sans);
+      font-size: clamp(0.875rem, 1.5vw, 1.05rem);
+      font-weight: 400;
+      color: var(--cream-dim);
+      line-height: 1.75;
+      max-width: 560px;
+    }
+
+    /* ============================================================
+       RÉGIONS — 5-col bento France map
+    ============================================================ */
+    .regions {
+      padding-top: clamp(4rem, 8vw, 7rem);
+      padding-bottom: clamp(4rem, 8vw, 7rem);
+      padding-left: clamp(1.5rem, 6vw, 5rem);
+      padding-right: clamp(1.5rem, 6vw, 5rem);
+    }
+
+    .regions__header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 3.5rem;
+      flex-wrap: wrap;
+    }
+
+    .regions__header-left { flex: 1; min-width: 260px; }
+
+    .regions__grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1px;
+      background: rgba(240, 232, 208, 0.06);
+      border: 1px solid rgba(240, 232, 208, 0.06);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .region-card {
+      background: var(--bg-mid);
+      padding: 2rem 1.5rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: background 280ms ease;
+      cursor: default;
+    }
+
+    .region-card:hover { background: var(--bg-surface); }
+
+    .region-card__num {
+      font-family: var(--serif);
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: var(--wine);
+      line-height: 1;
+      opacity: 0.6;
+    }
+
+    .region-card__name {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--cream);
+      line-height: 1.15;
+    }
+
+    .region-card__note {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      color: var(--cream-mute);
+      line-height: 1.6;
+      margin-top: auto;
+    }
+
+    .region-card__tag {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--wine-light);
+      border: 1px solid rgba(114, 32, 48, 0.40);
+      padding: 0.25rem 0.6rem;
+      border-radius: 2px;
+      margin-top: 0.5rem;
+    }
+
+    /* ============================================================
+       SÉLECTION — curated bottles
+    ============================================================ */
+    .selection {
+      padding: clamp(4rem, 8vw, 7rem) clamp(1.5rem, 6vw, 5rem);
+    }
+
+    .selection__intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      margin-bottom: 4rem;
+      align-items: end;
+    }
+
+    .selection__bottles {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .bottle-card {
+      background: var(--bg-surface);
+      border: 1px solid rgba(240, 232, 208, 0.06);
+      border-radius: 4px;
+      overflow: hidden;
+      transition: border-color 280ms ease, transform 280ms ease;
+    }
+
+    .bottle-card:hover {
+      border-color: rgba(114, 32, 48, 0.40);
+      transform: translateY(-3px);
+    }
+
+    /* SVG bottle illustration placeholder */
+    .bottle-card__visual {
+      aspect-ratio: 3/4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bottle-card__visual--everyday { background: #181510; }
+    .bottle-card__visual--special  { background: #150d10; }
+    .bottle-card__visual--collector{ background: #0e0e14; }
+
+    .bottle-card__body {
+      padding: 1.5rem;
+      border-top: 1px solid rgba(240, 232, 208, 0.06);
+    }
+
+    .bottle-card__tier {
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--wine-light);
+      margin-bottom: 0.5rem;
+    }
+
+    .bottle-card__name {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--cream);
+      line-height: 1.2;
+      margin-bottom: 0.4rem;
+    }
+
+    .bottle-card__origin {
+      font-family: var(--serif);
+      font-size: 0.9rem;
+      font-style: italic;
+      color: var(--cream-mute);
+      margin-bottom: 0.75rem;
+    }
+
+    .bottle-card__desc {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      color: var(--cream-mute);
+      line-height: 1.65;
+    }
+
+    .bottle-card__price {
+      display: flex;
+      align-items: baseline;
+      gap: 0.25rem;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(240, 232, 208, 0.06);
+    }
+
+    .bottle-card__price-val {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--cream);
+    }
+
+    .bottle-card__price-unit {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      color: var(--cream-mute);
+    }
+
+    /* ============================================================
+       CAVE — philosophy, editorial split
+    ============================================================ */
+    .cave {
+      padding: clamp(5rem, 10vw, 9rem) clamp(1.5rem, 6vw, 5rem);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem, 8vw, 8rem);
+      align-items: center;
+    }
+
+    .cave__visual {
+      position: relative;
+    }
+
+    .cave__frame {
+      width: 100%;
+      aspect-ratio: 4/5;
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .cave__quote-pull {
+      position: absolute;
+      bottom: -2.5rem;
+      right: -2.5rem;
+      background: var(--wine);
+      padding: 2rem 2rem;
+      border-radius: 3px;
+      max-width: 260px;
+    }
+
+    .cave__quote-pull blockquote {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--cream);
+      line-height: 1.55;
+    }
+
+    .cave__quote-pull cite {
+      display: block;
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(240, 232, 208, 0.65);
+      margin-top: 0.75rem;
+      font-style: normal;
+    }
+
+    .cave__text { }
+
+    .cave__body {
+      font-family: var(--sans);
+      font-size: clamp(0.875rem, 1.4vw, 1rem);
+      color: var(--cream-dim);
+      line-height: 1.85;
+      margin-top: 1.5rem;
+    }
+
+    .cave__body + .cave__body {
+      margin-top: 1rem;
+    }
+
+    .cave__signature {
+      margin-top: 2.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .cave__sig-line {
+      width: 40px;
+      height: 1px;
+      background: var(--wine);
+    }
+
+    .cave__sig-text {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-style: italic;
+      color: var(--cream-mute);
+    }
+
+    /* ============================================================
+       VISITEZ — contact, CTA
+    ============================================================ */
+    .visitez {
+      padding: clamp(4rem, 8vw, 7rem) clamp(1.5rem, 6vw, 5rem);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem, 6vw, 6rem);
+      align-items: start;
+    }
+
+    .visitez__map-placeholder {
+      aspect-ratio: 1/1;
+      background: var(--bg-surface);
+      border: 1px solid rgba(240, 232, 208, 0.06);
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .visitez__info { }
+
+    .visitez__address {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      color: var(--cream-dim);
+      line-height: 1.8;
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .visitez__hours {
+      margin-bottom: 2.5rem;
+    }
+
+    .visitez__hours-title {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--wine-light);
+      margin-bottom: 0.75rem;
+    }
+
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid rgba(240, 232, 208, 0.06);
+      font-family: var(--sans);
+      font-size: 0.8rem;
+      color: var(--cream-dim);
+    }
+
+    .hours-row:last-child { border-bottom: none; }
+
+    .visitez__phone-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .visitez__phone-num {
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 600;
+      color: var(--cream);
+      letter-spacing: 0.02em;
+      line-height: 1;
+      border-bottom: 2px solid var(--wine);
+      padding-bottom: 0.2rem;
+      transition: color 200ms ease;
+    }
+
+    .visitez__phone-link:hover .visitez__phone-num {
+      color: var(--wine-light);
+    }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    .footer {
+      background: var(--bg);
+      border-top: 1px solid rgba(240, 232, 208, 0.06);
+      padding: 3rem clamp(1.5rem, 6vw, 5rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .footer__brand {
+      font-family: var(--serif);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--cream-dim);
+    }
+
+    .footer__brand span {
+      display: block;
+      font-family: var(--sans);
+      font-size: 0.6rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--cream-mute);
+      margin-top: 0.2rem;
+    }
+
+    .footer__legal {
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      color: var(--cream-mute);
+      line-height: 1.6;
+      text-align: right;
+    }
+
+    .footer__links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .footer__links a {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--cream-mute);
+      transition: color 200ms ease;
+    }
+
+    .footer__links a:hover { color: var(--cream-dim); }
+
+    /* ============================================================
+       FADE-UP — IntersectionObserver targets
+    ============================================================ */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 700ms ease, transform 700ms ease;
+    }
+
+    .fade-up.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Stagger children */
+    .fade-up-group > * {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 600ms ease, transform 600ms ease;
+    }
+
+    .fade-up-group.is-visible > *:nth-child(1) { opacity: 1; transform: translateY(0); transition-delay: 0ms; }
+    .fade-up-group.is-visible > *:nth-child(2) { opacity: 1; transform: translateY(0); transition-delay: 80ms; }
+    .fade-up-group.is-visible > *:nth-child(3) { opacity: 1; transform: translateY(0); transition-delay: 160ms; }
+    .fade-up-group.is-visible > *:nth-child(4) { opacity: 1; transform: translateY(0); transition-delay: 240ms; }
+    .fade-up-group.is-visible > *:nth-child(5) { opacity: 1; transform: translateY(0); transition-delay: 320ms; }
+
+    /* ============================================================
+       HERO ANIMATIONS
+    ============================================================ */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ============================================================
+       DIVIDER ORNAMENT
+    ============================================================ */
+    .ornament {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin: 0 clamp(1.5rem, 6vw, 5rem);
+      padding: 1.5rem 0;
+    }
+
+    .ornament__line {
+      flex: 1;
+      height: 1px;
+      background: rgba(240, 232, 208, 0.08);
+    }
+
+    .ornament__mark {
+      font-family: var(--serif);
+      font-size: 1rem;
+      color: var(--wine);
+      opacity: 0.7;
+    }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 900px) {
+      .nav__links { display: none; }
+
+      .regions__grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .selection__intro {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .selection__bottles {
+        grid-template-columns: 1fr;
+      }
+
+      .cave {
+        grid-template-columns: 1fr;
+      }
+
+      .cave__quote-pull {
+        position: static;
+        margin-top: 1.5rem;
+        max-width: 100%;
+      }
+
+      .visitez {
+        grid-template-columns: 1fr;
+      }
+
+      .footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer__legal { text-align: left; }
+    }
+
+    @media (max-width: 540px) {
+      .regions__grid { grid-template-columns: 1fr; }
+      .selection__bottles { grid-template-columns: 1fr; }
+      .hero__actions { flex-direction: column; }
+      .btn-primary, .btn-ghost { justify-content: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAV
+  ============================================================ -->
+  <header class="nav" id="nav" role="banner">
+    <a href="#" class="nav__logo" aria-label="Le Cellier de la Gourgasse — accueil">
+      Le Cellier de la Gourgasse
+      <span>Cave à Vins · Boom</span>
+    </a>
+    <nav aria-label="Navigation principale">
+      <ul class="nav__links">
+        <li><a href="#regions">Régions</a></li>
+        <li><a href="#selection">Sélection</a></li>
+        <li><a href="#cave">La Cave</a></li>
+        <li><a href="#visitez">Visitez</a></li>
+      </ul>
+    </nav>
+    <a href="tel:+3234495497" class="nav__cta" aria-label="Appeler le cellier">Bel: 03 449 54 97</a>
+  </header>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="hero" aria-label="Introduction — Le Cellier de la Gourgasse">
+
+    <!-- Ghost word — decorative, hidden from AT -->
+    <p class="hero__ghost" aria-hidden="true">CELLIER</p>
+
+    <!-- Atmospheric cellar arch SVG (inline, no external image) -->
+    <div class="hero__arch" aria-hidden="true">
+      <svg viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <!-- Stone texture via noise filter -->
+          <filter id="stone-noise" x="0%" y="0%" width="100%" height="100%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="4" seed="3" result="noise"/>
+            <feColorMatrix type="saturate" values="0" in="noise" result="gray-noise"/>
+            <feBlend in="SourceGraphic" in2="gray-noise" mode="multiply" result="blended"/>
+            <feComposite in="blended" in2="SourceGraphic" operator="in"/>
+          </filter>
+
+          <!-- Candle glow gradient at arch end -->
+          <radialGradient id="candle-glow" cx="50%" cy="48%" r="28%" fx="50%" fy="48%">
+            <stop offset="0%"   stop-color="#c8843a" stop-opacity="0.55"/>
+            <stop offset="30%"  stop-color="#9b5a1e" stop-opacity="0.25"/>
+            <stop offset="70%"  stop-color="#722030" stop-opacity="0.08"/>
+            <stop offset="100%" stop-color="#0f100c" stop-opacity="0"/>
+          </radialGradient>
+
+          <!-- Ambient darkness overlay -->
+          <radialGradient id="dark-vignette" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+            <stop offset="0%"   stop-color="#0f100c" stop-opacity="0"/>
+            <stop offset="60%"  stop-color="#0f100c" stop-opacity="0.25"/>
+            <stop offset="100%" stop-color="#0f100c" stop-opacity="0.88"/>
+          </radialGradient>
+
+          <!-- Stone wall gradient -->
+          <linearGradient id="wall-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%"   stop-color="#1c1b15"/>
+            <stop offset="50%"  stop-color="#141310"/>
+            <stop offset="100%" stop-color="#0e0f0c"/>
+          </linearGradient>
+
+          <!-- Arch interior gradient -->
+          <linearGradient id="arch-inner" x1="50%" y1="0%" x2="50%" y2="100%">
+            <stop offset="0%"   stop-color="#0a0906"/>
+            <stop offset="100%" stop-color="#0f0c07"/>
+          </linearGradient>
+
+          <!-- Floor gradient -->
+          <linearGradient id="floor-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%"   stop-color="#1a160f"/>
+            <stop offset="100%" stop-color="#0f100c"/>
+          </linearGradient>
+
+          <!-- Clip for arch shape -->
+          <clipPath id="arch-clip">
+            <path d="M560,820 L560,420 Q560,220 720,220 Q880,220 880,420 L880,820 Z"/>
+          </clipPath>
+        </defs>
+
+        <!-- Background — deep stone wall -->
+        <rect width="1440" height="900" fill="url(#wall-grad)"/>
+
+        <!-- Horizontal stone course lines — suggest masonry texture -->
+        <g stroke="#1f1e16" stroke-width="1" opacity="0.7">
+          <line x1="0" y1="120" x2="1440" y2="120"/>
+          <line x1="0" y1="240" x2="1440" y2="240"/>
+          <line x1="0" y1="360" x2="1440" y2="360"/>
+          <line x1="0" y1="480" x2="1440" y2="480"/>
+          <line x1="0" y1="600" x2="1440" y2="600"/>
+          <line x1="0" y1="720" x2="1440" y2="720"/>
+        </g>
+
+        <!-- Vertical stone course lines — alternating offsets per row -->
+        <g stroke="#1f1e16" stroke-width="0.75" opacity="0.5">
+          <!-- Row 1: y=0–120 -->
+          <line x1="180" y1="0"   x2="180" y2="120"/>
+          <line x1="420" y1="0"   x2="420" y2="120"/>
+          <line x1="660" y1="0"   x2="660" y2="120"/>
+          <line x1="900" y1="0"   x2="900" y2="120"/>
+          <line x1="1140" y1="0"  x2="1140" y2="120"/>
+          <line x1="1380" y1="0"  x2="1380" y2="120"/>
+          <!-- Row 2: y=120–240 (offset) -->
+          <line x1="60"  y1="120" x2="60"  y2="240"/>
+          <line x1="300" y1="120" x2="300" y2="240"/>
+          <line x1="540" y1="120" x2="540" y2="240"/>
+          <line x1="780" y1="120" x2="780" y2="240"/>
+          <line x1="1020" y1="120" x2="1020" y2="240"/>
+          <line x1="1260" y1="120" x2="1260" y2="240"/>
+          <!-- Row 3 -->
+          <line x1="180" y1="240" x2="180" y2="360"/>
+          <line x1="420" y1="240" x2="420" y2="360"/>
+          <line x1="900" y1="240" x2="900" y2="360"/>
+          <line x1="1140" y1="240" x2="1140" y2="360"/>
+          <line x1="1380" y1="240" x2="1380" y2="360"/>
+          <!-- Row 4 -->
+          <line x1="60"  y1="360" x2="60"  y2="480"/>
+          <line x1="300" y1="360" x2="300" y2="480"/>
+          <line x1="1020" y1="360" x2="1020" y2="480"/>
+          <line x1="1260" y1="360" x2="1260" y2="480"/>
+          <!-- Row 5 -->
+          <line x1="120" y1="480" x2="120" y2="600"/>
+          <line x1="360" y1="480" x2="360" y2="600"/>
+          <line x1="1080" y1="480" x2="1080" y2="600"/>
+          <line x1="1320" y1="480" x2="1320" y2="600"/>
+          <!-- Row 6 -->
+          <line x1="60"  y1="600" x2="60"  y2="720"/>
+          <line x1="300" y1="600" x2="300" y2="720"/>
+          <line x1="1020" y1="600" x2="1020" y2="720"/>
+          <line x1="1260" y1="600" x2="1260" y2="720"/>
+        </g>
+
+        <!-- Arch opening — dark passage interior -->
+        <path d="M560,900 L560,420 Q560,200 720,200 Q880,200 880,420 L880,900 Z"
+              fill="url(#arch-inner)"/>
+
+        <!-- Arch surround / keystone frame -->
+        <path d="M540,900 L540,422 Q538,185 720,185 Q902,185 900,422 L900,900 Z
+                 M560,900 L560,420 Q560,205 720,205 Q880,205 880,420 L880,900 Z"
+              fill="#222216" fill-rule="evenodd"/>
+
+        <!-- Stone keystone detail at arch apex -->
+        <ellipse cx="720" cy="197" rx="28" ry="10" fill="#2a2818"/>
+        <ellipse cx="720" cy="197" rx="22" ry="7" fill="#1e1d13"/>
+        <line x1="720" y1="187" x2="720" y2="207" stroke="#333224" stroke-width="1" opacity="0.8"/>
+
+        <!-- Candle glow emanating from the arch -->
+        <rect x="0" y="0" width="1440" height="900" fill="url(#candle-glow)"/>
+
+        <!-- Candle flame suggestion at the vanishing point -->
+        <ellipse cx="720" cy="480" rx="4" ry="6" fill="#d4891a" opacity="0.9"/>
+        <ellipse cx="720" cy="478" rx="2.5" ry="4" fill="#f2c46a" opacity="0.8"/>
+        <ellipse cx="720" cy="476" rx="1.5" ry="2.5" fill="#fff5cc" opacity="0.7"/>
+
+        <!-- Candle body below flame -->
+        <rect x="718" y="486" width="4" height="18" rx="1" fill="#c8b06a" opacity="0.6"/>
+        <!-- Candle holder disc -->
+        <ellipse cx="720" cy="505" rx="8" ry="2.5" fill="#8a6a20" opacity="0.5"/>
+
+        <!-- Candlelight warm glow on floor -->
+        <ellipse cx="720" cy="600" rx="120" ry="30"
+                 fill="#c8843a" opacity="0.06"/>
+        <ellipse cx="720" cy="650" rx="200" ry="25"
+                 fill="#c8843a" opacity="0.04"/>
+
+        <!-- Stone column pilasters flanking arch -->
+        <rect x="500" y="200" width="60" height="700" rx="2" fill="#1a1912" opacity="0.7"/>
+        <rect x="880" y="200" width="60" height="700" rx="2" fill="#1a1912" opacity="0.7"/>
+
+        <!-- Pilaster capital detail (top) -->
+        <rect x="492" y="196" width="76" height="12" rx="2" fill="#232214" opacity="0.8"/>
+        <rect x="880" y="196" width="76" height="12" rx="2" fill="#232214" opacity="0.8"/>
+
+        <!-- Pilaster base detail (bottom) -->
+        <rect x="492" y="870" width="76" height="30" rx="2" fill="#1e1d12" opacity="0.6"/>
+        <rect x="880" y="870" width="76" height="30" rx="2" fill="#1e1d12" opacity="0.6"/>
+
+        <!-- Floor stone slabs receding into arch -->
+        <g opacity="0.55">
+          <line x1="620" y1="900" x2="690" y2="560" stroke="#1e1c11" stroke-width="1"/>
+          <line x1="720" y1="900" x2="720" y2="510" stroke="#1e1c11" stroke-width="1"/>
+          <line x1="820" y1="900" x2="750" y2="560" stroke="#1e1c11" stroke-width="1"/>
+          <!-- Horizontal floor joints -->
+          <line x1="560" y1="900" x2="880" y2="900" stroke="#1e1c11" stroke-width="0.5"/>
+          <line x1="580" y1="780" x2="860" y2="780" stroke="#1e1c11" stroke-width="0.5"/>
+          <line x1="600" y1="680" x2="840" y2="680" stroke="#1e1c11" stroke-width="0.5"/>
+          <line x1="640" y1="600" x2="800" y2="600" stroke="#1e1c11" stroke-width="0.5"/>
+        </g>
+
+        <!-- Wine bottles silhouette — far side of arch (tiny, atmospheric) -->
+        <g opacity="0.45" transform="translate(690, 510)">
+          <!-- Bottle 1 -->
+          <rect x="-18" y="-30" width="8" height="30" rx="1" fill="#4a3820"/>
+          <rect x="-17" y="-38" width="6" height="12" rx="1" fill="#3a2c16"/>
+          <rect x="-16.5" y="-40" width="5" height="4" rx="1" fill="#2a1e0e"/>
+          <!-- Bottle 2 -->
+          <rect x="-4" y="-28" width="8" height="28" rx="1" fill="#3e2e1a"/>
+          <rect x="-3" y="-36" width="6" height="11" rx="1" fill="#2f2410"/>
+          <!-- Bottle 3 -->
+          <rect x="10" y="-26" width="8" height="26" rx="1" fill="#4a3820"/>
+          <rect x="11" y="-34" width="6" height="11" rx="1" fill="#3a2c16"/>
+        </g>
+
+        <!-- Vignette overlay — keep corners dark -->
+        <rect width="1440" height="900" fill="url(#dark-vignette)"/>
+
+        <!-- Bottom gradient — ensure text readability -->
+        <linearGradient id="bottom-fade" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%"   stop-color="#0f100c" stop-opacity="0"/>
+          <stop offset="55%"  stop-color="#0f100c" stop-opacity="0.55"/>
+          <stop offset="100%" stop-color="#0f100c" stop-opacity="0.92"/>
+        </linearGradient>
+        <rect width="1440" height="900" fill="url(#bottom-fade)"/>
+
+        <!-- Left side fade — text safe zone -->
+        <linearGradient id="left-fade" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%"   stop-color="#0f100c" stop-opacity="0.70"/>
+          <stop offset="45%"  stop-color="#0f100c" stop-opacity="0"/>
+        </linearGradient>
+        <rect width="1440" height="900" fill="url(#left-fade)"/>
+      </svg>
+    </div>
+
+    <!-- Hero text — bottom-left anchor -->
+    <div class="hero__content">
+      <p class="hero__eyebrow">Boom, België · Depuis toujours</p>
+      <h1 class="hero__headline">
+        Votre cave à vins<br>
+        <em>— au cœur de Boom.</em>
+      </h1>
+      <p class="hero__sub">
+        Uw wijnkelder in Boom. Une sélection française soigneuse — alleen wat de eigenaar zelf drinkt.
+        Bordeaux, Bourgogne, Loire, Rhône, Alsace.
+      </p>
+      <div class="hero__actions">
+        <a href="#selection" class="btn-primary">Découvrez la sélection</a>
+        <a href="tel:+3234495497" class="btn-ghost">Bel: 03 449 54 97</a>
+      </div>
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+      <span>Défiler</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MARQUEE
+  ============================================================ -->
+  <div class="marquee-strip" aria-label="Nos régions et spécialités" role="marquee">
+    <div class="marquee-inner" aria-hidden="true">
+      <!-- Repeated twice for seamless loop -->
+      <span class="marquee-item">Bordeaux</span>
+      <span class="marquee-item">·</span>
+      <span class="marquee-item">Bourgogne</span>
+      <span class="marquee-item">·</span>
+      <span class="marquee-item">Châteauneuf-du-Pape</span>
+      <span class="marquee-item">·</span>
+      <span class="marquee-item">Loire</span>
+      <span class="marquee-item">·</span>
+      <span class="marquee-item">Alsace</span>
+      <span class="marquee-item">·</span>
+      <span class="marquee-item">Vins naturels</span>
+      <span class="marquee-item">·</span>
+      <span class="marquee-item">Boom</span>
+      <span class="marquee-item">·</span>
+      <span class="marquee-item">Bordeaux</span>
+      <span class="marquee-item">·</span>
+      <span class="marquee-item">Bourgogne</span>
+      <span class="marquee-item">·</span>
+      <span class="marquee-item">Châteauneuf-du-Pape</span>
+      <span class="marquee-item">·</span>
+      <span class="marquee-item">Loire</span>
+      <span class="marquee-item">·</span>
+      <span class="marquee-item">Alsace</span>
+      <span class="marquee-item">·</span>
+      <span class="marquee-item">Vins naturels</span>
+      <span class="marquee-item">·</span>
+      <span class="marquee-item">Boom</span>
+      <span class="marquee-item">·</span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       RÉGIONS
+  ============================================================ -->
+  <section id="regions" class="regions section--mid" aria-labelledby="regions-title">
+    <div class="regions__header">
+      <div class="regions__header-left">
+        <p class="section__eyebrow fade-up">Les grandes régions</p>
+        <h2 class="section__title fade-up" id="regions-title">
+          La France,<br>
+          verre par verre.
+        </h2>
+      </div>
+      <p class="section__lead fade-up" style="max-width:340px; text-align:right;">
+        Chaque région a sa logique, son terroir, sa mémoire.
+        Wij reizen voor u — zodat u hier thuis kunt proeven.
+      </p>
+    </div>
+
+    <div class="regions__grid fade-up-group">
+      <!-- Bordeaux -->
+      <article class="region-card">
+        <div class="region-card__num" aria-hidden="true">01</div>
+        <h3 class="region-card__name">Bordeaux</h3>
+        <p class="region-card__note">
+          Médoc, Saint-Émilion, Pomerol. Cabernet Sauvignon &amp; Merlot op hun best.
+          Grands crus et petits châteaux méconnus.
+        </p>
+        <span class="region-card__tag">Rive gauche &amp; droite</span>
+      </article>
+
+      <!-- Bourgogne -->
+      <article class="region-card">
+        <div class="region-card__num" aria-hidden="true">02</div>
+        <h3 class="region-card__name">Bourgogne</h3>
+        <p class="region-card__note">
+          Pinot Noir en Chardonnay in hun meest verfijnde vorm.
+          Gevels, premier crus, kleine producenten.
+        </p>
+        <span class="region-card__tag">Côte d'Or · Chablis</span>
+      </article>
+
+      <!-- Rhône -->
+      <article class="region-card">
+        <div class="region-card__num" aria-hidden="true">03</div>
+        <h3 class="region-card__name">Rhône</h3>
+        <p class="region-card__note">
+          Châteauneuf-du-Pape, Hermitage, Côtes du Rhône.
+          Grenache, Syrah — chaleur, profondeur, caractère.
+        </p>
+        <span class="region-card__tag">Nord &amp; Sud Rhône</span>
+      </article>
+
+      <!-- Loire -->
+      <article class="region-card">
+        <div class="region-card__num" aria-hidden="true">04</div>
+        <h3 class="region-card__name">Loire</h3>
+        <p class="region-card__note">
+          Muscadet, Sancerre, Vouvray, Chinon.
+          Fris en elegant — de perfecte tafelwijn voor dagelijks genot.
+        </p>
+        <span class="region-card__tag">Atlantique → Centre</span>
+      </article>
+
+      <!-- Alsace -->
+      <article class="region-card">
+        <div class="region-card__num" aria-hidden="true">05</div>
+        <h3 class="region-card__name">Alsace</h3>
+        <p class="region-card__note">
+          Riesling, Gewurztraminer, Pinot Gris.
+          Aromatique, précis, distinctif — en allemand, en français, en verre.
+        </p>
+        <span class="region-card__tag">Alsace Grand Cru</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- Ornamental divider -->
+  <div class="ornament" aria-hidden="true">
+    <div class="ornament__line"></div>
+    <div class="ornament__mark">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+        <circle cx="9" cy="9" r="2.5" fill="currentColor" opacity="0.6"/>
+      </svg>
+    </div>
+    <div class="ornament__line"></div>
+  </div>
+
+  <!-- ============================================================
+       SÉLECTION
+  ============================================================ -->
+  <section id="selection" class="selection section--dark" aria-labelledby="selection-title">
+    <div class="selection__intro">
+      <div>
+        <p class="section__eyebrow fade-up">La sélection du moment</p>
+        <h2 class="section__title fade-up" id="selection-title">
+          Trois niveaux,<br>un seul critère.
+        </h2>
+      </div>
+      <p class="section__lead fade-up" style="padding-top:1rem;">
+        Elk fles in onze kelder heeft een reden om er te zijn.
+        Que ce soit pour un soir ordinaire, une occasion spéciale, ou une bouteille à garder.
+      </p>
+    </div>
+
+    <div class="selection__bottles fade-up-group">
+
+      <!-- Everyday -->
+      <article class="bottle-card">
+        <div class="bottle-card__visual bottle-card__visual--everyday" role="img" aria-label="Sélection quotidienne — bouteille illustrée">
+          <svg width="80" height="200" viewBox="0 0 80 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Bottle silhouette — everyday -->
+            <path d="M30,0 L30,40 Q18,55 16,80 L16,175 Q16,190 40,190 Q64,190 64,175 L64,80 Q62,55 50,40 L50,0 Z"
+                  fill="#2a1e10" stroke="#4a3420" stroke-width="0.5"/>
+            <!-- Neck band -->
+            <rect x="30" y="38" width="20" height="6" rx="1" fill="#3a2c16"/>
+            <!-- Label area -->
+            <rect x="20" y="100" width="40" height="55" rx="1" fill="#1e160a" stroke="#3a2c12" stroke-width="0.5"/>
+            <!-- Label text suggestion -->
+            <rect x="24" y="108" width="32" height="1.5" rx="0.75" fill="#f0e8d0" opacity="0.45"/>
+            <rect x="26" y="113" width="28" height="1" rx="0.5" fill="#f0e8d0" opacity="0.25"/>
+            <rect x="28" y="117" width="24" height="1" rx="0.5" fill="#722030" opacity="0.5"/>
+            <rect x="24" y="124" width="32" height="1" rx="0.5" fill="#f0e8d0" opacity="0.18"/>
+            <rect x="24" y="127" width="32" height="1" rx="0.5" fill="#f0e8d0" opacity="0.15"/>
+            <!-- Cork -->
+            <rect x="33" y="-4" width="14" height="10" rx="1" fill="#c8a86a" opacity="0.7"/>
+            <!-- Foil cap -->
+            <rect x="29" y="4" width="22" height="18" rx="1" fill="#722030" opacity="0.6"/>
+            <!-- Wine level -->
+            <ellipse cx="40" cy="88" rx="22" ry="4" fill="#5a1020" opacity="0.4"/>
+            <!-- Candle glow reflection on glass -->
+            <path d="M18,90 Q20,150 18,175" stroke="#c8843a" stroke-width="0.5" opacity="0.15"/>
+          </svg>
+        </div>
+        <div class="bottle-card__body">
+          <p class="bottle-card__tier">Quotidien</p>
+          <h3 class="bottle-card__name">Château Fleur Cardinale</h3>
+          <p class="bottle-card__origin">Saint-Émilion Grand Cru, 2019</p>
+          <p class="bottle-card__desc">
+            Soepel, aards, met een vleugje pruim en eik.
+            De wijn die u iedere avond verdient zonder een excuus.
+          </p>
+          <div class="bottle-card__price">
+            <span class="bottle-card__price-val">€ 18</span>
+            <span class="bottle-card__price-unit">/ fles</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Special -->
+      <article class="bottle-card">
+        <div class="bottle-card__visual bottle-card__visual--special" role="img" aria-label="Sélection spéciale — bouteille illustrée">
+          <svg width="80" height="200" viewBox="0 0 80 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Bottle silhouette — Bourgogne shape -->
+            <path d="M28,0 L28,44 Q14,62 14,88 L14,175 Q14,192 40,192 Q66,192 66,175 L66,88 Q66,62 52,44 L52,0 Z"
+                  fill="#1e1018" stroke="#3a1828" stroke-width="0.5"/>
+            <!-- Label area -->
+            <rect x="18" y="98" width="44" height="60" rx="1" fill="#140c12" stroke="#3a1828" stroke-width="0.5"/>
+            <!-- Label text -->
+            <rect x="22" y="106" width="36" height="1.5" rx="0.75" fill="#f0e8d0" opacity="0.5"/>
+            <rect x="24" y="111" width="32" height="1" rx="0.5" fill="#f0e8d0" opacity="0.3"/>
+            <rect x="26" y="116" width="28" height="1" rx="0.5" fill="#722030" opacity="0.6"/>
+            <rect x="22" y="123" width="36" height="1" rx="0.5" fill="#f0e8d0" opacity="0.2"/>
+            <!-- Wax seal dot -->
+            <circle cx="40" cy="134" r="5" fill="#722030" opacity="0.5"/>
+            <!-- Cork -->
+            <rect x="33" y="-4" width="14" height="10" rx="1" fill="#c8a86a" opacity="0.7"/>
+            <!-- Foil dark -->
+            <rect x="27" y="4" width="26" height="22" rx="1" fill="#1e1018" opacity="0.8" stroke="#3a1828" stroke-width="0.5"/>
+            <!-- Glass highlight -->
+            <path d="M16,92 Q18,148 16,175" stroke="#c8843a" stroke-width="0.75" opacity="0.2"/>
+          </svg>
+        </div>
+        <div class="bottle-card__body">
+          <p class="bottle-card__tier">Occasion spéciale</p>
+          <h3 class="bottle-card__name">Domaine Faiveley</h3>
+          <p class="bottle-card__origin">Gevrey-Chambertin 1er Cru, 2018</p>
+          <p class="bottle-card__desc">
+            Elegantie en structuur in perfecte balans.
+            Pour les dimanches qui méritent qu'on s'y attarde.
+          </p>
+          <div class="bottle-card__price">
+            <span class="bottle-card__price-val">€ 64</span>
+            <span class="bottle-card__price-unit">/ fles</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Collector -->
+      <article class="bottle-card">
+        <div class="bottle-card__visual bottle-card__visual--collector" role="img" aria-label="Sélection collector — bouteille illustrée">
+          <svg width="80" height="200" viewBox="0 0 80 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Bottle silhouette — slim elegant -->
+            <path d="M31,0 L31,38 Q22,52 20,76 L20,175 Q20,193 40,193 Q60,193 60,175 L60,76 Q58,52 49,38 L49,0 Z"
+                  fill="#0e0d14" stroke="#2a2830" stroke-width="0.5"/>
+            <!-- Label — elegant dark -->
+            <rect x="22" y="100" width="36" height="58" rx="1" fill="#080812" stroke="#2a2830" stroke-width="0.5"/>
+            <!-- Gold label border -->
+            <rect x="22" y="100" width="36" height="58" rx="1" fill="none" stroke="#c8a028" stroke-width="0.75" opacity="0.4"/>
+            <!-- Label lines -->
+            <rect x="26" y="108" width="28" height="1.5" rx="0.75" fill="#c8a028" opacity="0.55"/>
+            <rect x="28" y="113" width="24" height="1" rx="0.5" fill="#f0e8d0" opacity="0.3"/>
+            <rect x="30" y="118" width="20" height="1" rx="0.5" fill="#f0e8d0" opacity="0.2"/>
+            <rect x="26" y="126" width="28" height="1" rx="0.5" fill="#c8a028" opacity="0.25"/>
+            <!-- Estate seal -->
+            <circle cx="40" cy="140" r="6" fill="none" stroke="#c8a028" stroke-width="0.5" opacity="0.5"/>
+            <circle cx="40" cy="140" r="3" fill="#c8a028" opacity="0.3"/>
+            <!-- Cork -->
+            <rect x="34" y="-3" width="12" height="9" rx="1" fill="#c8a86a" opacity="0.8"/>
+            <!-- Gold foil cap -->
+            <rect x="30" y="5" width="20" height="16" rx="0.5" fill="#a88420" opacity="0.4" stroke="#c8a028" stroke-width="0.5"/>
+            <!-- Subtle glass reflection -->
+            <path d="M22,80 Q24,140 22,175" stroke="#c8a028" stroke-width="0.75" opacity="0.12"/>
+          </svg>
+        </div>
+        <div class="bottle-card__body">
+          <p class="bottle-card__tier">Collection</p>
+          <h3 class="bottle-card__name">Château Pétrus</h3>
+          <p class="bottle-card__origin">Pomerol, 2012</p>
+          <p class="bottle-card__desc">
+            Voor wie weet wat hij zoekt — of ontdekken wil.
+            Une bouteille à garder, à partager, à ne jamais oublier.
+          </p>
+          <div class="bottle-card__price">
+            <span class="bottle-card__price-val">Prix sur demande</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       LA CAVE — philosophy
+  ============================================================ -->
+  <section id="cave" class="cave section--surface" aria-labelledby="cave-title">
+
+    <!-- Left: atmospheric visual with pull-quote -->
+    <div class="cave__visual fade-up">
+      <div class="cave__frame">
+        <!-- Atmospheric cellar SVG illustration -->
+        <svg width="100%" height="100%" viewBox="0 0 480 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Atmosphère de cave à vins — rangées de bouteilles dans la pénombre">
+          <defs>
+            <radialGradient id="cave-glow" cx="50%" cy="70%" r="50%">
+              <stop offset="0%"   stop-color="#c8843a" stop-opacity="0.18"/>
+              <stop offset="100%" stop-color="#0e0f0c" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="cave-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%"   stop-color="#151410"/>
+              <stop offset="100%" stop-color="#0a0908"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Background -->
+          <rect width="480" height="600" fill="url(#cave-bg)"/>
+
+          <!-- Wine racks — horizontal rows of bottle ends -->
+          <!-- Row 1 -->
+          <g opacity="0.7">
+            <g transform="translate(0, 60)">
+              <!-- rack dividers -->
+              <line x1="0" y1="0"   x2="480" y2="0"   stroke="#2a2518" stroke-width="1"/>
+              <line x1="0" y1="60"  x2="480" y2="60"  stroke="#2a2518" stroke-width="1"/>
+              <!-- Bottle circles (ends) -->
+              <g fill="#1e1810" stroke="#3a3020" stroke-width="0.5">
+                <circle cx="30"  cy="30" r="18"/>
+                <circle cx="76"  cy="30" r="18"/>
+                <circle cx="122" cy="30" r="18"/>
+                <circle cx="168" cy="30" r="18"/>
+                <circle cx="214" cy="30" r="18"/>
+                <circle cx="260" cy="30" r="18"/>
+                <circle cx="306" cy="30" r="18"/>
+                <circle cx="352" cy="30" r="18"/>
+                <circle cx="398" cy="30" r="18"/>
+                <circle cx="444" cy="30" r="18"/>
+              </g>
+              <!-- Wine color inner circles -->
+              <g fill="#5a1020" opacity="0.5">
+                <circle cx="30"  cy="30" r="12"/>
+                <circle cx="76"  cy="30" r="12"/>
+                <circle cx="122" cy="30" r="12"/>
+                <circle cx="168" cy="30" r="12"/>
+                <circle cx="214" cy="30" r="12"/>
+                <circle cx="260" cy="30" r="12"/>
+                <circle cx="306" cy="30" r="12"/>
+                <circle cx="352" cy="30" r="12"/>
+                <circle cx="398" cy="30" r="12"/>
+                <circle cx="444" cy="30" r="12"/>
+              </g>
+              <!-- Center dots (corks) -->
+              <g fill="#8a6a20" opacity="0.6">
+                <circle cx="30"  cy="30" r="4"/>
+                <circle cx="76"  cy="30" r="4"/>
+                <circle cx="122" cy="30" r="4"/>
+                <circle cx="168" cy="30" r="4"/>
+                <circle cx="214" cy="30" r="4"/>
+                <circle cx="260" cy="30" r="4"/>
+                <circle cx="306" cy="30" r="4"/>
+                <circle cx="352" cy="30" r="4"/>
+                <circle cx="398" cy="30" r="4"/>
+                <circle cx="444" cy="30" r="4"/>
+              </g>
+            </g>
+
+            <!-- Row 2 -->
+            <g transform="translate(0, 140)">
+              <line x1="0" y1="0"   x2="480" y2="0"   stroke="#2a2518" stroke-width="1"/>
+              <line x1="0" y1="60"  x2="480" y2="60"  stroke="#2a2518" stroke-width="1"/>
+              <g fill="#1a1610" stroke="#342e1c" stroke-width="0.5">
+                <circle cx="30"  cy="30" r="18"/>
+                <circle cx="76"  cy="30" r="18"/>
+                <circle cx="122" cy="30" r="18"/>
+                <circle cx="168" cy="30" r="18"/>
+                <circle cx="214" cy="30" r="18"/>
+                <circle cx="260" cy="30" r="18"/>
+                <circle cx="306" cy="30" r="18"/>
+                <circle cx="352" cy="30" r="18"/>
+                <circle cx="398" cy="30" r="18"/>
+                <circle cx="444" cy="30" r="18"/>
+              </g>
+              <g fill="#481018" opacity="0.45">
+                <circle cx="30"  cy="30" r="12"/>
+                <circle cx="76"  cy="30" r="12"/>
+                <circle cx="122" cy="30" r="12"/>
+                <circle cx="168" cy="30" r="12"/>
+                <circle cx="214" cy="30" r="12"/>
+                <circle cx="260" cy="30" r="12"/>
+                <circle cx="306" cy="30" r="12"/>
+                <circle cx="352" cy="30" r="12"/>
+                <circle cx="398" cy="30" r="12"/>
+                <circle cx="444" cy="30" r="12"/>
+              </g>
+              <g fill="#8a6a20" opacity="0.5">
+                <circle cx="30"  cy="30" r="4"/>
+                <circle cx="76"  cy="30" r="4"/>
+                <circle cx="122" cy="30" r="4"/>
+                <circle cx="168" cy="30" r="4"/>
+                <circle cx="214" cy="30" r="4"/>
+                <circle cx="260" cy="30" r="4"/>
+                <circle cx="306" cy="30" r="4"/>
+                <circle cx="352" cy="30" r="4"/>
+                <circle cx="398" cy="30" r="4"/>
+                <circle cx="444" cy="30" r="4"/>
+              </g>
+            </g>
+
+            <!-- Row 3 -->
+            <g transform="translate(0, 220)" opacity="0.85">
+              <line x1="0" y1="0"   x2="480" y2="0"   stroke="#2a2518" stroke-width="1"/>
+              <line x1="0" y1="60"  x2="480" y2="60"  stroke="#2a2518" stroke-width="1"/>
+              <g fill="#161410" stroke="#302a18" stroke-width="0.5">
+                <circle cx="30"  cy="30" r="18"/>
+                <circle cx="76"  cy="30" r="18"/>
+                <circle cx="122" cy="30" r="18"/>
+                <circle cx="168" cy="30" r="18"/>
+                <circle cx="214" cy="30" r="18"/>
+                <circle cx="260" cy="30" r="18"/>
+                <circle cx="306" cy="30" r="18"/>
+                <circle cx="352" cy="30" r="18"/>
+                <circle cx="398" cy="30" r="18"/>
+                <circle cx="444" cy="30" r="18"/>
+              </g>
+              <g fill="#5a1020" opacity="0.35">
+                <circle cx="30"  cy="30" r="12"/>
+                <circle cx="76"  cy="30" r="12"/>
+                <circle cx="122" cy="30" r="12"/>
+                <circle cx="168" cy="30" r="12"/>
+                <circle cx="214" cy="30" r="12"/>
+                <circle cx="260" cy="30" r="12"/>
+                <circle cx="306" cy="30" r="12"/>
+                <circle cx="352" cy="30" r="12"/>
+                <circle cx="398" cy="30" r="12"/>
+                <circle cx="444" cy="30" r="12"/>
+              </g>
+            </g>
+
+            <!-- Rows 4 & 5 — fade into darkness -->
+            <g transform="translate(0, 300)" opacity="0.5">
+              <line x1="0" y1="0"   x2="480" y2="0"   stroke="#2a2518" stroke-width="0.75"/>
+              <line x1="0" y1="60"  x2="480" y2="60"  stroke="#2a2518" stroke-width="0.75"/>
+              <g fill="#121110" stroke="#282418" stroke-width="0.5">
+                <circle cx="30"  cy="30" r="18"/>
+                <circle cx="76"  cy="30" r="18"/>
+                <circle cx="122" cy="30" r="18"/>
+                <circle cx="168" cy="30" r="18"/>
+                <circle cx="214" cy="30" r="18"/>
+                <circle cx="260" cy="30" r="18"/>
+                <circle cx="306" cy="30" r="18"/>
+                <circle cx="352" cy="30" r="18"/>
+                <circle cx="398" cy="30" r="18"/>
+                <circle cx="444" cy="30" r="18"/>
+              </g>
+            </g>
+
+            <g transform="translate(0, 380)" opacity="0.3">
+              <line x1="0" y1="0"   x2="480" y2="0"   stroke="#2a2518" stroke-width="0.5"/>
+              <line x1="0" y1="60"  x2="480" y2="60"  stroke="#2a2518" stroke-width="0.5"/>
+              <g fill="#0e0d0a" stroke="#201e14" stroke-width="0.5">
+                <circle cx="30"  cy="30" r="18"/>
+                <circle cx="76"  cy="30" r="18"/>
+                <circle cx="122" cy="30" r="18"/>
+                <circle cx="168" cy="30" r="18"/>
+                <circle cx="214" cy="30" r="18"/>
+                <circle cx="260" cy="30" r="18"/>
+                <circle cx="306" cy="30" r="18"/>
+                <circle cx="352" cy="30" r="18"/>
+                <circle cx="398" cy="30" r="18"/>
+                <circle cx="444" cy="30" r="18"/>
+              </g>
+            </g>
+          </g>
+
+          <!-- Candlelight glow -->
+          <rect width="480" height="600" fill="url(#cave-glow)"/>
+
+          <!-- Darkness overlay at bottom -->
+          <linearGradient id="cave-fade" x1="0%" y1="30%" x2="0%" y2="100%">
+            <stop offset="0%"   stop-color="#0e0f0c" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#0e0f0c" stop-opacity="0.85"/>
+          </linearGradient>
+          <rect width="480" height="600" fill="url(#cave-fade)"/>
+        </svg>
+      </div>
+
+      <!-- Pull-quote over image -->
+      <div class="cave__quote-pull">
+        <blockquote>
+          "Je ne prends que ce que je servirais à ma propre table."
+        </blockquote>
+        <cite>— Le Cellier de la Gourgasse</cite>
+      </div>
+    </div>
+
+    <!-- Right: philosophy text -->
+    <div class="cave__text fade-up">
+      <p class="section__eyebrow">La philosophie</p>
+      <h2 class="section__title" id="cave-title">
+        Alleen wat<br>
+        <em style="font-family:var(--serif); font-style:italic;">we zelf drinken.</em>
+      </h2>
+
+      <p class="cave__body">
+        Het Cellier de la Gourgasse is geen grootwarenhuis.
+        Geen endloos rek van labels die u zelf moet doorzoeken.
+        Une cave où chaque bouteille a été choisie avec intention —
+        pour ses origines, son producteur, et ce qu'elle raconte dans le verre.
+      </p>
+
+      <p class="cave__body">
+        Nous travaillons avec de petits producteurs, souvent méconnus,
+        qui pratiquent leur métier avec soin.
+        Wij kennen hun namen, hun percelen, hun oogst.
+        U krijgt geen verkoopspitsch — wel een eerlijk advies.
+      </p>
+
+      <p class="cave__body">
+        Vins naturels, biodynamiques et conventionnels de qualité —
+        zolang de fles de moeite waard is.
+        Rien d'autre.
+      </p>
+
+      <div class="cave__signature">
+        <div class="cave__sig-line"></div>
+        <p class="cave__sig-text">Votre caviste · Boom</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Ornamental divider -->
+  <div class="ornament" aria-hidden="true">
+    <div class="ornament__line"></div>
+    <div class="ornament__mark">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="0.75" opacity="0.5"/>
+        <circle cx="9" cy="9" r="2.5" fill="currentColor" opacity="0.6"/>
+      </svg>
+    </div>
+    <div class="ornament__line"></div>
+  </div>
+
+  <!-- ============================================================
+       VISITEZ
+  ============================================================ -->
+  <section id="visitez" class="visitez section--mid" aria-labelledby="visitez-title">
+
+    <!-- Map placeholder — pure SVG town map suggestion -->
+    <div class="visitez__map-placeholder fade-up" role="img" aria-label="Plan de situation — Le Cellier de la Gourgasse, Boom">
+      <svg width="100%" height="100%" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="map-pin-glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%"   stop-color="#722030" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#722030" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+
+        <!-- Map background -->
+        <rect width="400" height="400" fill="#161612"/>
+
+        <!-- Street grid — Boom stylised -->
+        <g stroke="#22221a" stroke-width="8" stroke-linecap="round">
+          <!-- Major roads -->
+          <line x1="0"   y1="200" x2="400" y2="200"/>
+          <line x1="200" y1="0"   x2="200" y2="400"/>
+          <line x1="0"   y1="140" x2="400" y2="140"/>
+          <line x1="0"   y1="280" x2="400" y2="280"/>
+          <line x1="120" y1="0"   x2="120" y2="400"/>
+          <line x1="300" y1="0"   x2="300" y2="400"/>
+        </g>
+
+        <!-- Minor streets -->
+        <g stroke="#1c1c14" stroke-width="4" stroke-linecap="round">
+          <line x1="0"   y1="100" x2="400" y2="100"/>
+          <line x1="0"   y1="320" x2="400" y2="320"/>
+          <line x1="60"  y1="0"   x2="60"  y2="400"/>
+          <line x1="260" y1="0"   x2="260" y2="400"/>
+          <line x1="350" y1="0"   x2="350" y2="400"/>
+          <!-- Diagonal (Scheldekant suggestion) -->
+          <line x1="0"   y1="340" x2="180" y2="400"/>
+          <line x1="0"   y1="260" x2="120" y2="400"/>
+        </g>
+
+        <!-- City blocks (filled) -->
+        <g fill="#1a1a12" opacity="0.5">
+          <rect x="8"   y="148" width="104" height="44"/>
+          <rect x="128" y="148" width="64"  height="44"/>
+          <rect x="8"   y="208" width="104" height="64"/>
+          <rect x="128" y="208" width="64"  height="64"/>
+          <rect x="308" y="148" width="84"  height="44"/>
+          <rect x="308" y="208" width="84"  height="64"/>
+          <rect x="8"   y="108" width="104" height="24"/>
+          <rect x="128" y="108" width="64"  height="24"/>
+          <rect x="208" y="108" width="84"  height="24"/>
+        </g>
+
+        <!-- Pin glow -->
+        <circle cx="200" cy="200" r="60" fill="url(#map-pin-glow)"/>
+
+        <!-- Location pin -->
+        <path d="M200,172 Q215,172 215,190 Q215,210 200,228 Q185,210 185,190 Q185,172 200,172 Z"
+              fill="#722030"/>
+        <circle cx="200" cy="190" r="7" fill="#f0e8d0"/>
+
+        <!-- Label -->
+        <rect x="130" y="238" width="140" height="32" rx="4" fill="#0f100c" opacity="0.85"/>
+        <text x="200" y="259" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#f0e8d0" opacity="0.85">Le Cellier · Boom</text>
+
+        <!-- North indicator -->
+        <g transform="translate(370, 30)">
+          <circle r="14" fill="#0f100c" stroke="#2a2518" stroke-width="0.75"/>
+          <text x="0" y="5" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="#f0e8d0" opacity="0.7">N</text>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Info panel -->
+    <div class="visitez__info fade-up">
+      <p class="section__eyebrow">Visitez-nous · Kom langs</p>
+      <h2 class="section__title" id="visitez-title">
+        Nous sommes<br>à Boom.
+      </h2>
+
+      <address class="visitez__address" style="font-style:normal;">
+        Le Cellier de la Gourgasse<br>
+        Boom, Antwerpen<br>
+        België
+      </address>
+
+      <div class="visitez__hours" aria-label="Heures d'ouverture">
+        <p class="visitez__hours-title">Heures d'ouverture · Openingsuren</p>
+        <div class="hours-row">
+          <span>Mardi – Vendredi / Di – Vr</span>
+          <span>10:00 – 18:30</span>
+        </div>
+        <div class="hours-row">
+          <span>Samedi / Zaterdag</span>
+          <span>10:00 – 17:00</span>
+        </div>
+        <div class="hours-row">
+          <span>Dimanche – Lundi / Zo – Ma</span>
+          <span>Fermé / Gesloten</span>
+        </div>
+      </div>
+
+      <p class="section__eyebrow" style="margin-bottom:0.5rem;">Téléphone · Telefoon</p>
+      <a href="tel:+3234495497" class="visitez__phone-link" aria-label="Appeler le 03 449 54 97">
+        <span class="visitez__phone-num">03 449 54 97</span>
+      </a>
+
+      <div style="margin-top: 2.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
+        <a href="tel:+3234495497" class="btn-primary">Bel nu</a>
+        <a href="#hero" class="btn-ghost">Terug naar boven</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__brand">
+      Le Cellier de la Gourgasse
+      <span>Cave à Vins · Boom, België</span>
+    </div>
+    <ul class="footer__links" aria-label="Liens du pied de page">
+      <li><a href="#regions">Régions</a></li>
+      <li><a href="#selection">Sélection</a></li>
+      <li><a href="#cave">La Cave</a></li>
+      <li><a href="#visitez">Contact</a></li>
+    </ul>
+    <p class="footer__legal">
+      &copy; 2025 Le Cellier de la Gourgasse<br>
+      Boom · TVA BE&nbsp;— · Alle rechten voorbehouden
+    </p>
+  </footer>
+
+  <!-- ============================================================
+       HEADROOM NAV — inline JS
+       TOL_DOWN=8px, TOL_UP=5px, offset=80px, requestAnimationFrame
+  ============================================================ -->
+  <script>
+    (function () {
+      'use strict';
+
+      var nav       = document.getElementById('nav');
+      var lastScroll = 0;
+      var ticking   = false;
+      var hidden    = false;
+      var TOL_DOWN  = 8;
+      var TOL_UP    = 5;
+      var OFFSET    = 80;
+
+      function updateNav() {
+        var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+        var delta   = scrollY - lastScroll;
+
+        // Add scrolled class
+        if (scrollY > OFFSET) {
+          nav.classList.add('is-scrolled');
+        } else {
+          nav.classList.remove('is-scrolled');
+          nav.classList.remove('is-hidden');
+          hidden = false;
+          lastScroll = scrollY;
+          ticking = false;
+          return;
+        }
+
+        // Scrolling down beyond tolerance
+        if (delta > TOL_DOWN && !hidden) {
+          nav.classList.add('is-hidden');
+          hidden = true;
+        }
+        // Scrolling up beyond tolerance
+        else if (delta < -TOL_UP && hidden) {
+          nav.classList.remove('is-hidden');
+          hidden = false;
+        }
+
+        lastScroll = scrollY;
+        ticking    = false;
+      }
+
+      window.addEventListener('scroll', function () {
+        if (!ticking) {
+          window.requestAnimationFrame(updateNav);
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+  </script>
+
+  <!-- ============================================================
+       INTERSECTION OBSERVER — fade-up
+  ============================================================ -->
+  <script>
+    (function () {
+      'use strict';
+
+      if (!('IntersectionObserver' in window)) {
+        // Fallback: just show everything
+        document.querySelectorAll('.fade-up, .fade-up-group').forEach(function (el) {
+          el.classList.add('is-visible');
+        });
+        return;
+      }
+
+      var options = {
+        root:       null,
+        rootMargin: '0px 0px -60px 0px',
+        threshold:  0.12
+      };
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, options);
+
+      document.querySelectorAll('.fade-up, .fade-up-group').forEach(function (el) {
+        observer.observe(el);
+      });
+    })();
+  </script>
+
+</body>
+</html>

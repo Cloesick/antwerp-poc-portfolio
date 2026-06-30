@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bakkerij Van den Bogaert An · Ambachtelijk brood in Deurne</title>
+<meta name="description" content="Ambachtelijke brood- en banketbakkerij in Deurne, Antwerpen. Elke ochtend vers. Pistolets, brood, banket en taarten op bestelling.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231c120a'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' fill='%23b85c2a' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=DM+Sans:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" /></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Bakkerij Van den Bogaert An",
+  "description": "Ambachtelijke brood- en banketbakkerij in Deurne, Antwerpen. Dagelijks vers brood en banket.",
+  "telephone": "+3233216795",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Deurne",
+    "postalCode": "2100",
+    "addressRegion": "Antwerpen",
+    "addressCountry": "BE"
+  },
+  "openingHours": ["Tu-Fr 07:00-18:00", "Sa 07:00-17:00", "Su 07:00-13:00"]
+}
+</script>
+
+<style>
+/* ============================================================
+   DESIGN TOKENS
+   Background:  #1c120a (near-black warm brown)
+   Surface:     #241810 (raised card tone)
+   Muted:       #6b4f3a (warm muted brown)
+   Cream:       #f5ecd7 (warm cream text)
+   Faint:       #c9b89a (secondary text)
+   Accent:      #b85c2a (terracotta rust -- ONE accent only)
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:      #1c120a;
+  --surface: #241810;
+  --muted:   #6b4f3a;
+  --cream:   #f5ecd7;
+  --faint:   #c9b89a;
+  --accent:  #b85c2a;
+  --nav-h:   64px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--cream);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Grain texture overlay -- fixed atmospheric noise */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  pointer-events: none;
+  z-index: 1000;
+  mix-blend-mode: overlay;
+}
+
+/* ============================================================
+   NAVIGATION -- Headroom
+   ============================================================ */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-h);
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 clamp(20px, 5vw, 60px);
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), background 0.3s ease;
+}
+
+nav.nav-visible { transform: translateY(0); }
+nav.nav-hidden  { transform: translateY(-100%); }
+nav.nav-scrolled {
+  background: rgba(28, 18, 10, 0.94);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(184,92,42,0.15);
+}
+
+.nav-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--cream);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.nav-logo span { color: var(--accent); }
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: rgba(245,236,215,0.82);
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--cream); }
+
+.nav-cta {
+  background: var(--accent);
+  color: var(--cream) !important;
+  padding: 8px 18px;
+  border-radius: 3px;
+  font-size: 0.78rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  transition: opacity 0.2s !important;
+}
+.nav-cta:hover { opacity: 0.85; color: var(--cream) !important; }
+
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: calc(var(--nav-h) + 40px) clamp(20px, 6vw, 80px) 60px;
+  gap: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Warm radial glow behind SVG */
+.hero::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 55vw;
+  height: 55vw;
+  background: radial-gradient(ellipse at center, rgba(184,92,42,0.18) 0%, rgba(184,92,42,0.06) 40%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-left {
+  z-index: 2;
+  contain: layout style;
+}
+
+.hero-eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.hero-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--cream);
+  margin-bottom: 24px;
+}
+
+.hero-headline em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.hero-sub {
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--faint);
+  line-height: 1.65;
+  max-width: 420px;
+  margin-bottom: 40px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--cream);
+  padding: 14px 32px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.btn-primary:hover { opacity: 0.85; transform: translateY(-1px); }
+
+.btn-ghost {
+  display: inline-block;
+  border: 1px solid var(--muted);
+  color: var(--faint);
+  padding: 13px 28px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+.btn-ghost:hover { border-color: var(--cream); color: var(--cream); }
+
+/* Hero bread SVG */
+.hero-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.hero-illustration {
+  width: clamp(240px, 40vw, 480px);
+  height: clamp(240px, 40vw, 480px);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding-bottom: 80px;
+  }
+  .hero-sub { margin: 0 auto 40px; }
+  .hero-actions { justify-content: center; }
+  .hero-right { order: -1; }
+  .hero-illustration { width: 200px; height: 200px; }
+  .hero::after { width: 80vw; height: 80vw; top: 10%; }
+}
+
+/* ============================================================
+   MARQUEE
+   ============================================================ */
+.marquee-wrap {
+  overflow: hidden;
+  border-top: 1px solid rgba(107,79,58,0.4);
+  border-bottom: 1px solid rgba(107,79,58,0.4);
+  padding: 14px 0;
+  background: var(--surface);
+}
+
+.marquee-track {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 28s linear infinite;
+  width: max-content;
+}
+
+.marquee-inner {
+  display: flex;
+  gap: 0;
+}
+
+.marquee-item {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--faint);
+  padding: 0 28px;
+}
+
+.marquee-item span {
+  color: var(--accent);
+  margin-left: 28px;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ============================================================
+   PRODUCT SECTION -- asymmetric layout
+   ============================================================ */
+.products {
+  padding: clamp(60px, 10vw, 120px) clamp(20px, 6vw, 80px);
+}
+
+.section-label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 48px;
+  display: block;
+}
+
+/* 60% large + two small stacked on right */
+.products-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 16px;
+}
+
+.product-feature {
+  grid-row: 1 / 3;
+  background: linear-gradient(145deg, #2c1c12 0%, #1e130a 100%);
+  border: 1px solid rgba(107,79,58,0.3);
+  border-radius: 4px 24px 4px 4px;
+  padding: clamp(36px, 5vw, 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 440px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-feature::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--accent);
+}
+
+.product-feature .product-bg-word {
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(80px, 14vw, 160px);
+  font-weight: 700;
+  color: rgba(184,92,42,0.07);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.product-tag {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.product-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.7rem, 3.5vw, 2.6rem);
+  font-weight: 600;
+  color: var(--cream);
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+.product-desc {
+  font-size: 0.95rem;
+  color: var(--faint);
+  line-height: 1.7;
+  max-width: 400px;
+}
+
+.product-card {
+  background: linear-gradient(160deg, #281a10 0%, #1c120a 100%);
+  border: 1px solid rgba(107,79,58,0.25);
+  padding: clamp(24px, 4vw, 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card:first-of-type {
+  border-radius: 4px 4px 4px 24px;
+}
+.product-card:last-of-type {
+  border-radius: 4px 4px 24px 4px;
+}
+
+.product-card .product-icon {
+  width: 36px;
+  height: 36px;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+.product-card .product-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 640px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+  .product-feature {
+    grid-row: auto;
+    min-height: 280px;
+    border-radius: 4px 18px 4px 4px;
+  }
+  .product-card:first-of-type { border-radius: 4px; }
+  .product-card:last-of-type  { border-radius: 4px; }
+}
+
+/* ============================================================
+   HERITAGE / STORY SECTION
+   ============================================================ */
+.heritage {
+  padding: clamp(60px, 10vw, 120px) clamp(20px, 6vw, 80px);
+  position: relative;
+  overflow: hidden;
+}
+
+.heritage-ghost {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(80px, 18vw, 220px);
+  font-weight: 700;
+  font-style: italic;
+  color: rgba(184,92,42,0.05);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  letter-spacing: -0.02em;
+}
+
+.heritage-inner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 8vw, 100px);
+  align-items: center;
+}
+
+.heritage-copy {
+  /* left column */
+}
+
+.heritage-copy p {
+  font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+  color: var(--faint);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+.heritage-copy p:first-of-type {
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  color: var(--cream);
+}
+
+.heritage-quote-col {
+  /* right column */
+}
+
+.heritage-quote {
+  border-left: 2px solid var(--accent);
+  padding-left: 28px;
+  margin-bottom: 24px;
+}
+
+.heritage-quote blockquote {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.65rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--cream);
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.heritage-quote cite {
+  font-size: 0.78rem;
+  font-style: normal;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.heritage-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(107,79,58,0.3);
+}
+
+.stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 600;
+  color: var(--cream);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: rgba(245,236,215,0.80);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 768px) {
+  .heritage-inner { grid-template-columns: 1fr; }
+  .heritage-stats { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ============================================================
+   PITCH SECTION -- Waarom online?
+   ============================================================ */
+.pitch {
+  padding: clamp(60px, 10vw, 120px) clamp(20px, 6vw, 80px);
+  background: var(--surface);
+  border-top: 1px solid rgba(107,79,58,0.2);
+  border-bottom: 1px solid rgba(107,79,58,0.2);
+}
+
+.pitch-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pitch-pull {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.4rem, 3vw, 2.1rem);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--cream);
+  line-height: 1.4;
+  padding-left: clamp(20px, 4vw, 40px);
+  border-left: 3px solid var(--accent);
+  margin-bottom: 48px;
+}
+
+.pitch-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.pitch-item {
+  padding: 28px 24px;
+  border: 1px solid rgba(107,79,58,0.25);
+  border-radius: 3px;
+  background: rgba(255,255,255,0.02);
+  transition: border-color 0.3s;
+}
+.pitch-item:hover { border-color: rgba(184,92,42,0.4); }
+
+.pitch-item-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+  opacity: 0.8;
+}
+
+.pitch-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--cream);
+  margin-bottom: 10px;
+}
+
+.pitch-item p {
+  font-size: 0.88rem;
+  color: var(--faint);
+  line-height: 1.65;
+}
+
+.pitch-closing {
+  margin-top: 48px;
+  padding: 32px 36px;
+  background: linear-gradient(135deg, rgba(184,92,42,0.12) 0%, rgba(184,92,42,0.04) 100%);
+  border: 1px solid rgba(184,92,42,0.25);
+  border-radius: 4px;
+}
+
+.pitch-closing p {
+  font-size: 1rem;
+  color: var(--faint);
+  line-height: 1.7;
+}
+.pitch-closing p strong {
+  color: var(--cream);
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .pitch-items { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   CONTACT / VISIT SECTION
+   ============================================================ */
+.contact {
+  padding: clamp(60px, 10vw, 120px) clamp(20px, 6vw, 80px);
+}
+
+.contact-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 8vw, 80px);
+  align-items: start;
+}
+
+.contact-info h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 600;
+  color: var(--cream);
+  line-height: 1.15;
+  margin-bottom: 36px;
+}
+
+.contact-info h2 em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.contact-block {
+  margin-bottom: 28px;
+}
+
+.contact-block-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.contact-block-value {
+  font-size: 1rem;
+  color: var(--cream);
+  line-height: 1.5;
+}
+
+.contact-block-value a {
+  color: var(--cream);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.contact-block-value a:hover { color: var(--accent); }
+
+.hours-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 20px;
+}
+
+.hours-day {
+  font-size: 0.88rem;
+  color: var(--faint);
+}
+
+.hours-time {
+  font-size: 0.88rem;
+  color: var(--cream);
+}
+
+.facebook-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  padding: 12px 20px;
+  border: 1px solid rgba(107,79,58,0.35);
+  border-radius: 3px;
+  color: var(--faint);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: border-color 0.2s, color 0.2s;
+}
+.facebook-link:hover { border-color: var(--accent); color: var(--cream); }
+
+/* Map pin visual */
+.contact-map {
+  background: linear-gradient(145deg, #241810 0%, #1c120a 100%);
+  border: 1px solid rgba(107,79,58,0.3);
+  border-radius: 4px 24px 4px 4px;
+  padding: clamp(32px, 5vw, 56px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.contact-map::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 60%, rgba(184,92,42,0.12) 0%, transparent 65%);
+}
+
+.map-pin-wrap {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 24px;
+}
+
+.map-address {
+  position: relative;
+  z-index: 2;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--cream);
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.map-district {
+  position: relative;
+  z-index: 2;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.btn-call {
+  display: inline-block;
+  background: var(--accent);
+  color: var(--cream);
+  padding: 14px 36px;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 28px;
+  position: relative;
+  z-index: 2;
+  transition: opacity 0.2s;
+}
+.btn-call:hover { opacity: 0.85; }
+
+@media (max-width: 768px) {
+  .contact-inner { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer {
+  padding: 28px clamp(20px, 6vw, 80px);
+  border-top: 1px solid rgba(107,79,58,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.88rem;
+  color: rgba(245,236,215,0.85);
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+.footer-links a {
+  font-size: 0.78rem;
+  color: rgba(245,236,215,0.80);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--faint); }
+
+.footer-credit {
+  font-size: 0.75rem;
+  color: rgba(245,236,215,0.65);
+}
+
+/* ============================================================
+   FADE-UP ANIMATION (IntersectionObserver)
+   ============================================================ */
+.fade-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s cubic-bezier(0.22,1,0.36,1), transform 0.65s cubic-bezier(0.22,1,0.36,1);
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-up.delay-1 { transition-delay: 0.1s; }
+.fade-up.delay-2 { transition-delay: 0.2s; }
+.fade-up.delay-3 { transition-delay: 0.32s; }
+.fade-up.delay-4 { transition-delay: 0.44s; }
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+/* ============================================================
+   FOCUS ACCESSIBILITY
+   ============================================================ */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav>
+  <a href="#" class="nav-logo">Van den Bogaert <span>An</span></a>
+  <ul class="nav-links">
+    <li><a href="#producten">Producten</a></li>
+    <li><a href="#verhaal">Ons verhaal</a></li>
+    <li><a href="#contact">Bezoek ons</a></li>
+    <li><a href="tel:+3233216795" class="nav-cta">Bel ons</a></li>
+  </ul>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero">
+  <div class="hero-left">
+    <span class="hero-eyebrow">Ambachtelijke bakkerij &middot; Deurne</span>
+
+    <h1 class="hero-headline">
+      Vers brood,<br>
+      elke <em>ochtend</em><br>
+      opnieuw.
+    </h1>
+
+    <p class="hero-sub">
+      Elke dag bakken wij van hand tot brood in Deurne. Pistolets, roggebrood, vlaai, banket en taarten op bestelling. Ambachtelijk, zonder haast.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Kom langs</a>
+      <a href="#producten" class="btn-ghost">Bekijk wat we bakken</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <!-- CSS bread loaf SVG illustration -- geometric, warm -->
+    <svg class="hero-illustration" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- Outer glow ring -->
+      <circle cx="200" cy="200" r="175" stroke="rgba(184,92,42,0.08)" stroke-width="1"/>
+      <circle cx="200" cy="200" r="145" stroke="rgba(184,92,42,0.06)" stroke-width="1"/>
+
+      <!-- Bread loaf body -->
+      <path d="M80 230 Q80 160 200 148 Q320 160 320 230 L312 280 Q312 300 200 300 Q88 300 88 280 Z" fill="#2c1a0e" stroke="#6b4f3a" stroke-width="1.5"/>
+
+      <!-- Loaf top dome -->
+      <path d="M85 235 Q85 158 200 148 Q315 158 315 235" fill="#3a2012" stroke="#b85c2a" stroke-width="1.5"/>
+
+      <!-- Score lines on top of loaf -->
+      <path d="M155 178 Q170 168 200 166 Q230 168 245 178" stroke="rgba(184,92,42,0.6)" stroke-width="2" stroke-linecap="round"/>
+      <path d="M140 195 Q160 183 200 181 Q240 183 260 195" stroke="rgba(184,92,42,0.4)" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M145 212 Q165 200 200 198 Q235 200 255 212" stroke="rgba(184,92,42,0.3)" stroke-width="1.5" stroke-linecap="round"/>
+
+      <!-- Crust texture strokes -->
+      <path d="M108 248 Q120 242 140 240" stroke="rgba(107,79,58,0.5)" stroke-width="1"/>
+      <path d="M260 240 Q280 242 292 248" stroke="rgba(107,79,58,0.5)" stroke-width="1"/>
+
+      <!-- Wheat stalk left -->
+      <line x1="120" y1="320" x2="120" y2="360" stroke="rgba(107,79,58,0.5)" stroke-width="1.5"/>
+      <ellipse cx="120" cy="314" rx="5" ry="9" fill="rgba(107,79,58,0.35)" transform="rotate(-20,120,314)"/>
+      <ellipse cx="114" cy="326" rx="4" ry="8" fill="rgba(107,79,58,0.25)" transform="rotate(-35,114,326)"/>
+      <ellipse cx="126" cy="328" rx="4" ry="8" fill="rgba(107,79,58,0.25)" transform="rotate(-5,126,328)"/>
+
+      <!-- Wheat stalk right -->
+      <line x1="280" y1="320" x2="280" y2="360" stroke="rgba(107,79,58,0.5)" stroke-width="1.5"/>
+      <ellipse cx="280" cy="314" rx="5" ry="9" fill="rgba(107,79,58,0.35)" transform="rotate(20,280,314)"/>
+      <ellipse cx="286" cy="326" rx="4" ry="8" fill="rgba(107,79,58,0.25)" transform="rotate(35,286,326)"/>
+      <ellipse cx="274" cy="328" rx="4" ry="8" fill="rgba(107,79,58,0.25)" transform="rotate(5,274,328)"/>
+
+      <!-- Warm light spot on bread -->
+      <ellipse cx="185" cy="185" rx="35" ry="20" fill="rgba(184,92,42,0.08)"/>
+
+      <!-- Tiny steam puffs -->
+      <path d="M180 140 Q178 132 180 124 Q182 116 180 108" stroke="rgba(245,236,215,0.15)" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M200 136 Q198 128 200 120 Q202 112 200 104" stroke="rgba(245,236,215,0.12)" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M220 140 Q218 132 220 124 Q222 116 220 108" stroke="rgba(245,236,215,0.10)" stroke-width="2" stroke-linecap="round" fill="none"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ============================================================
+     MARQUEE (one only)
+     ============================================================ -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-inner">
+      <span class="marquee-item">Brood<span>&middot;</span></span>
+      <span class="marquee-item">Gebak<span>&middot;</span></span>
+      <span class="marquee-item">Taarten<span>&middot;</span></span>
+      <span class="marquee-item">Pistolets<span>&middot;</span></span>
+      <span class="marquee-item">Vlaai<span>&middot;</span></span>
+      <span class="marquee-item">Ambachtelijk<span>&middot;</span></span>
+      <span class="marquee-item">Deurne<span>&middot;</span></span>
+      <span class="marquee-item">Elke dag vers<span>&middot;</span></span>
+    </div>
+    <!-- Duplicate for seamless loop -->
+    <div class="marquee-inner" aria-hidden="true">
+      <span class="marquee-item">Brood<span>&middot;</span></span>
+      <span class="marquee-item">Gebak<span>&middot;</span></span>
+      <span class="marquee-item">Taarten<span>&middot;</span></span>
+      <span class="marquee-item">Pistolets<span>&middot;</span></span>
+      <span class="marquee-item">Vlaai<span>&middot;</span></span>
+      <span class="marquee-item">Ambachtelijk<span>&middot;</span></span>
+      <span class="marquee-item">Deurne<span>&middot;</span></span>
+      <span class="marquee-item">Elke dag vers<span>&middot;</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     PRODUCTS -- asymmetric layout
+     ============================================================ -->
+<section class="products" id="producten">
+  <span class="section-label fade-up">Wat wij bakken</span>
+
+  <div class="products-grid">
+
+    <!-- Large feature panel: 60% width -->
+    <div class="product-feature fade-up delay-1">
+      <div class="product-bg-word">Brood</div>
+
+      <!-- Bread loaf mini icon -->
+      <svg width="48" height="36" viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="margin-bottom:20px;opacity:0.6;">
+        <path d="M4 24 Q4 10 24 8 Q44 10 44 24 L42 30 Q42 34 24 34 Q6 34 6 30 Z" fill="#3a2012" stroke="#6b4f3a" stroke-width="1"/>
+        <path d="M5 25 Q5 10 24 8 Q43 10 43 25" fill="#4a2a18" stroke="#b85c2a" stroke-width="1"/>
+        <path d="M16 15 Q20 13 24 13 Q28 13 32 15" stroke="rgba(184,92,42,0.7)" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+
+      <div class="product-tag">Elke ochtend vers</div>
+      <h2 class="product-title">Dagelijks vers brood</h2>
+      <p class="product-desc">
+        Van wit busbrood tot rogge, spelt en meergranen. Pistolets knapperig uit de oven voor 8 uur. Wij bakken wat Deurne elke ochtend nodig heeft, in de hoeveelheden die passen bij onze oven en onze handen.
+      </p>
+    </div>
+
+    <!-- Small card 1 -->
+    <div class="product-card fade-up delay-2">
+      <!-- Pastry icon -->
+      <svg class="product-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="4" y="20" width="28" height="12" rx="3" fill="#3a2012" stroke="#6b4f3a" stroke-width="1"/>
+        <path d="M4 20 Q18 8 32 20" fill="#4a2a18" stroke="#b85c2a" stroke-width="1"/>
+        <circle cx="13" cy="20" r="3" fill="rgba(184,92,42,0.3)"/>
+        <circle cx="23" cy="20" r="3" fill="rgba(184,92,42,0.3)"/>
+      </svg>
+      <div>
+        <div class="product-tag">Weekend &amp; feestdag</div>
+        <h2 class="product-title">Banket &amp; gebak</h2>
+        <p class="product-desc">Roomtaarten, boterkoeken, suikerbrood, croissants. Gebak dat naar vroeger smaakt, omdat het nog op dezelfde manier gemaakt wordt.</p>
+      </div>
+    </div>
+
+    <!-- Small card 2 -->
+    <div class="product-card fade-up delay-3">
+      <!-- Cake icon -->
+      <svg class="product-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="4" y="20" width="28" height="12" rx="2" fill="#3a2012" stroke="#6b4f3a" stroke-width="1"/>
+        <rect x="8" y="14" width="20" height="8" rx="2" fill="#2c1810" stroke="#6b4f3a" stroke-width="1"/>
+        <line x1="18" y1="14" x2="18" y2="8" stroke="#b85c2a" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="18" cy="7" r="2" fill="#b85c2a" opacity="0.7"/>
+      </svg>
+      <div>
+        <div class="product-tag">Op bestelling</div>
+        <h2 class="product-title">Taarten op maat</h2>
+        <p class="product-desc">Verjaardagstaart, communietaart of een feestgebak naar wens. Bel vooraf en we reserveren tijd voor u.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     HERITAGE / STORY
+     ============================================================ -->
+<section class="heritage" id="verhaal">
+  <div class="heritage-ghost" aria-hidden="true">Ambacht</div>
+
+  <div class="heritage-inner">
+    <div class="heritage-copy fade-up">
+      <span class="section-label">Ons verhaal</span>
+
+      <p>
+        Een bakkerij begint niet bij het deeg. Ze begint bij het donker, voor het eerste licht, wanneer de oven al draait en de rest van de straat nog slaapt.
+      </p>
+      <p>
+        Bakkerij Van den Bogaert An bakt al decennia voor de mensen van Deurne. Niet omdat het makkelijk is: ambachtelijk werken vraagt tijd en aanwezigheid. Maar omdat brood dat met de hand gemaakt is, anders smaakt. Simpel.
+      </p>
+      <p>
+        We bakken dagelijks vers, in kleine batches, met dezelfde grondstoffen en dezelfde methode. Geen grote machines, geen halffabricaten. Wat u bij ons koopt, vertrok een paar uur geleden als meel en water.
+      </p>
+    </div>
+
+    <div class="heritage-quote-col fade-up delay-2">
+      <div class="heritage-quote">
+        <blockquote>
+          "Brood bakken is geduld. Elke ochtend opnieuw wachten tot het deeg zegt dat het klaar is."
+        </blockquote>
+        <cite>An Van den Bogaert, bakker</cite>
+      </div>
+
+      <div class="heritage-stats">
+        <div>
+          <div class="stat-num">6u</div>
+          <div class="stat-label">Eerste broden klaar</div>
+        </div>
+        <div>
+          <div class="stat-num">6</div>
+          <div class="stat-label">Dagen per week</div>
+        </div>
+        <div>
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Ambachtelijk</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PITCH -- Waarom online?
+     ============================================================ -->
+<section class="pitch">
+  <div class="pitch-inner">
+    <span class="section-label fade-up">De kans die u nu mist</span>
+
+    <p class="pitch-pull fade-up delay-1">
+      "Mensen zoeken elke dag naar 'bakkerij Deurne' en 'vers brood Antwerpen'. Maar ze vinden jullie niet op Google."
+    </p>
+
+    <div class="pitch-items">
+
+      <div class="pitch-item fade-up delay-1">
+        <!-- Google Maps icon simplified -->
+        <svg class="pitch-item-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="16" cy="13" r="7" stroke="#b85c2a" stroke-width="1.5"/>
+          <path d="M16 20 L16 28" stroke="#b85c2a" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="16" cy="13" r="3" fill="rgba(184,92,42,0.3)"/>
+        </svg>
+        <h3>Zichtbaar op Google Maps</h3>
+        <p>Wie zoekt op 'bakkerij Deurne' of 'pistolets Antwerpen' vindt u nu niet. Met een website en Google-vermelding verschijnt u precies waar potentiele klanten zoeken, vlak voordat ze beslissen waar ze naartoe gaan.</p>
+      </div>
+
+      <div class="pitch-item fade-up delay-2">
+        <!-- Calendar icon -->
+        <svg class="pitch-item-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="4" y="7" width="24" height="21" rx="2" stroke="#b85c2a" stroke-width="1.5"/>
+          <line x1="4" y1="13" x2="28" y2="13" stroke="#b85c2a" stroke-width="1.5"/>
+          <line x1="10" y1="4" x2="10" y2="10" stroke="#b85c2a" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="22" y1="4" x2="22" y2="10" stroke="#b85c2a" stroke-width="1.5" stroke-linecap="round"/>
+          <rect x="9" y="17" width="5" height="5" rx="1" fill="rgba(184,92,42,0.3)"/>
+        </svg>
+        <h3>Bestellingen op voorhand</h3>
+        <p>Drukke weekends, Pasen, Kerstmis: via een eenvoudig contactformulier weten klanten dat ze kunnen bestellen. Geen gemiste kansen meer op feestgebak of verjaardagstaarten.</p>
+      </div>
+
+      <div class="pitch-item fade-up delay-3">
+        <!-- Star/review icon -->
+        <svg class="pitch-item-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M16 4 L18.9 11.6 L27 12.5 L21 18 L22.9 26 L16 22 L9.1 26 L11 18 L5 12.5 L13.1 11.6 Z" stroke="#b85c2a" stroke-width="1.5" stroke-linejoin="round" fill="rgba(184,92,42,0.15)"/>
+        </svg>
+        <h3>Reviews en vertrouwen</h3>
+        <p>Een website geeft trouwe klanten de kans om een review achter te laten. Die recensies verschijnen in Google-zoekresultaten en vertellen nieuwe klanten wat ze al weten: dat het hier goed is.</p>
+      </div>
+
+    </div>
+
+    <div class="pitch-closing fade-up delay-2">
+      <p>
+        <strong>Wat wij voorstellen is geen ingewikkeld project.</strong> Een eenvoudige website met uw producten, uw openingsuren en een contactformulier voor bestellingen. Gemakkelijk te onderhouden, zichtbaar voor iedereen die in Deurne zoekt naar vers brood. We doen het voorstel, u beslist.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT / VISIT
+     ============================================================ -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+
+    <div class="contact-info fade-up">
+      <h2>Kom langs in <em>Deurne</em></h2>
+
+      <div class="contact-block">
+        <span class="contact-block-label">Adres</span>
+        <div class="contact-block-value">
+          Deurne, Antwerpen<br>
+          <small style="color:var(--muted);font-size:0.82rem;">(Op uitnodiging of bel voor het exacte adres)</small>
+        </div>
+      </div>
+
+      <div class="contact-block">
+        <span class="contact-block-label">Telefoon</span>
+        <div class="contact-block-value">
+          <a href="tel:+3233216795">+32 3 321 67 95</a>
+        </div>
+      </div>
+
+      <div class="contact-block">
+        <span class="contact-block-label">Openingsuren</span>
+        <div class="contact-block-value">
+          <div class="hours-grid">
+            <span class="hours-day">Di t/m vr</span>
+            <span class="hours-time">06:00 tot 13:00</span>
+            <span class="hours-day">Zaterdag</span>
+            <span class="hours-time">06:00 tot 13:00</span>
+            <span class="hours-day">Zondag</span>
+            <span class="hours-time">07:00 tot 12:00</span>
+            <span class="hours-day">Maandag</span>
+            <span class="hours-time" style="color:var(--muted);">Gesloten</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://www.facebook.com/profile.php?id=100057286404712" target="_blank" rel="noopener" class="facebook-link">
+        <!-- Facebook icon simplified -->
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="18" height="18" rx="4" fill="rgba(184,92,42,0.2)"/>
+          <path d="M10.5 9.5H12L12.5 7.5H10.5V6.5C10.5 5.97 10.5 5.5 11.5 5.5H12.5V3.5H10.5C8.79 3.5 7.5 4.79 7.5 6.5V7.5H6V9.5H7.5V14.5H10.5V9.5Z" fill="#b85c2a"/>
+        </svg>
+        Volg ons op Facebook
+      </a>
+    </div>
+
+    <!-- Map pin panel -->
+    <div class="contact-map fade-up delay-2">
+      <div class="map-pin-wrap">
+        <!-- Terracotta crosshair map pin SVG -->
+        <svg width="72" height="88" viewBox="0 0 72 88" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Pin drop shadow -->
+          <ellipse cx="36" cy="85" rx="14" ry="3" fill="rgba(0,0,0,0.3)"/>
+          <!-- Pin body -->
+          <path d="M36 4 C20.536 4 8 16.536 8 32 C8 52 36 84 36 84 C36 84 64 52 64 32 C64 16.536 51.464 4 36 4 Z" fill="#b85c2a"/>
+          <!-- Pin inner circle -->
+          <circle cx="36" cy="32" r="14" fill="#1c120a"/>
+          <!-- Crosshair lines -->
+          <line x1="36" y1="22" x2="36" y2="26" stroke="#b85c2a" stroke-width="2" stroke-linecap="round"/>
+          <line x1="36" y1="38" x2="36" y2="42" stroke="#b85c2a" stroke-width="2" stroke-linecap="round"/>
+          <line x1="26" y1="32" x2="30" y2="32" stroke="#b85c2a" stroke-width="2" stroke-linecap="round"/>
+          <line x1="42" y1="32" x2="46" y2="32" stroke="#b85c2a" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="36" cy="32" r="4" stroke="#b85c2a" stroke-width="1.5" fill="none"/>
+        </svg>
+      </div>
+
+      <p class="map-address">Bakkerij Van den Bogaert An<br>Deurne, Antwerpen</p>
+      <span class="map-district">Ambachtelijke bakkerij</span>
+
+      <a href="tel:+3233216795" class="btn-call">
+        Bel +32 3 321 67 95
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <span class="footer-brand">Bakkerij Van den Bogaert An &middot; Deurne</span>
+  <ul class="footer-links">
+    <li><a href="#producten">Producten</a></li>
+    <li><a href="#verhaal">Verhaal</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <span class="footer-credit">Conceptvoorstel &copy; 2025</span>
+</footer>
+
+<!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
+<script>
+/* --- Headroom nav --- */
+(function() {
+  var nav = document.querySelector('nav');
+  var lastY = 0, ticking = false;
+  function update() {
+    var y = window.scrollY || window.pageYOffset;
+    var delta = y - lastY;
+    if (y <= 80) {
+      nav.classList.remove('nav-hidden');
+      nav.classList.add('nav-visible');
+      nav.classList.remove('nav-scrolled');
+    } else if (delta > 8) {
+      nav.classList.add('nav-hidden', 'nav-scrolled');
+      nav.classList.remove('nav-visible');
+    } else if (delta < -5) {
+      nav.classList.remove('nav-hidden');
+      nav.classList.add('nav-visible', 'nav-scrolled');
+    }
+    lastY = y;
+    ticking = false;
+  }
+  window.addEventListener('scroll', function() {
+    if (!ticking) { requestAnimationFrame(update); ticking = true; }
+  }, {passive: true});
+  nav.classList.add('nav-visible');
+})();
+
+/* --- IntersectionObserver fade-up --- */
+(function() {
+  var els = document.querySelectorAll('.fade-up');
+  if (!('IntersectionObserver' in window)) {
+    els.forEach(function(el) { el.classList.add('visible'); });
+    return;
+  }
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function(el) { obs.observe(el); });
+})();
+</script>
+
+</body>
+</html>

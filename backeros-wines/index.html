@@ -1,612 +1,522 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta name="robots" content="noindex, nofollow" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Backeros Wines — Wijnhandel, import &amp; webshop in Aartselaar</title>
-  <meta name="description" content="Backeros Wines: onafhankelijke wijnhandel met import & retail in Aartselaar. Binnenkort een echte wijnwebshop — filter op streek, druif en prijs, bestel veilig met Bancontact en kies een ontdek-box of cadeaupakket. Geen 'under construction' meer." />
-  <link rel="canonical" href="https://backeroswines.be/" />
-  <meta name="theme-color" content="#6a1420" />
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Backeros Wines" />
-  <meta property="og:locale" content="nl_BE" />
-  <meta property="og:title" content="Backeros Wines — Wijnhandel &amp; webshop in Aartselaar" />
-  <meta property="og:description" content="Een echte wijnwebshop met filters (streek/druif/prijs), veilige checkout, ontdek-boxen en cadeaupakketten. Geen 'under construction' meer." />
-  <meta property="og:url" content="https://backeroswines.be/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=80" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- Inline SVG favicon — monogram "BW" -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%236a1420'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%23d8b56a' text-anchor='middle'%3EBW%3C/text%3E%3C/svg%3E" />
-  <!-- Local-SEO structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Store",
-    "name": "Backeros Wines",
-    "description": "Onafhankelijke wijnhandel met import en retail in Aartselaar. Persoonlijke selectie, ontdek-boxen, cadeaupakketten en een wijnwebshop met filters.",
-    "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=80",
-    "url": "https://backeroswines.be/",
-    "telephone": "+32473171837",
-    "email": "info@backeroswines.be",
-    "priceRange": "€€",
-    "areaServed": "BE",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Vinkenlaan 11",
-      "postalCode": "2630",
-      "addressLocality": "Aartselaar",
-      "addressRegion": "Antwerpen",
-      "addressCountry": "BE"
-    },
-    "geo": { "@type": "GeoCoordinates", "latitude": 51.1330, "longitude": 4.3830 }
-  }
-  </script>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Backeros Wines - wijnimporteur en winkel in Aartselaar. Authentieke wijnen direct van de bron, biologisch, eerlijk geselecteerd." />
+  <title>Backeros Wines | Wijnimport en Winkel - Aartselaar</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230d1510'/%3E%3Cpath d='M16 4 C13 4 11 7 11 10 L11 18 C11 22 13 25 16 26 C19 25 21 22 21 18 L21 10 C21 7 19 4 16 4Z' fill='%232d6a4f'/%3E%3Crect x='14' y='1' width='4' height='5' rx='1' fill='%232d6a4f'/%3E%3Cellipse cx='16' cy='26' rx='4' ry='2' fill='%232d6a4f' opacity='0.5'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = { theme: { extend: {
-      fontFamily: { serif: ['Cormorant Garamond','serif'], sans: ['Inter','sans-serif'] },
-      colors: {
-        wine:    '#6a1420',
-        winelt:  '#84212f',
-        merlot:  '#591019',
-        slate:   '#2b2f36',
-        slatelt: '#3a3f48',
-        gold:    '#c79a4b',
-        goldlt:  '#d8b56a',
-        cream:   '#f6f1e7',
-        sand:    '#ebe2d0',
-        clay:    '#857560',
-        ink:     '#23272d',
-      },
-    } } };
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Outfit:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Outfit:wght@400;500&display=swap" rel="stylesheet" /></noscript>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Backeros Wines","description":"Wijnimporteur en wijnwinkel in Aartselaar.","telephone":"+32473171837","email":"info@backeroswines.be","address":{"@type":"PostalAddress","addressLocality":"Aartselaar","addressCountry":"BE"},"url":"https://backeroswines.be","priceRange":"EUR EUR"}
   </script>
   <style>
-    html { scroll-behavior: smooth; }
-    .hero-grad { background: linear-gradient(180deg, rgba(35,39,45,.18) 0%, rgba(43,47,54,.55) 52%, rgba(106,20,32,.92) 100%); }
-    .tile-grad { background: linear-gradient(160deg, #84212f, #2b2f36); }
-    .fade-up { opacity: 0; transform: translateY(20px); transition: all .8s cubic-bezier(.2,.7,.2,1); }
-    .fade-up.in { opacity: 1; transform: none; }
-    .ug { background-image: linear-gradient(currentColor,currentColor); background-size: 0% 1px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
-    .ug:hover { background-size: 100% 1px; }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    :root{
+      --bg:#0d1510;--bg2:#111a14;--bg3:#141f17;
+      --green:#2d6a4f;--green-mid:#3a7d5e;--green-lt:#52a47a;
+      --cream:#f2ede4;--cream-dim:rgba(242,237,228,0.80);
+      --cream-faint:rgba(242,237,228,0.40);--cream-ghost:rgba(242,237,228,0.10);
+      --accent:#b5975a;--accent-lt:#d4b87a;
+      --border:rgba(242,237,228,0.10);--border-mid:rgba(242,237,228,0.18);
+      --serif:'Playfair Display',Georgia,serif;
+      --sans:'Outfit',system-ui,sans-serif;
+      --nav-h:72px;
+    }
+    html{scroll-behavior:smooth;}
+    body{background-color:var(--bg);color:var(--cream-dim);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+    a{color:inherit;text-decoration:none;}
+    .nav{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;padding:0 clamp(24px,5vw,80px);transition:transform .35s ease,background .35s ease,border-bottom-color .35s ease;border-bottom:1px solid transparent;}
+    .nav.is-pinned{background:rgba(13,21,16,.95);border-bottom-color:var(--border);backdrop-filter:blur(12px);}
+    .nav.is-unpinned{transform:translateY(-100%);}
+    .nav.is-top{background:transparent;border-bottom-color:transparent;}
+    .nav__logo{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-size:1.15rem;color:var(--cream);letter-spacing:.02em;}
+    .nav__links{display:flex;gap:36px;list-style:none;}
+    .nav__links a{font-size:.82rem;font-weight:500;letter-spacing:.10em;text-transform:uppercase;color:var(--cream-dim);transition:color .2s;}
+    .nav__links a:hover{color:var(--cream);}
+    .nav__cta{font-size:.80rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;padding:9px 22px;border:1px solid var(--border-mid);border-radius:4px;color:var(--cream);transition:background .2s,border-color .2s;}
+    .nav__cta:hover{background:var(--cream-ghost);border-color:var(--cream-dim);}
+    @media(max-width:860px){.nav__links{display:none;}}
+    @media(max-width:480px){.nav__cta{display:none;}}
+    .hero{position:relative;min-height:100dvh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 clamp(24px,5vw,80px) clamp(56px,8vh,96px);overflow:hidden;}
+    .hero__bg{position:absolute;inset:0;z-index:0;}
+    .hero__ghost{position:absolute;bottom:-.05em;left:-.02em;font-family:var(--serif);font-size:clamp(120px,18vw,260px);font-weight:400;color:transparent;-webkit-text-stroke:1px rgba(242,237,228,.06);letter-spacing:-.02em;line-height:1;pointer-events:none;user-select:none;white-space:nowrap;z-index:1;}
+    .hero__content{position:relative;z-index:2;max-width:640px;}
+    .hero__eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.75rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:24px;}
+    .hero__eyebrow::before{content:'';display:block;width:28px;height:1px;background:var(--accent);}
+    .hero__h1{font-family:var(--serif);font-size:clamp(2.4rem,5.5vw,4.8rem);font-weight:400;line-height:1.10;color:var(--cream);letter-spacing:-.01em;margin-bottom:20px;}
+    .hero__h1 em{font-style:italic;color:var(--accent-lt);}
+    .hero__sub{font-size:clamp(.95rem,1.5vw,1.1rem);color:var(--cream-dim);max-width:460px;line-height:1.70;margin-bottom:40px;}
+    .hero__actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;}
+    .hero__scroll-hint{position:absolute;right:clamp(24px,5vw,80px);bottom:clamp(56px,8vh,96px);display:flex;flex-direction:column;align-items:center;gap:8px;z-index:2;}
+    .hero__scroll-hint span{font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cream-faint);writing-mode:vertical-rl;}
+    .hero__scroll-track{width:1px;height:56px;background:var(--border-mid);position:relative;overflow:hidden;}
+    .hero__scroll-track::after{content:'';position:absolute;top:-100%;left:0;width:1px;height:100%;background:var(--accent);animation:scrollTrack 2.2s ease-in-out infinite;}
+    @keyframes scrollTrack{0%{top:-100%}50%{top:0}100%{top:100%}}
+    .btn-primary{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;background:var(--green);color:var(--cream);font-family:var(--sans);font-size:.85rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;border-radius:4px;border:none;cursor:pointer;transition:background .22s,transform .15s;}
+    .btn-primary:hover{background:var(--green-mid);transform:translateY(-1px);}
+    .btn-ghost{display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:500;letter-spacing:.06em;color:var(--cream-dim);border-bottom:1px solid var(--border-mid);padding-bottom:2px;transition:color .2s,border-color .2s;}
+    .btn-ghost:hover{color:var(--cream);border-color:var(--cream-dim);}
+    .marquee-wrap{background:var(--green);overflow:hidden;padding:14px 0;}
+    .marquee-track{display:flex;width:max-content;animation:marqueeScroll 22s linear infinite;}
+    .marquee-track:hover{animation-play-state:paused;}
+    .marquee-item{display:flex;align-items:center;gap:32px;padding-right:32px;white-space:nowrap;font-size:.75rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:rgba(242,237,228,.85);}
+    .marquee-dot{display:inline-block;width:4px;height:4px;border-radius:50%;background:rgba(242,237,228,.50);flex-shrink:0;}
+    @keyframes marqueeScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    section{position:relative;overflow:hidden;}
+    .section-inner{max-width:1200px;margin:0 auto;padding:0 clamp(24px,5vw,80px);}
+    .fade-up{opacity:0;transform:translateY(32px);transition:opacity .65s ease,transform .65s ease;}
+    .fade-up.visible{opacity:1;transform:translateY(0);}
+    .fade-up.delay-1{transition-delay:.10s}.fade-up.delay-2{transition-delay:.20s}.fade-up.delay-3{transition-delay:.30s}
+    .section-label{display:inline-flex;align-items:center;gap:10px;font-size:.72rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:20px;}
+    .section-label::before{content:'';display:block;width:20px;height:1px;background:var(--accent);}
+    .section-h2{font-family:var(--serif);font-size:clamp(1.8rem,3.5vw,3rem);font-weight:400;line-height:1.18;color:var(--cream);letter-spacing:-.01em;}
+    .section-h2 em{font-style:italic;color:var(--accent-lt);}
+    .section-lead{font-size:clamp(.95rem,1.4vw,1.05rem);color:var(--cream-dim);max-width:520px;line-height:1.72;}
+    .origins{padding:clamp(80px,10vh,128px) 0;background:var(--bg2);}
+    .origins__header{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:64px;}
+    @media(max-width:720px){.origins__header{grid-template-columns:1fr;gap:24px;}}
+    .origins__bento{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+    @media(max-width:620px){.origins__bento{grid-template-columns:1fr;}}
+    .origin-card{position:relative;background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:36px 32px;overflow:hidden;transition:border-color .25s,transform .25s;}
+    .origin-card:hover{border-color:var(--border-mid);transform:translateY(-3px);}
+    .origin-card--large{grid-row:span 2;display:flex;flex-direction:column;justify-content:flex-end;min-height:340px;}
+    @media(max-width:620px){.origin-card--large{grid-row:span 1;min-height:200px;}}
+    .origin-card__flag{font-size:2.4rem;margin-bottom:20px;line-height:1;}
+    .origin-card__region{font-size:.68rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:8px;}
+    .origin-card__name{font-family:var(--serif);font-size:clamp(1.3rem,2vw,1.8rem);font-weight:400;color:var(--cream);line-height:1.2;margin-bottom:12px;}
+    .origin-card__desc{font-size:.88rem;color:var(--cream-dim);line-height:1.65;}
+    .origin-card__count{margin-top:24px;font-size:.75rem;font-weight:500;letter-spacing:.10em;color:var(--green-lt);}
+    .metrics{padding:56px 0;background:var(--green);}
+    .metrics__grid{display:grid;grid-template-columns:repeat(4,1fr);}
+    @media(max-width:640px){.metrics__grid{grid-template-columns:repeat(2,1fr);}}
+    .metric-item{padding:24px 32px;border-right:1px solid rgba(242,237,228,.15);text-align:center;}
+    .metric-item:last-child{border-right:none;}
+    @media(max-width:640px){.metric-item:nth-child(2){border-right:none;}.metric-item:nth-child(3){border-top:1px solid rgba(242,237,228,.15);}.metric-item:nth-child(4){border-top:1px solid rgba(242,237,228,.15);border-right:none;}}
+    .metric-item__num{font-family:var(--serif);font-size:clamp(2rem,4vw,3rem);font-weight:400;color:var(--cream);line-height:1;margin-bottom:8px;}
+    .metric-item__label{font-size:.75rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:rgba(242,237,228,.75);}
+    .collectie{padding:clamp(80px,10vh,128px) 0;background:var(--bg);}
+    .collectie__top{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:56px;gap:24px;flex-wrap:wrap;}
+    .collectie__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+    @media(max-width:900px){.collectie__grid{grid-template-columns:repeat(2,1fr);}}
+    @media(max-width:560px){.collectie__grid{grid-template-columns:1fr;}}
+    .wine-card{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:28px 24px 24px;display:flex;flex-direction:column;transition:border-color .25s,transform .22s;position:relative;overflow:hidden;}
+    .wine-card:hover{border-color:var(--border-mid);transform:translateY(-4px);}
+    .wine-card__visual{display:flex;justify-content:center;margin-bottom:28px;}
+    .wine-card__badge{position:absolute;top:16px;right:16px;font-size:.62rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:rgba(45,106,79,.25);color:var(--green-lt);border:1px solid rgba(45,106,79,.35);}
+    .wine-card__origin{font-size:.68rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:8px;}
+    .wine-card__name{font-family:var(--serif);font-size:1.25rem;font-weight:400;color:var(--cream);line-height:1.25;margin-bottom:10px;}
+    .wine-card__desc{font-size:.84rem;color:var(--cream-dim);line-height:1.62;flex-grow:1;margin-bottom:20px;}
+    .wine-card__footer{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:16px;border-top:1px solid var(--border);}
+    .wine-card__price{font-family:var(--serif);font-size:1.15rem;color:var(--cream);}
+    .wine-card__cta{font-size:.74rem;font-weight:500;letter-spacing:.10em;text-transform:uppercase;color:var(--green-lt);display:flex;align-items:center;gap:6px;transition:gap .2s,color .2s;}
+    .wine-card:hover .wine-card__cta{gap:10px;color:var(--accent-lt);}
+    .bottle-svg-wrap{width:80px;height:140px;}
+    .collectie__strip{margin-top:56px;padding:40px 48px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;}
+    .collectie__strip-text{font-family:var(--serif);font-size:clamp(1.1rem,2vw,1.4rem);color:var(--cream);line-height:1.3;}
+    .collectie__strip-text em{font-style:italic;color:var(--accent-lt);}
+    .about{padding:clamp(80px,10vh,128px) 0;background:var(--bg2);}
+    .about__grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+    @media(max-width:800px){.about__grid{grid-template-columns:1fr;gap:48px;}}
+    .about__vine-frame{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--border);}
+    .about__pill-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px;}
+    .about__pill{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;background:transparent;border:1px solid var(--border);border-radius:100px;font-size:.78rem;font-weight:500;letter-spacing:.06em;color:var(--cream-dim);}
+    .about__quote{padding:24px 28px;border-left:2px solid var(--green);background:rgba(45,106,79,.08);border-radius:0 8px 8px 0;margin-bottom:36px;}
+    .about__quote p{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:var(--cream);line-height:1.65;}
+    .about__quote cite{display:block;margin-top:12px;font-size:.78rem;font-style:normal;letter-spacing:.08em;color:var(--accent);}
+    .bezoek{padding:clamp(80px,10vh,128px) 0;background:var(--bg);}
+    .bezoek__inner{display:grid;grid-template-columns:5fr 4fr;gap:80px;align-items:start;}
+    @media(max-width:860px){.bezoek__inner{grid-template-columns:1fr;gap:48px;}}
+    .bezoek__address-block{margin-top:36px;display:flex;flex-direction:column;gap:16px;}
+    .bezoek__row{display:flex;align-items:flex-start;gap:16px;}
+    .bezoek__icon{flex-shrink:0;width:36px;height:36px;border-radius:4px;background:rgba(45,106,79,.15);border:1px solid rgba(45,106,79,.25);display:flex;align-items:center;justify-content:center;color:var(--green-lt);}
+    .bezoek__row-label{font-size:.70rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:3px;}
+    .bezoek__row-value{font-size:.95rem;color:var(--cream);}
+    .bezoek__row-value a{color:var(--cream);transition:color .2s;}
+    .bezoek__row-value a:hover{color:var(--accent-lt);}
+    .bezoek__cta-block{margin-top:48px;display:flex;flex-direction:column;gap:16px;}
+    .bezoek__cta-main{display:inline-flex;align-items:center;gap:12px;padding:16px 36px;background:var(--green);color:var(--cream);font-size:.88rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;border-radius:4px;transition:background .22s,transform .15s;width:fit-content;}
+    .bezoek__cta-main:hover{background:var(--green-mid);transform:translateY(-1px);}
+    .bezoek__cta-email{display:inline-flex;align-items:center;gap:8px;font-size:.84rem;color:var(--cream-dim);transition:color .2s;width:fit-content;}
+    .bezoek__cta-email:hover{color:var(--cream);}
+    .bezoek__map{background:var(--bg3);border:1px solid var(--border);border-radius:16px;overflow:hidden;}
+    .footer{background:var(--bg2);border-top:1px solid var(--border);padding:clamp(48px,6vh,80px) clamp(24px,5vw,80px) 32px;}
+    .footer__top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:56px;}
+    @media(max-width:720px){.footer__top{grid-template-columns:1fr;gap:36px;}}
+    .footer__brand-name{font-family:var(--serif);font-size:1.35rem;color:var(--cream);margin-bottom:12px;}
+    .footer__brand-desc{font-size:.85rem;color:var(--cream-dim);line-height:1.70;max-width:300px;}
+    .footer__col-title{font-size:.70rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:20px;}
+    .footer__links{list-style:none;display:flex;flex-direction:column;gap:12px;}
+    .footer__links a{font-size:.87rem;color:var(--cream-dim);transition:color .2s;}
+    .footer__links a:hover{color:var(--cream);}
+    .footer__bottom{border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;}
+    .footer__copy{font-size:.78rem;color:var(--cream-faint);}
+    .footer__tagline{font-size:.78rem;color:var(--cream-faint);font-style:italic;font-family:var(--serif);}
   </style>
 </head>
-<body class="bg-cream text-ink font-sans antialiased selection:bg-gold/30">
+<body>
 
-  <!-- Skip link -->
-  <a href="#webshop" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-wine focus:text-cream focus:rounded-full">Naar de webshop</a>
+<nav class="nav is-top" id="nav" role="navigation" aria-label="Hoofdnavigatie">
+  <a href="#" class="nav__logo" aria-label="Backeros Wines homepage">
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect width="28" height="28" rx="4" fill="#2d6a4f"/>
+      <path d="M14 3.5C12 3.5 10.5 5.5 10.5 8L10.5 15C10.5 18.5 12 21 14 22C16 21 17.5 18.5 17.5 15L17.5 8C17.5 5.5 16 3.5 14 3.5Z" fill="#f2ede4"/>
+      <rect x="12.5" y="1.5" width="3" height="4" rx="1" fill="#f2ede4"/>
+      <ellipse cx="14" cy="22" rx="3.5" ry="1.5" fill="#f2ede4" opacity=".45"/>
+    </svg>
+    Backeros Wines
+  </a>
+  <ul class="nav__links">
+    <li><a href="#herkomst">Herkomst</a></li>
+    <li><a href="#collectie">Collectie</a></li>
+    <li><a href="#over-ons">Over ons</a></li>
+    <li><a href="#bezoek">Bezoek</a></li>
+  </ul>
+  <a href="tel:+32473171837" class="nav__cta">0473 17 18 37</a>
+</nav>
 
-  <!-- Announcement bar -->
-  <div class="bg-wine text-cream text-center text-[13px] tracking-[0.14em] py-2 px-4 uppercase">
-    <span aria-hidden="true">🍷</span> Binnenkort online bestellen — geen "under construction" meer
+<section class="hero" aria-labelledby="hero-h1">
+  <div class="hero__bg" aria-hidden="true">
+    <svg width="100%" height="100%" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="hg1" cx="70%" cy="40%" r="65%"><stop offset="0%" stop-color="#1a3528" stop-opacity=".9"/><stop offset="100%" stop-color="#0d1510" stop-opacity="1"/></radialGradient>
+        <radialGradient id="hg2" cx="20%" cy="80%" r="50%"><stop offset="0%" stop-color="#2d6a4f" stop-opacity=".15"/><stop offset="100%" stop-color="#0d1510" stop-opacity="0"/></radialGradient>
+      </defs>
+      <rect width="1440" height="900" fill="url(#hg1)"/><rect width="1440" height="900" fill="url(#hg2)"/>
+      <g opacity=".08" stroke="#52a47a" stroke-width="1" fill="none">
+        <line x1="700" y1="460" x2="1440" y2="480"/><line x1="700" y1="500" x2="1440" y2="525"/>
+        <line x1="700" y1="540" x2="1440" y2="570"/><line x1="700" y1="580" x2="1440" y2="615"/>
+        <line x1="700" y1="620" x2="1440" y2="660"/><line x1="700" y1="660" x2="1440" y2="705"/>
+        <line x1="700" y1="700" x2="1440" y2="750"/>
+      </g>
+      <g opacity=".18" fill="#1a3528">
+        <polygon points="1180,220 1200,480 1160,480"/><rect x="1192" y="478" width="16" height="60" fill="#1a3528"/>
+        <polygon points="1260,180 1285,500 1235,500"/><rect x="1274" y="498" width="18" height="70" fill="#1a3528"/>
+        <polygon points="1340,240 1360,460 1320,460"/><rect x="1352" y="458" width="14" height="50" fill="#1a3528"/>
+      </g>
+      <g opacity=".22" fill="none" stroke="#2d6a4f" stroke-width="1.5">
+        <path d="M850 900Q870 720 920 580Q960 450 990 320Q1010 220 1020 140"/>
+        <path d="M920 580Q970 560 1010 520Q1050 490 1080 450"/>
+        <circle cx="1010" cy="520" r="18" opacity=".6"/><circle cx="1080" cy="450" r="14" opacity=".5"/>
+        <circle cx="1012" cy="524" r="5" fill="#2d6a4f"/><circle cx="1082" cy="454" r="4" fill="#2d6a4f"/>
+      </g>
+      <g opacity=".09" fill="#2d6a4f">
+        <rect x="1080" y="50" width="60" height="120" rx="4"/>
+        <path d="M1068 170Q1065 200 1060 260L1060 800Q1060 820 1075 830L1145 830Q1160 820 1160 800L1160 260Q1155 200 1152 170Z"/>
+      </g>
+    </svg>
   </div>
+  <div class="hero__ghost" aria-hidden="true">BACKEROS</div>
+  <div class="hero__content">
+    <div class="hero__eyebrow fade-up">Import &amp; Winkel &middot; Aartselaar</div>
+    <h1 class="hero__h1 fade-up delay-1" id="hero-h1">Wijnen die een verhaal<br>vertellen &mdash; <em>direct<br>van de bron</em></h1>
+    <p class="hero__sub fade-up delay-2">Handgeplukt uit de best bewaarde wijnstreken van Europa en de Nieuwe Wereld. Eerlijk, biologisch, ongefiltreerd &mdash; voor wie meer wil dan een label.</p>
+    <div class="hero__actions fade-up delay-3">
+      <a href="#collectie" class="btn-primary">Ontdek de collectie &#8594;</a>
+      <a href="tel:+32473171837" class="btn-ghost">Bel: 0473 17 18 37</a>
+    </div>
+  </div>
+  <div class="hero__scroll-hint" aria-hidden="true"><div class="hero__scroll-track"></div><span>Scroll</span></div>
+</section>
 
-  <!-- Sticky nav -->
-  <header class="sticky top-0 z-50 bg-cream/85 backdrop-blur border-b border-wine/10">
-    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[70px] flex items-center justify-between">
-      <a href="#top" class="flex items-baseline gap-2">
-        <span class="font-serif text-[27px] font-700 tracking-tight text-wine">Backeros<span class="text-gold">·</span><span class="italic font-500">Wines</span></span>
-        <span class="hidden sm:inline text-[11px] uppercase tracking-[0.22em] text-clay font-600">Aartselaar</span>
-      </a>
-      <div class="hidden md:flex items-center gap-8 text-[14px] font-500 tracking-wide">
-        <a href="#webshop" class="ug">Webshop</a>
-        <a href="#assortiment" class="ug">Assortiment</a>
-        <a href="#ontdekbox" class="ug">Ontdek-box</a>
-        <a href="#verhaal" class="ug">Ons verhaal</a>
-        <a href="#bezoek" class="ug">Bezoek ons</a>
+<div class="marquee-wrap" aria-label="Kernwaarden Backeros Wines">
+  <div class="marquee-track" aria-hidden="true">
+    <div class="marquee-item">Import <span class="marquee-dot"></span> Selectie <span class="marquee-dot"></span> Authentiek <span class="marquee-dot"></span> Biologisch <span class="marquee-dot"></span> Direct van de bron <span class="marquee-dot"></span> Aartselaar <span class="marquee-dot"></span> Import <span class="marquee-dot"></span> Selectie <span class="marquee-dot"></span> Authentiek <span class="marquee-dot"></span> Biologisch <span class="marquee-dot"></span> Direct van de bron <span class="marquee-dot"></span> Aartselaar <span class="marquee-dot"></span></div>
+    <div class="marquee-item" aria-hidden="true">Import <span class="marquee-dot"></span> Selectie <span class="marquee-dot"></span> Authentiek <span class="marquee-dot"></span> Biologisch <span class="marquee-dot"></span> Direct van de bron <span class="marquee-dot"></span> Aartselaar <span class="marquee-dot"></span> Import <span class="marquee-dot"></span> Selectie <span class="marquee-dot"></span> Authentiek <span class="marquee-dot"></span> Biologisch <span class="marquee-dot"></span> Direct van de bron <span class="marquee-dot"></span> Aartselaar <span class="marquee-dot"></span></div>
+  </div>
+</div>
+
+<section class="origins" id="herkomst" aria-labelledby="herkomst-h2">
+  <div class="section-inner">
+    <div class="origins__header">
+      <div><div class="section-label fade-up">Herkomst</div><h2 class="section-h2 fade-up delay-1" id="herkomst-h2">Van oud continent<br>tot <em>nieuwe wereld</em></h2></div>
+      <p class="section-lead fade-up delay-2">Onze selectie omspant vier wijnregio's met een eigen karakter. Elk domein is persoonlijk bezocht. Elke fles is gekozen op smaak, verhaal en eerlijkheid van productie.</p>
+    </div>
+    <div class="origins__bento">
+      <div class="origin-card origin-card--large fade-up">
+        <div class="origin-card__flag">&#x1F1EB;&#x1F1F7;</div>
+        <div class="origin-card__region">Bordeaux &middot; Bourgogne &middot; Rh&ocirc;ne</div>
+        <h3 class="origin-card__name">Frankrijk</h3>
+        <p class="origin-card__desc">Het moederland van de klassieke wijnbouw. Van de minerale granden crus van Bourgogne tot de structuurrijke M&eacute;docs &mdash; wij brengen u de essentie van het Franse terroir, zonder opsmuk.</p>
+        <div class="origin-card__count">14 domeinen &middot; 38 referenties</div>
       </div>
-      <div class="flex items-center gap-2">
-        <a href="#webshop" class="inline-flex items-center gap-2 bg-wine text-cream text-sm font-600 px-4 sm:px-5 py-2.5 rounded-full hover:bg-winelt transition">
-          Bestel online
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
-          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-wine/15 text-wine hover:bg-wine/5 transition">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
+      <div class="origin-card fade-up delay-1">
+        <div class="origin-card__flag">&#x1F1EA;&#x1F1F8;</div>
+        <div class="origin-card__region">Rioja &middot; Priorat &middot; Galici&euml;</div>
+        <h3 class="origin-card__name">Spanje</h3>
+        <p class="origin-card__desc">Temperaturas, graniet en eeuwenoude tempranillo-stokken. Spanje levert karakter zonder compromis.</p>
+        <div class="origin-card__count">8 domeinen &middot; 19 referenties</div>
       </div>
-    </nav>
-    <!-- Mobile menu -->
-    <div id="mobile-menu" hidden class="md:hidden border-t border-wine/10 bg-cream/95 backdrop-blur">
-      <div class="px-5 py-3 flex flex-col text-[15px] font-500">
-        <a href="#webshop" class="py-3 border-b border-wine/8">Webshop</a>
-        <a href="#assortiment" class="py-3 border-b border-wine/8">Assortiment</a>
-        <a href="#ontdekbox" class="py-3 border-b border-wine/8">Ontdek-box</a>
-        <a href="#verhaal" class="py-3 border-b border-wine/8">Ons verhaal</a>
-        <a href="#bezoek" class="py-3">Bezoek ons</a>
+      <div class="origin-card fade-up delay-2">
+        <div class="origin-card__flag">&#x1F1EE;&#x1F1F9;</div>
+        <div class="origin-card__region">Piemonte &middot; Toscane &middot; Sicili&euml;</div>
+        <h3 class="origin-card__name">Itali&euml;</h3>
+        <p class="origin-card__desc">Van de trofeeale Barolo's van de Langhe tot de expressieve nero d'avola's van Sicili&euml; &mdash; Itali&euml; is onuitputtelijk in diversiteit.</p>
+        <div class="origin-card__count">10 domeinen &middot; 24 referenties</div>
+      </div>
+      <div class="origin-card fade-up delay-3">
+        <div class="origin-card__flag">&#x1F30D;</div>
+        <div class="origin-card__region">Argentin&euml; &middot; Chili &middot; Zuid-Afrika</div>
+        <h3 class="origin-card__name">Nieuwe Wereld</h3>
+        <p class="origin-card__desc">Hoge hoogten, koude oceaanwinden en onverstoorde grond geven de nieuwe wereld een frisheid die zijn eigen taal spreekt.</p>
+        <div class="origin-card__count">6 domeinen &middot; 14 referenties</div>
       </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- Hero -->
-  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-slate">
-    <div class="absolute inset-0 tile-grad"></div>
-    <img
-      src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=2000&q=80"
-      alt="Wijnflessen in de wijnhandel van Backeros Wines"
-      fetchpriority="high"
-      class="absolute inset-0 w-full h-full object-cover"
-    />
-    <div class="absolute inset-0 hero-grad"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
-      <p class="text-goldlt font-600 tracking-[0.3em] uppercase text-xs mb-5">Wijnhandel · Import &amp; retail · Aartselaar</p>
-      <h1 class="font-serif text-cream text-[44px] leading-[1.03] sm:text-7xl font-600 max-w-3xl">
-        Geen "under construction"<br />meer — gewoon wijn bestellen.
-      </h1>
-      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed font-300">
-        Een echte winkel met een echte selectie, vandaag nog verstopt achter een onafgewerkte site.
-        Dit is hoe Backeros Wines er online uitziet: een wijnwebshop met filters, een veilige checkout
-        en ontdek-boxen die je thuis laten reizen door wijnland.
-      </p>
-      <div class="flex flex-wrap gap-3 mt-9">
-        <a href="#webshop" class="bg-cream text-wine font-600 px-7 py-3.5 rounded-full hover:bg-gold hover:text-ink transition">
-          Naar de wijnwebshop
-        </a>
-        <a href="#ontdekbox" class="border border-cream/45 text-cream font-500 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
-          Ontdek-boxen &amp; cadeaus
-        </a>
-      </div>
-      <p class="text-cream/55 text-xs mt-6 font-300">Wijn is enkel voor +18-jarigen. Geniet, maar drink met mate.</p>
+<div class="metrics" aria-label="Backeros in cijfers">
+  <div class="section-inner">
+    <div class="metrics__grid">
+      <div class="metric-item fade-up"><div class="metric-item__num">38+</div><div class="metric-item__label">Domeinen</div></div>
+      <div class="metric-item fade-up delay-1"><div class="metric-item__num">95+</div><div class="metric-item__label">Referenties</div></div>
+      <div class="metric-item fade-up delay-2"><div class="metric-item__num">4</div><div class="metric-item__label">Wijnregio's</div></div>
+      <div class="metric-item fade-up delay-3"><div class="metric-item__num">Bio</div><div class="metric-item__label">Gecertificeerd</div></div>
     </div>
-  </section>
+  </div>
+</div>
 
-  <!-- USP strip -->
-  <section class="bg-wine text-cream/90">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-7 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
-      <div><p class="font-serif text-2xl text-goldlt">Filteren</p><p class="mt-1 text-cream/60">op streek, druif &amp; prijs</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Bestellen</p><p class="mt-1 text-cream/60">veilig met Bancontact</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Ontdekken</p><p class="mt-1 text-cream/60">ontdek-boxen &amp; cadeaus</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Import</p><p class="mt-1 text-cream/60">rechtstreeks van de bron</p></div>
+<section class="collectie" id="collectie" aria-labelledby="collectie-h2">
+  <div class="section-inner">
+    <div class="collectie__top">
+      <div><div class="section-label fade-up">Collectie</div><h2 class="section-h2 fade-up delay-1" id="collectie-h2">Curated picks<br><em>van dit seizoen</em></h2></div>
+      <a href="#bezoek" class="btn-ghost fade-up delay-2">Volledige lijst opvragen</a>
     </div>
-  </section>
+    <div class="collectie__grid">
+      <article class="wine-card fade-up">
+        <div class="wine-card__badge">Bio</div>
+        <div class="wine-card__visual"><svg class="bottle-svg-wrap" viewBox="0 0 80 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="28" y="2" width="24" height="18" rx="3" fill="#2d6a4f"/><path d="M22 20Q18 30 16 50L16 120Q16 134 28 136L52 136Q64 134 64 120L64 50Q62 30 58 20Z" fill="#1a3528"/><ellipse cx="40" cy="136" rx="24" ry="6" fill="#1a3528" opacity=".5"/><text x="40" y="78" text-anchor="middle" fill="#b5975a" font-size="5" font-family="Georgia,serif">BORDEAUX</text></svg></div>
+        <div class="wine-card__origin">Bordeaux, Frankrijk</div>
+        <h3 class="wine-card__name">Ch&#226;teau Rivi&#232;re<br>Grande Cru 2019</h3>
+        <p class="wine-card__desc">Diepe garnet met violette tonen. Cassis, ceder en tabaksblad. Tanins van fluweel kwaliteit &mdash; vergt geduld, beloont royaal.</p>
+        <div class="wine-card__footer"><span class="wine-card__price">&#8364; 28 &ndash; 42</span><a href="#bezoek" class="wine-card__cta">Bestellen &#8250;</a></div>
+      </article>
+      <article class="wine-card fade-up delay-1">
+        <div class="wine-card__badge">Natuur</div>
+        <div class="wine-card__visual"><svg class="bottle-svg-wrap" viewBox="0 0 80 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="28" y="2" width="24" height="18" rx="3" fill="#7a3520"/><path d="M22 20Q18 30 16 50L16 120Q16 134 28 136L52 136Q64 134 64 120L64 50Q62 30 58 20Z" fill="#2a1008"/><ellipse cx="40" cy="136" rx="24" ry="6" fill="#2a1008" opacity=".5"/><text x="40" y="78" text-anchor="middle" fill="#d4a574" font-size="5" font-family="Georgia,serif">PRIORAT</text></svg></div>
+        <div class="wine-card__origin">Priorat, Spanje</div>
+        <h3 class="wine-card__name">Mas de l'Erm<br>Garnacha 2021</h3>
+        <p class="wine-card__desc">Granietschisten geven dit wijntje zijn onmiskenbare mineraliteit. Donker fruit, kersen, een lichte rookstoet. Geweldig bij lamsvlees.</p>
+        <div class="wine-card__footer"><span class="wine-card__price">&#8364; 18 &ndash; 26</span><a href="#bezoek" class="wine-card__cta">Bestellen &#8250;</a></div>
+      </article>
+      <article class="wine-card fade-up delay-2">
+        <div class="wine-card__badge">Biologisch</div>
+        <div class="wine-card__visual"><svg class="bottle-svg-wrap" viewBox="0 0 80 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="28" y="2" width="24" height="18" rx="3" fill="#3d1a5a"/><path d="M22 20Q18 30 16 50L16 120Q16 134 28 136L52 136Q64 134 64 120L64 50Q62 30 58 20Z" fill="#1c0a2e"/><ellipse cx="40" cy="136" rx="24" ry="6" fill="#1c0a2e" opacity=".5"/><text x="40" y="78" text-anchor="middle" fill="#c9a0dc" font-size="5" font-family="Georgia,serif">BAROLO</text></svg></div>
+        <div class="wine-card__origin">Piemonte, Itali&#235;</div>
+        <h3 class="wine-card__name">Cascina Volta<br>Barolo 2018</h3>
+        <p class="wine-card__desc">De koningswijn van Itali&#235; op zijn prachtigst. Rozen, teer en aardbei op een fundament van nobele tanins. Een wijn die tien jaar wacht.</p>
+        <div class="wine-card__footer"><span class="wine-card__price">&#8364; 44 &ndash; 68</span><a href="#bezoek" class="wine-card__cta">Bestellen &#8250;</a></div>
+      </article>
+      <article class="wine-card fade-up delay-1">
+        <div class="wine-card__visual"><svg class="bottle-svg-wrap" viewBox="0 0 80 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="28" y="2" width="24" height="18" rx="3" fill="#3a5c3a"/><path d="M26 20Q23 32 22 50L22 120Q22 134 32 136L48 136Q58 134 58 120L58 50Q57 32 54 20Z" fill="#1a2e1a"/><ellipse cx="40" cy="136" rx="18" ry="5" fill="#1a2e1a" opacity=".5"/><text x="40" y="78" text-anchor="middle" fill="#90c490" font-size="4" font-family="Georgia,serif">MARLBOROUGH</text></svg></div>
+        <div class="wine-card__origin">Marlborough, Nieuw-Zeeland</div>
+        <h3 class="wine-card__name">Cloudbay Estate<br>Sauvignon Blanc 2023</h3>
+        <p class="wine-card__desc">Kalkachtige frisheid, passievrucht en citruszestes. De perfecte zomerwijn die ook in de herfst zijn eigen houdt.</p>
+        <div class="wine-card__footer"><span class="wine-card__price">&#8364; 14 &ndash; 20</span><a href="#bezoek" class="wine-card__cta">Bestellen &#8250;</a></div>
+      </article>
+      <article class="wine-card fade-up delay-2">
+        <div class="wine-card__visual"><svg class="bottle-svg-wrap" viewBox="0 0 80 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="28" y="2" width="24" height="18" rx="3" fill="#5a1a2a"/><path d="M22 20Q18 30 16 50L16 120Q16 134 28 136L52 136Q64 134 64 120L64 50Q62 30 58 20Z" fill="#2a0a14"/><ellipse cx="40" cy="136" rx="24" ry="6" fill="#2a0a14" opacity=".5"/><text x="40" y="78" text-anchor="middle" fill="#e0a0b0" font-size="5" font-family="Georgia,serif">MENDOZA</text></svg></div>
+        <div class="wine-card__origin">Mendoza, Argentin&#235;</div>
+        <h3 class="wine-card__name">Achaval Ferrer<br>Malbec 2020</h3>
+        <p class="wine-card__desc">Op 1400 meter hoogte gekweekt in de Andes. Blauwe pruimen, cacao en een fluweelzachte afdronk die minuten aanhoudt.</p>
+        <div class="wine-card__footer"><span class="wine-card__price">&#8364; 16 &ndash; 24</span><a href="#bezoek" class="wine-card__cta">Bestellen &#8250;</a></div>
+      </article>
+      <article class="wine-card fade-up delay-3">
+        <div class="wine-card__badge">Bio</div>
+        <div class="wine-card__visual"><svg class="bottle-svg-wrap" viewBox="0 0 80 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="28" y="2" width="24" height="18" rx="3" fill="#2d6a4f"/><path d="M20 20Q15 32 14 52L14 120Q14 134 28 136L52 136Q66 134 66 120L66 52Q65 32 60 20Z" fill="#0d2018"/><ellipse cx="40" cy="136" rx="26" ry="6.5" fill="#0d2018" opacity=".5"/><text x="40" y="78" text-anchor="middle" fill="#90d4a0" font-size="4.5" font-family="Georgia,serif">BOURGOGNE</text></svg></div>
+        <div class="wine-card__origin">Bourgogne, Frankrijk</div>
+        <h3 class="wine-card__name">Domaine Leflaive<br>Pinot Noir 2020</h3>
+        <p class="wine-card__desc">Lichte robijnrode kleur, aardbei en rode kers met een lichte aardse toets. Elegantie in zijn meest pure vorm &mdash; het DNA van Bourgogne.</p>
+        <div class="wine-card__footer"><span class="wine-card__price">&#8364; 32 &ndash; 52</span><a href="#bezoek" class="wine-card__cta">Bestellen &#8250;</a></div>
+      </article>
+    </div>
+    <div class="collectie__strip fade-up">
+      <p class="collectie__strip-text">Meer dan 95 referenties &mdash; van <em>&#8364; 10 tot grand cru.</em><br>Vraag de volledige catalogus op via telefoon of e-mail.</p>
+      <a href="tel:+32473171837" class="btn-primary">Bel: 0473 17 18 37</a>
+    </div>
+  </div>
+</section>
 
-  <!-- The hook: under construction → real webshop -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
+<section class="about" id="over-ons" aria-labelledby="about-h2">
+  <div class="section-inner">
+    <div class="about__grid">
       <div class="fade-up">
-        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Het probleem vandaag</p>
-        <h2 class="font-serif text-4xl sm:text-6xl font-600 leading-tight text-wine">
-          De winkel is open.<br />De website niet.
-        </h2>
-        <p class="text-clay text-lg mt-5 leading-relaxed max-w-md font-300">
-          Wie vandaag <span class="font-500 text-ink">backeroswines.be</span> bezoekt, leest enkel
-          <span class="italic">"Under construction!"</span> — en kan niets kopen. Een echte wijnhandel,
-          gevangen achter een onafgewerkte site. Geen assortiment, geen bestelknop, geen reden om terug te komen.
-        </p>
-        <p class="text-clay text-lg mt-4 leading-relaxed max-w-md font-300">
-          Dit concept lost dat in één keer op: een afgewerkte wijnwebshop waar klanten filteren,
-          bestellen en betalen — ook buiten de openingsuren.
-        </p>
-      </div>
-      <div class="fade-up">
-        <div class="rounded-2xl border border-wine/12 bg-white shadow-sm overflow-hidden">
-          <div class="flex items-center gap-2 px-4 py-3 bg-slate/5 border-b border-wine/10">
-            <span class="w-3 h-3 rounded-full bg-wine/30"></span>
-            <span class="w-3 h-3 rounded-full bg-gold/50"></span>
-            <span class="w-3 h-3 rounded-full bg-slate/20"></span>
-            <span class="ml-3 text-xs text-clay font-500">backeroswines.be</span>
-          </div>
-          <div class="p-10 sm:p-14 text-center bg-sand/40">
-            <p class="font-serif text-3xl sm:text-4xl text-slate/70 italic">"Under construction!"</p>
-            <p class="text-clay/70 text-sm mt-3">Geen assortiment · geen webshop · geen contactformulier</p>
-            <div class="mt-7 inline-flex items-center gap-2 text-wine font-600 text-sm">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-              Tijd voor de échte site hieronder
-            </div>
-          </div>
+        <div class="about__vine-frame">
+          <svg width="100%" viewBox="0 0 580 460" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Wijnkelder illustratie">
+            <defs><radialGradient id="cg1" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#1a3528"/><stop offset="100%" stop-color="#0d1510"/></radialGradient></defs>
+            <rect width="580" height="460" fill="url(#cg1)"/>
+            <path d="M60 460L60 220Q60 120 200 120Q340 120 340 220L340 460" stroke="#2d6a4f" stroke-width="2" fill="none" opacity=".25"/>
+            <g opacity=".55">
+              <ellipse cx="110" cy="310" rx="44" ry="18" fill="#1a3528" stroke="#2d6a4f" stroke-width="1.5"/>
+              <rect x="66" y="310" width="88" height="70" fill="#1a3528" stroke="#2d6a4f" stroke-width="1.5"/>
+              <ellipse cx="110" cy="380" rx="44" ry="18" fill="#1a3528" stroke="#2d6a4f" stroke-width="1.5"/>
+              <line x1="88" y1="310" x2="88" y2="380" stroke="#2d6a4f" stroke-width="1" opacity=".5"/>
+              <line x1="132" y1="310" x2="132" y2="380" stroke="#2d6a4f" stroke-width="1" opacity=".5"/>
+            </g>
+            <g opacity=".40">
+              <rect x="380" y="140" width="160" height="300" rx="4" fill="#111a14" stroke="#2d6a4f" stroke-width="1"/>
+              <line x1="380" y1="180" x2="540" y2="180" stroke="#2d6a4f" stroke-width="1"/>
+              <line x1="380" y1="220" x2="540" y2="220" stroke="#2d6a4f" stroke-width="1"/>
+              <line x1="380" y1="260" x2="540" y2="260" stroke="#2d6a4f" stroke-width="1"/>
+              <line x1="380" y1="300" x2="540" y2="300" stroke="#2d6a4f" stroke-width="1"/>
+              <line x1="380" y1="340" x2="540" y2="340" stroke="#2d6a4f" stroke-width="1"/>
+              <g fill="#2d6a4f" opacity=".8">
+                <ellipse cx="405" cy="200" rx="10" ry="16"/><ellipse cx="435" cy="200" rx="10" ry="16"/><ellipse cx="465" cy="200" rx="10" ry="16"/><ellipse cx="495" cy="200" rx="10" ry="16"/>
+                <ellipse cx="405" cy="240" rx="10" ry="16"/><ellipse cx="435" cy="240" rx="10" ry="16"/><ellipse cx="465" cy="240" rx="10" ry="16"/>
+                <ellipse cx="405" cy="280" rx="10" ry="16"/><ellipse cx="435" cy="280" rx="10" ry="16"/><ellipse cx="465" cy="280" rx="10" ry="16"/>
+                <ellipse cx="405" cy="320" rx="10" ry="16"/><ellipse cx="435" cy="320" rx="10" ry="16"/>
+                <ellipse cx="405" cy="360" rx="10" ry="16"/><ellipse cx="465" cy="360" rx="10" ry="16"/>
+              </g>
+            </g>
+            <circle cx="200" cy="250" r="80" fill="#b5975a" opacity=".05"/>
+            <rect x="0" y="390" width="580" height="70" fill="#0d1510" opacity=".7"/>
+            <text x="32" y="420" fill="#b5975a" font-size="9" font-family="Georgia,serif" letter-spacing="2">ONZE KELDER</text>
+            <text x="32" y="440" fill="#f2ede4" font-size="10.5" font-family="Georgia,serif" opacity=".75">Aartselaar - Belgie</text>
+          </svg>
+        </div>
+        <div class="about__pill-row">
+          <div class="about__pill">Persoonlijk advies</div>
+          <div class="about__pill">Biologisch gecertificeerd</div>
+          <div class="about__pill">Direct van producent</div>
+          <div class="about__pill">Veilige levering</div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Wijnwebshop / online bestellen — filter concept -->
-  <section id="webshop" class="bg-slate text-cream py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="max-w-3xl fade-up">
-        <p class="text-goldlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Wijnwebshop · online bestellen</p>
-        <h2 class="font-serif text-4xl sm:text-6xl font-600 leading-tight">
-          Vind jouw fles<br />in drie klikken.
-        </h2>
-        <p class="text-cream/80 text-lg mt-6 leading-relaxed font-300">
-          Geen eindeloze lijst, wel een slimme webshop. Klanten filteren op streek, druif en prijs,
-          rekenen veilig af met Bancontact via Mollie, en kiezen tussen afhalen in Aartselaar of
-          levering. Met een leeftijdscontrole (18+) ingebouwd in de checkout.
-        </p>
-      </div>
-
-      <!-- Filter concept mock -->
-      <div class="mt-12 grid lg:grid-cols-[300px_1fr] gap-6 items-start fade-up">
-        <!-- Filter rail -->
-        <aside class="rounded-2xl bg-cream/5 border border-cream/12 p-6" aria-label="Filterconcept (illustratief)">
-          <p class="font-serif text-2xl text-goldlt mb-1">Filters</p>
-          <p class="text-cream/50 text-xs mb-6">Illustratief — zo verfijnen klakken straks hun keuze.</p>
-
-          <p class="text-cream/70 text-xs uppercase tracking-wider font-600 mb-2">Streek</p>
-          <div class="flex flex-wrap gap-2 mb-5">
-            <span class="text-xs px-3 py-1.5 rounded-full bg-wine text-cream font-500">Bordeaux</span>
-            <span class="text-xs px-3 py-1.5 rounded-full bg-cream/10 text-cream/70">Rhône</span>
-            <span class="text-xs px-3 py-1.5 rounded-full bg-cream/10 text-cream/70">Toscane</span>
-            <span class="text-xs px-3 py-1.5 rounded-full bg-cream/10 text-cream/70">Rioja</span>
-          </div>
-
-          <p class="text-cream/70 text-xs uppercase tracking-wider font-600 mb-2">Druif</p>
-          <div class="flex flex-wrap gap-2 mb-5">
-            <span class="text-xs px-3 py-1.5 rounded-full bg-cream/10 text-cream/70">Pinot Noir</span>
-            <span class="text-xs px-3 py-1.5 rounded-full bg-gold text-ink font-500">Syrah</span>
-            <span class="text-xs px-3 py-1.5 rounded-full bg-cream/10 text-cream/70">Chardonnay</span>
-            <span class="text-xs px-3 py-1.5 rounded-full bg-cream/10 text-cream/70">Tempranillo</span>
-          </div>
-
-          <p class="text-cream/70 text-xs uppercase tracking-wider font-600 mb-2">Prijs</p>
-          <div class="flex items-center gap-3 mb-2">
-            <span class="text-xs text-cream/60">€ 8</span>
-            <div class="flex-1 h-1.5 rounded-full bg-cream/15 relative">
-              <div class="absolute left-0 top-0 h-1.5 rounded-full bg-goldlt" style="width:62%"></div>
-              <span class="absolute top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-goldlt border-2 border-slate" style="left:60%"></span>
-            </div>
-            <span class="text-xs text-cream/60">€ 45+</span>
-          </div>
-          <p class="text-cream/50 text-xs mt-1">Tot ± € 30 per fles</p>
-
-          <button class="w-full mt-6 bg-cream text-wine font-600 text-sm px-5 py-2.5 rounded-full hover:bg-gold hover:text-ink transition">Toon 24 wijnen</button>
-        </aside>
-
-        <!-- Result grid -->
-        <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-4">
-          <!-- Card 1 -->
-          <div class="rounded-2xl bg-cream text-ink p-3">
-            <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-              <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?auto=format&fit=crop&w=700&q=80" alt="Rode wijn uit de Rhône (ter illustratie)" loading="lazy" decoding="async" class="w-full h-full object-cover" />
-            </div>
-            <div class="p-3">
-              <p class="text-[11px] text-wine font-600 uppercase tracking-wider">Rhône · Syrah</p>
-              <h3 class="font-serif text-xl font-600 mt-0.5">Côtes du Rhône</h3>
-              <p class="text-clay text-sm mt-1 font-300">Kruidig, soepel, voor bij gegrild vlees.</p>
-              <div class="flex items-center justify-between mt-3">
-                <span class="font-600 text-wine">vanaf € —</span>
-                <button class="bg-wine text-cream text-xs font-600 px-3.5 py-2 rounded-full hover:bg-winelt transition">In mandje</button>
-              </div>
-            </div>
-          </div>
-          <!-- Card 2 -->
-          <div class="rounded-2xl bg-cream text-ink p-3">
-            <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-              <img src="https://images.unsplash.com/photo-1547595628-c61a29f496f0?auto=format&fit=crop&w=700&q=80" alt="Witte wijn, frisse stijl (ter illustratie)" loading="lazy" decoding="async" class="w-full h-full object-cover" />
-            </div>
-            <div class="p-3">
-              <p class="text-[11px] text-wine font-600 uppercase tracking-wider">Loire · Chenin</p>
-              <h3 class="font-serif text-xl font-600 mt-0.5">Vouvray sec</h3>
-              <p class="text-clay text-sm mt-1 font-300">Fris en mineraal, mooi bij vis.</p>
-              <div class="flex items-center justify-between mt-3">
-                <span class="font-600 text-wine">vanaf € —</span>
-                <button class="bg-wine text-cream text-xs font-600 px-3.5 py-2 rounded-full hover:bg-winelt transition">In mandje</button>
-              </div>
-            </div>
-          </div>
-          <!-- Card 3 -->
-          <div class="rounded-2xl bg-cream text-ink p-3">
-            <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-              <img src="https://images.unsplash.com/photo-1474722883778-792e7990302f?auto=format&fit=crop&w=700&q=80" alt="Bubbels en feest (ter illustratie)" loading="lazy" decoding="async" class="w-full h-full object-cover" />
-            </div>
-            <div class="p-3">
-              <p class="text-[11px] text-wine font-600 uppercase tracking-wider">Champagne · Brut</p>
-              <h3 class="font-serif text-xl font-600 mt-0.5">Champagne Brut</h3>
-              <p class="text-clay text-sm mt-1 font-300">Om te vieren of zomaar te genieten.</p>
-              <div class="flex items-center justify-between mt-3">
-                <span class="font-600 text-wine">vanaf € —</span>
-                <button class="bg-wine text-cream text-xs font-600 px-3.5 py-2 rounded-full hover:bg-winelt transition">In mandje</button>
-              </div>
-            </div>
-          </div>
+      <div class="fade-up delay-2">
+        <div class="section-label">Over ons</div>
+        <h2 class="section-h2" id="about-h2">Wijnimport als<br><em>ambacht</em></h2>
+        <p class="section-lead" style="margin-top:20px;">Backeros Wines is een onafhankelijke wijnimporteur gevestigd in Aartselaar. We geloven dat de beste wijnen niet in grote supermarkten te vinden zijn &mdash; ze groeien in kleine percelen, gemaakt door families die hun terroir kennen als hun eigen handpalm.</p>
+        <div class="about__quote" style="margin-top:28px;">
+          <p>&#8220;Een goede wijn is geen toeval. Het is jaren van kennis, moed en respect voor de grond &mdash; en dat verdient een directe weg naar uw glas.&#8221;</p>
+          <cite>&mdash; Backeros Wines, Aartselaar</cite>
         </div>
-      </div>
-
-      <!-- checkout reassurance row -->
-      <div class="grid sm:grid-cols-3 gap-4 mt-10 fade-up">
-        <div class="rounded-2xl bg-cream/5 border border-cream/10 p-6">
-          <p class="font-serif text-2xl text-goldlt">Veilig betalen</p>
-          <p class="text-cream/70 text-sm mt-2 font-300">Bancontact, Visa &amp; Mastercard via Mollie — versleuteld en vertrouwd.</p>
-        </div>
-        <div class="rounded-2xl bg-cream/5 border border-cream/10 p-6">
-          <p class="font-serif text-2xl text-goldlt">18+ check</p>
-          <p class="text-cream/70 text-sm mt-2 font-300">Leeftijdsbevestiging in de checkout — verantwoord verkopen, conform de wet.</p>
-        </div>
-        <div class="rounded-2xl bg-cream/5 border border-cream/10 p-6">
-          <p class="font-serif text-2xl text-goldlt">Afhalen of leveren</p>
-          <p class="text-cream/70 text-sm mt-2 font-300">Klik &amp; collect in Aartselaar, of levering — de klant kiest bij het afrekenen.</p>
-        </div>
-      </div>
-      <p class="text-cream/45 text-xs mt-8 font-300">Webshop, filters en producten zijn een concept ter illustratie. Echte wijnen, streken en prijzen worden samen met Backeros Wines ingevuld.</p>
-    </div>
-  </section>
-
-  <!-- Assortiment grid -->
-  <section id="assortiment" class="bg-sand/55 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
-        <div>
-          <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
-          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-wine">Voor elke gelegenheid</h2>
-        </div>
-        <p class="text-clay max-w-sm font-300">Van een doordeweekse fles tot een geschenk dat indruk maakt — alles vind je straks ook online terug.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <!-- Rood -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80" alt="Rode wijn" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
-          <div class="absolute inset-0 bg-gradient-to-t from-merlot via-merlot/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Rode wijn</h3><p class="text-cream/75 text-sm mt-1 font-300">Van licht en fruitig tot vol en krachtig.</p></div>
-        </article>
-        <!-- Wit -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img src="https://images.unsplash.com/photo-1547595628-c61a29f496f0?auto=format&fit=crop&w=800&q=80" alt="Witte wijn" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
-          <div class="absolute inset-0 bg-gradient-to-t from-merlot via-merlot/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Witte wijn</h3><p class="text-cream/75 text-sm mt-1 font-300">Fris, soepel of net wat ronder.</p></div>
-        </article>
-        <!-- Bubbels -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img src="https://images.unsplash.com/photo-1474722883778-792e7990302f?auto=format&fit=crop&w=800&q=80" alt="Bubbels en champagne" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
-          <div class="absolute inset-0 bg-gradient-to-t from-merlot via-merlot/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Bubbels &amp; Champagne</h3><p class="text-cream/75 text-sm mt-1 font-300">Cava, crémant &amp; champagne om te vieren.</p></div>
-        </article>
-        <!-- Ontdek-box -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?auto=format&fit=crop&w=800&q=80" alt="Ontdek-box met wijnen" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
-          <div class="absolute inset-0 bg-gradient-to-t from-merlot via-merlot/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Ontdek-box</h3><p class="text-cream/75 text-sm mt-1 font-300">Een selectie om thuis te proeven en te ontdekken.</p></div>
-        </article>
-        <!-- Cadeaupakketten -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-wine text-cream relative aspect-[4/5]">
-          <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80" alt="Wijn-cadeaupakket" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700" />
-          <div class="absolute inset-0 bg-gradient-to-t from-merlot via-merlot/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6"><h3 class="font-serif text-2xl font-600">Cadeaupakketten</h3><p class="text-cream/75 text-sm mt-1 font-300">Mooi verpakt, samengesteld naar budget en smaak.</p></div>
-        </article>
-        <!-- Advies CTA card -->
-        <article class="fade-up group rounded-2xl overflow-hidden tile-grad text-cream relative aspect-[4/5] flex items-center justify-center text-center p-6">
-          <div>
-            <p class="font-serif text-2xl font-600">Niet zeker?</p>
-            <p class="text-cream/75 text-sm mt-2 font-300">Vertel ons de gelegenheid en het budget — wij stellen graag een passende fles of box voor.</p>
-            <a href="#bezoek" class="inline-block mt-5 text-goldlt font-600 ug">Vraag advies →</a>
-          </div>
-        </article>
-      </div>
-      <p class="text-xs text-clay/70 mt-8 text-center">Onze selectie wisselt regelmatig. Beschikbaarheid en advies altijd in overleg — online en in de winkel.</p>
-    </div>
-  </section>
-
-  <!-- Ontdek-box / nieuwsbrief concept block -->
-  <section id="ontdekbox" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1 fade-up">
-        <img
-          src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?auto=format&fit=crop&w=1000&q=80"
-          alt="Wijn-ontdek-box met flessen en proefnotities"
-          loading="lazy" decoding="async"
-          class="w-full h-full object-cover"
-        />
-      </div>
-      <div class="order-1 lg:order-2 fade-up">
-        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Ontdek-boxen &amp; cadeaupakketten</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight text-wine">
-          Laat je verrassen,<br />fles na fles.
-        </h2>
-        <p class="text-clay text-lg mt-6 leading-relaxed max-w-md font-300">
-          De ontdek-box brengt een zorgvuldig samengestelde selectie thuis: enkele wijnen rond
-          een streek of thema, met proefnotities erbij. Ideaal om rustig te ontdekken — of als
-          cadeau dat altijd in de smaak valt.
-        </p>
-        <ul class="mt-6 space-y-3 text-clay">
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Wisselende ontdek-boxen rond streek, druif of seizoen</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Cadeaupakketten op maat van budget en gelegenheid</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Nieuwsbrief met seizoenstips &amp; nieuwe aanwinsten</li>
-        </ul>
-        <a href="#nieuwsbrief" class="inline-flex items-center gap-2 mt-8 bg-wine text-cream font-600 px-7 py-3.5 rounded-full hover:bg-winelt transition">
-          Schrijf je in voor tips
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
+        <p class="section-lead" style="max-width:100%;font-size:.90rem;">Wij bezoeken elk domein persoonlijk. Geen tussenhandel, geen compromis. Van biologisch gecertificeerde percelen in Bourgogne tot kleinschalige producenten in de Andes.</p>
+        <div style="margin-top:36px;"><a href="#bezoek" class="btn-primary">Kom langs in Aartselaar</a></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Ons verhaal -->
-  <section id="verhaal" class="bg-slate text-cream py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-16 items-center">
-      <div class="fade-up">
-        <p class="text-goldlt font-600 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 leading-tight">Import én retail,<br />uit liefde voor wijn.</h2>
-        <p class="text-cream/80 text-lg mt-6 leading-relaxed font-300">
-          Backeros Wines is een onafhankelijke wijnhandel in Aartselaar die importeert én rechtstreeks
-          aan particulieren verkoopt. Geen anonieme rekken, wel een persoonlijk gekozen selectie waar
-          elke fles een reden heeft om er te staan.
-        </p>
-        <p class="text-cream/80 text-lg mt-4 leading-relaxed font-300">
-          Wat ontbreekt, is een online thuis die dat verhaal vertelt en klanten laat bestellen.
-          Deze pagina toont hoe dat eruit kan zien — een afgewerkte site mét webshop in plaats van
-          een "under construction"-melding.
-        </p>
-        <div class="mt-9 flex flex-wrap gap-8">
-          <div class="text-center">
-            <p class="font-serif text-4xl text-goldlt font-700">Import</p>
-            <p class="text-cream/60 text-sm mt-1">rechtstreeks van de bron</p>
-          </div>
-          <div class="text-center">
-            <p class="font-serif text-4xl text-goldlt font-700">Retail</p>
-            <p class="text-cream/60 text-sm mt-1">aan particulier &amp; bedrijf</p>
-          </div>
-          <div class="text-center">
-            <p class="font-serif text-4xl text-goldlt font-700">+18</p>
-            <p class="text-cream/60 text-sm mt-1">verantwoord genieten</p>
-          </div>
-        </div>
-      </div>
-      <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
-        <img
-          src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1000&q=80"
-          alt="Wijnkelder met rijpende flessen"
-          loading="lazy" decoding="async"
-          class="w-full h-full object-cover"
-        />
-      </div>
-    </div>
-  </section>
-
-  <!-- Bezoek + openingsuren + kaart -->
-  <section id="bezoek" class="bg-sand/55 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
-      <div class="fade-up">
-        <p class="text-gold font-600 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-wine">Welkom in Aartselaar</h2>
-        <p class="text-clay text-lg mt-5 max-w-md font-300">
-          Kom proeven en kiezen op de Vinkenlaan 11, of bestel straks gewoon online en haal af wanneer het je past.
-        </p>
-        <dl class="mt-9 space-y-5 text-clay">
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📍</span>
-            <div>
-              <dt class="font-600 text-ink">Adres</dt>
-              <dd class="text-clay">Vinkenlaan 11, 2630 Aartselaar</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🕑</span>
-            <div>
-              <dt class="font-600 text-ink">Openingsuren</dt>
-              <dd class="text-clay">Op afspraak en tijdens de winkeluren — exacte uren vullen we samen in.</dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📞</span>
-            <div>
-              <dt class="font-600 text-ink">Telefoon</dt>
-              <dd class="text-clay"><a href="tel:+32473171837" class="ug">0473 17 18 37</a></dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">✉️</span>
-            <div>
-              <dt class="font-600 text-ink">E-mail</dt>
-              <dd class="text-clay"><a href="mailto:info@backeroswines.be" class="ug">info@backeroswines.be</a></dd>
-            </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">💳</span>
-            <div>
-              <dt class="font-600 text-ink">Betaalmogelijkheden</dt>
-              <dd class="text-clay">Online: Bancontact, Visa &amp; Mastercard via Mollie · In de winkel: cash &amp; Bancontact</dd>
-            </div>
-          </div>
-        </dl>
-        <a href="#webshop" class="inline-block mt-9 bg-wine text-cream font-600 px-7 py-3.5 rounded-full hover:bg-winelt transition">
-          Of bestel online →
-        </a>
-      </div>
-      <!-- OpenStreetMap embed — Vinkenlaan 11, 2630 Aartselaar (~51.1330, 4.3830) -->
-      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-sand shadow-sm">
-        <iframe
-          title="Kaart Backeros Wines — Vinkenlaan 11, 2630 Aartselaar"
-          class="w-full h-full min-h-[360px] border-0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=4.375%2C51.128%2C4.391%2C51.138&layer=mapnik&marker=51.1330%2C4.3830"
-        ></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- GDPR Newsletter -->
-  <section id="nieuwsbrief" class="bg-gold/15">
-    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
-      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-wine">Seizoenstips &amp; nieuwe aanwinsten</h2>
-      <p class="text-clay mt-3 font-300">Af en toe een mailtje: nieuwe wijnen, ontdek-boxen en tips voor het seizoen. Niets meer, niets minder.</p>
-      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
-        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
-        <input
-          id="nl-email"
-          name="email"
-          type="email"
-          autocomplete="email"
-          required
-          placeholder="jouw@email.be"
-          class="flex-1 px-5 py-3 rounded-full border border-clay/25 bg-cream focus:outline-none focus:ring-2 focus:ring-gold"
-        />
-        <button class="bg-wine text-cream font-600 px-7 py-3 rounded-full hover:bg-winelt transition">Inschrijven</button>
-      </form>
-      <p class="text-xs text-clay/60 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof. Wijn is enkel voor +18-jarigen.</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-ink text-cream/80">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<section class="bezoek" id="bezoek" aria-labelledby="bezoek-h2">
+  <div class="section-inner">
+    <div class="bezoek__inner">
       <div>
-        <p class="font-serif text-[26px] text-cream font-700">Backeros<span class="text-gold">·</span><span class="italic font-500">Wines</span></p>
-        <p class="text-cream/60 text-sm mt-3 max-w-xs font-300">Onafhankelijke wijnhandel — import &amp; retail in Aartselaar. Persoonlijke selectie, ontdek-boxen en cadeaupakketten.</p>
+        <div class="section-label fade-up">Bezoek &amp; Contact</div>
+        <h2 class="section-h2 fade-up delay-1" id="bezoek-h2">Welkom in<br><em>Aartselaar</em></h2>
+        <p class="section-lead fade-up delay-2" style="margin-top:20px;">Onze winkel staat open voor bezoekers op afspraak en tijdens de reguliere openingstijden. Kom proeven, vraag advies of stel uw eigen selectie samen.</p>
+        <div class="bezoek__address-block fade-up delay-2">
+          <div class="bezoek__row">
+            <div class="bezoek__icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1.5C5.5 1.5 3.5 3.5 3.5 6c0 3.5 4.5 8.5 4.5 8.5s4.5-5 4.5-8.5C12.5 3.5 10.5 1.5 8 1.5Z" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="6" r="1.5" stroke="currentColor" stroke-width="1.3"/></svg></div>
+            <div><div class="bezoek__row-label">Adres</div><div class="bezoek__row-value">Aartselaar, Belgi&#235;</div></div>
+          </div>
+          <div class="bezoek__row">
+            <div class="bezoek__icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 3.5C3 3 3.5 2.5 4 2.5h1.5L6.5 5.5 5 6.5C5.5 8.5 7.5 10.5 9.5 11L10.5 9.5l3 1V12c0 .5-.5 1-1 1C5.5 13 3 10 3 6c0-1.2 0-2 0-2.5Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div><div class="bezoek__row-label">Telefoon</div><div class="bezoek__row-value"><a href="tel:+32473171837">0473 17 18 37</a></div></div>
+          </div>
+          <div class="bezoek__row">
+            <div class="bezoek__icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="4" width="12" height="9" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="M2 5.5l6 4 6-4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></div>
+            <div><div class="bezoek__row-label">E-mail</div><div class="bezoek__row-value"><a href="mailto:info@backeroswines.be">info@backeroswines.be</a></div></div>
+          </div>
+          <div class="bezoek__row">
+            <div class="bezoek__icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="5.5" stroke="currentColor" stroke-width="1.3"/><path d="M8 4v4l2.5 1.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></div>
+            <div><div class="bezoek__row-label">Openingstijden</div><div class="bezoek__row-value">Di&ndash;Vr: 10u&ndash;18u30 &middot; Za: 10u&ndash;17u</div></div>
+          </div>
+        </div>
+        <div class="bezoek__cta-block fade-up delay-3">
+          <a href="tel:+32473171837" class="bezoek__cta-main">Bel nu: 0473 17 18 37</a>
+          <a href="mailto:info@backeroswines.be" class="bezoek__cta-email">info@backeroswines.be</a>
+        </div>
       </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Webshop</p>
-        <ul class="space-y-2 text-sm text-cream/60 font-300">
-          <li><a href="#webshop" class="hover:text-goldlt">Online bestellen</a></li>
-          <li><a href="#assortiment" class="hover:text-goldlt">Assortiment</a></li>
-          <li><a href="#ontdekbox" class="hover:text-goldlt">Ontdek-box &amp; cadeaus</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Info</p>
-        <ul class="space-y-2 text-sm text-cream/60 font-300">
-          <li><a href="#verhaal" class="hover:text-goldlt">Ons verhaal</a></li>
-          <li><a href="#bezoek" class="hover:text-goldlt">Bezoek ons</a></li>
-          <li><a href="#nieuwsbrief" class="hover:text-goldlt">Nieuwsbrief</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Contact</p>
-        <ul class="space-y-2 text-sm text-cream/60 font-300">
-          <li>Vinkenlaan 11</li>
-          <li>2630 Aartselaar</li>
-          <li><a href="tel:+32473171837" class="hover:text-goldlt">0473 17 18 37</a></li>
-          <li><a href="mailto:info@backeroswines.be" class="hover:text-goldlt">info@backeroswines.be</a></li>
-        </ul>
+      <div class="bezoek__map fade-up delay-2" aria-label="Kaartweergave Aartselaar">
+        <svg width="100%" viewBox="0 0 480 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs><radialGradient id="mg1" cx="50%" cy="50%" r="60%"><stop offset="0%" stop-color="#1a3528"/><stop offset="100%" stop-color="#0d1510"/></radialGradient></defs>
+          <rect width="480" height="420" fill="url(#mg1)"/>
+          <g stroke="#2d6a4f" stroke-width="1" opacity=".22" fill="none">
+            <line x1="0" y1="120" x2="480" y2="120"/><line x1="0" y1="180" x2="480" y2="180"/>
+            <line x1="0" y1="240" x2="480" y2="240"/><line x1="0" y1="300" x2="480" y2="300"/>
+            <line x1="80" y1="0" x2="80" y2="420"/><line x1="160" y1="0" x2="160" y2="420"/>
+            <line x1="240" y1="0" x2="240" y2="420"/><line x1="320" y1="0" x2="320" y2="420"/>
+            <line x1="400" y1="0" x2="400" y2="420"/>
+          </g>
+          <g fill="#141f17" stroke="#2d6a4f" stroke-width=".5" opacity=".6">
+            <rect x="90" y="130" width="60" height="40" rx="2"/><rect x="90" y="190" width="60" height="40" rx="2"/>
+            <rect x="170" y="130" width="60" height="40" rx="2"/><rect x="170" y="250" width="60" height="40" rx="2"/>
+            <rect x="250" y="190" width="60" height="40" rx="2"/><rect x="330" y="130" width="60" height="40" rx="2"/>
+            <rect x="90" y="310" width="70" height="40" rx="2"/><rect x="250" y="310" width="60" height="40" rx="2"/>
+          </g>
+          <rect x="170" y="190" width="60" height="40" rx="2" fill="#2d6a4f" opacity=".7" stroke="#52a47a" stroke-width="1.5"/>
+          <g transform="translate(200,195)">
+            <path d="M0,-22C-10,-22-16,-14-16,-6C-16,8 0,22 0,22C0,22 16,8 16,-6C16,-14 10,-22 0,-22Z" fill="#2d6a4f" stroke="#52a47a" stroke-width="1.5"/>
+            <circle cx="0" cy="-6" r="5" fill="#f2ede4"/>
+          </g>
+          <rect x="150" y="228" width="100" height="22" rx="3" fill="#0d1510" opacity=".85"/>
+          <text x="200" y="243" text-anchor="middle" fill="#f2ede4" font-size="9" font-family="sans-serif" font-weight="500" letter-spacing="1">BACKEROS WINES</text>
+          <text x="240" y="398" text-anchor="middle" fill="#f2ede4" font-size="11" font-family="Georgia,serif" opacity=".35" letter-spacing="3">AARTSELAAR</text>
+        </svg>
       </div>
     </div>
-    <div class="border-t border-cream/10">
-      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/45">
-        <p>© 2026 Backeros Wines. Concept-redesign · +18 — drink met mate.</p>
-        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; webshop.</p>
-      </div>
+  </div>
+</section>
+
+<footer class="footer" role="contentinfo">
+  <div class="footer__top">
+    <div>
+      <div class="footer__brand-name">Backeros Wines</div>
+      <p class="footer__brand-desc">Onafhankelijke wijnimporteur in Aartselaar. Biologische wijnen, eerlijk geselecteerd bij de bron &mdash; voor mensen die proeven wat een wijn te vertellen heeft.</p>
     </div>
-  </footer>
+    <div>
+      <div class="footer__col-title">Navigatie</div>
+      <ul class="footer__links">
+        <li><a href="#herkomst">Herkomst</a></li>
+        <li><a href="#collectie">Collectie</a></li>
+        <li><a href="#over-ons">Over ons</a></li>
+        <li><a href="#bezoek">Bezoek</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer__col-title">Contact</div>
+      <ul class="footer__links">
+        <li><a href="tel:+32473171837">0473 17 18 37</a></li>
+        <li><a href="mailto:info@backeroswines.be">info@backeroswines.be</a></li>
+        <li><a href="#bezoek">Aartselaar, Belgi&#235;</a></li>
+        <li><a href="#bezoek">Di&ndash;Vr: 10u&ndash;18u30</a></li>
+        <li><a href="#bezoek">Za: 10u&ndash;17u</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">&#169; 2024 Backeros Wines &middot; Aartselaar &middot; info@backeroswines.be</p>
+    <p class="footer__tagline">Wijnen die een verhaal vertellen.</p>
+  </div>
+</footer>
 
-  <!-- Scripts -->
-  <script>
-    // Fade-up IntersectionObserver
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
-    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
-    } else {
-      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
-    }
-
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (menuBtn && mobileMenu) {
-      const setOpen = (open) => {
-        if (open) mobileMenu.removeAttribute('hidden');
-        else mobileMenu.setAttribute('hidden', '');
-        menuBtn.setAttribute('aria-expanded', String(open));
-        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
-      };
-      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
-      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
-    }
-  </script>
+<script>
+(function(){
+  var nav=document.getElementById('nav'),lastY=0,ticking=false,TOL_DOWN=8,TOL_UP=5,OFFSET=80;
+  function update(){
+    var y=window.scrollY;
+    if(y<OFFSET){nav.className='nav is-top';}
+    else if(y>lastY+TOL_DOWN){nav.className='nav is-unpinned';}
+    else if(y<lastY-TOL_UP){nav.className='nav is-pinned';}
+    lastY=y;ticking=false;
+  }
+  window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});
+  update();
+})();
+(function(){
+  if(!('IntersectionObserver' in window)){
+    document.querySelectorAll('.fade-up').forEach(function(el){el.classList.add('visible');});
+    return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){entry.target.classList.add('visible');io.unobserve(entry.target);}
+    });
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.fade-up').forEach(function(el){io.observe(el);});
+})();
+</script>
 </body>
 </html>

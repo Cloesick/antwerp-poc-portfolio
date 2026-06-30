@@ -1,624 +1,1503 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta name="robots" content="noindex, nofollow" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clinckers Philip — Wijnhandel in Mortsel · wijnwebshop &amp; persoonlijk advies</title>
-  <meta name="description" content="Wijnhandel Clinckers Philip in Mortsel. Ontdek onze nieuwe wijnwebshop met filters per streek, druif en prijs, online bestellen met Mollie, persoonlijk wijnadvies en cadeaupakketten. 18+." />
-  <link rel="canonical" href="https://clinckersphilip.be/" />
-  <meta name="theme-color" content="#4a1622" />
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Clinckers Philip" />
-  <meta property="og:locale" content="nl_BE" />
-  <meta property="og:title" content="Clinckers Philip — Wijnhandel in Mortsel · wijnwebshop &amp; advies" />
-  <meta property="og:description" content="Een echte wijnwebshop met filters per streek, druif en prijs — online bestellen, persoonlijk advies en cadeaupakketten. Wijnhandel in Mortsel. 18+." />
-  <meta property="og:url" content="https://clinckersphilip.be/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=80" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- Inline SVG favicon — monogram "CP" -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%234a1622'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='12' fill='%23b08d57' text-anchor='middle'%3ECP%3C/text%3E%3C/svg%3E" />
-  <!-- Local-SEO structured data -->
+  <meta name="description" content="Clinckers Philip — wijnhandel in Mortsel. Persoonlijk advies, zorgvuldige selectie uit Europa, Nieuwe Wereld en meer. Bel 03 440 81 93." />
+  <title>Clinckers Philip — Wijnhandel Mortsel</title>
+
+  <!-- Inline SVG favicon via data URI -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d1015'/%3E%3Cellipse cx='16' cy='21' rx='5' ry='2' fill='none' stroke='%23f2e8d5' stroke-width='1.2'/%3E%3Cpath d='M11 21 C11 21 10 16 12 12 L20 12 C22 16 21 21 21 21' fill='none' stroke='%23f2e8d5' stroke-width='1.2' stroke-linejoin='round'/%3E%3Cpath d='M12 12 L11 8 M20 12 L21 8' stroke='%23f2e8d5' stroke-width='1' stroke-linecap='round'/%3E%3Cpath d='M11 8 L21 8' stroke='%23f2e8d5' stroke-width='1' stroke-linecap='round'/%3E%3Cpath d='M16 8 L16 5' stroke='%232a3f6f' stroke-width='1.4' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts — non-blocking preload -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=DM+Sans:wght@400;500&display=swap"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=DM+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </noscript>
+
+  <!-- Schema.org JSON-LD LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Store",
-    "name": "Clinckers Philip",
-    "description": "Wijnhandel in Mortsel. Wijnwebshop met filters, online bestellen, persoonlijk advies en cadeaupakketten.",
-    "image": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1200&q=80",
-    "url": "https://clinckersphilip.be/",
+    "@type": "LocalBusiness",
+    "name": "Clinckers Philip — Wijnhandel",
+    "description": "Persoonlijke wijnhandel in Mortsel, geleid door Philip Clinckers. Advies op maat, selectie uit Europa, Nieuwe Wereld, biologische en pétillante wijnen.",
     "telephone": "+3234408193",
-    "priceRange": "€€",
-    "areaServed": "BE",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Tommeltlaan 60",
-      "postalCode": "2640",
       "addressLocality": "Mortsel",
-      "addressRegion": "Antwerpen",
       "addressCountry": "BE"
     },
-    "geo": { "@type": "GeoCoordinates", "latitude": 51.1697, "longitude": 4.4615 }
+    "priceRange": "€€",
+    "url": ""
   }
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { serif: ['Cormorant Garamond', 'serif'], sans: ['Inter', 'sans-serif'] },
-          colors: {
-            burgundy:  '#4a1622',
-            bordeaux:  '#5c1d2c',
-            merlot:    '#6e2436',
-            gold:      '#b08d57',
-            goldlt:    '#c6a774',
-            cream:     '#f7f1e7',
-            sand:      '#ece1cd',
-            clay:      '#8a7458',
-            ink:       '#2a1217',
-          },
-        },
-      },
-    };
-  </script>
+
   <style>
+    /* ==========================================================
+       RESET & BASE
+    ========================================================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:             #0d1015;
+      --cobalt:          #2a3f6f;
+      --cobalt-lt:       #3b558f;
+      --cobalt-dim:      rgba(42,63,111,0.35);
+      --parchment:       #f2e8d5;
+      --parchment-80:    rgba(242,232,213,0.80);
+      --parchment-55:    rgba(242,232,213,0.55);
+      --parchment-30:    rgba(242,232,213,0.30);
+      --surface:         #131820;
+      --surface-2:       #1a2230;
+      --hairline:        rgba(242,232,213,0.10);
+      --hairline-strong: rgba(242,232,213,0.18);
+      --ff-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --ff-body:    'DM Sans', system-ui, -apple-system, sans-serif;
+    }
+
     html { scroll-behavior: smooth; }
-    .hero-grad { background: linear-gradient(180deg, rgba(42,18,23,.18) 0%, rgba(42,18,23,.52) 52%, rgba(42,18,23,.92) 100%); }
-    .tile-grad { background: linear-gradient(160deg, #6e2436, #2a1217); }
-    .fade-up { opacity: 0; transform: translateY(20px); transition: all .8s cubic-bezier(.2,.7,.2,1); }
-    .fade-up.in { opacity: 1; transform: none; }
-    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 1px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s; }
-    .ug:hover { background-size: 100% 1px; }
+
+    body {
+      background: var(--ink);
+      color: var(--parchment);
+      font-family: var(--ff-body);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a { color: inherit; }
+
+    /* ==========================================================
+       HEADROOM NAV
+    ========================================================== */
+    #site-nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 200;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 clamp(1.25rem, 5vw, 3.5rem);
+      height: 60px;
+      transition:
+        transform 0.32s cubic-bezier(0.4,0,0.2,1),
+        background 0.28s ease,
+        box-shadow 0.28s ease;
+      background: transparent;
+    }
+    #site-nav.scrolled {
+      background: rgba(13,16,21,0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 1px 0 var(--hairline);
+    }
+    #site-nav.hidden { transform: translateY(-100%); }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      font-family: var(--ff-display);
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--parchment);
+      letter-spacing: -0.01em;
+      flex-shrink: 0;
+    }
+    .nav-brand svg { display: block; flex-shrink: 0; }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: clamp(1rem, 2.5vw, 2rem);
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--parchment-80);
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--parchment); }
+
+    .nav-tel {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.4rem 1rem;
+      border: 1px solid rgba(242,232,213,0.28);
+      border-radius: 2px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--parchment);
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .nav-tel:hover {
+      background: rgba(242,232,213,0.07);
+      border-color: rgba(242,232,213,0.55);
+    }
+
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+    }
+
+    /* ==========================================================
+       FADE-UP (IntersectionObserver)
+    ========================================================== */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(26px);
+      transition:
+        opacity  0.68s cubic-bezier(0.22,1,0.36,1),
+        transform 0.68s cubic-bezier(0.22,1,0.36,1);
+    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+    .d1 { transition-delay: 0.08s; }
+    .d2 { transition-delay: 0.17s; }
+    .d3 { transition-delay: 0.26s; }
+    .d4 { transition-delay: 0.38s; }
+    .d5 { transition-delay: 0.50s; }
+
+    /* ==========================================================
+       UTILITY
+    ========================================================== */
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 clamp(1.25rem, 5vw, 3.5rem);
+    }
+    .label-tag {
+      display: inline-block;
+      font-family: var(--ff-body);
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.20em;
+      text-transform: uppercase;
+      color: var(--parchment-55);
+    }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+
+    /* ==========================================================
+       HERO SECTION
+    ========================================================== */
+    #hero {
+      min-height: 100dvh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: clamp(3rem, 8vh, 5.5rem);
+      overflow: hidden;
+      background: var(--ink);
+    }
+
+    /* Top rule under nav */
+    .hero-top-rule {
+      position: absolute;
+      top: 60px; left: 0; right: 0;
+      height: 1px;
+      background: var(--hairline);
+    }
+
+    /* Ghost word — CLINCKERS large behind content */
+    .hero-ghost {
+      position: absolute;
+      bottom: clamp(2rem, 6vh, 4rem);
+      left: clamp(1.25rem, 5vw, 3.5rem);
+      font-family: var(--ff-display);
+      font-weight: 600;
+      font-size: clamp(5.5rem, 16vw, 14.5rem);
+      line-height: 0.85;
+      letter-spacing: -0.03em;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(42,63,111,0.38);
+      text-stroke: 1px rgba(42,63,111,0.38);
+      pointer-events: none;
+      user-select: none;
+      z-index: 1;
+    }
+
+    /* Sommelier tools SVG — right side illustration */
+    .hero-tools {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: min(52%, 580px);
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.11;
+    }
+    .hero-tools svg { width: 100%; height: auto; }
+
+    /* Side rail text — rotated annotation */
+    .hero-rail {
+      position: absolute;
+      right: clamp(1.25rem, 3vw, 2.5rem);
+      bottom: 50%;
+      transform: translateY(50%) rotate(90deg);
+      transform-origin: center center;
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--parchment-30);
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    /* Hero content — anchored bottom-left */
+    .hero-body {
+      position: relative;
+      z-index: 2;
+      padding: 0 clamp(1.25rem, 5vw, 3.5rem);
+      max-width: 680px;
+    }
+
+    .hero-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin-bottom: 1.4rem;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      flex-shrink: 0;
+      width: 24px;
+      height: 1px;
+      background: var(--cobalt-lt);
+    }
+
+    .hero-h1 {
+      font-family: var(--ff-display);
+      font-weight: 600;
+      font-size: clamp(2.75rem, 6.5vw, 5.5rem);
+      line-height: 1.04;
+      letter-spacing: -0.022em;
+      color: var(--parchment);
+    }
+    .hero-h1 em {
+      font-style: italic;
+      font-weight: 400;
+      color: var(--parchment-80);
+    }
+
+    .hero-sub {
+      margin-top: 1.4rem;
+      font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+      line-height: 1.7;
+      color: var(--parchment-80);
+      max-width: 460px;
+    }
+
+    .hero-actions {
+      margin-top: 2.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.7rem 1.6rem;
+      background: var(--parchment);
+      color: var(--ink);
+      font-family: var(--ff-body);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      border-radius: 2px;
+      white-space: nowrap;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: #fffaf2; transform: translateY(-1px); }
+
+    .btn-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--parchment-80);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(242,232,213,0.22);
+      padding-bottom: 1px;
+      white-space: nowrap;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .btn-link:hover { color: var(--parchment); border-color: rgba(242,232,213,0.55); }
+
+    /* Scroll indicator */
+    .hero-scroll {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.35rem;
+      z-index: 2;
+    }
+    .hero-scroll span {
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--parchment-30);
+    }
+    .scroll-bar {
+      width: 1px;
+      height: 36px;
+      background: linear-gradient(to bottom, rgba(242,232,213,0.35), transparent);
+      animation: bar-pulse 2.2s ease-in-out infinite;
+    }
+    @keyframes bar-pulse {
+      0%, 100% { opacity: 0.35; transform: scaleY(1); }
+      50%       { opacity: 0.9;  transform: scaleY(0.65); }
+    }
+
+    /* ==========================================================
+       VERHAAL
+    ========================================================== */
+    #verhaal {
+      padding: clamp(5rem,10vh,8rem) 0;
+      background: var(--surface);
+    }
+
+    .verhaal-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem, 7vw, 7rem);
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      .verhaal-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Inline SVG carafe column */
+    .verhaal-vis {
+      position: relative;
+    }
+    .verhaal-vis-inner {
+      max-width: 300px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .verhaal-num {
+      position: absolute;
+      top: -1.5rem;
+      right: -0.5rem;
+      font-family: var(--ff-display);
+      font-weight: 600;
+      font-size: clamp(6rem, 12vw, 10rem);
+      line-height: 1;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(42,63,111,0.28);
+      text-stroke: 1px rgba(42,63,111,0.28);
+      pointer-events: none;
+      user-select: none;
+    }
+    .verhaal-vis-inner svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Text column */
+    .verhaal-text .label-tag { margin-bottom: 1rem; }
+
+    .verhaal-h2 {
+      font-family: var(--ff-display);
+      font-weight: 600;
+      font-size: clamp(1.9rem, 3.5vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.015em;
+      color: var(--parchment);
+      margin-bottom: 1.5rem;
+    }
+
+    .verhaal-body {
+      font-size: clamp(0.95rem, 1.3vw, 1.06rem);
+      line-height: 1.72;
+      color: var(--parchment-80);
+    }
+    .verhaal-body + .verhaal-body { margin-top: 0.9rem; }
+
+    .verhaal-quote {
+      margin-top: 2rem;
+      padding-left: 1.2rem;
+      border-left: 2px solid var(--cobalt);
+    }
+    .verhaal-quote p {
+      font-family: var(--ff-display);
+      font-style: italic;
+      font-weight: 400;
+      font-size: clamp(1rem, 1.8vw, 1.15rem);
+      color: var(--parchment-80);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================
+       SELECTIE
+    ========================================================== */
+    #selectie {
+      padding: clamp(5rem,10vh,8rem) 0;
+      background: var(--ink);
+    }
+
+    .selectie-top {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: clamp(2.5rem, 5vw, 4rem);
+      flex-wrap: wrap;
+    }
+    .selectie-h2 {
+      font-family: var(--ff-display);
+      font-weight: 600;
+      font-size: clamp(1.9rem, 3.5vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.015em;
+      color: var(--parchment);
+    }
+    .selectie-sub {
+      max-width: 300px;
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: var(--parchment-55);
+    }
+
+    .selectie-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.1rem;
+    }
+    @media (max-width: 900px) {
+      .selectie-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .selectie-grid { grid-template-columns: 1fr; }
+    }
+
+    .sel-card {
+      background: var(--surface-2);
+      border: 1px solid var(--hairline);
+      border-radius: 3px;
+      padding: 1.75rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      transition: border-color 0.25s, transform 0.25s;
+    }
+    .sel-card:hover {
+      border-color: rgba(42,63,111,0.55);
+      transform: translateY(-2px);
+    }
+
+    .sel-icon {
+      width: 40px; height: 40px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .sel-region {
+      font-size: 0.63rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cobalt-lt);
+    }
+
+    .sel-h3 {
+      font-family: var(--ff-display);
+      font-weight: 600;
+      font-size: 1.15rem;
+      color: var(--parchment);
+      line-height: 1.2;
+    }
+
+    .sel-p {
+      font-size: 0.84rem;
+      color: var(--parchment-55);
+      line-height: 1.6;
+      flex: 1;
+    }
+
+    .sel-foot {
+      padding-top: 0.9rem;
+      border-top: 1px solid var(--hairline);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+    .sel-foot span {
+      font-size: 0.68rem;
+      letter-spacing: 0.06em;
+      color: var(--parchment-55);
+    }
+    .sel-arrow {
+      flex-shrink: 0;
+      color: var(--cobalt-lt);
+      transition: transform 0.2s;
+    }
+    .sel-card:hover .sel-arrow { transform: translateX(3px); }
+
+    /* ==========================================================
+       ADVIES (cobalt band)
+    ========================================================== */
+    #advies {
+      padding: clamp(5rem,10vh,8rem) 0;
+      background: var(--cobalt);
+      position: relative;
+      overflow: hidden;
+    }
+    /* Micro-noise overlay */
+    #advies::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+      opacity: 0.32;
+      pointer-events: none;
+    }
+
+    .advies-grid {
+      position: relative; z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem, 7vw, 7rem);
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      .advies-grid { grid-template-columns: 1fr; }
+    }
+
+    .advies-label { color: rgba(242,232,213,0.50); margin-bottom: 1rem; }
+
+    .advies-h2 {
+      font-family: var(--ff-display);
+      font-weight: 600;
+      font-size: clamp(1.9rem, 3.5vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.015em;
+      color: var(--parchment);
+      margin-bottom: 1.4rem;
+    }
+
+    .advies-body {
+      font-size: clamp(0.95rem, 1.3vw, 1.06rem);
+      line-height: 1.72;
+      color: var(--parchment-80);
+    }
+
+    .advies-steps {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    .step-n {
+      flex-shrink: 0;
+      width: 26px; height: 26px;
+      border-radius: 50%;
+      border: 1px solid rgba(242,232,213,0.22);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.68rem;
+      font-weight: 500;
+      color: var(--parchment-80);
+      margin-top: 0.1rem;
+    }
+    .step-txt strong {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--parchment);
+      margin-bottom: 0.15rem;
+    }
+    .step-txt p {
+      font-size: 0.84rem;
+      color: var(--parchment-55);
+      line-height: 1.5;
+    }
+
+    /* CTA box on right */
+    .advies-box {
+      background: rgba(13,16,21,0.32);
+      border: 1px solid rgba(242,232,213,0.10);
+      border-radius: 3px;
+      padding: clamp(2rem, 4vw, 3rem);
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+
+    .advies-tel {
+      font-family: var(--ff-display);
+      font-weight: 600;
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      color: var(--parchment);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+      transition: color 0.2s;
+    }
+    .advies-tel:hover { color: #fffaf2; }
+
+    .advies-note {
+      font-size: 0.82rem;
+      line-height: 1.6;
+      color: rgba(242,232,213,0.52);
+    }
+
+    .btn-cobalt-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.7rem 1.6rem;
+      background: var(--parchment);
+      color: var(--cobalt);
+      font-family: var(--ff-body);
+      font-size: 0.84rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      border-radius: 2px;
+      align-self: flex-start;
+      white-space: nowrap;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-cobalt-cta:hover { background: #fffaf2; transform: translateY(-1px); }
+
+    /* ==========================================================
+       BEZOEK
+    ========================================================== */
+    #bezoek {
+      padding: clamp(5rem,10vh,8rem) 0;
+      background: var(--surface);
+    }
+
+    .bezoek-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem, 7vw, 7rem);
+      align-items: start;
+    }
+    @media (max-width: 768px) {
+      .bezoek-grid { grid-template-columns: 1fr; }
+    }
+
+    .bezoek-label { margin-bottom: 1rem; }
+
+    .bezoek-h2 {
+      font-family: var(--ff-display);
+      font-weight: 600;
+      font-size: clamp(1.9rem, 3.5vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.015em;
+      color: var(--parchment);
+      margin-bottom: 1.4rem;
+    }
+
+    .bezoek-body {
+      font-size: clamp(0.95rem, 1.3vw, 1.06rem);
+      line-height: 1.72;
+      color: var(--parchment-80);
+      margin-bottom: 2rem;
+    }
+
+    .bezoek-details {
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
+    }
+
+    .bdetail {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .bdetail-icon {
+      flex-shrink: 0;
+      width: 34px; height: 34px;
+      background: rgba(42,63,111,0.18);
+      border-radius: 2px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--cobalt-lt);
+    }
+    .bdetail-inner strong {
+      display: block;
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: var(--parchment);
+      margin-bottom: 0.18rem;
+    }
+    .bdetail-inner p, .bdetail-inner a {
+      font-size: 0.84rem;
+      color: var(--parchment-55);
+      text-decoration: none;
+      line-height: 1.5;
+    }
+    .bdetail-inner a:hover { color: var(--parchment); }
+
+    /* Pitch box — no website pitch */
+    .pitch-box {
+      background: var(--ink);
+      border: 1px solid var(--hairline);
+      border-radius: 3px;
+      padding: clamp(1.75rem, 4vw, 2.5rem);
+    }
+
+    .pitch-eyebrow {
+      font-size: 0.63rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--cobalt-lt);
+      margin-bottom: 1rem;
+    }
+
+    .pitch-h3 {
+      font-family: var(--ff-display);
+      font-weight: 600;
+      font-size: clamp(1.1rem, 2vw, 1.35rem);
+      color: var(--parchment);
+      line-height: 1.25;
+      margin-bottom: 0.9rem;
+    }
+
+    .pitch-p {
+      font-size: 0.84rem;
+      color: var(--parchment-55);
+      line-height: 1.6;
+      margin-bottom: 1.4rem;
+    }
+
+    .pitch-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      margin-bottom: 1.75rem;
+    }
+    .pitch-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      font-size: 0.84rem;
+      color: var(--parchment-80);
+      line-height: 1.5;
+    }
+    .pitch-list li::before {
+      content: '';
+      flex-shrink: 0;
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--cobalt-lt);
+      margin-top: 0.42rem;
+    }
+
+    .pitch-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--parchment-80);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(242,232,213,0.18);
+      padding-bottom: 1px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .pitch-link:hover { color: var(--parchment); border-color: rgba(242,232,213,0.5); }
+
+    /* ==========================================================
+       FOOTER
+    ========================================================== */
+    footer {
+      background: var(--ink);
+      border-top: 1px solid var(--hairline);
+      padding: clamp(2.25rem, 5vh, 3rem) 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-brand {
+      font-family: var(--ff-display);
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--parchment);
+    }
+    .footer-brand small {
+      display: block;
+      font-family: var(--ff-body);
+      font-weight: 400;
+      font-size: 0.74rem;
+      color: var(--parchment-55);
+      margin-top: 0.18rem;
+      letter-spacing: 0.04em;
+    }
+
+    .footer-right {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .footer-right a {
+      font-size: 0.78rem;
+      color: var(--parchment-55);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-right a:hover { color: var(--parchment); }
+
+    .footer-copy {
+      font-size: 0.72rem;
+      color: rgba(242,232,213,0.28);
+    }
+
   </style>
 </head>
-<body class="bg-cream text-ink font-sans antialiased selection:bg-gold/30">
+<body>
 
-  <!-- Skip link -->
-  <a href="#webshop" class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:left-3 focus:top-3 focus:px-4 focus:py-2 focus:bg-burgundy focus:text-cream focus:rounded-full">Naar de wijnwebshop</a>
+  <!-- ====================================================
+       NAVIGATION
+  ==================================================== -->
+  <nav id="site-nav" role="navigation" aria-label="Hoofdnavigatie">
+    <a href="#" class="nav-brand" aria-label="Clinckers Philip — wijnhandel Mortsel">
+      <!-- Inline SVG brand mark: tastevin cup suggestion -->
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+        <ellipse cx="10" cy="15.5" rx="4.5" ry="1.5" stroke="#f2e8d5" stroke-width="1"/>
+        <path d="M5.5 15.5 C5.5 15.5 5 11 6.5 7.5 L13.5 7.5 C15 11 14.5 15.5 14.5 15.5" fill="none" stroke="#f2e8d5" stroke-width="1" stroke-linejoin="round"/>
+        <path d="M6.5 7.5 L6 4.5 M13.5 7.5 L14 4.5" stroke="#f2e8d5" stroke-width="0.9" stroke-linecap="round"/>
+        <path d="M6 4.5 L14 4.5" stroke="#f2e8d5" stroke-width="0.9" stroke-linecap="round"/>
+        <line x1="10" y1="4.5" x2="10" y2="2.5" stroke="#2a3f6f" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+      Clinckers Philip
+    </a>
 
-  <!-- Announcement bar -->
-  <div class="bg-burgundy text-cream text-center text-[13px] tracking-[0.12em] py-2 px-4">
-    <span aria-hidden="true">🍇</span> <span class="font-semibold">Nieuw:</span> onze wijnwebshop met filters per streek, druif &amp; prijs — online bestellen met Mollie. <span class="text-goldlt font-semibold">18+</span>
-  </div>
+    <ul class="nav-links">
+      <li><a href="#verhaal">Verhaal</a></li>
+      <li><a href="#selectie">Selectie</a></li>
+      <li><a href="#advies">Advies</a></li>
+      <li><a href="#bezoek">Bezoek</a></li>
+    </ul>
 
-  <!-- Sticky nav -->
-  <header class="sticky top-0 z-50 bg-cream/88 backdrop-blur border-b border-burgundy/10">
-    <nav class="max-w-7xl mx-auto px-5 sm:px-8 h-[70px] flex items-center justify-between">
-      <!-- Logo -->
-      <a href="#top" class="flex items-baseline gap-2">
-        <span class="font-serif text-[27px] font-700 tracking-tight text-burgundy">Clinckers <span class="italic font-600">Philip</span></span>
-      </a>
-      <!-- Desktop links -->
-      <div class="hidden md:flex items-center gap-8 text-[15px] font-400">
-        <a href="#webshop" class="ug">Webshop</a>
-        <a href="#assortiment" class="ug">Assortiment</a>
-        <a href="#advies" class="ug">Advies &amp; Cadeau</a>
-        <a href="#verhaal" class="ug">Ons verhaal</a>
-        <a href="#bezoek" class="ug">Bezoek ons</a>
-      </div>
-      <!-- CTA + hamburger -->
-      <div class="flex items-center gap-2">
-        <a href="#webshop" class="inline-flex items-center gap-2 bg-burgundy text-cream text-sm font-600 px-4 sm:px-5 py-2.5 rounded-full hover:bg-merlot transition">
-          Bestel online
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-        <button id="menu-btn" type="button" aria-label="Menu openen" aria-controls="mobile-menu" aria-expanded="false"
-          class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-full border border-burgundy/15 text-burgundy hover:bg-burgundy/5 transition">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        </button>
-      </div>
-    </nav>
-    <!-- Mobile menu -->
-    <div id="mobile-menu" hidden class="md:hidden border-t border-burgundy/10 bg-cream/95 backdrop-blur">
-      <div class="px-5 py-3 flex flex-col text-[15px] font-400">
-        <a href="#webshop" class="py-3 border-b border-burgundy/8">Webshop</a>
-        <a href="#assortiment" class="py-3 border-b border-burgundy/8">Assortiment</a>
-        <a href="#advies" class="py-3 border-b border-burgundy/8">Advies &amp; Cadeau</a>
-        <a href="#verhaal" class="py-3 border-b border-burgundy/8">Ons verhaal</a>
-        <a href="#bezoek" class="py-3">Bezoek ons</a>
-      </div>
+    <a href="tel:+3234408193" class="nav-tel">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" focusable="false">
+        <path d="M2 2C2 2 3.5 3.5 4 5.5C4.5 7.5 3.5 8 4 9C4.5 10 7 11.5 8.5 11C10 10.5 10.5 9.5 11 9C11 9 9 7.5 8.5 7C8 6.5 8 6 8 6C8 6 6.5 4.5 5.5 4C4.5 3.5 4 3.5 3.5 3C3 2.5 2 2 2 2Z" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/>
+      </svg>
+      03 440 81 93
+    </a>
+  </nav>
+
+  <!-- ====================================================
+       HERO — bottom-left anchor, ghost word, tools illustration
+  ==================================================== -->
+  <section id="hero">
+    <div class="hero-top-rule" aria-hidden="true"></div>
+
+    <!-- Ghost CLINCKERS -->
+    <div class="hero-ghost" aria-hidden="true">CLINCKERS</div>
+
+    <!-- Sommelier tools illustration: tastevin + corkscrew -->
+    <div class="hero-tools" aria-hidden="true">
+      <svg viewBox="0 0 500 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- TASTEVIN (sommelier tasting cup) -->
+        <!-- Outer rim ellipse -->
+        <ellipse cx="165" cy="330" rx="105" ry="22" stroke="#f2e8d5" stroke-width="1.6"/>
+        <!-- Body of tastevin -->
+        <path d="M60 330 Q48 308 68 296 L262 296 Q282 308 270 330" fill="rgba(42,63,111,0.06)" stroke="#f2e8d5" stroke-width="1.6"/>
+        <!-- Inner concave bowl detail -->
+        <ellipse cx="165" cy="313" rx="72" ry="11" stroke="#f2e8d5" stroke-width="0.9" opacity="0.5"/>
+        <!-- Radial ribbing lines inside cup -->
+        <line x1="110" y1="300" x2="105" y2="330" stroke="#f2e8d5" stroke-width="0.7" opacity="0.35"/>
+        <line x1="133" y1="297" x2="130" y2="330" stroke="#f2e8d5" stroke-width="0.7" opacity="0.35"/>
+        <line x1="165" y1="296" x2="165" y2="330" stroke="#f2e8d5" stroke-width="0.7" opacity="0.35"/>
+        <line x1="197" y1="297" x2="200" y2="330" stroke="#f2e8d5" stroke-width="0.7" opacity="0.35"/>
+        <line x1="220" y1="300" x2="225" y2="330" stroke="#f2e8d5" stroke-width="0.7" opacity="0.35"/>
+        <!-- Handle loop -->
+        <path d="M60 316 Q28 316 26 330 Q24 344 60 344" fill="none" stroke="#f2e8d5" stroke-width="1.6"/>
+        <!-- Handle ring end -->
+        <line x1="26" y1="330" x2="14" y2="330" stroke="#f2e8d5" stroke-width="1.3"/>
+        <circle cx="10" cy="330" r="6" fill="none" stroke="#f2e8d5" stroke-width="1.2"/>
+        <!-- Small decorative bosses on cup edge -->
+        <circle cx="90"  cy="330" r="2.5" fill="#f2e8d5" opacity="0.5"/>
+        <circle cx="240" cy="330" r="2.5" fill="#f2e8d5" opacity="0.5"/>
+
+        <!-- CORKSCREW -->
+        <!-- T-bar handle -->
+        <line x1="330" y1="95" x2="430" y2="95" stroke="#f2e8d5" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="380" y1="95" x2="380" y2="220" stroke="#f2e8d5" stroke-width="2" stroke-linecap="round"/>
+        <!-- Collar -->
+        <rect x="366" y="215" width="28" height="10" rx="2" stroke="#f2e8d5" stroke-width="1.2" fill="rgba(13,16,21,0.4)"/>
+        <!-- Worm helix spiral -->
+        <path d="M380 225
+                 Q398 238 393 258
+                 Q388 278 368 284
+                 Q348 290 342 310
+                 Q336 330 354 337
+                 Q372 344 380 364
+                 Q388 384 380 404
+                 Q372 424 356 428"
+              stroke="#f2e8d5" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Tip of worm -->
+        <path d="M356 428 Q346 435 349 445" stroke="#f2e8d5" stroke-width="1.2" stroke-linecap="round"/>
+
+        <!-- Decorative: fine horizontal rule below tastevin -->
+        <line x1="40"  y1="490" x2="290" y2="490" stroke="#f2e8d5" stroke-width="0.7" opacity="0.22"/>
+        <line x1="65"  y1="500" x2="265" y2="500" stroke="#f2e8d5" stroke-width="0.5" opacity="0.12"/>
+
+        <!-- Scattered dots (cobalt accent, tasting note motif) -->
+        <circle cx="310" cy="500" r="3"   fill="#2a3f6f" opacity="0.6"/>
+        <circle cx="295" cy="515" r="1.8" fill="#2a3f6f" opacity="0.4"/>
+        <circle cx="75"  cy="180" r="2.5" fill="#2a3f6f" opacity="0.5"/>
+        <circle cx="95"  cy="195" r="1.5" fill="#2a3f6f" opacity="0.35"/>
+        <circle cx="440" cy="460" r="2.8" fill="#2a3f6f" opacity="0.4"/>
+        <circle cx="50"  cy="420" r="2"   fill="#f2e8d5" opacity="0.12"/>
+        <circle cx="460" cy="220" r="1.8" fill="#f2e8d5" opacity="0.16"/>
+      </svg>
     </div>
-  </header>
 
-  <!-- Hero -->
-  <section id="top" class="relative min-h-[88vh] flex items-end overflow-hidden bg-burgundy">
-    <div class="absolute inset-0 tile-grad"></div>
-    <img
-      src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=2000&q=80"
-      alt="Flessen wijn in de wijnhandel"
-      fetchpriority="high"
-      class="absolute inset-0 w-full h-full object-cover"
-    />
-    <div class="absolute inset-0 hero-grad"></div>
-    <div class="relative max-w-7xl mx-auto px-5 sm:px-8 pb-16 sm:pb-24 w-full">
-      <p class="text-goldlt font-500 tracking-[0.32em] uppercase text-xs mb-5">
-        Wijnhandel · Persoonlijk advies · Mortsel
-      </p>
-      <h1 class="font-serif text-cream text-[44px] leading-[1.03] sm:text-8xl font-600 max-w-3xl">
-        Goede wijn,<br /><span class="italic">met advies erbij.</span>
+    <!-- Side rail text -->
+    <div class="hero-rail" aria-hidden="true">Mortsel · Antwerpen · Wijnhandel</div>
+
+    <!-- Content block -->
+    <div class="hero-body">
+      <div class="hero-eyebrow fade-up">
+        <span class="label-tag">Wijnhandel · Mortsel</span>
+      </div>
+
+      <h1 class="hero-h1 fade-up d1">
+        Wijn van Philip.<br>
+        <em>Persoonlijk,<br>precies.</em>
       </h1>
-      <p class="text-cream/85 text-lg sm:text-xl mt-6 max-w-xl leading-relaxed font-300">
-        Al jaren een vertrouwde wijnhandel in Mortsel, maar online nog onvindbaar.
-        Voortaan ook met een echte webshop: filter op streek, druif en prijs, en bestel online met Mollie.
+
+      <p class="hero-sub fade-up d2">
+        Meer dan vijftien jaar selecteert Philip Clinckers wijnen die de moeite waard zijn —
+        geen list, geen jargon. Gewoon eerlijk advies van iemand die zijn flessen van binnen kent.
       </p>
-      <div class="flex flex-wrap gap-3 mt-9">
-        <a href="#webshop" class="bg-gold text-ink font-600 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
-          Naar de wijnwebshop
+
+      <div class="hero-actions">
+        <a href="tel:+3234408193" class="btn-primary fade-up d3">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true" focusable="false">
+            <path d="M2 2C2 2 4 4 4.5 6.5C5 9 4 9.5 4.5 10.5C5 11.5 7.5 13 9 12.5C10.5 12 11 11 11.5 10.5C11.5 10.5 9.5 9 9 8.5C8.5 8 8.5 7.5 8.5 7.5C8.5 7.5 7 5.5 6 5C5 4.5 4.5 4.5 4 4C3.5 3.5 2 2 2 2Z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" fill="none"/>
+          </svg>
+          Bel Philip voor advies
         </a>
-        <a href="#advies" class="border border-cream/40 text-cream font-500 px-7 py-3.5 rounded-full hover:bg-cream/10 transition">
-          Advies &amp; cadeaupakketten
+        <a href="#selectie" class="btn-link fade-up d4">
+          Bekijk selectie
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true" focusable="false">
+            <path d="M2.5 6.5H10.5M7.5 3.5l3 3-3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </a>
       </div>
-      <p class="text-cream/55 text-xs mt-6">Wijn is voor volwassenen — verkoop uitsluitend aan personen vanaf 18 jaar.</p>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="scroll-bar"></div>
+      <span>Scroll</span>
     </div>
   </section>
 
-  <!-- USP strip -->
-  <section class="bg-burgundy text-cream/90">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-7 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm">
-      <div><p class="font-serif text-2xl text-goldlt">Persoonlijk advies</p><p class="mt-1 text-cream/60">De juiste fles bij elk moment</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Brede selectie</p><p class="mt-1 text-cream/60">Van streekwijn tot ontdekking</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Online bestellen</p><p class="mt-1 text-cream/60">Webshop met Mollie</p></div>
-      <div><p class="font-serif text-2xl text-goldlt">Cadeaupakketten</p><p class="mt-1 text-cream/60">Pakketten &amp; relatiegeschenken</p></div>
-    </div>
-  </section>
+  <!-- ====================================================
+       VERHAAL
+  ==================================================== -->
+  <section id="verhaal">
+    <div class="container">
+      <div class="verhaal-grid">
 
-  <!-- Wijnwebshop / online bestellen (the differentiator) -->
-  <section id="webshop" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <div class="fade-up">
-        <p class="text-gold font-500 tracking-[0.2em] uppercase text-xs mb-4">Nieuw: de wijnwebshop</p>
-        <h2 class="font-serif text-4xl sm:text-6xl font-600 leading-tight text-burgundy">
-          Eindelijk online,<br /><span class="italic">met een echte winkelwagen.</span>
-        </h2>
-        <p class="text-clay text-lg mt-5 leading-relaxed max-w-md font-300">
-          Vandaag is Clinckers Philip online nergens te vinden — enkel een vermelding in bedrijvengidsen, geen eigen website, geen webshop.
-          Met een echte site vindt de klant in een paar klikken de juiste fles, en rekent meteen af.
-        </p>
-        <ul class="mt-7 space-y-3 text-clay">
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Filter op <strong class="font-600 text-ink">streek</strong> (Bordeaux, Bourgogne, Rhône, import…)</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Filter op <strong class="font-600 text-ink">druif</strong> (Cabernet, Pinot Noir, Chardonnay…)</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Filter op <strong class="font-600 text-ink">prijs</strong> en gelegenheid</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Afrekenen met Mollie / Bancontact · leeftijdsverificatie 18+</li>
-        </ul>
-        <a href="#assortiment" class="inline-flex items-center gap-2 mt-9 bg-burgundy text-cream font-600 px-7 py-3.5 rounded-full hover:bg-merlot transition">
-          Bekijk het assortiment
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
-      </div>
+        <!-- SVG carafe visual left -->
+        <div class="verhaal-vis fade-up">
+          <div class="verhaal-vis-inner">
+            <div class="verhaal-num" aria-hidden="true">15</div>
+            <!-- Wine carafe with stopper — inline SVG -->
+            <svg viewBox="0 0 280 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Carafe body -->
+              <path d="M105 200 Q76 240 74 306 Q72 372 140 388 Q208 388 206 306 Q204 240 175 200Z"
+                    stroke="#f2e8d5" stroke-width="1.4"
+                    fill="rgba(42,63,111,0.07)"/>
+              <!-- Neck -->
+              <path d="M105 200 Q100 168 112 134 L168 134 Q180 168 175 200"
+                    stroke="#f2e8d5" stroke-width="1.4"
+                    fill="rgba(13,16,21,0.25)"/>
+              <!-- Rim ellipse -->
+              <ellipse cx="140" cy="134" rx="29" ry="9" stroke="#f2e8d5" stroke-width="1.2" fill="none"/>
+              <!-- Stopper shaft -->
+              <path d="M126 134 L126 106 Q126 94 140 94 Q154 94 154 106 L154 134"
+                    stroke="#f2e8d5" stroke-width="1.2"
+                    fill="rgba(42,63,111,0.12)"/>
+              <!-- Stopper flange -->
+              <ellipse cx="140" cy="94" rx="14" ry="5.5" stroke="#f2e8d5" stroke-width="1" fill="rgba(42,63,111,0.18)"/>
+              <!-- Stopper ball -->
+              <circle cx="140" cy="79" r="11" stroke="#f2e8d5" stroke-width="1.2" fill="rgba(42,63,111,0.14)"/>
+              <line x1="140" y1="94" x2="140" y2="90" stroke="#f2e8d5" stroke-width="1.1"/>
+              <!-- Subtle shine on ball -->
+              <circle cx="135" cy="74" r="3" fill="#f2e8d5" opacity="0.08"/>
 
-      <!-- Filter concept mock -->
-      <div class="fade-up rounded-3xl bg-white shadow-sm border border-burgundy/10 p-6 sm:p-7">
-        <div class="flex items-center justify-between">
-          <p class="font-serif text-2xl font-600 text-burgundy">Vind jouw wijn</p>
-          <span class="text-xs text-clay/70">conceptweergave</span>
+              <!-- Wine fill level -->
+              <path d="M80 310 Q80 336 140 344 Q200 344 200 310 Q197 286 140 278 Q83 278 80 310Z"
+                    fill="rgba(42,63,111,0.20)" stroke="none"/>
+
+              <!-- Carafe reflection / highlight -->
+              <path d="M88 256 Q84 285 86 318" stroke="#f2e8d5" stroke-width="0.8" opacity="0.25" stroke-linecap="round"/>
+
+              <!-- Label panel on carafe -->
+              <rect x="92" y="262" width="96" height="54" rx="2"
+                    stroke="rgba(242,232,213,0.13)" stroke-width="0.9"
+                    fill="rgba(42,63,111,0.04)"/>
+              <line x1="100" y1="278" x2="180" y2="278" stroke="rgba(242,232,213,0.11)" stroke-width="0.7"/>
+              <line x1="100" y1="288" x2="170" y2="288" stroke="rgba(242,232,213,0.08)" stroke-width="0.7"/>
+              <line x1="100" y1="298" x2="174" y2="298" stroke="rgba(242,232,213,0.07)" stroke-width="0.6"/>
+
+              <!-- Base -->
+              <ellipse cx="140" cy="382" rx="64" ry="9" stroke="#f2e8d5" stroke-width="1" fill="rgba(42,63,111,0.06)"/>
+
+              <!-- Fine bubbles in wine -->
+              <circle cx="120" cy="322" r="2.2" stroke="rgba(242,232,213,0.18)" stroke-width="0.7" fill="none"/>
+              <circle cx="155" cy="334" r="1.5" stroke="rgba(242,232,213,0.14)" stroke-width="0.7" fill="none"/>
+              <circle cx="137" cy="342" r="1.1" stroke="rgba(242,232,213,0.12)" stroke-width="0.6" fill="none"/>
+
+              <!-- Decorative lines below carafe -->
+              <line x1="58" y1="418" x2="222" y2="418" stroke="rgba(242,232,213,0.10)" stroke-width="0.8"/>
+              <line x1="78" y1="427" x2="202" y2="427" stroke="rgba(242,232,213,0.06)" stroke-width="0.6"/>
+            </svg>
+          </div>
         </div>
-        <div class="mt-5 space-y-5">
-          <div>
-            <p class="text-xs font-600 uppercase tracking-wider text-clay mb-2">Streek</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1.5 rounded-full bg-burgundy text-cream text-sm">Bordeaux</span>
-              <span class="px-3 py-1.5 rounded-full border border-burgundy/20 text-ink text-sm">Bourgogne</span>
-              <span class="px-3 py-1.5 rounded-full border border-burgundy/20 text-ink text-sm">Rhône</span>
-              <span class="px-3 py-1.5 rounded-full border border-burgundy/20 text-ink text-sm">Import</span>
-            </div>
+
+        <!-- Text right -->
+        <div class="verhaal-text">
+          <p class="label-tag verhaal-label fade-up">Het verhaal</p>
+
+          <h2 class="verhaal-h2 fade-up d1">
+            Ik ken mijn<br>wijnen — stuk<br>voor stuk.
+          </h2>
+
+          <p class="verhaal-body fade-up d2">
+            Philip Clinckers begon meer dan vijftien jaar geleden met proeven,
+            reizen en vragen stellen aan de mensen die de grond bewerken.
+            Niet in een academie, maar in kelders in de Bourgogne,
+            op domeinen in Extremadura, bij kleine producenten die hun terroir
+            kennen als hun eigen handpalm.
+          </p>
+          <p class="verhaal-body fade-up d3">
+            Vandaag is de wijnhandel in Mortsel het resultaat van al die kilometers
+            en al die glazen. Geen groot assortiment om indruk te maken —
+            wel een doorgedachte selectie waarbij elk flesje hier staat
+            omdat Philip er zelf voor staat.
+          </p>
+
+          <div class="verhaal-quote fade-up d4">
+            <p>"Een goede wijn heeft geen uitleg nodig. Maar een goed gesprek helpt je de juiste kiezen."</p>
           </div>
-          <div>
-            <p class="text-xs font-600 uppercase tracking-wider text-clay mb-2">Druif</p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1.5 rounded-full bg-gold/25 text-ink text-sm">Cabernet</span>
-              <span class="px-3 py-1.5 rounded-full border border-burgundy/20 text-ink text-sm">Pinot Noir</span>
-              <span class="px-3 py-1.5 rounded-full border border-burgundy/20 text-ink text-sm">Chardonnay</span>
-            </div>
-          </div>
-          <div>
-            <div class="flex items-center justify-between mb-2">
-              <p class="text-xs font-600 uppercase tracking-wider text-clay">Prijs</p>
-              <p class="text-xs text-clay/70">filter op budget</p>
-            </div>
-            <div class="h-1.5 rounded-full bg-sand relative">
-              <div class="absolute inset-y-0 left-0 w-2/3 rounded-full bg-gold"></div>
-              <span class="absolute -top-1 left-2/3 w-4 h-4 -ml-2 rounded-full bg-burgundy border-2 border-white shadow"></span>
-            </div>
-          </div>
-          <button class="w-full bg-burgundy text-cream font-600 py-3 rounded-full hover:bg-merlot transition">Toon de wijnen</button>
-          <p class="text-[11px] text-clay/60 text-center">Conceptueel — filters &amp; checkout worden live gekoppeld in de echte webshop.</p>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Assortiment grid -->
-  <section id="assortiment" class="bg-sand/60 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+  <!-- ====================================================
+       SELECTIE
+  ==================================================== -->
+  <section id="selectie">
+    <div class="container">
+
+      <div class="selectie-top">
         <div>
-          <p class="text-gold font-500 tracking-[0.2em] uppercase text-xs mb-3">Ons assortiment</p>
-          <h2 class="font-serif text-4xl sm:text-5xl font-600 text-burgundy">Van streekwijn tot bubbels</h2>
+          <p class="label-tag fade-up" style="margin-bottom:0.9rem;">Selectie</p>
+          <h2 class="selectie-h2 fade-up d1">Vier werelden,<br>één maatstaf.</h2>
         </div>
-        <p class="text-clay max-w-sm font-300">Een greep uit wat u bij ons vindt — met persoonlijk advies bij elke keuze. Beschikbaarheid wisselt per seizoen.</p>
+        <p class="selectie-sub fade-up d2">
+          Philip kiest uit vier domeinen — elk met eigen karakter,
+          allemaal op eerlijkheid en terroir geselecteerd.
+        </p>
       </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <!-- Rode wijn -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80"
-            alt="Rode wijn"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Rode wijn</h3>
-            <p class="text-cream/75 text-sm mt-1 font-300">Van soepel en fruitig tot vol en krachtig.</p>
+
+      <div class="selectie-grid">
+
+        <!-- Europa -->
+        <div class="sel-card fade-up">
+          <div class="sel-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" width="40" height="40" fill="none">
+              <!-- Wine glass simplified -->
+              <path d="M13 9 Q13 21 20 25 Q27 21 27 9Z"
+                    stroke="#2a3f6f" stroke-width="1.4" fill="rgba(42,63,111,0.10)"/>
+              <line x1="20" y1="25" x2="20" y2="32" stroke="#2a3f6f" stroke-width="1.4" stroke-linecap="round"/>
+              <line x1="15" y1="32" x2="25" y2="32" stroke="#2a3f6f" stroke-width="1.4" stroke-linecap="round"/>
+              <circle cx="20" cy="17" r="1.8" fill="#2a3f6f" opacity="0.4"/>
+            </svg>
           </div>
-        </article>
-        <!-- Witte wijn -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80"
-            alt="Witte wijn"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Witte wijn</h3>
-            <p class="text-cream/75 text-sm mt-1 font-300">Fris en mineraal of net wat ronder en rijper.</p>
+          <span class="sel-region">Regio</span>
+          <h3 class="sel-h3">Europa</h3>
+          <p class="sel-p">Bourgogne, Bordeaux, Ribera del Duero, Toscane — klassiekers zonder compromis, gekozen op jaar en druif.</p>
+          <div class="sel-foot">
+            <span>Bordeaux · Burgund · Rioja</span>
+            <svg class="sel-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M3 9H15M11 5l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </div>
-        </article>
-        <!-- Rosé -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1558001373-7b93ee48ffa0?auto=format&fit=crop&w=800&q=80"
-            alt="Rosé wijn"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Rosé</h3>
-            <p class="text-cream/75 text-sm mt-1 font-300">Verfrissend en toegankelijk voor zonnige dagen.</p>
+        </div>
+
+        <!-- Nieuwe Wereld -->
+        <div class="sel-card fade-up d1">
+          <div class="sel-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" width="40" height="40" fill="none">
+              <circle cx="20" cy="20" r="11" stroke="#2a3f6f" stroke-width="1.4"/>
+              <path d="M9 20 Q14.5 16 20 20 Q25.5 24 31 20" stroke="#2a3f6f" stroke-width="1" opacity="0.55"/>
+              <path d="M20 9 Q17 15 17 20 Q17 25 20 31" stroke="#2a3f6f" stroke-width="1" opacity="0.55"/>
+              <path d="M20 9 Q23 15 23 20 Q23 25 20 31" stroke="#2a3f6f" stroke-width="1" opacity="0.38"/>
+            </svg>
           </div>
-        </article>
-        <!-- Bubbels -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=800&q=80"
-            alt="Bubbels, crémant en champagne"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Bubbels &amp; Champagne</h3>
-            <p class="text-cream/75 text-sm mt-1 font-300">Crémant &amp; champagne om te vieren.</p>
+          <span class="sel-region">Regio</span>
+          <h3 class="sel-h3">Nieuwe Wereld</h3>
+          <p class="sel-p">Argentinië, Chili, Zuid-Afrika, Nieuw-Zeeland. Krachtig en expressief, met gevoel voor evenwicht.</p>
+          <div class="sel-foot">
+            <span>Malbec · Sauvignon · Shiraz</span>
+            <svg class="sel-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M3 9H15M11 5l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </div>
-        </article>
-        <!-- Ontdekkingen -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-burgundy text-cream relative aspect-[4/5]">
-          <img
-            src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=800&q=80"
-            alt="Wijnkelder met ontdekkingen"
-            loading="lazy" decoding="async"
-            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition duration-700"
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent"></div>
-          <div class="absolute bottom-0 p-6">
-            <h3 class="font-serif text-2xl font-600">Ontdekkingen</h3>
-            <p class="text-cream/75 text-sm mt-1 font-300">Verrassende flessen, persoonlijk geselecteerd.</p>
+        </div>
+
+        <!-- Biologisch -->
+        <div class="sel-card fade-up d2">
+          <div class="sel-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" width="40" height="40" fill="none">
+              <path d="M20 30 C20 30 9 24 11 14 Q20 7 30 13 C26 20 20 30 20 30Z"
+                    stroke="#2a3f6f" stroke-width="1.4" fill="rgba(42,63,111,0.09)"/>
+              <path d="M20 30 Q16 22 18 14" stroke="#2a3f6f" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+              <line x1="20" y1="30" x2="20" y2="34" stroke="#2a3f6f" stroke-width="1.3" stroke-linecap="round"/>
+            </svg>
           </div>
-        </article>
-        <!-- Cadeaupakketten CTA card -->
-        <article class="fade-up group rounded-2xl overflow-hidden bg-gold text-ink relative aspect-[4/5] flex items-center justify-center text-center p-6">
+          <span class="sel-region">Methode</span>
+          <h3 class="sel-h3">Biologisch</h3>
+          <p class="sel-p">Gecertificeerde biologische en biodynamische wijnen. De grond telt, de druif telt — de chemie niet.</p>
+          <div class="sel-foot">
+            <span>Bio · Demeter · Nature</span>
+            <svg class="sel-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M3 9H15M11 5l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Pétillant -->
+        <div class="sel-card fade-up d3">
+          <div class="sel-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" width="40" height="40" fill="none">
+              <circle cx="20" cy="26" r="7" stroke="#2a3f6f" stroke-width="1.4" fill="rgba(42,63,111,0.08)"/>
+              <circle cx="14" cy="19" r="4.5" stroke="#2a3f6f" stroke-width="1.1" fill="rgba(42,63,111,0.06)"/>
+              <circle cx="26" cy="17" r="3" stroke="#2a3f6f" stroke-width="1" fill="rgba(42,63,111,0.05)"/>
+              <circle cx="20" cy="18" r="1.3" fill="#2a3f6f" opacity="0.38"/>
+              <circle cx="17" cy="13" r="0.9" fill="#2a3f6f" opacity="0.28"/>
+              <circle cx="28" cy="12" r="0.8" fill="#2a3f6f" opacity="0.24"/>
+            </svg>
+          </div>
+          <span class="sel-region">Stijl</span>
+          <h3 class="sel-h3">Pétillant</h3>
+          <p class="sel-p">Pét-nat, crémant, cava en kleine bubbels. Voor feest, voor vrijdag, voor gewoon omdat het kan.</p>
+          <div class="sel-foot">
+            <span>Pét-Nat · Crémant · Cava</span>
+            <svg class="sel-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+              <path d="M3 9H15M11 5l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       ADVIES
+  ==================================================== -->
+  <section id="advies">
+    <div class="container">
+      <div class="advies-grid">
+
+        <!-- Left: process -->
+        <div>
+          <p class="label-tag advies-label fade-up">Persoonlijk advies</p>
+          <h2 class="advies-h2 fade-up d1">
+            Bel Philip.<br>Hij weet wat<br>je zoekt.
+          </h2>
+          <p class="advies-body fade-up d2">
+            Of je nu een feestfles zoekt, een kist voor de kelder wil aanleggen
+            of gewoon een goede wijn bij vanavond — Philip denkt met je mee.
+            Geen verkoopscript. Gewoon een gesprek.
+          </p>
+
+          <div class="advies-steps fade-up d3">
+            <div class="step">
+              <div class="step-n">1</div>
+              <div class="step-txt">
+                <strong>Jij belt of komt langs</strong>
+                <p>Vertel waarvoor de wijn is: gelegenheid, budget, smaak. Philip luistert.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-n">2</div>
+              <div class="step-txt">
+                <strong>Philip stelt voor</strong>
+                <p>Twee of drie flessen die passen — met uitleg waarom, in gewone mensentaal.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-n">3</div>
+              <div class="step-txt">
+                <strong>Jij kiest, of vertrouwt hem</strong>
+                <p>Vertrouwen in de wijnhandelaar is ook een kunst. Philip verdient dat vertrouwen.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: CTA box -->
+        <div class="advies-box fade-up d2">
           <div>
-            <p class="font-serif text-3xl font-600">Cadeau&shy;pakketten</p>
-            <p class="text-ink/75 text-sm mt-2 font-300">Stel een wijn-cadeaupakket samen — voor een verjaardag, het einde van het jaar of een relatiegeschenk.</p>
-            <a href="#advies" class="inline-block mt-5 text-burgundy font-600 ug">Bekijk de pakketten →</a>
+            <p class="label-tag" style="color:rgba(242,232,213,0.48);margin-bottom:0.7rem;">Direct contact</p>
+            <a href="tel:+3234408193" class="advies-tel">03 440 81 93</a>
           </div>
-        </article>
-      </div>
-      <p class="text-xs text-clay/70 mt-8 text-center">Onze selectie wisselt regelmatig. Beschikbaarheid en advies altijd in overleg of via de webshop.</p>
-    </div>
-  </section>
+          <p class="advies-note">
+            Wijnhandel Clinckers Philip<br>
+            Mortsel, regio Antwerpen<br><br>
+            Bel gerust — ook voor een kleine vraag of een snelle tip.
+            Philip neemt de telefoon zelf op.
+          </p>
+          <a href="tel:+3234408193" class="btn-cobalt-cta">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true" focusable="false">
+              <path d="M2 2C2 2 4 4 4.5 6.5C5 9 4 9.5 4.5 10.5C5 11.5 7.5 13 9 12.5C10.5 12 11 11 11.5 10.5C11.5 10.5 9.5 9 9 8.5C8.5 8 8.5 7.5 8.5 7.5C8.5 7.5 7 5.5 6 5C5 4.5 4.5 4.5 4 4C3.5 3.5 2 2 2 2Z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" fill="none"/>
+            </svg>
+            Bel Philip — 03 440 81 93
+          </a>
+        </div>
 
-  <!-- Featured wines (illustratief) -->
-  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28">
-    <div class="flex items-end justify-between mb-10">
-      <h2 class="font-serif text-3xl sm:text-4xl font-600 text-burgundy">Een greep uit de webshop</h2>
-      <a href="#webshop" class="hidden sm:inline text-gold font-600 ug">Alles bekijken →</a>
-    </div>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Wine 1 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-          <img
-            src="https://images.unsplash.com/photo-1474722883778-792e7990302f?auto=format&fit=crop&w=700&q=80"
-            alt="Rode wijn (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Bordeaux · Cabernet</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-burgundy">Bordeaux Rouge</h3>
-          <p class="text-clay/80 text-sm mt-1 font-300">Stevige rode wijn met rijp fruit — ideaal bij vlees.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-sm text-clay/70 font-300">Voorbeeldartikel</span>
-            <button class="bg-burgundy text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-merlot transition">In winkelwagen</button>
-          </div>
-        </div>
-      </div>
-      <!-- Wine 2 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-          <img
-            src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80"
-            alt="Witte wijn (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Bourgogne · Chardonnay</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-burgundy">Bourgogne Blanc</h3>
-          <p class="text-clay/80 text-sm mt-1 font-300">Mineraal en elegant — ideaal bij vis en gevogelte.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-sm text-clay/70 font-300">Voorbeeldartikel</span>
-            <button class="bg-burgundy text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-merlot transition">In winkelwagen</button>
-          </div>
-        </div>
-      </div>
-      <!-- Wine 3 -->
-      <div class="fade-up rounded-2xl bg-white p-3 shadow-sm hover:shadow-md transition">
-        <div class="rounded-xl overflow-hidden aspect-square bg-sand">
-          <img
-            src="https://images.unsplash.com/photo-1452195100486-9cc805987862?auto=format&fit=crop&w=700&q=80"
-            alt="Champagne (ter illustratie)"
-            loading="lazy" decoding="async"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="p-4">
-          <p class="text-xs text-gold font-600 uppercase tracking-wider">Bubbels</p>
-          <h3 class="font-serif text-xl font-600 mt-1 text-burgundy">Champagne &amp; Crémant</h3>
-          <p class="text-clay/80 text-sm mt-1 font-300">Fijne bubbels om te vieren of cadeau te geven.</p>
-          <div class="flex items-center justify-between mt-4">
-            <span class="text-sm text-clay/70 font-300">Voorbeeldartikel</span>
-            <button class="bg-burgundy text-cream text-sm font-600 px-4 py-2 rounded-full hover:bg-merlot transition">In winkelwagen</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p class="text-center text-xs text-clay/60 mt-6">Voorbeeldwijnen ter illustratie van de webshop — er worden geen prijzen of claims getoond in deze conceptversie.</p>
-  </section>
-
-  <!-- Advies / Cadeau / B2B relatiegeschenken (the second differentiator) -->
-  <section id="advies" class="bg-burgundy text-cream py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
-      <div class="rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
-        <img
-          src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80"
-          alt="Wijn-cadeaupakket en persoonlijk advies"
-          loading="lazy" decoding="async"
-          class="w-full h-full object-cover"
-        />
-      </div>
-      <div class="order-1 lg:order-2 fade-up">
-        <p class="text-goldlt font-500 tracking-[0.2em] uppercase text-xs mb-4">Persoonlijk advies &amp; cadeaupakketten</p>
-        <h2 class="font-serif text-4xl sm:text-6xl font-600 leading-tight">
-          Advies dat<br /><span class="italic">het verschil maakt.</span>
-        </h2>
-        <p class="text-cream/80 text-lg mt-6 leading-relaxed max-w-md font-300">
-          Niet zomaar een fles, maar de juiste fles. Wij denken graag met u mee — voor bij het eten, als geschenk
-          of als <strong class="font-600 text-cream">B2B-relatiegeschenk</strong> voor uw klanten en medewerkers.
-          Online of in de winkel, het advies blijft persoonlijk.
-        </p>
-        <ul class="mt-6 space-y-3 text-cream/85">
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Persoonlijk wijnadvies — afgestemd op smaak en gerecht</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Cadeaupakketten op maat (thema, budget, aantal)</li>
-          <li class="flex items-center gap-3"><span class="text-gold font-700">✓</span> Relatiegeschenken &amp; bedrijfsbestellingen — ideaal voor kerst</li>
-        </ul>
-        <a href="#bezoek" class="inline-flex items-center gap-2 mt-8 bg-gold text-ink font-600 px-7 py-3.5 rounded-full hover:bg-goldlt transition">
-          Vraag advies of een pakket aan
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-        </a>
       </div>
     </div>
   </section>
 
-  <!-- Ons verhaal -->
-  <section id="verhaal" class="max-w-7xl mx-auto px-5 sm:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-16 items-center">
-    <div class="fade-up">
-      <p class="text-gold font-500 tracking-[0.2em] uppercase text-xs mb-4">Ons verhaal</p>
-      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-burgundy">Een vertrouwde<br />wijnhandel in Mortsel.</h2>
-      <p class="text-clay text-lg mt-6 leading-relaxed font-300">
-        Clinckers Philip is een onafhankelijke wijnhandel in Mortsel. Wat ons drijft is de zoektocht naar
-        eerlijke wijnen met karakter en het persoonlijke advies dat erbij hoort — zodat elke klant met de
-        juiste fles naar huis gaat.
-      </p>
-      <p class="text-clay text-lg mt-4 leading-relaxed font-300">
-        Of u nu een fles zoekt voor bij het eten, een geschenk voor een liefhebber of een relatiegeschenk
-        voor uw klanten — wij denken graag met u mee. Voortaan kan dat ook online, met een echte webshop en
-        afhaling of levering.
-      </p>
-      <div class="mt-9 flex flex-wrap gap-8">
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">Advies</p>
-          <p class="text-clay/80 text-sm mt-1">Altijd persoonlijk</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">Selectie</p>
-          <p class="text-clay/80 text-sm mt-1">Met zorg gekozen</p>
-        </div>
-        <div class="text-center">
-          <p class="font-serif text-4xl text-gold font-700">18+</p>
-          <p class="text-clay/80 text-sm mt-1">Verantwoord genieten</p>
-        </div>
-      </div>
-    </div>
-    <div class="rounded-3xl overflow-hidden aspect-[4/3] fade-up">
-      <img
-        src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1000&q=80"
-        alt="Wijnkelder met flessen op rek"
-        loading="lazy" decoding="async"
-        class="w-full h-full object-cover"
-      />
-    </div>
-  </section>
+  <!-- ====================================================
+       BEZOEK
+  ==================================================== -->
+  <section id="bezoek">
+    <div class="container">
+      <div class="bezoek-grid">
 
-  <!-- Bezoek + kaart -->
-  <section id="bezoek" class="bg-sand/60 py-20 sm:py-28">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-12">
-      <div class="fade-up">
-        <p class="text-gold font-500 tracking-[0.2em] uppercase text-xs mb-4">Bezoek ons</p>
-        <h2 class="font-serif text-4xl sm:text-5xl font-600 text-burgundy">Welkom in Mortsel</h2>
-        <p class="text-clay text-lg mt-5 max-w-md font-300">
-          Kom proeven en kiezen op Tommeltlaan 60 in Mortsel, of bestel online en haal af.
-        </p>
-        <dl class="mt-9 space-y-5 text-clay">
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📍</span>
-            <div>
-              <dt class="font-600 text-burgundy">Adres</dt>
-              <dd class="text-clay">Tommeltlaan 60, 2640 Mortsel</dd>
+        <!-- Contact details left -->
+        <div>
+          <p class="label-tag bezoek-label fade-up">Bezoek &amp; contact</p>
+          <h2 class="bezoek-h2 fade-up d1">Kom langs<br>in Mortsel.</h2>
+          <p class="bezoek-body fade-up d2">
+            De wijnhandel ligt in Mortsel, op korte afstand van het centrum van Antwerpen.
+            Langskomen kan — en Philip helpt je dan graag persoonlijk verder.
+          </p>
+
+          <div class="bezoek-details fade-up d3">
+
+            <div class="bdetail">
+              <div class="bdetail-icon" aria-hidden="true">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                  <path d="M8.5 2C6.01 2 4 4.01 4 6.5C4 9.94 8.5 15 8.5 15C8.5 15 13 9.94 13 6.5C13 4.01 10.99 2 8.5 2Z" stroke="currentColor" stroke-width="1.2" fill="none"/>
+                  <circle cx="8.5" cy="6.5" r="2" stroke="currentColor" stroke-width="1.1" fill="none"/>
+                </svg>
+              </div>
+              <div class="bdetail-inner">
+                <strong>Locatie</strong>
+                <p>Mortsel, regio Antwerpen, België</p>
+              </div>
             </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">🕑</span>
-            <div>
-              <dt class="font-600 text-burgundy">Openingsuren</dt>
-              <dd class="text-clay">Di–Vr: 10:00–18:30 · Za: 10:00–18:00 · Zo &amp; Ma: gesloten</dd>
-              <dd class="text-clay/60 text-sm mt-1">(indicatief — definitieve uren in overleg)</dd>
+
+            <div class="bdetail">
+              <div class="bdetail-icon" aria-hidden="true">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                  <path d="M3 3C3 3 5 5 5.5 7.5C6 10 5 10.5 5.5 11.5C6 12.5 8.5 14 10 13.5C11.5 13 12 12 12.5 11.5C12.5 11.5 10.5 10 10 9.5C9.5 9 9.5 8.5 9.5 8.5C9.5 8.5 8 7 7 6.5C6 6 5.5 6 5 5.5C4.5 5 3 3 3 3Z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round" fill="none"/>
+                </svg>
+              </div>
+              <div class="bdetail-inner">
+                <strong>Telefoon</strong>
+                <a href="tel:+3234408193">03 440 81 93</a>
+              </div>
             </div>
-          </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">📞</span>
-            <div>
-              <dt class="font-600 text-burgundy">Telefoon</dt>
-              <dd class="text-clay"><a href="tel:+3234408193" class="ug">03 440 81 93</a></dd>
+
+            <div class="bdetail">
+              <div class="bdetail-icon" aria-hidden="true">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none">
+                  <circle cx="8.5" cy="8.5" r="6" stroke="currentColor" stroke-width="1.2"/>
+                  <path d="M8.5 5V9L11 10.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="bdetail-inner">
+                <strong>Openingsuren</strong>
+                <p>Bel vooraf voor openingstijden<br>of om langs te komen</p>
+              </div>
             </div>
+
           </div>
-          <div class="flex gap-4">
-            <span class="text-gold mt-0.5 text-xl" aria-hidden="true">💳</span>
-            <div>
-              <dt class="font-600 text-burgundy">Betaalmogelijkheden</dt>
-              <dd class="text-clay">In de winkel · online via Mollie / Bancontact (webshop) · leeftijdsverificatie 18+</dd>
-            </div>
-          </div>
-        </dl>
-        <a href="#webshop" class="inline-block mt-9 bg-burgundy text-cream font-600 px-7 py-3.5 rounded-full hover:bg-merlot transition">
-          Of bestel online →
-        </a>
-      </div>
-      <!-- OpenStreetMap embed — Tommeltlaan 60, 2640 Mortsel (~51.1697, 4.4615) -->
-      <div class="rounded-3xl overflow-hidden min-h-[360px] bg-sand shadow-sm">
-        <iframe
-          title="Kaart Clinckers Philip — Tommeltlaan 60, 2640 Mortsel"
-          class="w-full h-full min-h-[360px] border-0"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=4.4515%2C51.1647%2C4.4715%2C51.1747&layer=mapnik&marker=51.1697%2C4.4615"
-        ></iframe>
+        </div>
+
+        <!-- Pitch box right -->
+        <div class="pitch-box fade-up d2">
+          <p class="pitch-eyebrow">Voor de wijnliefhebber die wil meer</p>
+          <h3 class="pitch-h3">
+            Geen website = Philip<br>is onzichtbaar online.
+          </h3>
+          <p class="pitch-p">
+            Een wijnhandel met vijftien jaar expertise, een doorgedachte selectie en
+            persoonlijk advies verdient een eerlijke online aanwezigheid.
+            Zoekers in Mortsel en Antwerpen vinden Philip vandaag niet.
+          </p>
+          <ul class="pitch-list">
+            <li>Geen website = geen Google-vindbaarheid in Mortsel</li>
+            <li>Klanten zoeken online vóór ze bellen</li>
+            <li>Een selectiepagina converteert beter dan geen pagina</li>
+            <li>Philip's verhaal is zijn sterkste verkoopargument</li>
+            <li>Lokale SEO is voor deze zaak laagdrempelig en effectief</li>
+          </ul>
+          <a href="mailto:nicolas@saspire.org" class="pitch-link">
+            Saspire helpt Philip online zetten
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true" focusable="false">
+              <path d="M2.5 6.5H10.5M7.5 3.5l3 3-3 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- GDPR Newsletter -->
-  <section class="bg-gold/20">
-    <div class="max-w-3xl mx-auto px-5 sm:px-8 py-16 text-center">
-      <h2 class="font-serif text-4xl sm:text-5xl font-600 text-burgundy">Blijf op de hoogte</h2>
-      <p class="text-clay mt-3 font-300">Nieuwe wijnen, ontdekkingen, advies en cadeautips — af en toe in je mailbox.</p>
-      <form class="mt-7 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" onsubmit="return false">
-        <label for="nl-email" class="sr-only">E-mailadres voor de nieuwsbrief</label>
-        <input
-          id="nl-email"
-          name="email"
-          type="email"
-          autocomplete="email"
-          required
-          placeholder="jouw@email.be"
-          class="flex-1 px-5 py-3 rounded-full border border-clay/25 bg-cream focus:outline-none focus:ring-2 focus:ring-gold"
-        />
-        <button class="bg-burgundy text-cream font-600 px-7 py-3 rounded-full hover:bg-merlot transition">Inschrijven</button>
-      </form>
-      <p class="text-xs text-clay/60 mt-3">Geen spam. Uitschrijven kan altijd. GDPR-proof. Inschrijven vanaf 18 jaar.</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-ink text-cream/80">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div>
-        <p class="font-serif text-[26px] text-cream font-700">Clinckers <span class="italic font-600">Philip</span></p>
-        <p class="text-cream/60 text-sm mt-3 max-w-xs font-300">Wijnhandel in Mortsel met persoonlijk advies. Webshop, cadeaupakketten en relatiegeschenken.</p>
-        <p class="text-cream/45 text-xs mt-4">Verkoop uitsluitend aan personen vanaf 18 jaar. Geniet, maar drink met mate.</p>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Webshop</p>
-        <ul class="space-y-2 text-sm text-cream/60 font-300">
-          <li><a href="#webshop" class="hover:text-goldlt">Online bestellen</a></li>
-          <li><a href="#assortiment" class="hover:text-goldlt">Assortiment</a></li>
-          <li><a href="#advies" class="hover:text-goldlt">Cadeaupakketten</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Info</p>
-        <ul class="space-y-2 text-sm text-cream/60 font-300">
-          <li><a href="#advies" class="hover:text-goldlt">Relatiegeschenken &amp; B2B</a></li>
-          <li><a href="#bezoek" class="hover:text-goldlt">Openingsuren</a></li>
-          <li><a href="#verhaal" class="hover:text-goldlt">Ons verhaal</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="font-600 text-cream mb-3">Contact</p>
-        <ul class="space-y-2 text-sm text-cream/60 font-300">
-          <li>Tommeltlaan 60</li>
-          <li>2640 Mortsel</li>
-          <li><a href="tel:+3234408193" class="hover:text-goldlt">03 440 81 93</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="border-t border-cream/10">
-      <div class="max-w-7xl mx-auto px-5 sm:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-cream/45">
-        <p>© 2026 Clinckers Philip. Concept-redesign.</p>
-        <p>Proof of concept — gebouwd voor een gesprek over jullie nieuwe website &amp; wijnwebshop.</p>
+  <!-- ====================================================
+       FOOTER
+  ==================================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          Clinckers Philip
+          <small>Wijnhandel · Mortsel · 03 440 81 93</small>
+        </div>
+        <div class="footer-right">
+          <a href="tel:+3234408193">03 440 81 93</a>
+          <a href="#verhaal">Verhaal</a>
+          <a href="#selectie">Selectie</a>
+          <a href="#advies">Advies</a>
+          <span class="footer-copy">&copy; 2025 Clinckers Philip</span>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
+  <!-- ====================================================
+       INLINE JS — Headroom nav + IntersectionObserver fade-up
+       TOL_DOWN=8px  TOL_UP=5px  OFFSET=80px  rAF-driven
+  ==================================================== -->
   <script>
-    // Fade-up IntersectionObserver
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-up').forEach((el) => io.observe(el));
-    // Safety: reveal anything the observer never reached (no scroll / screenshot / prefers-reduced-motion).
-    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('in'));
-    } else {
-      setTimeout(() => document.querySelectorAll('.fade-up:not(.in)').forEach((el) => el.classList.add('in')), 1000);
-    }
+    (function () {
+      'use strict';
 
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (menuBtn && mobileMenu) {
-      const setOpen = (open) => {
-        if (open) mobileMenu.removeAttribute('hidden');
-        else mobileMenu.setAttribute('hidden', '');
-        menuBtn.setAttribute('aria-expanded', String(open));
-        menuBtn.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
-      };
-      menuBtn.addEventListener('click', () => setOpen(mobileMenu.hasAttribute('hidden')));
-      mobileMenu.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
-    }
+      /* ---- HEADROOM ---- */
+      var nav        = document.getElementById('site-nav');
+      var lastY      = 0;
+      var ticking    = false;
+      var OFFSET     = 80;
+      var TOL_DOWN   = 8;
+      var TOL_UP     = 5;
+      var isHidden   = false;
+      var isScrolled = false;
+
+      function headroomUpdate() {
+        var y     = window.pageYOffset || document.documentElement.scrollTop;
+        var delta = y - lastY;
+
+        /* Scrolled class (background + shadow) */
+        if (y > OFFSET) {
+          if (!isScrolled) { nav.classList.add('scrolled');    isScrolled = true; }
+        } else {
+          if (isScrolled)  { nav.classList.remove('scrolled'); isScrolled = false; }
+        }
+
+        /* Hide / reveal */
+        if (y > OFFSET) {
+          if (delta > TOL_DOWN && !isHidden) {
+            nav.classList.add('hidden');
+            isHidden = true;
+          } else if (delta < -TOL_UP && isHidden) {
+            nav.classList.remove('hidden');
+            isHidden = false;
+          }
+        } else {
+          if (isHidden) { nav.classList.remove('hidden'); isHidden = false; }
+        }
+
+        lastY   = y < 0 ? 0 : y;
+        ticking = false;
+      }
+
+      window.addEventListener('scroll', function () {
+        if (!ticking) { requestAnimationFrame(headroomUpdate); ticking = true; }
+      }, { passive: true });
+
+      /* ---- FADE-UP IntersectionObserver ---- */
+      var els = document.querySelectorAll('.fade-up');
+
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            if (e.isIntersecting) {
+              e.target.classList.add('visible');
+              io.unobserve(e.target);
+            }
+          });
+        }, { threshold: 0.10, rootMargin: '0px 0px -36px 0px' });
+
+        els.forEach(function (el) { io.observe(el); });
+      } else {
+        /* Fallback: show immediately */
+        els.forEach(function (el) { el.classList.add('visible'); });
+      }
+
+    }());
   </script>
+
 </body>
 </html>
