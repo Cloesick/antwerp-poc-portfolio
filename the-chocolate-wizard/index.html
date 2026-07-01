@@ -1528,5 +1528,253 @@
   })();
   </script>
 
+<script id="sx-enhance">
+// Saspire demo enhancer — progressive, dependency-free interactivity layer.
+// Injected inline before the closing body tag in every poc- demo folder.
+// Design rules: namespaced (sx-), guards every hook, never throws, degrades
+// silently if a demo lacks a given element. Safe on file://, localhost, github.io.
+// Mirrors the scroll-reveal safety philosophy of the demos.
+(function () {
+  'use strict';
+  if (window.__sxEnhanced) return;            // idempotent
+  window.__sxEnhanced = true;
+  var D = document;
+  var ready = function (fn) {
+    if (D.readyState === 'loading') D.addEventListener('DOMContentLoaded', fn);
+    else fn();
+  };
+  var make = function (tag, cls, html) {
+    var e = D.createElement(tag);
+    if (cls) e.className = cls;
+    if (html != null) e.innerHTML = html;
+    return e;
+  };
+  var brand = function () {
+    try {
+      var s = getComputedStyle(D.documentElement);
+      var pick = ['--accent', '--primary', '--brand', '--gold', '--color-accent', '--color-primary'];
+      for (var i = 0; i < pick.length; i++) {
+        var v = s.getPropertyValue(pick[i]).trim();
+        if (v) return v;
+      }
+      // fall back to the first coloured button/link
+      var b = D.querySelector('.btn-primary, [class*="btn"], a[class*="cta"]');
+      if (b) { var bg = getComputedStyle(b).backgroundColor; if (bg && bg !== 'rgba(0, 0, 0, 0)') return bg; }
+    } catch (e) {}
+    return '#111';
+  };
+
+  ready(function () {
+    var ACCENT = brand();
+
+    /* ---- shared stylesheet (namespaced) ---------------------------------- */
+    var css = [
+      '.sx-progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:9999;background:' + ACCENT + ';transition:width .1s linear;box-shadow:0 0 8px ' + ACCENT + '55}',
+      '.sx-top{position:fixed;right:20px;bottom:20px;width:46px;height:46px;border-radius:50%;border:0;cursor:pointer;background:' + ACCENT + ';color:#fff;font-size:20px;line-height:46px;text-align:center;opacity:0;pointer-events:none;transform:translateY(10px);transition:.25s;z-index:9998;box-shadow:0 6px 20px rgba(0,0,0,.25)}',
+      '.sx-top.on{opacity:1;pointer-events:auto;transform:none}',
+      '.sx-cta{position:fixed;left:20px;bottom:20px;z-index:9998;border:0;cursor:pointer;background:' + ACCENT + ';color:#fff;font:600 15px/1 system-ui,sans-serif;padding:14px 20px;border-radius:40px;box-shadow:0 8px 24px rgba(0,0,0,.28);display:inline-flex;gap:8px;align-items:center;transition:.2s;transform:translateY(0)}',
+      '.sx-cta:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.34)}',
+      '.sx-ov{position:fixed;inset:0;z-index:10000;background:rgba(12,12,14,.82);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:.25s;padding:20px}',
+      '.sx-ov.on{opacity:1;pointer-events:auto}',
+      '.sx-ov img{max-width:92vw;max-height:88vh;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.5);transform:scale(.96);transition:.25s}',
+      '.sx-ov.on img{transform:none}',
+      '.sx-modal{background:#fff;color:#18181b;max-width:420px;width:100%;border-radius:18px;padding:28px;box-shadow:0 24px 70px rgba(0,0,0,.4);transform:translateY(14px);transition:.25s;font-family:system-ui,sans-serif}',
+      '.sx-ov.on .sx-modal{transform:none}',
+      '.sx-modal h3{margin:0 0 4px;font-size:20px;font-weight:700}',
+      '.sx-modal p{margin:0 0 18px;font-size:14px;color:#52525b}',
+      '.sx-modal label{display:block;font-size:12px;font-weight:600;margin:12px 0 5px;color:#3f3f46}',
+      '.sx-modal input,.sx-modal textarea{width:100%;box-sizing:border-box;border:1px solid #d4d4d8;border-radius:10px;padding:11px 12px;font-size:14px;font-family:inherit;outline:none;transition:.15s}',
+      '.sx-modal input:focus,.sx-modal textarea:focus{border-color:' + ACCENT + ';box-shadow:0 0 0 3px ' + ACCENT + '22}',
+      '.sx-modal .sx-err{border-color:#ef4444!important;box-shadow:0 0 0 3px #ef444422!important}',
+      '.sx-submit{margin-top:18px;width:100%;border:0;cursor:pointer;background:' + ACCENT + ';color:#fff;font:600 15px/1 inherit;padding:13px;border-radius:10px;transition:.2s}',
+      '.sx-submit:hover{filter:brightness(1.08)}',
+      '.sx-x{position:absolute;top:14px;right:16px;border:0;background:none;font-size:22px;cursor:pointer;color:#a1a1aa;line-height:1}',
+      '.sx-ok{text-align:center;padding:14px 0}',
+      '.sx-ok .sx-check{width:56px;height:56px;border-radius:50%;background:' + ACCENT + ';color:#fff;font-size:30px;line-height:56px;margin:0 auto 14px}',
+      '.sx-toast{position:fixed;left:50%;bottom:30px;transform:translateX(-50%) translateY(40px);background:#18181b;color:#fff;padding:13px 20px;border-radius:30px;font:600 14px/1 system-ui,sans-serif;z-index:10001;opacity:0;transition:.3s;box-shadow:0 10px 30px rgba(0,0,0,.3)}',
+      '.sx-toast.on{opacity:1;transform:translateX(-50%) translateY(0)}',
+      '.sx-open-badge{display:inline-flex;align-items:center;gap:6px;font:600 12px/1 system-ui,sans-serif;padding:6px 12px;border-radius:30px;margin:6px 0}',
+      '.sx-open-badge .sx-dot{width:8px;height:8px;border-radius:50%}',
+      '.sx-open .sx-dot{background:#22c55e;box-shadow:0 0 0 4px #22c55e33}.sx-open{background:#22c55e18;color:#15803d}',
+      '.sx-closed .sx-dot{background:#ef4444}.sx-closed{background:#ef444418;color:#b91c1c}',
+      '[class*="card"],[class*="cell"],[class*="item"],[class*="tile"]{transition:transform .28s ease,box-shadow .28s ease}',
+      '.sx-liftable:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.14)}',
+      '.sx-zoomable{cursor:zoom-in}',
+      '@media(max-width:640px){.sx-cta span{display:none}.sx-cta{padding:14px}}'
+    ].join('\n');
+    D.head.appendChild(make('style', 'sx-style', css)).textContent = css;
+
+    /* ---- 1. scroll progress bar ------------------------------------------ */
+    var bar = D.body.appendChild(make('div', 'sx-progress'));
+    var onScroll = function () {
+      var h = D.documentElement;
+      var p = h.scrollTop / ((h.scrollHeight - h.clientHeight) || 1);
+      bar.style.width = (p * 100).toFixed(1) + '%';
+      top.classList.toggle('on', h.scrollTop > 500);
+    };
+
+    /* ---- 2. back-to-top --------------------------------------------------- */
+    var top = D.body.appendChild(make('button', 'sx-top', '↑'));
+    top.setAttribute('aria-label', 'Terug naar boven');
+    top.onclick = function () { window.scrollTo({ top: 0, behavior: 'smooth' }); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    /* ---- 3. smooth anchor scroll + active nav ---------------------------- */
+    var navLinks = [].slice.call(D.querySelectorAll('a[href^="#"]'));
+    navLinks.forEach(function (a) {
+      var id = a.getAttribute('href');
+      if (!id || id === '#') return;
+      a.addEventListener('click', function (e) {
+        var t = D.querySelector(id);
+        if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    });
+    var sections = [].slice.call(D.querySelectorAll('section[id],[id][class*="section"]'));
+    if (sections.length && 'IntersectionObserver' in window) {
+      var so = new IntersectionObserver(function (ents) {
+        ents.forEach(function (en) {
+          if (!en.isIntersecting) return;
+          navLinks.forEach(function (a) {
+            a.classList.toggle('sx-active', a.getAttribute('href') === '#' + en.target.id);
+          });
+        });
+      }, { rootMargin: '-45% 0px -50% 0px' });
+      sections.forEach(function (s) { so.observe(s); });
+    }
+
+    /* ---- 4. animated counters (skip years) ------------------------------- */
+    var numEls = [].slice.call(D.querySelectorAll('.stat-num,.heritage-stat,[class*="stat"] [class*="num"],[class*="count"]'));
+    var countUp = function (el) {
+      var raw = el.textContent.trim();
+      var m = raw.match(/^(\D*)(\d[\d.,]*)(\D*)$/);
+      if (!m) return;
+      var digits = m[2].replace(/[.,]/g, '');
+      var target = parseInt(digits, 10);
+      if (isNaN(target) || target < 5) return;
+      if (target >= 1900 && target <= 2099 && digits.length === 4) return; // year, leave it
+      var pre = m[1], post = m[3], t0 = null, dur = 1100;
+      var step = function (ts) {
+        if (!t0) t0 = ts;
+        var p = Math.min((ts - t0) / dur, 1);
+        var val = Math.floor((1 - Math.pow(1 - p, 3)) * target);
+        el.textContent = pre + val.toLocaleString('nl-BE') + post;
+        if (p < 1) requestAnimationFrame(step);
+        else el.textContent = raw;
+      };
+      requestAnimationFrame(step);
+    };
+    if (numEls.length && 'IntersectionObserver' in window) {
+      var co = new IntersectionObserver(function (ents) {
+        ents.forEach(function (en) {
+          if (en.isIntersecting) { countUp(en.target); co.unobserve(en.target); }
+        });
+      }, { threshold: 0.6 });
+      numEls.forEach(function (n) { co.observe(n); });
+    }
+
+    /* ---- 5. card hover-lift ---------------------------------------------- */
+    [].slice.call(D.querySelectorAll('[class*="card"],[class*="cell"],[class*="tile"],[class*="pitch"],[class*="bento"]'))
+      .forEach(function (c) {
+        if (c.querySelector('input,textarea,form')) return;
+        if (c.closest('nav,header')) return;
+        c.classList.add('sx-liftable');
+      });
+
+    /* ---- 6. image lightbox ----------------------------------------------- */
+    var ov = D.body.appendChild(make('div', 'sx-ov'));
+    var closeOv = function () { ov.classList.remove('on'); ov.innerHTML = ''; };
+    ov.addEventListener('click', function (e) { if (e.target === ov) closeOv(); });
+    D.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeOv(); });
+    [].slice.call(D.querySelectorAll('img')).forEach(function (img) {
+      if (img.closest('nav,header,.sx-cta')) return;
+      if (img.naturalWidth && img.naturalWidth < 120) return;
+      if (/logo|brand|icon/i.test(img.className + ' ' + (img.alt || ''))) return;
+      img.classList.add('sx-zoomable');
+      img.addEventListener('click', function () {
+        ov.innerHTML = '';
+        var big = make('img');
+        big.src = img.currentSrc || img.src;
+        if (img.alt) big.alt = img.alt;
+        ov.appendChild(big);
+        ov.classList.add('on');
+      });
+    });
+
+    /* ---- 7. live open/gesloten badge (parses an hours table) ------------- */
+    (function () {
+      var rows = [].slice.call(D.querySelectorAll('[class*="hours-row"],[class*="opening"] li,[class*="hours"] tr'));
+      if (!rows.length) return;
+      var days = ['zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag'];
+      var now = new Date(), dayName = days[now.getDay()], mins = now.getHours() * 60 + now.getMinutes();
+      var openNow = null;
+      for (var i = 0; i < rows.length; i++) {
+        var txt = rows[i].textContent.toLowerCase();
+        if (txt.indexOf(dayName) === -1) continue;
+        if (/gesloten|closed/.test(txt)) { openNow = false; break; }
+        var times = txt.match(/(\d{1,2})[:.h](\d{2})/g);
+        if (times && times.length >= 2) {
+          var toMin = function (t) { var p = t.split(/[:.h]/); return (+p[0]) * 60 + (+p[1]); };
+          openNow = mins >= toMin(times[0]) && mins <= toMin(times[times.length - 1]);
+        }
+        break;
+      }
+      if (openNow === null) return;
+      var badge = make('div', 'sx-open-badge ' + (openNow ? 'sx-open' : 'sx-closed'),
+        '<span class="sx-dot"></span>' + (openNow ? 'Nu geopend' : 'Nu gesloten'));
+      var anchor = D.querySelector('[class*="hours"]') || rows[0].parentElement;
+      if (anchor) anchor.parentElement.insertBefore(badge, anchor);
+    })();
+
+    /* ---- 8. floating CTA + mock contact/reserve modal -------------------- */
+    var cta = D.body.appendChild(make('button', 'sx-cta', '<span>Vraag info</span>✉'));
+    cta.setAttribute('aria-label', 'Vraag info');
+    var openModal = function () {
+      ov.innerHTML = '';
+      var wrap = make('div', 'sx-modal');
+      wrap.innerHTML =
+        '<button class="sx-x" aria-label="Sluiten">×</button>' +
+        '<h3>Vraag info of maak een afspraak</h3>' +
+        '<p>Laat je gegevens achter — we reageren snel.</p>' +
+        '<form novalidate>' +
+        '<label>Naam</label><input name="naam" type="text" autocomplete="name">' +
+        '<label>E-mail</label><input name="email" type="email" autocomplete="email">' +
+        '<label>Bericht</label><textarea name="bericht" rows="3"></textarea>' +
+        '<button class="sx-submit" type="submit">Versturen</button>' +
+        '</form>';
+      ov.appendChild(wrap);
+      ov.classList.add('on');
+      wrap.querySelector('.sx-x').onclick = closeOv;
+      var form = wrap.querySelector('form');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var ok = true;
+        var naam = form.naam, email = form.email;
+        [naam, email].forEach(function (f) { f.classList.remove('sx-err'); });
+        if (!naam.value.trim()) { naam.classList.add('sx-err'); ok = false; }
+        if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email.value)) { email.classList.add('sx-err'); ok = false; }
+        if (!ok) return;
+        wrap.innerHTML = '<div class="sx-ok"><div class="sx-check">✓</div>' +
+          '<h3>Bedankt, ' + naam.value.trim().replace(/[<>&]/g, '') + '!</h3>' +
+          '<p>Dit is een demo — op de echte site landt dit meteen in je mailbox of CRM.</p></div>';
+        setTimeout(closeOv, 2600);
+      });
+      setTimeout(function () { var n = wrap.querySelector('input'); if (n) n.focus(); }, 60);
+    };
+    cta.onclick = openModal;
+    // wire any existing "contact/afspraak/bestel/reserveer" buttons to the modal too
+    [].slice.call(D.querySelectorAll('a,button')).forEach(function (el) {
+      if (el.closest('.sx-modal,.sx-cta')) return;
+      if (/afspraak|reserveer|bestel|offerte|vraag info|contacteer/i.test(el.textContent)) {
+        el.addEventListener('click', function (e) {
+          var href = el.getAttribute('href');
+          if (href && href.charAt(0) === '#') return; // let in-page anchors scroll
+          e.preventDefault(); openModal();
+        });
+      }
+    });
+  });
+})();
+</script>
 </body>
 </html>
