@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Antwerp-Security | Gecertificeerde slotenmakerij &amp; beveiliging in Antwerpen</title>
+  <meta name="description" content="Gecertificeerde slotenmakerij in Antwerpen met 25 jaar ervaring. Veiligheidscilinders, toegangscontrole, veiligheidsdeuren, brandkasten en parlofonie. 24/24 bereikbaar voor dringende interventies." />
+  <link rel="canonical" href="https://www.antwerp-security.be/" />
+  <meta name="theme-color" content="#0a0e13" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Antwerp-Security" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Antwerp-Security | Slotenmakerij &amp; beveiliging in Antwerpen" />
+  <meta property="og:description" content="25 jaar vakmanschap in sluitende beveiligingsoplossingen. 24/24 bereikbaar voor dringende interventies." />
+  <meta property="og:url" content="https://www.antwerp-security.be/" />
+  <meta property="og:image" content="https://static.wixstatic.com/media/a33eea_72d4bbcbad384be8813e08e8262ef351~mv2.jpg/v1/fill/w_1200,h_630,al_c,q_85/antwerp-security.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0e13'/%3E%3Cpath d='M16 6l8 3.5v6c0 5.2-3.4 8.9-8 10.5-4.6-1.6-8-5.3-8-10.5v-6L16 6z' fill='none' stroke='%230075BE' stroke-width='2'/%3E%3Ccircle cx='16' cy='15' r='2.2' fill='%230075BE'/%3E%3Cpath d='M16 17v4' stroke='%230075BE' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Locksmith",
+    "name": "Antwerp-Security",
+    "description": "Slotenmakerij en specialist in beveiliging: sloten, veiligheidscilinders, toegangscontrole, veiligheidsdeuren, brandkasten, parlofonie en videofonie.",
+    "url": "https://www.antwerp-security.be/",
+    "telephone": "+3232161640",
+    "email": "sales@antwerp-security.be",
+    "vatID": "BE0876087271",
+    "priceRange": "€€",
+    "areaServed": "Antwerpen",
+    "image": "https://static.wixstatic.com/media/a33eea_72d4bbcbad384be8813e08e8262ef351~mv2.jpg/v1/fill/w_1200,h_630,al_c,q_85/antwerp-security.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Durletstraat 49",
+      "postalCode": "2018",
+      "addressLocality": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 51.2088, "longitude": 4.4069 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:30", "closes": "17:00" }
+    ],
+    "memberOf": { "@type": "Organization", "name": "Vlaamse Slotenmakers Unie" }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Archivo', 'sans-serif'], mono: ['"IBM Plex Mono"', 'monospace'] },
+          colors: {
+            steel: '#0a0e13',
+            plate: '#0f151d',
+            seam: 'rgba(232,237,242,0.09)',
+            bone: '#e8edf2',
+            mist: '#94a7b8',
+            brand: '#0075be',
+            spark: '#4fb3f6',
+          },
+        },
+      },
+    };
+  </script>
+  <script type="importmap">
+    { "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.166.1/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.166.1/examples/jsm/"
+    } }
+  </script>
+  <style>
+    :root { --ease-out: cubic-bezier(0.23, 1, 0.32, 1); }
+    html { scroll-behavior: smooth; }
+    body { text-rendering: optimizeLegibility; }
+    h1, h2, h3 { text-wrap: balance; }
+
+    /* Scroll reveal (only when JS is active, so content is never lost) */
+    .js .rv { opacity: 0; transform: translateY(22px); transition: opacity .7s var(--ease-out), transform .7s var(--ease-out); }
+    .js .rv.in { opacity: 1; transform: none; }
+    .rv-d1 { transition-delay: .08s; } .rv-d2 { transition-delay: .16s; } .rv-d3 { transition-delay: .24s; }
+
+    /* Tilt cards */
+    .tilt { transform-style: preserve-3d; transition: transform .35s var(--ease-out), border-color .35s var(--ease-out); will-change: transform; }
+    .tilt .glare { position: absolute; inset: 0; border-radius: inherit; pointer-events: none; opacity: 0;
+      background: radial-gradient(420px circle at var(--gx, 50%) var(--gy, 50%), rgba(79,179,246,.14), transparent 65%);
+      transition: opacity .35s var(--ease-out); }
+    .tilt:hover .glare { opacity: 1; }
+
+    /* Marquee (transform-only) */
+    @keyframes slide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .marquee-track { display: flex; width: max-content; animation: slide 36s linear infinite; }
+    .marquee:hover .marquee-track { animation-play-state: paused; }
+
+    /* Hero key sweep line */
+    @keyframes sweep { 0% { transform: translateX(-100%);} 100% { transform: translateX(220%);} }
+    .sweep::after { content:''; position: absolute; top:0; bottom:0; width: 40%;
+      background: linear-gradient(100deg, transparent, rgba(79,179,246,.07), transparent);
+      animation: sweep 7s var(--ease-out) infinite; }
+
+    /* Intercom demo */
+    .icall { transition: transform .2s var(--ease-out), background-color .2s var(--ease-out), box-shadow .2s var(--ease-out); }
+    .icall:active { transform: scale(0.95); }
+    .icall.lit { background-color: #0075be; box-shadow: 0 0 18px rgba(0,117,190,.55); color: #fff; }
+
+    /* Buttons */
+    .btn { transition: transform .18s var(--ease-out), background-color .18s var(--ease-out), border-color .18s var(--ease-out), color .18s var(--ease-out); }
+    .btn:active { transform: scale(0.97); }
+    .btn:focus-visible, a:focus-visible { outline: 2px solid #4fb3f6; outline-offset: 3px; border-radius: 4px; }
+
+    .ug { background-image: linear-gradient(currentColor, currentColor); background-size: 0% 1.5px; background-repeat: no-repeat; background-position: 0 100%; transition: background-size .3s var(--ease-out); }
+    .ug:hover { background-size: 100% 1.5px; }
+
+    #lock3d { touch-action: pan-y; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .rv { opacity: 1; transform: none; transition: none; }
+      .marquee-track { animation: none; }
+      .sweep::after { animation: none; display: none; }
+      .tilt { transition: none; }
+    }
+
+    /* Keep the sx-enhance FAB clear of the sticky mobile call bar */
+    @media (max-width: 767px) { .sx-cta { bottom: 76px !important; } }
+  </style>
+</head>
+<body class="bg-steel text-bone font-sans antialiased selection:bg-brand/40">
+
+  <!-- Concept badge -->
+  <div class="fixed bottom-4 right-4 z-50 hidden md:block">
+    <span class="font-mono text-[11px] tracking-widest uppercase text-mist/80 bg-plate/90 border border-seam rounded-full px-3 py-1.5 backdrop-blur">Concept-demo · Saspire</span>
+  </div>
+
+  <!-- Top bar -->
+  <div class="border-b border-seam bg-plate/60">
+    <div class="max-w-6xl mx-auto px-5 py-2 flex items-center justify-between gap-4 font-mono text-[12px] tracking-wide text-mist">
+      <p class="flex items-center gap-2"><span class="inline-block w-1.5 h-1.5 rounded-full bg-spark animate-pulse"></span>24/24 bereikbaar voor dringende interventies</p>
+      <div class="hidden sm:flex items-center gap-5">
+        <a href="tel:032161640" class="ug hover:text-bone whitespace-nowrap">03 216 16 40</a>
+        <a href="mailto:sales@antwerp-security.be" class="ug hover:text-bone hidden md:inline">sales@antwerp-security.be</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-steel/85 backdrop-blur border-b border-seam">
+    <nav class="max-w-6xl mx-auto px-5 h-[68px] flex items-center justify-between" aria-label="Hoofdnavigatie">
+      <a href="#top" class="flex items-center gap-2.5">
+        <svg width="30" height="30" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 4l9.5 4v7c0 6.2-4 10.6-9.5 12.5C10.5 25.6 6.5 21.2 6.5 15V8L16 4z" stroke="#0075be" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="16" cy="14.5" r="2.4" fill="#0075be"/>
+          <path d="M16 17v4.5" stroke="#0075be" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <span class="font-extrabold tracking-tight text-[17px]">Antwerp<span class="text-spark">-</span>Security</span>
+      </a>
+      <div class="hidden lg:flex items-center gap-8 text-[14px] font-medium text-mist">
+        <a href="#diensten" class="ug hover:text-bone">Slotenmakerij</a>
+        <a href="#parlofonie" class="ug hover:text-bone">Parlofonie &amp; videofonie</a>
+        <a href="#waarom" class="ug hover:text-bone">Waarom wij</a>
+        <a href="#contact" class="ug hover:text-bone">Contact</a>
+      </div>
+      <a href="tel:032161640" class="btn inline-flex items-center gap-2 bg-brand hover:bg-[#0d84cf] text-white font-semibold text-[14px] rounded-lg px-4 py-2.5 whitespace-nowrap">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <span class="hidden sm:inline">Bel 03 216 16 40</span><span class="sm:hidden">Bel ons</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative overflow-hidden sweep">
+    <div class="absolute inset-0" aria-hidden="true">
+      <img src="https://static.wixstatic.com/media/a33eea_72d4bbcbad384be8813e08e8262ef351~mv2.jpg/v1/fill/w_1920,h_900,al_c,q_85/antwerpen-nacht.jpg" alt="" class="w-full h-full object-cover opacity-25" loading="eager" />
+      <div class="absolute inset-0 bg-gradient-to-b from-steel/70 via-steel/80 to-steel"></div>
+      <div class="absolute inset-0" style="background: radial-gradient(900px 500px at 72% 42%, rgba(0,117,190,.16), transparent 70%);"></div>
+    </div>
+    <div class="relative max-w-6xl mx-auto px-5 min-h-[86svh] grid lg:grid-cols-12 items-center gap-10 py-16">
+      <div class="lg:col-span-7">
+        <p class="rv font-mono text-[12px] tracking-[0.22em] uppercase text-spark mb-5">Gecertificeerd slotenmaker · Lid Vlaamse Slotenmakers Unie</p>
+        <h1 class="rv rv-d1 font-black tracking-[-0.03em] leading-[1.06] text-[clamp(2.4rem,5vw,4rem)]">
+          Sluitende beveiliging voor uw woning en zaak.
+        </h1>
+        <p class="rv rv-d2 mt-6 text-mist text-lg leading-relaxed max-w-[52ch]">
+          Slotenmakerij en specialist in beveiliging, al 25 jaar in Antwerpen. Van veiligheidscilinder tot toegangscontrole, geplaatst door een vakkundig team.
+        </p>
+        <div class="rv rv-d3 mt-9 flex flex-wrap items-center gap-4">
+          <a href="tel:032161640" class="btn inline-flex items-center gap-2.5 bg-brand hover:bg-[#0d84cf] text-white font-semibold rounded-lg px-6 py-3.5">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            Bel voor interventie
+          </a>
+          <a href="#diensten" class="btn inline-flex items-center gap-2 border border-seam hover:border-mist/50 text-bone font-semibold rounded-lg px-6 py-3.5">
+            Bekijk diensten
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h16m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <div class="rv rv-d3 mt-10 flex flex-wrap gap-x-7 gap-y-2 font-mono text-[12px] text-mist">
+          <span>Ma–vr 8:30–17:00</span>
+          <span>Durletstraat 49, 2018 Antwerpen</span>
+          <span>Transparante tarieven</span>
+        </div>
+      </div>
+      <div class="lg:col-span-5 relative h-[320px] sm:h-[420px] lg:h-[520px]" aria-hidden="true">
+        <canvas id="lock3d" class="absolute inset-0 w-full h-full"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats strip -->
+  <section class="border-y border-seam bg-plate/50">
+    <div class="max-w-6xl mx-auto px-5 py-10 grid grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="rv">
+        <p class="font-black text-4xl tracking-tight"><span class="cnt" data-to="25">0</span><span class="text-spark">+</span></p>
+        <p class="mt-1.5 text-mist text-sm">jaar ervaring in deuren openen en beveiligen</p>
+      </div>
+      <div class="rv rv-d1">
+        <p class="font-black text-4xl tracking-tight">24<span class="text-spark">/</span>24</p>
+        <p class="mt-1.5 text-mist text-sm">bereikbaar voor dringende interventies</p>
+      </div>
+      <div class="rv rv-d2">
+        <p class="font-black text-4xl tracking-tight"><span class="cnt" data-to="11">0</span></p>
+        <p class="mt-1.5 text-mist text-sm">vergrendelpunten op onze veiligheidsdeuren</p>
+      </div>
+      <div class="rv rv-d3">
+        <p class="font-black text-4xl tracking-tight"><span class="cnt" data-to="20">0</span><span class="text-spark">+</span></p>
+        <p class="mt-1.5 text-mist text-sm">partners en merken waarmee we werken</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diensten bento -->
+  <section id="diensten" class="max-w-6xl mx-auto px-5 py-24">
+    <div class="flex items-end justify-between gap-6 mb-12">
+      <div>
+        <p class="rv font-mono text-[12px] tracking-[0.22em] uppercase text-spark mb-3">01 / Slotenmakerij</p>
+        <h2 class="rv rv-d1 font-black tracking-[-0.02em] text-[clamp(1.8rem,3.5vw,2.8rem)] leading-tight max-w-[24ch]">Alles wat sluit, beveiligt en toegang regelt.</h2>
+      </div>
+      <a href="tel:032161640" class="rv rv-d2 hidden md:inline-flex ug text-spark font-semibold whitespace-nowrap">Vraag advies op maat</a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+      <!-- Veiligheidsdeuren: featured -->
+      <article class="tilt rv relative md:col-span-7 rounded-2xl border border-seam bg-plate p-8 overflow-hidden">
+        <div class="glare"></div>
+        <div class="absolute -right-6 -bottom-10 font-black text-[10rem] leading-none text-bone/[.04] select-none" aria-hidden="true">11</div>
+        <svg class="text-spark mb-5" width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1.5" stroke="currentColor" stroke-width="1.7"/><circle cx="15" cy="12" r="1.3" fill="currentColor"/><path d="M8 3v18" stroke="currentColor" stroke-width="1.7"/></svg>
+        <h3 class="font-bold text-xl tracking-tight">Veiligheidsdeuren</h3>
+        <p class="mt-2.5 text-mist leading-relaxed max-w-[48ch]">Een maximum aan veiligheid met inbraakwerende deuren. Veiligheidsdeuren met veiligheidscilinder die vergrendelen op 11 plaatsen, met spion met breedhoeklens en rubberen afdichting.</p>
+        <p class="mt-5 font-mono text-[12px] tracking-wide text-spark">Inbraakwerend · 11-puntsvergrendeling</p>
+      </article>
+
+      <article class="tilt rv rv-d1 relative md:col-span-5 rounded-2xl border border-seam bg-plate p-8 overflow-hidden">
+        <div class="glare"></div>
+        <svg class="text-spark mb-5" width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="9" r="5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="9" r="1.4" fill="currentColor"/><path d="M12 13.5V21l2-1.8M12 18l-2-1.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        <h3 class="font-bold text-xl tracking-tight">Veiligheidscilinders</h3>
+        <p class="mt-2.5 text-mist leading-relaxed">Functionele, eenvoudige beveiliging met quasi onbreekbare veiligheidscilinders, ook voor de zwaarste omstandigheden.</p>
+        <p class="mt-5 font-mono text-[12px] tracking-wide text-spark">Anti-boor · anti-trek · gecertificeerd</p>
+      </article>
+
+      <article class="tilt rv relative md:col-span-4 rounded-2xl border border-seam bg-plate p-7 overflow-hidden">
+        <div class="glare"></div>
+        <svg class="text-spark mb-4" width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="10" width="16" height="10" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 10V7a4 4 0 018 0v3" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="15" r="1.4" fill="currentColor"/></svg>
+        <h3 class="font-bold text-lg tracking-tight">Sloten</h3>
+        <p class="mt-2 text-mist text-[15px] leading-relaxed">Ruim aanbod aan slotkasten, meerpuntsluitingen, elektrische sloten, magneetsloten en toebehoren.</p>
+      </article>
+
+      <article class="tilt rv rv-d1 relative md:col-span-4 rounded-2xl border border-seam bg-plate p-7 overflow-hidden">
+        <div class="glare"></div>
+        <svg class="text-spark mb-4" width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M3 9.5h18" stroke="currentColor" stroke-width="1.7"/><path d="M6.5 14.5H11" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        <h3 class="font-bold text-lg tracking-tight">Toegangscontrole</h3>
+        <p class="mt-2 text-mist text-[15px] leading-relaxed">Met badge, codeklavier, sleutelhanger of kaart. Een duidelijk zicht op wie, waar en wanneer toegang heeft.</p>
+      </article>
+
+      <article class="tilt rv rv-d2 relative md:col-span-4 rounded-2xl border border-seam bg-plate p-7 overflow-hidden">
+        <div class="glare"></div>
+        <svg class="text-spark mb-4" width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="3.4" stroke="currentColor" stroke-width="1.7"/><path d="M12 10.2v1.8l1.2 1.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <h3 class="font-bold text-lg tracking-tight">Brandkasten &amp; kluizen</h3>
+        <p class="mt-2 text-mist text-[15px] leading-relaxed">Kluizen, safes, geldkoffers en inbraak- en brandwerende brandkasten van diverse merken.</p>
+      </article>
+
+      <article class="tilt rv relative md:col-span-3 rounded-2xl border border-seam bg-plate p-7 overflow-hidden">
+        <div class="glare"></div>
+        <svg class="text-spark mb-4" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="1.5" stroke="currentColor" stroke-width="1.7"/><path d="M12 4v16M4 12h16" stroke="currentColor" stroke-width="1.7"/></svg>
+        <h3 class="font-bold text-[17px] tracking-tight">Raam- &amp; kelderbeveiliging</h3>
+        <p class="mt-2 text-mist text-sm leading-relaxed">Bescherm uw woning van kelder tot dak: vensters, verandadeuren en kelderroosters.</p>
+      </article>
+
+      <article class="tilt rv rv-d1 relative md:col-span-3 rounded-2xl border border-seam bg-plate p-7 overflow-hidden">
+        <div class="glare"></div>
+        <svg class="text-spark mb-4" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 16V8a1 1 0 011-1h9l4 3h3a1 1 0 011 1v5" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="7.5" cy="16.5" r="1.8" stroke="currentColor" stroke-width="1.7"/><circle cx="16.5" cy="16.5" r="1.8" stroke="currentColor" stroke-width="1.7"/></svg>
+        <h3 class="font-bold text-[17px] tracking-tight">Sloten bestelwagens</h3>
+        <p class="mt-2 text-mist text-sm leading-relaxed">Uw bestelwagen is een schat aan materiaal. Beveilig hem met extra sloten.</p>
+      </article>
+
+      <article class="tilt rv rv-d2 relative md:col-span-3 rounded-2xl border border-seam bg-plate p-7 overflow-hidden">
+        <div class="glare"></div>
+        <svg class="text-spark mb-4" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 20V6a2 2 0 012-2h8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M14 4h4a2 2 0 012 2v3h-6V4z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M4 13h6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        <h3 class="font-bold text-[17px] tracking-tight">Deur- &amp; vloerpompen</h3>
+        <p class="mt-2 text-mist text-sm leading-relaxed">Deursluiters met schaararm, glijarm of vastzetfunctie. Dorma vloerpompen voor maximaal comfort.</p>
+      </article>
+
+      <article class="tilt rv rv-d3 relative md:col-span-3 rounded-2xl border border-seam bg-plate p-7 overflow-hidden">
+        <div class="glare"></div>
+        <svg class="text-spark mb-4" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l8 3.5v5.5c0 4.8-3.2 8.2-8 9.5-4.8-1.3-8-4.7-8-9.5V6.5L12 3z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 12l2 2 4-4.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 class="font-bold text-[17px] tracking-tight">Veiligheidsbeslag</h3>
+        <p class="mt-2 text-mist text-sm leading-relaxed">Bescherm uw cilinder tegen afbreken of trekken met hoogwaardig beslag en rozassen.</p>
+      </article>
+    </div>
+
+    <!-- Overige diensten -->
+    <div class="rv mt-10 flex flex-wrap items-center gap-2.5">
+      <span class="font-mono text-[12px] tracking-wide text-mist mr-2">Ook bij ons:</span>
+      <span class="text-[13px] border border-seam rounded-full px-3.5 py-1.5 text-mist">Graveerwerk</span>
+      <span class="text-[13px] border border-seam rounded-full px-3.5 py-1.5 text-mist">Nummerplaten</span>
+      <span class="text-[13px] border border-seam rounded-full px-3.5 py-1.5 text-mist">Afstandsbedieningen</span>
+      <span class="text-[13px] border border-seam rounded-full px-3.5 py-1.5 text-mist">Fietssloten</span>
+      <span class="text-[13px] border border-seam rounded-full px-3.5 py-1.5 text-mist">Rook- en CO2-melders</span>
+      <span class="text-[13px] border border-seam rounded-full px-3.5 py-1.5 text-mist">Sleutelbeheer</span>
+    </div>
+  </section>
+
+  <!-- Parlofonie -->
+  <section id="parlofonie" class="border-y border-seam bg-plate/40">
+    <div class="max-w-6xl mx-auto px-5 py-24 grid lg:grid-cols-2 gap-14 items-center">
+      <div>
+        <p class="rv font-mono text-[12px] tracking-[0.22em] uppercase text-spark mb-3">02 / Parlofonie &amp; videofonie</p>
+        <h2 class="rv rv-d1 font-black tracking-[-0.02em] text-[clamp(1.8rem,3.5vw,2.8rem)] leading-tight">Intratone-specialist voor appartementen en mede-eigendom.</h2>
+        <p class="rv rv-d2 mt-5 text-mist leading-relaxed max-w-[54ch]">Volledig gamma van het merk Intratone: intercoms, proximitylezers, badges en afstandsbedieningen, sleutelkluizen en sleutelkasten, info displays, toetsenborden en intrabox. Beheer op afstand, zonder bedrading naar elk appartement.</p>
+        <ul class="rv rv-d3 mt-7 space-y-3 text-[15px]">
+          <li class="flex gap-3"><svg class="text-spark shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Badges toevoegen of blokkeren vanop afstand, ideaal voor syndici</li>
+          <li class="flex gap-3"><svg class="text-spark shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Videofonie rechtstreeks op de smartphone van de bewoner</li>
+          <li class="flex gap-3"><svg class="text-spark shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Plaatsing en onderhoud door ons eigen team</li>
+        </ul>
+        <a href="tel:032161640" class="rv rv-d3 btn mt-9 inline-flex items-center gap-2 border border-brand/60 hover:bg-brand hover:text-white text-spark font-semibold rounded-lg px-6 py-3.5">Plan een plaatsbezoek</a>
+      </div>
+      <!-- Interactive intercom -->
+      <div class="rv rv-d2 justify-self-center w-full max-w-[340px]" aria-hidden="true">
+        <div class="rounded-[22px] border border-seam bg-gradient-to-b from-[#161e28] to-[#0c1218] p-7 shadow-[0_30px_80px_-20px_rgba(0,0,0,.8)]">
+          <div class="rounded-xl bg-steel border border-seam p-4 mb-6">
+            <p class="font-mono text-[11px] tracking-[0.18em] text-spark uppercase mb-1">Intratone</p>
+            <p id="icom-display" class="font-mono text-[13px] text-bone min-h-[20px]">Kies een appartement…</p>
+          </div>
+          <div class="grid grid-cols-3 gap-3">
+            <button class="icall aspect-square rounded-lg border border-seam bg-plate font-mono text-sm text-mist" data-ap="101">101</button>
+            <button class="icall aspect-square rounded-lg border border-seam bg-plate font-mono text-sm text-mist" data-ap="102">102</button>
+            <button class="icall aspect-square rounded-lg border border-seam bg-plate font-mono text-sm text-mist" data-ap="103">103</button>
+            <button class="icall aspect-square rounded-lg border border-seam bg-plate font-mono text-sm text-mist" data-ap="201">201</button>
+            <button class="icall aspect-square rounded-lg border border-seam bg-plate font-mono text-sm text-mist" data-ap="202">202</button>
+            <button class="icall aspect-square rounded-lg border border-seam bg-plate font-mono text-sm text-mist" data-ap="203">203</button>
+          </div>
+          <div class="mt-6 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-spark/70"></span>
+              <span class="font-mono text-[11px] text-mist">camera actief</span>
+            </div>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" class="text-mist"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+        </div>
+        <p class="text-center mt-4 font-mono text-[11px] text-mist/70">Interactief: druk op een appartement</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Waarom / team -->
+  <section id="waarom" class="max-w-6xl mx-auto px-5 py-24 grid lg:grid-cols-2 gap-14 items-center">
+    <figure class="rv relative rounded-2xl overflow-hidden border border-seam">
+      <img src="https://static.wixstatic.com/media/a33eea_aa0f1da5e09849edaf11b2758b43c683~mv2.jpg/v1/fill/w_1200,h_800,al_c,q_85/team-antwerp-security.jpg" alt="Het vakkundige team van slotenmakers van Antwerp-Security" class="w-full h-full object-cover" loading="lazy" />
+      <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-steel/95 to-transparent p-5 pt-14">
+        <p class="font-mono text-[12px] tracking-wide text-spark">Ons team, Durletstraat 49</p>
+      </figcaption>
+    </figure>
+    <div>
+      <p class="rv font-mono text-[12px] tracking-[0.22em] uppercase text-spark mb-3">03 / Waarom Antwerp-Security</p>
+      <h2 class="rv rv-d1 font-black tracking-[-0.02em] text-[clamp(1.8rem,3.5vw,2.8rem)] leading-tight">Vakmensen die u rechtstreeks aan de lijn krijgt.</h2>
+      <p class="rv rv-d2 mt-5 text-mist leading-relaxed max-w-[56ch]">Geen callcenter, geen onderaannemers. U belt en krijgt een slotenmaker aan de lijn die kwaliteit vooropstelt, met eerlijke en transparante tarieven, zonder verrassingen achteraf.</p>
+      <ul class="rv rv-d3 mt-8 grid sm:grid-cols-2 gap-x-8 gap-y-4 text-[15px]">
+        <li class="flex gap-3"><span class="text-spark font-mono">01</span>Rechtstreeks contact</li>
+        <li class="flex gap-3"><span class="text-spark font-mono">02</span>24/24 bereikbaar</li>
+        <li class="flex gap-3"><span class="text-spark font-mono">03</span>Transparant in prijzen</li>
+        <li class="flex gap-3"><span class="text-spark font-mono">04</span>Vakkundig team van slotenmakers</li>
+        <li class="flex gap-3"><span class="text-spark font-mono">05</span>Lid van de Vlaamse Slotenmakers Unie</li>
+        <li class="flex gap-3"><span class="text-spark font-mono">06</span>Gecertificeerd slotenmaker</li>
+      </ul>
+      <div class="rv rv-d3 mt-8 flex flex-wrap gap-3 font-mono text-[12px] text-mist">
+        <span class="border border-seam rounded px-3 py-1.5">Gedragscode VSU + FOD Economie ondertekend</span>
+        <span class="border border-seam rounded px-3 py-1.5">Vaste werkbon bij elke dringende interventie</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Review + referenties -->
+  <section class="border-y border-seam bg-plate/40 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-5 py-20">
+      <blockquote class="rv max-w-3xl mx-auto text-center">
+        <div class="flex justify-center gap-1 mb-5" aria-label="5 van 5 sterren">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#4fb3f6"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.7 5.8 21.2l1.4-7L2 9.4l7-.8L12 2z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#4fb3f6"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.7 5.8 21.2l1.4-7L2 9.4l7-.8L12 2z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#4fb3f6"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.7 5.8 21.2l1.4-7L2 9.4l7-.8L12 2z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#4fb3f6"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.7 5.8 21.2l1.4-7L2 9.4l7-.8L12 2z"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#4fb3f6"><path d="M12 2l3 6.6 7 .8-5.2 4.8 1.4 7L12 17.7 5.8 21.2l1.4-7L2 9.4l7-.8L12 2z"/></svg>
+        </div>
+        <p class="text-[clamp(1.15rem,2vw,1.5rem)] leading-relaxed font-medium">"Zeer stipte en betrouwbare dienstverlening, veel vakkennis in huis, correcte prijzen. Ze werken heel professioneel en zijn bovendien nog aangename mensen ook!"</p>
+        <footer class="mt-5 font-mono text-[13px] text-mist">Sonja Van Dessel · Google-review</footer>
+      </blockquote>
+    </div>
+    <div class="marquee border-t border-seam py-6" aria-label="Referenties en partners">
+      <div class="marquee-track gap-14 px-7 font-semibold text-mist/70 text-lg whitespace-nowrap">
+        <span>Intratone</span><span>Dorma</span><span>Secutec</span><span>Koca School</span><span>Original Immo</span><span>Vlaamse Slotenmakers Unie</span><span class="text-mist/40">+ 20 partners</span>
+        <span>Intratone</span><span>Dorma</span><span>Secutec</span><span>Koca School</span><span>Original Immo</span><span>Vlaamse Slotenmakers Unie</span><span class="text-mist/40">+ 20 partners</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-5 py-24">
+    <div class="grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-5">
+        <p class="rv font-mono text-[12px] tracking-[0.22em] uppercase text-spark mb-3">04 / Contact</p>
+        <h2 class="rv rv-d1 font-black tracking-[-0.02em] text-[clamp(1.8rem,3.5vw,2.8rem)] leading-tight">Binnenlopen mag, bellen gaat sneller.</h2>
+        <p class="rv rv-d2 mt-5 text-mist leading-relaxed">Voor dringende interventies zijn we 24/24 bereikbaar. In de winkel helpen we u van maandag tot vrijdag, van 8:30 tot 17:00.</p>
+        <div class="rv rv-d3 mt-8 space-y-4">
+          <a href="tel:032161640" class="btn flex items-center gap-4 rounded-xl border border-seam bg-plate p-5 hover:border-brand/60">
+            <svg class="text-spark shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <span><span class="block font-bold">03 216 16 40</span><span class="text-mist text-sm">24/24 voor dringende interventies</span></span>
+          </a>
+          <a href="mailto:sales@antwerp-security.be" class="btn flex items-center gap-4 rounded-xl border border-seam bg-plate p-5 hover:border-brand/60">
+            <svg class="text-spark shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            <span><span class="block font-bold">sales@antwerp-security.be</span><span class="text-mist text-sm">Offertes en vragen</span></span>
+          </a>
+          <a href="https://maps.google.com/?q=Durletstraat+49,+2018+Antwerpen" target="_blank" rel="noopener" class="btn flex items-center gap-4 rounded-xl border border-seam bg-plate p-5 hover:border-brand/60">
+            <svg class="text-spark shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.8 7-11a7 7 0 10-14 0c0 5.2 7 11 7 11z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg>
+            <span><span class="block font-bold">Durletstraat 49, 2018 Antwerpen</span><span class="text-mist text-sm">Route via Google Maps</span></span>
+          </a>
+        </div>
+      </div>
+      <div class="lg:col-span-7">
+        <div class="rv rv-d2 rounded-2xl border border-seam bg-plate p-8 h-full">
+          <p class="font-mono text-[12px] tracking-[0.18em] uppercase text-spark mb-6">Openingsuren</p>
+          <dl class="space-y-3.5 text-[15px]">
+            <div class="flex justify-between border-b border-seam pb-3.5"><dt class="text-mist">Maandag t/m vrijdag</dt><dd class="font-semibold font-mono">8:30 – 17:00</dd></div>
+            <div class="flex justify-between border-b border-seam pb-3.5"><dt class="text-mist">Zaterdag en zondag</dt><dd class="font-semibold font-mono">Gesloten</dd></div>
+            <div class="flex justify-between"><dt class="text-mist">Dringende interventies</dt><dd class="font-semibold font-mono text-spark">24/24</dd></div>
+          </dl>
+          <div class="mt-8 rounded-xl overflow-hidden border border-seam">
+            <img src="https://static.wixstatic.com/media/a33eea_72d4bbcbad384be8813e08e8262ef351~mv2.jpg/v1/fill/w_1200,h_500,al_c,q_85/antwerpen-skyline.jpg" alt="Antwerpen bij nacht" class="w-full h-[220px] object-cover" loading="lazy" />
+          </div>
+          <p class="mt-6 font-mono text-[12px] text-mist">BTW BE 0876.087.271 · Werkbon en tarievenlijst beschikbaar bij elke dringende interventie</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-seam bg-plate/60">
+    <div class="max-w-6xl mx-auto px-5 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      <div>
+        <p class="font-extrabold tracking-tight">Antwerp<span class="text-spark">-</span>Security</p>
+        <p class="mt-1.5 text-mist text-sm">Durletstraat 49, 2018 Antwerpen · BTW BE 0876.087.271</p>
+      </div>
+      <div class="font-mono text-[12px] text-mist/80 max-w-md">
+        <p>Concept-herontwerp door <a href="mailto:nicolas@saspire.org" class="ug text-spark">Saspire</a> als vrijblijvend voorstel. Dit is niet de officiële website van Antwerp-Security.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile call bar -->
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden bg-brand text-white">
+    <a href="tel:032161640" class="flex items-center justify-center gap-2.5 py-3.5 font-semibold">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      Dringend? Bel 03 216 16 40
+    </a>
+  </div>
+
+  <script>
+    document.documentElement.classList.add('js');
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Scroll reveal
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+    // Counters
+    const cio = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        cio.unobserve(e.target);
+        const to = +e.target.dataset.to;
+        if (reduced) { e.target.textContent = to; return; }
+        const t0 = performance.now(), dur = 1200;
+        const tick = (t) => {
+          const p = Math.min(1, (t - t0) / dur);
+          e.target.textContent = Math.round(to * (1 - Math.pow(1 - p, 3)));
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      });
+    }, { threshold: 0.6 });
+    document.querySelectorAll('.cnt').forEach(el => cio.observe(el));
+
+    // 3D tilt cards
+    if (!reduced && matchMedia('(pointer:fine)').matches) {
+      document.querySelectorAll('.tilt').forEach(card => {
+        card.addEventListener('pointermove', (ev) => {
+          const r = card.getBoundingClientRect();
+          const x = (ev.clientX - r.left) / r.width, y = (ev.clientY - r.top) / r.height;
+          card.style.transform = `perspective(900px) rotateX(${(0.5 - y) * 6}deg) rotateY(${(x - 0.5) * 8}deg) translateY(-2px)`;
+          card.style.setProperty('--gx', `${x * 100}%`);
+          card.style.setProperty('--gy', `${y * 100}%`);
+        });
+        card.addEventListener('pointerleave', () => { card.style.transform = ''; });
+      });
+    }
+
+    // Intercom demo
+    const disp = document.getElementById('icom-display');
+    document.querySelectorAll('.icall').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.icall').forEach(b => b.classList.remove('lit'));
+        btn.classList.add('lit');
+        disp.textContent = 'Bellen naar app. ' + btn.dataset.ap + ' …';
+        setTimeout(() => { disp.textContent = 'App. ' + btn.dataset.ap + ': deur geopend ✓'; }, 1400);
+      });
+    });
+  </script>
+
+  <!-- Hero 3D padlock (Three.js) -->
+  <script type="module">
+    const canvas = document.getElementById('lock3d');
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    try {
+      const THREE = await import('three');
+      const { RoomEnvironment } = await import('three/addons/environments/RoomEnvironment.js');
+
+      const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+      renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(38, 1, 0.1, 50);
+      camera.position.set(0, 0.2, 6.2);
+
+      const pmrem = new THREE.PMREMGenerator(renderer);
+      scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.05).texture;
+
+      const steel = new THREE.MeshStandardMaterial({ color: 0x9fb0bf, metalness: 0.85, roughness: 0.3 });
+      const dark  = new THREE.MeshStandardMaterial({ color: 0x11161d, metalness: 0.6, roughness: 0.45 });
+      const blue  = new THREE.MeshStandardMaterial({ color: 0x0075be, metalness: 0.55, roughness: 0.35, emissive: 0x00263d });
+
+      const lock = new THREE.Group();
+
+      // Body: extruded rounded square
+      const s = new THREE.Shape();
+      const w = 1.5, h = 1.3, r = 0.28;
+      s.moveTo(-w/2 + r, -h/2);
+      s.lineTo(w/2 - r, -h/2); s.quadraticCurveTo(w/2, -h/2, w/2, -h/2 + r);
+      s.lineTo(w/2, h/2 - r);  s.quadraticCurveTo(w/2, h/2, w/2 - r, h/2);
+      s.lineTo(-w/2 + r, h/2); s.quadraticCurveTo(-w/2, h/2, -w/2, h/2 - r);
+      s.lineTo(-w/2, -h/2 + r); s.quadraticCurveTo(-w/2, -h/2, -w/2 + r, -h/2);
+      const bodyGeo = new THREE.ExtrudeGeometry(s, { depth: 0.55, bevelEnabled: true, bevelThickness: 0.06, bevelSize: 0.06, bevelSegments: 4, curveSegments: 24 });
+      bodyGeo.center();
+      const body = new THREE.Mesh(bodyGeo, steel);
+      body.position.y = -0.35;
+      lock.add(body);
+
+      // Shackle
+      const shp = new THREE.Group();
+      const arc = new THREE.Mesh(new THREE.TorusGeometry(0.52, 0.105, 24, 64, Math.PI), steel);
+      const legL = new THREE.Mesh(new THREE.CylinderGeometry(0.105, 0.105, 0.5, 24), steel);
+      const legR = legL.clone();
+      legL.position.set(-0.52, -0.25, 0); legR.position.set(0.52, -0.25, 0);
+      shp.add(arc, legL, legR);
+      shp.position.y = 0.62;
+      lock.add(shp);
+
+      // Cylinder face + keyhole
+      const face = new THREE.Mesh(new THREE.CylinderGeometry(0.34, 0.34, 0.1, 40), blue);
+      face.rotation.x = Math.PI / 2; face.position.set(0, -0.32, 0.36);
+      const khTop = new THREE.Mesh(new THREE.CylinderGeometry(0.085, 0.085, 0.09, 24), dark);
+      khTop.rotation.x = Math.PI / 2; khTop.position.set(0, -0.24, 0.4);
+      const khSlot = new THREE.Mesh(new THREE.BoxGeometry(0.075, 0.3, 0.09), dark);
+      khSlot.position.set(0, -0.42, 0.4);
+      lock.add(face, khTop, khSlot);
+
+      // Orbit ring accent
+      const ring = new THREE.Mesh(new THREE.TorusGeometry(1.75, 0.012, 8, 120), blue);
+      ring.rotation.x = Math.PI / 2.35;
+      lock.add(ring);
+
+      lock.rotation.x = 0.12;
+      scene.add(lock);
+
+      const key = new THREE.DirectionalLight(0xffffff, 1.6); key.position.set(3, 4, 5);
+      const rim = new THREE.DirectionalLight(0x4fb3f6, 2.2); rim.position.set(-4, -1, -3);
+      scene.add(key, rim, new THREE.AmbientLight(0x22303c, 1.2));
+
+      let mx = 0, my = 0;
+      if (!reduced) {
+        addEventListener('pointermove', (e) => {
+          mx = (e.clientX / innerWidth - 0.5);
+          my = (e.clientY / innerHeight - 0.5);
+        }, { passive: true });
+      }
+
+      const fit = () => {
+        const { clientWidth: cw, clientHeight: ch } = canvas;
+        renderer.setSize(cw, ch, false);
+        camera.aspect = cw / ch; camera.updateProjectionMatrix();
+      };
+      new ResizeObserver(fit).observe(canvas); fit();
+
+      let raf;
+      const loop = () => {
+        lock.rotation.y += 0.004;
+        ring.rotation.z += 0.002;
+        lock.rotation.x += ((0.12 + my * 0.35) - lock.rotation.x) * 0.05;
+        lock.position.x = mx * 0.3;
+        renderer.render(scene, camera);
+        raf = requestAnimationFrame(loop);
+      };
+      if (reduced) { renderer.render(scene, camera); }
+      else {
+        loop();
+        // Pause rendering when hero is off-screen
+        new IntersectionObserver(([e]) => {
+          if (e.isIntersecting) { if (!raf) loop(); }
+          else { cancelAnimationFrame(raf); raf = null; }
+        }).observe(canvas);
+      }
+    } catch (err) {
+      canvas.style.display = 'none';
+      console.warn('3D uitgeschakeld:', err);
+    }
+  </script>
+<script id="sx-enhance">
+// Saspire demo enhancer — progressive, dependency-free interactivity layer.
+// Injected inline before the closing body tag in every poc- demo folder.
+// Design rules: namespaced (sx-), guards every hook, never throws, degrades
+// silently if a demo lacks a given element. Safe on file://, localhost, github.io.
+// Mirrors the scroll-reveal safety philosophy of the demos.
+(function () {
+  'use strict';
+  if (window.__sxEnhanced) return;            // idempotent
+  window.__sxEnhanced = true;
+  var D = document;
+  var ready = function (fn) {
+    if (D.readyState === 'loading') D.addEventListener('DOMContentLoaded', fn);
+    else fn();
+  };
+  var make = function (tag, cls, html) {
+    var e = D.createElement(tag);
+    if (cls) e.className = cls;
+    if (html != null) e.innerHTML = html;
+    return e;
+  };
+  var brand = function () {
+    try {
+      var s = getComputedStyle(D.documentElement);
+      var pick = ['--accent', '--primary', '--brand', '--gold', '--color-accent', '--color-primary'];
+      for (var i = 0; i < pick.length; i++) {
+        var v = s.getPropertyValue(pick[i]).trim();
+        if (v) return v;
+      }
+      // fall back to the first coloured button/link
+      var b = D.querySelector('.btn-primary, [class*="btn"], a[class*="cta"]');
+      if (b) { var bg = getComputedStyle(b).backgroundColor; if (bg && bg !== 'rgba(0, 0, 0, 0)') return bg; }
+    } catch (e) {}
+    return '#111';
+  };
+
+  ready(function () {
+    var ACCENT = brand();
+
+    /* ---- shared stylesheet (namespaced) ---------------------------------- */
+    var css = [
+      '.sx-progress{position:fixed;top:0;left:0;height:3px;width:0;z-index:9999;background:' + ACCENT + ';transition:width .1s linear;box-shadow:0 0 8px ' + ACCENT + '55}',
+      '.sx-top{position:fixed;right:20px;bottom:20px;width:46px;height:46px;border-radius:50%;border:0;cursor:pointer;background:' + ACCENT + ';color:#fff;font-size:20px;line-height:46px;text-align:center;opacity:0;pointer-events:none;transform:translateY(10px);transition:.25s;z-index:9998;box-shadow:0 6px 20px rgba(0,0,0,.25)}',
+      '.sx-top.on{opacity:1;pointer-events:auto;transform:none}',
+      '.sx-cta{position:fixed;left:20px;bottom:20px;z-index:9998;border:0;cursor:pointer;background:' + ACCENT + ';color:#fff;font:600 15px/1 system-ui,sans-serif;padding:14px 20px;border-radius:40px;box-shadow:0 8px 24px rgba(0,0,0,.28);display:inline-flex;gap:8px;align-items:center;transition:.2s;transform:translateY(0)}',
+      '.sx-cta:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.34)}',
+      '.sx-ov{position:fixed;inset:0;z-index:10000;background:rgba(12,12,14,.82);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:.25s;padding:20px}',
+      '.sx-ov.on{opacity:1;pointer-events:auto}',
+      '.sx-ov img{max-width:92vw;max-height:88vh;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.5);transform:scale(.96);transition:.25s}',
+      '.sx-ov.on img{transform:none}',
+      '.sx-modal{background:#fff;color:#18181b;max-width:420px;width:100%;border-radius:18px;padding:28px;box-shadow:0 24px 70px rgba(0,0,0,.4);transform:translateY(14px);transition:.25s;font-family:system-ui,sans-serif}',
+      '.sx-ov.on .sx-modal{transform:none}',
+      '.sx-modal h3{margin:0 0 4px;font-size:20px;font-weight:700}',
+      '.sx-modal p{margin:0 0 18px;font-size:14px;color:#52525b}',
+      '.sx-modal label{display:block;font-size:12px;font-weight:600;margin:12px 0 5px;color:#3f3f46}',
+      '.sx-modal input,.sx-modal textarea{width:100%;box-sizing:border-box;border:1px solid #d4d4d8;border-radius:10px;padding:11px 12px;font-size:14px;font-family:inherit;outline:none;transition:.15s}',
+      '.sx-modal input:focus,.sx-modal textarea:focus{border-color:' + ACCENT + ';box-shadow:0 0 0 3px ' + ACCENT + '22}',
+      '.sx-modal .sx-err{border-color:#ef4444!important;box-shadow:0 0 0 3px #ef444422!important}',
+      '.sx-submit{margin-top:18px;width:100%;border:0;cursor:pointer;background:' + ACCENT + ';color:#fff;font:600 15px/1 inherit;padding:13px;border-radius:10px;transition:.2s}',
+      '.sx-submit:hover{filter:brightness(1.08)}',
+      '.sx-x{position:absolute;top:14px;right:16px;border:0;background:none;font-size:22px;cursor:pointer;color:#a1a1aa;line-height:1}',
+      '.sx-ok{text-align:center;padding:14px 0}',
+      '.sx-ok .sx-check{width:56px;height:56px;border-radius:50%;background:' + ACCENT + ';color:#fff;font-size:30px;line-height:56px;margin:0 auto 14px}',
+      '.sx-toast{position:fixed;left:50%;bottom:30px;transform:translateX(-50%) translateY(40px);background:#18181b;color:#fff;padding:13px 20px;border-radius:30px;font:600 14px/1 system-ui,sans-serif;z-index:10001;opacity:0;transition:.3s;box-shadow:0 10px 30px rgba(0,0,0,.3)}',
+      '.sx-toast.on{opacity:1;transform:translateX(-50%) translateY(0)}',
+      '.sx-open-badge{display:inline-flex;align-items:center;gap:6px;font:600 12px/1 system-ui,sans-serif;padding:6px 12px;border-radius:30px;margin:6px 0}',
+      '.sx-open-badge .sx-dot{width:8px;height:8px;border-radius:50%}',
+      '.sx-open .sx-dot{background:#22c55e;box-shadow:0 0 0 4px #22c55e33}.sx-open{background:#22c55e18;color:#15803d}',
+      '.sx-closed .sx-dot{background:#ef4444}.sx-closed{background:#ef444418;color:#b91c1c}',
+      '[class*="card"],[class*="cell"],[class*="item"],[class*="tile"]{transition:transform .28s ease,box-shadow .28s ease}',
+      '.sx-liftable:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.14)}',
+      '.sx-zoomable{cursor:zoom-in}',
+      '@media(max-width:640px){.sx-cta span{display:none}.sx-cta{padding:14px}}'
+    ].join('\n');
+    D.head.appendChild(make('style', 'sx-style', css)).textContent = css;
+
+    /* ---- 1. scroll progress bar ------------------------------------------ */
+    var bar = D.body.appendChild(make('div', 'sx-progress'));
+    var onScroll = function () {
+      var h = D.documentElement;
+      var p = h.scrollTop / ((h.scrollHeight - h.clientHeight) || 1);
+      bar.style.width = (p * 100).toFixed(1) + '%';
+      top.classList.toggle('on', h.scrollTop > 500);
+    };
+
+    /* ---- 2. back-to-top --------------------------------------------------- */
+    var top = D.body.appendChild(make('button', 'sx-top', '↑'));
+    top.setAttribute('aria-label', 'Terug naar boven');
+    top.onclick = function () { window.scrollTo({ top: 0, behavior: 'smooth' }); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    /* ---- 3. smooth anchor scroll + active nav ---------------------------- */
+    var navLinks = [].slice.call(D.querySelectorAll('a[href^="#"]'));
+    navLinks.forEach(function (a) {
+      var id = a.getAttribute('href');
+      if (!id || id === '#') return;
+      a.addEventListener('click', function (e) {
+        var t = D.querySelector(id);
+        if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    });
+    var sections = [].slice.call(D.querySelectorAll('section[id],[id][class*="section"]'));
+    if (sections.length && 'IntersectionObserver' in window) {
+      var so = new IntersectionObserver(function (ents) {
+        ents.forEach(function (en) {
+          if (!en.isIntersecting) return;
+          navLinks.forEach(function (a) {
+            a.classList.toggle('sx-active', a.getAttribute('href') === '#' + en.target.id);
+          });
+        });
+      }, { rootMargin: '-45% 0px -50% 0px' });
+      sections.forEach(function (s) { so.observe(s); });
+    }
+
+    /* ---- 4. animated counters (skip years) ------------------------------- */
+    var numEls = [].slice.call(D.querySelectorAll('.stat-num,.heritage-stat,[class*="stat"] [class*="num"],[class*="count"]'));
+    var countUp = function (el) {
+      var raw = el.textContent.trim();
+      var m = raw.match(/^(\D*)(\d[\d.,]*)(\D*)$/);
+      if (!m) return;
+      var digits = m[2].replace(/[.,]/g, '');
+      var target = parseInt(digits, 10);
+      if (isNaN(target) || target < 5) return;
+      if (target >= 1900 && target <= 2099 && digits.length === 4) return; // year, leave it
+      var pre = m[1], post = m[3], t0 = null, dur = 1100;
+      var step = function (ts) {
+        if (!t0) t0 = ts;
+        var p = Math.min((ts - t0) / dur, 1);
+        var val = Math.floor((1 - Math.pow(1 - p, 3)) * target);
+        el.textContent = pre + val.toLocaleString('nl-BE') + post;
+        if (p < 1) requestAnimationFrame(step);
+        else el.textContent = raw;
+      };
+      requestAnimationFrame(step);
+    };
+    if (numEls.length && 'IntersectionObserver' in window) {
+      var co = new IntersectionObserver(function (ents) {
+        ents.forEach(function (en) {
+          if (en.isIntersecting) { countUp(en.target); co.unobserve(en.target); }
+        });
+      }, { threshold: 0.6 });
+      numEls.forEach(function (n) { co.observe(n); });
+    }
+
+    /* ---- 5. card hover-lift ---------------------------------------------- */
+    [].slice.call(D.querySelectorAll('[class*="card"],[class*="cell"],[class*="tile"],[class*="pitch"],[class*="bento"]'))
+      .forEach(function (c) {
+        if (c.querySelector('input,textarea,form')) return;
+        if (c.closest('nav,header')) return;
+        c.classList.add('sx-liftable');
+      });
+
+    /* ---- 6. image lightbox ----------------------------------------------- */
+    var ov = D.body.appendChild(make('div', 'sx-ov'));
+    var closeOv = function () { ov.classList.remove('on'); ov.innerHTML = ''; };
+    ov.addEventListener('click', function (e) { if (e.target === ov) closeOv(); });
+    D.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeOv(); });
+    [].slice.call(D.querySelectorAll('img')).forEach(function (img) {
+      if (img.closest('nav,header,.sx-cta')) return;
+      if (img.naturalWidth && img.naturalWidth < 120) return;
+      if (/logo|brand|icon/i.test(img.className + ' ' + (img.alt || ''))) return;
+      img.classList.add('sx-zoomable');
+      img.addEventListener('click', function () {
+        ov.innerHTML = '';
+        var big = make('img');
+        big.src = img.currentSrc || img.src;
+        if (img.alt) big.alt = img.alt;
+        ov.appendChild(big);
+        ov.classList.add('on');
+      });
+    });
+
+    /* ---- 7. live open/gesloten badge (parses an hours table) ------------- */
+    (function () {
+      var rows = [].slice.call(D.querySelectorAll('[class*="hours-row"],[class*="opening"] li,[class*="hours"] tr'));
+      if (!rows.length) return;
+      var days = ['zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag'];
+      var now = new Date(), dayName = days[now.getDay()], mins = now.getHours() * 60 + now.getMinutes();
+      var openNow = null;
+      for (var i = 0; i < rows.length; i++) {
+        var txt = rows[i].textContent.toLowerCase();
+        if (txt.indexOf(dayName) === -1) continue;
+        if (/gesloten|closed/.test(txt)) { openNow = false; break; }
+        var times = txt.match(/(\d{1,2})[:.h](\d{2})/g);
+        if (times && times.length >= 2) {
+          var toMin = function (t) { var p = t.split(/[:.h]/); return (+p[0]) * 60 + (+p[1]); };
+          openNow = mins >= toMin(times[0]) && mins <= toMin(times[times.length - 1]);
+        }
+        break;
+      }
+      if (openNow === null) return;
+      var badge = make('div', 'sx-open-badge ' + (openNow ? 'sx-open' : 'sx-closed'),
+        '<span class="sx-dot"></span>' + (openNow ? 'Nu geopend' : 'Nu gesloten'));
+      var anchor = D.querySelector('[class*="hours"]') || rows[0].parentElement;
+      if (anchor) anchor.parentElement.insertBefore(badge, anchor);
+    })();
+
+    /* ---- 8. floating CTA + mock contact/reserve modal -------------------- */
+    var cta = D.body.appendChild(make('button', 'sx-cta', '<span>Vraag info</span>✉'));
+    cta.setAttribute('aria-label', 'Vraag info');
+    var openModal = function () {
+      ov.innerHTML = '';
+      var wrap = make('div', 'sx-modal');
+      wrap.innerHTML =
+        '<button class="sx-x" aria-label="Sluiten">×</button>' +
+        '<h3>Vraag info of maak een afspraak</h3>' +
+        '<p>Laat je gegevens achter — we reageren snel.</p>' +
+        '<form novalidate>' +
+        '<label>Naam</label><input name="naam" type="text" autocomplete="name">' +
+        '<label>E-mail</label><input name="email" type="email" autocomplete="email">' +
+        '<label>Bericht</label><textarea name="bericht" rows="3"></textarea>' +
+        '<button class="sx-submit" type="submit">Versturen</button>' +
+        '</form>';
+      ov.appendChild(wrap);
+      ov.classList.add('on');
+      wrap.querySelector('.sx-x').onclick = closeOv;
+      var form = wrap.querySelector('form');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var ok = true;
+        var naam = form.naam, email = form.email;
+        [naam, email].forEach(function (f) { f.classList.remove('sx-err'); });
+        if (!naam.value.trim()) { naam.classList.add('sx-err'); ok = false; }
+        if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email.value)) { email.classList.add('sx-err'); ok = false; }
+        if (!ok) return;
+        wrap.innerHTML = '<div class="sx-ok"><div class="sx-check">✓</div>' +
+          '<h3>Bedankt, ' + naam.value.trim().replace(/[<>&]/g, '') + '!</h3>' +
+          '<p>Dit is een demo — op de echte site landt dit meteen in je mailbox of CRM.</p></div>';
+        setTimeout(closeOv, 2600);
+      });
+      setTimeout(function () { var n = wrap.querySelector('input'); if (n) n.focus(); }, 60);
+    };
+    cta.onclick = openModal;
+    // wire any existing "contact/afspraak/bestel/reserveer" buttons to the modal too
+    [].slice.call(D.querySelectorAll('a,button')).forEach(function (el) {
+      if (el.closest('.sx-modal,.sx-cta')) return;
+      if (/afspraak|reserveer|bestel|offerte|vraag info|contacteer/i.test(el.textContent)) {
+        el.addEventListener('click', function (e) {
+          var href = el.getAttribute('href');
+          if (href && href.charAt(0) === '#') return; // let in-page anchors scroll
+          e.preventDefault(); openModal();
+        });
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
