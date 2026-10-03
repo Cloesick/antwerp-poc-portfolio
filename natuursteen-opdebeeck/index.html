@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Natuursteen Opdebeeck | Werkbladen, maatwerk &amp; grafmonumenten in Wilrijk sinds 1912</title>
+  <meta name="description" content="Familiebedrijf Natuursteen F. Opdebeeck in Wilrijk, vijfde generatie sinds 1912. Maatwerk in blauwe steen, graniet en marmer: keukenwerkbladen, badkamers, tafels, dorpels en grafmonumenten." />
+  <meta name="theme-color" content="#2b3033" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Natuursteen Opdebeeck" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Natuursteen Opdebeeck | Steengoed in maatwerk sinds 1912" />
+  <meta property="og:description" content="Keukenwerkbladen, badkamers en grafmonumenten in blauwe steen, graniet en marmer. Vraag online een werkbladofferte aan." />
+  <meta property="og:image" content="images/werkblad-spoelbak.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b3033'/%3E%3Cpath d='M7 22h18M9 22l2-12h10l2 12' stroke='%2393b876' stroke-width='2.2' fill='none'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Natuursteen F. Opdebeeck",
+    "description": "Familiebedrijf sinds 1912 voor maatwerk in natuursteen: keukenwerkbladen, badkamers, tafels, dorpels en grafmonumenten in blauwe steen, graniet en marmer.",
+    "url": "http://www.natuursteenopdebeeck.be",
+    "telephone": "+3238271047",
+    "faxNumber": "+3238258131",
+    "email": "info@natuursteenopdebeeck.be",
+    "vatID": "BE0430461254",
+    "foundingDate": "1912",
+    "image": "images/werkblad-spoelbak.jpg",
+    "logo": "images/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jules Moretuslei 480",
+      "postalCode": "2610",
+      "addressLocality": "Wilrijk",
+      "addressCountry": "BE"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:30" }
+    ],
+    "areaServed": ["Wilrijk","Antwerpen","Hoboken","Edegem","Aartselaar","Kontich","Hemiksem","Mortsel"]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        fontFamily: { sans: ['"Public Sans"', 'sans-serif'], cut: ['Marcellus', 'serif'] },
+        colors: {
+          granite: '#2b3033',
+          granite2: '#363c40',
+          honed: '#ecebe7',
+          chalk: '#f7f7f5',
+          steel: '#6b7378',
+          moss: '#93b876',   /* groen uit het logo */
+          mossd: '#4f6f3a',
+          ink: '#202426',
+        },
+      } },
+    };
+  </script>
+  <style>
+    :root { --accent: #4f6f3a; --ease: cubic-bezier(.23,1,.32,1); }
+    html { scroll-behavior: smooth; }
+    body { background: #ecebe7; }
+    h1, h2, h3 { text-wrap: balance; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), border-color .18s var(--ease), color .18s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, label:focus-within > span { outline: 2px solid #93b876; outline-offset: 3px; }
+    /* Polished granite: speckle via SVG noise */
+    .granite { background-color: #2b3033; background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1.6 -0.95'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+      radial-gradient(1100px 600px at 75% 30%, rgba(255,255,255,.07), transparent 70%); }
+    /* Letters "cut" into stone */
+    .cut { color: #e3e5e1; text-shadow: 0 -1px 0 rgba(0,0,0,.65), 0 1px 0 rgba(255,255,255,.10); }
+    .brush { background: linear-gradient(100deg, transparent 2%, rgba(147,184,118,.85) 4%, rgba(147,184,118,.85) 96%, transparent 98%) 0 72%/100% 38% no-repeat; }
+    .js .rv { opacity: 0; transform: translateY(16px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+    .js .rv.in { opacity: 1; transform: none; }
+    .opt input:checked + span { background: #2b3033; color: #f7f7f5; border-color: #2b3033; }
+    .opt input:focus-visible + span { outline: 2px solid #93b876; outline-offset: 2px; }
+    #plan rect, #plan circle, #plan ellipse { transition: all .35s var(--ease); }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .rv { opacity: 1; transform: none; transition: none; }
+      #plan rect, #plan circle, #plan ellipse, .btn { transition: none; }
+    }
+  </style>
+</head>
+<body class="text-ink font-sans antialiased selection:bg-moss/40">
+
+  <div class="fixed bottom-4 right-4 z-50 hidden md:block pointer-events-none">
+    <span class="text-[11px] font-semibold tracking-widest uppercase text-chalk bg-granite/90 rounded-full px-3 py-1.5 shadow">Concept-demo · Saspire</span>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-chalk/95 backdrop-blur border-b border-granite/10">
+    <nav class="max-w-7xl mx-auto px-5 h-[72px] flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top" class="flex items-center"><img src="images/logo.png" alt="Opdebeeck Natuursteen" class="h-10 sm:h-11 w-auto" width="142" height="44" /></a>
+      <div class="hidden lg:flex items-center gap-8 text-[15px] font-medium text-granite">
+        <a href="#maatwerk" class="hover:text-mossd">Maatwerk</a>
+        <a href="#offerte" class="hover:text-mossd">Werkbladofferte</a>
+        <a href="#grafmonumenten" class="hover:text-mossd">Grafmonumenten</a>
+        <a href="#familie" class="hover:text-mossd">Familiebedrijf</a>
+        <a href="#contact" class="hover:text-mossd">Contact</a>
+      </div>
+      <a href="tel:+3238271047" class="btn inline-flex items-center gap-2 bg-granite hover:bg-ink text-chalk font-semibold text-[14px] rounded px-4 py-2.5 whitespace-nowrap">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <span class="hidden sm:inline">03 827 10 47</span><span class="sm:hidden">Bel</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="granite text-chalk overflow-hidden">
+    <div class="max-w-7xl mx-auto px-5 py-16 lg:py-0 lg:min-h-[690px] grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-6">
+        <p class="text-[15px] text-honed/75 mb-6">Natuursteen Opdebeeck · familiebedrijf in Wilrijk</p>
+        <h1 class="cut font-cut text-[clamp(2.7rem,5.6vw,5rem)] leading-[1.02]">Steengoed in maatwerk, sinds 1912.</h1>
+        <p class="mt-7 text-[18px] leading-relaxed text-honed/85 max-w-[46ch]">
+          Keukenwerkbladen, badkamers, tafels, dorpels en grafmonumenten in blauwe steen, graniet en marmer. Wij verwerken de ruwe steen zelf tot het eindproduct.
+        </p>
+        <div class="mt-9 flex flex-wrap gap-3">
+          <a href="#offerte" class="btn inline-flex items-center bg-moss hover:bg-[#a5c78a] text-ink font-semibold rounded px-6 py-3.5">Vraag een werkbladofferte</a>
+          <a href="tel:+3238271047" class="btn inline-flex items-center border border-honed/35 hover:border-honed text-chalk font-semibold rounded px-6 py-3.5">Bel 03 827 10 47</a>
+        </div>
+        <p class="mt-8 text-[14px] text-honed/65">Ma–vr doorlopend 9–17.30 u · zaterdag op afspraak · Jules Moretuslei 480</p>
+      </div>
+      <div class="lg:col-span-6 relative h-[360px] sm:h-[460px] lg:h-[560px]">
+        <figure class="absolute right-0 top-0 w-[86%] lg:w-[88%] shadow-[0_40px_80px_-30px_rgba(0,0,0,.8)]">
+          <img src="images/werkblad-spoelbak.jpg" alt="Zwart granieten keukenwerkblad met onderbouw spoelbak, gemaakt door Opdebeeck" class="w-full aspect-[3/2] object-cover rounded-sm" width="640" height="426" />
+        </figure>
+        <figure class="absolute left-0 bottom-0 w-[52%] border-[6px] border-chalk shadow-[0_30px_60px_-20px_rgba(0,0,0,.8)]">
+          <img src="images/badkamer-meubel.jpg" alt="Badkamermeubel met natuurstenen blad" class="w-full aspect-[3/2] object-cover" width="640" height="427" />
+        </figure>
+        <div class="absolute right-2 bottom-6 sm:right-6 bg-chalk text-ink rounded-sm px-4 py-3 max-w-[210px] shadow-lg">
+          <p class="font-cut text-2xl leading-none">5 generaties</p>
+          <p class="text-[12px] text-steel mt-1">Van grafmaker tot maatwerk voor keuken en badkamer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Maatwerk -->
+  <section id="maatwerk" class="max-w-7xl mx-auto px-5 py-20">
+    <div class="grid lg:grid-cols-12 gap-10 mb-12">
+      <h2 class="rv lg:col-span-5 font-cut text-[clamp(2rem,3.8vw,3rem)] leading-[1.08]">Maatwerk in huis en rond het huis</h2>
+      <p class="rv lg:col-span-7 text-[17px] leading-relaxed text-granite max-w-[60ch]">Sinds 1987 specialiseren we ons in maatwerk voor de bouw. Onze troeven zijn blauwe steen en graniet, verwerkt volgens jouw wensen. We werken voor particulieren en in onderaanneming voor aannemers.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <article class="rv bg-chalk rounded-sm overflow-hidden border border-granite/10">
+        <img src="images/keuken-graniet.jpg" alt="Keuken met granieten werkblad en achterwand" class="w-full aspect-[4/3] object-cover" loading="lazy" />
+        <div class="p-5"><h3 class="font-cut text-xl">Keukenwerkbladen</h3><p class="mt-2 text-[15px] text-granite leading-relaxed">Op maat gezaagd, met uitsparingen voor spoelbak, kookplaat en kraan.</p></div>
+      </article>
+      <article class="rv bg-chalk rounded-sm overflow-hidden border border-granite/10">
+        <img src="images/badkamer-bad.jpg" alt="Badombouw met natuurstenen blad" class="w-full aspect-[4/3] object-cover" loading="lazy" />
+        <div class="p-5"><h3 class="font-cut text-xl">Badkamers</h3><p class="mt-2 text-[15px] text-granite leading-relaxed">Wastafelbladen, badombouwen en tabletten in één steensoort.</p></div>
+      </article>
+      <article class="rv bg-chalk rounded-sm overflow-hidden border border-granite/10">
+        <div class="granite aspect-[4/3] flex items-end p-5"><p class="font-cut text-honed/90 text-lg leading-snug">Tafels · dorpels · vensterbanken · trappen</p></div>
+        <div class="p-5"><h3 class="font-cut text-xl">Om en rond het huis</h3><p class="mt-2 text-[15px] text-granite leading-relaxed">Tafels, dorpels en toepassingen buiten, tijdloos en zeer duurzaam.</p></div>
+      </article>
+      <article class="rv bg-chalk rounded-sm overflow-hidden border border-granite/10">
+        <img src="images/grafmonument.jpg" alt="Granieten grafmonument" class="w-full aspect-[4/3] object-cover" loading="lazy" />
+        <div class="p-5"><h3 class="font-cut text-xl">Grafmonumenten</h3><p class="mt-2 text-[15px] text-granite leading-relaxed">Zerken, urnen en columbariumplaten, persoonlijk ontworpen.</p></div>
+      </article>
+    </div>
+
+    <!-- Proces: echte volgorde van hun site -->
+    <ol class="mt-16 grid md:grid-cols-3 gap-8 border-t border-granite/15 pt-10">
+      <li class="rv"><p class="font-cut text-4xl text-mossd">1</p><h3 class="mt-2 font-semibold text-lg">Samen de steen kiezen</h3><p class="mt-1.5 text-granite leading-relaxed">We zoeken met jou de ideale steensoort voor je project.</p></li>
+      <li class="rv"><p class="font-cut text-4xl text-mossd">2</p><h3 class="mt-2 font-semibold text-lg">De steen wordt besteld</h3><p class="mt-1.5 text-granite leading-relaxed">Na je keuze bestellen we de ruwe steen bij een van onze leveranciers.</p></li>
+      <li class="rv"><p class="font-cut text-4xl text-mossd">3</p><h3 class="mt-2 font-semibold text-lg">Verwerkt in eigen atelier</h3><p class="mt-1.5 text-granite leading-relaxed">We verwerken de ruwe steen tot het gewenste eindproduct en werken zorgvuldig af.</p></li>
+    </ol>
+  </section>
+
+  <!-- Werkblad-offerte -->
+  <section id="offerte" class="bg-chalk border-y border-granite/10">
+    <div class="max-w-7xl mx-auto px-5 py-20">
+      <div class="max-w-2xl mb-10">
+        <h2 class="rv font-cut text-[clamp(2rem,3.8vw,3rem)] leading-[1.08]">Teken je werkblad, zie meteen een richtprijs</h2>
+        <p class="rv mt-4 text-[17px] text-granite leading-relaxed">Kies steen, maten en uitsparingen. Het plan tekent mee. Stuur je keukenplan erbij, dan rekenen we het na en maken we een offerte.</p>
+      </div>
+      <form id="wb" class="grid lg:grid-cols-12 gap-8" novalidate>
+        <div class="lg:col-span-6 space-y-7">
+          <fieldset>
+            <legend class="font-semibold text-[15px]">Steensoort</legend>
+            <div class="mt-2.5 grid grid-cols-3 gap-2">
+              <label class="opt cursor-pointer"><input type="radio" name="steen" value="graniet" class="sr-only" checked /><span class="block border border-granite/25 rounded px-3 py-3 text-center text-[14px] font-medium">Graniet</span></label>
+              <label class="opt cursor-pointer"><input type="radio" name="steen" value="blauwe steen" class="sr-only" /><span class="block border border-granite/25 rounded px-3 py-3 text-center text-[14px] font-medium">Blauwe steen</span></label>
+              <label class="opt cursor-pointer"><input type="radio" name="steen" value="marmer" class="sr-only" /><span class="block border border-granite/25 rounded px-3 py-3 text-center text-[14px] font-medium">Marmer</span></label>
+            </div>
+          </fieldset>
+          <div class="grid grid-cols-3 gap-3">
+            <label class="block"><span class="text-[14px] font-semibold">Lengte (cm)</span><input id="w-l" type="number" min="40" max="420" value="260" class="mt-1.5 w-full border border-granite/25 rounded px-3 py-2.5 bg-white" inputmode="numeric" /></label>
+            <label class="block"><span class="text-[14px] font-semibold">Diepte (cm)</span><input id="w-d" type="number" min="30" max="120" value="62" class="mt-1.5 w-full border border-granite/25 rounded px-3 py-2.5 bg-white" inputmode="numeric" /></label>
+            <label class="block"><span class="text-[14px] font-semibold">Dikte</span>
+              <select id="w-t" class="mt-1.5 w-full border border-granite/25 rounded px-2 py-2.5 bg-white"><option value="2">2 cm</option><option value="3" selected>3 cm</option><option value="4">4 cm</option></select></label>
+          </div>
+          <fieldset>
+            <legend class="font-semibold text-[15px]">Uitsparingen</legend>
+            <div class="mt-2.5 grid sm:grid-cols-2 gap-2">
+              <label class="opt cursor-pointer"><input type="checkbox" id="u-sp" class="sr-only" checked /><span class="block border border-granite/25 rounded px-3 py-2.5 text-[14px]">Spoelbak onderbouw</span></label>
+              <label class="opt cursor-pointer"><input type="checkbox" id="u-op" class="sr-only" /><span class="block border border-granite/25 rounded px-3 py-2.5 text-[14px]">Spoelbak opbouw</span></label>
+              <label class="opt cursor-pointer"><input type="checkbox" id="u-kp" class="sr-only" checked /><span class="block border border-granite/25 rounded px-3 py-2.5 text-[14px]">Kookplaat</span></label>
+              <label class="opt cursor-pointer"><input type="checkbox" id="u-kr" class="sr-only" checked /><span class="block border border-granite/25 rounded px-3 py-2.5 text-[14px]">Kraangat</span></label>
+            </div>
+          </fieldset>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <label class="block"><span class="text-[14px] font-semibold">Randafwerking</span>
+              <select id="w-r" class="mt-1.5 w-full border border-granite/25 rounded px-3 py-2.5 bg-white"><option value="0">Recht, licht gefacetteerd</option><option value="18">Afgerond</option><option value="30">Profiel (halfrond)</option></select></label>
+            <label class="block"><span class="text-[14px] font-semibold">Plaatsing</span>
+              <select id="w-p" class="mt-1.5 w-full border border-granite/25 rounded px-3 py-2.5 bg-white"><option value="1">Ja, door Opdebeeck</option><option value="0">Nee, enkel levering</option></select></label>
+          </div>
+          <label class="block">
+            <span class="text-[14px] font-semibold">Keukenplan of foto (optioneel)</span>
+            <input id="w-f" type="file" accept="image/*,.pdf" class="mt-1.5 block w-full text-[14px] file:mr-3 file:rounded file:border-0 file:bg-granite file:text-chalk file:px-4 file:py-2.5 file:font-semibold" />
+            <span id="w-fn" class="block mt-2 text-[13px] text-steel"></span>
+            <img id="w-prev" alt="Voorbeeld van je upload" class="hidden mt-2 h-24 rounded border border-granite/15 object-cover" />
+          </label>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="lg:sticky lg:top-24 rounded-sm bg-honed border border-granite/15 p-5 sm:p-7">
+            <p class="text-[14px] font-semibold text-granite">Bovenaanzicht</p>
+            <svg id="plan" viewBox="0 0 440 170" class="mt-3 w-full h-auto" role="img" aria-label="Tekening van het werkblad">
+              <defs>
+                <pattern id="pat-graniet" width="10" height="10" patternUnits="userSpaceOnUse"><rect width="10" height="10" fill="#2e3234"/><circle cx="2" cy="3" r=".9" fill="#7c8487"/><circle cx="7" cy="7" r=".7" fill="#a3a9ab"/><circle cx="8" cy="2" r=".5" fill="#555c5f"/></pattern>
+                <pattern id="pat-blauwe" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" fill="#4a5459"/><circle cx="4" cy="5" r=".8" fill="#3a4246"/><circle cx="10" cy="11" r=".6" fill="#68737a"/><circle cx="11" cy="3" r=".5" fill="#2f363a"/></pattern>
+                <linearGradient id="pat-marmer" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0efeb"/><stop offset=".48" stop-color="#e4e2dd"/><stop offset=".5" stop-color="#b9bcbe"/><stop offset=".52" stop-color="#e6e4df"/><stop offset="1" stop-color="#dcdad4"/></linearGradient>
+              </defs>
+              <rect id="p-top" x="20" y="20" width="400" height="95" rx="2" fill="url(#pat-graniet)" stroke="#202426" stroke-width="1.5"/>
+              <rect id="p-sink" x="60" y="40" width="80" height="50" rx="8" fill="#c9cdcf" stroke="#202426" stroke-width="1.2"/>
+              <circle id="p-tap" cx="100" cy="30" r="4" fill="#ecebe7" stroke="#202426"/>
+              <rect id="p-hob" x="270" y="35" width="95" height="62" rx="3" fill="#15181a" stroke="#202426"/>
+              <g id="p-rings" fill="none" stroke="#3a3f42" stroke-width="2"><circle cx="295" cy="55" r="11"/><circle cx="340" cy="55" r="11"/><circle cx="295" cy="80" r="9"/><circle cx="340" cy="80" r="9"/></g>
+              <text id="p-lab-l" x="220" y="138" text-anchor="middle" font-family="Public Sans" font-size="12" fill="#202426">260 cm</text>
+              <text id="p-lab-d" x="8" y="70" text-anchor="middle" font-family="Public Sans" font-size="12" fill="#202426" transform="rotate(-90 8 70)">62 cm</text>
+            </svg>
+            <dl class="mt-5 grid grid-cols-2 gap-4 border-t border-granite/15 pt-5 text-[14px]" aria-live="polite">
+              <div><dt class="text-steel">Oppervlakte</dt><dd class="font-semibold text-lg"><span id="o-m2">0</span> m²</dd></div>
+              <div><dt class="text-steel">Uitsparingen</dt><dd class="font-semibold text-lg" id="o-uit">0</dd></div>
+              <div class="col-span-2"><dt class="text-steel">Richtprijs incl. btw</dt><dd class="font-cut text-[2.3rem] leading-tight text-ink" id="o-prijs">€ 0</dd>
+                <p class="text-[12px] text-steel mt-1">Voorbeeldtarieven in deze demo. De echte prijs volgt na opmeting.</p></div>
+            </dl>
+            <div id="wb-contact" class="mt-5 grid sm:grid-cols-2 gap-3">
+              <label class="block"><span class="text-[14px] font-semibold">Naam</span><input id="w-n" class="mt-1.5 w-full border border-granite/25 rounded px-3 py-2.5 bg-white" autocomplete="name" /></label>
+              <label class="block"><span class="text-[14px] font-semibold">Telefoon of e-mail</span><input id="w-c" class="mt-1.5 w-full border border-granite/25 rounded px-3 py-2.5 bg-white" autocomplete="tel" /></label>
+            </div>
+            <p id="w-err" class="hidden mt-3 text-[14px] text-[#9b2c1f]">Vul je naam en een telefoonnummer of e-mail in, dan kan Daniëlle je terugbellen.</p>
+            <button class="btn mt-5 w-full bg-granite hover:bg-ink text-chalk font-semibold rounded px-6 py-3.5">Vraag offerte aan</button>
+            <div id="wb-ok" class="hidden mt-5 rounded-sm bg-chalk border border-moss p-5">
+              <p class="font-cut text-2xl">Offerte aangevraagd</p>
+              <p id="wb-sum" class="mt-2 text-[15px] text-granite leading-relaxed"></p>
+              <p class="mt-3 text-[13px] text-steel">Dit is een concept-demo: er werd niets verzonden.</p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Grafmonumenten -->
+  <section id="grafmonumenten" class="max-w-7xl mx-auto px-5 py-20 grid lg:grid-cols-12 gap-12 items-center">
+    <figure class="rv lg:col-span-5">
+      <img src="images/grafmonument.jpg" alt="Grafmonument in graniet met zerk en urnen" class="w-full rounded-sm aspect-square object-cover" loading="lazy" />
+    </figure>
+    <div class="lg:col-span-7">
+      <h2 class="rv font-cut text-[clamp(2rem,3.8vw,3rem)] leading-[1.08]">Een gepast aandenken</h2>
+      <p class="rv mt-5 text-[17px] text-granite leading-relaxed max-w-[58ch]">Een plek om in gedachten nog dicht bij je dierbare te zijn. We maken een zerk, urne of columbariumplaat die het leven van je dierbare weerspiegelt. Een uniek en persoonlijk gedenkteken hoeft niet duurder te zijn dan een standaard monument.</p>
+      <p class="rv mt-4 text-[17px] text-granite leading-relaxed max-w-[58ch]">Het bedrijf begon in 1912 als grafmaker. Die zorg en dat geduld zitten nog altijd in elk monument.</p>
+      <a href="tel:+3238271047" class="rv btn mt-8 inline-flex border border-granite/40 hover:border-granite rounded px-6 py-3.5 font-semibold">Bel voor een rustig gesprek</a>
+    </div>
+  </section>
+
+  <!-- Familie / tijdlijn -->
+  <section id="familie" class="granite text-chalk">
+    <div class="max-w-7xl mx-auto px-5 py-20">
+      <h2 class="rv cut font-cut text-[clamp(2rem,3.8vw,3rem)] leading-[1.08] max-w-[22ch]">Vijf generaties, één familienaam</h2>
+      <ol class="mt-12 grid md:grid-cols-3 gap-10">
+        <li class="rv border-t border-moss/60 pt-6"><p class="font-cut text-5xl text-moss">1912</p><h3 class="mt-3 font-semibold text-lg">Oprichting</h3><p class="mt-2 text-honed/80 leading-relaxed">Betovergrootvader Opdebeeck start als grafmaker, vooral in graniet.</p></li>
+        <li class="rv border-t border-moss/60 pt-6"><p class="font-cut text-5xl text-moss">1987</p><h3 class="mt-3 font-semibold text-lg">Hendrik neemt over</h3><p class="mt-2 text-honed/80 leading-relaxed">Naast grafmonumenten gaat het bedrijf zich specialiseren in maatwerk voor de bouw.</p></li>
+        <li class="rv border-t border-moss/60 pt-6"><p class="font-cut text-5xl text-moss">2011</p><h3 class="mt-3 font-semibold text-lg">Mickel stapt mee in</h3><p class="mt-2 text-honed/80 leading-relaxed">Vader en zoon zorgen samen voor de zorgvuldige afwerking. Daniëlle Deelen begeleidt je persoonlijk bij je aankoop.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-7xl mx-auto px-5 py-20 grid lg:grid-cols-12 gap-10">
+    <div class="lg:col-span-6">
+      <h2 class="font-cut text-[clamp(2rem,3.8vw,3rem)] leading-[1.08]">Kom langs in Wilrijk</h2>
+      <p class="mt-4 text-[17px] text-granite leading-relaxed max-w-[50ch]">We werken voor klanten in Wilrijk, Antwerpen, Hoboken, Edegem, Aartselaar, Kontich, Hemiksem en Mortsel, en voor aannemers in de hele regio.</p>
+      <div class="mt-7 space-y-3">
+        <a href="tel:+3238271047" class="btn flex justify-between items-center bg-chalk border border-granite/15 hover:border-mossd rounded-sm px-5 py-4"><span class="font-semibold">03 827 10 47</span><span class="text-[13px] text-steel">Bellen</span></a>
+        <a href="mailto:info@natuursteenopdebeeck.be" class="btn flex justify-between items-center bg-chalk border border-granite/15 hover:border-mossd rounded-sm px-5 py-4"><span class="font-semibold break-all">info@natuursteenopdebeeck.be</span><span class="text-[13px] text-steel pl-3">Mailen</span></a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Natuursteen+Opdebeeck+Jules+Moretuslei+480+2610+Wilrijk" target="_blank" rel="noopener" class="btn flex justify-between items-center bg-chalk border border-granite/15 hover:border-mossd rounded-sm px-5 py-4"><span class="font-semibold">Jules Moretuslei 480, 2610 Wilrijk</span><span class="text-[13px] text-steel pl-3">Route</span></a>
+      </div>
+    </div>
+    <div class="lg:col-span-6 bg-chalk border border-granite/15 rounded-sm p-8">
+      <h3 class="font-cut text-2xl">Openingsuren</h3>
+      <dl class="mt-5 space-y-3 text-[15px]">
+        <div class="flex justify-between border-b border-granite/10 pb-3"><dt class="text-steel">Maandag t/m vrijdag</dt><dd class="font-semibold">doorlopend 9–17.30 u</dd></div>
+        <div class="flex justify-between border-b border-granite/10 pb-3"><dt class="text-steel">Zaterdag</dt><dd class="font-semibold">op afspraak</dd></div>
+        <div class="flex justify-between"><dt class="text-steel">Zondag</dt><dd class="font-semibold">gesloten</dd></div>
+      </dl>
+      <p class="mt-6 text-[13px] text-steel">Natuursteen F. Opdebeeck · BTW BE 0430.461.254 · fax 03 825 81 31</p>
+    </div>
+  </section>
+
+  <footer class="border-t border-granite/15 pb-20 md:pb-0">
+    <div class="max-w-7xl mx-auto px-5 py-10 flex flex-col md:flex-row justify-between gap-6">
+      <div><p class="font-cut text-xl">Natuursteen Opdebeeck</p><p class="text-[14px] text-granite mt-1">Steengoed in maatwerk sinds 1912 · Jules Moretuslei 480, 2610 Wilrijk</p></div>
+      <p class="text-[13px] text-steel max-w-md">Concept-herontwerp door <a href="mailto:nicolas@saspire.org" class="underline">Saspire</a> als vrijblijvend voorstel. Dit is niet de officiële website van Natuursteen Opdebeeck.</p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden grid grid-cols-2 text-[15px] font-semibold shadow-[0_-6px_20px_rgba(0,0,0,.15)]">
+    <a href="tel:+3238271047" class="bg-granite text-chalk py-3.5 text-center">Bel 03 827 10 47</a>
+    <a href="#offerte" class="bg-moss text-ink py-3.5 text-center">Werkbladofferte</a>
+  </div>
+
+  <script>
+    document.documentElement.classList.add('js');
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+    document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+    /* ---------- Werkblad-offerte ---------- */
+    const $ = id => document.getElementById(id);
+    // Voorbeeldtarieven voor de demo (per m² bij 3 cm, incl. zagen en polijsten)
+    const M2 = { 'graniet': 420, 'blauwe steen': 390, 'marmer': 520 };
+    const DIKTE = { 2: .85, 3: 1, 4: 1.25 };
+    const UIT = { 'u-sp': 190, 'u-op': 90, 'u-kp': 110, 'u-kr': 25 };
+    const FILL = { 'graniet': 'url(#pat-graniet)', 'blauwe steen': 'url(#pat-blauwe)', 'marmer': 'url(#pat-marmer)' };
+    const fmtE = x => '€ ' + (Math.round(x / 10) * 10).toLocaleString('nl-BE');
+    let last = {};
+    function upd() {
+      const steen = document.querySelector('input[name=steen]:checked').value;
+      const L = Math.min(420, Math.max(40, +$('w-l').value || 0)), D = Math.min(120, Math.max(30, +$('w-d').value || 0));
+      const t = +$('w-t').value, rand = +$('w-r').value, plaats = +$('w-p').value;
+      const m2 = (L * D) / 10000;
+      let prijs = m2 * M2[steen] * DIKTE[t];
+      const uit = Object.keys(UIT).filter(k => $(k).checked);
+      uit.forEach(k => prijs += UIT[k]);
+      prijs += (L / 100) * rand;                    // zichtbare voorrand
+      if (plaats) prijs += 150 + m2 * 40;
+      prijs = Math.max(prijs, 250);
+      $('o-m2').textContent = m2.toLocaleString('nl-BE', { maximumFractionDigits: 2 });
+      $('o-uit').textContent = uit.length;
+      $('o-prijs').textContent = fmtE(prijs * .9) + ' – ' + fmtE(prijs * 1.12);
+      // drawing
+      const sx = 400 / 420;
+      const w = Math.max(60, L * sx), h = Math.max(40, Math.min(110, D * 1.5));
+      const x0 = 20 + (400 - w) / 2;
+      const top = $('p-top'); top.setAttribute('x', x0); top.setAttribute('width', w); top.setAttribute('height', h); top.setAttribute('fill', FILL[steen]);
+      const sinkOn = $('u-sp').checked || $('u-op').checked;
+      const sink = $('p-sink');
+      sink.style.opacity = sinkOn ? 1 : 0;
+      sink.setAttribute('x', x0 + w * .12); sink.setAttribute('y', 20 + h * .22); sink.setAttribute('width', Math.min(80, w * .3)); sink.setAttribute('height', h * .55);
+      sink.setAttribute('rx', $('u-sp').checked ? 8 : 2);
+      sink.setAttribute('stroke-dasharray', $('u-op').checked && !$('u-sp').checked ? '4 3' : '0');
+      const tap = $('p-tap'); tap.style.opacity = $('u-kr').checked ? 1 : 0;
+      tap.setAttribute('cx', x0 + w * .12 + Math.min(80, w * .3) / 2); tap.setAttribute('cy', 20 + h * .12);
+      const hob = $('p-hob'), hw = Math.min(95, w * .3), hx = x0 + w * .88 - hw, hy = 20 + h * .18, hh = h * .62;
+      hob.style.opacity = $('u-kp').checked ? 1 : 0; hob.setAttribute('x', hx); hob.setAttribute('y', hy); hob.setAttribute('width', hw); hob.setAttribute('height', hh);
+      const rings = $('p-rings').querySelectorAll('circle');
+      $('p-rings').style.opacity = $('u-kp').checked ? 1 : 0;
+      [[.27,.3],[.73,.3],[.27,.72],[.73,.72]].forEach((p, i) => { rings[i].setAttribute('cx', hx + hw * p[0]); rings[i].setAttribute('cy', hy + hh * p[1]); rings[i].setAttribute('r', Math.min(11, hw * .12)); });
+      $('p-lab-l').textContent = L + ' cm'; $('p-lab-l').setAttribute('y', 20 + h + 20);
+      $('p-lab-d').textContent = D + ' cm'; $('p-lab-d').setAttribute('x', x0 - 10); $('p-lab-d').setAttribute('y', 20 + h / 2);
+      $('p-lab-d').setAttribute('transform', `rotate(-90 ${x0 - 10} ${20 + h / 2})`);
+      last = { steen, L, D, t, uit: uit.length, prijs: fmtE(prijs * .9) + ' – ' + fmtE(prijs * 1.12) };
+    }
+    document.querySelectorAll('#wb input, #wb select').forEach(el => { el.addEventListener('input', upd); el.addEventListener('change', upd); });
+    upd();
+    $('w-f').addEventListener('change', e => {
+      const f = e.target.files[0]; if (!f) return;
+      $('w-fn').textContent = 'Toegevoegd: ' + f.name + ' (' + Math.round(f.size / 1024) + ' kB)';
+      if (f.type.startsWith('image/')) { const r = new FileReader(); r.onload = () => { $('w-prev').src = r.result; $('w-prev').classList.remove('hidden'); }; r.readAsDataURL(f); }
+      else $('w-prev').classList.add('hidden');
+    });
+    $('wb').addEventListener('submit', e => {
+      e.preventDefault();
+      const n = $('w-n').value.trim(), c = $('w-c').value.trim();
+      if (!n || !c) { $('w-err').classList.remove('hidden'); (n ? $('w-c') : $('w-n')).focus(); return; }
+      $('w-err').classList.add('hidden');
+      const plan = $('w-f').files[0] ? ' Je keukenplan zit erbij.' : '';
+      $('wb-sum').textContent = `Bedankt ${n}. Werkblad in ${last.steen}, ${last.L} × ${last.D} cm, ${last.t} cm dik, ${last.uit} uitsparing${last.uit === 1 ? '' : 'en'}. Richtprijs ${last.prijs}.${plan} Daniëlle neemt contact op via ${c} om een opmeting in te plannen.`;
+      $('wb-ok').classList.remove('hidden');
+      $('wb-ok').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'center' });
+    });
+  </script>
+</body>
+</html>

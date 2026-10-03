@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Klimathome | Luchtverwarming in Antwerpen sinds 1977 · Merksem</title>
+  <meta name="description" content="Klimathome in Merksem: specialist in luchtverwarming sinds 1977. Vervanging van gas- en mazouttoestellen, luchtverwarming voor nieuwbouw, hybride warmtepompen en onderdelen. Hoofdverdeler van Belgische HR Top-toestellen." />
+  <link rel="canonical" href="https://www.klimathome.be/" />
+  <meta name="theme-color" content="#1f3a5f" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Klimathome" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Klimathome | Luchtverwarming in Antwerpen sinds 1977" />
+  <meta property="og:description" content="Vervang uw oude luchtverwarming door een condenserend HR Top-toestel of een hybride warmtepomp. Toonzaal en servicedienst in Merksem." />
+  <meta property="og:url" content="https://www.klimathome.be/" />
+  <meta property="og:image" content="images/klimathome-toestelwerking.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f3a5f'/%3E%3Cpath d='M6 16 16 7l10 9v9H6z' fill='none' stroke='%23fff' stroke-width='2'/%3E%3Cpath d='M11 19c2-2 4 2 6 0s3-1 4 0' stroke='%23e0283f' stroke-width='2.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HVACBusiness",
+    "name": "Klimathome BV",
+    "description": "Specialist in luchtverwarming: vervanging van gas- en mazouttoestellen, luchtverwarming nieuwbouw, hybride warmtepompen, toestellen en onderdelen. Hoofdverdeler van Belgische HR Top-toestellen.",
+    "url": "https://www.klimathome.be/",
+    "telephone": "+3236456777",
+    "email": "klimathome@telenet.be",
+    "foundingDate": "1977",
+    "image": "https://www.klimathome.be/sites/all/themes/klimathome2015/img/klimathome-showroom.jpg",
+    "logo": "https://www.klimathome.be/sites/all/themes/klimathome2015/img/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Eugeen Meeusstraat 112",
+      "postalCode": "2170",
+      "addressLocality": "Merksem",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "areaServed": ["Antwerpen", "Merksem", "Vlaanderen"],
+    "contactPoint": [
+      { "@type": "ContactPoint", "telephone": "+3236456777", "contactType": "customer service", "availableLanguage": "nl" },
+      { "@type": "ContactPoint", "telephone": "+32495531728", "contactType": "technical support", "availableLanguage": "nl" }
+    ],
+    "knowsAbout": ["Luchtverwarming", "Condenserende luchtverwarmers", "Hybride warmtepomp", "Ombouw mazout naar aardgas", "Verventa ventilatie met luchtverwarming"]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&family=Chakra+Petch:wght@500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Schibsted Grotesk"', 'system-ui', 'sans-serif'], lcd: ['"Chakra Petch"', 'monospace'] },
+          colors: {
+            navy: '#1f3a5f',
+            deep: '#132740',
+            ember: '#c8102e',
+            flame: '#e0283f',
+            casing: '#eef1f4',
+            sheet: '#f8f9fb',
+            rule: '#d9dfe6',
+            slate: '#55657a',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root { --accent: #c8102e; --ease: cubic-bezier(0.23, 1, 0.32, 1); }
+    html { scroll-behavior: smooth; }
+    body { text-rendering: optimizeLegibility; }
+    h1, h2, h3 { text-wrap: balance; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), border-color .18s var(--ease), color .18s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, label:focus-within { outline: 2px solid #e0283f; outline-offset: 3px; }
+
+    /* Louvre / grille texture: the white casing of a luchtverwarmer */
+    .grille { background-image: repeating-linear-gradient(180deg, rgba(31,58,95,.07) 0 2px, transparent 2px 9px); }
+
+    /* Warm-air ribbons in the hero */
+    .air path { stroke-dasharray: 14 22; animation: flow 3.2s linear infinite; }
+    .air path:nth-child(2) { animation-duration: 3.8s; }
+    .air path:nth-child(3) { animation-duration: 4.4s; }
+    @keyframes flow { to { stroke-dashoffset: -144; } }
+
+    /* One load sequence for the controller display */
+    .js .boot { opacity: 0; transform: translateY(10px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+    .js .booted .boot { opacity: 1; transform: none; }
+    .js .booted .boot.d2 { transition-delay: .25s; } .js .booted .boot.d3 { transition-delay: .5s; }
+
+    /* Check wizard */
+    .opt input { position: absolute; opacity: 0; pointer-events: none; }
+    .opt span { display: block; border: 1.5px solid #d9dfe6; background: #fff; border-radius: 10px; padding: .7rem .9rem; transition: border-color .15s var(--ease), background-color .15s var(--ease), color .15s var(--ease); cursor: pointer; }
+    .opt span:hover { border-color: #1f3a5f; }
+    .opt input:checked + span { border-color: #1f3a5f; background: #1f3a5f; color: #fff; }
+    .opt input:focus-visible + span { outline: 2px solid #e0283f; outline-offset: 2px; }
+    .step[hidden] { display: none; }
+    .bar i { display: block; height: 100%; background: #c8102e; transition: width .4s var(--ease); }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .air path { animation: none; stroke-dasharray: none; }
+      .js .boot { opacity: 1; transform: none; transition: none; }
+      .btn, .opt span, .bar i { transition: none; }
+    }
+  </style>
+</head>
+<body class="bg-sheet text-deep font-sans antialiased pb-14 md:pb-0">
+
+  <div class="fixed bottom-4 right-4 z-50 hidden md:block">
+    <span class="text-[11px] font-semibold tracking-widest uppercase text-white bg-deep/90 rounded-full px-3 py-1.5 shadow">Concept-demo · Saspire</span>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-rule">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-3 shrink-0" aria-label="Klimathome, naar boven">
+        <img src="images/logo.png" alt="Klimathome" width="160" height="47" class="h-9 w-auto" />
+      </a>
+      <nav class="hidden lg:flex items-center gap-7 text-[15px] font-medium text-slate" aria-label="Hoofdmenu">
+        <a href="#diensten" class="hover:text-navy">Diensten</a>
+        <a href="#check" class="hover:text-navy">Toestel-check</a>
+        <a href="#hybride" class="hover:text-navy">Hybride warmtepomp</a>
+        <a href="#over" class="hover:text-navy">Sinds 1977</a>
+        <a href="#contact" class="hover:text-navy">Contact</a>
+      </nav>
+      <a href="tel:+3236456777" class="btn inline-flex items-center gap-2 bg-ember hover:bg-flame text-white font-semibold text-[14px] rounded-lg px-4 py-2.5 whitespace-nowrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <span class="hidden sm:inline">03 645 67 77</span><span class="sm:hidden">Bel</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative overflow-hidden bg-casing">
+    <div class="absolute inset-y-0 right-0 w-1/2 grille hidden lg:block" aria-hidden="true"></div>
+    <div class="relative max-w-6xl mx-auto px-5 pt-10 pb-12 lg:pt-14 lg:pb-16 grid lg:grid-cols-[1.05fr_.95fr] gap-10 lg:gap-12 items-center">
+      <div>
+        <p class="inline-flex items-center gap-2 text-[14px] font-semibold text-navy bg-white border border-rule rounded-full pl-2 pr-3.5 py-1">
+          <span class="inline-block w-2 h-2 rounded-full bg-ember"></span> Merksem, Antwerpen · sinds 1977
+        </p>
+        <h1 class="mt-5 text-[2.35rem] leading-[1.03] sm:text-6xl lg:text-[3.55rem] font-extrabold tracking-[-0.03em] text-navy">
+          Klimathome.<br/>Luchtverwarming, en niets anders.
+        </h1>
+        <p class="mt-5 text-[17px] sm:text-lg leading-relaxed text-slate max-w-[34rem]">
+          Al bijna 50 jaar vervangen, plaatsen en onderhouden wij luchtverwarming in woningen, lofts, winkels en kantoren. Van uw oude gas- of mazouttoestel naar een condenserend HR Top-toestel of een hybride warmtepomp, met één prijs, all-in.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#check" class="btn inline-flex justify-center items-center gap-2 bg-navy hover:bg-deep text-white font-semibold rounded-lg px-6 py-3.5">Check uw huidige toestel</a>
+          <a href="tel:+3236456777" class="btn inline-flex justify-center items-center gap-2 border-2 border-navy/20 hover:border-navy text-navy font-semibold rounded-lg px-6 py-3.5">Bel 03 645 67 77</a>
+        </div>
+        <dl class="mt-10 grid grid-cols-3 gap-4 max-w-md border-t border-rule pt-6">
+          <div><dt class="text-[13px] text-slate">Opgericht</dt><dd class="text-2xl font-extrabold text-navy">1977</dd></div>
+          <div><dt class="text-[13px] text-slate">Installaties</dt><dd class="text-2xl font-extrabold text-navy">2500+</dd></div>
+          <div><dt class="text-[13px] text-slate">Rendement</dt><dd class="text-2xl font-extrabold text-navy">tot 99%</dd></div>
+        </dl>
+      </div>
+
+      <!-- Installation photo + controller display -->
+      <div class="relative" id="unit">
+        <div class="relative rounded-2xl overflow-hidden shadow-[0_30px_60px_-30px_rgba(19,39,64,.55)] border border-white">
+          <img src="images/klimathome-toestelwerking.jpg" alt="Luchtverwarmingsinstallatie in de toonzaal van Klimathome in Merksem" width="600" height="450" class="w-full h-[300px] sm:h-[420px] object-cover" />
+          <svg class="air absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 600 450" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M120 70 C 220 30, 330 110, 600 40" stroke="#e0283f" stroke-opacity=".75" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <path d="M120 95 C 240 60, 340 150, 600 95" stroke="#ff8a5c" stroke-opacity=".6" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M120 120 C 250 95, 360 180, 600 150" stroke="#ffd2b8" stroke-opacity=".55" stroke-width="3" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="absolute -bottom-6 left-4 sm:-left-8 w-[230px] sm:w-[260px] rounded-2xl bg-[#e9ecef] p-3 shadow-xl border border-white">
+          <div class="rounded-xl bg-[#0c1117] text-white px-4 py-3.5 font-lcd">
+            <div class="flex items-center justify-between text-[12px] text-white/70 boot"><span id="clock">11:07</span><span>HR Top</span></div>
+            <div class="mt-1 flex items-end justify-between boot d2">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 20c-1.5-3 1.5-4 0-7M12 20c-1.5-3 1.5-4 0-7M17 20c-1.5-3 1.5-4 0-7" stroke="#e0283f" stroke-width="2.2" stroke-linecap="round"/></svg>
+              <p class="text-[44px] leading-none font-semibold"><span id="tmp">21,0</span>°</p>
+            </div>
+            <div class="mt-2 flex justify-between text-[12px] text-white/70 boot d3"><span>Uitblaas 52°</span><span>Modulerend</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diensten -->
+  <section id="diensten" class="max-w-6xl mx-auto px-5 pt-20 pb-16">
+    <div class="max-w-2xl">
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-navy">Wat wij voor u doen</h2>
+      <p class="mt-3 text-slate text-[17px] leading-relaxed">Klimathome werkt enkel met luchtverwarming. Die specialisatie betekent kennis van elk type toestel, en onderdelen op voorraad.</p>
+    </div>
+    <div class="mt-10 grid md:grid-cols-6 gap-4">
+      <article class="md:col-span-4 relative rounded-2xl bg-navy text-white p-7 sm:p-9 overflow-hidden">
+        <h3 class="text-2xl font-bold">Vervanging toestel gas of mazout</h3>
+        <p class="mt-3 text-white/80 leading-relaxed max-w-lg">Uw oude luchtverwarmer eruit, een condenserende UDARA-luchtverwarmer erin, in up-flow of down-flow. Gaat u van mazout naar aardgas, dan regelen we samen de aansluiting van de gasmeter bij Fluvius. U krijgt een prijsopgave met een exacte prijs, all-in, en we kiezen samen een ombouwdatum.</p>
+        <a href="#check" class="btn mt-6 inline-flex items-center gap-2 bg-white text-navy font-semibold rounded-lg px-5 py-3">Start de toestel-check</a>
+      </article>
+      <article class="md:col-span-2 rounded-2xl bg-white border border-rule p-7">
+        <h3 class="text-xl font-bold text-navy">Luchtverwarming nieuwbouw</h3>
+        <p class="mt-3 text-slate leading-relaxed">Verventa: ventilatie met warmteterugwinning en geïntegreerde luchtverwarming, per kamer te regelen, ook vanop uw smartphone.</p>
+      </article>
+      <article id="hybride" class="md:col-span-2 rounded-2xl bg-white border border-rule p-7">
+        <h3 class="text-xl font-bold text-navy">Warmtepomp, hybride</h3>
+        <p class="mt-3 text-slate leading-relaxed">Een Panasonic lucht-luchtwarmtepomp (10 tot 15 kW) boven op een UDARA-gastoestel. Op koude dagen schakelt een buitenvoeler automatisch over op gas. Koelen in de zomer kan ook.</p>
+      </article>
+      <article class="md:col-span-2 rounded-2xl bg-white border border-rule p-7">
+        <h3 class="text-xl font-bold text-navy">Toestellen en onderdelen</h3>
+        <p class="mt-3 text-slate leading-relaxed">UDARA gas 10 tot 50 kW, indirect gestookte waterluchtbatterijen, klokthermostaten. Service-onderdelen op voorraad, ook voor oudere merken.</p>
+      </article>
+      <article class="md:col-span-2 rounded-2xl bg-white border border-rule p-7">
+        <h3 class="text-xl font-bold text-navy">Plaatsing en servicedienst</h3>
+        <p class="mt-3 text-slate leading-relaxed">Eigen technici vanuit Merksem. Wij plaatsen, onderhouden en herstellen, ook toestellen die wij niet zelf plaatsten.</p>
+      </article>
+    </div>
+
+    <div class="mt-12 rounded-2xl border border-rule bg-white p-6 sm:p-8">
+      <h3 class="font-bold text-navy">Ook service voor uw huidige merk</h3>
+      <p class="mt-3 text-slate leading-relaxed">Lennox · Multicalor · Brink · Sapragaz · Thermo-Air · Fedders · Horn Air · Lincoln · Lamborghini · Reznor · PGL · Ruud · Trane · Carrier · Wolf · Dejongh</p>
+    </div>
+  </section>
+
+  <!-- Signature: toestel-vervangingscheck -->
+  <section id="check" class="bg-white border-y border-rule">
+    <div class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-[.8fr_1.2fr] gap-12">
+      <div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-navy">Toestel-vervangingscheck</h2>
+        <p class="mt-4 text-slate text-[17px] leading-relaxed">Vier vragen over uw huidige luchtverwarming. U krijgt meteen een eerste advies: een condenserend HR Top-toestel, of een hybride warmtepomp. Daarna vraagt u met één klik een prijsopgave aan.</p>
+        <ul class="mt-7 space-y-3 text-[15px] text-deep">
+          <li class="flex gap-3"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-ember shrink-0"></span>Elk merk, ook als het niet meer bestaat</li>
+          <li class="flex gap-3"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-ember shrink-0"></span>Gas, propaan of mazout</li>
+          <li class="flex gap-3"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-ember shrink-0"></span>Prijsopgave met exacte prijs, all-in</li>
+        </ul>
+        <img src="images/klimathome-1865.jpg" alt="Digitaal bedieningspaneel van een HR Top-luchtverwarmer" width="600" height="384" class="mt-9 rounded-xl border border-rule w-full max-w-sm hidden lg:block" loading="lazy" />
+      </div>
+
+      <form id="wiz" class="rounded-2xl bg-casing border border-rule p-5 sm:p-8" novalidate>
+        <div class="flex items-center justify-between text-[14px] text-slate">
+          <span id="stepLabel">Vraag 1 van 4</span>
+          <span class="bar w-32 h-1.5 rounded-full bg-rule overflow-hidden"><i id="barFill" style="width:25%"></i></span>
+        </div>
+
+        <fieldset class="step mt-6" data-step="1">
+          <legend class="text-xl font-bold text-navy">Welk merk is uw huidige toestel?</legend>
+          <div class="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-2.5 text-[15px] font-medium">
+            <label class="opt relative"><input type="radio" name="merk" value="Multicalor" /><span>Multicalor</span></label>
+            <label class="opt relative"><input type="radio" name="merk" value="Lennox" /><span>Lennox</span></label>
+            <label class="opt relative"><input type="radio" name="merk" value="Brink" /><span>Brink</span></label>
+            <label class="opt relative"><input type="radio" name="merk" value="Sapragaz" /><span>Sapragaz</span></label>
+            <label class="opt relative"><input type="radio" name="merk" value="Reznor" /><span>Reznor</span></label>
+            <label class="opt relative"><input type="radio" name="merk" value="UDARA / Sphere" /><span>UDARA / Sphere</span></label>
+            <label class="opt relative"><input type="radio" name="merk" value="Ander merk" /><span>Ander merk</span></label>
+            <label class="opt relative col-span-2"><input type="radio" name="merk" value="Weet ik niet" /><span>Weet ik niet</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step mt-6" data-step="2" hidden>
+          <legend class="text-xl font-bold text-navy">Waarop draait het?</legend>
+          <div class="mt-4 grid sm:grid-cols-3 gap-2.5 text-[15px] font-medium">
+            <label class="opt relative"><input type="radio" name="brandstof" value="aardgas" /><span>Aardgas</span></label>
+            <label class="opt relative"><input type="radio" name="brandstof" value="mazout" /><span>Mazout</span></label>
+            <label class="opt relative"><input type="radio" name="brandstof" value="propaan" /><span>Propaan</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step mt-6" data-step="3" hidden>
+          <legend class="text-xl font-bold text-navy">Hoe oud is het toestel ongeveer?</legend>
+          <div class="mt-4 grid sm:grid-cols-2 gap-2.5 text-[15px] font-medium">
+            <label class="opt relative"><input type="radio" name="leeftijd" value="0-10" /><span>Jonger dan 10 jaar</span></label>
+            <label class="opt relative"><input type="radio" name="leeftijd" value="10-20" /><span>10 tot 20 jaar</span></label>
+            <label class="opt relative"><input type="radio" name="leeftijd" value="20+" /><span>Ouder dan 20 jaar</span></label>
+            <label class="opt relative"><input type="radio" name="leeftijd" value="?" /><span>Geen idee</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step mt-6" data-step="4" hidden>
+          <legend class="text-xl font-bold text-navy">Hoe goed is uw woning geïsoleerd?</legend>
+          <div class="mt-4 grid gap-2.5 text-[15px] font-medium">
+            <label class="opt relative"><input type="radio" name="isolatie" value="goed" /><span>Goed: dak, ramen en muren recent geïsoleerd</span></label>
+            <label class="opt relative"><input type="radio" name="isolatie" value="matig" /><span>Gedeeltelijk: bijvoorbeeld enkel dak of ramen</span></label>
+            <label class="opt relative"><input type="radio" name="isolatie" value="slecht" /><span>Weinig of niet geïsoleerd</span></label>
+          </div>
+        </fieldset>
+
+        <!-- Result -->
+        <div class="step mt-6" data-step="5" hidden>
+          <p class="text-[14px] font-semibold text-ember">Ons eerste advies</p>
+          <h3 id="advTitle" class="mt-1 text-2xl font-extrabold text-navy"></h3>
+          <ul id="advList" class="mt-4 space-y-2.5 text-[15px] leading-relaxed text-deep"></ul>
+          <p class="mt-4 text-[13px] text-slate">Indicatief advies. Het juiste vermogen en de opstelling bepalen we bij een plaatsbezoek.</p>
+          <div class="mt-6 grid sm:grid-cols-2 gap-3">
+            <label class="block"><span class="text-[14px] font-medium">Naam</span><input name="naam" required class="mt-1 w-full rounded-lg border border-rule bg-white px-3 py-2.5" autocomplete="name" /></label>
+            <label class="block"><span class="text-[14px] font-medium">Telefoon</span><input name="tel" required type="tel" class="mt-1 w-full rounded-lg border border-rule bg-white px-3 py-2.5" autocomplete="tel" /></label>
+            <label class="block sm:col-span-2"><span class="text-[14px] font-medium">Gemeente</span><input name="gemeente" required class="mt-1 w-full rounded-lg border border-rule bg-white px-3 py-2.5" placeholder="bv. Merksem" /></label>
+          </div>
+          <p id="formErr" class="mt-3 text-[14px] text-ember hidden" role="alert">Vul uw naam, telefoon en gemeente in, dan kunnen we u terugbellen.</p>
+        </div>
+
+        <div class="step mt-6" data-step="6" hidden>
+          <div class="rounded-xl bg-white border border-rule p-6 text-center">
+            <svg class="mx-auto" width="44" height="44" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#1f3a5f"/><path d="M7 12.5l3.2 3L17 9" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3 class="mt-3 text-xl font-bold text-navy">Prijsaanvraag ontvangen</h3>
+            <p id="okMsg" class="mt-2 text-slate"></p>
+            <p class="mt-4 text-[13px] text-slate">Dit is een concept-demo: er werd niets verzonden.</p>
+          </div>
+        </div>
+
+        <div id="nav" class="mt-8 flex items-center justify-between gap-3">
+          <button type="button" id="back" class="btn text-navy font-semibold px-2 py-2 invisible">Vorige</button>
+          <button type="button" id="next" class="btn bg-navy hover:bg-deep text-white font-semibold rounded-lg px-6 py-3 disabled:opacity-40" disabled>Volgende</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Over / trust -->
+  <section id="over" class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-2 gap-12 items-center">
+    <div class="grid grid-cols-2 gap-3">
+      <img src="images/klimathome-showroom.jpg" alt="Toonzaal van Klimathome met luchtverwarmers" width="600" height="450" class="rounded-xl col-span-2 w-full h-[260px] object-cover" loading="lazy" />
+      <img src="images/udara2.jpg" alt="UDARA condenserende luchtverwarmer" width="420" height="542" class="rounded-xl w-full h-[200px] object-cover object-top bg-white" loading="lazy" />
+      <img src="images/klimathome-bureel.jpg" alt="Kantoor van Klimathome in Merksem" width="600" height="450" class="rounded-xl w-full h-[200px] object-cover" loading="lazy" />
+    </div>
+    <div>
+      <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-navy">Sinds 1977. Sinds 1988 in Merksem.</h2>
+      <p class="mt-5 text-slate text-[17px] leading-relaxed">Klimathome werd in 1977 opgericht in Antwerpen. Tot 1987 werkten we vanuit Wuustwezel, in 1988 kochten we ons eigen pand in Merksem. Van daaruit vertrekken nog altijd onze plaatsingen en onze servicedienst.</p>
+      <p class="mt-4 text-slate text-[17px] leading-relaxed">Meer dan 40 jaar ervaring en meer dan 2500 klanten en installaties: in woningen, lofts, winkels en kantoren, nieuwbouw en ombouw.</p>
+      <div class="mt-8 flex items-center gap-5 rounded-2xl bg-white border border-rule p-5">
+        <img src="images/hrtop.jpg" alt="HR Top-label" width="150" height="60" class="h-12 w-auto" loading="lazy" />
+        <p class="text-[15px] leading-relaxed"><b class="text-navy">Hoofdverdeler van Belgische HR Top-toestellen.</b> We werken enkel met condenserende toestellen, met een verbrandingsrendement tot 98 à 99 procent.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-navy text-white">
+    <div class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-[1.1fr_.9fr] gap-12">
+      <div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Langskomen in de toonzaal of meteen bellen</h2>
+        <p class="mt-4 text-white/80 text-[17px] leading-relaxed max-w-xl">Vanuit Merksem werken we in Antwerpen en de hele regio: Merksem, Schoten, Brasschaat, Ekeren, Deurne, Wijnegem, Kapellen, Schilde en verder in Vlaanderen. Bel even voor een afspraak in de toonzaal.</p>
+        <div class="mt-8 grid sm:grid-cols-2 gap-4">
+          <a href="tel:+3236456777" class="btn rounded-xl bg-white/10 hover:bg-white/15 p-5 block"><span class="text-white/70 text-[14px]">Kantoor</span><span class="block text-2xl font-bold mt-1">03 645 67 77</span></a>
+          <a href="tel:+32495531728" class="btn rounded-xl bg-white/10 hover:bg-white/15 p-5 block"><span class="text-white/70 text-[14px]">Gsm</span><span class="block text-2xl font-bold mt-1">0495 53 17 28</span></a>
+        </div>
+        <a href="mailto:klimathome@telenet.be" class="mt-4 inline-block font-semibold underline decoration-white/30 underline-offset-4 hover:decoration-white">klimathome@telenet.be</a>
+      </div>
+      <div class="rounded-2xl bg-white text-deep p-7">
+        <h3 class="text-xl font-bold text-navy">Klimathome BV</h3>
+        <address class="not-italic mt-3 text-slate leading-relaxed">Eugeen Meeusstraat 112<br/>2170 Merksem (Antwerpen)</address>
+        <p class="mt-4 text-slate leading-relaxed">Toonzaal en servicedienst. Openingsuren: bel ons op 03 645 67 77 voor een afspraak.</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Klimathome+Eugeen+Meeusstraat+112+2170+Merksem" target="_blank" rel="noopener" class="btn mt-6 inline-flex items-center gap-2 bg-ember hover:bg-flame text-white font-semibold rounded-lg px-5 py-3">Route in Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-deep text-white/70">
+    <div class="max-w-6xl mx-auto px-5 py-8 flex flex-col md:flex-row justify-between gap-4 text-[14px]">
+      <p>Klimathome BV · Eugeen Meeusstraat 112, 2170 Merksem</p>
+      <p class="max-w-md">Concept-herontwerp door <a href="mailto:nicolas@saspire.org" class="underline">Saspire</a> als vrijblijvend voorstel. Dit is niet de officiële website van Klimathome.</p>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile call bar -->
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden bg-ember text-white">
+    <a href="tel:+3236456777" class="flex items-center justify-center gap-2.5 py-3.5 font-semibold">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      Bel Klimathome: 03 645 67 77
+    </a>
+  </div>
+
+  <script>
+    document.documentElement.classList.add('js');
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Controller display: boot once, then drift the room temperature up to setpoint
+    const unit = document.getElementById('unit');
+    requestAnimationFrame(() => unit.classList.add('booted'));
+    const clock = document.getElementById('clock');
+    const tick = () => { const d = new Date(); clock.textContent = d.toLocaleTimeString('nl-BE', { hour: '2-digit', minute: '2-digit' }); };
+    tick(); setInterval(tick, 30000);
+    const tmp = document.getElementById('tmp');
+    if (reduced) { tmp.textContent = '21,5'; } else {
+      let t = 18.0; const iv = setInterval(() => { t = Math.min(21.5, t + 0.1); tmp.textContent = t.toFixed(1).replace('.', ','); if (t >= 21.5) clearInterval(iv); }, 90);
+    }
+
+    // Vervangingscheck wizard
+    const form = document.getElementById('wiz');
+    const steps = [...form.querySelectorAll('.step')];
+    const next = document.getElementById('next'), back = document.getElementById('back');
+    const label = document.getElementById('stepLabel'), bar = document.getElementById('barFill');
+    const keys = { 1: 'merk', 2: 'brandstof', 3: 'leeftijd', 4: 'isolatie' };
+    let cur = 1;
+    const val = (n) => (form.querySelector(`input[name="${n}"]:checked`) || {}).value;
+
+    function show(n) {
+      cur = n;
+      steps.forEach(s => s.hidden = +s.dataset.step !== n);
+      back.classList.toggle('invisible', n === 1 || n === 6);
+      label.textContent = n <= 4 ? `Vraag ${n} van 4` : (n === 5 ? 'Uw advies' : 'Klaar');
+      bar.style.width = Math.min(100, n * 25) + '%';
+      next.textContent = n < 4 ? 'Volgende' : (n === 4 ? 'Toon mijn advies' : 'Vraag prijsopgave aan');
+      document.getElementById('nav').hidden = n === 6;
+      next.disabled = n <= 4 && !val(keys[n]);
+      if (n === 5) advise();
+    }
+
+    function advise() {
+      const b = val('brandstof'), a = val('leeftijd'), i = val('isolatie'), m = val('merk');
+      const items = [];
+      let title;
+      const hybride = i === 'goed';
+      if (b === 'mazout') {
+        title = hybride ? 'Ombouw naar aardgas met hybride warmtepomp' : 'Ombouw van mazout naar aardgas';
+        items.push('Een condenserende UDARA-luchtverwarmer (HR Top) op aardgas vervangt uw mazouttoestel, in up-flow of down-flow.');
+        items.push('Voor de gasmeter contacteren we samen Fluvius, voor een aansluiting op het distributienet.');
+      } else {
+        title = hybride ? 'Hybride warmtepomp met HR Top-gastoestel' : 'Vervangen door een condenserend HR Top-toestel';
+        items.push(`Een modulerende, condenserende UDARA-luchtverwarmer op ${b === 'propaan' ? 'propaan' : 'aardgas'}, met een rendement tot 98 à 99 procent.`);
+      }
+      if (hybride) items.push('Uw woning is goed geïsoleerd: een Panasonic lucht-luchtwarmtepomp verwarmt het grootste deel van het jaar, op koude dagen neemt het gastoestel automatisch over. In de zomer kan u ermee koelen.');
+      else items.push('Met beperkte isolatie raden we eerst een condenserend gastoestel aan. Een warmtepomp kan later bovenop het toestel worden geplaatst, zodra u bijkomend isoleert.');
+      if (a === '20+') items.push('Uw toestel is ouder dan 20 jaar: vervangen loont, zowel voor uw verbruik als voor de veiligheid.');
+      if (a === '0-10') items.push('Uw toestel is nog vrij jong. Misschien volstaat een onderhoud of herstelling; wij hebben service-onderdelen op voorraad.');
+      if (m && m !== 'Weet ik niet' && m !== 'Ander merk') items.push(`Wij onderhouden ook ${m}-toestellen. Bij het plaatsbezoek bekijken we of uw bestaande kanalen en roosters hergebruikt kunnen worden.`);
+      document.getElementById('advTitle').textContent = title;
+      document.getElementById('advList').innerHTML = items.map(t => `<li class="flex gap-3"><span class="mt-2 w-1.5 h-1.5 rounded-full bg-ember shrink-0"></span><span>${t}</span></li>`).join('');
+    }
+
+    form.addEventListener('change', () => { if (cur <= 4) next.disabled = !val(keys[cur]); });
+    back.addEventListener('click', () => show(Math.max(1, cur - 1)));
+    next.addEventListener('click', () => {
+      if (cur < 5) return show(cur + 1);
+      const req = ['naam', 'tel', 'gemeente'].map(n => form.elements[n]);
+      const bad = req.find(el => !el.value.trim());
+      document.getElementById('formErr').classList.toggle('hidden', !bad);
+      if (bad) { bad.focus(); return; }
+      document.getElementById('okMsg').textContent = `Bedankt ${form.elements.naam.value.trim()}. Klimathome belt u terug op ${form.elements.tel.value.trim()} om een plaatsbezoek in ${form.elements.gemeente.value.trim()} in te plannen.`;
+      show(6);
+    });
+    form.addEventListener('submit', e => e.preventDefault());
+    show(1);
+  </script>
+</body>
+</html>

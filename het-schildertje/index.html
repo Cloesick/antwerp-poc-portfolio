@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Het Schildertje | Schildersbedrijf in Schoten, zes generaties sinds 1875</title>
+  <meta name="description" content="Het Schildertje uit Schoten: allround schildersbedrijf, al zes generaties sinds 1875. Binnen- en buitenschilderwerken, behangwerken, raamdecoratie en vloerbekleding voor particulieren en bedrijven." />
+  <link rel="canonical" href="https://www.het-schildertje.be/" />
+  <meta name="theme-color" content="#2b3036" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Het Schildertje" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Het Schildertje | Schilders in Schoten sinds 1875" />
+  <meta property="og:description" content="Binnen- en buitenschilderwerk, behang, raamdecoratie en vloeren. Vraag een offerte per ruimte aan." />
+  <meta property="og:url" content="https://www.het-schildertje.be/" />
+  <meta property="og:image" content="images/binnen3.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232b3036'/%3E%3Crect x='7' y='7' width='18' height='8' rx='2' fill='%237faf4b'/%3E%3Cpath d='M25 11h2v7H16v7' stroke='%23fff' stroke-width='2' fill='none'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HousePainter",
+    "name": "Het Schildertje BV",
+    "description": "Allround schildersbedrijf voor particulieren en bedrijven: binnen- en buitenschilderwerken, behangwerken, raamdecoratie en vloerbekleding. Zes generaties sinds 1875.",
+    "url": "https://www.het-schildertje.be/",
+    "telephone": "+3236473284",
+    "email": "hetschildertje@gmail.com",
+    "foundingDate": "1875",
+    "image": "https://www.het-schildertje.be/files/images/portfolio/binnen3.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Antoon Van Dijckstraat 10",
+      "postalCode": "2900",
+      "addressLocality": "Schoten",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "areaServed": ["Schoten", "Brasschaat", "Merksem", "Wijnegem", "Schilde", "Antwerpen"],
+    "contactPoint": { "@type": "ContactPoint", "telephone": "+32475857591", "contactType": "customer service", "availableLanguage": "nl" }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { display: ['"Bricolage Grotesque"', 'sans-serif'], sans: ['Figtree', 'system-ui', 'sans-serif'] },
+          colors: {
+            ink: '#2b3036',
+            stone: '#5e6872',
+            lime: '#7faf4b',
+            moss: '#4f7d2a',
+            kalk: '#f1f2ef',
+            line: '#dde0dc',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root { --accent: #7faf4b; --ease: cubic-bezier(0.23, 1, 0.32, 1); }
+    html { scroll-behavior: smooth; }
+    h1, h2, h3 { text-wrap: balance; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), border-color .18s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid #4f7d2a; outline-offset: 3px; }
+
+    /* Colour fan: six swatches = six generations. Fanned by default, folds in on load once. */
+    .fan { position: relative; width: 104px; height: 168px; }
+    .chip { position: absolute; left: 0; bottom: 0; width: 40px; height: 156px; border-radius: 8px; transform-origin: 20px 146px; left: 30px;
+      box-shadow: 0 8px 18px -8px rgba(0,0,0,.45); border: 3px solid #fff; transform: rotate(var(--r)); }
+    .chip::after { content: ''; position: absolute; left: 50%; bottom: 10px; width: 10px; height: 10px; margin-left: -5px; border-radius: 50%; background: #fff; box-shadow: inset 0 0 0 2px rgba(0,0,0,.25); }
+    .chip b { position: absolute; top: 10px; left: 0; right: 0; text-align: center; font: 700 9px Figtree, sans-serif; color: #fff; }
+    .js .fan:not(.open) .chip { transform: rotate(0deg); }
+    .js .fan .chip { transition: transform 1.1s var(--ease); }
+    .js .fan .chip:nth-child(2) { transition-delay: .06s; } .js .fan .chip:nth-child(3) { transition-delay: .12s; }
+    .js .fan .chip:nth-child(4) { transition-delay: .18s; } .js .fan .chip:nth-child(5) { transition-delay: .24s; } .js .fan .chip:nth-child(6) { transition-delay: .3s; }
+
+    /* Before / after slider */
+    .ba { position: relative; overflow: hidden; touch-action: pan-y; user-select: none; }
+    .ba img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .ba .before { position: absolute; inset: 0; clip-path: inset(0 calc(100% - var(--pos, 50%)) 0 0); }
+    .ba .before img { filter: grayscale(.75) sepia(.35) contrast(.78) brightness(.92); }
+    .ba .handle { position: absolute; top: 0; bottom: 0; left: var(--pos, 50%); width: 3px; margin-left: -1.5px; background: #fff; pointer-events: none; }
+    .ba .knob { position: absolute; top: 50%; left: 50%; width: 46px; height: 46px; margin: -23px 0 0 -23px; border-radius: 50%; background: #fff; display: grid; place-items: center; box-shadow: 0 4px 14px rgba(0,0,0,.3); }
+    .ba input[type=range] { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: ew-resize; margin: 0; }
+    .ba input[type=range]:focus-visible ~ .handle .knob { outline: 3px solid #7faf4b; }
+
+    .opts[hidden], [hidden] { display: none !important; }
+    .room { transition: border-color .15s var(--ease), background-color .15s var(--ease); }
+    .room.on { border-color: #4f7d2a; background: #f3f8ee; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .fan .chip { transition: none; }
+      .js .fan:not(.open) .chip { transform: rotate(var(--r)); }
+      .btn, .room { transition: none; }
+    }
+  </style>
+</head>
+<body class="bg-white text-ink font-sans antialiased pb-14 md:pb-0">
+
+  <div class="fixed bottom-4 right-4 z-50 hidden md:block">
+    <span class="text-[11px] font-semibold tracking-widest uppercase text-white bg-ink/90 rounded-full px-3 py-1.5 shadow">Concept-demo · Saspire</span>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-line">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-2.5 shrink-0" aria-label="Het Schildertje, naar boven">
+        <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#2b3036"/><rect x="7" y="7" width="18" height="8" rx="2" fill="#7faf4b"/><path d="M25 11h2v7H16v7" stroke="#fff" stroke-width="2" fill="none"/></svg>
+        <span class="font-display font-extrabold text-[19px] tracking-tight">Het Schildertje</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-7 text-[15px] font-medium text-stone" aria-label="Hoofdmenu">
+        <a href="#werk" class="hover:text-ink">Wat we doen</a>
+        <a href="#voorna" class="hover:text-ink">Voor en na</a>
+        <a href="#offerte" class="hover:text-ink">Offerte</a>
+        <a href="#familie" class="hover:text-ink">Sinds 1875</a>
+        <a href="#contact" class="hover:text-ink">Contact</a>
+      </nav>
+      <a href="#offerte" class="btn hidden sm:inline-flex items-center bg-ink hover:bg-black text-white font-semibold text-[14px] rounded-full px-5 py-2.5">Offerte aanvragen</a>
+      <a href="tel:+3236473284" class="btn sm:hidden inline-flex items-center bg-ink text-white font-semibold text-[14px] rounded-full px-4 py-2">Bel</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative">
+    <div class="max-w-6xl mx-auto px-5 pt-10 pb-14 lg:pt-12 lg:pb-16 grid lg:grid-cols-[1fr_1fr] gap-10 items-center">
+      <div>
+        <p class="text-[15px] font-semibold text-moss">Schildersbedrijf in Schoten</p>
+        <h1 class="mt-3 font-display font-extrabold text-[2.6rem] leading-[1] sm:text-6xl lg:text-[4rem] tracking-[-0.035em]">
+          Het Schildertje.<br/>Zes generaties schilders, sinds 1875.
+        </h1>
+        <p class="mt-6 text-[17px] sm:text-lg leading-relaxed text-stone max-w-[33rem]">
+          Binnen- en buitenschilderwerk, behang, raamdecoratie en vloeren, voor particulieren en bedrijven. Met een degelijke voorbehandeling, uw meubels en vloeren netjes afgedekt, en duidelijke afspraken vooraf.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#offerte" class="btn inline-flex justify-center items-center bg-lime hover:bg-moss text-ink hover:text-white font-bold rounded-full px-7 py-3.5">Offerte per ruimte</a>
+          <a href="tel:+3236473284" class="btn inline-flex justify-center items-center border-2 border-ink/15 hover:border-ink font-semibold rounded-full px-7 py-3.5">Bel 03 647 32 84</a>
+        </div>
+      </div>
+
+      <div class="relative">
+        <img src="images/binnen3.jpg" alt="Geschilderde traphal met turquoise wand en witte trapleuning, werk van Het Schildertje" width="900" height="600" class="w-full h-[320px] sm:h-[460px] object-cover rounded-[28px]" />
+        <div class="absolute -bottom-8 right-4 sm:-right-6 bg-white rounded-2xl p-4 pr-5 shadow-[0_24px_50px_-24px_rgba(43,48,54,.6)] flex items-end gap-4">
+          <div class="fan open" id="fan" aria-hidden="true">
+            <span class="chip" style="--r:-34deg;background:#5e6872"></span>
+            <span class="chip" style="--r:-22deg;background:#8a5a3c"></span>
+            <span class="chip" style="--r:-10deg;background:#7c2c3f"></span>
+            <span class="chip" style="--r:2deg;background:#2f7f86"></span>
+            <span class="chip" style="--r:14deg;background:#4f7d2a"></span>
+            <span class="chip" style="--r:26deg;background:#7faf4b"></span>
+          </div>
+          <p class="pb-2 max-w-[8.5rem] text-[14px] leading-snug text-stone"><b class="block font-display text-[22px] leading-none text-ink">6 generaties</b>van 1875 tot vandaag, één familie</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wat we doen -->
+  <section id="werk" class="bg-kalk">
+    <div class="max-w-6xl mx-auto px-5 py-20">
+      <h2 class="font-display font-extrabold text-4xl sm:text-5xl tracking-tight max-w-2xl">De beste vriend van uw huis, binnen en buiten</h2>
+      <div class="mt-12 grid md:grid-cols-2 gap-5">
+        <article class="bg-white rounded-3xl overflow-hidden grid sm:grid-cols-[.9fr_1.1fr]">
+          <img src="images/binnen6.jpg" alt="Gerestaureerde trap met smeedijzeren leuning en boog" width="900" height="600" class="w-full h-56 sm:h-full object-cover" loading="lazy" />
+          <div class="p-7">
+            <h3 class="font-display text-2xl font-bold">Binnenschilderwerken</h3>
+            <p class="mt-3 text-stone leading-relaxed">Duurzaam schilderwerk staat of valt met de voorbehandeling van de ondergrond. Vloeren en meubels worden altijd zorgvuldig afgedekt en afgeplakt voor we beginnen, en we werken met de beste producten op de markt.</p>
+          </div>
+        </article>
+        <article class="bg-white rounded-3xl overflow-hidden grid sm:grid-cols-[.9fr_1.1fr]">
+          <img src="images/buiten10.jpg" alt="Bakstenen gevel met geschilderde deur en ramen" width="500" height="375" class="w-full h-56 sm:h-full object-cover" loading="lazy" />
+          <div class="p-7">
+            <h3 class="font-display text-2xl font-bold">Buitenschilderwerken</h3>
+            <p class="mt-3 text-stone leading-relaxed">Gevels, muren, ramen en deuren. Gevels worden gereinigd en geverfd met de juiste gevelverf, en we verzorgen het lakwerk van uw buitenschrijnwerk.</p>
+          </div>
+        </article>
+        <article class="bg-white rounded-3xl p-7">
+          <h3 class="font-display text-2xl font-bold">Behangwerken</h3>
+          <p class="mt-3 text-stone leading-relaxed">Fleece- en vinylbehang, glasweefsel om over te schilderen in elke kleur, meerkleurige muurverf met moderne spuitapparatuur. Kwalitatief behang in elke prijsklasse.</p>
+        </article>
+        <article class="bg-white rounded-3xl p-7 grid sm:grid-cols-2 gap-6">
+          <div>
+            <h3 class="font-display text-2xl font-bold">Raamdecoratie</h3>
+            <p class="mt-3 text-stone leading-relaxed">Glas- en overgordijnen, Japanse wanden, louvredrape, (duo-)rolgordijnen en jaloezieën.</p>
+          </div>
+          <div>
+            <h3 class="font-display text-2xl font-bold">Vloerbekleding</h3>
+            <p class="mt-3 text-stone leading-relaxed">Egaliseren of oude vloeren uitbreken, en daarna vasttapijt, parket, laminaat, Novilon of linoleum.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Voor / na -->
+  <section id="voorna" class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-[.75fr_1.25fr] gap-10 items-center">
+    <div>
+      <h2 class="font-display font-extrabold text-4xl tracking-tight">Voor en na</h2>
+      <p class="mt-4 text-stone text-[17px] leading-relaxed">Sleep over de foto. Niets overtuigt een klant sneller dan het verschil tussen de gevel van vroeger en het resultaat van vandaag.</p>
+      <div class="mt-6 flex flex-wrap gap-2" role="group" aria-label="Kies een project">
+        <button type="button" class="proj btn rounded-full border-2 border-ink bg-ink text-white px-4 py-2 text-[14px] font-semibold" data-img="images/buiten9.jpg" data-alt="Bakstenen villa met lijstwerk in natuursteen">Gevel en schrijnwerk</button>
+        <button type="button" class="proj btn rounded-full border-2 border-line px-4 py-2 text-[14px] font-semibold" data-img="images/binnen4.jpg" data-alt="Traphal met turquoise wand en houten trap">Traphal</button>
+        <button type="button" class="proj btn rounded-full border-2 border-line px-4 py-2 text-[14px] font-semibold" data-img="images/nieuw1.jpg" data-alt="Woonkamer met motiefbehang">Behang woonkamer</button>
+      </div>
+      <p class="mt-6 text-[13px] text-stone leading-relaxed border-l-2 border-lime pl-3">In deze demo is de "voor"-kant nagebootst met een filter op de echte foto. Op de echte site komen hier uw eigen voor- en na-foto's van elke werf.</p>
+    </div>
+    <div class="ba rounded-[28px] h-[300px] sm:h-[460px]" id="ba" style="--pos:50%">
+      <img id="baAfter" src="images/buiten9.jpg" alt="Na: bakstenen villa met lijstwerk in natuursteen" width="900" height="600" loading="lazy" />
+      <div class="before" aria-hidden="true"><img id="baBefore" src="images/buiten9.jpg" alt="" width="900" height="600" loading="lazy" /></div>
+      <span class="absolute top-4 left-4 bg-ink/80 text-white text-[13px] font-semibold rounded-full px-3 py-1">Voor</span>
+      <span class="absolute top-4 right-4 bg-lime text-ink text-[13px] font-bold rounded-full px-3 py-1">Na</span>
+      <input type="range" min="0" max="100" value="50" id="baRange" aria-label="Vergelijk voor en na" />
+      <div class="handle"><span class="knob"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6" stroke="#2b3036" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+    </div>
+  </section>
+
+  <!-- Offerte per ruimte -->
+  <section id="offerte" class="bg-ink text-white">
+    <div class="max-w-6xl mx-auto px-5 py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display font-extrabold text-4xl sm:text-5xl tracking-tight">Offerte per ruimte</h2>
+        <p class="mt-4 text-white/75 text-[17px] leading-relaxed">Duid aan welke ruimtes we mogen aanpakken, met de vloeroppervlakte en of er behang bij komt. Zo komen we goed voorbereid langs voor de opmeting.</p>
+      </div>
+      <form id="qf" class="mt-10 grid lg:grid-cols-[1.3fr_.7fr] gap-6" novalidate>
+        <div class="grid sm:grid-cols-2 gap-3" id="rooms"><noscript><p class="text-white/80">Bel 03 647 32 84 of mail hetschildertje@gmail.com voor een offerte.</p></noscript></div>
+        <aside class="bg-white text-ink rounded-3xl p-6 sm:p-7 self-start lg:sticky lg:top-24">
+          <div id="sumBox">
+            <h3 class="font-display text-2xl font-bold">Uw aanvraag</h3>
+            <ul id="sumList" class="mt-4 space-y-2 text-[15px] text-stone"><li>Nog geen ruimte gekozen.</li></ul>
+            <div class="mt-5 grid grid-cols-2 gap-3 border-t border-line pt-5">
+              <div><p class="text-[13px] text-stone">Ruimtes</p><p id="sumN" class="font-display text-3xl font-bold">0</p></div>
+              <div><p class="text-[13px] text-stone">Wandoppervlak, geschat</p><p class="font-display text-3xl font-bold"><span id="sumM">0</span> m²</p></div>
+            </div>
+            <div class="mt-6 grid gap-3">
+              <label class="block"><span class="text-[14px] font-medium">Naam</span><input name="naam" class="mt-1 w-full rounded-xl border border-line px-3 py-2.5" autocomplete="name" /></label>
+              <label class="block"><span class="text-[14px] font-medium">Telefoon of e-mail</span><input name="contact" class="mt-1 w-full rounded-xl border border-line px-3 py-2.5" /></label>
+              <label class="block"><span class="text-[14px] font-medium">Gemeente</span><input name="gemeente" class="mt-1 w-full rounded-xl border border-line px-3 py-2.5" placeholder="bv. Schoten" /></label>
+            </div>
+            <p id="qErr" class="hidden mt-3 text-[14px] font-medium text-[#b42318]" role="alert"></p>
+            <button type="submit" class="btn mt-5 w-full bg-lime hover:bg-moss hover:text-white text-ink font-bold rounded-full px-6 py-3.5">Offerte aanvragen</button>
+            <p class="mt-3 text-[12px] text-stone">Wandoppervlak = vloer × 2,7, een ruwe schatting. De echte opmeting gebeurt ter plaatse.</p>
+          </div>
+          <div id="okBox" hidden class="text-center py-6">
+            <svg class="mx-auto" width="48" height="48" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#7faf4b"/><path d="M7 12.5l3.2 3L17 9" stroke="#2b3036" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3 class="mt-3 font-display text-2xl font-bold">Offerte aangevraagd</h3>
+            <p id="okText" class="mt-2 text-stone"></p>
+            <p class="mt-4 text-[13px] text-stone">Dit is een concept-demo: er werd niets verzonden.</p>
+            <button type="button" id="again" class="btn mt-5 underline font-semibold">Nieuwe aanvraag</button>
+          </div>
+        </aside>
+      </form>
+    </div>
+  </section>
+
+  <!-- Familie -->
+  <section id="familie" class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="font-display font-extrabold text-4xl sm:text-5xl tracking-tight">Al zes generaties hetzelfde vak</h2>
+      <p class="mt-5 text-stone text-[17px] leading-relaxed">Sinds 1875 geeft de familie het schildersvak door. Particuliere en zakelijke klanten kennen ons om één ding: duidelijke afspraken en vertrouwen. Daardoor houden we een goede band met onze klanten, vaak over generaties heen.</p>
+      <p class="mt-4 text-stone text-[17px] leading-relaxed">Heeft u een wens die hier niet staat? Bel ons gerust. Ons team van vakkundige en ervaren schilders staat voor u klaar.</p>
+      <ol class="mt-8 flex items-center gap-1.5" aria-label="Zes generaties">
+        <li class="h-3 flex-1 rounded-full bg-[#5e6872]" title="1875"></li><li class="h-3 flex-1 rounded-full bg-[#8a5a3c]"></li><li class="h-3 flex-1 rounded-full bg-[#7c2c3f]"></li><li class="h-3 flex-1 rounded-full bg-[#2f7f86]"></li><li class="h-3 flex-1 rounded-full bg-[#4f7d2a]"></li><li class="h-3 flex-1 rounded-full bg-[#7faf4b]" title="vandaag"></li>
+      </ol>
+      <div class="mt-2 flex justify-between text-[13px] font-semibold text-stone"><span>1875</span><span>vandaag</span></div>
+    </div>
+    <div class="grid grid-cols-2 gap-3">
+      <img src="images/nieuw1.jpg" alt="Woonkamer met motiefbehang" width="640" height="429" class="rounded-2xl w-full h-48 sm:h-64 object-cover col-span-2" loading="lazy" />
+      <img src="images/binnen4.jpg" alt="Houten trap met turquoise wand" width="900" height="600" class="rounded-2xl w-full h-40 sm:h-48 object-cover" loading="lazy" />
+      <img src="images/buiten9.jpg" alt="Bakstenen villa met natuurstenen lijstwerk" width="900" height="600" class="rounded-2xl w-full h-40 sm:h-48 object-cover" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-kalk">
+    <div class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-[1.1fr_.9fr] gap-10">
+      <div>
+        <h2 class="font-display font-extrabold text-4xl tracking-tight">Langs voor een opmeting</h2>
+        <p class="mt-4 text-stone text-[17px] leading-relaxed max-w-xl">Vanuit Schoten werken we in de ruime regio: Schoten, Brasschaat, Merksem, Wijnegem, Schilde, 's-Gravenwezel, Deurne en Antwerpen.</p>
+        <div class="mt-8 grid sm:grid-cols-2 gap-3">
+          <a href="tel:+3236473284" class="btn bg-white rounded-2xl p-5 block hover:bg-white/70"><span class="text-[14px] text-stone">Kantoor</span><span class="block font-display text-2xl font-bold mt-1">03 647 32 84</span></a>
+          <a href="tel:+32475857591" class="btn bg-white rounded-2xl p-5 block hover:bg-white/70"><span class="text-[14px] text-stone">Gsm</span><span class="block font-display text-2xl font-bold mt-1">0475 85 75 91</span></a>
+        </div>
+        <a href="mailto:hetschildertje@gmail.com" class="mt-4 inline-block font-semibold underline underline-offset-4 decoration-lime decoration-2">hetschildertje@gmail.com</a>
+      </div>
+      <div class="bg-white rounded-3xl p-7">
+        <h3 class="font-display text-2xl font-bold">Het Schildertje BV</h3>
+        <address class="not-italic mt-3 text-stone leading-relaxed">Antoon Van Dijckstraat 10<br/>2900 Schoten</address>
+        <p class="mt-4 text-stone">Bezoek op afspraak. Bel of mail ons om een moment te kiezen.</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Het+Schildertje+Antoon+Van+Dijckstraat+10+2900+Schoten" target="_blank" rel="noopener" class="btn mt-6 inline-flex bg-ink hover:bg-black text-white font-semibold rounded-full px-6 py-3">Bekijk op Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-ink text-white/70">
+    <div class="max-w-6xl mx-auto px-5 py-8 flex flex-col md:flex-row justify-between gap-4 text-[14px]">
+      <p>Het Schildertje BV · Antoon Van Dijckstraat 10, 2900 Schoten</p>
+      <p class="max-w-md">Concept-herontwerp door <a href="mailto:nicolas@saspire.org" class="underline">Saspire</a> als vrijblijvend voorstel. Dit is niet de officiële website van Het Schildertje.</p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden bg-lime text-ink">
+    <a href="tel:+3236473284" class="flex items-center justify-center gap-2.5 py-3.5 font-bold">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      Bel Het Schildertje: 03 647 32 84
+    </a>
+  </div>
+
+  <script>
+    document.documentElement.classList.add('js');
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Colour fan: closed on first paint, fans open once
+    const fan = document.getElementById('fan');
+    if (!reduced) { fan.classList.remove('open'); setTimeout(() => fan.classList.add('open'), 250); }
+
+    // Before / after
+    const ba = document.getElementById('ba'), range = document.getElementById('baRange');
+    range.addEventListener('input', () => ba.style.setProperty('--pos', range.value + '%'));
+    document.querySelectorAll('.proj').forEach(b => b.addEventListener('click', () => {
+      document.querySelectorAll('.proj').forEach(x => { x.classList.remove('bg-ink', 'text-white', 'border-ink'); x.classList.add('border-line'); });
+      b.classList.add('bg-ink', 'text-white', 'border-ink'); b.classList.remove('border-line');
+      document.getElementById('baAfter').src = b.dataset.img; document.getElementById('baAfter').alt = 'Na: ' + b.dataset.alt;
+      document.getElementById('baBefore').src = b.dataset.img;
+      range.value = 50; ba.style.setProperty('--pos', '50%');
+    }));
+
+    // Offerte per ruimte
+    const ROOMS = ['Woonkamer', 'Keuken', 'Slaapkamer', 'Hal en traphal', 'Badkamer', 'Zolder', 'Gevel', 'Ramen en deuren buiten'];
+    const OUT = ['Gevel', 'Ramen en deuren buiten'];
+    const wrap = document.getElementById('rooms');
+    wrap.innerHTML = ROOMS.map((r, i) => {
+      const out = OUT.includes(r);
+      return `<div class="room rounded-2xl border-2 border-white/15 bg-white/5 p-4" data-i="${i}">
+        <label class="flex items-center gap-3 font-semibold cursor-pointer"><input type="checkbox" class="pick w-5 h-5 accent-[#7faf4b]" /> ${r}</label>
+        <div class="opts mt-3 grid grid-cols-2 gap-2 text-[14px]" hidden>
+          <label class="col-span-2 block"><span class="text-white/70">${out ? 'Gevelbreedte (m)' : 'Vloeroppervlak (m²)'}</span>
+            <input type="number" min="1" max="500" inputmode="numeric" class="m2 mt-1 w-full rounded-lg bg-white text-ink px-3 py-2" value="${out ? 8 : 18}" /></label>
+          ${out ? '' : '<label class="flex items-center gap-2"><input type="checkbox" class="plafond accent-[#7faf4b]" checked /> Plafond</label><label class="flex items-center gap-2"><input type="checkbox" class="behang accent-[#7faf4b]" /> Behang</label>'}
+        </div></div>`;
+    }).join('');
+
+    function selected() {
+      return [...wrap.querySelectorAll('.room')].filter(el => el.querySelector('.pick').checked).map(el => {
+        const name = ROOMS[+el.dataset.i], out = OUT.includes(name), v = Math.max(0, +el.querySelector('.m2').value || 0);
+        const wall = out ? Math.round(v * 6) : Math.round(v * 2.7);
+        return { name, out, v, wall, behang: !out && el.querySelector('.behang').checked, plafond: !out && el.querySelector('.plafond').checked };
+      });
+    }
+    function update() {
+      wrap.querySelectorAll('.room').forEach(el => { const on = el.querySelector('.pick').checked; el.classList.toggle('on', on); el.classList.toggle('bg-white/5', !on); el.querySelector('.opts').hidden = !on; el.classList.toggle('text-ink', on); });
+      const s = selected();
+      document.getElementById('sumN').textContent = s.length;
+      document.getElementById('sumM').textContent = s.reduce((a, r) => a + r.wall, 0);
+      document.getElementById('sumList').innerHTML = s.length ? s.map(r => `<li class="flex justify-between gap-3"><span class="text-ink font-medium">${r.name}</span><span>${r.out ? r.v + ' m gevel' : r.v + ' m²'}${r.behang ? ' · behang' : ''}${r.plafond ? ' · plafond' : ''}</span></li>`).join('') : '<li>Nog geen ruimte gekozen.</li>';
+    }
+    wrap.addEventListener('input', update); wrap.addEventListener('change', update);
+    // Room panels turn light when selected: re-style their inner labels
+    const style = document.createElement('style');
+    style.textContent = '.room.on .opts span{color:#5e6872}';
+    document.head.appendChild(style);
+
+    const qf = document.getElementById('qf'), err = document.getElementById('qErr');
+    qf.addEventListener('submit', e => {
+      e.preventDefault();
+      const s = selected(), naam = qf.elements.naam.value.trim(), c = qf.elements.contact.value.trim(), g = qf.elements.gemeente.value.trim();
+      let msg = '';
+      if (!s.length) msg = 'Kies minstens één ruimte.';
+      else if (!naam || !c) msg = 'Vul uw naam en telefoon of e-mail in.';
+      err.textContent = msg; err.classList.toggle('hidden', !msg);
+      if (msg) return;
+      document.getElementById('okText').textContent = `Bedankt ${naam}. We bekijken uw ${s.length} ${s.length === 1 ? 'ruimte' : 'ruimtes'}${g ? ' in ' + g : ''} en nemen contact op via ${c} om een opmeting in te plannen.`;
+      document.getElementById('sumBox').hidden = true; document.getElementById('okBox').hidden = false;
+    });
+    document.getElementById('again').addEventListener('click', () => { document.getElementById('sumBox').hidden = false; document.getElementById('okBox').hidden = true; });
+  </script>
+</body>
+</html>

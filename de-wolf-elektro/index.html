@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>De Wolf & Zn | Elektricien in Ranst sinds 1970</title>
+  <meta name="description" content="De Wolf Fr. & Zn. uit Ranst: elektriciteitswerken voor woningen, appartementen, winkels en kantoren sinds 1970. Nieuwbouw en renovatie, uitbreidingen, kleine wijzigingen, herstellingen en depannages. Volgens het AREI." />
+  <link rel="canonical" href="https://www.dewolf-elektro.be/" />
+  <meta name="theme-color" content="#1e2226" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="De Wolf Elektriciteitswerken" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="De Wolf & Zn | Elektricien in Ranst sinds 1970" />
+  <meta property="og:description" content="Storing? Meld ze online met de urgentie. Of vraag een vrijblijvende offerte voor nieuwbouw, renovatie of uitbreiding." />
+  <meta property="og:url" content="https://www.dewolf-elektro.be/" />
+  <meta property="og:image" content="images/logo-de-wolf.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23ff4500'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='%23fff' text-anchor='middle'%3Edw%3C/text%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "De Wolf Fr. & Zn. BV",
+    "alternateName": "De Wolf Elektriciteitswerken",
+    "description": "Elektriciteitswerken voor woningen, appartementen, winkels en kantoren: nieuwbouw en renovatie, uitbreidingen, kleine wijzigingen, herstellingen en depannages. Sinds 1970, van generatie op generatie.",
+    "url": "https://www.dewolf-elektro.be/",
+    "telephone": "+3234855351",
+    "email": "info@dewolf-elektro.be",
+    "vatID": "BE0407093459",
+    "foundingDate": "1970",
+    "logo": "https://www.dewolf-elektro.be/images/SectL3-1-17273055370320W.jpeg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Oude Vaartstraat 83",
+      "postalCode": "2520",
+      "addressLocality": "Ranst",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "areaServed": ["Ranst", "Broechem", "Oelegem", "Emblem", "Wommelgem", "Schilde", "Zandhoven", "Boechout"],
+    "contactPoint": { "@type": "ContactPoint", "telephone": "+32495508553", "contactType": "emergency", "availableLanguage": "nl" }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { display: ['Unbounded', 'sans-serif'], sans: ['"Hanken Grotesk"', 'system-ui', 'sans-serif'] },
+          colors: {
+            graphite: '#1e2226',
+            panel: '#2a2f35',
+            wire: '#ff4500',
+            amber: '#f1853a',
+            plaster: '#eef0f2',
+            rule: '#d8dce1',
+            dim: '#5b6470',
+            led: '#2fd36b',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root { --accent: #ff4500; --ease: cubic-bezier(0.23, 1, 0.32, 1); }
+    html { scroll-behavior: smooth; }
+    h1, h2, h3 { text-wrap: balance; }
+    [hidden] { display: none !important; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), border-color .18s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #f1853a; outline-offset: 2px; }
+
+    /* Logo pill, as on their van and site */
+    .pill { border: 3px solid #f1853a; border-radius: 999px; padding: .2rem .9rem; font-weight: 800; letter-spacing: .01em; }
+
+    /* Distribution board: one breaker trips and is reset on load */
+    .brk { transform-box: fill-box; transform-origin: center; }
+    .lever { transition: transform .5s var(--ease); transform-box: fill-box; transform-origin: center bottom; }
+    .js .board.tripped .k3 .lever { transform: translateY(18px); }
+    .js .board.tripped .k3 .ledc { fill: #ff4500; }
+    .ledc { transition: fill .3s var(--ease); }
+
+    .opt input { position: absolute; opacity: 0; }
+    .opt > span { display: block; height: 100%; border: 2px solid #d8dce1; border-radius: 14px; background: #fff; padding: .85rem 1rem; cursor: pointer; transition: border-color .15s var(--ease), background-color .15s var(--ease); }
+    .opt > span:hover { border-color: #1e2226; }
+    .opt input:checked + span { border-color: #ff4500; background: #fff4ee; }
+    .opt input:focus-visible + span { outline: 3px solid #f1853a; outline-offset: 2px; }
+    .tab[aria-selected="true"] { background: #1e2226; color: #fff; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .lever, .ledc, .btn, .opt > span { transition: none; }
+    }
+  </style>
+</head>
+<body class="bg-plaster text-graphite font-sans antialiased pb-14 md:pb-0 text-[17px]">
+
+  <div class="fixed bottom-4 right-4 z-50 hidden md:block">
+    <span class="text-[11px] font-bold tracking-widest uppercase text-white bg-graphite/90 rounded-full px-3 py-1.5 shadow">Concept-demo · Saspire</span>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-rule">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-3 shrink-0" aria-label="De Wolf & Zn, naar boven">
+        <span class="pill text-[15px] sm:text-[17px] leading-tight">DE WOLF &amp; Zn</span>
+        <span class="hidden sm:block text-[13px] leading-tight text-dim">Elektriciteitswerken<br/>Ranst</span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-7 text-[16px] font-medium text-dim" aria-label="Hoofdmenu">
+        <a href="#werken" class="hover:text-graphite">Werken</a>
+        <a href="#melden" class="hover:text-graphite">Storing melden</a>
+        <a href="#arei" class="hover:text-graphite">Keuring en AREI</a>
+        <a href="#contact" class="hover:text-graphite">Contact</a>
+      </nav>
+      <a href="tel:+32495508553" class="btn inline-flex items-center gap-2 bg-wire hover:bg-[#e23d00] text-graphite font-bold text-[15px] rounded-full px-4 sm:px-5 py-2.5">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" fill="currentColor"/></svg>
+        <span class="hidden sm:inline">Storing? 0495 50 85 53</span><span class="sm:hidden">Storing</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="bg-graphite text-white overflow-hidden">
+    <div class="max-w-6xl mx-auto px-5 pt-12 pb-14 lg:py-16 grid lg:grid-cols-[1.1fr_.9fr] gap-12 items-center">
+      <div>
+        <p class="text-amber font-semibold">Elektricien in Ranst · sinds 1970, van generatie op generatie</p>
+        <h1 class="mt-4 font-display font-bold text-[1.95rem] leading-[1.1] sm:text-5xl lg:text-[3.35rem] tracking-[-0.02em]">
+          De Wolf &amp; Zn.<br/>Van de verdeelkast tot het stopcontact in de tuin.
+        </h1>
+        <p class="mt-6 text-[18px] leading-relaxed text-white/75 max-w-[34rem]">
+          Elektriciteitswerken voor woningen, appartementen, winkels en kantoren: nieuwbouw en renovatie, uitbreidingen, kleine wijzigingen, en herstellingen bij een storing. Altijd volgens het AREI, met orde en netheid.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#melden" class="btn inline-flex justify-center items-center gap-2 bg-wire hover:bg-[#e23d00] text-graphite font-bold rounded-full px-7 py-4">Storing melden</a>
+          <a href="#melden" data-open="offerte" class="btn inline-flex justify-center items-center border-2 border-white/25 hover:border-white font-bold rounded-full px-7 py-4">Vrijblijvende offerte</a>
+        </div>
+        <div class="mt-9 flex flex-wrap gap-x-8 gap-y-3 text-[15px] text-white/70">
+          <a href="tel:+3234855351" class="hover:text-white"><span class="block text-white/50 text-[13px]">Kantoor</span><b class="text-white text-lg">03 485 53 51</b></a>
+          <a href="tel:+32495508553" class="hover:text-white"><span class="block text-white/50 text-[13px]">Gsm</span><b class="text-white text-lg">0495 50 85 53</b></a>
+        </div>
+      </div>
+
+      <!-- Distribution board illustration -->
+      <figure class="relative" aria-label="Illustratie van een verdeelkast met automaten per kring">
+        <svg viewBox="0 0 440 400" class="board tripped w-full max-w-[460px] mx-auto h-auto" id="board" role="img" aria-label="Verdeelkast: de automaat voor de keuken sprong en wordt weer ingeschakeld">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#f7f8f9"/><stop offset="1" stop-color="#dfe3e7"/></linearGradient>
+          </defs>
+          <rect x="10" y="10" width="420" height="380" rx="22" fill="#2a2f35" stroke="#3a4048"/>
+          <rect x="34" y="34" width="372" height="332" rx="12" fill="url(#g1)"/>
+          <!-- DIN rail rows -->
+          <g font-family="Hanken Grotesk, sans-serif" font-size="12" font-weight="600" fill="#1e2226">
+            <rect x="52" y="70" width="336" height="10" fill="#c7ccd2"/>
+            <rect x="52" y="230" width="336" height="10" fill="#c7ccd2"/>
+            <!-- row 1: differential + 4 breakers -->
+            <g class="brk"><rect x="60" y="50" width="92" height="130" rx="6" fill="#fff" stroke="#c7ccd2"/><rect class="lever" x="92" y="78" width="28" height="44" rx="4" fill="#1e2226"/><circle class="ledc" cx="106" cy="140" r="4" fill="#2fd36b"/><text x="106" y="168" text-anchor="middle">Diff. 30 mA</text></g>
+            <g class="brk k1"><rect x="162" y="50" width="52" height="130" rx="6" fill="#fff" stroke="#c7ccd2"/><rect class="lever" x="176" y="78" width="24" height="44" rx="4" fill="#ff4500"/><circle class="ledc" cx="188" cy="140" r="4" fill="#2fd36b"/><text x="188" y="168" text-anchor="middle">Living</text></g>
+            <g class="brk k2"><rect x="222" y="50" width="52" height="130" rx="6" fill="#fff" stroke="#c7ccd2"/><rect class="lever" x="236" y="78" width="24" height="44" rx="4" fill="#ff4500"/><circle class="ledc" cx="248" cy="140" r="4" fill="#2fd36b"/><text x="248" y="168" text-anchor="middle">Zolder</text></g>
+            <g class="brk k3"><rect x="282" y="50" width="52" height="130" rx="6" fill="#fff" stroke="#c7ccd2"/><rect class="lever" x="296" y="78" width="24" height="44" rx="4" fill="#ff4500"/><circle class="ledc" cx="308" cy="140" r="4" fill="#2fd36b"/><text x="308" y="168" text-anchor="middle">Keuken</text></g>
+            <g class="brk k4"><rect x="342" y="50" width="38" height="130" rx="6" fill="#fff" stroke="#c7ccd2"/><rect class="lever" x="351" y="78" width="20" height="44" rx="4" fill="#ff4500"/><circle class="ledc" cx="361" cy="140" r="4" fill="#2fd36b"/><text x="361" y="168" text-anchor="middle">Tuin</text></g>
+            <!-- row 2 -->
+            <g class="brk"><rect x="60" y="210" width="52" height="130" rx="6" fill="#fff" stroke="#c7ccd2"/><rect class="lever" x="74" y="238" width="24" height="44" rx="4" fill="#ff4500"/><circle class="ledc" cx="86" cy="300" r="4" fill="#2fd36b"/><text x="86" y="328" text-anchor="middle">Bad</text></g>
+            <g class="brk"><rect x="120" y="210" width="52" height="130" rx="6" fill="#fff" stroke="#c7ccd2"/><rect class="lever" x="134" y="238" width="24" height="44" rx="4" fill="#ff4500"/><circle class="ledc" cx="146" cy="300" r="4" fill="#2fd36b"/><text x="146" y="328" text-anchor="middle">Wasm.</text></g>
+            <g class="brk"><rect x="180" y="210" width="52" height="130" rx="6" fill="#fff" stroke="#c7ccd2"/><rect class="lever" x="194" y="238" width="24" height="44" rx="4" fill="#ff4500"/><circle class="ledc" cx="206" cy="300" r="4" fill="#2fd36b"/><text x="206" y="328" text-anchor="middle">Oven</text></g>
+            <g class="brk"><rect x="240" y="210" width="52" height="130" rx="6" fill="#fff" stroke="#c7ccd2"/><rect class="lever" x="254" y="238" width="24" height="44" rx="4" fill="#ff4500"/><circle class="ledc" cx="266" cy="300" r="4" fill="#2fd36b"/><text x="266" y="328" text-anchor="middle">Garage</text></g>
+            <g><rect x="300" y="210" width="80" height="130" rx="6" fill="#fff" stroke="#c7ccd2" stroke-dasharray="5 5"/><text x="340" y="270" text-anchor="middle" fill="#5b6470" font-weight="500">vrij voor</text><text x="340" y="288" text-anchor="middle" fill="#5b6470" font-weight="500">uitbreiding</text></g>
+          </g>
+        </svg>
+        <figcaption id="boardCap" class="mt-3 text-center text-[14px] text-white/60" aria-live="polite">Keuken uitgevallen? Wij vinden waarom.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Werken -->
+  <section id="werken" class="max-w-6xl mx-auto px-5 py-20">
+    <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-tight max-w-2xl">Vier soorten werk, één familie sinds 1970</h2>
+    <div class="mt-10 grid md:grid-cols-2 gap-4">
+      <article class="bg-white rounded-3xl p-7 sm:p-8 border border-rule">
+        <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 34V16L20 6l14 10v18H6z" fill="none" stroke="#1e2226" stroke-width="2.5" stroke-linejoin="round"/><path d="M21 15l-5 8h5l-2 7 6-9h-5l1-6z" fill="#ff4500"/></svg>
+        <h3 class="mt-4 font-display font-bold text-xl">Nieuwbouw en renovatie</h3>
+        <p class="mt-3 text-dim leading-relaxed">Samen bekijken we uw wensen: verlichting, voldoende stopcontacten, dimmers, tv-aansluitingen, schemerschakelaars. Het verplichte gelijkvormigheidsonderzoek door een erkend controleorganisme regelen wij, met alle administratie.</p>
+      </article>
+      <article class="bg-white rounded-3xl p-7 sm:p-8 border border-rule">
+        <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect x="6" y="8" width="28" height="24" rx="3" fill="none" stroke="#1e2226" stroke-width="2.5"/><path d="M20 14v12M14 20h12" stroke="#ff4500" stroke-width="3" stroke-linecap="round"/></svg>
+        <h3 class="mt-4 font-display font-bold text-xl">Uitbreiding</h3>
+        <p class="mt-3 text-dim leading-relaxed">Een nieuwe keuken of badkamer, een zwembad, tuinverlichting of zonnepanelen vragen meestal een extra stroomkring. Elke uitbreiding wordt gekeurd; wij verzorgen de administratie.</p>
+      </article>
+      <article class="bg-white rounded-3xl p-7 sm:p-8 border border-rule">
+        <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect x="10" y="6" width="20" height="28" rx="4" fill="none" stroke="#1e2226" stroke-width="2.5"/><circle cx="16" cy="20" r="2" fill="#ff4500"/><circle cx="24" cy="20" r="2" fill="#ff4500"/></svg>
+        <h3 class="mt-4 font-display font-bold text-xl">Kleine wijzigingen</h3>
+        <p class="mt-3 text-dim leading-relaxed">Een extra stopcontact of een dimmer? Ook kleine werken voeren we uit volgens het AREI, zodat uw installatie 100% in orde blijft, aan een betaalbare prijs.</p>
+      </article>
+      <article class="bg-graphite text-white rounded-3xl p-7 sm:p-8">
+        <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><path d="M22 4L8 23h11l-2 13 15-20H21l1-12z" fill="#ff4500"/></svg>
+        <h3 class="mt-4 font-display font-bold text-xl">Herstellingen en depannages</h3>
+        <p class="mt-3 text-white/75 leading-relaxed">Zekeringen die blijven springen, een differentieel dat niet meer wil inschakelen, een kring zonder stroom. We zoeken de oorzaak en lossen ze op, met veel aandacht voor orde en netheid.</p>
+        <a href="#melden" class="btn mt-5 inline-flex bg-wire hover:bg-[#e23d00] text-graphite font-bold rounded-full px-5 py-3">Meld uw storing</a>
+      </article>
+    </div>
+    <p class="mt-8 text-dim">Voor woningen, appartementen, winkels en kantoren. Offertes zijn altijd vrijblijvend.</p>
+  </section>
+
+  <!-- Signature: storing melden / offerte -->
+  <section id="melden" class="bg-white border-y border-rule">
+    <div class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-[.8fr_1.2fr] gap-12">
+      <div>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-tight">Storing melden of offerte vragen</h2>
+        <p class="mt-4 text-dim leading-relaxed">Kies wat er aan de hand is en hoe dringend het is. U krijgt meteen een paar veilige eerste stappen, en wij weten bij het terugbellen al waar we aan toe zijn.</p>
+        <div class="mt-8 rounded-2xl bg-plaster p-6">
+          <p class="font-bold">Gevaar, rook of brandgeur?</p>
+          <p class="mt-1 text-dim leading-relaxed">Schakel de hoofdschakelaar uit als dat veilig kan en bel 112. Gebruik dit formulier niet.</p>
+        </div>
+      </div>
+
+      <div class="rounded-3xl border border-rule bg-plaster p-5 sm:p-8">
+        <div class="inline-flex rounded-full bg-white border border-rule p-1" role="tablist" aria-label="Soort aanvraag">
+          <button type="button" class="tab btn rounded-full px-5 py-2.5 font-bold" role="tab" aria-selected="true" aria-controls="fStoring" id="tStoring">Storing melden</button>
+          <button type="button" class="tab btn rounded-full px-5 py-2.5 font-bold" role="tab" aria-selected="false" aria-controls="fOfferte" id="tOfferte">Offerte</button>
+        </div>
+
+        <!-- Storing -->
+        <form id="fStoring" class="mt-6" role="tabpanel" aria-labelledby="tStoring" novalidate>
+          <fieldset>
+            <legend class="font-display font-bold text-lg">Wat is er aan de hand?</legend>
+            <div class="mt-3 grid sm:grid-cols-2 gap-2.5">
+              <label class="opt relative"><input type="radio" name="probleem" value="uit" /><span><b class="block">Stroom volledig uit</b><small class="text-dim">in heel de woning</small></span></label>
+              <label class="opt relative"><input type="radio" name="probleem" value="diff" /><span><b class="block">Differentieel springt</b><small class="text-dim">aardlekschakelaar valt af</small></span></label>
+              <label class="opt relative"><input type="radio" name="probleem" value="kring" /><span><b class="block">Eén kring zonder stroom</b><small class="text-dim">automaat springt</small></span></label>
+              <label class="opt relative"><input type="radio" name="probleem" value="punt" /><span><b class="block">Stopcontact of lichtpunt</b><small class="text-dim">defect, warm of los</small></span></label>
+            </div>
+          </fieldset>
+          <div id="tips" class="mt-4 rounded-2xl bg-white border-l-4 border-wire p-5" hidden>
+            <p class="font-bold">Eerst zelf nakijken</p>
+            <ul id="tipList" class="mt-2 space-y-1.5 text-dim leading-relaxed list-disc pl-5"></ul>
+          </div>
+
+          <fieldset class="mt-6">
+            <legend class="font-display font-bold text-lg">Hoe dringend?</legend>
+            <div class="mt-3 grid grid-cols-3 gap-2.5 text-center">
+              <label class="opt relative"><input type="radio" name="urg" value="vandaag" /><span><b class="block">Vandaag</b><small class="text-dim">geen stroom</small></span></label>
+              <label class="opt relative"><input type="radio" name="urg" value="week" /><span><b class="block">Deze week</b><small class="text-dim">hinderlijk</small></span></label>
+              <label class="opt relative"><input type="radio" name="urg" value="afspraak" /><span><b class="block">Afspraak</b><small class="text-dim">geen haast</small></span></label>
+            </div>
+          </fieldset>
+
+          <div class="mt-6 grid sm:grid-cols-2 gap-3">
+            <input name="naam" placeholder="Naam" aria-label="Naam" class="rounded-xl border-2 border-rule bg-white px-4 py-3" autocomplete="name" />
+            <input name="tel" placeholder="Telefoon" type="tel" aria-label="Telefoon" class="rounded-xl border-2 border-rule bg-white px-4 py-3" autocomplete="tel" />
+            <input name="gemeente" placeholder="Straat en gemeente" aria-label="Straat en gemeente" class="sm:col-span-2 rounded-xl border-2 border-rule bg-white px-4 py-3" autocomplete="street-address" />
+            <label class="sm:col-span-2 flex items-center gap-3 rounded-xl border-2 border-dashed border-rule bg-white px-4 py-3 cursor-pointer">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h3l2-3h6l2 3h3v12H4z" stroke="#1e2226" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.5" stroke="#ff4500" stroke-width="2"/></svg>
+              <span id="photoLbl" class="text-dim">Foto van de verdeelkast (optioneel)</span>
+              <input type="file" accept="image/*" capture="environment" id="photo" class="sr-only" />
+              <img id="photoPrev" alt="Voorbeeld van uw foto" class="ml-auto h-12 w-12 object-cover rounded-lg" hidden />
+            </label>
+          </div>
+          <p id="sErr" class="hidden mt-3 font-semibold text-[#c2410c]" role="alert"></p>
+          <button type="submit" class="btn mt-6 w-full sm:w-auto bg-wire hover:bg-[#e23d00] text-graphite font-bold rounded-full px-8 py-4">Storing melden</button>
+        </form>
+
+        <!-- Offerte -->
+        <form id="fOfferte" class="mt-6" role="tabpanel" aria-labelledby="tOfferte" hidden novalidate>
+          <fieldset>
+            <legend class="font-display font-bold text-lg">Welk werk?</legend>
+            <div class="mt-3 grid sm:grid-cols-3 gap-2.5">
+              <label class="opt relative"><input type="radio" name="werk" value="Nieuwbouw of renovatie" /><span><b class="block">Nieuwbouw of renovatie</b><small class="text-dim">volledige installatie</small></span></label>
+              <label class="opt relative"><input type="radio" name="werk" value="Uitbreiding" /><span><b class="block">Uitbreiding</b><small class="text-dim">keuken, bad, tuin, zonnepanelen</small></span></label>
+              <label class="opt relative"><input type="radio" name="werk" value="Kleine wijziging" /><span><b class="block">Kleine wijziging</b><small class="text-dim">stopcontact, dimmer</small></span></label>
+            </div>
+          </fieldset>
+          <fieldset class="mt-6">
+            <legend class="font-display font-bold text-lg">Type gebouw</legend>
+            <select name="gebouw" class="mt-3 w-full rounded-xl border-2 border-rule bg-white px-4 py-3">
+              <option>Woning</option><option>Appartement</option><option>Winkel</option><option>Kantoor</option>
+            </select>
+          </fieldset>
+          <textarea name="uitleg" rows="3" placeholder="Korte uitleg, bv. nieuwe keuken met inductie en 6 extra stopcontacten" aria-label="Korte uitleg" class="mt-6 w-full rounded-xl border-2 border-rule bg-white px-4 py-3"></textarea>
+          <div class="mt-3 grid sm:grid-cols-2 gap-3">
+            <input name="naam" placeholder="Naam" aria-label="Naam" class="rounded-xl border-2 border-rule bg-white px-4 py-3" autocomplete="name" />
+            <input name="tel" placeholder="Telefoon of e-mail" aria-label="Telefoon of e-mail" class="rounded-xl border-2 border-rule bg-white px-4 py-3" />
+          </div>
+          <p id="oErr" class="hidden mt-3 font-semibold text-[#c2410c]" role="alert"></p>
+          <button type="submit" class="btn mt-6 w-full sm:w-auto bg-graphite hover:bg-black text-white font-bold rounded-full px-8 py-4">Vrijblijvende offerte aanvragen</button>
+        </form>
+
+        <div id="done" class="mt-6 rounded-2xl bg-white p-7 text-center" hidden>
+          <svg class="mx-auto" width="52" height="52" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#2fd36b"/><path d="M7 12.5l3.2 3L17 9" stroke="#1e2226" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3 id="doneTitle" class="mt-3 font-display font-bold text-xl"></h3>
+          <p id="doneText" class="mt-2 text-dim leading-relaxed"></p>
+          <p class="mt-4 text-[13px] text-dim">Dit is een concept-demo: er werd niets verzonden.</p>
+          <button type="button" id="reset" class="btn mt-4 underline font-semibold">Nieuwe melding</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AREI / trust -->
+  <section id="arei" class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-tight">Keuring en AREI: wij regelen het</h2>
+      <p class="mt-5 text-dim leading-relaxed">Elk werk voeren we uit volgens de voorschriften van het AREI. Bij een nieuwe installatie is een gelijkvormigheidsonderzoek door een erkend controleorganisme altijd verplicht, en ook elke uitbreiding moet gekeurd worden. U hoeft daar niets voor te doen: de administratie nemen wij op ons.</p>
+      <p class="mt-4 text-dim leading-relaxed">Een kleine wijziging of herstelling hoeft niet gekeurd te worden. Toch werken we ook dan volgens dezelfde regels, zodat uw installatie in orde blijft.</p>
+    </div>
+    <div class="rounded-3xl bg-graphite text-white p-8">
+      <p class="font-display font-bold text-6xl text-amber">1970</p>
+      <p class="mt-3 text-white/80 leading-relaxed">Vakmanschap van generatie op generatie. De Wolf Fr. &amp; Zn. werkt al meer dan 55 jaar vanuit Ranst aan woningen, appartementen, winkels en kantoren.</p>
+      <div class="mt-6 grid grid-cols-2 gap-3 text-[15px]">
+        <div class="rounded-xl bg-panel p-4"><b class="block">Op tijd</b><span class="text-white/70">en binnen het budget</span></div>
+        <div class="rounded-xl bg-panel p-4"><b class="block">Orde en netheid</b><span class="text-white/70">minimale overlast</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-white border-t border-rule">
+    <div class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-[1.1fr_.9fr] gap-10">
+      <div>
+        <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-tight">Contact</h2>
+        <p class="mt-4 text-dim leading-relaxed max-w-xl">Vanuit Ranst werken we in de regio, onder meer in Ranst, Broechem, Oelegem, Emblem, Wommelgem, Schilde, Zandhoven en Boechout.</p>
+        <div class="mt-8 grid sm:grid-cols-2 gap-3">
+          <a href="tel:+3234855351" class="btn rounded-2xl bg-plaster p-5 block hover:bg-[#e3e6e9]"><span class="text-dim text-[14px]">Kantoor</span><span class="block font-display font-bold text-xl mt-1">03 485 53 51</span></a>
+          <a href="tel:+32495508553" class="btn rounded-2xl bg-graphite text-white p-5 block hover:bg-black"><span class="text-white/60 text-[14px]">Gsm</span><span class="block font-display font-bold text-xl mt-1">0495 50 85 53</span></a>
+        </div>
+        <a href="mailto:info@dewolf-elektro.be" class="mt-4 inline-block font-semibold underline underline-offset-4 decoration-wire decoration-2">info@dewolf-elektro.be</a>
+      </div>
+      <div class="rounded-3xl bg-plaster p-7">
+        <span class="pill text-[17px] bg-white">DE WOLF &amp; Zn</span>
+        <h3 class="mt-5 font-bold text-xl">De Wolf Fr. &amp; Zn. BV</h3>
+        <address class="not-italic mt-2 text-dim leading-relaxed">Oude Vaartstraat 83<br/>2520 Ranst<br/>BTW BE 0407 093 459</address>
+        <a href="https://www.google.com/maps/search/?api=1&query=De+Wolf+Elektro+Oude+Vaartstraat+83+2520+Ranst" target="_blank" rel="noopener" class="btn mt-6 inline-flex bg-graphite hover:bg-black text-white font-bold rounded-full px-6 py-3">Bekijk op Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-graphite text-white/70">
+    <div class="max-w-6xl mx-auto px-5 py-8 flex flex-col md:flex-row justify-between gap-4 text-[14px]">
+      <p>De Wolf Fr. &amp; Zn. BV · Oude Vaartstraat 83, 2520 Ranst · BE 0407 093 459</p>
+      <p class="max-w-md">Concept-herontwerp door <a href="mailto:nicolas@saspire.org" class="underline">Saspire</a> als vrijblijvend voorstel. Dit is niet de officiële website van De Wolf &amp; Zn.</p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden bg-wire text-graphite">
+    <a href="tel:+32495508553" class="flex items-center justify-center gap-2.5 py-3.5 font-bold">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      Storing? Bel 0495 50 85 53
+    </a>
+  </div>
+
+  <script>
+    document.documentElement.classList.add('js');
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Board: keuken breaker is tripped, then reset once
+    const board = document.getElementById('board'), cap = document.getElementById('boardCap');
+    const resetBoard = () => { board.classList.remove('tripped'); cap.textContent = 'Kring hersteld. Zo hoort het.'; };
+    if (reduced) resetBoard(); else setTimeout(resetBoard, 1400);
+
+    // Tabs
+    const tabs = { storing: [document.getElementById('tStoring'), document.getElementById('fStoring')], offerte: [document.getElementById('tOfferte'), document.getElementById('fOfferte')] };
+    const done = document.getElementById('done');
+    function openTab(k) {
+      Object.entries(tabs).forEach(([key, [t, f]]) => { t.setAttribute('aria-selected', key === k); f.hidden = key !== k; });
+      done.hidden = true;
+    }
+    tabs.storing[0].addEventListener('click', () => openTab('storing'));
+    tabs.offerte[0].addEventListener('click', () => openTab('offerte'));
+    document.querySelectorAll('[data-open="offerte"]').forEach(a => a.addEventListener('click', () => openTab('offerte')));
+
+    // Tips per probleem
+    const TIPS = {
+      uit: ['Hebben de buren ook geen stroom? Dan is het waarschijnlijk een storing op het net: meld ze bij Fluvius.', 'Staat de hoofdschakelaar of de hoofdzekering bij de meter uit? Probeer ze één keer terug in te schakelen.'],
+      diff: ['Trek alle stekkers uit en schakel het differentieel opnieuw in.', 'Steek de toestellen één voor één terug in. Springt het opnieuw bij één toestel, dan is dat toestel vaak de oorzaak.', 'Springt het meteen, ook zonder toestellen? Dan zit de fout in de installatie: laat het ons nakijken.'],
+      kring: ['Kijk in de verdeelkast welke automaat naar beneden staat, en schakel hem één keer terug in.', 'Springt hij meteen opnieuw? Niet blijven proberen; noteer welke kring het is.'],
+      punt: ['Wordt een stopcontact warm, ruikt het verbrand of zit het los? Gebruik het niet meer en schakel de kring uit.', 'Bij een lichtpunt: test eerst een andere lamp.']
+    };
+    const fs = document.getElementById('fStoring');
+    fs.addEventListener('change', e => {
+      if (e.target.name === 'probleem') {
+        document.getElementById('tipList').innerHTML = TIPS[e.target.value].map(t => `<li>${t}</li>`).join('');
+        document.getElementById('tips').hidden = false;
+        if (e.target.value === 'uit' && !fs.querySelector('input[name="urg"]:checked')) fs.querySelector('input[value="vandaag"]').checked = true;
+      }
+    });
+    const photo = document.getElementById('photo');
+    photo.addEventListener('change', () => {
+      const f = photo.files[0]; if (!f) return;
+      const prev = document.getElementById('photoPrev'); prev.src = URL.createObjectURL(f); prev.hidden = false;
+      document.getElementById('photoLbl').textContent = f.name;
+    });
+
+    const LABEL = { uit: 'stroom volledig uit', diff: 'differentieel springt', kring: 'één kring zonder stroom', punt: 'stopcontact of lichtpunt' };
+    const URG = { vandaag: 'vandaag nog', week: 'deze week', afspraak: 'op een moment dat u past' };
+    function finish(title, text) {
+      fs.hidden = true; document.getElementById('fOfferte').hidden = true;
+      document.getElementById('doneTitle').textContent = title; document.getElementById('doneText').textContent = text; done.hidden = false;
+    }
+    fs.addEventListener('submit', e => {
+      e.preventDefault();
+      const p = (fs.querySelector('input[name="probleem"]:checked') || {}).value, u = (fs.querySelector('input[name="urg"]:checked') || {}).value;
+      const n = fs.elements.naam.value.trim(), t = fs.elements.tel.value.trim();
+      const m = !p ? 'Kies wat er aan de hand is.' : !u ? 'Kies hoe dringend het is.' : (!n || !t) ? 'Vul uw naam en telefoonnummer in.' : '';
+      const err = document.getElementById('sErr'); err.textContent = m; err.classList.toggle('hidden', !m);
+      if (m) return;
+      finish('Storing gemeld', `Bedankt ${n}. Melding: ${LABEL[p]}. We bellen u ${u === 'vandaag' ? 'zo snel mogelijk' : 'terug'} op ${t} om ${URG[u]} langs te komen.`);
+    });
+    const fo = document.getElementById('fOfferte');
+    fo.addEventListener('submit', e => {
+      e.preventDefault();
+      const w = (fo.querySelector('input[name="werk"]:checked') || {}).value, n = fo.elements.naam.value.trim(), t = fo.elements.tel.value.trim();
+      const m = !w ? 'Kies welk werk u wil laten uitvoeren.' : (!n || !t) ? 'Vul uw naam en telefoon of e-mail in.' : '';
+      const err = document.getElementById('oErr'); err.textContent = m; err.classList.toggle('hidden', !m);
+      if (m) return;
+      finish('Offerte aangevraagd', `Bedankt ${n}. We nemen contact op via ${t} voor uw ${w.toLowerCase()} (${fo.elements.gebouw.value.toLowerCase()}). Onze offertes zijn altijd vrijblijvend.`);
+    });
+    document.getElementById('reset').addEventListener('click', () => {
+      fs.reset(); fo.reset(); document.getElementById('tips').hidden = true; document.getElementById('photoPrev').hidden = true;
+      document.getElementById('photoLbl').textContent = 'Foto van de verdeelkast (optioneel)';
+      openTab(tabs.offerte[0].getAttribute('aria-selected') === 'true' ? 'offerte' : 'storing');
+    });
+  </script>
+</body>
+</html>

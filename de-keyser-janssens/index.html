@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>De Keyser - Janssens (DKJ) | Garagepoorten, rolluiken &amp; zonwering in Boechout</title>
+  <meta name="description" content="DKJ plaatst sinds 1979 sectionale garagepoorten, kantelpoorten, industriële poorten, rolluiken (ook op zonne-energie) en zonwering in Boechout en de ruime regio Antwerpen. Stel uw poort samen en vraag een offerte." />
+  <link rel="canonical" href="https://www.dkj.be/" />
+  <meta name="theme-color" content="#2b3034" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="De Keyser - Janssens" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="DKJ | Garagepoorten, rolluiken &amp; zonwering in de regio Antwerpen" />
+  <meta property="og:description" content="Sinds 1979 uw specialist in sectionale poorten, rolluiken en zonwering. Stel uw garagepoort samen en ontvang een richtprijs." />
+  <meta property="og:url" content="https://www.dkj.be/" />
+  <meta property="og:image" content="images/poort-zwart.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232b3034'/%3E%3Cpath d='M7 9h18M7 14h18M7 19h18M7 24h18' stroke='%23ee3d59' stroke-width='2.4'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "De Keyser - Janssens",
+    "alternateName": "DKJ",
+    "description": "Plaatsing van sectionale garagepoorten, kantelpoorten, industriële poorten, snelloopdeuren en poortautomatisatie, rolluiken (voorzet, inbouw, zonne-energie, industrieel en winkel) en binnen- en buitenzonwering.",
+    "url": "https://www.dkj.be/",
+    "telephone": "+3234542627",
+    "email": "info@dkj.be",
+    "foundingDate": "1979",
+    "image": "images/poort-zwart.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Veldkant 6B",
+      "postalCode": "2530",
+      "addressLocality": "Boechout",
+      "addressCountry": "BE"
+    },
+    "areaServed": ["Boechout", "Antwerpen", "Berchem", "Merksem", "Wilrijk", "Ekeren", "Deurne"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Poorten, rolluiken en zonwering",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sectionale garagepoorten" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kantelpoorten" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Industriële poorten en snelloopdeuren" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Poortautomatisatie" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rolluiken op zonne-energie" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Voorzet- en inbouwrolluiken" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Binnen- en buitenzonwering" } }
+      ]
+    }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { cond: ['"Barlow Condensed"', 'sans-serif'], sans: ['Barlow', 'system-ui', 'sans-serif'] },
+          colors: {
+            beton: '#e6e8e7',   /* concrete */
+            ral7016: '#383e42', /* anthracite door grey */
+            graf: '#23282c',
+            dkj: '#ee3d59',     /* logo red */
+            dkjd: '#c8243f',    /* readable red for buttons/text */
+            staal: '#7d868c',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root { --accent: #c8243f; --ease: cubic-bezier(0.23, 1, 0.32, 1); }
+    html { scroll-behavior: smooth; }
+    body { text-rendering: optimizeLegibility; }
+    h1, h2, h3 { text-wrap: balance; }
+    p { text-wrap: pretty; }
+    .js .rv { opacity: 0; transform: translateY(16px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+    .js .rv.in { opacity: 1; transform: none; }
+
+    /* Sectional-door ribs: the house motif */
+    .ribs { background-image: repeating-linear-gradient(180deg, transparent 0 46px, rgba(35,40,44,.07) 46px 47px, rgba(255,255,255,.6) 47px 48px); }
+    .ribs-dark { background-image: repeating-linear-gradient(180deg, transparent 0 46px, rgba(0,0,0,.25) 46px 47px, rgba(255,255,255,.04) 47px 48px); }
+
+    /* Hero door reveal: one orchestrated moment */
+    .door-cover { position: absolute; inset: 0; background: #383e42; transform-origin: top; animation: rollup 1.5s .35s var(--ease) forwards;
+      background-image: repeating-linear-gradient(180deg, #3f464b 0 58px, #2c3135 58px 60px); }
+    @keyframes rollup { to { transform: translateY(-101%); } }
+
+    .opt input, .sw input { position: absolute; opacity: 0; pointer-events: none; }
+    .opt span { transition: background-color .18s var(--ease), border-color .18s var(--ease), color .18s var(--ease); }
+    .opt input:checked + span { border-color: #c8243f; background: #fff; box-shadow: inset 0 0 0 1px #c8243f; }
+    .opt input:focus-visible + span { outline: 2px solid #c8243f; outline-offset: 2px; }
+    .sw input:checked + span { box-shadow: 0 0 0 2px #fff, 0 0 0 4px #c8243f; }
+    .sw input:focus-visible + span { outline: 2px solid #23282c; outline-offset: 5px; }
+    #doorLeaf { transition: transform 1.6s var(--ease); }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), border-color .18s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid #c8243f; outline-offset: 3px; }
+    input[type=range] { accent-color: #c8243f; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .rv { opacity: 1; transform: none; transition: none; }
+      .door-cover { animation: none; display: none; }
+      #doorLeaf { transition: none; }
+    }
+    @media (max-width: 767px) { body { padding-bottom: 58px; } .sx-cta { bottom: 76px !important; } }
+  </style>
+</head>
+<body class="bg-beton text-graf font-sans antialiased">
+
+  <div class="fixed bottom-4 right-4 z-50 hidden md:block">
+    <span class="text-[11px] tracking-wider text-white bg-graf/90 rounded-full px-3 py-1.5 backdrop-blur">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-beton/95 backdrop-blur border-b border-graf/10">
+    <nav class="max-w-6xl mx-auto px-5 h-[68px] flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top" class="flex items-center gap-3" aria-label="De Keyser - Janssens, naar boven">
+        <span class="grid place-items-center w-10 h-10 rounded-md bg-graf" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 22 22"><path d="M2 4h18M2 9h18M2 14h18M2 19h18" stroke="#ee3d59" stroke-width="2.4"/></svg>
+        </span>
+        <span class="leading-none">
+          <span class="block font-cond font-800 font-extrabold text-[22px] tracking-wide">DKJ</span>
+          <span class="block text-[12.5px] text-staal mt-0.5">De Keyser - Janssens</span>
+        </span>
+      </a>
+      <div class="hidden lg:flex items-center gap-7 text-[15px] font-medium text-graf/75">
+        <a href="#poorten" class="hover:text-graf">Poorten</a>
+        <a href="#rolluiken" class="hover:text-graf">Rolluiken</a>
+        <a href="#zonwering" class="hover:text-graf">Zonwering</a>
+        <a href="#configurator" class="hover:text-graf">Poort samenstellen</a>
+        <a href="#contact" class="hover:text-graf">Contact</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="tel:+3234542627" class="hidden sm:inline font-semibold text-[15px] whitespace-nowrap">03 454 26 27</a>
+        <a href="#configurator" class="btn bg-dkjd hover:bg-[#ad1d35] text-white font-semibold text-[14px] rounded-md px-4 py-2.5 whitespace-nowrap">Offerte aanvragen</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="ribs relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-5 pt-12 pb-16 lg:pt-14 lg:pb-20 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-6">
+        <p class="font-semibold text-dkjd text-[16px] mb-4">De Keyser - Janssens in Boechout, sinds 1979</p>
+        <h1 class="font-cond font-extrabold uppercase text-[clamp(3rem,7vw,5.6rem)] leading-[.92] tracking-[-0.005em]">Garagepoorten, rolluiken en zonwering</h1>
+        <p class="mt-6 text-[18px] leading-relaxed text-graf/75 max-w-[46ch]">De Keyser - Janssens plaatst sectionale en kantelpoorten, rolluiken (ook op zonne-energie) en zonwering, voor particulieren en bedrijven. Stel uw poort samen en zie meteen een richtprijs.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#configurator" class="btn bg-dkjd hover:bg-[#ad1d35] text-white font-semibold rounded-md px-6 py-3.5">Stel uw garagepoort samen</a>
+          <a href="tel:+3234542627" class="btn border-2 border-graf/80 hover:bg-graf hover:text-white font-semibold rounded-md px-6 py-3">Bel 03 454 26 27</a>
+        </div>
+        <ul class="mt-10 grid grid-cols-3 max-w-md border-t-2 border-graf pt-4 text-[14px]">
+          <li><span class="block font-cond font-bold text-3xl">1979</span>opgericht</li>
+          <li><span class="block font-cond font-bold text-3xl">3</span>vakgebieden</li>
+          <li><span class="block font-cond font-bold text-3xl">7 jaar</span>garantie zonne-rolluik</li>
+        </ul>
+      </div>
+      <div class="lg:col-span-6">
+        <figure class="relative">
+          <div class="relative rounded-lg overflow-hidden border-[10px] border-ral7016 shadow-[0_30px_70px_-30px_rgba(0,0,0,.6)] aspect-[895/584]">
+            <img src="images/poort-zwart.jpg" alt="Zwarte sectionale garagepoort met horizontale ribbels" class="w-full h-full object-cover" />
+            <div class="door-cover" aria-hidden="true"></div>
+          </div>
+          <a href="#configurator" class="btn absolute -bottom-6 right-4 sm:-right-4 bg-white rounded-lg shadow-xl px-5 py-4 flex items-center gap-4 max-w-[300px]">
+            <span class="grid place-items-center w-11 h-11 rounded-md bg-dkjd text-white shrink-0" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 21V7l8-4 8 4v14" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M7 21v-9h10v9M7 15h10M7 18h10" stroke="currentColor" stroke-width="1.6"/></svg></span>
+            <span class="text-[14px] leading-snug"><span class="block font-semibold">Richtprijs in 1 minuut</span><span class="text-staal">type, maat, kleur en motor</span></span>
+          </a>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diensten -->
+  <section class="bg-white">
+    <div class="max-w-6xl mx-auto px-5 py-20 lg:py-24">
+      <h2 class="rv font-cond font-bold uppercase text-[clamp(2.2rem,4vw,3.2rem)] leading-[.95] max-w-[20ch]">Alles wat opent, sluit en schaduw geeft</h2>
+      <div class="mt-12 grid lg:grid-cols-3 gap-6">
+        <article id="poorten" class="rv rounded-lg border border-graf/10 overflow-hidden bg-beton/50 flex flex-col">
+          <img src="images/poort-boog.jpg" alt="Zwarte sectionale poort in een gemetselde boog" class="w-full h-52 object-cover" loading="lazy" />
+          <div class="p-6 flex-1">
+            <h3 class="font-cond font-bold uppercase text-2xl">Poorten</h3>
+            <p class="mt-2 text-graf/75 leading-relaxed">Sectionale poorten openen verticaal: geen extra plaats bij het openen, meer doorrijruimte en geschikt voor elke opening, in nieuwbouw en renovatie.</p>
+            <ul class="mt-4 space-y-1.5 text-[15px]">
+              <li>Sectionale garagepoorten</li><li>Kantelpoorten</li><li>Industriële poorten</li><li>Snelloopdeuren</li><li>Automatisatie van poorten</li>
+            </ul>
+          </div>
+        </article>
+        <article id="rolluiken" class="rv rounded-lg border border-graf/10 overflow-hidden bg-beton/50 flex flex-col">
+          <img src="images/rolluik-zonne-energie.jpg" alt="Rolluikkast met zonnepaneel aan de voorzijde" class="w-full h-52 object-cover" loading="lazy" />
+          <div class="p-6 flex-1">
+            <h3 class="font-cond font-bold uppercase text-2xl">Rolluiken</h3>
+            <p class="mt-2 text-graf/75 leading-relaxed">Rolluiken op zonne-energie hebben geen stroomaansluiting nodig: 12V-motor en handzender standaard, 7 jaar garantie op alle onderdelen, ook paneel en batterij.</p>
+            <ul class="mt-4 space-y-1.5 text-[15px]">
+              <li>Rolluiken op zonne-energie</li><li>Voorzetrolluiken</li><li>Inbouwrolluiken</li><li>Industriële rolluiken</li><li>Winkelrolluiken</li>
+            </ul>
+          </div>
+        </article>
+        <article id="zonwering" class="rv rounded-lg border border-graf/10 overflow-hidden bg-beton/50 flex flex-col">
+          <img src="images/zonwering-screen.jpg" alt="Zonnescreens voor de ramen van een woning met terras" class="w-full h-52 object-cover" loading="lazy" />
+          <div class="p-6 flex-1">
+            <h3 class="font-cond font-bold uppercase text-2xl">Zonwering</h3>
+            <p class="mt-2 text-graf/75 leading-relaxed">Hitte en fel zonlicht buiten houden, binnen of buiten. Voor woningen, bedrijven, horeca en winkels.</p>
+            <ul class="mt-4 space-y-1.5 text-[15px]">
+              <li>Pergola's</li><li>Zonnescreens</li><li>Markiezen</li><li>Verandazonwering</li><li>Binnenzonwering</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Configurator (signature) -->
+  <section id="configurator" class="bg-ral7016 ribs-dark text-white">
+    <div class="max-w-6xl mx-auto px-5 py-20 lg:py-24">
+      <div class="max-w-2xl">
+        <h2 class="rv font-cond font-bold uppercase text-[clamp(2.2rem,4vw,3.3rem)] leading-[.95]">Stel uw garagepoort samen</h2>
+        <p class="rv mt-4 text-white/75 leading-relaxed">Kies type, maat, kleur en motor. U ziet uw poort meteen veranderen en krijgt een richtprijs. Daarna vraagt u met één klik een vrijblijvende offerte aan.</p>
+      </div>
+
+      <div class="mt-12 grid lg:grid-cols-12 gap-8">
+        <!-- Preview -->
+        <div class="lg:col-span-7 min-w-0 order-1 lg:order-2">
+          <div class="rounded-lg bg-[#f1f1ef] text-graf p-4 sm:p-6 lg:sticky lg:top-24">
+            <svg id="doorSvg" viewBox="0 0 400 290" class="w-full h-auto" role="img" aria-label="Voorbeeld van uw garagepoort">
+              <defs>
+                <pattern id="brick" width="40" height="20" patternUnits="userSpaceOnUse">
+                  <rect width="40" height="20" fill="#b36a4e"/><path d="M0 0.5h40M0 10.5h40M20 0v10M0 10v10M40 10v10" stroke="#e8dcd2" stroke-width="1.2"/>
+                </pattern>
+                <clipPath id="openingClip"><rect id="clipRect" x="0" y="0" width="0" height="0"/></clipPath>
+              </defs>
+              <rect x="0" y="0" width="400" height="262" fill="url(#brick)"/>
+              <rect x="0" y="262" width="400" height="28" fill="#9da3a6"/>
+              <rect id="opening" x="0" y="0" width="0" height="0" fill="#1d2023"/>
+              <g clip-path="url(#openingClip)"><g id="doorLeaf"></g></g>
+              <rect id="lintel" x="0" y="0" width="0" height="8" fill="#8a9196"/>
+              <g id="motorG" opacity="0"><rect x="186" y="6" width="28" height="12" rx="2" fill="#23282c"/><circle cx="210" cy="12" r="2" fill="#7cdc7c"/></g>
+              <text id="dimW" x="200" y="284" text-anchor="middle" font-family="Barlow, sans-serif" font-size="11" font-weight="600" fill="#23282c"></text>
+            </svg>
+            <div class="mt-4 flex flex-wrap items-center justify-between gap-3">
+              <p id="summary" class="text-[14.5px] text-graf/75"></p>
+              <button type="button" id="openBtn" class="btn border-2 border-graf rounded-md px-4 py-2 font-semibold text-[14px]">Poort openen</button>
+            </div>
+            <div class="mt-5 border-t-2 border-graf pt-5 flex flex-wrap items-end justify-between gap-4" aria-live="polite">
+              <div>
+                <p class="text-[14px] text-staal">Richtprijs, geplaatst, excl. btw</p>
+                <p class="font-cond font-bold text-[2.8rem] leading-none mt-1" id="price">€ 0</p>
+              </div>
+              <a href="#offerte" id="toQuote" class="btn bg-dkjd hover:bg-[#ad1d35] text-white font-semibold rounded-md px-5 py-3.5">Offerte voor deze poort</a>
+            </div>
+            <p class="mt-3 text-[12.5px] text-staal">Voorbeeldbedragen in deze demo. DKJ vult de eigen prijzen in; de definitieve prijs volgt na opmeting.</p>
+          </div>
+        </div>
+
+        <!-- Options -->
+        <form id="cfg" class="lg:col-span-5 min-w-0 order-2 lg:order-1 space-y-7" novalidate>
+          <fieldset>
+            <legend class="font-semibold mb-3">Type poort</legend>
+            <div class="grid grid-cols-2 gap-2.5 text-graf">
+              <label class="opt relative cursor-pointer"><input type="radio" name="type" value="sectionaal" checked /><span class="block rounded-md border border-white/20 bg-white/90 p-3"><span class="block font-semibold">Sectionaal</span><span class="block text-[13px] text-staal">opent verticaal</span></span></label>
+              <label class="opt relative cursor-pointer"><input type="radio" name="type" value="kantel" /><span class="block rounded-md border border-white/20 bg-white/90 p-3"><span class="block font-semibold">Kantelpoort</span><span class="block text-[13px] text-staal">uit één stuk</span></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="font-semibold mb-3">Afmetingen van de opening</legend>
+            <label class="block text-[14px] text-white/75">Breedte <output id="wOut" class="float-right font-semibold text-white"></output>
+              <input id="w" type="range" min="2000" max="5500" step="50" value="2500" class="w-full mt-1" /></label>
+            <label class="block text-[14px] text-white/75 mt-4">Hoogte <output id="hOut" class="float-right font-semibold text-white"></output>
+              <input id="h" type="range" min="1900" max="3000" step="25" value="2125" class="w-full mt-1" /></label>
+          </fieldset>
+
+          <fieldset>
+            <legend class="font-semibold mb-3">Kleur <span id="colName" class="font-normal text-white/70"></span></legend>
+            <div class="flex flex-wrap gap-3">
+              <label class="sw relative cursor-pointer" title="RAL 9016 verkeerswit"><input type="radio" name="col" value="#f1f0ea|RAL 9016 verkeerswit|0" checked /><span class="block w-10 h-10 rounded-full border border-black/20" style="background:#f1f0ea"></span></label>
+              <label class="sw relative cursor-pointer" title="RAL 7016 antracietgrijs"><input type="radio" name="col" value="#383e42|RAL 7016 antracietgrijs|220" /><span class="block w-10 h-10 rounded-full border border-white/30" style="background:#383e42"></span></label>
+              <label class="sw relative cursor-pointer" title="RAL 9005 gitzwart"><input type="radio" name="col" value="#141516|RAL 9005 gitzwart|220" /><span class="block w-10 h-10 rounded-full border border-white/30" style="background:#141516"></span></label>
+              <label class="sw relative cursor-pointer" title="RAL 5011 staalblauw"><input type="radio" name="col" value="#1f3550|RAL 5011 staalblauw|220" /><span class="block w-10 h-10 rounded-full border border-white/30" style="background:#1f3550"></span></label>
+              <label class="sw relative cursor-pointer" title="RAL 1015 licht ivoor"><input type="radio" name="col" value="#e6d9bd|RAL 1015 licht ivoor|220" /><span class="block w-10 h-10 rounded-full border border-black/20" style="background:#e6d9bd"></span></label>
+              <label class="sw relative cursor-pointer" title="Houtlook golden oak"><input type="radio" name="col" value="wood|Houtlook golden oak|380" /><span class="block w-10 h-10 rounded-full border border-white/30" style="background:linear-gradient(90deg,#b0702f,#8a5222 40%,#b97a3a 70%,#93582a)"></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="font-semibold mb-3">Panelen</legend>
+            <div class="grid grid-cols-3 gap-2.5 text-graf text-[14px]">
+              <label class="opt relative cursor-pointer"><input type="radio" name="pat" value="L" checked /><span class="block rounded-md border border-white/20 bg-white/90 p-2.5 text-center font-semibold">Brede ribbel</span></label>
+              <label class="opt relative cursor-pointer"><input type="radio" name="pat" value="M" /><span class="block rounded-md border border-white/20 bg-white/90 p-2.5 text-center font-semibold">Smalle ribbel</span></label>
+              <label class="opt relative cursor-pointer"><input type="radio" name="pat" value="G" /><span class="block rounded-md border border-white/20 bg-white/90 p-2.5 text-center font-semibold">Glad</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="space-y-3">
+            <legend class="font-semibold mb-3">Extra's</legend>
+            <label class="flex items-center gap-3 cursor-pointer"><input type="checkbox" id="motor" checked class="w-5 h-5 accent-[#c8243f]" /><span>Motor met 2 handzenders</span></label>
+            <label class="flex items-center gap-3 cursor-pointer"><input type="checkbox" id="glas" class="w-5 h-5 accent-[#c8243f]" /><span>Rij glasramen voor daglicht</span></label>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offerte -->
+  <section id="offerte" class="max-w-6xl mx-auto px-5 py-20 lg:py-24 grid lg:grid-cols-12 gap-10">
+    <div class="lg:col-span-5 min-w-0">
+      <h2 class="rv font-cond font-bold uppercase text-[clamp(2.2rem,4vw,3.2rem)] leading-[.95]">Vrijblijvende offerte</h2>
+      <p class="rv mt-4 text-graf/75 leading-relaxed">Garagepoort, rolluik of zonwering: laat weten wat u zoekt. We komen opmeten en bezorgen u een offerte op maat.</p>
+      <div class="rv mt-8 rounded-lg bg-white border border-graf/10 p-5">
+        <p class="text-[14px] text-staal">Uw samengestelde poort</p>
+        <p id="quoteCfg" class="mt-1 font-semibold leading-snug"></p>
+      </div>
+    </div>
+    <form id="quote" class="lg:col-span-7 min-w-0 rounded-lg bg-white border border-graf/10 p-6 sm:p-8" novalidate>
+      <div id="qForm">
+        <fieldset>
+          <legend class="font-semibold mb-3">Waarvoor vraagt u een offerte?</legend>
+          <div class="flex flex-wrap gap-2 text-[15px]">
+            <label class="opt relative cursor-pointer"><input type="checkbox" name="what" value="Garagepoort" checked /><span class="block rounded-md border border-graf/20 px-3.5 py-2">Garagepoort</span></label>
+            <label class="opt relative cursor-pointer"><input type="checkbox" name="what" value="Rolluiken" /><span class="block rounded-md border border-graf/20 px-3.5 py-2">Rolluiken</span></label>
+            <label class="opt relative cursor-pointer"><input type="checkbox" name="what" value="Zonwering" /><span class="block rounded-md border border-graf/20 px-3.5 py-2">Zonwering</span></label>
+            <label class="opt relative cursor-pointer"><input type="checkbox" name="what" value="Industriële poort" /><span class="block rounded-md border border-graf/20 px-3.5 py-2">Industriële poort</span></label>
+          </div>
+        </fieldset>
+        <div class="mt-6 grid sm:grid-cols-2 gap-4">
+          <label class="block text-[14px] font-semibold">Naam<input name="naam" autocomplete="name" class="mt-1.5 w-full rounded-md border border-graf/20 px-3.5 py-3 font-normal" /></label>
+          <label class="block text-[14px] font-semibold">Telefoon<input name="tel" type="tel" autocomplete="tel" class="mt-1.5 w-full rounded-md border border-graf/20 px-3.5 py-3 font-normal" /></label>
+          <label class="block text-[14px] font-semibold">E-mail<input name="mail" type="email" autocomplete="email" class="mt-1.5 w-full rounded-md border border-graf/20 px-3.5 py-3 font-normal" /></label>
+          <label class="block text-[14px] font-semibold">Gemeente<input name="gem" autocomplete="address-level2" class="mt-1.5 w-full rounded-md border border-graf/20 px-3.5 py-3 font-normal" placeholder="Bv. Mortsel" /></label>
+        </div>
+        <label class="block mt-4 text-[14px] font-semibold">Toelichting <span class="font-normal text-staal">(optioneel)</span><textarea name="msg" rows="3" class="mt-1.5 w-full rounded-md border border-graf/20 px-3.5 py-3 font-normal" placeholder="Bv. oude kantelpoort vervangen door een sectionale poort met motor"></textarea></label>
+        <p id="qErr" class="hidden mt-3 text-[14px] font-semibold text-dkjd" role="alert"></p>
+        <button class="btn mt-6 w-full bg-dkjd hover:bg-[#ad1d35] text-white font-semibold rounded-md px-5 py-3.5">Offerte aanvragen</button>
+      </div>
+      <div id="qOk" class="hidden text-center py-8" role="status">
+        <div class="mx-auto w-16 h-16 rounded-md bg-dkjd text-white grid place-items-center"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3 class="font-cond font-bold uppercase text-3xl mt-5">Offerte aangevraagd</h3>
+        <p id="qOkTxt" class="mt-3 text-graf/75 max-w-[46ch] mx-auto"></p>
+        <p class="mt-4 text-[13px] text-staal">Dit is een concept-demo: er werd niets verstuurd.</p>
+        <button type="button" id="qAgain" class="mt-6 font-semibold text-dkjd underline underline-offset-4">Nog een aanvraag</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Referenties -->
+  <section class="bg-white">
+    <div class="max-w-6xl mx-auto px-5 py-20">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <h2 class="rv font-cond font-bold uppercase text-[clamp(2rem,3.6vw,2.8rem)] leading-[.95]">Enkele referenties</h2>
+        <p class="rv text-graf/70 max-w-[44ch]">In elke kleur en voor elke gevel: van strak antraciet tot houtlook, voor een enkele of dubbele garage.</p>
+      </div>
+      <div class="mt-10 grid grid-cols-2 md:grid-cols-3 gap-3">
+        <img src="images/poort-blauw.jpg" alt="Blauwe sectionale garagepoort onder een appartement" class="rv w-full h-48 md:h-60 object-cover rounded-md" loading="lazy" />
+        <img src="images/poort-hout.jpg" alt="Twee garagepoorten in houtlook naast elkaar" class="rv w-full h-48 md:h-60 object-cover rounded-md" loading="lazy" />
+        <img src="images/poort-boog.jpg" alt="Zwarte garagepoort in een rondboog" class="rv w-full h-48 md:h-60 object-cover rounded-md col-span-2 md:col-span-1" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-5 py-20 lg:py-24 grid lg:grid-cols-2 gap-10">
+    <div>
+      <h2 class="rv font-cond font-bold uppercase text-[clamp(2.2rem,4vw,3.2rem)] leading-[.95]">Wij zijn altijd bereikbaar</h2>
+      <p class="rv mt-4 text-graf/75 leading-relaxed max-w-[48ch]">Een vraag over een poort die niet meer sluit, of een nieuwe offerte? Bel of mail ons. Wij werken in Boechout, Vremde, Mortsel, Borsbeek, Antwerpen, Berchem, Merksem, Wilrijk, Ekeren, Deurne en de rest van de ruime regio Antwerpen.</p>
+      <div class="rv mt-8 space-y-3">
+        <a href="tel:+3234542627" class="btn flex items-center justify-between gap-4 rounded-md bg-white border border-graf/10 hover:border-dkjd px-5 py-4"><span class="text-staal">Telefoon</span><span class="font-semibold">03 454 26 27</span></a>
+        <a href="mailto:info@dkj.be" class="btn flex items-center justify-between gap-4 rounded-md bg-white border border-graf/10 hover:border-dkjd px-5 py-4"><span class="text-staal">E-mail</span><span class="font-semibold">info@dkj.be</span></a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Veldkant+6B+2530+Boechout" target="_blank" rel="noopener" class="btn flex items-center justify-between gap-4 rounded-md bg-white border border-graf/10 hover:border-dkjd px-5 py-4"><span class="text-staal">Adres</span><span class="font-semibold text-right">Veldkant 6B, 2530 Boechout</span></a>
+      </div>
+    </div>
+    <div class="rv rounded-lg bg-graf text-white p-8 ribs-dark">
+      <h3 class="font-cond font-bold uppercase text-2xl">Waarom DKJ</h3>
+      <ul class="mt-5 space-y-4 text-[16px]">
+        <li class="flex gap-3"><span class="mt-2 w-3 h-[3px] bg-dkj shrink-0"></span>Sinds 1979 actief vanuit Boechout</li>
+        <li class="flex gap-3"><span class="mt-2 w-3 h-[3px] bg-dkj shrink-0"></span>Poorten, rolluiken en zonwering bij één vakman</li>
+        <li class="flex gap-3"><span class="mt-2 w-3 h-[3px] bg-dkj shrink-0"></span>Voor particulieren én bedrijven, horeca, winkels en industrie</li>
+        <li class="flex gap-3"><span class="mt-2 w-3 h-[3px] bg-dkj shrink-0"></span>7 jaar garantie op rolluiken op zonne-energie, ook op paneel en batterij</li>
+      </ul>
+      <a href="#configurator" class="btn mt-8 inline-block bg-dkjd hover:bg-[#ad1d35] text-white font-semibold rounded-md px-5 py-3">Offerte aanvragen</a>
+    </div>
+  </section>
+
+  <footer class="bg-black text-white/70">
+    <div class="max-w-6xl mx-auto px-5 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 text-[14px]">
+      <div class="flex items-center gap-4">
+        <img src="images/logo.png" alt="DKJ De Keyser Janssens logo" width="140" height="60" class="h-[52px] w-auto" />
+        <p>Veldkant 6B, 2530 Boechout<br />03 454 26 27, info@dkj.be</p>
+      </div>
+      <p class="max-w-sm">Concept-herontwerp door <a href="mailto:nicolas@saspire.org" class="underline text-white">Saspire</a> als vrijblijvend voorstel. Dit is niet de officiële website van De Keyser - Janssens.</p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden grid grid-cols-2 text-white font-semibold text-[15px]">
+    <a href="tel:+3234542627" class="flex items-center justify-center gap-2 py-3.5 bg-graf">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Bel DKJ</a>
+    <a href="#configurator" class="flex items-center justify-center py-3.5 bg-dkjd">Offerte aanvragen</a>
+  </div>
+
+  <script>
+  (function () {
+    document.documentElement.classList.add('js');
+    var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var rvs = document.querySelectorAll('.rv');
+    if ('IntersectionObserver' in window && !reduced) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
+      rvs.forEach(function (el) { io.observe(el); });
+      setTimeout(function () { rvs.forEach(function (el) { el.classList.add('in'); }); }, 2500);
+    } else rvs.forEach(function (el) { el.classList.add('in'); });
+
+    /* ---------- Garagepoort-configurator ---------- */
+    var NS = 'http://www.w3.org/2000/svg';
+    var cfg = document.getElementById('cfg'), wI = document.getElementById('w'), hI = document.getElementById('h');
+    var leaf = document.getElementById('doorLeaf'), opening = document.getElementById('opening'), clipRect = document.getElementById('clipRect'), lintel = document.getElementById('lintel');
+    var isOpen = false, state = {};
+    function v(n) { var c = cfg.querySelector('input[name="' + n + '"]:checked'); return c ? c.value : null; }
+    function el(tag, a) { var e = document.createElementNS(NS, tag); for (var k in a) e.setAttribute(k, a[k]); return e; }
+    function shade(hex, amt) { var n = parseInt(hex.slice(1), 16), r = Math.max(0, Math.min(255, (n >> 16) + amt)), g = Math.max(0, Math.min(255, ((n >> 8) & 255) + amt)), b = Math.max(0, Math.min(255, (n & 255) + amt)); return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1); }
+    function fmt(n) { return String(Math.round(n / 10) * 10).replace(/\B(?=(\d{3})+(?!\d))/g, '.'); }
+    function draw() {
+      var type = v('type'), W = +wI.value, H = +hI.value, col = v('col').split('|'), pat = v('pat');
+      var motor = document.getElementById('motor').checked, glas = document.getElementById('glas').checked;
+      document.getElementById('wOut').textContent = W + ' mm'; document.getElementById('hOut').textContent = H + ' mm';
+      document.getElementById('colName').textContent = col[1];
+      // scale: 5500mm -> 300px wide max, 3000mm -> 230px high max
+      var sc = Math.min(300 / 5500, 228 / 3000), pw = W * sc, ph = H * sc, x = 200 - pw / 2, y = 262 - ph;
+      [opening, clipRect].forEach(function (r) { r.setAttribute('x', x); r.setAttribute('y', y); r.setAttribute('width', pw); r.setAttribute('height', ph); });
+      lintel.setAttribute('x', x - 6); lintel.setAttribute('y', y - 8); lintel.setAttribute('width', pw + 12);
+      var mg = document.getElementById('motorG'); mg.setAttribute('opacity', motor ? 1 : 0); mg.setAttribute('transform', 'translate(0,' + (y - 22) + ')');
+      document.getElementById('dimW').textContent = (W / 1000).toFixed(2).replace('.', ',') + ' m × ' + (H / 1000).toFixed(2).replace('.', ',') + ' m';
+      while (leaf.firstChild) leaf.removeChild(leaf.firstChild);
+      var base = col[0] === 'wood' ? '#9a5f2a' : col[0], dark = col[0] === 'wood' ? '#6e4119' : shade(base, base === '#141516' ? 30 : -38), light = col[0] === 'wood' ? '#b97d42' : shade(base, 22);
+      leaf.appendChild(el('rect', { x: x, y: y, width: pw, height: ph, fill: base }));
+      var seed = 7, rnd = function () { seed = (seed * 9301 + 49297) % 233280; return seed / 233280; };
+      if (col[0] === 'wood') for (var gx = 0; gx < 26; gx++) leaf.appendChild(el('path', { d: 'M' + (x + rnd() * pw * .8) + ' ' + (y + rnd() * ph) + 'h' + (20 + rnd() * 50), stroke: '#7a4a1f', 'stroke-width': .7, opacity: .5 }));
+      if (type === 'sectionaal') {
+        var n = Math.max(4, Math.round(H / 525)), sh = ph / n;
+        for (var i = 1; i < n; i++) { leaf.appendChild(el('rect', { x: x, y: y + i * sh - 1, width: pw, height: 1.6, fill: dark })); leaf.appendChild(el('rect', { x: x, y: y + i * sh + .6, width: pw, height: .8, fill: light, opacity: .6 })); }
+        if (pat !== 'G') {
+          var per = pat === 'L' ? 1 : 3;
+          for (var s = 0; s < n; s++) for (var k = 1; k <= per; k++) { var ry = y + s * sh + k * sh / (per + 1); leaf.appendChild(el('rect', { x: x + 2, y: ry, width: pw - 4, height: .9, fill: dark, opacity: .55 })); }
+        }
+        if (glas) { var gy = y + sh * 0.28, gw = Math.min(34, pw / 6); for (var g = 0; g < Math.floor(pw / (gw + 12)); g++) leaf.appendChild(el('rect', { x: x + 10 + g * (gw + 12), y: gy, width: gw, height: sh * 0.44, rx: 2, fill: '#a9c4d6', stroke: dark, 'stroke-width': 1.5 })); }
+      } else {
+        var ribs = pat === 'G' ? 0 : (pat === 'L' ? Math.round(pw / 18) : Math.round(pw / 8));
+        for (var r = 1; r < ribs; r++) leaf.appendChild(el('rect', { x: x + r * pw / ribs, y: y + 3, width: 1.1, height: ph - 6, fill: dark, opacity: .6 }));
+        leaf.appendChild(el('rect', { x: x + 1.5, y: y + 1.5, width: pw - 3, height: ph - 3, fill: 'none', stroke: dark, 'stroke-width': 3 }));
+        if (glas) { var gw2 = Math.min(30, pw / 7); for (var g2 = 0; g2 < Math.floor(pw / (gw2 + 14)); g2++) leaf.appendChild(el('rect', { x: x + 12 + g2 * (gw2 + 14), y: y + ph * .12, width: gw2, height: ph * .12, rx: 2, fill: '#a9c4d6', stroke: dark, 'stroke-width': 1.5 })); }
+        leaf.appendChild(el('rect', { x: 200 - 8, y: y + ph * .55, width: 16, height: 4, rx: 2, fill: '#c9cdd0' }));
+      }
+      leaf.style.transform = isOpen ? 'translateY(-' + (ph + 2) + 'px)' : 'none';
+      // price model (demo numbers)
+      var m2 = W * H / 1e6;
+      var p = type === 'sectionaal' ? 1350 + m2 * 135 : 950 + m2 * 105;
+      p += +col[2]; if (motor) p += type === 'sectionaal' ? 650 : 600; if (glas) p += 260; if (pat === 'G') p += 90;
+      document.getElementById('price').textContent = '€ ' + fmt(p * .93) + ' – ' + fmt(p * 1.08);
+      var sum = (type === 'sectionaal' ? 'Sectionale poort' : 'Kantelpoort') + ', ' + (W / 1000).toFixed(2).replace('.', ',') + ' × ' + (H / 1000).toFixed(2).replace('.', ',') + ' m, ' + col[1] + ', ' + ({ L: 'brede ribbel', M: 'smalle ribbel', G: 'glad' })[pat] + (motor ? ', met motor' : ', manueel') + (glas ? ', met glasramen' : '');
+      document.getElementById('summary').textContent = col[1];
+      document.getElementById('quoteCfg').textContent = sum + '. Richtprijs € ' + fmt(p * .93) + ' – ' + fmt(p * 1.08) + '.';
+      state.sum = sum;
+    }
+    cfg.addEventListener('input', draw); cfg.addEventListener('change', draw); draw();
+    var ob = document.getElementById('openBtn');
+    ob.addEventListener('click', function () { isOpen = !isOpen; ob.textContent = isOpen ? 'Poort sluiten' : 'Poort openen'; draw(); });
+
+    /* ---------- Offerte ---------- */
+    var q = document.getElementById('quote'), qErr = document.getElementById('qErr');
+    q.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var naam = q.naam.value.trim(), tel = q.tel.value.trim(), mail = q.mail.value.trim();
+      var whats = [].slice.call(q.querySelectorAll('input[name="what"]:checked')).map(function (x) { return x.value.toLowerCase(); });
+      if (!naam) { qErr.textContent = 'Vul uw naam in.'; qErr.classList.remove('hidden'); q.naam.focus(); return; }
+      if (tel.replace(/\D/g, '').length < 9 && !/^\S+@\S+\.\S+$/.test(mail)) { qErr.textContent = 'Vul een telefoonnummer of e-mailadres in, zodat we u kunnen bereiken.'; qErr.classList.remove('hidden'); return; }
+      if (!whats.length) { qErr.textContent = 'Kies minstens één onderwerp.'; qErr.classList.remove('hidden'); return; }
+      qErr.classList.add('hidden');
+      document.getElementById('qOkTxt').textContent = 'Bedankt ' + naam.split(' ')[0] + '. DKJ neemt contact op om een opmeting in te plannen voor: ' + whats.join(', ') + (whats.indexOf('garagepoort') > -1 ? ' (' + state.sum.toLowerCase() + ')' : '') + '.';
+      document.getElementById('qForm').classList.add('hidden'); document.getElementById('qOk').classList.remove('hidden');
+    });
+    document.getElementById('qAgain').addEventListener('click', function () { q.reset(); document.getElementById('qForm').classList.remove('hidden'); document.getElementById('qOk').classList.add('hidden'); });
+  })();
+  </script>
+</body>
+</html>

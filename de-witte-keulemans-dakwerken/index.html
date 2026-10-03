@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Dakwerken De Witte-Keulemans | Dakwerker in Kontich sinds 1993</title>
+  <meta name="description" content="Platte en hellende daken, gevelbekleding, dakgoten, dakvensters en isolatie in Kontich en omgeving. Zelfwerkend patroon, eigen kraan en ladderlift, gratis prijsofferte na plaatsbezoek." />
+  <link rel="canonical" href="http://www.bvbadewitte.be/" />
+  <meta name="theme-color" content="#22303a" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Dakwerken De Witte-Keulemans" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Dakwerken De Witte-Keulemans | Dakwerker in Kontich" />
+  <meta property="og:description" content="Alle dak-, gevel- en isolatiewerken. Gratis prijsofferte na plaatsbezoek." />
+  <meta property="og:url" content="http://www.bvbadewitte.be/" />
+  <meta property="og:image" content="images/werf-hellend-dak.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2322303a'/%3E%3Cpath d='M4 18 16 7l12 11' stroke='%23c9472c' stroke-width='3.2' fill='none' stroke-linejoin='round'/%3E%3Cpath d='M9 17v8h14v-8' stroke='%236cc8f0' stroke-width='2.4' fill='none'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RoofingContractor",
+    "name": "Dakwerken De Witte-Keulemans BV",
+    "description": "Platte en hellende daken (pannen, leien, roofing), daktimmer en dakkapellen, gevelbekleding, dakgoten, dakvensters, lichtkoepels, dak- en gevelisolatie en herstellingen.",
+    "url": "http://www.bvbadewitte.be/",
+    "telephone": "+3234573526",
+    "faxNumber": "+3234584071",
+    "email": "info@bvbadewitte.be",
+    "vatID": "BE0450847189",
+    "foundingDate": "1993",
+    "image": "images/werf-hellend-dak.jpg",
+    "logo": "images/logo-dewitte.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ooststatiestraat 68",
+      "postalCode": "2550",
+      "addressLocality": "Kontich",
+      "addressCountry": "BE"
+    },
+    "areaServed": ["Kontich", "Waarloos", "Aartselaar", "Edegem", "Hove", "Lint", "Mortsel", "Wilrijk", "Boechout", "Duffel", "Rumst", "Antwerpen"],
+    "sameAs": ["https://www.facebook.com/BvbaDeWitte"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Dak-, gevel- en isolatiewerken",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Platte daken en roofing" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hellende daken: pannen en leien" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gevelbekleding" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dakisolatie en gevelisolatie" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dakvensters en lichtkoepels" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dakherstellingen en stormschade" } }
+      ]
+    }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Barlow', 'system-ui', 'sans-serif'], cond: ['"Barlow Condensed"', 'Barlow', 'sans-serif'] },
+          colors: {
+            lei: '#22303a',
+            lei2: '#2d3d49',
+            nok: '#2f2f2f',
+            hemel: '#6cc8f0',
+            lucht: '#e4f3fa',
+            pan: '#c9472c',
+            pan2: '#a93a22',
+            zink: '#f2f4f5',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root { --ease: cubic-bezier(0.23, 1, 0.32, 1); }
+    html { scroll-behavior: smooth; }
+    body { text-rendering: optimizeLegibility; }
+    h1, h2, h3 { text-wrap: balance; }
+    p { text-wrap: pretty; }
+
+    /* Slate scale pattern (leien) for the dark bands */
+    .leien { background-color: #22303a;
+      background-image: radial-gradient(circle at 50% 0, transparent 13px, rgba(255,255,255,.035) 14px, transparent 15px);
+      background-size: 28px 18px; }
+
+    /* Gable frame: the hero photo sits under a roof pitch */
+    .gable { clip-path: polygon(50% 0, 100% 26%, 100% 100%, 0 100%, 0 26%); }
+    .gable-line { position: absolute; inset: 0; pointer-events: none; }
+
+    .opt { transition: background-color .18s var(--ease), border-color .18s var(--ease), transform .18s var(--ease); }
+    .opt:active { transform: scale(.97); }
+    .opt[aria-pressed="true"] { border-color: #c9472c; background: #fff4f1; box-shadow: inset 0 0 0 1px #c9472c; }
+    .chip input { position: absolute; opacity: 0; pointer-events: none; }
+    .chip label { cursor: pointer; transition: background-color .15s, color .15s, border-color .15s; }
+    .chip input:checked + label { background: #22303a; color: #fff; border-color: #22303a; }
+    .chip input:focus-visible + label { outline: 2px solid #c9472c; outline-offset: 2px; }
+    .step-panel[hidden] { display: none; }
+    .num { font-variant-numeric: tabular-nums; }
+    input[type=range] { accent-color: #c9472c; }
+
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid #c9472c; outline-offset: 3px; }
+
+    .ind { transition: opacity .25s var(--ease), transform .25s var(--ease); }
+    .ind.off { opacity: .4; }
+    .ind.on .dot { background: #3fae6a; }
+
+    /* Hero load: roofline draws in once */
+    .js .ridge path { stroke-dasharray: 900; stroke-dashoffset: 900; animation: draw 1.4s var(--ease) .2s forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .ridge path { animation: none; stroke-dashoffset: 0; }
+      .btn, .opt, .ind { transition: none; }
+    }
+  </style>
+</head>
+<body class="bg-zink text-lei font-sans antialiased selection:bg-pan/30">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <div class="fixed bottom-[76px] md:bottom-4 right-3 md:right-4 z-50 pointer-events-none">
+    <span class="text-[11px] tracking-wide text-white bg-lei/90 rounded-full px-3 py-1.5 shadow">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-nok text-white">
+    <nav class="max-w-6xl mx-auto px-5 h-[68px] flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top" class="flex items-center gap-3 min-w-0">
+        <img src="images/logo-dewitte.jpg" alt="De Witte, alle dak-, gevel- en isolatiewerken" class="h-11 w-auto" width="165" height="46" />
+        <span class="hidden sm:block text-[13px] leading-tight text-white/70 border-l border-white/20 pl-3">Dakwerken<br>De Witte-Keulemans</span>
+      </a>
+      <div class="hidden lg:flex items-center gap-7 text-[15px] font-medium text-white/85">
+        <a href="#diensten" class="hover:text-hemel">Diensten</a>
+        <a href="#werven" class="hover:text-hemel">Werven</a>
+        <a href="#premies" class="hover:text-hemel">Premies</a>
+        <a href="#contact" class="hover:text-hemel">Contact</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="tel:+3234573526" class="hidden md:inline font-semibold num">03 457 35 26</a>
+        <a href="#offerte" class="btn hidden sm:inline-block bg-pan hover:bg-pan2 rounded-md px-5 py-2.5 font-bold text-[15px]">Gratis offerte</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-lucht to-zink">
+      <div class="max-w-6xl mx-auto px-5 pt-10 pb-12 md:pt-14 md:pb-16 grid md:grid-cols-12 gap-10 items-center">
+        <div class="md:col-span-6 lg:col-span-6">
+          <p class="font-semibold text-pan text-[16px]">Dakwerker in Kontich · sinds 1993</p>
+          <h1 class="mt-3 font-cond font-extrabold text-[50px] leading-[.95] sm:text-[64px] lg:text-[68px] tracking-tight text-lei">
+            De Witte-Keulemans: uw dak, door de patroon zelf gelegd.
+          </h1>
+          <p class="mt-5 text-[18px] leading-relaxed text-lei/80 max-w-[38ch]">
+            Platte en hellende daken, gevelbekleding, goten en isolatie. Van een kapotte pan tot een volledige dakrenovatie met daktimmer en dakkapel.
+          </p>
+          <div class="mt-7 flex flex-col sm:flex-row gap-3">
+            <a href="#offerte" class="btn inline-flex justify-center items-center bg-pan hover:bg-pan2 text-white font-bold rounded-md px-7 py-4 text-[17px]">Start uw dak-offerte</a>
+            <a href="tel:+3234573526" class="btn inline-flex justify-center items-center gap-2 bg-white border border-lei/20 rounded-md px-7 py-4 text-[17px] font-semibold hover:border-lei">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+              <span class="num">03 457 35 26</span>
+            </a>
+          </div>
+          <ul class="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-[15px] font-medium text-lei/80">
+            <li class="flex items-center gap-2"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" stroke="#c9472c" stroke-width="2.6" stroke-linecap="round"/></svg>Gratis offerte na plaatsbezoek</li>
+            <li class="flex items-center gap-2"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" stroke="#c9472c" stroke-width="2.6" stroke-linecap="round"/></svg>Geregistreerd aannemer</li>
+            <li class="flex items-center gap-2"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" stroke="#c9472c" stroke-width="2.6" stroke-linecap="round"/></svg>Eigen kraan en ladderlift</li>
+          </ul>
+        </div>
+        <div class="md:col-span-6 relative">
+          <div class="relative max-w-[560px] mx-auto">
+            <div class="gable bg-lei aspect-[5/4] overflow-hidden">
+              <img src="images/werf-hellend-dak.jpg" alt="Werf van De Witte-Keulemans: hellend dak met blauwe onderdakfolie en werfdoek 'Alle dakwerken'" class="w-full h-full object-cover" width="640" height="480" />
+            </div>
+            <svg class="gable-line ridge" viewBox="0 0 100 80" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M-1 21.2 50 0.6 101 21.2" fill="none" stroke="#c9472c" stroke-width="2.4" vector-effect="non-scaling-stroke" style="stroke-width:7px"/>
+            </svg>
+            <div class="absolute -bottom-5 left-4 right-4 sm:left-auto sm:-right-3 sm:w-[250px] bg-white rounded-lg shadow-xl p-4 flex gap-3 items-center">
+              <img src="images/hellend-dak-na.jpg" alt="Afgewerkt hellend dak met rode pannen" class="w-20 h-16 object-cover rounded" width="640" height="480" />
+              <p class="text-[14px] leading-snug"><span class="font-bold block">Hellend dak, afgewerkt</span>met nieuwe pannen</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Merken strip -->
+    <section class="bg-white border-y border-lei/10">
+      <div class="max-w-6xl mx-auto px-5 py-5 flex flex-wrap items-center gap-x-8 gap-y-2 text-[15px]">
+        <p class="text-lei/60">Materialen van Belgische marktleiders:</p>
+        <p class="font-cond font-bold text-[20px] tracking-wide text-lei/80 flex flex-wrap gap-x-7 gap-y-1">
+          <span>Velux</span><span>Koramic</span><span>Skylux</span><span>Eternit</span><span>Atab</span><span>Recticel</span><span>Deceuninck</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Diensten -->
+    <section id="diensten" class="max-w-6xl mx-auto px-5 py-20 md:py-24">
+      <h2 class="font-cond font-extrabold text-[40px] md:text-[52px] leading-none tracking-tight max-w-3xl">Alle dak-, gevel- en isolatiewerken</h2>
+      <p class="mt-4 text-[17px] text-lei/70 max-w-2xl">Bij houtconstructies werken we altijd met gedrenkt of geïmpregneerd hout. Isoleren we uw dak of gevel als geregistreerd aannemer, dan komt u in aanmerking voor premies en 6% btw.</p>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-lei/10 rounded-xl overflow-hidden border border-lei/10">
+        <article class="bg-white p-6">
+          <h3 class="font-cond font-bold text-[24px]">Platte daken</h3>
+          <p class="mt-2 text-[15px] text-lei/70">Roofing, daktimmer, isolatie en omgekeerd dak met styrodur en grindballast.</p>
+        </article>
+        <article class="bg-white p-6">
+          <h3 class="font-cond font-bold text-[24px]">Hellende daken</h3>
+          <p class="mt-2 text-[15px] text-lei/70">Pannen, leien of roofing, daktimmer en dakkapellen, tot een totale dakrenovatie.</p>
+        </article>
+        <article class="bg-white p-6">
+          <h3 class="font-cond font-bold text-[24px]">Gevelbekleding</h3>
+          <p class="mt-2 text-[15px] text-lei/70">Leien, siding, ceder, multiboard, gevelroofing of dakpannen, eventueel eerst met gevelisolatie.</p>
+        </article>
+        <article class="bg-white p-6">
+          <h3 class="font-cond font-bold text-[24px]">Goten</h3>
+          <p class="mt-2 text-[15px] text-lei/70">Hang-, kiel- en dakgoten, met timmer en binnen- en buitenbekleding.</p>
+        </article>
+        <article class="bg-white p-6">
+          <h3 class="font-cond font-bold text-[24px]">Dakvensters &amp; lichtkoepels</h3>
+          <p class="mt-2 text-[15px] text-lei/70">Velux in hout of polyurethaan, manueel, elektrisch of solar, met rolluik en gordijnen.</p>
+        </article>
+        <article class="bg-white p-6">
+          <h3 class="font-cond font-bold text-[24px]">Isolatie</h3>
+          <p class="mt-2 text-[15px] text-lei/70">Dak-, zolder- en gevelisolatie. Een slecht dak kan tot 30% van uw warmteverlies veroorzaken.</p>
+        </article>
+        <article class="bg-white p-6">
+          <h3 class="font-cond font-bold text-[24px]">Herstellingen</h3>
+          <p class="mt-2 text-[15px] text-lei/70">Stormschade, kapotte pannen en nokken, kleine lekken, schouwen heropvoegen en nieuw loodwerk.</p>
+        </article>
+        <article class="bg-lei text-white p-6">
+          <h3 class="font-cond font-bold text-[24px]">Gratis brandhout</h3>
+          <p class="mt-2 text-[15px] text-white/75">Hout uit afgebroken dakconstructies leveren we gratis aan huis binnen 15 km.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Offerte-wizard -->
+    <section id="offerte" class="leien text-white scroll-mt-16">
+      <div class="max-w-6xl mx-auto px-5 py-20 md:py-24">
+        <div class="max-w-2xl">
+          <h2 class="font-cond font-extrabold text-[40px] md:text-[52px] leading-none tracking-tight">Dak-offerte in drie stappen</h2>
+          <p class="mt-4 text-[17px] text-white/75">Vertel ons welk dak het is, hoe groot en wat er moet gebeuren. U ziet meteen voor welke premies en voordelen u mogelijk in aanmerking komt. Daarna komen we gratis kijken.</p>
+        </div>
+
+        <div class="mt-10 grid lg:grid-cols-12 gap-6">
+          <form id="wiz" class="lg:col-span-8 bg-white text-lei rounded-xl p-5 sm:p-8" novalidate>
+            <div class="flex items-center justify-between text-[14px] font-semibold mb-6">
+              <span id="stepLbl">Stap 1 van 3: type werk</span>
+              <span class="flex gap-1.5" aria-hidden="true"><i data-dot="1" class="block w-8 h-1.5 rounded bg-pan"></i><i data-dot="2" class="block w-8 h-1.5 rounded bg-lei/15"></i><i data-dot="3" class="block w-8 h-1.5 rounded bg-lei/15"></i></span>
+            </div>
+
+            <div class="step-panel" data-step="1">
+              <h3 class="font-cond font-bold text-[28px] leading-tight">Om welk dak gaat het?</h3>
+              <div id="types" class="mt-5 grid grid-cols-2 gap-3">
+                <button type="button" class="opt rounded-lg border border-lei/15 p-4 text-left" data-type="plat" aria-pressed="false">
+                  <svg width="56" height="34" viewBox="0 0 56 34" fill="none" aria-hidden="true"><path d="M4 12h48" stroke="#c9472c" stroke-width="4"/><path d="M8 14v18h40V14" stroke="#22303a" stroke-width="2.5"/></svg>
+                  <span class="block mt-2 font-bold text-[17px]">Plat dak</span><span class="block text-[14px] text-lei/60">roofing, omgekeerd dak</span>
+                </button>
+                <button type="button" class="opt rounded-lg border border-lei/15 p-4 text-left" data-type="hellend" aria-pressed="false">
+                  <svg width="56" height="34" viewBox="0 0 56 34" fill="none" aria-hidden="true"><path d="M4 18 28 3l24 15" stroke="#c9472c" stroke-width="4" stroke-linejoin="round"/><path d="M10 17v15h36V17" stroke="#22303a" stroke-width="2.5"/></svg>
+                  <span class="block mt-2 font-bold text-[17px]">Hellend dak</span><span class="block text-[14px] text-lei/60">pannen, leien</span>
+                </button>
+                <button type="button" class="opt rounded-lg border border-lei/15 p-4 text-left" data-type="gevel" aria-pressed="false">
+                  <svg width="56" height="34" viewBox="0 0 56 34" fill="none" aria-hidden="true"><path d="M14 3h28v29H14z" stroke="#22303a" stroke-width="2.5"/><path d="M18 9h20M18 15h20M18 21h20M18 27h20" stroke="#c9472c" stroke-width="2.5"/></svg>
+                  <span class="block mt-2 font-bold text-[17px]">Gevelbekleding</span><span class="block text-[14px] text-lei/60">leien, siding, ceder</span>
+                </button>
+                <button type="button" class="opt rounded-lg border border-lei/15 p-4 text-left" data-type="herstel" aria-pressed="false">
+                  <svg width="56" height="34" viewBox="0 0 56 34" fill="none" aria-hidden="true"><path d="M4 18 28 3l24 15" stroke="#22303a" stroke-width="3" stroke-linejoin="round"/><path d="M28 14c-3 5-4 7-4 9a4 4 0 0 0 8 0c0-2-1-4-4-9z" fill="#6cc8f0"/></svg>
+                  <span class="block mt-2 font-bold text-[17px]">Lek of herstelling</span><span class="block text-[14px] text-lei/60">stormschade, pannen, goot</span>
+                </button>
+              </div>
+              <p id="err1" class="mt-3 text-[14px] text-pan2 hidden" role="alert">Kies eerst het soort werk.</p>
+            </div>
+
+            <div class="step-panel" data-step="2" hidden>
+              <h3 class="font-cond font-bold text-[28px] leading-tight">Oppervlakte en uitvoering</h3>
+              <label class="mt-5 block">
+                <span class="flex justify-between font-semibold"><span id="areaLbl">Geschatte dakoppervlakte</span><span class="num"><output id="areaOut">60</output> m²</span></span>
+                <input id="area" type="range" min="5" max="300" step="5" value="60" class="mt-3 w-full" />
+                <span class="flex justify-between text-[13px] text-lei/55"><span>klein karwei</span><span>rijwoning ±60 m²</span><span>villa</span></span>
+              </label>
+              <fieldset class="mt-6">
+                <legend class="font-semibold">Materiaal</legend>
+                <div id="mats" class="mt-2 flex flex-wrap gap-2"></div>
+              </fieldset>
+              <fieldset class="mt-6">
+                <legend class="font-semibold">Isolatie meenemen?</legend>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span class="chip relative"><input type="radio" name="iso" id="iso1" value="ja" checked><label for="iso1" class="block border border-lei/20 rounded-md px-4 py-2.5 text-[15px] font-semibold">Ja, isoleren</label></span>
+                  <span class="chip relative"><input type="radio" name="iso" id="iso2" value="nee"><label for="iso2" class="block border border-lei/20 rounded-md px-4 py-2.5 text-[15px] font-semibold">Nee</label></span>
+                  <span class="chip relative"><input type="radio" name="iso" id="iso3" value="weetniet"><label for="iso3" class="block border border-lei/20 rounded-md px-4 py-2.5 text-[15px] font-semibold">Graag advies</label></span>
+                </div>
+              </fieldset>
+              <fieldset class="mt-6">
+                <legend class="font-semibold">Extra's</legend>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span class="chip relative"><input type="checkbox" name="extra" id="ex1" value="Dakvenster"><label for="ex1" class="block border border-lei/20 rounded-md px-4 py-2.5 text-[15px] font-semibold">Dakvenster (Velux)</label></span>
+                  <span class="chip relative"><input type="checkbox" name="extra" id="ex2" value="Lichtkoepel"><label for="ex2" class="block border border-lei/20 rounded-md px-4 py-2.5 text-[15px] font-semibold">Lichtkoepel</label></span>
+                  <span class="chip relative"><input type="checkbox" name="extra" id="ex3" value="Goten"><label for="ex3" class="block border border-lei/20 rounded-md px-4 py-2.5 text-[15px] font-semibold">Nieuwe goten</label></span>
+                  <span class="chip relative"><input type="checkbox" name="extra" id="ex4" value="Dakkapel"><label for="ex4" class="block border border-lei/20 rounded-md px-4 py-2.5 text-[15px] font-semibold">Dakkapel</label></span>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="step-panel" data-step="3" hidden>
+              <h3 class="font-cond font-bold text-[28px] leading-tight">Uw woning en gegevens</h3>
+              <fieldset class="mt-5">
+                <legend class="font-semibold">Hoe oud is de woning?</legend>
+                <div class="mt-2 flex flex-wrap gap-2">
+                  <span class="chip relative"><input type="radio" name="age" id="age1" value="nieuw"><label for="age1" class="block border border-lei/20 rounded-md px-4 py-2.5 text-[15px] font-semibold">Jonger dan 10 jaar</label></span>
+                  <span class="chip relative"><input type="radio" name="age" id="age2" value="oud" checked><label for="age2" class="block border border-lei/20 rounded-md px-4 py-2.5 text-[15px] font-semibold">10 jaar of ouder</label></span>
+                </div>
+              </fieldset>
+              <label class="mt-5 flex flex-col sm:flex-row sm:items-center gap-3 rounded-lg border-2 border-dashed border-lei/25 p-4 cursor-pointer hover:border-pan">
+                <input id="photos" type="file" accept="image/*" multiple class="sr-only" />
+                <span class="font-bold">Foto's van het dak of het lek</span>
+                <span class="text-[14px] text-lei/60">Vanaf de straat of de zolder is perfect.</span>
+              </label>
+              <div id="thumbs" class="mt-3 flex flex-wrap gap-2"></div>
+              <div class="mt-4 grid sm:grid-cols-2 gap-3">
+                <label class="block"><span class="text-[14px] font-semibold">Naam</span><input name="naam" autocomplete="name" class="mt-1 w-full rounded-md border border-lei/20 px-3.5 py-3" /></label>
+                <label class="block"><span class="text-[14px] font-semibold">Telefoon</span><input name="tel" type="tel" autocomplete="tel" class="mt-1 w-full rounded-md border border-lei/20 px-3.5 py-3" /></label>
+                <label class="block sm:col-span-2"><span class="text-[14px] font-semibold">Adres van de werf</span><input name="adres" autocomplete="street-address" placeholder="Straat, nummer, gemeente" class="mt-1 w-full rounded-md border border-lei/20 px-3.5 py-3" /></label>
+              </div>
+              <p id="err3" class="mt-3 text-[14px] text-pan2 hidden" role="alert">Vul uw naam en telefoonnummer in, dan bellen we u voor het plaatsbezoek.</p>
+            </div>
+
+            <div id="done" class="hidden py-4" role="status" aria-live="polite">
+              <div class="w-14 h-14 rounded-full bg-pan grid place-items-center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h3 class="mt-4 font-cond font-extrabold text-[34px] leading-none" id="doneTitle">Aanvraag ontvangen</h3>
+              <p class="mt-3 text-lei/75 max-w-lg" id="doneText"></p>
+              <p class="mt-4 text-[13px] bg-lucht rounded-md px-3 py-2 inline-block">Dit is een demo: er is niets verstuurd. Op de echte site komt deze aanvraag rechtstreeks bij De Witte-Keulemans binnen.</p>
+              <div><button type="button" id="restart" class="mt-5 font-semibold underline">Nieuwe aanvraag</button></div>
+            </div>
+
+            <div id="nav" class="mt-8 flex justify-between gap-3">
+              <button type="button" id="back" class="btn invisible rounded-md border border-lei/20 px-5 py-3 font-semibold">Vorige</button>
+              <button type="button" id="next" class="btn rounded-md bg-pan hover:bg-pan2 text-white px-7 py-3.5 font-bold">Volgende</button>
+            </div>
+          </form>
+
+          <aside id="premies" class="lg:col-span-4 bg-lei2 rounded-xl p-6 sm:p-7 h-fit lg:sticky lg:top-24 scroll-mt-24" aria-live="polite">
+            <h3 class="font-cond font-bold text-[26px] leading-tight">Premie-indicator</h3>
+            <p class="mt-1 text-[14px] text-white/60" id="premSum">Kies een type werk om te starten.</p>
+            <ul class="mt-5 space-y-4 text-[15px]">
+              <li class="ind off flex gap-3" id="i-btw"><span class="dot mt-1.5 w-2.5 h-2.5 rounded-full bg-white/30 shrink-0"></span><span><b class="block">6% btw i.p.v. 21%</b><span class="text-white/65">Voor renovatie van een privéwoning van 10 jaar of ouder.</span></span></li>
+              <li class="ind off flex gap-3" id="i-dak"><span class="dot mt-1.5 w-2.5 h-2.5 rounded-full bg-white/30 shrink-0"></span><span><b class="block">Vlaamse premie dakisolatie</b><span class="text-white/65">Mijn VerbouwPremie, als u isoleert via een geregistreerd aannemer.</span></span></li>
+              <li class="ind off flex gap-3" id="i-gevel"><span class="dot mt-1.5 w-2.5 h-2.5 rounded-full bg-white/30 shrink-0"></span><span><b class="block">Premie gevelisolatie</b><span class="text-white/65">Bij buitenmuurisolatie onder nieuwe gevelbekleding.</span></span></li>
+              <li class="ind off flex gap-3" id="i-verz"><span class="dot mt-1.5 w-2.5 h-2.5 rounded-full bg-white/30 shrink-0"></span><span><b class="block">Stormschade via verzekering</b><span class="text-white/65">Foto's en een herstelverslag helpen uw dossier.</span></span></li>
+            </ul>
+            <p class="mt-6 text-[12px] leading-relaxed text-white/45">Eerste indicatie, geen garantie. Premies en voorwaarden wijzigen geregeld; bij het plaatsbezoek overlopen we wat voor u geldt.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Werven -->
+    <section id="werven" class="max-w-6xl mx-auto px-5 py-20 md:py-24">
+      <h2 class="font-cond font-extrabold text-[40px] md:text-[52px] leading-none tracking-tight">Van de werf</h2>
+      <div class="mt-10 grid md:grid-cols-12 gap-5">
+        <figure class="md:col-span-7">
+          <div class="grid grid-cols-2 gap-2 rounded-xl overflow-hidden">
+            <div class="relative"><img src="images/platdak-voor.jpg" alt="Plat dak voor de werken: oude roofing verwijderd, lichtkoepel uitgehaald" class="w-full aspect-[4/3] object-cover" width="672" height="504" loading="lazy" /><span class="absolute top-3 left-3 bg-lei text-white text-[13px] font-semibold rounded px-2.5 py-1">Voor</span></div>
+            <div class="relative"><img src="images/platdak-na.jpg" alt="Plat dak na de werken: nieuwe daktimmer en roofing met dakluik" class="w-full aspect-[4/3] object-cover" width="672" height="504" loading="lazy" /><span class="absolute top-3 left-3 bg-pan text-white text-[13px] font-semibold rounded px-2.5 py-1">Na</span></div>
+          </div>
+          <figcaption class="mt-3 text-[15px] text-lei/70">Plat dak: nieuwe daktimmer, isolatie en roofing, met dakluik.</figcaption>
+        </figure>
+        <div class="md:col-span-5 rounded-xl bg-lei text-white overflow-hidden flex flex-col">
+          <img src="images/vrachtwagen-kraan.jpg" alt="Vrachtwagen van De Witte met telescoopkraan op de werf" class="w-full aspect-[16/10] object-cover" width="640" height="480" loading="lazy" />
+          <div class="p-6">
+            <h3 class="font-cond font-bold text-[26px]">Eigen materieel, veilige werf</h3>
+            <p class="mt-2 text-[15px] text-white/75">Vrachtwagen met telescoopkraan en afkipsysteem, gesloten vrachtwagen met laadbrug, Böcker-ladderlift en toplift, Altrex-stelling en veiligheidsstelling.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-white border-t border-lei/10">
+      <div class="max-w-6xl mx-auto px-5 py-20 md:py-24 grid md:grid-cols-12 gap-10">
+        <div class="md:col-span-5">
+          <h2 class="font-cond font-extrabold text-[40px] md:text-[48px] leading-none tracking-tight">Dakwerker in Kontich en de rand</h2>
+          <p class="mt-4 text-[17px] text-lei/75">Wij werken in Kontich, Waarloos, Aartselaar, Edegem, Hove, Lint, Mortsel, Wilrijk, Boechout, Duffel, Rumst en Antwerpen. Voor een correcte prijs komen we altijd eerst ter plaatse kijken.</p>
+          <a href="#offerte" class="btn mt-6 inline-flex bg-pan hover:bg-pan2 text-white font-bold rounded-md px-7 py-4">Gratis offerte aanvragen</a>
+        </div>
+        <div class="md:col-span-7 grid sm:grid-cols-2 gap-5 text-[16px]">
+          <div class="rounded-xl border border-lei/10 p-6">
+            <h3 class="font-cond font-bold text-[22px]">Contact</h3>
+            <p class="mt-2">Tel. <a href="tel:+3234573526" class="font-semibold underline decoration-pan underline-offset-4 num">03 457 35 26</a></p>
+            <p class="mt-1">Fax 03 458 40 71</p>
+            <p class="mt-1"><a href="mailto:info@bvbadewitte.be" class="underline decoration-pan underline-offset-4">info@bvbadewitte.be</a></p>
+            <p class="mt-1"><a href="https://www.facebook.com/BvbaDeWitte" target="_blank" rel="noopener" class="underline decoration-pan underline-offset-4">Facebook</a></p>
+          </div>
+          <div class="rounded-xl border border-lei/10 p-6">
+            <h3 class="font-cond font-bold text-[22px]">Adres</h3>
+            <p class="mt-2">Dakwerken De Witte-Keulemans BV<br>Ooststatiestraat 68<br>2550 Kontich</p>
+            <a class="mt-2 inline-block font-semibold underline decoration-pan underline-offset-4" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Dakwerken+De+Witte+Ooststatiestraat+68+2550+Kontich">Open in Google Maps</a>
+          </div>
+          <div class="rounded-xl bg-zink p-6 sm:col-span-2 text-[15px] text-lei/75">
+            Ondernemingsnummer BE 0450.847.189 · Geregistreerd aannemer · Plaatsbezoek op afspraak, telefonisch bereikbaar tijdens de werkuren.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-nok text-white/60 text-[14px] pb-24 md:pb-0">
+    <div class="max-w-6xl mx-auto px-5 py-8 flex flex-col sm:flex-row gap-2 justify-between">
+      <p>© Dakwerken De Witte-Keulemans BV · Ooststatiestraat 68, 2550 Kontich</p>
+      <p>Concept door Saspire</p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden grid grid-cols-2 text-[15px] font-bold">
+    <a href="tel:+3234573526" class="flex items-center justify-center gap-2 py-4 bg-nok text-white">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      Bel De Witte
+    </a>
+    <a href="#offerte" class="flex items-center justify-center py-4 bg-pan text-white">Dak-offerte</a>
+  </div>
+
+<script>
+(function () {
+  var MATS = {
+    plat: ['Roofing (bitumen)', 'Omgekeerd dak', 'Daktimmer + roofing'],
+    hellend: ['Dakpannen', 'Leien', 'Roofing'],
+    gevel: ['Leien', 'Siding', 'Ceder', 'Multiboard', 'Gevelroofing'],
+    herstel: ['Pannen of nokken', 'Lek opsporen', 'Goot of afvoer', 'Schouw of loodwerk', 'Velux of lichtkoepel']
+  };
+  var TYPE_N = { plat: 'plat dak', hellend: 'hellend dak', gevel: 'gevelbekleding', herstel: 'herstelling' };
+  var st = { type: null, area: 60, mat: null, iso: 'ja', age: 'oud' };
+  var step = 1, photos = 0;
+  var form = document.getElementById('wiz');
+  var $ = function (id) { return document.getElementById(id); };
+
+  [].slice.call(document.querySelectorAll('#types .opt')).forEach(function (b) {
+    b.addEventListener('click', function () {
+      [].slice.call(document.querySelectorAll('#types .opt')).forEach(function (o) { o.setAttribute('aria-pressed', 'false'); });
+      b.setAttribute('aria-pressed', 'true');
+      st.type = b.getAttribute('data-type'); st.mat = MATS[st.type][0];
+      $('err1').classList.add('hidden');
+      buildMats(); indicate();
+    });
+  });
+
+  function buildMats() {
+    var m = $('mats'); m.innerHTML = '';
+    MATS[st.type].forEach(function (name, i) {
+      var id = 'mat' + i;
+      var s = document.createElement('span'); s.className = 'chip relative';
+      s.innerHTML = '<input type="radio" name="mat" id="' + id + '" value="' + name + '"' + (name === st.mat ? ' checked' : '') + '><label for="' + id + '" class="block border border-lei/20 rounded-md px-4 py-2.5 text-[15px] font-semibold">' + name + '</label>';
+      m.appendChild(s);
+    });
+    $('areaLbl').textContent = st.type === 'gevel' ? 'Geschatte geveloppervlakte' : st.type === 'herstel' ? 'Geschatte zone (m²)' : 'Geschatte dakoppervlakte';
+  }
+
+  form.addEventListener('change', function (e) {
+    var t = e.target;
+    if (t.name === 'mat') st.mat = t.value;
+    if (t.name === 'iso') st.iso = t.value;
+    if (t.name === 'age') st.age = t.value;
+    indicate();
+  });
+  $('area').addEventListener('input', function (e) { st.area = +e.target.value; $('areaOut').textContent = st.area; indicate(); });
+
+  function setInd(id, on) { var el = $(id); el.classList.toggle('on', on); el.classList.toggle('off', !on); el.querySelector('.dot').style.background = on ? '#3fae6a' : ''; }
+  function indicate() {
+    if (!st.type) return;
+    var iso = st.iso !== 'nee';
+    var btw = st.age === 'oud';
+    var dak = iso && (st.type === 'plat' || st.type === 'hellend');
+    var gevel = iso && st.type === 'gevel';
+    var verz = st.type === 'herstel';
+    setInd('i-btw', btw); setInd('i-dak', dak); setInd('i-gevel', gevel); setInd('i-verz', verz);
+    var n = [btw, dak, gevel, verz].filter(Boolean).length;
+    $('premSum').textContent = n ? 'Voor uw ' + TYPE_N[st.type] + ' van ' + st.area + ' m²: ' + n + (n === 1 ? ' voordeel' : ' voordelen') + ' mogelijk.' : 'Voor deze keuze zien we geen premie, wel een gratis plaatsbezoek.';
+  }
+
+  $('photos').addEventListener('change', function (e) {
+    [].slice.call(e.target.files).slice(0, 8).forEach(function (f) {
+      if (!/^image\//.test(f.type)) return;
+      var img = document.createElement('img'); img.className = 'w-20 h-20 object-cover rounded-md border border-lei/10'; img.alt = 'Uw foto'; img.src = URL.createObjectURL(f);
+      $('thumbs').appendChild(img); photos++;
+    });
+  });
+
+  var LBL = ['', 'Stap 1 van 3: type werk', 'Stap 2 van 3: oppervlakte en uitvoering', 'Stap 3 van 3: woning en gegevens'];
+  function show(n) {
+    step = n;
+    [].slice.call(form.querySelectorAll('.step-panel')).forEach(function (p) { p.hidden = +p.getAttribute('data-step') !== n; });
+    [1, 2, 3].forEach(function (i) { form.querySelector('[data-dot="' + i + '"]').className = 'block w-8 h-1.5 rounded ' + (i <= n ? 'bg-pan' : 'bg-lei/15'); });
+    $('stepLbl').textContent = LBL[n];
+    $('back').classList.toggle('invisible', n === 1);
+    $('next').textContent = n === 3 ? 'Plaatsbezoek aanvragen' : 'Volgende';
+  }
+  $('back').addEventListener('click', function () { show(step - 1); });
+  $('next').addEventListener('click', function () {
+    if (step === 1) { if (!st.type) { $('err1').classList.remove('hidden'); return; } show(2); }
+    else if (step === 2) { show(3); }
+    else {
+      var naam = form.naam.value.trim(), tel = form.tel.value.replace(/\D/g, '');
+      if (!naam || tel.length < 9) { $('err3').classList.remove('hidden'); return; }
+      $('err3').classList.add('hidden');
+      var extras = [].slice.call(form.querySelectorAll('input[name=extra]:checked')).map(function (i) { return i.value.toLowerCase(); });
+      [].slice.call(form.querySelectorAll('.step-panel')).forEach(function (p) { p.hidden = true; });
+      $('nav').classList.add('hidden'); $('done').classList.remove('hidden');
+      $('stepLbl').textContent = 'Klaar';
+      $('doneTitle').textContent = 'Bedankt, ' + naam.split(' ')[0] + '!';
+      $('doneText').textContent = 'Uw aanvraag: ' + TYPE_N[st.type] + ', ±' + st.area + ' m², ' + st.mat.toLowerCase() + (st.iso === 'ja' ? ', met isolatie' : '') + (extras.length ? ', ' + extras.join(', ') : '') + (photos ? ', ' + photos + " foto's" : '') + '. We bellen u om een gratis plaatsbezoek af te spreken.';
+    }
+  });
+  $('restart').addEventListener('click', function () {
+    st = { type: null, area: 60, mat: null, iso: 'ja', age: 'oud' }; photos = 0; form.reset(); $('thumbs').innerHTML = ''; $('areaOut').textContent = 60;
+    [].slice.call(document.querySelectorAll('#types .opt')).forEach(function (o) { o.setAttribute('aria-pressed', 'false'); });
+    ['i-btw', 'i-dak', 'i-gevel', 'i-verz'].forEach(function (i) { setInd(i, false); });
+    $('premSum').textContent = 'Kies een type werk om te starten.';
+    $('done').classList.add('hidden'); $('nav').classList.remove('hidden'); show(1);
+  });
+})();
+</script>
+</body>
+</html>

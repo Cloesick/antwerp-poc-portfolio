@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Sleutelcentrale | Slotenmaker in Antwerpen sinds 1956, Mercatorstraat 10</title>
+  <meta name="description" content="Familiebedrijf sinds 1956: deuren openen, sloten herstellen aan huis, veiligheidscilinders (EVVA, Mul-T-Lock, RB-Locks), gepantserde deuren, kluizen en 99% van alle sleutels. Mercatorstraat 10, Antwerpen." />
+  <link rel="canonical" href="https://www.sleutelcentrale-bvba.be/" />
+  <meta name="theme-color" content="#0e0d5e" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Sleutelcentrale BV" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Sleutelcentrale | Slotenmaker in Antwerpen sinds 1956" />
+  <meta property="og:description" content="Slot kapot of buitengesloten? Drie generaties slotenmakers op de Mercatorstraat." />
+  <meta property="og:url" content="https://www.sleutelcentrale-bvba.be/" />
+  <meta property="og:image" content="images/veiligheidscilinder-rb.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230e0d5e'/%3E%3Ccircle cx='10' cy='16' r='5.5' fill='none' stroke='%23f6d437' stroke-width='3'/%3E%3Cpath d='M15.5 16H27v4h-3v-2h-2v3h-3v-3' fill='none' stroke='%23f6d437' stroke-width='2.4' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Locksmith",
+    "name": "Sleutelcentrale BV",
+    "description": "Slotenmakerij en sleutelservice sinds 1956: deuren openen, sloten herstellen aan huis, veiligheidscilinders en -sloten, veiligheidsbeslag, gepantserde deuren, raambeveiliging, automatische nachtsloten, EVVA-toegangscontrole, kluizen, lockers, sleutels bijmaken en nummerplaten.",
+    "url": "https://www.sleutelcentrale-bvba.be/",
+    "telephone": "+3232303513",
+    "email": "sleutelcentrale@skynet.be",
+    "vatID": "BE0432673349",
+    "foundingDate": "1956",
+    "image": "images/veiligheidscilinder-rb.jpg",
+    "logo": "images/sleutel-logo.png",
+    "founder": "Familie Foucher-Govaerts",
+    "employee": [
+      { "@type": "Person", "name": "Serge Crève" },
+      { "@type": "Person", "name": "Christel Bekaert" }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Mercatorstraat 10",
+      "postalCode": "2018",
+      "addressLocality": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "09:00", "closes": "12:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "13:15", "closes": "17:30" }
+    ],
+    "areaServed": ["Antwerpen", "Berchem", "Borgerhout", "Wilrijk", "Hoboken", "Merksem", "Linkeroever", "Edegem", "Mortsel", "Borsbeek", "Wommelgem", "Wijnegem", "Schoten", "Brasschaat", "Boechout", "Zwijndrecht", "Kruibeke", "Boom"],
+    "brand": [ { "@type": "Brand", "name": "EVVA" }, { "@type": "Brand", "name": "Mul-T-Lock" }, { "@type": "Brand", "name": "RB-Locks" }, { "@type": "Brand", "name": "Abloy" } ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Figtree', 'system-ui', 'sans-serif'], serif: ['Gloock', 'Georgia', 'serif'] },
+          colors: {
+            navy: '#0e0d5e',
+            navy2: '#1a1975',
+            nacht: '#08073d',
+            messing: '#f6d437',
+            messing2: '#e2bd12',
+            papier: '#f4f5fa',
+            staal: '#c9ccd8',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root { --ease: cubic-bezier(0.23, 1, 0.32, 1); }
+    html { scroll-behavior: smooth; }
+    body { text-rendering: optimizeLegibility; }
+    h1, h2, h3 { text-wrap: balance; }
+    p { text-wrap: pretty; }
+    .num { font-variant-numeric: tabular-nums; }
+
+    /* The one load moment: the big key turns a quarter in the lock */
+    .js .bigkey { transform-origin: 18% 50%; animation: turn 1.6s var(--ease) .3s both; }
+    @keyframes turn { 0% { transform: rotate(-90deg) translateX(-40px); opacity: 0; } 55% { transform: rotate(-90deg) translateX(0); opacity: 1; } 100% { transform: rotate(0deg); opacity: 1; } }
+
+    .urg { transition: background-color .18s var(--ease), border-color .18s var(--ease), transform .18s var(--ease); }
+    .urg:active { transform: scale(.97); }
+    .urg[aria-pressed="true"] { background: #0e0d5e; border-color: #0e0d5e; color: #fff; }
+    .urg[aria-pressed="true"] .sub { color: rgba(255,255,255,.7); }
+    .pick input { position: absolute; opacity: 0; pointer-events: none; }
+    .pick label { cursor: pointer; transition: background-color .15s, color .15s, border-color .15s; }
+    .pick input:checked + label { background: #f6d437; border-color: #e2bd12; color: #08073d; }
+    .pick input:focus-visible + label { outline: 2px solid #0e0d5e; outline-offset: 2px; }
+
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid #f6d437; outline-offset: 3px; }
+    .light a:focus-visible, .light button:focus-visible, .light input:focus-visible, .light textarea:focus-visible { outline-color: #0e0d5e; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .bigkey { animation: none; }
+      .btn, .urg { transition: none; }
+    }
+  </style>
+</head>
+<body class="bg-papier text-nacht font-sans antialiased selection:bg-messing/60">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <div class="fixed bottom-[76px] md:bottom-4 right-3 md:right-4 z-50 pointer-events-none">
+    <span class="text-[11px] tracking-wide text-nacht bg-white/95 border border-staal rounded-full px-3 py-1.5 shadow">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-nacht/95 backdrop-blur text-white border-b border-white/10">
+    <nav class="max-w-6xl mx-auto px-5 h-[68px] flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top" class="flex items-center gap-3">
+        <img src="images/sleutel-logo.png" alt="Gele sleutel, logo Sleutelcentrale" class="h-7 w-auto" width="64" height="28" />
+        <span class="font-serif text-[22px] leading-none text-messing">Sleutelcentrale</span>
+      </a>
+      <div class="hidden md:flex items-center gap-7 text-[15px] text-white/80">
+        <a href="#aanbod" class="hover:text-messing">Aanbod</a>
+        <a href="#historiek" class="hover:text-messing">Sinds 1956</a>
+        <a href="#winkel" class="hover:text-messing">Winkel &amp; uren</a>
+      </div>
+      <a href="tel:+3232303513" class="btn hidden sm:inline-flex items-center gap-2 bg-messing text-nacht font-bold rounded-full px-5 py-2.5 hover:bg-messing2">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
+        <span class="num">03 230 35 13</span>
+      </a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="relative overflow-hidden bg-navy text-white">
+      <svg class="bigkey absolute -right-24 md:right-[-60px] top-[46%] md:top-[54%] w-[620px] md:w-[760px] opacity-[.13] md:opacity-100 pointer-events-none" viewBox="0 0 760 240" aria-hidden="true">
+        <defs><linearGradient id="kg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbe57a"/><stop offset=".5" stop-color="#f6d437"/><stop offset="1" stop-color="#d9b10e"/></linearGradient></defs>
+        <path fill="url(#kg)" fill-opacity=".18" fill-rule="evenodd" d="M120 20a100 100 0 1 0 96 128H330v26h22v-14h20v28h24v-20h22v34h26v-22h22v18h24v-28h26v18h30v-44h48l20-20-20-20H216A100 100 0 0 0 120 20zM120 80a40 40 0 1 1 0 80 40 40 0 0 1 0-80z"/>
+      </svg>
+      <div class="relative max-w-6xl mx-auto px-5 pt-10 pb-14 md:pt-14 md:pb-20 grid md:grid-cols-12 gap-10 items-start">
+        <div class="md:col-span-7">
+          <p class="text-messing font-semibold text-[16px]">Slotenmaker in Antwerpen · familiebedrijf sinds 1956</p>
+          <h1 class="mt-4 font-serif text-[44px] leading-[1.02] sm:text-[58px] lg:text-[68px]">
+            Sleutelcentrale, de slotenmaker van de Mercatorstraat.
+          </h1>
+          <p class="mt-5 text-[18px] leading-relaxed text-white/80 max-w-[42ch]">
+            Deuren openen, sloten herstellen aan huis, veiligheidscilinders plaatsen en 99% van alle sleutels bijmaken. Drie generaties vakmanschap, nu met Serge Crève en Christel Bekaert.
+          </p>
+          <ul class="mt-8 grid grid-cols-3 gap-4 max-w-lg border-t border-white/15 pt-6">
+            <li><span class="block font-serif text-[30px] text-messing num">1956</span><span class="text-[14px] text-white/65">opgericht op de Belgiëlei</span></li>
+            <li><span class="block font-serif text-[30px] text-messing">3de</span><span class="text-[14px] text-white/65">generatie aan de toonbank</span></li>
+            <li><span class="block font-serif text-[30px] text-messing num">99%</span><span class="text-[14px] text-white/65">van de sleutels bij te maken</span></li>
+          </ul>
+        </div>
+
+        <!-- Quick help card -->
+        <div class="md:col-span-5 light">
+          <div class="bg-white text-nacht rounded-3xl shadow-2xl shadow-black/30 p-6 sm:p-7">
+            <div class="flex items-center justify-between gap-3">
+              <h2 class="font-serif text-[28px] leading-none">Slot kapot?</h2>
+              <span id="openBadge" class="text-[13px] font-semibold rounded-full px-3 py-1 bg-papier">Ma–do open</span>
+            </div>
+            <p class="mt-2 text-[15px] text-nacht/70">Hoe dringend is het?</p>
+            <div class="mt-4 grid gap-2.5" id="heroUrg">
+              <button type="button" class="urg text-left rounded-2xl border border-staal px-4 py-3" data-urg="nu" aria-pressed="false"><span class="font-bold block">Nu: ik sta buiten</span><span class="sub text-[14px] text-nacht/60">deur openen, slot kapot</span></button>
+              <button type="button" class="urg text-left rounded-2xl border border-staal px-4 py-3" data-urg="vandaag" aria-pressed="false"><span class="font-bold block">Vandaag nog</span><span class="sub text-[14px] text-nacht/60">slot hapert, sleutel afgebroken</span></button>
+              <button type="button" class="urg text-left rounded-2xl border border-staal px-4 py-3" data-urg="afspraak" aria-pressed="false"><span class="font-bold block">Afspraak plannen</span><span class="sub text-[14px] text-nacht/60">beveiliging, cilinders, deur</span></button>
+            </div>
+            <a href="tel:+32475257353" class="btn mt-5 flex items-center justify-center gap-2 bg-messing hover:bg-messing2 text-nacht font-bold rounded-full py-3.5">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
+              Bel de gsm: <span class="num">0475 25 73 53</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Storingsformulier -->
+    <section id="storing" class="light max-w-6xl mx-auto px-5 py-20 md:py-24 scroll-mt-16">
+      <div class="grid lg:grid-cols-12 gap-10">
+        <div class="lg:col-span-4">
+          <h2 class="font-serif text-[38px] md:text-[46px] leading-[1.05]">Meld uw probleem, wij bellen terug</h2>
+          <p class="mt-4 text-[17px] text-nacht/70">Kies de urgentie, het soort deur en wat er mis is. Met een foto van het slot of de cilinder weten we meteen welk onderdeel we meenemen.</p>
+          <div class="mt-6 rounded-2xl bg-navy text-white p-5 text-[15px]">
+            <p class="font-bold">Liever meteen bellen?</p>
+            <p class="mt-1">Winkel <a class="text-messing font-semibold num underline underline-offset-4" href="tel:+3232303513">03 230 35 13</a></p>
+            <p>Gsm <a class="text-messing font-semibold num underline underline-offset-4" href="tel:+32475257353">0475 25 73 53</a></p>
+          </div>
+        </div>
+
+        <form id="form" class="lg:col-span-8 bg-white rounded-3xl border border-staal/70 p-5 sm:p-8" novalidate>
+          <div id="formBody">
+            <fieldset>
+              <legend class="font-bold text-[18px]">1. Urgentie</legend>
+              <div class="mt-3 grid sm:grid-cols-3 gap-2.5" id="formUrg">
+                <span class="pick relative"><input type="radio" name="urg" id="u1" value="nu"><label for="u1" class="block rounded-xl border border-staal px-4 py-3 font-semibold">Nu <span class="block text-[13px] font-normal opacity-70">buitengesloten</span></label></span>
+                <span class="pick relative"><input type="radio" name="urg" id="u2" value="vandaag"><label for="u2" class="block rounded-xl border border-staal px-4 py-3 font-semibold">Vandaag <span class="block text-[13px] font-normal opacity-70">liefst nog vandaag</span></label></span>
+                <span class="pick relative"><input type="radio" name="urg" id="u3" value="afspraak" checked><label for="u3" class="block rounded-xl border border-staal px-4 py-3 font-semibold">Afspraak <span class="block text-[13px] font-normal opacity-70">geen haast</span></label></span>
+              </div>
+              <p id="urgNote" class="mt-3 text-[14px] rounded-xl bg-papier px-4 py-3 hidden"></p>
+            </fieldset>
+
+            <fieldset class="mt-7">
+              <legend class="font-bold text-[18px]">2. Welke deur?</legend>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="pick relative"><input type="radio" name="deur" id="d1" value="Voordeur woning" checked><label for="d1" class="block rounded-full border border-staal px-4 py-2 text-[15px] font-medium">Voordeur woning</label></span>
+                <span class="pick relative"><input type="radio" name="deur" id="d2" value="Appartementsdeur"><label for="d2" class="block rounded-full border border-staal px-4 py-2 text-[15px] font-medium">Appartementsdeur</label></span>
+                <span class="pick relative"><input type="radio" name="deur" id="d3" value="Inkom appartementsgebouw"><label for="d3" class="block rounded-full border border-staal px-4 py-2 text-[15px] font-medium">Inkom gebouw</label></span>
+                <span class="pick relative"><input type="radio" name="deur" id="d4" value="Achter- of tuindeur"><label for="d4" class="block rounded-full border border-staal px-4 py-2 text-[15px] font-medium">Achter- of tuindeur</label></span>
+                <span class="pick relative"><input type="radio" name="deur" id="d5" value="Winkel of kantoor"><label for="d5" class="block rounded-full border border-staal px-4 py-2 text-[15px] font-medium">Winkel of kantoor</label></span>
+                <span class="pick relative"><input type="radio" name="deur" id="d6" value="Garage, brievenbus of kluis"><label for="d6" class="block rounded-full border border-staal px-4 py-2 text-[15px] font-medium">Garage, brievenbus, kluis</label></span>
+              </div>
+            </fieldset>
+
+            <fieldset class="mt-7">
+              <legend class="font-bold text-[18px]">3. Wat is er aan de hand?</legend>
+              <div class="mt-3 flex flex-wrap gap-2">
+                <span class="pick relative"><input type="radio" name="prob" id="p1" value="buitengesloten"><label for="p1" class="block rounded-full border border-staal px-4 py-2 text-[15px] font-medium">Buitengesloten</label></span>
+                <span class="pick relative"><input type="radio" name="prob" id="p2" value="slot kapot" checked><label for="p2" class="block rounded-full border border-staal px-4 py-2 text-[15px] font-medium">Slot kapot of stroef</label></span>
+                <span class="pick relative"><input type="radio" name="prob" id="p3" value="sleutel afgebroken"><label for="p3" class="block rounded-full border border-staal px-4 py-2 text-[15px] font-medium">Sleutel afgebroken</label></span>
+                <span class="pick relative"><input type="radio" name="prob" id="p4" value="na inbraak(poging)"><label for="p4" class="block rounded-full border border-staal px-4 py-2 text-[15px] font-medium">Na een inbraak(poging)</label></span>
+                <span class="pick relative"><input type="radio" name="prob" id="p5" value="beter beveiligen"><label for="p5" class="block rounded-full border border-staal px-4 py-2 text-[15px] font-medium">Beter beveiligen</label></span>
+              </div>
+            </fieldset>
+
+            <div class="mt-7 grid sm:grid-cols-2 gap-3">
+              <label class="sm:col-span-2 flex items-center gap-4 rounded-2xl border-2 border-dashed border-staal p-4 cursor-pointer hover:border-navy">
+                <input id="photo" type="file" accept="image/*" class="sr-only" />
+                <span class="w-14 h-14 shrink-0 rounded-xl bg-papier grid place-items-center overflow-hidden" id="photoPrev" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 8h3l2-3h6l2 3h3v11H4z" stroke="#0e0d5e" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.5" stroke="#0e0d5e" stroke-width="2"/></svg>
+                </span>
+                <span><span class="font-bold block">Foto van slot of cilinder</span><span class="text-[14px] text-nacht/60" id="photoName">Optioneel, maar handig</span></span>
+              </label>
+              <label class="block"><span class="text-[14px] font-semibold">Naam</span><input name="naam" autocomplete="name" class="mt-1 w-full rounded-xl border border-staal px-3.5 py-3" /></label>
+              <label class="block"><span class="text-[14px] font-semibold">Gsm-nummer</span><input name="tel" type="tel" autocomplete="tel" class="mt-1 w-full rounded-xl border border-staal px-3.5 py-3" /></label>
+              <label class="block sm:col-span-2"><span class="text-[14px] font-semibold">Adres</span><input name="adres" autocomplete="street-address" placeholder="Straat, nummer, gemeente" class="mt-1 w-full rounded-xl border border-staal px-3.5 py-3" /></label>
+            </div>
+            <p id="err" class="mt-3 text-[14px] text-red-700 hidden" role="alert">Vul uw naam en gsm-nummer in, zodat we u kunnen terugbellen.</p>
+            <div class="mt-6 flex flex-col sm:flex-row gap-3">
+              <button type="submit" class="btn bg-navy hover:bg-navy2 text-white font-bold rounded-full px-7 py-4">Verstuur melding</button>
+              <a href="tel:+32475257353" class="btn text-center border-2 border-navy rounded-full px-7 py-[14px] font-bold">Of bel meteen</a>
+            </div>
+          </div>
+          <div id="done" class="hidden text-center py-8" role="status" aria-live="polite">
+            <div class="mx-auto w-16 h-16 rounded-full bg-messing grid place-items-center"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" stroke="#08073d" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3 class="mt-5 font-serif text-[32px]" id="doneTitle">Melding ontvangen</h3>
+            <p class="mt-2 text-nacht/75 max-w-md mx-auto" id="doneText"></p>
+            <p class="mt-5 inline-block text-[13px] bg-papier rounded-full px-4 py-2">Dit is een demo: er is niets verstuurd. Op de echte site komt deze melding meteen binnen bij Sleutelcentrale.</p>
+            <div><button type="button" id="again" class="mt-5 font-semibold underline">Nieuwe melding</button></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Aanbod -->
+    <section id="aanbod" class="bg-white border-y border-staal/60">
+      <div class="max-w-6xl mx-auto px-5 py-20 md:py-24">
+        <h2 class="font-serif text-[38px] md:text-[46px] leading-[1.05] max-w-2xl">In de winkel en bij u aan huis</h2>
+        <div class="mt-10 grid md:grid-cols-12 gap-5">
+          <article class="md:col-span-7 rounded-3xl bg-papier overflow-hidden grid sm:grid-cols-2">
+            <img src="images/veiligheidscilinder-rb.jpg" alt="RB-Locks veiligheidscilinder met anti-snapping en blauwe sleutel" class="w-full h-full object-cover bg-white min-h-[220px]" width="615" height="449" loading="lazy" />
+            <div class="p-6">
+              <h3 class="font-bold text-[20px]">Veiligheidscilinders</h3>
+              <p class="mt-2 text-[15px] text-nacht/70">Anti-snapping cilinders van RB-Locks, Mul-T-Lock en EVVA. Bij een inbraakpoging breekt enkel de breekzone af: het slot blijft dicht.</p>
+              <p class="mt-4 font-semibold text-[15px]">EVVA · Mul-T-Lock · RB-Locks · Abloy</p>
+            </div>
+          </article>
+          <article class="md:col-span-5 rounded-3xl overflow-hidden relative min-h-[260px] bg-navy">
+            <img src="images/gepantserde-deur.jpg" alt="Gepantserde voordeur in bordeaux met aluminium greep, RB-Doors" class="absolute inset-0 w-full h-full object-cover" width="874" height="544" loading="lazy" />
+            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-nacht/90 to-transparent p-6 pt-16 text-white">
+              <h3 class="font-bold text-[20px]">Gepantserde deuren</h3>
+              <p class="text-[15px] text-white/80">RB-Doors, standaard met anti-snapping cilinder.</p>
+            </div>
+          </article>
+        </div>
+        <ul class="mt-5 grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-staal/60 rounded-3xl overflow-hidden border border-staal/60 text-[15px]">
+          <li class="bg-white p-5"><b class="block text-[17px]">Deuren openen</b><span class="text-nacht/65">Buitengesloten? We komen langs.</span></li>
+          <li class="bg-white p-5"><b class="block text-[17px]">Sloten herstellen aan huis</b><span class="text-nacht/65">Ook veiligheidsbeslag en deurpompen.</span></li>
+          <li class="bg-white p-5"><b class="block text-[17px]">Sleutels bijmaken</b><span class="text-nacht/65">99%, ook code- en transpondersleutels.</span></li>
+          <li class="bg-white p-5"><b class="block text-[17px]">Raambeveiliging</b><span class="text-nacht/65">Ook voor schuiframen en tuindeuren.</span></li>
+          <li class="bg-white p-5"><b class="block text-[17px]">Automatische nachtsloten</b><span class="text-nacht/65">Abloy-motorsloten voor appartementsgebouwen.</span></li>
+          <li class="bg-white p-5"><b class="block text-[17px]">EVVA-toegangscontrole</b><span class="text-nacht/65">Xesar elektronisch sluitsysteem voor bedrijven.</span></li>
+          <li class="bg-white p-5"><b class="block text-[17px]">Kluizen &amp; lockers</b><span class="text-nacht/65">Brandkasten, geldkoffers, codesloten.</span></li>
+          <li class="bg-white p-5"><b class="block text-[17px]">Nummerplaten</b><span class="text-nacht/65">In plexi, D.I.V.-goedgekeurd, klaar terwijl u wacht.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Historiek -->
+    <section id="historiek" class="max-w-6xl mx-auto px-5 py-20 md:py-24">
+      <h2 class="font-serif text-[38px] md:text-[46px] leading-[1.05] max-w-2xl">Zeventig jaar, één straat</h2>
+      <p class="mt-4 text-[17px] text-nacht/70 max-w-2xl">Van een heel klein winkeltje op de Belgiëlei tot Mercatorstraat 10. En wie weet staat er een vierde generatie klaar.</p>
+      <ol class="mt-10 grid sm:grid-cols-2 lg:grid-cols-6 gap-5">
+        <li class="border-t-4 border-messing pt-4"><span class="font-serif text-[28px] num">1956</span><p class="mt-1 text-[15px] text-nacht/70">Grootouders Foucher-Govaerts starten op de Belgiëlei 1.</p></li>
+        <li class="border-t-4 border-messing/70 pt-4"><span class="font-serif text-[28px] num">1960</span><p class="mt-1 text-[15px] text-nacht/70">Verhuis naar de hoek Belgiëlei en Mercatorstraat.</p></li>
+        <li class="border-t-4 border-navy/40 pt-4"><span class="font-serif text-[28px] num">1968</span><p class="mt-1 text-[15px] text-nacht/70">De ouders Crève-Foucher nemen over: 2de generatie.</p></li>
+        <li class="border-t-4 border-navy/50 pt-4"><span class="font-serif text-[28px] num">1987</span><p class="mt-1 text-[15px] text-nacht/70">Zoon Serge Crève begint mee in de zaak.</p></li>
+        <li class="border-t-4 border-navy/70 pt-4"><span class="font-serif text-[28px] num">1992</span><p class="mt-1 text-[15px] text-nacht/70">De winkel verhuist naar Mercatorstraat 10.</p></li>
+        <li class="border-t-4 border-navy pt-4"><span class="font-serif text-[28px] num">1999</span><p class="mt-1 text-[15px] text-nacht/70">Serge en Christel nemen over: 3de generatie.</p></li>
+      </ol>
+    </section>
+
+    <!-- Winkel & uren -->
+    <section id="winkel" class="bg-navy text-white">
+      <div class="max-w-6xl mx-auto px-5 py-20 md:py-24 grid md:grid-cols-12 gap-10">
+        <div class="md:col-span-5">
+          <h2 class="font-serif text-[38px] md:text-[44px] leading-[1.05]">Winkel op de Mercatorstraat</h2>
+          <p class="mt-4 text-[17px] text-white/75">Mercatorstraat 10, 2018 Antwerpen, vlak bij de Belgiëlei. Interventies aan huis in Antwerpen en de rand: Berchem, Borgerhout, Wilrijk, Hoboken, Merksem, Linkeroever, Edegem, Mortsel, Borsbeek, Wommelgem, Schoten, Brasschaat, Zwijndrecht, Kruibeke en Boom.</p>
+          <a class="btn mt-6 inline-flex bg-messing hover:bg-messing2 text-nacht font-bold rounded-full px-6 py-3.5" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Sleutelcentrale+Mercatorstraat+10+2018+Antwerpen">Route in Google Maps</a>
+        </div>
+        <div class="md:col-span-7 grid sm:grid-cols-2 gap-5">
+          <div class="rounded-3xl bg-white/5 border border-white/15 p-6 hours">
+            <h3 class="font-bold text-[18px]">Openingsuren</h3>
+            <table class="mt-3 w-full text-[15px]">
+              <tbody>
+                <tr class="border-b border-white/10"><td class="py-1.5">Maandag</td><td class="text-right num">9.00–12.30 · 13.15–17.30</td></tr>
+                <tr class="border-b border-white/10"><td class="py-1.5">Dinsdag</td><td class="text-right num">9.00–12.30 · 13.15–17.30</td></tr>
+                <tr class="border-b border-white/10"><td class="py-1.5">Woensdag</td><td class="text-right num">9.00–12.30 · 13.15–17.30</td></tr>
+                <tr class="border-b border-white/10"><td class="py-1.5">Donderdag</td><td class="text-right num">9.00–12.30 · 13.15–17.30</td></tr>
+                <tr><td class="py-1.5 text-white/60">Vr, za, zo &amp; feestdagen</td><td class="text-right text-white/60">gesloten</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="rounded-3xl bg-white/5 border border-white/15 p-6 text-[16px]">
+            <h3 class="font-bold text-[18px]">Contact</h3>
+            <p class="mt-3">Winkel <a class="text-messing font-semibold num" href="tel:+3232303513">03 230 35 13</a></p>
+            <p class="mt-1">Gsm <a class="text-messing font-semibold num" href="tel:+32475257353">0475 25 73 53</a></p>
+            <p class="mt-1"><a class="underline underline-offset-4 break-all" href="mailto:sleutelcentrale@skynet.be">sleutelcentrale@skynet.be</a></p>
+            <p class="mt-3 text-[14px] text-white/60">Sleutelcentrale BV · BTW BE 0432.673.349</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-nacht text-white/55 text-[14px] pb-24 md:pb-0">
+    <div class="max-w-6xl mx-auto px-5 py-8 flex flex-col sm:flex-row gap-2 justify-between">
+      <p>© Sleutelcentrale BV · Mercatorstraat 10, 2018 Antwerpen · sinds 1956</p>
+      <p>Concept door Saspire</p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden grid grid-cols-2 text-[15px] font-bold">
+    <a href="tel:+32475257353" class="flex items-center justify-center gap-2 py-4 bg-messing text-nacht">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
+      Bel: slot kapot
+    </a>
+    <a href="#storing" class="flex items-center justify-center py-4 bg-nacht text-white">Melding maken</a>
+  </div>
+
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+
+  /* Live open/closed status: ma–do 9:00–12:30 and 13:15–17:30 */
+  function isOpen(d) {
+    var day = d.getDay(), m = d.getHours() * 60 + d.getMinutes();
+    if (day < 1 || day > 4) return false;
+    return (m >= 540 && m < 750) || (m >= 795 && m < 1050);
+  }
+  var open = isOpen(new Date());
+  var badge = $('openBadge');
+  badge.textContent = open ? 'Nu open' : 'Nu gesloten';
+  badge.className = 'text-[13px] font-semibold rounded-full px-3 py-1 ' + (open ? 'bg-green-100 text-green-800' : 'bg-papier text-nacht/70');
+
+  var NOTES = {
+    nu: open
+      ? 'De winkel is nu open. Bel voor een buitensluiting best meteen de gsm: zo vertrekken we sneller dan via het formulier.'
+      : 'De winkel is nu gesloten (open maandag tot donderdag). Probeer de gsm, of laat uw melding achter: we bellen terug zodra we open zijn.',
+    vandaag: open ? 'We bekijken uw melding vandaag nog en bellen u terug voor een tijdstip.' : 'We bellen u terug bij de volgende opening.',
+    afspraak: ''
+  };
+  function setUrg(v) {
+    var r = document.querySelector('#formUrg input[value="' + v + '"]'); if (r) r.checked = true;
+    [].slice.call(document.querySelectorAll('#heroUrg .urg')).forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-urg') === v)); });
+    var n = $('urgNote'); n.textContent = NOTES[v]; n.classList.toggle('hidden', !NOTES[v]);
+  }
+  [].slice.call(document.querySelectorAll('#heroUrg .urg')).forEach(function (b) {
+    b.addEventListener('click', function () {
+      setUrg(b.getAttribute('data-urg'));
+      if (b.getAttribute('data-urg') === 'nu' && document.querySelector('input[value="buitengesloten"]')) document.querySelector('input[value="buitengesloten"]').checked = true;
+      $('storing').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    });
+  });
+  $('formUrg').addEventListener('change', function (e) { setUrg(e.target.value); });
+
+  $('photo').addEventListener('change', function (e) {
+    var f = e.target.files[0]; if (!f || !/^image\//.test(f.type)) return;
+    $('photoPrev').innerHTML = '<img src="' + URL.createObjectURL(f) + '" alt="" class="w-full h-full object-cover">';
+    $('photoName').textContent = f.name;
+  });
+
+  var form = $('form');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var naam = form.naam.value.trim(), tel = form.tel.value.replace(/\D/g, '');
+    if (!naam || tel.length < 9) { $('err').classList.remove('hidden'); return; }
+    $('err').classList.add('hidden');
+    var urg = form.querySelector('input[name=urg]:checked').value;
+    var deur = form.querySelector('input[name=deur]:checked').value;
+    var prob = (form.querySelector('input[name=prob]:checked') || {}).value || 'probleem';
+    $('formBody').classList.add('hidden'); $('done').classList.remove('hidden');
+    $('doneTitle').textContent = 'Bedankt, ' + naam.split(' ')[0] + '!';
+    var when = urg === 'nu' ? (open ? 'Serge belt u zo snel mogelijk terug.' : 'We bellen u terug zodra de winkel opent. Staat u buiten, probeer dan ook de gsm.') : urg === 'vandaag' ? 'We bellen u terug om een tijdstip af te spreken.' : 'We bellen u om een afspraak te plannen.';
+    $('doneText').textContent = deur + ', ' + prob + '. ' + when;
+  });
+  $('again').addEventListener('click', function () {
+    form.reset(); $('photoName').textContent = 'Optioneel, maar handig';
+    $('photoPrev').innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 8h3l2-3h6l2 3h3v11H4z" stroke="#0e0d5e" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.5" stroke="#0e0d5e" stroke-width="2"/></svg>';
+    setUrg('afspraak');
+    $('done').classList.add('hidden'); $('formBody').classList.remove('hidden');
+  });
+})();
+</script>
+</body>
+</html>

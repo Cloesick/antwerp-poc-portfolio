@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>E.K.I. Verwarming | Onderhoud en keuring van gasketels in Ekeren</title>
+  <meta name="description" content="E.K.I. Verwarming uit Ekeren: reiniging, herstelling en wettelijke keuring van centrale verwarmingsketels op gas. Erkend gastechnicus GV 01886. Voordeeltarief vanaf € 124 tijdens de reinigingstoer in uw gemeente." />
+  <link rel="canonical" href="https://www.eki.be/" />
+  <meta name="theme-color" content="#1d3c5a" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="E.K.I. Verwarming" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="E.K.I. Verwarming | Onderhoud gasketels Ekeren" />
+  <meta property="og:description" content="Plan uw ketelonderhoud online tijdens de reinigingstoer in uw gemeente. Vanaf € 124 incl. btw." />
+  <meta property="og:url" content="https://www.eki.be/" />
+  <meta property="og:image" content="images/auto-eki.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%231d3c5a'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23fff' stroke-width='2'/%3E%3Cpath d='M16 9c3 3 4 5 4 7a4 4 0 01-8 0c0-2 1-4 4-7z' fill='%23508fb4'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HVACBusiness",
+    "name": "E.K.I. Verwarming BV",
+    "description": "Reiniging, herstelling en wettelijke keuring van centrale verwarmingsketels op gas. Familiebedrijf, van vader op zoon. Erkend gastechnicus GV 01886.",
+    "url": "https://www.eki.be/",
+    "telephone": "+3236462846",
+    "email": "info@eki.be",
+    "image": "https://www.eki.be/images/eki/auto-eki3.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jaak Van Haesendonckstraat 73",
+      "postalCode": "2180",
+      "addressLocality": "Ekeren",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "areaServed": ["Ekeren", "Merksem", "Kapellen", "Brasschaat", "Stabroek", "Schoten", "Antwerpen"],
+    "contactPoint": { "@type": "ContactPoint", "telephone": "+3236462846", "contactType": "customer service", "availableLanguage": "nl", "description": "Telefonisch bereikbaar van 8u tot 20u" },
+    "makesOffer": {
+      "@type": "Offer",
+      "name": "Reiniging en keuring gasketel tijdens reinigingstoer",
+      "priceSpecification": { "@type": "PriceSpecification", "minPrice": 124, "priceCurrency": "EUR", "valueAddedTaxIncluded": true }
+    }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { display: ['"Familjen Grotesk"', 'sans-serif'], sans: ['"Public Sans"', 'system-ui', 'sans-serif'] },
+          colors: {
+            night: '#1d3c5a',
+            deep: '#132a40',
+            sky: '#508fb4',
+            ice: '#e9f2f8',
+            frost: '#f6f9fb',
+            flame: '#f2a33a',
+            line: '#d6e2eb',
+            muted: '#4f6476',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root { --accent: #508fb4; --ease: cubic-bezier(0.23, 1, 0.32, 1); }
+    html { scroll-behavior: smooth; }
+    h1, h2, h3 { text-wrap: balance; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), border-color .18s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid #f2a33a; outline-offset: 2px; }
+    [hidden] { display: none !important; }
+
+    /* Route map: the van drives the tour once on load */
+    .route { stroke-dasharray: 6 7; }
+    .js .route-draw { stroke-dasharray: 900; stroke-dashoffset: 900; animation: draw 2.4s var(--ease) .3s forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    .stop { transition: transform .2s var(--ease); transform-box: fill-box; transform-origin: center; }
+    .stop.hit { transform: scale(1.35); }
+    .stop.hit circle { fill: #f2a33a; }
+
+    .day { transition: border-color .15s var(--ease), background-color .15s var(--ease); }
+    .day[aria-pressed="true"] { border-color: #1d3c5a; background: #1d3c5a; color: #fff; }
+    .day[aria-pressed="true"] small { color: #cfe0ec; }
+    .chip input { position: absolute; opacity: 0; }
+    .chip span { display: block; border: 2px solid #d6e2eb; border-radius: 12px; padding: .75rem .9rem; background: #fff; cursor: pointer; }
+    .chip input:checked + span { border-color: #1d3c5a; background: #e9f2f8; }
+    .chip input:focus-visible + span { outline: 3px solid #f2a33a; outline-offset: 2px; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .route-draw { animation: none; stroke-dashoffset: 0; }
+      .btn, .stop, .day { transition: none; }
+    }
+  </style>
+</head>
+<body class="bg-frost text-deep font-sans antialiased pb-14 md:pb-0 text-[17px]">
+
+  <div class="fixed bottom-4 right-4 z-50 hidden md:block">
+    <span class="text-[11px] font-bold tracking-widest uppercase text-white bg-deep/90 rounded-full px-3 py-1.5 shadow">Concept-demo · Saspire</span>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-line">
+    <div class="max-w-6xl mx-auto px-5 h-[68px] flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-3 shrink-0" aria-label="E.K.I. Verwarming, naar boven">
+        <img src="images/eki-emblem.png" alt="" width="44" height="46" class="h-11 w-auto" />
+        <span class="font-display font-bold text-[19px] leading-tight">E.K.I. Verwarming<span class="block text-[13px] font-medium text-muted">Ekeren · centrale verwarming op gas</span></span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-7 text-[16px] text-muted" aria-label="Hoofdmenu">
+        <a href="#onderhoud" class="hover:text-night">Het onderhoud</a>
+        <a href="#plannen" class="hover:text-night">Online plannen</a>
+        <a href="#wetgeving" class="hover:text-night">Keuring en wetgeving</a>
+        <a href="#contact" class="hover:text-night">Contact</a>
+      </nav>
+      <a href="#plannen" class="btn hidden sm:inline-flex bg-night hover:bg-deep text-white font-bold text-[15px] rounded-xl px-5 py-3">Plan uw onderhoud</a>
+      <a href="tel:+3236462846" class="btn sm:hidden inline-flex bg-night text-white font-bold text-[15px] rounded-xl px-4 py-2.5">Bel</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="bg-white border-b border-line">
+    <div class="max-w-6xl mx-auto px-5 pt-10 pb-14 lg:py-16 grid lg:grid-cols-[1.05fr_.95fr] gap-10 items-center">
+      <div>
+        <p class="inline-flex items-center gap-2 rounded-full bg-ice text-night font-bold text-[14px] px-3.5 py-1.5">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l7 3v6c0 5-3 9-7 11-4-2-7-6-7-11V5l7-3z" stroke="#1d3c5a" stroke-width="2"/><path d="M8.5 12l2.5 2.5 4.5-5" stroke="#1d3c5a" stroke-width="2" stroke-linecap="round"/></svg>
+          Erkend gastechnicus GV 01886
+        </p>
+        <h1 class="mt-5 font-display font-bold text-[2.5rem] leading-[1.03] sm:text-[3.4rem] lg:text-[3.75rem] tracking-[-0.025em] text-night">
+          E.K.I. Verwarming. Onderhoud en keuring van uw gasketel, vanuit Ekeren.
+        </h1>
+        <p class="mt-5 text-[18px] leading-relaxed text-muted max-w-[34rem]">
+          Een familiebedrijf, al meer dan 30 jaar, van vader op zoon. We reinigen, herstellen en keuren centrale verwarmingsketels op gas. Plan uw beurt tijdens onze reinigingstoer in uw gemeente: <b class="text-deep whitespace-nowrap">vanaf € 124 incl. btw</b>.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-3">
+          <a href="#plannen" class="btn inline-flex justify-center items-center bg-flame hover:bg-[#e69520] text-deep font-bold rounded-xl px-7 py-4">Plan uw onderhoud online</a>
+          <a href="tel:+3236462846" class="btn inline-flex justify-center items-center border-2 border-night/20 hover:border-night text-night font-bold rounded-xl px-7 py-4">Bel 03 646 28 46</a>
+        </div>
+        <p class="mt-4 text-[15px] text-muted">Telefonisch bereikbaar van 8u tot 20u.</p>
+      </div>
+
+      <!-- Tour map -->
+      <div class="relative">
+        <div class="rounded-3xl bg-night text-white p-5 sm:p-6 shadow-[0_30px_60px_-30px_rgba(19,42,64,.7)]">
+          <div class="flex items-baseline justify-between gap-3">
+            <h2 class="font-display text-[20px] font-bold">Reinigingstoer rond Ekeren</h2>
+            <span class="text-[13px] text-white/60">voorbeeldplanning</span>
+          </div>
+          <svg viewBox="0 0 420 300" class="mt-3 w-full h-auto" role="img" aria-label="Kaartje met de gemeenten van de reinigingstoer rond Ekeren">
+            <path d="M40 40 C120 10, 300 10, 390 60 L400 280 L20 280 Z" fill="#244a6d" opacity=".55"/>
+            <path d="M70 70 L170 120 L120 175 L215 205 L300 150 L330 85 L250 60 L170 120" fill="none" stroke="#508fb4" stroke-width="3" class="route-draw" stroke-linecap="round" stroke-linejoin="round"/>
+            <g font-family="Public Sans, sans-serif" font-size="13" fill="#fff">
+              <g class="stop" data-g="Stabroek"><circle cx="70" cy="70" r="7" fill="#508fb4"/><text x="82" y="66">Stabroek</text></g>
+              <g class="stop" data-g="Ekeren"><circle cx="170" cy="120" r="10" fill="#f2a33a"/><text x="184" y="116" font-weight="700">Ekeren</text></g>
+              <g class="stop" data-g="Kapellen"><circle cx="250" cy="60" r="7" fill="#508fb4"/><text x="262" y="56">Kapellen</text></g>
+              <g class="stop" data-g="Brasschaat"><circle cx="330" cy="85" r="7" fill="#508fb4"/><text x="300" y="112">Brasschaat</text></g>
+              <g class="stop" data-g="Schoten"><circle cx="300" cy="150" r="7" fill="#508fb4"/><text x="312" y="168">Schoten</text></g>
+              <g class="stop" data-g="Merksem"><circle cx="215" cy="205" r="7" fill="#508fb4"/><text x="226" y="222">Merksem</text></g>
+              <g class="stop" data-g="Antwerpen"><circle cx="120" cy="175" r="7" fill="#508fb4"/><text x="40" y="200">Antwerpen</text></g>
+            </g>
+          </svg>
+          <p class="mt-1 text-[14px] text-white/70 pr-32 sm:pr-40">Vanaf 3 toestellen in hetzelfde appartementsgebouw krijgt u automatisch het voordeeltarief.</p>
+        </div>
+        <img src="images/auto-eki.jpg" alt="Bestelwagen van E.K.I. Verwarming: centrale verwarming op gas, onderhoud, herstelling, keuring" width="303" height="285" class="absolute -bottom-10 -right-2 sm:-right-6 w-36 sm:w-44 rounded-2xl border-4 border-white shadow-xl" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Wat we doen -->
+  <section id="onderhoud" class="max-w-6xl mx-auto px-5 py-20">
+    <h2 class="font-display font-bold text-4xl tracking-tight text-night max-w-2xl">Wat er gebeurt bij een onderhoudsbeurt</h2>
+    <div class="mt-10 grid lg:grid-cols-[1.2fr_.8fr] gap-8">
+      <ol class="grid sm:grid-cols-2 gap-4">
+        <li class="bg-white rounded-2xl border border-line p-6"><p class="font-display text-sky font-bold">Stap 1</p><h3 class="mt-1 font-bold text-[19px]">Brander en wisselaar reinigen</h3><p class="mt-2 text-muted leading-relaxed">Demontage en reiniging van de gasbrander, ontstoffen van de warmtewisselaar en het hele toestel.</p></li>
+        <li class="bg-white rounded-2xl border border-line p-6"><p class="font-display text-sky font-bold">Stap 2</p><h3 class="mt-1 font-bold text-[19px]">Lekken en waterdruk</h3><p class="mt-2 text-muted leading-relaxed">Controle op gaslekken, en indien nodig water bijvullen en ontluchten.</p></li>
+        <li class="bg-white rounded-2xl border border-line p-6"><p class="font-display text-sky font-bold">Stap 3</p><h3 class="mt-1 font-bold text-[19px]">Digitale CO-meting</h3><p class="mt-2 text-muted leading-relaxed">Controle van de werking en de verplichte digitale metingen, ook op CO.</p></li>
+        <li class="bg-white rounded-2xl border border-line p-6"><p class="font-display text-sky font-bold">Stap 4</p><h3 class="mt-1 font-bold text-[19px]">Attest en uitleg</h3><p class="mt-2 text-muted leading-relaxed">U krijgt het onderhoudsattest, en extra uitleg over de werking van uw toestel.</p></li>
+      </ol>
+      <figure class="relative rounded-3xl overflow-hidden bg-white border border-line">
+        <img src="images/gasketel-voor-opkuis.jpg" alt="Vervuilde Vaillant-gasketel voor de reiniging" width="700" height="933" class="w-full h-72 lg:h-full object-cover" loading="lazy" />
+        <figcaption class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-deep/90 to-transparent text-white p-5 pt-12 text-[15px]">Een ketel vóór de reiniging. Vervuilde gasketels zijn vaak de oorzaak van zware ongevallen en brand.</figcaption>
+      </figure>
+    </div>
+    <div class="mt-8 grid md:grid-cols-3 gap-4">
+      <div class="rounded-2xl bg-ice p-6"><h3 class="font-bold text-[19px] text-night">Herstellingen</h3><p class="mt-2 text-muted leading-relaxed">Storing of geen warm water? We herstellen centrale verwarmingsketels op gas. Voor een vervanging werken we al jaren samen met een vaste collega.</p></div>
+      <div class="rounded-2xl bg-ice p-6"><h3 class="font-bold text-[19px] text-night">Keuring en verwarmingsaudit</h3><p class="mt-2 text-muted leading-relaxed">De wettelijke keuring van uw cv-ketel, met attest. Ook voor huurders: u bezorgt een duplicaat aan de eigenaar.</p></div>
+      <div class="rounded-2xl bg-ice p-6"><h3 class="font-bold text-[19px] text-night">CO-veiligheid</h3><p class="mt-2 text-muted leading-relaxed">CO is kleurloos en geurloos. Een goed afgestelde ketel, een vrije schoorsteen en verluchting zijn de beste bescherming.</p></div>
+    </div>
+  </section>
+
+  <!-- Signature: online plannen -->
+  <section id="plannen" class="bg-night text-white">
+    <div class="max-w-6xl mx-auto px-5 py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-display font-bold text-4xl sm:text-5xl tracking-tight">Plan uw onderhoud zelf</h2>
+        <p class="mt-4 text-white/75 leading-relaxed">Geef uw postcode in en kies een dag waarop we toch al in uw gemeente zijn. Zo krijgt u het voordeeltarief, en hoeft u niet te bellen.</p>
+      </div>
+
+      <form id="plan" class="mt-10 grid lg:grid-cols-[1.25fr_.75fr] gap-6" novalidate>
+        <div class="bg-white text-deep rounded-3xl p-6 sm:p-8">
+          <!-- 1 postcode -->
+          <label class="block">
+            <span class="font-display font-bold text-xl text-night">1. Uw postcode</span>
+            <div class="mt-3 flex gap-2">
+              <input id="pc" name="postcode" inputmode="numeric" maxlength="4" placeholder="bv. 2180" class="w-36 rounded-xl border-2 border-line px-4 py-3 text-xl font-bold tracking-wider" autocomplete="postal-code" />
+              <button type="button" id="pcGo" class="btn bg-night hover:bg-deep text-white font-bold rounded-xl px-5">Toon dagen</button>
+            </div>
+          </label>
+          <p id="pcMsg" class="mt-3 text-[16px] text-muted" aria-live="polite">Bijvoorbeeld 2180 (Ekeren), 2170 (Merksem) of 2950 (Kapellen).</p>
+
+          <div id="days" class="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-2.5"></div>
+
+          <!-- 2 toestel -->
+          <fieldset class="mt-8">
+            <legend class="font-display font-bold text-xl text-night">2. Uw toestel</legend>
+            <div class="mt-3 grid sm:grid-cols-3 gap-2.5">
+              <label class="chip relative"><input type="radio" name="ketel" value="wand" checked /><span><b class="block">Wandketel</b><small class="text-muted">atmosferisch of gesloten</small></span></label>
+              <label class="chip relative"><input type="radio" name="ketel" value="staand" /><span><b class="block">Staande ketel</b><small class="text-muted">in kelder of berging</small></span></label>
+              <label class="chip relative"><input type="radio" name="ketel" value="condensatie" /><span><b class="block">Condensatieketel</b><small class="text-muted">+ € 32 branderpakking</small></span></label>
+            </div>
+            <div class="mt-4 grid sm:grid-cols-2 gap-3">
+              <label class="flex items-center gap-3 rounded-xl border-2 border-line px-4 py-3"><input type="checkbox" id="oud" checked class="w-5 h-5 accent-[#1d3c5a]" /> Woning ouder dan 10 jaar (6% btw)</label>
+              <label class="flex items-center gap-3 rounded-xl border-2 border-line px-4 py-3">Toestellen in het gebouw <input type="number" id="aantal" min="1" max="60" value="1" class="ml-auto w-16 rounded-lg border border-line px-2 py-1 text-center" /></label>
+            </div>
+          </fieldset>
+
+          <!-- 3 contact -->
+          <fieldset class="mt-8">
+            <legend class="font-display font-bold text-xl text-night">3. Uw gegevens</legend>
+            <div class="mt-3 grid sm:grid-cols-2 gap-3">
+              <input name="naam" placeholder="Naam" class="rounded-xl border-2 border-line px-4 py-3" autocomplete="name" aria-label="Naam" />
+              <input name="tel" placeholder="Telefoon" type="tel" class="rounded-xl border-2 border-line px-4 py-3" autocomplete="tel" aria-label="Telefoon" />
+              <input name="adres" placeholder="Straat en huisnummer" class="sm:col-span-2 rounded-xl border-2 border-line px-4 py-3" autocomplete="street-address" aria-label="Straat en huisnummer" />
+            </div>
+            <label class="mt-4 flex items-start gap-3"><input type="checkbox" id="remind" checked class="mt-1 w-5 h-5 accent-[#1d3c5a]" /><span>Stuur mij automatisch een herinnering voor de volgende beurt, <select id="interval" class="rounded-lg border border-line px-2 py-1"><option value="2">over 2 jaar (wettelijk minimum)</option><option value="1">elk jaar</option></select></span></label>
+          </fieldset>
+        </div>
+
+        <aside class="lg:sticky lg:top-24 self-start rounded-3xl bg-deep border border-white/10 p-6 sm:p-7">
+          <div id="sum">
+            <h3 class="font-display font-bold text-2xl">Uw afspraak</h3>
+            <dl class="mt-5 space-y-3 text-[16px]">
+              <div class="flex justify-between gap-4 border-b border-white/10 pb-3"><dt class="text-white/60">Gemeente</dt><dd id="sGem" class="font-bold text-right">nog niet gekozen</dd></div>
+              <div class="flex justify-between gap-4 border-b border-white/10 pb-3"><dt class="text-white/60">Dag</dt><dd id="sDag" class="font-bold text-right">nog niet gekozen</dd></div>
+              <div class="flex justify-between gap-4 border-b border-white/10 pb-3"><dt class="text-white/60">Toestel</dt><dd id="sKetel" class="font-bold text-right">Wandketel</dd></div>
+            </dl>
+            <p class="mt-5 text-white/60 text-[15px]">Prijs</p>
+            <p class="font-display font-bold text-4xl sm:text-5xl"><span id="sPrijs">vanaf € 124</span></p>
+            <p id="sNote" class="mt-2 text-[14px] text-white/70">Voordeeltarief tijdens de reinigingstoer, incl. 6% btw.</p>
+            <p id="err" class="hidden mt-4 text-flame font-bold" role="alert"></p>
+            <button type="submit" class="btn mt-6 w-full bg-flame hover:bg-[#e69520] text-deep font-bold rounded-xl px-6 py-4">Afspraak aanvragen</button>
+            <p class="mt-3 text-[13px] text-white/50">De dagen in deze demo zijn voorbeelden. In de echte site vult u de toer zelf in.</p>
+          </div>
+          <div id="ok" hidden class="text-center py-4">
+            <svg class="mx-auto" width="52" height="52" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#f2a33a"/><path d="M7 12.5l3.2 3L17 9" stroke="#132a40" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3 class="mt-3 font-display font-bold text-2xl">Afspraak aangevraagd</h3>
+            <p id="okText" class="mt-3 text-white/80 leading-relaxed"></p>
+            <p class="mt-4 text-[13px] text-white/50">Dit is een concept-demo: er werd niets verzonden.</p>
+          </div>
+        </aside>
+      </form>
+    </div>
+  </section>
+
+  <!-- Wetgeving -->
+  <section id="wetgeving" class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-2 gap-12 items-start">
+    <div>
+      <h2 class="font-display font-bold text-4xl tracking-tight text-night">Keuring en wetgeving, kort</h2>
+      <ul class="mt-6 space-y-4 text-muted leading-relaxed">
+        <li class="flex gap-3"><span class="mt-2.5 w-2 h-2 rounded-full bg-sky shrink-0"></span><span><b class="text-deep">Tweejaarlijks verplicht</b> voor gasketels vanaf 20 kW. Dat is 95% van de cv-ketels in Vlaanderen; het vermogen staat op het kenplaatje.</span></li>
+        <li class="flex gap-3"><span class="mt-2.5 w-2 h-2 rounded-full bg-sky shrink-0"></span><span><b class="text-deep">Huurder?</b> Dan zorgt u zelf voor het onderhoud en bezorgt u een duplicaat van het attest aan de verhuurder.</span></li>
+        <li class="flex gap-3"><span class="mt-2.5 w-2 h-2 rounded-full bg-sky shrink-0"></span><span><b class="text-deep">Atmosferisch toestel?</b> Een rechtstreekse, niet-afsluitbare onderverluchting naar buiten is verplicht, minimaal 150 cm².</span></li>
+        <li class="flex gap-3"><span class="mt-2.5 w-2 h-2 rounded-full bg-sky shrink-0"></span><span><b class="text-deep">Wandtoestellen</b> mogen geen flexibele rookgasafvoer meer hebben, enkel een vaste aluminium buis.</span></li>
+        <li class="flex gap-3"><span class="mt-2.5 w-2 h-2 rounded-full bg-sky shrink-0"></span><span><b class="text-deep">Goed afgesteld</b> scheelt 5 tot 10% rendement, en uw ketel gaat langer mee.</span></li>
+      </ul>
+    </div>
+    <div class="rounded-3xl bg-white border border-line p-7">
+      <h3 class="font-display font-bold text-2xl text-night">Zelf nakijken tussen twee beurten</h3>
+      <div class="mt-5 grid sm:grid-cols-2 gap-4">
+        <div class="rounded-2xl bg-ice p-5"><p class="font-display text-4xl font-bold text-night">1 bar</p><p class="mt-1 text-muted">waterdruk, koud gemeten, voor een ketel in een appartement</p></div>
+        <div class="rounded-2xl bg-ice p-5"><p class="font-display text-4xl font-bold text-night">1,5 bar</p><p class="mt-1 text-muted">voor een woning met 1 of 2 verdiepingen</p></div>
+      </div>
+      <p class="mt-5 text-muted leading-relaxed">Brandt de vlam geel bij het opstarten en ruikt u iets? Dan heeft uw ketel dringend een beurt nodig. Bij twijfel: bel ons meteen.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-white border-t border-line">
+    <div class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-[1.1fr_.9fr] gap-10">
+      <div>
+        <h2 class="font-display font-bold text-4xl tracking-tight text-night">Contact</h2>
+        <p class="mt-4 text-muted leading-relaxed max-w-xl">Vanuit Ekeren werken we in de gemeenten rond Ekeren, waaronder Merksem, Kapellen, Brasschaat, Stabroek, Schoten en Antwerpen. Andere randgemeenten op aanvraag.</p>
+        <div class="mt-8 grid sm:grid-cols-2 gap-3">
+          <a href="tel:+3236462846" class="btn rounded-2xl bg-night text-white p-5 block hover:bg-deep"><span class="text-white/70 text-[15px]">Telefoon, 8u tot 20u</span><span class="block font-display text-2xl font-bold mt-1">03 646 28 46</span></a>
+          <a href="mailto:info@eki.be" class="btn rounded-2xl bg-ice p-5 block hover:bg-[#dcebf5]"><span class="text-muted text-[15px]">E-mail</span><span class="block font-display text-2xl font-bold mt-1 text-night">info@eki.be</span></a>
+        </div>
+      </div>
+      <div class="rounded-3xl bg-frost border border-line p-7 flex gap-5 items-start">
+        <img src="images/eki-emblem.png" alt="Logo E.K.I. centrale verwarming" width="80" height="85" class="w-20 h-auto shrink-0" loading="lazy" />
+        <div>
+          <h3 class="font-display font-bold text-2xl text-night">E.K.I. Verwarming BV</h3>
+          <address class="not-italic mt-2 text-muted leading-relaxed">Jaak Van Haesendonckstraat 73<br/>2180 Ekeren (Antwerpen)</address>
+          <a href="https://www.google.com/maps/search/?api=1&query=EKI+Verwarming+Jaak+Van+Haesendonckstraat+73+2180+Ekeren" target="_blank" rel="noopener" class="btn mt-5 inline-flex bg-night hover:bg-deep text-white font-bold rounded-xl px-5 py-3">Bekijk op Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-deep text-white/70">
+    <div class="max-w-6xl mx-auto px-5 py-8 flex flex-col md:flex-row justify-between gap-4 text-[14px]">
+      <p>E.K.I. Verwarming BV · Jaak Van Haesendonckstraat 73, 2180 Ekeren · Erkend gastechnicus GV 01886</p>
+      <p class="max-w-md">Concept-herontwerp door <a href="mailto:nicolas@saspire.org" class="underline">Saspire</a> als vrijblijvend voorstel. Dit is niet de officiële website van E.K.I. Verwarming.</p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden bg-flame text-deep">
+    <a href="tel:+3236462846" class="flex items-center justify-center gap-2.5 py-3.5 font-bold">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      Bel E.K.I.: 03 646 28 46
+    </a>
+  </div>
+
+  <script>
+    document.documentElement.classList.add('js');
+
+    // Demo tour: gemeente per postcode, with example campaign days
+    const TOUR = {
+      '2180': 'Ekeren', '2170': 'Merksem', '2950': 'Kapellen', '2930': 'Brasschaat', '2940': 'Stabroek', '2900': 'Schoten',
+      '2000': 'Antwerpen', '2018': 'Antwerpen', '2020': 'Antwerpen', '2030': 'Antwerpen', '2040': 'Antwerpen', '2050': 'Antwerpen', '2060': 'Antwerpen'
+    };
+    const ORDER = ['Ekeren', 'Merksem', 'Kapellen', 'Brasschaat', 'Stabroek', 'Schoten', 'Antwerpen'];
+    function daysFor(gem) {
+      const start = new Date(); start.setHours(0, 0, 0, 0);
+      start.setDate(start.getDate() + 7 + ORDER.indexOf(gem) * 3);
+      const out = [];
+      const d = new Date(start);
+      while (out.length < 6) { if (d.getDay() !== 0 && d.getDay() !== 6) out.push(new Date(d)); d.setDate(d.getDate() + (out.length % 2 ? 1 : 0) + 1); }
+      return out;
+    }
+    const fmt = (d) => d.toLocaleDateString('nl-BE', { weekday: 'long', day: 'numeric', month: 'long' });
+
+    const pc = document.getElementById('pc'), msg = document.getElementById('pcMsg'), days = document.getElementById('days');
+    let gem = null, dag = null, campagne = false;
+    function lookup() {
+      const v = pc.value.trim();
+      days.innerHTML = ''; dag = null;
+      document.querySelectorAll('.stop').forEach(s => s.classList.remove('hit'));
+      if (!/^\d{4}$/.test(v)) { msg.textContent = 'Geef een postcode van 4 cijfers in.'; gem = null; return render(); }
+      gem = TOUR[v] || null;
+      if (gem) {
+        campagne = true;
+        msg.innerHTML = `<b class="text-night">${gem}</b> zit in de reinigingstoer. Kies een dag:`;
+        const stop = document.querySelector(`.stop[data-g="${gem}"]`); if (stop) stop.classList.add('hit');
+        daysFor(gem).forEach((d, i) => {
+          const b = document.createElement('button');
+          b.type = 'button'; b.className = 'day btn text-left rounded-xl border-2 border-line px-3 py-2.5'; b.setAttribute('aria-pressed', 'false');
+          b.innerHTML = `<span class="block font-bold capitalize">${fmt(d)}</span><small class="text-muted">${i % 2 ? 'namiddag' : 'voormiddag'}</small>`;
+          b.addEventListener('click', () => { days.querySelectorAll('.day').forEach(x => x.setAttribute('aria-pressed', 'false')); b.setAttribute('aria-pressed', 'true'); dag = `${fmt(d)}, ${i % 2 ? 'namiddag' : 'voormiddag'}`; render(); });
+          days.appendChild(b);
+        });
+      } else {
+        campagne = false; gem = 'postcode ' + v;
+        msg.innerHTML = 'Uw gemeente zit niet in de huidige toer. Geen probleem: vraag een afspraak aan en we bellen u voor een dag. <b class="text-night">Andere randgemeenten op aanvraag.</b>';
+        dag = 'in overleg';
+      }
+      render();
+    }
+    document.getElementById('pcGo').addEventListener('click', lookup);
+    pc.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); lookup(); } });
+    pc.addEventListener('input', () => { if (pc.value.length === 4) lookup(); });
+
+    const form = document.getElementById('plan');
+    function render() {
+      const ketel = form.querySelector('input[name="ketel"]:checked').value;
+      const n = Math.max(1, +document.getElementById('aantal').value || 1);
+      const oud = document.getElementById('oud').checked;
+      document.getElementById('sGem').textContent = gem || 'nog niet gekozen';
+      document.getElementById('sDag').textContent = dag || 'nog niet gekozen';
+      document.getElementById('sKetel').textContent = { wand: 'Wandketel', staand: 'Staande ketel', condensatie: 'Condensatieketel' }[ketel];
+      const voordeel = campagne || n >= 3 || !gem;
+      let note;
+      if (!oud) { document.getElementById('sPrijs').textContent = 'Op aanvraag'; note = 'Woning jonger dan 10 jaar: 21% btw. We bevestigen de prijs telefonisch.'; }
+      else if (voordeel) {
+        document.getElementById('sPrijs').textContent = 'vanaf € 124';
+        note = (n >= 3 && !campagne ? 'Voordeeltarief voor 3 of meer toestellen in hetzelfde gebouw' : 'Voordeeltarief tijdens de reinigingstoer') + ', incl. 6% btw.' + (ketel === 'condensatie' ? ' Condensatieketel: + € 32 als de branderpakking vervangen wordt.' : '');
+      } else { document.getElementById('sPrijs').textContent = 'Normaal tarief'; note = 'Buiten de toer geldt het normale tarief. Vanaf 3 toestellen in hetzelfde gebouw krijgt u wel het voordeeltarief.'; }
+      document.getElementById('sNote').textContent = note;
+    }
+    form.addEventListener('change', render); form.addEventListener('input', e => { if (e.target.id === 'aantal') render(); });
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const err = document.getElementById('err');
+      let m = '';
+      if (!gem) m = 'Geef eerst uw postcode in.';
+      else if (!dag) m = 'Kies een dag uit de toer.';
+      else if (!form.elements.naam.value.trim() || !form.elements.tel.value.trim()) m = 'Vul uw naam en telefoonnummer in.';
+      err.textContent = m; err.classList.toggle('hidden', !m);
+      if (m) return;
+      const remind = document.getElementById('remind').checked;
+      const yrs = +document.getElementById('interval').value;
+      const next = new Date(); next.setFullYear(next.getFullYear() + yrs);
+      document.getElementById('okText').innerHTML = `Bedankt ${form.elements.naam.value.trim()}. Uw aanvraag voor <b>${dag}</b> in <b>${gem}</b> is genoteerd. We bevestigen per sms of telefoon.` +
+        (remind ? `<br/><br/>Herinnering voor de volgende beurt: <b>${next.toLocaleDateString('nl-BE', { month: 'long', year: 'numeric' })}</b>.` : '');
+      document.getElementById('sum').hidden = true; document.getElementById('ok').hidden = false;
+    });
+    render();
+  </script>
+</body>
+</html>

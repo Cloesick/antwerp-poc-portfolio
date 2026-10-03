@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Verdela | Haarden &amp; kachels met toonzaal in Kontich</title>
+  <meta name="description" content="Verdela verkoopt en plaatst haarden en kachels op gas, hout en pellets. Toonzaal aan de Duffelsesteenweg 184 in Kontich, sinds 2000. Ook op zaterdag open." />
+  <link rel="canonical" href="https://verdela.be/" />
+  <meta name="theme-color" content="#26303a" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Verdela" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Verdela | Haarden &amp; kachels in Kontich" />
+  <meta property="og:description" content="Eigen haard is goud waard. Kom haarden en kachels zien in onze toonzaal in Kontich." />
+  <meta property="og:url" content="https://verdela.be/" />
+  <meta property="og:image" content="images/real2.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="images/logo.jpg" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "additionalType": "https://schema.org/Store",
+    "name": "Verdela",
+    "legalName": "Verdela BV",
+    "slogan": "Eigen haard is goud waard",
+    "description": "Verkoop en plaatsing van haarden en kachels op gas, hout en pellets, met toonzaal in Kontich.",
+    "url": "https://verdela.be/",
+    "telephone": "+3234572355",
+    "faxNumber": "+3234572100",
+    "email": "info@verdela.be",
+    "foundingDate": "2000-10-10",
+    "image": "https://verdela.be/files/header.jpg",
+    "logo": "https://verdela.be/files/logo-small.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Duffelsesteenweg 184",
+      "postalCode": "2550",
+      "addressLocality": "Kontich",
+      "addressCountry": "BE"
+    },
+    "areaServed": ["Kontich", "Edegem", "Aartselaar", "Lint", "Duffel", "Hove", "Mortsel", "Boechout", "Rumst"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday", "Thursday"], "opens": "10:00", "closes": "12:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday", "Thursday"], "opens": "13:30", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "17:00" }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { display: ['Gloock', 'Georgia', 'serif'], sans: ['Figtree', 'system-ui', 'sans-serif'] },
+          colors: {
+            slate2: '#26303a',   /* deepened Verdela slate */
+            leisteen: '#506270', /* their brand slate */
+            ash: '#e9e6e1',      /* cold fireplace ash */
+            soot: '#1b2229',
+            ember: '#cf4647',    /* their brand red */
+            glow: '#f2a64a',
+            smoke: '#9aa7b2',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root { --accent: #cf4647; --ease: cubic-bezier(0.23, 1, 0.32, 1); }
+    html { scroll-behavior: smooth; }
+    body { text-rendering: optimizeLegibility; }
+    h1, h2, h3 { text-wrap: balance; }
+    p { text-wrap: pretty; }
+
+    .js .rv { opacity: 0; transform: translateY(18px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+    .js .rv.in { opacity: 1; transform: none; }
+
+    /* Hearth frame: the photo sits in a firebox opening */
+    .hearth { border-radius: 999px 999px 18px 18px; }
+    .glowbg { background:
+      radial-gradient(700px 420px at 75% 70%, rgba(242,166,74,.22), transparent 65%),
+      radial-gradient(500px 360px at 80% 85%, rgba(207,70,71,.25), transparent 70%),
+      linear-gradient(180deg, #26303a 0%, #1f2830 100%); }
+
+    /* Live flame (keuzehulp) */
+    .firebox { background: radial-gradient(ellipse at 50% 100%, #3b1a12 0%, #140c0a 60%, #0e0a09 100%); }
+    .fire { position: absolute; bottom: 12%; left: 50%; transform: translateX(-50%); transition: width .7s var(--ease); }
+    .fire svg { display: block; width: 100%; height: auto; overflow: visible; filter: drop-shadow(0 0 18px rgba(255,140,50,.55)); }
+    .fire path { transform-box: fill-box; transform-origin: 50% 100%; }
+    .fl-a { animation: lick 1.7s ease-in-out infinite alternate; }
+    .fl-b { animation: lick 1.2s ease-in-out infinite alternate-reverse; }
+    .fl-c { animation: lick .9s ease-in-out infinite alternate; }
+    @keyframes lick { 0% { transform: scale(1,1) skewX(0deg); } 50% { transform: scale(.96,1.08) skewX(-4deg); } 100% { transform: scale(1.03,.93) skewX(4deg); } }
+    .logs { position:absolute; bottom: 9%; left: 50%; transform: translateX(-50%); width: 62%; height: 9%; border-radius: 40px; background: linear-gradient(180deg,#5b3a2a,#2a1a13); box-shadow: 0 -6px 30px rgba(255,140,60,.35); }
+    .pellets { background: radial-gradient(circle, #6b4b2e 35%, transparent 37%) 0 0/9px 9px, linear-gradient(180deg,#3a2a1f,#22160f); }
+    .gasbed { background: radial-gradient(circle, #cfd4d8 30%, transparent 33%) 0 0/11px 9px, linear-gradient(180deg,#5b636a,#2a2f33); }
+
+    .chip input { position: absolute; opacity: 0; pointer-events: none; }
+    .chip span { transition: background-color .2s var(--ease), border-color .2s var(--ease), color .2s var(--ease); }
+    .chip input:checked + span { background: #cf4647; border-color: #cf4647; color: #fff; }
+    .chip input:focus-visible + span { outline: 2px solid #f2a64a; outline-offset: 2px; }
+
+    .day[aria-pressed="true"] { background: #26303a; color: #fff; border-color: #26303a; }
+    .slot[aria-pressed="true"] { background: #cf4647; color: #fff; border-color: #cf4647; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), border-color .18s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid #f2a64a; outline-offset: 3px; }
+    input[type=range] { accent-color: #cf4647; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .rv { opacity: 1; transform: none; transition: none; }
+      .fire path { animation: none !important; }
+    }
+    @media (max-width: 767px) { body { padding-bottom: 58px; } .sx-cta { bottom: 76px !important; } }
+  </style>
+</head>
+<body class="bg-ash text-soot font-sans antialiased">
+
+  <div class="fixed bottom-4 right-4 z-50 hidden md:block">
+    <span class="text-[11px] tracking-wider text-ash bg-slate2/90 border border-white/10 rounded-full px-3 py-1.5 backdrop-blur">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-slate2/95 backdrop-blur text-ash border-b border-white/10">
+    <nav class="max-w-6xl mx-auto px-5 h-[70px] flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top" class="flex items-center gap-3">
+        <img src="images/logo.jpg" alt="" width="38" height="38" class="w-[38px] h-[38px] rounded-md" />
+        <span class="leading-tight"><span class="block font-display text-[22px] tracking-tight">Verdela</span><span class="block text-[11px] text-smoke -mt-0.5">Haarden &amp; kachels, Kontich</span></span>
+      </a>
+      <div class="hidden lg:flex items-center gap-7 text-[15px] text-ash/80">
+        <a href="#gamma" class="hover:text-white">Gamma</a>
+        <a href="#keuzehulp" class="hover:text-white">Keuzehulp</a>
+        <a href="#realisaties" class="hover:text-white">Realisaties</a>
+        <a href="#toonzaal" class="hover:text-white">Toonzaal</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="tel:+3234572355" class="hidden sm:inline text-[15px] text-ash/80 hover:text-white whitespace-nowrap">03 457 23 55</a>
+        <a href="#toonzaal" class="btn bg-ember hover:bg-[#b93a3b] text-white font-semibold text-[14px] rounded-full px-4 py-2.5 whitespace-nowrap">Plan een bezoek</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="glowbg text-ash relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-5 pt-14 pb-16 lg:pt-16 lg:pb-20 grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+      <div class="lg:col-span-6">
+        <p class="text-glow font-semibold text-[15px] sm:text-[17px] mb-5">Toonzaal voor haarden en kachels in Kontich, sinds 2000</p>
+        <h1 class="font-display text-[clamp(2.7rem,6vw,4.9rem)] leading-[1.02] tracking-[-0.01em] text-white">Eigen haard is goud waard.</h1>
+        <p class="mt-6 text-[18px] leading-relaxed text-ash/80 max-w-[46ch]">Verdela verkoopt en plaatst haarden en kachels op gas, hout en pellets. Kom ze in het echt zien in onze toonzaal aan de Duffelsesteenweg, ook op zaterdag.</p>
+        <div class="mt-9 flex flex-wrap gap-3">
+          <a href="#toonzaal" class="btn inline-flex items-center gap-2 bg-ember hover:bg-[#b93a3b] text-white font-semibold rounded-full px-6 py-3.5">Afspraak in de toonzaal</a>
+          <a href="#keuzehulp" class="btn inline-flex items-center gap-2 border border-white/25 hover:border-white/60 text-white font-semibold rounded-full px-6 py-3.5">Welk vermogen heb ik nodig?</a>
+        </div>
+        <dl class="mt-11 grid grid-cols-3 gap-4 max-w-md border-t border-white/10 pt-6">
+          <div><dt class="text-[13px] text-smoke">Sinds</dt><dd class="font-display text-2xl text-white">2000</dd></div>
+          <div><dt class="text-[13px] text-smoke">Zaterdag</dt><dd class="font-display text-2xl text-white">10–17u</dd></div>
+          <div><dt class="text-[13px] text-smoke">Brandstof</dt><dd class="font-display text-2xl text-white">3 soorten</dd></div>
+        </dl>
+      </div>
+      <div class="lg:col-span-6 relative">
+        <figure class="relative mx-auto max-w-[520px]">
+          <div class="hearth overflow-hidden border-[10px] border-[#3a4652] shadow-[0_40px_90px_-30px_rgba(0,0,0,.8)] aspect-[4/4.3]">
+            <img src="images/real2.jpg" alt="Door Verdela geplaatste dubbelzijdige gashaard als ruimteverdeler in een woonkamer" class="w-full h-full object-cover object-[50%_60%]" />
+          </div>
+          <figcaption class="absolute -bottom-5 left-6 bg-ash text-soot rounded-xl px-4 py-3 shadow-xl text-[14px] leading-snug">
+            <span class="block font-semibold">Realisatie van Verdela</span>
+            <span class="text-leisteen">Doorkijkhaard als ruimteverdeler</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gamma -->
+  <section id="gamma" class="max-w-6xl mx-auto px-5 py-20 lg:py-24">
+    <div class="grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-4">
+        <h2 class="rv font-display text-[clamp(2rem,3.6vw,2.9rem)] leading-[1.08]">Voor elke woonkamer de juiste warmte.</h2>
+        <p class="rv mt-5 text-leisteen leading-relaxed">Geen catalogus van op afstand: wij tonen haarden en kachels in onze toonzaal, geven eerlijk advies over vermogen en rookafvoer, en plaatsen ze zelf.</p>
+        <a href="tel:+3234572355" class="rv inline-block mt-6 font-semibold text-ember underline underline-offset-4 decoration-2">Bel voor advies: 03 457 23 55</a>
+      </div>
+      <div class="lg:col-span-8 grid sm:grid-cols-2 gap-px bg-[#cfcac3] rounded-2xl overflow-hidden border border-[#cfcac3]">
+        <article class="rv bg-ash p-7">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" class="text-ember mb-4" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1.5" stroke="currentColor" stroke-width="1.6"/><path d="M8 16c0-2 2-2.5 2-4.5 1.5 1 1.2 2 2 2.5.6-1 1-1.7 1-3 1.5 1.3 3 2.6 3 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <h3 class="font-display text-[1.45rem]">Gashaarden</h3>
+          <p class="mt-2 text-leisteen leading-relaxed">Sfeer met één druk op de afstandsbediening. Inbouw, hoekhaard of doorkijkhaard, zoals in onze realisaties.</p>
+        </article>
+        <article class="rv bg-ash p-7">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" class="text-ember mb-4" aria-hidden="true"><path d="M6 21V8a6 6 0 0112 0v13" stroke="currentColor" stroke-width="1.6"/><path d="M4 21h16M9 14h6v4H9z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          <h3 class="font-display text-[1.45rem]">Houtkachels</h3>
+          <p class="mt-2 text-leisteen leading-relaxed">Het geknetter en de stralingswarmte van echt hout, vrijstaand of als inzethaard in uw bestaande schouw.</p>
+        </article>
+        <article class="rv bg-ash p-7">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" class="text-ember mb-4" aria-hidden="true"><rect x="6" y="3" width="12" height="18" rx="2" stroke="currentColor" stroke-width="1.6"/><rect x="9" y="11" width="6" height="5" rx="1" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="6.5" r="1" fill="currentColor"/></svg>
+          <h3 class="font-display text-[1.45rem]">Pelletkachels</h3>
+          <p class="mt-2 text-leisteen leading-relaxed">Automatisch gevoed en programmeerbaar: comfortabel stoken op pellets, ook als hoofdverwarming.</p>
+        </article>
+        <article class="rv bg-ash p-7">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" class="text-ember mb-4" aria-hidden="true"><path d="M3 21V9l9-5 9 5v12" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><rect x="8" y="12" width="8" height="6" stroke="currentColor" stroke-width="1.6"/></svg>
+          <h3 class="font-display text-[1.45rem]">Sierschouwen &amp; inbouwhaarden</h3>
+          <p class="mt-2 text-leisteen leading-relaxed">Een schouw op maat rond uw haard, van strak wit tot een volledige wand met kasten.</p>
+        </article>
+        <article class="rv bg-slate2 text-ash p-7 sm:col-span-2 flex flex-col sm:flex-row sm:items-center justify-between gap-5">
+          <div>
+            <h3 class="font-display text-[1.45rem] text-white">Plaatsing en onderhoud door Verdela</h3>
+            <p class="mt-2 text-ash/75 leading-relaxed max-w-[52ch]">We komen kijken, plaatsen de haard of kachel en blijven uw aanspreekpunt. Vraag in de toonzaal naar onderhoud en reiniging.</p>
+          </div>
+          <a href="#toonzaal" class="btn shrink-0 bg-ember hover:bg-[#b93a3b] text-white font-semibold rounded-full px-5 py-3 text-center">Afspraak maken</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Keuzehulp (signature feature) -->
+  <section id="keuzehulp" class="bg-slate2 text-ash">
+    <div class="max-w-6xl mx-auto px-5 py-20 lg:py-24">
+      <div class="max-w-2xl">
+        <h2 class="rv font-display text-[clamp(2rem,3.8vw,3rem)] leading-[1.08] text-white">Kachel-keuzehulp: hoeveel vermogen heeft uw ruimte nodig?</h2>
+        <p class="rv mt-4 text-ash/75 leading-relaxed">Beantwoord vier vragen en zie meteen een richtvermogen in kilowatt. Te groot is even fout als te klein: dan staat uw kachel altijd te smoren. In de toonzaal rekenen we het samen precies na.</p>
+      </div>
+
+      <form id="kh" class="mt-12 grid lg:grid-cols-12 gap-8 lg:gap-10" novalidate>
+        <div class="lg:col-span-7 min-w-0 space-y-8">
+          <fieldset>
+            <legend class="font-semibold text-white mb-3">1. Wat voor woning?</legend>
+            <div class="flex flex-wrap gap-2.5">
+              <label class="chip relative cursor-pointer"><input type="radio" name="iso" value="100" /><span class="block border border-white/20 rounded-full px-4 py-2.5 text-[15px]">Oud, weinig isolatie</span></label>
+              <label class="chip relative cursor-pointer"><input type="radio" name="iso" value="70" checked /><span class="block border border-white/20 rounded-full px-4 py-2.5 text-[15px]">Gemiddeld geïsoleerd</span></label>
+              <label class="chip relative cursor-pointer"><input type="radio" name="iso" value="50" /><span class="block border border-white/20 rounded-full px-4 py-2.5 text-[15px]">Goed geïsoleerd / gerenoveerd</span></label>
+              <label class="chip relative cursor-pointer"><input type="radio" name="iso" value="35" /><span class="block border border-white/20 rounded-full px-4 py-2.5 text-[15px]">Nieuwbouw (BEN)</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="font-semibold text-white mb-3">2. Hoe groot is de ruimte die u wilt verwarmen?</legend>
+            <div class="flex items-center gap-5">
+              <input id="m2" type="range" min="15" max="120" step="5" value="45" class="flex-1" aria-describedby="m2out" />
+              <output id="m2out" for="m2" class="font-display text-3xl text-white w-24 text-right">45 m²</output>
+            </div>
+            <p class="mt-2 text-[14px] text-smoke">Woonkamer met open keuken? Tel ze samen.</p>
+          </fieldset>
+
+          <fieldset>
+            <legend class="font-semibold text-white mb-3">3. Welke brandstof spreekt u aan?</legend>
+            <div class="flex flex-wrap gap-2.5">
+              <label class="chip relative cursor-pointer"><input type="radio" name="fuel" value="hout" checked /><span class="block border border-white/20 rounded-full px-4 py-2.5 text-[15px]">Hout</span></label>
+              <label class="chip relative cursor-pointer"><input type="radio" name="fuel" value="pellet" /><span class="block border border-white/20 rounded-full px-4 py-2.5 text-[15px]">Pellets</span></label>
+              <label class="chip relative cursor-pointer"><input type="radio" name="fuel" value="gas" /><span class="block border border-white/20 rounded-full px-4 py-2.5 text-[15px]">Gas</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="font-semibold text-white mb-3">4. Waarvoor dient de haard vooral?</legend>
+            <div class="flex flex-wrap gap-2.5">
+              <label class="chip relative cursor-pointer"><input type="radio" name="role" value="sfeer" checked /><span class="block border border-white/20 rounded-full px-4 py-2.5 text-[15px]">Sfeer en bijverwarming</span></label>
+              <label class="chip relative cursor-pointer"><input type="radio" name="role" value="hoofd" /><span class="block border border-white/20 rounded-full px-4 py-2.5 text-[15px]">Hoofdverwarming van de leefruimte</span></label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="lg:col-span-5 min-w-0">
+          <div class="rounded-[22px] bg-[#1f2830] border border-white/10 p-5 lg:sticky lg:top-24">
+            <div class="firebox relative rounded-[999px_999px_14px_14px] overflow-hidden aspect-[5/4] border-[8px] border-[#3a4652]" aria-hidden="true">
+              <div id="bed" class="logs"></div>
+              <div class="fire" id="fire"><svg viewBox="0 0 120 120" aria-hidden="true">
+                <path class="fl-a" fill="#cf4647" opacity=".9" d="M60 4c8 22 34 38 34 70a34 34 0 01-68 0c0-14 6-22 12-30 2 10 6 14 10 16-2-22 6-40 12-56z"/>
+                <path class="fl-a" fill="#d9572f" opacity=".85" d="M22 112c-12-8-16-26-6-42 2 8 6 12 10 12-2-12 4-22 10-28 0 18 12 26 12 42 0 10-8 18-26 16z"/>
+                <path class="fl-b" fill="#cf4647" opacity=".85" d="M98 112c12-8 16-24 6-40-2 8-6 10-10 12 2-12-4-20-10-26 0 16-10 24-10 38 0 10 8 18 24 16z"/>
+                <path class="fl-b" fill="#f07a34" d="M60 26c6 18 26 30 26 52a26 26 0 01-52 0c0-10 4-16 8-22 2 8 6 10 8 12 0-16 4-30 10-42z"/>
+                <path class="fl-c" fill="#ffc552" d="M60 54c4 12 16 18 16 32a16 16 0 01-32 0c0-12 10-18 16-32z"/>
+                <path class="fl-c" fill="#fff3c4" d="M60 76c3 6 8 9 8 15a8 8 0 01-16 0c0-6 5-9 8-15z"/>
+              </svg></div>
+            </div>
+            <div class="mt-5" aria-live="polite">
+              <p class="text-[14px] text-smoke">Richtvermogen voor uw ruimte</p>
+              <p class="font-display text-white text-[3.2rem] leading-none mt-1"><span id="kw">3,2</span> kW</p>
+              <p id="kwtype" class="mt-3 font-semibold text-glow">Houtkachel of inzethaard</p>
+              <p id="kwtip" class="mt-1.5 text-[15px] text-ash/75 leading-relaxed">Kies een toestel tussen 3 en 4 kW.</p>
+            </div>
+            <button type="button" id="toBook" class="btn mt-6 w-full bg-ember hover:bg-[#b93a3b] text-white font-semibold rounded-full px-5 py-3.5">Bespreek dit advies in de toonzaal</button>
+            <p class="mt-3 text-[12.5px] text-smoke leading-snug">Richtwaarde op basis van ca. 35 tot 100 W per m². Hoogte van het plafond, glas en ligging maken het verschil: dat bekijken we samen.</p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Realisaties -->
+  <section id="realisaties" class="max-w-6xl mx-auto px-5 py-20 lg:py-24">
+    <div class="flex flex-wrap items-end justify-between gap-4 mb-10">
+      <h2 class="rv font-display text-[clamp(2rem,3.6vw,2.9rem)] leading-[1.08] max-w-[22ch]">Haarden die wij plaatsten bij klanten thuis.</h2>
+      <p class="rv text-leisteen max-w-[40ch]">Elke woonkamer is anders. Daarom maken we de schouw rond de haard op maat.</p>
+    </div>
+    <div class="grid md:grid-cols-12 gap-4">
+      <figure class="rv md:col-span-5 rounded-2xl overflow-hidden relative">
+        <img src="images/real1.jpg" alt="Driezijdige gashaard in een witte schouw tegen een rode wand" class="w-full h-[420px] md:h-[520px] object-cover" loading="lazy" />
+        <figcaption class="absolute bottom-0 inset-x-0 p-5 pt-16 bg-gradient-to-t from-black/70 to-transparent text-white"><span class="font-semibold">Driezijdige haard</span><span class="block text-[14px] text-white/80">Strakke witte schouw, open naar de leefruimte</span></figcaption>
+      </figure>
+      <figure class="rv md:col-span-7 rounded-2xl overflow-hidden relative">
+        <img src="images/real3.jpg" alt="Inbouwhaard in een paarse wand naast maatwerkkasten" class="w-full h-[320px] md:h-[520px] object-cover" loading="lazy" />
+        <figcaption class="absolute bottom-0 inset-x-0 p-5 pt-16 bg-gradient-to-t from-black/70 to-transparent text-white"><span class="font-semibold">Inbouwhaard in de wand</span><span class="block text-[14px] text-white/80">Ingewerkt naast maatwerkkasten en een tv-hoek</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Toonzaal afspraak -->
+  <section id="toonzaal" class="bg-white border-y border-[#d8d3cc]">
+    <div class="max-w-6xl mx-auto px-5 py-20 lg:py-24 grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-5 min-w-0">
+        <h2 class="rv font-display text-[clamp(2rem,3.6vw,2.9rem)] leading-[1.08]">Kom het vuur in het echt zien.</h2>
+        <p class="rv mt-5 text-leisteen leading-relaxed">Een haard kies je niet van op een foto. In de toonzaal ziet u de vlammen, voelt u de warmte en neemt u rustig de tijd. Op vrijdag ontvangen we u op afspraak.</p>
+        <dl class="rv mt-8 text-[15px] divide-y divide-[#e4e0da] border-y border-[#e4e0da]">
+          <div class="flex justify-between py-3"><dt>Woensdag en donderdag</dt><dd class="font-semibold text-right">10–12.30u en 13.30–18u</dd></div>
+          <div class="flex justify-between py-3"><dt>Vrijdag</dt><dd class="font-semibold">Op afspraak</dd></div>
+          <div class="flex justify-between py-3"><dt>Zaterdag</dt><dd class="font-semibold text-right">10–17u<span class="block font-normal text-[13px] text-leisteen">juni tot augustus 9–12u</span></dd></div>
+          <div class="flex justify-between py-3"><dt>Zondag tot dinsdag</dt><dd class="font-semibold">Gesloten</dd></div>
+        </dl>
+        <p id="nowOpen" class="rv mt-5 text-[15px] font-semibold text-leisteen"></p>
+      </div>
+
+      <div class="lg:col-span-7 min-w-0">
+        <form id="book" class="rounded-[22px] bg-ash border border-[#d8d3cc] p-6 sm:p-8" novalidate>
+          <div id="bookForm">
+            <p class="font-semibold">Kies een dag</p>
+            <div id="days" class="mt-3 flex gap-2 overflow-x-auto pb-2 -mx-1 px-1"></div>
+            <p class="font-semibold mt-6">Kies een uur</p>
+            <div id="slots" class="mt-3 grid grid-cols-3 sm:grid-cols-4 gap-2"></div>
+            <div id="advice" class="hidden mt-6 rounded-xl bg-white border border-[#e4e0da] px-4 py-3 text-[14.5px]"></div>
+            <div class="mt-6 grid sm:grid-cols-2 gap-4">
+              <label class="block text-[14px] font-semibold">Naam<input name="naam" required autocomplete="name" class="mt-1.5 w-full rounded-lg border border-[#cfcac3] bg-white px-3.5 py-3 font-normal" /></label>
+              <label class="block text-[14px] font-semibold">Telefoon<input name="tel" required type="tel" autocomplete="tel" class="mt-1.5 w-full rounded-lg border border-[#cfcac3] bg-white px-3.5 py-3 font-normal" /></label>
+            </div>
+            <label class="block mt-4 text-[14px] font-semibold">Waar denkt u aan? <span class="font-normal text-leisteen">(optioneel)</span><textarea name="msg" rows="2" class="mt-1.5 w-full rounded-lg border border-[#cfcac3] bg-white px-3.5 py-3 font-normal" placeholder="Bv. houtkachel voor een rijwoning in Edegem"></textarea></label>
+            <p id="bookErr" class="hidden mt-3 text-[14px] font-semibold text-ember" role="alert"></p>
+            <button class="btn mt-6 w-full bg-ember hover:bg-[#b93a3b] text-white font-semibold rounded-full px-5 py-3.5">Afspraak in de toonzaal vastleggen</button>
+          </div>
+          <div id="bookOk" class="hidden text-center py-8" role="status">
+            <div class="mx-auto w-16 h-16 rounded-full bg-ember text-white grid place-items-center"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3 class="font-display text-3xl mt-5">Afspraak vastgelegd</h3>
+            <p id="bookOkTxt" class="mt-3 text-leisteen max-w-[44ch] mx-auto"></p>
+            <p class="mt-4 text-[13px] text-leisteen">Dit is een concept-demo: er werd niets verstuurd.</p>
+            <button type="button" id="bookAgain" class="mt-6 font-semibold text-ember underline underline-offset-4">Nog een afspraak plannen</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Waarom + regio -->
+  <section class="max-w-6xl mx-auto px-5 py-20 lg:py-24 grid lg:grid-cols-2 gap-12">
+    <div>
+      <h2 class="rv font-display text-[clamp(1.9rem,3.2vw,2.6rem)] leading-[1.1]">Een haardenzaak uit Kontich, al meer dan 25 jaar.</h2>
+      <ul class="rv mt-7 space-y-4 text-[16px]">
+        <li class="flex gap-3"><span class="mt-2 w-2 h-2 rounded-full bg-ember shrink-0"></span>Opgericht in 2000, vandaag nog altijd aan de Duffelsesteenweg</li>
+        <li class="flex gap-3"><span class="mt-2 w-2 h-2 rounded-full bg-ember shrink-0"></span>Gas, hout en pellets onder één dak, dus advies zonder vooringenomenheid</li>
+        <li class="flex gap-3"><span class="mt-2 w-2 h-2 rounded-full bg-ember shrink-0"></span>Verkoop én plaatsing, met een schouw die past bij uw interieur</li>
+        <li class="flex gap-3"><span class="mt-2 w-2 h-2 rounded-full bg-ember shrink-0"></span>Zaterdag open, vrijdag op afspraak: kiezen wanneer het u past</li>
+      </ul>
+    </div>
+    <div class="rounded-[22px] bg-slate2 text-ash p-8">
+      <h3 class="font-display text-2xl text-white">Wij werken in Kontich en omgeving</h3>
+      <p class="mt-3 text-ash/75">Kontich, Waarloos, Edegem, Aartselaar, Lint, Duffel, Hove, Mortsel, Boechout, Rumst en de rest van de zuidrand van Antwerpen.</p>
+      <div class="mt-7 space-y-3">
+        <a href="tel:+3234572355" class="btn flex items-center justify-between rounded-xl bg-white/5 border border-white/10 hover:border-white/30 px-5 py-4"><span>Telefoon</span><span class="font-semibold text-white">03 457 23 55</span></a>
+        <a href="mailto:info@verdela.be" class="btn flex items-center justify-between rounded-xl bg-white/5 border border-white/10 hover:border-white/30 px-5 py-4"><span>E-mail</span><span class="font-semibold text-white">info@verdela.be</span></a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Verdela+Duffelsesteenweg+184+2550+Kontich" target="_blank" rel="noopener" class="btn flex items-center justify-between gap-4 rounded-xl bg-white/5 border border-white/10 hover:border-white/30 px-5 py-4"><span>Route</span><span class="font-semibold text-white text-right">Duffelsesteenweg 184, 2550 Kontich</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-soot text-ash/70">
+    <div class="max-w-6xl mx-auto px-5 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 text-[14px]">
+      <div class="flex items-center gap-3">
+        <img src="images/logo.jpg" alt="Verdela logo" width="34" height="34" class="rounded" />
+        <p><span class="text-white font-semibold">Verdela</span>, Duffelsesteenweg 184, 2550 Kontich. Tel 03 457 23 55, fax 03 457 21 00</p>
+      </div>
+      <p class="max-w-sm">Concept-herontwerp door <a href="mailto:nicolas@saspire.org" class="underline text-white">Saspire</a> als vrijblijvend voorstel. Dit is niet de officiële website van Verdela.</p>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile call bar -->
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden grid grid-cols-2 text-white font-semibold text-[15px]">
+    <a href="tel:+3234572355" class="flex items-center justify-center gap-2 py-3.5 bg-slate2">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Bel Verdela</a>
+    <a href="#toonzaal" class="flex items-center justify-center py-3.5 bg-ember">Toonzaal-afspraak</a>
+  </div>
+
+  <script>
+  (function () {
+    document.documentElement.classList.add('js');
+    var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var rvs = document.querySelectorAll('.rv');
+    if ('IntersectionObserver' in window && !reduced) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
+      rvs.forEach(function (el) { io.observe(el); });
+      setTimeout(function () { rvs.forEach(function (el) { el.classList.add('in'); }); }, 2500);
+    } else rvs.forEach(function (el) { el.classList.add('in'); });
+
+    /* ---------- Keuzehulp ---------- */
+    var form = document.getElementById('kh'), m2 = document.getElementById('m2'), m2out = document.getElementById('m2out');
+    var kwEl = document.getElementById('kw'), typeEl = document.getElementById('kwtype'), tipEl = document.getElementById('kwtip'), bed = document.getElementById('bed');
+    var fire = document.getElementById('fire');
+    var advice = null;
+    function val(n) { var c = form.querySelector('input[name="' + n + '"]:checked'); return c ? c.value : null; }
+    function calc() {
+      var area = +m2.value, wpm = +val('iso'), fuel = val('fuel'), role = val('role');
+      var kw = area * wpm / 1000;
+      if (role === 'sfeer') kw = kw * 0.85;
+      kw = Math.max(2.5, Math.min(14, kw));
+      var lo = Math.max(2, Math.floor(kw)), hi = Math.ceil(kw + 1);
+      m2out.textContent = area + ' m²';
+      kwEl.textContent = kw.toFixed(1).replace('.', ',');
+      var t = { hout: 'Houtkachel of inzethaard', pellet: 'Pelletkachel', gas: 'Gashaard (inbouw, hoek of doorkijk)' }[fuel];
+      var tip;
+      if (fuel === 'gas') tip = 'Kies een gashaard rond ' + lo + ' tot ' + hi + ' kW, met gesloten verbranding en een modulerende brander.';
+      else if (fuel === 'pellet') tip = 'Een pelletkachel van ' + lo + ' tot ' + hi + ' kW, programmeerbaar' + (role === 'hoofd' ? ', met een voorraadbak voor meerdere dagen.' : '.');
+      else tip = 'Een houtkachel van ' + lo + ' tot ' + hi + ' kW. Zo stookt u op vol vermogen, zuiver en zonder roet.';
+      if (kw >= 12) tip += ' Bij zo veel vermogen bekijken we graag ter plaatse de warmteverdeling.';
+      typeEl.textContent = t; tipEl.textContent = tip;
+      bed.className = fuel === 'hout' ? 'logs' : (fuel === 'pellet' ? 'logs pellets' : 'logs gasbed');
+      var s = (kw - 2.5) / 11.5; // 0..1
+      fire.style.width = (34 + s * 40) + '%';
+      advice = { kw: kwEl.textContent, type: t, area: area };
+    }
+    form.addEventListener('input', calc); form.addEventListener('change', calc); calc();
+
+    /* ---------- Toonzaal-afspraak ---------- */
+    var daysEl = document.getElementById('days'), slotsEl = document.getElementById('slots');
+    var DN = ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za'], MN = ['jan', 'feb', 'mrt', 'apr', 'mei', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec'];
+    function slotsFor(d) {
+      var w = d.getDay(), m = d.getMonth();
+      if (w === 3 || w === 4) return ['10:00', '11:00', '11:45', '13:30', '14:30', '15:30', '16:30', '17:15'];
+      if (w === 5) return ['10:00', '13:30', '15:00', '16:30', '18:00', '19:00'];
+      if (w === 6) return (m >= 5 && m <= 7) ? ['09:00', '10:00', '11:00'] : ['10:00', '11:00', '12:00', '13:30', '14:30', '15:30', '16:15'];
+      return [];
+    }
+    var chosenDay = null, chosenSlot = null, d0 = new Date(); d0.setHours(0, 0, 0, 0);
+    var open = [];
+    for (var i = 1; open.length < 8 && i < 30; i++) { var d = new Date(d0); d.setDate(d0.getDate() + i); if (slotsFor(d).length) open.push(d); }
+    open.forEach(function (d, idx) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'day btn shrink-0 w-[74px] rounded-xl border border-[#cfcac3] bg-white py-2.5 text-center';
+      b.setAttribute('aria-pressed', 'false');
+      b.innerHTML = '<span class="block text-[13px]">' + DN[d.getDay()] + '</span><span class="block font-display text-2xl leading-tight">' + d.getDate() + '</span><span class="block text-[12px]">' + (d.getDay() === 5 ? 'afspraak' : MN[d.getMonth()]) + '</span>';
+      b.addEventListener('click', function () { pickDay(d, b); });
+      daysEl.appendChild(b);
+      if (idx === 0) pickDay(d, b);
+    });
+    function pickDay(d, btn) {
+      chosenDay = d; chosenSlot = null;
+      daysEl.querySelectorAll('.day').forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
+      btn.setAttribute('aria-pressed', 'true');
+      slotsEl.innerHTML = '';
+      slotsFor(d).forEach(function (s) {
+        var b = document.createElement('button');
+        b.type = 'button'; b.className = 'slot btn rounded-lg border border-[#cfcac3] bg-white py-2.5 font-semibold text-[15px]';
+        b.textContent = s; b.setAttribute('aria-pressed', 'false');
+        b.addEventListener('click', function () { slotsEl.querySelectorAll('.slot').forEach(function (x) { x.setAttribute('aria-pressed', 'false'); }); b.setAttribute('aria-pressed', 'true'); chosenSlot = s; });
+        slotsEl.appendChild(b);
+      });
+    }
+    document.getElementById('toBook').addEventListener('click', function () {
+      var a = document.getElementById('advice');
+      a.innerHTML = '<span class="font-semibold">Uw keuzehulp-advies gaat mee:</span> ' + advice.type.toLowerCase() + ', ca. ' + advice.kw + ' kW voor ' + advice.area + ' m².';
+      a.classList.remove('hidden');
+      document.getElementById('toonzaal').scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' });
+    });
+    var book = document.getElementById('book'), err = document.getElementById('bookErr');
+    book.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var naam = book.naam.value.trim(), tel = book.tel.value.trim();
+      book.naam.classList.toggle('border-ember', !naam); book.tel.classList.toggle('border-ember', tel.replace(/\D/g, '').length < 9);
+      if (!chosenSlot) { err.textContent = 'Kies nog een uur voor uw bezoek.'; err.classList.remove('hidden'); return; }
+      if (!naam || tel.replace(/\D/g, '').length < 9) { err.textContent = 'Vul uw naam en een geldig telefoonnummer in.'; err.classList.remove('hidden'); return; }
+      err.classList.add('hidden');
+      var d = chosenDay, full = ['zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag'][d.getDay()];
+      document.getElementById('bookOkTxt').textContent = naam.split(' ')[0] + ', we verwachten u op ' + full + ' ' + d.getDate() + ' ' + MN[d.getMonth()] + ' om ' + chosenSlot + ' in de toonzaal, Duffelsesteenweg 184 in Kontich. Verdela belt u nog even ter bevestiging.';
+      document.getElementById('bookForm').classList.add('hidden');
+      document.getElementById('bookOk').classList.remove('hidden');
+    });
+    document.getElementById('bookAgain').addEventListener('click', function () {
+      book.reset(); document.getElementById('bookForm').classList.remove('hidden'); document.getElementById('bookOk').classList.add('hidden');
+      var first = daysEl.querySelector('.day'); if (first) first.click();
+    });
+
+    /* ---------- Open now ---------- */
+    var now = new Date(), w = now.getDay(), t = now.getHours() + now.getMinutes() / 60, summer = now.getMonth() >= 5 && now.getMonth() <= 7, msg;
+    if ((w === 3 || w === 4) && ((t >= 10 && t < 12.5) || (t >= 13.5 && t < 18))) msg = 'Nu open tot ' + (t < 12.5 ? '12.30u' : '18u') + '.';
+    else if (w === 6 && (summer ? (t >= 9 && t < 12) : (t >= 10 && t < 17))) msg = 'Nu open tot ' + (summer ? '12u' : '17u') + '.';
+    else if (w === 5) msg = 'Vandaag op afspraak: kies hiernaast een uur.';
+    else msg = 'Nu gesloten. Plan hiernaast uw bezoek.';
+    document.getElementById('nowOpen').textContent = msg;
+  })();
+  </script>
+</body>
+</html>

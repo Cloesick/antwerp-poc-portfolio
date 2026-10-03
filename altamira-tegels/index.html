@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Altamira Tegels | Natuursteen &amp; keramische tegels, toonzaal in Vremde (Boechout)</title>
+  <meta name="description" content="Altamira Tegels: rechtstreekse invoer van meer dan 300 soorten natuursteen en keramische wand- en vloertegels. 600 m² toonzaal in Vremde, Boechout. Advies sinds 1981." />
+  <meta name="theme-color" content="#2f3a3d" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Altamira Tegels" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Altamira Tegels | Natuursteen &amp; tegels in Vremde" />
+  <meta property="og:description" content="Meer dan 300 soorten natuursteen en wand- en vloertegels van topmerken. Bereken je tegels en plan je toonzaalbezoek." />
+  <meta property="og:image" content="images/toonzaal-1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232f3a3d'/%3E%3Cpath d='M6 26h20M9 26V12h14v14M9 19h14M16 12v14' stroke='%23d8cfbf' stroke-width='2'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store", "HomeAndConstructionBusiness"],
+    "name": "Altamira Tegels",
+    "legalName": "Altamira BVBA",
+    "description": "Invoerder van natuursteen (meer dan 300 soorten) en keramische wand- en vloertegels, met 600 m² toonzaal in Vremde.",
+    "url": "http://altamirategels.be",
+    "telephone": "+3234542200",
+    "email": "info@altamirategels.be",
+    "foundingDate": "1981",
+    "image": "images/toonzaal-1.jpg",
+    "logo": "images/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Berthoutstraat 50",
+      "postalCode": "2531",
+      "addressLocality": "Boechout (Vremde)",
+      "addressCountry": "BE"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "12:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "14:00", "closes": "17:30" }
+    ],
+    "brand": ["Durstone","Pastorelli","Todagres","LMM","Ecoceramica","Alttoglass","HDC","Arkadia","Cesi","Altair","Ricchetti","Eliane","Cifre","Gresart"]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;1,700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        fontFamily: { sans: ['"Instrument Sans"', 'sans-serif'], cond: ['"Barlow Condensed"', 'sans-serif'] },
+        colors: {
+          hard: '#2f3a3d',     /* Henegouwse blauwe hardsteen */
+          hard2: '#3b484c',
+          lime: '#e4ddd0',     /* kalksteen */
+          lime2: '#d6cdbd',
+          sand: '#f1ece3',
+          ochre: '#a4462a',    /* oker van de grot van Altamira */
+          oak: '#8a5a33',      /* eiken balken van de toonzaal */
+          ink: '#1d2224',
+        },
+      } },
+    };
+  </script>
+  <style>
+    :root { --accent: #a4462a; --ease: cubic-bezier(.23,1,.32,1); }
+    html { scroll-behavior: smooth; }
+    body { background: #f1ece3; }
+    h1, h2, h3 { text-wrap: balance; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), color .18s var(--ease), border-color .18s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid #a4462a; outline-offset: 3px; }
+    /* Reveal only with JS so content never disappears */
+    .js .rv { opacity: 0; transform: translateY(18px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+    .js .rv.in { opacity: 1; transform: none; }
+    /* Hero: slow ken burns on the real showroom photo */
+    @keyframes drift { from { transform: scale(1.08) translateX(-1.5%); } to { transform: scale(1.0) translateX(0); } }
+    .drift { animation: drift 14s var(--ease) both; }
+    /* Stone swatches (pure CSS) */
+    .sw { position: relative; overflow: hidden; }
+    .sw::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,.18), transparent 45%, rgba(0,0,0,.08)); pointer-events: none; }
+    .grain::before { content:''; position:absolute; inset:0; opacity:.55; mix-blend-mode:multiply; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .35 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+    .card { transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -22px rgba(29,34,36,.45); }
+    .chip[aria-pressed="true"] { background: #2f3a3d; color: #f1ece3; border-color: #2f3a3d; }
+    .staal[aria-pressed="true"] { background: #a4462a; color: #fff; border-color: #a4462a; }
+    .tile-grid { background-image: linear-gradient(#2f3a3d22 1px, transparent 1px), linear-gradient(90deg, #2f3a3d22 1px, transparent 1px); }
+    input[type=range] { accent-color: #a4462a; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .drift { animation: none; }
+      .js .rv { opacity: 1; transform: none; transition: none; }
+      .card, .btn { transition: none; }
+      .card:hover { transform: none; }
+    }
+  </style>
+</head>
+<body class="text-ink font-sans antialiased selection:bg-ochre/30">
+
+  <!-- Concept badge -->
+  <div class="fixed bottom-4 right-4 z-50 hidden md:block pointer-events-none">
+    <span class="text-[11px] font-semibold tracking-widest uppercase text-sand bg-hard/90 rounded-full px-3 py-1.5 shadow">Concept-demo · Saspire</span>
+  </div>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-sand/90 backdrop-blur border-b border-hard/10">
+    <nav class="max-w-7xl mx-auto px-5 h-[72px] flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top" class="flex items-center gap-3">
+        <img src="images/logo.png" alt="Logo Altamira Tegels: steenbok" class="h-11 w-auto" width="65" height="44" />
+        <span class="leading-none">
+          <span class="block font-cond font-bold italic text-[22px] tracking-tight uppercase">Altamira Tegels</span>
+          <span class="block text-[12px] text-hard/70 mt-0.5">Natuursteen &amp; keramiek · Vremde</span>
+        </span>
+      </a>
+      <div class="hidden lg:flex items-center gap-8 text-[15px] font-medium text-hard">
+        <a href="#catalogus" class="hover:text-ochre">Catalogus</a>
+        <a href="#calculator" class="hover:text-ochre">Tegelcalculator</a>
+        <a href="#toonzaal" class="hover:text-ochre">Toonzaal</a>
+        <a href="#contact" class="hover:text-ochre">Contact</a>
+      </div>
+      <a href="#bezoek" class="btn inline-flex items-center gap-2 bg-hard hover:bg-ink text-sand font-semibold text-[14px] rounded-md px-4 py-2.5 whitespace-nowrap">
+        <span class="hidden sm:inline">Plan een toonzaalbezoek</span><span class="sm:hidden">Bezoek</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative bg-hard text-sand overflow-hidden">
+    <div class="grid lg:grid-cols-12 min-h-[calc(100svh-72px)] lg:min-h-[700px]">
+      <div class="lg:col-span-5 relative z-10 flex flex-col justify-center px-5 sm:px-10 lg:pl-[max(20px,calc((100vw-1280px)/2+20px))] lg:pr-10 py-14 order-2 lg:order-1">
+        <p class="text-lime/80 text-[15px] mb-5">Invoerder sinds 1981 · Berthoutstraat 50, Vremde</p>
+        <h1 class="font-cond font-bold uppercase leading-[.92] tracking-[-0.01em] text-[clamp(3rem,6.2vw,5.6rem)]">
+          Natuursteen en tegels, rechtstreeks ingevoerd.
+        </h1>
+        <p class="mt-6 text-lime/90 text-[17px] leading-relaxed max-w-[44ch]">
+          Meer dan 300 soorten natuursteen en wand- en vloertegels van Italiaanse en Spaanse topmerken. Leg ze naast elkaar in onze toonzaal van 600 m², in een rustige groene omgeving.
+        </p>
+        <div class="mt-9 flex flex-wrap gap-3">
+          <a href="#bezoek" class="btn inline-flex items-center gap-2 bg-ochre hover:bg-[#8c3a22] text-white font-semibold rounded-md px-6 py-3.5">Plan een toonzaalbezoek</a>
+          <a href="#calculator" class="btn inline-flex items-center gap-2 border border-lime/40 hover:border-lime text-sand font-semibold rounded-md px-6 py-3.5">Bereken je tegels</a>
+        </div>
+        <dl class="mt-12 grid grid-cols-3 gap-6 max-w-md border-t border-lime/20 pt-6">
+          <div><dt class="text-[13px] text-lime/70">Soorten steen</dt><dd class="font-cond font-bold text-4xl">300+</dd></div>
+          <div><dt class="text-[13px] text-lime/70">Toonzaal</dt><dd class="font-cond font-bold text-4xl">600 m²</dd></div>
+          <div><dt class="text-[13px] text-lime/70">Magazijn</dt><dd class="font-cond font-bold text-4xl">50.000 m²</dd></div>
+        </dl>
+      </div>
+      <div class="lg:col-span-7 relative min-h-[300px] sm:min-h-[420px] order-1 lg:order-2 overflow-hidden">
+        <img src="images/toonzaal-1.jpg" alt="Toonzaal van Altamira in Vremde met natuursteenvloeren uitgelegd op houten podia" class="drift absolute inset-0 w-full h-full object-cover" loading="eager" />
+        <div class="absolute inset-0 bg-gradient-to-r from-hard via-hard/10 to-transparent hidden lg:block w-1/3"></div>
+        <div class="absolute bottom-4 left-4 right-4 sm:left-auto sm:right-6 sm:bottom-6 bg-sand/95 text-ink rounded-md px-4 py-3 shadow-lg max-w-xs">
+          <p class="text-[13px] font-semibold">Afzonderlijke toonzalen voor natuursteen en keramiek</p>
+          <p class="text-[12px] text-hard/70 mt-0.5">Ma–vr 9–12 u en 14–17.30 u</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Principle -->
+  <section class="max-w-7xl mx-auto px-5 py-20 grid lg:grid-cols-12 gap-10 items-start">
+    <h2 class="rv lg:col-span-5 font-cond font-bold uppercase text-[clamp(2rem,4vw,3.2rem)] leading-[.95]">Wij dringen niets op.</h2>
+    <div class="rv lg:col-span-7 text-[18px] leading-relaxed text-hard max-w-[60ch]">
+      <p>Ons principe is al meer dan veertig jaar hetzelfde: we rekenen op jouw creativiteit en helpen met advies en een grote keuze. Je ziet de stenen in hun echte formaat, naast elkaar, op de vloer.</p>
+      <p class="mt-4">Als invoerder leveren we ook aan verdelers met toonzalen in alle Vlaamse provincies en in Zuid-Nederland. Er is dus altijd wel een verdeler in jouw buurt.</p>
+    </div>
+  </section>
+
+  <!-- Catalogus -->
+  <section id="catalogus" class="bg-lime/60 border-y border-hard/10">
+    <div class="max-w-7xl mx-auto px-5 py-20">
+      <div class="flex flex-wrap items-end justify-between gap-6 mb-8">
+        <div>
+          <h2 class="rv font-cond font-bold uppercase text-[clamp(2rem,4vw,3.2rem)] leading-[.95]">Bekijk ons assortiment</h2>
+          <p class="rv mt-3 text-hard max-w-[56ch]">Een greep uit wat in de toonzaal ligt. Duid aan welke stalen je wil zien: we leggen ze klaar voor je bezoek.</p>
+        </div>
+        <p class="text-[14px] text-hard" aria-live="polite"><span id="cat-count">0</span> materialen · <span id="mand-count" class="font-semibold text-ochre">0 stalen gekozen</span></p>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-4 lg:items-center mb-8">
+        <div class="flex flex-wrap gap-2" role="group" aria-label="Soort">
+          <button class="chip btn border border-hard/25 rounded-full px-4 py-2 text-[14px] font-medium" data-f="soort" data-v="alle" aria-pressed="true">Alles</button>
+          <button class="chip btn border border-hard/25 rounded-full px-4 py-2 text-[14px] font-medium" data-f="soort" data-v="natuursteen" aria-pressed="false">Natuursteen</button>
+          <button class="chip btn border border-hard/25 rounded-full px-4 py-2 text-[14px] font-medium" data-f="soort" data-v="keramiek" aria-pressed="false">Keramiek</button>
+        </div>
+        <div class="flex flex-wrap gap-2" role="group" aria-label="Toepassing">
+          <button class="chip btn border border-hard/25 rounded-full px-4 py-2 text-[14px] font-medium" data-f="toep" data-v="alle" aria-pressed="true">Elke toepassing</button>
+          <button class="chip btn border border-hard/25 rounded-full px-4 py-2 text-[14px] font-medium" data-f="toep" data-v="vloer" aria-pressed="false">Vloer</button>
+          <button class="chip btn border border-hard/25 rounded-full px-4 py-2 text-[14px] font-medium" data-f="toep" data-v="wand" aria-pressed="false">Wand</button>
+          <button class="chip btn border border-hard/25 rounded-full px-4 py-2 text-[14px] font-medium" data-f="toep" data-v="mozaiek" aria-pressed="false">Mozaïek</button>
+        </div>
+        <label class="lg:ml-auto relative">
+          <span class="sr-only">Zoek op naam of merk</span>
+          <input id="cat-q" type="search" placeholder="Zoek: Carrara, Todagres, leisteen…" class="w-full lg:w-72 bg-sand border border-hard/25 rounded-md px-4 py-2.5 text-[15px]" />
+        </label>
+      </div>
+
+      <ul id="cat" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"></ul>
+      <p id="cat-empty" class="hidden text-center py-10 text-hard">Niets gevonden. Probeer een andere steensoort, of vraag het ons in de toonzaal: we hebben veel meer dan hier staat.</p>
+      <noscript><p class="text-hard">Natuursteen: blauwe hardsteen, marmer, leisteen, zandsteen, graniet, dolomiet, kwartsiet, travertin, kalksteen. Keramiek van Durstone, Pastorelli, Todagres, LMM, Ecoceramica, Alttoglass, HDC, Arkadia, Cesi, Altair, Ricchetti, Eliane, Cifre en Gresart.</p></noscript>
+    </div>
+  </section>
+
+  <!-- Calculator -->
+  <section id="calculator" class="max-w-7xl mx-auto px-5 py-20">
+    <div class="grid lg:grid-cols-12 gap-10 items-start">
+      <div class="lg:col-span-5">
+        <h2 class="rv font-cond font-bold uppercase text-[clamp(2rem,4vw,3.2rem)] leading-[.95]">Hoeveel dozen heb je nodig?</h2>
+        <p class="rv mt-4 text-hard leading-relaxed max-w-[48ch]">Vul de maten van je ruimte in. We tellen er snijverlies bij volgens het legpatroon en ronden af op hele dozen. Neem de uitkomst mee naar de toonzaal, dan rekenen we samen na.</p>
+        <div class="rv mt-8 tile-grid rounded-md border border-hard/15 bg-sand h-48 relative overflow-hidden" style="background-size: var(--cell,24px) var(--cell,24px);" id="tile-viz" aria-hidden="true">
+          <div id="viz-room" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-ochre bg-ochre/10 rounded-sm transition-all duration-300"></div>
+        </div>
+      </div>
+      <form id="calc" class="lg:col-span-7 rounded-md bg-white border border-hard/15 p-6 sm:p-8 shadow-[0_24px_60px_-40px_rgba(29,34,36,.6)]" novalidate>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <label class="block"><span class="text-[14px] font-semibold">Lengte ruimte (m)</span>
+            <input id="c-l" type="number" step="0.05" min="0.5" value="5" inputmode="decimal" class="mt-1.5 w-full border border-hard/25 rounded-md px-3 py-2.5" /></label>
+          <label class="block"><span class="text-[14px] font-semibold">Breedte ruimte (m)</span>
+            <input id="c-b" type="number" step="0.05" min="0.5" value="4" inputmode="decimal" class="mt-1.5 w-full border border-hard/25 rounded-md px-3 py-2.5" /></label>
+          <label class="block"><span class="text-[14px] font-semibold">Legpatroon</span>
+            <select id="c-p" class="mt-1.5 w-full border border-hard/25 rounded-md px-3 py-2.5 bg-white">
+              <option value="5">Recht gelegd (+5 % snijverlies)</option>
+              <option value="8">Halfsteens / wild verband (+8 %)</option>
+              <option value="12">Diagonaal (+12 %)</option>
+              <option value="15">Visgraat (+15 %)</option>
+            </select></label>
+          <label class="block"><span class="text-[14px] font-semibold">Inhoud per doos (m²)</span>
+            <input id="c-d" type="number" step="0.01" min="0.1" value="1.44" inputmode="decimal" class="mt-1.5 w-full border border-hard/25 rounded-md px-3 py-2.5" />
+            <span class="text-[12px] text-hard/70">Staat op de doos of het staal, vb. 60×60 cm × 4 = 1,44 m²</span></label>
+        </div>
+        <label class="mt-5 flex items-center gap-3 text-[15px]"><input id="c-plint" type="checkbox" class="w-4 h-4 accent-[#a4462a]" checked /> Reken ook plinten (omtrek min 1 deur van 0,9 m)</label>
+
+        <div class="mt-7 grid sm:grid-cols-3 gap-4 border-t border-hard/10 pt-6" aria-live="polite">
+          <div><p class="text-[13px] text-hard/70">Oppervlakte + verlies</p><p class="font-cond font-bold text-4xl"><span id="r-m2">0</span> m²</p></div>
+          <div><p class="text-[13px] text-hard/70">Aantal dozen</p><p class="font-cond font-bold text-4xl text-ochre"><span id="r-doos">0</span></p></div>
+          <div id="r-plint-wrap"><p class="text-[13px] text-hard/70">Plinten</p><p class="font-cond font-bold text-4xl"><span id="r-plint">0</span> m</p></div>
+        </div>
+        <p id="r-note" class="mt-3 text-[13px] text-hard/70"></p>
+        <button type="button" id="c-take" class="btn mt-6 w-full sm:w-auto bg-hard hover:bg-ink text-sand font-semibold rounded-md px-6 py-3.5">Neem deze berekening mee naar mijn bezoek</button>
+        <p id="c-ok" class="hidden mt-3 text-[14px] font-medium text-ochre">Toegevoegd aan je afspraak hieronder.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Toonzaal -->
+  <section id="toonzaal" class="bg-hard text-sand">
+    <div class="max-w-7xl mx-auto px-5 py-20">
+      <div class="grid lg:grid-cols-12 gap-10 mb-10">
+        <h2 class="rv lg:col-span-5 font-cond font-bold uppercase text-[clamp(2rem,4vw,3.2rem)] leading-[.95]">600 m² om te voelen, niet te scrollen</h2>
+        <p class="rv lg:col-span-7 text-lime/90 text-[17px] leading-relaxed max-w-[60ch]">Natuursteen en keramiek hebben elk hun eigen toonzaal. Vloeren liggen uitgelegd op houten podia zodat je kleur, structuur en afwerking echt ziet: ruw, verzoet, gepolijst, gezandstraald of getrommeld.</p>
+      </div>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+        <img src="images/toonzaal-2.jpg" alt="Natuursteenvloeren uitgelegd in de toonzaal" class="col-span-2 row-span-2 w-full h-full object-cover rounded-md aspect-[4/3]" loading="lazy" />
+        <img src="images/toonzaal-4.jpg" alt="Rekken met keramische tegels" class="w-full h-full object-cover rounded-md aspect-square" loading="lazy" />
+        <img src="images/toonzaal-6.jpg" alt="Wandtegels in alle kleuren" class="w-full h-full object-cover rounded-md aspect-square" loading="lazy" />
+        <img src="images/toonzaal-5.jpg" alt="Mozaïek en tegelstalen in de keramiektoonzaal" class="col-span-2 w-full h-full object-cover rounded-md aspect-[2/1]" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust -->
+  <section class="max-w-7xl mx-auto px-5 py-20">
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="rv">
+        <p class="font-cond font-bold text-5xl text-ochre">1981</p>
+        <h3 class="mt-2 font-semibold text-lg">Meer dan 40 jaar ervaring</h3>
+        <p class="mt-2 text-hard leading-relaxed">Opgericht in 1981 in Vremde. Deskundig advies, gebaseerd op veertig jaar natuursteen en tegels.</p>
+      </div>
+      <div class="rv">
+        <p class="font-cond font-bold text-5xl text-ochre">5 landen</p>
+        <h3 class="mt-2 font-semibold text-lg">Rechtstreekse invoer</h3>
+        <p class="mt-2 text-hard leading-relaxed">Keramiek uit Italië, Spanje, Portugal, Duitsland en Brazilië. Natuursteen uit onder meer Portugal, Vietnam, Turkije en Spanje.</p>
+      </div>
+      <div class="rv">
+        <p class="font-cond font-bold text-5xl text-ochre">2 magazijnen</p>
+        <h3 class="mt-2 font-semibold text-lg">Voorraad in Lier en Vremde</h3>
+        <p class="mt-2 text-hard leading-relaxed">Meer dan 50.000 m² magazijn. Voor particulieren, vakmensen en verdelers in Vlaanderen en Zuid-Nederland.</p>
+      </div>
+    </div>
+    <div class="mt-14 border-t border-hard/15 pt-8">
+      <p class="text-[14px] text-hard/70 mb-4">Merken in de keramiektoonzaal</p>
+      <p class="font-cond font-semibold uppercase text-[clamp(1.3rem,2.4vw,1.9rem)] leading-snug text-hard tracking-wide">
+        Durstone · Pastorelli · Todagres · LMM · Ecoceramica · Alttoglass · HDC · Arkadia · Cesi · Altair · Ricchetti · Eliane · Cifre · Gresart
+      </p>
+    </div>
+  </section>
+
+  <!-- Bezoek / afspraak -->
+  <section id="bezoek" class="bg-lime/60 border-y border-hard/10">
+    <div class="max-w-7xl mx-auto px-5 py-20 grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-5">
+        <h2 class="rv font-cond font-bold uppercase text-[clamp(2rem,4vw,3.2rem)] leading-[.95]">Plan je toonzaalbezoek</h2>
+        <p class="rv mt-4 text-hard leading-relaxed max-w-[46ch]">Kies een moment. Je gekozen stalen en je berekening liggen klaar, zodat je niet hoeft te zoeken.</p>
+        <div class="mt-6 rounded-md bg-sand border border-hard/15 p-5">
+          <p class="font-semibold text-[15px]">Jouw stalenmand</p>
+          <ul id="mand" class="mt-3 space-y-1.5 text-[14px] text-hard"><li class="text-hard/60">Nog leeg. Duid stalen aan in de catalogus.</li></ul>
+          <p id="mand-calc" class="hidden mt-3 text-[14px] text-hard border-t border-hard/10 pt-3"></p>
+        </div>
+      </div>
+      <form id="afspraak" class="lg:col-span-7 rounded-md bg-white border border-hard/15 p-6 sm:p-8" novalidate>
+        <div id="afs-fields">
+          <fieldset>
+            <legend class="text-[14px] font-semibold">Welke toonzaal?</legend>
+            <div class="mt-2 flex flex-wrap gap-2">
+              <label class="cursor-pointer"><input type="radio" name="zaal" value="Natuursteen" class="peer sr-only" checked /><span class="block border border-hard/25 rounded-full px-4 py-2 text-[14px] peer-checked:bg-hard peer-checked:text-sand">Natuursteen</span></label>
+              <label class="cursor-pointer"><input type="radio" name="zaal" value="Keramiek" class="peer sr-only" /><span class="block border border-hard/25 rounded-full px-4 py-2 text-[14px] peer-checked:bg-hard peer-checked:text-sand">Keramiek</span></label>
+              <label class="cursor-pointer"><input type="radio" name="zaal" value="Beide" class="peer sr-only" /><span class="block border border-hard/25 rounded-full px-4 py-2 text-[14px] peer-checked:bg-hard peer-checked:text-sand">Beide</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="mt-6">
+            <legend class="text-[14px] font-semibold">Dag</legend>
+            <div id="dagen" class="mt-2 grid grid-cols-3 sm:grid-cols-5 gap-2"></div>
+          </fieldset>
+          <fieldset class="mt-5">
+            <legend class="text-[14px] font-semibold">Moment</legend>
+            <div class="mt-2 flex flex-wrap gap-2">
+              <label class="cursor-pointer"><input type="radio" name="uur" value="voormiddag (9–12 u)" class="peer sr-only" checked /><span class="block border border-hard/25 rounded-full px-4 py-2 text-[14px] peer-checked:bg-hard peer-checked:text-sand">Voormiddag 9–12 u</span></label>
+              <label class="cursor-pointer"><input type="radio" name="uur" value="namiddag (14–17.30 u)" class="peer sr-only" /><span class="block border border-hard/25 rounded-full px-4 py-2 text-[14px] peer-checked:bg-hard peer-checked:text-sand">Namiddag 14–17.30 u</span></label>
+            </div>
+          </fieldset>
+          <div class="mt-6 grid sm:grid-cols-2 gap-4">
+            <label class="block"><span class="text-[14px] font-semibold">Naam</span><input id="a-naam" required class="mt-1.5 w-full border border-hard/25 rounded-md px-3 py-2.5" autocomplete="name" /></label>
+            <label class="block"><span class="text-[14px] font-semibold">Telefoon of e-mail</span><input id="a-tel" required class="mt-1.5 w-full border border-hard/25 rounded-md px-3 py-2.5" autocomplete="tel" /></label>
+          </div>
+          <p id="a-err" class="hidden mt-3 text-[14px] text-ochre">Vul je naam en een telefoonnummer of e-mail in, dan kunnen we je afspraak bevestigen.</p>
+          <button class="btn mt-6 w-full bg-ochre hover:bg-[#8c3a22] text-white font-semibold rounded-md px-6 py-3.5">Vraag mijn bezoek aan</button>
+        </div>
+        <div id="afs-ok" class="hidden text-center py-8">
+          <div class="mx-auto w-14 h-14 rounded-full bg-ochre text-white flex items-center justify-center text-2xl">✓</div>
+          <h3 class="mt-4 font-cond font-bold uppercase text-3xl">Bezoek aangevraagd</h3>
+          <p id="afs-sum" class="mt-2 text-hard max-w-[44ch] mx-auto"></p>
+          <p class="mt-4 text-[13px] text-hard/70">Dit is een concept-demo: er werd niets verzonden.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-7xl mx-auto px-5 py-20 grid lg:grid-cols-12 gap-10">
+    <div class="lg:col-span-5">
+      <h2 class="font-cond font-bold uppercase text-[clamp(2rem,4vw,3.2rem)] leading-[.95]">Toonzaal in Vremde</h2>
+      <p class="mt-4 text-hard leading-relaxed max-w-[46ch]">Vlot bereikbaar vanuit Boechout, Lier, Ranst, Mortsel, Wommelgem, Hove en de rest van de Antwerpse rand. Daarbuiten helpen we je graag verder via een verdeler in je buurt.</p>
+      <div class="mt-7 space-y-3">
+        <a href="tel:+3234542200" class="btn flex items-center justify-between rounded-md border border-hard/20 bg-white px-5 py-4 hover:border-ochre"><span class="font-semibold">03 454 22 00</span><span class="text-[13px] text-hard/70">Bel de toonzaal</span></a>
+        <a href="mailto:info@altamirategels.be" class="btn flex items-center justify-between rounded-md border border-hard/20 bg-white px-5 py-4 hover:border-ochre"><span class="font-semibold">info@altamirategels.be</span><span class="text-[13px] text-hard/70">Vragen en prijzen</span></a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Altamira+Tegels+Berthoutstraat+50+2531+Boechout" target="_blank" rel="noopener" class="btn flex items-center justify-between rounded-md border border-hard/20 bg-white px-5 py-4 hover:border-ochre"><span class="font-semibold">Berthoutstraat 50, 2531 Boechout</span><span class="text-[13px] text-hard/70">Route</span></a>
+      </div>
+    </div>
+    <div class="lg:col-span-7 rounded-md bg-hard text-sand p-8">
+      <h3 class="font-semibold text-lg">Openingsuren toonzaal</h3>
+      <dl class="mt-5 space-y-3 text-[15px]">
+        <div class="flex justify-between border-b border-lime/15 pb-3"><dt class="text-lime/80">Maandag t/m vrijdag</dt><dd class="font-semibold">9–12 u en 14–17.30 u</dd></div>
+        <div class="flex justify-between border-b border-lime/15 pb-3"><dt class="text-lime/80">Zaterdag en zondag</dt><dd class="font-semibold">Gesloten</dd></div>
+      </dl>
+      <img src="images/toonzaal-1.jpg" alt="" class="mt-7 w-full h-48 object-cover rounded-md opacity-90" loading="lazy" />
+    </div>
+  </section>
+
+  <footer class="border-t border-hard/15 bg-lime/50 pb-20 md:pb-0">
+    <div class="max-w-7xl mx-auto px-5 py-10 flex flex-col md:flex-row justify-between gap-6">
+      <div>
+        <p class="font-cond font-bold italic uppercase text-xl">Altamira Tegels</p>
+        <p class="mt-1 text-[14px] text-hard">Altamira BVBA · Berthoutstraat 50, 2531 Boechout (Vremde) · 03 454 22 00</p>
+      </div>
+      <p class="text-[13px] text-hard/80 max-w-md">Concept-herontwerp door <a href="mailto:nicolas@saspire.org" class="underline">Saspire</a> als vrijblijvend voorstel. Dit is niet de officiële website van Altamira Tegels.</p>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile call bar -->
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden grid grid-cols-2 text-[15px] font-semibold shadow-[0_-6px_20px_rgba(0,0,0,.15)]">
+    <a href="tel:+3234542200" class="bg-hard text-sand py-3.5 text-center">Bel 03 454 22 00</a>
+    <a href="#bezoek" class="bg-ochre text-white py-3.5 text-center">Toonzaalbezoek</a>
+  </div>
+
+  <script>
+    document.documentElement.classList.add('js');
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+    document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+    /* ---------- Catalogus (namen van de huidige site) ---------- */
+    // c = kleuren voor CSS-staal, v = ader (marmer)
+    const ITEMS = [
+      { n: 'Henegouwse blauwe hardsteen', s: 'natuursteen', t: ['vloer','wand'], d: 'Ruw, verzoet, gepolijst, gezandstraald, gepunthamerd of getrommeld', c: ['#4a5558','#3a4447'], g: 1 },
+      { n: 'Vietnamese blauwe hardsteen', s: 'natuursteen', t: ['vloer'], d: 'Ook in de Hacienda-reeks met diverse bewerkingen', c: ['#545e61','#434c4f'], g: 1 },
+      { n: 'Carrara', s: 'natuursteen', t: ['vloer','wand'], d: 'Wit marmer met fijne grijze ader', c: ['#eeedea','#d9d8d4'], v: '#9fa3a6' },
+      { n: 'Bardiglio', s: 'natuursteen', t: ['vloer','wand'], d: 'Blauwgrijs marmer', c: ['#9aa1a6','#7d858b'], v: '#5d666c' },
+      { n: 'Emperador', s: 'natuursteen', t: ['vloer','wand'], d: 'Bruin marmer, licht en donker', c: ['#6b4a35','#553826'], v: '#c9a98b' },
+      { n: 'Nero Marquinia', s: 'natuursteen', t: ['vloer','wand'], d: 'Zwart marmer met witte ader', c: ['#1f1f20','#2b2b2c'], v: '#e8e6e1' },
+      { n: 'Botticino', s: 'natuursteen', t: ['vloer','wand'], d: 'Beige marmer', c: ['#e2d5bd','#d3c3a5'], v: '#b9a684' },
+      { n: 'Travertin Chiaro', s: 'natuursteen', t: ['vloer','wand'], d: 'Lichte travertin, ook Noce, Rosso, Giallo en Silver', c: ['#e3d6bf','#cfbe9f'], g: 1 },
+      { n: 'Madras Black', s: 'natuursteen', t: ['vloer','wand'], d: 'Indische leisteen', c: ['#2e3133','#3a3e40'], g: 1 },
+      { n: 'Barza', s: 'natuursteen', t: ['vloer'], d: 'Braziliaanse zwarte leisteen', c: ['#26292b','#33373a'], g: 1 },
+      { n: 'Ocean green', s: 'natuursteen', t: ['vloer','wand'], d: 'Indische leisteen, groengrijs', c: ['#5d6a5f','#4b574d'], g: 1 },
+      { n: 'Pietra Serena', s: 'natuursteen', t: ['vloer'], d: 'Grijze zandsteen', c: ['#8c9190','#7a7f7e'], g: 1 },
+      { n: 'Azul Valverde', s: 'natuursteen', t: ['vloer'], d: 'Blauwgrijze kalksteen', c: ['#7f8a90','#6e787e'], g: 1 },
+      { n: 'Marmermozaïek', s: 'natuursteen', t: ['mozaiek','wand'], d: 'Tientallen soorten, van 1,5×3 tot 7,5×30 cm, en boordjes', c: ['#d8cfc2','#b9ab98'], m: 1 },
+      { n: 'Durstone', s: 'keramiek', t: ['vloer','wand'], d: 'Wand- en vloertegels', c: ['#bdb4a6','#a89f91'], g: 1 },
+      { n: 'Pastorelli', s: 'keramiek', t: ['vloer','wand'], d: 'Italiaanse keramiek', c: ['#cfc8bd','#bab2a6'], g: 1 },
+      { n: 'Todagres', s: 'keramiek', t: ['vloer','wand'], d: 'Spaanse keramiek', c: ['#9e958a','#8a8177'], g: 1 },
+      { n: 'Ricchetti', s: 'keramiek', t: ['vloer','wand'], d: 'Italiaanse keramiek', c: ['#d6d1c9','#c4beb4'], v: '#a7a19a' },
+      { n: 'Eliane', s: 'keramiek', t: ['vloer','wand'], d: 'Braziliaanse keramiek', c: ['#a7aeb0','#939a9c'], g: 1 },
+      { n: 'Cesi', s: 'keramiek', t: ['vloer','wand'], d: 'Italiaanse keramiek', c: ['#e6e2da','#d4cfc5'], g: 1 },
+      { n: 'Arkadia', s: 'keramiek', t: ['vloer','wand'], d: 'Wand- en vloertegels', c: ['#8d7a66','#7a6855'], g: 1 },
+      { n: 'Ecoceramica', s: 'keramiek', t: ['wand'], d: 'Wandtegels', c: ['#4f6f7a','#3f5d68'], z: 1 },
+      { n: 'Alttoglass', s: 'keramiek', t: ['wand','mozaiek'], d: 'Glasmozaïek', c: ['#6f9fa8','#4e8590'], m: 1 },
+      { n: 'Cifre', s: 'keramiek', t: ['vloer','wand'], d: 'Spaanse keramiek', c: ['#c2b49d','#ad9f88'], g: 1 },
+    ];
+    const state = { soort: 'alle', toep: 'alle', q: '' };
+    const mand = new Set();
+    const catEl = document.getElementById('cat');
+
+    function swatchStyle(it) {
+      const [a, b] = it.c;
+      if (it.v) return `background: linear-gradient(115deg, transparent 38%, ${it.v}66 40%, transparent 43%), linear-gradient(160deg, transparent 58%, ${it.v}55 59.5%, transparent 61.5%), linear-gradient(140deg, ${a}, ${b})`;
+      if (it.m) return `background: linear-gradient(90deg, rgba(0,0,0,.18) 1px, transparent 1px) 0 0/18px 18px, linear-gradient(rgba(0,0,0,.18) 1px, transparent 1px) 0 0/18px 18px, linear-gradient(140deg, ${a}, ${b})`;
+      if (it.z) return `background: linear-gradient(rgba(255,255,255,.35) 1px, transparent 1px) 0 0/100% 33.3%, linear-gradient(90deg, rgba(255,255,255,.35) 1px, transparent 1px) 0 0/33.3% 100%, linear-gradient(140deg, ${a}, ${b})`;
+      return `background: linear-gradient(140deg, ${a}, ${b})`;
+    }
+    function render() {
+      const q = state.q.trim().toLowerCase();
+      const list = ITEMS.filter(it =>
+        (state.soort === 'alle' || it.s === state.soort) &&
+        (state.toep === 'alle' || it.t.includes(state.toep)) &&
+        (!q || (it.n + ' ' + it.d + ' ' + it.s).toLowerCase().includes(q)));
+      catEl.innerHTML = list.map(it => `
+        <li class="card rounded-md bg-sand border border-hard/10 overflow-hidden flex flex-col">
+          <div class="sw ${it.g ? 'grain' : ''} aspect-[4/3]" style="${swatchStyle(it)}"></div>
+          <div class="p-4 flex flex-col flex-1">
+            <p class="text-[12px] text-hard/70">${it.s === 'natuursteen' ? 'Natuursteen' : 'Keramiek'}</p>
+            <h3 class="font-semibold leading-snug mt-0.5">${it.n}</h3>
+            <p class="text-[13px] text-hard/80 mt-1 flex-1">${it.d}</p>
+            <button class="staal btn mt-3 border border-hard/30 rounded-md px-3 py-2 text-[13px] font-semibold" data-n="${it.n}" aria-pressed="${mand.has(it.n)}">${mand.has(it.n) ? 'Staal gereserveerd' : 'Reserveer staal'}</button>
+          </div>
+        </li>`).join('');
+      document.getElementById('cat-count').textContent = list.length;
+      document.getElementById('cat-empty').classList.toggle('hidden', list.length > 0);
+    }
+    function renderMand() {
+      const ul = document.getElementById('mand');
+      ul.innerHTML = mand.size ? [...mand].map(n => `<li class="flex justify-between gap-3"><span>${n}</span><button type="button" class="text-ochre text-[13px] underline" data-rm="${n}">verwijder</button></li>`).join('') : '<li class="text-hard/60">Nog leeg. Duid stalen aan in de catalogus.</li>';
+      document.getElementById('mand-count').textContent = mand.size + (mand.size === 1 ? ' staal gekozen' : ' stalen gekozen');
+    }
+    document.querySelectorAll('.chip').forEach(b => b.addEventListener('click', () => {
+      state[b.dataset.f] = b.dataset.v;
+      document.querySelectorAll(`.chip[data-f="${b.dataset.f}"]`).forEach(x => x.setAttribute('aria-pressed', x === b));
+      render();
+    }));
+    document.getElementById('cat-q').addEventListener('input', e => { state.q = e.target.value; render(); });
+    catEl.addEventListener('click', e => {
+      const b = e.target.closest('.staal'); if (!b) return;
+      const n = b.dataset.n; mand.has(n) ? mand.delete(n) : mand.add(n);
+      render(); renderMand();
+    });
+    document.getElementById('mand').addEventListener('click', e => {
+      const n = e.target.dataset.rm; if (!n) return; mand.delete(n); render(); renderMand();
+    });
+    render(); renderMand();
+
+    /* ---------- Tegelcalculator ---------- */
+    const $ = id => document.getElementById(id);
+    const num = el => parseFloat(String(el.value).replace(',', '.')) || 0;
+    const fmt = (x, d = 1) => x.toLocaleString('nl-BE', { minimumFractionDigits: d, maximumFractionDigits: d });
+    let lastCalc = '';
+    function calc() {
+      const l = num($('c-l')), b = num($('c-b')), p = num($('c-p')), d = num($('c-d'));
+      const base = l * b, need = base * (1 + p / 100);
+      const doos = d > 0 ? Math.ceil(need / d) : 0;
+      const plint = Math.max(0, 2 * (l + b) - 0.9) * 1.05;
+      $('r-m2').textContent = fmt(need);
+      $('r-doos').textContent = doos;
+      $('r-plint').textContent = fmt(plint);
+      $('r-plint-wrap').style.opacity = $('c-plint').checked ? 1 : .3;
+      $('r-note').textContent = base ? `${fmt(base, 2)} m² vloer + ${p} % snijverlies = ${fmt(need, 2)} m². ${doos} dozen van ${fmt(d, 2)} m² geven je ${fmt(doos * d, 2)} m².` : 'Vul lengte en breedte in.';
+      // visual: room on tile grid
+      const W = 260, H = 150;
+      const sc = Math.min(W / Math.max(l, .1), H / Math.max(b, .1));
+      $('viz-room').style.width = Math.max(20, l * sc) + 'px';
+      $('viz-room').style.height = Math.max(20, b * sc) + 'px';
+            $('tile-viz').style.setProperty('--cell', Math.max(8, sc * Math.sqrt(d / 4 || .36)) + 'px');
+      lastCalc = base ? `${fmt(l,2)} × ${fmt(b,2)} m, ${$('c-p').selectedOptions[0].text.split(' (')[0].toLowerCase()}: ${fmt(need)} m² = ${doos} dozen` + ($('c-plint').checked ? `, ${fmt(plint)} m plinten` : '') : '';
+    }
+    ['c-l','c-b','c-p','c-d','c-plint'].forEach(id => $(id).addEventListener('input', calc));
+    $('c-plint').addEventListener('change', calc);
+    calc();
+    $('c-take').addEventListener('click', () => {
+      if (!lastCalc) return;
+      $('mand-calc').textContent = 'Berekening: ' + lastCalc;
+      $('mand-calc').classList.remove('hidden');
+      $('c-ok').classList.remove('hidden');
+    });
+
+    /* ---------- Afspraak ---------- */
+    const dagen = $('dagen');
+    const namen = ['zo','ma','di','wo','do','vr','za'];
+    const mnd = ['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
+    let d0 = new Date(); let n = 0, first = true;
+    while (n < 10) {
+      d0.setDate(d0.getDate() + 1);
+      const wd = d0.getDay(); if (wd === 0 || wd === 6) continue;
+      const label = `${namen[wd]} ${d0.getDate()} ${mnd[d0.getMonth()]}`;
+      dagen.insertAdjacentHTML('beforeend', `<label class="cursor-pointer"><input type="radio" name="dag" value="${label}" class="peer sr-only" ${first ? 'checked' : ''} /><span class="block text-center border border-hard/25 rounded-md px-2 py-2 text-[14px] peer-checked:bg-hard peer-checked:text-sand">${label}</span></label>`);
+      first = false; n++;
+    }
+    $('afspraak').addEventListener('submit', e => {
+      e.preventDefault();
+      const naam = $('a-naam').value.trim(), tel = $('a-tel').value.trim();
+      if (!naam || !tel) { $('a-err').classList.remove('hidden'); (naam ? $('a-tel') : $('a-naam')).focus(); return; }
+      const f = new FormData(e.target);
+      const stalen = mand.size ? ` We leggen ${mand.size} ${mand.size === 1 ? 'staal' : 'stalen'} klaar.` : '';
+      $('afs-sum').textContent = `Bedankt ${naam}. Toonzaal ${String(f.get('zaal')).toLowerCase()}, ${f.get('dag')} in de ${f.get('uur')}.${stalen} We bevestigen via ${tel}.`;
+      $('afs-fields').classList.add('hidden'); $('afs-ok').classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>

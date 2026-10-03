@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Raets Verwarming &amp; Sanitair | Ketelonderhoud, storingen en warmtepompen in Merksem</title>
+  <meta name="description" content="Familiebedrijf Raets uit Merksem: onderhoud en reiniging van gas- en stookolieketels (Cedicol, Cerga), herstellingen, centrale verwarming, warmtepompen, zonne-energie en sanitair. Meld online een storing of plan uw onderhoud." />
+  <meta name="theme-color" content="#333333" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Raets Verwarming &amp; Sanitair" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Raets Verwarming | Storing melden of onderhoud plannen" />
+  <meta property="og:description" content="Geen warmte of geen warm water? Meld het online met uw keteltype en foutcode, of plan uw jaarlijks onderhoud." />
+  <meta property="og:image" content="images/technieker.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23333'/%3E%3Crect x='7' y='7' width='4' height='18' fill='%23f29612'/%3E%3Ctext x='13' y='24' font-family='Arial' font-weight='bold' font-size='17' fill='%23fff'%3ER%3C/text%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HVACBusiness",
+    "name": "Centrale Verwarming Raets BV",
+    "alternateName": "Raets Verwarming & Sanitair",
+    "description": "Centrale verwarming, onderhoud en reiniging van gas- en stookolieketels, verwarmingsaudit en attesten, herstellingen, warmtepompen, zonne-energie en sanitair.",
+    "url": "https://raetsverwarming.be",
+    "telephone": "+3236454895",
+    "email": "info@raets-verwarming.be",
+    "address": { "@type": "PostalAddress", "streetAddress": "Nieuwdreef 86-88", "postalCode": "2170", "addressLocality": "Merksem", "addressCountry": "BE" },
+    "areaServed": ["Merksem", "Antwerpen", "Schoten", "Deurne", "Brasschaat", "Ekeren", "Schilde", "Wijnegem"],
+    "image": "images/technieker.jpg"
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { sans: ['Figtree', 'sans-serif'], serif: ['Fraunces', 'serif'] },
+      colors: { char: '#333333', soot: '#252525', flame: '#f29612', flamedk: '#b86a00', ash: '#f1f1ef', line: '#dddcd8', stone: '#666560', ember: '#fff3e2' }
+    } } };
+  </script>
+  <style>
+    :root { --accent: #b86a00; --ease: cubic-bezier(.23,1,.32,1); }
+    html { scroll-behavior: smooth; }
+    [hidden] { display: none !important; }
+    h1, h2, h3 { text-wrap: balance; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), border-color .18s; }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, label:focus-within { outline: 2px solid #f29612; outline-offset: 3px; }
+    .pick input { position: absolute; opacity: 0; pointer-events: none; }
+    .pick:has(input:checked) { border-color: #f29612; background: #fff3e2; box-shadow: inset 0 0 0 1px #f29612; }
+    /* hero dial: the needle settles once on load */
+    .needle { transform-origin: 100px 100px; transform: rotate(40deg); }
+    .js .needle { animation: settle 1.8s var(--ease) .3s both; }
+    @keyframes settle { from { transform: rotate(-120deg); } to { transform: rotate(40deg); } }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .needle { animation: none; }
+      .btn { transition: none; }
+    }
+  </style>
+</head>
+<body class="bg-white text-char font-sans antialiased text-[17px] pb-16 md:pb-0">
+
+  <div class="fixed bottom-[72px] md:bottom-4 right-3 md:right-4 z-50">
+    <span class="text-[11px] tracking-wider text-white bg-char/90 rounded-full px-3 py-1.5 shadow">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <div class="bg-soot text-white/80 text-[14px]">
+    <div class="max-w-6xl mx-auto px-5 py-2 flex flex-wrap justify-between gap-2">
+      <p>Ernstig verwarmingsprobleem? Ook 's avonds en in het weekend telefonisch bereikbaar.</p>
+      <a href="tel:+3236454895" class="font-semibold text-flame hover:text-white">03 645 48 95</a>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-line">
+    <nav class="max-w-6xl mx-auto px-5 h-[74px] flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top"><img src="images/logo.jpg" alt="Raets Verwarming en Sanitair" width="150" height="50" class="h-11 w-auto" /></a>
+      <div class="hidden lg:flex items-center gap-7 text-[16px] text-stone">
+        <a href="#diensten" class="hover:text-char">Diensten</a>
+        <a href="#onderhoud" class="hover:text-char">Onderhoud</a>
+        <a href="#melden" class="hover:text-char">Storing melden</a>
+        <a href="#familie" class="hover:text-char">Familiebedrijf</a>
+        <a href="#contact" class="hover:text-char">Contact</a>
+      </div>
+      <a href="tel:+3236454895" class="btn inline-flex items-center gap-2 bg-char hover:bg-soot text-white font-semibold rounded-lg px-4 py-2.5 text-[15px]">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span class="hidden sm:inline">Bel 03 645 48 95</span><span class="sm:hidden">Bel</span>
+      </a>
+    </nav>
+  </header>
+
+  <main id="top">
+  <section class="bg-ash border-b border-line">
+    <div class="max-w-6xl mx-auto px-5 py-12 lg:py-16 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7">
+        <p class="font-semibold text-flamedk">Raets Verwarming &amp; Sanitair · Merksem</p>
+        <h1 class="font-serif font-bold tracking-tight leading-[1.04] text-[clamp(2.5rem,5.2vw,4.3rem)] mt-3">Ketel in panne of tijd voor onderhoud? Raets komt langs.</h1>
+        <p class="mt-6 text-stone text-lg leading-relaxed max-w-[54ch]">Al drie generaties onderhouden en herstellen wij verwarmingsinstallaties in Antwerpen en de randgemeenten. Gas én stookolie, met erkende technici (Cedicol en Cerga) en het attest erbij.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#melden" data-issue="geen-warmte" class="btn pre bg-flame hover:bg-flamedk hover:text-white text-soot font-semibold rounded-lg px-6 py-3.5">Storing melden</a>
+          <a href="#melden" data-issue="onderhoud" class="btn pre border-2 border-char hover:bg-char hover:text-white font-semibold rounded-lg px-6 py-3">Onderhoud inplannen</a>
+        </div>
+      </div>
+      <div class="lg:col-span-5">
+        <div class="bg-white rounded-2xl border border-line shadow-[0_20px_50px_-25px_rgba(0,0,0,.35)] p-6 sm:p-7">
+          <div class="flex items-center gap-5">
+            <svg viewBox="0 0 200 200" class="w-28 h-28 shrink-0" aria-hidden="true">
+              <circle cx="100" cy="100" r="92" fill="#f1f1ef" stroke="#dddcd8" stroke-width="2"/>
+              <path d="M38 150 A76 76 0 1 1 162 150" fill="none" stroke="#dddcd8" stroke-width="10" stroke-linecap="round"/>
+              <path d="M38 150 A76 76 0 0 1 150 44" fill="none" stroke="#f29612" stroke-width="10" stroke-linecap="round"/>
+              <g class="needle"><path d="M100 100 L100 40" stroke="#333" stroke-width="5" stroke-linecap="round"/></g>
+              <circle cx="100" cy="100" r="10" fill="#333"/>
+              <text x="100" y="160" text-anchor="middle" font-family="Fraunces" font-weight="700" font-size="30" fill="#333">21°</text>
+            </svg>
+            <div>
+              <p class="font-serif font-bold text-2xl leading-tight">Wat is er aan de hand?</p>
+              <p class="text-stone text-[15px] mt-1">Kies en meld het in twee minuten.</p>
+            </div>
+          </div>
+          <div class="mt-6 grid grid-cols-2 gap-2.5">
+            <a href="#melden" data-issue="geen-warmte" class="pre btn border border-line hover:border-flame rounded-xl p-3.5 font-semibold leading-snug">Geen verwarming</a>
+            <a href="#melden" data-issue="geen-warm-water" class="pre btn border border-line hover:border-flame rounded-xl p-3.5 font-semibold leading-snug">Geen warm water</a>
+            <a href="#melden" data-issue="lek-druk" class="pre btn border border-line hover:border-flame rounded-xl p-3.5 font-semibold leading-snug">Lek of druk te laag</a>
+            <a href="#melden" data-issue="onderhoud" class="pre btn border border-line hover:border-flame rounded-xl p-3.5 font-semibold leading-snug">Onderhoud of attest</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diensten -->
+  <section id="diensten" class="max-w-6xl mx-auto px-5 py-20">
+    <h2 class="font-serif font-bold text-[clamp(2rem,4vw,3rem)] leading-tight max-w-[22ch]">Warmte en water, van ketel tot kraan</h2>
+    <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10">
+      <article class="border-t-4 border-flame pt-5"><h3 class="font-serif font-bold text-2xl">Centrale verwarming</h3><p class="mt-2 text-stone leading-relaxed">Nieuwe installaties en vervanging van ketels, radiatoren en leidingwerk, met Buderus, Vaillant, Remeha, Weishaupt, Henrad en Radson.</p></article>
+      <article class="border-t-4 border-flame pt-5"><h3 class="font-serif font-bold text-2xl">Onderhoud &amp; reiniging</h3><p class="mt-2 text-stone leading-relaxed">Gas- én stookolieketels grondig nagekeken, gereinigd en afgesteld. U krijgt het onderhoudsattest meteen mee.</p></article>
+      <article class="border-t-4 border-flame pt-5"><h3 class="font-serif font-bold text-2xl">Herstellingen</h3><p class="mt-2 text-stone leading-relaxed">Bij defecten zo snel mogelijk ter plaatse. Ernstige problemen? Ook 's avonds en in het weekend telefonisch bereikbaar.</p></article>
+      <article class="border-t-4 border-char pt-5"><h3 class="font-serif font-bold text-2xl">Warmtepompen</h3><p class="mt-2 text-stone leading-relaxed">Lucht-, bodem- of grondwaterwarmte, gekoppeld aan uw afgiftesysteem en correct ingeregeld.</p></article>
+      <article class="border-t-4 border-char pt-5"><h3 class="font-serif font-bold text-2xl">Zonne-energie</h3><p class="mt-2 text-stone leading-relaxed">Zonneboilers voor sanitair warm water, aangesloten op uw bestaande installatie.</p></article>
+      <article class="border-t-4 border-char pt-5"><h3 class="font-serif font-bold text-2xl">Sanitair</h3><p class="mt-2 text-stone leading-relaxed">Badkamers en leidingwerk, van de eerste aanvoer tot de laatste kraan.</p></article>
+    </div>
+    <p class="mt-12 text-stone">Ook voor scholen, ziekenhuizen, syndici, rusthuizen en bedrijven onderhouden wij grote verwarmingsinstallaties.</p>
+  </section>
+
+  <!-- Onderhoud uitleg -->
+  <section id="onderhoud" class="bg-char text-white">
+    <div class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7">
+        <h2 class="font-serif font-bold text-[clamp(2rem,4vw,3rem)] leading-tight">Wij laten u niet in de kou staan</h2>
+        <p class="mt-5 text-white/75 text-lg leading-relaxed">Van elke klant houden we alle gegevens van de installatie bij. Is uw ketel toe aan een preventieve onderhoudsbeurt, dan contacteren wij u zelf.</p>
+        <ol class="mt-8 grid sm:grid-cols-2 gap-x-8 gap-y-5">
+          <li class="flex gap-4"><span class="font-serif font-bold text-3xl text-flame leading-none">1</span><span>Toestel grondig nagekeken en gereinigd</span></li>
+          <li class="flex gap-4"><span class="font-serif font-bold text-3xl text-flame leading-none">2</span><span>Druk bijgevuld, dichtingen, sproeiers en filters vervangen waar nodig</span></li>
+          <li class="flex gap-4"><span class="font-serif font-bold text-3xl text-flame leading-none">3</span><span>Verbrandingsmeting en afstelling volgens de normen</span></li>
+          <li class="flex gap-4"><span class="font-serif font-bold text-3xl text-flame leading-none">4</span><span>Onderhoudsattest, klaar voor uw dossier</span></li>
+        </ol>
+        <p class="mt-8 text-white/70">Nog weinig vaklui reinigen stookolieketels. Wij wel, al decennia. Gecertificeerd door Cedicol (stookolie) en Cerga (aardgas).</p>
+      </div>
+      <figure class="lg:col-span-5">
+        <img src="images/technieker.jpg" alt="Technieker van Raets in bedrijfskledij aan een verwarmingsinstallatie" class="w-full aspect-[16/9] object-cover object-[60%_50%] rounded-xl" width="560" height="154" loading="lazy" />
+        <figcaption class="mt-3 text-white/60 text-sm">Een van onze 15 monteurs en technici</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Storing / onderhoud form -->
+  <section id="melden" class="bg-ash border-b border-line">
+    <div class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-4">
+        <h2 class="font-serif font-bold text-[clamp(2rem,4vw,3rem)] leading-tight">Storing melden of onderhoud plannen</h2>
+        <p class="mt-4 text-stone text-lg leading-relaxed">Hoe meer we vooraf weten, hoe vaker de technieker het juiste onderdeel al bij heeft. De foutcode staat meestal op het display van uw ketel.</p>
+        <div class="mt-8 grid grid-cols-2 gap-3 items-end">
+          <img src="images/ketel.png" alt="Wandketel met display" class="w-full max-w-[150px] mx-auto" width="177" height="294" loading="lazy" />
+          <img src="images/warmtepomp.jpg" alt="Warmtepomp binnenunit" class="w-full aspect-square object-cover object-[22%_50%] rounded-lg" width="560" height="154" loading="lazy" />
+        </div>
+      </div>
+      <form id="sf" class="lg:col-span-8 bg-white border border-line rounded-2xl p-6 sm:p-8" novalidate>
+        <fieldset>
+          <legend class="font-serif font-bold text-xl mb-3">1. Wat is het probleem?</legend>
+          <div class="grid sm:grid-cols-2 gap-2.5" id="issues">
+            <label class="pick relative border border-line rounded-xl p-3.5 cursor-pointer"><input type="radio" name="issue" value="geen-warmte" data-u="hoog" /><b>Geen verwarming</b><span class="block text-sm text-stone">Radiatoren of vloer blijven koud</span></label>
+            <label class="pick relative border border-line rounded-xl p-3.5 cursor-pointer"><input type="radio" name="issue" value="geen-warm-water" data-u="hoog" /><b>Geen warm water</b><span class="block text-sm text-stone">Douche of kraan blijft koud</span></label>
+            <label class="pick relative border border-line rounded-xl p-3.5 cursor-pointer"><input type="radio" name="issue" value="lek-druk" data-u="midden" /><b>Lek of druk te laag</b><span class="block text-sm text-stone">Water onder de ketel, druk onder 1 bar</span></label>
+            <label class="pick relative border border-line rounded-xl p-3.5 cursor-pointer"><input type="radio" name="issue" value="onderhoud" data-u="laag" /><b>Onderhoud of attest</b><span class="block text-sm text-stone">Jaarlijkse of tweejaarlijkse beurt</span></label>
+          </div>
+          <p id="urgent" class="hidden mt-3 rounded-lg bg-ember border border-flame/50 p-3.5 text-[15px]">Zit u zonder verwarming of warm water? Bel ook meteen <a href="tel:+3236454895" class="font-bold underline">03 645 48 95</a>. Voor ernstige problemen zijn we ook 's avonds en in het weekend bereikbaar.</p>
+        </fieldset>
+
+        <fieldset class="mt-8">
+          <legend class="font-serif font-bold text-xl mb-3">2. Uw toestel</legend>
+          <div class="grid sm:grid-cols-3 gap-3">
+            <div><label for="fuel" class="block text-sm font-semibold mb-1.5">Type</label>
+              <select id="fuel" class="w-full border border-line rounded-lg px-3 py-2.5 bg-white"><option>Gasketel</option><option>Stookolieketel</option><option>Warmtepomp</option><option>Weet ik niet</option></select></div>
+            <div><label for="brand" class="block text-sm font-semibold mb-1.5">Merk</label>
+              <select id="brand" class="w-full border border-line rounded-lg px-3 py-2.5 bg-white"><option>Buderus</option><option>Vaillant</option><option>Remeha</option><option>Weishaupt</option><option>Ander merk</option><option>Weet ik niet</option></select></div>
+            <div><label for="code" class="block text-sm font-semibold mb-1.5">Foutcode <span class="font-normal text-stone">(optioneel)</span></label>
+              <input id="code" class="w-full border border-line rounded-lg px-3 py-2.5" placeholder="bv. F28" /></div>
+          </div>
+        </fieldset>
+
+        <fieldset class="mt-8">
+          <legend class="font-serif font-bold text-xl mb-3">3. Wanneer past het?</legend>
+          <div id="days" class="grid grid-cols-3 sm:grid-cols-5 gap-2"></div>
+          <div class="mt-3 flex gap-2">
+            <label class="pick relative border border-line rounded-full px-4 py-2 cursor-pointer text-[15px]"><input type="radio" name="part" value="voormiddag" checked />Voormiddag</label>
+            <label class="pick relative border border-line rounded-full px-4 py-2 cursor-pointer text-[15px]"><input type="radio" name="part" value="namiddag" />Namiddag</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="mt-8">
+          <legend class="font-serif font-bold text-xl mb-3">4. Uw gegevens</legend>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <input id="sname" placeholder="Naam" autocomplete="name" aria-label="Naam" class="border border-line rounded-lg px-3 py-2.5" />
+            <input id="stel" type="tel" placeholder="Telefoon" autocomplete="tel" aria-label="Telefoon" class="border border-line rounded-lg px-3 py-2.5" />
+            <input id="sadr" placeholder="Straat, nummer en gemeente" autocomplete="street-address" aria-label="Adres" class="sm:col-span-2 border border-line rounded-lg px-3 py-2.5" />
+          </div>
+        </fieldset>
+        <p id="serr" class="hidden mt-4 text-[#b42318] text-sm"></p>
+        <button type="submit" class="btn mt-6 w-full sm:w-auto bg-flame hover:bg-flamedk hover:text-white text-soot font-semibold rounded-lg px-7 py-3.5">Melding versturen</button>
+        <div id="sdone" class="hidden mt-6 rounded-xl border-2 border-flame bg-ember p-5" role="status"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Familie / trust -->
+  <section id="familie" class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-12 gap-10 items-center">
+    <div class="lg:col-span-6">
+      <h2 class="font-serif font-bold text-[clamp(2rem,4vw,3rem)] leading-tight">Drie generaties Raets</h2>
+      <p class="mt-5 text-stone text-lg leading-relaxed">Grootvader Alfons Raets begon in 1963 als eenmanszaak in de Hovenierstraat, hartje Antwerpen. Zoon Jan kwam erbij in de jaren '70, en vandaag werken ook zijn zonen Dave en Dennis mee. Vanuit Merksem zorgen 15 monteurs en technici en 7 kantoormedewerkers voor een stipte opvolging.</p>
+      <blockquote class="mt-8 border-l-4 border-flame pl-5">
+        <p class="font-serif text-xl leading-relaxed">"Twee dingen bleven steeds dezelfde: de passie voor het vak én de gedrevenheid om dagelijks ten dienste te staan van onze klanten."</p>
+        <footer class="mt-2 text-stone text-[15px]">Jan Raets, zaakvoerder</footer>
+      </blockquote>
+      <div class="mt-8 flex flex-wrap gap-2 text-[15px]">
+        <span class="border border-line rounded-full px-3.5 py-1.5">Gecertificeerd Cedicol</span>
+        <span class="border border-line rounded-full px-3.5 py-1.5">Gecertificeerd Cerga</span>
+        <span class="border border-line rounded-full px-3.5 py-1.5">Buderus · Vaillant · Remeha · Weishaupt · Henrad · Radson</span>
+      </div>
+    </div>
+    <div class="lg:col-span-6 grid grid-cols-5 gap-3">
+      <figure class="col-span-5"><img src="images/badkamer.jpg" alt="Badkamer met dubbele lavabo, project te Schoten" class="w-full aspect-[3/2] object-cover rounded-xl" width="1600" height="1070" loading="lazy" /><figcaption class="mt-2 text-sm text-stone">Realisatie: project te Schoten</figcaption></figure>
+      <figure class="col-span-5 sm:col-span-3"><img src="images/team.jpg" alt="Kantoorteam van Raets Verwarming in Merksem" class="w-full aspect-[5/2] object-cover rounded-xl" width="279" height="107" loading="lazy" /><figcaption class="mt-2 text-sm text-stone">Het kantoor in Merksem</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-ash border-t border-line">
+    <div class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-2 gap-12">
+      <div>
+        <h2 class="font-serif font-bold text-[clamp(2rem,4vw,3rem)] leading-tight">Contact</h2>
+        <p class="mt-4 text-stone text-lg">Wij werken in Merksem, Antwerpen, Schoten, Deurne, Brasschaat, Ekeren, Schilde, Wijnegem en de andere randgemeenten.</p>
+        <dl class="mt-8 divide-y divide-line border-y border-line">
+          <div class="py-4 flex justify-between gap-4"><dt class="text-stone">Telefoon</dt><dd><a class="font-semibold hover:text-flamedk" href="tel:+3236454895">03 645 48 95</a></dd></div>
+          <div class="py-4 flex justify-between gap-4"><dt class="text-stone">E-mail</dt><dd><a class="font-semibold hover:text-flamedk" href="mailto:info@raets-verwarming.be">info@raets-verwarming.be</a></dd></div>
+          <div class="py-4 flex justify-between gap-4"><dt class="text-stone">Adres</dt><dd class="font-semibold text-right">Nieuwdreef 86-88, 2170 Merksem</dd></div>
+          <div class="py-4 flex justify-between gap-4"><dt class="text-stone">Dringend</dt><dd class="text-right">Ernstige problemen: ook 's avonds en in het weekend telefonisch</dd></div>
+        </dl>
+      </div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Nieuwdreef+86+2170+Merksem" target="_blank" rel="noopener" class="group relative rounded-2xl overflow-hidden border border-line min-h-[300px] flex items-end bg-white">
+        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="400" height="300" fill="#e8e7e3"/>
+          <path d="M-10 40 C 120 70, 260 20, 410 60" stroke="#cbdbe2" stroke-width="30" fill="none"/>
+          <g stroke="#fff" stroke-width="9" fill="none"><path d="M-10 170 H410"/><path d="M230 -10 L200 310"/><path d="M60 310 L160 120"/></g>
+          <circle cx="214" cy="160" r="11" fill="#f29612"/><circle cx="214" cy="160" r="22" fill="#f29612" opacity=".2"/>
+        </svg>
+        <span class="relative m-5 bg-white rounded-lg px-5 py-3 font-semibold shadow group-hover:text-flamedk">Open route in Google Maps</span>
+      </a>
+    </div>
+  </section>
+  </main>
+
+  <footer class="bg-soot text-white/70">
+    <div class="max-w-6xl mx-auto px-5 py-8 text-sm flex flex-col md:flex-row justify-between gap-3">
+      <p>Centrale Verwarming Raets BV · Nieuwdreef 86-88, 2170 Merksem</p>
+      <p>Concept-herontwerp door <a href="mailto:nicolas@saspire.org" class="underline">Saspire</a>, vrijblijvend voorstel. Niet de officiële website van Raets.</p>
+    </div>
+  </footer>
+
+  <a href="tel:+3236454895" class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-flame text-soot text-center font-bold py-4">Storing? Bel Raets: 03 645 48 95</a>
+
+  <script>
+    document.documentElement.classList.add('js');
+    (function () {
+      var $ = function (id) { return document.getElementById(id); };
+      var f = $('sf');
+      // next 5 working days as date chips
+      var names = ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za'], months = ['jan', 'feb', 'mrt', 'apr', 'mei', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec'];
+      var d = new Date(), html = '', n = 0;
+      while (n < 5) {
+        d.setDate(d.getDate() + 1);
+        if (d.getDay() === 0 || d.getDay() === 6) continue;
+        var lbl = names[d.getDay()] + ' ' + d.getDate() + ' ' + months[d.getMonth()];
+        html += '<label class="pick relative border border-line rounded-xl px-2 py-2.5 text-center cursor-pointer text-[15px]"><input type="radio" name="day" value="' + lbl + '"' + (n === 0 ? ' checked' : '') + ' /><span class="block font-semibold capitalize">' + names[d.getDay()] + '</span>' + d.getDate() + ' ' + months[d.getMonth()] + '</label>';
+        n++;
+      }
+      $('days').innerHTML = html;
+
+      function setIssue(v) {
+        var r = f.querySelector('input[name=issue][value="' + v + '"]');
+        if (r) { r.checked = true; onIssue(); }
+      }
+      function onIssue() {
+        var r = f.querySelector('input[name=issue]:checked');
+        $('urgent').classList.toggle('hidden', !r || r.dataset.u !== 'hoog');
+      }
+      f.querySelectorAll('input[name=issue]').forEach(function (r) { r.addEventListener('change', onIssue); });
+      document.querySelectorAll('a.pre').forEach(function (a) { a.addEventListener('click', function () { setIssue(a.dataset.issue); }); });
+
+      f.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var iss = f.querySelector('input[name=issue]:checked'), nm = $('sname').value.trim(), tel = $('stel').value.trim();
+        var err = $('serr');
+        if (!iss) { err.textContent = 'Kies eerst wat het probleem is.'; err.classList.remove('hidden'); return; }
+        if (!nm || !tel) { err.textContent = 'Vul uw naam en telefoonnummer in, zodat we u kunnen terugbellen.'; err.classList.remove('hidden'); return; }
+        err.classList.add('hidden');
+        var label = iss.parentNode.querySelector('b').textContent;
+        var day = f.querySelector('input[name=day]:checked').value, part = f.querySelector('input[name=part]:checked').value;
+        var code = $('code').value.trim().replace(/</g, '');
+        var box = $('sdone'); box.classList.remove('hidden');
+        box.innerHTML = '<p class="font-serif font-bold text-2xl">' + (iss.value === 'onderhoud' ? 'Onderhoud aangevraagd' : 'Storing gemeld') + '</p>' +
+          '<p class="mt-2">' + label + ' · ' + $('fuel').value + ' ' + $('brand').value + (code ? ' · foutcode ' + code : '') + '<br>Voorkeur: ' + day + ', ' + part + '.</p>' +
+          '<p class="mt-2">We bellen u terug op ' + tel.replace(/</g, '') + ' om het bezoek te bevestigen.</p>' +
+          '<p class="mt-3 text-sm text-stone">Dit is een demo: er werd niets verzonden.</p>';
+        box.scrollIntoView({ block: 'nearest', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+      });
+    })();
+  </script>
+</body>
+</html>

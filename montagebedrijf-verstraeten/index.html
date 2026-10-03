@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Montagebedrijf Verstraeten (MV-Solar) | Zonnepanelen, warmtepompen en elektriciteit in Edegem</title>
+  <meta name="description" content="Familiebedrijf van David en Tommy Verstraeten in Edegem, sinds 2007: zonnepanelen, warmtepompen, zonneboilers, ventilatie, vloerverwarming, domotica en elektriciteitswerken. Bereken uw energie-indicatie en vraag één offerte aan." />
+  <meta name="theme-color" content="#2c3651" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Montagebedrijf Verstraeten" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Montagebedrijf Verstraeten | Duurzame energie uit Edegem" />
+  <meta property="og:description" content="Zonnepanelen, warmtepompen en elektriciteit onder één dak. Bereken uw indicatie en vraag één offerte aan." />
+  <meta property="og:image" content="images/logo-wit.png" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232c3651'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23f5b301'/%3E%3Cpath d='M6 25h20' stroke='%23e2011a' stroke-width='3'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Montagebedrijf Verstraeten BV (MV-Solar)",
+    "description": "Zonnepanelen, warmtepompen, zonneboilers, ventilatiesystemen, vloerverwarming, pelletkachels, domotica en elektriciteitswerken.",
+    "url": "http://www.montagebedrijf-verstraeten.be",
+    "telephone": "+32487200525",
+    "email": "info@mv-solar.be",
+    "foundingDate": "2007",
+    "founder": [{ "@type": "Person", "name": "David Verstraeten" }, { "@type": "Person", "name": "Tommy Verstraeten" }],
+    "address": { "@type": "PostalAddress", "streetAddress": "Adolf Queteletlaan 12", "postalCode": "2650", "addressLocality": "Edegem", "addressCountry": "BE" },
+    "areaServed": ["Edegem", "Kontich", "Mortsel", "Wilrijk", "Hove", "Lint", "Aartselaar", "Boechout", "Antwerpen"]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { sans: ['"Source Sans 3"', 'sans-serif'], head: ['Sora', 'sans-serif'] },
+      colors: { navy: '#2c3651', sea: '#1f5b8b', sun: '#f5b301', red: '#e2011a', sky: '#eef3f8', cloud: '#f8fafc', edge: '#d5dde6', gray2: '#5a6577' }
+    } } };
+  </script>
+  <style>
+    :root { --accent: #1f5b8b; --ease: cubic-bezier(.23,1,.32,1); }
+    html { scroll-behavior: smooth; }
+    [hidden] { display: none !important; }
+    h1, h2, h3 { text-wrap: balance; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), border-color .18s; }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, label:focus-within { outline: 2px solid #f5b301; outline-offset: 3px; }
+    .seg input { position: absolute; opacity: 0; pointer-events: none; }
+    .seg:has(input:checked) { background: #2c3651; color: #fff; border-color: #2c3651; }
+    input[type=range] { accent-color: #1f5b8b; }
+    /* energy flow in hero: dashes travel along the lines */
+    .flow { stroke-dasharray: 6 10; }
+    .js .flow { animation: run 1.6s linear infinite; }
+    @keyframes run { to { stroke-dashoffset: -32; } }
+    .rays { transform-origin: 470px 70px; }
+    .js .rays { animation: spin 40s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .flow, .js .rays { animation: none; }
+      .btn { transition: none; }
+    }
+  </style>
+</head>
+<body class="bg-cloud text-navy font-sans antialiased text-[17px] pb-16 md:pb-0">
+
+  <div class="fixed bottom-[72px] md:bottom-4 right-3 md:right-4 z-50">
+    <span class="text-[11px] tracking-wider text-white bg-navy/90 rounded-full px-3 py-1.5 shadow">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-navy text-white">
+    <nav class="max-w-6xl mx-auto px-5 h-[72px] flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top"><img src="images/logo-wit.png" alt="Montagebedrijf Verstraeten" width="132" height="52" class="h-14 w-auto" /></a>
+      <div class="hidden md:flex items-center gap-7 text-[16px] text-white/75">
+        <a href="#aanbod" class="hover:text-white">Aanbod</a>
+        <a href="#berekenen" class="hover:text-white">Berekenen</a>
+        <a href="#over" class="hover:text-white">Over ons</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </div>
+      <a href="#berekenen" class="btn bg-sun hover:bg-white text-navy font-semibold rounded-full px-5 py-2.5 text-[15px]">Offerte aanvragen</a>
+    </nav>
+  </header>
+
+  <main id="top">
+  <section class="relative bg-gradient-to-b from-navy to-sea text-white overflow-hidden">
+    <div class="max-w-6xl mx-auto px-5 pt-12 pb-0 lg:pt-16 grid lg:grid-cols-12 gap-8 items-end">
+      <div class="lg:col-span-6 pb-14 lg:pb-20">
+        <p class="font-head font-semibold text-sun">Montagebedrijf Verstraeten · MV-Solar, Edegem</p>
+        <h1 class="font-head font-bold tracking-tight leading-[1.05] text-[clamp(2.3rem,4.4vw,3.5rem)] mt-3">Zonnepanelen, warmtepomp en elektriciteit van één familiebedrijf</h1>
+        <p class="mt-6 text-white/80 text-lg leading-relaxed max-w-[50ch]">David en Tommy Verstraeten zijn elektricien en elektromecanicien. Sinds 2007 plaatsen ze alles voor duurzame energie onder één dak, van de omvormer tot de vloerverwarming.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#berekenen" class="btn bg-sun hover:bg-white text-navy font-semibold rounded-full px-6 py-3.5">Bereken uw besparing</a>
+          <a href="tel:+32487200525" class="btn border border-white/40 hover:border-white rounded-full px-6 py-3.5 font-semibold">Bel 0487 20 05 25</a>
+        </div>
+      </div>
+      <div class="lg:col-span-6 lg:self-stretch flex flex-col justify-between gap-8">
+        <ol class="hidden sm:flex self-end flex-wrap gap-2 text-[15px] font-semibold lg:mt-2">
+          <li class="bg-white/10 border border-white/20 rounded-full px-4 py-2"><span class="text-sun">1</span>&nbsp; Zonnepanelen</li>
+          <li class="bg-white/10 border border-white/20 rounded-full px-4 py-2"><span class="text-sun">2</span>&nbsp; Warmtepomp</li>
+          <li class="bg-white/10 border border-white/20 rounded-full px-4 py-2"><span class="text-sun">3</span>&nbsp; Vloerverwarming</li>
+        </ol>
+        <svg viewBox="60 0 490 360" class="w-full block" aria-hidden="true">
+          <g class="rays" stroke="#f5b301" stroke-width="3" stroke-linecap="round" opacity=".55">
+            <path d="M470 22v-14M470 132v-14M422 70h-14M532 70h-14M436 36l-10-10M514 114l-10-10M504 36l10-10M426 114l10-10"/>
+          </g>
+          <circle cx="470" cy="70" r="32" fill="#f5b301"/>
+          <!-- house -->
+          <path d="M90 360V200l140-100 140 100v160z" fill="#f8fafc"/>
+          <path d="M70 212L230 96l160 116" fill="none" stroke="#2c3651" stroke-width="10" stroke-linejoin="round"/>
+          <!-- panels on roof -->
+          <g transform="translate(250 118) rotate(35.9)">
+            <rect x="0" y="0" width="112" height="56" rx="3" fill="#1b2a44" stroke="#9fb6cc" stroke-width="2"/>
+            <path d="M28 0v56M56 0v56M84 0v56M0 28h112" stroke="#4d6a8c" stroke-width="1.5"/>
+          </g>
+          <rect x="140" y="250" width="56" height="70" fill="#d5dde6"/><rect x="250" y="240" width="70" height="50" fill="#bcd3e8"/>
+          <rect x="140" y="250" width="56" height="70" fill="none" stroke="#2c3651" stroke-width="3"/>
+          <!-- heat pump -->
+          <rect x="410" y="290" width="92" height="70" rx="6" fill="#f8fafc" stroke="#2c3651" stroke-width="3"/>
+          <circle cx="440" cy="325" r="20" fill="none" stroke="#2c3651" stroke-width="3"/><path d="M440 307v36M422 325h36" stroke="#2c3651" stroke-width="2"/>
+          <rect x="470" y="305" width="22" height="6" fill="#e2011a"/>
+          <!-- floor heating -->
+          <path d="M100 348 h50 a6 6 0 0 0 0 -12 h-40 a6 6 0 0 1 0 -12 h50" fill="none" stroke="#e2011a" stroke-width="3" opacity=".7"/>
+          <!-- energy flows -->
+          <path class="flow" d="M450 104 L360 150" stroke="#f5b301" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path class="flow" d="M410 330 H372" stroke="#f5b301" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <rect x="0" y="358" width="560" height="2" fill="#2c3651"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- trust strip -->
+  <section class="bg-white border-b border-edge">
+    <div class="max-w-6xl mx-auto px-5 py-6 flex flex-wrap items-center gap-x-10 gap-y-3 text-[15px]">
+      <span class="text-gray2">Sinds 2007 in Edegem</span>
+      <span class="text-gray2">Elektricien en elektromecanicien in huis</span>
+      <span class="text-gray2">Wij werken met</span>
+      <span class="font-head font-semibold">Alpha-InnoTec · Vaillant · Uponor · Nilan · Niko Home Control</span>
+    </div>
+  </section>
+
+  <!-- Aanbod -->
+  <section id="aanbod" class="max-w-6xl mx-auto px-5 py-20">
+    <h2 class="font-head font-bold text-[clamp(1.9rem,3.6vw,2.8rem)] leading-tight max-w-[24ch]">Alles voor duurzame energie, onder één dak</h2>
+    <p class="mt-4 text-gray2 text-lg max-w-2xl">Geen vijf aannemers op uw werf. Eén team dat weet hoe panelen, warmtepomp, ventilatie en elektriciteit op elkaar inspelen.</p>
+    <div class="mt-12 grid md:grid-cols-3 gap-5">
+      <article class="md:col-span-2 bg-navy text-white rounded-2xl p-8 relative overflow-hidden">
+        <svg class="absolute -right-8 -bottom-8 opacity-20" width="220" height="220" viewBox="0 0 24 24" fill="none" stroke="#f5b301" stroke-width="1" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>
+        <h3 class="font-head font-semibold text-2xl">Zonnepanelen</h3>
+        <p class="mt-2 text-white/75 max-w-[46ch] leading-relaxed">Eigen stroom van uw dak, geplaatst en aangesloten door een elektricien. Ideaal te koppelen aan een warmtepomp.</p>
+      </article>
+      <article class="bg-white border border-edge rounded-2xl p-8">
+        <h3 class="font-head font-semibold text-2xl">Warmtepompen</h3>
+        <p class="mt-2 text-gray2 leading-relaxed">Lucht-, bodem- of grondwaterwarmte voor uw verwarming, met Alpha-InnoTec.</p>
+      </article>
+      <article class="bg-white border border-edge rounded-2xl p-7"><h3 class="font-head font-semibold text-xl">Zonneboilers</h3><p class="mt-2 text-gray2">Warm water met zonne-energie, met Vaillant-systemen.</p></article>
+      <article class="bg-white border border-edge rounded-2xl p-7"><h3 class="font-head font-semibold text-xl">Vloerverwarming</h3><p class="mt-2 text-gray2">Uponor-systemen, de perfecte partner voor een warmtepomp.</p></article>
+      <article class="bg-white border border-edge rounded-2xl p-7"><h3 class="font-head font-semibold text-xl">Ventilatiesystemen</h3><p class="mt-2 text-gray2">Gecontroleerde, energiezuinige ventilatie met Nilan.</p></article>
+      <article class="bg-white border border-edge rounded-2xl p-7"><h3 class="font-head font-semibold text-xl">Elektriciteitswerken</h3><p class="mt-2 text-gray2">Renovatie, nieuwbouw, negatief keuringsverslag, aarding, LED, netwerk en defecten zoeken.</p></article>
+      <article class="bg-white border border-edge rounded-2xl p-7"><h3 class="font-head font-semibold text-xl">Domotica</h3><p class="mt-2 text-gray2">Niko Home Control: verlichting, verwarming en rolluiken via drukknop of smartphone.</p></article>
+      <article class="bg-white border border-edge rounded-2xl p-7"><h3 class="font-head font-semibold text-xl">Pelletkachels</h3><p class="mt-2 text-gray2">Pelletkachels en pelletbranders voor centrale verwarming.</p></article>
+    </div>
+    <p class="mt-6 text-gray2">Zelf aan de slag? Ook doe-het-zelvers kunnen bij ons terecht voor materiaal en advies.</p>
+  </section>
+
+  <!-- Energie-wizard -->
+  <section id="berekenen" class="bg-sky border-y border-edge">
+    <div class="max-w-6xl mx-auto px-5 py-20">
+      <h2 class="font-head font-bold text-[clamp(1.9rem,3.6vw,2.8rem)] leading-tight">Wat levert het u op?</h2>
+      <p class="mt-3 text-gray2 text-lg max-w-2xl">Vul drie dingen in en zie meteen een indicatie voor zonnepanelen en of een warmtepomp zinvol is. Daarna vraagt u één offerte aan voor alles.</p>
+
+      <form id="calc" class="mt-10 grid lg:grid-cols-12 gap-6" novalidate>
+        <div class="lg:col-span-7 bg-white rounded-2xl border border-edge p-6 sm:p-8 space-y-7">
+          <fieldset><legend class="font-head font-semibold mb-3">Uw woning</legend>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-[15px]">
+              <label class="seg relative border border-edge rounded-lg px-3 py-2.5 text-center cursor-pointer"><input type="radio" name="house" value="Appartement" data-kwh="2500" />Appartement</label>
+              <label class="seg relative border border-edge rounded-lg px-3 py-2.5 text-center cursor-pointer"><input type="radio" name="house" value="Rijwoning" data-kwh="3200" />Rijwoning</label>
+              <label class="seg relative border border-edge rounded-lg px-3 py-2.5 text-center cursor-pointer"><input type="radio" name="house" value="Halfopen" data-kwh="3800" checked />Halfopen</label>
+              <label class="seg relative border border-edge rounded-lg px-3 py-2.5 text-center cursor-pointer"><input type="radio" name="house" value="Open bebouwing" data-kwh="4500" />Open bebouwing</label>
+            </div>
+          </fieldset>
+          <div>
+            <label for="kwh" class="flex justify-between font-head font-semibold mb-2"><span>Stroomverbruik per jaar</span><span><span id="kwhv">3800</span> kWh</span></label>
+            <input id="kwh" type="range" min="1500" max="9000" step="100" value="3800" class="w-full" />
+            <p class="text-sm text-gray2 mt-1">Staat op uw jaarafrekening. Niet bij de hand? Laat de schatting voor uw woningtype staan.</p>
+          </div>
+          <fieldset><legend class="font-head font-semibold mb-3">Richting van uw dak</legend>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-[15px]">
+              <label class="seg relative border border-edge rounded-lg px-3 py-2.5 text-center cursor-pointer"><input type="radio" name="ori" value="1" data-l="zuid" checked />Zuid</label>
+              <label class="seg relative border border-edge rounded-lg px-3 py-2.5 text-center cursor-pointer"><input type="radio" name="ori" value="0.95" data-l="zuidoost/zuidwest" />ZO / ZW</label>
+              <label class="seg relative border border-edge rounded-lg px-3 py-2.5 text-center cursor-pointer"><input type="radio" name="ori" value="0.82" data-l="oost/west" />Oost / West</label>
+              <label class="seg relative border border-edge rounded-lg px-3 py-2.5 text-center cursor-pointer"><input type="radio" name="ori" value="0.95" data-l="plat dak" />Plat dak</label>
+            </div>
+          </fieldset>
+          <fieldset><legend class="font-head font-semibold mb-3">Hoe verwarmt u nu?</legend>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-[15px]">
+              <label class="seg relative border border-edge rounded-lg px-3 py-2.5 text-center cursor-pointer"><input type="radio" name="heat" value="gas" checked />Aardgas</label>
+              <label class="seg relative border border-edge rounded-lg px-3 py-2.5 text-center cursor-pointer"><input type="radio" name="heat" value="stookolie" />Stookolie</label>
+              <label class="seg relative border border-edge rounded-lg px-3 py-2.5 text-center cursor-pointer"><input type="radio" name="heat" value="elektrisch" />Elektrisch</label>
+              <label class="seg relative border border-edge rounded-lg px-3 py-2.5 text-center cursor-pointer"><input type="radio" name="heat" value="warmtepomp" />Warmtepomp</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="lg:col-span-5 bg-navy text-white rounded-2xl p-6 sm:p-8 flex flex-col">
+          <p class="text-white/60 text-sm">Indicatie zonnepanelen</p>
+          <div class="mt-3 grid grid-cols-2 gap-5">
+            <div><p class="font-head font-bold text-4xl"><span id="panels">0</span></p><p class="text-white/70 text-sm">panelen (<span id="kwp">0</span> kWp)</p></div>
+            <div><p class="font-head font-bold text-4xl"><span id="yield">0</span></p><p class="text-white/70 text-sm">kWh opbrengst per jaar</p></div>
+            <div class="col-span-2"><p class="font-head font-bold text-4xl text-sun">± <span id="payback">0</span> jaar</p><p class="text-white/70 text-sm">terugverdientijd</p></div>
+          </div>
+          <div id="hp" class="mt-6 rounded-xl bg-white/10 p-4 text-[15px] leading-relaxed"></div>
+          <details class="mt-4 text-sm text-white/60"><summary class="cursor-pointer">Waarop is dit gebaseerd?</summary>
+            <p class="mt-2">Algemene aannames, geen offerte: 900 kWh per kWp per jaar bij zuidoriëntatie, panelen van 430 Wp, ± € 1.300 per kWp geplaatst, 35% rechtstreeks verbruik aan € 0,30/kWh en injectie aan € 0,04/kWh. David of Tommy rekenen het exact uit voor uw dak.</p>
+          </details>
+          <div class="mt-6 pt-6 border-t border-white/15 grid gap-3">
+            <p class="font-head font-semibold">Eén offerte voor alles</p>
+            <input id="cname" placeholder="Naam" autocomplete="name" aria-label="Naam" class="rounded-lg px-3 py-2.5 text-navy" />
+            <input id="ctel" type="tel" placeholder="Telefoon of e-mail" aria-label="Telefoon of e-mail" class="rounded-lg px-3 py-2.5 text-navy" />
+            <p id="cerr" class="hidden text-[#ffb4ae] text-sm">Vul uw naam en een telefoonnummer of e-mail in.</p>
+            <button type="submit" class="btn bg-sun hover:bg-white text-navy font-semibold rounded-full px-6 py-3.5">Offerte aanvragen</button>
+            <div id="cdone" class="hidden rounded-xl bg-white text-navy p-4" role="status"></div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Over ons -->
+  <section id="over" class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-2 gap-12 items-center">
+    <div class="rounded-2xl bg-navy p-10 flex items-center justify-center min-h-[260px]">
+      <img src="images/logo-wit.png" alt="Logo Montagebedrijf Verstraeten" width="380" height="166" class="w-full max-w-[380px]" loading="lazy" />
+    </div>
+    <div>
+      <h2 class="font-head font-bold text-[clamp(1.9rem,3.6vw,2.8rem)] leading-tight">Twee broers, één aanspreekpunt</h2>
+      <p class="mt-4 text-gray2 text-lg leading-relaxed">Montagebedrijf Verstraeten is een familiebedrijf, opgericht in 2007 door de broers David en Tommy Verstraeten. Ze zijn elektricien en elektromecanicien van opleiding en specialiseerden zich in duurzame energie.</p>
+      <p class="mt-4 text-gray2 text-lg leading-relaxed">Ze begonnen met montagewerken en legden zich steeds meer toe op zonnepanelen, warmtepompen met vloerverwarming, pelletkachels, elektriciteitswerken en zonneboilers. Omdat ze zelf de elektriciteit doen, sluit alles netjes op elkaar aan.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-white border-t border-edge">
+    <div class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-2 gap-12">
+      <div>
+        <h2 class="font-head font-bold text-[clamp(1.9rem,3.6vw,2.8rem)] leading-tight">Contact</h2>
+        <p class="mt-4 text-gray2 text-lg">Wij werken in Edegem, Kontich, Mortsel, Wilrijk, Hove, Lint, Aartselaar, Boechout, Antwerpen en omgeving.</p>
+        <dl class="mt-8 divide-y divide-edge border-y border-edge">
+          <div class="py-4 flex justify-between gap-4"><dt class="text-gray2">Telefoon</dt><dd><a class="font-semibold hover:text-sea" href="tel:+32487200525">0487 20 05 25</a></dd></div>
+          <div class="py-4 flex justify-between gap-4"><dt class="text-gray2">E-mail</dt><dd><a class="font-semibold hover:text-sea" href="mailto:info@mv-solar.be">info@mv-solar.be</a></dd></div>
+          <div class="py-4 flex justify-between gap-4"><dt class="text-gray2">Adres</dt><dd class="font-semibold text-right">Adolf Queteletlaan 12, 2650 Edegem</dd></div>
+          <div class="py-4 flex justify-between gap-4"><dt class="text-gray2">Bereikbaar</dt><dd class="text-right">Bel of mail voor een afspraak</dd></div>
+        </dl>
+      </div>
+      <a href="https://www.google.com/maps/search/?api=1&query=Adolf+Queteletlaan+12+2650+Edegem" target="_blank" rel="noopener" class="group relative rounded-2xl overflow-hidden border border-edge min-h-[300px] flex items-end bg-sky">
+        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <rect width="400" height="300" fill="#e9eef3"/>
+          <g stroke="#fff" stroke-width="10" fill="none"><path d="M-10 70 L410 140"/><path d="M180 -10 V310"/><path d="M-10 250 C 120 220, 260 260, 410 210"/></g>
+          <circle cx="210" cy="118" r="11" fill="#e2011a"/><circle cx="210" cy="118" r="22" fill="#e2011a" opacity=".18"/>
+        </svg>
+        <span class="relative m-5 bg-white rounded-full px-5 py-3 font-semibold shadow group-hover:text-sea">Open route in Google Maps</span>
+      </a>
+    </div>
+  </section>
+  </main>
+
+  <footer class="bg-navy text-white/70">
+    <div class="max-w-6xl mx-auto px-5 py-8 text-sm flex flex-col md:flex-row justify-between gap-3">
+      <p>Montagebedrijf Verstraeten BV · MV-Solar · Adolf Queteletlaan 12, 2650 Edegem</p>
+      <p>Concept-herontwerp door <a href="mailto:nicolas@saspire.org" class="underline">Saspire</a>, vrijblijvend voorstel. Niet de officiële website.</p>
+    </div>
+  </footer>
+
+  <a href="tel:+32487200525" class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-sun text-navy text-center font-bold py-4">Bel David of Tommy: 0487 20 05 25</a>
+
+  <script>
+    document.documentElement.classList.add('js');
+    (function () {
+      var $ = function (id) { return document.getElementById(id); };
+      var f = $('calc');
+      function val(n) { return f.querySelector('input[name=' + n + ']:checked'); }
+      function fmt(n) { return n.toLocaleString('nl-BE'); }
+      function calc() {
+        var kwh = +$('kwh').value, ori = +val('ori').value, heat = val('heat').value;
+        $('kwhv').textContent = fmt(kwh);
+        var perKwp = 900 * ori, kwp = kwh / perKwp;
+        var panels = Math.max(4, Math.round(kwp * 1000 / 430));
+        kwp = panels * 0.43;
+        var yld = Math.round(kwp * perKwp / 10) * 10;
+        var gain = yld * 0.35 * 0.30 + yld * 0.65 * 0.04;
+        var pay = (kwp * 1300) / gain;
+        $('panels').textContent = panels; $('kwp').textContent = kwp.toFixed(1).replace('.', ',');
+        $('yield').textContent = fmt(yld); $('payback').textContent = Math.round(pay);
+        var hp = {
+          gas: '<b>Warmtepomp:</b> interessant als uw woning goed geïsoleerd is. Met vloerverwarming (Uponor) en uw eigen zonnestroom haalt u het meeste rendement.',
+          stookolie: '<b>Warmtepomp:</b> sterk aan te raden. U stapt af van stookolie en verwarmt met uw eigen zonnestroom. Laat ons uw isolatie en afgifte bekijken.',
+          elektrisch: '<b>Warmtepomp:</b> de grootste winst. Een warmtepomp verwarmt met een fractie van de stroom die elektrische verwarming nu verbruikt.',
+          warmtepomp: '<b>U hebt al een warmtepomp.</b> Zonnepanelen erbij laten uw warmtepomp grotendeels op eigen stroom draaien.'
+        }[heat];
+        $('hp').innerHTML = hp;
+      }
+      f.querySelectorAll('input[name=house]').forEach(function (r) { r.addEventListener('change', function () { $('kwh').value = r.dataset.kwh; calc(); }); });
+      f.querySelectorAll('input[type=range], input[name=ori], input[name=heat]').forEach(function (i) { i.addEventListener('input', calc); i.addEventListener('change', calc); });
+      calc();
+      f.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var n = $('cname').value.trim(), t = $('ctel').value.trim();
+        if (!n || !t) { $('cerr').classList.remove('hidden'); return; }
+        $('cerr').classList.add('hidden');
+        var d = $('cdone'); d.classList.remove('hidden');
+        d.innerHTML = '<b>Aanvraag ontvangen.</b> ' + val('house').value + ', ' + fmt(+$('kwh').value) + ' kWh, dak ' + val('ori').dataset.l + ', nu verwarmd met ' + val('heat').value + '. David of Tommy nemen contact op voor een plaatsbezoek.<br><span class="text-sm text-gray2">Dit is een demo: er werd niets verzonden.</span>';
+      });
+    })();
+  </script>
+</body>
+</html>

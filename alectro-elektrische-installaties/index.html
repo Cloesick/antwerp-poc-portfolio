@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Alectro | Elektricien in Niel voor nieuwbouw, renovatie en domotica</title>
+  <meta name="description" content="Alectro BV uit Niel: elektriciteitswerken in nieuwbouw, renovatie en industrie, domotica, parlofonie en videofonie. Sinds 1992. Vraag online een offerte aan." />
+  <meta name="theme-color" content="#23272b" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Alectro BV" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Alectro | Elektrische installaties in Niel, sinds 1992" />
+  <meta property="og:description" content="Nieuwbouw, renovatie, industrie, domotica en parlofonie. Vraag uw offerte aan met een foto van uw zekeringkast." />
+  <meta property="og:image" content="images/1.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2323272b'/%3E%3Cpath d='M18 4L9 18h6l-2 10 10-15h-6l1-9z' fill='%2309d4ff'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "Alectro BV",
+    "description": "Elektrische installaties in nieuwbouw, renovatie en industrie, domotica, parlofonie en videofonie.",
+    "url": "http://www.alectro.be",
+    "telephone": "+3234574202",
+    "email": "alectro@telenet.be",
+    "foundingDate": "1992",
+    "address": { "@type": "PostalAddress", "streetAddress": "Matenstraat 73", "postalCode": "2845", "addressLocality": "Niel", "addressCountry": "BE" },
+    "areaServed": ["Niel", "Boom", "Schelle", "Hemiksem", "Aartselaar", "Rumst", "Willebroek"],
+    "image": "images/1.jpg"
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { sans: ['Barlow', 'sans-serif'], cond: ['"Barlow Condensed"', 'sans-serif'] },
+      colors: { graphite: '#23272b', panel: '#2e3337', wall: '#eceef0', paper: '#f7f8f9', line: '#d3d8dc', volt: '#09d4ff', voltdk: '#0091b3', ink: '#1a1d20', dim: '#5b646b' }
+    } } };
+  </script>
+  <style>
+    :root { --accent: #0091b3; --ease: cubic-bezier(.23,1,.32,1); }
+    html { scroll-behavior: smooth; }
+    h1, h2, h3 { text-wrap: balance; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), border-color .18s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, label:focus-within { outline: 2px solid #0091b3; outline-offset: 3px; }
+    /* one orchestrated moment: current flows through the hero wire */
+    .wire { stroke-dasharray: 1200; stroke-dashoffset: 1200; }
+    .js .wire { animation: flow 2.4s var(--ease) .3s forwards; }
+    .no-anim .wire, html:not(.js) .wire { stroke-dashoffset: 0; }
+    @keyframes flow { to { stroke-dashoffset: 0; } }
+    .lamp { transition: opacity .4s, filter .4s; }
+    .js .lamp { opacity: .25; animation: lampon .5s ease 2.4s forwards; }
+    @keyframes lampon { to { opacity: 1; filter: drop-shadow(0 0 10px #09d4ff); } }
+    .din { background-image: repeating-linear-gradient(90deg, transparent 0 22px, rgba(255,255,255,.06) 22px 23px); }
+    /* breaker-style option tiles */
+    .opt input { position: absolute; opacity: 0; pointer-events: none; }
+    .opt .tog { width: 14px; height: 26px; border-radius: 3px; background: #c9d0d5; position: relative; transition: background .2s; }
+    .opt .tog::after { content: ''; position: absolute; left: 2px; right: 2px; height: 10px; bottom: 2px; border-radius: 2px; background: #fff; transition: bottom .2s var(--ease); }
+    .opt input:checked ~ .tog { background: #0091b3; }
+    .opt input:checked ~ .tog::after { bottom: 14px; }
+    .opt:has(input:checked) { border-color: #0091b3; background: #fff; box-shadow: 0 0 0 1px #0091b3; }
+    .step[hidden] { display: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .wire { animation: none; stroke-dashoffset: 0; }
+      .js .lamp { animation: none; opacity: 1; }
+      .opt .tog::after, .btn { transition: none; }
+    }
+  </style>
+</head>
+<body class="bg-paper text-ink font-sans antialiased pb-16 md:pb-0">
+
+  <div class="fixed bottom-[72px] md:bottom-4 right-3 md:right-4 z-50">
+    <span class="text-[11px] tracking-wider text-white/90 bg-graphite/90 rounded-full px-3 py-1.5 shadow">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-graphite text-white">
+    <nav class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top" class="flex items-center gap-3">
+        <img src="images/logo_alectro.jpg" alt="Logo Alectro" width="34" height="32" class="rounded-sm" />
+        <span class="font-cond font-bold text-[22px] tracking-wide leading-none">ALECTRO<span class="block text-[11px] font-medium tracking-[.18em] text-volt mt-0.5">ELEKTRISCHE INSTALLATIES</span></span>
+      </a>
+      <div class="hidden md:flex items-center gap-7 text-[15px] text-white/75">
+        <a href="#diensten" class="hover:text-white">Diensten</a>
+        <a href="#realisaties" class="hover:text-white">Realisaties</a>
+        <a href="#offerte" class="hover:text-white">Offerte</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </div>
+      <a href="tel:+3234574202" class="btn hidden sm:inline-flex items-center gap-2 border border-white/25 hover:border-volt rounded-md px-4 py-2 text-[15px] font-semibold">03 457 42 02</a>
+    </nav>
+  </header>
+
+  <main id="top">
+  <!-- Hero -->
+  <section class="relative bg-graphite text-white overflow-hidden">
+    <div class="absolute inset-0 din" aria-hidden="true"></div>
+    <div class="relative max-w-6xl mx-auto px-5 pt-12 pb-16 lg:pt-16 lg:pb-20 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-6">
+        <p class="font-cond text-volt text-lg font-semibold tracking-wide">Alectro · vakwerk uit Niel sinds 1992</p>
+        <h1 class="font-cond font-bold uppercase leading-[.95] tracking-tight text-[clamp(2.8rem,6.4vw,5.2rem)] mt-3">Elektricien voor nieuwbouw, renovatie en industrie</h1>
+        <p class="mt-6 text-white/75 text-lg leading-relaxed max-w-[48ch]">Alectro legt uw volledige installatie aan, van zekeringkast tot domotica en videofonie. Al ruim dertig jaar zoeken we mee naar de oplossing die past bij uw woning of bedrijf.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#offerte" class="btn inline-flex items-center gap-2 bg-volt hover:bg-white text-graphite font-semibold rounded-md px-6 py-3.5">Offerte aanvragen</a>
+          <a href="tel:+32475415413" class="btn inline-flex items-center gap-2 border border-white/30 hover:border-volt rounded-md px-6 py-3.5 font-semibold">Bel 0475 41 54 13</a>
+        </div>
+        <p class="mt-7 text-white/55 text-[15px]">Matenstraat 73, 2845 Niel &nbsp;|&nbsp; Werkgebied Rupelstreek en zuid-Antwerpen</p>
+      </div>
+      <div class="lg:col-span-6 relative">
+        <figure class="relative rounded-lg overflow-hidden border border-white/10 shadow-2xl">
+          <img src="images/1.jpg" alt="Elektricien van Alectro aan het werk in een verdeelkast" class="w-full aspect-[2/1] object-cover" width="600" height="300" />
+          <figcaption class="absolute left-3 bottom-3 bg-graphite/85 text-[13px] px-3 py-1.5 rounded">Eigen ploeg, eigen verdeelkasten</figcaption>
+        </figure>
+        <!-- wiring diagram -->
+        <svg viewBox="0 0 560 150" class="w-full mt-5" aria-hidden="true">
+          <g fill="none" stroke="rgba(255,255,255,.18)" stroke-width="2">
+            <path d="M10 75 H150 V30 H300 M150 75 V120 H300 M300 30 H420 M300 120 H420 M420 30 V120 M420 75 H540" />
+          </g>
+          <path class="wire" d="M10 75 H150 V30 H300 H420 V75 H540" fill="none" stroke="#09d4ff" stroke-width="2.5" />
+          <g font-family="Barlow Condensed" font-size="15" fill="rgba(255,255,255,.6)">
+            <text x="10" y="64">NET</text><text x="165" y="22">AUTOMAAT 20A</text><text x="165" y="142">DIFFERENTIEEL 30mA</text>
+          </g>
+          <rect x="140" y="65" width="20" height="20" fill="#23272b" stroke="rgba(255,255,255,.4)" />
+          <rect x="290" y="20" width="20" height="20" fill="#23272b" stroke="#09d4ff" />
+          <rect x="290" y="110" width="20" height="20" fill="#23272b" stroke="rgba(255,255,255,.4)" />
+          <g class="lamp"><circle cx="540" cy="75" r="12" fill="none" stroke="#09d4ff" stroke-width="2.5"/><path d="M532 67l16 16M548 67l-16 16" stroke="#09d4ff" stroke-width="2.5"/></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diensten -->
+  <section id="diensten" class="max-w-6xl mx-auto px-5 py-20">
+    <div class="max-w-2xl">
+      <h2 class="font-cond font-bold uppercase text-[clamp(2rem,4vw,3rem)] leading-none">Wat we voor u aanleggen</h2>
+      <p class="mt-4 text-dim text-lg">Elk stroomcircuit zoals het hoort: veilig, conform en doordacht voor wie er later mee leeft.</p>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 border-t border-l border-line">
+      <article class="p-7 border-r border-b border-line bg-white">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0091b3" stroke-width="1.6" aria-hidden="true"><path d="M3 11l9-7 9 7v9H3z"/><path d="M13 9l-3 5h4l-3 5"/></svg>
+        <h3 class="font-cond font-bold text-2xl mt-4">Nieuwbouw</h3>
+        <p class="mt-2 text-dim leading-relaxed">Volledige installatie vanaf plan: verdeelkast, circuits, stopcontacten, verlichting en aansluiting op het net.</p>
+      </article>
+      <article class="p-7 border-r border-b border-line bg-white">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0091b3" stroke-width="1.6" aria-hidden="true"><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/><path d="M17 4l3 3"/></svg>
+        <h3 class="font-cond font-bold text-2xl mt-4">Renovatie</h3>
+        <p class="mt-2 text-dim leading-relaxed">Oude bedrading vervangen, extra circuits, een nieuwe zekeringkast en uw installatie terug conform maken.</p>
+      </article>
+      <article class="p-7 border-r border-b border-line bg-white">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0091b3" stroke-width="1.6" aria-hidden="true"><path d="M3 20h18M5 20V10l5 3V10l5 3V6h4v14"/></svg>
+        <h3 class="font-cond font-bold text-2xl mt-4">Industrie</h3>
+        <p class="mt-2 text-dim leading-relaxed">Kabelgoten, krachtverdeling en verlichting voor hallen, werkplaatsen en bedrijfsgebouwen.</p>
+      </article>
+      <article class="p-7 border-r border-b border-line bg-white">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0091b3" stroke-width="1.6" aria-hidden="true"><rect x="6" y="3" width="12" height="18" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M9 17h6"/></svg>
+        <h3 class="font-cond font-bold text-2xl mt-4">Domotica</h3>
+        <p class="mt-2 text-dim leading-relaxed">Verlichting, rolluiken en verwarming slim gestuurd, met scenario's die passen bij hoe u leeft.</p>
+      </article>
+      <article class="p-7 border-r border-b border-line bg-white">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#0091b3" stroke-width="1.6" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><rect x="8" y="6" width="8" height="6" rx="1"/><circle cx="12" cy="16.5" r="1.5"/></svg>
+        <h3 class="font-cond font-bold text-2xl mt-4">Parlofonie &amp; videofonie</h3>
+        <p class="mt-2 text-dim leading-relaxed">Zien wie aanbelt: voor woningen, appartementsgebouwen en bedrijven, inclusief deuropener.</p>
+      </article>
+      <article class="p-7 border-r border-b border-line bg-graphite text-white">
+        <h3 class="font-cond font-bold text-2xl">Niet zeker wat u nodig hebt?</h3>
+        <p class="mt-2 text-white/70 leading-relaxed">Stuur een foto van uw zekeringkast mee met uw aanvraag. Dan weten we meteen waar we aan beginnen.</p>
+        <a href="#offerte" class="btn mt-5 inline-flex bg-volt text-graphite font-semibold rounded-md px-5 py-3">Start uw aanvraag</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Offerte wizard -->
+  <section id="offerte" class="bg-wall border-y border-line">
+    <div class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-4">
+        <h2 class="font-cond font-bold uppercase text-[clamp(2rem,4vw,3rem)] leading-none">Offerte in drie stappen</h2>
+        <p class="mt-4 text-dim text-lg leading-relaxed">Kies uw opdracht, vertel kort wat er moet gebeuren en voeg een foto van uw zekeringkast toe. Alectro belt u terug met een voorstel.</p>
+        <ul class="mt-6 space-y-2 text-[15px] text-dim">
+          <li>Gratis en vrijblijvend</li>
+          <li>Foto van de zekeringkast versnelt de prijs</li>
+          <li>Rechtstreeks bij de zaakvoerder, geen tussenpersoon</li>
+        </ul>
+      </div>
+      <form id="wiz" class="lg:col-span-8 bg-paper border border-line rounded-lg p-6 sm:p-8" novalidate>
+        <ol class="flex gap-2 mb-7 text-[13px] font-semibold" aria-label="Stappen">
+          <li class="sd flex-1 border-t-4 border-voltdk pt-2">1. Opdracht</li>
+          <li class="sd flex-1 border-t-4 border-line pt-2 text-dim">2. Details</li>
+          <li class="sd flex-1 border-t-4 border-line pt-2 text-dim">3. Contact</li>
+        </ol>
+
+        <fieldset class="step" data-s="0">
+          <legend class="font-cond font-bold text-2xl mb-4">Welke opdracht hebt u?</legend>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <label class="opt relative flex items-center gap-4 border border-line rounded-md p-4 cursor-pointer bg-white/60"><input type="radio" name="job" value="Renovatie" /><span class="tog shrink-0"></span><span><b class="block">Renovatie</b><span class="text-dim text-sm">bedrading, circuits, nieuwe kast</span></span></label>
+            <label class="opt relative flex items-center gap-4 border border-line rounded-md p-4 cursor-pointer bg-white/60"><input type="radio" name="job" value="Industrie" /><span class="tog shrink-0"></span><span><b class="block">Industriële installatie</b><span class="text-dim text-sm">hallen, kabelgoten, verdeelborden</span></span></label>
+            <label class="opt relative flex items-center gap-4 border border-line rounded-md p-4 cursor-pointer bg-white/60"><input type="radio" name="job" value="Parlofonie" /><span class="tog shrink-0"></span><span><b class="block">Parlofonie &amp; videofonie</b><span class="text-dim text-sm">aanbellen met beeld, ook voor appartementen</span></span></label>
+            <label class="opt relative flex items-center gap-4 border border-line rounded-md p-4 cursor-pointer bg-white/60"><input type="radio" name="job" value="Domotica" /><span class="tog shrink-0"></span><span><b class="block">Domotica</b><span class="text-dim text-sm">slimme sturing, videofonie</span></span></label>
+          </div>
+          <p class="err hidden mt-3 text-[#b42318] text-sm">Kies een opdracht om verder te gaan.</p>
+        </fieldset>
+
+        <fieldset class="step" data-s="1" hidden>
+          <legend class="font-cond font-bold text-2xl mb-4">Vertel ons meer over <span id="jobname">de opdracht</span></legend>
+          <label class="block text-sm font-semibold mb-1.5" for="wtype">Type gebouw</label>
+          <select id="wtype" class="w-full border border-line rounded-md px-3 py-2.5 bg-white"><option>Woning</option><option>Appartement</option><option>Handelszaak of kantoor</option><option>Industrieel gebouw</option></select>
+          <label class="block text-sm font-semibold mt-4 mb-1.5" for="wdesc">Korte omschrijving</label>
+          <textarea id="wdesc" rows="3" class="w-full border border-line rounded-md px-3 py-2.5 bg-white" placeholder="Bv. rijwoning uit 1970, keuken en badkamer worden vernieuwd"></textarea>
+          <p class="block text-sm font-semibold mt-4 mb-1.5">Foto van uw zekeringkast <span class="font-normal text-dim">(optioneel)</span></p>
+          <label for="wphoto" class="flex items-center gap-4 border-2 border-dashed border-line rounded-md p-4 cursor-pointer bg-white hover:border-voltdk">
+            <img id="wprev" alt="" class="hidden w-20 h-20 object-cover rounded" />
+            <span id="wphototxt" class="text-dim text-[15px]">Klik om een foto te kiezen of te nemen met uw gsm</span>
+          </label>
+          <input id="wphoto" type="file" accept="image/*" capture="environment" class="sr-only" />
+        </fieldset>
+
+        <fieldset class="step" data-s="2" hidden>
+          <legend class="font-cond font-bold text-2xl mb-4">Hoe bereiken we u?</legend>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div><label class="block text-sm font-semibold mb-1.5" for="wname">Naam</label><input id="wname" class="w-full border border-line rounded-md px-3 py-2.5 bg-white" autocomplete="name" /></div>
+            <div><label class="block text-sm font-semibold mb-1.5" for="wtel">Telefoon</label><input id="wtel" type="tel" class="w-full border border-line rounded-md px-3 py-2.5 bg-white" autocomplete="tel" /></div>
+            <div class="sm:col-span-2"><label class="block text-sm font-semibold mb-1.5" for="wtown">Gemeente</label><input id="wtown" class="w-full border border-line rounded-md px-3 py-2.5 bg-white" placeholder="Bv. Boom" /></div>
+          </div>
+          <p class="err hidden mt-3 text-[#b42318] text-sm">Vul uw naam en telefoonnummer in.</p>
+        </fieldset>
+
+        <div id="wdone" class="hidden text-center py-8" role="status">
+          <svg width="56" height="56" viewBox="0 0 24 24" class="mx-auto" fill="none" stroke="#0091b3" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7 12.5l3.2 3L17 9"/></svg>
+          <h3 class="font-cond font-bold text-3xl mt-4">Aanvraag verstuurd</h3>
+          <p id="wsum" class="mt-2 text-dim max-w-md mx-auto"></p>
+          <p class="mt-4 text-sm bg-wall inline-block rounded px-3 py-1.5">Dit is een demo: er werd niets verzonden.</p>
+        </div>
+
+        <div id="wnav" class="mt-8 flex justify-between gap-3">
+          <button type="button" id="wback" class="btn invisible border border-line rounded-md px-5 py-3 font-semibold">Vorige</button>
+          <button type="button" id="wnext" class="btn bg-graphite hover:bg-voltdk text-white rounded-md px-6 py-3 font-semibold">Volgende</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Realisaties -->
+  <section id="realisaties" class="max-w-6xl mx-auto px-5 py-20">
+    <h2 class="font-cond font-bold uppercase text-[clamp(2rem,4vw,3rem)] leading-none">Realisaties</h2>
+    <p class="mt-4 text-dim text-lg max-w-2xl">Van een sporthal tot een kerk met lichtaccenten: een greep uit het werk van onze ploeg.</p>
+    <div class="mt-10 grid md:grid-cols-2 gap-4">
+      <figure class="md:row-span-2"><img src="images/3.jpg" alt="Kabelgoten in een industriële hal" class="w-full aspect-[2/1] md:aspect-auto md:h-[calc(100%-1.75rem)] object-cover rounded-lg" width="600" height="300" loading="lazy" /><figcaption class="mt-2 text-sm text-dim">Industrie: kabelgoten en krachtverdeling</figcaption></figure>
+      <figure><img src="images/2.jpg" alt="Kerk met groene lichtaccenten" class="w-full aspect-[2/1] object-cover rounded-lg" width="600" height="300" loading="lazy" /><figcaption class="mt-2 text-sm text-dim">Sfeerverlichting in een kerk</figcaption></figure>
+      <figure><img src="images/5.jpg" alt="Sporthal met LED-verlichting" class="w-full aspect-[2/1] object-cover rounded-lg" width="600" height="300" loading="lazy" /><figcaption class="mt-2 text-sm text-dim">Verlichting in een sporthal</figcaption></figure>
+    </div>
+    <figure class="mt-4"><img src="images/6.jpg" alt="Designverlichting in een kantoor met zicht op de stad" class="w-full aspect-[3/1] object-cover rounded-lg" width="600" height="300" loading="lazy" /><figcaption class="mt-2 text-sm text-dim">Designverlichting in een kantoor</figcaption></figure>
+  </section>
+
+  <!-- Trust -->
+  <section class="bg-graphite text-white">
+    <div class="max-w-6xl mx-auto px-5 py-16 grid md:grid-cols-3 gap-10">
+      <div><p class="font-cond font-bold text-6xl text-volt leading-none">1992</p><p class="mt-2 text-white/70">opgericht in Niel. Ruim dertig jaar elektriciteitswerken in de streek.</p></div>
+      <div><p class="font-cond font-bold text-3xl leading-tight">Eén aanspreekpunt</p><p class="mt-2 text-white/70">Van eerste plaatsbezoek tot oplevering spreekt u met dezelfde mensen.</p></div>
+      <div><p class="font-cond font-bold text-3xl leading-tight">Woning en bedrijf</p><p class="mt-2 text-white/70">Particuliere renovaties en industriële projecten, met dezelfde zorg.</p></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-2 gap-12">
+    <div>
+      <h2 class="font-cond font-bold uppercase text-[clamp(2rem,4vw,3rem)] leading-none">Contact</h2>
+      <p class="mt-4 text-dim text-lg">Wij werken in Niel, Boom, Schelle, Hemiksem, Aartselaar, Rumst, Willebroek en omgeving.</p>
+      <dl class="mt-8 divide-y divide-line border-y border-line">
+        <div class="py-4 flex justify-between gap-4"><dt class="text-dim">Kantoor</dt><dd><a class="font-semibold hover:text-voltdk" href="tel:+3234574202">03 457 42 02</a></dd></div>
+        <div class="py-4 flex justify-between gap-4"><dt class="text-dim">Gsm</dt><dd><a class="font-semibold hover:text-voltdk" href="tel:+32475415413">0475 41 54 13</a></dd></div>
+        <div class="py-4 flex justify-between gap-4"><dt class="text-dim">E-mail</dt><dd><a class="font-semibold hover:text-voltdk" href="mailto:alectro@telenet.be">alectro@telenet.be</a></dd></div>
+        <div class="py-4 flex justify-between gap-4"><dt class="text-dim">Adres</dt><dd class="text-right font-semibold">Matenstraat 73, 2845 Niel</dd></div>
+        <div class="py-4 flex justify-between gap-4"><dt class="text-dim">Bereikbaarheid</dt><dd class="text-right">Op afspraak, bel of mail ons</dd></div>
+      </dl>
+    </div>
+    <a href="https://www.google.com/maps/search/?api=1&query=Matenstraat+73+2845+Niel" target="_blank" rel="noopener" class="group relative rounded-lg overflow-hidden bg-wall border border-line min-h-[300px] flex items-end">
+      <svg class="absolute inset-0 w-full h-full" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <rect width="400" height="300" fill="#e3e7ea"/>
+        <path d="M-10 210 C 80 190, 150 240, 230 200 S 360 150, 420 170" stroke="#b9dbe6" stroke-width="26" fill="none"/>
+        <g stroke="#fff" stroke-width="9" fill="none"><path d="M40 -10 L120 310"/><path d="M-10 90 H410"/><path d="M260 -10 L300 310"/></g>
+        <circle cx="200" cy="105" r="11" fill="#0091b3"/><circle cx="200" cy="105" r="22" fill="#0091b3" opacity=".2"/>
+      </svg>
+      <span class="relative m-5 bg-white rounded-md px-4 py-3 font-semibold shadow group-hover:text-voltdk">Open route in Google Maps</span>
+    </a>
+  </section>
+  </main>
+
+  <footer class="border-t border-line">
+    <div class="max-w-6xl mx-auto px-5 py-8 text-sm text-dim flex flex-col md:flex-row justify-between gap-3">
+      <p>Alectro BV · Elektrische installaties · Matenstraat 73, 2845 Niel</p>
+      <p>Concept-herontwerp door <a href="mailto:nicolas@saspire.org" class="underline">Saspire</a>, vrijblijvend voorstel. Niet de officiële website van Alectro.</p>
+    </div>
+  </footer>
+
+  <a href="tel:+32475415413" class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-voltdk text-white text-center font-semibold py-4">Bel Alectro: 0475 41 54 13</a>
+
+  <script>
+    document.documentElement.classList.add('js');
+    (function () {
+      var f = document.getElementById('wiz'), steps = f.querySelectorAll('.step'), sd = f.querySelectorAll('.sd');
+      var next = document.getElementById('wnext'), back = document.getElementById('wback'), cur = 0;
+      function show(i) {
+        cur = i;
+        steps.forEach(function (s, k) { s.hidden = k !== i; });
+        sd.forEach(function (s, k) { s.className = 'sd flex-1 border-t-4 pt-2 ' + (k <= i ? 'border-voltdk' : 'border-line text-dim'); });
+        back.classList.toggle('invisible', i === 0);
+        next.textContent = i === 2 ? 'Aanvraag versturen' : 'Volgende';
+      }
+      function err(on) { var e = steps[cur].querySelector('.err'); if (e) e.classList.toggle('hidden', !on); }
+      next.addEventListener('click', function () {
+        if (cur === 0) {
+          var j = f.querySelector('input[name=job]:checked');
+          if (!j) return err(true);
+          err(false); document.getElementById('jobname').textContent = 'uw ' + j.value.toLowerCase();
+        }
+        if (cur === 2) {
+          var n = document.getElementById('wname').value.trim(), t = document.getElementById('wtel').value.trim();
+          if (!n || !t) return err(true);
+          err(false);
+          steps.forEach(function (s) { s.hidden = true; });
+          document.getElementById('wnav').classList.add('hidden');
+          var job = f.querySelector('input[name=job]:checked').value;
+          var photo = document.getElementById('wphoto').files.length ? ' met foto van de zekeringkast' : '';
+          document.getElementById('wsum').textContent = 'Bedankt ' + n.split(' ')[0] + '. Uw aanvraag voor ' + job.toLowerCase() + photo + ' is bij Alectro. We bellen u terug op ' + t + '.';
+          document.getElementById('wdone').classList.remove('hidden');
+          return;
+        }
+        show(cur + 1);
+      });
+      back.addEventListener('click', function () { if (cur > 0) show(cur - 1); });
+      f.querySelectorAll('input[name=job]').forEach(function (r) { r.addEventListener('change', function () { err(false); }); });
+      document.getElementById('wphoto').addEventListener('change', function (e) {
+        var file = e.target.files[0]; if (!file) return;
+        var img = document.getElementById('wprev'), rd = new FileReader();
+        rd.onload = function () { img.src = rd.result; img.classList.remove('hidden'); };
+        rd.readAsDataURL(file);
+        document.getElementById('wphototxt').textContent = file.name + ' toegevoegd';
+      });
+    })();
+  </script>
+</body>
+</html>

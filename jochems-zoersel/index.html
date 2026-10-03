@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Jochems | Sleutels, sloten en sluitplannen in Zoersel</title>
+  <meta name="description" content="Jochems in Zoersel: sleutels bijmaken terwijl u wacht, sloten herstellen, deuren openen, veiligheidssloten en elektronische cilinders plaatsen. Sluitplannen met EVVA ICS en DOM Sigma, gemaakt in eigen werkplaats." />
+  <meta name="theme-color" content="#2b3133" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Jochems bv" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Jochems | Sleutels, sloten en sluitplannen in Zoersel" />
+  <meta property="og:description" content="Sleutels bijmaken, sloten herstellen en sluitplannen uit eigen werkplaats. De prijs krijgt u altijd vooraf." />
+  <meta property="og:url" content="https://www.jochems-bvba.be/" />
+  <meta property="og:image" content="images/dom.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232b3133'/%3E%3Ccircle cx='11' cy='16' r='5' fill='none' stroke='%2368ccd1' stroke-width='2.4'/%3E%3Cpath d='M16 16h11v4h-2v-2h-2v3h-2v-3h-5' fill='%2368ccd1'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Locksmith",
+    "name": "Jochems bv",
+    "description": "Sleutels bijmaken, sloten herstellen, deuren openen, veiligheidssloten en elektronische cilinders plaatsen, sluitplannen in eigen werkplaats (EVVA ICS, DOM Sigma).",
+    "url": "https://www.jochems-bvba.be/",
+    "telephone": "+3233843729",
+    "email": "info@jochems-bvba.be",
+    "image": "https://irp-cdn.multiscreensite.com/c9f5e97d/dms3rep/multi/89918-IMG_56266.w1900-e3e5231a.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Handelslei 128",
+      "postalCode": "2980",
+      "addressLocality": "Zoersel",
+      "addressCountry": "BE"
+    },
+    "areaServed": ["Zoersel", "Sint-Antonius", "Halle", "Westmalle", "Schilde", "Ranst"],
+    "brand": [{ "@type": "Brand", "name": "EVVA ICS" }, { "@type": "Brand", "name": "DOM Sigma" }],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Friday"], "opens": "08:30", "closes": "12:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Friday"], "opens": "13:30", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "16:00" }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        fontFamily: { display: ['"Bricolage Grotesque"', 'sans-serif'], sans: ['"Instrument Sans"', 'sans-serif'] },
+        colors: {
+          paper: '#eef2f2', card: '#ffffff', ink: '#2b3133', slate: '#5d6669',
+          teal: '#68ccd1', tealdeep: '#1d7c82', brass: '#b8925a', line: '#d5dddd'
+        }
+      } }
+    };
+  </script>
+  <style>
+    :root { --ease: cubic-bezier(0.23, 1, 0.32, 1); }
+    html { scroll-behavior: smooth; }
+    h1, h2, h3 { text-wrap: balance; }
+    body { background: #eef2f2; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), border-color .18s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid #1d7c82; outline-offset: 3px; border-radius: 6px; }
+    /* Key bitting edge used as a divider: the notches of a cut key */
+    .bitting { height: 14px; background: #2b3133;
+      -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='14'%3E%3Cpath d='M0 14V0h14l6 8 6-8h10l4 10 4-10h16l6 6 6-6h12l5 12 5-12h26v14z'/%3E%3C/svg%3E") repeat-x;
+              mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='14'%3E%3Cpath d='M0 14V0h14l6 8 6-8h10l4 10 4-10h16l6 6 6-6h12l5 12 5-12h26v14z'/%3E%3C/svg%3E") repeat-x; }
+    .js .rv { opacity: 0; transform: translateY(18px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+    .js .rv.in { opacity: 1; transform: none; }
+    /* Sluitplan matrix */
+    .cell { width: 44px; height: 44px; border-radius: 10px; border: 1.5px dashed #c3cdcd; display: grid; place-items: center; transition: background-color .2s var(--ease), border-color .2s var(--ease), transform .15s var(--ease); }
+    .cell[aria-pressed="true"] { background: #2b3133; border: 1.5px solid #2b3133; color: #68ccd1; }
+    .cell:active { transform: scale(.92); }
+    .cell svg { opacity: 0; transition: opacity .2s var(--ease); }
+    .cell[aria-pressed="true"] svg { opacity: 1; }
+    .chip { transition: background-color .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease); }
+    .chip[aria-checked="true"] { background: #2b3133; color: #fff; border-color: #2b3133; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .rv { opacity: 1; transform: none; transition: none; }
+      .cell, .chip, .btn { transition: none; }
+    }
+  </style>
+</head>
+<body class="text-ink font-sans antialiased">
+
+  <div class="fixed bottom-[68px] md:bottom-4 right-3 md:right-4 z-50">
+    <span class="text-[11px] tracking-wide text-slate bg-white/90 border border-line rounded-full px-3 py-1.5 shadow-sm">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-paper/90 backdrop-blur border-b border-line">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 h-[68px] flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top" class="flex items-center gap-3">
+        <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#2b3133"/><circle cx="11" cy="16" r="5" fill="none" stroke="#68ccd1" stroke-width="2.4"/><path d="M16 16h11v4h-2v-2h-2v3h-2v-3h-5" fill="#68ccd1"/></svg>
+        <span class="leading-none">
+          <span class="block font-display font-extrabold text-[19px] tracking-tight">Jochems</span>
+          <span class="block text-[12px] text-slate mt-0.5">Sleutels &amp; sloten · Zoersel</span>
+        </span>
+      </a>
+      <div class="hidden md:flex items-center gap-7 text-[15px] font-medium text-slate">
+        <a href="#diensten" class="hover:text-ink">Diensten</a>
+        <a href="#sluitplan" class="hover:text-ink">Sluitplan</a>
+        <a href="#cilinders" class="hover:text-ink">Cilinders</a>
+        <a href="#bezoek" class="hover:text-ink">Openingsuren</a>
+      </div>
+      <a href="tel:+3233843729" class="btn inline-flex items-center gap-2 bg-ink hover:bg-black text-white font-semibold text-[14px] rounded-full px-4 py-2.5 whitespace-nowrap">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <span class="hidden sm:inline">03 384 37 29</span><span class="sm:hidden">Bel</span>
+      </a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-10 sm:pt-14 pb-16 grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+      <div class="min-w-0 lg:col-span-6">
+        <p class="inline-flex items-center gap-2 text-[14px] font-medium text-tealdeep bg-teal/15 rounded-full px-3 py-1">
+          <span id="openDot" class="w-2 h-2 rounded-full bg-tealdeep"></span>
+          <span id="openNow">Handelslei 128, Zoersel</span>
+        </p>
+        <h1 class="mt-5 font-display font-extrabold tracking-[-0.03em] leading-[1.02] text-[clamp(2.4rem,5vw,4.1rem)]">
+          Sleutels, sloten en sluitplannen. Gemaakt in Zoersel.
+        </h1>
+        <p class="mt-6 text-[18px] leading-relaxed text-slate max-w-[46ch]">
+          Wij maken uw sleutels bij terwijl u wacht, herstellen sloten, openen deuren en bouwen sluitplannen met EVVA ICS en DOM Sigma in onze eigen werkplaats. De prijs krijgt u altijd vooraf.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#sluitplan" class="btn inline-flex items-center gap-2 bg-tealdeep hover:bg-[#166469] text-white font-semibold rounded-full px-6 py-3.5">
+            Stel uw sluitplan samen
+          </a>
+          <a href="tel:+3233843729" class="btn inline-flex items-center gap-2 border-2 border-ink/80 hover:bg-ink hover:text-white font-semibold rounded-full px-6 py-3">
+            Bel voor een deur die niet opengaat
+          </a>
+        </div>
+        <dl class="mt-10 grid grid-cols-3 gap-4 max-w-md border-t border-line pt-5 text-[14px]">
+          <div><dt class="text-slate">Sleutel bijmaken</dt><dd class="font-semibold mt-0.5">Terwijl u wacht</dd></div>
+          <div><dt class="text-slate">Prijs</dt><dd class="font-semibold mt-0.5">Altijd vooraf</dd></div>
+          <div><dt class="text-slate">Sluitplannen</dt><dd class="font-semibold mt-0.5">Eigen werkplaats</dd></div>
+        </dl>
+      </div>
+      <div class="min-w-0 lg:col-span-6 relative">
+        <figure class="relative rounded-[28px] overflow-hidden bg-ink shadow-[0_30px_60px_-30px_rgba(43,49,51,.55)]">
+          <img src="images/dom.jpg" alt="DOM- en EVVA-cilinders met sleutels en eigendomscertificaten op naam van Jochems, Handelslei 128 Zoersel" class="w-full h-[300px] sm:h-[420px] lg:h-[500px] object-cover object-[12%_50%]" width="1900" height="941" />
+          <figcaption class="absolute left-4 bottom-4 right-4 sm:right-auto bg-white/95 rounded-2xl px-4 py-3 text-[14px] leading-snug max-w-xs">
+            <span class="font-semibold">Elke sleutel geregistreerd.</span>
+            <span class="text-slate">Met eigendomscertificaat, zodat niemand zonder uw kaart een kopie laat maken.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="diensten" class="bg-white border-y border-line">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+        <div class="grid lg:grid-cols-12 gap-10">
+          <div class="lg:col-span-4">
+            <h2 class="rv font-display font-extrabold text-[clamp(1.9rem,3.4vw,2.8rem)] tracking-tight leading-tight">Waarvoor u bij ons binnenstapt</h2>
+            <p class="rv mt-4 text-slate leading-relaxed max-w-[38ch]">Een kleine zaak met een volle werkbank. Wat u hier vraagt, wordt hier ook gemaakt.</p>
+          </div>
+          <ul class="lg:col-span-8 grid sm:grid-cols-2 gap-x-10">
+            <li class="rv py-6 border-t border-line">
+              <h3 class="font-display font-bold text-[21px]">Sleutels bijmaken</h3>
+              <p class="mt-1.5 text-slate leading-relaxed">Gewone en veiligheidssleutels, meestal klaar terwijl u wacht. Voor een veiligheidssleutel brengt u uw eigendomskaart mee.</p>
+            </li>
+            <li class="rv py-6 border-t border-line">
+              <h3 class="font-display font-bold text-[21px]">Sloten herstellen</h3>
+              <p class="mt-1.5 text-slate leading-relaxed">Een slot dat stroef draait of hapert? Wij kijken het na en herstellen wat te herstellen valt.</p>
+            </li>
+            <li class="rv py-6 border-t border-line">
+              <h3 class="font-display font-bold text-[21px]">Deuren openen</h3>
+              <p class="mt-1.5 text-slate leading-relaxed">Buitengesloten of sleutel afgebroken in het slot? Bel ons en we zeggen meteen wat het kost.</p>
+            </li>
+            <li class="rv py-6 border-t border-line">
+              <h3 class="font-display font-bold text-[21px]">Veiligheidssloten plaatsen</h3>
+              <p class="mt-1.5 text-slate leading-relaxed">Een sterkere cilinder of een veiligheidsslot op uw voordeur, achterdeur of garage.</p>
+            </li>
+            <li class="rv py-6 border-t border-line">
+              <h3 class="font-display font-bold text-[21px]">Sluitplannen</h3>
+              <p class="mt-1.5 text-slate leading-relaxed">Eén sleutel voor alle deuren, of per persoon bepalen wat open mag. Samengesteld in onze eigen werkplaats.</p>
+            </li>
+            <li class="rv py-6 border-t border-line">
+              <h3 class="font-display font-bold text-[21px]">Elektronische cilinders</h3>
+              <p class="mt-1.5 text-slate leading-relaxed">Openen met badge of smartphone, en een verloren badge gewoon uitschakelen in plaats van alle sloten te vervangen.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sluitplan configurator -->
+    <section id="sluitplan" class="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+      <div class="max-w-2xl">
+        <h2 class="rv font-display font-extrabold text-[clamp(1.9rem,3.4vw,2.8rem)] tracking-tight leading-tight">Stel uw sluitplan samen</h2>
+        <p class="rv mt-4 text-slate text-[17px] leading-relaxed">Kies uw deuren en wie welke sleutel krijgt. Tik in het rooster aan welke sleutel welke deur opent. Wij bekijken het in de werkplaats en bezorgen u vooraf de prijs.</p>
+      </div>
+
+      <div class="mt-10 grid lg:grid-cols-12 gap-6">
+        <!-- Controls -->
+        <div class="min-w-0 lg:col-span-4 bg-white rounded-3xl border border-line p-6 space-y-7">
+          <div>
+            <p class="font-semibold">Hoe moet het sluiten?</p>
+            <div class="mt-3 grid gap-2" role="radiogroup" aria-label="Type sluiting">
+              <button type="button" class="chip text-left border border-line rounded-2xl px-4 py-3" role="radio" aria-checked="true" data-mode="gelijk">
+                <span class="block font-semibold">Gelijksluitend</span>
+                <span class="block text-[14px] opacity-75">Eén sleutel opent alle deuren</span>
+              </button>
+              <button type="button" class="chip text-left border border-line rounded-2xl px-4 py-3" role="radio" aria-checked="false" data-mode="plan">
+                <span class="block font-semibold">Sluitplan op maat</span>
+                <span class="block text-[14px] opacity-75">Per sleutel kiezen welke deuren</span>
+              </button>
+            </div>
+          </div>
+          <div>
+            <p class="font-semibold">Systeem</p>
+            <div class="mt-3 flex flex-wrap gap-2" role="radiogroup" aria-label="Cilindersysteem">
+              <button type="button" class="chip border border-line rounded-full px-4 py-2 text-[14px] font-medium" role="radio" aria-checked="true" data-sys="EVVA ICS">EVVA ICS</button>
+              <button type="button" class="chip border border-line rounded-full px-4 py-2 text-[14px] font-medium" role="radio" aria-checked="false" data-sys="DOM Sigma">DOM Sigma</button>
+              <button type="button" class="chip border border-line rounded-full px-4 py-2 text-[14px] font-medium" role="radio" aria-checked="false" data-sys="Elektronisch">Elektronisch</button>
+              <button type="button" class="chip border border-line rounded-full px-4 py-2 text-[14px] font-medium" role="radio" aria-checked="false" data-sys="Advies gewenst">Weet ik niet</button>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <label class="block">
+              <span class="font-semibold">Deuren</span>
+              <span class="mt-2 flex items-center border border-line rounded-full overflow-hidden">
+                <button type="button" class="w-10 h-10 text-lg" data-step="doors" data-d="-1" aria-label="Eén deur minder">−</button>
+                <output id="doorsOut" class="flex-1 text-center font-display font-bold text-lg">4</output>
+                <button type="button" class="w-10 h-10 text-lg" data-step="doors" data-d="1" aria-label="Eén deur meer">+</button>
+              </span>
+            </label>
+            <label class="block">
+              <span class="font-semibold">Sleutels</span>
+              <span class="mt-2 flex items-center border border-line rounded-full overflow-hidden">
+                <button type="button" class="w-10 h-10 text-lg" data-step="keys" data-d="-1" aria-label="Eén sleutel minder">−</button>
+                <output id="keysOut" class="flex-1 text-center font-display font-bold text-lg">3</output>
+                <button type="button" class="w-10 h-10 text-lg" data-step="keys" data-d="1" aria-label="Eén sleutel meer">+</button>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Matrix -->
+        <div class="min-w-0 lg:col-span-8 bg-ink text-white rounded-3xl p-5 sm:p-7 overflow-hidden">
+          <div class="flex flex-wrap items-baseline justify-between gap-3">
+            <p class="font-display font-bold text-xl">Uw sluitplan</p>
+            <p id="planSummary" class="text-[14px] text-teal">4 cilinders · 3 sleutels · EVVA ICS</p>
+          </div>
+          <div class="mt-5 overflow-x-auto -mx-1 px-1 pb-2">
+            <table class="border-separate border-spacing-1.5 text-[14px]" id="matrix" aria-describedby="matrixHelp"></table>
+          </div>
+          <p id="matrixHelp" class="mt-3 text-[13px] text-white/60">Bij gelijksluitend opent elke sleutel elke deur. Kies "Sluitplan op maat" om per vakje te kiezen. Klik een naam om die aan te passen.</p>
+        </div>
+      </div>
+
+      <!-- Request -->
+      <form id="planForm" class="mt-6 bg-white rounded-3xl border border-line p-6 sm:p-8 grid md:grid-cols-12 gap-5 items-end" novalidate>
+        <div class="md:col-span-12">
+          <p class="font-display font-bold text-xl">Vraag de prijs voor dit sluitplan</p>
+          <p class="text-slate text-[15px] mt-1">U krijgt de prijs vooraf, zoals altijd. Geen verplichting.</p>
+        </div>
+        <label class="md:col-span-4 block"><span class="text-[14px] font-medium">Naam</span>
+          <input required name="naam" autocomplete="name" class="mt-1.5 w-full border border-line rounded-xl px-4 py-3 bg-paper/40" /></label>
+        <label class="md:col-span-4 block"><span class="text-[14px] font-medium">Telefoon of e-mail</span>
+          <input required name="contact" autocomplete="email" class="mt-1.5 w-full border border-line rounded-xl px-4 py-3 bg-paper/40" /></label>
+        <label class="md:col-span-4 block"><span class="text-[14px] font-medium">Opmerking (optioneel)</span>
+          <input name="opm" placeholder="bv. huis + tuinhuis" class="mt-1.5 w-full border border-line rounded-xl px-4 py-3 bg-paper/40" /></label>
+        <div class="md:col-span-12 flex flex-wrap items-center gap-4">
+          <button class="btn bg-tealdeep hover:bg-[#166469] text-white font-semibold rounded-full px-7 py-3.5">Vraag de prijs aan</button>
+          <p id="formErr" class="text-[14px] text-[#a33] hidden" role="alert">Vul uw naam en een telefoonnummer of e-mailadres in.</p>
+        </div>
+        <div id="planOk" class="md:col-span-12 hidden rounded-2xl bg-teal/20 border border-teal p-5" role="status">
+          <p class="font-display font-bold text-lg">Aanvraag ontvangen</p>
+          <p id="planOkText" class="mt-1 text-[15px]"></p>
+          <p class="mt-2 text-[13px] text-slate">Dit is een concept-demo: er is niets verstuurd.</p>
+        </div>
+      </form>
+    </section>
+
+    <!-- Cylinders -->
+    <section id="cilinders" class="bg-ink text-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="rv font-display font-extrabold text-[clamp(1.9rem,3.4vw,2.8rem)] tracking-tight leading-tight">Twee systemen die we door en door kennen</h2>
+          <p class="rv mt-4 text-white/75 leading-relaxed max-w-[48ch]">Wij werken met veiligheidscilinders van EVVA en DOM, ook voor sluitplannen. Bij elke cilinder hoort een eigendomskaart: een extra sleutel laten maken kan alleen met die kaart.</p>
+          <div class="mt-8 grid sm:grid-cols-2 gap-4">
+            <div class="rv rounded-2xl border border-white/15 p-5">
+              <p class="font-display font-bold text-lg">EVVA ICS</p>
+              <p class="mt-1 text-white/70 text-[15px]">Veiligheidscilinder met sleutelcertificaat, geschikt voor uitgebreide sluitplannen.</p>
+            </div>
+            <div class="rv rounded-2xl border border-white/15 p-5">
+              <p class="font-display font-bold text-lg">DOM Sigma</p>
+              <p class="mt-1 text-white/70 text-[15px]">Veiligheidscilinder met eigendomscertificaat op naam, ook als sluitplan.</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-5 gap-3">
+          <img src="images/evva.jpg" alt="Elektronische cilinder in een deur, met een sleutelrek op de achtergrond" class="col-span-5 sm:col-span-3 w-full h-56 sm:h-72 object-cover rounded-2xl" loading="lazy" width="1900" height="800" />
+          <img src="images/shop.jpg" alt="Klassiek kastslot naast een moderne elektronische cilinder" class="col-span-5 sm:col-span-2 w-full h-56 sm:h-72 object-cover object-right rounded-2xl" loading="lazy" width="980" height="513" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-20 grid lg:grid-cols-12 gap-10 items-center">
+      <blockquote class="lg:col-span-7 rv">
+        <p class="font-display font-bold text-[clamp(1.6rem,3vw,2.4rem)] leading-snug tracking-tight">“Snelle correcte service. 8 sleutels laten bijmaken… werken allemaal prima.”</p>
+        <footer class="mt-4 text-slate">Google-review</footer>
+      </blockquote>
+      <ul class="lg:col-span-5 space-y-4 text-[16px]">
+        <li class="flex gap-3"><svg class="flex-none mt-1" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="#1d7c82" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>De prijs krijgt u vooraf.</b> Geen verrassing aan de toonbank.</span></li>
+        <li class="flex gap-3"><svg class="flex-none mt-1" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="#1d7c82" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Sluitplannen in eigen werkplaats.</b> Niet doorgestuurd, hier samengesteld.</span></li>
+        <li class="flex gap-3"><svg class="flex-none mt-1" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="#1d7c82" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Sleutels terwijl u wacht.</b> Even binnenspringen volstaat meestal.</span></li>
+      </ul>
+    </section>
+
+    <!-- Visit -->
+    <section id="bezoek" class="bg-white border-t border-line">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 grid lg:grid-cols-3 gap-10">
+        <div>
+          <h2 class="font-display font-extrabold text-3xl tracking-tight">Langskomen</h2>
+          <address class="not-italic mt-4 text-[17px] leading-relaxed">Handelslei 128<br />2980 Zoersel</address>
+          <a class="mt-4 inline-block font-semibold text-tealdeep underline underline-offset-4" href="https://www.google.com/maps/search/?api=1&query=Jochems+Handelslei+128+2980+Zoersel" target="_blank" rel="noopener">Route in Google Maps</a>
+          <p class="mt-6 text-slate leading-relaxed">Vlakbij voor Sint-Antonius, Zoersel, Halle, Westmalle, Schilde en Ranst.</p>
+        </div>
+        <div>
+          <h3 class="font-display font-bold text-xl">Openingsuren</h3>
+          <table class="mt-4 w-full text-[16px]" id="hours">
+            <tr data-d="2"><td class="py-1.5 pr-4">Dinsdag</td><td>8:30–12:00 · 13:30–18:00</td></tr>
+            <tr data-d="3"><td class="py-1.5 pr-4">Woensdag</td><td>8:30–12:00 · 13:30–18:00</td></tr>
+            <tr data-d="5"><td class="py-1.5 pr-4">Vrijdag</td><td>8:30–12:00 · 13:30–18:00</td></tr>
+            <tr data-d="6"><td class="py-1.5 pr-4">Zaterdag</td><td>9:00–16:00</td></tr>
+            <tr class="text-slate"><td class="py-1.5 pr-4">Ma, do, zo</td><td>Gesloten</td></tr>
+          </table>
+        </div>
+        <div>
+          <h3 class="font-display font-bold text-xl">Contact</h3>
+          <p class="mt-4 text-[17px] leading-loose">
+            <a href="tel:+3233843729" class="font-semibold hover:text-tealdeep">03 384 37 29</a><br />
+            <a href="mailto:info@jochems-bvba.be" class="hover:text-tealdeep">info@jochems-bvba.be</a>
+          </p>
+          <a href="tel:+3233843729" class="btn mt-6 inline-flex bg-ink text-white font-semibold rounded-full px-6 py-3">Bel de winkel</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-ink text-white/60 text-[14px]">
+    <div class="bitting !bg-paper rotate-180" aria-hidden="true"></div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 pb-24 md:pb-8 flex flex-wrap justify-between gap-3">
+      <p>© Jochems bv · Handelslei 128, 2980 Zoersel</p>
+      <p>Concept-ontwerp door Saspire</p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden bg-tealdeep text-white">
+    <a href="tel:+3233843729" class="flex items-center justify-center gap-2.5 py-4 font-semibold">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      Bel Jochems: 03 384 37 29
+    </a>
+  </div>
+
+  <script>
+    document.documentElement.classList.add('js');
+    var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Reveal (content stays visible without JS / with reduced motion)
+    if ('IntersectionObserver' in window && !reduced) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
+      document.querySelectorAll('.rv').forEach(function (el) { io.observe(el); });
+    } else { document.querySelectorAll('.rv').forEach(function (el) { el.classList.add('in'); }); }
+
+    // Open-now status
+    (function () {
+      var slots = { 2: [[510, 720], [810, 1080]], 3: [[510, 720], [810, 1080]], 5: [[510, 720], [810, 1080]], 6: [[540, 960]] };
+      var now = new Date(), d = now.getDay(), m = now.getHours() * 60 + now.getMinutes();
+      var open = (slots[d] || []).some(function (s) { return m >= s[0] && m < s[1]; });
+      var row = document.querySelector('#hours tr[data-d="' + d + '"]');
+      if (row) row.classList.add('font-semibold');
+      document.getElementById('openNow').textContent = open ? 'Nu open · Handelslei 128, Zoersel' : 'Nu gesloten · bel of vraag online aan';
+      document.getElementById('openDot').style.background = open ? '#1d9a5a' : '#b8925a';
+    })();
+
+    // Sluitplan configurator
+    var state = { mode: 'gelijk', sys: 'EVVA ICS', doors: 4, keys: 3,
+      doorNames: ['Voordeur', 'Achterdeur', 'Garage', 'Tuinhuis', 'Kelder', 'Bureau', 'Poort', 'Berging'],
+      keyNames: ['Ouders', 'Kinderen', 'Poetshulp', 'Buren', 'Sleutel 5', 'Sleutel 6', 'Sleutel 7', 'Sleutel 8'],
+      grid: {} };
+    // sensible default plan
+    [[0,0],[0,1],[0,2],[0,3],[1,0],[1,1],[2,1]].forEach(function (p) { state.grid[p[0] + ':' + p[1]] = true; });
+
+    var key = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="7" cy="12" r="3.6" stroke="currentColor" stroke-width="2"/><path d="M10.6 12H21v3h-2v-2h-2v3h-2v-3h-4.4" fill="currentColor"/></svg>';
+    var esc = function (s) { return s.replace(/[&<>"]/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]; }); };
+
+    function opens(k, d) { return state.mode === 'gelijk' ? true : !!state.grid[k + ':' + d]; }
+
+    function render() {
+      var t = document.getElementById('matrix'), h = '<thead><tr><th></th>';
+      for (var d = 0; d < state.doors; d++) h += '<th class="font-medium text-white/80 px-1 pb-1 align-bottom"><span contenteditable="true" spellcheck="false" data-door="' + d + '" class="block max-w-[64px] truncate outline-none focus:text-teal" title="Klik om te hernoemen">' + esc(state.doorNames[d]) + '</span></th>';
+      h += '</tr></thead><tbody>';
+      for (var k = 0; k < state.keys; k++) {
+        h += '<tr><th class="text-left font-medium pr-3 whitespace-nowrap"><span contenteditable="true" spellcheck="false" data-key="' + k + '" class="outline-none focus:text-teal">' + esc(state.keyNames[k]) + '</span></th>';
+        for (var d2 = 0; d2 < state.doors; d2++) {
+          var on = opens(k, d2);
+          h += '<td><button type="button" class="cell" data-k="' + k + '" data-d="' + d2 + '" aria-pressed="' + on + '" aria-label="' + esc(state.keyNames[k]) + ' opent ' + esc(state.doorNames[d2]) + '"' + (state.mode === 'gelijk' ? ' disabled' : '') + '>' + key + '</button></td>';
+        }
+        h += '</tr>';
+      }
+      t.innerHTML = h + '</tbody>';
+      document.getElementById('doorsOut').textContent = state.doors;
+      document.getElementById('keysOut').textContent = state.keys;
+      var label = state.mode === 'gelijk' ? 'gelijksluitend' : 'sluitplan op maat';
+      document.getElementById('planSummary').textContent = state.doors + ' cilinders · ' + state.keys + ' sleutels · ' + state.sys + ' · ' + label;
+    }
+
+    document.getElementById('matrix').addEventListener('click', function (e) {
+      var b = e.target.closest('.cell'); if (!b || state.mode === 'gelijk') return;
+      var id = b.dataset.k + ':' + b.dataset.d; state.grid[id] = !state.grid[id];
+      b.setAttribute('aria-pressed', !!state.grid[id]);
+    });
+    document.getElementById('matrix').addEventListener('input', function (e) {
+      var el = e.target, v = el.textContent.trim().slice(0, 18);
+      if (el.dataset.door) state.doorNames[+el.dataset.door] = v || 'Deur';
+      if (el.dataset.key) state.keyNames[+el.dataset.key] = v || 'Sleutel';
+    });
+    document.getElementById('matrix').addEventListener('keydown', function (e) { if (e.key === 'Enter' && e.target.isContentEditable) { e.preventDefault(); e.target.blur(); } });
+
+    document.querySelectorAll('[data-mode]').forEach(function (b) { b.addEventListener('click', function () {
+      state.mode = b.dataset.mode;
+      if (state.mode === 'plan' && !Object.keys(state.grid).some(function (k) { return state.grid[k]; })) state.grid['0:0'] = true;
+      document.querySelectorAll('[data-mode]').forEach(function (x) { x.setAttribute('aria-checked', x === b); }); render(); }); });
+    document.querySelectorAll('[data-sys]').forEach(function (b) { b.addEventListener('click', function () {
+      state.sys = b.dataset.sys; document.querySelectorAll('[data-sys]').forEach(function (x) { x.setAttribute('aria-checked', x === b); }); render(); }); });
+    document.querySelectorAll('[data-step]').forEach(function (b) { b.addEventListener('click', function () {
+      var f = b.dataset.step; state[f] = Math.max(1, Math.min(8, state[f] + +b.dataset.d)); render(); }); });
+
+    document.getElementById('planForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var f = e.target, ok = f.naam.value.trim() && f.contact.value.trim();
+      document.getElementById('formErr').classList.toggle('hidden', !!ok);
+      if (!ok) return;
+      var lines = [];
+      for (var k = 0; k < state.keys; k++) {
+        var ds = []; for (var d = 0; d < state.doors; d++) if (opens(k, d)) ds.push(state.doorNames[d]);
+        lines.push(state.keyNames[k] + ': ' + (ds.length ? ds.join(', ') : 'geen deuren'));
+      }
+      document.getElementById('planOkText').innerHTML = 'Bedankt ' + esc(f.naam.value.trim().split(' ')[0]) + '. Jochems bekijkt uw plan (' + state.doors + ' cilinders, ' + state.keys + ' sleutels, ' + esc(state.sys) + ') en laat u de prijs vooraf weten.<br><span class="text-slate text-[14px]">' + lines.map(esc).join(' · ') + '</span>';
+      document.getElementById('planOk').classList.remove('hidden');
+      document.getElementById('planOk').scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'nearest' });
+    });
+
+    render();
+  </script>
+</body>
+</html>

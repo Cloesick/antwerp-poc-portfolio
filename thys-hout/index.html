@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Thys Hout | Houtzagerij en houthandel in Kapellen, hout op maat gezaagd</title>
+  <meta name="description" content="Thys Hout in Kapellen: houtzagerij en houthandel met meer dan 80 jaar passie voor hout. PEFC-gecertificeerd, lokaal hout, op maat gezaagd voor meubelmakers, parketbedrijven, scholen en hobbyisten. Geef je zaaglijst online door." />
+  <link rel="canonical" href="https://www.thyshout.be/" />
+  <meta name="theme-color" content="#1f2421" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Thys Hout" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Thys Hout | Houtzagerij in Kapellen" />
+  <meta property="og:description" content="Lokaal, PEFC-gecertificeerd hout, op maat gezaagd. Geef je zaaglijst door en kies je ophaalmoment." />
+  <meta property="og:url" content="https://www.thyshout.be/" />
+  <meta property="og:image" content="images/stam.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231f2421'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23c8935a' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='6' fill='none' stroke='%23c8935a' stroke-width='1.4'/%3E%3Ccircle cx='16' cy='16' r='2' fill='%2302934e'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["HardwareStore", "HomeAndConstructionBusiness"],
+    "name": "Thys Hout",
+    "description": "Houtzagerij en houthandel in Kapellen. PEFC-gecertificeerd, overwegend Belgisch hout, houtbewerking op maat voor particulieren en vakmensen.",
+    "url": "https://www.thyshout.be/",
+    "telephone": "+3236600670",
+    "email": "info@thyshout.be",
+    "image": "https://www.thyshout.be/images/layout/logo_gevel.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Starrenhoflaan 22",
+      "postalCode": "2950",
+      "addressLocality": "Kapellen",
+      "addressCountry": "BE"
+    },
+    "areaServed": ["Kapellen", "Brasschaat", "Stabroek", "Kalmthout", "Ekeren", "Antwerpen"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "09:00", "closes": "12:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "13:00", "closes": "16:30" }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,400..900&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Public Sans"', 'system-ui', 'sans-serif'], display: ['Anybody', 'sans-serif'] },
+          colors: {
+            bark: '#1f2421',
+            char: '#2b312d',
+            leaf: '#02934e',
+            oak: '#c8935a',
+            sap: '#ece4d4',
+            chalk: '#f6f4ef',
+            ash: '#8d958f',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root { --ease: cubic-bezier(0.23, 1, 0.32, 1); }
+    html { scroll-behavior: smooth; }
+    h1, h2, h3 { text-wrap: balance; }
+    .wide { font-family: Anybody, sans-serif; font-stretch: 140%; font-variation-settings: "wdth" 140; }
+    .xwide { font-family: Anybody, sans-serif; font-stretch: 150%; font-variation-settings: "wdth" 150; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), border-color .18s var(--ease), color .18s var(--ease); }
+    .btn:active { transform: scale(0.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid #02934e; outline-offset: 2px; }
+
+    /* Hero saw-cut: the one orchestrated motion moment */
+    @keyframes cut { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @keyframes dust { 0% { opacity: 0; transform: translateY(0); } 30% { opacity: .9; } 100% { opacity: 0; transform: translateY(-26px) translateX(10px); } }
+    .sawline { transform-origin: left; animation: cut 1.6s .4s var(--ease) both; }
+    .ticket-row { opacity: 0; animation: rowin .5s var(--ease) both; }
+    .ticket-row:nth-child(1) { animation-delay: 1.2s; } .ticket-row:nth-child(2) { animation-delay: 1.35s; } .ticket-row:nth-child(3) { animation-delay: 1.5s; }
+    @keyframes rowin { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+    /* Wood swatches */
+    .swatch { background-size: 100% 100%; }
+    .grain { background-image: repeating-linear-gradient(90deg, rgba(0,0,0,.06) 0 1px, transparent 1px 7px), repeating-linear-gradient(90deg, rgba(255,255,255,.07) 0 2px, transparent 2px 19px); }
+    .species { transition: transform .25s var(--ease), box-shadow .25s var(--ease); }
+    .species:hover { transform: translateY(-3px); box-shadow: 0 14px 30px -14px rgba(31,36,33,.45); }
+    .species[aria-pressed="true"] { box-shadow: 0 0 0 3px #02934e; }
+
+    .field { width: 100%; background: #fff; border: 1px solid #d9d2c3; border-radius: 8px; padding: .6rem .7rem; font-size: 15px; }
+    .field:focus { border-color: #02934e; }
+    .slot { transition: background-color .15s var(--ease), color .15s var(--ease), border-color .15s var(--ease); }
+    .slot[aria-pressed="true"] { background: #1f2421; color: #fff; border-color: #1f2421; }
+    .slot:disabled { opacity: .35; cursor: not-allowed; text-decoration: line-through; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .sawline, .ticket-row { animation: none; opacity: 1; transform: none; }
+      .species, .btn { transition: none; }
+      .species:hover { transform: none; }
+    }
+  </style>
+</head>
+<body class="bg-chalk text-bark font-sans antialiased">
+
+  <div class="fixed bottom-[68px] md:bottom-4 right-3 md:right-4 z-50">
+    <span class="text-[11px] tracking-wide text-sap bg-bark/90 rounded-full px-3 py-1.5 backdrop-blur shadow">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-black/10">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-5 h-[68px] flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top" class="shrink-0"><img src="images/logo.jpg" alt="Thys Hout, zagerij, houthandel, interieur" class="h-9 sm:h-10 w-auto" width="404" height="87" /></a>
+      <div class="hidden lg:flex items-center gap-7 text-[14px] font-medium text-char">
+        <a href="#houtsoorten" class="hover:text-leaf">Houtsoorten</a>
+        <a href="#zaaglijst" class="hover:text-leaf">Hout op maat</a>
+        <a href="#herkomst" class="hover:text-leaf">Herkomst</a>
+        <a href="#bezoek" class="hover:text-leaf">Openingsuren</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <span id="openchip" class="hidden sm:inline-flex items-center gap-2 text-[13px] text-char"><span class="w-2 h-2 rounded-full bg-ash"></span>Ma–do 9:00–16:30</span>
+        <a href="tel:+3236600670" class="btn inline-flex items-center gap-2 bg-leaf hover:bg-[#027a41] text-white font-semibold text-[14px] rounded-lg px-4 py-2.5 whitespace-nowrap">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <span class="hidden sm:inline">03 660 06 70</span><span class="sm:hidden">Bel</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative bg-bark text-chalk overflow-hidden">
+    <img src="images/jaarringen.jpg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover opacity-[.16] mix-blend-luminosity" />
+    <div class="absolute inset-0 bg-gradient-to-r from-bark via-bark/95 to-bark/40" aria-hidden="true"></div>
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-5 grid lg:grid-cols-12 gap-10 lg:gap-8 items-center py-14 lg:py-0 lg:min-h-[640px]">
+      <div class="lg:col-span-7">
+        <p class="text-oak font-semibold text-[15px] mb-5">Houtzagerij &amp; houthandel in Kapellen, al meer dan 80 jaar</p>
+        <h1 class="xwide font-extrabold leading-[0.98] tracking-[-0.01em] text-[clamp(2.5rem,6.2vw,4.9rem)]">Thys Hout</h1>
+        <p class="wide font-semibold text-[clamp(1.2rem,2.3vw,1.7rem)] leading-snug mt-4 text-sap max-w-[26ch]">Lokaal hout, op jouw maat gezaagd.</p>
+        <div class="relative mt-7 h-[3px] max-w-[420px] bg-white/10 rounded" aria-hidden="true"><div class="sawline absolute inset-0 bg-oak rounded"></div></div>
+        <p class="mt-7 text-[17px] leading-relaxed text-sap/85 max-w-[52ch]">Eik, beuk, notelaar, douglas en nog zeven andere soorten, PEFC-gecertificeerd en grotendeels uit Belgische bossen. Voor meubelmakers, parketbedrijven, scholen en hobbyisten.</p>
+        <div class="mt-9 flex flex-wrap items-center gap-3">
+          <a href="#zaaglijst" class="btn inline-flex items-center gap-2.5 bg-leaf hover:bg-[#027a41] text-white font-semibold rounded-lg px-6 py-3.5">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h10M4 17h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            Zaaglijst doorgeven
+          </a>
+          <a href="#houtsoorten" class="btn inline-flex items-center gap-2 border border-white/25 hover:border-white/60 text-chalk font-semibold rounded-lg px-6 py-3.5">Bekijk de houtsoorten</a>
+        </div>
+      </div>
+
+      <!-- Hero visual: their own log + a zaaglijst ticket -->
+      <div class="lg:col-span-5 relative h-[360px] sm:h-[440px] lg:h-[520px]">
+        <div class="absolute inset-0 lg:-right-24 rounded-2xl lg:rounded-r-none overflow-hidden shadow-2xl">
+          <img src="images/stam.jpg" alt="Gezaagde eikenstam op het terrein van Thys Hout" class="w-full h-full object-cover" />
+        </div>
+        <div class="absolute left-3 sm:-left-8 bottom-4 sm:bottom-8 w-[min(330px,88%)] bg-chalk text-bark rounded-xl shadow-[0_30px_60px_-20px_rgba(0,0,0,.7)] p-5" aria-hidden="true">
+          <div class="flex items-center justify-between">
+            <p class="wide font-bold text-[15px]">Zaaglijst</p>
+            <p class="text-[12px] text-ash">ophalen do 8 okt</p>
+          </div>
+          <div class="mt-3 divide-y divide-black/10 text-[13px]">
+            <div class="ticket-row flex justify-between py-2"><span>2× Eik</span><span class="tabular-nums text-char">27 × 200 × 2400</span></div>
+            <div class="ticket-row flex justify-between py-2"><span>4× Notelaar</span><span class="tabular-nums text-char">32 × 150 × 900</span></div>
+            <div class="ticket-row flex justify-between py-2"><span>1× Douglas</span><span class="tabular-nums text-char">45 × 95 × 3000</span></div>
+          </div>
+          <p class="mt-3 text-[12px] text-ash">maten in mm · 0,059 m³</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facts strip (all from thyshout.be) -->
+  <section class="bg-sap border-b border-black/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-5 py-8 grid grid-cols-2 lg:grid-cols-4 gap-6">
+      <div><p class="wide font-extrabold text-3xl">80+ jaar</p><p class="text-[14px] text-char/80 mt-1">passie voor hout in Kapellen</p></div>
+      <div><p class="wide font-extrabold text-3xl">± 80%</p><p class="text-[14px] text-char/80 mt-1">van de stammen uit Belgische bossen</p></div>
+      <div><p class="wide font-extrabold text-3xl">300 km</p><p class="text-[14px] text-char/80 mt-1">maximale straal waarbinnen we hout kopen</p></div>
+      <div><p class="wide font-extrabold text-3xl">PEFC</p><p class="text-[14px] text-char/80 mt-1">gecertificeerd, elke stam traceerbaar</p></div>
+    </div>
+  </section>
+
+  <!-- Houtsoorten -->
+  <section id="houtsoorten" class="max-w-6xl mx-auto px-4 sm:px-5 py-20">
+    <div class="grid lg:grid-cols-12 gap-6 items-end mb-10">
+      <h2 class="lg:col-span-7 wide font-extrabold text-[clamp(1.7rem,3.4vw,2.6rem)] leading-tight">Elf houtsoorten, rechtstreeks van de zagerij.</h2>
+      <p class="lg:col-span-5 text-char/80 leading-relaxed">Tik een soort aan en ze staat meteen klaar in je zaaglijst. Standaardmaten of op maat gezaagd, je zegt het maar.</p>
+    </div>
+    <div id="speciesGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3"></div>
+    <noscript><p class="text-char/80 mt-4">Eik · Beuk · Esdoorn · Kastanje · Olm/Iep · Douglas · Lariks · Notelaar · Es · Amerikaanse eik · Haagbeuk</p></noscript>
+  </section>
+
+  <!-- Wat we doen -->
+  <section class="bg-white border-y border-black/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-5 py-20 grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-5">
+        <h2 class="wide font-extrabold text-[clamp(1.7rem,3.4vw,2.6rem)] leading-tight">Van stam tot plank, onder één dak.</h2>
+        <p class="mt-5 text-char/80 leading-relaxed max-w-[48ch]">Thys Hout zaagt zelf, droogt en bewerkt. Je spreekt dus rechtstreeks met de mensen die je hout zagen, of je nu één tafelblad nodig hebt of een vrachtje parketlamellen.</p>
+        <figure class="mt-8 rounded-xl overflow-hidden">
+          <img src="images/zagerij.jpg" alt="De toonzaal van Thys Hout aan de Starrenhoflaan" class="w-full h-56 object-cover" loading="lazy" />
+        </figure>
+      </div>
+      <div class="lg:col-span-7 grid sm:grid-cols-2 gap-x-8 gap-y-10 content-start">
+        <div>
+          <h3 class="font-bold text-lg">Houtzagerij</h3>
+          <p class="mt-2 text-char/80 leading-relaxed">Stammen uit verantwoord beheerde bossen, gezaagd in Kapellen tot balken, planken en dikke tafelbladen.</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg">Houtbewerking op maat</h3>
+          <p class="mt-2 text-char/80 leading-relaxed">Geef dikte, breedte en lengte op: wij zagen en bewerken het hout zodat het klaarligt voor je project.</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg">Interieurhout</h3>
+          <p class="mt-2 text-char/80 leading-relaxed">Massief hout voor tafels, trappen, wandbekleding en meubels, met de tekening van een echte boom.</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg">Duurzaam hout</h3>
+          <p class="mt-2 text-char/80 leading-relaxed">PEFC-gecertificeerd, lokaal ingekocht binnen 300 km, met transparante stammentransacties.</p>
+        </div>
+        <div class="sm:col-span-2 border-t border-black/10 pt-8">
+          <h3 class="font-bold text-lg">Voor wie we zagen</h3>
+          <ul class="mt-4 flex flex-wrap gap-2 text-[14px]">
+            <li class="bg-sap rounded-full px-3.5 py-1.5">Trappenmakers</li>
+            <li class="bg-sap rounded-full px-3.5 py-1.5">Meubelmakers</li>
+            <li class="bg-sap rounded-full px-3.5 py-1.5">Tafelmakers</li>
+            <li class="bg-sap rounded-full px-3.5 py-1.5">Parketbedrijven</li>
+            <li class="bg-sap rounded-full px-3.5 py-1.5">Interieurbedrijven</li>
+            <li class="bg-sap rounded-full px-3.5 py-1.5">Scholen</li>
+            <li class="bg-sap rounded-full px-3.5 py-1.5">Hobbyisten</li>
+            <li class="bg-sap rounded-full px-3.5 py-1.5">Particulieren</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signature: zaaglijst -->
+  <section id="zaaglijst" class="bg-bark text-chalk">
+    <div class="max-w-6xl mx-auto px-4 sm:px-5 py-20">
+      <div class="max-w-[60ch]">
+        <h2 class="wide font-extrabold text-[clamp(1.7rem,3.4vw,2.6rem)] leading-tight">Geef je zaaglijst door, haal je hout op.</h2>
+        <p class="mt-4 text-sap/80 leading-relaxed">Zet je stukken in de lijst, kies een ophaalmoment op een dag dat we open zijn, en we bellen je terug met prijs en bevestiging. Geen vergeefse rit meer naar een gesloten poort.</p>
+      </div>
+
+      <noscript><p class="mt-8 bg-char rounded-xl p-5">Bel ons op <a class="underline" href="tel:+3236600670">03 660 06 70</a> of mail naar info@thyshout.be met je zaaglijst.</p></noscript>
+
+      <div id="calc" class="mt-10 grid lg:grid-cols-12 gap-6">
+        <!-- Step 1 -->
+        <div class="min-w-0 lg:col-span-8 bg-chalk text-bark rounded-2xl p-5 sm:p-7">
+          <div class="flex items-center justify-between gap-4">
+            <h3 class="wide font-bold text-lg">1. Je stukken</h3>
+            <p class="text-[13px] text-ash">alle maten in millimeter</p>
+          </div>
+          <div id="rows" class="mt-5 space-y-4"></div>
+          <button id="addRow" type="button" class="btn mt-5 inline-flex items-center gap-2 border border-bark/20 hover:border-bark rounded-lg px-4 py-2.5 font-semibold text-[14px]">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+            Stuk toevoegen
+          </button>
+
+          <h3 class="wide font-bold text-lg mt-10">2. Ophaalmoment</h3>
+          <p class="text-[14px] text-char/70 mt-1">Enkel dagen waarop Thys Hout open is. Sluitingsdagen en verlof vallen automatisch weg.</p>
+          <div id="days" class="mt-4 flex gap-2 overflow-x-auto pb-2"></div>
+          <div id="parts" class="mt-3 flex gap-2"></div>
+
+          <h3 class="wide font-bold text-lg mt-10">3. Je gegevens</h3>
+          <form id="orderForm" class="mt-4 grid sm:grid-cols-2 gap-3" novalidate>
+            <label class="text-[13px] font-semibold">Naam<input name="naam" class="field mt-1 font-normal" autocomplete="name" required /></label>
+            <label class="text-[13px] font-semibold">Telefoon<input name="tel" type="tel" class="field mt-1 font-normal" autocomplete="tel" required /></label>
+            <label class="text-[13px] font-semibold sm:col-span-2">Opmerking <span class="font-normal text-ash">(optioneel)</span><textarea name="msg" rows="2" class="field mt-1 font-normal" placeholder="Bv. graag kantrecht, of: ik kom met een aanhangwagen"></textarea></label>
+            <p id="formErr" class="sm:col-span-2 text-[14px] text-[#b3261e] hidden" role="alert"></p>
+            <button type="submit" class="btn sm:col-span-2 bg-leaf hover:bg-[#027a41] text-white font-semibold rounded-lg px-6 py-3.5">Zaaglijst versturen</button>
+          </form>
+        </div>
+
+        <!-- Live summary -->
+        <aside class="min-w-0 lg:col-span-4">
+          <div class="lg:sticky lg:top-24 bg-char rounded-2xl p-6" aria-live="polite">
+            <p class="wide font-bold">Je zaaglijst</p>
+            <div id="sumList" class="mt-4 space-y-3 text-[14px]"></div>
+            <dl class="mt-5 pt-5 border-t border-white/10 grid grid-cols-2 gap-y-2 text-[14px]">
+              <dt class="text-sap/70">Stuks</dt><dd id="sumPcs" class="text-right tabular-nums font-semibold">0</dd>
+              <dt class="text-sap/70">Lopende meter</dt><dd id="sumLm" class="text-right tabular-nums font-semibold">0</dd>
+              <dt class="text-sap/70">Volume</dt><dd id="sumM3" class="text-right tabular-nums font-semibold">0</dd>
+              <dt class="text-sap/70">Ophalen</dt><dd id="sumWhen" class="text-right font-semibold">nog kiezen</dd>
+            </dl>
+            <p class="mt-5 text-[12px] text-sap/60 leading-relaxed">Prijs volgt na controle door de zagerij: houtprijzen hangen af van de stam en de kwaliteit.</p>
+          </div>
+        </aside>
+      </div>
+
+      <div id="done" class="hidden mt-10 bg-chalk text-bark rounded-2xl p-8 max-w-2xl" role="status" tabindex="-1">
+        <div class="w-12 h-12 rounded-full bg-leaf text-white grid place-items-center">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="wide font-extrabold text-2xl mt-5">Zaaglijst ontvangen</h3>
+        <p id="doneText" class="mt-3 text-char/80 leading-relaxed"></p>
+        <p class="mt-4 text-[13px] text-ash">Dit is een concept-demo: er is niets verzonden. Op de echte site komt je aanvraag rechtstreeks in de mailbox van Thys Hout.</p>
+        <button id="again" type="button" class="btn mt-6 border border-bark/20 hover:border-bark rounded-lg px-5 py-2.5 font-semibold text-[14px]">Nieuwe zaaglijst</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Herkomst -->
+  <section id="herkomst" class="relative">
+    <div class="max-w-6xl mx-auto px-4 sm:px-5 py-20 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="wide font-extrabold text-[clamp(1.7rem,3.4vw,2.6rem)] leading-tight">Je weet uit welk bos je plank komt.</h2>
+        <p class="mt-5 text-char/80 leading-relaxed max-w-[54ch]">Al het hout van Thys Hout is PEFC-gecertificeerd: het komt uit bossen die verantwoord beheerd worden. Ongeveer 80% van de stammen groeit in Belgische bossen, de rest in Noord-Frankrijk en West-Duitsland. We kopen binnen een straal van 300 km, en de herkomst van elke stam is volledig traceerbaar.</p>
+        <figure class="mt-9 border-l-4 border-oak pl-5">
+          <blockquote class="wide font-bold text-2xl">“Keuze is reuze.”</blockquote>
+          <figcaption class="mt-2 text-[14px] text-ash">Google-review</figcaption>
+        </figure>
+      </div>
+      <div class="relative">
+        <svg viewBox="0 0 400 320" class="w-full h-auto" role="img" aria-label="Kaart: hout ingekocht binnen 300 km rond Kapellen, in België, Noord-Frankrijk en West-Duitsland">
+          <defs><radialGradient id="rg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#02934e" stop-opacity=".22"/><stop offset="1" stop-color="#02934e" stop-opacity=".03"/></radialGradient></defs>
+          <rect width="400" height="320" rx="18" fill="#ece4d4"/>
+          <circle cx="190" cy="120" r="150" fill="url(#rg)" stroke="#02934e" stroke-dasharray="4 6" stroke-width="1.5"/>
+          <path d="M120 70 L205 52 L262 92 L280 160 L240 230 L170 238 L120 200 L92 140 Z" fill="#fff" stroke="#2b312d" stroke-width="1.5" opacity=".9"/>
+          <text x="180" y="170" font-family="Public Sans" font-size="13" fill="#2b312d">België ± 80%</text>
+          <text x="70" y="262" font-family="Public Sans" font-size="12" fill="#2b312d">Noord-Frankrijk</text>
+          <text x="290" y="208" font-family="Public Sans" font-size="12" fill="#2b312d">West-Duitsland</text>
+          <circle cx="190" cy="78" r="6" fill="#02934e"/><circle cx="190" cy="78" r="12" fill="none" stroke="#02934e" stroke-width="1.5"/>
+          <text x="204" y="74" font-family="Public Sans" font-weight="700" font-size="13" fill="#1f2421">Kapellen</text>
+          <text x="306" y="40" font-family="Public Sans" font-size="11" fill="#02934e">straal 300 km</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planken band -->
+  <div class="h-28 sm:h-36 bg-cover bg-center" style="background-image:url('images/planken.jpg')" role="img" aria-label="Gezaagde planken"></div>
+
+  <!-- Bezoek -->
+  <section id="bezoek" class="bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-5 py-20 grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-5">
+        <h2 class="wide font-extrabold text-[clamp(1.7rem,3.4vw,2.6rem)] leading-tight">Langskomen in Kapellen</h2>
+        <p id="openNow" class="mt-5 inline-flex items-center gap-2 rounded-full bg-sap px-4 py-2 text-[14px] font-semibold"><span class="w-2 h-2 rounded-full bg-ash"></span>Ma–do 9:00–16:30</p>
+        <table class="mt-6 w-full text-[15px]">
+          <tbody class="divide-y divide-black/10">
+            <tr><td class="py-2.5">Maandag – donderdag</td><td class="py-2.5 text-right tabular-nums">9:00–12:00 · 13:00–16:30</td></tr>
+            <tr><td class="py-2.5">Vrijdag, zaterdag, zondag</td><td class="py-2.5 text-right">gesloten</td></tr>
+          </tbody>
+        </table>
+        <h3 class="font-bold mt-8">Sluitingsdagen</h3>
+        <ul id="closures" class="mt-3 text-[14px] text-char/80 space-y-1.5">
+          <li>Allerheiligen: 2 en 3 november 2026</li>
+          <li>Jaarlijks verlof: 18 december 2026 t.e.m. 2 januari 2027</li>
+        </ul>
+        <div class="mt-8 space-y-2 text-[15px]">
+          <p>Starrenhoflaan 22, 2950 Kapellen</p>
+          <p><a href="tel:+3236600670" class="font-semibold hover:text-leaf">03 660 06 70</a> · <a href="mailto:info@thyshout.be" class="font-semibold hover:text-leaf">info@thyshout.be</a></p>
+          <p class="text-char/70 text-[14px]">Klanten uit Kapellen, Brasschaat, Stabroek, Kalmthout, Ekeren, Antwerpen en heel Vlaanderen.</p>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Thys+Hout+Starrenhoflaan+22+2950+Kapellen" target="_blank" rel="noopener" class="btn mt-7 inline-flex items-center gap-2 bg-bark hover:bg-char text-white font-semibold rounded-lg px-5 py-3">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0112 2.5a7 7 0 017 7C19 14.8 12 21 12 21z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="2"/></svg>
+          Route in Google Maps
+        </a>
+      </div>
+      <figure class="lg:col-span-7 rounded-2xl overflow-hidden self-start">
+        <img src="images/gevel.jpg" alt="De gevel van Thys Hout aan de Starrenhoflaan in Kapellen" class="w-full h-full object-cover" loading="lazy" width="560" height="370" />
+      </figure>
+    </div>
+  </section>
+
+  <footer class="bg-bark text-sap/70 text-[14px] pb-20 md:pb-0">
+    <div class="max-w-6xl mx-auto px-4 sm:px-5 py-10 flex flex-col sm:flex-row gap-3 justify-between">
+      <p>© Thys Hout · Zagerij, houthandel, interieur · Starrenhoflaan 22, 2950 Kapellen</p>
+      <p>Conceptontwerp door Saspire</p>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile call bar -->
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden grid grid-cols-2 text-white font-semibold">
+    <a href="tel:+3236600670" class="flex items-center justify-center gap-2 py-3.5 bg-leaf">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      Bel 03 660 06 70
+    </a>
+    <a href="#zaaglijst" class="flex items-center justify-center py-3.5 bg-bark">Zaaglijst</a>
+  </div>
+
+  <script>
+  (function () {
+    // ---------- Data (species list from thyshout.be/bedrijf) ----------
+    var SPECIES = [
+      { n: 'Eik', t: 'Loofhout', c: ['#b8864f', '#8f6435'] },
+      { n: 'Beuk', t: 'Loofhout', c: ['#d9a77a', '#b98457'] },
+      { n: 'Esdoorn', t: 'Loofhout', c: ['#ecdcbf', '#d6c19c'] },
+      { n: 'Kastanje', t: 'Loofhout', c: ['#a9783f', '#7f5527'] },
+      { n: 'Olm/Iep', t: 'Loofhout', c: ['#9c6a43', '#73492b'] },
+      { n: 'Douglas', t: 'Naaldhout', c: ['#d39a69', '#b0714a'] },
+      { n: 'Lariks', t: 'Naaldhout', c: ['#d8a06a', '#b37a45'] },
+      { n: 'Notelaar', t: 'Loofhout', c: ['#6e4a32', '#4a2f1f'] },
+      { n: 'Es', t: 'Loofhout', c: ['#e3cfa8', '#c7ae82'] },
+      { n: 'Amerikaanse eik', t: 'Loofhout', c: ['#c99a6c', '#a87648'] },
+      { n: 'Haagbeuk', t: 'Loofhout', c: ['#e6dcc6', '#cdbf9f'] }
+    ];
+    // Closing days from thyshout.be/contact (inclusive ranges)
+    var CLOSED = [
+      ['2025-12-19', '2026-01-04'], ['2026-04-06', '2026-04-06'], ['2026-05-14', '2026-05-15'],
+      ['2026-05-25', '2026-05-25'], ['2026-07-13', '2026-07-31'], ['2026-11-02', '2026-11-03'],
+      ['2026-12-18', '2027-01-02']
+    ];
+    var DAYS = ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za'];
+    var DAYS_L = ['zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag'];
+    var MONTHS = ['jan', 'feb', 'mrt', 'apr', 'mei', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec'];
+    var fmtN = function (x, d) { return x.toLocaleString('nl-BE', { minimumFractionDigits: d, maximumFractionDigits: d }); };
+    var iso = function (d) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); };
+    var isClosedDate = function (d) { var s = iso(d); return CLOSED.some(function (r) { return s >= r[0] && s <= r[1]; }); };
+    var isOpenDay = function (d) { var w = d.getDay(); return w >= 1 && w <= 4 && !isClosedDate(d); };
+
+    // ---------- Live open/closed status ----------
+    (function () {
+      var now = new Date(), m = now.getHours() * 60 + now.getMinutes();
+      var open = isOpenDay(now) && ((m >= 540 && m < 720) || (m >= 780 && m < 990));
+      var next = new Date(now); var label;
+      if (open) label = 'Nu open tot ' + (m < 720 ? '12:00' : '16:30');
+      else if (isOpenDay(now) && m >= 720 && m < 780) label = 'Middagpauze, open om 13:00';
+      else if (isOpenDay(now) && m < 540) label = 'Gesloten, vandaag open om 9:00';
+      else {
+        do { next.setDate(next.getDate() + 1); } while (!isOpenDay(next));
+        label = 'Gesloten, open ' + DAYS_L[next.getDay()] + ' ' + next.getDate() + ' ' + MONTHS[next.getMonth()] + ' om 9:00';
+      }
+      var dot = '<span class="w-2 h-2 rounded-full ' + (open ? 'bg-leaf' : 'bg-[#c0533a]') + '"></span>';
+      ['openchip', 'openNow'].forEach(function (id) { var el = document.getElementById(id); if (el) el.innerHTML = dot + label; });
+    })();
+
+    // ---------- Species grid ----------
+    var grid = document.getElementById('speciesGrid');
+    SPECIES.forEach(function (s) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'species text-left rounded-xl overflow-hidden bg-white border border-black/10';
+      b.setAttribute('aria-pressed', 'false');
+      b.innerHTML = '<span class="block h-20 sm:h-24 grain" style="background-color:' + s.c[0] + ';background-image:repeating-linear-gradient(90deg, rgba(0,0,0,.07) 0 1px, transparent 1px 7px),repeating-linear-gradient(92deg, rgba(255,255,255,.08) 0 2px, transparent 2px 23px),linear-gradient(180deg,' + s.c[0] + ',' + s.c[1] + ')"></span>' +
+        '<span class="flex flex-wrap items-baseline justify-between gap-x-2 px-4 py-3"><span class="font-bold">' + s.n + '</span><span class="text-[12px] text-ash">' + s.t + '</span></span>';
+      b.addEventListener('click', function () {
+        addRow({ soort: s.n });
+        [].forEach.call(grid.children, function (x) { x.setAttribute('aria-pressed', 'false'); });
+        b.setAttribute('aria-pressed', 'true');
+        document.getElementById('zaaglijst').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+      });
+      grid.appendChild(b);
+    });
+
+    // ---------- Zaaglijst ----------
+    var rowsEl = document.getElementById('rows');
+    var rows = [];
+    var uid = 0;
+    function addRow(pre) {
+      var r = Object.assign({ id: ++uid, soort: 'Eik', d: 27, b: 200, l: 2000, n: 1, schaven: false }, pre || {});
+      // If the only row is the untouched default, replace it instead of stacking
+      if (pre && rows.length === 1 && !rows[0].touched) rows = [];
+      rows.push(r); render();
+    }
+    function render() {
+      rowsEl.innerHTML = '';
+      rows.forEach(function (r, i) {
+        var w = document.createElement('div');
+        w.className = 'rounded-xl border border-black/10 bg-white p-4';
+        var opts = SPECIES.map(function (s) { return '<option' + (s.n === r.soort ? ' selected' : '') + '>' + s.n + '</option>'; }).join('');
+        w.innerHTML =
+          '<div class="grid grid-cols-2 sm:grid-cols-12 gap-3 items-end">' +
+          '<label class="col-span-2 sm:col-span-3 text-[12px] font-semibold">Houtsoort<select data-k="soort" class="field mt-1 font-normal">' + opts + '</select></label>' +
+          '<label class="sm:col-span-2 text-[12px] font-semibold">Dikte<input data-k="d" type="number" min="5" max="150" inputmode="numeric" value="' + r.d + '" class="field mt-1 font-normal tabular-nums" /></label>' +
+          '<label class="sm:col-span-2 text-[12px] font-semibold">Breedte<input data-k="b" type="number" min="10" max="1000" inputmode="numeric" value="' + r.b + '" class="field mt-1 font-normal tabular-nums" /></label>' +
+          '<label class="sm:col-span-2 text-[12px] font-semibold">Lengte<input data-k="l" type="number" min="100" max="6000" inputmode="numeric" value="' + r.l + '" class="field mt-1 font-normal tabular-nums" /></label>' +
+          '<label class="sm:col-span-1 text-[12px] font-semibold">Aantal<input data-k="n" type="number" min="1" max="999" inputmode="numeric" value="' + r.n + '" class="field mt-1 font-normal tabular-nums" /></label>' +
+          '<div class="col-span-2 sm:col-span-2 flex items-center justify-between sm:justify-end gap-3 pb-1">' +
+          '<label class="inline-flex items-center gap-2 text-[13px]"><input data-k="schaven" type="checkbox" class="w-4 h-4 accent-[#02934e]"' + (r.schaven ? ' checked' : '') + ' />geschaafd</label>' +
+          (rows.length > 1 ? '<button type="button" data-del class="text-[13px] text-ash hover:text-[#b3261e] underline">verwijder</button>' : '') +
+          '</div></div>' +
+          '<div class="mt-3"><svg class="w-full h-7" viewBox="0 0 600 28" preserveAspectRatio="none" aria-hidden="true"><rect data-plank x="0" y="6" height="16" rx="2" width="10" fill="#c8935a"/></svg><p data-note class="text-[12px] text-ash"></p></div>';
+        w.querySelectorAll('[data-k]').forEach(function (inp) {
+          inp.addEventListener('input', function () {
+            var k = inp.dataset.k;
+            r[k] = k === 'soort' ? inp.value : k === 'schaven' ? inp.checked : Math.max(0, parseFloat(inp.value) || 0);
+            r.touched = true;
+            paint(w, r); summary();
+          });
+        });
+        var del = w.querySelector('[data-del]');
+        if (del) del.addEventListener('click', function () { rows.splice(i, 1); render(); });
+        rowsEl.appendChild(w);
+        paint(w, r);
+      });
+      summary();
+    }
+    function speciesColor(n) { var s = SPECIES.filter(function (x) { return x.n === n; })[0]; return s ? s.c[0] : '#c8935a'; }
+    function paint(w, r) {
+      var p = w.querySelector('[data-plank]');
+      var len = Math.min(r.l, 6000);
+      p.setAttribute('width', Math.max(6, len / 6000 * 600));
+      var h = Math.max(4, Math.min(24, r.d / 6));
+      p.setAttribute('height', h); p.setAttribute('y', 14 - h / 2);
+      p.setAttribute('fill', speciesColor(r.soort));
+      var warn = [];
+      if (r.l > 6000) warn.push('langer dan 6 m: even bellen om te checken of het kan');
+      if (r.d > 0 && r.d < 8) warn.push('erg dun, we bevestigen of dit haalbaar is');
+      w.querySelector('[data-note]').textContent = (r.l / 1000).toLocaleString('nl-BE') + ' m lang' + (warn.length ? ' · ' + warn.join(' · ') : '');
+    }
+    function summary() {
+      var pcs = 0, lm = 0, m3 = 0, html = '';
+      rows.forEach(function (r) {
+        pcs += r.n; lm += r.l / 1000 * r.n; m3 += r.d * r.b * r.l * r.n / 1e9;
+        html += '<div class="flex justify-between gap-3"><span>' + r.n + '× ' + r.soort + (r.schaven ? ' <span class="text-sap/60">geschaafd</span>' : '') + '</span><span class="tabular-nums text-sap/80 whitespace-nowrap">' + r.d + '×' + r.b + '×' + r.l + '</span></div>';
+      });
+      document.getElementById('sumList').innerHTML = html || '<p class="text-sap/60">Nog geen stukken.</p>';
+      document.getElementById('sumPcs').textContent = pcs;
+      document.getElementById('sumLm').textContent = fmtN(lm, 1) + ' m';
+      document.getElementById('sumM3').textContent = fmtN(m3, 3) + ' m³';
+    }
+    document.getElementById('addRow').addEventListener('click', function () { addRow({ touched: true }); });
+    addRow();
+
+    // ---------- Pick-up moment ----------
+    var daysEl = document.getElementById('days'), partsEl = document.getElementById('parts');
+    var pick = { day: null, part: null };
+    var d = new Date(); d.setHours(0, 0, 0, 0); d.setDate(d.getDate() + 1);
+    var count = 0, guard = 0;
+    while (count < 10 && guard < 60) {
+      guard++;
+      var w = d.getDay();
+      if (w >= 1 && w <= 4) {
+        var closed = isClosedDate(d);
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'slot shrink-0 w-[74px] rounded-lg border border-black/15 bg-white py-2.5 text-center';
+        b.setAttribute('aria-pressed', 'false');
+        b.innerHTML = '<span class="block text-[12px] text-ash">' + DAYS[w] + '</span><span class="block font-bold text-lg leading-tight">' + d.getDate() + '</span><span class="block text-[12px]">' + MONTHS[d.getMonth()] + '</span>';
+        if (closed) { b.disabled = true; b.title = 'Sluitingsdag'; }
+        (function (date, btn) {
+          btn.addEventListener('click', function () {
+            [].forEach.call(daysEl.children, function (x) { x.setAttribute('aria-pressed', 'false'); });
+            btn.setAttribute('aria-pressed', 'true');
+            pick.day = date; updateWhen();
+          });
+        })(new Date(d), b);
+        daysEl.appendChild(b);
+        if (!closed) count++;
+      }
+      d.setDate(d.getDate() + 1);
+    }
+    [['vm', 'Voormiddag 9:00–12:00'], ['nm', 'Namiddag 13:00–16:30']].forEach(function (p) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'slot flex-1 rounded-lg border border-black/15 bg-white px-3 py-2.5 text-[14px] font-semibold';
+      b.setAttribute('aria-pressed', 'false');
+      b.textContent = p[1];
+      b.addEventListener('click', function () {
+        [].forEach.call(partsEl.children, function (x) { x.setAttribute('aria-pressed', 'false'); });
+        b.setAttribute('aria-pressed', 'true'); pick.part = p; updateWhen();
+      });
+      partsEl.appendChild(b);
+    });
+    function whenText() {
+      if (!pick.day) return null;
+      return DAYS_L[pick.day.getDay()] + ' ' + pick.day.getDate() + ' ' + MONTHS[pick.day.getMonth()] + (pick.part ? ', ' + pick.part[1].split(' ')[0].toLowerCase() : '');
+    }
+    function updateWhen() { document.getElementById('sumWhen').textContent = whenText() || 'nog kiezen'; }
+
+    // ---------- Submit ----------
+    var form = document.getElementById('orderForm'), err = document.getElementById('formErr');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var msgs = [];
+      if (!rows.some(function (r) { return r.n > 0 && r.d > 0 && r.b > 0 && r.l > 0; })) msgs.push('Vul minstens één stuk met dikte, breedte, lengte en aantal in.');
+      if (!pick.day || !pick.part) msgs.push('Kies een ophaaldag en een dagdeel.');
+      if (!form.naam.value.trim()) msgs.push('Vul je naam in.');
+      if (form.tel.value.replace(/\D/g, '').length < 9) msgs.push('Vul een telefoonnummer in waarop we je kunnen terugbellen.');
+      if (msgs.length) { err.textContent = msgs.join(' '); err.classList.remove('hidden'); return; }
+      err.classList.add('hidden');
+      var pcs = rows.reduce(function (a, r) { return a + r.n; }, 0);
+      document.getElementById('doneText').textContent = 'Bedankt ' + form.naam.value.trim().split(' ')[0] + '. Je zaaglijst met ' + pcs + ' stuk' + (pcs === 1 ? '' : 'ken') + ' (' + document.getElementById('sumM3').textContent + ') staat klaar voor de zagerij. We bellen je terug op ' + form.tel.value.trim() + ' met prijs en bevestiging voor ophalen op ' + whenText() + '.';
+      document.getElementById('calc').classList.add('hidden');
+      var done = document.getElementById('done'); done.classList.remove('hidden'); done.focus();
+    });
+    document.getElementById('again').addEventListener('click', function () {
+      form.reset(); rows = []; addRow(); pick = { day: null, part: null }; updateWhen();
+      [].forEach.call(document.querySelectorAll('.slot'), function (x) { x.setAttribute('aria-pressed', 'false'); });
+      document.getElementById('done').classList.add('hidden');
+      document.getElementById('calc').classList.remove('hidden');
+    });
+  })();
+  </script>
+</body>
+</html>

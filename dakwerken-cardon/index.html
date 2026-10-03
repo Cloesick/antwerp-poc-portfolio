@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Dakwerken Patrick Cardon | Dakwerker in Schoten sinds 1997</title>
+  <meta name="description" content="Dak- en gevelwerken Patrick Cardon uit Schoten: pannendaken, leien daken, platte daken (roofing), Franse daken, dak-opbouw, gootbekleding en gevelbekleding in Eternit. Vraag uw offerte aan met foto's." />
+  <link rel="canonical" href="http://www.dakwerkencardon.be/" />
+  <meta name="theme-color" content="#222c35" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Dakwerken Patrick Cardon" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Dakwerken Patrick Cardon | Dakwerker in Schoten sinds 1997" />
+  <meta property="og:description" content="Pannen, leien, platte en Franse daken, goten en gevels. Stuur foto's van uw dak en krijg een offerte." />
+  <meta property="og:url" content="http://www.dakwerkencardon.be/" />
+  <meta property="og:image" content="images/pannendak-dakkapellen.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23222c35'/%3E%3Cpath d='M5 18L16 7l11 11' fill='none' stroke='%23c4602f' stroke-width='3' stroke-linejoin='round'/%3E%3Cpath d='M9 18v8h14v-8' fill='none' stroke='%23e9ecec' stroke-width='2'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RoofingContractor",
+    "name": "Dakwerken Patrick Cardon",
+    "legalName": "BVBA Dakwerken Cardon",
+    "description": "Dak- en gevelwerken: roofing (platte daken), pannendaken, leien daken, Franse daken, dak-opbouw, gootbekledingen en gevelbekledingen in Eternit sidings en kunstleien.",
+    "url": "http://www.dakwerkencardon.be/",
+    "telephone": "+32475897191",
+    "vatID": "BE0460755542",
+    "foundingDate": "1997",
+    "founder": { "@type": "Person", "name": "Patrick Cardon" },
+    "image": "images/pannendak-dakkapellen.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Papenaardekenstraat 202",
+      "postalCode": "2900",
+      "addressLocality": "Schoten",
+      "addressCountry": "BE"
+    },
+    "areaServed": ["Schoten", "Brasschaat", "Schilde", "'s-Gravenwezel", "Wijnegem", "Merksem", "Deurne", "Kapellen", "Brecht"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Dak- en gevelwerken",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Platte daken (roofing)" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pannendaken" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Leien daken" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Franse daken" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dak-opbouw" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gootbekledingen" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gevelbekleding in Eternit sidings en kunstleien" } }
+      ]
+    }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { display: ['"Barlow Condensed"', 'sans-serif'], sans: ['Barlow', 'sans-serif'] },
+          colors: {
+            lei: '#222c35',      /* leisteen */
+            leid: '#182028',
+            leil: '#3a4752',
+            pan: '#b4532a',      /* dakpan */
+            panl: '#d0764a',
+            zink: '#c3cbcf',
+            kalk: '#eef0ee',     /* kalkwit */
+            inkt: '#1a2129',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root { --accent: #b4532a; --ease-out: cubic-bezier(0.23, 1, 0.32, 1); }
+    html { scroll-behavior: smooth; }
+    body { text-rendering: optimizeLegibility; }
+    h1, h2, h3 { text-wrap: balance; }
+
+    /* Hero roof: tile rows are laid from the gutter up, once */
+    @keyframes lay { from { opacity: 0; transform: translateY(-18px); } to { opacity: 1; transform: none; } }
+    .tile-row { animation: lay .55s var(--ease-out) both; transform-box: fill-box; }
+
+    .btn { transition: transform .16s var(--ease-out), background-color .16s, border-color .16s, color .16s; }
+    .btn:active { transform: scale(0.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, label:focus-within { outline: 2px solid #d0764a; outline-offset: 3px; }
+
+    /* Quote form option cards */
+    .opt input { position: absolute; opacity: 0; pointer-events: none; }
+    .opt span.card { transition: border-color .15s, background-color .15s, box-shadow .15s; }
+    .opt input:checked + span.card { border-color: #b4532a; background: #fff6f1; box-shadow: inset 0 0 0 1px #b4532a; }
+    .opt input:checked + span.card .tick { opacity: 1; transform: none; }
+    .tick { opacity: 0; transform: scale(.6); transition: opacity .15s, transform .2s var(--ease-out); }
+    .drop.over { border-color: #b4532a; background: #fff6f1; }
+    .thumb { animation: pop .25s var(--ease-out) both; }
+    @keyframes pop { from { opacity: 0; transform: scale(.9); } to { opacity: 1; transform: none; } }
+    .field-err { border-color: #c0392b !important; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .tile-row, .thumb { animation: none; }
+      .btn, .tick { transition: none; }
+    }
+  </style>
+</head>
+<body class="bg-kalk text-inkt font-sans antialiased">
+
+  <!-- Concept badge -->
+  <div class="fixed bottom-4 right-4 z-50 hidden md:block">
+    <span class="text-[11px] tracking-wider text-kalk/90 bg-lei/90 border border-white/10 rounded-full px-3 py-1.5 backdrop-blur font-semibold">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-lei/95 backdrop-blur text-kalk border-b border-white/10">
+    <nav class="max-w-6xl mx-auto px-5 h-[70px] flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top" class="flex items-center gap-3">
+        <svg width="40" height="32" viewBox="0 0 40 32" fill="none" aria-hidden="true">
+          <path d="M3 17L20 3l17 14" stroke="#d0764a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+          <path d="M8 14v15h24V14" stroke="#c3cbcf" stroke-width="2"/>
+          <path d="M27 9V4h4v8" stroke="#c3cbcf" stroke-width="2"/>
+        </svg>
+        <span class="leading-none">
+          <span class="block font-display font-bold text-[21px] tracking-wide">Patrick Cardon</span>
+          <span class="block text-[12px] text-zink mt-0.5">Dak- en gevelwerken · Schoten</span>
+        </span>
+      </a>
+      <div class="hidden lg:flex items-center gap-8 text-[15px] text-zink">
+        <a href="#werken" class="hover:text-white">Wat we doen</a>
+        <a href="#offerte" class="hover:text-white">Offerte</a>
+        <a href="#werkgebied" class="hover:text-white">Werkgebied</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </div>
+      <a href="tel:+32475897191" class="btn inline-flex items-center gap-2 bg-pan hover:bg-[#c4602f] text-white font-semibold text-[15px] rounded-md px-4 py-2.5 whitespace-nowrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <span class="hidden sm:inline">0475 89 71 91</span><span class="sm:hidden">Bel</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative bg-lei text-kalk overflow-hidden">
+    <div class="absolute inset-0 opacity-[.07]" aria-hidden="true" style="background-image: repeating-linear-gradient(0deg, transparent 0 27px, #fff 27px 28px);"></div>
+    <div class="relative max-w-6xl mx-auto px-5 pt-14 pb-0 lg:pt-16 grid lg:grid-cols-12 gap-8 items-end">
+      <div class="lg:col-span-6 pb-12 lg:pb-24">
+        <p class="text-panl font-semibold text-[15px] mb-4">Zelfstandig dakwerker sinds 1997</p>
+        <h1 class="font-display font-extrabold uppercase leading-[.92] tracking-[-0.01em] text-[clamp(3rem,7vw,5.6rem)]">
+          Dakwerken<br>Cardon<span class="block text-zink font-semibold normal-case text-[clamp(1.6rem,3vw,2.4rem)] leading-tight tracking-normal mt-3">uw dakwerker in Schoten</span>
+        </h1>
+        <p class="mt-6 text-[18px] leading-relaxed text-zink max-w-[46ch]">
+          Pannen, leien, platte en Franse daken, dak-opbouw, goten en gevelbekleding in Eternit. Patrick Cardon komt zelf kijken en maakt uw offerte.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#offerte" class="btn inline-flex items-center gap-2.5 bg-pan hover:bg-[#c4602f] text-white font-semibold rounded-md px-6 py-3.5 text-[16px]">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12.5" r="3.2" stroke="currentColor" stroke-width="2"/><path d="M8 6l1.5-2h5L16 6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            Offerte aanvragen met foto's
+          </a>
+          <a href="tel:+32475897191" class="btn inline-flex items-center gap-2 border border-white/25 hover:border-white/60 text-white font-semibold rounded-md px-6 py-3.5 text-[16px]">
+            Bel Patrick: 0475 89 71 91
+          </a>
+        </div>
+      </div>
+
+      <!-- Roof illustration -->
+      <div class="lg:col-span-6 relative" aria-hidden="true">
+        <svg viewBox="0 0 600 470" class="w-full max-w-[600px] mx-auto block" role="img">
+          <defs>
+            <pattern id="pan" width="36" height="26" patternUnits="userSpaceOnUse">
+              <rect width="36" height="26" fill="#8e3d1c"/>
+              <path d="M0 26V5Q0 0 5 0H25Q32 0 32 7V26Z" fill="#b4532a"/>
+              <path d="M7 3.5V24" stroke="#d68457" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+              <path d="M0 25.2H36" stroke="#6e2c12" stroke-width="1.6"/>
+            </pattern>
+            <clipPath id="roofclip"><path d="M300 34L22 300H578Z"/></clipPath>
+          </defs>
+          <!-- chimney -->
+          <rect x="398" y="70" width="42" height="120" fill="#5a6772"/>
+          <rect x="392" y="62" width="54" height="12" fill="#3a4752"/>
+          <!-- walls -->
+          <rect x="70" y="296" width="460" height="174" fill="#e5e8e6"/>
+          <rect x="128" y="340" width="86" height="80" fill="#3a4752"/>
+          <path d="M171 340v80M128 380h86" stroke="#e5e8e6" stroke-width="4"/>
+          <rect x="386" y="340" width="86" height="80" fill="#3a4752"/>
+          <path d="M429 340v80M386 380h86" stroke="#e5e8e6" stroke-width="4"/>
+          <rect x="265" y="356" width="70" height="114" fill="#b4532a"/>
+          <circle cx="322" cy="414" r="3.5" fill="#eef0ee"/>
+          <!-- tiles, laid from the gutter up -->
+          <g clip-path="url(#roofclip)">
+            <rect class="tile-row" style="animation-delay:1.10s" x="0" y="34"  width="600" height="27" fill="url(#pan)"/>
+            <rect class="tile-row" style="animation-delay:1.00s" x="0" y="60"  width="600" height="27" fill="url(#pan)"/>
+            <rect class="tile-row" style="animation-delay:.90s"  x="0" y="86"  width="600" height="27" fill="url(#pan)"/>
+            <rect class="tile-row" style="animation-delay:.80s"  x="0" y="112" width="600" height="27" fill="url(#pan)"/>
+            <rect class="tile-row" style="animation-delay:.70s"  x="0" y="138" width="600" height="27" fill="url(#pan)"/>
+            <rect class="tile-row" style="animation-delay:.60s"  x="0" y="164" width="600" height="27" fill="url(#pan)"/>
+            <rect class="tile-row" style="animation-delay:.50s"  x="0" y="190" width="600" height="27" fill="url(#pan)"/>
+            <rect class="tile-row" style="animation-delay:.40s"  x="0" y="216" width="600" height="27" fill="url(#pan)"/>
+            <rect class="tile-row" style="animation-delay:.30s"  x="0" y="242" width="600" height="27" fill="url(#pan)"/>
+            <rect class="tile-row" style="animation-delay:.20s"  x="0" y="268" width="600" height="33" fill="url(#pan)"/>
+          </g>
+          <!-- ridge + verges -->
+          <path d="M300 30L18 300M300 30L582 300" stroke="#3a4752" stroke-width="9" stroke-linecap="round"/>
+          <!-- zinc gutter -->
+          <rect x="10" y="298" width="580" height="13" rx="6.5" fill="#c3cbcf"/>
+          <rect x="10" y="298" width="580" height="4" rx="2" fill="#e6eaec"/>
+          <rect x="548" y="309" width="9" height="161" fill="#aab3b8"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facts strip -->
+  <section class="bg-leid text-kalk">
+    <div class="max-w-6xl mx-auto px-5 py-7 grid grid-cols-2 lg:grid-cols-4 gap-6 text-[15px]">
+      <p><span class="block font-display font-bold text-3xl text-white">1997</span><span class="text-zink">eigen zaak in Schoten</span></p>
+      <p><span class="block font-display font-bold text-3xl text-white">Dak + gevel</span><span class="text-zink">schuin, plat, goten en gevels</span></p>
+      <p><span class="block font-display font-bold text-3xl text-white">1 vakman</span><span class="text-zink">u spreekt Patrick zelf</span></p>
+      <p><span class="block font-display font-bold text-3xl text-white">Foto's</span><span class="text-zink">stuur ze mee, sneller een prijs</span></p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="werken" class="max-w-6xl mx-auto px-5 py-20 lg:py-24">
+    <div class="grid lg:grid-cols-12 gap-10 mb-12">
+      <h2 class="lg:col-span-5 font-display font-bold uppercase text-[clamp(2.2rem,4.4vw,3.4rem)] leading-[.95]">Van nok tot goot, en de gevel erbij</h2>
+      <p class="lg:col-span-6 lg:col-start-7 text-[18px] leading-relaxed text-leil self-end">Dakwerken Cardon legt nieuwe daken en herstelt bestaande: hellende daken in pannen of leien, platte daken in roofing en Franse daken. Daarnaast bouwt Patrick dakopbouwen, bekleedt hij goten en werkt hij gevels af met Eternit.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-zink/70 border border-zink/70 rounded-lg overflow-hidden">
+      <article class="bg-white p-6">
+        <svg width="56" height="34" viewBox="0 0 56 34" aria-hidden="true"><path d="M2 32V10Q2 4 8 4h8q6 0 6 6v22M22 32V10q0-6 6-6h8q6 0 6 6v22M42 32V10q0-6 6-6h6" fill="none" stroke="#b4532a" stroke-width="3"/></svg>
+        <h3 class="mt-4 font-display font-bold text-[24px] uppercase">Pannendaken</h3>
+        <p class="mt-1.5 text-leil leading-relaxed">Nieuw pannendak of vervangen van gebroken pannen, nokken en randen.</p>
+      </article>
+      <article class="bg-white p-6">
+        <svg width="56" height="34" viewBox="0 0 56 34" aria-hidden="true"><path d="M4 30L14 6l10 24zM20 30L30 6l10 24zM36 30L46 6l10 24z" fill="#3a4752"/></svg>
+        <h3 class="mt-4 font-display font-bold text-[24px] uppercase">Leien daken</h3>
+        <p class="mt-1.5 text-leil leading-relaxed">Hellende daken in leien, strak gelegd en waterdicht afgewerkt.</p>
+      </article>
+      <article class="bg-white p-6">
+        <svg width="56" height="34" viewBox="0 0 56 34" aria-hidden="true"><rect x="2" y="14" width="52" height="8" fill="#3a4752"/><path d="M2 14h52" stroke="#1a2129" stroke-width="3"/><path d="M6 26h44" stroke="#c3cbcf" stroke-width="3"/></svg>
+        <h3 class="mt-4 font-display font-bold text-[24px] uppercase">Platte daken</h3>
+        <p class="mt-1.5 text-leil leading-relaxed">Roofing op platte daken, aanbouwen en garages. Ook lekken opsporen.</p>
+      </article>
+      <article class="bg-white p-6">
+        <svg width="56" height="34" viewBox="0 0 56 34" aria-hidden="true"><path d="M6 32L12 10h32l6 22" fill="none" stroke="#3a4752" stroke-width="3" stroke-linejoin="round"/><path d="M12 10l4-7h24l4 7" fill="none" stroke="#b4532a" stroke-width="3" stroke-linejoin="round"/></svg>
+        <h3 class="mt-4 font-display font-bold text-[24px] uppercase">Franse daken</h3>
+        <p class="mt-1.5 text-leil leading-relaxed">Mansardedaken met hun steile onderschild: vakwerk waar ervaring telt.</p>
+      </article>
+      <article class="bg-white p-6">
+        <svg width="56" height="34" viewBox="0 0 56 34" aria-hidden="true"><path d="M2 32L28 4l26 28" fill="none" stroke="#b4532a" stroke-width="3" stroke-linejoin="round"/><rect x="20" y="16" width="16" height="12" fill="none" stroke="#3a4752" stroke-width="3"/><path d="M17 17l11-7 11 7" fill="none" stroke="#3a4752" stroke-width="3"/></svg>
+        <h3 class="mt-4 font-display font-bold text-[24px] uppercase">Dak-opbouw</h3>
+        <p class="mt-1.5 text-leil leading-relaxed">Meer ruimte onder het dak met een opbouw of dakkapel.</p>
+      </article>
+      <article class="bg-white p-6">
+        <svg width="56" height="34" viewBox="0 0 56 34" aria-hidden="true"><path d="M4 10h48v6a8 8 0 01-8 8H12a8 8 0 01-8-8z" fill="none" stroke="#8e9aa1" stroke-width="3"/><path d="M42 24v9" stroke="#8e9aa1" stroke-width="3"/></svg>
+        <h3 class="mt-4 font-display font-bold text-[24px] uppercase">Gootbekleding</h3>
+        <p class="mt-1.5 text-leil leading-relaxed">Goten bekleden en vernieuwen, zodat regenwater netjes wegloopt.</p>
+      </article>
+      <article class="bg-white p-6 sm:col-span-2">
+        <div class="flex items-start gap-6">
+          <svg class="shrink-0" width="56" height="40" viewBox="0 0 56 40" aria-hidden="true"><path d="M2 8h52M2 16h52M2 24h52M2 32h52" stroke="#3a4752" stroke-width="3"/><path d="M2 4v34" stroke="#b4532a" stroke-width="3"/></svg>
+          <div>
+            <h3 class="font-display font-bold text-[24px] uppercase">Gevelbekleding in Eternit</h3>
+            <p class="mt-1.5 text-leil leading-relaxed max-w-[52ch]">Twee afwerkingen: Eternit sidings (horizontale planken) of Eternit kunstleien. Isoleert, beschermt en geeft een gevel een frisse look.</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Signature: quote request with photos -->
+  <section id="offerte" class="bg-lei text-kalk">
+    <div class="max-w-6xl mx-auto px-5 py-20 lg:py-24 grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-4">
+        <h2 class="font-display font-bold uppercase text-[clamp(2.2rem,4.4vw,3.4rem)] leading-[.95]">Offerte aanvragen</h2>
+        <p class="mt-5 text-[18px] leading-relaxed text-zink">Een foto zegt meer dan een telefoontje. Neem een paar foto's van uw dak, goot of gevel en stuur ze mee: Patrick ziet meteen wat er moet gebeuren en belt u terug.</p>
+        <ol class="mt-8 space-y-4 text-[16px]">
+          <li class="flex gap-3"><span class="font-display font-bold text-panl text-xl w-5">1</span>Kies wat er moet gebeuren</li>
+          <li class="flex gap-3"><span class="font-display font-bold text-panl text-xl w-5">2</span>Vul uw postcode in</li>
+          <li class="flex gap-3"><span class="font-display font-bold text-panl text-xl w-5">3</span>Voeg foto's toe vanop uw gsm</li>
+          <li class="flex gap-3"><span class="font-display font-bold text-panl text-xl w-5">4</span>Patrick belt u terug</li>
+        </ol>
+        <figure class="mt-10 hidden lg:block">
+          <img src="images/pannendak-dakkapellen.jpg" alt="Pannendak met twee leien dakkapellen" class="w-full rounded-md border border-white/10" width="478" height="142" />
+          <figcaption class="mt-2 text-[13px] text-zink/80">Foto uit de vroegere huisstijl van Dakwerken Cardon</figcaption>
+        </figure>
+      </div>
+
+      <div class="lg:col-span-8">
+        <form id="qform" class="bg-white text-inkt rounded-lg p-6 sm:p-8 shadow-[0_30px_70px_-30px_rgba(0,0,0,.6)]" novalidate>
+          <fieldset>
+            <legend class="font-display font-bold text-[22px] uppercase">1. Wat moet er gebeuren?</legend>
+            <div class="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-2.5" id="jobs">
+              <label class="opt relative cursor-pointer"><input type="radio" name="job" value="Lek of schade herstellen"><span class="card flex flex-col h-full border border-zink rounded-md p-3 text-[14px] leading-snug"><b class="text-[15px]">Lek of schade</b><span class="text-leil">herstelling</span><span class="tick absolute top-2 right-2 w-4 h-4 rounded-full bg-pan"></span></span></label>
+              <label class="opt relative cursor-pointer"><input type="radio" name="job" value="Pannendak"><span class="card flex flex-col h-full border border-zink rounded-md p-3 text-[14px] leading-snug"><b class="text-[15px]">Pannendak</b><span class="text-leil">nieuw of vernieuwen</span><span class="tick absolute top-2 right-2 w-4 h-4 rounded-full bg-pan"></span></span></label>
+              <label class="opt relative cursor-pointer"><input type="radio" name="job" value="Leien dak"><span class="card flex flex-col h-full border border-zink rounded-md p-3 text-[14px] leading-snug"><b class="text-[15px]">Leien dak</b><span class="text-leil">nieuw of vernieuwen</span><span class="tick absolute top-2 right-2 w-4 h-4 rounded-full bg-pan"></span></span></label>
+              <label class="opt relative cursor-pointer"><input type="radio" name="job" value="Plat dak (roofing)"><span class="card flex flex-col h-full border border-zink rounded-md p-3 text-[14px] leading-snug"><b class="text-[15px]">Plat dak</b><span class="text-leil">roofing</span><span class="tick absolute top-2 right-2 w-4 h-4 rounded-full bg-pan"></span></span></label>
+              <label class="opt relative cursor-pointer"><input type="radio" name="job" value="Frans dak"><span class="card flex flex-col h-full border border-zink rounded-md p-3 text-[14px] leading-snug"><b class="text-[15px]">Frans dak</b><span class="text-leil">mansarde</span><span class="tick absolute top-2 right-2 w-4 h-4 rounded-full bg-pan"></span></span></label>
+              <label class="opt relative cursor-pointer"><input type="radio" name="job" value="Dak-opbouw"><span class="card flex flex-col h-full border border-zink rounded-md p-3 text-[14px] leading-snug"><b class="text-[15px]">Dak-opbouw</b><span class="text-leil">of dakkapel</span><span class="tick absolute top-2 right-2 w-4 h-4 rounded-full bg-pan"></span></span></label>
+              <label class="opt relative cursor-pointer"><input type="radio" name="job" value="Goten"><span class="card flex flex-col h-full border border-zink rounded-md p-3 text-[14px] leading-snug"><b class="text-[15px]">Goten</b><span class="text-leil">bekleden, vervangen</span><span class="tick absolute top-2 right-2 w-4 h-4 rounded-full bg-pan"></span></span></label>
+              <label class="opt relative cursor-pointer"><input type="radio" name="job" value="Gevelbekleding Eternit"><span class="card flex flex-col h-full border border-zink rounded-md p-3 text-[14px] leading-snug"><b class="text-[15px]">Gevel</b><span class="text-leil">Eternit sidings / leien</span><span class="tick absolute top-2 right-2 w-4 h-4 rounded-full bg-pan"></span></span></label>
+            </div>
+            <p id="job-err" class="hidden mt-2 text-[14px] text-[#c0392b]">Kies wat er moet gebeuren.</p>
+          </fieldset>
+
+          <div class="mt-8 grid sm:grid-cols-2 gap-6">
+            <div>
+              <label for="pc" class="font-display font-bold text-[22px] uppercase block">2. Uw postcode</label>
+              <input id="pc" inputmode="numeric" maxlength="4" autocomplete="postal-code" placeholder="bv. 2900" class="mt-3 w-full border border-zink rounded-md px-4 py-3 text-[17px]" />
+              <p id="pc-msg" class="mt-2 text-[14px] min-h-[20px] text-leil" aria-live="polite"></p>
+            </div>
+            <fieldset>
+              <legend class="font-display font-bold text-[22px] uppercase">Hoe dringend?</legend>
+              <div class="mt-3 flex flex-col gap-2 text-[15px]">
+                <label class="flex items-center gap-2.5"><input type="radio" name="urg" value="Het lekt nu" class="accent-[#b4532a] w-4 h-4"> Het lekt nu</label>
+                <label class="flex items-center gap-2.5"><input type="radio" name="urg" value="Binnen enkele weken" class="accent-[#b4532a] w-4 h-4" checked> Binnen enkele weken</label>
+                <label class="flex items-center gap-2.5"><input type="radio" name="urg" value="Plannen voor later" class="accent-[#b4532a] w-4 h-4"> Plannen voor later dit jaar</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="mt-8">
+            <p class="font-display font-bold text-[22px] uppercase">3. Foto's van de situatie</p>
+            <label id="drop" for="photos" class="drop mt-3 flex flex-col items-center justify-center gap-2 border-2 border-dashed border-zink rounded-md px-4 py-7 text-center cursor-pointer transition-colors">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2" stroke="#b4532a" stroke-width="1.8"/><circle cx="12" cy="12.5" r="3.2" stroke="#b4532a" stroke-width="1.8"/><path d="M8 6l1.5-2h5L16 6" stroke="#b4532a" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              <span class="font-semibold">Neem of kies foto's</span>
+              <span class="text-[14px] text-leil">Sleep ze hierheen of tik om uw gsm-camera te openen. Max. 6 foto's.</span>
+              <input id="photos" type="file" accept="image/*" multiple class="sr-only" />
+            </label>
+            <div id="thumbs" class="mt-3 grid grid-cols-3 sm:grid-cols-6 gap-2"></div>
+          </div>
+
+          <div class="mt-8">
+            <p class="font-display font-bold text-[22px] uppercase">4. Uw gegevens</p>
+            <div class="mt-3 grid sm:grid-cols-2 gap-3">
+              <input id="nm" placeholder="Naam" autocomplete="name" class="border border-zink rounded-md px-4 py-3" />
+              <input id="tel" placeholder="Telefoon" type="tel" autocomplete="tel" class="border border-zink rounded-md px-4 py-3" />
+              <input id="em" placeholder="E-mail (optioneel)" type="email" autocomplete="email" class="border border-zink rounded-md px-4 py-3 sm:col-span-2" />
+              <textarea id="msg" rows="3" placeholder="Wat ziet u? bv. 'twee pannen weggewaaid boven de dakgoot'" class="border border-zink rounded-md px-4 py-3 sm:col-span-2"></textarea>
+            </div>
+          </div>
+
+          <div class="mt-7 flex flex-col sm:flex-row sm:items-center gap-4 justify-between">
+            <p class="text-[13px] text-leil">Demo: er wordt niets verzonden.</p>
+            <button type="submit" class="btn bg-pan hover:bg-[#c4602f] text-white font-semibold rounded-md px-7 py-3.5 text-[16px]">Offerte aanvragen</button>
+          </div>
+        </form>
+
+        <div id="qok" class="hidden bg-white text-inkt rounded-lg p-8 sm:p-10" role="status" tabindex="-1">
+          <svg width="52" height="52" viewBox="0 0 52 52" aria-hidden="true"><circle cx="26" cy="26" r="26" fill="#b4532a"/><path d="M15 27l7 7 15-16" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3 class="mt-5 font-display font-bold text-[30px] uppercase leading-none">Offerte aangevraagd</h3>
+          <p id="qsum" class="mt-4 text-[17px] leading-relaxed text-leil"></p>
+          <p class="mt-4 text-[14px] text-leil border-l-4 border-pan pl-3">Dit is een demo: er is niets verzonden. Op de echte site komt deze aanvraag, met de foto's, rechtstreeks in Patricks mailbox en op zijn gsm.</p>
+          <button id="qagain" type="button" class="btn mt-6 border border-zink hover:border-pan rounded-md px-5 py-2.5 font-semibold">Nieuwe aanvraag</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service area -->
+  <section id="werkgebied" class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-12 gap-10 items-center">
+    <div class="lg:col-span-5">
+      <h2 class="font-display font-bold uppercase text-[clamp(2.2rem,4.4vw,3.4rem)] leading-[.95]">Werkgebied rond Schoten</h2>
+      <p class="mt-5 text-[18px] leading-relaxed text-leil">Vanuit de Papenaardekenstraat werkt Patrick in Schoten en de gemeenten errond. Woont u net daarbuiten? Bel even, vaak lukt het toch.</p>
+    </div>
+    <ul class="lg:col-span-7 flex flex-wrap gap-2.5 text-[16px]">
+      <li class="bg-pan text-white font-semibold rounded-full px-4 py-2">Schoten</li>
+      <li class="bg-white border border-zink rounded-full px-4 py-2">Brasschaat</li>
+      <li class="bg-white border border-zink rounded-full px-4 py-2">Schilde</li>
+      <li class="bg-white border border-zink rounded-full px-4 py-2">'s-Gravenwezel</li>
+      <li class="bg-white border border-zink rounded-full px-4 py-2">Wijnegem</li>
+      <li class="bg-white border border-zink rounded-full px-4 py-2">Merksem</li>
+      <li class="bg-white border border-zink rounded-full px-4 py-2">Deurne</li>
+      <li class="bg-white border border-zink rounded-full px-4 py-2">Kapellen</li>
+      <li class="bg-white border border-zink rounded-full px-4 py-2">Brecht</li>
+    </ul>
+  </section>
+
+  <!-- About + contact -->
+  <section id="contact" class="border-t border-zink/70 bg-white">
+    <div class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-6">
+        <h2 class="font-display font-bold uppercase text-[clamp(2.2rem,4.4vw,3.4rem)] leading-[.95]">U spreekt met de vakman zelf</h2>
+        <p class="mt-5 text-[18px] leading-relaxed text-leil max-w-[54ch]">Dakwerken Cardon is sinds 1997 de zaak van Patrick Cardon in Schoten. Geen tussenpersonen en geen callcenter: wie belt, krijgt Patrick aan de lijn, en wie een offerte vraagt, krijgt hem ook op het dak te zien.</p>
+        <dl class="mt-8 grid grid-cols-2 gap-x-6 gap-y-4 text-[15px] max-w-md">
+          <div><dt class="text-leil">Opgericht</dt><dd class="font-semibold">1997</dd></div>
+          <div><dt class="text-leil">Vennootschap</dt><dd class="font-semibold">BVBA Dakwerken Cardon</dd></div>
+          <div><dt class="text-leil">BTW</dt><dd class="font-semibold">BE 0460.755.542</dd></div>
+          <div><dt class="text-leil">Bereikbaar</dt><dd class="font-semibold">via gsm, op afspraak</dd></div>
+        </dl>
+      </div>
+      <div class="lg:col-span-6 space-y-3">
+        <a href="tel:+32475897191" class="btn flex items-center gap-4 rounded-lg border border-zink p-5 hover:border-pan">
+          <svg class="shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="#b4532a" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          <span><span class="block font-display font-bold text-[24px] leading-none">0475 89 71 91</span><span class="text-leil text-[15px]">Gsm Patrick Cardon</span></span>
+        </a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Papenaardekenstraat+202,+2900+Schoten" target="_blank" rel="noopener" class="btn flex items-center gap-4 rounded-lg border border-zink p-5 hover:border-pan">
+          <svg class="shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s7-5.8 7-11a7 7 0 10-14 0c0 5.2 7 11 7 11z" stroke="#b4532a" stroke-width="1.8"/><circle cx="12" cy="10" r="2.5" stroke="#b4532a" stroke-width="1.8"/></svg>
+          <span><span class="block font-semibold text-[17px]">Papenaardekenstraat 202, 2900 Schoten</span><span class="text-leil text-[15px]">Route via Google Maps</span></span>
+        </a>
+        <a href="#offerte" class="btn flex items-center gap-4 rounded-lg bg-lei text-white p-5 hover:bg-leil">
+          <svg class="shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2" stroke="#d0764a" stroke-width="1.8"/><circle cx="12" cy="12.5" r="3.2" stroke="#d0764a" stroke-width="1.8"/></svg>
+          <span><span class="block font-semibold text-[17px]">Offerte aanvragen met foto's</span><span class="text-zink text-[15px]">Antwoord meestal binnen de werkdag</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-leid text-zink pb-20 md:pb-0">
+    <div class="max-w-6xl mx-auto px-5 py-9 flex flex-col md:flex-row justify-between gap-5 text-[14px]">
+      <p><span class="font-display font-bold text-white text-[18px]">Dakwerken Patrick Cardon</span><br>Papenaardekenstraat 202, 2900 Schoten · BTW BE 0460.755.542</p>
+      <p class="max-w-md">Concept-herontwerp door <a href="mailto:nicolas@saspire.org" class="underline hover:text-white">Saspire</a> als vrijblijvend voorstel. Dit is niet de officiële website van Dakwerken Cardon.</p>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile call bar -->
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden grid grid-cols-2 text-white font-semibold text-[15px]">
+    <a href="tel:+32475897191" class="flex items-center justify-center gap-2 py-3.5 bg-pan">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      Bel Patrick
+    </a>
+    <a href="#offerte" class="flex items-center justify-center gap-2 py-3.5 bg-lei">Offerte + foto's</a>
+  </div>
+
+  <script>
+    (function () {
+      var AREA = { '2900': 'Schoten', '2930': 'Brasschaat', '2970': 'Schilde / \'s-Gravenwezel', '2110': 'Wijnegem', '2170': 'Merksem', '2100': 'Deurne', '2950': 'Kapellen', '2960': 'Brecht' };
+      var form = document.getElementById('qform'), ok = document.getElementById('qok');
+      var pc = document.getElementById('pc'), pcMsg = document.getElementById('pc-msg');
+      var files = [];
+
+      pc.addEventListener('input', function () {
+        pc.value = pc.value.replace(/\D/g, '');
+        pc.classList.remove('field-err');
+        if (pc.value.length < 4) { pcMsg.textContent = ''; return; }
+        if (AREA[pc.value]) { pcMsg.innerHTML = '<span style="color:#2e7d4f;font-weight:600">&#10003; ' + AREA[pc.value] + ' valt in ons werkgebied.</span>'; }
+        else { pcMsg.textContent = 'Net buiten het vaste werkgebied. Vraag toch aan: Patrick laat weten of hij kan komen.'; }
+      });
+
+      var input = document.getElementById('photos'), drop = document.getElementById('drop'), thumbs = document.getElementById('thumbs');
+      function render() {
+        thumbs.innerHTML = '';
+        files.forEach(function (f, i) {
+          var d = document.createElement('div');
+          d.className = 'thumb relative aspect-square rounded-md overflow-hidden border border-zink bg-kalk';
+          var img = document.createElement('img');
+          img.className = 'w-full h-full object-cover'; img.alt = f.name;
+          img.src = URL.createObjectURL(f);
+          var x = document.createElement('button');
+          x.type = 'button'; x.setAttribute('aria-label', 'Verwijder ' + f.name);
+          x.className = 'absolute top-1 right-1 w-6 h-6 rounded-full bg-inkt/80 text-white text-[14px] leading-6';
+          x.textContent = '×';
+          x.onclick = function () { files.splice(i, 1); render(); };
+          d.appendChild(img); d.appendChild(x); thumbs.appendChild(d);
+        });
+      }
+      function add(list) {
+        Array.prototype.forEach.call(list, function (f) { if (f.type.indexOf('image/') === 0 && files.length < 6) files.push(f); });
+        render();
+      }
+      input.addEventListener('change', function () { add(input.files); input.value = ''; });
+      ['dragenter', 'dragover'].forEach(function (ev) { drop.addEventListener(ev, function (e) { e.preventDefault(); drop.classList.add('over'); }); });
+      ['dragleave', 'drop'].forEach(function (ev) { drop.addEventListener(ev, function (e) { e.preventDefault(); drop.classList.remove('over'); }); });
+      drop.addEventListener('drop', function (e) { add(e.dataTransfer.files); });
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var job = form.querySelector('input[name=job]:checked');
+        var nm = document.getElementById('nm'), tel = document.getElementById('tel');
+        var bad = false;
+        document.getElementById('job-err').classList.toggle('hidden', !!job); if (!job) bad = true;
+        [nm, tel].forEach(function (el) { var empty = !el.value.trim(); el.classList.toggle('field-err', empty); if (empty) bad = true; });
+        if (pc.value.length !== 4) { pc.classList.add('field-err'); bad = true; }
+        if (bad) { (job ? (pc.value.length !== 4 ? pc : nm) : form.querySelector('input[name=job]').parentNode).scrollIntoView({ block: 'center', behavior: 'smooth' }); return; }
+        var urg = form.querySelector('input[name=urg]:checked').value;
+        var first = nm.value.trim().split(' ')[0];
+        document.getElementById('qsum').innerHTML = 'Bedankt, ' + first.replace(/</g, '') + '. Uw aanvraag voor <b>' + job.value.toLowerCase() + '</b> in ' + (AREA[pc.value] || pc.value) + ' (' + urg.toLowerCase() + ') is klaar' + (files.length ? ', met <b>' + files.length + ' foto' + (files.length > 1 ? "'s" : '') + '</b>' : '') + '. Patrick belt u terug op ' + tel.value.replace(/</g, '') + '.';
+        form.classList.add('hidden'); ok.classList.remove('hidden'); ok.focus();
+      });
+      document.getElementById('qagain').addEventListener('click', function () {
+        form.reset(); files = []; render(); pcMsg.textContent = '';
+        ok.classList.add('hidden'); form.classList.remove('hidden');
+      });
+    })();
+  </script>
+</body>
+</html>
