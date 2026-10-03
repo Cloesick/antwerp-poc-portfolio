@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Computer-Kliniek Kapellen | Pc- en laptopherstelling, service aan huis, verkoop</title>
+  <meta name="description" content="Computer-Kliniek in Kapellen: herstelling van pc's en laptops van alle merken (behalve Apple) met als streefdoel 2 werkdagen, service aan huis, datarecuperatie, hulp voor kmo's en verkoop van laptops." />
+  <link rel="canonical" href="https://computerkliniekkapellen.be/" />
+  <meta name="theme-color" content="#404040" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Computer-Kliniek Kapellen" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Computer-Kliniek Kapellen | Uw pc weer gezond" />
+  <meta property="og:description" content="Herstelling aanmelden of een huisbezoek plannen, ook buiten de winkeluren." />
+  <meta property="og:image" content="images/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23404040'/%3E%3Cpath d='M13 6h6v7h7v6h-7v7h-6v-7H6v-6h7z' fill='%23ee7e17'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ComputerStore",
+    "name": "Computer-Kliniek Kapellen",
+    "description": "Verkoop, herstellingen en service aan huis: pc's en laptops van alle merken behalve Apple, datarecuperatie, netwerken en servers voor kmo's, hulp op afstand.",
+    "url": "https://computerkliniekkapellen.be/",
+    "telephone": "+3236056805",
+    "email": "joey@computer-kliniek.be",
+    "logo": "https://computerkliniekkapellen.be/images/logo.png",
+    "address": { "@type": "PostalAddress", "streetAddress": "Stationsstraat 21 bus 1", "postalCode": "2950", "addressLocality": "Kapellen", "addressCountry": "BE" },
+    "areaServed": ["Kapellen", "Putte", "Hoevenen", "Stabroek", "Ekeren", "Brasschaat"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "13:00" }
+    ],
+    "sameAs": ["https://www.facebook.com/computerkliniekkapellen/"],
+    "brand": ["Acer", "Asus", "HP", "Lenovo", "Samsung", "Logitech", "Brother"]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { sans: ['"Schibsted Grotesk"', 'system-ui', 'sans-serif'] },
+      colors: { char: '#2b2b2b', graphite: '#404040', plus: '#ee7e17', plusdk: '#c9620a', ward: '#f2f3f1', tile: '#ffffff', hair: '#dfe1dc', muted: '#666a66', heal: '#1f8a5b' }
+    } } };
+  </script>
+  <style>
+    :root { --ease: cubic-bezier(.23,1,.32,1); }
+    html { scroll-behavior: smooth; }
+    body { background: #fff; }
+    h1, h2, h3 { text-wrap: balance; }
+    .cross { position: absolute; background: #ee7e17; }
+    .ecg path { stroke-dasharray: 900; stroke-dashoffset: 0; }
+    .js .ecg path { animation: trace 2.4s var(--ease) .2s both; }
+    @keyframes trace { from { stroke-dashoffset: 900; } to { stroke-dashoffset: 0; } }
+    .js .healed { animation: fadein .5s ease 2.2s both; }
+    @keyframes fadein { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+    .opt { display: block; border: 2px solid #dfe1dc; background: #fff; border-radius: 12px; padding: .7rem .9rem; cursor: pointer; font-weight: 600; transition: border-color .15s var(--ease), background-color .15s var(--ease); }
+    .opt:hover { border-color: #b5b8b2; }
+    input:checked + .opt, .opt[aria-pressed="true"] { border-color: #ee7e17; background: #fff4ea; }
+    .tab[aria-selected="true"] { background: #2b2b2b; color: #fff; }
+    .slot { border: 2px solid #dfe1dc; border-radius: 10px; padding: .55rem .4rem; font-weight: 600; background: #fff; cursor: pointer; text-align: center; }
+    .slot[aria-pressed="true"] { background: #ee7e17; border-color: #ee7e17; color: #fff; }
+    .btn { transition: transform .15s var(--ease), background-color .15s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible + .opt, input:focus-visible, select:focus-visible { outline: 3px solid #2b2b2b; outline-offset: 2px; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .ecg path, .js .healed { animation: none; }
+      .opt, .btn { transition: none; }
+    }
+  </style>
+</head>
+<body class="text-char font-sans antialiased">
+
+  <div class="fixed bottom-[68px] md:bottom-4 right-4 z-50">
+    <span class="text-[11px] font-bold tracking-wide text-white bg-graphite rounded-md px-2.5 py-1.5 shadow-lg">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <!-- Header -->
+  <header class="border-b border-hair bg-white/95 backdrop-blur sticky top-0 z-30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-[72px] flex items-center justify-between gap-4">
+      <a href="#top" aria-label="Computer-Kliniek Kapellen, home"><img src="images/logo.png" alt="Computer-Kliniek: verkoop, herstellingen, service aan huis" class="h-9 sm:h-11 w-auto" width="294" height="82" /></a>
+      <nav class="hidden md:flex items-center gap-7 font-semibold text-[15px] text-muted">
+        <a href="#diensten" class="hover:text-char">Diensten</a>
+        <a href="#opname" class="hover:text-char">Herstelling of huisbezoek</a>
+        <a href="#laptops" class="hover:text-char">Laptops</a>
+        <a href="#contact" class="hover:text-char">Contact</a>
+      </nav>
+      <a href="tel:+3236056805" class="btn hidden sm:inline-flex items-center gap-2 bg-graphite hover:bg-char text-white font-bold rounded-lg px-4 py-2.5">03 605 68 05</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative overflow-hidden bg-ward">
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-14 lg:pt-16 lg:pb-24 grid lg:grid-cols-[1.1fr_.9fr] gap-10 items-center">
+      <div>
+        <p class="font-semibold text-muted">Computer-Kliniek · Stationsstraat 21, Kapellen</p>
+        <h1 class="mt-3 font-black text-[46px] leading-[.98] sm:text-6xl lg:text-[72px] tracking-[-.04em]">De kliniek voor uw pc en laptop.</h1>
+        <p class="mt-5 text-lg sm:text-xl text-muted max-w-xl leading-relaxed">Herstelling van alle merken behalve Apple, ook als u het toestel niet bij ons kocht. Ons streefdoel: binnen twee werkdagen weer gezond. 's&nbsp;Voormiddags in de winkel, 's&nbsp;namiddags en 's&nbsp;avonds bij u thuis.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#opname" class="btn bg-plus hover:bg-plusdk text-white font-bold text-[17px] rounded-lg px-6 py-3.5">Herstelling aanmelden</a>
+          <a href="#opname" data-goto="home" class="btn bg-white border-2 border-char font-bold text-[17px] rounded-lg px-6 py-3">Huisbezoek plannen</a>
+        </div>
+      </div>
+
+      <!-- Patient file card -->
+      <div class="relative flex justify-center lg:justify-end">
+        <div aria-hidden="true" class="absolute hidden sm:block left-1/2 lg:left-[58%] top-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px]">
+          <div class="cross left-[170px] top-0 w-[160px] h-[500px] rounded-[26px]"></div>
+          <div class="cross left-0 top-[170px] w-[500px] h-[160px] rounded-[26px]"></div>
+        </div>
+        <div class="relative bg-white rounded-2xl shadow-[0_30px_60px_-30px_rgba(0,0,0,.45)] border border-hair p-5 sm:p-6 max-w-[440px] lg:ml-auto">
+          <div class="flex items-center justify-between">
+            <p class="font-extrabold text-lg">Dossier</p>
+            <span class="text-[13px] font-semibold text-muted">Laptop · Lenovo ThinkPad</span>
+          </div>
+          <div class="mt-4 rounded-xl bg-char p-4">
+            <svg class="ecg w-full h-24" viewBox="0 0 400 100" fill="none" aria-hidden="true">
+              <path d="M0 60 H70 L82 60 L92 30 L102 85 L112 60 H170 L180 60 L190 20 L202 92 L212 60 H270 L280 60 L290 15 L302 95 L312 60 H400" stroke="#ee7e17" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <dl class="mt-4 grid grid-cols-2 gap-3 text-[15px]">
+            <div class="rounded-lg bg-ward p-3"><dt class="text-[12.5px] text-muted font-semibold">Klacht</dt><dd class="font-bold">Wordt warm, valt uit</dd></div>
+            <div class="rounded-lg bg-ward p-3"><dt class="text-[12.5px] text-muted font-semibold">Streeftermijn</dt><dd class="font-bold">2 werkdagen</dd></div>
+          </dl>
+          <p class="healed mt-4 flex items-center gap-2 font-bold text-heal"><svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#1f8a5b"/><path d="M6 10.5l2.5 2.5L14 7.5" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>Hersteld, klaar om op te halen</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facts strip -->
+  <div class="bg-graphite text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-5 grid grid-cols-2 md:grid-cols-4 gap-4 text-[15px]">
+      <p><b class="block text-plus text-lg">Alle merken</b>behalve Apple</p>
+      <p><b class="block text-plus text-lg">Boven € 100</b>eerst uw akkoord</p>
+      <p><b class="block text-plus text-lg">Service aan huis</b>ook 's avonds</p>
+      <p><b class="block text-plus text-lg">Laptops op voorraad</b>met keuzehulp</p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section id="diensten" class="bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 lg:py-24">
+      <h2 class="font-black text-4xl sm:text-5xl tracking-[-.03em] max-w-2xl">Waarvoor u bij ons terechtkunt</h2>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10">
+        <article class="border-t-4 border-plus pt-5">
+          <h3 class="font-extrabold text-xl">Herstellingen</h3>
+          <p class="mt-2 text-muted leading-relaxed">Virus, foutmeldingen, een pc die warm wordt of uitvalt: hardware en software, met geavanceerde apparatuur opgespoord. Ook een jaarlijkse onderhoudsbeurt.</p>
+        </article>
+        <article class="border-t-4 border-plus pt-5">
+          <h3 class="font-extrabold text-xl">Service aan huis</h3>
+          <p class="mt-2 text-muted leading-relaxed">Problemen met internet of uw netwerk, gegevens overzetten of een nieuwe laptop instellen: onze techniekers komen bij u thuis, tijdens de werkuren of 's avonds.</p>
+        </article>
+        <article class="border-t-4 border-plus pt-5">
+          <h3 class="font-extrabold text-xl">Datarecuperatie</h3>
+          <p class="mt-2 text-muted leading-relaxed">Start uw oude pc niet meer? Een back-up van uw gegevens kost tussen € 40 en € 60 incl. btw, tot € 100 in moeilijke gevallen. Lukt het niet, dan gaat uw schijf naar onze partner Datarecuperatie.be.</p>
+        </article>
+        <article class="border-t-4 border-graphite pt-5">
+          <h3 class="font-extrabold text-xl">Kmo's &amp; zelfstandigen</h3>
+          <p class="mt-2 text-muted leading-relaxed">Netwerken, Windows-servers, VPN, back-up- en disasterstrategie, beveiliging en begeleiding bij een verhuis. Onze netwerkspecialist werkt samen met de pc-techniekers.</p>
+        </article>
+        <article class="border-t-4 border-graphite pt-5">
+          <h3 class="font-extrabold text-xl">Hulp op afstand</h3>
+          <p class="mt-2 text-muted leading-relaxed">Vaak kunnen we uw pc van op afstand overnemen en het probleem meteen oplossen. Bel eerst even, dan begeleiden we u stap voor stap.</p>
+        </article>
+        <article class="border-t-4 border-graphite pt-5">
+          <h3 class="font-extrabold text-xl">Verkoop</h3>
+          <p class="mt-2 text-muted leading-relaxed">Laptops, desktops en monitoren, printers, inkt en toners, opslag en netwerk. Merken waar we zelf achter staan: Acer, Asus, HP, Lenovo, Samsung, Logitech, Brother.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signature: intake -->
+  <section id="opname" class="bg-ward border-y border-hair">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 lg:py-24">
+      <div class="max-w-2xl">
+        <h2 class="font-black text-4xl sm:text-5xl tracking-[-.03em]">Herstelling aanmelden of huisbezoek plannen</h2>
+        <p class="mt-3 text-lg text-muted">De winkel is enkel 's voormiddags open. Hier regelt u het ook 's avonds of in het weekend: beschrijf de klacht, wij stellen de diagnose.</p>
+      </div>
+
+      <div class="mt-8 inline-flex bg-white border border-hair rounded-xl p-1" role="tablist" aria-label="Soort afspraak">
+        <button type="button" role="tab" id="tabShop" aria-selected="true" class="tab rounded-lg px-4 sm:px-5 py-2.5 font-bold">In de winkel</button>
+        <button type="button" role="tab" id="tabHome" aria-selected="false" class="tab rounded-lg px-4 sm:px-5 py-2.5 font-bold">Huisbezoek</button>
+      </div>
+
+      <form id="ck" class="mt-6 grid lg:grid-cols-[1fr_400px] gap-8 items-start" novalidate>
+        <div class="bg-white rounded-2xl border border-hair p-5 sm:p-8 space-y-8">
+          <fieldset>
+            <legend class="font-extrabold text-lg mb-3">Om welk toestel gaat het?</legend>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+              <label><input type="radio" name="dev" value="Laptop" class="sr-only" checked><span class="opt">Laptop</span></label>
+              <label><input type="radio" name="dev" value="Desktop" class="sr-only"><span class="opt">Desktop</span></label>
+              <label><input type="radio" name="dev" value="Alles-in-één" class="sr-only"><span class="opt">Alles-in-één</span></label>
+              <label><input type="radio" name="dev" value="Netwerk of internet" class="sr-only"><span class="opt">Internet / wifi</span></label>
+            </div>
+            <label class="block mt-4 max-w-xs"><span class="text-[15px] font-semibold">Merk</span>
+              <select id="brand" class="mt-1.5 w-full rounded-xl border-2 border-hair px-3 py-3 bg-white">
+                <option>Acer</option><option>Asus</option><option>HP</option><option>Lenovo</option><option>Samsung</option><option>Toshiba</option><option>Dell</option><option>Ander merk</option><option>Apple</option>
+              </select></label>
+            <p id="appleNote" class="hidden mt-3 rounded-lg bg-[#fff4ea] border border-plus/40 px-3 py-2.5 text-[15px]">Apple-toestellen herstellen we niet. Voor alle andere merken kunt u bij ons terecht, ook als u ze niet bij ons kocht.</p>
+          </fieldset>
+
+          <fieldset>
+            <legend class="font-extrabold text-lg mb-3">Wat zijn de symptomen?</legend>
+            <div id="syms" class="grid sm:grid-cols-2 gap-2"></div>
+          </fieldset>
+
+          <fieldset>
+            <legend id="slotLegend" class="font-extrabold text-lg mb-1">Wanneer brengt u hem binnen?</legend>
+            <p id="slotHint" class="text-[15px] text-muted mb-3">Winkel open ma–vr van 9:00 tot 13:00.</p>
+            <div id="slots" class="grid grid-cols-2 sm:grid-cols-4 gap-2"></div>
+          </fieldset>
+
+          <div class="grid sm:grid-cols-2 gap-3">
+            <label class="block"><span class="text-[15px] font-semibold">Naam</span><input id="name" type="text" autocomplete="name" class="mt-1.5 w-full rounded-xl border-2 border-hair px-3 py-3" /></label>
+            <label class="block"><span class="text-[15px] font-semibold">Telefoon</span><input id="tel" type="tel" autocomplete="tel" class="mt-1.5 w-full rounded-xl border-2 border-hair px-3 py-3" /></label>
+            <label id="addrWrap" class="hidden sm:col-span-2 block"><span class="text-[15px] font-semibold">Adres voor het huisbezoek</span><input id="addr" type="text" autocomplete="street-address" placeholder="Straat, nummer, gemeente" class="mt-1.5 w-full rounded-xl border-2 border-hair px-3 py-3" /></label>
+          </div>
+          <p id="err" class="hidden font-semibold text-plusdk" role="alert"></p>
+          <button id="submitBtn" type="submit" class="btn bg-plus hover:bg-plusdk text-white font-bold text-lg rounded-lg px-7 py-3.5">Herstelling aanmelden</button>
+        </div>
+
+        <!-- Diagnosis card -->
+        <aside class="lg:sticky lg:top-24 bg-char text-white rounded-2xl p-6 sm:p-7" aria-live="polite">
+          <div class="flex items-center justify-between">
+            <p class="font-extrabold text-xl">Eerste diagnose</p>
+            <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><path d="M9 1h8v8h8v8h-8v8H9v-8H1V9h8z" fill="#ee7e17"/></svg>
+          </div>
+          <dl class="mt-5 space-y-4">
+            <div><dt class="text-[13px] text-white/60 font-semibold">Toestel</dt><dd id="dDev" class="font-bold text-[17px]">Laptop · Acer</dd></div>
+            <div><dt class="text-[13px] text-white/60 font-semibold">Symptomen</dt><dd id="dSym" class="font-bold text-[17px]">Nog niets aangeduid</dd></div>
+            <div><dt class="text-[13px] text-white/60 font-semibold">Ons advies</dt><dd id="dAdv" class="text-[15px] text-white/85 leading-relaxed">Duid aan wat er mis is, dan zeggen we hoe we het best aanpakken.</dd></div>
+          </dl>
+          <div class="mt-5 grid grid-cols-2 gap-3">
+            <div class="rounded-xl bg-white/10 p-3"><p class="text-[12.5px] text-white/60 font-semibold">Indicatieve termijn</p><p id="dTurn" class="font-extrabold text-xl text-plus">2 werkdagen</p></div>
+            <div class="rounded-xl bg-white/10 p-3"><p class="text-[12.5px] text-white/60 font-semibold">Moment</p><p id="dSlot" class="font-extrabold text-[17px]">nog te kiezen</p></div>
+          </div>
+          <p class="mt-4 text-[13.5px] text-white/70">Kost de herstelling meer dan € 100, dan bellen we u eerst. Laat u niet herstellen, dan betaalt u enkel het nazicht.</p>
+          <div id="ok" class="hidden mt-5 rounded-xl bg-heal p-4">
+            <p class="font-extrabold text-lg" id="okTitle">Aangemeld!</p>
+            <p class="mt-1 text-[15px]" id="okText"></p>
+            <p class="mt-2 text-[12.5px] text-white/80">Dit is een concept-demo: er werd niets verzonden.</p>
+          </div>
+        </aside>
+      </form>
+    </div>
+  </section>
+
+  <!-- Laptops -->
+  <section id="laptops" class="bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 lg:py-24">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div class="max-w-xl">
+          <h2 class="font-black text-4xl sm:text-5xl tracking-[-.03em]">Op voorraad in de winkel</h2>
+          <p class="mt-3 text-lg text-muted">Een greep uit de laptops die vandaag klaarstaan. Niet gevonden wat u zoekt? Dan zoeken we samen uit wat u nodig hebt en bestellen het voor u.</p>
+        </div>
+        <a href="https://computerkliniekkapellen.be/laptops.php" class="font-bold underline underline-offset-4 decoration-plus decoration-2">Alle laptops en de keuzehulp</a>
+      </div>
+      <div class="mt-10 grid sm:grid-cols-3 gap-5">
+        <article class="rounded-2xl border border-hair p-5">
+          <img src="images/Asus_Vivobook-15-X1504VA.jpg" alt="Asus Vivobook 15 X1504VA" class="w-full h-44 object-contain" loading="lazy" width="600" height="500" />
+          <h3 class="mt-4 font-extrabold">Asus Vivobook 15</h3>
+          <p class="text-[14px] text-muted">15,6 inch · Intel Core 5 · 16 GB · 512 GB SSD</p>
+          <p class="mt-3 font-black text-2xl">€ 649</p>
+        </article>
+        <article class="rounded-2xl border border-hair p-5">
+          <img src="images/Asus_Zenbook_14UX3407QA.jpg" alt="Asus Zenbook 14" class="w-full h-44 object-contain" loading="lazy" width="600" height="500" />
+          <h3 class="mt-4 font-extrabold">Asus Zenbook 14</h3>
+          <p class="text-[14px] text-muted">14 inch · Snapdragon X · 32 GB · 1 TB SSD</p>
+          <p class="mt-3 font-black text-2xl">€ 1.199</p>
+        </article>
+        <article class="rounded-2xl border border-hair p-5">
+          <img src="images/Lenovo_Thinkpad_E16-21SR002DMB.jpg" alt="Lenovo ThinkPad E16" class="w-full h-44 object-contain" loading="lazy" width="600" height="500" />
+          <h3 class="mt-4 font-extrabold">Lenovo ThinkPad E16</h3>
+          <p class="text-[14px] text-muted">16 inch · Core Ultra 5 · 16 GB · Windows Pro</p>
+          <p class="mt-3 font-black text-2xl">€ 1.259</p>
+        </article>
+      </div>
+      <p class="mt-4 text-[13px] text-muted">Prijzen zoals op computerkliniekkapellen.be op 3 oktober 2026.</p>
+      <div class="mt-12 rounded-2xl bg-ward p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-5">
+        <div>
+          <p class="font-extrabold text-xl">Maandelijkse nieuwsbrief met promoties</p>
+          <p class="text-muted mt-1">Schrijf in en mis geen actie meer, of volg ons op Facebook.</p>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <a href="https://mailchi.mp/306fb11c351d/computerkliniekkapellen" class="btn bg-graphite text-white font-bold rounded-lg px-5 py-3" rel="noopener" target="_blank">Inschrijven</a>
+          <a href="https://www.facebook.com/computerkliniekkapellen/" class="btn bg-white border-2 border-graphite font-bold rounded-lg px-5 py-2.5" rel="noopener" target="_blank">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-char text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 grid md:grid-cols-3 gap-10">
+      <div>
+        <h2 class="font-black text-3xl">Waar vindt u ons?</h2>
+        <p class="mt-3 text-white/85 text-lg">Stationsstraat 21 bus 1<br />2950 Kapellen</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Computer-Kliniek+Stationsstraat+21+2950+Kapellen" target="_blank" rel="noopener" class="mt-4 inline-block font-bold text-plus underline underline-offset-4">Open in Google Maps</a>
+      </div>
+      <div>
+        <h3 class="font-extrabold text-xl">Openingsuren</h3>
+        <ul class="mt-3 space-y-1.5 text-white/85">
+          <li class="flex justify-between gap-4"><span>Ma–vr in de winkel</span><span>9:00–13:00</span></li>
+          <li class="flex justify-between gap-4"><span>Namiddag</span><span>op huisbezoek</span></li>
+        </ul>
+        <p class="mt-3 text-[15px] text-white/65">'s Namiddags zijn we telefonisch bereikbaar. Kunnen we niet meteen opnemen, dan bellen we zo snel mogelijk terug. Aan het werk tijdens de openingsuren? Bel gerust voor een afspraak.</p>
+      </div>
+      <div>
+        <h3 class="font-extrabold text-xl">Contact</h3>
+        <ul class="mt-3 space-y-1.5">
+          <li><a class="hover:underline" href="tel:+3236056805">03 605 68 05</a></li>
+          <li><a class="hover:underline" href="mailto:joey@computer-kliniek.be">joey@computer-kliniek.be</a></li>
+        </ul>
+        <p class="mt-5 text-white/80">Huisbezoeken in Kapellen en omgeving: Putte, Hoevenen, Stabroek, Ekeren en Brasschaat.</p>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <p class="max-w-6xl mx-auto px-4 sm:px-6 py-5 pb-24 md:pb-5 text-[13px] text-white/50">Concept-herontwerp door Saspire als vrijblijvend voorstel. Dit is niet de officiële website van Computer-Kliniek Kapellen.</p>
+    </div>
+  </section>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden bg-plus text-white">
+    <a href="tel:+3236056805" class="flex items-center justify-center gap-2.5 py-3.5 font-bold text-[17px]">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      Bel de Computer-Kliniek · 03 605 68 05
+    </a>
+  </div>
+
+  <script>
+    document.documentElement.classList.add('js');
+    (function () {
+      var $ = function (id) { return document.getElementById(id); };
+      var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var SYM = [
+        { k: 'virus', l: 'Virus of vreemde pop-ups', adv: 'Opkuis en beveiliging. Daarna installeren we een goede antivirus, als u dat wilt.', turn: 2, home: false },
+        { k: 'err', l: 'Foutmeldingen', adv: 'We sporen uit of het aan hardware of software ligt.', turn: 2, home: false },
+        { k: 'heat', l: 'Wordt warm of valt uit', adv: 'Vaak stof of een ventilator; we testen de onderdelen.', turn: 2, home: false },
+        { k: 'boot', l: 'Start niet meer op', adv: 'Diagnose eerst. Uw gegevens kunnen we meestal nog veiligstellen.', turn: 2, home: false },
+        { k: 'slow', l: 'Heel traag geworden', adv: 'Tijd voor een onderhoudsbeurt: één keer per jaar is geen overbodige luxe.', turn: 2, home: false },
+        { k: 'data', l: 'Bestanden kwijt', adv: 'Datarecuperatie: tussen € 40 en € 60 incl. btw, tot € 100 in moeilijke gevallen.', turn: 3, home: false },
+        { k: 'net', l: 'Internet of wifi werkt niet', adv: 'Meestal ligt het aan de modem of router thuis: een huisbezoek is hier de snelste weg.', turn: 0, home: true },
+        { k: 'new', l: 'Nieuwe laptop instellen', adv: 'Gegevens overzetten en alles instellen doen we graag bij u thuis.', turn: 0, home: true }
+      ];
+      var state = { mode: 'shop', syms: [], slot: null };
+      $('syms').innerHTML = SYM.map(function (s) { return '<button type="button" class="opt text-left" aria-pressed="false" data-k="' + s.k + '">' + s.l + '</button>'; }).join('');
+      var DN = ['zo','ma','di','wo','do','vr','za'];
+      function nextDays(n) { var out = [], d = new Date(); while (out.length < n) { d.setDate(d.getDate() + 1); if (d.getDay() > 0 && d.getDay() < 6) out.push(new Date(d)); } return out; }
+      function renderSlots() {
+        var hours = state.mode === 'shop' ? ['9:30', '11:30'] : ['14:00', '19:00'];
+        var list = [];
+        nextDays(4).forEach(function (d) { hours.forEach(function (h) { list.push(DN[d.getDay()] + ' ' + d.getDate() + '/' + (d.getMonth() + 1) + ' · ' + h); }); });
+        $('slots').innerHTML = list.map(function (s) { return '<button type="button" class="slot text-[14px]" aria-pressed="' + (state.slot === s) + '" data-s="' + s + '">' + s + '</button>'; }).join('');
+      }
+      function setMode(m) {
+        state.mode = m; state.slot = null;
+        $('tabShop').setAttribute('aria-selected', m === 'shop'); $('tabHome').setAttribute('aria-selected', m === 'home');
+        $('slotLegend').textContent = m === 'shop' ? 'Wanneer brengt u hem binnen?' : 'Wanneer mogen we langskomen?';
+        $('slotHint').textContent = m === 'shop' ? 'Winkel open ma–vr van 9:00 tot 13:00.' : 'Huisbezoeken in de namiddag of \'s avonds.';
+        $('addrWrap').classList.toggle('hidden', m !== 'home');
+        $('submitBtn').textContent = m === 'shop' ? 'Herstelling aanmelden' : 'Huisbezoek plannen';
+        renderSlots(); update();
+      }
+      function update() {
+        var brand = $('brand').value, dev = document.querySelector('input[name=dev]:checked').value;
+        $('dDev').textContent = dev + (dev === 'Netwerk of internet' ? '' : ' · ' + brand);
+        $('appleNote').classList.toggle('hidden', brand !== 'Apple');
+        var chosen = SYM.filter(function (s) { return state.syms.indexOf(s.k) > -1; });
+        $('dSym').textContent = chosen.length ? chosen.map(function (s) { return s.l; }).join(', ') : 'Nog niets aangeduid';
+        var homeHint = chosen.some(function (s) { return s.home; }) || dev === 'Netwerk of internet';
+        var adv = chosen.length ? chosen[chosen.length - 1].adv : 'Duid aan wat er mis is, dan zeggen we hoe we het best aanpakken.';
+        if (brand === 'Apple' && dev !== 'Netwerk of internet') adv = 'Apple herstellen we niet; bel ons gerust voor advies.';
+        else if (homeHint && state.mode === 'shop') adv += ' Tip: kies hierboven "Huisbezoek".';
+        $('dAdv').textContent = adv;
+        var turn = Math.max.apply(null, [2].concat(chosen.map(function (s) { return s.turn; })));
+        $('dTurn').textContent = state.mode === 'home' ? 'Tijdens het bezoek' : (turn === 3 ? '2 à 3 werkdagen' : '2 werkdagen');
+        $('dSlot').textContent = state.slot || 'nog te kiezen';
+      }
+      $('tabShop').addEventListener('click', function () { setMode('shop'); });
+      $('tabHome').addEventListener('click', function () { setMode('home'); });
+      document.querySelectorAll('[data-goto=home]').forEach(function (a) { a.addEventListener('click', function () { setMode('home'); }); });
+      document.querySelectorAll('input[name=dev]').forEach(function (r) { r.addEventListener('change', update); });
+      $('brand').addEventListener('change', update);
+      $('syms').addEventListener('click', function (e) {
+        var b = e.target.closest('[data-k]'); if (!b) return;
+        var on = b.getAttribute('aria-pressed') !== 'true'; b.setAttribute('aria-pressed', on);
+        state.syms = on ? state.syms.concat(b.dataset.k) : state.syms.filter(function (k) { return k !== b.dataset.k; });
+        update();
+      });
+      $('slots').addEventListener('click', function (e) {
+        var b = e.target.closest('[data-s]'); if (!b) return;
+        state.slot = b.dataset.s; renderSlots(); update();
+      });
+      $('ck').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var miss = [];
+        if (!state.syms.length) miss.push('de symptomen');
+        if (!state.slot) miss.push('een moment');
+        if (!$('name').value.trim()) miss.push('uw naam');
+        if ($('tel').value.replace(/\D/g, '').length < 9) miss.push('een telefoonnummer');
+        if (state.mode === 'home' && !$('addr').value.trim()) miss.push('het adres');
+        if (miss.length) { $('err').textContent = 'Nog nodig: ' + miss.join(', ') + '.'; $('err').classList.remove('hidden'); return; }
+        $('err').classList.add('hidden');
+        var first = $('name').value.trim().split(' ')[0];
+        $('okTitle').textContent = state.mode === 'shop' ? 'Herstelling aangemeld' : 'Huisbezoek gepland';
+        $('okText').textContent = state.mode === 'shop'
+          ? 'Tot ' + state.slot + ', ' + first + '. Breng uw toestel en de lader mee; wij bellen u zodra de diagnose klaar is.'
+          : 'We komen langs op ' + state.slot + '. We bellen u nog om het uur te bevestigen.';
+        $('ok').classList.remove('hidden');
+        if (innerWidth < 1024) $('ok').scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
+      });
+      setMode('shop');
+    })();
+  </script>
+</body>
+</html>

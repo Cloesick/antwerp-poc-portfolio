@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Tuinmachinesexpert Schilde | Onderhoud, reparatie, verkoop en verhuur van tuinmachines</title>
+  <meta name="description" content="Tuinmachinesexpert in Schilde: Etesia-specialist, onderhoud en reparatie van tuinmachines van alle merken, verkoop, verhuur en grasrobots. Huur een zitmaaier of verticuteermachine of vraag online een onderhoud aan." />
+  <meta name="theme-color" content="#16301f" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Tuinmachinesexpert" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Tuinmachinesexpert, Schilde" />
+  <meta property="og:description" content="Etesia-specialist. Onderhoud en reparatie van alle merken, verkoop, verhuur en grasrobots." />
+  <meta property="og:image" content="images/concept.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2316301f'/%3E%3Cpath d='M6 24h20M8 20h16M10 16h12' stroke='%2393c46a' stroke-width='2.4' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='9' r='3.2' fill='%23c9692c'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Tuinmachinesexpert",
+    "description": "Verkoop, verhuur, reparatie en onderhoud van tuinmachines. Etesia-specialisatie, onderhoud en reparatie van alle merken, grasrobots en losse onderdelen.",
+    "url": "https://www.tuinmachinesexpert.be/",
+    "telephone": "+32494672995",
+    "email": "info@tuinmachinesexpert.be",
+    "vatID": "BE0657816584",
+    "foundingDate": "2010",
+    "image": "images/etesia-zitmaaier.jpg",
+    "logo": "images/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Turnhoutsebaan 365",
+      "postalCode": "2970",
+      "addressLocality": "Schilde",
+      "addressCountry": "BE"
+    },
+    "areaServed": ["Schilde", "'s-Gravenwezel", "Schoten", "Brasschaat", "Wijnegem", "Zoersel", "Ranst", "Malle"],
+    "brand": ["Etesia", "AL-KO", "Bertolini", "Caravaggi", "Cramer", "Dormak", "EcoTech", "Eurosystems", "Efco", "Gardena", "Ibea", "Mauki", "Kaaz", "MM", "Oleo-Mac", "Shindaiwa", "Solo"],
+    "sameAs": ["https://www.facebook.com/tuinmachinesexpert", "https://www.instagram.com/tuinmachines_expert/"]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Karla', 'system-ui', 'sans-serif'], disp: ['"Bricolage Grotesque"', 'sans-serif'] },
+          colors: {
+            hedge: '#16301f',
+            moss: '#21452d',
+            lawn: '#5e9b3c',
+            sprout: '#93c46a',
+            copper: '#c9692c',
+            copperdk: '#a9541f',
+            mist: '#f2f5ef',
+            bark: '#1d221e',
+            stone: '#5f6a62',
+            rule: '#d8ded5',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root { --ease: cubic-bezier(0.23, 1, 0.32, 1); }
+    html { scroll-behavior: smooth; }
+    h1, h2, h3 { text-wrap: balance; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), border-color .18s var(--ease); }
+    .btn:active { transform: scale(0.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #c9692c; outline-offset: 3px; }
+
+    /* Freshly mown lawn stripes */
+    .stripes { background: repeating-linear-gradient(90deg, #4f8a31 0 64px, #65a343 64px 128px); }
+    .stripes-soft { background: repeating-linear-gradient(90deg, rgba(147,196,106,.10) 0 80px, rgba(147,196,106,0) 80px 160px); }
+    @keyframes mow { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+    .mow { animation: mow 1.6s var(--ease) .2s both; }
+
+    .pick { cursor: pointer; position: relative; }
+    .pick input { position: absolute; opacity: 0; pointer-events: none; }
+    .pick > span { display: block; border: 1.5px solid #d8ded5; border-radius: 14px; background: #fff; transition: border-color .15s var(--ease), box-shadow .15s var(--ease), background-color .15s var(--ease); }
+    .pick:hover > span { border-color: #5e9b3c; }
+    .pick input:checked + span { border-color: #16301f; box-shadow: 0 0 0 2px #16301f; background: #f2f5ef; }
+    .pick input:focus-visible + span { outline: 3px solid #c9692c; outline-offset: 2px; }
+    .field { width: 100%; border: 1.5px solid #d8ded5; border-radius: 12px; padding: 11px 13px; background: #fff; }
+    .field:focus { border-color: #16301f; outline: none; box-shadow: 0 0 0 3px rgba(94,155,60,.25); }
+    .err { border-color: #b42318 !important; }
+
+    .tab[aria-selected="true"] { background: #16301f; color: #fff; }
+
+    /* Calendar */
+    .cal button { aspect-ratio: 1; border-radius: 10px; font-weight: 600; font-size: 15px; transition: background-color .12s var(--ease), color .12s var(--ease); }
+    .cal button:not(:disabled):hover { background: #e3ecdc; }
+    .cal button.busy { color: #a7aea9; text-decoration: line-through; background: repeating-linear-gradient(135deg, #f1f2f0 0 4px, #e8eae6 4px 8px); cursor: not-allowed; }
+    .cal button.past { color: #c7ccc8; cursor: default; }
+    .cal button.in { background: #dbe9cf; border-radius: 0; }
+    .cal button.edge { background: #16301f !important; color: #fff; border-radius: 10px; }
+
+    .no-js .js-only { display: none; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .mow { animation: none; }
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
+</head>
+<body class="bg-white text-bark font-sans antialiased">
+
+  <div class="fixed right-3 bottom-[70px] md:bottom-4 md:right-4 z-50 pointer-events-none">
+    <span class="text-[10.5px] tracking-wide font-bold text-white bg-hedge/90 border border-white/15 rounded-full px-3 py-1.5 backdrop-blur">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-hedge/95 backdrop-blur text-white border-b border-white/10">
+    <nav class="max-w-6xl mx-auto px-5 h-[70px] flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top" class="flex items-center gap-3 min-w-0">
+        <img src="images/logo.png" alt="" class="h-[52px] w-auto" />
+        <span class="leading-tight hidden sm:block"><span class="block font-disp font-bold text-[19px]">Tuinmachinesexpert</span><span class="block text-[12px] text-white/60">Service · verhuur · verkoop</span></span>
+      </a>
+      <div class="hidden lg:flex items-center gap-7 text-[15px] font-medium text-white/80">
+        <a href="#diensten" class="hover:text-white">Diensten</a>
+        <a href="#plannen" class="hover:text-white">Huren &amp; onderhoud</a>
+        <a href="#merken" class="hover:text-white">Merken</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </div>
+      <a href="tel:+32494672995" class="btn bg-copper hover:bg-copperdk text-white font-bold text-[14px] rounded-full px-4 py-2.5 whitespace-nowrap"><span class="sm:hidden">Bel ons</span><span class="hidden sm:inline">Bel 0494 67 29 95</span></a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative bg-hedge text-white overflow-hidden">
+    <div class="absolute inset-0 stripes-soft" aria-hidden="true"></div>
+    <div class="relative max-w-6xl mx-auto px-5 pt-12 md:pt-16 pb-20 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-6 min-w-0">
+        <p class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 text-[14px] font-semibold text-sprout">Etesia-specialist in Schilde</p>
+        <h1 class="mt-5 font-disp font-extrabold leading-[0.95] tracking-[-0.025em] text-[clamp(2.8rem,6.4vw,5rem)]">Tuinmachines&shy;expert</h1>
+        <p class="mt-5 text-[20px] leading-relaxed text-white/80 max-w-[42ch]">Onderhoud en reparatie van tuinmachines van alle merken, plus verkoop, verhuur en grasrobots. Sinds 2010, aan de Turnhoutsebaan in Schilde.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#plannen" data-tab="O" class="totab btn bg-copper hover:bg-copperdk text-white font-bold rounded-full px-7 py-4">Onderhoud aanvragen</a>
+          <a href="#plannen" data-tab="H" class="totab btn border-2 border-white/40 hover:border-white font-bold rounded-full px-7 py-[14px]">Machine huren</a>
+        </div>
+        <p class="mt-8 flex items-center gap-3 text-[15px] text-white/75">
+          <span class="text-sprout text-[18px] tracking-[2px]" aria-hidden="true">★★★★★</span>
+          <span>5,0 op Google: “Betrouwbare en snelle service voor alle tuinmachines!”</span>
+        </p>
+      </div>
+      <div class="lg:col-span-6 relative min-w-0">
+        <div class="relative rounded-[28px] overflow-hidden aspect-[4/3.3] shadow-2xl shadow-black/40">
+          <img src="images/etesia-zitmaaier.jpg" alt="Etesia-zitmaaier aan het werk op een groot gazon" class="w-full h-full object-cover object-[60%_50%]" />
+        </div>
+        <div class="absolute -bottom-6 left-5 right-5 sm:left-auto sm:right-6 sm:w-[300px] bg-white text-bark rounded-2xl p-5 shadow-xl">
+          <p class="font-disp font-bold text-[18px]">Etesia Hydro 80 huren?</p>
+          <p class="text-[14px] text-stone mt-1">Compacte zitmaaier, 80 cm maaibreedte. Bekijk wanneer hij vrij is.</p>
+          <a href="#plannen" data-tab="H" data-m="etesia" class="totab inline-block mt-3 text-[14px] font-bold text-copper underline underline-offset-4">Kalender bekijken</a>
+        </div>
+      </div>
+    </div>
+    <div class="stripes h-5 mow" aria-hidden="true"></div>
+  </section>
+
+  <!-- Services -->
+  <section id="diensten" class="py-20 md:py-24">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="grid lg:grid-cols-12 gap-8 items-end">
+        <h2 class="lg:col-span-7 font-disp font-extrabold tracking-[-0.02em] text-[clamp(2.1rem,4.4vw,3.2rem)] leading-[1]">Alles voor uw tuinmachine, onder één dak</h2>
+        <p class="lg:col-span-5 text-stone text-[17px] leading-relaxed">Voor hobbytuiniers en professionele landschapsaannemers: van grasmaaier en heggenschaar tot bladblazer en kettingzaag.</p>
+      </div>
+      <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <article class="rounded-2xl bg-mist p-7">
+          <h3 class="font-disp font-bold text-[22px]">Onderhoud</h3>
+          <p class="mt-2 text-stone">Inspectie, reinigen, messen en bladen slijpen, olie verversen en smeren. Zodat uw machine het hele seizoen meegaat.</p>
+        </article>
+        <article class="rounded-2xl bg-mist p-7">
+          <h3 class="font-disp font-bold text-[22px]">Reparaties, alle merken</h3>
+          <p class="mt-2 text-stone">Diagnose, motorproblemen, messen, elektronische storingen en startsystemen, versleten onderdelen, brandstofsystemen en carburateurs.</p>
+        </article>
+        <article class="rounded-2xl bg-hedge text-white p-7">
+          <h3 class="font-disp font-bold text-[22px] text-sprout">Etesia-specialist</h3>
+          <p class="mt-2 text-white/80">Zitmaaiers en professionele maaiers van Etesia zijn onze specialiteit. Onderhoud en herstelling door wie ze door en door kent.</p>
+        </article>
+        <article class="rounded-2xl bg-mist p-7">
+          <h3 class="font-disp font-bold text-[22px]">Verkoop</h3>
+          <p class="mt-2 text-stone">Moderne en betrouwbare tuinmachines van toonaangevende merken, en losse onderdelen voor doe-het-zelvers.</p>
+        </article>
+        <article class="rounded-2xl bg-mist p-7">
+          <h3 class="font-disp font-bold text-[22px]">Verhuur</h3>
+          <p class="mt-2 text-stone">Zitmaaier, rolmaaier, verticuteermachine, accu-hoogsnoeier en een multifunctionele terreinmachine. Flexibel te huur.</p>
+        </article>
+        <article class="rounded-2xl bg-mist p-7">
+          <h3 class="font-disp font-bold text-[22px]">Grasrobots</h3>
+          <p class="mt-2 text-stone">Gardena Sileno City 250 voor stadstuinen tot 250 m² en AL-KO Robolinho voor tuinen tot 500 m².</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signature: huren + onderhoud -->
+  <section id="plannen" class="bg-mist py-20 md:py-24 border-y border-rule">
+    <div class="max-w-6xl mx-auto px-5">
+      <h2 class="font-disp font-extrabold tracking-[-0.02em] text-[clamp(2.1rem,4.4vw,3.2rem)] leading-[1] max-w-[18ch]">Huren of laten nakijken?</h2>
+      <p class="mt-4 text-stone text-[17px] max-w-[56ch]">Kies een machine en zie meteen welke dagen nog vrij zijn. Of vraag een onderhoud of reparatie aan en kies wanneer u de machine binnenbrengt.</p>
+
+      <noscript><p class="mt-8 rounded-xl bg-white border border-rule px-5 py-4 font-semibold">De kalender werkt met JavaScript. Bel ons op 0494 67 29 95 of mail naar info@tuinmachinesexpert.be.</p></noscript>
+
+      <div class="mt-8 inline-flex rounded-full bg-white border border-rule p-1" role="tablist" aria-label="Kies">
+        <button type="button" role="tab" id="tH" aria-selected="true" aria-controls="pH" class="tab btn rounded-full px-5 py-2.5 font-bold">Machine huren</button>
+        <button type="button" role="tab" id="tO" aria-selected="false" aria-controls="pO" class="tab btn rounded-full px-5 py-2.5 font-bold">Onderhoud of reparatie</button>
+      </div>
+
+      <!-- Huren -->
+      <form id="pH" role="tabpanel" aria-labelledby="tH" class="mt-6 grid lg:grid-cols-12 gap-6" novalidate>
+        <div class="lg:col-span-7 min-w-0 space-y-6">
+          <div class="bg-white rounded-3xl border border-rule p-6">
+            <p class="font-disp font-bold text-[19px]">1. Kies een machine</p>
+            <div id="machines" class="mt-4 grid grid-cols-2 sm:grid-cols-3 gap-3"></div>
+          </div>
+          <div class="bg-white rounded-3xl border border-rule p-6">
+            <div class="flex items-center justify-between gap-3">
+              <p class="font-disp font-bold text-[19px]">2. Kies uw huurdagen</p>
+              <div class="flex items-center gap-1">
+                <button type="button" id="prevM" class="btn w-9 h-9 rounded-full border border-rule hover:border-hedge" aria-label="Vorige maand">‹</button>
+                <span id="monthLbl" class="min-w-[120px] text-center font-semibold"></span>
+                <button type="button" id="nextM" class="btn w-9 h-9 rounded-full border border-rule hover:border-hedge" aria-label="Volgende maand">›</button>
+              </div>
+            </div>
+            <p class="text-[14px] text-stone mt-1">Klik op een begindag en een einddag. Gestreepte dagen zijn al verhuurd.</p>
+            <div class="mt-4 grid grid-cols-7 gap-1 text-center text-[12px] font-semibold text-stone"><span>ma</span><span>di</span><span>wo</span><span>do</span><span>vr</span><span>za</span><span>zo</span></div>
+            <div id="cal" class="cal mt-1 grid grid-cols-7 gap-1" role="grid" aria-label="Huurkalender"></div>
+          </div>
+        </div>
+        <aside class="lg:col-span-5 min-w-0">
+          <div class="lg:sticky lg:top-24 bg-hedge text-white rounded-3xl p-6 md:p-7">
+            <div id="hSel" class="flex gap-4 items-center">
+              <span id="hImg" class="flex-none w-24 h-[72px] rounded-xl" aria-hidden="true"></span>
+              <div><p id="hName" class="font-disp font-bold text-[20px] leading-tight"></p><p id="hDesc" class="text-[14px] text-white/70 mt-1"></p></div>
+            </div>
+            <dl class="mt-6 space-y-2 text-[15px] border-t border-white/15 pt-5">
+              <div class="flex justify-between gap-3"><dt class="text-white/60">Van</dt><dd id="hFrom" class="font-semibold">kies een dag</dd></div>
+              <div class="flex justify-between gap-3"><dt class="text-white/60">Tot en met</dt><dd id="hTo" class="font-semibold">—</dd></div>
+              <div class="flex justify-between gap-3"><dt class="text-white/60">Aantal dagen</dt><dd id="hDays" class="font-semibold">—</dd></div>
+            </dl>
+            <p id="calErr" class="hidden mt-3 text-[14px] font-semibold text-[#ffb59a]"></p>
+            <div class="mt-6 grid gap-3">
+              <label class="block"><span class="text-[13px] text-white/70">Naam</span><input id="hNaam" class="field mt-1 text-bark" autocomplete="name" /></label>
+              <label class="block"><span class="text-[13px] text-white/70">Telefoon</span><input id="hTel" type="tel" class="field mt-1 text-bark" autocomplete="tel" /></label>
+            </div>
+            <button type="submit" class="btn mt-5 w-full bg-copper hover:bg-copperdk text-white font-bold rounded-full px-6 py-4">Reservering aanvragen</button>
+            <p class="mt-3 text-[12.5px] text-white/55">Demo: de bezette dagen zijn voorbeelden, er wordt niets verzonden.</p>
+          </div>
+        </aside>
+      </form>
+
+      <!-- Onderhoud -->
+      <form id="pO" role="tabpanel" aria-labelledby="tO" class="mt-6 bg-white rounded-3xl border border-rule p-6 md:p-8 space-y-8" hidden novalidate>
+        <div>
+          <p class="font-disp font-bold text-[19px]">1. Welke machine?</p>
+          <div id="types" class="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-2 text-[15px]"></div>
+          <div class="mt-4 grid sm:grid-cols-2 gap-4 max-w-[640px]">
+            <label class="block"><span class="text-[14px] font-semibold">Merk</span>
+              <select id="merk" class="field mt-1.5">
+                <option>Etesia</option><option>AL-KO</option><option>Bertolini</option><option>Caravaggi</option><option>Cramer</option><option>Dormak</option><option>EcoTech</option><option>Efco</option><option>Eliet</option><option>Eurosystems</option><option>Gardena</option><option>Ibea</option><option>Iseki</option><option>Kaaz</option><option>Mauki</option><option>MM</option><option>Oleo-Mac</option><option>Shindaiwa</option><option>Solo</option><option>Stihl</option><option>Ander merk</option>
+              </select>
+            </label>
+            <label class="block"><span class="text-[14px] font-semibold">Type of model <span class="font-normal text-stone">(als u het weet)</span></span><input id="model" class="field mt-1.5" placeholder="bv. Hydro 80" /></label>
+          </div>
+        </div>
+        <div>
+          <p class="font-disp font-bold text-[19px]">2. Wat is er nodig?</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-[15px]">
+            <label class="pick"><input type="radio" name="soort" value="Onderhoudsbeurt" checked /><span class="px-4 py-2.5 font-semibold">Onderhoudsbeurt</span></label>
+            <label class="pick"><input type="radio" name="soort" value="Reparatie" /><span class="px-4 py-2.5 font-semibold">Reparatie</span></label>
+          </div>
+          <div id="probWrap" class="mt-4" hidden>
+            <p class="text-[14px] font-semibold text-stone">Wat merkt u? <span class="font-normal">(meerdere mogelijk)</span></p>
+            <div class="mt-2 flex flex-wrap gap-2 text-[14px]">
+              <label class="pick"><input type="checkbox" name="prob" value="Start niet" /><span class="px-3.5 py-2">Start niet</span></label>
+              <label class="pick"><input type="checkbox" name="prob" value="Verliest vermogen of valt stil" /><span class="px-3.5 py-2">Verliest vermogen of valt stil</span></label>
+              <label class="pick"><input type="checkbox" name="prob" value="Maait of snijdt slecht" /><span class="px-3.5 py-2">Maait of snijdt slecht</span></label>
+              <label class="pick"><input type="checkbox" name="prob" value="Elektronica of bediening" /><span class="px-3.5 py-2">Elektronica of bediening</span></label>
+              <label class="pick"><input type="checkbox" name="prob" value="Lekt brandstof of olie" /><span class="px-3.5 py-2">Lekt brandstof of olie</span></label>
+              <label class="pick"><input type="checkbox" name="prob" value="Riem, filter of bougie versleten" /><span class="px-3.5 py-2">Riem, filter of bougie</span></label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="font-disp font-bold text-[19px]">3. Wanneer brengt u de machine binnen?</p>
+          <div id="oDays" class="mt-4 flex gap-2 overflow-x-auto pb-1 text-[14px]"></div>
+          <p id="oDayErr" class="hidden mt-2 text-[14px] font-semibold text-[#b42318]">Kies een dag.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <label class="block"><span class="text-[14px] font-semibold">Naam</span><input id="oNaam" class="field mt-1.5" autocomplete="name" /></label>
+          <label class="block"><span class="text-[14px] font-semibold">Telefoon</span><input id="oTel" type="tel" class="field mt-1.5" autocomplete="tel" /></label>
+          <label class="block sm:col-span-2"><span class="text-[14px] font-semibold">Opmerking <span class="font-normal text-stone">(optioneel)</span></span><textarea id="oOpm" rows="3" class="field mt-1.5"></textarea></label>
+        </div>
+        <div class="flex flex-wrap items-center gap-4">
+          <button type="submit" class="btn bg-copper hover:bg-copperdk text-white font-bold rounded-full px-7 py-4">Aanvraag versturen</button>
+          <p class="text-[13px] text-stone">Demo: er wordt niets verzonden.</p>
+        </div>
+      </form>
+
+      <div id="done" class="hidden mt-6 bg-white rounded-3xl border-2 border-hedge p-7 md:p-9 max-w-[760px]" role="status" tabindex="-1"></div>
+    </div>
+  </section>
+
+  <!-- Brands -->
+  <section id="merken" class="py-20 md:py-24">
+    <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-4">
+        <h2 class="font-disp font-extrabold tracking-[-0.02em] text-[clamp(2.1rem,4.4vw,3rem)] leading-[1]">Merken die we verkopen</h2>
+        <p class="mt-4 text-stone text-[17px]">En niet gevonden wat u zoekt? Vraag het ons, we zoeken een alternatief. Ook de catalogi van Vegemac, Eurogarden en Bemak kan u bij ons inkijken.</p>
+      </div>
+      <ul class="lg:col-span-8 flex flex-wrap gap-2.5 content-start text-[17px] font-semibold">
+        <li class="rounded-full bg-hedge text-white px-4 py-2">Etesia</li>
+        <li class="rounded-full border border-rule px-4 py-2">AL-KO</li><li class="rounded-full border border-rule px-4 py-2">Bertolini</li><li class="rounded-full border border-rule px-4 py-2">Caravaggi</li><li class="rounded-full border border-rule px-4 py-2">Cramer</li><li class="rounded-full border border-rule px-4 py-2">Dormak</li><li class="rounded-full border border-rule px-4 py-2">EcoTech</li><li class="rounded-full border border-rule px-4 py-2">Eurosystems</li><li class="rounded-full border border-rule px-4 py-2">Efco</li><li class="rounded-full border border-rule px-4 py-2">Gardena</li><li class="rounded-full border border-rule px-4 py-2">Ibea</li><li class="rounded-full border border-rule px-4 py-2">Mauki</li><li class="rounded-full border border-rule px-4 py-2">Kaaz</li><li class="rounded-full border border-rule px-4 py-2">MM</li><li class="rounded-full border border-rule px-4 py-2">Oleo-Mac</li><li class="rounded-full border border-rule px-4 py-2">Shindaiwa</li><li class="rounded-full border border-rule px-4 py-2">Solo</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Trust -->
+  <section class="bg-hedge text-white">
+    <div class="stripes h-3" aria-hidden="true"></div>
+    <div class="max-w-6xl mx-auto px-5 py-16 md:py-20 grid md:grid-cols-12 gap-10 items-center">
+      <blockquote class="md:col-span-7">
+        <p class="text-sprout text-[22px] tracking-[3px]" aria-label="5 sterren">★★★★★</p>
+        <p class="mt-3 font-disp font-bold text-[clamp(1.7rem,3.4vw,2.6rem)] leading-[1.15]">“Betrouwbare en snelle service voor alle tuinmachines!”</p>
+        <footer class="mt-4 text-white/65">Google-review · 5,0 gemiddeld</footer>
+      </blockquote>
+      <dl class="md:col-span-5 grid grid-cols-2 gap-4">
+        <div class="rounded-2xl bg-moss p-5"><dt class="text-white/60 text-[14px]">Actief sinds</dt><dd class="font-disp font-extrabold text-[34px] mt-1">2010</dd></div>
+        <div class="rounded-2xl bg-moss p-5"><dt class="text-white/60 text-[14px]">Specialisatie</dt><dd class="font-disp font-extrabold text-[34px] mt-1">Etesia</dd></div>
+        <div class="col-span-2 rounded-2xl bg-moss p-5"><dt class="text-white/60 text-[14px]">Werkt samen met</dt><dd class="mt-1 font-semibold">Green Lovers Works BV voor tuinontwerp, aanleg en onderhoud</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 md:py-24">
+    <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-5">
+        <h2 class="font-disp font-extrabold tracking-[-0.02em] text-[clamp(2.1rem,4.4vw,3.2rem)] leading-[1]">Iets dringends? Bel ons gewoon.</h2>
+        <address class="not-italic mt-6 text-[18px] leading-relaxed">Tuinmachinesexpert<br />Turnhoutsebaan 365<br />2970 Schilde</address>
+        <div class="mt-5 space-y-1.5 text-[17px]">
+          <p><a href="tel:+32494672995" class="font-bold text-copper">0494 67 29 95</a></p>
+          <p><a href="mailto:info@tuinmachinesexpert.be" class="underline underline-offset-4">info@tuinmachinesexpert.be</a></p>
+          <p class="text-stone text-[14px]">BTW BE 0657.816.584</p>
+        </div>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="https://www.google.com/maps/search/?api=1&query=Tuinmachinesexpert+Turnhoutsebaan+365+2970+Schilde" target="_blank" rel="noopener" class="btn bg-hedge hover:bg-moss text-white font-bold rounded-full px-6 py-3.5">Route in Google Maps</a>
+          <a href="https://www.instagram.com/tuinmachines_expert/" target="_blank" rel="noopener" class="btn border-2 border-rule hover:border-hedge font-bold rounded-full px-6 py-3">Instagram</a>
+          <a href="https://www.facebook.com/tuinmachinesexpert" target="_blank" rel="noopener" class="btn border-2 border-rule hover:border-hedge font-bold rounded-full px-6 py-3">Facebook</a>
+        </div>
+      </div>
+      <div class="lg:col-span-7 grid sm:grid-cols-2 gap-5">
+        <div class="rounded-2xl bg-mist p-6">
+          <h3 class="font-disp font-bold text-[21px]">Werkgebied</h3>
+          <p class="mt-3 text-stone leading-relaxed">Wij werken voor tuiniers en aannemers uit Schilde, 's-Gravenwezel, Schoten, Brasschaat, Wijnegem, Zoersel, Ranst en Malle.</p>
+        </div>
+        <div class="rounded-2xl bg-mist p-6">
+          <h3 class="font-disp font-bold text-[21px]">Openingsuren</h3>
+          <p class="mt-3 text-stone leading-relaxed">Machine binnenbrengen of ophalen? Bel even op voorhand, dan staan we voor u klaar.</p>
+        </div>
+        <div class="sm:col-span-2 rounded-2xl bg-hedge text-white p-6 flex flex-wrap items-center justify-between gap-4">
+          <p class="font-disp font-bold text-[20px] max-w-[26ch]">Winterbeurt nu, startklaar in het voorjaar.</p>
+          <a href="#plannen" data-tab="O" class="totab btn bg-copper hover:bg-copperdk font-bold rounded-full px-6 py-3.5">Onderhoud aanvragen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-bark text-white/55 text-[13px] pb-24 md:pb-8 pt-7">
+    <div class="max-w-6xl mx-auto px-5 flex flex-wrap justify-between gap-3">
+      <p>© Tuinmachinesexpert · Turnhoutsebaan 365, 2970 Schilde</p>
+      <p>Concept door Saspire, niet de officiële site.</p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden grid grid-cols-2 font-bold text-[15px] text-white">
+    <a href="tel:+32494672995" class="bg-copper text-center py-4">Bel ons</a>
+    <a href="#plannen" class="bg-hedge text-center py-4">Huren of onderhoud</a>
+  </div>
+
+  <script>
+  (function () {
+    var $ = function (s, r) { return (r || document).querySelector(s); };
+    var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+    function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+
+    var M = [
+      { id: 'etesia', name: 'Etesia Hydro 80', desc: 'Zitmaaier, 80 cm, hydrostatisch', i: 0, seed: 3 },
+      { id: 'iseki', name: 'Iseki SW8210 BRAE', desc: 'Rolmaaier voor strakke banen', i: 1, seed: 5 },
+      { id: 'eliet', name: 'Eliet E401', desc: 'Verticuteermachine tegen mos en vilt', i: 2, seed: 7 },
+      { id: 'stihl', name: 'Stihl HLA135K', desc: 'Accu-hoogsnoeier', i: 3, seed: 2 },
+      { id: 'ecotech', name: 'EcoTech DW 45 H Z', desc: 'Maaien, vegen en sneeuwruimen', i: 4, seed: 11 }
+    ];
+    function sprite(m) { return 'background-image:url(images/verhuur-machines.jpg);background-size:500% 100%;background-position:' + (m.i * 25) + '% 0;background-repeat:no-repeat;background-color:#fff'; }
+    var cur = M[0], start = null, end = null;
+    var today = new Date(); today.setHours(0, 0, 0, 0);
+    var view = new Date(today.getFullYear(), today.getMonth(), 1);
+    var mn = ['januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december'];
+    var dn = ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za'];
+
+    $('#machines').innerHTML = M.map(function (m, i) {
+      return '<label class="pick"><input type="radio" name="machine" value="' + m.id + '"' + (i === 0 ? ' checked' : '') + ' /><span class="overflow-hidden h-full"><span class="block w-full h-24" role="img" aria-label="' + m.name + '" style="' + sprite(m) + '"></span><b class="block px-3 pt-2 text-[14px] leading-tight">' + m.name + '</b><small class="block px-3 pb-3 pt-0.5 text-stone text-[12.5px] leading-snug">' + m.desc + '</small></span></label>';
+    }).join('');
+
+    // Demo occupancy: deterministic per machine + day
+    function busy(d) { var k = d.getDate() * 31 + d.getMonth() * 7 + cur.seed * 13; return (k % 9 === 0) || (k % 9 === 1) || (k % 11 === 4); }
+    function same(a, b) { return a && b && a.getTime() === b.getTime(); }
+    function fmt(d) { return dn[d.getDay()] + ' ' + d.getDate() + ' ' + mn[d.getMonth()]; }
+
+    function renderCal() {
+      $('#monthLbl').textContent = mn[view.getMonth()] + ' ' + view.getFullYear();
+      $('#prevM').disabled = view <= new Date(today.getFullYear(), today.getMonth(), 1);
+      var first = (view.getDay() + 6) % 7, days = new Date(view.getFullYear(), view.getMonth() + 1, 0).getDate(), h = '';
+      for (var i = 0; i < first; i++) h += '<span></span>';
+      for (var d = 1; d <= days; d++) {
+        var dt = new Date(view.getFullYear(), view.getMonth(), d), cls = [], dis = false, lbl = fmt(dt);
+        if (dt <= today) { cls.push('past'); dis = true; }
+        else if (busy(dt)) { cls.push('busy'); dis = true; lbl += ', verhuurd'; }
+        if (start && end && dt > start && dt < end) cls.push('in');
+        if (same(dt, start) || same(dt, end)) cls.push('edge');
+        h += '<button type="button" data-t="' + dt.getTime() + '" class="' + cls.join(' ') + '"' + (dis ? ' disabled' : '') + ' aria-label="' + lbl + '">' + d + '</button>';
+      }
+      $('#cal').innerHTML = h;
+      $$('#cal button:not(:disabled)').forEach(function (b) { b.addEventListener('click', function () { pick(new Date(+b.getAttribute('data-t'))); }); });
+    }
+    function rangeFree(a, b) { for (var d = new Date(a); d <= b; d.setDate(d.getDate() + 1)) if (busy(d)) return false; return true; }
+    function pick(d) {
+      $('#calErr').classList.add('hidden');
+      if (!start || end || d < start) { start = d; end = null; }
+      else if (same(d, start)) { end = d; }
+      else if (rangeFree(start, d)) { end = d; }
+      else { $('#calErr').textContent = 'Tussen die dagen is de ' + cur.name + ' al verhuurd. Kies een kortere periode.'; $('#calErr').classList.remove('hidden'); start = d; end = null; }
+      renderCal(); summary();
+    }
+    function summary() {
+      $('#hImg').setAttribute('style', sprite(cur));
+      $('#hName').textContent = cur.name; $('#hDesc').textContent = cur.desc;
+      $('#hFrom').textContent = start ? fmt(start) : 'kies een dag';
+      var e = end || start;
+      $('#hTo').textContent = e ? fmt(e) : '—';
+      $('#hDays').textContent = start ? (Math.round((e - start) / 864e5) + 1) + (e - start ? ' dagen' : ' dag') : '—';
+    }
+    $$('input[name="machine"]').forEach(function (r) { r.addEventListener('change', function () { selectMachine(r.value); }); });
+    function selectMachine(id) {
+      cur = M.filter(function (m) { return m.id === id; })[0]; start = end = null;
+      var r = $('input[name="machine"][value="' + id + '"]'); if (r) r.checked = true;
+      renderCal(); summary();
+    }
+    $('#prevM').addEventListener('click', function () { view.setMonth(view.getMonth() - 1); renderCal(); });
+    $('#nextM').addEventListener('click', function () { view.setMonth(view.getMonth() + 1); renderCal(); });
+
+    // Onderhoud form
+    var T = ['Grasmaaier', 'Zitmaaier', 'Grasrobot', 'Heggenschaar', 'Kettingzaag', 'Bladblazer', 'Verticuteermachine', 'Andere machine'];
+    $('#types').innerHTML = T.map(function (t, i) { return '<label class="pick"><input type="radio" name="type" value="' + t + '"' + (i === 1 ? ' checked' : '') + ' /><span class="px-3 py-3 font-semibold text-center">' + t + '</span></label>'; }).join('');
+    $$('input[name="soort"]').forEach(function (r) { r.addEventListener('change', function () { $('#probWrap').hidden = $('input[name="soort"]:checked').value !== 'Reparatie'; }); });
+    var od = [], x = new Date(today);
+    while (od.length < 8) { x.setDate(x.getDate() + 1); if (x.getDay() !== 0) od.push(new Date(x)); }
+    $('#oDays').innerHTML = od.map(function (d, i) { return '<label class="pick flex-none"><input type="radio" name="oDag" value="' + i + '" /><span class="px-4 py-2.5 text-center"><small class="block text-stone">' + dn[d.getDay()] + '</small><b class="block font-disp text-[20px]">' + d.getDate() + '</b><small class="block text-stone">' + mn[d.getMonth()].slice(0, 3) + '</small></span></label>'; }).join('');
+
+    // Tabs
+    function setTab(t) {
+      $('#tH').setAttribute('aria-selected', t === 'H'); $('#tO').setAttribute('aria-selected', t === 'O');
+      $('#pH').hidden = t !== 'H'; $('#pO').hidden = t !== 'O'; $('#done').classList.add('hidden');
+    }
+    $('#tH').addEventListener('click', function () { setTab('H'); });
+    $('#tO').addEventListener('click', function () { setTab('O'); });
+    $$('.totab').forEach(function (a) { a.addEventListener('click', function () { setTab(a.getAttribute('data-tab')); if (a.getAttribute('data-m')) selectMachine(a.getAttribute('data-m')); }); });
+
+    function showDone(title, rows, naam) {
+      var done = $('#done');
+      done.innerHTML = '<p class="font-disp font-extrabold text-[30px] leading-tight">' + title + '</p>' +
+        '<p class="mt-2 text-stone text-[16px]">Bedankt, ' + esc(naam.split(' ')[0]) + '. Tuinmachinesexpert belt u terug om alles te bevestigen.</p>' +
+        '<dl class="mt-6 divide-y divide-rule border-y border-rule">' + rows.map(function (r) { return '<div class="grid grid-cols-[120px_1fr] gap-3 py-2.5"><dt class="text-stone">' + r[0] + '</dt><dd class="font-semibold">' + esc(r[1]) + '</dd></div>'; }).join('') + '</dl>' +
+        '<p class="mt-5 rounded-xl bg-mist px-4 py-3 text-[14px]"><b>Dit is een demo.</b> Er is niets verzonden en niets gereserveerd.</p>' +
+        '<button type="button" id="again" class="btn mt-4 font-bold text-copper underline underline-offset-4">Nog een aanvraag</button>';
+      $('#pH').hidden = true; $('#pO').hidden = true; done.classList.remove('hidden'); done.focus();
+      $('#again').onclick = function () { setTab($('#tH').getAttribute('aria-selected') === 'true' ? 'H' : 'O'); };
+    }
+    function checkContact(n, t) {
+      var ok = true; [n, t].forEach(function (e) { e.classList.remove('err'); });
+      if (!n.value.trim()) { n.classList.add('err'); ok = false; }
+      if (t.value.replace(/\D/g, '').length < 9) { t.classList.add('err'); ok = false; }
+      return ok;
+    }
+    $('#pH').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var ok = true;
+      if (!start) { $('#calErr').textContent = 'Kies minstens één huurdag in de kalender.'; $('#calErr').classList.remove('hidden'); ok = false; }
+      if (!checkContact($('#hNaam'), $('#hTel'))) ok = false;
+      if (!ok) return;
+      var e2 = end || start;
+      showDone('Reservering aangevraagd', [['Machine', cur.name], ['Periode', fmt(start) + (same(start, e2) ? '' : ' t.e.m. ' + fmt(e2))], ['Contact', $('#hNaam').value.trim() + ', ' + $('#hTel').value.trim()]], $('#hNaam').value.trim());
+    });
+    $('#pO').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var ok = checkContact($('#oNaam'), $('#oTel')), dg = $('input[name="oDag"]:checked');
+      $('#oDayErr').classList.toggle('hidden', !!dg); if (!dg) ok = false;
+      if (!ok) return;
+      var soort = $('input[name="soort"]:checked').value, probs = $$('input[name="prob"]:checked').map(function (p) { return p.value; });
+      var rows = [['Machine', $('input[name="type"]:checked').value + ', ' + $('#merk').value + ($('#model').value.trim() ? ' ' + $('#model').value.trim() : '')], ['Gevraagd', soort + (soort === 'Reparatie' && probs.length ? ': ' + probs.join(', ').toLowerCase() : '')], ['Binnenbrengen', fmt(od[+dg.value])], ['Contact', $('#oNaam').value.trim() + ', ' + $('#oTel').value.trim()]];
+      if ($('#oOpm').value.trim()) rows.push(['Opmerking', $('#oOpm').value.trim()]);
+      showDone('Aanvraag verstuurd', rows, $('#oNaam').value.trim());
+    });
+
+    renderCal(); summary();
+  })();
+  </script>
+</body>
+</html>

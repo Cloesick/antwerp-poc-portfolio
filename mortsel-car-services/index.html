@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Mortsel Car Services | Onderhoud, banden en airco voor elk automerk in Mortsel</title>
+  <meta name="description" content="Mortsel Car Services, Antwerpsestraat 280: klein en groot onderhoud, remmen, schokdempers, koppelingen, uitlaten, banden en uitlijning, airco met R134A en 1234YF, elektronische diagnose. Plan online uw banden- of aircobeurt." />
+  <meta name="theme-color" content="#f6d817" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Mortsel Car Services" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Mortsel Car Services: banden, airco en onderhoud in Mortsel" />
+  <meta property="og:description" content="Elk automerk welkom. Plan uw bandenwissel of aircobeurt online, Antwerpsestraat 280, Mortsel." />
+  <meta property="og:image" content="images/concept.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%2315171a'/%3E%3Ccircle cx='16' cy='16' r='8' fill='%23f6d817'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%2315171a'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Mortsel Car Services",
+    "description": "Klein en groot onderhoud van alle automerken, schokdempers, remmen, versnellingsbakken en koppelingen, uitlaten, nummerplaten, lichten uitlijnen, airco (R134A en 1234YF), banden en elektronische diagnose.",
+    "url": "https://mortselcarservices.be/",
+    "telephone": "+3234404397",
+    "email": "mortselcarservices@gmail.com",
+    "image": "images/logo-mcs.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Antwerpsestraat 280",
+      "postalCode": "2640",
+      "addressLocality": "Mortsel",
+      "addressCountry": "BE"
+    },
+    "areaServed": ["Mortsel", "Edegem", "Boechout", "Hove", "Borsbeek", "Berchem", "Wilrijk"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" }
+    ],
+    "review": { "@type": "Review", "author": { "@type": "Person", "name": "Gertjan" }, "reviewBody": "Duidelijke afspraken en communicatie staan voorop hier. Sympathieke eigenaars." }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@500;600;700;800;900&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Figtree', 'system-ui', 'sans-serif'], disp: ['Saira', 'sans-serif'] },
+          colors: {
+            ink: '#15171a',
+            rubber: '#24272c',
+            yel: '#f6d817',
+            yeldeep: '#e2c200',
+            fog: '#f1f2f4',
+            line: '#d9dce1',
+            mute: '#5c636d',
+            stop: '#c4271f',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root { --ease: cubic-bezier(0.23, 1, 0.32, 1); }
+    html { scroll-behavior: smooth; }
+    h1, h2, h3 { text-wrap: balance; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), color .18s var(--ease); }
+    .btn:active { transform: scale(0.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #15171a; outline-offset: 3px; }
+    .on-dark a:focus-visible, .on-dark button:focus-visible { outline-color: #f6d817; }
+
+    /* Tyre spin in hero: one slow, ambient motion */
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .tyre-rot { transform-origin: 50% 50%; animation: spin 60s linear infinite; }
+
+    .tab[aria-selected="true"] { background: #15171a; color: #fff; }
+    .opt { cursor: pointer; position: relative; }
+    .opt input { position: absolute; opacity: 0; pointer-events: none; }
+    .opt span { display: block; border: 1.5px solid #d9dce1; border-radius: 12px; padding: 11px 14px; background: #fff; transition: border-color .15s var(--ease), background-color .15s var(--ease); }
+    .opt:hover span { border-color: #15171a; }
+    .opt input:checked + span { border-color: #15171a; background: #f6d817; }
+    .opt input:disabled + span { background: #f1f2f4; color: #a3a8b0; text-decoration: line-through; cursor: not-allowed; border-color: #e6e8eb; }
+    .opt input:focus-visible + span { outline: 3px solid #15171a; outline-offset: 2px; }
+    .field { width: 100%; border: 1.5px solid #d9dce1; border-radius: 12px; padding: 12px 14px; background: #fff; }
+    .field:focus { border-color: #15171a; outline: none; box-shadow: 0 0 0 3px rgba(246,216,23,.6); }
+    .err { border-color: #c4271f !important; }
+    .size-in { font-family: Saira, sans-serif; font-weight: 700; letter-spacing: .04em; }
+    .price-pop { transition: transform .25s var(--ease); }
+    .price-pop.bump { transform: scale(1.06); }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .tyre-rot { animation: none; }
+      *, *::before, *::after { transition: none !important; }
+    }
+  </style>
+</head>
+<body class="bg-white text-ink font-sans antialiased">
+
+  <div class="fixed right-3 bottom-[70px] md:bottom-4 md:right-4 z-50 pointer-events-none">
+    <span class="text-[10.5px] tracking-wide font-bold text-ink bg-white/95 border border-ink/15 rounded-full px-3 py-1.5 shadow-sm">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-ink text-white on-dark">
+    <nav class="max-w-6xl mx-auto px-5 h-[64px] flex items-center justify-between" aria-label="Hoofdnavigatie">
+      <a href="#top" class="flex items-center gap-3">
+        <span class="font-disp font-black italic text-[24px] text-yel leading-none">MCS</span>
+        <span class="text-[14px] font-semibold leading-tight hidden sm:block">Mortsel Car Services</span>
+      </a>
+      <div class="hidden lg:flex items-center gap-8 text-[14px] font-medium text-white/75">
+        <a href="#diensten" class="hover:text-white">Diensten</a>
+        <a href="#planner" class="hover:text-white">Banden &amp; airco plannen</a>
+        <a href="#bereikbaar" class="hover:text-white">Bereikbaarheid</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </div>
+      <a href="tel:+3234404397" class="btn bg-yel hover:bg-yeldeep text-ink font-bold text-[14px] rounded-full px-4 py-2.5 whitespace-nowrap">Bel 03 440 43 97</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative bg-yel overflow-hidden">
+    <div class="max-w-6xl mx-auto px-5 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center py-14 md:py-16 lg:py-20 min-h-[620px]">
+      <div class="lg:col-span-6 relative z-10 min-w-0">
+        <p class="font-semibold text-[15px]">Antwerpsestraat 280, Mortsel · ma tot vr 8–17 u</p>
+        <h1 class="mt-4 font-disp font-black leading-[0.9] tracking-[-0.02em] text-[clamp(3.1rem,7.4vw,6rem)]">Mortsel Car&nbsp;Services</h1>
+        <p class="mt-6 text-[20px] leading-relaxed max-w-[40ch]">Onderhoud, banden en airco voor elk automerk. Kies uw bandenmaat, zie meteen een richtprijs en neem een vrij uur.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#planner" class="btn bg-ink hover:bg-rubber text-white font-bold rounded-full px-7 py-4">Plan banden of airco</a>
+          <a href="tel:+3234404397" class="btn border-2 border-ink hover:bg-ink hover:text-white font-bold rounded-full px-7 py-[14px]">Bel 03 440 43 97</a>
+        </div>
+        <p class="mt-8 text-[15px] max-w-[46ch]">Nieuw aircogas 1234YF en R134A in huis. Winterbanden: keuze uit verschillende merken.</p>
+      </div>
+
+      <!-- Tyre illustration -->
+      <div class="lg:col-span-6 relative h-[340px] sm:h-[420px] lg:h-[560px]" aria-hidden="true">
+        <svg viewBox="0 0 600 600" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[420px] sm:w-[520px] lg:w-[640px] max-w-none">
+          <defs>
+            <path id="arcTop" d="M 300 300 m -232 0 a 232 232 0 1 1 464 0" />
+            <path id="arcBot" d="M 300 300 m -250 0 a 250 250 0 0 0 500 0" />
+            <radialGradient id="rim" cx="45%" cy="40%" r="70%"><stop offset="0" stop-color="#e9ebee"/><stop offset=".6" stop-color="#a9afb7"/><stop offset="1" stop-color="#6d737c"/></radialGradient>
+          </defs>
+          <g class="tyre-rot">
+            <circle cx="300" cy="300" r="292" fill="#15171a" />
+            <!-- tread blocks -->
+            <g id="tread"></g>
+            <circle cx="300" cy="300" r="262" fill="#24272c" />
+            <circle cx="300" cy="300" r="262" fill="none" stroke="#33373e" stroke-width="2" />
+            <circle cx="300" cy="300" r="205" fill="none" stroke="#33373e" stroke-width="2" />
+            <text font-family="Saira, sans-serif" font-weight="800" font-size="30" letter-spacing="6" fill="#3d424a"><textPath href="#arcTop" startOffset="50%" text-anchor="middle">MORTSEL CAR SERVICES</textPath></text>
+            <text id="sideSize" font-family="Saira, sans-serif" font-weight="800" font-size="34" letter-spacing="5" fill="#f6d817"><textPath href="#arcBot" startOffset="50%" text-anchor="middle">205/55 R16</textPath></text>
+          </g>
+          <circle cx="300" cy="300" r="190" fill="url(#rim)" />
+          <g fill="#4a5059">
+            <circle cx="300" cy="300" r="56" fill="#2a2e34" />
+            <circle cx="300" cy="300" r="22" fill="#15171a" />
+          </g>
+          <g stroke="#8b929b" stroke-width="22" stroke-linecap="round" opacity=".55">
+            <line x1="300" y1="240" x2="300" y2="128" />
+            <line x1="357" y1="281" x2="464" y2="246" />
+            <line x1="335" y1="349" x2="401" y2="440" />
+            <line x1="265" y1="349" x2="199" y2="440" />
+            <line x1="243" y1="281" x2="136" y2="246" />
+          </g>
+          <g fill="#15171a"><circle cx="300" cy="265" r="7"/><circle cx="333" cy="289" r="7"/><circle cx="321" cy="328" r="7"/><circle cx="279" cy="328" r="7"/><circle cx="267" cy="289" r="7"/></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="diensten" class="py-20 md:py-24">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="max-w-[640px]">
+        <h2 class="font-disp font-black text-[clamp(2.2rem,4.6vw,3.4rem)] leading-[0.95] tracking-[-0.01em]">Van alle markten thuis</h2>
+        <p class="mt-4 text-mute text-[18px]">U kan met elk automerk bij ons terecht. Een greep uit wat we doen:</p>
+      </div>
+      <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-px bg-line border border-line rounded-2xl overflow-hidden">
+        <div class="bg-white p-7">
+          <h3 class="font-disp font-extrabold text-[22px]">Onderhoud &amp; mechaniek</h3>
+          <ul class="mt-4 space-y-2 text-[15.5px]"><li>Klein en groot onderhoud</li><li>Remmen vervangen en herstellen</li><li>Schokdempers vervangen</li><li>Versnellingsbak en koppeling</li><li>Uitlaten vervangen en herstellen</li></ul>
+        </div>
+        <div class="bg-white p-7">
+          <h3 class="font-disp font-extrabold text-[22px]">Banden</h3>
+          <ul class="mt-4 space-y-2 text-[15.5px]"><li>Wissels, zomer en winter</li><li>Reparatie bij een lek</li><li>Uitlijning en diagnose</li><li>Winterbanden, keuze uit verschillende merken</li></ul>
+        </div>
+        <div class="bg-ink text-white p-7 on-dark">
+          <h3 class="font-disp font-extrabold text-[22px] text-yel">Airco</h3>
+          <ul class="mt-4 space-y-2 text-[15.5px] text-white/85"><li>Vullen</li><li>Herstellen</li><li>Cleaning</li><li>Gas R134A én het nieuwe 1234YF</li></ul>
+        </div>
+        <div class="bg-white p-7">
+          <h3 class="font-disp font-extrabold text-[22px]">En verder</h3>
+          <ul class="mt-4 space-y-2 text-[15.5px]"><li>Elektronische diagnose</li><li>Nummerplaten maken en plaatsen</li><li>Lichten uitlijnen</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planner (signature) -->
+  <section id="planner" class="bg-fog py-20 md:py-24">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="grid lg:grid-cols-12 gap-8 items-end">
+        <h2 class="lg:col-span-7 font-disp font-black text-[clamp(2.2rem,4.6vw,3.4rem)] leading-[0.95] tracking-[-0.01em]">Banden of airco? Plan het hier.</h2>
+        <p class="lg:col-span-5 text-mute text-[17px]">Geef uw bandenmaat of bouwjaar in, zie een richtprijs en kies een vrij uur. Wij bevestigen per telefoon.</p>
+      </div>
+
+      <noscript><p class="mt-8 rounded-xl bg-yel px-5 py-4 font-semibold">Deze planner werkt met JavaScript. Bel ons op 03 440 43 97 of mail naar mortselcarservices@gmail.com.</p></noscript>
+
+      <div class="mt-10 grid lg:grid-cols-12 gap-6">
+        <form id="plan" class="lg:col-span-8 bg-white rounded-3xl border border-line p-6 md:p-8 min-w-0" novalidate>
+          <div class="inline-flex rounded-full bg-fog p-1" role="tablist" aria-label="Soort beurt">
+            <button type="button" role="tab" id="tabB" aria-selected="true" aria-controls="paneB" class="tab btn rounded-full px-5 py-2.5 font-bold text-[15px]">Banden</button>
+            <button type="button" role="tab" id="tabA" aria-selected="false" aria-controls="paneA" class="tab btn rounded-full px-5 py-2.5 font-bold text-[15px]">Airco</button>
+          </div>
+
+          <!-- Banden -->
+          <div id="paneB" role="tabpanel" aria-labelledby="tabB" class="mt-7 space-y-7">
+            <div>
+              <label for="size" class="font-bold text-[17px]">Uw bandenmaat</label>
+              <p class="text-[14px] text-mute mt-1">Staat op de zijkant van uw band, bv. 205/55 R16.</p>
+              <div class="mt-3 flex flex-wrap items-center gap-3">
+                <input id="size" class="field size-in text-[24px] max-w-[230px] uppercase" value="205/55 R16" autocomplete="off" spellcheck="false" />
+                <div class="flex flex-wrap gap-2 text-[13px] font-semibold" id="presets">
+                  <button type="button" class="btn rounded-full border border-line px-3 py-1.5 hover:border-ink" data-s="195/65 R15">195/65 R15</button>
+                  <button type="button" class="btn rounded-full border border-line px-3 py-1.5 hover:border-ink" data-s="225/45 R17">225/45 R17</button>
+                  <button type="button" class="btn rounded-full border border-line px-3 py-1.5 hover:border-ink" data-s="235/40 R19">235/40 R19</button>
+                </div>
+              </div>
+              <p id="sizeMsg" class="mt-2 text-[14px] text-mute">Breedte 205 mm · hoogte 55% · velg 16 inch</p>
+            </div>
+            <div>
+              <p class="font-bold text-[17px]">Wat moet er gebeuren?</p>
+              <div class="mt-3 grid sm:grid-cols-3 gap-2 text-[15px]">
+                <label class="opt"><input type="radio" name="bwerk" value="wissel" checked /><span><b class="block">Wissel</b><small class="text-mute">uw eigen zomer- of winterset</small></span></label>
+                <label class="opt"><input type="radio" name="bwerk" value="nieuw" /><span><b class="block">Nieuwe banden</b><small class="text-mute">montage, keuze uit merken</small></span></label>
+                <label class="opt"><input type="radio" name="bwerk" value="lek" /><span><b class="block">Lek herstellen</b><small class="text-mute">één band</small></span></label>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-6">
+              <div id="aantalWrap">
+                <p class="font-bold text-[17px]">Aantal</p>
+                <div class="mt-3 flex gap-2 text-[15px]">
+                  <label class="opt"><input type="radio" name="aantal" value="2" /><span class="!px-5">2</span></label>
+                  <label class="opt"><input type="radio" name="aantal" value="4" checked /><span class="!px-5">4</span></label>
+                </div>
+              </div>
+              <div>
+                <p class="font-bold text-[17px]">Extra</p>
+                <label class="opt mt-3 inline-block text-[15px]"><input type="checkbox" id="uitlijn" /><span>Uitlijning erbij</span></label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Airco -->
+          <div id="paneA" role="tabpanel" aria-labelledby="tabA" class="mt-7 space-y-7" hidden>
+            <div>
+              <label for="bouwjaar" class="font-bold text-[17px]">Bouwjaar van uw wagen</label>
+              <div class="mt-3 flex flex-wrap items-center gap-4">
+                <input id="bouwjaar" type="number" inputmode="numeric" min="1990" max="2026" class="field size-in text-[24px] max-w-[150px]" value="2015" />
+                <p id="gasMsg" class="text-[15px] max-w-[42ch]"></p>
+              </div>
+            </div>
+            <div>
+              <p class="font-bold text-[17px]">Aircogas</p>
+              <div class="mt-3 flex flex-wrap gap-2 text-[15px]">
+                <label class="opt"><input type="radio" name="gas" value="R134A" /><span><b>R134A</b></span></label>
+                <label class="opt"><input type="radio" name="gas" value="1234YF" /><span><b>1234YF</b></span></label>
+              </div>
+              <p class="mt-2 text-[13.5px] text-mute">Twijfel? Het staat op een sticker onder de motorkap. Of laat het ons bekijken.</p>
+            </div>
+            <div>
+              <p class="font-bold text-[17px]">Wat is er aan de hand?</p>
+              <div class="mt-3 grid sm:grid-cols-3 gap-2 text-[15px]">
+                <label class="opt"><input type="radio" name="awerk" value="vullen" checked /><span><b class="block">Koelt minder</b><small class="text-mute">airco vullen</small></span></label>
+                <label class="opt"><input type="radio" name="awerk" value="cleaning" /><span><b class="block">Ruikt muf</b><small class="text-mute">airco cleaning</small></span></label>
+                <label class="opt"><input type="radio" name="awerk" value="herstel" /><span><b class="block">Koelt niet meer</b><small class="text-mute">nakijken en herstellen</small></span></label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slot -->
+          <div class="mt-9 pt-8 border-t border-line">
+            <p class="font-bold text-[17px]">Kies een vrij uur</p>
+            <div id="daysRow" class="mt-3 flex gap-2 overflow-x-auto pb-1 text-[14px]" role="radiogroup" aria-label="Dag"></div>
+            <div id="slotsRow" class="mt-3 grid grid-cols-3 sm:grid-cols-5 gap-2 text-[15px]" role="radiogroup" aria-label="Uur"></div>
+            <p id="slotErr" class="hidden mt-2 text-[14px] font-semibold text-stop">Kies een dag en een uur.</p>
+          </div>
+
+          <div class="mt-8 grid sm:grid-cols-2 gap-4">
+            <label class="block"><span class="text-[14px] font-semibold">Naam</span><input id="naam" class="field mt-1.5" autocomplete="name" /></label>
+            <label class="block"><span class="text-[14px] font-semibold">Telefoon</span><input id="tel" type="tel" class="field mt-1.5" autocomplete="tel" /></label>
+            <label class="block sm:col-span-2"><span class="text-[14px] font-semibold">Merk en model <span class="font-normal text-mute">(optioneel)</span></span><input id="auto" class="field mt-1.5" placeholder="bv. Volkswagen Golf" /></label>
+          </div>
+          <button type="submit" class="btn mt-7 w-full sm:w-auto bg-ink hover:bg-rubber text-white font-bold rounded-full px-8 py-4">Uur vastleggen</button>
+        </form>
+
+        <!-- Live summary -->
+        <aside class="lg:col-span-4 min-w-0">
+          <div class="lg:sticky lg:top-24 bg-ink text-white rounded-3xl p-7 on-dark" aria-live="polite">
+            <p class="text-white/60 text-[14px]">Richtprijs</p>
+            <p id="price" class="price-pop font-disp font-black text-[56px] leading-none mt-1 text-yel">€ 0</p>
+            <p id="priceNote" class="mt-2 text-[14px] text-white/70"></p>
+            <dl id="sum" class="mt-6 space-y-2.5 text-[15px] border-t border-white/15 pt-5"></dl>
+            <p class="mt-6 text-[12.5px] leading-relaxed text-white/55">Voorbeeldtarieven in deze demo. Mortsel Car Services vult hier de eigen prijzen in. De echte prijs hangt af van merk en wagen.</p>
+          </div>
+          <div id="done" class="hidden mt-0 bg-white rounded-3xl border-2 border-ink p-7" role="status" tabindex="-1"></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust + reachability -->
+  <section id="bereikbaar" class="py-20 md:py-24">
+    <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-12 gap-10">
+      <figure class="lg:col-span-6 bg-yel rounded-3xl p-8 md:p-10 flex flex-col justify-between min-h-[300px]">
+        <blockquote class="font-disp font-extrabold text-[clamp(1.6rem,3vw,2.3rem)] leading-[1.15]">“Duidelijke afspraken en communicatie staan voorop hier. Sympathieke eigenaars.”</blockquote>
+        <figcaption class="mt-8 text-[15px] font-semibold">Gertjan, klantenreview</figcaption>
+      </figure>
+      <div class="lg:col-span-6 grid sm:grid-cols-2 gap-6 content-start">
+        <div class="sm:col-span-2">
+          <h2 class="font-disp font-black text-[clamp(2rem,4vw,2.8rem)] leading-[0.95]">Wagen binnen, tram terug</h2>
+          <p class="mt-4 text-mute text-[17px] max-w-[52ch]">Breng uw auto 's ochtends binnen en rij gewoon met de tram verder. Twee lijnen stoppen vlak bij de garage.</p>
+        </div>
+        <div class="rounded-2xl border border-line p-6">
+          <p class="font-disp font-black text-[40px] leading-none">7</p>
+          <p class="mt-2 text-[15px]">Tram 7, Mortsel – Het Eilandje</p>
+        </div>
+        <div class="rounded-2xl border border-line p-6">
+          <p class="font-disp font-black text-[40px] leading-none">15</p>
+          <p class="mt-2 text-[15px]">Tram 15, Boechout – Linkeroever</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-ink text-white py-20 md:py-24 on-dark">
+    <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-5">
+        <h2 class="font-disp font-black text-[clamp(2.2rem,4.6vw,3.4rem)] leading-[0.95]">Langskomen of bellen</h2>
+        <address class="not-italic mt-6 text-[18px] leading-relaxed">Mortsel Car Services<br />Antwerpsestraat 280<br />2640 Mortsel</address>
+        <div class="mt-6 space-y-2 text-[17px]">
+          <p><a href="tel:+3234404397" class="font-bold text-yel">03 440 43 97</a></p>
+          <p><a href="mailto:mortselcarservices@gmail.com" class="underline underline-offset-4 break-all">mortselcarservices@gmail.com</a></p>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Mortsel+Car+Services+Antwerpsestraat+280+2640+Mortsel" target="_blank" rel="noopener" class="btn inline-block mt-8 bg-yel hover:bg-yeldeep text-ink font-bold rounded-full px-7 py-4">Route in Google Maps</a>
+      </div>
+      <div class="lg:col-span-7 grid sm:grid-cols-2 gap-6">
+        <div class="rounded-2xl bg-rubber p-6">
+          <h3 class="font-disp font-extrabold text-[22px]">Openingsuren</h3>
+          <p class="mt-3 text-[17px]">Maandag tot vrijdag<br /><b>8.00 – 17.00 u</b></p>
+          <p id="openNow" class="mt-4 text-[14px] text-white/60"></p>
+        </div>
+        <div class="rounded-2xl bg-rubber p-6">
+          <h3 class="font-disp font-extrabold text-[22px]">Werkgebied</h3>
+          <p class="mt-3 text-[15.5px] text-white/80 leading-relaxed">Wij werken voor bestuurders uit Mortsel, Edegem, Boechout, Hove, Borsbeek, Berchem en Wilrijk. Elk automerk is welkom.</p>
+        </div>
+        <div class="sm:col-span-2 rounded-2xl bg-white p-4 flex items-center gap-5">
+          <img src="images/logo-mcs.jpg" alt="Logo Mortsel Car Services" class="w-[150px] h-auto" loading="lazy" />
+          <p class="text-ink text-[15px]">Hetzelfde vertrouwde MCS, nu met een site die u laat plannen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-ink border-t border-white/10 text-white/55 text-[13px] pb-24 md:pb-8 pt-7">
+    <div class="max-w-6xl mx-auto px-5 flex flex-wrap justify-between gap-3">
+      <p>© Mortsel Car Services · Antwerpsestraat 280, 2640 Mortsel</p>
+      <p>Concept door Saspire, niet de officiële site.</p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden grid grid-cols-2 font-bold text-[15px]">
+    <a href="tel:+3234404397" class="bg-yel text-ink text-center py-4">Bel MCS</a>
+    <a href="#planner" class="bg-ink text-white text-center py-4">Plan een beurt</a>
+  </div>
+
+  <script>
+  (function () {
+    var $ = function (s, r) { return (r || document).querySelector(s); };
+    var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+    var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Tread blocks around the tyre
+    var tread = $('#tread'), t = '';
+    for (var i = 0; i < 48; i++) {
+      t += '<rect x="292" y="10" width="16" height="26" rx="3" fill="#2b2f35" transform="rotate(' + (i * 7.5) + ' 300 300)"/>';
+    }
+    tread.innerHTML = t;
+
+    // Demo tariffs (placeholders to be replaced by the garage)
+    var T = {
+      wissel: function (r) { return r <= 16 ? 12 : r <= 18 ? 15 : 19; },          // per band
+      montage: function (r) { return r <= 16 ? 15 : r <= 18 ? 19 : 24; },         // per band, excl. band
+      bandIndic: function (w, r) { return Math.round((w / 205) * (r <= 15 ? 70 : r <= 16 ? 85 : r <= 17 ? 105 : r <= 18 ? 130 : 160)); },
+      lek: 25, uitlijn: 55,
+      airco: { vullen: { R134A: 79, '1234YF': 139 }, cleaning: 49, herstel: 45 }
+    };
+    var mode = 'B', sizeOk = { w: 205, h: 55, r: 16 };
+
+    function parseSize(v) {
+      var m = v.toUpperCase().replace(/\s+/g, ' ').match(/^(\d{3})\s*\/\s*(\d{2})\s*Z?R?\s*(\d{2})$/);
+      if (!m) return null;
+      var w = +m[1], h = +m[2], r = +m[3];
+      if (w < 135 || w > 355 || h < 25 || h > 85 || r < 12 || r > 23) return null;
+      return { w: w, h: h, r: r };
+    }
+    function eur(n) { return '€ ' + Math.round(n); }
+
+    function compute() {
+      var rows = [], price = 0, note = '';
+      if (mode === 'B') {
+        var s = sizeOk, werk = $('input[name="bwerk"]:checked').value, n = werk === 'lek' ? 1 : +$('input[name="aantal"]:checked').value;
+        $('#aantalWrap').style.opacity = werk === 'lek' ? .4 : 1;
+        if (!s) { $('#price').textContent = '€ —'; $('#priceNote').textContent = 'Vul een geldige bandenmaat in.'; $('#sum').innerHTML = ''; return; }
+        if (werk === 'wissel') { price = T.wissel(s.r) * n; note = 'Wissel van ' + n + ' banden.'; }
+        if (werk === 'nieuw') { price = (T.montage(s.r) + T.bandIndic(s.w, s.r)) * n; note = n + ' nieuwe banden ' + fmt(s) + ', montage inbegrepen. Merk naar keuze.'; }
+        if (werk === 'lek') { price = T.lek; note = 'Herstelling van één band, als het lek herstelbaar is.'; }
+        if ($('#uitlijn').checked) price += T.uitlijn;
+        rows = [['Beurt', { wissel: 'Bandenwissel', nieuw: 'Nieuwe banden', lek: 'Lek herstellen' }[werk]], ['Maat', fmt(s)], ['Aantal', String(n)]];
+        if ($('#uitlijn').checked) rows.push(['Extra', 'Uitlijning']);
+      } else {
+        var aw = $('input[name="awerk"]:checked').value, gas = ($('input[name="gas"]:checked') || {}).value || '1234YF';
+        if (aw === 'vullen') { price = T.airco.vullen[gas]; note = 'Airco vullen met ' + gas + '.'; }
+        if (aw === 'cleaning') { price = T.airco.cleaning; note = 'Reiniging van het aircosysteem tegen muffe geur.'; }
+        if (aw === 'herstel') { price = T.airco.herstel; note = 'Nakijken. De herstelling bespreken we eerst met u.'; }
+        rows = [['Beurt', { vullen: 'Airco vullen', cleaning: 'Airco cleaning', herstel: 'Airco nakijken' }[aw]], ['Gas', gas], ['Bouwjaar', $('#bouwjaar').value || '—']];
+      }
+      var slot = chosenSlot();
+      rows.push(['Moment', slot || 'nog niet gekozen']);
+      var p = $('#price'), txt = (mode === 'A' && $('input[name="awerk"]:checked').value === 'herstel' ? 'vanaf ' : '') + eur(price);
+      if (p.textContent !== txt && !reduce) { p.classList.add('bump'); setTimeout(function () { p.classList.remove('bump'); }, 180); }
+      p.textContent = txt;
+      $('#priceNote').textContent = note;
+      $('#sum').innerHTML = rows.map(function (r) { return '<div class="flex justify-between gap-4"><dt class="text-white/55">' + r[0] + '</dt><dd class="font-semibold text-right">' + r[1] + '</dd></div>'; }).join('');
+      return rows;
+    }
+    function fmt(s) { return s.w + '/' + s.h + ' R' + s.r; }
+
+    // Size input -> tyre sidewall + message
+    var sizeIn = $('#size');
+    function onSize() {
+      var s = parseSize(sizeIn.value);
+      sizeOk = s;
+      sizeIn.classList.toggle('err', !s && sizeIn.value.trim().length > 0);
+      $('#sizeMsg').textContent = s ? 'Breedte ' + s.w + ' mm · hoogte ' + s.h + '% · velg ' + s.r + ' inch' : 'Schrijf het zoals op de band: breedte/hoogte R velg, bv. 205/55 R16.';
+      if (s) $('#sideSize textPath').textContent = fmt(s);
+      compute();
+    }
+    sizeIn.addEventListener('input', onSize);
+    $$('#presets button').forEach(function (b) { b.addEventListener('click', function () { sizeIn.value = b.getAttribute('data-s'); onSize(); }); });
+
+    // Year -> gas advice
+    function onYear() {
+      var y = +$('#bouwjaar').value, msg, g;
+      if (!y) { msg = ''; }
+      else if (y >= 2017) { msg = 'Wagens van 2017 of later rijden op <b>1234YF</b>.'; g = '1234YF'; }
+      else if (y >= 2011) { msg = 'Tussen 2011 en 2016 kan het <b>allebei</b> zijn. Check de sticker of laat ons kijken.'; }
+      else { msg = 'Wagens van voor 2011 rijden meestal op <b>R134A</b>.'; g = 'R134A'; }
+      $('#gasMsg').innerHTML = msg;
+      if (g) $('input[name="gas"][value="' + g + '"]').checked = true;
+      compute();
+    }
+    $('#bouwjaar').addEventListener('input', onYear);
+
+    // Tabs
+    function setMode(m) {
+      mode = m;
+      $('#tabB').setAttribute('aria-selected', m === 'B'); $('#tabA').setAttribute('aria-selected', m === 'A');
+      $('#paneB').hidden = m !== 'B'; $('#paneA').hidden = m !== 'A';
+      compute();
+    }
+    $('#tabB').addEventListener('click', function () { setMode('B'); });
+    $('#tabA').addEventListener('click', function () { setMode('A'); });
+    $$('#plan input').forEach(function (el) { el.addEventListener('change', compute); });
+
+    // Days + slots (Mon–Fri, 8–17); some slots shown as taken for realism
+    var dn = ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za'], mn = ['jan', 'feb', 'mrt', 'apr', 'mei', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec'];
+    var slots = ['08:00', '09:30', '11:00', '13:30', '15:00'];
+    var days = [], d = new Date(); d.setHours(12);
+    while (days.length < 6) { d.setDate(d.getDate() + 1); if (d.getDay() >= 1 && d.getDay() <= 5) days.push(new Date(d)); }
+    $('#daysRow').innerHTML = days.map(function (x, i) {
+      return '<label class="opt flex-none"><input type="radio" name="dag" value="' + i + '"' + (i === 0 ? ' checked' : '') + ' /><span class="text-center !px-4"><small class="block text-mute">' + dn[x.getDay()] + '</small><b class="block font-disp text-[20px]">' + x.getDate() + '</b><small class="block text-mute">' + mn[x.getMonth()] + '</small></span></label>';
+    }).join('');
+    function renderSlots() {
+      var di = +$('input[name="dag"]:checked').value, x = days[di];
+      $('#slotsRow').innerHTML = slots.map(function (s, j) {
+        var taken = ((x.getDate() * 7 + j * 3) % 5) === 0 || ((x.getDate() + j) % 4 === 0 && j !== 2);
+        return '<label class="opt"><input type="radio" name="uur" value="' + s + '"' + (taken ? ' disabled' : '') + ' /><span class="text-center font-semibold">' + s + (taken ? '<small class="block font-normal">volzet</small>' : '<small class="block font-normal text-mute">vrij</small>') + '</span></label>';
+      }).join('');
+      $$('input[name="uur"]').forEach(function (el) { el.addEventListener('change', compute); });
+      compute();
+    }
+    $$('input[name="dag"]').forEach(function (el) { el.addEventListener('change', renderSlots); });
+    function chosenSlot() {
+      var u = $('input[name="uur"]:checked'), di = $('input[name="dag"]:checked');
+      if (!u || !di) return '';
+      var x = days[+di.value];
+      return dn[x.getDay()] + ' ' + x.getDate() + ' ' + mn[x.getMonth()] + ', ' + u.value + ' u';
+    }
+
+    // Open now
+    var now = new Date(), wd = now.getDay(), hr = now.getHours() + now.getMinutes() / 60;
+    $('#openNow').textContent = (wd >= 1 && wd <= 5 && hr >= 8 && hr < 17) ? 'Nu open' : 'Nu gesloten. Plan gerust al online.';
+
+    function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+
+    $('#plan').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var ok = true;
+      $$('.err').forEach(function (x) { x.classList.remove('err'); });
+      $('#slotErr').classList.add('hidden');
+      if (mode === 'B' && !sizeOk) { sizeIn.classList.add('err'); ok = false; }
+      if (!chosenSlot()) { $('#slotErr').classList.remove('hidden'); ok = false; }
+      if (!$('#naam').value.trim()) { $('#naam').classList.add('err'); ok = false; }
+      if ($('#tel').value.replace(/\D/g, '').length < 9) { $('#tel').classList.add('err'); ok = false; }
+      if (!ok) { ($('.err') || $('#slotErr')).scrollIntoView({ block: 'center' }); return; }
+      var rows = compute();
+      var done = $('#done');
+      done.innerHTML = '<p class="font-disp font-black text-[30px] leading-none">Uur vastgelegd</p>' +
+        '<p class="mt-3 text-[16px]">Bedankt, ' + esc($('#naam').value.trim().split(' ')[0]) + '. We zien u <b>' + esc(chosenSlot()) + '</b> aan de Antwerpsestraat 280. MCS belt u nog even ter bevestiging.</p>' +
+        ($('#auto').value.trim() ? '<p class="mt-2 text-mute text-[15px]">Wagen: ' + esc($('#auto').value.trim()) + '</p>' : '') +
+        '<p class="mt-5 rounded-xl bg-yel px-4 py-3 text-[14px]"><b>Dit is een demo.</b> Er is niets verzonden en er is geen uur gereserveerd.</p>' +
+        '<button type="button" id="again" class="btn mt-4 font-bold underline underline-offset-4">Nog een beurt plannen</button>';
+      $('#plan').classList.add('hidden');
+      done.classList.remove('hidden');
+      done.focus();
+      $('#again').onclick = function () { done.classList.add('hidden'); $('#plan').classList.remove('hidden'); };
+    });
+
+    onYear(); setMode('B'); renderSlots(); onSize();
+  })();
+  </script>
+</body>
+</html>

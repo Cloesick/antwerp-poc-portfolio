@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Beeckman tuinmachines Wijnegem | Robotmaaiers, tuinmachines &amp; onderhoud</title>
+  <meta name="description" content="Familiebedrijf met meer dan 80 jaar geschiedenis, al ruim 40 jaar in tuinmachines. Husqvarna Automower en Honda Miimo robotmaaiers, John Deere, Iseki en meer. Onderhoud en herstel in eigen werkplaats, recht tegenover Wijnegem Shopping." />
+  <link rel="canonical" href="https://beeckman.com/" />
+  <meta name="theme-color" content="#232323" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Beeckman tuinmachines" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Beeckman tuinmachines, Wijnegem" />
+  <meta property="og:description" content="Welke robotmaaier past bij uw tuin? Doe de keuzehulp en vraag advies." />
+  <meta property="og:image" content="images/concept.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23232323'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Arial' font-weight='900' font-size='19' fill='%23f8525f'%3EB%3C/text%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store", "AutoRepair"],
+    "name": "Beeckman tuinmachines",
+    "legalName": "Beeckman & Co Machines",
+    "description": "Verkoop van tuinmachines en robotmaaiers, tractoren en Gators, hogedrukreinigers, pompen en generatoren. Onderhoud, nazicht en herstel in eigen werkplaats.",
+    "url": "https://beeckman.com/",
+    "telephone": "+3233228800",
+    "faxNumber": "+3233227494",
+    "email": "info@beeckman.com",
+    "vatID": "BE0426452976",
+    "image": "https://beeckman.com/wp-content/uploads/2020/03/Beeckman_Tuinmachines_Contact_Header.png",
+    "logo": "https://beeckman.com/wp-content/uploads/2020/03/logo-beeckman.png",
+    "brand": ["Husqvarna", "Honda", "John Deere", "Iseki", "Etesia", "Eliet", "AL-KO", "Ferris", "Walker", "Metabo", "Limpar", "Europower", "GTM", "Broil King"],
+    "address": { "@type": "PostalAddress", "streetAddress": "Turnhoutsebaan 90", "postalCode": "2110", "addressLocality": "Wijnegem", "addressCountry": "BE" },
+    "areaServed": ["Wijnegem", "Wommelgem", "Schoten", "Deurne", "Schilde", "Brasschaat", "Ranst"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "12:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "13:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "17:00" }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;800;900&family=Red+Hat+Text:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { display: ['"Red Hat Display"', 'sans-serif'], sans: ['"Red Hat Text"', 'sans-serif'] },
+      colors: { char: '#232323', coral: '#f8525f', coralD: '#d42f3e', grass: '#4f8f1f', lawn: '#e9f1e1', fog: '#f4f5f2', mute: '#61655f', rule: '#dde1d9' }
+    } } };
+  </script>
+  <style>
+    :root { --accent: #d42f3e; --ease: cubic-bezier(.23,1,.32,1); }
+    html { scroll-behavior: smooth; }
+    h1, h2, h3 { text-wrap: balance; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), border-color .18s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid #f8525f; outline-offset: 3px; border-radius: 6px; }
+    .chip input { position: absolute; opacity: 0; pointer-events: none; }
+    .chip span { transition: background-color .15s var(--ease), color .15s var(--ease), border-color .15s var(--ease); }
+    .chip input:checked + span { background: #232323; color: #fff; border-color: #232323; }
+    .chip input:focus-visible + span { outline: 3px solid #f8525f; outline-offset: 2px; }
+    input[type=range] { accent-color: #d42f3e; }
+    #lawnRect, #robot { transition: all .45s var(--ease); }
+    .js .rv { opacity: 0; transform: translateY(14px); transition: opacity .6s var(--ease), transform .6s var(--ease); }
+    .js .rv.in { opacity: 1; transform: none; }
+    @keyframes pop { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+    .pop { animation: pop .4s var(--ease) both; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .rv { opacity: 1; transform: none; transition: none; }
+      .pop { animation: none; }
+      #lawnRect, #robot, .btn, .chip span { transition: none; }
+    }
+  </style>
+</head>
+<body class="bg-white text-char font-sans antialiased pb-14 md:pb-0">
+
+  <div class="fixed bottom-[68px] md:bottom-4 right-3 md:right-4 z-50">
+    <span class="text-[11px] font-semibold tracking-wide text-white bg-char/90 rounded-full px-3 py-1.5">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-rule">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-5 h-[72px] flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top" class="shrink-0"><img src="images/logo.png" alt="Beeckman tuinmachines" width="190" height="40" class="h-[34px] sm:h-[40px] w-auto" /></a>
+      <div class="hidden lg:flex items-center gap-7 text-[15px] font-medium text-mute">
+        <a href="#keuzehulp" class="hover:text-char">Robotmaaier-keuzehulp</a>
+        <a href="#gamma" class="hover:text-char">Gamma</a>
+        <a href="#onderhoud" class="hover:text-char">Onderhoud</a>
+        <a href="#bezoek" class="hover:text-char">Bezoek ons</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="tel:+3233228800" class="hidden sm:inline-flex btn border border-rule hover:border-char font-semibold text-[14px] rounded-full px-4 py-2.5">03 322 88 00</a>
+        <a href="#keuzehulp" class="btn bg-coralD hover:bg-[#bf2433] text-white font-semibold text-[14px] rounded-full px-4 py-2.5 whitespace-nowrap">Welke robotmaaier?</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative overflow-hidden bg-char text-white">
+    <img src="images/automower-gazon.jpg" alt="Husqvarna Automower aan het werk op een gazon voor een woning" class="absolute inset-0 w-full h-full object-cover object-[70%_60%] opacity-90" />
+    <div class="absolute inset-0 bg-gradient-to-r from-char via-char/80 to-char/0"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-char/70 to-transparent lg:hidden"></div>
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-5 min-h-[560px] lg:min-h-[640px] flex items-center py-16">
+      <div class="max-w-[600px]">
+        <p class="font-display font-bold text-coral text-[17px]">Beeckman tuinmachines · Wijnegem</p>
+        <h1 class="mt-4 font-display font-black leading-[.98] tracking-[-0.02em] text-[clamp(2.8rem,6vw,5rem)]">Wij laten er geen gras over groeien.</h1>
+        <p class="mt-6 text-white/80 text-[18px] leading-relaxed max-w-[46ch]">Robotmaaiers, tuinmachines en tractoren, met onderhoud en herstel in onze eigen werkplaats. Een familiebedrijf, al meer dan 40 jaar in tuinmachines.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#keuzehulp" class="btn bg-coralD hover:bg-[#bf2433] text-white font-bold rounded-full px-6 py-3.5">Welke robotmaaier past bij mijn tuin?</a>
+          <a href="#onderhoud" class="btn border border-white/40 hover:border-white font-semibold rounded-full px-6 py-3.5">Onderhoud aanvragen</a>
+        </div>
+        <p class="mt-7 text-[14px] text-white/65">Turnhoutsebaan 90, recht tegenover Wijnegem Shopping</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facts -->
+  <section class="border-b border-rule">
+    <div class="max-w-6xl mx-auto px-4 sm:px-5 py-8 grid grid-cols-1 sm:grid-cols-3 gap-6">
+      <p class="rv"><span class="font-display font-black text-[34px] leading-none">80+ jaar</span><span class="block mt-1 text-mute text-[15px]">familiale onderneming</span></p>
+      <p class="rv"><span class="font-display font-black text-[34px] leading-none">40+ jaar</span><span class="block mt-1 text-mute text-[15px]">actief in tuinmachines</span></p>
+      <p class="rv"><span class="font-display font-black text-[34px] leading-none">Sinds 1995</span><span class="block mt-1 text-mute text-[15px]">overtuigd van de Husqvarna Automower</span></p>
+    </div>
+  </section>
+
+  <!-- Keuzehulp -->
+  <section id="keuzehulp" class="bg-lawn">
+    <div class="max-w-6xl mx-auto px-4 sm:px-5 py-20">
+      <div class="max-w-[720px]">
+        <h2 class="rv font-display font-black tracking-[-0.02em] text-[clamp(2rem,4vw,3.2rem)] leading-[1.02]">Welke robotmaaier past bij uw tuin?</h2>
+        <p class="rv mt-4 text-mute text-[17px] leading-relaxed">Drie vragen, en u ziet welk model uit ons gamma het werk aankan. De capaciteit en hellingen komen uit onze eigen productfiches.</p>
+      </div>
+
+      <div class="mt-10 grid lg:grid-cols-12 gap-6">
+        <form id="kh" class="lg:col-span-7 rounded-3xl bg-white p-5 sm:p-7 border border-rule" novalidate>
+          <div>
+            <div class="flex items-baseline justify-between gap-3">
+              <label for="area" class="font-display font-bold text-[20px]">Hoe groot is uw gazon?</label>
+              <output id="areaOut" for="area" class="font-display font-black text-[24px] text-coralD">800 m²</output>
+            </div>
+            <input id="area" type="range" min="100" max="5000" step="50" value="800" class="mt-3 w-full" aria-describedby="areaHint" />
+            <p id="areaHint" class="mt-1 text-[13.5px] text-mute flex justify-between gap-3"><span>100 m²</span><span class="hidden sm:inline">Ter vergelijking: een voetbalveld is ca. 7.000 m²</span><span>5.000 m²</span></p>
+          </div>
+
+          <fieldset class="mt-7">
+            <legend class="font-display font-bold text-[20px]">Hoe steil is de steilste helling?</legend>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <label class="chip relative cursor-pointer"><input type="radio" name="sl" value="10" checked><span class="block rounded-full border border-rule px-4 py-2 text-[14.5px] font-semibold">Vlak</span></label>
+              <label class="chip relative cursor-pointer"><input type="radio" name="sl" value="25"><span class="block rounded-full border border-rule px-4 py-2 text-[14.5px] font-semibold">Licht hellend</span></label>
+              <label class="chip relative cursor-pointer"><input type="radio" name="sl" value="40"><span class="block rounded-full border border-rule px-4 py-2 text-[14.5px] font-semibold">Tot 40%</span></label>
+              <label class="chip relative cursor-pointer"><input type="radio" name="sl" value="45"><span class="block rounded-full border border-rule px-4 py-2 text-[14.5px] font-semibold">Tot 45%</span></label>
+              <label class="chip relative cursor-pointer"><input type="radio" name="sl" value="60"><span class="block rounded-full border border-rule px-4 py-2 text-[14.5px] font-semibold">Steiler</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="mt-7">
+            <legend class="font-display font-bold text-[20px]">Wat herkent u in uw tuin?</legend>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <label class="chip relative cursor-pointer"><input type="checkbox" name="cx" value="doorgang"><span class="block rounded-full border border-rule px-4 py-2 text-[14.5px] font-semibold">Smalle doorgangen</span></label>
+              <label class="chip relative cursor-pointer"><input type="checkbox" name="cx" value="zones"><span class="block rounded-full border border-rule px-4 py-2 text-[14.5px] font-semibold">Voor- én achtertuin</span></label>
+              <label class="chip relative cursor-pointer"><input type="checkbox" name="cx" value="bomen"><span class="block rounded-full border border-rule px-4 py-2 text-[14.5px] font-semibold">Bomen en borders</span></label>
+              <label class="chip relative cursor-pointer"><input type="checkbox" name="gps" value="1"><span class="block rounded-full border border-rule px-4 py-2 text-[14.5px] font-semibold">Ik wil GPS-diefstaltracking</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="mt-7">
+            <legend class="font-display font-bold text-[20px]">Voorkeur voor een merk?</legend>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <label class="chip relative cursor-pointer"><input type="radio" name="br" value="" checked><span class="block rounded-full border border-rule px-4 py-2 text-[14.5px] font-semibold">Geen voorkeur</span></label>
+              <label class="chip relative cursor-pointer"><input type="radio" name="br" value="Husqvarna"><span class="block rounded-full border border-rule px-4 py-2 text-[14.5px] font-semibold">Husqvarna</span></label>
+              <label class="chip relative cursor-pointer"><input type="radio" name="br" value="Honda"><span class="block rounded-full border border-rule px-4 py-2 text-[14.5px] font-semibold">Honda</span></label>
+            </div>
+          </fieldset>
+        </form>
+
+        <!-- Result -->
+        <div class="lg:col-span-5 flex flex-col gap-4" aria-live="polite">
+          <div class="rounded-3xl bg-char text-white p-5 sm:p-6">
+            <svg id="lawn" viewBox="0 0 320 170" class="w-full h-auto" role="img" aria-label="Schets van uw gazon">
+              <defs>
+                <pattern id="stripes" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(-20)"><rect width="12" height="24" fill="#5c9e2c"/><rect x="12" width="12" height="24" fill="#4f8f1f"/></pattern>
+              </defs>
+              <rect id="lawnRect" x="110" y="35" width="100" height="100" rx="6" fill="url(#stripes)"/>
+              <g id="trees"></g>
+              <rect id="pass" x="0" y="0" width="0" height="0" fill="#232323"/>
+              <g id="robot"><rect x="-9" y="-6" width="18" height="12" rx="5" fill="#fff"/><circle cx="5" cy="0" r="2" fill="#f8525f"/></g>
+            </svg>
+            <p id="lawnTxt" class="mt-2 text-[13px] text-white/60 text-center">Uw gazon op schaal</p>
+          </div>
+          <div id="res" class="rounded-3xl bg-white border border-rule p-5 sm:p-6">
+            <div class="flex gap-4 items-start">
+              <span class="w-16 h-16 rounded-2xl bg-lawn grid place-items-center shrink-0" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M6 26c0-6 5-12 14-12s14 6 14 12v2H6v-2z" fill="#232323"/><circle cx="12" cy="29" r="4" fill="#4f8f1f" stroke="#232323" stroke-width="2"/><circle cx="28" cy="29" r="4" fill="#4f8f1f" stroke="#232323" stroke-width="2"/><circle cx="26" cy="19" r="2" fill="#f8525f"/></svg></span>
+              <div class="min-w-0">
+                <p class="text-[13.5px] text-mute">Ons advies</p>
+                <p id="resName" class="font-display font-black text-[22px] leading-tight">…</p>
+                <p id="resSpec" class="mt-1 text-[14.5px] text-mute"></p>
+              </div>
+            </div>
+            <div class="mt-4">
+              <div class="h-2.5 rounded-full bg-fog overflow-hidden"><div id="bar" class="h-full bg-grass rounded-full" style="width:50%"></div></div>
+              <p id="barTxt" class="mt-1.5 text-[13px] text-mute"></p>
+            </div>
+            <p id="resNote" class="mt-3 text-[14.5px] leading-relaxed"></p>
+            <p id="resAlt" class="mt-2 text-[14px] text-mute"></p>
+            <button id="toOffer" type="button" class="btn mt-5 w-full bg-coralD hover:bg-[#bf2433] text-white font-bold rounded-full px-6 py-3.5">Vraag advies en een offerte</button>
+          </div>
+          <form id="offer" class="hidden pop rounded-3xl bg-white border border-rule p-5 sm:p-6" novalidate>
+            <p class="font-display font-bold text-[19px]">Waar mogen we u bereiken?</p>
+            <div class="mt-3 grid gap-3">
+              <div><label for="on" class="text-[13.5px] text-mute">Naam</label><input id="on" autocomplete="name" class="mt-1 w-full rounded-xl border border-rule px-4 py-2.5" /></div>
+              <div><label for="ot" class="text-[13.5px] text-mute">Telefoon of e-mail</label><input id="ot" class="mt-1 w-full rounded-xl border border-rule px-4 py-2.5" /></div>
+              <div><label for="og" class="text-[13.5px] text-mute">Gemeente</label><input id="og" autocomplete="address-level2" class="mt-1 w-full rounded-xl border border-rule px-4 py-2.5" /></div>
+            </div>
+            <p id="oerr" class="hidden mt-3 text-[14px] text-coralD" role="alert"></p>
+            <button type="submit" class="btn mt-4 w-full bg-char hover:bg-black text-white font-bold rounded-full px-6 py-3.5">Verstuur aanvraag</button>
+          </form>
+          <div id="ok" class="hidden pop rounded-3xl bg-grass text-white p-5 sm:p-6">
+            <p class="font-display font-black text-[22px] leading-tight">Aanvraag verstuurd</p>
+            <p id="okText" class="mt-2 text-[15px] leading-relaxed"></p>
+            <p class="mt-3 text-[13px] text-white/80">Dit is een demo: er is niets verstuurd. Op de echte site komt deze aanvraag met uw tuingegevens bij Beeckman binnen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gamma -->
+  <section id="gamma" class="max-w-6xl mx-auto px-4 sm:px-5 py-20">
+    <div class="grid lg:grid-cols-12 gap-8 items-end">
+      <h2 class="rv lg:col-span-6 font-display font-black tracking-[-0.02em] text-[clamp(2rem,4vw,3.2rem)] leading-[1.02]">Machines voor gras, hout, blad, grond en water.</h2>
+      <p class="rv lg:col-span-6 text-mute leading-relaxed">Van accu-haagschaar tot zero-turn maaier en tractor. Ook voor hogedrukreinigers, pompen, generatoren, werkkledij, brandstoffen en olie, en zelfs uw BBQ kan u bij ons terecht.</p>
+    </div>
+    <div class="mt-10 grid grid-cols-1 md:grid-cols-12 gap-4">
+      <figure class="rv md:col-span-8 relative rounded-3xl overflow-hidden min-h-[300px]">
+        <img src="images/park-husqvarna.jpg" alt="Accu-haagschaar en bosmaaier in een park" class="absolute inset-0 w-full h-full object-cover object-[75%_50%]" loading="lazy" />
+        <figcaption class="absolute left-4 bottom-4 bg-white rounded-2xl px-4 py-3 text-[14.5px]"><b class="font-display text-[17px]">Gras &amp; blad</b><br><span class="text-mute">Grasmaaiers, zitmaaiers, bosmaaiers, bladblazers, haagscharen, verticuteermachines</span></figcaption>
+      </figure>
+      <figure class="rv md:col-span-4 relative rounded-3xl overflow-hidden bg-white border border-rule min-h-[300px]">
+        <img src="images/iseki-tractor.jpg" alt="Iseki compacttractor" class="absolute inset-0 w-full h-full object-contain p-6 pb-20" loading="lazy" />
+        <figcaption class="absolute left-4 right-4 bottom-4 text-[14.5px]"><b class="font-display text-[17px]">Tractoren &amp; Gators</b><br><span class="text-mute">John Deere, Iseki en meer</span></figcaption>
+      </figure>
+      <div class="rv md:col-span-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="rounded-2xl border border-rule p-5"><p class="font-display font-bold text-[18px]">Hout</p><p class="mt-1 text-[14px] text-mute">Kettingzagen, hakselaars, kliefmachines, stoksnoeizagen</p></div>
+        <div class="rounded-2xl border border-rule p-5"><p class="font-display font-bold text-[18px]">Grond</p><p class="mt-1 text-[14px] text-mute">Motorfrezen</p></div>
+        <div class="rounded-2xl border border-rule p-5"><p class="font-display font-bold text-[18px]">Water &amp; reiniging</p><p class="mt-1 text-[14px] text-mute">Hogedrukreinigers, pompen, borstelmachines, sneeuwruimers</p></div>
+        <div class="rounded-2xl border border-rule p-5"><p class="font-display font-bold text-[18px]">Industrie &amp; meer</p><p class="mt-1 text-[14px] text-mute">Generatoren, werkkledij, brandstoffen, olie, BBQ</p></div>
+      </div>
+    </div>
+    <div class="rv mt-10 flex flex-wrap gap-x-7 gap-y-2 font-display font-bold text-[19px] text-char/55">
+      <span>Husqvarna</span><span>Honda</span><span>John Deere</span><span>Iseki</span><span>Etesia</span><span>Eliet</span><span>AL-KO</span><span>Ferris</span><span>Walker</span><span>Metabo</span><span>Limpar</span><span>Europower</span><span>GTM</span><span>Broil King</span>
+    </div>
+  </section>
+
+  <!-- Onderhoud -->
+  <section id="onderhoud" class="bg-char text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-5 py-20 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-6">
+        <h2 class="rv font-display font-black tracking-[-0.02em] text-[clamp(2rem,4vw,3.2rem)] leading-[1.02]">Denk aan het jaarlijks onderhoud.</h2>
+        <p class="rv mt-4 text-white/75 leading-relaxed">Herstellingen, nazichten en onderhoud gebeuren in onze eigen werkplaats. U brengt uw machine zelf binnen, of wij halen op en leveren terug.</p>
+        <ul class="rv mt-6 flex flex-wrap gap-2 text-[14.5px]">
+          <li class="rounded-full border border-white/20 px-3.5 py-1.5">Grasmaaier</li><li class="rounded-full border border-white/20 px-3.5 py-1.5">Zitmaaier</li><li class="rounded-full border border-white/20 px-3.5 py-1.5">Verticuteermachine</li><li class="rounded-full border border-white/20 px-3.5 py-1.5">Bosmaaier</li><li class="rounded-full border border-white/20 px-3.5 py-1.5">Hogedrukreiniger</li><li class="rounded-full border border-white/20 px-3.5 py-1.5">Hakselaar</li>
+        </ul>
+        <div class="rv mt-8 flex flex-wrap gap-3">
+          <a href="tel:+3233228800" class="btn bg-coralD hover:bg-[#bf2433] text-white font-bold rounded-full px-6 py-3.5">Bel 03 322 88 00</a>
+          <a href="mailto:info@beeckman.com?subject=Onderhoud%20aanvragen" class="btn border border-white/40 hover:border-white font-semibold rounded-full px-6 py-3.5">Mail uw aanvraag</a>
+        </div>
+      </div>
+      <div class="lg:col-span-6 rv grid grid-cols-2 gap-3 text-[15px]">
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-5"><p class="font-display font-bold text-[18px]">Zelf binnenbrengen</p><p class="mt-1 text-white/65 text-[14px]">Aan de Turnhoutsebaan 90</p></div>
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-5"><p class="font-display font-bold text-[18px]">Ophalen</p><p class="mt-1 text-white/65 text-[14px]">Wij komen uw machine halen</p></div>
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-5"><p class="font-display font-bold text-[18px]">Leveren</p><p class="mt-1 text-white/65 text-[14px]">Wij brengen ze terug</p></div>
+        <div class="rounded-2xl bg-white/5 border border-white/10 p-5"><p class="font-display font-bold text-[18px]">Ophalen &amp; leveren</p><p class="mt-1 text-white/65 text-[14px]">Zonder dat u zich moet verplaatsen</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bezoek -->
+  <section id="bezoek" class="max-w-6xl mx-auto px-4 sm:px-5 py-20 grid lg:grid-cols-12 gap-10">
+    <div class="lg:col-span-7">
+      <figure class="rv rounded-3xl overflow-hidden">
+        <img src="images/winkel-turnhoutsebaan.jpg" alt="De toonzaal van Beeckman tuinmachines aan de Turnhoutsebaan in Wijnegem" class="w-full h-[220px] sm:h-[320px] object-cover" loading="lazy" />
+      </figure>
+      <blockquote class="rv mt-6 rounded-2xl bg-fog p-6">
+        <p class="font-display font-bold text-[20px] leading-snug">"Bij info/aankoop van een grasmachine 'duidelijke' uitleg gekregen."</p>
+        <footer class="mt-2 text-[14px] text-mute">Google-review</footer>
+      </blockquote>
+    </div>
+    <div class="lg:col-span-5">
+      <h2 class="rv font-display font-black tracking-[-0.02em] text-[clamp(2rem,4vw,3rem)] leading-[1.02]">Recht tegenover Wijnegem Shopping.</h2>
+      <p class="rv mt-4 text-mute leading-relaxed">Vlot bereikbaar vanuit Wijnegem, Wommelgem, Schoten, Deurne, Schilde, Brasschaat en Ranst.</p>
+      <dl class="rv mt-6 text-[15px]" id="hours">
+        <div class="flex justify-between gap-4 py-2.5 border-b border-rule" data-d="2-5"><dt>Dinsdag tot vrijdag</dt><dd class="font-semibold text-right">8:00–12:30 · 13:00–18:00</dd></div>
+        <div class="flex justify-between gap-4 py-2.5 border-b border-rule" data-d="6"><dt>Zaterdag</dt><dd class="font-semibold">8:00–17:00</dd></div>
+        <div class="flex justify-between gap-4 py-2.5" data-d="0-1"><dt>Zondag en maandag</dt><dd class="font-semibold text-mute">Gesloten</dd></div>
+      </dl>
+      <div class="rv mt-6 grid gap-2.5">
+        <a href="tel:+3233228800" class="btn rounded-2xl border border-rule hover:border-char p-4 font-semibold">03 322 88 00</a>
+        <a href="mailto:info@beeckman.com" class="btn rounded-2xl border border-rule hover:border-char p-4 font-semibold">info@beeckman.com</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Turnhoutsebaan+90+2110+Wijnegem" target="_blank" rel="noopener" class="btn rounded-2xl bg-char text-white p-4 font-semibold">Turnhoutsebaan 90, 2110 Wijnegem · route</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-fog border-t border-rule text-mute text-[13.5px]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-5 py-8 flex flex-col md:flex-row justify-between gap-4">
+      <p>Beeckman tuinmachines · Turnhoutsebaan 90, 2110 Wijnegem · BTW BE 0426.452.976</p>
+      <p class="max-w-md">Concept-herontwerp door <a href="mailto:nicolas@saspire.org" class="underline text-char">Saspire</a> als vrijblijvend voorstel. Dit is niet de officiële website van Beeckman.</p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden grid grid-cols-2 bg-white border-t border-rule">
+    <a href="tel:+3233228800" class="flex items-center justify-center py-3.5 font-semibold">Bel 03 322 88 00</a>
+    <a href="#keuzehulp" class="flex items-center justify-center py-3.5 font-bold bg-coralD text-white">Robotmaaier-advies</a>
+  </div>
+
+  <script>
+    document.documentElement.classList.add('js');
+    (function () {
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: .12 });
+        document.querySelectorAll('.rv').forEach(function (el) { io.observe(el); });
+      } else document.querySelectorAll('.rv').forEach(function (el) { el.classList.add('in'); });
+
+      var d = new Date().getDay();
+      var row = document.querySelector('#hours [data-d="' + (d >= 2 && d <= 5 ? '2-5' : d === 6 ? '6' : '0-1') + '"]');
+      if (row) row.classList.add('font-bold', 'text-char');
+
+      // Models with capacity + slope as published on beeckman.com product pages
+      var M = [
+        { n: 'Husqvarna Automower® 305', b: 'Husqvarna', a: 600, s: 40, x: 'compact, voor kleinere, complexe tuinen' },
+        { n: 'Husqvarna Automower® 310', b: 'Husqvarna', a: 1000, s: 40, x: 'vier wielen, vindt de weg door smalle doorgangen (ook als 310 Pro)' },
+        { n: 'Husqvarna Automower® 315', b: 'Husqvarna', a: 1500, s: 40, x: 'past de maaifrequentie aan de groei van het gras aan' },
+        { n: 'Husqvarna Automower® 315X', b: 'Husqvarna', a: 1600, s: 40, gps: true, x: 'X-line met GPS-navigatie en GPS-diefstaltracking via de Automower Connect-app' },
+        { n: 'Husqvarna Automower® 420', b: 'Husqvarna', a: 2200, s: 45, x: 'groot formaat voor uitdagende gazons met steile hellingen' },
+        { n: 'Honda Miimo HRM 310', b: 'Honda', a: 1500, s: 45, x: 'drievoudig zoeksysteem, alarm en pincode' },
+        { n: 'Honda Miimo HRM 520', b: 'Honda', a: 3000, s: 45, x: 'drievoudig zoeksysteem, alarm en pincode' },
+        { n: 'Honda Miimo HRM 3000', b: 'Honda', a: 4000, s: 47, x: 'voor de grootste gazons, alarm en pincode' }
+      ];
+      var f = document.getElementById('kh'), area = document.getElementById('area');
+      function val(n) { var x = f.querySelector('input[name="' + n + '"]:checked'); return x ? x.value : ''; }
+      var pick = null;
+      function calc() {
+        var A = +area.value, S = +val('sl'), br = val('br'), gps = !!f.querySelector('input[name="gps"]:checked');
+        var cx = [].slice.call(f.querySelectorAll('input[name="cx"]:checked')).map(function (x) { return x.value; });
+        var need = Math.round(A * (cx.length ? 1.15 : 1));
+        document.getElementById('areaOut').textContent = A.toLocaleString('nl-BE') + ' m²';
+        var fit = M.filter(function (m) { return m.a >= need && m.s >= S && (!gps || m.gps) && (!br || m.b === br); }).sort(function (p, q) { return p.a - q.a; });
+        var alt = M.filter(function (m) { return m.a >= need && m.s >= S && (!gps || m.gps) && fit[0] && m.b !== fit[0].b; }).sort(function (p, q) { return p.a - q.a; })[0];
+        pick = fit[0] || null;
+        var nm = document.getElementById('resName'), sp = document.getElementById('resSpec'), nt = document.getElementById('resNote'), al = document.getElementById('resAlt'), bar = document.getElementById('bar'), bt = document.getElementById('barTxt');
+        if (pick) {
+          nm.textContent = pick.n;
+          sp.textContent = 'Tot ' + pick.a.toLocaleString('nl-BE') + ' m² · hellingen tot ' + pick.s + '%';
+          var pct = Math.min(100, Math.round(A / pick.a * 100));
+          bar.style.width = pct + '%'; bar.className = 'h-full rounded-full ' + (pct > 85 ? 'bg-coral' : 'bg-grass');
+          bt.textContent = 'Uw gazon gebruikt ' + pct + '% van de capaciteit' + (cx.length ? ' (we rekenen wat reserve voor een complexe tuin)' : '') + '.';
+          nt.textContent = pick.x.charAt(0).toUpperCase() + pick.x.slice(1) + '.';
+          al.textContent = alt ? 'Ook mogelijk: ' + alt.n + '.' : '';
+        } else {
+          nm.textContent = 'Advies op maat';
+          sp.textContent = S > 47 ? 'Steiler dan wat onze standaardmodellen aankunnen.' : gps ? 'GPS-diefstaltracking zit in deze keuzehulp op de Automower® 315X (tot 1.600 m², hellingen tot 40%).' : br && M.some(function (m) { return m.a >= need && m.s >= S; }) ? 'Binnen ' + br + ' vinden we hiervoor geen standaardmodel.' : 'Groter dan wat één standaardmodel aankan.';
+          bar.style.width = '100%'; bar.className = 'h-full rounded-full bg-coral'; bt.textContent = '';
+          nt.textContent = 'Kom langs of vraag advies: we bekijken samen uw terrein, bijvoorbeeld met een professionele Automower® 520 of een andere oplossing.';
+          al.textContent = '';
+        }
+        drawLawn(A, cx);
+      }
+      function drawLawn(A, cx) {
+        var side = 40 + 110 * Math.sqrt(A / 5000), w = side * 1.45, h = side;
+        var x = 160 - w / 2, y = 85 - h / 2, r = document.getElementById('lawnRect');
+        r.setAttribute('x', x); r.setAttribute('y', y); r.setAttribute('width', w); r.setAttribute('height', h);
+        var t = document.getElementById('trees'); t.innerHTML = '';
+        if (cx.indexOf('bomen') > -1) [[.25,.3],[.7,.65],[.45,.75]].forEach(function (p) { t.innerHTML += '<circle cx="' + (x + w * p[0]) + '" cy="' + (y + h * p[1]) + '" r="' + Math.max(5, side * .07) + '" fill="#2f5d14" stroke="#e9f1e1" stroke-width="1.5"/>'; });
+        if (cx.indexOf('zones') > -1) t.innerHTML += '<rect x="' + (x + w * .55) + '" y="' + (y - 1) + '" width="' + (w * .08) + '" height="' + (h * .62) + '" fill="#232323"/>';
+        var p = document.getElementById('pass');
+        if (cx.indexOf('doorgang') > -1) { p.setAttribute('x', x - 1); p.setAttribute('y', y + h * .2); p.setAttribute('width', w * .22); p.setAttribute('height', h * .55); } else { p.setAttribute('width', 0); p.setAttribute('height', 0); }
+        document.getElementById('robot').setAttribute('transform', 'translate(' + (x + w * .72) + ',' + (y + h * .35) + ') rotate(-20)');
+        document.getElementById('lawnTxt').textContent = 'Uw gazon op schaal: ' + A.toLocaleString('nl-BE') + ' m²';
+      }
+      f.addEventListener('change', calc); area.addEventListener('input', calc); calc();
+
+      var offer = document.getElementById('offer');
+      document.getElementById('toOffer').addEventListener('click', function () {
+        offer.classList.remove('hidden'); document.getElementById('on').focus();
+      });
+      offer.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var n = document.getElementById('on').value.trim(), c = document.getElementById('ot').value.trim(), g = document.getElementById('og').value.trim();
+        var msg = !n ? 'Vul uw naam in.' : c.length < 6 ? 'Vul een telefoonnummer of e-mailadres in.' : !g ? 'Vul uw gemeente in.' : '';
+        var er = document.getElementById('oerr'); er.textContent = msg; er.classList.toggle('hidden', !msg);
+        if (msg) return;
+        document.getElementById('okText').textContent = 'Bedankt ' + n.split(' ')[0] + '. We nemen contact op over ' + (pick ? 'de ' + pick.n : 'een robotmaaier op maat') + ' voor uw gazon van ' + (+area.value).toLocaleString('nl-BE') + ' m² in ' + g + '.';
+        offer.classList.add('hidden');
+        var ok = document.getElementById('ok'); ok.classList.remove('hidden');
+        ok.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'center' });
+      });
+    })();
+  </script>
+</body>
+</html>

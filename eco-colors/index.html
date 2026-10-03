@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Eco-Colors | Verffabrikant met toonzaal in Kontich, verf op maat</title>
+  <meta name="description" content="Eco-Colors NV, Duffelsesteenweg 156 in Kontich: producent van verf en afwerkingsproducten voor hout, metaal, minerale ondergronden, kunststof en glas. Kleur, glans, viscositeit en droogtijd op maat. Stel uw verf samen en vraag een offerte." />
+  <meta name="theme-color" content="#0f2e1a" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Eco-Colors" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Eco-Colors | Verf op maat uit Kontich" />
+  <meta property="og:description" content="Verffabrikant met toonzaal: kies kleur, ondergrond en glans, en vraag uw verf op maat aan." />
+  <meta property="og:image" content="images/concept.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f2e1a'/%3E%3Cellipse cx='16' cy='13' rx='7' ry='8' fill='%232e7d32'/%3E%3Crect x='15' y='19' width='2' height='8' fill='%23fff'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store", "LocalBusiness"],
+    "name": "Eco-Colors NV",
+    "description": "Producent van verf en afwerkingsproducten met toonzaal. Verf op maat in kleur, glans, viscositeit, droogtijd en verwerking, voor hout, metaal, minerale ondergronden, kunststof en glas.",
+    "url": "https://www.ecocolors.be/",
+    "telephone": "+3234584496",
+    "email": "info@ecocolors.be",
+    "vatID": "BE0450874212",
+    "image": "https://www.ecocolors.be/7_ontwerp/top-3.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Duffelsesteenweg 156",
+      "postalCode": "2550",
+      "addressLocality": "Kontich",
+      "addressCountry": "BE"
+    },
+    "areaServed": ["Kontich", "Antwerpen", "Mechelen", "Vlaanderen"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Wednesday"], "opens": "08:00", "closes": "16:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Thursday"], "opens": "08:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "08:00", "closes": "16:00" }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Schibsted Grotesk"', 'system-ui', 'sans-serif'] },
+          colors: {
+            bos: '#0f2e1a',
+            groen: '#2e7d32',
+            mint: '#e5efe4',
+            labo: '#f6f7f4',
+            leisteen: '#55605a',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root { --accent: #2e7d32; --verf: #2e7d32; --ease: cubic-bezier(.23,1,.32,1); }
+    html { scroll-behavior: smooth; }
+    body { text-rendering: optimizeLegibility; }
+    h1, h2, h3 { text-wrap: balance; }
+    fieldset { min-width: 0; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), color .18s var(--ease), border-color .18s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #2e7d32; outline-offset: 2px; }
+
+    /* Drawdown card: the lab's way to judge colour and opacity over black & white */
+    .drawdown { position: relative; background: #fbfbf8; border-radius: 6px; box-shadow: 0 40px 80px -40px rgba(15,46,26,.55), 0 2px 0 rgba(0,0,0,.04); }
+    .drawdown .check { position: absolute; left: 6%; right: 6%; top: 46%; height: 30%;
+      background: linear-gradient(90deg, #151515 0 50%, #fbfbf8 50% 100%); box-shadow: inset 0 0 0 1px rgba(0,0,0,.08); }
+    .drawdown .laag { position: absolute; left: 20%; right: 20%; top: 10%; bottom: 8%; border-radius: 2px 2px 40% 40% / 2px 2px 6% 6%;
+      background: var(--verf); transition: background-color .5s var(--ease);
+      box-shadow: inset 0 -10px 18px -10px rgba(0,0,0,.25); }
+    .drawdown .laag::after { content: ''; position: absolute; inset: 0; border-radius: inherit;
+      background: linear-gradient(115deg, rgba(255,255,255,.38) 0%, rgba(255,255,255,0) 32%, rgba(255,255,255,0) 70%, rgba(255,255,255,.12) 100%);
+      opacity: var(--glans, .6); transition: opacity .4s var(--ease); }
+    .drawdown .rand { position: absolute; left: 9%; right: 9%; bottom: 4%; height: 4%; border-radius: 0 0 50% 50%; background: var(--verf); filter: brightness(.85); transition: background-color .5s var(--ease); }
+
+    .stip { width: 34px; height: 34px; border-radius: 999px; border: 3px solid #fff; box-shadow: 0 0 0 1px rgba(15,46,26,.2); transition: transform .15s var(--ease); }
+    .stip[aria-pressed="true"] { box-shadow: 0 0 0 2px #0f2e1a; transform: scale(1.1); }
+    .opt[aria-pressed="true"] { background: #0f2e1a; color: #fff; border-color: #0f2e1a; }
+    .fam[aria-selected="true"] { background: #0f2e1a; color: #fff; }
+
+    @keyframes pour { from { clip-path: inset(0 0 100% 0); } to { clip-path: inset(0 0 0 0); } }
+    .js .drawdown.hero .laag { animation: pour 1.1s var(--ease) .25s both; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .drawdown.hero .laag { animation: none; }
+      .drawdown .laag, .drawdown .rand, .btn, .stip { transition: none; }
+    }
+  </style>
+</head>
+<body class="bg-labo text-bos font-sans antialiased">
+
+  <div class="fixed bottom-4 right-4 z-50 hidden md:block">
+    <span class="text-[11px] tracking-wider font-semibold text-white bg-bos/90 rounded-full px-3 py-1.5 backdrop-blur">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-labo/90 backdrop-blur border-b border-bos/10">
+    <nav class="max-w-6xl mx-auto px-5 h-[70px] flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top" class="flex items-center"><img src="images/logo.png" alt="Eco-Colors NV" width="203" height="90" class="h-11 w-auto" /></a>
+      <div class="hidden lg:flex items-center gap-8 text-[15px] font-medium text-leisteen">
+        <a href="#op-maat" class="hover:text-bos">Verf op maat</a>
+        <a href="#gamma" class="hover:text-bos">Gamma</a>
+        <a href="#toonzaal" class="hover:text-bos">Toonzaal</a>
+        <a href="#contact" class="hover:text-bos">Contact</a>
+      </div>
+      <a href="#op-maat" class="btn inline-flex items-center bg-groen hover:bg-bos text-white rounded-lg px-4 py-2.5 text-[14px] font-semibold whitespace-nowrap">Offerte op maat</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="overflow-hidden">
+    <div class="max-w-6xl mx-auto px-5 pt-12 pb-16 lg:pt-14 lg:pb-20 grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+      <div class="lg:col-span-7">
+        <p class="text-groen font-semibold text-[16px]">Verffabrikant met toonzaal · Kontich · meer dan 25 jaar</p>
+        <h1 class="mt-4 font-extrabold tracking-[-0.035em] leading-[.98] text-[clamp(2.8rem,6.2vw,5.2rem)]">Eco-Colors maakt uw verf op maat.</h1>
+        <p class="mt-6 text-[18px] text-leisteen leading-relaxed max-w-[52ch]">Wij produceren zelf verf en afwerkingsproducten voor hout, metaal, minerale ondergronden, kunststof en glas. Niet alleen de kleur, ook glans, viscositeit, droogtijd en verwerking stellen we af op uw werk, voor industrie, vakman en particulier.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#op-maat" class="btn inline-flex items-center bg-groen hover:bg-bos text-white font-semibold rounded-lg px-6 py-3.5">Stel uw verf samen</a>
+          <a href="#toonzaal" class="btn inline-flex items-center border-2 border-bos/15 hover:border-bos/50 font-semibold rounded-lg px-6 py-3.5">Bezoek de toonzaal</a>
+        </div>
+        <div class="mt-9">
+          <p class="text-[14px] text-leisteen">Probeer een kleur</p>
+          <div id="heroStippen" class="mt-2 flex flex-wrap gap-2.5"></div>
+        </div>
+      </div>
+      <div class="lg:col-span-5">
+        <div class="drawdown hero mx-auto w-full max-w-[380px] aspect-[3/4] lg:rotate-[-2deg]" aria-hidden="true">
+          <div class="check"></div>
+          <div class="laag"></div>
+          <div class="absolute left-[9%] top-[3%] text-[11px] text-leisteen/80">Eco-Colors · labo Kontich</div>
+        </div>
+        <div class="mx-auto max-w-[380px] mt-4 flex justify-between text-[14px]">
+          <span id="heroNaam" class="font-semibold">Bosgroen</span>
+          <span id="heroHex" class="text-leisteen">#2E7D32</span>
+        </div>
+        <p class="mx-auto max-w-[380px] mt-1 text-[14px] text-leisteen">Zo test een verflabo dekkracht: één laag over zwart en wit.</p>
+      </div>
+    </div>
+    <div class="border-y border-bos/10 bg-white">
+      <div class="max-w-6xl mx-auto px-5 py-5 grid grid-cols-2 md:grid-cols-4 gap-4 text-[15px]">
+        <p><b class="block text-[17px]">Eigen productie</b><span class="text-leisteen">in Kontich</span></p>
+        <p><b class="block text-[17px]">Kleur, glans, droogtijd</b><span class="text-leisteen">afgesteld op maat</span></p>
+        <p><b class="block text-[17px]">Ook kleine hoeveelheden</b><span class="text-leisteen">niet enkel grootgebruik</span></p>
+        <p><b class="block text-[17px]">Technische fiche</b><span class="text-leisteen">bij elk product</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Configurator -->
+  <section id="op-maat" class="bg-white border-b border-bos/10">
+    <div class="max-w-6xl mx-auto px-5 py-20">
+      <div class="max-w-3xl">
+        <h2 class="font-extrabold tracking-[-0.03em] text-[clamp(2rem,4vw,3.2rem)] leading-[1.02]">Verf op maat aanvragen</h2>
+        <p class="mt-4 text-[18px] text-leisteen leading-relaxed">Kies een kleur en vertel ons waar het op moet. U ziet meteen welk product uit ons gamma het dichtst in de buurt komt; ons labo stelt daarna het recept af.</p>
+      </div>
+
+      <div class="mt-12 grid lg:grid-cols-12 gap-10">
+        <form id="cfg" class="lg:col-span-7 min-w-0 space-y-9" novalidate>
+          <!-- Colour -->
+          <fieldset>
+            <legend class="text-[19px] font-bold">1. Kleur</legend>
+            <div id="families" class="mt-3 flex gap-2 overflow-x-auto pb-1" role="tablist" aria-label="Kleurfamilie"></div>
+            <div id="stippen" class="mt-4 flex flex-wrap gap-3"></div>
+            <div class="mt-4 grid sm:grid-cols-2 gap-3">
+              <label class="flex items-center gap-3 rounded-lg border-2 border-bos/10 px-3 py-2.5">
+                <input id="eigen" type="color" value="#2e7d32" class="w-9 h-9 rounded cursor-pointer bg-transparent" />
+                <span class="text-[15px]">Eigen tint kiezen</span>
+              </label>
+              <label class="block">
+                <span class="sr-only">Kleurcode</span>
+                <input name="code" placeholder="Of een kleurcode, bv. RAL 6005 of NCS S 5040-G10Y" class="w-full rounded-lg border-2 border-bos/10 px-3 py-3 text-[15px]" />
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="text-[19px] font-bold">2. Ondergrond</legend>
+            <div class="mt-3 grid grid-cols-2 sm:grid-cols-3 gap-2" data-groep="ondergrond">
+              <button type="button" class="opt btn rounded-lg border-2 border-bos/10 py-3 font-semibold" data-v="hout-int" aria-pressed="false">Hout binnen</button>
+              <button type="button" class="opt btn rounded-lg border-2 border-bos/10 py-3 font-semibold" data-v="hout-ext" aria-pressed="false">Hout buiten</button>
+              <button type="button" class="opt btn rounded-lg border-2 border-bos/10 py-3 font-semibold" data-v="metaal" aria-pressed="false">Metaal</button>
+              <button type="button" class="opt btn rounded-lg border-2 border-bos/10 py-3 font-semibold" data-v="mineraal" aria-pressed="false">Beton &amp; steen</button>
+              <button type="button" class="opt btn rounded-lg border-2 border-bos/10 py-3 font-semibold" data-v="kunststof" aria-pressed="false">Kunststof</button>
+              <button type="button" class="opt btn rounded-lg border-2 border-bos/10 py-3 font-semibold" data-v="glas" aria-pressed="false">Glas</button>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="text-[19px] font-bold">3. Afwerking</legend>
+            <div class="mt-3 grid grid-cols-2 gap-2" data-groep="type">
+              <button type="button" class="opt btn rounded-lg border-2 border-bos/10 py-3 font-semibold" data-v="dekkend" aria-pressed="true">Dekkend (lak, verf)</button>
+              <button type="button" class="opt btn rounded-lg border-2 border-bos/10 py-3 font-semibold" data-v="transparant" aria-pressed="false">Transparant (vernis, olie, beits)</button>
+            </div>
+            <p class="mt-5 font-semibold text-[15px]">Glans</p>
+            <div class="mt-2 grid grid-cols-2 sm:grid-cols-4 gap-2" data-groep="glans">
+              <button type="button" class="opt btn rounded-lg border-2 border-bos/10 py-2.5 font-semibold" data-v="mat" aria-pressed="false">Mat</button>
+              <button type="button" class="opt btn rounded-lg border-2 border-bos/10 py-2.5 font-semibold" data-v="zijdemat" aria-pressed="true">Zijdemat</button>
+              <button type="button" class="opt btn rounded-lg border-2 border-bos/10 py-2.5 font-semibold" data-v="zijdeglans" aria-pressed="false">Zijdeglans</button>
+              <button type="button" class="opt btn rounded-lg border-2 border-bos/10 py-2.5 font-semibold" data-v="hoogglans" aria-pressed="false">Hoogglans</button>
+            </div>
+            <p class="mt-5 font-semibold text-[15px]">Basis</p>
+            <div class="mt-2 grid grid-cols-3 gap-2" data-groep="basis">
+              <button type="button" class="opt btn rounded-lg border-2 border-bos/10 py-2.5 font-semibold" data-v="water" aria-pressed="true">Watergedragen</button>
+              <button type="button" class="opt btn rounded-lg border-2 border-bos/10 py-2.5 font-semibold" data-v="solvent" aria-pressed="false">Solventgedragen</button>
+              <button type="button" class="opt btn rounded-lg border-2 border-bos/10 py-2.5 font-semibold" data-v="advies" aria-pressed="false">Graag advies</button>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="text-[19px] font-bold">4. Hoeveel en hoe verwerkt</legend>
+            <div class="mt-3 grid sm:grid-cols-2 gap-4">
+              <label class="block font-semibold text-[15px]">Hoeveelheid: <span id="literOut">5</span> liter
+                <input id="liter" name="liter" type="range" min="1" max="200" value="5" class="mt-3 w-full accent-[#2e7d32]" />
+              </label>
+              <label class="block font-semibold text-[15px]">Verwerking
+                <select name="verwerking" class="mt-2 w-full rounded-lg border-2 border-bos/10 px-3 py-2.5 font-normal bg-white">
+                  <option>Borstel / rol</option><option>Airless</option><option>Airmix</option><option>Bekerpistool</option><option>Weet ik nog niet</option>
+                </select>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="rounded-xl bg-mint p-5 sm:p-6">
+            <legend class="sr-only">Uw gegevens</legend>
+            <p class="text-[19px] font-bold">5. Waar sturen we de offerte naartoe?</p>
+            <div class="mt-4 grid sm:grid-cols-2 gap-4">
+              <label class="block font-semibold text-[15px]">Naam of bedrijf<input name="naam" autocomplete="organization" class="mt-2 w-full rounded-lg border-2 border-bos/10 px-3 py-2.5 font-normal bg-white" /></label>
+              <label class="block font-semibold text-[15px]">E-mail<input name="mail" type="email" autocomplete="email" class="mt-2 w-full rounded-lg border-2 border-bos/10 px-3 py-2.5 font-normal bg-white" /></label>
+              <label class="block font-semibold text-[15px]">Ik ben
+                <select name="wie" class="mt-2 w-full rounded-lg border-2 border-bos/10 px-3 py-2.5 font-normal bg-white"><option>Particulier</option><option>Schilder / vakman</option><option>Industriële klant</option></select>
+              </label>
+              <label class="block font-semibold text-[15px]">Telefoon (mag)<input name="tel" type="tel" autocomplete="tel" class="mt-2 w-full rounded-lg border-2 border-bos/10 px-3 py-2.5 font-normal bg-white" /></label>
+            </div>
+            <p id="fout" class="hidden mt-4 font-semibold text-[#b42318]" role="alert"></p>
+            <button class="btn mt-5 w-full sm:w-auto bg-groen hover:bg-bos text-white font-semibold rounded-lg px-7 py-3.5">Offerte aanvragen</button>
+          </fieldset>
+        </form>
+
+        <!-- Live recipe card -->
+        <aside class="lg:col-span-5 min-w-0">
+          <div class="lg:sticky lg:top-24 rounded-2xl border-2 border-bos/10 bg-labo p-6">
+            <div class="drawdown w-full aspect-[4/3]" aria-hidden="true">
+              <div class="check"></div><div class="laag"></div>
+            </div>
+            <p class="mt-5 text-[13px] text-leisteen">Uw receptkaart</p>
+            <dl id="recept" class="mt-2 text-[15px] divide-y divide-bos/10"></dl>
+            <div id="advies" class="mt-5 rounded-lg bg-white border border-bos/10 p-4 text-[15px]"></div>
+            <div id="ok" class="hidden mt-5 rounded-lg bg-groen text-white p-5" role="status" aria-live="polite"></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gamma -->
+  <section id="gamma" class="max-w-6xl mx-auto px-5 py-20">
+    <div class="grid lg:grid-cols-12 gap-8 items-end">
+      <h2 class="lg:col-span-6 font-extrabold tracking-[-0.03em] text-[clamp(2rem,4vw,3.2rem)] leading-[1.02]">Een gamma per ondergrond</h2>
+      <p class="lg:col-span-6 text-[17px] text-leisteen leading-relaxed">Elk product heeft een technische fiche in onze verfbibliotheek. Een greep uit het gamma:</p>
+    </div>
+    <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <article class="rounded-2xl bg-white border border-bos/10 p-6"><h3 class="text-[20px] font-bold">Hout binnen</h3><p class="mt-2 text-leisteen text-[15px]">Nitrocellulose lakken en vernissen, alkyd olie, NC vulgrond, patina en ceruseerpasta.</p><p class="mt-4 text-[13px] font-semibold">NAT-85xx · ALK-xxxx · NAS-5500 · PAX-8100</p></article>
+      <article class="rounded-2xl bg-white border border-bos/10 p-6"><h3 class="text-[20px] font-bold">Hout buiten</h3><p class="mt-2 text-leisteen text-[15px]">Watergedragen acrylaatlakken met zeer goede buitenduurzaamheid, teakolie, impregnatie en grondlak.</p><p class="mt-4 text-[13px] font-semibold">WL8 · 892Q · ECOTEAK · 121-Q · 152-Q</p></article>
+      <article class="rounded-2xl bg-white border border-bos/10 p-6"><h3 class="text-[20px] font-bold">Metaal</h3><p class="mt-2 text-leisteen text-[15px]">Nitrocellulose lakken en vernissen voor ferro en non-ferro, epoxy anti-corrosieprimer.</p><p class="mt-4 text-[13px] font-semibold">CELLUMET · DURAFOND</p></article>
+      <article class="rounded-2xl bg-white border border-bos/10 p-6"><h3 class="text-[20px] font-bold">Beton &amp; steen</h3><p class="mt-2 text-leisteen text-[15px]">2K vloer-epoxy, transparante PU-beschermlaag, kalei-effect-verf, natuursteen-protector.</p><p class="mt-4 text-[13px] font-semibold">EPX-2xxx · POLYACRYL AQUA · KMx</p></article>
+      <article class="rounded-2xl bg-white border border-bos/10 p-6"><h3 class="text-[20px] font-bold">Kunststof</h3><p class="mt-2 text-leisteen text-[15px]">Watergedragen 2K PU-acryl met uitstekende hechting op melamine en laminaat.</p><p class="mt-4 text-[13px] font-semibold">POLYACRYL AQUA (N)</p></article>
+      <article class="rounded-2xl bg-white border border-bos/10 p-6"><h3 class="text-[20px] font-bold">Glas</h3><p class="mt-2 text-leisteen text-[15px]">2K PU-vernis en dekkende glascoating voor de glasverwerkende industrie.</p><p class="mt-4 text-[13px] font-semibold">GLASACRYL · GLASACRYL COLOR</p></article>
+      <article class="rounded-2xl bg-white border border-bos/10 p-6"><h3 class="text-[20px] font-bold">Anti-graffiti</h3><p class="mt-2 text-leisteen text-[15px]">Transparante beschermlaag voor hout, metaal en steen, bestand tegen verf, viltstift en hogedrukreiniging.</p><p class="mt-4 text-[13px] font-semibold">POLYGRAF</p></article>
+      <article class="rounded-2xl bg-white border border-bos/10 p-6"><h3 class="text-[20px] font-bold">Afbijtgel</h3><p class="mt-2 text-leisteen text-[15px]">Biologisch afbreekbare afbijtmiddelen in gelvorm, zonder dampen of zuren.</p><p class="mt-4 text-[13px] font-semibold">AFB-2000 · AFB-3000</p></article>
+    </div>
+  </section>
+
+  <!-- Toonzaal / photos -->
+  <section id="toonzaal" class="bg-bos text-white">
+    <div class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-5">
+        <h2 class="font-extrabold tracking-[-0.03em] text-[clamp(2rem,4vw,3.2rem)] leading-[1.02]">Kom langs in de toonzaal</h2>
+        <p class="mt-4 text-white/80 text-[17px] leading-relaxed">Breng een staal van uw hout, metaal of steen mee. We bekijken samen welk product past en hoe u het verwerkt. Bezoek is vrijblijvend.</p>
+        <ul class="mt-6 space-y-2 text-white/85">
+          <li>Industriële, professionele en particuliere klanten</li>
+          <li>Hoge kwaliteit tegen de beste prijs</li>
+          <li>Gratis schoolcursus verven om te downloaden</li>
+        </ul>
+        <div class="mt-8 grid gap-4">
+          <blockquote class="border-l-2 border-[#8fd19e] pl-4"><p class="text-[18px] font-semibold">"Een van de beste winkels die ik heb gezien... geven veel advies."</p><footer class="text-white/60 text-[14px] mt-1">Google-review</footer></blockquote>
+          <blockquote class="border-l-2 border-[#8fd19e] pl-4"><p class="text-[18px] font-semibold">"Voortreffelijke firma tout court."</p><footer class="text-white/60 text-[14px] mt-1">Google-review</footer></blockquote>
+        </div>
+      </div>
+      <div class="lg:col-span-7 grid gap-4">
+        <img src="images/blikken.jpg" alt="Open verfblikken in verschillende kleuren" class="w-full rounded-xl object-cover aspect-[31/10]" loading="lazy" />
+        <div class="grid grid-cols-2 gap-4">
+          <img src="images/borstel.jpg" alt="Borstel die olie op hout aanbrengt" class="w-full rounded-xl object-cover aspect-[4/3]" loading="lazy" />
+          <img src="images/spuitpistool.jpg" alt="Verf aanbrengen met een spuitpistool" class="w-full rounded-xl object-cover aspect-[4/3]" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-2 gap-12">
+    <div>
+      <h2 class="font-extrabold tracking-[-0.03em] text-[clamp(2rem,4vw,3.2rem)] leading-[1.02]">Duffelsesteenweg 156, Kontich</h2>
+      <p class="mt-4 text-[17px] text-leisteen leading-relaxed">Vlot bereikbaar vanuit Antwerpen, Mortsel, Edegem, Lint, Duffel en Mechelen. Grote en kleine afnemers welkom.</p>
+      <p id="nuOpen" class="mt-6 inline-flex items-center gap-2 rounded-full bg-mint px-4 py-2 font-semibold">Ma–vr open vanaf 8:00</p>
+      <dl id="uren" class="mt-6 divide-y divide-bos/10 border-y border-bos/10">
+        <div class="flex justify-between py-3" data-d="1"><dt>Maandag</dt><dd>8:00–16:30</dd></div>
+        <div class="flex justify-between py-3" data-d="2"><dt>Dinsdag</dt><dd>8:00–18:00</dd></div>
+        <div class="flex justify-between py-3" data-d="3"><dt>Woensdag</dt><dd>8:00–16:30</dd></div>
+        <div class="flex justify-between py-3" data-d="4"><dt>Donderdag</dt><dd>8:00–18:00</dd></div>
+        <div class="flex justify-between py-3" data-d="5"><dt>Vrijdag</dt><dd>8:00–16:00</dd></div>
+        <div class="flex justify-between py-3 text-leisteen" data-d="6"><dt>Zaterdag</dt><dd>Gesloten</dd></div>
+        <div class="flex justify-between py-3 text-leisteen" data-d="0"><dt>Zondag</dt><dd>Gesloten</dd></div>
+      </dl>
+    </div>
+    <div class="grid gap-4 content-start">
+      <a href="tel:+3234584496" class="btn rounded-2xl bg-bos text-white p-6 hover:bg-groen"><span class="block text-white/65 text-[14px]">Toonzaal en bestellingen</span><span class="text-[26px] font-bold">03 458 44 96</span></a>
+      <a href="tel:+32486998090" class="btn rounded-2xl bg-white border border-bos/10 p-6 hover:border-bos/40"><span class="block text-leisteen text-[14px]">Service-telefoon</span><span class="text-[22px] font-bold">0486 99 80 90</span></a>
+      <a href="mailto:info@ecocolors.be" class="btn rounded-2xl bg-white border border-bos/10 p-6 hover:border-bos/40"><span class="block text-leisteen text-[14px]">Mail</span><span class="text-[22px] font-bold">info@ecocolors.be</span></a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Eco-Colors+Duffelsesteenweg+156+2550+Kontich" target="_blank" rel="noopener" class="btn rounded-2xl bg-white border border-bos/10 p-6 hover:border-bos/40"><span class="block text-leisteen text-[14px]">Route via Google Maps</span><span class="text-[22px] font-bold">Duffelsesteenweg 156, 2550 Kontich</span></a>
+    </div>
+  </section>
+
+  <footer class="bg-bos text-white/70 pb-20 md:pb-0">
+    <div class="max-w-6xl mx-auto px-5 py-10 flex flex-col md:flex-row gap-6 justify-between text-[14px]">
+      <p><span class="text-white font-bold text-lg">Eco-Colors NV</span><br />Duffelsesteenweg 156, 2550 Kontich · BTW BE 0450.874.212</p>
+      <p class="max-w-md">Concept-herontwerp door <a href="mailto:nicolas@saspire.org" class="underline underline-offset-4">Saspire</a> als vrijblijvend voorstel. Dit is niet de officiële website van Eco-Colors.</p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden bg-groen text-white">
+    <a href="tel:+3234584496" class="flex items-center justify-center gap-2.5 py-3.5 font-semibold">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      Bel de toonzaal: 03 458 44 96
+    </a>
+  </div>
+
+  <script>
+    document.documentElement.classList.add('js');
+    const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const esc = v => String(v).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    const root = document.documentElement.style;
+
+    /* ---------- Colour families (indicative tints; the lab matches any code) ---------- */
+    const FAM = {
+      'Groen': [['Bosgroen', '#2e7d32'], ['Mosgroen', '#5f6f3a'], ['Saliegroen', '#9caf88'], ['Dennengroen', '#1f3d2b'], ['Mintgrijs', '#c9d8cc'], ['Olijf', '#7a7a3a']],
+      'Wit & gebroken wit': [['Zuiver wit', '#f7f7f2'], ['Kalkwit', '#efebe0'], ['Linnen', '#e6dfcf'], ['Zand', '#d8ccb3'], ['Parelgrijs', '#dcdcd6'], ['Ivoor', '#f1e9d2']],
+      'Grijs & antraciet': [['Antraciet', '#373c40'], ['Leisteen', '#55605a'], ['Betongrijs', '#8d918d'], ['Kiezel', '#b5b2a8'], ['Grafiet', '#2a2d30'], ['Zinkgrijs', '#9aa1a6']],
+      'Blauw': [['Nachtblauw', '#1d2c4c'], ['Staalblauw', '#4a6782'], ['Duifblauw', '#8ea3b5'], ['Petrol', '#1f5560'], ['Ijsblauw', '#cfdde6'], ['Koningsblauw', '#2a4fa0']],
+      'Rood & terra': [['Ossenbloed', '#6e1f1f'], ['Steenrood', '#9b3b2b'], ['Terracotta', '#c0643f'], ['Roest', '#8a4a2a'], ['Oudroze', '#c99a92'], ['Signaalrood', '#c1272d']],
+      'Geel & oker': [['Oker', '#c79a3a'], ['Mosterd', '#b8902a'], ['Zonnegeel', '#f2c230'], ['Honing', '#d9a64a'], ['Strogeel', '#e8d38f'], ['Koper', '#a8683a']],
+    };
+    let kleur = { naam: 'Bosgroen', hex: '#2e7d32' };
+    const fams = document.getElementById('families'), stippen = document.getElementById('stippen');
+    fams.innerHTML = Object.keys(FAM).map((f, i) => `<button type="button" class="fam btn shrink-0 rounded-full border border-bos/15 px-4 py-2 text-[14px] font-semibold" role="tab" aria-selected="${i === 0}" data-f="${f}">${f}</button>`).join('');
+    const stipHTML = ([n, h]) => `<button type="button" class="stip" style="background:${h}" aria-label="${n}" title="${n}" aria-pressed="${h === kleur.hex}" data-n="${n}" data-h="${h}"></button>`;
+    function toonFam(f) {
+      fams.querySelectorAll('.fam').forEach(b => b.setAttribute('aria-selected', b.dataset.f === f));
+      stippen.innerHTML = FAM[f].map(stipHTML).join('');
+    }
+    document.getElementById('heroStippen').innerHTML = [FAM['Groen'][0], FAM['Wit & gebroken wit'][2], FAM['Grijs & antraciet'][0], FAM['Blauw'][3], FAM['Rood & terra'][2], FAM['Geel & oker'][0]].map(stipHTML).join('');
+    function zetKleur(naam, hex) {
+      kleur = { naam, hex };
+      root.setProperty('--verf', hex);
+      document.getElementById('heroNaam').textContent = naam;
+      document.getElementById('heroHex').textContent = hex.toUpperCase();
+      document.querySelectorAll('.stip').forEach(s => s.setAttribute('aria-pressed', s.dataset.h === hex));
+      update();
+    }
+    fams.addEventListener('click', e => { const b = e.target.closest('.fam'); if (b) toonFam(b.dataset.f); });
+    document.addEventListener('click', e => { const s = e.target.closest('.stip'); if (s) zetKleur(s.dataset.n, s.dataset.h); });
+    document.getElementById('eigen').addEventListener('input', e => zetKleur('Eigen tint', e.target.value));
+
+    /* ---------- Options ---------- */
+    const keuze = { ondergrond: null, type: 'dekkend', glans: 'zijdemat', basis: 'water' };
+    const GLANS = { mat: .12, zijdemat: .4, zijdeglans: .7, hoogglans: 1 };
+    document.querySelectorAll('[data-groep]').forEach(g => g.addEventListener('click', e => {
+      const b = e.target.closest('.opt'); if (!b) return;
+      keuze[g.dataset.groep] = b.dataset.v;
+      g.querySelectorAll('.opt').forEach(x => x.setAttribute('aria-pressed', x === b));
+      update();
+    }));
+    const liter = document.getElementById('liter');
+    liter.addEventListener('input', () => { document.getElementById('literOut').textContent = liter.value; update(); });
+
+    /* ---------- Product suggestion from the real range ---------- */
+    const IND = ' <span class="inline-block mt-1 text-[12px] font-semibold rounded bg-mint px-2 py-0.5">Enkel voor industrieel gebruik</span>';
+    function suggestie() {
+      const { ondergrond: o, type: t, basis: b } = keuze;
+      if (!o) return '<p class="text-leisteen">Kies een ondergrond, dan tonen we welk product uit ons gamma past.</p>';
+      const M = {
+        'hout-int': t === 'transparant'
+          ? ['NAT-85xx nitrocellulose vernis of ALK-xxxx alkyd olie', 'Olie dringt goed in en is egaal te verwerken; vernis voor een gesloten, slijtvaste laag.']
+          : ['NCx-xxxx nitrocellulose lak', 'Nitrocellulose lak voor hout binnen; ons labo stelt glans en droogtijd af.'],
+        'hout-ext': t === 'transparant'
+          ? ['892-QxxB watergedragen acrylaatlak, transparante kleur, of ECOTEAK', 'Heldere inkijk en zeer goede buitenduurzaamheid.']
+          : ['WL8 watergedragen acrylaatlak', 'Goede dekkracht en elasticiteit, snel watervast, voor binnen en buiten.'],
+        'metaal': ['DURAFOND epoxy-primer + CELLUMET A01 COLOR', 'Anti-corrosie hechtingsprimer en een lak met goede hechting op ferro en non-ferro.' + IND],
+        'mineraal': t === 'transparant'
+          ? ['POLYACRYL AQUA (N)', 'Transparante 2K PU-beschermlaag met uitstekende hechting op poreuze minerale ondergronden.']
+          : ['EPX-2xxx 2K vloer-epoxy of KMx kalei-effect-verf', 'Epoxy maakt betonvloeren slijtvast en makkelijk reinigbaar.' + IND],
+        'kunststof': ['POLYACRYL AQUA (N)', 'Watergedragen 2K PU-acryl, hecht uitstekend op melamine en laminaat.'],
+        'glas': t === 'transparant'
+          ? ['GLASACRYL 2K PU-vernis', 'Zeer goede hechting op glas, niet-vergelend.' + IND]
+          : ['GLASACRYL COLOR dekkende glascoating', 'Goede dekkracht, krasvast, bestand tegen detergenten.' + IND],
+      };
+      const [p, uitleg] = M[o];
+      const solventNoot = b === 'solvent' && /WL8|892|POLYACRYL AQUA/.test(p) ? '<p class="mt-2 text-[13px] text-leisteen">U koos solventgedragen; ons labo bekijkt het passende alternatief.</p>' : '';
+      return `<p class="text-[13px] text-leisteen">Dichtst bij uit ons gamma</p><p class="font-bold mt-1">${p}</p><p class="mt-1 text-leisteen">${uitleg}</p>${solventNoot}`;
+    }
+    const LBL = { 'hout-int': 'Hout binnen', 'hout-ext': 'Hout buiten', metaal: 'Metaal', mineraal: 'Beton & steen', kunststof: 'Kunststof', glas: 'Glas', water: 'Watergedragen', solvent: 'Solventgedragen', advies: 'Graag advies' };
+    function update() {
+      root.setProperty('--glans', GLANS[keuze.glans]);
+      const code = document.querySelector('input[name=code]').value.trim();
+      const rij = (k, v) => `<div class="flex justify-between gap-4 py-2"><dt class="text-leisteen">${k}</dt><dd class="font-semibold text-right">${v}</dd></div>`;
+      document.getElementById('recept').innerHTML =
+        rij('Kleur', `<span class="inline-block w-3 h-3 rounded-full align-middle mr-1.5" style="background:${kleur.hex}"></span>${esc(code || kleur.naam)}`) +
+        rij('Ondergrond', keuze.ondergrond ? LBL[keuze.ondergrond] : '—') +
+        rij('Afwerking', (keuze.type === 'dekkend' ? 'Dekkend' : 'Transparant') + ', ' + keuze.glans) +
+        rij('Basis', LBL[keuze.basis]) +
+        rij('Hoeveelheid', liter.value + ' liter');
+      document.getElementById('advies').innerHTML = suggestie();
+    }
+    document.querySelector('input[name=code]').addEventListener('input', update);
+    toonFam('Groen');
+    update();
+
+    /* ---------- Submit ---------- */
+    document.getElementById('cfg').addEventListener('submit', e => {
+      e.preventDefault();
+      const f = e.target, fout = document.getElementById('fout'), ok = document.getElementById('ok');
+      const miss = [];
+      if (!keuze.ondergrond) miss.push('kies een ondergrond');
+      if (!f.naam.value.trim()) miss.push('vul uw naam of bedrijf in');
+      if (!/^\S+@\S+\.\S+$/.test(f.mail.value.trim())) miss.push('geef een geldig e-mailadres');
+      if (miss.length) { fout.textContent = 'Nog even: ' + miss.join(', ') + '.'; fout.classList.remove('hidden'); return; }
+      fout.classList.add('hidden');
+      ok.innerHTML = `<p class="text-[20px] font-bold">Aanvraag ontvangen</p>
+        <p class="mt-2 text-white/90">${liter.value} liter ${esc(f.code.value.trim() || kleur.naam)}, ${keuze.glans}, voor ${LBL[keuze.ondergrond].toLowerCase()}. Ons labo bekijkt het recept en stuurt de offerte naar ${esc(f.mail.value.trim())}.</p>
+        <p class="mt-3 text-[13px] text-white/70">Dit is een demo: er is niets verzonden.</p>`;
+      ok.classList.remove('hidden');
+      ok.scrollIntoView({ behavior: RM ? 'auto' : 'smooth', block: 'nearest' });
+    });
+
+    /* ---------- Open now ---------- */
+    const U = { 1: [480, 990], 2: [480, 1080], 3: [480, 990], 4: [480, 1080], 5: [480, 960] };
+    const now = new Date(), d = now.getDay(), t = now.getHours() * 60 + now.getMinutes();
+    const fmt = m => Math.floor(m / 60) + ':' + String(m % 60).padStart(2, '0');
+    const dagen = ['zondag','maandag','dinsdag','woensdag','donderdag','vrijdag','zaterdag'];
+    const el = document.getElementById('nuOpen');
+    if (U[d] && t >= U[d][0] && t < U[d][1]) el.innerHTML = `<span class="w-2 h-2 rounded-full bg-groen"></span>Nu open tot ${fmt(U[d][1])}`;
+    else if (U[d] && t < U[d][0]) el.innerHTML = '<span class="w-2 h-2 rounded-full bg-[#b42318]"></span>Gesloten, vandaag open om 8:00';
+    else { let n = d; do { n = (n + 1) % 7; } while (!U[n]); el.innerHTML = `<span class="w-2 h-2 rounded-full bg-[#b42318]"></span>Gesloten, ${dagen[n]} open om 8:00`; }
+    const td = document.querySelector(`#uren [data-d="${d}"]`); if (td) td.classList.add('font-bold');
+  </script>
+</body>
+</html>

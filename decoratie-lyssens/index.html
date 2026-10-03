@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Decoratie Lyssens Merksem | Verfwinkel, behang en schilderwerken sinds 1968</title>
+  <meta name="description" content="Lyssens decoratie &amp; interieur in Merksem: verfwinkel met mengmachine (meer dan 70.000 kleuren), behang, raamdecoratie, vloerbekleding en deurbeslag, plus een eigen ploeg fijnschilders. Familiezaak sinds 1968. Gratis offerte per kamer." />
+  <link rel="canonical" href="https://decoratielyssens.be/" />
+  <meta name="theme-color" content="#2f3438" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Decoratie Lyssens" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Decoratie Lyssens | Verf, behang en schilderwerken in Merksem" />
+  <meta property="og:description" content="De winkel en de schildersploeg onder één dak. Bereken je kamer en vraag een gratis offerte." />
+  <meta property="og:url" content="https://decoratielyssens.be/" />
+  <meta property="og:image" content="images/winkel-gevel.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232f3438'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-size='19' fill='%23fff'%3EL%3C/text%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["HomeGoodsStore", "HousePainter"],
+    "name": "Decoratie Lyssens",
+    "legalName": "Drogisterij & Decoratie Lyssens-van Aken",
+    "description": "Verf- en decoratiewinkel en schildersbedrijf in Merksem: verf, behang, raamdecoratie, vloerbekleding, deur- en meubelbeslag, kuisproducten, droogkuis-depot, en uitvoerende schilder-, behang- en decoratiewerken.",
+    "url": "https://decoratielyssens.be/",
+    "telephone": "+3236445206",
+    "email": "lyssensdecoratie@skynet.be",
+    "foundingDate": "1968",
+    "image": "https://decoratielyssens.be/wp-content/uploads/2020/12/Lyssens_Winkel1.jpeg",
+    "address": { "@type": "PostalAddress", "streetAddress": "De Vlasschaardstraat 28", "postalCode": "2170", "addressLocality": "Merksem", "addressCountry": "BE" },
+    "areaServed": ["Merksem", "Antwerpen", "Deurne", "Ekeren", "Schoten", "Brasschaat", "Wijnegem"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "08:30", "closes": "12:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "13:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "15:00" }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Belgrano&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Figtree', 'system-ui', 'sans-serif'], serif: ['Belgrano', 'Georgia', 'serif'] },
+          colors: { ink: '#2f3438', slate: '#5b636a', line: '#e4e2df', red: { DEFAULT: '#c8312b', dark: '#a8261f' }, wash: '#f5f4f2' },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root { --ease: cubic-bezier(0.23, 1, 0.32, 1); --wall: #3f5d66; }
+    html { scroll-behavior: smooth; }
+    h1, h2, h3 { text-wrap: balance; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), border-color .18s var(--ease); }
+    .btn:active { transform: scale(0.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid #c8312b; outline-offset: 2px; }
+    .wall { background: var(--wall); transition: background-color .9s var(--ease); }
+    .swatch { transition: transform .2s var(--ease), box-shadow .2s var(--ease); }
+    .swatch[aria-pressed="true"] { box-shadow: 0 0 0 2px #fff, 0 0 0 4px #2f3438; transform: translateY(-2px); }
+    .seg button[aria-pressed="true"] { background: #2f3438; color: #fff; }
+    .field { width: 100%; background: #fff; border: 1px solid #d6d3cf; border-radius: 6px; padding: .55rem .7rem; font-size: 15px; }
+    .field:focus { border-color: #2f3438; }
+    /* before/after */
+    .ba { position: relative; overflow: hidden; touch-action: pan-y; }
+    .ba .half { position: absolute; inset: 0; background-size: 200% 100%; background-repeat: no-repeat; }
+    .ba .after { background-position: 100% 0; }
+    .ba .before { background-position: 0 0; clip-path: inset(0 calc(100% - var(--x, 50%)) 0 0); }
+    .ba .handle { position: absolute; top: 0; bottom: 0; left: var(--x, 50%); width: 2px; background: #fff; transform: translateX(-1px); pointer-events: none; }
+    .ba .knob { position: absolute; top: 50%; left: 50%; width: 40px; height: 40px; margin: -20px 0 0 -20px; border-radius: 999px; background: #fff; box-shadow: 0 6px 18px rgba(0,0,0,.3); display: grid; place-items: center; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .wall, .swatch, .btn { transition: none; }
+    }
+  </style>
+</head>
+<body class="bg-white text-ink font-sans antialiased">
+
+  <div class="fixed bottom-[68px] md:bottom-4 right-3 md:right-4 z-50">
+    <span class="text-[11px] tracking-wide text-white bg-ink/90 rounded-full px-3 py-1.5 shadow">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-line">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-5 h-[72px] flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top" class="shrink-0"><img src="images/logo.png" alt="Lyssens decoratie &amp; interieur" class="h-10 sm:h-11 w-auto" width="418" height="149" /></a>
+      <div class="hidden lg:flex items-center gap-7 text-[15px] font-medium text-slate">
+        <a href="#winkel" class="hover:text-ink">Winkel</a>
+        <a href="#werken" class="hover:text-ink">Schilderwerken</a>
+        <a href="#offerte" class="hover:text-ink">Offerte per kamer</a>
+        <a href="#familie" class="hover:text-ink">Over Lyssens</a>
+        <a href="#bezoek" class="hover:text-ink">Bezoek</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="tel:+3236445206" class="btn hidden sm:inline-flex items-center gap-2 border border-ink/20 hover:border-ink rounded-md px-4 py-2.5 text-[14px] font-semibold">03 644 52 06</a>
+        <a href="#offerte" class="btn inline-flex items-center bg-red hover:bg-red-dark text-white font-semibold text-[14px] rounded-md px-4 py-2.5 whitespace-nowrap">Gratis offerte</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero: a wall you can repaint -->
+  <section id="top" class="max-w-6xl mx-auto px-4 sm:px-5 pt-10 lg:pt-14 pb-16 grid lg:grid-cols-12 gap-10 items-center">
+    <div class="lg:col-span-6">
+      <p class="text-slate font-medium"><b class="text-ink">Decoratie Lyssens</b> · verfwinkel en schildersbedrijf in Merksem, sinds 1968</p>
+      <h1 class="font-serif text-[clamp(2.4rem,4.8vw,4rem)] leading-[1.04] mt-4">De winkel én de schilders onder één dak.</h1>
+      <p class="mt-6 text-[17px] leading-relaxed text-slate max-w-[46ch]">Verf gemengd in meer dan 70.000 kleuren, behang, raamdecoratie en beslag in de winkel. En als je het liever laat doen: onze eigen fijnschilders, onder toezicht van Bart Lyssens.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#offerte" class="btn inline-flex items-center gap-2 bg-red hover:bg-red-dark text-white font-semibold rounded-md px-6 py-3.5">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          Bereken je kamer, gratis offerte
+        </a>
+        <a href="#bezoek" class="btn inline-flex items-center border border-ink/20 hover:border-ink rounded-md px-6 py-3.5 font-semibold">Bezoek de winkel</a>
+      </div>
+    </div>
+
+    <div class="lg:col-span-6">
+      <div class="relative rounded-xl overflow-hidden shadow-[0_30px_70px_-30px_rgba(47,52,56,.6)]">
+        <!-- the room -->
+        <div id="heroWall" class="wall relative h-[340px] sm:h-[440px]">
+          <!-- Orac-style cornice -->
+          <svg class="absolute top-0 inset-x-0 w-full h-8" viewBox="0 0 800 32" preserveAspectRatio="none" aria-hidden="true">
+            <rect width="800" height="12" fill="#f7f6f4"/><rect y="12" width="800" height="6" fill="#ecebe8"/><rect y="18" width="800" height="5" fill="#f7f6f4"/><rect y="23" width="800" height="3" fill="#e2e0dc"/>
+          </svg>
+          <!-- framed shop photo on the wall -->
+          <figure class="absolute left-[8%] top-[18%] w-[46%] bg-white p-2 sm:p-3 shadow-[0_18px_30px_-12px_rgba(0,0,0,.45)]">
+            <img src="images/winkel-gevel.jpg" alt="De winkel van Lyssens aan De Vlasschaardstraat in Merksem" class="w-full aspect-[4/3] object-cover" />
+          </figure>
+          <!-- colour card -->
+          <div class="absolute right-[7%] top-[22%] w-[34%] bg-white shadow-[0_18px_30px_-12px_rgba(0,0,0,.45)]">
+            <div class="p-2 pb-0"><div id="cardChip" class="h-20 sm:h-28 wall ring-1 ring-black/10"></div></div>
+            <div class="p-3">
+              <p id="cardName" class="font-serif text-[17px] leading-tight">Petrol</p>
+              <p id="cardFam" class="text-[12px] text-slate mt-0.5">blauw en groen</p>
+            </div>
+          </div>
+          <!-- skirting + floor -->
+          <div class="absolute bottom-0 inset-x-0">
+            <div class="h-3 bg-[#f7f6f4]"></div>
+            <div class="h-10 sm:h-14 bg-[linear-gradient(90deg,#b98c62,#a77b53_20%,#b98c62_40%,#a77b53_60%,#b98c62_80%)]"></div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4 flex flex-wrap items-center gap-2" role="group" aria-label="Kies een muurkleur">
+        <span class="text-[14px] text-slate mr-1">Probeer een kleur:</span>
+        <div id="heroSwatches" class="flex flex-wrap gap-2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facts -->
+  <section class="bg-ink text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-5 py-8 grid grid-cols-2 lg:grid-cols-4 gap-6">
+      <div><p class="font-serif text-3xl">1968</p><p class="text-[14px] text-white/70 mt-1">Jacqueline en Modest openen de drogisterij</p></div>
+      <div><p class="font-serif text-3xl">70.000+</p><p class="text-[14px] text-white/70 mt-1">kleuren uit de eigen mengmachine</p></div>
+      <div><p class="font-serif text-3xl">4</p><p class="text-[14px] text-white/70 mt-1">ervaren fijnschilders in de eigen ploeg</p></div>
+      <div><p class="font-serif text-3xl">Gratis</p><p class="text-[14px] text-white/70 mt-1">kleurenadvies en prijsofferte</p></div>
+    </div>
+  </section>
+
+  <!-- Winkel / Werken -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-5 py-20 grid lg:grid-cols-2 gap-6">
+    <article id="winkel" class="rounded-xl border border-line overflow-hidden">
+      <img src="images/kleurenwand.jpg" alt="Kleurstalen aan de muur in de winkel van Lyssens" class="w-full h-60 object-cover" loading="lazy" />
+      <div class="p-7">
+        <h2 class="font-serif text-3xl">Zelf aan de slag</h2>
+        <p class="mt-3 text-slate leading-relaxed">“We weten wat we verkopen door de ervaring.” Van een testpotje van 250 ml tot een pot van 15 liter, en alles wat je nodig hebt om je klus te klaren.</p>
+        <ul class="mt-5 grid sm:grid-cols-2 gap-x-6 gap-y-2.5 text-[15px]">
+          <li><b>Verf</b> <span class="text-slate">Sigma, Mathys, Histor, Trimetal</span></li>
+          <li><b>Schildersmateriaal</b> <span class="text-slate">Storch, Progold, 3M, Sia, Tesa</span></li>
+          <li><b>Behang</b> <span class="text-slate">en accessoires</span></li>
+          <li><b>Raamdecoratie</b> <span class="text-slate">op maat, eigen atelier</span></li>
+          <li><b>Vloerbekleding</b> <span class="text-slate">Tarkett, laminaat, vinyl</span></li>
+          <li><b>Deur- en meubelbeslag</b> <span class="text-slate">Dauby</span></li>
+          <li><b>Kuisproducten</b> <span class="text-slate">alles van een drogisterij</span></li>
+          <li><b>Droogkuis &amp; wasserij</b> <span class="text-slate">depot in de winkel</span></li>
+          <li><b>Tapijtreiniger</b> <span class="text-slate">te huur</span></li>
+        </ul>
+      </div>
+    </article>
+    <article id="werken" class="rounded-xl border border-line overflow-hidden">
+      <div class="ba h-60 select-none" id="ba" style="--x:50%" aria-label="Voor en na: schilderwerk door Lyssens. Sleep om te vergelijken." role="img">
+        <div class="half after" style="background-image:url('images/voor-na-interieur.jpg')"></div>
+        <div class="half before" style="background-image:url('images/voor-na-interieur.jpg')"></div>
+        <div class="handle"><div class="knob"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6" stroke="#2f3438" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+        <input type="range" min="0" max="100" value="50" aria-label="Voor/na vergelijken" class="absolute inset-0 w-full h-full opacity-0 cursor-ew-resize" id="baRange" />
+      </div>
+      <div class="p-7">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <h2 class="font-serif text-3xl">Laten doen</h2>
+          <div class="seg inline-flex rounded-md border border-line overflow-hidden text-[13px] font-semibold" id="baPick">
+            <button type="button" aria-pressed="true" data-img="images/voor-na-interieur.jpg" class="px-3 py-1.5">Interieur</button>
+            <button type="button" aria-pressed="false" data-img="images/voor-na-gevel.jpg" class="px-3 py-1.5">Gevel</button>
+          </div>
+        </div>
+        <p class="mt-3 text-slate leading-relaxed">Binnen- en buitenschilderwerk met kwaliteitsverven als Sigma, Lucite, CBS, Mathys en Trimetal, onder toezicht van meewerkend patroon Bart Lyssens.</p>
+        <ul class="mt-5 grid sm:grid-cols-2 gap-x-6 gap-y-2.5 text-[15px]">
+          <li><b>Schilderwerken</b> <span class="text-slate">binnen en buiten</span></li>
+          <li><b>Behangen</b></li>
+          <li><b>Spuittechnieken</b> <span class="text-slate">airless, krasvaste lakken</span></li>
+          <li><b>Structuurverf</b> <span class="text-slate">Sigmulto Stucco, kaleien</span></li>
+          <li><b>Luchtgommen</b> <span class="text-slate">hout, metaal en steen</span></li>
+          <li><b>Kroonlijsten</b> <span class="text-slate">Orac, geplaatst</span></li>
+          <li><b>Raamdecoratie</b> <span class="text-slate">opmeten en plaatsen</span></li>
+          <li><b>Vloerbekledingen</b></li>
+          <li><b>Interieuradvies</b> <span class="text-slate">en totaalprojecten</span></li>
+        </ul>
+        <p class="mt-5 text-[14px] bg-wash rounded-md p-3"><b>Promo:</b> gratis opmeten en plaatsen van raamgarnering binnen 10 km van Merksem.</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- Signature: offerte per kamer -->
+  <section id="offerte" class="bg-wash border-y border-line">
+    <div class="max-w-6xl mx-auto px-4 sm:px-5 py-20">
+      <div class="max-w-[62ch]">
+        <h2 class="font-serif text-[clamp(2rem,4vw,3rem)] leading-tight">Bereken je kamer</h2>
+        <p class="mt-4 text-slate leading-relaxed">Geef per kamer de maten op en kies verf of behang. Je ziet meteen hoeveel muur- en plafondoppervlak het is, hoeveel verf of rollen behang je nodig hebt als je het zelf doet, en je vraagt in één keer een gratis offerte als je het liever door ons laat doen.</p>
+      </div>
+      <noscript><p class="mt-8 bg-white rounded-lg p-5">Bel ons op <a href="tel:+3236445206" class="underline">03 644 52 06</a> voor een gratis offerte.</p></noscript>
+
+      <div id="calc" class="mt-10 grid lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-8 min-w-0 space-y-4">
+          <div id="rooms" class="space-y-4"></div>
+          <button id="addRoom" type="button" class="btn inline-flex items-center gap-2 border border-ink/25 hover:border-ink bg-white rounded-md px-4 py-2.5 font-semibold text-[14px]">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+            Kamer toevoegen
+          </button>
+        </div>
+
+        <aside class="lg:col-span-4 min-w-0">
+          <div class="lg:sticky lg:top-24 bg-white rounded-xl border border-line p-6" aria-live="polite">
+            <p class="font-serif text-2xl">Jouw project</p>
+            <div id="sumRooms" class="mt-4 space-y-3 text-[14px]"></div>
+            <dl class="mt-5 pt-4 border-t border-line grid grid-cols-2 gap-y-2 text-[14px]">
+              <dt class="text-slate">Muren in verf</dt><dd id="sWall" class="text-right font-semibold tabular-nums">0 m²</dd>
+              <dt class="text-slate">Muren in behang</dt><dd id="sPaper" class="text-right font-semibold tabular-nums">0 m²</dd>
+              <dt class="text-slate">Plafonds</dt><dd id="sCeil" class="text-right font-semibold tabular-nums">0 m²</dd>
+            </dl>
+            <div class="mt-5 rounded-lg bg-wash p-4 text-[14px]">
+              <p class="font-semibold">Zelf doen?</p>
+              <p id="sDiy" class="text-slate mt-1"></p>
+            </div>
+
+            <form id="quoteForm" class="mt-6 space-y-3" novalidate>
+              <p class="font-semibold">Laten doen: gratis offerte</p>
+              <input id="qName" class="field" placeholder="Naam" autocomplete="name" aria-label="Naam" />
+              <input id="qPhone" class="field" type="tel" placeholder="Telefoon" autocomplete="tel" aria-label="Telefoon" />
+              <input id="qZip" class="field" inputmode="numeric" placeholder="Postcode" autocomplete="postal-code" aria-label="Postcode" />
+              <select id="qWhen" class="field" aria-label="Gewenste periode">
+                <option value="">Wanneer wil je starten?</option><option>Zo snel mogelijk</option><option>Binnen 1 à 3 maanden</option><option>Later dit jaar</option><option>Nog geen idee</option>
+              </select>
+              <p id="qErr" class="hidden text-[13px] text-red font-semibold" role="alert"></p>
+              <button type="submit" class="btn w-full bg-red hover:bg-red-dark text-white font-semibold rounded-md px-5 py-3">Gratis offerte aanvragen</button>
+            </form>
+          </div>
+        </aside>
+      </div>
+
+      <div id="done" class="hidden mt-10 bg-white rounded-xl border border-line p-8 max-w-2xl" role="status" tabindex="-1">
+        <div class="flex items-center gap-3">
+          <span id="doneChip" class="w-10 h-10 rounded-full wall"></span>
+          <p class="font-serif text-3xl">Offerte-aanvraag ontvangen</p>
+        </div>
+        <p id="doneText" class="mt-4 text-slate leading-relaxed"></p>
+        <p class="mt-4 text-[13px] text-slate">Dit is een concept-demo: er is niets verzonden. Op de echte site komt je aanvraag met alle maten rechtstreeks bij Lyssens terecht.</p>
+        <button id="again" type="button" class="btn mt-6 border border-ink/20 hover:border-ink rounded-md px-5 py-2.5 font-semibold">Nieuwe berekening</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Familie -->
+  <section id="familie" class="max-w-6xl mx-auto px-4 sm:px-5 py-20 grid lg:grid-cols-12 gap-10 items-start">
+    <div class="lg:col-span-6">
+      <h2 class="font-serif text-[clamp(2rem,4vw,3rem)] leading-tight">Van eenmanszaak tot familiebedrijf</h2>
+      <ol class="mt-8 relative border-l-2 border-line pl-6 space-y-7">
+        <li><p class="font-serif text-xl">1968</p><p class="text-slate mt-1">Moeder Jacqueline en haar man Modest openen een drogisterij in Merksem.</p></li>
+        <li><p class="font-serif text-xl">1990</p><p class="text-slate mt-1">Zoon Peter begint als zelfstandig schilder. De broers breiden de zaak samen uit.</p></li>
+        <li><p class="font-serif text-xl">2000</p><p class="text-slate mt-1">Zoon Bart neemt de drogisterij over, samen met zijn echtgenote Jessica.</p></li>
+        <li><p class="font-serif text-xl">Vandaag</p><p class="text-slate mt-1">Een winkel vol verf, behang en decoratie, en een schildersploeg met vier ervaren fijnschilders. Raamdecoratie wordt op maat gemaakt in het eigen atelier.</p></li>
+      </ol>
+    </div>
+    <div class="lg:col-span-6">
+      <figure class="rounded-xl overflow-hidden border border-line bg-wash max-w-[400px]">
+        <img src="images/team.png" alt="Het team van Lyssens in de winkel" class="w-full h-auto" loading="lazy" width="300" height="206" />
+      </figure>
+      <figure class="mt-6 border-l-4 border-red pl-5">
+        <blockquote class="font-serif text-2xl leading-snug">“Bart (zaakvoerder) denkt mee in termen van reële oplossingen, ook ‘out of the box’.”</blockquote>
+        <figcaption class="mt-2 text-[14px] text-slate">Google-review</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Bezoek -->
+  <section id="bezoek" class="bg-ink text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-5 py-20 grid lg:grid-cols-2 gap-12">
+      <div>
+        <h2 class="font-serif text-[clamp(2rem,4vw,3rem)] leading-tight">Bezoek de winkel in Merksem</h2>
+        <p id="openNow" class="mt-5 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-[14px] font-semibold"></p>
+        <table class="mt-6 w-full text-[15px]">
+          <tbody class="divide-y divide-white/10">
+            <tr><td class="py-2.5">Maandag</td><td class="py-2.5 text-right">enkel op afspraak</td></tr>
+            <tr><td class="py-2.5">Dinsdag – vrijdag</td><td class="py-2.5 text-right tabular-nums">8:30–12:00 · 13:00–18:00</td></tr>
+            <tr><td class="py-2.5">Zaterdag</td><td class="py-2.5 text-right tabular-nums">9:00–15:00 doorlopend</td></tr>
+            <tr><td class="py-2.5">Zondag</td><td class="py-2.5 text-right">gesloten</td></tr>
+          </tbody>
+        </table>
+        <p class="mt-4 text-[14px] text-white/70">Andere uren op afspraak. Contacteer ons tijdig om dit in te plannen.</p>
+      </div>
+      <div class="bg-white/5 rounded-xl p-7 self-start">
+        <img src="images/logo.png" alt="" class="h-12 w-auto invert" />
+        <p class="mt-5">De Vlasschaardstraat 28, 2170 Merksem</p>
+        <p class="mt-1"><a href="tel:+3236445206" class="font-semibold hover:underline">03 644 52 06</a> · <a href="mailto:lyssensdecoratie@skynet.be" class="font-semibold hover:underline">lyssensdecoratie@skynet.be</a></p>
+        <p class="mt-5 text-[15px] text-white/75">Schilderwerken in Merksem, Antwerpen, Deurne, Ekeren, Schoten, Brasschaat en Wijnegem. Raamgarnering gratis opgemeten en geplaatst binnen 10 km.</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Decoratie+Lyssens+De+Vlasschaardstraat+28+2170+Merksem" target="_blank" rel="noopener" class="btn mt-6 inline-flex items-center gap-2 bg-white text-ink hover:bg-wash font-semibold rounded-md px-5 py-3">Route in Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#24282b] text-white/60 text-[14px] pb-20 md:pb-0">
+    <div class="max-w-6xl mx-auto px-4 sm:px-5 py-8 flex flex-col sm:flex-row gap-3 justify-between">
+      <p>© Drogisterij &amp; Decoratie Lyssens-van Aken · Merksem</p>
+      <p>Conceptontwerp door Saspire</p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden grid grid-cols-2 text-white font-semibold">
+    <a href="tel:+3236445206" class="flex items-center justify-center gap-2 py-3.5 bg-ink">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      Bel 03 644 52 06
+    </a>
+    <a href="#offerte" class="flex items-center justify-center py-3.5 bg-red">Gratis offerte</a>
+  </div>
+
+  <script>
+  (function () {
+    var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    // Colour families (generic names, mixed in-store on the machine)
+    var COLORS = [
+      { n: 'Kalkwit', f: 'wit en gebroken wit', h: '#ece8df' },
+      { n: 'Zandsteen', f: 'warme neutralen', h: '#cbb89b' },
+      { n: 'Saliegroen', f: 'groen', h: '#9aa98c' },
+      { n: 'Petrol', f: 'blauw en groen', h: '#3f5d66' },
+      { n: 'Oudroze', f: 'roze en rood', h: '#c49a95' },
+      { n: 'Oker', f: 'geel en oranje', h: '#c79a45' },
+      { n: 'Antraciet', f: 'grijs en zwart', h: '#3a3e42' }
+    ];
+    var root = document.documentElement;
+    function setWall(c) {
+      root.style.setProperty('--wall', c.h);
+      document.getElementById('cardName').textContent = c.n;
+      document.getElementById('cardFam').textContent = c.f;
+    }
+    var hs = document.getElementById('heroSwatches');
+    COLORS.forEach(function (c) {
+      var b = document.createElement('button');
+      b.type = 'button'; b.className = 'swatch w-9 h-9 rounded-full border border-black/10';
+      b.style.background = c.h; b.title = c.n; b.setAttribute('aria-label', c.n);
+      b.setAttribute('aria-pressed', c.n === 'Petrol' ? 'true' : 'false');
+      b.addEventListener('click', function () {
+        [].forEach.call(hs.children, function (x) { x.setAttribute('aria-pressed', 'false'); });
+        b.setAttribute('aria-pressed', 'true'); setWall(c);
+      });
+      hs.appendChild(b);
+    });
+
+    // Before / after
+    var ba = document.getElementById('ba'), range = document.getElementById('baRange');
+    range.addEventListener('input', function () { ba.style.setProperty('--x', range.value + '%'); });
+    var pick = document.getElementById('baPick');
+    [].forEach.call(pick.children, function (b) {
+      b.addEventListener('click', function () {
+        [].forEach.call(pick.children, function (x) { x.setAttribute('aria-pressed', 'false'); });
+        b.setAttribute('aria-pressed', 'true');
+        [].forEach.call(ba.querySelectorAll('.half'), function (h) { h.style.backgroundImage = "url('" + b.dataset.img + "')"; });
+      });
+    });
+
+    // Open status
+    (function () {
+      var now = new Date(), w = now.getDay(), m = now.getHours() * 60 + now.getMinutes(), open = false, txt;
+      if (w >= 2 && w <= 5) open = (m >= 510 && m < 720) || (m >= 780 && m < 1080);
+      if (w === 6) open = m >= 540 && m < 900;
+      if (open) txt = 'Nu open tot ' + (w === 6 ? '15:00' : m < 720 ? '12:00' : '18:00');
+      else if (w >= 2 && w <= 5 && m >= 720 && m < 780) txt = 'Middagpauze, open om 13:00';
+      else {
+        var n = new Date(now), first = true;
+        while (true) {
+          var nw = n.getDay(), start = nw === 6 ? 540 : (nw >= 2 && nw <= 5 ? 510 : -1);
+          if (start > -1 && (!first || m < start)) break;
+          n.setDate(n.getDate() + 1); first = false;
+        }
+        var D = ['zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag'];
+        txt = 'Gesloten, open ' + (first ? 'vandaag' : D[n.getDay()]) + ' om ' + (n.getDay() === 6 ? '9:00' : '8:30') + (w === 1 ? ' (maandag op afspraak)' : '');
+      }
+      document.getElementById('openNow').innerHTML = '<span class="w-2 h-2 rounded-full ' + (open ? 'bg-[#4caf72]' : 'bg-red') + '"></span>' + txt;
+    })();
+
+    // ---------- Room calculator ----------
+    var TYPES = ['Woonkamer', 'Slaapkamer', 'Keuken', 'Badkamer', 'Hal of trap', 'Bureau', 'Andere'];
+    var rooms = [], uid = 0;
+    var fmt = function (x, d) { return x.toLocaleString('nl-BE', { minimumFractionDigits: d || 0, maximumFractionDigits: d || 0 }); };
+    function addRoom(p) {
+      rooms.push(Object.assign({ id: ++uid, type: 'Woonkamer', L: 5, B: 4, H: 2.6, doors: 1, wins: 2, finish: 'verf', ceil: true, color: COLORS[3] }, p || {}));
+      render();
+    }
+    function area(r) {
+      var wall = Math.max(0, 2 * (r.L + r.B) * r.H - r.doors * 1.8 - r.wins * 1.5);
+      return { wall: wall, ceil: r.ceil ? r.L * r.B : 0 };
+    }
+    var roomsEl = document.getElementById('rooms');
+    function render() {
+      roomsEl.innerHTML = '';
+      rooms.forEach(function (r, i) {
+        var el = document.createElement('div');
+        el.className = 'bg-white rounded-xl border border-line p-5';
+        var opts = TYPES.map(function (t) { return '<option' + (t === r.type ? ' selected' : '') + '>' + t + '</option>'; }).join('');
+        el.innerHTML =
+          '<div class="flex items-center justify-between gap-3">' +
+            '<select data-k="type" class="field max-w-[220px] font-semibold" aria-label="Soort kamer">' + opts + '</select>' +
+            (rooms.length > 1 ? '<button type="button" data-del class="text-[13px] text-slate hover:text-red underline">verwijder</button>' : '') +
+          '</div>' +
+          '<div class="mt-4 grid grid-cols-3 sm:grid-cols-5 gap-3">' +
+            num('L', 'Lengte (m)', r.L, 0.1) + num('B', 'Breedte (m)', r.B, 0.1) + num('H', 'Hoogte (m)', r.H, 0.05) + num('doors', 'Deuren', r.doors, 1) + num('wins', 'Ramen', r.wins, 1) +
+          '</div>' +
+          '<div class="mt-4 flex flex-wrap items-center gap-4">' +
+            '<div class="seg inline-flex rounded-md border border-line overflow-hidden text-[14px] font-semibold" data-seg>' +
+              seg('verf', 'Verf', r.finish) + seg('behang', 'Behang', r.finish) + seg('geen', 'Muren niet', r.finish) +
+            '</div>' +
+            '<label class="inline-flex items-center gap-2 text-[14px]"><input data-k="ceil" type="checkbox" class="w-4 h-4 accent-[#2f3438]"' + (r.ceil ? ' checked' : '') + ' />Plafond schilderen</label>' +
+          '</div>' +
+          '<div class="mt-4 ' + (r.finish === 'verf' ? 'flex' : 'hidden') + ' flex-wrap items-center gap-2" data-colors><span class="text-[13px] text-slate mr-1">Kleur:</span></div>' +
+          '<p data-out class="mt-3 text-[13px] text-slate"></p>';
+        function num(k, label, v, step) { return '<label class="text-[12px] font-semibold text-slate">' + label + '<input data-k="' + k + '" type="number" min="0" step="' + step + '" inputmode="decimal" value="' + v + '" class="field mt-1 text-ink tabular-nums" /></label>'; }
+        function seg(v, t, cur) { return '<button type="button" data-f="' + v + '" aria-pressed="' + (v === cur) + '" class="px-3 py-2">' + t + '</button>'; }
+        el.querySelectorAll('[data-k]').forEach(function (inp) {
+          inp.addEventListener('input', function () {
+            var k = inp.dataset.k;
+            r[k] = k === 'type' ? inp.value : k === 'ceil' ? inp.checked : Math.max(0, parseFloat(String(inp.value).replace(',', '.')) || 0);
+            out(el, r); summary();
+          });
+          if (inp.type === 'checkbox') inp.addEventListener('change', function () { r.ceil = inp.checked; out(el, r); summary(); });
+        });
+        el.querySelectorAll('[data-f]').forEach(function (b) {
+          b.addEventListener('click', function () { r.finish = b.dataset.f; render(); });
+        });
+        var cw = el.querySelector('[data-colors]');
+        COLORS.forEach(function (c) {
+          var s = document.createElement('button');
+          s.type = 'button'; s.className = 'swatch w-7 h-7 rounded-full border border-black/10';
+          s.style.background = c.h; s.title = c.n; s.setAttribute('aria-label', c.n);
+          s.setAttribute('aria-pressed', r.color.n === c.n ? 'true' : 'false');
+          s.addEventListener('click', function () { r.color = c; [].forEach.call(cw.querySelectorAll('.swatch'), function (x) { x.setAttribute('aria-pressed', 'false'); }); s.setAttribute('aria-pressed', 'true'); summary(); });
+          cw.appendChild(s);
+        });
+        var del = el.querySelector('[data-del]');
+        if (del) del.addEventListener('click', function () { rooms.splice(i, 1); render(); });
+        roomsEl.appendChild(el); out(el, r);
+      });
+      summary();
+    }
+    function out(el, r) {
+      var a = area(r);
+      el.querySelector('[data-out]').textContent = fmt(a.wall, 1) + ' m² muur' + (r.finish === 'geen' ? ' (niet inbegrepen)' : ' in ' + r.finish) + (r.ceil ? ' · ' + fmt(a.ceil, 1) + ' m² plafond' : '') + ' · deur ± 1,8 m², raam ± 1,5 m² afgetrokken';
+    }
+    function summary() {
+      var wp = 0, pp = 0, cc = 0, html = '';
+      rooms.forEach(function (r) {
+        var a = area(r);
+        if (r.finish === 'verf') wp += a.wall; if (r.finish === 'behang') pp += a.wall; cc += a.ceil;
+        html += '<div class="flex items-center justify-between gap-3"><span class="flex items-center gap-2">' +
+          (r.finish === 'verf' ? '<span class="w-3.5 h-3.5 rounded-full border border-black/10" style="background:' + r.color.h + '"></span>' : '<span class="w-3.5 h-3.5 rounded-sm border border-black/20 bg-[repeating-linear-gradient(45deg,#ddd_0_2px,#fff_2px_5px)]"></span>') +
+          r.type + '</span><span class="text-slate whitespace-nowrap">' + (r.finish === 'verf' ? r.color.n : r.finish === 'behang' ? 'behang' : 'enkel plafond') + '</span></div>';
+      });
+      document.getElementById('sumRooms').innerHTML = html;
+      document.getElementById('sWall').textContent = fmt(wp, 1) + ' m²';
+      document.getElementById('sPaper').textContent = fmt(pp, 1) + ' m²';
+      document.getElementById('sCeil').textContent = fmt(cc, 1) + ' m²';
+      // Rule of thumb: 2 coats, ± 10 m² per liter; standard roll 10,05 × 0,53 m (± 5,3 m²) + 10% snijverlies
+      var liters = Math.ceil((wp + cc) * 2 / 10);
+      var rolls = Math.ceil(pp * 1.1 / 5.3);
+      var parts = [];
+      if (liters) parts.push('± ' + liters + ' liter verf voor 2 lagen');
+      if (rolls) parts.push('± ' + rolls + ' rollen behang (standaardrol, incl. 10% snijverlies)');
+      document.getElementById('sDiy').textContent = parts.length ? parts.join(' en ') + '. We mengen je kleur in de winkel en geven er het juiste materiaal bij.' : 'Voeg een kamer toe om te rekenen.';
+    }
+    document.getElementById('addRoom').addEventListener('click', function () { addRoom({ type: 'Slaapkamer', L: 4, B: 3.5, wins: 1 }); });
+    addRoom();
+
+    var qf = document.getElementById('quoteForm'), qErr = document.getElementById('qErr');
+    qf.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var m = [];
+      if (!rooms.length) m.push('Voeg minstens één kamer toe.');
+      if (!document.getElementById('qName').value.trim()) m.push('Vul je naam in.');
+      if (document.getElementById('qPhone').value.replace(/\D/g, '').length < 9) m.push('Vul je telefoonnummer in.');
+      if (!/^\d{4}$/.test(document.getElementById('qZip').value.trim())) m.push('Vul een geldige postcode in.');
+      if (m.length) { qErr.textContent = m.join(' '); qErr.classList.remove('hidden'); return; }
+      qErr.classList.add('hidden');
+      var total = rooms.reduce(function (s, r) { var a = area(r); return s + (r.finish === 'geen' ? 0 : a.wall) + a.ceil; }, 0);
+      var names = rooms.map(function (r) { return r.type.toLowerCase(); }).join(', ');
+      var first = rooms.filter(function (r) { return r.finish === 'verf'; })[0];
+      root.style.setProperty('--wall', first ? first.color.h : '#3f5d66');
+      document.getElementById('doneText').textContent = 'Bedankt ' + document.getElementById('qName').value.trim().split(' ')[0] + '. We hebben ' + rooms.length + (rooms.length === 1 ? ' kamer' : ' kamers') + ' (' + names + ', samen ± ' + fmt(total, 0) + ' m²) genoteerd. Bart of iemand van de ploeg belt je op ' + document.getElementById('qPhone').value.trim() + ' om langs te komen voor de opmeting en kleurenadvies. De offerte is gratis.';
+      document.getElementById('calc').classList.add('hidden');
+      var d = document.getElementById('done'); d.classList.remove('hidden'); d.focus();
+    });
+    document.getElementById('again').addEventListener('click', function () {
+      qf.reset(); rooms = []; addRoom();
+      document.getElementById('done').classList.add('hidden'); document.getElementById('calc').classList.remove('hidden');
+    });
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Jorens | IJzerwaren &amp; huishoudwinkel in de Statiestraat, Berchem</title>
+  <meta name="description" content="Jorens, Statiestraat 141 in Berchem: ijzerwaren per stuk, gereedschap, huishoud- en geschenkartikelen, verf, elektriciteit, sanitair, tuin en poetsgerief. Niet in de winkel? Dan bestellen we het." />
+  <meta name="theme-color" content="#14213d" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Jorens" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Jorens | IJzerwaren &amp; huishoud in Berchem" />
+  <meta property="og:description" content="Vraag het aan Jorens: nagels en vijzen per stuk, en wat er niet is, wordt besteld." />
+  <meta property="og:image" content="images/concept.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314213d'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Arial' font-weight='700' font-size='19' fill='%23ffcc29'%3EJ%3C/text%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HardwareStore",
+    "name": "Jorens",
+    "legalName": "Jorens bvba",
+    "description": "IJzerwaren- en huishoudwinkel in Berchem: ijzerwaren per stuk, gereedschap, huishoud- en geschenkartikelen, elektriciteit, verf, sanitair, tuinbenodigdheden en poetsgerief. Wat er niet is, wordt besteld.",
+    "telephone": "+3232392833",
+    "email": "jorensbvba@skynet.be",
+    "sameAs": ["https://www.facebook.com/profile.php?id=100057447820188"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Statiestraat 141",
+      "postalCode": "2600",
+      "addressLocality": "Berchem",
+      "addressRegion": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "areaServed": ["Berchem", "Zurenborg", "Antwerpen-Zuid", "Borgerhout", "Mortsel", "Wilrijk"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "18:00" }
+    ],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "78", "bestRating": "5" }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'] },
+          colors: {
+            nacht: '#14213d',
+            nacht2: '#1f3157',
+            geel: '#ffcc29',
+            rood: '#d6402b',
+            bord: '#c99a6b',   /* gaatjesbord */
+            wolk: '#eef1f6',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root { --accent: #ffcc29; --ease: cubic-bezier(.23,1,.32,1); }
+    html { scroll-behavior: smooth; }
+    body { text-rendering: optimizeLegibility; }
+    h1, h2, h3 { text-wrap: balance; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), color .18s var(--ease), border-color .18s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #ffcc29; outline-offset: 2px; }
+
+    /* Pegboard: perforated hardboard */
+    .bord { background-color: #c99a6b;
+      background-image: radial-gradient(circle at center, #7a5534 0 3px, transparent 3.6px);
+      background-size: 26px 26px; background-position: 13px 13px; }
+    /* Price tag */
+    .tag { position: relative; background: #ffcc29; color: #14213d; border-radius: 4px 10px 10px 4px; padding: 6px 14px 6px 22px; font-weight: 700; }
+    .tag::before { content: ''; position: absolute; left: 8px; top: 50%; width: 7px; height: 7px; margin-top: -3.5px; border-radius: 50%; background: #14213d; }
+
+    /* hanging items swing once on load */
+    @keyframes swing { 0% { transform: rotate(0); } 30% { transform: rotate(5deg); } 60% { transform: rotate(-3deg); } 100% { transform: rotate(0); } }
+    .js .hang { transform-box: fill-box; transform-origin: 50% 0; animation: swing 1.6s var(--ease) .3s 1 both; }
+    .js .hang:nth-of-type(2n) { animation-delay: .45s; }
+
+    .chip[aria-pressed="true"] { background: #14213d; color: #fff; border-color: #14213d; }
+    .afd[data-hit="true"] { outline: 3px solid #ffcc29; outline-offset: 2px; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .hang { animation: none; }
+      .btn { transition: none; }
+    }
+  </style>
+</head>
+<body class="bg-white text-nacht font-sans antialiased">
+
+  <div class="fixed bottom-4 right-4 z-50 hidden md:block">
+    <span class="text-[11px] tracking-wider font-semibold text-white bg-nacht/90 border border-white/20 rounded-full px-3 py-1.5 backdrop-blur">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-nacht text-white">
+    <nav class="max-w-6xl mx-auto px-5 h-[66px] flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top" class="flex items-baseline gap-2">
+        <span class="text-[26px] font-extrabold tracking-tight leading-none">Jorens</span>
+        <span class="hidden sm:inline text-white/60 text-[14px]">Statiestraat Berchem</span>
+      </a>
+      <div class="hidden lg:flex items-center gap-7 text-[15px] text-white/80">
+        <a href="#afdelingen" class="hover:text-geel">Afdelingen</a>
+        <a href="#vraag" class="hover:text-geel">Heeft Jorens het?</a>
+        <a href="#nieuw" class="hover:text-geel">Nieuw in de winkel</a>
+        <a href="#bezoek" class="hover:text-geel">Bezoek</a>
+      </div>
+      <a href="tel:+3232392833" class="btn inline-flex items-center gap-2 bg-geel text-nacht rounded-full px-4 py-2 text-[14px] font-bold whitespace-nowrap">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
+        03 239 28 33
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="bg-nacht text-white overflow-hidden">
+    <div class="max-w-6xl mx-auto px-5 pt-12 pb-16 lg:pt-16 lg:pb-20 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-6">
+        <p class="text-geel font-semibold text-[16px]">IJzerwaren &amp; huishoud · Statiestraat 141, Berchem</p>
+        <h1 class="mt-4 font-extrabold tracking-[-0.035em] leading-[.95] text-[clamp(3rem,7vw,5.8rem)]">Vraag het aan Jorens.</h1>
+        <p class="mt-6 text-white/80 text-[18px] leading-relaxed max-w-[44ch]">Nagels en vijzen per stuk, gereedschap, verf, elektriciteit, sanitair, tuin en alles voor in huis. En wat er niet in de rekken ligt, bestellen we voor je.</p>
+
+        <form id="zoek" class="mt-8 max-w-[520px]" role="search" onsubmit="return false">
+          <label for="q" class="block text-[15px] font-semibold text-white/90">Wat zoek je?</label>
+          <div class="mt-2 flex rounded-xl bg-white p-1.5 shadow-[0_20px_50px_-20px_rgba(0,0,0,.6)]">
+            <input id="q" type="text" autocomplete="off" placeholder="bv. 20 houtvijzen 4x40, een bokashi-emmer, ledlamp E27" class="flex-1 min-w-0 px-3 py-3 text-nacht text-[16px] rounded-lg outline-none" />
+            <a href="#vraag" id="qGo" class="btn shrink-0 inline-flex items-center bg-rood hover:bg-[#bf3522] text-white font-bold rounded-lg px-4 sm:px-5">Vraag het</a>
+          </div>
+          <p id="qHint" class="mt-3 text-[15px] text-white/70 min-h-[24px]" aria-live="polite">Typ iets: we tonen meteen in welke afdeling je moet zijn.</p>
+        </form>
+      </div>
+
+      <!-- Pegboard illustration -->
+      <div class="lg:col-span-6" aria-hidden="true">
+        <div class="bord relative rounded-2xl p-5 sm:p-7 shadow-[0_30px_80px_-30px_rgba(0,0,0,.8)] border-[6px] border-[#8d6440]">
+          <svg viewBox="0 0 520 380" class="w-full h-auto" role="img">
+            <!-- hooks rail -->
+            <g stroke="#3a3a3a" stroke-width="4" stroke-linecap="round" fill="none">
+              <path d="M70 20v14q0 8 8 8"/><path d="M190 20v14q0 8 8 8"/><path d="M318 20v14q0 8 8 8"/><path d="M440 20v14q0 8 8 8"/>
+            </g>
+            <!-- hammer -->
+            <g class="hang">
+              <rect x="64" y="42" width="16" height="104" rx="6" fill="#c8843a"/>
+              <rect x="66" y="112" width="12" height="36" rx="4" fill="#14213d"/>
+              <path d="M34 42h70a8 8 0 018 8v18H50l-16-10z" fill="#5b6472"/>
+              <rect x="40" y="46" width="66" height="6" fill="#8b94a3"/>
+            </g>
+            <!-- paint can -->
+            <g class="hang">
+              <path d="M170 46q28-26 56 0" stroke="#3a3a3a" stroke-width="3" fill="none"/>
+              <rect x="160" y="52" width="76" height="96" rx="8" fill="#e9edf3"/>
+              <rect x="160" y="52" width="76" height="12" rx="4" fill="#b8c0cc"/>
+              <rect x="160" y="80" width="76" height="40" fill="#d6402b"/>
+              <path d="M178 64q8 30-4 40" stroke="#d6402b" stroke-width="7" stroke-linecap="round" fill="none"/>
+              <text x="198" y="106" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="18" fill="#fff">VERF</text>
+            </g>
+            <!-- screw bin "per stuk" -->
+            <g class="hang">
+              <path d="M290 44h72l-6 86h-60z" fill="#14213d"/>
+              <rect x="288" y="40" width="76" height="10" rx="3" fill="#1f3157"/>
+              <g fill="#c9ced6">
+                <rect x="305" y="58" width="4" height="22" rx="1" transform="rotate(-18 307 69)"/><rect x="318" y="62" width="4" height="22" rx="1" transform="rotate(12 320 73)"/>
+                <rect x="331" y="56" width="4" height="22" rx="1" transform="rotate(-6 333 67)"/><rect x="343" y="60" width="4" height="22" rx="1" transform="rotate(20 345 71)"/>
+                <circle cx="306" cy="57" r="4"/><circle cx="321" cy="61" r="4"/><circle cx="332" cy="55" r="4"/><circle cx="346" cy="59" r="4"/>
+              </g>
+              <rect x="300" y="96" width="52" height="24" rx="4" fill="#ffcc29"/>
+              <text x="326" y="113" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="10" fill="#14213d">PER STUK</text>
+            </g>
+            <!-- bulb -->
+            <g class="hang">
+              <rect x="438" y="42" width="20" height="22" rx="3" fill="#8b94a3"/>
+              <path d="M436 64h24l8 16a30 30 0 11-40 0z" fill="#ffcc29"/>
+              <path d="M440 104q8-14 16 0" stroke="#c89a00" stroke-width="3" fill="none"/>
+            </g>
+            <!-- shelf -->
+            <rect x="20" y="248" width="480" height="12" rx="3" fill="#8d6440"/>
+            <!-- items on shelf -->
+            <g>
+              <!-- spray bottle (poetsgerief) -->
+              <rect x="44" y="178" width="38" height="70" rx="9" fill="#2a9d8f"/>
+              <rect x="52" y="160" width="22" height="20" rx="3" fill="#e9edf3"/><path d="M74 164h18v8H74z" fill="#e9edf3"/>
+              <!-- tape measure -->
+              <rect x="112" y="196" width="56" height="52" rx="12" fill="#ffcc29"/><circle cx="140" cy="222" r="13" fill="#14213d"/><rect x="164" y="236" width="22" height="8" rx="2" fill="#c9ced6"/>
+              <!-- watering can (tuin) -->
+              <path d="M214 196h60v52h-60z" fill="#3c8d4a" rx="6"/><path d="M274 206l40-26 5 7-38 30z" fill="#3c8d4a"/><path d="M222 196q22-30 44 0" stroke="#2c6b37" stroke-width="7" fill="none"/>
+              <!-- faucet (sanitair) -->
+              <path d="M350 248v-30h18v-24q0-14 14-14h28v16h-24v52z" fill="#b8c0cc"/><rect x="396" y="176" width="22" height="10" rx="3" fill="#8b94a3"/>
+              <!-- mug (huishoud/geschenk) -->
+              <rect x="436" y="200" width="44" height="48" rx="8" fill="#e9edf3"/><path d="M480 210q16 0 16 14t-16 14" stroke="#e9edf3" stroke-width="6" fill="none"/><rect x="436" y="214" width="44" height="8" fill="#d6402b"/>
+            </g>
+            <!-- bottom row: pliers + gloves -->
+            <g>
+              <path d="M70 290l40 60M110 290l-40 60" stroke="#14213d" stroke-width="12" stroke-linecap="round"/><circle cx="90" cy="318" r="7" fill="#8b94a3"/>
+              <path d="M200 296h40v54h-40z" fill="#e0a64c"/><path d="M200 296q0-20 8-20v20M214 296v-26q6 0 6 26M228 296v-24q6 0 6 24M240 300q10-14 14-6l-14 22z" fill="#e0a64c"/>
+              <rect x="282" y="300" width="214" height="44" rx="8" fill="#14213d"/>
+              <text x="389" y="328" text-anchor="middle" font-family="Bricolage Grotesque, sans-serif" font-weight="700" font-size="15" fill="#ffcc29">wat er niet is, bestellen we</text>
+            </g>
+          </svg>
+        </div>
+        <div class="mt-5 flex flex-wrap items-center gap-3">
+          <span class="tag text-[15px]">4,8 op Google · 78 reviews</span>
+          <span class="text-white/70 text-[15px]">"Vraag bij Jorens, koop bij Jorens." Agnes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Afdelingen -->
+  <section id="afdelingen" class="max-w-6xl mx-auto px-5 py-20">
+    <div class="max-w-3xl">
+      <h2 class="font-extrabold tracking-[-0.025em] text-[clamp(2rem,4vw,3.2rem)] leading-[1.02]">Negen afdelingen, één toonbank</h2>
+      <p class="mt-4 text-[18px] text-nacht/75 leading-relaxed">Een buurtwinkel waar je met een kapot kraanleertje binnenstapt en met een nieuw buitengaat. Klein in oppervlakte, groot in wat er achter de toonbank ligt.</p>
+    </div>
+    <div id="afdGrid" class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <article class="afd rounded-2xl bg-wolk p-6" data-key="ijzer">
+        <h3 class="text-[22px] font-bold">IJzerwaren per stuk</h3>
+        <p class="mt-2 text-nacht/75">Nagels, vijzen, pluggen, bouten en moeren. Je neemt er zoveel als je nodig hebt, niet een heel doosje.</p>
+      </article>
+      <article class="afd rounded-2xl bg-wolk p-6" data-key="gereedschap">
+        <h3 class="text-[22px] font-bold">Gereedschap</h3>
+        <p class="mt-2 text-nacht/75">Zagen, bits, meetlinten en elektrisch gereedschap.</p>
+        <p class="mt-4 text-[14px] font-semibold text-nacht/60">Bosch · Bahco · Stanley · Black+Decker</p>
+      </article>
+      <article class="afd rounded-2xl bg-wolk p-6" data-key="huishoud">
+        <h3 class="text-[22px] font-bold">Huishoud &amp; keuken</h3>
+        <p class="mt-2 text-nacht/75">Brooddozen, drinkflessen, vergieten, notenkrakers, oplaadbare mini-hakkers.</p>
+        <p class="mt-4 text-[14px] font-semibold text-nacht/60">Mepal · Kambukka · Black+Blum · Point-Virgule</p>
+      </article>
+      <article class="afd rounded-2xl bg-wolk p-6" data-key="geschenk">
+        <h3 class="text-[22px] font-bold">Geschenken &amp; tafel</h3>
+        <p class="mt-2 text-nacht/75">Servies, glazen, kaasmessen en cadeaus voor wie al alles heeft.</p>
+        <p class="mt-4 text-[14px] font-semibold text-nacht/60">Salt&amp;Pepper · Zwiesel · Lagouille</p>
+      </article>
+      <article class="afd rounded-2xl bg-wolk p-6" data-key="verf">
+        <h3 class="text-[22px] font-bold">Verf</h3>
+        <p class="mt-2 text-nacht/75">Verf en toebehoren voor de kleine klus: borstels, rollen, afplaktape.</p>
+      </article>
+      <article class="afd rounded-2xl bg-wolk p-6" data-key="elektriciteit">
+        <h3 class="text-[22px] font-bold">Elektriciteit</h3>
+        <p class="mt-2 text-nacht/75">Lampen, stekkers, verlengkabels, batterijen.</p>
+      </article>
+      <article class="afd rounded-2xl bg-wolk p-6" data-key="sanitair">
+        <h3 class="text-[22px] font-bold">Sanitair</h3>
+        <p class="mt-2 text-nacht/75">Kraanleertjes, sifons, douchekoppen en wat er lekt of vastzit.</p>
+      </article>
+      <article class="afd rounded-2xl bg-wolk p-6" data-key="tuin">
+        <h3 class="text-[22px] font-bold">Tuin</h3>
+        <p class="mt-2 text-nacht/75">Van bokashi-emmer tot aaltjes tegen rouwvliegjes in potgrond.</p>
+        <p class="mt-4 text-[14px] font-semibold text-nacht/60">Edialux · Agriton · Microferm</p>
+      </article>
+      <article class="afd rounded-2xl bg-wolk p-6" data-key="poets">
+        <h3 class="text-[22px] font-bold">Poetsgerief</h3>
+        <p class="mt-2 text-nacht/75">Kuisproducten, EM-producten, vochtvreters, hondenpoepzakjes.</p>
+        <p class="mt-4 text-[14px] font-semibold text-nacht/60">Bison · Wipe&amp;Clean · Eezym</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Heeft Jorens het? -->
+  <section id="vraag" class="bg-geel">
+    <div class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-5">
+        <h2 class="font-extrabold tracking-[-0.025em] text-[clamp(2.2rem,4.4vw,3.6rem)] leading-[1]">Heeft Jorens het?</h2>
+        <p class="mt-5 text-[18px] leading-relaxed text-nacht/85">Stuur een foto van het stuk dat kapot is, of beschrijf wat je zoekt. We kijken in de winkel na of het er is, leggen het opzij, of bestellen het. Je krijgt antwoord per sms of mail.</p>
+        <ol class="mt-8 space-y-4 text-[16px]">
+          <li class="flex gap-4"><span class="w-8 h-8 shrink-0 rounded-full bg-nacht text-geel font-bold grid place-items-center">1</span>Foto of omschrijving</li>
+          <li class="flex gap-4"><span class="w-8 h-8 shrink-0 rounded-full bg-nacht text-geel font-bold grid place-items-center">2</span>Wij kijken na: op voorraad, of bestellen</li>
+          <li class="flex gap-4"><span class="w-8 h-8 shrink-0 rounded-full bg-nacht text-geel font-bold grid place-items-center">3</span>Je haalt het op in de Statiestraat</li>
+        </ol>
+      </div>
+      <form id="vForm" class="lg:col-span-7 bg-white rounded-2xl p-6 sm:p-8 shadow-[0_30px_60px_-30px_rgba(20,33,61,.5)]" novalidate>
+        <label class="block font-semibold">Wat zoek je?
+          <textarea name="wat" rows="3" class="mt-2 w-full rounded-lg border-2 border-nacht/15 px-3 py-2.5 font-normal" placeholder="bv. kraanleertje voor een oude badkraan, of 20 houtvijzen 4x40"></textarea>
+        </label>
+        <div class="mt-5">
+          <p class="font-semibold">Afdeling</p>
+          <div id="chips" class="mt-2 flex flex-wrap gap-2"></div>
+        </div>
+        <div class="mt-5 grid sm:grid-cols-2 gap-4">
+          <label class="block font-semibold">Aantal
+            <input name="aantal" type="number" min="1" value="1" class="mt-2 w-full rounded-lg border-2 border-nacht/15 px-3 py-2.5 font-normal" />
+          </label>
+          <div>
+            <p class="font-semibold">Foto (mag)</p>
+            <label class="mt-2 flex items-center gap-3 rounded-lg border-2 border-dashed border-nacht/25 px-3 py-2.5 cursor-pointer hover:border-nacht/60">
+              <span id="fotoPrev" class="w-10 h-10 rounded bg-wolk grid place-items-center overflow-hidden shrink-0">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h3l2-2h6l2 2h3v12H4z" stroke="#14213d" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.5" stroke="#14213d" stroke-width="1.8"/></svg>
+              </span>
+              <span id="fotoNaam" class="text-[15px] text-nacht/70 truncate">Kies of neem een foto</span>
+              <input name="foto" type="file" accept="image/*" class="sr-only" />
+            </label>
+          </div>
+        </div>
+        <div class="mt-5 grid sm:grid-cols-2 gap-4">
+          <label class="block font-semibold">Je naam
+            <input name="naam" autocomplete="name" class="mt-2 w-full rounded-lg border-2 border-nacht/15 px-3 py-2.5 font-normal" />
+          </label>
+          <div>
+            <p class="font-semibold">Antwoord via</p>
+            <div class="mt-2 flex gap-2" id="kanaal">
+              <button type="button" class="chip btn flex-1 rounded-lg border-2 border-nacht/15 py-2.5 font-semibold" aria-pressed="true" data-k="sms">Sms</button>
+              <button type="button" class="chip btn flex-1 rounded-lg border-2 border-nacht/15 py-2.5 font-semibold" aria-pressed="false" data-k="mail">Mail</button>
+            </div>
+          </div>
+        </div>
+        <label class="block font-semibold mt-5"><span id="contactLbl">Gsm-nummer</span>
+          <input name="contact" class="mt-2 w-full rounded-lg border-2 border-nacht/15 px-3 py-2.5 font-normal" inputmode="tel" />
+        </label>
+        <p id="vFout" class="hidden mt-4 font-semibold text-rood" role="alert"></p>
+        <button class="btn mt-6 w-full bg-nacht hover:bg-nacht2 text-white font-bold rounded-xl py-4 text-[17px]">Vraag het aan Jorens</button>
+        <div id="vOk" class="hidden mt-6 rounded-xl bg-wolk p-5" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Nieuw in de winkel (real Facebook posts) -->
+  <section id="nieuw" class="max-w-6xl mx-auto px-5 py-20">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <h2 class="font-extrabold tracking-[-0.025em] text-[clamp(2rem,4vw,3.2rem)] leading-[1.02]">Nieuw in de winkel</h2>
+      <p class="text-nacht/65 max-w-[44ch]">Wat jullie op Facebook posten, kan hier automatisch mee verschijnen. Zo vindt ook wie geen Facebook heeft het.</p>
+    </div>
+    <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <article class="rounded-2xl border-2 border-nacht/10 p-6">
+        <span class="tag text-[13px] inline-block">Etalage</span>
+        <h3 class="mt-4 text-[20px] font-bold leading-snug">Back to school</h3>
+        <p class="mt-2 text-nacht/75">Brooddozen en drinkflessen van Mepal, Kambukka, Point-Virgule, Nerthus en Black+Blum.</p>
+      </article>
+      <article class="rounded-2xl border-2 border-nacht/10 p-6">
+        <span class="tag text-[13px] inline-block">Demo</span>
+        <h3 class="mt-4 text-[20px] font-bold leading-snug">Composteren met de bokashi-emmer</h3>
+        <p class="mt-2 text-nacht/75">Uitleg over EM-kuisproducten en bodemverbeteraars, tijdens Berchem Bruist.</p>
+      </article>
+      <article class="rounded-2xl border-2 border-nacht/10 p-6">
+        <span class="tag text-[13px] inline-block">Nieuw</span>
+        <h3 class="mt-4 text-[20px] font-bold leading-snug">Bison Vochtvreter</h3>
+        <p class="mt-2 text-nacht/75">Tegen condens en muffe geurtjes, voor badkamer, slaapkamer en toilet.</p>
+      </article>
+      <article class="rounded-2xl border-2 border-nacht/10 p-6">
+        <span class="tag text-[13px] inline-block">Promo</span>
+        <h3 class="mt-4 text-[20px] font-bold leading-snug">Servies en glazen</h3>
+        <p class="mt-2 text-nacht/75">Salt&amp;Pepper-servies voor 4 personen en Zwiesel-glazen, tijdelijk in promo.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="bg-nacht text-white">
+    <div class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-4">
+        <p class="text-[clamp(4rem,9vw,6.5rem)] font-extrabold leading-none tracking-tight text-geel">4,8</p>
+        <p class="mt-2 text-white/75 text-[17px]">gemiddeld op Google, uit 78 reviews</p>
+      </div>
+      <div class="lg:col-span-8 grid sm:grid-cols-2 gap-6">
+        <blockquote class="rounded-2xl bg-nacht2 p-6">
+          <p class="text-[22px] font-semibold leading-snug">"Vraag bij Jorens, koop bij Jorens. Àlles hebben ze of bestellen ze."</p>
+          <footer class="mt-4 text-white/60">Agnes, Google-review</footer>
+        </blockquote>
+        <blockquote class="rounded-2xl bg-nacht2 p-6">
+          <p class="text-[22px] font-semibold leading-snug">"Geweldige winkel, ijzerwaren per stuk en altijd vriendelijk."</p>
+          <footer class="mt-4 text-white/60">Bruno, Google-review</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bezoek -->
+  <section id="bezoek" class="max-w-6xl mx-auto px-5 py-20 grid lg:grid-cols-2 gap-12">
+    <div>
+      <h2 class="font-extrabold tracking-[-0.025em] text-[clamp(2rem,4vw,3.2rem)] leading-[1.02]">Statiestraat 141, Berchem</h2>
+      <p class="mt-4 text-[18px] text-nacht/75 leading-relaxed">Een paar minuten van station Berchem. Klanten komen uit Berchem, Zurenborg, Antwerpen-Zuid, Borgerhout, Mortsel en Wilrijk.</p>
+      <p id="nuOpen" class="mt-6 inline-flex items-center gap-2 font-semibold rounded-full bg-wolk px-4 py-2">Di–za 9:00–18:00</p>
+      <dl class="mt-6 divide-y divide-nacht/10 border-y border-nacht/10 text-[16px]" id="uren">
+        <div class="flex justify-between py-3" data-d="1"><dt>Maandag</dt><dd class="text-nacht/60">Gesloten</dd></div>
+        <div class="flex justify-between py-3" data-d="2"><dt>Dinsdag</dt><dd>9:00–18:00</dd></div>
+        <div class="flex justify-between py-3" data-d="3"><dt>Woensdag</dt><dd>9:00–18:00</dd></div>
+        <div class="flex justify-between py-3" data-d="4"><dt>Donderdag</dt><dd>9:00–18:00</dd></div>
+        <div class="flex justify-between py-3" data-d="5"><dt>Vrijdag</dt><dd>9:00–18:00</dd></div>
+        <div class="flex justify-between py-3" data-d="6"><dt>Zaterdag</dt><dd>9:00–18:00</dd></div>
+        <div class="flex justify-between py-3" data-d="0"><dt>Zondag</dt><dd class="text-nacht/60">Gesloten</dd></div>
+      </dl>
+    </div>
+    <div class="grid gap-4 content-start">
+      <a href="tel:+3232392833" class="btn rounded-2xl bg-nacht text-white p-6 hover:bg-nacht2"><span class="block text-white/60 text-[14px]">Bel de winkel</span><span class="text-[26px] font-bold">03 239 28 33</span></a>
+      <a href="mailto:jorensbvba@skynet.be" class="btn rounded-2xl bg-wolk p-6 hover:bg-[#e2e7ef]"><span class="block text-nacht/60 text-[14px]">Mail</span><span class="text-[22px] font-bold break-all">jorensbvba@skynet.be</span></a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Jorens+Statiestraat+141+2600+Berchem" target="_blank" rel="noopener" class="btn rounded-2xl bg-wolk p-6 hover:bg-[#e2e7ef]"><span class="block text-nacht/60 text-[14px]">Route via Google Maps</span><span class="text-[22px] font-bold">Statiestraat 141, 2600 Berchem</span></a>
+      <a href="https://www.facebook.com/profile.php?id=100057447820188" target="_blank" rel="noopener" class="btn rounded-2xl border-2 border-nacht/10 p-6 hover:border-nacht/30"><span class="block text-nacht/60 text-[14px]">Volg de etalage</span><span class="text-[22px] font-bold">Jorens op Facebook</span></a>
+    </div>
+  </section>
+
+  <footer class="bg-nacht text-white/70 pb-20 md:pb-0">
+    <div class="max-w-6xl mx-auto px-5 py-10 flex flex-col md:flex-row gap-6 justify-between text-[14px]">
+      <p><span class="text-white font-bold text-lg">Jorens bvba</span><br />Statiestraat 141, 2600 Berchem</p>
+      <p class="max-w-md">Concept-website door <a href="mailto:nicolas@saspire.org" class="underline decoration-geel underline-offset-4">Saspire</a> als vrijblijvend voorstel. Jorens heeft vandaag geen eigen website; dit is er geen officiële.</p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden bg-geel text-nacht">
+    <a href="tel:+3232392833" class="flex items-center justify-center gap-2.5 py-3.5 font-bold">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg>
+      Bel Jorens: 03 239 28 33
+    </a>
+  </div>
+
+  <script>
+    document.documentElement.classList.add('js');
+    const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const esc = v => String(v).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+    /* ---------- Departments + keyword matching ---------- */
+    const AFD = {
+      ijzer: ['IJzerwaren per stuk', 'nagel vijs vijzen schroef plug pluggen bout moer ring haak spijker draadstang popnagel'],
+      gereedschap: ['Gereedschap', 'zaag hamer tang boor bit bits meetlint schroevendraaier sleutel waterpas bosch bahco stanley slijpsteen'],
+      huishoud: ['Huishoud & keuken', 'brooddoos drinkfles thermos vergiet blikopener hakker pan kom lunch fles theedoos notenkraker mepal kambukka'],
+      geschenk: ['Geschenken & tafel', 'servies glazen glas kaasmes cadeau geschenk bord tas mok'],
+      verf: ['Verf', 'verf borstel rol kwast afplaktape tape lak beits primer muurverf'],
+      elektriciteit: ['Elektriciteit', 'lamp led e27 e14 gu10 stekker kabel verlengkabel batterij schakelaar zekering dimmer'],
+      sanitair: ['Sanitair', 'kraan leertje kraanleertje sifon douche wc bril ontstopper lek dichting silicone'],
+      tuin: ['Tuin', 'tuin bokashi compost potgrond aaltjes rouwvliegjes zaad gieter slang handschoen bladblazer'],
+      poets: ['Poetsgerief', 'kuis poets vochtvreter vocht spons dweil emmer zeep ontkalker hondenpoep zakjes'],
+    };
+    const match = q => {
+      const w = q.toLowerCase().split(/[^a-z0-9à-ü]+/).filter(x => x.length > 2);
+      let best = null, score = 0;
+      for (const [k, [, words]] of Object.entries(AFD)) {
+        const s = w.filter(x => words.split(' ').some(y => y.startsWith(x) || x.startsWith(y))).length;
+        if (s > score) { score = s; best = k; }
+      }
+      return best;
+    };
+    let gekozenAfd = null;
+    const chips = document.getElementById('chips');
+    chips.innerHTML = Object.entries(AFD).map(([k, [n]]) => `<button type="button" class="chip btn rounded-full border-2 border-nacht/15 px-3 py-1.5 text-[14px] font-semibold" aria-pressed="false" data-afd="${k}">${n}</button>`).join('')
+      + '<button type="button" class="chip btn rounded-full border-2 border-nacht/15 px-3 py-1.5 text-[14px] font-semibold" aria-pressed="false" data-afd="weet">Weet ik niet</button>';
+    const setAfd = k => {
+      gekozenAfd = k;
+      chips.querySelectorAll('.chip').forEach(c => c.setAttribute('aria-pressed', c.dataset.afd === k));
+    };
+    chips.addEventListener('click', e => { const c = e.target.closest('.chip'); if (c) setAfd(c.dataset.afd); });
+
+    const q = document.getElementById('q'), hint = document.getElementById('qHint');
+    q.addEventListener('input', () => {
+      const k = match(q.value);
+      document.querySelectorAll('.afd').forEach(a => a.dataset.hit = a.dataset.key === k);
+      hint.innerHTML = !q.value.trim() ? 'Typ iets: we tonen meteen in welke afdeling je moet zijn.'
+        : k ? `Dat ligt bij <b class="text-geel">${AFD[k][0]}</b>. Vraag of het op voorraad is.`
+            : 'Niet meteen gevonden? Vraag het gewoon: wat er niet is, bestellen we.';
+    });
+    document.getElementById('qGo').addEventListener('click', () => {
+      const f = document.getElementById('vForm');
+      if (q.value.trim()) f.wat.value = q.value.trim();
+      const k = match(q.value); if (k) setAfd(k);
+    });
+    document.getElementById('vForm').wat.addEventListener('input', e => { const k = match(e.target.value); if (k && !gekozenAfd) setAfd(k); });
+
+    /* ---------- Photo preview ---------- */
+    const fotoIn = document.querySelector('input[name=foto]');
+    fotoIn.addEventListener('change', () => {
+      const f = fotoIn.files[0]; if (!f) return;
+      document.getElementById('fotoNaam').textContent = f.name;
+      const r = new FileReader();
+      r.onload = () => { document.getElementById('fotoPrev').innerHTML = `<img src="${r.result}" alt="" class="w-full h-full object-cover">`; };
+      r.readAsDataURL(f);
+    });
+
+    /* ---------- Channel ---------- */
+    let kanaal = 'sms';
+    document.getElementById('kanaal').addEventListener('click', e => {
+      const b = e.target.closest('.chip'); if (!b) return;
+      kanaal = b.dataset.k;
+      document.querySelectorAll('#kanaal .chip').forEach(x => x.setAttribute('aria-pressed', x === b));
+      const c = document.querySelector('input[name=contact]');
+      document.getElementById('contactLbl').textContent = kanaal === 'sms' ? 'Gsm-nummer' : 'E-mailadres';
+      c.inputMode = kanaal === 'sms' ? 'tel' : 'email';
+    });
+
+    /* ---------- Submit ---------- */
+    document.getElementById('vForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const f = e.target, fout = document.getElementById('vFout'), ok = document.getElementById('vOk');
+      const miss = [];
+      if (!f.wat.value.trim() && !fotoIn.files.length) miss.push('beschrijf wat je zoekt of voeg een foto toe');
+      if (!f.naam.value.trim()) miss.push('vul je naam in');
+      const c = f.contact.value.trim();
+      if (kanaal === 'sms' ? c.replace(/\D/g, '').length < 9 : !/^\S+@\S+\.\S+$/.test(c)) miss.push(kanaal === 'sms' ? 'geef een geldig gsm-nummer' : 'geef een geldig e-mailadres');
+      if (miss.length) { fout.textContent = 'Nog even: ' + miss.join(', ') + '.'; fout.classList.remove('hidden'); return; }
+      fout.classList.add('hidden');
+      const nr = 'J-' + String(Date.now()).slice(-4);
+      const afd = gekozenAfd && AFD[gekozenAfd] ? AFD[gekozenAfd][0] : 'nog te bepalen';
+      ok.innerHTML = `<p class="text-[22px] font-extrabold">Gevraagd! Nummer ${nr}</p>
+        <p class="mt-2 text-nacht/80">Bedankt ${esc(f.naam.value.trim().split(' ')[0])}. We kijken na of we "${esc((f.wat.value.trim() || 'het stuk op je foto').slice(0, 80))}" (${f.aantal.value || 1} st., afdeling ${afd}) hebben, of bestellen het. Je krijgt antwoord via ${kanaal === 'sms' ? 'sms' : 'mail'} op ${esc(c)}.</p>
+        <p class="mt-3 text-[14px] text-nacht/55">Dit is een demo: er is niets verzonden.</p>`;
+      ok.classList.remove('hidden');
+      ok.scrollIntoView({ behavior: RM ? 'auto' : 'smooth', block: 'nearest' });
+    });
+
+    /* ---------- Open now ---------- */
+    const now = new Date(), d = now.getDay(), t = now.getHours() * 60 + now.getMinutes();
+    const openDag = d >= 2 && d <= 6;
+    const el = document.getElementById('nuOpen');
+    if (openDag && t >= 540 && t < 1080) el.innerHTML = '<span class="w-2 h-2 rounded-full bg-green-600"></span>Nu open tot 18:00';
+    else {
+      let n = d, i = 0; do { n = (n + 1) % 7; i++; } while (!(n >= 2 && n <= 6));
+      const dagen = ['zondag','maandag','dinsdag','woensdag','donderdag','vrijdag','zaterdag'];
+      el.innerHTML = '<span class="w-2 h-2 rounded-full bg-rood"></span>' + (openDag && t < 540 ? 'Gesloten, vandaag open om 9:00' : 'Gesloten, ' + dagen[n] + ' open om 9:00');
+    }
+    const today = document.querySelector(`#uren [data-d="${d}"]`);
+    if (today) today.classList.add('font-bold');
+  </script>
+</body>
+</html>

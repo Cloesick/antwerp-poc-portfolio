@@ -315,14 +315,17 @@
       var $ = function (id) { return document.getElementById(id); };
       var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
       // Opening hours: live status
+      var DL = ['zondag','maandag','dinsdag','woensdag','donderdag','vrijdag','zaterdag'];
       var H = { 1: [[540,750],[840,1080]], 2: [[540,750],[840,1080]], 3: [[540,750],[840,1080]], 5: [[540,750],[840,1080]], 6: [[600,900]] };
+      function fmt(m) { return Math.floor(m / 60) + ':' + String(m % 60).padStart(2, '0'); }
       function status() {
         var n = new Date(), d = n.getDay(), m = n.getHours() * 60 + n.getMinutes();
-        var open = (H[d] || []).some(function (r) { return m >= r[0] && m < r[1]; });
         var li = document.querySelector('#week [data-d="' + d + '"]'); if (li) li.classList.add('bg-sunlt');
-        if (open) return ['Nu open', '#1c8a3a'];
-        if (d === 4) return ['Vandaag enkel na afspraak', '#d8261c'];
-        return ['Nu gesloten', '#d8261c'];
+        var cur = (H[d] || []).filter(function (r) { return m >= r[0] && m < r[1]; })[0];
+        if (cur) return ['Nu open tot ' + fmt(cur[1]), '#1c8a3a'];
+        var later = (H[d] || []).filter(function (r) { return m < r[0]; })[0];
+        if (later) return ['Vandaag weer open om ' + fmt(later[0]), '#1c4fa0'];
+        for (var i = 1; i < 8; i++) { var dd = (d + i) % 7; if (H[dd]) return ['Open ' + (i === 1 ? 'morgen' : DL[dd]) + ' vanaf ' + fmt(H[dd][0][0]), '#1c4fa0']; }
       }
       var s = status();
       $('openNow').innerHTML = '<span class="w-2.5 h-2.5 rounded-full" style="background:' + s[1] + '"></span> ' + s[0] + ' · Koningin Astridlaan 75, Kontich';
@@ -331,7 +334,7 @@
       // Repair intake
       var TURN = { slow: [1, 'Vaak verhelpt een opkuis of snellere schijf dit.'], boot: [2, 'Eerst diagnose: we bellen u voor we iets vervangen.'], virus: [1, 'Opkuis en controle; uw bestanden blijven waar ze zijn.'], screen: [3, 'Afhankelijk van of het scherm op voorraad is.'], noise: [1, 'Meestal stof of een ventilator.'], upgrade: [1, 'We bekijken samen wat uw toestel nog aankan.'], other: [2, 'We bekijken het samen aan de toonbank.'] };
       var state = { syms: [], day: null, slot: null };
-      var DN = ['zo','ma','di','wo','do','vr','za'], DL = ['zondag','maandag','dinsdag','woensdag','donderdag','vrijdag','zaterdag'];
+      var DN = ['zo','ma','di','wo','do','vr','za'];
       var SL = { 1: ['9:30','11:00','14:00','15:30','17:00'], 2: ['9:30','11:00','14:00','15:30','17:00'], 3: ['9:30','11:00','14:00','15:30','17:00'], 4: ['10:00','11:30','14:00','16:00'], 5: ['9:30','11:00','14:00','15:30','17:00'], 6: ['10:00','11:30','13:00','14:00'] };
       var days = [], d = new Date();
       while (days.length < 6) { d.setDate(d.getDate() + 1); if (d.getDay() !== 0) days.push(new Date(d)); }
