@@ -137,7 +137,7 @@
       <div class="lg:col-span-6 relative z-10 flex items-center px-5 sm:px-10 lg:pl-[max(1.25rem,calc((100vw-72rem)/2+1.25rem))] lg:pr-12 py-14 lg:py-16" id="heroText">
         <div>
           <p class="hl flex items-center gap-3 text-messing2 text-[15px]">
-            <span class="inline-block h-px w-10 bg-messing"></span>
+            <span class="hidden sm:inline-block h-px w-10 bg-messing"></span>
             Sint-Jorispoort 8, Antwerpen · meer dan een eeuw
           </p>
           <h1 class="hl mt-6 font-serif font-normal leading-[.92] tracking-[-0.02em] text-[clamp(3.2rem,7.4vw,6.6rem)]">In 't Zonneke</h1>
@@ -313,7 +313,7 @@
         </div>
       </div>
       <figure class="lg:col-span-6">
-        <img src="images/gevel.jpg" alt="De groene winkelpui van In 't Zonneke aan de Sint-Jorispoort" class="w-full h-full min-h-[320px] object-cover rounded" loading="lazy" />
+        <img src="images/gevel.jpg" alt="De groene winkelpui van In 't Zonneke aan de Sint-Jorispoort" class="w-full h-full min-h-[320px] object-cover rounded" style="object-position: 50% 90%;" loading="lazy" />
       </figure>
     </div>
   </section>
@@ -433,9 +433,10 @@
       if (!f.contact.value.trim()) miss.push('laat een telefoonnummer of e-mail achter');
       if (miss.length) { fout.textContent = 'Nog even: ' + miss.join(', ') + '.'; fout.classList.remove('hidden'); return; }
       fout.classList.add('hidden');
+      const esc = v => v.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
       const dag = DAGEN[gekozenDag.getDay()] + ' ' + gekozenDag.getDate() + '/' + (gekozenDag.getMonth() + 1);
-      ok.innerHTML = `<p class="font-serif text-2xl text-gevel">Genoteerd, ${f.naam.value.trim().split(' ')[0]}.</p>
-        <p class="mt-2 text-inkt/80">We leggen ${gekozen.size} ${gekozen.size === 1 ? 'stuk' : 'stukken'} klaar voor ${dag}, met alternatieven uit dezelfde reeks. Je krijgt een bevestiging via ${f.contact.value.trim()}.</p>
+      ok.innerHTML = `<p class="font-serif text-2xl text-gevel">Genoteerd, ${esc(f.naam.value.trim().split(' ')[0])}.</p>
+        <p class="mt-2 text-inkt/80">We leggen ${gekozen.size} ${gekozen.size === 1 ? 'stuk' : 'stukken'} klaar voor ${dag}, met alternatieven uit dezelfde reeks. Je krijgt een bevestiging via ${esc(f.contact.value.trim())}.</p>
         <p class="mt-3 text-[13px] text-inkt/55">Dit is een demo: er is niets verzonden.</p>`;
       ok.classList.remove('hidden');
       ok.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'nearest' });

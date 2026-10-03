@@ -426,8 +426,8 @@
       var motor = document.getElementById('motor').checked, glas = document.getElementById('glas').checked;
       document.getElementById('wOut').textContent = W + ' mm'; document.getElementById('hOut').textContent = H + ' mm';
       document.getElementById('colName').textContent = col[1];
-      // scale: 5500mm -> 300px wide max, 3000mm -> 230px high max
-      var sc = Math.min(300 / 5500, 228 / 3000), pw = W * sc, ph = H * sc, x = 200 - pw / 2, y = 262 - ph;
+      // scale: 5500mm -> 350px wide max, 3000mm -> 238px high max
+      var sc = Math.min(350 / 5500, 238 / 3000), pw = W * sc, ph = H * sc, x = 200 - pw / 2, y = 262 - ph;
       [opening, clipRect].forEach(function (r) { r.setAttribute('x', x); r.setAttribute('y', y); r.setAttribute('width', pw); r.setAttribute('height', ph); });
       lintel.setAttribute('x', x - 6); lintel.setAttribute('y', y - 8); lintel.setAttribute('width', pw + 12);
       var mg = document.getElementById('motorG'); mg.setAttribute('opacity', motor ? 1 : 0); mg.setAttribute('transform', 'translate(0,' + (y - 22) + ')');

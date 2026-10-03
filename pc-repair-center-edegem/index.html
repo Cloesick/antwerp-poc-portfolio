@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>PC Repair Center Edegem | Herstelling printers, plotters, pc's en laptops sinds 1998</title>
+  <meta name="description" content="Merkonafhankelijke herstelling van laserprinters, HP Designjet plotters, pc's en laptops in Edegem. Sinds 1998. Herstelbon online aanmaken, binnenbrengen of interventie ter plaatse." />
+  <link rel="canonical" href="http://www.pcrepair.be/" />
+  <meta name="theme-color" content="#003a8c" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="PC Repair Center" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="PC Repair Center | Printer- en computerhersteldienst in Edegem" />
+  <meta property="og:description" content="Printers, plotters, pc's en laptops hersteld door Alex Veltmans en zijn team. Sinds 1998 in Edegem." />
+  <meta property="og:image" content="images/PCR_front1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23003a8c'/%3E%3Cpath d='M8 21h16M10 21v-9h12v9' stroke='white' stroke-width='2' fill='none'/%3E%3Ccircle cx='22' cy='9' r='3' fill='%23d71920'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ComputerStore",
+    "name": "PC Repair Center",
+    "description": "Merkonafhankelijke herstelling en onderhoud van laserprinters, HP Designjet plotters, desktops en laptops; verkoop van printers, mini-pc's, laptops en supplies.",
+    "url": "http://www.pcrepair.be/",
+    "telephone": "+3238256930",
+    "email": "info@pcrepair.be",
+    "foundingDate": "1998",
+    "founder": { "@type": "Person", "name": "Alex Veltmans" },
+    "image": "http://www.pcrepair.be/images/PCR_front1.jpg",
+    "logo": "http://www.pcrepair.be/images/PCR_logo1.jpg",
+    "address": { "@type": "PostalAddress", "streetAddress": "Fort V-straat 14", "postalCode": "2650", "addressLocality": "Edegem", "addressCountry": "BE" },
+    "areaServed": ["Edegem", "Wilrijk", "Mortsel", "Kontich", "Aartselaar", "Antwerpen"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "14:00", "closes": "18:00" }
+    ],
+    "brand": ["HP", "Brother", "Acer", "ASUS", "Dell", "Synology"]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { sans: ['Barlow', 'system-ui', 'sans-serif'], cond: ['"Barlow Condensed"', 'sans-serif'], mono: ['"JetBrains Mono"', 'monospace'] },
+      colors: { ink: '#0c1e3d', navy: '#003a8c', navy2: '#0b4fb3', signal: '#d71920', paper: '#eef2f8', sheet: '#ffffff', rule: '#cfd8e6', slate: '#51607a' }
+    } } };
+  </script>
+  <style>
+    :root { --ease: cubic-bezier(.23,1,.32,1); }
+    html { scroll-behavior: smooth; }
+    body { background: #eef2f8; }
+    h1, h2, h3 { text-wrap: balance; }
+    .grid-paper { background-image: linear-gradient(rgba(0,58,140,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(0,58,140,.06) 1px, transparent 1px); background-size: 28px 28px; }
+    /* Herstelbon: perforated ticket */
+    .ticket { position: relative; background: #fff; border-radius: 6px; box-shadow: 0 1px 0 #cfd8e6, 0 24px 48px -24px rgba(12,30,61,.45); }
+    .ticket .perf { height: 0; border-top: 2px dashed #cfd8e6; position: relative; margin: 0 -1px; }
+    .ticket .perf::before, .ticket .perf::after { content: ''; position: absolute; top: -11px; width: 20px; height: 20px; border-radius: 50%; background: var(--hole, #eef2f8); }
+    .ticket .perf::before { left: -10px; } .ticket .perf::after { right: -10px; }
+    .stamp { border: 2px solid currentColor; border-radius: 4px; transform: rotate(-6deg); }
+    .chip { border: 1.5px solid #cfd8e6; background: #fff; border-radius: 6px; padding: .55rem .8rem; font-weight: 500; cursor: pointer; transition: border-color .15s var(--ease), background-color .15s var(--ease), color .15s var(--ease), transform .15s var(--ease); }
+    .chip:hover { border-color: #0b4fb3; }
+    .chip:active { transform: scale(.97); }
+    input:checked + .chip, .chip[aria-pressed="true"] { border-color: #003a8c; background: #003a8c; color: #fff; }
+    .btn { transition: transform .15s var(--ease), background-color .15s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, .chip:focus-visible, input:focus-visible + .chip, textarea:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid #d71920; outline-offset: 2px; }
+    .js .rv { opacity: 0; transform: translateY(16px); transition: opacity .6s var(--ease), transform .6s var(--ease); }
+    .js .rv.in { opacity: 1; transform: none; }
+    @keyframes print { from { clip-path: inset(0 0 100% 0); } to { clip-path: inset(0 0 0 0); } }
+    .js .printing { animation: print 1.1s steps(14) both; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .rv { opacity: 1; transform: none; transition: none; }
+      .js .printing { animation: none; }
+      .chip, .btn { transition: none; }
+    }
+  </style>
+</head>
+<body class="text-ink font-sans antialiased">
+
+  <div class="fixed bottom-[68px] md:bottom-4 right-4 z-50">
+    <span class="font-mono text-[10.5px] tracking-wider text-white bg-ink/90 rounded px-2.5 py-1.5 shadow">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-sheet border-b border-rule">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-3 shrink-0" aria-label="PC Repair Center, home">
+        <img src="images/PCR_logo1.jpg" alt="PC Repair Center logo" class="h-9 sm:h-11 w-auto" width="225" height="44" />
+      </a>
+      <nav class="hidden md:flex items-center gap-7 text-[15px] font-medium text-slate">
+        <a href="#diensten" class="hover:text-navy">Diensten</a>
+        <a href="#printers" class="hover:text-navy">Printers &amp; plotters</a>
+        <a href="#over" class="hover:text-navy">Over ons</a>
+        <a href="#contact" class="hover:text-navy">Contact</a>
+      </nav>
+      <a href="tel:+3238256930" class="btn hidden sm:inline-flex items-center gap-2 bg-navy text-white font-semibold px-4 py-2.5 rounded-md">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        03 825 69 30
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative overflow-hidden grid-paper">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-10 pb-14 lg:pt-14 lg:pb-20 grid lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-12 items-center">
+      <div>
+        <p class="inline-flex items-center gap-2 text-[15px] font-semibold text-navy">
+          <span class="w-2 h-2 rounded-full bg-signal"></span> Fort V-straat 14, Edegem · sinds 1998
+        </p>
+        <h1 class="mt-4 font-cond font-bold text-[44px] leading-[1.02] sm:text-6xl lg:text-[70px] text-ink">
+          Uw printer, plotter of pc hersteld in Edegem.
+        </h1>
+        <p class="mt-5 text-lg text-slate max-w-xl leading-relaxed">
+          Merkonafhankelijk onderhoud van laserprinters en HP Designjet plotters, en herstelling, upgrades en
+          virusverwijdering voor desktops en laptops. In ons atelier, bij u ter plaatse of van op afstand.
+        </p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="#herstelbon" class="btn inline-flex items-center gap-2 bg-signal hover:bg-[#b8121a] text-white font-semibold px-5 py-3.5 rounded-md text-[17px]">Herstelbon aanmaken</a>
+          <a href="tel:+3238256930" class="btn inline-flex items-center gap-2 bg-sheet border-2 border-navy text-navy font-semibold px-5 py-3 rounded-md text-[17px]">Bel 03 825 69 30</a>
+        </div>
+        <dl class="mt-9 grid grid-cols-3 max-w-lg border-t border-rule pt-5 gap-4">
+          <div><dt class="text-sm text-slate">Eigen zaak sinds</dt><dd class="font-cond font-bold text-3xl text-navy">1998</dd></div>
+          <div><dt class="text-sm text-slate">Printerervaring</dt><dd class="font-cond font-bold text-3xl text-navy">35 jaar</dd></div>
+          <div><dt class="text-sm text-slate">Spoed mogelijk</dt><dd class="font-cond font-bold text-3xl text-navy">2·4·8 u</dd></div>
+        </dl>
+      </div>
+
+      <div class="relative">
+        <figure class="rounded-lg overflow-hidden border-4 border-white shadow-xl rotate-[1deg]">
+          <img src="images/PCR_front1.jpg" alt="Winkelpand van PC Repair Center aan de Fort V-straat in Edegem" class="w-full h-[260px] sm:h-[340px] object-cover" width="800" height="450" />
+        </figure>
+        <div class="ticket absolute -bottom-10 left-3 sm:-left-8 w-[270px] sm:w-[300px] -rotate-[3deg]" style="--hole:#eef2f8" aria-hidden="true">
+          <div class="p-4 pb-3">
+            <div class="flex items-center justify-between">
+              <span class="font-cond font-bold text-lg text-navy">Herstelbon</span>
+              <span class="font-mono text-[12px] text-slate">PCR-24117</span>
+            </div>
+            <div class="mt-2 text-[14px] leading-6">
+              <div class="flex justify-between"><span class="text-slate">Toestel</span><span class="font-semibold">HP Designjet T520</span></div>
+              <div class="flex justify-between"><span class="text-slate">Klacht</span><span class="font-semibold">Aandrijfriem</span></div>
+              <div class="flex justify-between"><span class="text-slate">Waar</span><span class="font-semibold">Ter plaatse</span></div>
+            </div>
+          </div>
+          <div class="perf"></div>
+          <div class="p-4 pt-3 flex items-center justify-between">
+            <span class="text-[13px] text-slate">Status</span>
+            <span class="stamp text-signal font-cond font-bold px-2 text-[15px]">IN ATELIER</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands strip -->
+  <div class="bg-navy text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex flex-wrap items-center gap-x-8 gap-y-2 font-cond text-xl font-semibold tracking-wide">
+      <span class="text-white/70 font-sans text-sm font-medium tracking-normal">Merken die we herstellen en verkopen</span>
+      <span>HP</span><span>Brother</span><span>Acer</span><span>ASUS</span><span>Dell</span><span>Gigabyte Brix</span><span>ASUS NUC</span><span>Synology</span><span>Norton 360</span>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section id="diensten" class="bg-sheet">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 lg:py-20">
+      <div class="max-w-2xl">
+        <h2 class="font-cond font-bold text-4xl sm:text-5xl leading-tight">Wat we in het atelier doen</h2>
+        <p class="mt-3 text-slate text-lg">Eén adres voor de printer op kantoor, de laptop thuis en alles wat ertussen hangt.</p>
+      </div>
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-rule border border-rule rounded-lg overflow-hidden">
+        <article class="bg-sheet p-6 rv">
+          <h3 class="font-cond font-bold text-2xl text-navy">Laserprinters &amp; multifunctie</h3>
+          <p class="mt-2 text-slate">Preventief of groot onderhoud, feed rollers, fusers en onderhoudskits. Erkende Brother-hersteldienst en HP Service Point sinds 1998.</p>
+        </article>
+        <article class="bg-sheet p-6 rv">
+          <h3 class="font-cond font-bold text-2xl text-navy">HP Designjet plotters</h3>
+          <p class="mt-2 text-slate">Inktaanslag, versleten of gebroken aandrijfriem, onderhoud van A0-plotters. In ons atelier of bij u ter plaatse.</p>
+        </article>
+        <article class="bg-sheet p-6 rv">
+          <h3 class="font-cond font-bold text-2xl text-navy">Pc's &amp; laptops</h3>
+          <p class="mt-2 text-slate">Traag of start niet meer op? Diagnose, herstelling, nieuw scherm of toetsenbord, afgebroken scharnier of defecte laadaansluiting.</p>
+        </article>
+        <article class="bg-sheet p-6 rv">
+          <h3 class="font-cond font-bold text-2xl text-navy">SSD &amp; upgrades</h3>
+          <p class="mt-2 text-slate">Van klassieke schijf naar SSD zonder herinstallatie van Windows: tot drie keer sneller opstarten. Ook extra RAM en opslag.</p>
+        </article>
+        <article class="bg-sheet p-6 rv">
+          <h3 class="font-cond font-bold text-2xl text-navy">Virussen &amp; data</h3>
+          <p class="mt-2 text-slate">Virus-, malware- en spywareverwijdering, back-ups, gegevens overzetten en datarecuperatie van onleesbare harde schijven.</p>
+        </article>
+        <article class="bg-sheet p-6 rv">
+          <h3 class="font-cond font-bold text-2xl text-navy">Hulp op afstand</h3>
+          <p class="mt-2 text-slate">In nood? Via AnyDesk kijken we mee op uw scherm. Bel eerst even, ook via WhatsApp op 0495 22 19 52.</p>
+        </article>
+        <article class="bg-sheet p-6 rv">
+          <h3 class="font-cond font-bold text-2xl text-navy">Verkoop</h3>
+          <p class="mt-2 text-slate">Laser- en multifunctieprinters, originele supplies, Acer, ASUS, Dell en HP laptops, mini-pc's op maat en Synology NAS.</p>
+        </article>
+        <article class="bg-sheet p-6 rv">
+          <h3 class="font-cond font-bold text-2xl text-navy">Boordcomputers VAG</h3>
+          <p class="mt-2 text-slate">Foutcodes uitlezen en boordcomputers resetten voor Audi, Seat, Skoda en VW (1996 tot 2026).</p>
+        </article>
+        <article class="bg-sheet p-6 rv">
+          <h3 class="font-cond font-bold text-2xl text-navy">Onderaanneming voor IT-bedrijven</h3>
+          <p class="mt-2 text-slate">U stuurt de klantgegevens en de foutomschrijving, wij gaan in uw naam langs. Discretie verzekerd.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signature: herstelbon -->
+  <section id="herstelbon" class="bg-ink text-white relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 lg:py-20 grid lg:grid-cols-[1.15fr_1fr] gap-10 lg:gap-14 items-start">
+      <form id="bonForm" class="space-y-7" novalidate>
+        <div>
+          <h2 class="font-cond font-bold text-4xl sm:text-5xl leading-tight">Maak uw herstelbon aan</h2>
+          <p class="mt-3 text-white/70 text-lg max-w-xl">Vier vragen. U krijgt meteen een bonnummer, een indicatieve termijn en een moment om binnen te brengen. Alex belt u terug om te bevestigen.</p>
+        </div>
+
+        <fieldset>
+          <legend class="font-semibold text-white/90 mb-3">1. Welk toestel?</legend>
+          <div class="flex flex-wrap gap-2 text-ink" id="devices">
+            <label><input type="radio" name="dev" value="laptop" class="sr-only" checked><span class="chip inline-block">Laptop</span></label>
+            <label><input type="radio" name="dev" value="desktop" class="sr-only"><span class="chip inline-block">Desktop / mini-pc</span></label>
+            <label><input type="radio" name="dev" value="laser" class="sr-only"><span class="chip inline-block">Laserprinter / multifunctie</span></label>
+            <label><input type="radio" name="dev" value="plotter" class="sr-only"><span class="chip inline-block">HP Designjet plotter</span></label>
+            <label><input type="radio" name="dev" value="inkjet" class="sr-only"><span class="chip inline-block">Inkjetprinter</span></label>
+          </div>
+        </fieldset>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <label class="block">
+            <span class="font-semibold text-white/90">2. Merk</span>
+            <select id="brand" class="mt-2 w-full rounded-md bg-white text-ink px-3 py-3 font-medium"></select>
+          </label>
+          <label class="block">
+            <span class="font-semibold text-white/90">Type of model <span class="text-white/50 font-normal">(mag leeg)</span></span>
+            <input id="model" type="text" placeholder="bv. Aspire 5 of LaserJet M402" class="mt-2 w-full rounded-md bg-white text-ink px-3 py-3" />
+          </label>
+        </div>
+
+        <fieldset>
+          <legend class="font-semibold text-white/90 mb-3">3. Wat is het probleem?</legend>
+          <div class="flex flex-wrap gap-2 text-ink" id="symptoms"></div>
+          <p id="inkjetNote" class="hidden mt-3 text-[15px] bg-signal/15 border border-signal/50 text-white rounded-md px-3 py-2.5">
+            Canon, EPSON EcoTank en HP A4-inkjetprinters herstellen we niet meer: onderdelen zijn bijna niet te krijgen. Bel ons gerust voor advies over een vervangtoestel.
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend class="font-semibold text-white/90 mb-3">4. Hoe wilt u geholpen worden?</legend>
+          <div class="grid sm:grid-cols-3 gap-2 text-ink">
+            <label><input type="radio" name="mode" value="drop" class="sr-only" checked><span class="chip block h-full"><b class="block">Binnenbrengen</b><span class="text-[13px] opacity-75">Edegem, namiddag</span></span></label>
+            <label><input type="radio" name="mode" value="site" class="sr-only"><span class="chip block h-full"><b class="block">Ter plaatse</b><span class="text-[13px] opacity-75">Bij u thuis of op kantoor</span></span></label>
+            <label><input type="radio" name="mode" value="remote" class="sr-only"><span class="chip block h-full"><b class="block">Op afstand</b><span class="text-[13px] opacity-75">Via AnyDesk</span></span></label>
+          </div>
+        </fieldset>
+
+        <div id="slotWrap">
+          <p class="font-semibold text-white/90 mb-3" id="slotLabel">Kies een moment om binnen te brengen</p>
+          <div id="slots" class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-ink"></div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <label class="block"><span class="font-semibold text-white/90">Naam</span><input id="name" required type="text" autocomplete="name" class="mt-2 w-full rounded-md bg-white text-ink px-3 py-3" /></label>
+          <label class="block"><span class="font-semibold text-white/90">Telefoon</span><input id="tel" required type="tel" autocomplete="tel" class="mt-2 w-full rounded-md bg-white text-ink px-3 py-3" /></label>
+        </div>
+        <p id="formErr" class="hidden text-[15px] text-[#ff9a9e]" role="alert"></p>
+        <button type="submit" class="btn bg-signal hover:bg-[#b8121a] text-white font-semibold text-lg px-6 py-3.5 rounded-md">Herstelbon aanmaken</button>
+      </form>
+
+      <!-- Live ticket -->
+      <div class="lg:sticky lg:top-6" aria-live="polite">
+        <div class="ticket text-ink" style="--hole:#0c1e3d">
+          <div class="p-5 sm:p-6">
+            <div class="flex items-start justify-between gap-3">
+              <div>
+                <p class="font-cond font-bold text-2xl text-navy leading-none">Herstelbon</p>
+                <p class="text-[13px] text-slate mt-1">PC Repair Center · Fort V-straat 14, Edegem</p>
+              </div>
+              <span id="tNum" class="whitespace-nowrap font-mono font-bold text-[13px] bg-paper rounded px-2 py-1 text-slate">PCR-······</span>
+            </div>
+            <dl class="mt-5 text-[15px] divide-y divide-rule">
+              <div class="flex justify-between gap-4 py-2"><dt class="text-slate">Toestel</dt><dd id="tDev" class="font-semibold text-right">Laptop</dd></div>
+              <div class="flex justify-between gap-4 py-2"><dt class="text-slate">Merk / type</dt><dd id="tBrand" class="font-semibold text-right">Acer</dd></div>
+              <div class="flex justify-between gap-4 py-2"><dt class="text-slate">Probleem</dt><dd id="tSym" class="font-semibold text-right">nog te kiezen</dd></div>
+              <div class="flex justify-between gap-4 py-2"><dt class="text-slate">Hoe</dt><dd id="tMode" class="font-semibold text-right">Binnenbrengen</dd></div>
+              <div class="flex justify-between gap-4 py-2"><dt class="text-slate">Moment</dt><dd id="tSlot" class="font-semibold text-right">nog te kiezen</dd></div>
+            </dl>
+          </div>
+          <div class="perf"></div>
+          <div class="p-5 sm:p-6">
+            <p class="text-[13px] text-slate">Indicatieve termijn</p>
+            <p id="tTurn" class="font-cond font-bold text-3xl text-navy leading-tight mt-0.5">1 à 3 werkdagen</p>
+            <p id="tNote" class="text-[14px] text-slate mt-1">na diagnose, u krijgt eerst een prijs.</p>
+            <div id="tDone" class="hidden mt-4 border-t border-rule pt-4">
+              <span class="stamp inline-block text-signal font-cond font-bold px-2 text-lg">AANGEMAAKT</span>
+              <p class="mt-3 text-[15px]">Bedankt, <span id="tName"></span>. Alex belt u terug op <span id="tTel" class="font-semibold"></span> om uw bon te bevestigen.</p>
+              <p class="mt-2 text-[13px] text-slate">Dit is een concept-demo: er werd niets verzonden.</p>
+            </div>
+          </div>
+        </div>
+        <p class="mt-4 text-[13px] text-white/50">Termijnen in deze demo zijn voorbeeldwaarden; PC Repair Center stelt ze zelf in.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Printers feature -->
+  <section id="printers" class="bg-paper">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 lg:py-20 grid lg:grid-cols-2 gap-10 items-center">
+      <div class="grid grid-cols-5 gap-3">
+        <img src="images/HP01.jpg" alt="Opengewerkte laserprinter in het atelier van PC Repair Center" class="col-span-3 rounded-lg object-cover h-64 sm:h-80 w-full" loading="lazy" width="1024" height="613" />
+        <img src="images/DJ_onderhoud.jpg" alt="Onderhoud van een HP Designjet A0-plotter met inktaanslag" class="col-span-2 rounded-lg object-cover h-64 sm:h-80 w-full" loading="lazy" width="640" height="383" />
+      </div>
+      <div>
+        <h2 class="font-cond font-bold text-4xl sm:text-5xl leading-tight">Printers zijn waar we begonnen</h2>
+        <p class="mt-4 text-lg text-slate leading-relaxed">Alex Veltmans werkte vanaf 1988 met de eerste laserprinters en was printertechnicus bij Getronics Service. Vandaag zijn middenklasse- en netwerklaserprinters, multifunctietoestellen en HP Designjet plotters voor kmo's en industrie de kern van de zaak.</p>
+        <ul class="mt-6 space-y-3 text-[17px]">
+          <li class="flex gap-3"><span class="mt-2 w-2 h-2 bg-signal rounded-full shrink-0"></span>Spoedherstelling binnen 2, 4 of 8 werkuren, mits supplement</li>
+          <li class="flex gap-3"><span class="mt-2 w-2 h-2 bg-signal rounded-full shrink-0"></span>Vervangtoestel beschikbaar tegen een kleine vergoeding</li>
+          <li class="flex gap-3"><span class="mt-2 w-2 h-2 bg-signal rounded-full shrink-0"></span>U betaalt enkel de werkuren en de vervangen onderdelen</li>
+          <li class="flex gap-3"><span class="mt-2 w-2 h-2 bg-signal rounded-full shrink-0"></span>Gereviseerde fusers voor bepaalde HP LaserJet-modellen</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust / over -->
+  <section id="over" class="bg-sheet">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 lg:py-20">
+      <div class="grid lg:grid-cols-[1fr_1.1fr] gap-12">
+        <div>
+          <h2 class="font-cond font-bold text-4xl sm:text-5xl leading-tight">Sinds 1998, met dezelfde man aan het roer</h2>
+          <ol class="mt-8 border-l-2 border-rule space-y-6 pl-6">
+            <li class="relative"><span class="absolute -left-[33px] top-1 w-4 h-4 rounded-full bg-white border-2 border-navy"></span><p class="font-cond font-bold text-xl text-navy">1988</p><p class="text-slate">Alex komt in aanraking met de eerste generatie laserprinters.</p></li>
+            <li class="relative"><span class="absolute -left-[33px] top-1 w-4 h-4 rounded-full bg-white border-2 border-navy"></span><p class="font-cond font-bold text-xl text-navy">1991</p><p class="text-slate">Computertechnieker bij Getronics Service in Kontich.</p></li>
+            <li class="relative"><span class="absolute -left-[33px] top-1 w-4 h-4 rounded-full bg-white border-2 border-signal"></span><p class="font-cond font-bold text-xl text-signal">1998</p><p class="text-slate">Start van PC Repair Center: onafhankelijke, professionele en betaalbare service.</p></li>
+            <li class="relative"><span class="absolute -left-[33px] top-1 w-4 h-4 rounded-full bg-white border-2 border-navy"></span><p class="font-cond font-bold text-xl text-navy">Vandaag</p><p class="text-slate">Winkel en atelier aan de Fort V-straat in Edegem.</p></li>
+          </ol>
+        </div>
+        <div>
+          <figure class="bg-paper rounded-lg p-7 sm:p-8">
+            <svg width="36" height="28" viewBox="0 0 36 28" aria-hidden="true"><path d="M0 28V16C0 7 5 1.5 14 0l1.5 3.5C10 5.5 8 9 8 13h6v15H0zm20 0V16c0-9 5-14.5 14-16l1.5 3.5C30 5.5 28 9 28 13h6v15H20z" fill="#d71920"/></svg>
+            <blockquote class="mt-4 font-cond text-3xl font-semibold leading-snug">Vriendelijke en bekwame heer heeft mij simpel geholpen.</blockquote>
+            <figcaption class="mt-3 text-slate">Brandon, Google-review</figcaption>
+          </figure>
+          <h3 class="mt-10 font-semibold text-slate">Een greep uit onze klanten</h3>
+          <ul class="mt-3 flex flex-wrap gap-2 text-[15px]">
+            <li class="border border-rule rounded px-3 py-1.5">Universiteit Antwerpen</li>
+            <li class="border border-rule rounded px-3 py-1.5">UZA Wilrijk</li>
+            <li class="border border-rule rounded px-3 py-1.5">ISUZU Motors Europe</li>
+            <li class="border border-rule rounded px-3 py-1.5">Tom Tailor</li>
+            <li class="border border-rule rounded px-3 py-1.5">LIBRIS Notarissen</li>
+            <li class="border border-rule rounded px-3 py-1.5">Sanindus</li>
+            <li class="border border-rule rounded px-3 py-1.5">Advocatenkantoor Auxilius</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-navy text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 grid md:grid-cols-3 gap-10">
+      <div>
+        <h2 class="font-cond font-bold text-4xl">Langskomen</h2>
+        <p class="mt-3 text-white/80 leading-relaxed">Fort V-straat 14<br />2650 Edegem</p>
+        <a class="mt-4 inline-block underline underline-offset-4 decoration-white/40 hover:decoration-white" href="https://www.google.com/maps/search/?api=1&query=PC+Repair+Center+Fort+V-straat+14+2650+Edegem" target="_blank" rel="noopener">Open in Google Maps</a>
+        <p class="mt-4 text-[15px] text-white/70">Parkeren vooraan aan de winkel, rechts naast de grijsblauwe bloembakken. Niet door de metalen poort rijden.</p>
+      </div>
+      <div>
+        <h3 class="font-cond font-bold text-2xl">Openingsuren</h3>
+        <ul class="mt-3 space-y-1.5 text-white/85">
+          <li class="flex justify-between gap-4"><span>Ma–vr voormiddag</span><span>op afspraak</span></li>
+          <li class="flex justify-between gap-4"><span>Ma–vr namiddag</span><span>14:00–18:00</span></li>
+          <li class="flex justify-between gap-4"><span>Telefonisch ma–vr</span><span>9:00–18:00</span></li>
+          <li class="flex justify-between gap-4"><span>Weekend, feestdagen</span><span>gesloten</span></li>
+        </ul>
+        <p class="mt-3 text-[14px] text-white/60">Even bellen voor u komt: soms zijn we op interventie.</p>
+      </div>
+      <div>
+        <h3 class="font-cond font-bold text-2xl">Contact</h3>
+        <ul class="mt-3 space-y-1.5">
+          <li><a class="hover:underline" href="tel:+3238256930">03 825 69 30</a></li>
+          <li><a class="hover:underline" href="tel:+32495221952">0495 22 19 52</a> <span class="text-white/60">(ook WhatsApp)</span></li>
+          <li><a class="hover:underline" href="mailto:info@pcrepair.be">info@pcrepair.be</a></li>
+        </ul>
+        <p class="mt-5 text-white/80">Wij werken in Edegem, Wilrijk, Mortsel, Kontich, Aartselaar en Antwerpen.</p>
+      </div>
+    </div>
+    <div class="border-t border-white/15">
+      <p class="max-w-6xl mx-auto px-4 sm:px-6 py-5 pb-24 md:pb-5 text-[13px] text-white/55">© PC Repair Center · Alex Veltmans. Concept-herontwerp door Saspire als vrijblijvend voorstel, niet de officiële website.</p>
+    </div>
+  </section>
+
+  <!-- Sticky mobile call bar -->
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden bg-signal text-white">
+    <a href="tel:+3238256930" class="flex items-center justify-center gap-2.5 py-3.5 font-semibold text-[17px]">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      Bel 03 825 69 30
+    </a>
+  </div>
+
+  <script>
+    document.documentElement.classList.add('js');
+    (function () {
+      var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if ('IntersectionObserver' in window && !reduced) {
+        var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: .12 });
+        document.querySelectorAll('.rv').forEach(function (el) { io.observe(el); });
+      } else { document.querySelectorAll('.rv').forEach(function (el) { el.classList.add('in'); }); }
+
+      var DEV = {
+        laptop:  { label: 'Laptop', brands: ['Acer','ASUS','Dell','HP','Lenovo','Ander merk'], sym: ['Traag of start niet op','Virus of malware','Scherm defect','Laadt niet meer op','Scharnier afgebroken','Toetsenbord','SSD-upgrade','Data terughalen'], turn: '1 à 3 werkdagen', note: 'na diagnose, u krijgt eerst een prijs.' },
+        desktop: { label: 'Desktop / mini-pc', brands: ['HP','Dell','Acer','ASUS','Gigabyte Brix','ASUS NUC','Zelfbouw','Ander merk'], sym: ['Traag of start niet op','Virus of malware','Lawaai of oververhit','SSD-upgrade','Meer geheugen','Data terughalen','Windows of Linux installeren'], turn: '1 à 3 werkdagen', note: 'na diagnose, u krijgt eerst een prijs.' },
+        laser:   { label: 'Laserprinter / multifunctie', brands: ['HP','Brother','Kyocera','Lexmark','OKI','Ander merk'], sym: ['Papierstoring','Vlekken of strepen','Foutcode op display','Groot onderhoud','Fuser of rollen','Netwerk of scan werkt niet'], turn: 'Spoed binnen 2, 4 of 8 werkuren', note: 'mits supplement, of op de gewone planning.' },
+        plotter: { label: 'HP Designjet plotter', brands: ['HP Designjet'], sym: ['Aandrijfriem versleten of gebroken','Inktaanslag','Printkop of kwaliteit','Foutcode','Preventief onderhoud'], turn: 'Spoed binnen 2, 4 of 8 werkuren', note: 'mits supplement, ter plaatse of in het atelier.' },
+        inkjet:  { label: 'Inkjetprinter', brands: ['Canon','EPSON EcoTank','HP A4 inkjet','Brother','Ander merk'], sym: ['Drukt niet meer af','Papierstoring','Inkt of printkop'], turn: 'Eerst even bellen', note: 'niet elk inkjettoestel is nog te herstellen.' }
+      };
+      var MODES = { drop: 'Binnenbrengen', site: 'Ter plaatse', remote: 'Hulp op afstand' };
+      var $ = function (id) { return document.getElementById(id); };
+      var state = { dev: 'laptop', sym: [], mode: 'drop', slot: null };
+
+      function renderDevice() {
+        var d = DEV[state.dev];
+        $('brand').innerHTML = d.brands.map(function (b) { return '<option>' + b + '</option>'; }).join('');
+        state.sym = [];
+        $('symptoms').innerHTML = d.sym.map(function (s) { return '<button type="button" class="chip" aria-pressed="false" data-s="' + s + '">' + s + '</button>'; }).join('');
+        update();
+      }
+      function slotsFor(mode) {
+        var out = [], day = new Date(), names = ['zo','ma','di','wo','do','vr','za'];
+        var hours = mode === 'drop' ? ['14:00','16:00'] : mode === 'site' ? ['9:00','11:00'] : ['10:00','15:00'];
+        while (out.length < 8) {
+          day.setDate(day.getDate() + 1);
+          var w = day.getDay(); if (w === 0 || w === 6) continue;
+          for (var i = 0; i < hours.length && out.length < 8; i++) out.push(names[w] + ' ' + day.getDate() + '/' + (day.getMonth() + 1) + ' · ' + hours[i]);
+        }
+        return out;
+      }
+      function renderSlots() {
+        $('slotLabel').textContent = state.mode === 'drop' ? 'Kies een moment om binnen te brengen' : state.mode === 'site' ? 'Kies een voormiddag voor de interventie' : 'Kies een moment voor de sessie op afstand';
+        state.slot = null;
+        $('slots').innerHTML = slotsFor(state.mode).map(function (s) { return '<button type="button" class="chip text-[14px]" aria-pressed="false" data-slot="' + s + '">' + s + '</button>'; }).join('');
+        update();
+      }
+      function update() {
+        var d = DEV[state.dev], brand = $('brand').value, model = $('model').value.trim();
+        $('tDev').textContent = d.label;
+        $('tBrand').textContent = brand + (model ? ' ' + model : '');
+        $('tSym').textContent = state.sym.length ? state.sym.join(', ') : 'nog te kiezen';
+        $('tMode').textContent = MODES[state.mode];
+        $('tSlot').textContent = state.slot || 'nog te kiezen';
+        var noRepair = state.dev === 'inkjet' && /Canon|EPSON|HP A4/.test(brand);
+        $('inkjetNote').classList.toggle('hidden', !noRepair);
+        $('tTurn').textContent = noRepair ? 'Niet meer herstelbaar' : d.turn;
+        $('tNote').textContent = noRepair ? 'bel ons voor advies over een vervangtoestel.' : d.note;
+      }
+      document.querySelectorAll('input[name=dev]').forEach(function (r) { r.addEventListener('change', function () { state.dev = r.value; renderDevice(); }); });
+      document.querySelectorAll('input[name=mode]').forEach(function (r) { r.addEventListener('change', function () { state.mode = r.value; renderSlots(); }); });
+      $('brand').addEventListener('change', update);
+      $('model').addEventListener('input', update);
+      $('symptoms').addEventListener('click', function (e) {
+        var b = e.target.closest('[data-s]'); if (!b) return;
+        var on = b.getAttribute('aria-pressed') !== 'true'; b.setAttribute('aria-pressed', on);
+        var s = b.dataset.s; state.sym = on ? state.sym.concat(s) : state.sym.filter(function (x) { return x !== s; });
+        update();
+      });
+      $('slots').addEventListener('click', function (e) {
+        var b = e.target.closest('[data-slot]'); if (!b) return;
+        $('slots').querySelectorAll('[data-slot]').forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
+        b.setAttribute('aria-pressed', 'true'); state.slot = b.dataset.slot; update();
+      });
+      $('bonForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var err = [];
+        if (!state.sym.length) err.push('kies minstens één probleem');
+        if (!state.slot) err.push('kies een moment');
+        if (!$('name').value.trim()) err.push('vul uw naam in');
+        if ($('tel').value.replace(/\D/g, '').length < 9) err.push('vul een telefoonnummer in');
+        if (err.length) { $('formErr').textContent = 'Bijna klaar: ' + err.join(', ') + '.'; $('formErr').classList.remove('hidden'); return; }
+        $('formErr').classList.add('hidden');
+        var n = new Date(), num = 'PCR-' + String(n.getFullYear()).slice(2) + String(n.getMonth() + 1).padStart(2, '0') + String(n.getDate()).padStart(2, '0') + '-' + Math.floor(1000 + Math.random() * 9000);
+        $('tNum').textContent = num;
+        $('tName').textContent = $('name').value.trim().split(' ')[0];
+        $('tTel').textContent = $('tel').value.trim();
+        var done = $('tDone'); done.classList.remove('hidden', 'printing'); void done.offsetWidth; done.classList.add('printing');
+        if (innerWidth < 1024) $('tNum').closest('.ticket').scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+      });
+      renderDevice(); renderSlots();
+    })();
+  </script>
+</body>
+</html>

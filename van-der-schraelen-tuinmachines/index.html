@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Van Der Schraelen tuinmachines | Verkoop, verhuur &amp; onderhoud in Ranst</title>
+  <meta name="description" content="Tuin- en parkmachines in Ranst: verkoop, verhuur en onderhoud en herstelling van alle merken in onze eigen werkplaats. Plan online uw onderhoudsbeurt voor grasmaaier, zitmaaier of robotmaaier." />
+  <link rel="canonical" href="https://www.vanderschraelen.be/" />
+  <meta name="theme-color" content="#173d22" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Van Der Schraelen tuinmachines" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Van Der Schraelen tuinmachines, Ranst" />
+  <meta property="og:description" content="Verkoop, verhuur en een eigen werkplaats voor alle merken. Plan uw winterbeurt online." />
+  <meta property="og:image" content="images/concept.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23173d22'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%2346ad4e' stroke-width='5' stroke-dasharray='3.2 3'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23f2c200'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Store", "AutoRepair"],
+    "name": "Van Der Schraelen tuinmachines",
+    "description": "Verkoop, verhuur, onderhoud en herstelling van tuin- en parkmachines voor particulieren en professionelen. Service voor alle merken in eigen werkplaats.",
+    "url": "https://www.vanderschraelen.be/",
+    "telephone": "+3234559363",
+    "email": "info@vanderschraelen.be",
+    "vatID": "BE0881891831",
+    "image": "https://www.vanderschraelen.be/wp-content/uploads/2026/08/banner-met-robot.png",
+    "logo": "https://www.vanderschraelen.be/wp-content/uploads/2018/04/logo-nieuw-zondertel.png",
+    "address": { "@type": "PostalAddress", "streetAddress": "Schawijkstraat 21", "postalCode": "2520", "addressLocality": "Ranst", "addressCountry": "BE" },
+    "areaServed": ["Ranst", "Broechem", "Oelegem", "Emblem", "Vremde", "Wommelgem", "Zandhoven"],
+    "brand": ["Toro", "Echo", "Maruyama", "Sabo", "Castelgarden", "Iseki", "EGO"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Thursday","Friday"], "opens": "08:30", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "12:00" }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { display: ['"Saira Condensed"', 'sans-serif'], sans: ['"Public Sans"', 'sans-serif'] },
+      colors: { forest: '#173d22', moss: '#24592f', gear: '#46ad4e', sun: '#f2c200', paper: '#f4f6f1', ink: '#16201a', slate: '#55635a', line: '#d9dfd6' }
+    } } };
+  </script>
+  <style>
+    :root { --accent: #24592f; --ease: cubic-bezier(.23,1,.32,1); }
+    html { scroll-behavior: smooth; }
+    h1, h2, h3 { text-wrap: balance; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), box-shadow .18s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, label:focus-within { outline: 3px solid #f2c200; outline-offset: 3px; border-radius: 6px; }
+    /* Werkbon tag: perforated top edge + punched hole */
+    .tag { position: relative; background: #fff; border-radius: 4px 4px 14px 14px; }
+    .tag::before { content: ''; position: absolute; left: 0; right: 0; top: -7px; height: 14px;
+      background: radial-gradient(circle at 7px 7px, #173d22 5px, transparent 5.5px) 0 0 / 18px 14px repeat-x; }
+    .hole { width: 18px; height: 18px; border-radius: 50%; background: #173d22; box-shadow: inset 0 0 0 4px #f2c200; }
+    .opt input { position: absolute; opacity: 0; pointer-events: none; }
+    .opt span { transition: background-color .15s var(--ease), border-color .15s var(--ease), color .15s var(--ease); }
+    .opt input:checked + span { background: #173d22; color: #fff; border-color: #173d22; }
+    .opt input:disabled + span { opacity: .45; cursor: not-allowed; text-decoration: line-through; }
+    .opt input:focus-visible + span { outline: 3px solid #f2c200; outline-offset: 2px; }
+    .js .rv { opacity: 0; transform: translateY(16px); transition: opacity .6s var(--ease), transform .6s var(--ease); }
+    .js .rv.in { opacity: 1; transform: none; }
+    @keyframes pop { from { opacity: 0; transform: translateY(10px) scale(.98); } to { opacity: 1; transform: none; } }
+    .pop { animation: pop .45s var(--ease) both; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .rv { opacity: 1; transform: none; transition: none; }
+      .pop { animation: none; }
+      .btn { transition: none; }
+    }
+  </style>
+</head>
+<body class="bg-paper text-ink font-sans antialiased pb-14 md:pb-0">
+
+  <div class="fixed bottom-[68px] md:bottom-4 right-3 md:right-4 z-50">
+    <span class="text-[11px] font-semibold tracking-wide text-white bg-ink/85 rounded-full px-3 py-1.5 backdrop-blur">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-paper/90 backdrop-blur border-b border-line">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-5 h-[70px] flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top" class="flex items-center gap-3 min-w-0">
+        <img src="images/logo.png" alt="Logo Van Der Schraelen tuinmachines Ranst" width="58" height="51" class="h-[42px] sm:h-[50px] w-auto" />
+        <span class="block leading-tight">
+          <span class="block font-display font-bold text-[18px] sm:text-[21px] text-forest">Van Der Schraelen</span>
+          <span class="block text-[12.5px] text-slate">tuinmachines · Ranst</span>
+        </span>
+      </a>
+      <div class="hidden lg:flex items-center gap-7 text-[14.5px] font-medium text-slate">
+        <a href="#verkoop" class="hover:text-forest">Verkoop</a>
+        <a href="#verhuur" class="hover:text-forest">Verhuur</a>
+        <a href="#service" class="hover:text-forest">Onderhoud</a>
+        <a href="#contact" class="hover:text-forest">Contact</a>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="tel:034559363" class="hidden sm:inline-flex btn items-center gap-2 border border-line hover:border-forest text-forest font-semibold text-[14px] rounded-lg px-4 py-2.5">03 455 93 63</a>
+        <a href="#service" class="btn inline-flex items-center bg-forest hover:bg-moss text-white font-semibold text-[14px] rounded-lg px-4 py-2.5 whitespace-nowrap">Plan onderhoud</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative bg-forest text-white overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-5 grid lg:grid-cols-12 gap-8 lg:gap-6 pt-10 pb-0 lg:py-0 lg:min-h-[640px] items-center">
+      <div class="lg:col-span-5 relative z-10 lg:py-16">
+        <p class="inline-flex items-center gap-2 text-[13.5px] font-semibold bg-white/10 rounded-full pl-2 pr-3.5 py-1.5" id="openPill">
+          <span class="w-2 h-2 rounded-full bg-gear"></span><span id="openText">Ma, di, do, vr 8:30–18:00 · za 9:00–12:00</span>
+        </p>
+        <p class="mt-6 font-display font-bold text-sun text-[22px] leading-none">Van Der Schraelen tuinmachines</p>
+        <h1 class="mt-3 font-display font-extrabold leading-[.95] text-[clamp(2.7rem,5.4vw,4.6rem)] tracking-[-0.01em]">
+          Uw tuinmachines in goede handen, in Ranst.
+        </h1>
+        <p class="mt-6 text-white/80 text-[17.5px] leading-relaxed max-w-[44ch]">
+          Verkoop, verhuur en een eigen werkplaats voor onderhoud en herstelling van élk merk. Voor particulier en professional.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#service" class="btn inline-flex items-center gap-2 bg-sun hover:bg-[#ffd21a] text-ink font-bold rounded-lg px-6 py-3.5 shadow-[0_10px_30px_-10px_rgba(242,194,0,.7)]">Plan een onderhoudsbeurt</a>
+          <a href="#verkoop" class="btn inline-flex items-center border border-white/30 hover:border-white text-white font-semibold rounded-lg px-6 py-3.5">Bekijk het gamma</a>
+        </div>
+        <p class="mt-7 text-[13.5px] text-white/60">Schawijkstraat 21, 2520 Ranst · woensdag gesloten</p>
+      </div>
+      <div class="lg:col-span-7 relative h-[300px] sm:h-[400px] lg:h-full lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-[58%] -mx-4 sm:-mx-5 lg:mx-0">
+        <img src="images/machines-gamma.jpg" alt="Grasmaaiers, zitmaaiers, robotmaaier en bladblazers uit het gamma van Van Der Schraelen" class="w-full h-full object-cover object-[30%_60%]" />
+        <div class="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-forest via-forest/20 lg:via-forest/10 to-transparent lg:to-transparent"></div>
+        <!-- Winterbeurt tag -->
+        <a href="#service" class="tag hidden sm:block absolute right-5 lg:right-10 bottom-6 lg:bottom-12 w-[270px] text-ink p-5 pt-6 shadow-[0_24px_50px_-18px_rgba(0,0,0,.6)] rotate-[2.5deg] hover:rotate-0 transition-transform">
+          <span class="hole absolute top-4 right-4"></span>
+          <span class="block font-display font-bold text-[26px] leading-none text-forest">Winterbeurt</span>
+          <span class="block mt-2 text-[14px] leading-snug text-slate">Breng uw maaier deze winter binnen, dan start hij in het voorjaar meteen.</span>
+          <span class="mt-3 inline-block text-[13.5px] font-bold text-moss underline underline-offset-4">Kies een dag</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands strip -->
+  <section class="border-b border-line bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-5 py-6 flex flex-wrap items-center gap-x-9 gap-y-3">
+      <span class="text-[13.5px] text-slate">Merken in de toonzaal</span>
+      <span class="font-display font-bold text-[22px] text-ink/70">Toro</span>
+      <span class="font-display font-bold text-[22px] text-ink/70">Echo</span>
+      <span class="font-display font-bold text-[22px] text-ink/70">Maruyama</span>
+      <span class="font-display font-bold text-[22px] text-ink/70">Sabo</span>
+      <span class="font-display font-bold text-[22px] text-ink/70">Castelgarden</span>
+      <span class="font-display font-bold text-[22px] text-ink/70">Iseki</span>
+      <span class="font-display font-bold text-[22px] text-ink/70">EGO</span>
+    </div>
+  </section>
+
+  <!-- Verkoop -->
+  <section id="verkoop" class="max-w-6xl mx-auto px-4 sm:px-5 py-20">
+    <div class="grid lg:grid-cols-12 gap-8 items-end mb-10">
+      <h2 class="rv lg:col-span-7 font-display font-extrabold text-[clamp(2.1rem,4vw,3.3rem)] leading-[1] text-forest">Machines met persoonlijk advies erbij.</h2>
+      <p class="rv lg:col-span-5 text-slate leading-relaxed">We adviseren u persoonlijk over het ideale toestel voor uw tuin, van een accu-maaier voor een stadstuin tot een tractor voor een groot terrein.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <figure class="rv sm:col-span-2 lg:col-span-2 lg:row-span-2 relative rounded-2xl overflow-hidden bg-forest min-h-[320px]">
+        <img src="images/sabo-grasmaaier.jpg" alt="Sabo benzinegrasmaaier in een tuin" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+        <figcaption class="absolute inset-x-0 bottom-0 p-6 pt-20 bg-gradient-to-t from-forest/95 to-transparent text-white">
+          <span class="block font-display font-bold text-[30px] leading-none">Grasmaaiers &amp; robotmaaiers</span>
+          <span class="block mt-2 text-white/80 text-[15px]">Benzine, accu of volledig automatisch.</span>
+        </figcaption>
+      </figure>
+      <figure class="rv relative rounded-2xl overflow-hidden bg-forest min-h-[240px]">
+        <img src="images/toro-zitmaaier.jpg" alt="Toro zitmaaier aan het werk" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+        <figcaption class="absolute inset-x-0 bottom-0 p-5 pt-14 bg-gradient-to-t from-forest/95 to-transparent text-white font-display font-bold text-[24px] leading-none">Zitmaaiers</figcaption>
+      </figure>
+      <figure class="rv relative rounded-2xl overflow-hidden bg-white border border-line min-h-[240px]">
+        <img src="images/tractor.jpg" alt="Compacte tractor" class="absolute inset-0 w-full h-full object-contain p-4 pb-14" loading="lazy" />
+        <figcaption class="absolute inset-x-0 bottom-0 p-5 font-display font-bold text-[24px] leading-none text-forest">Tractors &amp; toebehoren</figcaption>
+      </figure>
+      <div class="rv sm:col-span-2 rounded-2xl bg-white border border-line p-6">
+        <p class="font-semibold text-forest mb-3">Ook in ons assortiment</p>
+        <ul class="flex flex-wrap gap-2 text-[14px]">
+          <li class="rounded-full bg-paper border border-line px-3 py-1.5">Accu-machines</li>
+          <li class="rounded-full bg-paper border border-line px-3 py-1.5">Houtklovers</li>
+          <li class="rounded-full bg-paper border border-line px-3 py-1.5">Hakselaars</li>
+          <li class="rounded-full bg-paper border border-line px-3 py-1.5">Kettingzagen</li>
+          <li class="rounded-full bg-paper border border-line px-3 py-1.5">Heggenscharen</li>
+          <li class="rounded-full bg-paper border border-line px-3 py-1.5">Bladblazers</li>
+          <li class="rounded-full bg-paper border border-line px-3 py-1.5">Bosmaaiers</li>
+          <li class="rounded-full bg-paper border border-line px-3 py-1.5">Verticuteermachines</li>
+          <li class="rounded-full bg-paper border border-line px-3 py-1.5">Tuinfrezen &amp; motoculteurs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service planner -->
+  <section id="service" class="bg-forest text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-5 py-20 grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-4">
+        <h2 class="rv font-display font-extrabold text-[clamp(2.1rem,4vw,3.3rem)] leading-[1]">Onderhoudsbeurt plannen in een minuut.</h2>
+        <p class="rv mt-5 text-white/75 leading-relaxed">Alle werk gebeurt door onze eigen servicedienst, in onze eigen werkplaats. Met een ruime voorraad wisselstukken is uw machine snel terug. Service voor eender welk merk.</p>
+        <ul class="rv mt-7 space-y-3 text-[15px] text-white/85">
+          <li class="flex gap-3"><span class="mt-1.5 w-2 h-2 rounded-full bg-sun shrink-0"></span>Wij halen uw machine op, of u brengt ze zelf binnen</li>
+          <li class="flex gap-3"><span class="mt-1.5 w-2 h-2 rounded-full bg-sun shrink-0"></span>Robotmaaiers: enkel binnenbrengen, met software-update en volledige computertest</li>
+          <li class="flex gap-3"><span class="mt-1.5 w-2 h-2 rounded-full bg-sun shrink-0"></span>Uw afspraak is definitief na onze bevestiging per telefoon of e-mail</li>
+        </ul>
+      </div>
+
+      <form id="planner" class="lg:col-span-8 rounded-2xl bg-moss/60 border border-white/10 p-5 sm:p-7" novalidate>
+        <fieldset>
+          <legend class="font-display font-bold text-[22px]">1. Welk toestel?</legend>
+          <div class="mt-3 grid grid-cols-2 sm:grid-cols-3 gap-2.5" id="machines">
+            <label class="opt relative cursor-pointer"><input type="radio" name="m" value="benzine" checked><span class="block rounded-xl border border-white/20 bg-forest/40 px-4 py-3 text-[15px] font-semibold">Benzinemaaier</span></label>
+            <label class="opt relative cursor-pointer"><input type="radio" name="m" value="elektrisch"><span class="block rounded-xl border border-white/20 bg-forest/40 px-4 py-3 text-[15px] font-semibold">Elektrische maaier</span></label>
+            <label class="opt relative cursor-pointer"><input type="radio" name="m" value="zitmaaier"><span class="block rounded-xl border border-white/20 bg-forest/40 px-4 py-3 text-[15px] font-semibold">Zitmaaier / minitractor</span></label>
+            <label class="opt relative cursor-pointer"><input type="radio" name="m" value="robot"><span class="block rounded-xl border border-white/20 bg-forest/40 px-4 py-3 text-[15px] font-semibold">Robotmaaier</span></label>
+            <label class="opt relative cursor-pointer col-span-2 sm:col-span-2"><input type="radio" name="m" value="andere"><span class="block rounded-xl border border-white/20 bg-forest/40 px-4 py-3 text-[15px] font-semibold">Bosmaaier, haagschaar, hakselaar, …</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="mt-7">
+          <legend class="font-display font-bold text-[22px]">2. Ophalen of zelf brengen?</legend>
+          <div class="mt-3 grid grid-cols-2 gap-2.5">
+            <label class="opt relative cursor-pointer"><input type="radio" name="w" value="brengen" checked><span class="block rounded-xl border border-white/20 bg-forest/40 px-4 py-3 text-[15px] font-semibold">Ik breng hem binnen</span></label>
+            <label class="opt relative cursor-pointer"><input type="radio" name="w" value="ophalen" id="wOphalen"><span class="block rounded-xl border border-white/20 bg-forest/40 px-4 py-3 text-[15px] font-semibold">Ophalen aan huis</span></label>
+          </div>
+          <p id="robotNote" class="hidden mt-2.5 text-[13.5px] text-sun">Robotmaaiers kunnen enkel binnengebracht worden, niet opgehaald.</p>
+          <div id="addrRow" class="hidden mt-3">
+            <label for="addr" class="block text-[13.5px] text-white/75 mb-1.5">Ophaaladres</label>
+            <input id="addr" type="text" autocomplete="street-address" placeholder="Straat, nummer, gemeente" class="w-full rounded-lg bg-white text-ink px-4 py-3 text-[15px]" />
+          </div>
+        </fieldset>
+
+        <fieldset class="mt-7">
+          <legend class="font-display font-bold text-[22px]">3. Kies een dag</legend>
+          <div id="days" class="mt-3 flex flex-wrap gap-2.5"></div>
+          <p class="mt-2 text-[13px] text-white/60">Woensdag, zon- en feestdagen gesloten.</p>
+        </fieldset>
+
+        <div class="mt-7 grid sm:grid-cols-2 gap-3">
+          <div>
+            <label for="naam" class="block text-[13.5px] text-white/75 mb-1.5">Naam</label>
+            <input id="naam" type="text" autocomplete="name" class="w-full rounded-lg bg-white text-ink px-4 py-3 text-[15px]" />
+          </div>
+          <div>
+            <label for="tel" class="block text-[13.5px] text-white/75 mb-1.5">Telefoon</label>
+            <input id="tel" type="tel" autocomplete="tel" class="w-full rounded-lg bg-white text-ink px-4 py-3 text-[15px]" />
+          </div>
+        </div>
+        <p id="err" class="hidden mt-3 text-[14px] text-sun" role="alert"></p>
+        <button type="submit" class="btn mt-6 w-full sm:w-auto bg-sun hover:bg-[#ffd21a] text-ink font-bold rounded-lg px-7 py-3.5">Vraag deze afspraak aan</button>
+      </form>
+
+      <!-- Live werkbon -->
+      <div class="lg:col-start-5 lg:col-span-8 -mt-2" aria-live="polite">
+        <div id="bon" class="tag text-ink p-6 sm:p-7 shadow-[0_30px_60px_-25px_rgba(0,0,0,.6)]">
+          <span class="hole absolute top-5 right-5"></span>
+          <div class="flex flex-wrap items-baseline justify-between gap-2 pr-8">
+            <p class="font-display font-bold text-[26px] leading-none text-forest">Werkbon</p>
+            <p class="text-[13.5px] text-slate" id="bonMeta">Benzinemaaier · binnenbrengen</p>
+          </div>
+          <p class="mt-1 text-[14px] text-slate">Dit doen we bij elke beurt:</p>
+          <ul id="checklist" class="mt-4 grid sm:grid-cols-2 gap-x-6 gap-y-2 text-[14.5px]"></ul>
+          <div class="mt-5 pt-4 border-t border-dashed border-line grid sm:grid-cols-2 gap-3 text-[14.5px]">
+            <p><span class="text-slate">Voorgestelde dag:</span> <b id="bonDay">kies hierboven</b></p>
+            <p><span class="text-slate">Bevestiging:</span> <b>telefonisch of per e-mail</b></p>
+          </div>
+        </div>
+        <div id="ok" class="hidden pop mt-4 rounded-2xl bg-sun text-ink p-6">
+          <p class="font-display font-bold text-[24px] leading-none">Aanvraag ontvangen</p>
+          <p class="mt-2 text-[15px]" id="okText"></p>
+          <p class="mt-2 text-[13px] opacity-75">Dit is een demo: er is niets verstuurd. Op de echte site komt deze aanvraag in de mailbox van de werkplaats terecht.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Verhuur -->
+  <section id="verhuur" class="max-w-6xl mx-auto px-4 sm:px-5 py-20 grid lg:grid-cols-12 gap-10 items-center">
+    <figure class="rv lg:col-span-6 rounded-2xl overflow-hidden">
+      <img src="images/verhuur-stronkenfrees.jpg" alt="Stronkenfrees in gebruik in een tuin" class="w-full h-[260px] sm:h-[360px] object-cover" loading="lazy" />
+    </figure>
+    <div class="lg:col-span-6">
+      <h2 class="rv font-display font-extrabold text-[clamp(2.1rem,4vw,3.3rem)] leading-[1] text-forest">Huren voor die ene grote klus.</h2>
+      <p class="rv mt-4 text-slate leading-relaxed">Een stronk uit de grond, een gazon opnieuw aanleggen of een berg snoeihout? Huur de juiste machine per dag. Zoekt u iets dat niet in de lijst staat, vraag het ons gerust.</p>
+      <ul class="rv mt-6 grid grid-cols-2 gap-x-6 gap-y-2 text-[15px]">
+        <li>Stronkenfrees</li><li>Houtkliever</li><li>Zodensnijder</li><li>Verticuteerder</li><li>Rol &amp; zaaibak</li><li>Tuinfrees</li><li>Motoculteur</li><li>Onkruidborstel</li><li>Hakselaar</li><li>Zitmaaier &amp; grasmaaier</li>
+      </ul>
+      <p class="rv mt-6 text-[13.5px] text-slate">Betaling vooraf, op vertoon van uw identiteitskaart. Brandstof en slijtdelen niet inbegrepen.</p>
+      <a href="tel:034559363" class="rv btn mt-6 inline-flex bg-forest hover:bg-moss text-white font-semibold rounded-lg px-6 py-3.5">Bel om te reserveren</a>
+    </div>
+  </section>
+
+  <!-- Waarom -->
+  <section class="bg-white border-y border-line">
+    <div class="max-w-6xl mx-auto px-4 sm:px-5 py-16 grid md:grid-cols-3 gap-8">
+      <div class="rv">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" class="text-gear" aria-hidden="true"><path d="M12 8.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7z" stroke="currentColor" stroke-width="1.8"/><path d="M19.4 13.5l1.6 1.2-2 3.4-1.9-.7a7.6 7.6 0 01-2 1.2L14.8 21h-4l-.3-2.4a7.6 7.6 0 01-2-1.2l-2 .7-2-3.4 1.6-1.2a7.7 7.7 0 010-2.4L4.6 9.9l2-3.4 1.9.7a7.6 7.6 0 012-1.2L10.8 3h4l.3 2.4a7.6 7.6 0 012 1.2l2-.7 2 3.4-1.7 1.3a7.7 7.7 0 010 2.4z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <h3 class="mt-3 font-display font-bold text-[24px] text-forest">Eigen werkplaats</h3>
+        <p class="mt-1.5 text-slate leading-relaxed">Geen onderaannemers: onze eigen servicedienst doet elk onderhoud en elke herstelling.</p>
+      </div>
+      <div class="rv">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" class="text-gear" aria-hidden="true"><rect x="3.5" y="7" width="17" height="13" rx="1.5" stroke="currentColor" stroke-width="1.8"/><path d="M8 7V4.5h8V7M3.5 12h17" stroke="currentColor" stroke-width="1.8"/></svg>
+        <h3 class="mt-3 font-display font-bold text-[24px] text-forest">Wisselstukken op voorraad</h3>
+        <p class="mt-1.5 text-slate leading-relaxed">Een ruime voorraad onderdelen van de modellen die we verkopen, dus herstellingen op korte termijn.</p>
+      </div>
+      <div class="rv">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" class="text-gear" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 class="mt-3 font-display font-bold text-[24px] text-forest">Alle merken welkom</h3>
+        <p class="mt-1.5 text-slate leading-relaxed">Ook als u uw machine elders kocht, nemen we ze graag onder handen.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 sm:px-5 py-20 grid lg:grid-cols-12 gap-10">
+    <div class="lg:col-span-6">
+      <h2 class="rv font-display font-extrabold text-[clamp(2.1rem,4vw,3.3rem)] leading-[1] text-forest">Langskomen in de Schawijkstraat.</h2>
+      <p class="rv mt-4 text-slate leading-relaxed">Vlakbij voor Ranst, Broechem, Oelegem, Emblem, Vremde, Wommelgem en Zandhoven.</p>
+      <div class="rv mt-7 space-y-3">
+        <a href="tel:034559363" class="btn flex items-center gap-4 rounded-xl bg-white border border-line p-4 hover:border-forest"><span class="font-bold text-forest">03 455 93 63</span><span class="text-slate text-sm">Bellen</span></a>
+        <a href="mailto:info@vanderschraelen.be" class="btn flex items-center gap-4 rounded-xl bg-white border border-line p-4 hover:border-forest"><span class="font-bold text-forest break-all">info@vanderschraelen.be</span></a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Schawijkstraat+21+2520+Ranst" target="_blank" rel="noopener" class="btn flex items-center gap-4 rounded-xl bg-white border border-line p-4 hover:border-forest"><span class="font-bold text-forest">Schawijkstraat 21, 2520 Ranst</span><span class="text-slate text-sm">Route</span></a>
+      </div>
+    </div>
+    <div class="lg:col-span-6 rv">
+      <div class="rounded-2xl bg-white border border-line p-6 sm:p-7">
+        <p class="font-display font-bold text-[24px] text-forest mb-4">Openingsuren</p>
+        <dl class="text-[15px]" id="hours">
+          <div class="flex justify-between py-2.5 border-b border-line" data-d="1"><dt>Maandag</dt><dd class="font-semibold">8:30 – 18:00</dd></div>
+          <div class="flex justify-between py-2.5 border-b border-line" data-d="2"><dt>Dinsdag</dt><dd class="font-semibold">8:30 – 18:00</dd></div>
+          <div class="flex justify-between py-2.5 border-b border-line" data-d="3"><dt>Woensdag</dt><dd class="font-semibold text-slate">Gesloten</dd></div>
+          <div class="flex justify-between py-2.5 border-b border-line" data-d="4"><dt>Donderdag</dt><dd class="font-semibold">8:30 – 18:00</dd></div>
+          <div class="flex justify-between py-2.5 border-b border-line" data-d="5"><dt>Vrijdag</dt><dd class="font-semibold">8:30 – 18:00</dd></div>
+          <div class="flex justify-between py-2.5 border-b border-line" data-d="6"><dt>Zaterdag</dt><dd class="font-semibold">9:00 – 12:00</dd></div>
+          <div class="flex justify-between py-2.5" data-d="0"><dt>Zon- en feestdagen</dt><dd class="font-semibold text-slate">Gesloten</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-forest text-white/75">
+    <div class="max-w-6xl mx-auto px-4 sm:px-5 py-10 flex flex-col md:flex-row justify-between gap-5 text-[14px]">
+      <div>
+        <p class="font-display font-bold text-[22px] text-white">Van Der Schraelen tuinmachines</p>
+        <p class="mt-1">Schawijkstraat 21, 2520 Ranst · BTW BE0881891831</p>
+      </div>
+      <p class="max-w-md text-[13px]">Concept-herontwerp door <a href="mailto:nicolas@saspire.org" class="underline text-sun">Saspire</a> als vrijblijvend voorstel. Dit is niet de officiële website van Van Der Schraelen tuinmachines.</p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden grid grid-cols-2 bg-forest text-white border-t border-white/10">
+    <a href="tel:034559363" class="flex items-center justify-center gap-2 py-3.5 font-semibold">Bel 03 455 93 63</a>
+    <a href="#service" class="flex items-center justify-center py-3.5 font-bold bg-sun text-ink">Plan onderhoud</a>
+  </div>
+
+  <script>
+    document.documentElement.classList.add('js');
+    (function () {
+      // Scroll reveal (content stays visible without JS)
+      if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: .12 });
+        document.querySelectorAll('.rv').forEach(function (el) { io.observe(el); });
+      } else document.querySelectorAll('.rv').forEach(function (el) { el.classList.add('in'); });
+
+      // Open now
+      var now = new Date(), d = now.getDay(), t = now.getHours() + now.getMinutes() / 60;
+      var open = ([1,2,4,5].indexOf(d) > -1 && t >= 8.5 && t < 18) || (d === 6 && t >= 9 && t < 12);
+      document.getElementById('openText').textContent = open ? 'Nu open · Schawijkstraat 21, Ranst' : 'Ma, di, do, vr 8:30–18:00 · za 9:00–12:00';
+      if (!open) document.querySelector('#openPill span').className = 'w-2 h-2 rounded-full bg-sun';
+      var row = document.querySelector('#hours [data-d="' + d + '"]');
+      if (row) row.classList.add('bg-paper', 'font-bold', '-mx-3', 'px-3', 'rounded');
+
+      // Planner — checklists are the workshop's own published service steps
+      var LISTS = {
+        benzine: ['Machine en motor reinigen','Mes slijpen en uitbalanceren','Wielen en tractie nakijken en smeren','Carburator en benzinetank reinigen','Olie en bougie vervangen','Luchtfilter reinigen of vervangen','Kabels smeren en regelen','Proefdraaien en regelen'],
+        elektrisch: ['Machine reinigen','Mes slijpen en uitbalanceren','Wielen en tractie nakijken en smeren','Motorkap demonteren, motor droog reinigen','Eventuele defecten herstellen','Proefdraaien en regelen'],
+        zitmaaier: ['Machine en motor reinigen','Messen slijpen en uitbalanceren','Tractie nakijken en smeren','Batterij nazien en opladen','Carburator, filters en leidingen reinigen','Olie en bougie(s) vervangen','Riemen en poelies nakijken','Proefdraaien en regelen'],
+        robot: ['Machine droog reinigen','Messen vervangen','Lagers van voorwielen en messenschijf nakijken','Accu testen en opladen','Update van de software','Volledige test via computer'],
+        andere: ['Nazicht en onderhoud volgens het type machine','Eventuele defecten herstellen','Proefdraaien en regelen']
+      };
+      var NAMES = { benzine: 'Benzinemaaier', elektrisch: 'Elektrische maaier', zitmaaier: 'Zitmaaier / minitractor', robot: 'Robotmaaier', andere: 'Bosmaaier, haagschaar, …' };
+      var DN = ['zo','ma','di','wo','do','vr','za'], MN = ['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
+      var f = document.getElementById('planner');
+      var daysEl = document.getElementById('days');
+      // next 6 opening days, starting tomorrow, skipping Wednesday and Sunday
+      var dt = new Date(); dt.setHours(12,0,0,0); var picked = 0;
+      while (picked < 6) {
+        dt.setDate(dt.getDate() + 1);
+        var wd = dt.getDay(); if (wd === 0 || wd === 3) continue;
+        var lab = DN[wd] + ' ' + dt.getDate() + ' ' + MN[dt.getMonth()] + (wd === 6 ? ' (voormiddag)' : '');
+        var l = document.createElement('label'); l.className = 'opt relative cursor-pointer';
+        l.innerHTML = '<input type="radio" name="d" value="' + lab + '"' + (picked === 0 ? ' checked' : '') + '><span class="block rounded-xl border border-white/20 bg-forest/40 px-3.5 py-2.5 text-[14.5px] font-semibold">' + lab + '</span>';
+        daysEl.appendChild(l); picked++;
+      }
+      function val(n) { var x = f.querySelector('input[name="' + n + '"]:checked'); return x ? x.value : ''; }
+      function render() {
+        var m = val('m'), robot = m === 'robot', oph = document.getElementById('wOphalen');
+        oph.disabled = robot;
+        if (robot && oph.checked) f.querySelector('input[name="w"][value="brengen"]').checked = true;
+        document.getElementById('robotNote').classList.toggle('hidden', !robot);
+        var w = val('w');
+        document.getElementById('addrRow').classList.toggle('hidden', w !== 'ophalen');
+        document.getElementById('bonMeta').textContent = NAMES[m] + ' · ' + (w === 'ophalen' ? 'ophalen aan huis' : 'zelf binnenbrengen');
+        document.getElementById('checklist').innerHTML = LISTS[m].map(function (s) {
+          return '<li class="flex gap-2.5"><svg class="shrink-0 mt-0.5 text-gear" width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>' + s + '</li>';
+        }).join('');
+        document.getElementById('bonDay').textContent = (w === 'ophalen' ? 'ophaling op ' : 'binnenbrengen op ') + val('d');
+      }
+      f.addEventListener('change', render); render();
+      f.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var err = document.getElementById('err'), naam = document.getElementById('naam').value.trim(), tel = document.getElementById('tel').value.trim();
+        var msg = '';
+        if (!naam) msg = 'Vul uw naam in.';
+        else if (tel.replace(/\D/g, '').length < 9) msg = 'Vul een telefoonnummer in waarop we u kunnen bevestigen.';
+        else if (val('w') === 'ophalen' && !document.getElementById('addr').value.trim()) msg = 'Vul het ophaaladres in.';
+        err.textContent = msg; err.classList.toggle('hidden', !msg);
+        if (msg) return;
+        document.getElementById('okText').textContent = 'Bedankt ' + naam.split(' ')[0] + '. Uw ' + NAMES[val('m')].toLowerCase() + ' staat genoteerd voor ' + val('d') + '. We bevestigen uw afspraak telefonisch op ' + tel + '.';
+        var ok = document.getElementById('ok'); ok.classList.remove('hidden'); ok.classList.remove('pop'); void ok.offsetWidth; ok.classList.add('pop');
+        ok.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'center' });
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>PeriCo Computer Service Kontich | Pc- en laptopherstelling, upgrades en verkoop</title>
+  <meta name="description" content="PeriCo Computer Service aan de Koningin Astridlaan 75 in Kontich: herstelling van pc's en laptops, prestatie-upgrades, verkoop van computers en onderdelen. Meld uw herstelling online aan." />
+  <link rel="canonical" href="https://perico.be/" />
+  <meta name="theme-color" content="#f5d419" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="PeriCo Computer Service" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="PeriCo Computer Service | Pc-herstelling in Kontich" />
+  <meta property="og:description" content="Uw pc of laptop traag, stuk of aan vervanging toe? Meld uw herstelling online aan en kies wanneer u binnenkomt." />
+  <meta property="og:image" content="images/bord.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23f5d419'/%3E%3Ctext x='4' y='25' font-family='Arial Black,Arial' font-weight='900' font-size='22' fill='%231c4fa0'%3EP%3C/text%3E%3Ccircle cx='23' cy='20' r='6' fill='%23d8261c'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ComputerStore",
+    "name": "PeriCo Computer Service",
+    "description": "Computerwinkel en hersteldienst in Kontich: pc- en laptopherstelling, prestatie-upgrades, verkoop van computers en onderdelen.",
+    "url": "https://perico.be/",
+    "telephone": "+3232838310",
+    "email": "info@perico.be",
+    "image": "https://perico.be/wp-content/uploads/2014/11/front.jpg",
+    "address": { "@type": "PostalAddress", "streetAddress": "Koningin Astridlaan 75", "postalCode": "2550", "addressLocality": "Kontich", "addressCountry": "BE" },
+    "areaServed": ["Kontich", "Waarloos", "Aartselaar", "Edegem", "Lint", "Duffel"],
+    "priceRange": "€",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Friday"], "opens": "09:00", "closes": "12:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Friday"], "opens": "14:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "15:00" }
+    ],
+    "review": [
+      { "@type": "Review", "author": { "@type": "Person", "name": "Alex" }, "reviewBody": "Wordt hier steeds goed geholpen voor schappelijke prijzen." },
+      { "@type": "Review", "author": { "@type": "Person", "name": "Peter" }, "reviewBody": "Vriendelijke en deskundige service. Topadres!" }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { sans: ['Figtree', 'system-ui', 'sans-serif'], disp: ['"Bricolage Grotesque"', 'sans-serif'] },
+      colors: { sun: '#f5d419', sunlt: '#fbeb8a', cobalt: '#1c4fa0', deep: '#132f5c', poppy: '#d8261c', chalk: '#fbfaf4', stone: '#5b6372', line: '#e6e2cf' }
+    } } };
+  </script>
+  <style>
+    :root { --ease: cubic-bezier(.23,1,.32,1); }
+    html { scroll-behavior: smooth; }
+    body { background: #fbfaf4; }
+    h1, h2, h3 { text-wrap: balance; }
+    .arch { border-radius: 999px 999px 18px 18px; }
+    .brush { position: relative; display: inline-block; }
+    .wordmark { font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; letter-spacing: -.04em; line-height: .8; }
+    .wordmark .b { color: #1c4fa0; } .wordmark .r { color: #d8261c; font-size: .62em; }
+    .pill { border: 2px solid #132f5c; border-radius: 999px; padding: .5rem .95rem; font-weight: 600; background: #fff; cursor: pointer; transition: background-color .15s var(--ease), color .15s var(--ease), transform .15s var(--ease); }
+    .pill:active { transform: scale(.97); }
+    input:checked + .pill, .pill[aria-pressed="true"] { background: #132f5c; color: #fff; }
+    .day { border: 2px solid #e6e2cf; border-radius: 14px; background: #fff; cursor: pointer; transition: border-color .15s var(--ease), background-color .15s var(--ease); }
+    .day[aria-pressed="true"] { border-color: #1c4fa0; background: #eef3fb; }
+    .day[disabled] { opacity: .45; cursor: not-allowed; }
+    .slot { border-radius: 10px; border: 2px solid #e6e2cf; background: #fff; padding: .5rem; font-weight: 600; cursor: pointer; }
+    .slot[aria-pressed="true"] { background: #d8261c; border-color: #d8261c; color: #fff; }
+    .btn { transition: transform .15s var(--ease), background-color .15s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible + .pill, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #1c4fa0; outline-offset: 2px; }
+    @keyframes rise { from { opacity: 0; transform: translateY(18px) rotate(-4deg); } to { opacity: 1; transform: rotate(-4deg); } }
+    .js .sign-in { animation: rise .9s var(--ease) .15s both; }
+    @keyframes pop { from { transform: scale(.9); opacity: 0; } to { transform: none; opacity: 1; } }
+    .js .pop { animation: pop .45s var(--ease) both; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .sign-in, .js .pop { animation: none; }
+      .pill, .day, .btn { transition: none; }
+    }
+  </style>
+</head>
+<body class="text-deep font-sans antialiased">
+
+  <div class="fixed bottom-[68px] md:bottom-4 right-4 z-50">
+    <span class="text-[11px] font-semibold tracking-wide text-deep bg-white border-2 border-deep rounded-full px-3 py-1 shadow-[3px_3px_0_#132f5c]">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <!-- Hero -->
+  <header class="bg-sun relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <nav class="flex items-center justify-between h-16 sm:h-20">
+        <a href="#top" class="wordmark text-[34px] sm:text-[40px]" aria-label="PeriCo, home"><span class="b">P</span><span class="r">eri</span><span class="b">C</span><span class="r">o</span></a>
+        <div class="hidden md:flex items-center gap-7 font-semibold">
+          <a href="#diensten" class="hover:underline underline-offset-4 decoration-2">Diensten</a>
+          <a href="#aanmelden" class="hover:underline underline-offset-4 decoration-2">Herstelling aanmelden</a>
+          <a href="#uren" class="hover:underline underline-offset-4 decoration-2">Openingsuren</a>
+          <a href="#bezoek" class="hover:underline underline-offset-4 decoration-2">Route</a>
+        </div>
+        <a href="tel:+3232838310" class="btn hidden sm:inline-flex bg-deep text-white font-semibold rounded-full px-5 py-2.5">03 283 83 10</a>
+      </nav>
+
+      <div id="top" class="grid lg:grid-cols-[1.15fr_.85fr] gap-10 items-end pt-6 pb-0 lg:pt-8">
+        <div class="pb-12 lg:pb-20">
+          <p id="openNow" class="inline-flex items-center gap-2 bg-white/70 rounded-full px-3.5 py-1.5 font-semibold text-[15px]">
+            <span class="w-2.5 h-2.5 rounded-full bg-cobalt"></span> Koningin Astridlaan 75, Kontich
+          </p>
+          <h1 class="mt-5 font-disp font-extrabold text-[46px] leading-[.98] sm:text-[66px] lg:text-[78px] tracking-[-.035em]">
+            Uw computer<br class="hidden sm:block" /> hersteld in Kontich.
+          </h1>
+          <p class="mt-5 text-[19px] leading-relaxed max-w-lg text-deep/85">
+            Traag, stuk of aan een upgrade toe? Breng uw pc of laptop bij PeriCo. Een deskundige zaakvoerder, eerlijk advies en schappelijke prijzen.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#aanmelden" class="btn bg-poppy hover:bg-[#b81e15] text-white font-bold text-[17px] rounded-full px-6 py-3.5 shadow-[4px_4px_0_#132f5c]">Herstelling aanmelden</a>
+            <a href="tel:+3232838310" class="btn bg-white text-deep font-bold text-[17px] rounded-full px-6 py-3.5 border-2 border-deep">Bel 03 283 83 10</a>
+          </div>
+        </div>
+        <div class="relative self-end hidden sm:block">
+          <img src="images/front.jpg" alt="Het witte winkelpand van PeriCo met gebogen etalageraam aan de Koningin Astridlaan in Kontich" class="arch w-full max-w-[420px] ml-auto h-[470px] lg:h-[560px] object-cover object-[50%_60%] border-[6px] border-white border-b-0" width="1086" height="1400" />
+          <img src="images/bord.jpg" alt="Het handgeschilderde PeriCo-bord in geel, blauw en rood" class="sign-in absolute left-0 lg:-left-10 bottom-10 w-52 lg:w-60 rounded-lg border-[5px] border-white shadow-[6px_6px_0_#132f5c] -rotate-[4deg]" width="640" height="480" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile hero photo -->
+  <div class="sm:hidden bg-sun px-4 pb-0">
+    <div class="relative">
+      <img src="images/front.jpg" alt="Het winkelpand van PeriCo in Kontich" class="arch w-full h-[300px] object-cover object-[50%_60%] border-[5px] border-white border-b-0" width="1086" height="1400" />
+      <img src="images/bord.jpg" alt="" class="absolute -left-1 bottom-6 w-36 rounded-md border-4 border-white shadow-[4px_4px_0_#132f5c] -rotate-[4deg]" width="640" height="480" />
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section id="diensten" class="border-t-[6px] border-deep">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 lg:py-24">
+      <h2 class="font-disp font-extrabold text-4xl sm:text-5xl tracking-[-.03em] max-w-2xl">Drie dingen, en die goed.</h2>
+      <div class="mt-10 grid md:grid-cols-3 gap-5">
+        <article class="bg-white rounded-3xl p-7 border-2 border-line">
+          <svg width="52" height="52" viewBox="0 0 52 52" aria-hidden="true"><rect x="6" y="10" width="40" height="26" rx="3" fill="#f5d419" stroke="#132f5c" stroke-width="2.5"/><path d="M2 40h48l-3 5H5z" fill="#132f5c"/><path d="M20 23l4 4 8-8" stroke="#d8261c" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+          <h3 class="mt-5 font-disp font-bold text-2xl">Pc- en laptopherstelling</h3>
+          <p class="mt-2 text-stone leading-relaxed">Start uw toestel niet meer op, loopt het vast of doet een onderdeel het niet? We zoeken uit wat er scheelt en zeggen u eerlijk of herstellen de moeite loont.</p>
+        </article>
+        <article class="bg-white rounded-3xl p-7 border-2 border-line">
+          <svg width="52" height="52" viewBox="0 0 52 52" aria-hidden="true"><path d="M8 40a18 18 0 1136 0" fill="#f5d419" stroke="#132f5c" stroke-width="2.5"/><path d="M26 40l9-12" stroke="#d8261c" stroke-width="3.5" stroke-linecap="round"/><circle cx="26" cy="40" r="3.5" fill="#132f5c"/></svg>
+          <h3 class="mt-5 font-disp font-bold text-2xl">Prestatie-upgrades</h3>
+          <p class="mt-2 text-stone leading-relaxed">Een snellere schijf, extra geheugen of een nieuw onderdeel geeft een trage computer vaak een tweede leven, voor een fractie van een nieuwe.</p>
+        </article>
+        <article class="bg-white rounded-3xl p-7 border-2 border-line">
+          <svg width="52" height="52" viewBox="0 0 52 52" aria-hidden="true"><rect x="10" y="16" width="32" height="28" rx="3" fill="#f5d419" stroke="#132f5c" stroke-width="2.5"/><path d="M18 16v-3a8 8 0 0116 0v3" stroke="#132f5c" stroke-width="2.5" fill="none"/><circle cx="26" cy="30" r="5" fill="#d8261c"/></svg>
+          <h3 class="mt-5 font-disp font-bold text-2xl">Computers &amp; onderdelen</h3>
+          <p class="mt-2 text-stone leading-relaxed">Een nieuwe pc of laptop, of net dat ene onderdeel dat u nodig hebt. Met advies over wat bij uw gebruik past, zonder overbodige extra's.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signature -->
+  <section id="aanmelden" class="bg-deep text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 lg:py-24">
+      <div class="max-w-2xl">
+        <h2 class="font-disp font-extrabold text-4xl sm:text-5xl tracking-[-.03em]">Meld uw herstelling aan</h2>
+        <p class="mt-3 text-white/75 text-lg">Zeg wat er scheelt en kies wanneer u binnenkomt. Zo ligt alles klaar en staat u niet voor niets aan de toonbank.</p>
+      </div>
+
+      <form id="pform" class="mt-10 grid lg:grid-cols-[1fr_380px] gap-8 items-start" novalidate>
+        <div class="bg-white text-deep rounded-3xl p-5 sm:p-8 space-y-8">
+          <fieldset>
+            <legend class="font-disp font-bold text-xl mb-3">Wat brengt u binnen?</legend>
+            <div class="flex flex-wrap gap-2">
+              <label><input type="radio" name="dev" value="Laptop" class="sr-only" checked><span class="pill inline-block">Laptop</span></label>
+              <label><input type="radio" name="dev" value="Desktop-pc" class="sr-only"><span class="pill inline-block">Desktop-pc</span></label>
+              <label><input type="radio" name="dev" value="Alles-in-één" class="sr-only"><span class="pill inline-block">Alles-in-één</span></label>
+            </div>
+            <div class="mt-4 grid sm:grid-cols-2 gap-3">
+              <label class="block"><span class="text-[15px] font-semibold">Merk</span>
+                <select id="brand" class="mt-1.5 w-full rounded-xl border-2 border-line px-3 py-3 bg-white">
+                  <option>Acer</option><option>ASUS</option><option>Dell</option><option>HP</option><option>Lenovo</option><option>MSI</option><option>Samsung</option><option>Toshiba</option><option>Zelfbouw</option><option>Ander merk</option>
+                </select></label>
+              <label class="block"><span class="text-[15px] font-semibold">Hoe oud ongeveer?</span>
+                <select id="age" class="mt-1.5 w-full rounded-xl border-2 border-line px-3 py-3 bg-white">
+                  <option value="0">Minder dan 3 jaar</option><option value="1" selected>3 tot 6 jaar</option><option value="2">Ouder dan 6 jaar</option><option value="3">Geen idee</option>
+                </select></label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="font-disp font-bold text-xl mb-3">Wat scheelt er?</legend>
+            <div id="syms" class="flex flex-wrap gap-2">
+              <button type="button" class="pill" aria-pressed="false" data-k="slow">Heel traag</button>
+              <button type="button" class="pill" aria-pressed="false" data-k="boot">Start niet op</button>
+              <button type="button" class="pill" aria-pressed="false" data-k="virus">Virus of pop-ups</button>
+              <button type="button" class="pill" aria-pressed="false" data-k="screen">Scherm kapot</button>
+              <button type="button" class="pill" aria-pressed="false" data-k="noise">Lawaai of warm</button>
+              <button type="button" class="pill" aria-pressed="false" data-k="upgrade">Wil een upgrade</button>
+              <button type="button" class="pill" aria-pressed="false" data-k="other">Iets anders</button>
+            </div>
+            <label class="block mt-4"><span class="text-[15px] font-semibold">In uw eigen woorden <span class="font-normal text-stone">(mag leeg)</span></span>
+              <textarea id="desc" rows="2" class="mt-1.5 w-full rounded-xl border-2 border-line px-3 py-2.5" placeholder="bv. sinds de laatste update blijft hij hangen op het logo"></textarea></label>
+          </fieldset>
+
+          <fieldset>
+            <legend class="font-disp font-bold text-xl mb-1">Wanneer komt u binnen?</legend>
+            <p class="text-[15px] text-stone mb-3">Op donderdag werkt PeriCo enkel op afspraak: ideaal als u rustig uitleg wilt.</p>
+            <div id="days" class="grid grid-cols-3 sm:grid-cols-6 gap-2"></div>
+            <div id="slots" class="mt-3 grid grid-cols-3 sm:grid-cols-5 gap-2"></div>
+          </fieldset>
+
+          <div class="grid sm:grid-cols-2 gap-3">
+            <label class="block"><span class="text-[15px] font-semibold">Naam</span><input id="name" type="text" autocomplete="name" class="mt-1.5 w-full rounded-xl border-2 border-line px-3 py-3" /></label>
+            <label class="block"><span class="text-[15px] font-semibold">Gsm of telefoon</span><input id="tel" type="tel" autocomplete="tel" class="mt-1.5 w-full rounded-xl border-2 border-line px-3 py-3" /></label>
+          </div>
+          <p id="err" class="hidden text-poppy font-semibold" role="alert"></p>
+          <button class="btn bg-poppy hover:bg-[#b81e15] text-white font-bold text-lg rounded-full px-7 py-3.5 shadow-[4px_4px_0_#132f5c]" type="submit">Herstelling aanmelden</button>
+        </div>
+
+        <!-- Summary card -->
+        <aside class="lg:sticky lg:top-6 bg-sun text-deep rounded-3xl p-6 sm:p-7" aria-live="polite">
+          <p class="font-disp font-extrabold text-2xl">Uw aanmelding</p>
+          <dl class="mt-4 space-y-3 text-[16px]">
+            <div><dt class="text-[13px] font-semibold text-deep/60">Toestel</dt><dd id="sDev" class="font-semibold">Laptop · Acer</dd></div>
+            <div><dt class="text-[13px] font-semibold text-deep/60">Klacht</dt><dd id="sSym" class="font-semibold">Kies wat er scheelt</dd></div>
+            <div><dt class="text-[13px] font-semibold text-deep/60">Binnenbrengen</dt><dd id="sSlot" class="font-semibold">Kies een dag en uur</dd></div>
+          </dl>
+          <div class="mt-5 bg-white rounded-2xl p-4">
+            <p class="text-[13px] font-semibold text-deep/60">Indicatieve doorlooptijd</p>
+            <p id="sTurn" class="font-disp font-extrabold text-[28px] leading-tight text-cobalt">—</p>
+            <p id="sAdvice" class="text-[14px] text-stone mt-1">Kies een klacht voor een inschatting.</p>
+            <p class="mt-3 pt-3 border-t border-line text-[13px] text-stone">Richtprijs: hier toont PeriCo straks zijn eigen vaste prijzen per herstelling.</p>
+          </div>
+          <div id="okBox" class="hidden pop mt-5 bg-deep text-white rounded-2xl p-5">
+            <p class="font-disp font-extrabold text-xl">Aangemeld, tot <span id="okWhen"></span>!</p>
+            <p class="mt-2 text-white/80 text-[15px]">Uw referentie is <b id="okRef" class="text-sun"></b>. Noem die aan de toonbank, dan weten we meteen waarover het gaat.</p>
+            <p class="mt-3 text-[13px] text-white/60">Dit is een concept-demo: er werd niets verzonden.</p>
+          </div>
+          <p class="mt-4 text-[12.5px] text-deep/60">Doorlooptijden in deze demo zijn voorbeeldwaarden die PeriCo zelf instelt.</p>
+        </aside>
+      </form>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="bg-chalk">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 lg:py-24 grid md:grid-cols-2 gap-6">
+      <figure class="rounded-3xl bg-white border-2 border-line p-8">
+        <blockquote class="font-disp font-bold text-[28px] sm:text-[32px] leading-tight tracking-[-.02em]">"Wordt hier steeds goed geholpen voor schappelijke prijzen."</blockquote>
+        <figcaption class="mt-4 text-stone font-semibold">Alex, Google-review</figcaption>
+      </figure>
+      <figure class="rounded-3xl bg-cobalt text-white p-8">
+        <blockquote class="font-disp font-bold text-[28px] sm:text-[32px] leading-tight tracking-[-.02em]">"Vriendelijke en deskundige service. Topadres!"</blockquote>
+        <figcaption class="mt-4 text-white/75 font-semibold">Peter, Google-review</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Hours -->
+  <section id="uren" class="bg-white border-y-2 border-line">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 lg:py-20 grid lg:grid-cols-[.9fr_1.1fr] gap-10 items-start">
+      <div>
+        <h2 class="font-disp font-extrabold text-4xl sm:text-5xl tracking-[-.03em]">Openingsuren</h2>
+        <p id="openBig" class="mt-4 text-xl font-semibold"></p>
+        <p class="mt-3 text-stone text-lg">Donderdag enkel na afspraak. Twijfelt u? Bel even naar 03 283 83 10 of de gsm, 0473 83 76 10.</p>
+      </div>
+      <ul id="week" class="divide-y-2 divide-line border-2 border-line rounded-3xl overflow-hidden text-[17px]">
+        <li data-d="1" class="flex justify-between gap-4 px-5 py-3.5"><span class="font-semibold">Maandag</span><span>9:00–12:30 · 14:00–18:00</span></li>
+        <li data-d="2" class="flex justify-between gap-4 px-5 py-3.5"><span class="font-semibold">Dinsdag</span><span>9:00–12:30 · 14:00–18:00</span></li>
+        <li data-d="3" class="flex justify-between gap-4 px-5 py-3.5"><span class="font-semibold">Woensdag</span><span>9:00–12:30 · 14:00–18:00</span></li>
+        <li data-d="4" class="flex justify-between gap-4 px-5 py-3.5"><span class="font-semibold">Donderdag</span><span class="text-poppy font-semibold">enkel na afspraak</span></li>
+        <li data-d="5" class="flex justify-between gap-4 px-5 py-3.5"><span class="font-semibold">Vrijdag</span><span>9:00–12:30 · 14:00–18:00</span></li>
+        <li data-d="6" class="flex justify-between gap-4 px-5 py-3.5"><span class="font-semibold">Zaterdag</span><span>10:00–15:00</span></li>
+        <li data-d="0" class="flex justify-between gap-4 px-5 py-3.5"><span class="font-semibold">Zondag</span><span class="text-stone">gesloten</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Visit -->
+  <section id="bezoek" class="bg-chalk">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 lg:py-20 grid md:grid-cols-2 gap-10 items-center">
+      <img src="images/leftfront.jpg" alt="Zijaanzicht van het PeriCo-pand met hellend pad naar de ingang" class="rounded-3xl w-full h-72 sm:h-96 object-cover" loading="lazy" width="1400" height="1355" />
+      <div>
+        <h2 class="font-disp font-extrabold text-4xl sm:text-5xl tracking-[-.03em]">Zo vindt u ons</h2>
+        <p class="mt-4 text-xl leading-relaxed">Koningin Astridlaan 75<br />2550 Kontich</p>
+        <p class="mt-3 text-stone text-lg">Het witte pand met het gebogen raam en het gele bord, met een hellend pad naar de ingang.</p>
+        <p class="mt-4 text-stone">Voor klanten uit Kontich, Waarloos, Aartselaar, Edegem, Lint en Duffel.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a class="btn bg-deep text-white font-bold rounded-full px-6 py-3" href="https://www.google.com/maps/search/?api=1&query=PeriCo+Computer+Service+Koningin+Astridlaan+75+2550+Kontich" target="_blank" rel="noopener">Route in Google Maps</a>
+          <a class="btn bg-white border-2 border-deep font-bold rounded-full px-6 py-3" href="mailto:info@perico.be">info@perico.be</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-sun">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 pb-24 md:pb-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
+      <div>
+        <p class="wordmark text-[56px]"><span class="b">P</span><span class="r">eri</span><span class="b">C</span><span class="r">o</span></p>
+        <p class="mt-3 font-semibold">Computer Service · Koningin Astridlaan 75, 2550 Kontich · 03 283 83 10 · 0473 83 76 10</p>
+      </div>
+      <p class="text-[13px] text-deep/70 max-w-sm">Concept-herontwerp door Saspire als vrijblijvend voorstel. Dit is niet de officiële website van PeriCo.</p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden bg-poppy text-white">
+    <a href="tel:+3232838310" class="flex items-center justify-center gap-2.5 py-3.5 font-bold text-[17px]">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      Bel PeriCo · 03 283 83 10
+    </a>
+  </div>
+
+  <script>
+    document.documentElement.classList.add('js');
+    (function () {
+      var $ = function (id) { return document.getElementById(id); };
+      var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      // Opening hours: live status
+      var H = { 1: [[540,750],[840,1080]], 2: [[540,750],[840,1080]], 3: [[540,750],[840,1080]], 5: [[540,750],[840,1080]], 6: [[600,900]] };
+      function status() {
+        var n = new Date(), d = n.getDay(), m = n.getHours() * 60 + n.getMinutes();
+        var open = (H[d] || []).some(function (r) { return m >= r[0] && m < r[1]; });
+        var li = document.querySelector('#week [data-d="' + d + '"]'); if (li) li.classList.add('bg-sunlt');
+        if (open) return ['Nu open', '#1c8a3a'];
+        if (d === 4) return ['Vandaag enkel na afspraak', '#d8261c'];
+        return ['Nu gesloten', '#d8261c'];
+      }
+      var s = status();
+      $('openNow').innerHTML = '<span class="w-2.5 h-2.5 rounded-full" style="background:' + s[1] + '"></span> ' + s[0] + ' · Koningin Astridlaan 75, Kontich';
+      $('openBig').innerHTML = '<span style="color:' + s[1] + '">' + s[0] + '</span>';
+
+      // Repair intake
+      var TURN = { slow: [1, 'Vaak verhelpt een opkuis of snellere schijf dit.'], boot: [2, 'Eerst diagnose: we bellen u voor we iets vervangen.'], virus: [1, 'Opkuis en controle; uw bestanden blijven waar ze zijn.'], screen: [3, 'Afhankelijk van of het scherm op voorraad is.'], noise: [1, 'Meestal stof of een ventilator.'], upgrade: [1, 'We bekijken samen wat uw toestel nog aankan.'], other: [2, 'We bekijken het samen aan de toonbank.'] };
+      var state = { syms: [], day: null, slot: null };
+      var DN = ['zo','ma','di','wo','do','vr','za'], DL = ['zondag','maandag','dinsdag','woensdag','donderdag','vrijdag','zaterdag'];
+      var SL = { 1: ['9:30','11:00','14:00','15:30','17:00'], 2: ['9:30','11:00','14:00','15:30','17:00'], 3: ['9:30','11:00','14:00','15:30','17:00'], 4: ['10:00','11:30','14:00','16:00'], 5: ['9:30','11:00','14:00','15:30','17:00'], 6: ['10:00','11:30','13:00','14:00'] };
+      var days = [], d = new Date();
+      while (days.length < 6) { d.setDate(d.getDate() + 1); if (d.getDay() !== 0) days.push(new Date(d)); }
+      $('days').innerHTML = days.map(function (x, i) {
+        var thu = x.getDay() === 4;
+        return '<button type="button" class="day px-2 py-2.5 text-center" aria-pressed="false" data-i="' + i + '"><span class="block text-[13px] font-semibold ' + (thu ? 'text-poppy' : 'text-stone') + '">' + (thu ? 'afspraakdag' : DN[x.getDay()]) + '</span><span class="block font-disp font-extrabold text-2xl">' + x.getDate() + '</span><span class="block text-[12px] text-stone">' + (thu ? 'donderdag' : x.toLocaleDateString('nl-BE', { month: 'short' })) + '</span></button>';
+      }).join('');
+      function renderSlots() {
+        if (state.day === null) { $('slots').innerHTML = ''; return; }
+        var dow = days[state.day].getDay();
+        $('slots').innerHTML = SL[dow].map(function (t) { return '<button type="button" class="slot" aria-pressed="' + (state.slot === t) + '" data-t="' + t + '">' + t + '</button>'; }).join('');
+      }
+      function update() {
+        $('sDev').textContent = document.querySelector('input[name=dev]:checked').value + ' · ' + $('brand').value;
+        var labels = state.syms.map(function (k) { return document.querySelector('[data-k="' + k + '"]').textContent; });
+        $('sSym').textContent = labels.length ? labels.join(', ') : 'Kies wat er scheelt';
+        if (state.day !== null && state.slot) { var x = days[state.day]; $('sSlot').textContent = DL[x.getDay()] + ' ' + x.getDate() + ' ' + x.toLocaleDateString('nl-BE', { month: 'long' }) + ', ' + state.slot; }
+        else $('sSlot').textContent = 'Kies een dag en uur';
+        if (!state.syms.length) { $('sTurn').textContent = '—'; $('sAdvice').textContent = 'Kies een klacht voor een inschatting.'; return; }
+        var max = 0, adv = '';
+        state.syms.forEach(function (k) { if (TURN[k][0] >= max) { max = TURN[k][0]; adv = TURN[k][1]; } });
+        if ($('age').value === '2' && max < 3) max += 1;
+        $('sTurn').textContent = max === 1 ? '1 à 2 werkdagen' : max === 2 ? '2 à 3 werkdagen' : '3 à 5 werkdagen';
+        $('sAdvice').textContent = adv + ($('age').value === '2' ? ' Bij een ouder toestel geven we eerlijk advies over herstellen of vervangen.' : '');
+      }
+      document.querySelectorAll('input[name=dev]').forEach(function (r) { r.addEventListener('change', update); });
+      $('brand').addEventListener('change', update); $('age').addEventListener('change', update);
+      $('syms').addEventListener('click', function (e) {
+        var b = e.target.closest('[data-k]'); if (!b) return;
+        var on = b.getAttribute('aria-pressed') !== 'true'; b.setAttribute('aria-pressed', on);
+        state.syms = on ? state.syms.concat(b.dataset.k) : state.syms.filter(function (k) { return k !== b.dataset.k; });
+        update();
+      });
+      $('days').addEventListener('click', function (e) {
+        var b = e.target.closest('[data-i]'); if (!b) return;
+        $('days').querySelectorAll('[data-i]').forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
+        b.setAttribute('aria-pressed', 'true'); state.day = +b.dataset.i; state.slot = null; renderSlots(); update();
+      });
+      $('slots').addEventListener('click', function (e) {
+        var b = e.target.closest('[data-t]'); if (!b) return;
+        state.slot = b.dataset.t; renderSlots(); update();
+      });
+      $('pform').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var miss = [];
+        if (!state.syms.length) miss.push('wat er scheelt');
+        if (!state.slot) miss.push('een dag en uur');
+        if (!$('name').value.trim()) miss.push('uw naam');
+        if ($('tel').value.replace(/\D/g, '').length < 9) miss.push('een telefoonnummer');
+        if (miss.length) { $('err').textContent = 'Nog in te vullen: ' + miss.join(', ') + '.'; $('err').classList.remove('hidden'); return; }
+        $('err').classList.add('hidden');
+        var x = days[state.day];
+        $('okWhen').textContent = DL[x.getDay()] + ' ' + state.slot;
+        $('okRef').textContent = 'PC-' + String(x.getDate()).padStart(2, '0') + String(x.getMonth() + 1).padStart(2, '0') + '-' + $('name').value.trim().split(' ')[0].slice(0, 3).toUpperCase() + Math.floor(10 + Math.random() * 89);
+        var ok = $('okBox'); ok.classList.remove('hidden', 'pop'); void ok.offsetWidth; ok.classList.add('pop');
+        if (innerWidth < 1024) ok.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
+      });
+      update();
+    })();
+  </script>
+</body>
+</html>

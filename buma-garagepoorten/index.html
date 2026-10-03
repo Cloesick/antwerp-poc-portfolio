@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>BUMA Wilrijk | Garagepoorten &amp; voordeuren uit eigen productie sinds 1958</title>
+  <meta name="description" content="BUMA in Wilrijk maakt en plaatst garagepoorten en voordeuren op maat: sectionaalpoorten (ook Bumax), kantel-, vleugel-, schuif- en pastoriepoorten, automatisatie en voordeuren in partnerlook. Toonzaal in de Oudestraat." />
+  <meta name="theme-color" content="#1a1e29" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="BUMA" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="BUMA | Garagepoorten en voordeuren op maat in Wilrijk" />
+  <meta property="og:description" content="Stel je garagepoort en voordeur in partnerlook samen en vraag een offerte of toonzaalbezoek aan." />
+  <meta property="og:image" content="images/bumax-partnerlook.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%231a1e29'/%3E%3Cpath d='M7 25V11h18v14M7 15h18M7 19h18M7 23h18' stroke='%23e8ebee' stroke-width='1.6'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "BUMA",
+    "legalName": "BUMA BVBA",
+    "description": "Fabrikant en installateur van garagepoorten en voordeuren: sectionaalpoorten (staalplaat, aluminium kaders, Bumax, hout), vleugel-, kantel-, schuif- en pastoriepoorten, automatisatie, voordeuren in aluminium, PVC en hout, herstellingen.",
+    "url": "https://www.buma.be",
+    "telephone": "+3238272616",
+    "faxNumber": "+3238252961",
+    "email": "info@buma.be",
+    "foundingDate": "1958",
+    "image": "images/bumax-partnerlook.jpg",
+    "logo": "images/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Oudestraat 121",
+      "postalCode": "2610",
+      "addressLocality": "Wilrijk",
+      "addressCountry": "BE"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Friday"], "opens": "10:00", "closes": "12:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:30", "closes": "13:00" }
+    ],
+    "areaServed": ["Wilrijk","Antwerpen","Hoboken","Edegem","Aartselaar","Kontich","Mortsel","Hemiksem","Schelle","Boom"]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        fontFamily: { sans: ['Manrope', 'sans-serif'], big: ['"Big Shoulders Display"', 'sans-serif'] },
+        colors: {
+          navy: '#1a1e29',    /* logo */
+          navy2: '#262c3a',
+          alu: '#a9b0b7',     /* geanodiseerd aluminium */
+          conc: '#eceef0',
+          paper: '#f7f8f9',
+          sred: '#b8352a',    /* de rode wanden van de toonzaal */
+          ink: '#141821',
+        },
+      } },
+    };
+  </script>
+  <style>
+    :root { --accent: #b8352a; --ease: cubic-bezier(.23,1,.32,1); }
+    html { scroll-behavior: smooth; }
+    body { background: #eceef0; }
+    h1, h2, h3 { text-wrap: balance; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), border-color .18s var(--ease), color .18s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid #b8352a; outline-offset: 3px; }
+    .js .rv { opacity: 0; transform: translateY(16px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+    .js .rv.in { opacity: 1; transform: none; }
+    .pick input:checked + span { background: #1a1e29; color: #f7f8f9; border-color: #1a1e29; }
+    .pick input:focus-visible + span, .sw input:focus-visible + span { outline: 2px solid #b8352a; outline-offset: 2px; }
+    .sw input:checked + span { box-shadow: 0 0 0 2px #f7f8f9, 0 0 0 4px #1a1e29; }
+    /* Hero: poort die opent bij het laden (sectiepanelen schuiven omhoog) */
+    .gate-reveal { position: absolute; inset: 0; display: grid; grid-template-rows: repeat(4, 1fr); pointer-events: none; }
+    .gate-reveal span { background: linear-gradient(#323843, #262b35); border-bottom: 1px solid #12151c; transform-origin: top; animation: lift 1.4s var(--ease) forwards; }
+    .gate-reveal span:nth-child(1) { animation-delay: .5s; } .gate-reveal span:nth-child(2) { animation-delay: .38s; }
+    .gate-reveal span:nth-child(3) { animation-delay: .26s; } .gate-reveal span:nth-child(4) { animation-delay: .14s; }
+    @keyframes lift { to { transform: translateY(-420%); } }
+    #facade * { transition: fill .35s var(--ease); }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .rv { opacity: 1; transform: none; transition: none; }
+      .gate-reveal { display: none; }
+      #facade *, .btn { transition: none; }
+    }
+  </style>
+</head>
+<body class="text-ink font-sans antialiased selection:bg-sred/25">
+
+  <div class="fixed bottom-4 right-4 z-50 hidden md:block pointer-events-none">
+    <span class="text-[11px] font-semibold tracking-widest uppercase text-paper bg-navy/90 rounded-full px-3 py-1.5 shadow">Concept-demo · Saspire</span>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-paper/95 backdrop-blur border-b border-navy/10">
+    <nav class="max-w-7xl mx-auto px-5 h-[72px] flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top" class="flex items-center gap-3"><img src="images/logo.png" alt="BUMA" class="h-10 w-auto" width="96" height="40" /><span class="hidden sm:block text-[13px] leading-tight text-navy/75 border-l border-navy/15 pl-3">Garagepoorten<br>&amp; voordeuren</span></a>
+      <div class="hidden lg:flex items-center gap-8 text-[15px] font-semibold text-navy">
+        <a href="#gamma" class="hover:text-sred">Gamma</a>
+        <a href="#configurator" class="hover:text-sred">Stel samen</a>
+        <a href="#toonzaal" class="hover:text-sred">Toonzaal</a>
+        <a href="#service" class="hover:text-sred">Herstellingen</a>
+        <a href="#contact" class="hover:text-sred">Contact</a>
+      </div>
+      <a href="tel:+3238272616" class="btn inline-flex items-center gap-2 bg-navy hover:bg-ink text-paper font-semibold text-[14px] rounded-md px-4 py-2.5 whitespace-nowrap">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        <span class="hidden sm:inline">03 827 26 16</span><span class="sm:hidden">Bel</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="bg-navy text-paper overflow-hidden">
+    <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-12 gap-10 items-center py-14 lg:py-0 lg:min-h-[700px]">
+      <div class="lg:col-span-5">
+        <p class="text-[15px] text-alu mb-5">BUMA · familie Bulkmans · Oudestraat, Wilrijk</p>
+        <h1 class="font-big font-black uppercase leading-[.9] text-[clamp(3.2rem,6.6vw,6rem)]">Garagepoorten en voordeuren, zelf gemaakt sinds 1958.</h1>
+        <p class="mt-6 text-[18px] leading-relaxed text-paper/80 max-w-[44ch]">Sectionaal-, kantel-, vleugel-, schuif- en pastoriepoorten uit eigen atelier, met een voordeur in dezelfde stijl. Geplaatst door ons eigen montageteam.</p>
+        <div class="mt-9 flex flex-wrap gap-3">
+          <a href="#configurator" class="btn inline-flex items-center bg-sred hover:bg-[#a02c22] text-white font-semibold rounded-md px-6 py-3.5">Stel je poort samen</a>
+          <a href="#toonzaal" class="btn inline-flex items-center border border-paper/30 hover:border-paper text-paper font-semibold rounded-md px-6 py-3.5">Plan een toonzaalbezoek</a>
+        </div>
+        <dl class="mt-11 grid grid-cols-3 gap-5 border-t border-paper/15 pt-6 max-w-md">
+          <div><dt class="text-[13px] text-alu">Eigen productie</dt><dd class="font-big font-extrabold text-3xl">sinds 1958</dd></div>
+          <div><dt class="text-[13px] text-alu">Garantie onderdelen</dt><dd class="font-big font-extrabold text-3xl">5 jaar</dd></div>
+          <div><dt class="text-[13px] text-alu">Op Bumax-afwerking</dt><dd class="font-big font-extrabold text-3xl">10 jaar</dd></div>
+        </dl>
+      </div>
+      <div class="lg:col-span-7 relative">
+        <figure class="relative rounded-md overflow-hidden shadow-[0_50px_90px_-40px_rgba(0,0,0,.9)]">
+          <img src="images/bumax-partnerlook.jpg" alt="Sectionaalpoort in Bumax-panelen met glassectie en Presence-voordeur type Uni 6 in partnerlook" class="w-full aspect-[4/3] object-cover" width="800" height="537" />
+          <div class="gate-reveal" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <figcaption class="absolute left-4 bottom-4 right-4 sm:right-auto bg-paper text-navy rounded px-4 py-3 shadow-lg">
+            <p class="font-semibold text-[14px]">Bumax-sectionaalpoort + Presence-voordeur</p>
+            <p class="text-[12px] text-navy/70">Poort en deur in partnerlook, uit onze toonzaal</p>
+          </figcaption>
+        </figure>
+        <div class="hidden lg:block absolute -left-4 top-8 w-2 h-40 bg-sred rounded-sm" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gamma -->
+  <section id="gamma" class="max-w-7xl mx-auto px-5 py-20">
+    <div class="grid lg:grid-cols-12 gap-8 mb-12">
+      <h2 class="rv lg:col-span-5 font-big font-extrabold uppercase text-[clamp(2.2rem,4.4vw,3.6rem)] leading-[.95] text-navy">Het meest gevarieerde aanbod in de markt</h2>
+      <p class="rv lg:col-span-7 text-[17px] leading-relaxed text-navy/80 max-w-[60ch]">Alle poorten maken we op maat in ons eigen atelier. Klassieke RAL-kleuren of kleuren op maat, houtimitatie of echt hout. En omdat poort en voordeur samen het uitzicht van je gevel bepalen, stemmen we ze op elkaar af.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <article class="rv lg:col-span-2 lg:row-span-2 relative rounded-md overflow-hidden min-h-[340px] bg-navy">
+        <img src="images/bumax-gouden-eik.jpg" alt="Sectionaalpoort in gelijnde Bumax-profielen met Renolit-folie in gouden eik" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent"></div>
+        <div class="absolute bottom-0 p-7 text-paper">
+          <h3 class="font-big font-extrabold uppercase text-3xl">Sectionaalpoorten</h3>
+          <p class="mt-2 max-w-[46ch] text-paper/85">In dubbelwandige staalplaat, aluminium kaders, hout of Bumax: onze eigen panelen uit geëxtrudeerde aluminium profielen, gelijnd of vlak.</p>
+        </div>
+      </article>
+      <article class="rv bg-paper rounded-md p-6 border border-navy/10"><h3 class="font-big font-extrabold uppercase text-2xl text-navy">Kantelpoorten</h3><p class="mt-2 text-[15px] text-navy/75">In aluminium of in metaal, ook met oplegmoulures.</p></article>
+      <article class="rv bg-paper rounded-md p-6 border border-navy/10"><h3 class="font-big font-extrabold uppercase text-2xl text-navy">Vleugelpoorten</h3><p class="mt-2 text-[15px] text-navy/75">Dubbel openslaand, in aluminium of in hout.</p></article>
+      <article class="rv bg-paper rounded-md p-6 border border-navy/10"><h3 class="font-big font-extrabold uppercase text-2xl text-navy">Pastoriepoorten</h3><p class="mt-2 text-[15px] text-navy/75">Sectionaal, vleugel of kantel, met sierplinten en makelaarprofielen.</p></article>
+      <article class="rv bg-paper rounded-md p-6 border border-navy/10"><h3 class="font-big font-extrabold uppercase text-2xl text-navy">Schuifpoorten</h3><p class="mt-2 text-[15px] text-navy/75">Schuifpoorten en schuifhekken voor oprit en tuin.</p></article>
+      <article class="rv bg-paper rounded-md p-6 border border-navy/10"><h3 class="font-big font-extrabold uppercase text-2xl text-navy">Automatisatie</h3><p class="mt-2 text-[15px] text-navy/75">Voor nieuwe én bestaande poorten, binnen of buiten de gevel, met storingsvrije 868 MHz-zenders.</p></article>
+      <article class="rv bg-paper rounded-md p-6 border border-navy/10"><h3 class="font-big font-extrabold uppercase text-2xl text-navy">Voordeuren</h3><p class="mt-2 text-[15px] text-navy/75">In aluminium, PVC en hout. Specialiteit: thermisch geïsoleerde aluminium profielen.</p></article>
+    </div>
+  </section>
+
+  <!-- Configurator (signature) -->
+  <section id="configurator" class="bg-paper border-y border-navy/10">
+    <div class="max-w-7xl mx-auto px-5 py-20">
+      <div class="max-w-3xl mb-10">
+        <h2 class="rv font-big font-extrabold uppercase text-[clamp(2.2rem,4.4vw,3.6rem)] leading-[.95] text-navy">Stel je poort en voordeur samen</h2>
+        <p class="rv mt-4 text-[17px] text-navy/80 leading-relaxed">Kies type, maat, materiaal en kleur. Je gevel tekent live mee, met de voordeur in partnerlook. Daarna vraag je een offerte of een bezoek aan de toonzaal.</p>
+      </div>
+      <form id="cfg" class="grid lg:grid-cols-12 gap-8" novalidate>
+        <!-- Preview -->
+        <div class="lg:col-span-7 lg:order-2">
+          <div class="lg:sticky lg:top-24">
+            <div class="rounded-md overflow-hidden border border-navy/10 bg-[#dfe6ec]">
+              <svg id="facade" viewBox="0 0 600 380" class="w-full h-auto block" role="img" aria-label="Voorbeeld van je gevel met garagepoort en voordeur">
+                <defs>
+                  <pattern id="brick-rood" width="40" height="16" patternUnits="userSpaceOnUse"><rect width="40" height="16" fill="#9c4a35"/><path d="M0 7.5h40M0 15.5h40M20 0v7.5M0 8v7.5M40 8v7.5" stroke="#d9cfc4" stroke-width="1.4"/><rect x="2" y="1" width="16" height="5.5" fill="#a85640" opacity=".6"/><rect x="22" y="9" width="16" height="5.5" fill="#8d4130" opacity=".6"/></pattern>
+                  <pattern id="brick-grijs" width="40" height="16" patternUnits="userSpaceOnUse"><rect width="40" height="16" fill="#6d6c69"/><path d="M0 7.5h40M0 15.5h40M20 0v7.5M0 8v7.5M40 8v7.5" stroke="#cfcdc8" stroke-width="1.4"/><rect x="2" y="1" width="16" height="5.5" fill="#7a7975" opacity=".6"/></pattern>
+                  <pattern id="crepi" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#ecebe6"/><circle cx="2" cy="2" r=".6" fill="#d8d6cf"/></pattern>
+                  <linearGradient id="wood-eik" x1="0" x2="1"><stop offset="0" stop-color="#b9782f"/><stop offset=".3" stop-color="#a7672a"/><stop offset=".55" stop-color="#bf8240"/><stop offset="1" stop-color="#9c5e25"/></linearGradient>
+                  <linearGradient id="wood-ceder" x1="0" x2="1"><stop offset="0" stop-color="#8f8b82"/><stop offset=".4" stop-color="#7d7a72"/><stop offset=".7" stop-color="#97938a"/><stop offset="1" stop-color="#7a766e"/></linearGradient>
+                  <linearGradient id="wood-meranti" x1="0" x2="1"><stop offset="0" stop-color="#7e3a22"/><stop offset=".5" stop-color="#6c301b"/><stop offset="1" stop-color="#84402a"/></linearGradient>
+                  <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".12"/></linearGradient>
+                </defs>
+                <rect id="wall" x="0" y="0" width="600" height="342" fill="url(#brick-rood)"/>
+                <rect x="0" y="342" width="600" height="38" fill="#9aa1a8"/>
+                <path d="M0 342h600" stroke="#6f767d" stroke-width="2"/>
+                <g id="gate-g"></g>
+                <g id="door-g"></g>
+              </svg>
+            </div>
+            <div class="mt-4 rounded-md bg-navy text-paper p-5" aria-live="polite">
+              <p class="text-[13px] text-alu">Jouw samenstelling</p>
+              <p id="sum" class="mt-1 font-semibold leading-snug"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="lg:col-span-5 lg:order-1 space-y-7">
+          <fieldset>
+            <legend class="font-semibold text-[15px]">Type poort</legend>
+            <div class="mt-2.5 grid grid-cols-3 gap-2" id="f-type">
+              <label class="pick cursor-pointer"><input type="radio" name="type" value="sectionaal" class="sr-only" checked /><span class="block border border-navy/20 rounded-md px-2 py-2.5 text-center text-[14px] font-semibold">Sectionaal</span></label>
+              <label class="pick cursor-pointer"><input type="radio" name="type" value="kantel" class="sr-only" /><span class="block border border-navy/20 rounded-md px-2 py-2.5 text-center text-[14px] font-semibold">Kantel</span></label>
+              <label class="pick cursor-pointer"><input type="radio" name="type" value="vleugel" class="sr-only" /><span class="block border border-navy/20 rounded-md px-2 py-2.5 text-center text-[14px] font-semibold">Vleugel</span></label>
+              <label class="pick cursor-pointer"><input type="radio" name="type" value="pastorie" class="sr-only" /><span class="block border border-navy/20 rounded-md px-2 py-2.5 text-center text-[14px] font-semibold">Pastorie</span></label>
+              <label class="pick cursor-pointer"><input type="radio" name="type" value="schuif" class="sr-only" /><span class="block border border-navy/20 rounded-md px-2 py-2.5 text-center text-[14px] font-semibold">Schuifpoort</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="font-semibold text-[15px]">Materiaal en paneel</legend>
+            <select id="f-mat" class="mt-2.5 w-full border border-navy/20 rounded-md px-3 py-2.5 bg-white"></select>
+          </fieldset>
+          <div class="grid grid-cols-2 gap-4">
+            <label class="block"><span class="font-semibold text-[15px]">Breedte <span id="v-b" class="font-normal text-navy/70"></span></span><input id="f-b" type="range" min="200" max="550" step="10" value="250" class="mt-2 w-full accent-[#b8352a]" /></label>
+            <label class="block"><span class="font-semibold text-[15px]">Hoogte <span id="v-h" class="font-normal text-navy/70"></span></span><input id="f-h" type="range" min="190" max="300" step="5" value="215" class="mt-2 w-full accent-[#b8352a]" /></label>
+          </div>
+          <fieldset>
+            <legend class="font-semibold text-[15px]">Kleur</legend>
+            <div class="mt-2.5 flex flex-wrap gap-3" id="f-kleur"></div>
+            <p id="v-kleur" class="mt-2 text-[13px] text-navy/70"></p>
+          </fieldset>
+          <fieldset>
+            <legend class="font-semibold text-[15px]">Opties</legend>
+            <div class="mt-2.5 grid grid-cols-2 gap-2">
+              <label class="pick cursor-pointer"><input type="checkbox" id="o-glas" class="sr-only" checked /><span class="block border border-navy/20 rounded-md px-3 py-2.5 text-[14px]">Glassectie bovenin</span></label>
+              <label class="pick cursor-pointer"><input type="checkbox" id="o-rooster" class="sr-only" /><span class="block border border-navy/20 rounded-md px-3 py-2.5 text-[14px]">Verluchtingsroosters</span></label>
+            </div>
+            <label class="block mt-3"><span class="text-[14px] font-semibold">Automatisatie</span>
+              <select id="o-motor" class="mt-1.5 w-full border border-navy/20 rounded-md px-3 py-2.5 bg-white"><option value="binnen">Motor binnen de gevel</option><option value="buiten">Motor buiten de gevel</option><option value="geen">Geen motor (manueel)</option></select></label>
+          </fieldset>
+          <label class="block"><span class="font-semibold text-[15px]">Je gevel</span>
+            <select id="f-gevel" class="mt-2.5 w-full border border-navy/20 rounded-md px-3 py-2.5 bg-white"><option value="brick-rood">Rode baksteen</option><option value="brick-grijs">Grijze baksteen</option><option value="crepi">Witte crepi</option></select></label>
+          <fieldset class="border-t border-navy/10 pt-6">
+            <legend class="sr-only">Voordeur</legend>
+            <label class="flex items-center justify-between gap-4"><span class="font-semibold text-[15px]">Voordeur in partnerlook</span><input id="d-on" type="checkbox" class="w-5 h-5 accent-[#b8352a]" checked /></label>
+            <div id="d-opts" class="mt-3 grid grid-cols-2 gap-3">
+              <label class="block"><span class="text-[14px] font-semibold">Deur</span>
+                <select id="d-mat" class="mt-1.5 w-full border border-navy/20 rounded-md px-3 py-2.5 bg-white"><option value="aluminium">Aluminium</option><option value="PVC">PVC</option><option value="hout">Hout</option></select></label>
+              <label class="block"><span class="text-[14px] font-semibold">Model</span>
+                <select id="d-model" class="mt-1.5 w-full border border-navy/20 rounded-md px-3 py-2.5 bg-white"><option value="strook">Met glasstrook</option><option value="sier">Met sierpaneel</option><option value="glas">Volledig verglaasd</option></select></label>
+            </div>
+          </fieldset>
+        </div>
+      </form>
+
+      <!-- Aanvraag -->
+      <form id="req" class="mt-12 rounded-md bg-conc border border-navy/10 p-6 sm:p-8 grid lg:grid-cols-12 gap-6" novalidate>
+        <div class="lg:col-span-4">
+          <h3 class="font-big font-extrabold uppercase text-3xl text-navy">Wat is de volgende stap?</h3>
+          <div class="mt-4 space-y-2">
+            <label class="pick cursor-pointer block"><input type="radio" name="next" value="offerte" class="sr-only" checked /><span class="block border border-navy/20 rounded-md px-4 py-3 text-[15px] font-semibold bg-white">Vrijblijvende offerte met opmeting</span></label>
+            <label class="pick cursor-pointer block"><input type="radio" name="next" value="toonzaal" class="sr-only" /><span class="block border border-navy/20 rounded-md px-4 py-3 text-[15px] font-semibold bg-white">Bekijk het in de toonzaal</span></label>
+          </div>
+        </div>
+        <div class="lg:col-span-8">
+          <div id="slot-wrap" class="hidden mb-5">
+            <p class="text-[14px] font-semibold">Kies een moment in de toonzaal</p>
+            <div id="slot-days" class="mt-2 flex flex-wrap gap-2"></div>
+            <div id="slot-times" class="mt-3 flex flex-wrap gap-2"></div>
+            <p class="mt-2 text-[12px] text-navy/65">Donderdag en zondag gesloten. Namiddagen op afspraak.</p>
+          </div>
+          <div class="grid sm:grid-cols-3 gap-3">
+            <label class="block"><span class="text-[14px] font-semibold">Naam</span><input id="r-n" class="mt-1.5 w-full border border-navy/20 rounded-md px-3 py-2.5 bg-white" autocomplete="name" /></label>
+            <label class="block"><span class="text-[14px] font-semibold">Telefoon of e-mail</span><input id="r-c" class="mt-1.5 w-full border border-navy/20 rounded-md px-3 py-2.5 bg-white" autocomplete="tel" /></label>
+            <label class="block"><span class="text-[14px] font-semibold">Gemeente</span><input id="r-g" class="mt-1.5 w-full border border-navy/20 rounded-md px-3 py-2.5 bg-white" autocomplete="address-level2" placeholder="vb. Edegem" /></label>
+          </div>
+          <p id="r-err" class="hidden mt-3 text-[14px] text-sred">Vul je naam en een telefoonnummer of e-mail in, dan nemen we contact op.</p>
+          <button class="btn mt-5 w-full sm:w-auto bg-sred hover:bg-[#a02c22] text-white font-semibold rounded-md px-7 py-3.5" id="r-btn">Vraag offerte aan</button>
+          <div id="r-ok" class="hidden mt-5 rounded-md bg-white border-l-4 border-sred p-5">
+            <p class="font-big font-extrabold uppercase text-2xl text-navy" id="r-ok-t">Aanvraag ontvangen</p>
+            <p id="r-sum" class="mt-2 text-navy/80 leading-relaxed"></p>
+            <p class="mt-3 text-[13px] text-navy/60">Dit is een concept-demo: er werd niets verzonden.</p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Toonzaal -->
+  <section id="toonzaal" class="max-w-7xl mx-auto px-5 py-20 grid lg:grid-cols-12 gap-10 items-center">
+    <figure class="rv lg:col-span-7 rounded-md overflow-hidden">
+      <img src="images/toonzaal.jpg" alt="Toonzaal van BUMA in Wilrijk met garagepoorten en voordeuren tussen rode wanden" class="w-full aspect-[3/2] object-cover" loading="lazy" />
+    </figure>
+    <div class="lg:col-span-5">
+      <h2 class="rv font-big font-extrabold uppercase text-[clamp(2.2rem,4.4vw,3.6rem)] leading-[.95] text-navy">Zie, voel en bedien ze in onze toonzaal</h2>
+      <p class="rv mt-4 text-[17px] text-navy/80 leading-relaxed">Laat je inspireren door de vele modellen en krijg persoonlijk advies. Poorten en voordeuren staan naast elkaar opgesteld, zoals ze in je gevel komen.</p>
+      <div class="rv mt-6 grid grid-cols-2 gap-3">
+        <img src="images/pastorie-partnerlook.jpg" alt="Pastorie-kantelpoort in aluminium met Presence-voordeur in partnerlook" class="w-full aspect-[4/3] object-cover rounded-md" loading="lazy" />
+        <img src="images/bumax-vlak-zwart.jpg" alt="Sectionaalpoort in drie grote vlakke zwarte Bumax-panelen" class="w-full aspect-[4/3] object-cover rounded-md" loading="lazy" />
+      </div>
+      <a href="#configurator" class="rv btn mt-7 inline-flex bg-navy hover:bg-ink text-paper font-semibold rounded-md px-6 py-3.5">Plan een toonzaalbezoek</a>
+    </div>
+  </section>
+
+  <!-- Service + historiek -->
+  <section id="service" class="bg-navy text-paper">
+    <div class="max-w-7xl mx-auto px-5 py-20 grid lg:grid-cols-12 gap-12">
+      <div class="lg:col-span-5">
+        <h2 class="rv font-big font-extrabold uppercase text-[clamp(2.2rem,4.4vw,3.6rem)] leading-[.95]">Als fabrikant hebben we elk wisselstuk</h2>
+        <p class="rv mt-4 text-paper/80 text-[17px] leading-relaxed">Je wacht nooit lang op een reparatie: alle wisselstukken liggen in ons magazijn. We herstellen ook bestaande poorten en voordeuren, en maken duidelijke afspraken over de uitvoeringsdatum.</p>
+        <ul class="rv mt-6 space-y-3 text-[15px]">
+          <li class="flex gap-3"><span class="mt-2 w-2 h-2 bg-sred shrink-0"></span>Minstens 5 jaar garantie op de onderdelen van al onze poorten, 2 jaar op automatisatie</li>
+          <li class="flex gap-3"><span class="mt-2 w-2 h-2 bg-sred shrink-0"></span>Enkel eigen, opgeleide monteurs met ervaring in poorten produceren</li>
+          <li class="flex gap-3"><span class="mt-2 w-2 h-2 bg-sred shrink-0"></span>Afwerking buitenzijde met siliconen altijd inbegrepen</li>
+        </ul>
+        <a href="tel:+32495797813" class="rv btn mt-8 inline-flex border border-paper/30 hover:border-paper rounded-md px-6 py-3.5 font-semibold">Herstelling? Bel 0495 79 78 13</a>
+      </div>
+      <ol class="lg:col-span-7 space-y-6">
+        <li class="rv grid grid-cols-[88px_1fr] gap-5 border-t border-paper/15 pt-5"><p class="font-big font-extrabold text-3xl text-alu">1958</p><p class="text-paper/85 leading-relaxed">De familie Bulkmans richt BUMA op, eerst gespecialiseerd in metaalconstructies.</p></li>
+        <li class="rv grid grid-cols-[88px_1fr] gap-5 border-t border-paper/15 pt-5"><p class="font-big font-extrabold text-3xl text-alu">1961</p><p class="text-paper/85 leading-relaxed">Hubert Bulkmans start in de Oudestraat in Wilrijk met ramen, deuren en garagepoorten. Al snel blijven enkel de poorten over.</p></li>
+        <li class="rv grid grid-cols-[88px_1fr] gap-5 border-t border-paper/15 pt-5"><p class="font-big font-extrabold text-3xl text-alu">1970s</p><p class="text-paper/85 leading-relaxed">Houten en volledig metalen kantelpoorten, en de eerste automatisering.</p></li>
+        <li class="rv grid grid-cols-[88px_1fr] gap-5 border-t border-paper/15 pt-5"><p class="font-big font-extrabold text-3xl text-alu">1988</p><p class="text-paper/85 leading-relaxed">Volledig eigen productie van sectionaalpoorten, aangevuld met voordeuren.</p></li>
+        <li class="rv grid grid-cols-[88px_1fr] gap-5 border-t border-paper/15 pt-5"><p class="font-big font-extrabold text-3xl text-sred">1992</p><p class="text-paper/85 leading-relaxed">Zoon Bart Bulkmans wordt zaakvoerder. Vandaag: Bumax, ons eigen aluminium topproduct.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-7xl mx-auto px-5 py-20 grid lg:grid-cols-12 gap-10">
+    <div class="lg:col-span-6">
+      <h2 class="font-big font-extrabold uppercase text-[clamp(2.2rem,4.4vw,3.6rem)] leading-[.95] text-navy">Toonzaal Oudestraat 121</h2>
+      <p class="mt-4 text-[17px] text-navy/80 leading-relaxed max-w-[50ch]">We plaatsen in Wilrijk, Antwerpen, Hoboken, Edegem, Aartselaar, Kontich, Mortsel, Hemiksem, Schelle, Boom en de rest van de regio.</p>
+      <div class="mt-7 space-y-3">
+        <a href="tel:+3238272616" class="btn flex justify-between items-center bg-paper border border-navy/10 hover:border-sred rounded-md px-5 py-4"><span class="font-semibold">03 827 26 16</span><span class="text-[13px] text-navy/60">Tijdens openingsuren</span></a>
+        <a href="tel:+32495797813" class="btn flex justify-between items-center bg-paper border border-navy/10 hover:border-sred rounded-md px-5 py-4"><span class="font-semibold">0495 79 78 13</span><span class="text-[13px] text-navy/60">Andere momenten</span></a>
+        <a href="mailto:info@buma.be" class="btn flex justify-between items-center bg-paper border border-navy/10 hover:border-sred rounded-md px-5 py-4"><span class="font-semibold">info@buma.be</span><span class="text-[13px] text-navy/60">Mailen</span></a>
+        <a href="https://www.google.com/maps/search/?api=1&query=BUMA+Oudestraat+121+2610+Wilrijk" target="_blank" rel="noopener" class="btn flex justify-between items-center bg-paper border border-navy/10 hover:border-sred rounded-md px-5 py-4"><span class="font-semibold">Oudestraat 121, 2610 Wilrijk</span><span class="text-[13px] text-navy/60">Route</span></a>
+      </div>
+    </div>
+    <div class="lg:col-span-6 bg-paper border border-navy/10 rounded-md p-7">
+      <h3 class="font-big font-extrabold uppercase text-2xl text-navy">Openingsuren toonzaal</h3>
+      <dl class="mt-5 text-[15px] divide-y divide-navy/10">
+        <div class="flex justify-between py-2.5"><dt class="text-navy/70">Ma, di, wo, vr</dt><dd class="font-semibold text-right">10–12.30 u<br><span class="font-normal text-navy/70">14–17 u op afspraak</span></dd></div>
+        <div class="flex justify-between py-2.5"><dt class="text-navy/70">Donderdag</dt><dd class="font-semibold">gesloten</dd></div>
+        <div class="flex justify-between py-2.5"><dt class="text-navy/70">Zaterdag</dt><dd class="font-semibold">10.30–13 u</dd></div>
+        <div class="flex justify-between py-2.5"><dt class="text-navy/70">Zondag</dt><dd class="font-semibold">gesloten</dd></div>
+      </dl>
+      <p class="mt-4 text-[13px] text-navy/60">Andere momenten op afspraak via 0495 79 78 13 · BUMA BVBA · fax 03 825 29 61</p>
+    </div>
+  </section>
+
+  <footer class="bg-ink text-paper/70 pb-20 md:pb-0">
+    <div class="max-w-7xl mx-auto px-5 py-8 flex flex-col md:flex-row justify-between gap-4 text-[13px]">
+      <p>BUMA · garagepoorten en voordeuren · Oudestraat 121, 2610 Wilrijk</p>
+      <p class="max-w-md">Concept-herontwerp door <a href="mailto:nicolas@saspire.org" class="underline">Saspire</a> als vrijblijvend voorstel. Dit is niet de officiële website van BUMA.</p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden grid grid-cols-2 text-[15px] font-semibold shadow-[0_-6px_20px_rgba(0,0,0,.2)]">
+    <a href="tel:+3238272616" class="bg-navy text-paper py-3.5 text-center">Bel 03 827 26 16</a>
+    <a href="#configurator" class="bg-sred text-white py-3.5 text-center">Stel samen</a>
+  </div>
+
+  <script>
+    document.documentElement.classList.add('js');
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+    document.querySelectorAll('.rv').forEach(el => io.observe(el));
+    const $ = id => document.getElementById(id);
+    const NS = 'http://www.w3.org/2000/svg';
+
+    /* ---------- Data (gamma van buma.be) ---------- */
+    const MAT = {
+      sectionaal: [['bumax-gelijnd','Aluminium Bumax, gelijnde panelen'],['bumax-vlak','Aluminium Bumax, vlakke panelen'],['staal','Dubbelwandige staalplaat'],['alu-kader','Aluminium kaders'],['hout','Hout']],
+      kantel: [['alu','Aluminium'],['metaal','Metaal']],
+      vleugel: [['alu','Aluminium'],['hout','Hout']],
+      pastorie: [['alu-sandwich','Aluminium sandwichpanelen'],['pvc','Pvc-planchetten'],['hout','Houten planken'],['multiplex','Waterbestendige multiplex']],
+      schuif: [['poort','Schuifpoort'],['hek','Schuifhek']],
+    };
+    const KLEUR = [
+      ['7016','RAL 7016 antracietgrijs','#3a4045'], ['9005','RAL 9005 gitzwart','#16171a'], ['9016','RAL 9016 verkeerswit','#efefea'],
+      ['7039','RAL 7039 kwartsgrijs','#6c6a62'], ['eik','Houtimitatie gouden eik','url(#wood-eik)', '#b0702c'], ['ceder','Houtimitatie vergrijsde ceder','url(#wood-ceder)', '#8b877e'],
+      ['meranti','Meranti (echt hout)','url(#wood-meranti)', '#7a3a22'],
+    ];
+    KLEUR.forEach((k, i) => $('f-kleur').insertAdjacentHTML('beforeend',
+      `<label class="sw cursor-pointer" title="${k[1]}"><input type="radio" name="kleur" value="${k[0]}" class="sr-only" ${i === 0 ? 'checked' : ''} aria-label="${k[1]}" /><span class="block w-10 h-10 rounded-full border border-navy/25" style="background:${k[3] ? `linear-gradient(90deg, ${k[3]}, ${k[3]}cc, ${k[3]})` : k[2]}"></span></label>`));
+
+    function fillMat() {
+      const t = document.querySelector('input[name=type]:checked').value;
+      $('f-mat').innerHTML = MAT[t].map(m => `<option value="${m[0]}">${m[1]}</option>`).join('');
+    }
+    fillMat();
+
+    function el(tag, attrs, parent) { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); parent.appendChild(e); return e; }
+
+    let state = {};
+    function draw() {
+      const type = document.querySelector('input[name=type]:checked').value;
+      const mat = $('f-mat').value, matTxt = $('f-mat').selectedOptions[0].text;
+      const B = +$('f-b').value, H = +$('f-h').value;
+      const kv = document.querySelector('input[name=kleur]:checked').value;
+      const K = KLEUR.find(k => k[0] === kv);
+      const fill = K[2], line = K[3] ? 'rgba(0,0,0,.28)' : (kv === '9016' ? 'rgba(0,0,0,.18)' : 'rgba(255,255,255,.16)');
+      const glas = $('o-glas').checked, roost = $('o-rooster').checked, motor = $('o-motor').value;
+      $('wall').setAttribute('fill', `url(#${$('f-gevel').value})`);
+      const dOn = $('d-on').checked, dMat = $('d-mat').value, dModel = $('d-model').value;
+      $('v-b').textContent = B + ' cm'; $('v-h').textContent = H + ' cm'; $('v-kleur').textContent = K[1];
+      $('d-opts').style.opacity = dOn ? 1 : .4;
+
+      // scale: 1 cm = 0.82 px, ground at y=342
+      const s = .82, gw = B * s, gh = H * s, gy = 342 - gh;
+      const gx = dOn ? Math.max(24, 330 - gw) : (600 - gw) / 2;
+      const g = $('gate-g'); g.innerHTML = '';
+      // lintel / reveal
+      el('rect', { x: gx - 8, y: gy - 10, width: gw + 16, height: gh + 10, fill: '#5d6268' }, g);
+      if (type === 'schuif') {
+        el('rect', { x: gx, y: gy, width: gw, height: gh, fill: '#3b4a3a' }, g); // oprit-achtergrond
+        const bars = mat === 'hek' ? Math.round(gw / 9) : Math.round(gw / 4.5);
+        el('rect', { x: gx, y: gy + 4, width: gw, height: 6, fill }, g);
+        el('rect', { x: gx, y: 334, width: gw, height: 6, fill }, g);
+        for (let i = 0; i <= bars; i++) el('rect', { x: gx + i * (gw / bars) - 1.5, y: gy + 4, width: 3, height: gh - 6, fill }, g);
+      } else {
+        el('rect', { x: gx, y: gy, width: gw, height: gh, fill }, g);
+        const panels = type === 'sectionaal' ? 4 : 1;
+        if (type === 'sectionaal') {
+          for (let i = 1; i < panels; i++) el('line', { x1: gx, x2: gx + gw, y1: gy + i * gh / panels, y2: gy + i * gh / panels, stroke: 'rgba(0,0,0,.35)', 'stroke-width': 1.6 }, g);
+          if (mat === 'bumax-gelijnd' || mat === 'staal') { const step = mat === 'staal' ? gh / 12 : gh / 20; for (let y = gy + step; y < 342; y += step) el('line', { x1: gx, x2: gx + gw, y1: y, y2: y, stroke: line, 'stroke-width': .8 }, g); }
+          if (mat === 'alu-kader') for (let i = 0; i < panels; i++) for (let c = 0; c < 4; c++) el('rect', { x: gx + 6 + c * (gw - 12) / 4, y: gy + i * gh / panels + 5, width: (gw - 12) / 4 - 6, height: gh / panels - 10, fill: 'none', stroke: line, 'stroke-width': 1.4 }, g);
+          if (mat === 'hout') for (let y = gy + 7; y < 342; y += 7) el('line', { x1: gx, x2: gx + gw, y1: y, y2: y, stroke: 'rgba(0,0,0,.25)', 'stroke-width': .8 }, g);
+        }
+        if (type === 'kantel') {
+          el('rect', { x: gx + 3, y: gy + 3, width: gw - 6, height: gh - 6, fill: 'none', stroke: 'rgba(0,0,0,.4)', 'stroke-width': 3 }, g);
+          for (let x = gx + 10; x < gx + gw - 6; x += 10) el('line', { x1: x, x2: x, y1: gy + 6, y2: 336, stroke: line, 'stroke-width': .9 }, g);
+          el('rect', { x: gx + gw / 2 - 9, y: gy + gh * .55, width: 18, height: 4, rx: 2, fill: '#c9ced3' }, g);
+        }
+        if (type === 'vleugel' || type === 'pastorie') {
+          for (let x = gx + 8; x < gx + gw - 4; x += 8) el('line', { x1: x, x2: x, y1: gy, y2: 342, stroke: line, 'stroke-width': .9 }, g);
+          el('line', { x1: gx + gw / 2, x2: gx + gw / 2, y1: gy, y2: 342, stroke: 'rgba(0,0,0,.45)', 'stroke-width': 2.5 }, g);
+          el('rect', { x: gx + gw / 2 - 9, y: gy + gh * .52, width: 4, height: 18, rx: 2, fill: '#c9ced3' }, g);
+          el('rect', { x: gx + gw / 2 + 5, y: gy + gh * .52, width: 4, height: 18, rx: 2, fill: '#c9ced3' }, g);
+        }
+        if (type === 'pastorie') {
+          el('rect', { x: gx + 2, y: gy + 2, width: gw - 4, height: gh - 4, fill: 'none', stroke: 'rgba(0,0,0,.35)', 'stroke-width': 4 }, g);
+          el('line', { x1: gx, x2: gx + gw, y1: 338 - gh * .25, y2: 338 - gh * .25, stroke: 'rgba(0,0,0,.3)', 'stroke-width': 3 }, g);
+        }
+        if (glas) {
+          const n = Math.max(3, Math.round(gw / 55)), wy = gy + gh * (type === 'sectionaal' ? .06 : .08), wh = gh * (type === 'sectionaal' ? .13 : .12);
+          const usable = type === 'vleugel' || type === 'pastorie' ? [[gx, gw / 2], [gx + gw / 2, gw / 2]] : [[gx, gw]];
+          usable.forEach(([x0, w]) => { const m = type === 'sectionaal' ? n : Math.max(2, Math.round(n / 2)); for (let i = 0; i < m; i++) el('rect', { x: x0 + 8 + i * (w - 16) / m, y: wy, width: (w - 16) / m - 6, height: wh, fill: '#9fb6c8', stroke: 'rgba(0,0,0,.4)', 'stroke-width': 1 }, g); });
+        }
+        if (roost) [[.18], [.72]].forEach(([p]) => { const rx = gx + gw * p, ry = 342 - gh * .1; el('rect', { x: rx, y: ry, width: gw * .1, height: 9, fill: 'rgba(0,0,0,.35)' }, g); for (let i = 0; i < 3; i++) el('line', { x1: rx, x2: rx + gw * .1, y1: ry + 2 + i * 2.5, y2: ry + 2 + i * 2.5, stroke: 'rgba(255,255,255,.3)', 'stroke-width': .7 }, g); });
+        el('rect', { x: gx, y: gy, width: gw, height: gh, fill: 'url(#sheen)' }, g);
+      }
+      if (motor === 'buiten' && type !== 'schuif') el('rect', { x: gx + gw / 2 - 22, y: gy - 24, width: 44, height: 12, rx: 3, fill: '#2b2f36' }, g);
+
+      // door
+      const d = $('door-g'); d.innerHTML = '';
+      if (dOn) {
+        const dw = 100 * s * 1.05, dh = 225 * s, dx = Math.min(600 - dw - 30, gx + gw + 70), dy = 342 - dh;
+        const dfill = dMat === 'hout' && !K[3] ? 'url(#wood-meranti)' : fill;
+        el('rect', { x: dx - 7, y: dy - 7, width: dw + 14, height: dh + 7, fill: '#5d6268' }, d);
+        el('rect', { x: dx, y: dy, width: dw, height: dh, fill: dfill }, d);
+        if (dModel === 'strook') { el('rect', { x: dx + dw * .64, y: dy + 14, width: dw * .14, height: dh - 28, fill: '#9fb6c8', stroke: 'rgba(0,0,0,.4)' }, d); el('rect', { x: dx + dw * .2, y: dy + dh * .3, width: 4, height: dh * .38, rx: 2, fill: '#c9ced3' }, d); }
+        if (dModel === 'sier') { el('rect', { x: dx + 10, y: dy + 14, width: dw - 20, height: dh * .4, fill: 'none', stroke: 'rgba(0,0,0,.35)', 'stroke-width': 2 }, d); el('rect', { x: dx + 10, y: dy + dh * .5, width: dw - 20, height: dh * .42, fill: 'none', stroke: 'rgba(0,0,0,.35)', 'stroke-width': 2 }, d); el('rect', { x: dx + dw / 2 - 8, y: dy + 24, width: 16, height: 16, fill: '#9fb6c8' }, d); el('rect', { x: dx + dw - 16, y: dy + dh * .46, width: 4, height: 22, rx: 2, fill: '#c9ced3' }, d); }
+        if (dModel === 'glas') { el('rect', { x: dx + 9, y: dy + 9, width: dw - 18, height: dh - 18, fill: '#9fb6c8', stroke: 'rgba(0,0,0,.45)', 'stroke-width': 2 }, d); el('rect', { x: dx + dw - 15, y: dy + dh * .35, width: 4, height: dh * .3, rx: 2, fill: '#c9ced3' }, d); }
+        el('rect', { x: dx, y: dy, width: dw, height: dh, fill: 'url(#sheen)' }, d);
+        el('rect', { x: dx - 10, y: 342, width: dw + 20, height: 6, fill: '#7d848b' }, d);
+        // huisnummer
+        el('text', { x: dx + dw + 18, y: dy + 24, 'font-family': 'Manrope', 'font-size': 15, 'font-weight': 700, fill: '#f1f1ee' }, d).textContent = '121';
+      }
+      const typeTxt = { sectionaal: 'Sectionaalpoort', kantel: 'Kantelpoort', vleugel: 'Vleugelpoort', pastorie: 'Pastoriepoort', schuif: 'Schuifpoort' }[type];
+      const opts = [glas && type !== 'schuif' ? 'glassectie' : '', roost && type !== 'schuif' ? 'verluchtingsroosters' : '', motor !== 'geen' ? 'motor ' + motor + ' de gevel' : 'manueel'].filter(Boolean);
+      const deur = dOn ? ` + voordeur ${dMat}, ${$('d-model').selectedOptions[0].text.toLowerCase()}, in partnerlook` : '';
+      $('sum').textContent = `${typeTxt}, ${matTxt.toLowerCase()}, ${B} × ${H} cm, ${K[1]}, ${opts.join(', ')}${deur}.`;
+      state = { sum: $('sum').textContent };
+    }
+    document.querySelectorAll('#f-type input').forEach(i => i.addEventListener('change', () => { fillMat(); draw(); }));
+    document.querySelectorAll('#cfg input, #cfg select').forEach(e => { e.addEventListener('input', draw); e.addEventListener('change', draw); });
+    draw();
+
+    /* ---------- Aanvraag + toonzaalslots (echte openingsuren) ---------- */
+    const DAGEN = ['zo','ma','di','wo','do','vr','za'], MND = ['jan','feb','mrt','apr','mei','jun','jul','aug','sep','okt','nov','dec'];
+    const SLOTS = { 1: ['10:00','11:00','11:45','14:00 (afspraak)','15:30 (afspraak)'], 2: null, 3: null, 5: null, 6: ['10:30','11:30','12:15'] };
+    [2,3,5].forEach(k => SLOTS[k] = SLOTS[1]);
+    let dt = new Date(), c = 0, firstDay = null;
+    while (c < 8) { dt.setDate(dt.getDate() + 1); const wd = dt.getDay(); if (!SLOTS[wd]) continue;
+      const lab = `${DAGEN[wd]} ${dt.getDate()} ${MND[dt.getMonth()]}`;
+      $('slot-days').insertAdjacentHTML('beforeend', `<label class="pick cursor-pointer"><input type="radio" name="dag" value="${lab}" data-wd="${wd}" class="sr-only" ${c === 0 ? 'checked' : ''} /><span class="block border border-navy/20 rounded-md px-3 py-2 text-[14px] bg-white">${lab}</span></label>`);
+      c++; }
+    function times() {
+      const wd = +document.querySelector('input[name=dag]:checked').dataset.wd;
+      $('slot-times').innerHTML = SLOTS[wd].map((t, i) => `<label class="pick cursor-pointer"><input type="radio" name="uur" value="${t}" class="sr-only" ${i === 0 ? 'checked' : ''} /><span class="block border border-navy/20 rounded-md px-3 py-2 text-[14px] bg-white">${t}</span></label>`).join('');
+    }
+    $('slot-days').addEventListener('change', times); times();
+    document.querySelectorAll('input[name=next]').forEach(r => r.addEventListener('change', () => {
+      const tz = document.querySelector('input[name=next]:checked').value === 'toonzaal';
+      $('slot-wrap').classList.toggle('hidden', !tz);
+      $('r-btn').textContent = tz ? 'Reserveer mijn toonzaalbezoek' : 'Vraag offerte aan';
+    }));
+    $('req').addEventListener('submit', e => {
+      e.preventDefault();
+      const n = $('r-n').value.trim(), ct = $('r-c').value.trim();
+      if (!n || !ct) { $('r-err').classList.remove('hidden'); (n ? $('r-c') : $('r-n')).focus(); return; }
+      $('r-err').classList.add('hidden');
+      const tz = document.querySelector('input[name=next]:checked').value === 'toonzaal';
+      if (tz) {
+        const dag = document.querySelector('input[name=dag]:checked').value, uur = document.querySelector('input[name=uur]:checked').value;
+        $('r-ok-t').textContent = 'Toonzaalbezoek gereserveerd';
+        $('r-sum').textContent = `Bedankt ${n}. We verwachten je op ${dag} om ${uur} in de Oudestraat 121. We zetten klaar: ${state.sum} Bevestiging via ${ct}.`;
+      } else {
+        $('r-ok-t').textContent = 'Offerteaanvraag ontvangen';
+        $('r-sum').textContent = `Bedankt ${n}. Je vroeg een offerte voor: ${state.sum} We bellen je via ${ct} om een opmeting${$('r-g').value ? ' in ' + $('r-g').value : ''} in te plannen.`;
+      }
+      $('r-ok').classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>

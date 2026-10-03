@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>KVW keukens &amp; interieur | Maatwerk uit eigen atelier in Kontich</title>
+  <meta name="description" content="Keukens, badkamermeubels en kasten op maat, gemaakt in het eigen atelier van KVW in Kontich. Familiebedrijf sinds 1976. Eén aanspreekpunt van ontwerp tot plaatsing. Afspraak 7 op 7." />
+  <link rel="canonical" href="https://www.kvw-keukens.be/" />
+  <meta name="theme-color" content="#2a2420" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="KVW keukens &amp; interieur" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="KVW keukens &amp; interieur | Maatwerk uit eigen atelier" />
+  <meta property="og:description" content="Nu kwaliteit, later geen spijt. Keukens en interieur op maat uit Kontich, sinds 1976." />
+  <meta property="og:url" content="https://www.kvw-keukens.be/" />
+  <meta property="og:image" content="images/keuken-eiland.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232a2420'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='900' font-size='15' text-anchor='middle' fill='%23ca051c'%3EK%3C/text%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "KVW keukens & interieur",
+    "alternateName": "Keukens Van Wesemael",
+    "slogan": "Nu kwaliteit... later geen spijt",
+    "description": "Keukens, badkamermeubels, bureau, dressing en bergkasten op maat, vervaardigd in eigen atelier. Ontwerp, offerte, productie en plaatsing door één aanspreekpunt.",
+    "url": "https://www.kvw-keukens.be/",
+    "telephone": "+3234574314",
+    "email": "info@kvw-keukens.be",
+    "foundingDate": "1976",
+    "founder": { "@type": "Person", "name": "Karel Van Wesemael" },
+    "image": "images/keuken-eiland.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Koningin Astridlaan 58C",
+      "postalCode": "2550",
+      "addressLocality": "Kontich",
+      "addressCountry": "BE"
+    },
+    "areaServed": ["Kontich", "Edegem", "Aartselaar", "Lint", "Hove", "Mortsel", "Wilrijk", "Antwerpen", "Boechout", "Duffel", "Rumst"],
+    "contactPoint": { "@type": "ContactPoint", "telephone": "+32475579937", "contactType": "sales", "availableLanguage": "nl", "hoursAvailable": "Mo-Su op afspraak" }
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { display: ['"Bricolage Grotesque"', 'sans-serif'], sans: ['"Public Sans"', 'system-ui', 'sans-serif'] },
+          colors: {
+            gerookt: '#2a2420',  /* smoked oak */
+            noten: '#433831',    /* walnut */
+            berk: '#f2f0ec',     /* birch ply / plaster */
+            zand: '#cba896',     /* KVW tan */
+            kvw: '#ca051c',      /* KVW logo red */
+            potlood: '#6d635b',  /* carpenter's pencil */
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root { --accent: #ca051c; --ease: cubic-bezier(0.23, 1, 0.32, 1); }
+    html { scroll-behavior: smooth; }
+    body { text-rendering: optimizeLegibility; }
+    h1, h2, h3 { text-wrap: balance; }
+    p { text-wrap: pretty; }
+    .js .rv { opacity: 0; transform: translateY(16px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+    .js .rv.in { opacity: 1; transform: none; }
+
+    /* Dimension lines: the maatwerk motif */
+    .dim { stroke: #fff; stroke-width: 1.4; fill: none; }
+    .dim-draw { stroke-dasharray: 700; stroke-dashoffset: 700; animation: draw 1.4s .5s var(--ease) forwards; }
+    .dim-label { opacity: 0; animation: fade .6s 1.5s var(--ease) forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes fade { to { opacity: 1; } }
+
+    .flt[aria-pressed="true"] { background: #2a2420; color: #fff; border-color: #2a2420; }
+    .gitem { transition: opacity .35s var(--ease), transform .35s var(--ease); }
+    .gitem.hide { display: none; }
+    .gitem img { transition: transform .6s var(--ease); }
+    .gitem:hover img { transform: scale(1.03); }
+
+    .day[aria-pressed="true"] { background: #2a2420; color: #fff; border-color: #2a2420; }
+    .day.wk { background: #f6ede8; }
+    .day.wk[aria-pressed="true"] { background: #2a2420; }
+    .slot[aria-pressed="true"] { background: #ca051c; color: #fff; border-color: #ca051c; }
+    .seg input { position: absolute; opacity: 0; pointer-events: none; }
+    .seg input:checked + span { background: #2a2420; color: #fff; border-color: #2a2420; }
+    .seg input:focus-visible + span { outline: 2px solid #ca051c; outline-offset: 2px; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), border-color .18s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid #ca051c; outline-offset: 3px; }
+
+    #lb { transition: opacity .25s var(--ease); }
+    #lb[hidden] { display: none; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .rv { opacity: 1; transform: none; transition: none; }
+      .dim-draw { animation: none; stroke-dashoffset: 0; }
+      .dim-label { animation: none; opacity: 1; }
+      .gitem img { transition: none; }
+    }
+    @media (max-width: 767px) { body { padding-bottom: 58px; } .sx-cta { bottom: 76px !important; } }
+  </style>
+</head>
+<body class="bg-berk text-gerookt font-sans antialiased">
+
+  <div class="fixed bottom-4 right-4 z-50 hidden md:block">
+    <span class="text-[11px] tracking-wider text-white bg-gerookt/90 rounded-full px-3 py-1.5 backdrop-blur">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-gerookt text-white">
+    <nav class="max-w-6xl mx-auto px-5 h-[72px] flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top" aria-label="KVW keukens &amp; interieur, naar boven"><img src="images/logo.png" alt="KVW keukens &amp; interieur" width="261" height="149" class="h-[50px] w-auto" /></a>
+      <div class="hidden lg:flex items-center gap-7 text-[15px] text-white/75">
+        <a href="#atelier" class="hover:text-white">Atelier</a>
+        <a href="#werkwijze" class="hover:text-white">Werkwijze</a>
+        <a href="#inspiratie" class="hover:text-white">Inspiratie</a>
+        <a href="#afspraak" class="hover:text-white">Afspraak</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="tel:+32475579937" class="hidden sm:inline text-[15px] text-white/80 hover:text-white whitespace-nowrap">0475 57 99 37</a>
+        <a href="#afspraak" class="btn bg-kvw hover:bg-[#a90418] text-white font-semibold text-[14px] rounded-full px-4 py-2.5 whitespace-nowrap">Afspraak 7/7</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="bg-gerookt text-white">
+    <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-12 gap-10 lg:gap-8 items-center pt-10 pb-14 lg:pt-12 lg:pb-16">
+      <div class="lg:col-span-6">
+        <p class="text-zand font-semibold text-[16px]">KVW keukens &amp; interieur, Kontich, sinds 1976</p>
+        <h1 class="mt-4 font-display font-bold text-[clamp(2.5rem,4.8vw,4rem)] leading-[1.0] tracking-[-0.02em]">Keukens op maat, gemaakt in ons eigen atelier.</h1>
+        <p class="mt-6 text-[18px] leading-relaxed text-white/75 max-w-[44ch]">Geen geïmporteerde fabrieksmeubelen: elke kast, lade en werkblad wordt bij KVW gemaakt. Met één aanspreekpunt van ontwerp tot plaatsing, en een afspraak die past, ook 's avonds en in het weekend.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#afspraak" class="btn bg-kvw hover:bg-[#a90418] text-white font-semibold rounded-full px-6 py-3.5">Plan een afspraak, 7 op 7</a>
+          <a href="#inspiratie" class="btn border border-white/30 hover:border-white text-white font-semibold rounded-full px-6 py-3.5">Bekijk realisaties</a>
+        </div>
+        <p class="mt-9 font-display text-zand text-[19px]">Nu kwaliteit… later geen spijt.</p>
+      </div>
+      <div class="lg:col-span-6">
+        <figure class="relative rounded-xl overflow-hidden aspect-[4/3.4]">
+          <img src="images/keuken-eiland.jpg" alt="Strakke maatkeuken met kookeiland en doorlopend wit werkblad, gemaakt door KVW" class="w-full h-full object-cover" />
+          <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
+            <g class="dim dim-draw">
+              <path d="M520 300 V262 M1100 300 V262 M520 276 H1100" />
+              <path d="M520 276 l14 -7 v14 z M1100 276 l-14 -7 v14 z" fill="#fff" />
+            </g>
+          </svg>
+          <div class="dim-label absolute left-[60%] top-[26%] -translate-x-1/2 bg-white text-gerookt text-[13px] font-semibold rounded px-2.5 py-1 whitespace-nowrap shadow" aria-hidden="true">op maat, tot op de mm</div>
+          <figcaption class="absolute bottom-3 left-3 bg-gerookt/85 backdrop-blur text-white text-[13px] rounded-md px-3 py-1.5">Realisatie KVW: kookeiland met doorlopend werkblad</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facts strip -->
+  <section class="border-b border-gerookt/10 bg-white">
+    <div class="max-w-6xl mx-auto px-5 py-8 grid grid-cols-2 lg:grid-cols-4 gap-6 text-[15px]">
+      <p><span class="block font-display font-bold text-3xl">1976</span>opgericht door Karel Van Wesemael</p>
+      <p><span class="block font-display font-bold text-3xl">2e generatie</span>Peter, in de zaak sinds 1989</p>
+      <p><span class="block font-display font-bold text-3xl">100%</span>eigen atelier, geen fabrieksmeubelen</p>
+      <p><span class="block font-display font-bold text-3xl">7 op 7</span>afspraak, ook 's avonds en weekend</p>
+    </div>
+  </section>
+
+  <!-- Atelier -->
+  <section id="atelier" class="max-w-6xl mx-auto px-5 py-20 lg:py-24 grid lg:grid-cols-12 gap-10 items-center">
+    <div class="lg:col-span-6 order-2 lg:order-1 grid grid-cols-2 gap-3">
+      <img src="images/kastenwand.jpg" alt="Kastenwand op maat in houtdecor in een inkomhal met trap" class="rv rounded-lg w-full h-[300px] sm:h-[420px] object-cover" loading="lazy" />
+      <div class="grid gap-3">
+        <img src="images/badkamer.jpg" alt="Badkamermeubel op maat met dubbele wastafel en hoge kolomkast" class="rv rounded-lg w-full h-[144px] sm:h-[204px] object-cover" loading="lazy" />
+        <div class="rv rounded-lg bg-zand/40 p-5 flex flex-col justify-end h-[144px] sm:h-[204px]">
+          <p class="font-display font-semibold text-[18px] leading-snug">Keuken, badkamer, bureau, dressing of bergkast</p>
+        </div>
+      </div>
+    </div>
+    <div class="lg:col-span-6 order-1 lg:order-2">
+      <h2 class="rv font-display font-bold text-[clamp(2rem,3.8vw,3rem)] leading-[1.05] tracking-[-0.015em]">Wie tekent, maakt ook. Dat ziet u aan de afwerking.</h2>
+      <p class="rv mt-5 text-potlood leading-relaxed">KVW werd in 1976 opgericht door Karel Van Wesemael. Zoon Peter werkt sinds 1989 in het bedrijf en nam eind 2011 de fakkel over. Alle kasten en meubels worden in eigen atelier vervaardigd, en Peter is uw aanspreekpunt van ontwerp en offerte tot productie en plaatsing.</p>
+      <p class="rv mt-4 text-potlood leading-relaxed">Buitenmaten of standaardmaten: kwaliteit ligt ook in precisiewerk en in de afwerking van details. En mond-aan-mondreclame is een van onze belangrijkste kanalen, daarom kan u rekenen op een correcte en snelle service na verkoop.</p>
+      <ul class="rv mt-7 grid sm:grid-cols-2 gap-x-6 gap-y-3 text-[15.5px]">
+        <li class="flex gap-3"><span class="mt-[9px] w-4 h-px bg-kvw shrink-0"></span>Keukens op maat</li>
+        <li class="flex gap-3"><span class="mt-[9px] w-4 h-px bg-kvw shrink-0"></span>Badkamermeubelen op maat</li>
+        <li class="flex gap-3"><span class="mt-[9px] w-4 h-px bg-kvw shrink-0"></span>Dressing en ingebouwde kasten</li>
+        <li class="flex gap-3"><span class="mt-[9px] w-4 h-px bg-kvw shrink-0"></span>Bureel-, vestiaire- en bergkasten</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Werkwijze (real sequence) -->
+  <section id="werkwijze" class="bg-noten text-white">
+    <div class="max-w-6xl mx-auto px-5 py-20 lg:py-24">
+      <h2 class="rv font-display font-bold text-[clamp(2rem,3.8vw,3rem)] leading-[1.05] max-w-[22ch]">Van eerste schets tot laatste scharnier: één persoon.</h2>
+      <ol class="mt-12 grid sm:grid-cols-2 lg:grid-cols-5 gap-px bg-white/15 rounded-xl overflow-hidden">
+        <li class="rv bg-noten p-6"><span class="font-display text-zand text-[15px]">Stap 1</span><h3 class="mt-2 font-display font-semibold text-xl">Gesprek</h3><p class="mt-2 text-white/70 text-[15px] leading-relaxed">In de toonzaal of bij u thuis, op een moment dat u past.</p></li>
+        <li class="rv bg-noten p-6"><span class="font-display text-zand text-[15px]">Stap 2</span><h3 class="mt-2 font-display font-semibold text-xl">Ontwerp &amp; offerte</h3><p class="mt-2 text-white/70 text-[15px] leading-relaxed">Uitgetekend op uw maten, met een duidelijke prijs.</p></li>
+        <li class="rv bg-noten p-6"><span class="font-display text-zand text-[15px]">Stap 3</span><h3 class="mt-2 font-display font-semibold text-xl">Atelier</h3><p class="mt-2 text-white/70 text-[15px] leading-relaxed">Kasten en meubels gemaakt in eigen atelier.</p></li>
+        <li class="rv bg-noten p-6"><span class="font-display text-zand text-[15px]">Stap 4</span><h3 class="mt-2 font-display font-semibold text-xl">Plaatsing</h3><p class="mt-2 text-white/70 text-[15px] leading-relaxed">Door dezelfde vakman, op de afgesproken leverdatum.</p></li>
+        <li class="rv bg-noten p-6"><span class="font-display text-zand text-[15px]">Stap 5</span><h3 class="mt-2 font-display font-semibold text-xl">Service</h3><p class="mt-2 text-white/70 text-[15px] leading-relaxed">Correcte en snelle service na verkoop.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Inspiratie (signature part 1) -->
+  <section id="inspiratie" class="max-w-6xl mx-auto px-5 py-20 lg:py-24">
+    <div class="flex flex-wrap items-end justify-between gap-5">
+      <h2 class="rv font-display font-bold text-[clamp(2rem,3.8vw,3rem)] leading-[1.05]">Inspiratie uit ons atelier</h2>
+      <div class="rv flex flex-wrap gap-2" role="group" aria-label="Filter realisaties">
+        <button type="button" class="flt btn border border-gerookt/20 rounded-full px-4 py-2 text-[15px] font-semibold" data-f="all" aria-pressed="true">Alles</button>
+        <button type="button" class="flt btn border border-gerookt/20 rounded-full px-4 py-2 text-[15px] font-semibold" data-f="strak" aria-pressed="false">Strak</button>
+        <button type="button" class="flt btn border border-gerookt/20 rounded-full px-4 py-2 text-[15px] font-semibold" data-f="landelijk" aria-pressed="false">Landelijk &amp; warm</button>
+        <button type="button" class="flt btn border border-gerookt/20 rounded-full px-4 py-2 text-[15px] font-semibold" data-f="badkamer" aria-pressed="false">Badkamer</button>
+        <button type="button" class="flt btn border border-gerookt/20 rounded-full px-4 py-2 text-[15px] font-semibold" data-f="interieur" aria-pressed="false">Interieur</button>
+      </div>
+    </div>
+    <p id="gcount" class="mt-4 text-potlood text-[15px]" aria-live="polite">6 realisaties</p>
+    <div id="gallery" class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <button type="button" class="gitem text-left group" data-cat="strak" data-proj="Keuken" data-cap="Strakke keuken met kookeiland en waterval-werkblad"><span class="block overflow-hidden rounded-lg"><img src="images/keuken-eiland.jpg" alt="Strakke keuken met kookeiland en watervalwerkblad" class="w-full h-64 object-cover" loading="lazy" /></span><span class="block mt-2.5 font-semibold">Kookeiland met watervalblad</span><span class="block text-[14px] text-potlood">Strak, donker houtdecor en wit</span></button>
+      <button type="button" class="gitem text-left group" data-cat="strak" data-proj="Keuken" data-cap="Strakke keuken in grijs houtdecor met eetplaats aan het eiland"><span class="block overflow-hidden rounded-lg"><img src="images/keuken-strak.jpg" alt="Grijze maatkeuken met eiland en eettafel" class="w-full h-64 object-cover" loading="lazy" /></span><span class="block mt-2.5 font-semibold">Eiland met eettafel</span><span class="block text-[14px] text-potlood">Strak, grijs houtdecor</span></button>
+      <button type="button" class="gitem text-left group" data-cat="landelijk" data-proj="Keuken" data-cap="Landelijke keuken met witte kaderdeuren en zwart werkblad"><span class="block overflow-hidden rounded-lg"><img src="images/keuken-landelijk.jpg" alt="Witte landelijke keuken met kaderdeuren en zwart werkblad" class="w-full h-64 object-cover" loading="lazy" /></span><span class="block mt-2.5 font-semibold">Witte kaderdeuren</span><span class="block text-[14px] text-potlood">Landelijk, zwart werkblad</span></button>
+      <button type="button" class="gitem text-left group" data-cat="landelijk" data-proj="Keuken" data-cap="Keuken in licht houtdecor met kookeiland en dampkap"><span class="block overflow-hidden rounded-lg"><img src="images/keuken-hout.jpg" alt="Keuken in licht houtdecor met eiland" class="w-full h-64 object-cover" loading="lazy" /></span><span class="block mt-2.5 font-semibold">Licht hout met eiland</span><span class="block text-[14px] text-potlood">Warm, met inbouwverlichting</span></button>
+      <button type="button" class="gitem text-left group" data-cat="badkamer" data-proj="Badkamer" data-cap="Badkamermeubel op maat met dubbele wastafel en kolomkasten"><span class="block overflow-hidden rounded-lg"><img src="images/badkamer.jpg" alt="Badkamermeubel op maat met dubbele wastafel" class="w-full h-64 object-cover" loading="lazy" /></span><span class="block mt-2.5 font-semibold">Dubbele wastafel</span><span class="block text-[14px] text-potlood">Badkamermeubel met kolomkasten</span></button>
+      <button type="button" class="gitem text-left group" data-cat="interieur" data-proj="Kasten" data-cap="Kastenwand op maat in de inkomhal, tot tegen het plafond"><span class="block overflow-hidden rounded-lg"><img src="images/kastenwand.jpg" alt="Kastenwand op maat in houtdecor" class="w-full h-64 object-cover object-top" loading="lazy" /></span><span class="block mt-2.5 font-semibold">Kastenwand in de inkom</span><span class="block text-[14px] text-potlood">Bergkast op maat, tot het plafond</span></button>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lb" class="fixed inset-0 z-[60] bg-black/85 flex items-center justify-center p-4" hidden role="dialog" aria-modal="true" aria-labelledby="lbCap">
+    <div class="max-w-4xl w-full">
+      <img id="lbImg" alt="" class="w-full max-h-[70vh] object-contain rounded-lg" />
+      <div class="mt-4 flex flex-wrap items-center justify-between gap-3 text-white">
+        <p id="lbCap" class="font-semibold"></p>
+        <div class="flex gap-2">
+          <button type="button" id="lbWant" class="btn bg-kvw hover:bg-[#a90418] rounded-full px-5 py-2.5 font-semibold">Ik wil iets gelijkaardigs</button>
+          <button type="button" id="lbClose" class="btn border border-white/40 rounded-full px-5 py-2.5 font-semibold">Sluiten</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Afspraak-planner (signature part 2) -->
+  <section id="afspraak" class="bg-white border-y border-gerookt/10">
+    <div class="max-w-6xl mx-auto px-5 py-20 lg:py-24 grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-4 min-w-0">
+        <h2 class="rv font-display font-bold text-[clamp(2rem,3.8vw,3rem)] leading-[1.05]">Een afspraak wanneer het ú past</h2>
+        <p class="rv mt-5 text-potlood leading-relaxed">Omdat Peter zelf ook produceert en plaatst, werkt KVW vooral op afspraak. Zo is er tijd om uw project rustig te bespreken, en worden leverdata correct nagekomen. Overdag, 's avonds of in het weekend: 7 op 7.</p>
+        <p class="rv mt-6 text-[15px]">Liever bellen? <a href="tel:+32475579937" class="font-semibold text-kvw underline underline-offset-4">0475 57 99 37</a></p>
+      </div>
+      <form id="book" class="lg:col-span-8 min-w-0 rounded-xl bg-berk border border-gerookt/10 p-5 sm:p-8" novalidate>
+        <div id="bookForm">
+          <div class="grid sm:grid-cols-2 gap-6">
+            <fieldset>
+              <legend class="font-semibold mb-2.5">Waarvoor?</legend>
+              <div class="flex flex-wrap gap-2 text-[14.5px]">
+                <label class="seg relative cursor-pointer"><input type="radio" name="proj" value="Keuken" checked /><span class="block border border-gerookt/20 rounded-full px-3.5 py-2 bg-white">Keuken</span></label>
+                <label class="seg relative cursor-pointer"><input type="radio" name="proj" value="Badkamer" /><span class="block border border-gerookt/20 rounded-full px-3.5 py-2 bg-white">Badkamer</span></label>
+                <label class="seg relative cursor-pointer"><input type="radio" name="proj" value="Kasten" /><span class="block border border-gerookt/20 rounded-full px-3.5 py-2 bg-white">Kasten / dressing</span></label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend class="font-semibold mb-2.5">Waar?</legend>
+              <div class="flex flex-wrap gap-2 text-[14.5px]">
+                <label class="seg relative cursor-pointer"><input type="radio" name="loc" value="toonzaal" checked /><span class="block border border-gerookt/20 rounded-full px-3.5 py-2 bg-white">Toonzaal Kontich</span></label>
+                <label class="seg relative cursor-pointer"><input type="radio" name="loc" value="thuis" /><span class="block border border-gerookt/20 rounded-full px-3.5 py-2 bg-white">Bij mij thuis</span></label>
+              </div>
+            </fieldset>
+          </div>
+          <p class="font-semibold mt-7">Kies een dag <span class="font-normal text-potlood text-[14px]">(weekenddagen licht gekleurd)</span></p>
+          <div id="days" class="mt-3 flex gap-2 overflow-x-auto pb-2 -mx-1 px-1"></div>
+          <div class="mt-5 flex flex-wrap items-center gap-2" role="group" aria-label="Moment van de dag">
+            <button type="button" class="part btn rounded-full border border-gerookt/20 bg-white px-4 py-2 text-[14.5px] font-semibold" data-p="dag" aria-pressed="true">Overdag</button>
+            <button type="button" class="part btn rounded-full border border-gerookt/20 bg-white px-4 py-2 text-[14.5px] font-semibold" data-p="avond" aria-pressed="false">'s Avonds</button>
+          </div>
+          <div id="slots" class="mt-4 grid grid-cols-3 sm:grid-cols-5 gap-2"></div>
+          <div class="mt-7 grid sm:grid-cols-3 gap-4">
+            <label class="block text-[14px] font-semibold">Naam<input name="naam" autocomplete="name" class="mt-1.5 w-full rounded-lg border border-gerookt/20 bg-white px-3.5 py-3 font-normal" /></label>
+            <label class="block text-[14px] font-semibold">Telefoon<input name="tel" type="tel" autocomplete="tel" class="mt-1.5 w-full rounded-lg border border-gerookt/20 bg-white px-3.5 py-3 font-normal" /></label>
+            <label class="block text-[14px] font-semibold">Gemeente<input name="gem" autocomplete="address-level2" class="mt-1.5 w-full rounded-lg border border-gerookt/20 bg-white px-3.5 py-3 font-normal" placeholder="Bv. Edegem" /></label>
+          </div>
+          <p id="bookErr" class="hidden mt-3 text-[14px] font-semibold text-kvw" role="alert"></p>
+          <button class="btn mt-6 w-full bg-kvw hover:bg-[#a90418] text-white font-semibold rounded-full px-5 py-3.5">Afspraak vastleggen</button>
+        </div>
+        <div id="bookOk" class="hidden text-center py-8" role="status">
+          <div class="mx-auto w-16 h-16 rounded-full bg-kvw text-white grid place-items-center"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3 class="font-display font-bold text-3xl mt-5">Afspraak vastgelegd</h3>
+          <p id="bookOkTxt" class="mt-3 text-potlood max-w-[46ch] mx-auto"></p>
+          <p class="mt-4 text-[13px] text-potlood">Dit is een concept-demo: er werd niets verstuurd.</p>
+          <button type="button" id="bookAgain" class="mt-6 font-semibold text-kvw underline underline-offset-4">Nog een afspraak plannen</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-5 py-20 lg:py-24 grid lg:grid-cols-2 gap-10">
+    <div>
+      <h2 class="rv font-display font-bold text-[clamp(2rem,3.6vw,2.8rem)] leading-[1.05]">Toonzaal in Kontich</h2>
+      <p class="rv mt-4 text-potlood leading-relaxed max-w-[48ch]">Koningin Astridlaan 58C, vlak bij het centrum van Kontich. Wij werken in Kontich, Edegem, Aartselaar, Lint, Hove, Mortsel, Wilrijk, Boechout, Duffel, Rumst en Antwerpen.</p>
+      <dl class="rv mt-7 text-[15px] divide-y divide-gerookt/10 border-y border-gerookt/10">
+        <div class="flex justify-between py-3"><dt>Toonzaal en bezoek</dt><dd class="font-semibold">Op afspraak</dd></div>
+        <div class="flex justify-between py-3"><dt>Afspraakmomenten</dt><dd class="font-semibold text-right">7 op 7, ook 's avonds</dd></div>
+      </dl>
+    </div>
+    <div class="rv rounded-xl bg-gerookt text-white p-7 sm:p-8 space-y-3">
+      <a href="tel:+32475579937" class="btn flex items-center justify-between gap-4 rounded-lg bg-white/5 border border-white/10 hover:border-white/40 px-5 py-4"><span class="text-white/70">Gsm Peter</span><span class="font-semibold">0475 57 99 37</span></a>
+      <a href="tel:+3234574314" class="btn flex items-center justify-between gap-4 rounded-lg bg-white/5 border border-white/10 hover:border-white/40 px-5 py-4"><span class="text-white/70">Telefoon</span><span class="font-semibold">03 457 43 14</span></a>
+      <a href="mailto:info@kvw-keukens.be" class="btn flex items-center justify-between gap-4 rounded-lg bg-white/5 border border-white/10 hover:border-white/40 px-5 py-4"><span class="text-white/70">E-mail</span><span class="font-semibold">info@kvw-keukens.be</span></a>
+      <a href="https://www.google.com/maps/search/?api=1&query=KVW+keukens+Koningin+Astridlaan+58C+2550+Kontich" target="_blank" rel="noopener" class="btn flex items-center justify-between gap-4 rounded-lg bg-white/5 border border-white/10 hover:border-white/40 px-5 py-4"><span class="text-white/70">Route</span><span class="font-semibold text-right">Koningin Astridlaan 58C, Kontich</span></a>
+    </div>
+  </section>
+
+  <footer class="bg-gerookt text-white/65">
+    <div class="max-w-6xl mx-auto px-5 py-10 flex flex-col md:flex-row md:items-center justify-between gap-6 text-[14px]">
+      <div class="flex items-center gap-4">
+        <img src="images/logo.png" alt="KVW keukens &amp; interieur logo" width="261" height="149" class="h-[52px] w-auto" />
+        <p>Koningin Astridlaan 58C, 2550 Kontich<br />Nu kwaliteit… later geen spijt.</p>
+      </div>
+      <p class="max-w-sm">Concept-herontwerp door <a href="mailto:nicolas@saspire.org" class="underline text-white">Saspire</a> als vrijblijvend voorstel. Dit is niet de officiële website van KVW keukens &amp; interieur.</p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden grid grid-cols-2 text-white font-semibold text-[15px]">
+    <a href="tel:+32475579937" class="flex items-center justify-center gap-2 py-3.5 bg-gerookt">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Bel Peter</a>
+    <a href="#afspraak" class="flex items-center justify-center py-3.5 bg-kvw">Afspraak 7/7</a>
+  </div>
+
+  <script>
+  (function () {
+    document.documentElement.classList.add('js');
+    var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var rvs = document.querySelectorAll('.rv');
+    if ('IntersectionObserver' in window && !reduced) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
+      rvs.forEach(function (el) { io.observe(el); });
+      setTimeout(function () { rvs.forEach(function (el) { el.classList.add('in'); }); }, 2500);
+    } else rvs.forEach(function (el) { el.classList.add('in'); });
+
+    /* ---------- Inspiratiegalerij ---------- */
+    var items = [].slice.call(document.querySelectorAll('.gitem')), cnt = document.getElementById('gcount');
+    document.querySelectorAll('.flt').forEach(function (b) {
+      b.addEventListener('click', function () {
+        document.querySelectorAll('.flt').forEach(function (x) { x.setAttribute('aria-pressed', 'false'); });
+        b.setAttribute('aria-pressed', 'true');
+        var f = b.dataset.f, n = 0;
+        items.forEach(function (it) { var show = f === 'all' || it.dataset.cat === f; it.classList.toggle('hide', !show); if (show) n++; });
+        cnt.textContent = n + (n === 1 ? ' realisatie' : ' realisaties');
+      });
+    });
+    var lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap'), cur = null, lastFocus = null;
+    items.forEach(function (it) {
+      it.addEventListener('click', function () {
+        cur = it; lastFocus = it;
+        var im = it.querySelector('img'); lbImg.src = im.src; lbImg.alt = im.alt; lbCap.textContent = it.dataset.cap;
+        lb.hidden = false; document.getElementById('lbClose').focus();
+      });
+    });
+    function closeLb() { lb.hidden = true; if (lastFocus) lastFocus.focus(); }
+    document.getElementById('lbClose').addEventListener('click', closeLb);
+    lb.addEventListener('click', function (e) { if (e.target === lb) closeLb(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !lb.hidden) closeLb(); });
+    document.getElementById('lbWant').addEventListener('click', function () {
+      var r = document.querySelector('input[name="proj"][value="' + cur.dataset.proj + '"]'); if (r) r.checked = true;
+      lb.hidden = true; inspo = cur.dataset.cap;
+      document.getElementById('afspraak').scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' });
+    });
+    var inspo = null;
+
+    /* ---------- Afspraak-planner 7/7 ---------- */
+    var DN = ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za'], DF = ['zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag'], MN = ['jan', 'feb', 'mrt', 'apr', 'mei', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec'];
+    var daysEl = document.getElementById('days'), slotsEl = document.getElementById('slots');
+    var day = null, part = 'dag', slot = null;
+    function slotsFor(d, p) {
+      var wk = d.getDay() === 0 || d.getDay() === 6;
+      if (p === 'avond') return wk ? ['18:00', '19:00'] : ['18:30', '19:30', '20:30'];
+      return wk ? ['10:00', '11:30', '14:00', '15:30'] : ['09:00', '10:30', '13:30', '15:00', '16:30'];
+    }
+    // deterministic "taken" slots so the planner feels real
+    function taken(d, s) { return ((d.getDate() * 7 + s.charCodeAt(1) * 3 + s.charCodeAt(3)) % 5) === 0; }
+    function renderSlots() {
+      slotsEl.innerHTML = ''; slot = null;
+      slotsFor(day, part).forEach(function (s) {
+        var b = document.createElement('button'), t = taken(day, s);
+        b.type = 'button'; b.className = 'slot btn rounded-lg border border-gerookt/20 bg-white py-2.5 font-semibold text-[15px] disabled:opacity-35 disabled:line-through';
+        b.textContent = s; b.disabled = t; b.setAttribute('aria-pressed', 'false');
+        if (t) b.setAttribute('aria-label', s + ', bezet');
+        b.addEventListener('click', function () { slotsEl.querySelectorAll('.slot').forEach(function (x) { x.setAttribute('aria-pressed', 'false'); }); b.setAttribute('aria-pressed', 'true'); slot = s; });
+        slotsEl.appendChild(b);
+      });
+    }
+    var d0 = new Date(); d0.setHours(0, 0, 0, 0);
+    for (var i = 1; i <= 14; i++) {
+      (function (d) {
+        var wk = d.getDay() === 0 || d.getDay() === 6;
+        var b = document.createElement('button');
+        b.type = 'button'; b.className = 'day btn shrink-0 w-[64px] rounded-xl border border-gerookt/15 bg-white py-2.5 text-center' + (wk ? ' wk' : '');
+        b.setAttribute('aria-pressed', 'false');
+        b.innerHTML = '<span class="block text-[13px]">' + DN[d.getDay()] + '</span><span class="block font-display font-bold text-2xl leading-tight">' + d.getDate() + '</span><span class="block text-[12px]">' + MN[d.getMonth()] + '</span>';
+        b.addEventListener('click', function () { daysEl.querySelectorAll('.day').forEach(function (x) { x.setAttribute('aria-pressed', 'false'); }); b.setAttribute('aria-pressed', 'true'); day = d; renderSlots(); });
+        daysEl.appendChild(b);
+        if (i === 1) b.click();
+      })(new Date(d0.getFullYear(), d0.getMonth(), d0.getDate() + i));
+    }
+    document.querySelectorAll('.part').forEach(function (b) {
+      b.addEventListener('click', function () {
+        document.querySelectorAll('.part').forEach(function (x) { x.setAttribute('aria-pressed', 'false'); x.classList.remove('bg-gerookt', 'text-white'); x.classList.add('bg-white'); });
+        b.setAttribute('aria-pressed', 'true'); b.classList.add('bg-gerookt', 'text-white'); b.classList.remove('bg-white');
+        part = b.dataset.p; renderSlots();
+      });
+    });
+    document.querySelector('.part[data-p="dag"]').click();
+
+    var book = document.getElementById('book'), err = document.getElementById('bookErr');
+    book.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var naam = book.naam.value.trim(), tel = book.tel.value.trim();
+      if (!slot) { err.textContent = 'Kies nog een uur. Doorstreepte uren zijn al bezet.'; err.classList.remove('hidden'); return; }
+      if (!naam || tel.replace(/\D/g, '').length < 9) { err.textContent = 'Vul uw naam en een geldig telefoonnummer in.'; err.classList.remove('hidden'); return; }
+      err.classList.add('hidden');
+      var proj = book.querySelector('input[name="proj"]:checked').value.toLowerCase(), loc = book.querySelector('input[name="loc"]:checked').value;
+      var where = loc === 'thuis' ? 'bij u thuis' + (book.gem.value.trim() ? ' in ' + book.gem.value.trim() : '') : 'in de toonzaal, Koningin Astridlaan 58C in Kontich';
+      document.getElementById('bookOkTxt').textContent = naam.split(' ')[0] + ', uw afspraak voor ' + (proj === 'kasten' ? 'kasten op maat' : 'een ' + proj + ' op maat') + ' staat genoteerd op ' + DF[day.getDay()] + ' ' + day.getDate() + ' ' + MN[day.getMonth()] + ' om ' + slot + ', ' + where + '.' + (inspo ? ' Uw inspiratie: ' + inspo.toLowerCase() + '.' : '') + ' Peter belt u nog even ter bevestiging.';
+      document.getElementById('bookForm').classList.add('hidden'); document.getElementById('bookOk').classList.remove('hidden');
+    });
+    document.getElementById('bookAgain').addEventListener('click', function () {
+      book.reset(); inspo = null; document.getElementById('bookForm').classList.remove('hidden'); document.getElementById('bookOk').classList.add('hidden');
+      daysEl.querySelector('.day').click();
+    });
+  })();
+  </script>
+</body>
+</html>

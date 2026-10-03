@@ -311,17 +311,21 @@
         </figure>
       </div>
       <div class="relative">
-        <svg viewBox="0 0 400 320" class="w-full h-auto" role="img" aria-label="Kaart: hout ingekocht binnen 300 km rond Kapellen, in België, Noord-Frankrijk en West-Duitsland">
-          <defs><radialGradient id="rg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#02934e" stop-opacity=".22"/><stop offset="1" stop-color="#02934e" stop-opacity=".03"/></radialGradient></defs>
-          <rect width="400" height="320" rx="18" fill="#ece4d4"/>
-          <circle cx="190" cy="120" r="150" fill="url(#rg)" stroke="#02934e" stroke-dasharray="4 6" stroke-width="1.5"/>
-          <path d="M120 70 L205 52 L262 92 L280 160 L240 230 L170 238 L120 200 L92 140 Z" fill="#fff" stroke="#2b312d" stroke-width="1.5" opacity=".9"/>
-          <text x="180" y="170" font-family="Public Sans" font-size="13" fill="#2b312d">België ± 80%</text>
-          <text x="70" y="262" font-family="Public Sans" font-size="12" fill="#2b312d">Noord-Frankrijk</text>
-          <text x="290" y="208" font-family="Public Sans" font-size="12" fill="#2b312d">West-Duitsland</text>
-          <circle cx="190" cy="78" r="6" fill="#02934e"/><circle cx="190" cy="78" r="12" fill="none" stroke="#02934e" stroke-width="1.5"/>
-          <text x="204" y="74" font-family="Public Sans" font-weight="700" font-size="13" fill="#1f2421">Kapellen</text>
-          <text x="306" y="40" font-family="Public Sans" font-size="11" fill="#02934e">straal 300 km</text>
+        <svg viewBox="0 0 400 340" class="w-full h-auto" role="img" aria-label="Thys Hout koopt hout binnen 300 km rond Kapellen: ongeveer 80% uit België, de rest uit Noord-Frankrijk en West-Duitsland">
+          <rect width="400" height="340" rx="18" fill="#ece4d4"/>
+          <g fill="none" stroke="#b98a55">
+            <circle cx="200" cy="170" r="150" stroke-width="1.6" fill="#02934e" fill-opacity=".08"/>
+            <circle cx="200" cy="170" r="100" stroke-width="1.3" opacity=".8"/>
+            <circle cx="200" cy="170" r="50" stroke-width="1.1" opacity=".7"/>
+          </g>
+          <circle cx="200" cy="170" r="7" fill="#02934e"/>
+          <text x="214" y="166" font-family="Public Sans" font-weight="700" font-size="14" fill="#1f2421">Kapellen</text>
+          <text x="214" y="184" font-family="Public Sans" font-size="12" fill="#2b312d">± 80% Belgisch hout</text>
+          <text x="200" y="14" text-anchor="middle" font-family="Public Sans" font-size="11" fill="#7a5a34" dy="0">300 km</text>
+          <text x="200" y="64" text-anchor="middle" font-family="Public Sans" font-size="11" fill="#7a5a34">200 km</text>
+          <text x="200" y="114" text-anchor="middle" font-family="Public Sans" font-size="11" fill="#7a5a34">100 km</text>
+          <text x="58" y="298" font-family="Public Sans" font-size="12" fill="#2b312d">Noord-Frankrijk</text>
+          <text x="336" y="298" text-anchor="end" font-family="Public Sans" font-size="12" fill="#2b312d">West-Duitsland</text>
         </svg>
       </div>
     </div>
@@ -435,7 +439,7 @@
       b.innerHTML = '<span class="block h-20 sm:h-24 grain" style="background-color:' + s.c[0] + ';background-image:repeating-linear-gradient(90deg, rgba(0,0,0,.07) 0 1px, transparent 1px 7px),repeating-linear-gradient(92deg, rgba(255,255,255,.08) 0 2px, transparent 2px 23px),linear-gradient(180deg,' + s.c[0] + ',' + s.c[1] + ')"></span>' +
         '<span class="flex flex-wrap items-baseline justify-between gap-x-2 px-4 py-3"><span class="font-bold">' + s.n + '</span><span class="text-[12px] text-ash">' + s.t + '</span></span>';
       b.addEventListener('click', function () {
-        addRow({ soort: s.n });
+        addRow({ soort: s.n }, true);
         [].forEach.call(grid.children, function (x) { x.setAttribute('aria-pressed', 'false'); });
         b.setAttribute('aria-pressed', 'true');
         document.getElementById('zaaglijst').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
@@ -447,10 +451,10 @@
     var rowsEl = document.getElementById('rows');
     var rows = [];
     var uid = 0;
-    function addRow(pre) {
-      var r = Object.assign({ id: ++uid, soort: 'Eik', d: 27, b: 200, l: 2000, n: 1, schaven: false }, pre || {});
-      // If the only row is the untouched default, replace it instead of stacking
-      if (pre && rows.length === 1 && !rows[0].touched) rows = [];
+    function addRow(pre, replaceDefault) {
+      var r = Object.assign({ id: ++uid, soort: 'Eik', d: 27, b: 200, l: 2000, n: 1, schaven: false, touched: !!pre }, pre || {});
+      // A species picked from the grid replaces the untouched starter row instead of stacking
+      if (replaceDefault && rows.length === 1 && !rows[0].touched) rows = [];
       rows.push(r); render();
     }
     function render() {
@@ -461,12 +465,12 @@
         var opts = SPECIES.map(function (s) { return '<option' + (s.n === r.soort ? ' selected' : '') + '>' + s.n + '</option>'; }).join('');
         w.innerHTML =
           '<div class="grid grid-cols-2 sm:grid-cols-12 gap-3 items-end">' +
-          '<label class="col-span-2 sm:col-span-3 text-[12px] font-semibold">Houtsoort<select data-k="soort" class="field mt-1 font-normal">' + opts + '</select></label>' +
+          '<label class="col-span-2 sm:col-span-4 text-[12px] font-semibold">Houtsoort<select data-k="soort" class="field mt-1 font-normal">' + opts + '</select></label>' +
           '<label class="sm:col-span-2 text-[12px] font-semibold">Dikte<input data-k="d" type="number" min="5" max="150" inputmode="numeric" value="' + r.d + '" class="field mt-1 font-normal tabular-nums" /></label>' +
           '<label class="sm:col-span-2 text-[12px] font-semibold">Breedte<input data-k="b" type="number" min="10" max="1000" inputmode="numeric" value="' + r.b + '" class="field mt-1 font-normal tabular-nums" /></label>' +
           '<label class="sm:col-span-2 text-[12px] font-semibold">Lengte<input data-k="l" type="number" min="100" max="6000" inputmode="numeric" value="' + r.l + '" class="field mt-1 font-normal tabular-nums" /></label>' +
-          '<label class="sm:col-span-1 text-[12px] font-semibold">Aantal<input data-k="n" type="number" min="1" max="999" inputmode="numeric" value="' + r.n + '" class="field mt-1 font-normal tabular-nums" /></label>' +
-          '<div class="col-span-2 sm:col-span-2 flex items-center justify-between sm:justify-end gap-3 pb-1">' +
+          '<label class="sm:col-span-2 text-[12px] font-semibold">Aantal<input data-k="n" type="number" min="1" max="999" inputmode="numeric" value="' + r.n + '" class="field mt-1 font-normal tabular-nums" /></label>' +
+          '<div class="col-span-2 sm:col-span-12 flex items-center justify-between gap-3">' +
           '<label class="inline-flex items-center gap-2 text-[13px]"><input data-k="schaven" type="checkbox" class="w-4 h-4 accent-[#02934e]"' + (r.schaven ? ' checked' : '') + ' />geschaafd</label>' +
           (rows.length > 1 ? '<button type="button" data-del class="text-[13px] text-ash hover:text-[#b3261e] underline">verwijder</button>' : '') +
           '</div></div>' +
@@ -510,7 +514,7 @@
       document.getElementById('sumLm').textContent = fmtN(lm, 1) + ' m';
       document.getElementById('sumM3').textContent = fmtN(m3, 3) + ' m³';
     }
-    document.getElementById('addRow').addEventListener('click', function () { addRow({ touched: true }); });
+    document.getElementById('addRow').addEventListener('click', function () { addRow({}); });
     addRow();
 
     // ---------- Pick-up moment ----------

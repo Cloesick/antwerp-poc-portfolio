@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Young's Mortsel | Keukens &amp; interieurmeubilair op maat uit eigen atelier</title>
+  <meta name="description" content="Young's in Mortsel: meubelmakerij voor keukens, dressings, badkamermeubels en bureelinrichting op maat. Zaakvoerder Carl Van Cleemput maakt en plaatst zelf. Showroom op afspraak, privé parking." />
+  <meta name="theme-color" content="#31373e" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Young's Keuken &amp; Interieur" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Young's | Keukens en interieur op maat in Mortsel" />
+  <meta property="og:description" content="Meubelmaatwerk uit eigen atelier: keuken, dressing, badkamer, bureel. Start je projectaanvraag online." />
+  <meta property="og:image" content="images/toonzaal-galbe.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232c3236'/%3E%3Ctext x='16' y='23' font-family='Georgia' font-size='19' fill='%23d9a066' text-anchor='middle'%3EY%3C/text%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["HomeAndConstructionBusiness", "FurnitureStore"],
+    "name": "Young's",
+    "legalName": "Young's BV",
+    "description": "Meubelmakerij voor keukens en interieurmeubilair op maat: keuken, dressing, badkamer, bureel. Levering en plaatsing van keukentoestellen.",
+    "url": "http://www.youngs.be",
+    "telephone": ["+3234493027", "+32477582173"],
+    "email": "info@youngs.be",
+    "vatID": "BE0404620949",
+    "founder": { "@type": "Person", "name": "Carl Van Cleemput" },
+    "image": "images/toonzaal-galbe.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Deurnestraat 54",
+      "postalCode": "2640",
+      "addressLocality": "Mortsel",
+      "addressCountry": "BE"
+    },
+    "areaServed": ["Mortsel","Edegem","Boechout","Hove","Kontich","Wilrijk","Berchem","Borsbeek","Deurne"],
+    "brand": ["Siemens","Bosch","Miele","AEG","Novy","Quooker","Liebherr","Blanco","Franke","Venduro"]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        fontFamily: { sans: ['Figtree', 'sans-serif'], ys: ['"Young Serif"', 'serif'] },
+        colors: {
+          slate: '#31373e',   /* logo-grijs */
+          slate2: '#3a4146',
+          mdf: '#dfe2dc',     /* geverfd MDF, koel grijsgroen */
+          paper: '#f4f5f2',
+          oak: '#b06f34',     /* eikenhout */
+          oakl: '#d9a066',
+          pencil: '#5b6268',
+          ink: '#1f2427',
+        },
+      } },
+    };
+  </script>
+  <style>
+    :root { --accent: #b06f34; --ease: cubic-bezier(.23,1,.32,1); }
+    html { scroll-behavior: smooth; }
+    body { background: #dfe2dc; }
+    h1, h2, h3 { text-wrap: balance; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), border-color .18s var(--ease), color .18s var(--ease); }
+    .btn:active { transform: scale(.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px solid #b06f34; outline-offset: 3px; }
+    /* Meubelmakers-maatlijn langs de hero */
+    .ruler { background-image: repeating-linear-gradient(90deg, #31373e 0 1px, transparent 1px 10px), repeating-linear-gradient(90deg, #31373e 0 1px, transparent 1px 50px); background-size: 100% 6px, 100% 12px; background-repeat: no-repeat; background-position: 0 0, 0 0; }
+    .js .rv { opacity: 0; transform: translateY(16px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
+    .js .rv.in { opacity: 1; transform: none; }
+    .pick input:checked + span { background: #31373e; color: #f4f5f2; border-color: #31373e; }
+    .pick input:focus-visible + span { outline: 2px solid #b06f34; outline-offset: 2px; }
+    .step-pane { animation: pane .35s var(--ease); }
+    @keyframes pane { from { opacity: 0; transform: translateX(12px); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .rv { opacity: 1; transform: none; transition: none; }
+      .step-pane { animation: none; }
+      .btn { transition: none; }
+    }
+  </style>
+</head>
+<body class="text-ink font-sans antialiased selection:bg-oakl/40">
+
+  <div class="fixed bottom-4 right-4 z-50 hidden md:block pointer-events-none">
+    <span class="text-[11px] font-semibold tracking-widest uppercase text-paper bg-slate/90 rounded-full px-3 py-1.5 shadow">Concept-demo · Saspire</span>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-slate text-paper">
+    <nav class="max-w-7xl mx-auto px-5 h-[72px] flex items-center justify-between gap-4" aria-label="Hoofdnavigatie">
+      <a href="#top" class="flex items-center"><img src="images/logo-wit.png" alt="Young's Keuken &amp; Interieur" class="h-9 sm:h-10 w-auto" width="147" height="40" /></a>
+      <div class="hidden lg:flex items-center gap-8 text-[15px] font-medium text-paper/85">
+        <a href="#maatwerk" class="hover:text-oakl">Maatwerk</a>
+        <a href="#werkwijze" class="hover:text-oakl">Werkwijze</a>
+        <a href="#outlet" class="hover:text-oakl">Outlet</a>
+        <a href="#atelier" class="hover:text-oakl">Het atelier</a>
+        <a href="#contact" class="hover:text-oakl">Contact</a>
+      </div>
+      <a href="#project" class="btn inline-flex items-center bg-oak hover:bg-[#9a5f2a] text-white font-semibold text-[14px] rounded-full px-5 py-2.5 whitespace-nowrap">
+        <span class="hidden sm:inline">Start je project</span><span class="sm:hidden">Project</span>
+      </a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-5 pt-12 pb-14 lg:pt-16 lg:pb-16 grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-5">
+        <p class="text-[15px] text-pencil mb-5">Young's · meubelmakerij in Mortsel sinds 1995</p>
+        <h1 class="font-ys text-[clamp(2.6rem,5vw,4.4rem)] leading-[1.03] text-slate">Keukens en interieur op maat, gemaakt in ons eigen atelier.</h1>
+        <p class="mt-6 text-[18px] leading-relaxed text-slate2 max-w-[44ch]">Keuken, dressing, badkamermeubel of bureel: Carl tekent, maakt en plaatst het zelf, samen met vakman Alain. Bewust kleinschalig, altijd persoonlijk.</p>
+        <div class="mt-9 flex flex-wrap gap-3">
+          <a href="#project" class="btn inline-flex items-center bg-oak hover:bg-[#9a5f2a] text-white font-semibold rounded-full px-6 py-3.5">Start je projectaanvraag</a>
+          <a href="tel:+3234493027" class="btn inline-flex items-center border border-slate/35 hover:border-slate text-slate font-semibold rounded-full px-6 py-3.5">Bel 03 449 30 27</a>
+        </div>
+        <div class="mt-10 flex items-center gap-4">
+          <img src="images/carl.jpg" alt="Carl Van Cleemput, zaakvoerder en meubelmaker" class="w-14 h-14 rounded-full object-cover object-top border-2 border-paper shadow" width="56" height="56" />
+          <p class="text-[14px] text-slate2 leading-snug max-w-[34ch]"><span class="font-semibold text-slate">Carl Van Cleemput</span><br>zaakvoerder, 30 jaar meubel-knowhow</p>
+        </div>
+      </div>
+      <div class="lg:col-span-7 relative">
+        <div class="ruler h-3 mb-2 opacity-50" aria-hidden="true"></div>
+        <figure class="relative rounded-sm overflow-hidden shadow-[0_40px_80px_-40px_rgba(31,36,39,.7)]">
+          <img src="images/toonzaal-galbe.jpg" alt="Toonzaalkeuken Galbe met gebogen eiland en keramisch werkblad" class="w-full aspect-[16/11] object-cover" width="1772" height="996" />
+          <figcaption class="absolute left-4 bottom-4 bg-paper/95 rounded-sm px-4 py-2.5 text-[13px] text-slate"><span class="font-semibold">Galbe</span> · toonzaalmodel, nu in de outlet</figcaption>
+        </figure>
+        <p class="mt-2 text-[12px] text-pencil text-right">Showroom op afspraak · privé parking voor klanten</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Maatwerk -->
+  <section id="maatwerk" class="bg-paper">
+    <div class="max-w-7xl mx-auto px-5 py-20">
+      <div class="grid lg:grid-cols-12 gap-8 mb-12">
+        <h2 class="rv lg:col-span-5 font-ys text-[clamp(2rem,3.6vw,2.9rem)] leading-[1.08] text-slate">Wat we voor je maken</h2>
+        <p class="rv lg:col-span-7 text-[17px] leading-relaxed text-slate2 max-w-[60ch]">Functionaliteit en esthetiek, met duurzame materialen en nauwkeurig vakmanschap. Voor toestellen, materialen, texturen en kleuren kunnen we in principe alles leveren wat op de Belgische markt bestaat.</p>
+      </div>
+      <div class="grid md:grid-cols-12 gap-5">
+        <article class="rv md:col-span-7 md:row-span-2 relative rounded-sm overflow-hidden min-h-[360px]">
+          <img src="images/keuken-donker.jpg" alt="Donkere greeploze keuken met eiland" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/20 to-transparent"></div>
+          <div class="absolute bottom-0 p-7 text-paper">
+            <h3 class="font-ys text-3xl">Keukens</h3>
+            <p class="mt-2 max-w-[44ch] text-paper/85">Op maat getekend en gemaakt, met toestellen naar keuze en geplaatst door ons eigen team.</p>
+          </div>
+        </article>
+        <article class="rv md:col-span-5 rounded-sm bg-mdf p-7">
+          <h3 class="font-ys text-2xl text-slate">Dressings</h3>
+          <p class="mt-2 text-slate2 leading-relaxed">Kasten tot tegen het plafond, onder het dak of rond een schouw. Elke centimeter benut.</p>
+        </article>
+        <article class="rv md:col-span-5 rounded-sm bg-mdf p-7">
+          <h3 class="font-ys text-2xl text-slate">Badkamer &amp; bureel</h3>
+          <p class="mt-2 text-slate2 leading-relaxed">Badkamermeubels, bureelinrichting en ander interieurmeubilair, in dezelfde afwerking als je keuken.</p>
+        </article>
+      </div>
+      <div class="rv mt-12 border-t border-slate/15 pt-8">
+        <p class="text-[14px] text-pencil mb-3">Toestellen en spoelbakken die we leveren en plaatsen</p>
+        <p class="font-ys text-[clamp(1.2rem,2.2vw,1.7rem)] text-slate leading-snug">Siemens · Bosch · Miele · AEG · Novy · Quooker · Liebherr · Blanco · Franke · Venduro</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project-aanvraag (signature) -->
+  <section id="project" class="max-w-7xl mx-auto px-5 py-20">
+    <div class="grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-4">
+        <h2 class="rv font-ys text-[clamp(2rem,3.6vw,2.9rem)] leading-[1.08] text-slate">Vertel ons over je project</h2>
+        <p class="rv mt-4 text-[17px] text-slate2 leading-relaxed">Vier korte stappen. Voeg foto's van je ruimte toe en breng je ontwerp mee naar de showroom. Daarna: relax.</p>
+        <ol id="steps-nav" class="hidden lg:block mt-8 space-y-3 text-[15px]" aria-label="Stappen">
+          <li data-s="1" class="flex items-center gap-3"><span class="w-8 h-8 rounded-full border border-slate/30 grid place-items-center font-semibold">1</span>Wat maken we?</li>
+          <li data-s="2" class="flex items-center gap-3"><span class="w-8 h-8 rounded-full border border-slate/30 grid place-items-center font-semibold">2</span>Je ruimte en stijl</li>
+          <li data-s="3" class="flex items-center gap-3"><span class="w-8 h-8 rounded-full border border-slate/30 grid place-items-center font-semibold">3</span>Foto's en timing</li>
+          <li data-s="4" class="flex items-center gap-3"><span class="w-8 h-8 rounded-full border border-slate/30 grid place-items-center font-semibold">4</span>Afspraak in de showroom</li>
+        </ol>
+      </div>
+      <form id="pf" class="lg:col-span-8 bg-paper rounded-sm border border-slate/10 p-6 sm:p-9 shadow-[0_30px_70px_-50px_rgba(31,36,39,.7)]" novalidate>
+        <div class="h-1.5 bg-mdf rounded-full overflow-hidden mb-8"><div id="pbar" class="h-full bg-oak transition-all duration-500" style="width:25%"></div></div>
+
+        <div class="step-pane" data-step="1">
+          <h3 class="font-ys text-2xl text-slate">Wat maken we?</h3>
+          <div class="mt-5 grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <label class="pick cursor-pointer"><input type="radio" name="type" value="Keuken" class="sr-only" checked /><span class="block border border-slate/25 rounded-sm px-2 py-5 text-center font-medium">Keuken</span></label>
+            <label class="pick cursor-pointer"><input type="radio" name="type" value="Dressing" class="sr-only" /><span class="block border border-slate/25 rounded-sm px-2 py-5 text-center font-medium">Dressing</span></label>
+            <label class="pick cursor-pointer"><input type="radio" name="type" value="Badkamermeubel" class="sr-only" /><span class="block border border-slate/25 rounded-sm px-2 py-5 text-center font-medium">Badkamermeubel</span></label>
+            <label class="pick cursor-pointer"><input type="radio" name="type" value="Bureel" class="sr-only" /><span class="block border border-slate/25 rounded-sm px-2 py-5 text-center font-medium">Bureel</span></label>
+            <label class="pick cursor-pointer"><input type="radio" name="type" value="Ander interieurmeubel" class="sr-only" /><span class="block border border-slate/25 rounded-sm px-2 py-5 text-center font-medium">Ander meubel</span></label>
+            <label class="pick cursor-pointer"><input type="radio" name="type" value="Outletkeuken" class="sr-only" /><span class="block border border-slate/25 rounded-sm px-2 py-5 text-center font-medium">Outletkeuken</span></label>
+          </div>
+          <label class="block mt-6"><span class="text-[14px] font-semibold">Gaat het om</span>
+            <select id="p-sit" class="mt-1.5 w-full border border-slate/25 rounded-sm px-3 py-2.5 bg-white"><option>Een renovatie van een bestaande ruimte</option><option>Een nieuwbouw</option><option>Enkel vervangen van toestellen of werkblad</option></select></label>
+        </div>
+
+        <div class="step-pane hidden" data-step="2">
+          <h3 class="font-ys text-2xl text-slate">Je ruimte en stijl</h3>
+          <div class="mt-5 grid grid-cols-2 gap-4">
+            <label class="block"><span class="text-[14px] font-semibold">Breedte ruimte (m, ongeveer)</span><input id="p-b" type="number" step="0.1" min="0" placeholder="vb. 4,2" class="mt-1.5 w-full border border-slate/25 rounded-sm px-3 py-2.5 bg-white" inputmode="decimal" /></label>
+            <label class="block"><span class="text-[14px] font-semibold">Diepte ruimte (m, ongeveer)</span><input id="p-d" type="number" step="0.1" min="0" placeholder="vb. 3,5" class="mt-1.5 w-full border border-slate/25 rounded-sm px-3 py-2.5 bg-white" inputmode="decimal" /></label>
+          </div>
+          <p class="mt-6 text-[14px] font-semibold">Welke sfeer spreekt je aan?</p>
+          <div class="mt-2 flex flex-wrap gap-2" id="p-stijl">
+            <label class="pick cursor-pointer"><input type="checkbox" value="Greeploos en strak" class="sr-only" /><span class="block border border-slate/25 rounded-full px-4 py-2 text-[14px]">Greeploos en strak</span></label>
+            <label class="pick cursor-pointer"><input type="checkbox" value="Warm hout" class="sr-only" /><span class="block border border-slate/25 rounded-full px-4 py-2 text-[14px]">Warm hout</span></label>
+            <label class="pick cursor-pointer"><input type="checkbox" value="Donker en mat" class="sr-only" /><span class="block border border-slate/25 rounded-full px-4 py-2 text-[14px]">Donker en mat</span></label>
+            <label class="pick cursor-pointer"><input type="checkbox" value="Licht en hoogglans" class="sr-only" /><span class="block border border-slate/25 rounded-full px-4 py-2 text-[14px]">Licht en hoogglans</span></label>
+            <label class="pick cursor-pointer"><input type="checkbox" value="Landelijk" class="sr-only" /><span class="block border border-slate/25 rounded-full px-4 py-2 text-[14px]">Landelijk</span></label>
+          </div>
+          <p class="mt-6 text-[14px] font-semibold">Toestellen of merken die je al in gedachten hebt</p>
+          <div class="mt-2 flex flex-wrap gap-2" id="p-merk">
+            <label class="pick cursor-pointer"><input type="checkbox" value="Quooker" class="sr-only" /><span class="block border border-slate/25 rounded-full px-4 py-2 text-[14px]">Quooker</span></label>
+            <label class="pick cursor-pointer"><input type="checkbox" value="Novy" class="sr-only" /><span class="block border border-slate/25 rounded-full px-4 py-2 text-[14px]">Novy</span></label>
+            <label class="pick cursor-pointer"><input type="checkbox" value="Miele" class="sr-only" /><span class="block border border-slate/25 rounded-full px-4 py-2 text-[14px]">Miele</span></label>
+            <label class="pick cursor-pointer"><input type="checkbox" value="Siemens" class="sr-only" /><span class="block border border-slate/25 rounded-full px-4 py-2 text-[14px]">Siemens</span></label>
+            <label class="pick cursor-pointer"><input type="checkbox" value="Bosch" class="sr-only" /><span class="block border border-slate/25 rounded-full px-4 py-2 text-[14px]">Bosch</span></label>
+            <label class="pick cursor-pointer"><input type="checkbox" value="AEG" class="sr-only" /><span class="block border border-slate/25 rounded-full px-4 py-2 text-[14px]">AEG</span></label>
+            <label class="pick cursor-pointer"><input type="checkbox" value="Liebherr" class="sr-only" /><span class="block border border-slate/25 rounded-full px-4 py-2 text-[14px]">Liebherr</span></label>
+            <label class="pick cursor-pointer"><input type="checkbox" value="Blanco of Franke spoelbak" class="sr-only" /><span class="block border border-slate/25 rounded-full px-4 py-2 text-[14px]">Blanco / Franke</span></label>
+          </div>
+        </div>
+
+        <div class="step-pane hidden" data-step="3">
+          <h3 class="font-ys text-2xl text-slate">Foto's en timing</h3>
+          <label class="mt-5 block border-2 border-dashed border-slate/25 rounded-sm p-6 text-center cursor-pointer hover:border-oak">
+            <input id="p-f" type="file" accept="image/*" multiple class="sr-only" />
+            <span class="block font-semibold text-slate">Kies foto's van je ruimte of je ontwerp</span>
+            <span class="block text-[13px] text-pencil mt-1">Zo kunnen we je project al bekijken voor je langskomt</span>
+          </label>
+          <div id="p-thumbs" class="mt-4 grid grid-cols-4 sm:grid-cols-6 gap-2"></div>
+          <label class="block mt-6"><span class="text-[14px] font-semibold">Wanneer wil je starten?</span>
+            <select id="p-tijd" class="mt-1.5 w-full border border-slate/25 rounded-sm px-3 py-2.5 bg-white"><option>Zo snel mogelijk</option><option>Binnen 3 tot 6 maanden</option><option>Binnen het jaar</option><option>Ik oriënteer me nog</option></select></label>
+          <label class="block mt-4"><span class="text-[14px] font-semibold">Omschrijving (optioneel)</span>
+            <textarea id="p-om" rows="3" class="mt-1.5 w-full border border-slate/25 rounded-sm px-3 py-2.5 bg-white" placeholder="vb. open keuken met eiland, de muur naar de living gaat eruit"></textarea></label>
+        </div>
+
+        <div class="step-pane hidden" data-step="4">
+          <h3 class="font-ys text-2xl text-slate">Afspraak in de showroom</h3>
+          <p class="mt-2 text-slate2">Kennismaking en bespreking van je project en materiaalkeuze, in Mortsel.</p>
+          <div class="mt-5 grid sm:grid-cols-2 gap-4">
+            <label class="block"><span class="text-[14px] font-semibold">Naam</span><input id="p-n" class="mt-1.5 w-full border border-slate/25 rounded-sm px-3 py-2.5 bg-white" autocomplete="name" /></label>
+            <label class="block"><span class="text-[14px] font-semibold">Gemeente</span><input id="p-g" class="mt-1.5 w-full border border-slate/25 rounded-sm px-3 py-2.5 bg-white" autocomplete="address-level2" placeholder="vb. Edegem" /></label>
+            <label class="block"><span class="text-[14px] font-semibold">Telefoon</span><input id="p-t" type="tel" class="mt-1.5 w-full border border-slate/25 rounded-sm px-3 py-2.5 bg-white" autocomplete="tel" /></label>
+            <label class="block"><span class="text-[14px] font-semibold">E-mail</span><input id="p-e" type="email" class="mt-1.5 w-full border border-slate/25 rounded-sm px-3 py-2.5 bg-white" autocomplete="email" /></label>
+          </div>
+          <p class="mt-5 text-[14px] font-semibold">Voorkeur voor het gesprek</p>
+          <div class="mt-2 flex flex-wrap gap-2">
+            <label class="pick cursor-pointer"><input type="radio" name="moment" value="een weekdag overdag" class="sr-only" checked /><span class="block border border-slate/25 rounded-full px-4 py-2 text-[14px]">Weekdag overdag</span></label>
+            <label class="pick cursor-pointer"><input type="radio" name="moment" value="een weekdag na 17 u" class="sr-only" /><span class="block border border-slate/25 rounded-full px-4 py-2 text-[14px]">Weekdag na 17 u</span></label>
+            <label class="pick cursor-pointer"><input type="radio" name="moment" value="zaterdag" class="sr-only" /><span class="block border border-slate/25 rounded-full px-4 py-2 text-[14px]">Zaterdag</span></label>
+          </div>
+          <p id="p-err" class="hidden mt-4 text-[14px] text-[#9b2c1f]">Vul je naam en een telefoonnummer of e-mail in, zodat Carl je kan terugbellen.</p>
+        </div>
+
+        <div id="p-ok" class="hidden text-center py-6">
+          <div class="mx-auto w-14 h-14 rounded-full bg-oak text-white grid place-items-center text-2xl">✓</div>
+          <h3 class="mt-4 font-ys text-3xl text-slate">Projectaanvraag verstuurd</h3>
+          <p id="p-sum" class="mt-3 text-slate2 max-w-[52ch] mx-auto leading-relaxed"></p>
+          <p class="mt-4 text-[13px] text-pencil">Dit is een concept-demo: er werd niets verzonden.</p>
+        </div>
+
+        <div id="p-nav" class="mt-8 flex items-center justify-between gap-3">
+          <button type="button" id="p-prev" class="btn invisible border border-slate/30 rounded-full px-5 py-3 font-semibold">Vorige</button>
+          <button type="button" id="p-next" class="btn bg-slate hover:bg-ink text-paper rounded-full px-7 py-3 font-semibold">Volgende</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Werkwijze (echte 6 stappen) -->
+  <section id="werkwijze" class="bg-slate text-paper">
+    <div class="max-w-7xl mx-auto px-5 py-20">
+      <h2 class="rv font-ys text-[clamp(2rem,3.6vw,2.9rem)] leading-[1.08] max-w-[20ch]">Hoe gaan wij te werk?</h2>
+      <ol class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10">
+        <li class="rv border-t border-paper/20 pt-5"><p class="font-ys text-3xl text-oakl">1</p><p class="mt-2 text-paper/90 leading-relaxed">Vraag een afspraak met een omschrijving van je project.</p></li>
+        <li class="rv border-t border-paper/20 pt-5"><p class="font-ys text-3xl text-oakl">2</p><p class="mt-2 text-paper/90 leading-relaxed">Kennismaking in de showroom: we bespreken je project en de materiaalkeuze.</p></li>
+        <li class="rv border-t border-paper/20 pt-5"><p class="font-ys text-3xl text-oakl">3</p><p class="mt-2 text-paper/90 leading-relaxed">We bepalen het budget aan de hand van je wensen.</p></li>
+        <li class="rv border-t border-paper/20 pt-5"><p class="font-ys text-3xl text-oakl">4</p><p class="mt-2 text-paper/90 leading-relaxed">Na mondeling akkoord: de correcte opmeting en bespreking ter plaatse.</p></li>
+        <li class="rv border-t border-paper/20 pt-5"><p class="font-ys text-3xl text-oakl">5</p><p class="mt-2 text-paper/90 leading-relaxed">We overlopen de definitieve offerte en leggen de timing vast.</p></li>
+        <li class="rv border-t border-paper/20 pt-5"><p class="font-ys text-3xl text-oakl">6</p><p class="mt-2 text-paper/90 leading-relaxed">Wachten op de dag van installatie, met een verzorgd, vakkundig resultaat.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Outlet -->
+  <section id="outlet" class="max-w-7xl mx-auto px-5 py-20">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-10">
+      <div>
+        <h2 class="rv font-ys text-[clamp(2rem,3.6vw,2.9rem)] leading-[1.08] text-slate">Outlet: toonzaalkeukens aan 50 % korting</h2>
+        <p class="rv mt-3 text-slate2 max-w-[60ch]">Prijzen zijn geplaatst, inclusief btw en recupel. Bij toestellen en sanitair is de installatie inbegrepen. Vraag het grondplan en de gedetailleerde prijslijst.</p>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <article class="rv bg-paper rounded-sm overflow-hidden border border-slate/10">
+        <img src="images/toonzaal-galbe.jpg" alt="Outletkeuken Galbe" class="w-full aspect-[16/10] object-cover" loading="lazy" />
+        <div class="p-6 flex items-center justify-between gap-4">
+          <div><h3 class="font-ys text-2xl text-slate">Galbe</h3><p class="text-[14px] text-pencil">Toonzaalmodel · 50 % korting</p></div>
+          <a href="#project" data-outlet="Galbe" class="outlet-btn btn shrink-0 border border-slate/30 hover:border-slate rounded-full px-5 py-2.5 font-semibold text-[14px]">Vraag prijslijst</a>
+        </div>
+      </article>
+      <article class="rv bg-paper rounded-sm overflow-hidden border border-slate/10">
+        <img src="images/toonzaal-delice-v.jpg" alt="Outletkeuken Delice V in eik met fornuis" class="w-full aspect-[16/10] object-cover" loading="lazy" />
+        <div class="p-6 flex items-center justify-between gap-4">
+          <div><h3 class="font-ys text-2xl text-slate">Delice V</h3><p class="text-[14px] text-pencil">Toonzaalmodel · 50 % korting</p></div>
+          <a href="#project" data-outlet="Delice V" class="outlet-btn btn shrink-0 border border-slate/30 hover:border-slate rounded-full px-5 py-2.5 font-semibold text-[14px]">Vraag prijslijst</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Atelier / historiek -->
+  <section id="atelier" class="bg-paper">
+    <div class="max-w-7xl mx-auto px-5 py-20 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7">
+        <h2 class="rv font-ys text-[clamp(2rem,3.6vw,2.9rem)] leading-[1.08] text-slate">Nooit meer dan twee mensen in het atelier. Bewust.</h2>
+        <div class="rv mt-6 space-y-4 text-[17px] text-slate2 leading-relaxed max-w-[60ch]">
+          <p>Het verhaal begint in de vroege jaren 70 met Young's Houtshop van moeder Machteld, een begrip in de zuidrand van Antwerpen. Vader Armand, houtexpert, leerde Carl het vak van meubelmaker.</p>
+          <p>In 1995 koos Carl resoluut voor interieurmaatwerk. Het orderboekje liep snel vol, maar de keuze voor kleinschaligheid bleef: de zaakvoerder werkt zelf mee op de werkvloer. Samen met Alain, al vele jaren de vakman naast hem, wordt elk project netjes opgeleverd.</p>
+          <p>In hetzelfde pand huist het H.C.T.O., het Houtstudie Centrum voor Technisch Onderwijs dat Armand in 1959 mee oprichtte.</p>
+        </div>
+      </div>
+      <figure class="rv lg:col-span-5">
+        <img src="images/keuken-natuursteen.jpg" alt="Keuken met natuursteen achterwand en mat zwarte kasten" class="w-full rounded-sm aspect-[4/3] object-cover" loading="lazy" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- Toestel defect -->
+  <section class="max-w-7xl mx-auto px-5 py-16">
+    <div class="rounded-sm border border-slate/15 bg-mdf/60 p-6 sm:p-8 grid md:grid-cols-12 gap-6 items-center">
+      <div class="md:col-span-5">
+        <h2 class="font-ys text-2xl text-slate">Probleem met een keukentoestel?</h2>
+        <p class="mt-2 text-slate2 text-[15px]">Als consument heb je minimum 2 jaar garantie. Kies het merk voor de juiste herstellingsdienst.</p>
+      </div>
+      <div class="md:col-span-7 flex flex-col sm:flex-row gap-3 sm:items-center">
+        <label class="sr-only" for="svc">Merk</label>
+        <select id="svc" class="border border-slate/25 rounded-sm px-3 py-2.5 bg-white sm:w-48">
+          <option value="">Kies het merk</option>
+        </select>
+        <p id="svc-out" class="text-[15px] text-slate" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-slate text-paper">
+    <div class="max-w-7xl mx-auto px-5 py-20 grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-6">
+        <h2 class="font-ys text-[clamp(2rem,3.6vw,2.9rem)] leading-[1.08]">Breng je ontwerp mee en relax</h2>
+        <p class="mt-4 text-[17px] text-paper/80 leading-relaxed max-w-[50ch]">Voor maatwerk in Mortsel, Edegem, Boechout, Hove, Kontich, Wilrijk, Berchem, Borsbeek, Deurne en de rest van de zuidrand van Antwerpen.</p>
+        <div class="mt-7 space-y-3">
+          <a href="tel:+3234493027" class="btn flex justify-between items-center border border-paper/20 hover:border-oakl rounded-sm px-5 py-4"><span class="font-semibold">03 449 30 27</span><span class="text-[13px] text-paper/60">Atelier</span></a>
+          <a href="tel:+32477582173" class="btn flex justify-between items-center border border-paper/20 hover:border-oakl rounded-sm px-5 py-4"><span class="font-semibold">0477 58 21 73</span><span class="text-[13px] text-paper/60">Gsm Carl</span></a>
+          <a href="mailto:info@youngs.be" class="btn flex justify-between items-center border border-paper/20 hover:border-oakl rounded-sm px-5 py-4"><span class="font-semibold">info@youngs.be</span><span class="text-[13px] text-paper/60">Mailen</span></a>
+        </div>
+      </div>
+      <div class="lg:col-span-6 rounded-sm bg-slate2 p-8">
+        <h3 class="font-ys text-2xl">Waar vind je ons?</h3>
+        <dl class="mt-5 space-y-4 text-[15px]">
+          <div class="border-b border-paper/15 pb-4"><dt class="text-paper/60">Vestiging</dt><dd class="font-semibold mt-0.5">Deurnestraat 54, 2640 Mortsel</dd></div>
+          <div class="border-b border-paper/15 pb-4"><dt class="text-paper/60">Bureel &amp; atelier</dt><dd class="font-semibold mt-0.5">Deurneleitje 2, Mortsel</dd></div>
+          <div class="border-b border-paper/15 pb-4"><dt class="text-paper/60">Showroom</dt><dd class="font-semibold mt-0.5">Op afspraak · privé parking voor klanten</dd></div>
+        </dl>
+        <a href="https://www.google.com/maps/search/?api=1&query=Young%27s+Deurnestraat+54+2640+Mortsel" target="_blank" rel="noopener" class="btn mt-6 inline-flex bg-oak hover:bg-[#9a5f2a] text-white rounded-full px-6 py-3 font-semibold">Route in Google Maps</a>
+        <p class="mt-6 text-[13px] text-paper/55">Young's BV · BTW BE 0404.620.949</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-ink text-paper/70 pb-20 md:pb-0">
+    <div class="max-w-7xl mx-auto px-5 py-8 flex flex-col md:flex-row justify-between gap-4 text-[13px]">
+      <p>Young's Keuken &amp; Interieur · Deurnestraat 54, 2640 Mortsel</p>
+      <p class="max-w-md">Concept-herontwerp door <a href="mailto:nicolas@saspire.org" class="underline">Saspire</a> als vrijblijvend voorstel. Dit is niet de officiële website van Young's.</p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden grid grid-cols-2 text-[15px] font-semibold shadow-[0_-6px_20px_rgba(0,0,0,.15)]">
+    <a href="tel:+3234493027" class="bg-slate text-paper py-3.5 text-center">Bel 03 449 30 27</a>
+    <a href="#project" class="bg-oak text-white py-3.5 text-center">Start je project</a>
+  </div>
+
+  <script>
+    document.documentElement.classList.add('js');
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+    document.querySelectorAll('.rv').forEach(el => io.observe(el));
+    const $ = id => document.getElementById(id);
+
+    /* ---------- Projectaanvraag in stappen ---------- */
+    let step = 1;
+    const panes = [...document.querySelectorAll('[data-step]')];
+    const navItems = [...document.querySelectorAll('#steps-nav li')];
+    const photos = [];
+    function show(n) {
+      step = n;
+      panes.forEach(p => p.classList.toggle('hidden', +p.dataset.step !== n));
+      $('pbar').style.width = (n * 25) + '%';
+      $('p-prev').classList.toggle('invisible', n === 1);
+      $('p-next').textContent = n === 4 ? 'Vraag showroomafspraak aan' : 'Volgende';
+      navItems.forEach(li => {
+        const s = +li.dataset.s, dot = li.querySelector('span');
+        dot.className = 'w-8 h-8 rounded-full grid place-items-center font-semibold ' + (s < n ? 'bg-oak text-white border border-oak' : s === n ? 'bg-slate text-paper border border-slate' : 'border border-slate/30');
+        li.classList.toggle('text-pencil', s > n);
+      });
+    }
+    show(1);
+    $('p-prev').addEventListener('click', () => show(Math.max(1, step - 1)));
+    $('p-next').addEventListener('click', () => {
+      if (step < 4) { show(step + 1); $('pf').scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' }); return; }
+      const n = $('p-n').value.trim(), t = $('p-t').value.trim(), e = $('p-e').value.trim();
+      if (!n || (!t && !e)) { $('p-err').classList.remove('hidden'); (n ? $('p-t') : $('p-n')).focus(); return; }
+      const type = document.querySelector('input[name=type]:checked').value;
+      const stijl = [...document.querySelectorAll('#p-stijl input:checked')].map(i => i.value.toLowerCase());
+      const merk = [...document.querySelectorAll('#p-merk input:checked')].map(i => i.value);
+      const maat = $('p-b').value && $('p-d').value ? ` van ongeveer ${$('p-b').value} × ${$('p-d').value} m` : '';
+      const moment = document.querySelector('input[name=moment]:checked').value;
+      let s = `Bedankt ${n}. Je aanvraag voor een ${type.toLowerCase()}${maat} is genoteerd`;
+      if (stijl.length) s += `, sfeer: ${stijl.join(', ')}`;
+      if (merk.length) s += `, met ${merk.join(', ')}`;
+      s += `. ${photos.length ? photos.length + (photos.length === 1 ? ' foto' : " foto's") + ' toegevoegd. ' : ''}Start: ${$('p-tijd').value.toLowerCase()}. Carl belt je terug om een showroomgesprek op ${moment} vast te leggen.`;
+      $('p-sum').textContent = s;
+      panes.forEach(p => p.classList.add('hidden'));
+      $('p-nav').classList.add('hidden');
+      $('p-ok').classList.remove('hidden');
+      $('pbar').style.width = '100%';
+      navItems.forEach(li => { li.querySelector('span').className = 'w-8 h-8 rounded-full grid place-items-center font-semibold bg-oak text-white border border-oak'; li.classList.remove('text-pencil'); });
+    });
+    $('p-f').addEventListener('change', e => {
+      [...e.target.files].slice(0, 12).forEach(f => {
+        if (!f.type.startsWith('image/')) return;
+        photos.push(f.name);
+        const r = new FileReader();
+        r.onload = () => $('p-thumbs').insertAdjacentHTML('beforeend', `<img src="${r.result}" alt="Je foto ${photos.length}" class="w-full aspect-square object-cover rounded-sm border border-slate/15" />`);
+        r.readAsDataURL(f);
+      });
+    });
+    document.querySelectorAll('.outlet-btn').forEach(a => a.addEventListener('click', () => {
+      document.querySelector('input[name=type][value=Outletkeuken]').checked = true;
+      $('p-om').value = 'Interesse in outletkeuken ' + a.dataset.outlet + ': graag grondplan en prijslijst.';
+      show(1);
+    }));
+
+    /* ---------- Herstellingsdiensten (van hun leverancierspagina) ---------- */
+    const SVC = {
+      'Siemens': '070 22 21 42 · bru-repairs@bshg.com', 'Bosch': '070 22 21 41 · bru-repairs@bshg.com',
+      'Miele': '02 451 16 16 · repairs@miele.be', 'AEG': '02 363 04 44 · repairs.belgium@electrolux.be',
+      'Novy': '056 36 51 02 · herstellingen@novy.be', 'Quooker': '03 646 54 00 · service@quooker.be',
+      'Liebherr': '02 456 00 29 · service@cinem.be', 'Blanco': '016 44 12 43 · service@blanco.be',
+      'Franke': '054 31 01 11 · ks-aftersales.be@franke.com', 'Venduro': '09 340 60 00 · info@venduro.be',
+      'Whirlpool': '02 263 33 33 · whirlpool.be'
+    };
+    Object.keys(SVC).forEach(k => $('svc').insertAdjacentHTML('beforeend', `<option>${k}</option>`));
+    $('svc').addEventListener('change', e => { $('svc-out').innerHTML = e.target.value ? `<span class="font-semibold">${e.target.value}:</span> ${SVC[e.target.value]}` : ''; });
+  </script>
+</body>
+</html>

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Garage &amp; Carrosserie Lemmens | Onderhoud, herstellingen en carrosserie in Schoten</title>
+  <meta name="description" content="Garage &amp; Carrosserie Lemmens in Schoten: onderhoud en herstellingen van auto's en brommers van alle merken, eigen carrosserie, airco, banden en laseruitlijning, depannage en JTC-scooters. Maak online een afspraak." />
+  <meta name="theme-color" content="#1b2129" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Garage &amp; Carrosserie Lemmens" />
+  <meta property="og:locale" content="nl_BE" />
+  <meta property="og:title" content="Garage &amp; Carrosserie Lemmens, Schoten" />
+  <meta property="og:description" content="Onderhoud, herstellingen en carrosserie voor alle merken. Auto én brommer onder één dak, Deuzeldlaan 189." />
+  <meta property="og:image" content="images/concept.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231d56a8'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='700' font-size='19' text-anchor='middle' fill='%23fff'%3EL%3C/text%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Garage & Carrosserie Lemmens",
+    "description": "Onderhoud en herstellingen van auto's en brommers van alle merken, carrosserieherstelling, airco-service, banden en laseruitlijning, depannage, verkoop van occasies, wisselstukken en JTC-scooters.",
+    "url": "https://garagelemmens-schoten.be/",
+    "telephone": "+3236471887",
+    "email": "garage.lemmens@telenet.be",
+    "image": "images/gevel.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Deuzeldlaan 189",
+      "postalCode": "2900",
+      "addressLocality": "Schoten",
+      "addressCountry": "BE"
+    },
+    "areaServed": ["Schoten", "'s-Gravenwezel", "Brasschaat", "Merksem", "Deurne", "Wijnegem"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "08:00", "closes": "12:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "13:00", "closes": "17:00" }
+    ],
+    "review": [
+      { "@type": "Review", "author": { "@type": "Person", "name": "Christiane" }, "reviewBody": "Direct geholpen. Probleem van auto direct gevonden." },
+      { "@type": "Review", "author": { "@type": "Person", "name": "Jozefien" }, "reviewBody": "Transparant, duidelijk, vriendelijk en eerlijk." }
+    ]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Public Sans"', 'system-ui', 'sans-serif'], cond: ['"Barlow Condensed"', 'sans-serif'] },
+          colors: {
+            asphalt: '#1b2129',
+            tar: '#262e38',
+            sign: '#1d56a8',
+            signhi: '#2d6cc7',
+            plate: '#b8152b',
+            concrete: '#e8eaed',
+            chalk: '#f6f7f8',
+            ink: '#1a1f26',
+            slate: '#5b6673',
+            signal: '#f2c230',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root { --ease: cubic-bezier(0.23, 1, 0.32, 1); }
+    html { scroll-behavior: smooth; }
+    h1, h2, h3 { text-wrap: balance; }
+    .btn { transition: transform .18s var(--ease), background-color .18s var(--ease), border-color .18s var(--ease); }
+    .btn:active { transform: scale(0.97); }
+    a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, label:focus-within { outline: 2px solid #f2c230; outline-offset: 3px; }
+
+    /* Belgian number plate */
+    .plate { display: flex; align-items: stretch; background: #fff; border: 2px solid #b8152b; border-radius: 7px; overflow: hidden; box-shadow: 0 1px 0 rgba(0,0,0,.08), inset 0 0 0 2px #fff; }
+    .plate .eu { background: #1d3f99; color: #fff; width: 34px; flex: none; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; padding-bottom: 6px; font: 700 14px/1 "Public Sans", sans-serif; }
+    .plate .eu svg { margin-bottom: auto; margin-top: 7px; }
+    .plate input { flex: 1; min-width: 0; width: 100%; border: 0; background: transparent; color: #b8152b; font: 700 clamp(30px, 4.2vw, 42px)/1 "Barlow Condensed", sans-serif; letter-spacing: .06em; text-transform: uppercase; padding: 8px 12px; }
+    .plate input::placeholder { color: rgba(184,21,43,.28); }
+    .plate input:focus { outline: none; }
+    .plate:focus-within { box-shadow: 0 0 0 3px #f2c230; }
+
+    /* Chips (service / day choice) */
+    .chip { cursor: pointer; }
+    .chip input { position: absolute; opacity: 0; pointer-events: none; }
+    .chip span { display: block; border: 1.5px solid #cfd4da; border-radius: 10px; padding: 10px 14px; background: #fff; transition: border-color .15s var(--ease), background-color .15s var(--ease), color .15s var(--ease); }
+    .chip:hover span { border-color: #1d56a8; }
+    .chip input:checked + span { border-color: #1d56a8; background: #1d56a8; color: #fff; }
+    .chip input:checked + span small { color: #d6e3f7; }
+
+    .field { width: 100%; border: 1.5px solid #cfd4da; border-radius: 10px; padding: 11px 13px; background: #fff; color: #1a1f26; }
+    .field:focus { border-color: #1d56a8; outline: none; box-shadow: 0 0 0 3px rgba(29,86,168,.18); }
+    .err { border-color: #b8152b !important; }
+
+    /* Werkbon paper edge */
+    .werkbon { background: #fff; box-shadow: 0 30px 60px -30px rgba(27,33,41,.45), 0 0 0 1px rgba(27,33,41,.06); }
+    .perf { background-image: radial-gradient(circle at 8px 0, transparent 7px, #fff 7.5px); background-size: 16px 10px; height: 10px; }
+
+    .drop { border: 2px dashed #b9c1ca; transition: border-color .15s var(--ease), background-color .15s var(--ease); }
+    .drop.over { border-color: #1d56a8; background: #eef3fb; }
+
+    #carroWrap { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .35s var(--ease); }
+    #carroWrap.open { grid-template-rows: 1fr; }
+
+    .no-js-hide { display: none; }
+    .js .no-js-hide { display: block; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; animation: none !important; }
+    }
+  </style>
+</head>
+<body class="bg-chalk text-ink font-sans antialiased">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- Concept badge -->
+  <div class="fixed right-3 bottom-[70px] md:bottom-4 md:right-4 z-50 pointer-events-none">
+    <span class="text-[10.5px] tracking-wide font-semibold text-white/90 bg-asphalt/90 border border-white/15 rounded-full px-3 py-1.5 backdrop-blur">CONCEPT-DEMO · SASPIRE</span>
+  </div>
+
+  <!-- Top strip -->
+  <div class="bg-asphalt text-white/70 text-[13px]">
+    <div class="max-w-6xl mx-auto px-5 py-2 flex items-center justify-between gap-4">
+      <p>Deuzeldlaan 189, Schoten <span class="hidden sm:inline">· ma tot do 8–12 u en 13–17 u</span></p>
+      <div class="flex items-center gap-5">
+        <a href="tel:+3236471887" class="hover:text-white">03 647 18 87</a>
+        <a href="tel:+32497508644" class="hover:text-white hidden md:inline">gsm 0497 50 86 44</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 bg-asphalt/95 backdrop-blur border-b border-white/10">
+    <nav class="max-w-6xl mx-auto px-5 h-[66px] flex items-center justify-between" aria-label="Hoofdnavigatie">
+      <a href="#top" class="flex items-center gap-3 text-white">
+        <span class="grid place-items-center w-10 h-10 rounded-md bg-sign font-cond font-extrabold text-[22px] leading-none">L</span>
+        <span class="leading-tight">
+          <span class="block font-cond font-bold text-[21px] tracking-wide">LEMMENS</span>
+          <span class="block text-[11px] text-white/60 -mt-0.5">Garage &amp; Carrosserie · Schoten</span>
+        </span>
+      </a>
+      <div class="hidden lg:flex items-center gap-8 text-[14px] font-medium text-white/75">
+        <a href="#diensten" class="hover:text-white">Diensten</a>
+        <a href="#carrosserie" class="hover:text-white">Carrosserie</a>
+        <a href="#te-koop" class="hover:text-white">Te koop &amp; scooters</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </div>
+      <a href="#afspraak" class="btn inline-flex items-center gap-2 bg-sign hover:bg-signhi text-white font-semibold text-[14px] rounded-lg px-4 py-2.5 whitespace-nowrap">Afspraak maken</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative bg-asphalt text-white overflow-hidden">
+    <img src="images/gevel.jpg" alt="De garage van Lemmens aan de Deuzeldlaan in Schoten" class="absolute inset-0 w-full h-full object-cover object-[70%_50%] opacity-90" />
+    <div class="absolute inset-0 bg-gradient-to-r from-asphalt via-asphalt/85 to-asphalt/10"></div>
+    <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-asphalt to-transparent"></div>
+
+    <div class="relative max-w-6xl mx-auto px-5 py-14 md:py-20 lg:py-24 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7">
+        <p class="inline-flex items-center gap-2 text-[13px] font-semibold text-signal mb-5">
+          <span class="w-2 h-2 rounded-full bg-signal"></span> Alle merken · auto en brommer · eigen carrosserie
+        </p>
+        <h1 class="font-cond font-extrabold uppercase leading-[0.92] tracking-[0.005em] text-[clamp(3rem,7.2vw,5.6rem)]">
+          Garage &amp; Carrosserie<br />Lemmens
+        </h1>
+        <p class="mt-6 text-[19px] leading-relaxed text-white/80 max-w-[46ch]">
+          Onderhoud, herstellingen en carrosseriewerk in Schoten. Uw auto of brommer, van welk merk ook, in één garage aan de Deuzeldlaan.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#afspraak" class="btn bg-sign hover:bg-signhi text-white font-semibold rounded-lg px-6 py-3.5">Afspraak maken</a>
+          <a href="tel:+3236471887" class="btn border border-white/30 hover:border-white text-white font-semibold rounded-lg px-6 py-3.5">Bel 03 647 18 87</a>
+        </div>
+        <ul class="mt-9 flex flex-wrap gap-x-6 gap-y-2 text-[14px] text-white/70">
+          <li>Airco-service</li><li>Banden &amp; laseruitlijning</li><li>Diagnose</li><li>Depannage</li>
+        </ul>
+      </div>
+
+      <!-- Plate quick-start -->
+      <div class="lg:col-span-5 min-w-0">
+        <form id="quick" class="werkbon rounded-2xl text-ink p-6 md:p-7" action="#afspraak">
+          <p class="font-cond font-bold text-[24px] leading-tight">Wat mogen we voor u doen?</p>
+          <p class="text-slate text-[14px] mt-1">Vul uw nummerplaat in en kies wat er moet gebeuren.</p>
+          <label class="block mt-5" for="qPlate"><span class="sr-only">Nummerplaat</span>
+            <span class="plate">
+              <span class="eu" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 20 20"><g fill="#f2c230"><circle cx="10" cy="3" r="1"/><circle cx="15" cy="5" r="1"/><circle cx="17" cy="10" r="1"/><circle cx="15" cy="15" r="1"/><circle cx="10" cy="17" r="1"/><circle cx="5" cy="15" r="1"/><circle cx="3" cy="10" r="1"/><circle cx="5" cy="5" r="1"/></g></svg>B</span>
+              <input id="qPlate" name="plate" autocomplete="off" spellcheck="false" placeholder="1-ABC-234" maxlength="11" />
+            </span>
+          </label>
+          <div class="mt-4 grid grid-cols-2 gap-2 text-[14px] font-semibold">
+            <button type="button" data-q="onderhoud" class="qbtn btn rounded-lg border-[1.5px] border-[#cfd4da] hover:border-sign px-3 py-3 text-left">Onderhoud</button>
+            <button type="button" data-q="carrosserie" class="qbtn btn rounded-lg border-[1.5px] border-[#cfd4da] hover:border-sign px-3 py-3 text-left">Carrosserieschade</button>
+            <button type="button" data-q="keuring" class="qbtn btn rounded-lg border-[1.5px] border-[#cfd4da] hover:border-sign px-3 py-3 text-left">Afgekeurd, herstellen</button>
+            <button type="button" data-q="airco" class="qbtn btn rounded-lg border-[1.5px] border-[#cfd4da] hover:border-sign px-3 py-3 text-left">Airco of banden</button>
+          </div>
+          <p class="mt-4 text-[12.5px] text-slate">Pech onderweg? Bel meteen <a href="tel:+3236471887" class="font-semibold text-sign underline">03 647 18 87</a>, we doen ook depannage.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="diensten" class="py-20 md:py-24">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="grid lg:grid-cols-12 gap-10 items-end mb-12">
+        <h2 class="lg:col-span-7 font-cond font-extrabold uppercase text-[clamp(2.2rem,4.4vw,3.4rem)] leading-[0.95]">Van kleine beurt tot depannage</h2>
+        <p class="lg:col-span-5 text-slate text-[17px] leading-relaxed">We herstellen auto's en brommers van alle merken. Wat u bij ons laat doen, zonder doorverwijzen:</p>
+      </div>
+
+      <div class="grid md:grid-cols-12 gap-5">
+        <article class="md:col-span-7 md:row-span-2 relative rounded-2xl overflow-hidden bg-asphalt text-white min-h-[380px] flex flex-col justify-end">
+          <img src="images/werkplaats.jpg" alt="Werkplaats van Garage Lemmens met wagens op de brug" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+          <div class="absolute inset-0 bg-gradient-to-t from-asphalt via-asphalt/70 to-transparent"></div>
+          <div class="relative p-7">
+            <h3 class="font-cond font-bold text-[30px] uppercase">Onderhoud &amp; herstellingen</h3>
+            <ul class="mt-4 grid grid-cols-2 gap-x-6 gap-y-1.5 text-white/85 text-[15px]">
+              <li>Onderhoud alle merken</li><li>Airco-service</li><li>Remmen</li><li>Schokdempers</li><li>Uitlaten</li><li>Batterijen</li><li>Ruiten</li><li>Diagnose</li>
+            </ul>
+          </div>
+        </article>
+        <article class="md:col-span-5 rounded-2xl bg-white border border-[#dde1e6] p-6">
+          <h3 class="font-cond font-bold text-[24px] uppercase">Banden &amp; laseruitlijning</h3>
+          <p class="text-slate mt-2">Bandenservice en uitlijning met laser, zodat uw wagen recht rijdt en uw banden gelijk slijten.</p>
+        </article>
+        <article class="md:col-span-5 rounded-2xl bg-white border border-[#dde1e6] p-6">
+          <h3 class="font-cond font-bold text-[24px] uppercase">Plaatsen &amp; monteren</h3>
+          <p class="text-slate mt-2">Trekhaken, fietsendragers, parkeersensoren en sportvelgen.</p>
+        </article>
+        <article class="md:col-span-4 rounded-2xl bg-sign text-white p-6">
+          <h3 class="font-cond font-bold text-[24px] uppercase">Depannage</h3>
+          <p class="text-white/85 mt-2">Autopech onderweg? We komen u halen.</p>
+          <a href="tel:+3236471887" class="inline-block mt-4 font-semibold underline underline-offset-4">Bel 03 647 18 87</a>
+        </article>
+        <article class="md:col-span-4 rounded-2xl bg-white border border-[#dde1e6] p-6">
+          <h3 class="font-cond font-bold text-[24px] uppercase">Brommers</h3>
+          <p class="text-slate mt-2">Onderhoud en herstellingen aan brommers en scooters, alle merken. Officiële verdeler van JTC Scooters.</p>
+        </article>
+        <article class="md:col-span-4 rounded-2xl bg-white border border-[#dde1e6] p-6">
+          <h3 class="font-cond font-bold text-[24px] uppercase">Verkoop</h3>
+          <p class="text-slate mt-2">Nieuwe wagens, occasies en wisselstukken.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrosserie -->
+  <section id="carrosserie" class="bg-concrete py-20 md:py-24">
+    <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
+      <figure class="relative">
+        <img src="images/carrosserie.jpg" alt="Carrosseriewerk: geschuurde en geplamuurde zijpanelen van een blauwe wagen" class="rounded-2xl w-full aspect-[4/3.4] object-cover" loading="lazy" />
+        <figcaption class="absolute left-4 bottom-4 bg-white/95 rounded-lg px-3 py-2 text-[13px] font-semibold">Uit onze eigen werkplaats</figcaption>
+      </figure>
+      <div>
+        <h2 class="font-cond font-extrabold uppercase text-[clamp(2.2rem,4.4vw,3.4rem)] leading-[0.95]">Schade aan uw carrosserie? Ook dat herstellen we hier.</h2>
+        <p class="mt-5 text-slate text-[17px] leading-relaxed max-w-[52ch]">Deuk, kras of aanrijding: Lemmens heeft een eigen carrosserie, dus mechaniek en plaatwerk gebeuren onder hetzelfde dak. Stuur ons vooraf een paar foto's van de schade, dan weten we al waar we aan beginnen als u langskomt.</p>
+        <a href="#afspraak" data-pre="carrosserie" class="pre btn inline-block mt-7 bg-asphalt hover:bg-tar text-white font-semibold rounded-lg px-6 py-3.5">Schade doorsturen met foto's</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking (signature) -->
+  <section id="afspraak" class="bg-asphalt py-20 md:py-24">
+    <div class="max-w-4xl mx-auto px-5">
+      <div class="text-white mb-10">
+        <h2 class="font-cond font-extrabold uppercase text-[clamp(2.2rem,4.4vw,3.4rem)] leading-[0.95]">Uw afspraak, op één werkbon</h2>
+        <p class="mt-4 text-white/70 text-[17px] max-w-[56ch]">Nummerplaat, wat er moet gebeuren en wanneer het u past. Wij bellen u terug om het uur vast te leggen.</p>
+      </div>
+
+      <div class="werkbon rounded-2xl overflow-hidden">
+        <noscript><p class="p-6 bg-signal/30 text-ink">Dit formulier werkt met JavaScript. Bel ons gerust op 03 647 18 87 of mail naar garage.lemmens@telenet.be.</p></noscript>
+        <div class="flex items-center justify-between bg-concrete px-6 md:px-8 py-3 text-[13px] text-slate border-b border-[#d7dbe0]">
+          <span class="font-semibold text-ink">Werkbon Garage Lemmens</span>
+          <span id="wbNr">Nr. ——</span>
+        </div>
+        <form id="booking" class="p-6 md:p-8 space-y-9" novalidate>
+          <!-- 1 vehicle -->
+          <fieldset>
+            <legend class="font-cond font-bold text-[22px] uppercase mb-4"><span class="text-sign mr-2">1</span>Uw voertuig</legend>
+            <div class="flex gap-2 mb-4" role="radiogroup" aria-label="Soort voertuig">
+              <label class="chip relative"><input type="radio" name="soort" value="Auto" checked /><span class="font-semibold">Auto</span></label>
+              <label class="chip relative"><input type="radio" name="soort" value="Brommer / scooter" /><span class="font-semibold">Brommer of scooter</span></label>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4">
+              <label class="block"><span class="text-[13px] font-semibold text-slate">Nummerplaat</span>
+                <span class="plate mt-1.5"><span class="eu" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 20 20"><g fill="#f2c230"><circle cx="10" cy="3" r="1"/><circle cx="15" cy="5" r="1"/><circle cx="17" cy="10" r="1"/><circle cx="15" cy="15" r="1"/><circle cx="10" cy="17" r="1"/><circle cx="5" cy="15" r="1"/><circle cx="3" cy="10" r="1"/><circle cx="5" cy="5" r="1"/></g></svg>B</span><input id="plate" name="plate" autocomplete="off" spellcheck="false" placeholder="1-ABC-234" maxlength="11" /></span>
+              </label>
+              <label class="block"><span class="text-[13px] font-semibold text-slate">Of: merk en model</span>
+                <input id="model" class="field mt-1.5 h-[62px] text-[17px]" placeholder="bv. Peugeot 308, 2017" />
+              </label>
+            </div>
+            <p id="vehErr" class="hidden mt-2 text-[13px] text-plate font-semibold">Vul uw nummerplaat of merk en model in.</p>
+          </fieldset>
+
+          <!-- 2 service -->
+          <fieldset>
+            <legend class="font-cond font-bold text-[22px] uppercase mb-4"><span class="text-sign mr-2">2</span>Wat moet er gebeuren?</legend>
+            <div id="svcGrid" class="grid grid-cols-2 md:grid-cols-4 gap-2 text-[14px]">
+              <label class="chip relative"><input type="radio" name="dienst" value="onderhoud" /><span><b class="block">Onderhoud</b><small class="text-slate">kleine of grote beurt</small></span></label>
+              <label class="chip relative"><input type="radio" name="dienst" value="carrosserie" /><span><b class="block">Carrosserie</b><small class="text-slate">deuk, kras, aanrijding</small></span></label>
+              <label class="chip relative"><input type="radio" name="dienst" value="keuring" /><span><b class="block">Afgekeurd</b><small class="text-slate">herstellen na keuring</small></span></label>
+              <label class="chip relative"><input type="radio" name="dienst" value="airco" /><span><b class="block">Airco-service</b><small class="text-slate">koelt niet meer</small></span></label>
+              <label class="chip relative"><input type="radio" name="dienst" value="banden" /><span><b class="block">Banden</b><small class="text-slate">en laseruitlijning</small></span></label>
+              <label class="chip relative"><input type="radio" name="dienst" value="remmen" /><span><b class="block">Remmen</b><small class="text-slate">of schokdempers</small></span></label>
+              <label class="chip relative"><input type="radio" name="dienst" value="diagnose" /><span><b class="block">Diagnose</b><small class="text-slate">lampje of geluid</small></span></label>
+              <label class="chip relative"><input type="radio" name="dienst" value="montage" /><span><b class="block">Monteren</b><small class="text-slate">trekhaak, sensoren…</small></span></label>
+            </div>
+            <p id="svcErr" class="hidden mt-2 text-[13px] text-plate font-semibold">Kies wat er moet gebeuren.</p>
+
+            <!-- carrosserie extras -->
+            <div id="carroWrap" class="mt-1"><div class="overflow-hidden">
+              <div class="mt-5 rounded-xl bg-concrete p-5">
+                <p class="font-semibold">Waar zit de schade?</p>
+                <div class="mt-3 flex flex-wrap gap-2 text-[14px]" id="zones">
+                  <label class="chip relative"><input type="checkbox" name="zone" value="Voorkant" /><span>Voorkant</span></label>
+                  <label class="chip relative"><input type="checkbox" name="zone" value="Achterkant" /><span>Achterkant</span></label>
+                  <label class="chip relative"><input type="checkbox" name="zone" value="Linkerzijde" /><span>Linkerzijde</span></label>
+                  <label class="chip relative"><input type="checkbox" name="zone" value="Rechterzijde" /><span>Rechterzijde</span></label>
+                  <label class="chip relative"><input type="checkbox" name="zone" value="Dak / motorkap" /><span>Dak of motorkap</span></label>
+                </div>
+                <p class="font-semibold mt-5">Foto's van de schade <span class="font-normal text-slate">(max. 6)</span></p>
+                <label id="drop" class="drop mt-2 flex flex-col items-center justify-center gap-1 rounded-xl bg-white px-4 py-7 text-center cursor-pointer">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4V8z" stroke="#1d56a8" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.5" stroke="#1d56a8" stroke-width="1.8"/></svg>
+                  <span class="font-semibold text-sign">Foto's kiezen of hierheen slepen</span>
+                  <span class="text-[13px] text-slate">Op uw gsm kan u meteen een foto nemen.</span>
+                  <input id="photos" type="file" accept="image/*" multiple class="sr-only" />
+                </label>
+                <div id="thumbs" class="mt-3 grid grid-cols-3 sm:grid-cols-6 gap-2"></div>
+              </div>
+            </div></div>
+          </fieldset>
+
+          <!-- 3 day -->
+          <fieldset>
+            <legend class="font-cond font-bold text-[22px] uppercase mb-1"><span class="text-sign mr-2">3</span>Wanneer past het u?</legend>
+            <p class="text-[14px] text-slate mb-4">We zijn open van maandag tot donderdag.</p>
+            <div id="days" class="grid grid-cols-4 sm:grid-cols-8 gap-2 text-center"></div>
+            <div class="flex gap-2 mt-3 text-[14px]">
+              <label class="chip relative"><input type="radio" name="dagdeel" value="voormiddag (8–12 u)" checked /><span>Voormiddag, 8–12 u</span></label>
+              <label class="chip relative"><input type="radio" name="dagdeel" value="namiddag (13–17 u)" /><span>Namiddag, 13–17 u</span></label>
+            </div>
+            <p id="dayErr" class="hidden mt-2 text-[13px] text-plate font-semibold">Kies een voorkeurdag.</p>
+          </fieldset>
+
+          <!-- 4 contact -->
+          <fieldset>
+            <legend class="font-cond font-bold text-[22px] uppercase mb-4"><span class="text-sign mr-2">4</span>Hoe bereiken we u?</legend>
+            <div class="grid md:grid-cols-2 gap-4">
+              <label class="block"><span class="text-[13px] font-semibold text-slate">Naam</span><input id="naam" class="field mt-1.5" autocomplete="name" /></label>
+              <label class="block"><span class="text-[13px] font-semibold text-slate">Telefoon of gsm</span><input id="tel" type="tel" class="field mt-1.5" autocomplete="tel" /></label>
+              <label class="block md:col-span-2"><span class="text-[13px] font-semibold text-slate">Opmerking <span class="font-normal">(optioneel)</span></span><textarea id="opm" rows="3" class="field mt-1.5" placeholder="bv. piept bij het remmen, onderhoudslampje brandt…"></textarea></label>
+            </div>
+          </fieldset>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <button type="submit" class="btn bg-sign hover:bg-signhi text-white font-semibold rounded-lg px-7 py-4 text-[16px]">Werkbon versturen</button>
+            <p class="text-[13px] text-slate">Demo: er wordt niets verzonden.</p>
+          </div>
+        </form>
+
+        <!-- Success -->
+        <div id="done" class="hidden p-6 md:p-8" role="status" aria-live="polite" tabindex="-1"></div>
+        <div class="perf bg-asphalt"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Te koop + JTC -->
+  <section id="te-koop" class="py-20 md:py-24">
+    <div class="max-w-6xl mx-auto px-5">
+      <div class="grid lg:grid-cols-12 gap-10 items-end mb-10">
+        <h2 class="lg:col-span-7 font-cond font-extrabold uppercase text-[clamp(2.2rem,4.4vw,3.4rem)] leading-[0.95]">Occasies, nagekeken in eigen huis</h2>
+        <p class="lg:col-span-5 text-slate text-[17px] leading-relaxed">Elke occasie wordt geleverd na onderhoud en gekeurd, met car-pass en tot 1 jaar waarborg.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <article class="rounded-2xl overflow-hidden bg-white border border-[#dde1e6]">
+          <div class="relative"><img src="images/occasie-2008.jpg" alt="Witte Peugeot 2008 GT-line voor de garage" class="w-full aspect-[4/3.6] object-cover object-[50%_70%]" loading="lazy" /><span class="absolute top-3 left-3 bg-plate text-white text-[12px] font-bold rounded px-2 py-1">Verkocht</span></div>
+          <div class="p-5"><h3 class="font-cond font-bold text-[22px] uppercase">Peugeot 2008 GT-line</h3><p class="text-slate text-[14px] mt-1">Na onderhoud, gekeurd met car-pass, 1 jaar waarborg.</p></div>
+        </article>
+        <article class="rounded-2xl overflow-hidden bg-white border border-[#dde1e6]">
+          <div class="relative"><img src="images/occasie-corsa.jpg" alt="Grijze Opel Corsa voor de garage" class="w-full aspect-[4/3.6] object-cover object-[50%_75%]" loading="lazy" /><span class="absolute top-3 left-3 bg-plate text-white text-[12px] font-bold rounded px-2 py-1">Verkocht</span></div>
+          <div class="p-5"><h3 class="font-cond font-bold text-[22px] uppercase">Opel Corsa</h3><p class="text-slate text-[14px] mt-1">Na onderhoud, gekeurd met car-pass, 3 maanden waarborg.</p></div>
+        </article>
+        <article class="sm:col-span-2 lg:col-span-1 rounded-2xl overflow-hidden bg-asphalt text-white">
+          <img src="images/jtc-scooters.jpg" alt="Nieuwe JTC-scooters voor het uithangbord van Garage Lemmens" class="w-full aspect-[4/3.6] object-cover" loading="lazy" />
+          <div class="p-5"><h3 class="font-cond font-bold text-[22px] uppercase">Nieuwe JTC-scooters</h3><p class="text-white/70 text-[14px] mt-1">Officiële verdeler van JTC Scooters: 50cc, 125cc en elektrisch. Onderhoud doen we zelf.</p><a href="https://lemmens-scooters.be/" target="_blank" rel="noopener" class="inline-block mt-3 text-[14px] font-semibold text-signal underline underline-offset-4">Bekijk alle modellen</a></div>
+        </article>
+      </div>
+      <p class="mt-6 text-[15px] text-slate">Op zoek naar een wagen? Vraag gerust wat er binnenkort binnenkomt: <a class="font-semibold text-sign underline" href="tel:+3236471887">03 647 18 87</a>.</p>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="bg-sign text-white py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-5 grid md:grid-cols-12 gap-10 items-center">
+      <div class="md:col-span-4">
+        <h2 class="font-cond font-extrabold uppercase text-[clamp(2rem,3.6vw,2.8rem)] leading-[0.95]">Wat klanten zeggen</h2>
+        <p class="mt-3 text-white/75">Uit de Google-reviews van Garage Lemmens.</p>
+      </div>
+      <div class="md:col-span-8 grid sm:grid-cols-2 gap-5">
+        <blockquote class="rounded-2xl bg-white/10 border border-white/15 p-6">
+          <p class="text-[20px] leading-snug font-medium">“Direct geholpen. Probleem van auto direct gevonden.”</p>
+          <footer class="mt-4 text-white/70 text-[14px]">Christiane</footer>
+        </blockquote>
+        <blockquote class="rounded-2xl bg-white/10 border border-white/15 p-6">
+          <p class="text-[20px] leading-snug font-medium">“Transparant, duidelijk, vriendelijk en eerlijk.”</p>
+          <footer class="mt-4 text-white/70 text-[14px]">Jozefien</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 md:py-24">
+    <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-12 gap-10">
+      <div class="lg:col-span-5 min-w-0">
+        <h2 class="font-cond font-extrabold uppercase text-[clamp(2.2rem,4.4vw,3.4rem)] leading-[0.95]">Kom eens langs</h2>
+        <address class="not-italic mt-6 text-[17px] leading-relaxed">
+          Garage &amp; Carrosserie Lemmens<br />Deuzeldlaan 189<br />2900 Schoten
+        </address>
+        <dl class="mt-6 grid grid-cols-[90px_1fr] gap-y-2 text-[16px]">
+          <dt class="text-slate">Tel</dt><dd><a href="tel:+3236471887" class="font-semibold text-sign">03 647 18 87</a></dd>
+          <dt class="text-slate">Gsm</dt><dd><a href="tel:+32497508644" class="font-semibold text-sign">0497 50 86 44</a></dd>
+          <dt class="text-slate">E-mail</dt><dd><a href="mailto:garage.lemmens@telenet.be" class="font-semibold text-sign break-all">garage.lemmens@telenet.be</a></dd>
+        </dl>
+        <a href="https://www.google.com/maps/search/?api=1&query=Garage+Lemmens+Deuzeldlaan+189+2900+Schoten" target="_blank" rel="noopener" class="btn inline-block mt-7 bg-asphalt hover:bg-tar text-white font-semibold rounded-lg px-6 py-3.5">Route in Google Maps</a>
+      </div>
+      <div class="lg:col-span-7 grid sm:grid-cols-2 gap-5">
+        <div class="rounded-2xl bg-white border border-[#dde1e6] p-6">
+          <h3 class="font-cond font-bold text-[22px] uppercase">Openingsuren</h3>
+          <table class="mt-3 w-full text-[15px]">
+            <tbody id="hours">
+              <tr data-d="1"><td class="py-1">Maandag</td><td class="text-right">8–12 u · 13–17 u</td></tr>
+              <tr data-d="2"><td class="py-1">Dinsdag</td><td class="text-right">8–12 u · 13–17 u</td></tr>
+              <tr data-d="3"><td class="py-1">Woensdag</td><td class="text-right">8–12 u · 13–17 u</td></tr>
+              <tr data-d="4"><td class="py-1">Donderdag</td><td class="text-right">8–12 u · 13–17 u</td></tr>
+              <tr data-d="5" class="text-slate"><td class="py-1">Vrijdag</td><td class="text-right">gesloten</td></tr>
+              <tr data-d="6" class="text-slate"><td class="py-1">Za en zo</td><td class="text-right">gesloten</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="rounded-2xl bg-concrete p-6">
+          <h3 class="font-cond font-bold text-[22px] uppercase">Werkgebied</h3>
+          <p class="mt-3 text-[15px] leading-relaxed text-slate">Wij werken voor klanten uit Schoten, 's-Gravenwezel, Brasschaat, Merksem, Deurne en Wijnegem. Depannage bij pech in de buurt.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-asphalt text-white/60 text-[13px] pb-24 md:pb-8 pt-8">
+    <div class="max-w-6xl mx-auto px-5 flex flex-wrap justify-between gap-3">
+      <p>© Garage &amp; Carrosserie Lemmens · Deuzeldlaan 189, 2900 Schoten</p>
+      <p>Concept door Saspire, niet de officiële site.</p>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile call bar -->
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden grid grid-cols-2 text-white font-semibold text-[15px]">
+    <a href="tel:+3236471887" class="bg-sign text-center py-4">Bel Lemmens</a>
+    <a href="#afspraak" class="bg-asphalt text-center py-4">Afspraak maken</a>
+  </div>
+
+  <script>
+  (function () {
+    var $ = function (s, r) { return (r || document).querySelector(s); };
+    var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+
+    // Belgian plate formatting: 1-ABC-234
+    function fmtPlate(v) {
+      var raw = v.toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 7);
+      var m = raw.match(/^(\d)([A-Z]{0,3})(\d{0,3})$/);
+      if (m) return [m[1], m[2], m[3]].filter(Boolean).join('-');
+      return raw;
+    }
+    $$('#qPlate, #plate').forEach(function (inp) {
+      inp.addEventListener('input', function () { inp.value = fmtPlate(inp.value); });
+    });
+
+    var carro = $('#carroWrap');
+    function setService(v) {
+      var r = $('input[name="dienst"][value="' + v + '"]');
+      if (r) { r.checked = true; sync(); }
+    }
+    function sync() {
+      var v = ($('input[name="dienst"]:checked') || {}).value;
+      carro.classList.toggle('open', v === 'carrosserie');
+    }
+    $$('input[name="dienst"]').forEach(function (r) { r.addEventListener('change', sync); });
+
+    // Hero quick-start
+    $$('.qbtn').forEach(function (b) {
+      b.addEventListener('click', function () {
+        $('#plate').value = $('#qPlate').value;
+        setService(b.getAttribute('data-q') === 'airco' ? 'airco' : b.getAttribute('data-q'));
+        $('#afspraak').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+      });
+    });
+    $('#quick').addEventListener('submit', function (e) { e.preventDefault(); $('.qbtn').click(); });
+    $$('.pre').forEach(function (a) { a.addEventListener('click', function () { setService(a.getAttribute('data-pre')); }); });
+
+    // Days: next 8 open days (Mon–Thu)
+    var dn = ['zo', 'ma', 'di', 'wo', 'do', 'vr', 'za'];
+    var mn = ['jan', 'feb', 'mrt', 'apr', 'mei', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec'];
+    var d = new Date(); d.setHours(12); var n = 0, html = '';
+    while (n < 8) {
+      d.setDate(d.getDate() + 1);
+      var w = d.getDay();
+      if (w >= 1 && w <= 4) {
+        var label = dn[w] + ' ' + d.getDate() + ' ' + mn[d.getMonth()];
+        html += '<label class="chip relative"><input type="radio" name="dag" value="' + label + '" /><span class="!px-1 !py-2.5"><small class="block text-slate text-[12px]">' + dn[w] + '</small><b class="block text-[20px] font-cond">' + d.getDate() + '</b><small class="block text-slate text-[12px]">' + mn[d.getMonth()] + '</small></span></label>';
+        n++;
+      }
+    }
+    $('#days').innerHTML = html;
+
+    // Photos (local preview only)
+    var files = [];
+    var drop = $('#drop'), thumbs = $('#thumbs');
+    function addFiles(list) {
+      Array.prototype.slice.call(list).forEach(function (f) {
+        if (!/^image\//.test(f.type) || files.length >= 6) return;
+        files.push(f);
+        var url = URL.createObjectURL(f);
+        var fig = document.createElement('div');
+        fig.className = 'relative';
+        fig.innerHTML = '<img src="' + url + '" alt="Foto schade" class="w-full aspect-square object-cover rounded-lg" /><button type="button" class="absolute top-1 right-1 w-6 h-6 rounded-full bg-asphalt/80 text-white text-[13px] leading-none" aria-label="Foto verwijderen">×</button>';
+        fig.querySelector('button').onclick = function () { files.splice(files.indexOf(f), 1); fig.remove(); };
+        thumbs.appendChild(fig);
+      });
+    }
+    $('#photos').addEventListener('change', function (e) { addFiles(e.target.files); e.target.value = ''; });
+    ['dragenter', 'dragover'].forEach(function (t) { drop.addEventListener(t, function (e) { e.preventDefault(); drop.classList.add('over'); }); });
+    ['dragleave', 'drop'].forEach(function (t) { drop.addEventListener(t, function (e) { e.preventDefault(); drop.classList.remove('over'); }); });
+    drop.addEventListener('drop', function (e) { addFiles(e.dataTransfer.files); });
+
+    // Reference number
+    var nr = 'WB-' + String(Math.floor(1000 + Math.random() * 9000));
+    $('#wbNr').textContent = 'Nr. ' + nr;
+
+    // Highlight today in hours
+    var today = new Date().getDay(); var row = $('#hours tr[data-d="' + (today === 0 ? 6 : today) + '"]');
+    if (row) row.classList.add('font-semibold', 'text-ink');
+
+    var labels = { onderhoud: 'Onderhoud', carrosserie: 'Carrosserieherstelling', keuring: 'Herstelling na afkeuring', airco: 'Airco-service', banden: 'Banden en laseruitlijning', remmen: 'Remmen of schokdempers', diagnose: 'Diagnose', montage: 'Monteren (trekhaak, sensoren, …)' };
+    function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+
+    $('#booking').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var ok = true, first = null;
+      function bad(el, msg) { ok = false; if (msg) $(msg).classList.remove('hidden'); if (el) { el.classList.add('err'); } first = first || el || $(msg); }
+      $$('.err').forEach(function (x) { x.classList.remove('err'); });
+      $$('#vehErr,#svcErr,#dayErr').forEach(function (x) { x.classList.add('hidden'); });
+      var plate = $('#plate').value.trim(), model = $('#model').value.trim();
+      if (!plate && !model) bad($('#model'), '#vehErr');
+      var svc = $('input[name="dienst"]:checked'); if (!svc) bad(null, '#svcErr');
+      var dag = $('input[name="dag"]:checked'); if (!dag) bad(null, '#dayErr');
+      var naam = $('#naam'), tel = $('#tel');
+      if (!naam.value.trim()) bad(naam);
+      if (tel.value.replace(/\D/g, '').length < 9) bad(tel);
+      if (!ok) { (first.focus ? first : $('#booking')).scrollIntoView({ block: 'center' }); return; }
+
+      var zones = $$('input[name="zone"]:checked').map(function (z) { return z.value; });
+      var rows = [
+        ['Voertuig', ($('input[name="soort"]:checked').value) + (plate ? ', ' + plate : '') + (model ? ', ' + model : '')],
+        ['Werk', labels[svc.value] + (svc.value === 'carrosserie' && zones.length ? ' (' + zones.join(', ') + ')' : '')],
+      ];
+      if (svc.value === 'carrosserie') rows.push(["Foto's", files.length ? files.length + ' foto' + (files.length > 1 ? "'s" : '') + ' bijgevoegd' : 'geen, we bekijken de schade ter plaatse']);
+      rows.push(['Voorkeur', dag.value + ', ' + $('input[name="dagdeel"]:checked').value]);
+      rows.push(['Contact', naam.value.trim() + ', ' + tel.value.trim()]);
+      if ($('#opm').value.trim()) rows.push(['Opmerking', $('#opm').value.trim()]);
+
+      var done = $('#done');
+      done.innerHTML =
+        '<div class="flex items-start gap-4"><span class="grid place-items-center w-12 h-12 rounded-full bg-sign text-white flex-none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.5 4.5L19 7.5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>' +
+        '<div><p class="font-cond font-extrabold uppercase text-[30px] leading-none">Werkbon ' + nr + ' verstuurd</p>' +
+        '<p class="mt-2 text-slate">Bedankt, ' + esc(naam.value.trim().split(' ')[0]) + '. Garage Lemmens belt u terug om het juiste uur vast te leggen.</p></div></div>' +
+        '<dl class="mt-6 divide-y divide-[#e3e6ea] border-y border-[#e3e6ea] text-[15px]">' +
+        rows.map(function (r) { return '<div class="grid grid-cols-[110px_1fr] gap-3 py-2.5"><dt class="text-slate">' + r[0] + '</dt><dd class="font-medium">' + esc(r[1]) + '</dd></div>'; }).join('') +
+        '</dl>' +
+        '<p class="mt-5 rounded-lg bg-signal/25 px-4 py-3 text-[14px]"><b>Dit is een demo.</b> Er is niets verzonden. Op de echte site komt deze werkbon met de foto\'s rechtstreeks in de mailbox van de garage.</p>' +
+        '<button type="button" id="again" class="btn mt-5 font-semibold text-sign underline">Nog een afspraak maken</button>';
+      $('#booking').classList.add('hidden');
+      done.classList.remove('hidden');
+      done.focus();
+      $('#again').onclick = function () { done.classList.add('hidden'); $('#booking').classList.remove('hidden'); };
+    });
+  })();
+  </script>
+</body>
+</html>
