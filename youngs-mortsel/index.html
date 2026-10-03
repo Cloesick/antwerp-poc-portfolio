@@ -454,5 +454,6 @@
     Object.keys(SVC).forEach(k => $('svc').insertAdjacentHTML('beforeend', `<option>${k}</option>`));
     $('svc').addEventListener('change', e => { $('svc-out').innerHTML = e.target.value ? `<span class="font-semibold">${e.target.value}:</span> ${SVC[e.target.value]}` : ''; });
   </script>
+<script>/* concept-demo: forms never post anywhere; Enter in a calculator field must not reload the page */document.addEventListener("submit",function(e){e.preventDefault();},true);</script>
 </body>
 </html>
