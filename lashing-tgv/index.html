@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lashing TGV — Heftrucks, hoogwerkers & bouwmachines in Zele | Conceptvoorstel</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root { --ink:#16181c; --panel:#1f2329; --line:#32373f; --paper:#ffffff; --mist:#f2f3f5; --text:#1a1d21; --muted:#5d646e; --accent:#f5b301; --on-accent:#16181c; --green:#28c76f; --blue:#2f80ed; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:"Archivo",system-ui,sans-serif; color:var(--text); background:var(--paper); line-height:1.55; font-size:15.5px; }
+a { color:var(--blue); text-decoration:none; } a:hover { text-decoration:underline; }
+.wrap { max-width:1140px; margin:0 auto; padding:0 22px; }
+h1,h2,h3 { line-height:1.12; letter-spacing:-0.015em; }
+.btn { display:inline-block; font-weight:700; font-size:14.5px; padding:12px 20px; border-radius:10px; cursor:pointer; border:none; }
+.btn-accent { background:var(--accent); color:var(--on-accent); } .btn-accent:hover { filter:brightness(1.06); text-decoration:none; }
+.btn-ghost { border:1px solid var(--line); color:#fff; } .btn-ghost:hover { border-color:#fff; text-decoration:none; }
+
+/* Demo bar */
+.demobar { background:var(--ink); color:#fff; font-size:13px; display:flex; flex-wrap:wrap; align-items:center; gap:8px 14px; padding:9px 16px; position:sticky; top:0; z-index:90; }
+.demobar a.cta { margin-left:auto; background:var(--accent); color:var(--on-accent); font-weight:700; font-size:13.5px; padding:7px 14px; border-radius:8px; white-space:nowrap; }
+.demobar a.cta:hover { text-decoration:none; }
+
+/* Nav */
+header.site { background:var(--panel); color:#fff; }
+header.site .wrap { display:flex; flex-wrap:wrap; align-items:center; gap:18px; min-height:64px; }
+.logo { font-weight:800; font-size:20px; letter-spacing:0.02em; color:#fff; }
+.logo span { color:var(--accent); }
+nav.main { display:flex; flex-wrap:wrap; gap:18px; margin-left:auto; align-items:center; }
+nav.main a { color:#cdd2da; font-size:14px; font-weight:600; } nav.main a:hover { color:#fff; text-decoration:none; }
+
+/* Hero */
+.hero { background:linear-gradient(180deg,var(--panel) 0%, #262b33 100%); color:#fff; padding:64px 0 56px; }
+.hero h1 { font-size:clamp(30px,5vw,50px); font-weight:800; max-width:20ch; }
+.hero p.lede { margin-top:16px; max-width:58ch; color:#aeb6c2; font-size:17px; }
+.hero .actions { margin-top:26px; display:flex; flex-wrap:wrap; gap:12px; }
+.hero .meta { margin-top:30px; font-size:13px; color:#8d96a3; }
+.brands { margin-top:26px; display:flex; flex-wrap:wrap; gap:8px 18px; font-size:12.5px; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#79828e; }
+
+section { padding:64px 0; }
+section h2 { font-size:clamp(24px,3.4vw,34px); font-weight:800; }
+.section-intro { margin-top:10px; color:var(--muted); max-width:60ch; }
+.tinted { background:var(--mist); }
+
+/* Machines */
+.machine-grid { margin-top:30px; display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.machine { background:#fff; border:1px solid #e3e6ea; border-radius:12px; padding:18px; display:flex; flex-direction:column; gap:6px; }
+.machine .tag { align-self:flex-start; font-size:11px; font-weight:800; letter-spacing:0.07em; text-transform:uppercase; background:var(--mist); border-radius:999px; padding:3px 10px; color:var(--muted); }
+.machine .tag.nieuw { background:#e7f7ee; color:#1d7a46; }
+.machine strong { font-size:16.5px; }
+.machine span { font-size:13.5px; color:var(--muted); }
+.machine em { font-style:normal; font-size:13.5px; font-weight:700; color:var(--blue); margin-top:4px; }
+
+/* Portal */
+.portal { background:var(--ink); color:#fff; border-radius:16px; padding:28px; margin-top:30px; }
+.portal-top { display:flex; flex-wrap:wrap; gap:10px 18px; align-items:baseline; border-bottom:1px solid var(--line); padding-bottom:14px; }
+.portal-top strong { font-size:18px; }
+.portal-top span { color:#8d96a3; font-size:13px; }
+.tabs { display:flex; flex-wrap:wrap; gap:8px; margin:16px 0; }
+.tabs button { background:none; border:1px solid var(--line); color:#cdd2da; font:inherit; font-size:13.5px; font-weight:600; padding:8px 14px; border-radius:999px; cursor:pointer; }
+.tabs button.active { background:var(--accent); color:var(--on-accent); border-color:var(--accent); }
+.pane { display:none; } .pane.active { display:block; }
+table.demo { width:100%; border-collapse:collapse; font-size:13.5px; }
+table.demo th { text-align:left; color:#8d96a3; font-weight:600; padding:8px 10px; border-bottom:1px solid var(--line); }
+table.demo td { padding:9px 10px; border-bottom:1px solid #272c33; }
+.pill { display:inline-block; font-size:11.5px; font-weight:700; border-radius:999px; padding:2px 10px; }
+.pill.ok { background:#1d3a2a; color:#5fdd96; } .pill.warn { background:#3f3415; color:var(--accent); } .pill.open { background:#1d2c45; color:#7db1f5; }
+.portal .note { margin-top:12px; font-size:12px; color:#8d96a3; }
+
+/* Employee */
+.login-demo { margin-top:30px; display:grid; grid-template-columns:1fr 1.4fr; gap:20px; }
+.login-card { background:#fff; border:1px solid #e3e6ea; border-radius:12px; padding:22px; }
+.login-card label { display:block; font-size:12.5px; font-weight:700; margin:12px 0 4px; }
+.login-card input { width:100%; padding:10px 12px; border:1px solid #d6dade; border-radius:8px; font:inherit; }
+.hint { font-size:12.5px; color:var(--muted); margin-top:10px; }
+#staff-view { display:none; }
+.q { background:#fff; border:1px solid #e3e6ea; border-radius:10px; padding:14px 16px; margin-top:10px; font-size:14px; }
+.q b { display:block; font-size:13px; color:var(--muted); font-weight:600; margin-bottom:2px; }
+
+/* Chatbot */
+#chat-fab { position:fixed; right:18px; bottom:18px; z-index:95; background:var(--accent); color:var(--on-accent); border:none; border-radius:999px; font:inherit; font-weight:800; font-size:14px; padding:14px 20px; cursor:pointer; box-shadow:0 10px 30px rgba(0,0,0,0.3); }
+#chat { position:fixed; right:18px; bottom:76px; z-index:95; width:min(360px, calc(100vw - 36px)); background:#fff; border:1px solid #d6dade; border-radius:16px; box-shadow:0 18px 50px rgba(0,0,0,0.3); display:none; flex-direction:column; overflow:hidden; }
+#chat.open { display:flex; }
+#chat .head { background:var(--ink); color:#fff; padding:12px 16px; font-size:13.5px; display:flex; align-items:center; gap:10px; }
+#chat .head .dot { width:8px; height:8px; border-radius:50%; background:var(--green); }
+#chat .head label { margin-left:auto; font-size:11.5px; color:#8d96a3; display:flex; gap:6px; align-items:center; cursor:pointer; }
+#chat .msgs { padding:14px; display:flex; flex-direction:column; gap:10px; max-height:320px; overflow-y:auto; font-size:13.5px; }
+.m-bot { background:var(--mist); border-radius:12px 12px 12px 4px; padding:10px 12px; max-width:88%; align-self:flex-start; }
+.m-user { background:var(--accent); color:var(--on-accent); border-radius:12px 12px 4px 12px; padding:10px 12px; max-width:88%; align-self:flex-end; font-weight:600; }
+#chat .quick { padding:0 14px 14px; display:flex; flex-wrap:wrap; gap:8px; }
+#chat .quick button { background:#fff; border:1px solid #d6dade; border-radius:999px; font:inherit; font-size:12.5px; font-weight:600; padding:7px 12px; cursor:pointer; color:var(--text); }
+#chat .quick button:hover { border-color:var(--accent); }
+#chat .foot { font-size:11px; color:var(--muted); padding:8px 14px; border-top:1px solid #eceef1; }
+
+footer.site { background:var(--ink); color:#8d96a3; padding:36px 0; font-size:13px; }
+footer.site .wrap { display:flex; flex-wrap:wrap; gap:10px 28px; align-items:baseline; }
+
+@media (max-width:860px) { .machine-grid { grid-template-columns:1fr 1fr; } .login-demo { grid-template-columns:1fr; } }
+@media (max-width:560px) { .machine-grid { grid-template-columns:1fr; } section { padding:48px 0; } }
+</style>
+</head>
+<body>
+
+<div class="demobar">
+  <span>Demo gebouwd door <b>Saspire</b> voor Lashing TGV &middot; dit is een voorstel, geen offici&euml;le website</span>
+  <a class="cta" href="https://saspire.org/nl/?utm_source=poc&amp;utm_medium=demo&amp;utm_campaign=lashing-tgv#contact">Bespreek dit voorstel &rarr;</a>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <span class="logo">LASHING <span>TGV</span></span>
+    <nav class="main">
+      <a href="#machines">Machines</a>
+      <a href="#portaal">Mijn Lashing</a>
+      <a href="#medewerkers">Voor medewerkers</a>
+      <a href="#waarom">Over ons</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Heftrucks, hoogwerkers en bouwmachines. Al meer dan 25 jaar.</h1>
+    <p class="lede">Verkoop en verhuur van nieuwe en jonge tweedehands machines, met eigen werkplaats en magazijn vol wisselstukken in Zele. Van reachtruck tot verreiker: Lashing heeft wat u nodig hebt.</p>
+    <div class="actions">
+      <a class="btn btn-accent" href="#machines">Bekijk de machines</a>
+      <a class="btn btn-ghost" href="#portaal">Mijn Lashing</a>
+    </div>
+    <p class="meta">Voermanstraat 1, 9240 Zele &middot; sinds 1992 &middot; eigen werkplaats en wisselstukkenmagazijn</p>
+    <div class="brands">
+      <span>Toyota</span><span>Linde</span><span>Mitsubishi</span><span>Unicarriers</span><span>TCM</span><span>Hyster</span><span>Komatsu</span><span>Jungheinrich</span><span>Nichiyu</span><span>Cesab</span>
+    </div>
+  </div>
+</section>
+
+<section id="machines">
+  <div class="wrap">
+    <h2>In de kijker</h2>
+    <p class="section-intro">Een greep uit het actuele aanbod. Elke machine wordt nagekeken in onze eigen werkplaats voor ze vertrekt.</p>
+    <div class="machine-grid">
+      <div class="machine"><span class="tag">Tweedehands</span><strong>Toyota 02-7FG35</strong><span>Heftruck &middot; LPG &middot; 3,5 ton</span><em>Prijs op aanvraag</em></div>
+      <div class="machine"><span class="tag">Tweedehands</span><strong>Linde E20PH-02</strong><span>Heftruck &middot; elektrisch &middot; 2 ton</span><em>Prijs op aanvraag</em></div>
+      <div class="machine"><span class="tag">Tweedehands</span><strong>Mitsubishi KFDE25T</strong><span>Heftruck &middot; diesel &middot; 2,5 ton</span><em>Prijs op aanvraag</em></div>
+      <div class="machine"><span class="tag">Tweedehands</span><strong>Unicarriers FHD35T5S</strong><span>Heftruck &middot; diesel &middot; 3,5 ton</span><em>Prijs op aanvraag</em></div>
+      <div class="machine"><span class="tag">Tweedehands</span><strong>TCM EG1F4F50</strong><span>Heftruck &middot; diesel</span><em>Prijs op aanvraag</em></div>
+      <div class="machine"><span class="tag nieuw">Nieuw</span><strong>STAXX EPTH 20</strong><span>Elektrische transpallet &middot; 2 ton</span><em>Prijs op aanvraag</em></div>
+      <div class="machine"><span class="tag nieuw">Nieuw</span><strong>Hangcha CDD15WS</strong><span>Stapelaar &middot; elektrisch &middot; 1,5 ton</span><em>Prijs op aanvraag</em></div>
+      <div class="machine"><span class="tag nieuw">Nieuw</span><strong>Stax WS15H</strong><span>Stapelaar &middot; 1,5 ton</span><em>Prijs op aanvraag</em></div>
+      <div class="machine"><span class="tag">Verhuur</span><strong>Hoogwerkers &amp; schaarliften</strong><span>Per dag, week of maand &middot; geleverd op de werf</span><em>Vraag beschikbaarheid</em></div>
+    </div>
+  </div>
+</section>
+
+<section class="tinted" id="portaal">
+  <div class="wrap">
+    <h2>Mijn Lashing: uw machines, keuringen en facturen op &eacute;&eacute;n plek</h2>
+    <p class="section-intro">Dit bestaat vandaag nog niet op lashing.be. Zo zou het eruitzien: elke klant ziet zijn eigen machinepark, komende keuringen, offertes en facturen. Geen telefoontjes meer over "wanneer is mijn keuring?".</p>
+    <div class="portal">
+      <div class="portal-top"><strong>Transport De Wilde BV</strong><span>demovoorbeeld van een klantaccount</span></div>
+      <div class="tabs">
+        <button class="active" data-pane="p1">Mijn machines</button>
+        <button data-pane="p2">Keuringen &amp; onderhoud</button>
+        <button data-pane="p3">Offertes</button>
+        <button data-pane="p4">Facturen</button>
+      </div>
+      <div class="pane active" id="p1">
+        <table class="demo">
+          <tr><th>Machine</th><th>Type</th><th>Status</th><th>Volgende keuring</th></tr>
+          <tr><td>Toyota 02-7FG35</td><td>Eigendom</td><td><span class="pill ok">In dienst</span></td><td>14 mrt 2027</td></tr>
+          <tr><td>Linde E20PH-02</td><td>Huur (maandcontract)</td><td><span class="pill ok">In dienst</span></td><td>02 jan 2027</td></tr>
+          <tr><td>Schaarlift (project Kaai 142)</td><td>Huur t.e.m. 28 nov</td><td><span class="pill warn">Retour gepland</span></td><td>&mdash;</td></tr>
+        </table>
+      </div>
+      <div class="pane" id="p2">
+        <table class="demo">
+          <tr><th>Machine</th><th>Keuring</th><th>Datum</th><th>Attest</th></tr>
+          <tr><td>Linde E20PH-02</td><td>Periodieke keuring</td><td><span class="pill warn">Binnen 6 weken</span></td><td>Wordt gepland</td></tr>
+          <tr><td>Toyota 02-7FG35</td><td>Periodieke keuring</td><td>14 mrt 2027</td><td>PDF beschikbaar</td></tr>
+          <tr><td>Toyota 02-7FG35</td><td>Onderhoud 500 u</td><td>Uitgevoerd 03 nov 2026</td><td>Werkbon #4821</td></tr>
+        </table>
+      </div>
+      <div class="pane" id="p3">
+        <table class="demo">
+          <tr><th>Offerte</th><th>Omschrijving</th><th>Status</th></tr>
+          <tr><td>OFF-2026-118</td><td>Unicarriers FHD25T5 &middot; overname + onderhoudscontract</td><td><span class="pill open">Open &middot; geldig tot 30 nov</span></td></tr>
+          <tr><td>OFF-2026-104</td><td>Verhuur verreiker, 3 weken</td><td><span class="pill ok">Goedgekeurd</span></td></tr>
+        </table>
+      </div>
+      <div class="pane" id="p4">
+        <table class="demo">
+          <tr><th>Factuur</th><th>Bedrag</th><th>Status</th></tr>
+          <tr><td>F-2026-0891</td><td>&euro; 1.240,00</td><td><span class="pill ok">Betaald</span></td></tr>
+          <tr><td>F-2026-0923</td><td>&euro; 760,00</td><td><span class="pill warn">Vervalt 25 nov</span></td></tr>
+        </table>
+      </div>
+      <p class="note">Alle gegevens hierboven zijn fictieve demogegevens. In de echte versie komt dit rechtstreeks uit uw administratie.</p>
+    </div>
+  </div>
+</section>
+
+<section id="medewerkers">
+  <div class="wrap">
+    <h2>Voor uw medewerkers: vragen beantwoorden zonder telefoonketting</h2>
+    <p class="section-intro">Klantvragen uit het portaal en de assistent komen in &eacute;&eacute;n lijst terecht. Een medewerker logt in, ziet wat open staat en antwoordt. Probeer het: log in met <b>demo / demo</b>.</p>
+    <div class="login-demo">
+      <div class="login-card" id="login-box">
+        <strong>Medewerkerslogin</strong>
+        <label for="u">Gebruikersnaam</label><input id="u" value="demo">
+        <label for="pw">Wachtwoord</label><input id="pw" type="password" value="demo">
+        <p style="margin-top:14px"><button class="btn btn-accent" onclick="document.getElementById('staff-view').style.display='block';document.getElementById('login-box').style.display='none';">Inloggen</button></p>
+        <p class="hint">Demo-omgeving: elke combinatie werkt. In de echte versie: beveiligde accounts per medewerker.</p>
+      </div>
+      <div id="staff-view">
+        <div class="q"><b>Vraag van Transport De Wilde &middot; vandaag 09:12</b>Kunnen jullie de keuring van onze Linde E20PH v&oacute;&oacute;r eind december inplannen?<br><br><button class="btn btn-accent" onclick="this.outerHTML='<span class=\'pill ok\' style=\'background:#e7f7ee;color:#1d7a46\'>Beantwoord &middot; keuring ingepland 18 dec</span>'">Beantwoorden</button></div>
+        <div class="q"><b>Vraag via de assistent &middot; gisteren 16:40</b>Is de Unicarriers FHD25T5 nog beschikbaar, en wat is de levertermijn?</div>
+        <div class="q"><b>Interne notitie</b>Werkbon #4821 (Toyota 7FG35) afgewerkt, attest uploaden naar klantportaal.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tinted" id="waarom">
+  <div class="wrap">
+    <h2>Meer dan 25 jaar vakkennis in Zele</h2>
+    <p class="section-intro">Sinds 1992 importeert, verkoopt en verhuurt Lashing TGV heftrucks en interne transportmiddelen, met een eigen werkplaats voor herstellingen en onderhoud en een groot magazijn met wisselstukken en toebehoren. Servicepartner van onder meer Toyota, Hyster, Unicarriers, Mitsubishi, Nissan, Nichiyu en Cesab.</p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <span class="logo" style="font-size:15px">LASHING <span>TGV</span></span>
+    <span>Voermanstraat 1, 9240 Zele</span>
+    <span style="margin-left:auto">Demo gebouwd door Saspire &middot; <a href="https://saspire.org/nl/?utm_source=poc&amp;utm_medium=demo&amp;utm_campaign=lashing-tgv#contact" style="color:#f5b301">Bespreek dit voorstel &rarr;</a></span>
+  </div>
+</footer>
+
+<button id="chat-fab" aria-expanded="false" aria-controls="chat" onclick="var c=document.getElementById('chat');c.classList.toggle('open');this.setAttribute('aria-expanded',c.classList.contains('open'));">Stel uw vraag</button>
+<div id="chat" role="dialog" aria-label="Demo-assistent">
+  <div class="head"><span class="dot"></span><span><b>Lashing-assistent</b> &middot; demo</span>
+    <label><input type="checkbox" id="staff-mode"> medewerker</label>
+  </div>
+  <div class="msgs" id="msgs">
+    <div class="m-bot">Dag! Ik ben de demo-assistent. Kies een vraag hieronder en zie hoe ik klanten &eacute;n medewerkers meteen verder help.</div>
+  </div>
+  <div class="quick" id="quick"></div>
+  <div class="foot">Demoversie met vaste voorbeeldantwoorden. De echte assistent zoekt live in uw catalogus, fiches en planning.</div>
+</div>
+
+<script>
+(function(){
+  var tabs=document.querySelectorAll('.tabs button');
+  tabs.forEach(function(b){b.addEventListener('click',function(){
+    tabs.forEach(function(x){x.classList.remove('active')});
+    document.querySelectorAll('.pane').forEach(function(p){p.classList.remove('active')});
+    b.classList.add('active');document.getElementById(b.dataset.pane).classList.add('active');
+  })});
+
+  var QA_KLANT=[
+    ["Welke heftruck voor 3 ton?","Voor lasten tot 3 ton raad ik de Toyota 02-7FG35 (3,5 t, LPG) of de Unicarriers FHD35T5S (3,5 t, diesel) aan. Werkt u binnen, dan is de elektrische Linde E20PH een stillere optie tot 2 ton. Zal ik een offerte laten klaarzetten?"],
+    ["Schaarlift huren: hoe werkt dat?","Schaarliften en hoogwerkers huurt u per dag, week of maand, geleverd op de werf. Geef de werkhoogte en periode door en u ontvangt dezelfde dag nog een voorstel met beschikbaarheid."],
+    ["Wanneer is mijn volgende keuring?","In uw portaal 'Mijn Lashing' zie ik dat de periodieke keuring van uw Linde E20PH binnen 6 weken vervalt. Zal ik een datum voorstellen en de werkplaats laten inplannen?"]
+  ];
+  var QA_STAFF=[
+    ["Technische info Linde E20PH","Linde E20PH-02: elektrische vierwiel-heftruck, 2,0 t hefvermogen. Laatste werkbon: batterijcontrole 09/2026. Wisselstukken op voorraad: vorken, laadstekker. In de echte versie komt dit uit uw fiches en voorraadsysteem."],
+    ["Openstaande klantvragen?","Er staan 2 klantvragen open: keuring Linde E20PH (Transport De Wilde) en beschikbaarheid Unicarriers FHD25T5. Beantwoorden kan rechtstreeks vanuit het medewerkersscherm."],
+    ["Voorraad vorken 1200 mm?","Demovoorbeeld: 6 paar vorken 1200 mm op voorraad in het magazijn Zele. De echte assistent koppelt met uw voorraadlijst."]
+  ];
+  var msgs=document.getElementById('msgs'), quick=document.getElementById('quick');
+  function render(){
+    quick.innerHTML='';
+    var set=document.getElementById('staff-mode').checked?QA_STAFF:QA_KLANT;
+    set.forEach(function(qa){
+      var b=document.createElement('button');b.textContent=qa[0];
+      b.onclick=function(){
+        var u=document.createElement('div');u.className='m-user';u.textContent=qa[0];msgs.appendChild(u);
+        setTimeout(function(){var m=document.createElement('div');m.className='m-bot';m.textContent=qa[1];msgs.appendChild(m);msgs.scrollTop=msgs.scrollHeight;},350);
+        msgs.scrollTop=msgs.scrollHeight;
+      };
+      quick.appendChild(b);
+    });
+  }
+  document.getElementById('staff-mode').addEventListener('change',render);
+  render();
+})();
+</script>
+</body>
+</html>
